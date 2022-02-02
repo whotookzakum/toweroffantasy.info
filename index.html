@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="scripts/data.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </head>
+    <body>
+        
+        <div id="navigation">
+            <button id="btn-samir" class="mimic-button"></button>
+            <button id="btn-coco" class="mimic-button"></button>
+            <button id="btn-king" class="mimic-button"></button>
+            <button id="btn-shiro" class="mimic-button"></button>
+            <button id="btn-cobalt" class="mimic-button"></button>
+            <button id="btn-claudia" class="mimic-button"></button>
+            <button id="btn-baiyuekui" class="mimic-button"></button>
+            <button id="btn-meryl" class="mimic-button"></button>
+            <button id="btn-huma" class="mimic-button"></button>
+            <button id="btn-hane" class="mimic-button"></button>
+            <button id="btn-karasuma" class="mimic-button"></button>
+            <button id="btn-zero" class="mimic-button"></button>
+        </div>
+        
+        <div id="mimic-info" class="showing">
+            
+            <div id="mimic-info-left">
+                <img id="mimic-pane" src="images/pane_samir.png">
+            </div>
+            
+            <div id="mimic-info-right">
+                
+                <p id="mimic-name">Name</p>
+                
+                
+                <!-- Basic Info: Picture, Characteristics, Traits -->
+                <div id="mimic-basic-info">
+                    
+                        <!-- Headshot and information -->
+                        <div style="text-align: center; width: 30%; display: inline-block; ">
+                            <img id="mimic-pic" src="images/samir_nobg.png">
+                            <p>sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha </p>
+                        </div>
+
+                        <!-- Characteristics -->
+                        <div style="display: inline-block; width: fit-content; text-align: left; vertical-align: top;">
+                            
+                            <p class="content-box-1" style="display: block; text-align: center; font-style: italic; margin: auto; margin-bottom: 4px;">"Supermagnetism Double Star"</p>
+                            
+                            <!-- Left -->
+                            <div class="content-box-1" style="width: 250px; vertical-align: top;">
+                                <div> <span style="font-style: italic">GENDER</span> <p style="float: right;">Male</p> </div>
+                                <div class="divider-1"></div>
+                                <div> <span style="font-style: italic">HEIGHT</span> <p style="float: right;">190cm</p> </div>
+                                <div class="divider-1"></div>
+                                <div> <span style="font-style: italic">BIRTHPLACE</span> <p style="float: right;">???</p> </div>
+                                <div class="divider-1"></div>
+                                <div> <span style="font-style: italic">HOROSCOPE</span> <p style="float: right;">Krohn</p> </div>
+                                <div class="divider-1"></div>
+                                <div> <span style="font-style: italic">BIRTHDAY</span> <p style="float: right;">Nov 3</p> </div>
+                            </div>
+
+                            <!-- Right -->
+                            <div class="content-box-1">
+                                <img src="images/samir_chart.png">
+                            </div>
+                        </div>
+                </div>
+                
+                <h3>WEAPON</h3>
+                
+                <!-- Weapon Info -->
+                <div id="wep-info">
+
+                    <!-- Basic weapon info -->
+                    <div id="wep-basic-info" style="width: 50%; text-align: left; border-right: 2px solid darkgray;">
+                        
+                        <!-- Weapon image -->
+                        <img id="wep-img" src="images/wep_samir.png" style="vertical-align: middle;">
+
+                        <div id="wep-basic-info-right">
+                            
+                            <!-- Weapon name -->
+                            <p id="wep-name">Weapon Name</p>
+                            
+                            <!-- Resonance and element -->
+                            <div style="width: fit-content; display: inline-block;">
+                                <img id="wep-type-img" src="images/reso_dps.png">
+                                <img id="wep-element-img" src="images/ele_electric.png">
+                            </div>
+                            
+                            <!-- Shield break & energy charge -->
+                            <div style="width: 55%; display: inline-block; float: right;">
+                                <h4 style="display: inline-block; margin: 0; font-size: 14px"><span class="wep-sub-tier" style="color: #ffdb85">S</span>Shield Break: </h4>
+                                <p id="shield-break">11.11</p>
+                                <h4 style="display: inline-block; margin: 0; font-size: 14px"><span class="wep-sub-tier" style="color: #d1b9eb">A</span>Energy Charge: </h4>
+                                <p id="energy-charge">11.11</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                    <!-- Breakthrough materials -->
+                    <div></div>
+                    
+                    <!-- Left pane -->
+                    <div style="width: 50%; display: inline-block;">
+                        
+                        <div style="width: 95%; display: inline-block; text-align: center;">
+                            
+                            <p class="content-tab-2">Weapon Effect</p>
+                            <p id="wep-effect" class="content-box-2" style="border-top-right-radius: 0">Weapon effect goes here</p>
+                            
+                            <table border="0" cellspacing="0" cellpadding="5px" style="width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left">
+                                
+                                <tr>
+                                    <td class="content-tab-3" style="border-top-left-radius: 10px;">1 ★</td>
+                                    <td id="star-1">Star 1 effects</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="content-tab-3">2 ★</td>
+                                    <td id="star-2">Star 2 effects</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="content-tab-3">3 ★</td>
+                                    <td id="star-3">Star 3 effects</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="content-tab-3">4 ★</td>
+                                    <td id="star-4">Star 4 effects</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="content-tab-3">5 ★</td>
+                                    <td id="star-5">Star 5 effects</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="content-tab-3" style="border-bottom-left-radius: 10px;">6 ★</td>
+                                    <td id="star-6">Star 6 effects</td>
+                                </tr>
+                                
+                            </table>
+                            
+                        </div>
+                            
+                    </div>
+                    
+                    <!-- Awakening 
+                    <div style="width: 50%; display: inline-block; float: right; display: none;">
+                        <div style="width: 95%; display: inline-block; text-align: left;">
+                            <button id="star-1" class="content-tab-1">1 ★</button>
+                            <button id="star-2" class="content-tab-1">2 ★</button>
+                            <button id="star-3" class="content-tab-1">3 ★</button>
+                            <button id="star-4" class="content-tab-1">4 ★</button>
+                            <button id="star-5" class="content-tab-1">5 ★</button>
+                            <button id="star-6" class="content-tab-1">6 ★</button>
+                            <p id="awakening-effects" class="content-box-2">Awakening effect</p>
+                        </div>
+                            
+                    </div> -->
+                    
+                    <!-- Right pane -->
+                    <div style="width: 50%; display: inline-block; float: right; opacity: 0.9;">
+                        
+                        <div style="width: 95%; display: inline-block; background: red;">
+                            
+
+                        </div>
+                            
+                    </div>
+                    
+
+                </div>
+                
+                <h3>CHIPS</h3>
+                
+                <!-- Chips -->
+                <div id="chip-info">
+                    
+                    <!-- 2 piece set -->
+                    <div class="box-content" style="width: 50%; display: inline-block;">
+                        <img src="images/samir_chip_s.png" style="display: inline-block;">
+                        <img src="images/samir_chip_s.png" style="display: inline-block;">
+                        <p class="box-header">2-piece set effect</p>
+                        <p id="chip-2">Chip Effect 2 piece</p>
+                    </div>
+                    
+                    <!-- 4 piece set -->
+                    <div class="box-content" style="width: 50%; display: inline-block; float: right;">
+                        <img src="images/samir_chip_s.png" style="display: inline-block;">
+                        <img src="images/samir_chip_s.png" style="display: inline-block;">
+                        <img src="images/samir_chip_s.png" style="display: inline-block;">
+                        <img src="images/samir_chip_s.png" style="display: inline-block;">
+                        <p class="box-header">4-piece set effect</p>
+                        <p id="chip-4">Chip Effect 4 piece</p>
+                    </div>
+
+                </div>
+                
+                <h3>MIMIC</h3>
+                
+                <!-- Affinity -->
+                <div id="affinity-info" style="display:nne">
+
+                    <div class="box-content">
+                        <p class="box-header">Affinity 600</p>
+                        <p id="affinity-600">Affinity 600 effect</p>
+                    </div>
+                    <div class="box-content">
+                        <p class="box-header">Affinity 1200</p>
+                        <p id="affinity-1200">Affinity 1200 effect</p>
+                    </div>
+                    <div class="box-content">
+                        <p class="box-header">Affinity 2000</p>
+                        <p id="affinity-2000">Affinity 2000 effect</p>
+                    </div>
+                    <div class="box-content">
+                        <p class="box-header">Affinity 300</p>
+                        <p id="affinity-3000">Affinity 3000 effect</p>
+                    </div>
+                    <div class="box-content">
+                        <p class="box-header">Affinity 4000</p>
+                        <p id="affinity-4000">Affinity 4000 effect</p>
+                    </div>
+
+                </div>
+            
+            </div>
+                
+            
+            
+        </div>
+        
+        <!-- DPS loadout guide by Cytus#4151 -->
+        <div id="dps-loadout-guide" class="hidden">
+            <table>
+                <tr>
+                    <th>Shield Break</th>
+                    <th>Main DPS</th>
+                    <th>Support DPS</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Weapons that deal the highest damage to shields. Necessary as most bosses and minibosses have shields that significantly reduce damage taken. Bosses will also use powerful attacks if their shield is not broken in time. These weapons tend to unlock a crucial shield break effect at 1★ or 3★.</p>
+                    </td>
+                    <td>
+                        <p>Weapons with the highest standing DPS to unshielded targets; the weapon you want to be on most of the time. These weapons tend to have low damage to shields and average charge rate.</p>
+                    </td>
+                    <td>
+                        <p>Weapons that increase your overall DPS through damage buffs and other means. These weapons are best used as "quickswap" weapon, by rotating frequently to throw out their burst and refresh their buffs.</p>
+                    </td>
+                </tr>
+                
+                
+                <!-- Row 1 -->
+                <tr>
+                    <td>
+                        <div>
+                            <img src="images/wep_baiyuekui.png">
+                            <p class="loadout-pro">Ridiculously high burst<br>Can be paired with 2 support weapons</p>
+                            <p class="loadout-con">Active skill can miss<br>Shield break effect on 3★</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_king.png">
+                            <p class="loadout-pro">High DOT on shield break<br>Quick burst</p>
+                            <p class="loadout-con">Easily interrupted</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="images/wep_samir.png">
+                            <p class="loadout-pro">High DPS and charge rate<br>Safe AoE air attack</p>
+                            <p class="loadout-con">Need animation cancelling (~) to use ground attacks effectively</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_cobalt.png">
+                            <p class="loadout-pro">All attacks AoE<br>%HP DOT<br>Powerful active skill</p>
+                            <p class="loadout-con">Reliant on high ★s or Cobalt chip set</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="images/wep_hane.png">
+                            <p class="loadout-pro">High charge rate<br>24-40% all damage buff</p>
+                            <p class="loadout-con">Reliant on dash attacks</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_claudia.png">
+                            <p class="loadout-pro">24% all damage buff, 10% increase physical damage on target, 20% skill damage buff<br>Good charge rate</p>
+                        </div>
+                    </td>
+                </tr>
+                    
+                <!-- Row 2 -->
+                <tr>
+                    <td>
+                        <div>
+                            <img src="images/wep_meryl.png">
+                            <p class="loadout-pro">Highest shield breaking power<br>Immune to interrupts</p>
+                            <p class="loadout-con">Moves slowly<br>Lacks damage effects</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_shiro.png">
+                            <p class="loadout-pro">Powerful active skills<br>Resets CDs on shield break</p>
+                            <p class="loadout-con">Useless if enemy moves<br>Bad switch skill<br>Weak without 3★</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="images/wep_karasuma.png">
+                            <p class="loadout-pro">Backstabs and execute<br>Built in crit buffs</p>
+                            <p class="loadout-con">High skill floor<br>Weak without ★s</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_claudia.png">
+                            <p class="loadout-con">Multiple self buffs<br>Good charge rate</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="images/wep_shiro.png">
+                            <p class="loadout-pro">Powerful active skill<br>Resets CDs on shield break<br>Guaranteed crits</p>
+                            <p class="loadout-con">Useless if enemy moves<br>Requires 3★ or 6★</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_baiyuekui.png">
+                            <p class="loadout-pro">Synergize with 3★ Samir<br>Synergize with Baiyuekui mimic</p>
+                            <p class="loadout-con">Niche</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_karasuma.png">
+                        </div>
+                    </td>
+                </tr>
+                
+                <!-- Row 3 -->
+                <tr>
+                    <td>
+                        <div>
+                            <img src="images/wep_huma.png">
+                            <p class="loadout-pro">Decent shield break<br>Relatively high charge rate</p>
+                            <p class="loadout-con">No shield break effect</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_manaka.png">
+                            <p class="loadout-pro">Usable SR</p>
+                            <p class="loadout-con">Last option</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="images/wep_hane.png">
+                            <p class="loadout-pro">High charge rate<br>Shotgun triple arrows</p>
+                            <p class="loadout-con">Reliant on dash attacks<br>Basic attacks are blocked by other players</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_xi.png">
+                            <p class="loadout-pro">Good DPS for SR<br>CC immunity<br>Infinite dash attacks</p>
+                            <p class="loadout-con">Slow movement<br>Not good enough to beat SSR</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="images/wep_hilda.png">
+                            <p class="loadout-pro">Longest range<br>Huge quickswap buff (+60% attack for 10s)</p>
+                            <p class="loadout-con">Only works with ice weapons</p>
+                        </div>
+                        <div>
+                            <img src="images/wep_bailing.png">
+                            <p class="loadout-pro">SR version bow<br>Applies wounded debuff on dash attacks (+20% damage)</p>
+                            <p class="loadout-con">Probably not worth investing resources in</p>
+                        </div>
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+        
+    </body>
+    
+</html>
