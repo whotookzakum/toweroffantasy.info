@@ -1,9 +1,26 @@
-body {
-    background-color: #161211;
-    color: white;
-    font-family: 'Roboto', 'Times New Roman';
-    overflow-y: hidden;
+html {
+    font-size: 62.5%;
 }
+
+body {
+    background-color: #111111;
+    color: #c8c8c8;
+    font-family: 'Helvetica', 'Roboto', 'Times New Roman';
+    font-size: 1.6rem;
+    /* 18 pt and 12 pt */
+    /* scrollbar-width: none;
+    -ms-overflow-style: none; */
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica.ttf'), url('Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+} */
 p {
     margin: 0;
 }
@@ -15,35 +32,40 @@ p {
 }
 #mimic-info {
     margin: 0 auto;
-    width: 70rem;
-    background: gray;
-    height: 797px;
+    width: 1086px;
+    background: #181414;
+    text-align: center;
+    border: 4px solid #c41c36;
 }
-#mimic-info-left {
+#navigation {
+    margin-bottom: 10px;
+}
+.left {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+.right {
+    width: 50%;
+    float: right;
+    text-align: center;
+    display: inline-block;
     vertical-align: top;
 }
-#mimic-pane {
-    padding: 0 7px 0 5px;
-    border-right: 2px solid darkgray;
-    margin: 5px 0;
+.section-header {
+    background: #c41c36;
+    margin: 0;
+    padding: 3px;
+    font-size: 2rem;
 }
-
-#mimic-info-right {
-    width: 86%;
-    position: relative;
-    margin-left: 3px;
-    height: 100%;
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    text-align: center;
+.trait-title {
+    margin-bottom: 3px;
+    font-size: 1.8rem;
 }
-#mimic-pic {
-    width: 200px;
-}
-#mimic-info-right::-webkit-scrollbar { /* WebKit */
-    width: 0;
-    height: 0;
+#mimic-gender, #mimic-height, #mimic-birthplace, #mimic-horoscope, #mimic-birthday {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 .divider-1 {
     width: 100%; 
@@ -89,7 +111,7 @@ p {
     border: 0;
 }
 .content-tab-3 {
-    background-color: black;
+    background-color: #111111;
     width: 30px; 
     text-align: center;
     padding: 10px; 
@@ -126,6 +148,10 @@ p {
 #wep-info, #wep-name, #wep-img, #wep-name, #wep-type-img, #wep-type, #wep-element-img, #wep-element, #energy-charge, #shield-break, #mimic-info-left, #mimic-info-right {
     display: inline-block;
 }
+#wep-type-img, #wep-element-img {
+    margin: 2px 0;
+}
+
 #wep-info, #chip-info, #affinity-info {
     width: 100%;
     vertical-align: top;
@@ -139,17 +165,11 @@ p {
     margin: auto;
     opacity: 0.7;
 }
-#wep-basic-info {
-    width: 100%;
-}
-#wep-basic-info-right {
-    display: inline-block;
-    width: 76.5%;
-    vertical-align: middle;
-}
 #wep-name {
     width: 100%;
-    font-size: 28px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 #awakening-info, #wep-info {
     border-radius: 5px;
@@ -175,8 +195,46 @@ p {
 }
 #mimic-name {
     text-align: center;
-    font-size: 36px;
+    font-size: 2.4rem;
+    margin: -4px auto 40px auto;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 3px 55px;
+    display: inline-block;
+    vertical-align: top;
+    border-top: 4px solid #c41c36;
+    position: relative;
+    z-index: 40;
 }
+.triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 34px solid #c41c36;
+    border-left: 120px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+.triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 34px solid #c41c36;
+    border-right: 120px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+.red-triangle {
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 19px solid #c41c36;
+}
+
+.passive-value {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
 .wep-sub-tier {
     font-style: italic;
     background-color: #3b3e45;
@@ -189,7 +247,7 @@ p {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid gray;
+    border: 3px solid #439eac;
     margin: 0 3px;
     vertical-align: middle;
     padding: 0;
@@ -209,7 +267,7 @@ p {
 #btn-zero {background-image: url(images/icon_zero.png);}
 
 .mimic-button:hover {
-    border: 3px solid yellow;
+    border: 3px solid gold;
 }
 #navigation {
     text-align: center;

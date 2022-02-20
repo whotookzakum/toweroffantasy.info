@@ -25,215 +25,192 @@
         
         <div id="mimic-info" class="showing">
             
-            <div id="mimic-info-left">
-                <img id="mimic-pane" src="images/pane_samir.png">
+            <!-- Header pic -->
+            <div style="height: 167px; position: relative; z-index: 3; overflow: hidden;">
+                <img src="images/header_bg2.png" style="position: absolute; left: 0; z-index; 2;">
+                <img id="banner-character" src="images/samir_nobg.png" style="position: absolute; z-index: 5; left: 29%; top: -52%; transform: scale(0.8)">
+                <div class="red-triangle" style="position: absolute; z-index: 8; bottom: 0%; left: 41%;">&nbsp;</div>
+                <div class="red-triangle" style="position: absolute; z-index: 8; bottom: 0%; left: 52.5%;">&nbsp;</div>
             </div>
             
-            <div id="mimic-info-right">
-                
-                <p id="mimic-name">Name</p>
-                
-                
-                <!-- Basic Info: Picture, Characteristics, Traits -->
-                <div id="mimic-basic-info">
-                    
-                        <!-- Headshot and information -->
-                        <div style="text-align: center; width: 30%; display: inline-block; ">
-                            <img id="mimic-pic" src="images/samir_nobg.png">
-                            <p>sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha sfsalfhskfjhsklfha </p>
-                        </div>
+            <!-- Mimic name -->
+            <div class="triangle-topright">&nbsp;</div><h3 id="mimic-name" class="section-header">Name</h3><div class="triangle-topleft">&nbsp;</div>
+            
+            <!-- Basic Info: Picture, Characteristics, Traits -->
+            <div id="mimic-basic-info">
 
-                        <!-- Characteristics -->
-                        <div style="display: inline-block; width: fit-content; text-align: left; vertical-align: top;">
-                            
-                            <p class="content-box-1" style="display: block; text-align: center; font-style: italic; margin: auto; margin-bottom: 4px;">"Supermagnetism Double Star"</p>
-                            
-                            <!-- Left -->
-                            <div class="content-box-1" style="width: 250px; vertical-align: top;">
-                                <div> <span style="font-style: italic">GENDER</span> <p style="float: right;">Male</p> </div>
-                                <div class="divider-1"></div>
-                                <div> <span style="font-style: italic">HEIGHT</span> <p style="float: right;">190cm</p> </div>
-                                <div class="divider-1"></div>
-                                <div> <span style="font-style: italic">BIRTHPLACE</span> <p style="float: right;">???</p> </div>
-                                <div class="divider-1"></div>
-                                <div> <span style="font-style: italic">HOROSCOPE</span> <p style="float: right;">Krohn</p> </div>
-                                <div class="divider-1"></div>
-                                <div> <span style="font-style: italic">BIRTHDAY</span> <p style="float: right;">Nov 3</p> </div>
-                            </div>
+                <!-- Headshot and Weapon basic info -->
+                <div class="left" style="width: 450px; margin-bottom: 40px; margin-left: 62px; margin-right: 31px; background: #111111;">
 
-                            <!-- Right -->
-                            <div class="content-box-1">
-                                <img src="images/samir_chart.png">
-                            </div>
-                        </div>
-                </div>
-                
-                <h3>WEAPON</h3>
-                
-                <!-- Weapon Info -->
-                <div id="wep-info">
+
+                    <img id="mimic-pic" src="images/samir_nobg.png" style="display: block; margin: auto;">
+
+                    <h3 class="section-header">WEAPON INFO</h3>
 
                     <!-- Basic weapon info -->
-                    <div id="wep-basic-info" style="width: 50%; text-align: left; border-right: 2px solid darkgray;">
-                        
-                        <!-- Weapon image -->
-                        <img id="wep-img" src="images/wep_samir.png" style="vertical-align: middle;">
+                    <div id="wep-basic-info" style="text-align: left;">
 
-                        <div id="wep-basic-info-right">
-                            
+                        <!-- Weapon image -->
+                        <img id="wep-img" src="images/wep_samir.png" style="display: inline-block; width: 112px; padding: 10px; vertical-align: middle;">
+
+                        <div id="wep-basic-info-right" style="display:inline-block; width: 60%; vertical-align: middle">
+
                             <!-- Weapon name -->
                             <p id="wep-name">Weapon Name</p>
-                            
+
                             <!-- Resonance and element -->
-                            <div style="width: fit-content; display: inline-block;">
-                                <img id="wep-type-img" src="images/reso_dps.png">
-                                <img id="wep-element-img" src="images/ele_electric.png">
-                            </div>
-                            
+                            <img id="wep-type-img" src="images/reso_dps.png">
+                            <img id="wep-element-img" src="images/ele_electric.png">
+
+
                             <!-- Shield break & energy charge -->
-                            <div style="width: 55%; display: inline-block; float: right;">
-                                <h4 style="display: inline-block; margin: 0; font-size: 14px"><span class="wep-sub-tier" style="color: #ffdb85">S</span>Shield Break: </h4>
+                            <div style="width: 90%; margin-top: 0px;">
+                                <h4 style="display: inline-block; margin: 0 0 4px 0;"><span class="wep-sub-tier" style="color: #ffdb85; font-family: 'Roboto';">S</span>Shield Break: </h4>
                                 <p id="shield-break">11.11</p>
-                                <h4 style="display: inline-block; margin: 0; font-size: 14px"><span class="wep-sub-tier" style="color: #d1b9eb">A</span>Energy Charge: </h4>
+                                <h4 style="display: inline-block; margin: 0 0 4px 0;"><span class="wep-sub-tier" style="color: #d1b9eb; font-family: 'Roboto';">A</span>Energy Charge: </h4>
                                 <p id="energy-charge">11.11</p>
                             </div>
-                            
+
                         </div>
 
                     </div>
+
+                </div>
+
+                <!-- Characteristics -->
+                <div class="right" style="width: 450px; height: 392px; margin-right: 62px; margin-left: 31px; background: #111111; text-transform: uppercase">
                     
-                    <!-- Breakthrough materials -->
-                    <div></div>
+                    <h3 class="section-header" style="background:inherit; border-bottom: 2px solid #c8c8c8;">SUPERMAGNETISM DOUBLE STAR</h3>
+
+                    <!-- Left -->
+                    <div class="left" style="width: 30%; text-align: left; border-right: 0px solid #c8c8c8; padding: 20px 0px 20px 20px; height:320px; font-weight: bold">
+                        <p class="trait-title">GENDER<br></p>
+                        <p id="mimic-gender">Male</p>
+                        <p class="trait-title">HEIGHT<br></p>
+                        <p id="mimic-height">190 cm</p>
+                        <p class="trait-title">BIRTHPLACE<br></p>
+                        <p id="mimic-birthplace">Male</p>
+                        <p class="trait-title">HOROSCOPE<br></p>
+                        <p id="mimic-horoscope">Male</p>
+                        <p class="trait-title">BIRTHDAY<br></p>
+                        <p id="mimic-birthday">Male</p>
+                    </div>
+
+                    <!-- Radar chart -->
+                    <div class="right" style="width: 65%; border-left: 0px solid #c8c8c8; height: 360px; text-align: left; font-weight: bold">
+                        <p style="margin-bottom: 3px; padding-top: 20px;">PERSONALITY<br></p>
+                        <p style="margin-bottom: 15px; font-size: 1.2rem">Traits</p>
+                        <img src="images/samir-traits.png" style="width: 100%">
+                    </div>
+
+                    <h3 class="section-header" style="width: 444px">BREAKTHROUGH MATERIALS</h3>
                     
-                    <!-- Left pane -->
-                    <div style="width: 50%; display: inline-block;">
+                    <div style="height: 132px; display: block; background: inherit;">
                         
-                        <div style="width: 95%; display: inline-block; text-align: center;">
-                            
-                            <p class="content-tab-2">Weapon Effect</p>
-                            <p id="wep-effect" class="content-box-2" style="border-top-right-radius: 0">Weapon effect goes here</p>
-                            
-                            <table border="0" cellspacing="0" cellpadding="5px" style="width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left">
-                                
-                                <tr>
-                                    <td class="content-tab-3" style="border-top-left-radius: 10px;">1 ★</td>
-                                    <td id="star-1">Star 1 effects</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="content-tab-3">2 ★</td>
-                                    <td id="star-2">Star 2 effects</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="content-tab-3">3 ★</td>
-                                    <td id="star-3">Star 3 effects</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="content-tab-3">4 ★</td>
-                                    <td id="star-4">Star 4 effects</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="content-tab-3">5 ★</td>
-                                    <td id="star-5">Star 5 effects</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="content-tab-3" style="border-bottom-left-radius: 10px;">6 ★</td>
-                                    <td id="star-6">Star 6 effects</td>
-                                </tr>
-                                
-                            </table>
-                            
-                        </div>
-                            
                     </div>
-                    
-                    <!-- Awakening 
-                    <div style="width: 50%; display: inline-block; float: right; display: none;">
-                        <div style="width: 95%; display: inline-block; text-align: left;">
-                            <button id="star-1" class="content-tab-1">1 ★</button>
-                            <button id="star-2" class="content-tab-1">2 ★</button>
-                            <button id="star-3" class="content-tab-1">3 ★</button>
-                            <button id="star-4" class="content-tab-1">4 ★</button>
-                            <button id="star-5" class="content-tab-1">5 ★</button>
-                            <button id="star-6" class="content-tab-1">6 ★</button>
-                            <p id="awakening-effects" class="content-box-2">Awakening effect</p>
-                        </div>
-                            
-                    </div> -->
-                    
-                    <!-- Right pane -->
-                    <div style="width: 50%; display: inline-block; float: right; opacity: 0.9;">
+
+                </div>
+
+                
+                
+            </div>
+
+            <!-- Weapon Info -->
+            <div id="wep-info" style="margin-bottom: 40px;">
+
+                <div style="width: 450px; background: #111111; display: inline-block; vertical-align: top; margin: 0 31px 0 62px;">
+
+                    <h3 class="section-header">ELEMENTAL EFFECT</h3>
+                    <p id="wep-effect" style="padding: 15px">Weapon effect goes here</p>
+
+                </div><!--
+
+                --><div style="width: 450px; background: #111111; display: inline-block; vertical-align: top; margin: 0 62px 0 31px;">
+                
+                    <h3 class="section-header">ATTACK COMBOS</h3>
+                
+                </div>
+                
+            </div>
+            
+            <div style="width:962px; margin: 0 auto 40px auto; background #111111">
+                
+                <h3 class="section-header">AWAKENING EFFECTS</h3>
+                <table border="0" cellspacing="0" cellpadding="15px" style="width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left">
                         
-                        <div style="width: 95%; display: inline-block; background: red;">
-                            
+                        <tr>
+                            <td class="content-tab-3">1 ★</td>
+                            <td id="star-1">Star 1 effects</td>
+                        </tr>
 
-                        </div>
-                            
-                    </div>
-                    
+                        <tr>
+                            <td class="content-tab-3">2 ★</td>
+                            <td id="star-2">Star 2 effects</td>
+                        </tr>
 
-                </div>
-                
-                <h3>CHIPS</h3>
-                
-                <!-- Chips -->
-                <div id="chip-info">
-                    
-                    <!-- 2 piece set -->
-                    <div class="box-content" style="width: 50%; display: inline-block;">
-                        <img src="images/samir_chip_s.png" style="display: inline-block;">
-                        <img src="images/samir_chip_s.png" style="display: inline-block;">
-                        <p class="box-header">2-piece set effect</p>
-                        <p id="chip-2">Chip Effect 2 piece</p>
-                    </div>
-                    
-                    <!-- 4 piece set -->
-                    <div class="box-content" style="width: 50%; display: inline-block; float: right;">
-                        <img src="images/samir_chip_s.png" style="display: inline-block;">
-                        <img src="images/samir_chip_s.png" style="display: inline-block;">
-                        <img src="images/samir_chip_s.png" style="display: inline-block;">
-                        <img src="images/samir_chip_s.png" style="display: inline-block;">
-                        <p class="box-header">4-piece set effect</p>
-                        <p id="chip-4">Chip Effect 4 piece</p>
-                    </div>
+                        <tr>
+                            <td class="content-tab-3">3 ★</td>
+                            <td id="star-3">Star 3 effects</td>
+                        </tr>
 
-                </div>
-                
-                <h3>MIMIC</h3>
-                
-                <!-- Affinity -->
-                <div id="affinity-info" style="display:nne">
+                        <tr>
+                            <td class="content-tab-3">4 ★</td>
+                            <td id="star-4">Star 4 effects</td>
+                        </tr>
 
-                    <div class="box-content">
-                        <p class="box-header">Affinity 600</p>
-                        <p id="affinity-600">Affinity 600 effect</p>
-                    </div>
-                    <div class="box-content">
-                        <p class="box-header">Affinity 1200</p>
-                        <p id="affinity-1200">Affinity 1200 effect</p>
-                    </div>
-                    <div class="box-content">
-                        <p class="box-header">Affinity 2000</p>
-                        <p id="affinity-2000">Affinity 2000 effect</p>
-                    </div>
-                    <div class="box-content">
-                        <p class="box-header">Affinity 300</p>
-                        <p id="affinity-3000">Affinity 3000 effect</p>
-                    </div>
-                    <div class="box-content">
-                        <p class="box-header">Affinity 4000</p>
-                        <p id="affinity-4000">Affinity 4000 effect</p>
-                    </div>
+                        <tr>
+                            <td class="content-tab-3">5 ★</td>
+                            <td id="star-5">Star 5 effects</td>
+                        </tr>
 
-                </div>
+                        <tr>
+                            <td class="content-tab-3">6 ★</td>
+                            <td id="star-6">Star 6 effects</td>
+                        </tr>
+
+                    </table>
             
             </div>
-                
             
+            <!-- Chips -->
+            <div id="chip-info" style="margin-bottom: 40px;">
+
+                
+                <div style="width: 450px; background: #111111; display: inline-block; vertical-align: top; margin: 0 31px 0 62px;">
+                    <h3 class="section-header" style="background: #c28400">2 SET EFFECT</h3>
+                    <p id="chip-2" style="padding: 15px;">Chip Effect 2 piece</p>
+                </div><!--
+                --><div style="width: 450px; background: #111111; display: inline-block; margin: 0 62px 0 31px;">
+                    <h3 class="section-header" style="background: #c28400">4 SET EFFECT</h3>
+                    <p id="chip-4" style="padding: 15px;">Chip Effect 4 piece</p>
+                </div>
+                
+                
+            </div>
+
+            <!-- Affinity -->
+            <div id="affinity-info" style="width: 962px; margin: 0 auto 40px auto; background: #111111">
+                
+                <h3 class="section-header" style="background: #0084c2">AFFINITY CHECKPOINTS</h3>
+                
+                <table>
+                    <tr>
+                        <td style="transform: scale(0.8);"><img src="images/affinity/Checkpoint_1200.png" alt="1200 Affinity Bonus"></td>
+                        <td id="affinity-1200" style="text-align: left; padding: 15px;">Goodbye</td>
+                    </tr>
+                    <tr>
+                        <td style="transform: scale(0.8)"><img src="images/affinity/Checkpoint_4000.png"  alt="4000 Affinity Bonus"></td> 
+                        <td id="affinity-4000" style="text-align: left; padding: 15px;">Goodbye</td>
+                    </tr>
+                </table>
+                
+
+            </div>
+            
+            <!-- Item Preferences -->
+            <div style="width: 962px; margin: 0 auto 40px auto;">
+                
+            </div>
             
         </div>
         
