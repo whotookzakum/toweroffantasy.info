@@ -1,0 +1,218 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #111111;
+    color: #c8c8c8;
+    font-family: 'Helvetica', 'Roboto', 'Times New Roman';
+    font-size: 1.6rem;
+    /* 18 pt and 12 pt */
+    /* scrollbar-width: none;
+    -ms-overflow-style: none; */
+    background: #181414;
+    padding-top: 5rem;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica.ttf'), url('Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+} */
+p { margin: 0; }
+
+
+/* NAV RELATED
+=============================================== */
+
+.navbar * {
+    color: #439eac !important;
+    font-weight: bold;
+}
+
+.navbar {
+    filter: drop-shadow(0 0 3px #111111);
+}
+
+.nav-link {
+    margin-bottom: -3px;
+}
+
+.nav-link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #439eac;
+    transform: scaleX(0);
+    transition: transform 125ms ease-in-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.nav-bg {
+    background-color: #111111;
+}
+
+.navbar-brand {
+    font-size: 16px;
+}
+
+
+/* NAV RELATED: MIMIC PAGE
+=============================================== */
+
+#mimic-list {
+    background: #111111;
+    padding: 0 5rem;
+    /* 
+    transition: max-height .15s ease-in-out;
+    max-height: 100px;
+    overflow: hidden; 
+    collapse to max-height: 0 via a button trigger 
+    */
+}
+@media only screen and (max-width: 1280px) {
+    #mimic-list {
+        padding: 0;
+    }
+}
+.mimic-button {
+    padding: 10px 5px 5px;
+    display: inline-block;
+    transition: color 125ms ease-in-out;
+}
+.mimic-button img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    /* transition: background-color 125ms ease-in-out; */
+}
+.mimic-button:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #439eac;
+    transform: scaleX(0);
+    transition: transform 125ms ease-in-out;
+}
+
+.mimic-button:hover {
+    color: #439eac;
+}
+.mimic-button:hover img {
+    /* background-color: #439eac; */
+}
+
+.mimic-button:hover:after {
+    transform: scaleX(1);
+}
+
+
+/* MIMIC PAGE RELATED
+=============================================== */
+
+#mimic-data-wrapper {
+    text-align: center;
+    border: 4px solid #c41c36;
+    background-color: #181414;
+}
+.bg-mimic {
+    background-color: #111111;
+    padding: 15px;
+}
+.section-header {
+    background: #c41c36;
+    margin: 0;
+    padding: 3px;
+    font-size: 2rem;
+}
+#mimic-name {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: -4px auto 40px auto;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 3px 55px;
+    display: inline-block;
+    vertical-align: top;
+    border-top: 4px solid #c41c36;
+    position: relative;
+    z-index: 40;
+}
+.trait-title {
+    margin-bottom: 3px;
+    font-size: 1.8rem;
+}
+#mimic-gender,
+#mimic-height,
+#mimic-birthplace,
+#mimic-horoscope,
+#mimic-birthday {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 34px solid #c41c36;
+    border-left: 120px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+.triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 34px solid #c41c36;
+    border-right: 120px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+.red-triangle {
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 19px solid #c41c36;
+}
+
+.fa-star, .fa-1, .fa-2, .fa-3, .fa-4, .fa-5, .fa-6 { color: gold; }
+
+#wep-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.wep-tier {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+    background-color: #3b3e45;
+    border-radius: 3px;
+}
+.wep-tier-b, .wep-tier-a, .wep-tier-s {
+    padding: 0 9px;
+    text-transform: uppercase;
+}
+.wep-tier-b { color: skyblue; }
+.wep-tier-a { color: #d1b9eb; }
+.wep-tier-s { color: #ffdb85; }
+.wep-tier-ss { color: #ffdb85; }
+#energy-charge, #shield-break { font-weight: bold; }
+
+.passive-value {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+/* GUIDE RELATED
+=============================================== */
+#dps-loadout-guide div {
+    display: inline-block;
+    margin: 5px;
+}
+.loadout-con { background: red; }
+.loadout-pro { background: green; }

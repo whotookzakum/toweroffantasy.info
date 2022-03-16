@@ -47,7 +47,7 @@ var samir =
         pic:"images/samir_nobg.png",
 
         wepName:"Supermagnetism Double Star",
-        wepImg:"images/wep_samir.png",
+        wepImg:"images/wep/samir.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
@@ -115,7 +115,7 @@ var coco =
         pic:"images/coco_nobg.png",
 
         wepName:"Zero Pointer",
-        wepImg:"images/wep_coco.png",
+        wepImg:"images/wep/coco.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_support.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
@@ -190,7 +190,7 @@ var king =
         pic:"images/king_nobg.png",
 
         wepName:"Black Crow Scythe",
-        wepImg:"images/wep_king.png",
+        wepImg:"images/wep/king.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
@@ -265,7 +265,7 @@ var shiro =
         pic:"images/shiro_nobg.png",
 
         wepName:"Ring Blade of the Sea",
-        wepImg:"images/wep_shiro.png",
+        wepImg:"images/wep/shiro.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
@@ -340,7 +340,7 @@ var cobalt =
         pic:"images/cobalt_nobg.png",
 
         wepName:"Blazing Revolver",
-        wepImg:"images/wep_cobalt.png",
+        wepImg:"images/wep/cobalt.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
@@ -414,7 +414,7 @@ var claudia =
         pic:"images/claudia_nobg.png",
 
         wepName:"Red Lotus Blade",
-        wepImg:"images/wep_claudia.png",
+        wepImg:"images/wep/claudia.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
@@ -492,7 +492,7 @@ var baiyuekui =
         pic:"images/baiyuekui_nobg.png", 
         
         wepName:"Eighth Consciousness", //Alaya Vijnana "Base [of] Consciousness"
-        wepImg:"images/wep_baiyuekui.png",
+        wepImg:"images/wep/baiyuekui.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).<br>Exclusive Effect: When entering combat, turn on Battle Spirit and increase your final damage by 15%. and your cellular aging is accelerated (reducing your current life by 1% every 5 seconds), which clears when you leave combat [the effect of switching weapons disappears]. If your life drops below 50%, cellular aging stops and the Battle Intent booster effect remains (the effect of switching weapons disappears).",
@@ -567,7 +567,7 @@ var meryl =
         pic:"images/meryl_nobg.png",
 
         wepName:"Rose's Edge",
-        wepImg:"images/wep_meryl.png",
+        wepImg:"images/wep/meryl.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
@@ -637,7 +637,7 @@ var hane =
         pic:"images/hane_nobg.png",
 
         wepName:"Ice Wind Vector",
-        wepImg:"images/wep_hane.png",
+        wepImg:"images/wep/hane.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
@@ -712,7 +712,7 @@ var huma =
         pic:"images/huma_nobg.png",
 
         wepName:"V2 Meltdown Shield",
-        wepImg:"images/wep_huma.png",
+        wepImg:"images/wep/huma.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_tank.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
@@ -790,7 +790,7 @@ var karasuma =
         pic:"images/karasuma_nobg.png",
 
         wepName:"Lightning Blades",
-        wepImg:"images/wep_karasuma.png",
+        wepImg:"images/wep/karasuma.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
@@ -865,7 +865,7 @@ var zero =
         pic:"images/zero_nobg.png",
 
         wepName:"Veto Cube",
-        wepImg:"images/wep_zero.png",
+        wepImg:"images/wep/zero.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_support.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
@@ -935,7 +935,7 @@ var bailing =
         pic:"images/bailing_nobg.png",
 
         wepName:"Nightbird's Feather",
-        wepImg:"images/wep_bailing.png",
+        wepImg:"images/wep/bailing.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (100% x ATK) damage.",
@@ -1011,7 +1011,7 @@ var hilda =
         pic:"images/hilda_nobg.png",
 
         wepName:"The Terminator",
-        wepImg:"images/wep_hilda.png",
+        wepImg:"images/wep/hilda.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"The next attack freezes the enemy for 2 seconds when the weapon is fully charged and causes frostbite for 6 seconds, and deals 111.00%*attack damage when the freeze breaks.The target's weapon recharge speed will be reduced by 50% during frostbite.",
@@ -1086,7 +1086,7 @@ var manaka =
         pic:"images/manaka_nobg.png",
 
         wepName:"Thunderbolt",
-        wepImg:"images/wep_manaka.png",
+        wepImg:"images/wep/manaka.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_dps.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deals 106.00%* attack damage, They cannot gain any buffs for 6 seconds. (Also applies electro charged for 6 seconds)",
@@ -1163,7 +1163,7 @@ var peppa =
         pic:"images/peppa_nobg.png",
 
         wepName:"Sceptre of the Stigmata",
-        wepImg:"images/wep_peppa.png",
+        wepImg:"images/wep/peppa.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_support.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deals 106.00%* attack damage, They cannot gain any buffs for 6 seconds. (Also applies electro charged for 6 seconds)",
@@ -1240,7 +1240,7 @@ var xi =
         pic:"images/xi_nobg.png",
 
         wepName:"Initial Strike",
-        wepImg:"images/wep_xi.png",
+        wepImg:"images/wep/xi.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
         wepEffect:"The next attack freezes the enemy for 2 seconds when the weapon is fully charged and causes frostbite for 6 seconds, and deals 111.00%*attack damage when the freeze breaks.The target's weapon recharge speed will be reduced by 50% during frostbite.",

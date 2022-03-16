@@ -1,27 +1,33 @@
+// TO DO
+// Food, Gadgets, Mounts
+// About
+// World map with passcodes, world bosses (and their drops)
+// Joint op day-of-the-week dungeon rewards
+// Shield break and energy rechard tier should change with the corresponding values
+
+
 jQuery(document).ready(function ($){
     // toweroffantasy.info
     // tof.wiki
-    let mimic = null;
+    var mimic = null;
     
     $(".mimic-button").click(function(){
         
         
         
-        if ($(this).is("#btn-samir")) { mimic = samir; }
-        else if ($(this).is("#btn-coco")) { mimic = coco; }
-        else if ($(this).is("#btn-king")) { mimic = king; }
-        else if ($(this).is("#btn-shiro")) { mimic = shiro; }
-        else if ($(this).is("#btn-cobalt")) { mimic = cobalt; }
-        else if ($(this).is("#btn-claudia")) { mimic = claudia; }
-        else if ($(this).is("#btn-baiyuekui")) { mimic = baiyuekui; }
-        else if ($(this).is("#btn-meryl")) { mimic = meryl; }
-        else if ($(this).is("#btn-huma")) { mimic = huma; }
-        else if ($(this).is("#btn-hane")) { mimic = hane; }
-        else if ($(this).is("#btn-karasuma")) { mimic = karasuma; }
-        else if ($(this).is("#btn-zero")) { mimic = zero; }
-        /* 
-        $("#mimic-info").toggleClass("showing");
-        $("#mimic-info").toggleClass("hidden"); */
+        if ($(this).children().is("#btn-samir")) { mimic = samir; }
+        else if ($(this).children().is("#btn-coco")) { mimic = coco; }
+        else if ($(this).children().is("#btn-king")) { mimic = king; }
+        else if ($(this).children().is("#btn-shiro")) { mimic = shiro; }
+        else if ($(this).children().is("#btn-cobalt")) { mimic = cobalt; }
+        else if ($(this).children().is("#btn-claudia")) { mimic = claudia; }
+        else if ($(this).children().is("#btn-baiyuekui")) { mimic = baiyuekui; }
+        else if ($(this).children().is("#btn-meryl")) { mimic = meryl; }
+        else if ($(this).children().is("#btn-huma")) { mimic = huma; }
+        else if ($(this).children().is("#btn-hane")) { mimic = hane; }
+        else if ($(this).children().is("#btn-karasuma")) { mimic = karasuma; }
+        else if ($(this).children().is("#btn-zero")) { mimic = zero; }
+
         $("#mimic-name").html(mimic.name);
         $("#wep-name").html(mimic.wepName);
         $("#wep-type-img").attr('src',mimic.resoImg);
@@ -55,28 +61,6 @@ jQuery(document).ready(function ($){
         $("#banner-character").attr('src',mimic.pic);
         
     });
-    /*
-    $(".content-tab-1").click(function(){
-        
-        if ($(this).is("#star-1")) {
-            $("#awakening-effects").html(mimic.awakening[0]);
-        }
-        else if ($(this).is("#star-2")) {
-            $("#awakening-effects").html(mimic.awakening[1]);
-        }
-        else if ($(this).is("#star-3")) {
-            $("#awakening-effects").html(mimic.awakening[2]);
-        }
-        else if ($(this).is("#star-4")) {
-            $("#awakening-effects").html(mimic.awakening[3]);
-        }
-        else if ($(this).is("#star-5")) {
-            $("#awakening-effects").html(mimic.awakening[4]);
-        }
-        else if ($(this).is("#star-6")) {
-            $("#awakening-effects").html(mimic.awakening[5]);
-        }
-        
-    }); */
+    
     
 });

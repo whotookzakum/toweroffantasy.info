@@ -1,365 +1,49 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="scripts/data.js"></script>
-        <script type="text/javascript" src="scripts/main.js"></script>
-    </head>
-    <body>
-        
-        <div id="navigation">
-            <button id="btn-samir" class="mimic-button"></button>
-            <button id="btn-coco" class="mimic-button"></button>
-            <button id="btn-king" class="mimic-button"></button>
-            <button id="btn-shiro" class="mimic-button"></button>
-            <button id="btn-cobalt" class="mimic-button"></button>
-            <button id="btn-claudia" class="mimic-button"></button>
-            <button id="btn-baiyuekui" class="mimic-button"></button>
-            <button id="btn-meryl" class="mimic-button"></button>
-            <button id="btn-huma" class="mimic-button"></button>
-            <button id="btn-hane" class="mimic-button"></button>
-            <button id="btn-karasuma" class="mimic-button"></button>
-            <button id="btn-zero" class="mimic-button"></button>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome (CDN) -->
+    <script src="https://kit.fontawesome.com/285bd2cf5d.js" crossorigin="anonymous"></script>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title></title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark nav-bg flex-sm-nowrap flex-wrap p-0 fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand position-absolute" href="#">Tower of Fantasy Index</a>
+            <div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="navbar5">
+                <ul class="navbar-nav mx-auto" id="bs-override">
+                    <li class="nav-item p-3 active">
+                        <a class="nav-link" href="mimics.html"><i class="fa-solid fa-user"></i> Mimics</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-hammer"></i> Gadgets</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-carrot"></i> Food</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-info-circle"></i> About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        
-        <div id="mimic-info" class="showing">
-            
-            <!-- Header pic -->
-            <div style="height: 167px; position: relative; z-index: 3; overflow: hidden;">
-                <img src="images/header_bg2.png" style="position: absolute; left: 0; z-index; 2;">
-                <img id="banner-character" src="images/samir_nobg.png" style="position: absolute; z-index: 5; left: 29%; top: -52%; transform: scale(0.8)">
-                <div class="red-triangle" style="position: absolute; z-index: 8; bottom: 0%; left: 41%;">&nbsp;</div>
-                <div class="red-triangle" style="position: absolute; z-index: 8; bottom: 0%; left: 52.5%;">&nbsp;</div>
-            </div>
-            
-            <!-- Mimic name -->
-            <div class="triangle-topright">&nbsp;</div><h3 id="mimic-name" class="section-header">Name</h3><div class="triangle-topleft">&nbsp;</div>
-            
-            <!-- Basic Info: Picture, Characteristics, Traits -->
-            <div id="mimic-basic-info">
+    </nav>
 
-                <!-- Headshot and Weapon basic info -->
-                <div class="left" style="width: 450px; margin-bottom: 40px; margin-left: 62px; margin-right: 31px; background: #111111;">
-
-
-                    <img id="mimic-pic" src="images/samir_nobg.png" style="display: block; margin: auto;">
-
-                    <h3 class="section-header">WEAPON INFO</h3>
-
-                    <!-- Basic weapon info -->
-                    <div id="wep-basic-info" style="text-align: left;">
-
-                        <!-- Weapon image -->
-                        <img id="wep-img" src="images/wep_samir.png" style="display: inline-block; width: 112px; padding: 10px; vertical-align: middle;">
-
-                        <div id="wep-basic-info-right" style="display:inline-block; width: 60%; vertical-align: middle">
-
-                            <!-- Weapon name -->
-                            <p id="wep-name">Weapon Name</p>
-
-                            <!-- Resonance and element -->
-                            <img id="wep-type-img" src="images/reso_dps.png">
-                            <img id="wep-element-img" src="images/ele_electric.png">
-
-
-                            <!-- Shield break & energy charge -->
-                            <div style="width: 90%; margin-top: 0px;">
-                                <h4 style="display: inline-block; margin: 0 0 4px 0;"><span class="wep-sub-tier" style="color: #ffdb85; font-family: 'Roboto';">S</span>Shield Break: </h4>
-                                <p id="shield-break">11.11</p>
-                                <h4 style="display: inline-block; margin: 0 0 4px 0;"><span class="wep-sub-tier" style="color: #d1b9eb; font-family: 'Roboto';">A</span>Energy Charge: </h4>
-                                <p id="energy-charge">11.11</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Characteristics -->
-                <div class="right" style="width: 450px; height: 392px; margin-right: 62px; margin-left: 31px; background: #111111; text-transform: uppercase">
-                    
-                    <h3 class="section-header" style="background:inherit; border-bottom: 2px solid #c8c8c8;">SUPERMAGNETISM DOUBLE STAR</h3>
-
-                    <!-- Left -->
-                    <div class="left" style="width: 30%; text-align: left; border-right: 0px solid #c8c8c8; padding: 20px 0px 20px 20px; height:320px; font-weight: bold">
-                        <p class="trait-title">GENDER<br></p>
-                        <p id="mimic-gender">Male</p>
-                        <p class="trait-title">HEIGHT<br></p>
-                        <p id="mimic-height">190 cm</p>
-                        <p class="trait-title">BIRTHPLACE<br></p>
-                        <p id="mimic-birthplace">Male</p>
-                        <p class="trait-title">HOROSCOPE<br></p>
-                        <p id="mimic-horoscope">Male</p>
-                        <p class="trait-title">BIRTHDAY<br></p>
-                        <p id="mimic-birthday">Male</p>
-                    </div>
-
-                    <!-- Radar chart -->
-                    <div class="right" style="width: 65%; border-left: 0px solid #c8c8c8; height: 360px; text-align: left; font-weight: bold">
-                        <p style="margin-bottom: 3px; padding-top: 20px;">PERSONALITY<br></p>
-                        <p style="margin-bottom: 15px; font-size: 1.2rem">Traits</p>
-                        <img src="images/samir-traits.png" style="width: 100%">
-                    </div>
-
-                    <h3 class="section-header" style="width: 444px">BREAKTHROUGH MATERIALS</h3>
-                    
-                    <div style="height: 132px; display: block; background: inherit;">
-                        
-                    </div>
-
-                </div>
-
-                
-                
-            </div>
-
-            <!-- Weapon Info -->
-            <div id="wep-info" style="margin-bottom: 40px;">
-
-                <div style="width: 450px; background: #111111; display: inline-block; vertical-align: top; margin: 0 31px 0 62px;">
-
-                    <h3 class="section-header">ELEMENTAL EFFECT</h3>
-                    <p id="wep-effect" style="padding: 15px">Weapon effect goes here</p>
-
-                </div><!--
-
-                --><div style="width: 450px; background: #111111; display: inline-block; vertical-align: top; margin: 0 62px 0 31px;">
-                
-                    <h3 class="section-header">ATTACK COMBOS</h3>
-                
-                </div>
-                
-            </div>
-            
-            <div style="width:962px; margin: 0 auto 40px auto; background #111111">
-                
-                <h3 class="section-header">AWAKENING EFFECTS</h3>
-                <table border="0" cellspacing="0" cellpadding="15px" style="width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left">
-                        
-                        <tr>
-                            <td class="content-tab-3">1 ★</td>
-                            <td id="star-1">Star 1 effects</td>
-                        </tr>
-
-                        <tr>
-                            <td class="content-tab-3">2 ★</td>
-                            <td id="star-2">Star 2 effects</td>
-                        </tr>
-
-                        <tr>
-                            <td class="content-tab-3">3 ★</td>
-                            <td id="star-3">Star 3 effects</td>
-                        </tr>
-
-                        <tr>
-                            <td class="content-tab-3">4 ★</td>
-                            <td id="star-4">Star 4 effects</td>
-                        </tr>
-
-                        <tr>
-                            <td class="content-tab-3">5 ★</td>
-                            <td id="star-5">Star 5 effects</td>
-                        </tr>
-
-                        <tr>
-                            <td class="content-tab-3">6 ★</td>
-                            <td id="star-6">Star 6 effects</td>
-                        </tr>
-
-                    </table>
-            
-            </div>
-            
-            <!-- Chips -->
-            <div id="chip-info" style="margin-bottom: 40px;">
-
-                
-                <div style="width: 450px; background: #111111; display: inline-block; vertical-align: top; margin: 0 31px 0 62px;">
-                    <h3 class="section-header" style="background: #c28400">2 SET EFFECT</h3>
-                    <p id="chip-2" style="padding: 15px;">Chip Effect 2 piece</p>
-                </div><!--
-                --><div style="width: 450px; background: #111111; display: inline-block; margin: 0 62px 0 31px;">
-                    <h3 class="section-header" style="background: #c28400">4 SET EFFECT</h3>
-                    <p id="chip-4" style="padding: 15px;">Chip Effect 4 piece</p>
-                </div>
-                
-                
-            </div>
-
-            <!-- Affinity -->
-            <div id="affinity-info" style="width: 962px; margin: 0 auto 40px auto; background: #111111">
-                
-                <h3 class="section-header" style="background: #0084c2">AFFINITY CHECKPOINTS</h3>
-                
-                <table>
-                    <tr>
-                        <td style="transform: scale(0.8);"><img src="images/affinity/Checkpoint_1200.png" alt="1200 Affinity Bonus"></td>
-                        <td id="affinity-1200" style="text-align: left; padding: 15px;">Goodbye</td>
-                    </tr>
-                    <tr>
-                        <td style="transform: scale(0.8)"><img src="images/affinity/Checkpoint_4000.png"  alt="4000 Affinity Bonus"></td> 
-                        <td id="affinity-4000" style="text-align: left; padding: 15px;">Goodbye</td>
-                    </tr>
-                </table>
-                
-
-            </div>
-            
-            <!-- Item Preferences -->
-            <div style="width: 962px; margin: 0 auto 40px auto;">
-                
-            </div>
-            
-        </div>
-        
-        <!-- DPS loadout guide by Cytus#4151 -->
-        <div id="dps-loadout-guide" class="hidden">
-            <table>
-                <tr>
-                    <th>Shield Break</th>
-                    <th>Main DPS</th>
-                    <th>Support DPS</th>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Weapons that deal the highest damage to shields. Necessary as most bosses and minibosses have shields that significantly reduce damage taken. Bosses will also use powerful attacks if their shield is not broken in time. These weapons tend to unlock a crucial shield break effect at 1★ or 3★.</p>
-                    </td>
-                    <td>
-                        <p>Weapons with the highest standing DPS to unshielded targets; the weapon you want to be on most of the time. These weapons tend to have low damage to shields and average charge rate.</p>
-                    </td>
-                    <td>
-                        <p>Weapons that increase your overall DPS through damage buffs and other means. These weapons are best used as "quickswap" weapon, by rotating frequently to throw out their burst and refresh their buffs.</p>
-                    </td>
-                </tr>
-                
-                
-                <!-- Row 1 -->
-                <tr>
-                    <td>
-                        <div>
-                            <img src="images/wep_baiyuekui.png">
-                            <p class="loadout-pro">Ridiculously high burst<br>Can be paired with 2 support weapons</p>
-                            <p class="loadout-con">Active skill can miss<br>Shield break effect on 3★</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_king.png">
-                            <p class="loadout-pro">High DOT on shield break<br>Quick burst</p>
-                            <p class="loadout-con">Easily interrupted</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="images/wep_samir.png">
-                            <p class="loadout-pro">High DPS and charge rate<br>Safe AoE air attack</p>
-                            <p class="loadout-con">Need animation cancelling (~) to use ground attacks effectively</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_cobalt.png">
-                            <p class="loadout-pro">All attacks AoE<br>%HP DOT<br>Powerful active skill</p>
-                            <p class="loadout-con">Reliant on high ★s or Cobalt chip set</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="images/wep_hane.png">
-                            <p class="loadout-pro">High charge rate<br>24-40% all damage buff</p>
-                            <p class="loadout-con">Reliant on dash attacks</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_claudia.png">
-                            <p class="loadout-pro">24% all damage buff, 10% increase physical damage on target, 20% skill damage buff<br>Good charge rate</p>
-                        </div>
-                    </td>
-                </tr>
-                    
-                <!-- Row 2 -->
-                <tr>
-                    <td>
-                        <div>
-                            <img src="images/wep_meryl.png">
-                            <p class="loadout-pro">Highest shield breaking power<br>Immune to interrupts</p>
-                            <p class="loadout-con">Moves slowly<br>Lacks damage effects</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_shiro.png">
-                            <p class="loadout-pro">Powerful active skills<br>Resets CDs on shield break</p>
-                            <p class="loadout-con">Useless if enemy moves<br>Bad switch skill<br>Weak without 3★</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="images/wep_karasuma.png">
-                            <p class="loadout-pro">Backstabs and execute<br>Built in crit buffs</p>
-                            <p class="loadout-con">High skill floor<br>Weak without ★s</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_claudia.png">
-                            <p class="loadout-con">Multiple self buffs<br>Good charge rate</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="images/wep_shiro.png">
-                            <p class="loadout-pro">Powerful active skill<br>Resets CDs on shield break<br>Guaranteed crits</p>
-                            <p class="loadout-con">Useless if enemy moves<br>Requires 3★ or 6★</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_baiyuekui.png">
-                            <p class="loadout-pro">Synergize with 3★ Samir<br>Synergize with Baiyuekui mimic</p>
-                            <p class="loadout-con">Niche</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_karasuma.png">
-                        </div>
-                    </td>
-                </tr>
-                
-                <!-- Row 3 -->
-                <tr>
-                    <td>
-                        <div>
-                            <img src="images/wep_huma.png">
-                            <p class="loadout-pro">Decent shield break<br>Relatively high charge rate</p>
-                            <p class="loadout-con">No shield break effect</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_manaka.png">
-                            <p class="loadout-pro">Usable SR</p>
-                            <p class="loadout-con">Last option</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="images/wep_hane.png">
-                            <p class="loadout-pro">High charge rate<br>Shotgun triple arrows</p>
-                            <p class="loadout-con">Reliant on dash attacks<br>Basic attacks are blocked by other players</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_xi.png">
-                            <p class="loadout-pro">Good DPS for SR<br>CC immunity<br>Infinite dash attacks</p>
-                            <p class="loadout-con">Slow movement<br>Not good enough to beat SSR</p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="images/wep_hilda.png">
-                            <p class="loadout-pro">Longest range<br>Huge quickswap buff (+60% attack for 10s)</p>
-                            <p class="loadout-con">Only works with ice weapons</p>
-                        </div>
-                        <div>
-                            <img src="images/wep_bailing.png">
-                            <p class="loadout-pro">SR version bow<br>Applies wounded debuff on dash attacks (+20% damage)</p>
-                            <p class="loadout-con">Probably not worth investing resources in</p>
-                        </div>
-                    </td>
-                </tr>
-                
-            </table>
-            
-        </div>
-        
-    </body>
-    
-</html>
+</body></html>
