@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($){
-    
+    // toweroffantasy.info
+    // tof.wiki
     let mimic = null;
     
     $(".mimic-button").click(function(){
