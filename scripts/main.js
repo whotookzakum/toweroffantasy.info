@@ -19,14 +19,17 @@ jQuery(document).ready(function ($){
         else if ($(this).children().is("#btn-coco")) { mimic = coco; }
         else if ($(this).children().is("#btn-king")) { mimic = king; }
         else if ($(this).children().is("#btn-shiro")) { mimic = shiro; }
-        else if ($(this).children().is("#btn-cobalt")) { mimic = cobalt; }
-        else if ($(this).children().is("#btn-claudia")) { mimic = claudia; }
-        else if ($(this).children().is("#btn-baiyuekui")) { mimic = baiyuekui; }
         else if ($(this).children().is("#btn-meryl")) { mimic = meryl; }
         else if ($(this).children().is("#btn-huma")) { mimic = huma; }
         else if ($(this).children().is("#btn-hane")) { mimic = hane; }
         else if ($(this).children().is("#btn-karasuma")) { mimic = karasuma; }
         else if ($(this).children().is("#btn-zero")) { mimic = zero; }
+        else if ($(this).children().is("#btn-claudia")) { mimic = claudia; }
+        else if ($(this).children().is("#btn-cobalt")) { mimic = cobalt; }
+        else if ($(this).children().is("#btn-baiyuekui")) { mimic = baiyuekui; }
+        else if ($(this).children().is("#btn-marc")) { mimic = marc; }
+        else if ($(this).children().is("#btn-nemesis")) { mimic = nemesis; }
+        else if ($(this).children().is("#btn-frigg")) { mimic = frigg; }
 
         $("#mimic-name").html(mimic.name);
         $("#wep-name").html(mimic.wepName);

@@ -929,6 +929,206 @@ var zero =
         ]
     }
 
+var marc = 
+    {
+        name:"Marc",
+        pic:"images/marc_nobg.png",
+
+        wepName:"Breaking Dawn",
+        wepImg:"images/wep/marc.png",
+        eleImg:"images/ele_physical.png",
+        resoImg:"images/reso_tank.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.<br>In group status (Guardian): When releasing Re-entry, Form Switch or Full Shot, it will damage a friendly player with the lowest life for 60% for 10 seconds, and restore 10% of lost blood after the damage. The effect will not be removed and cannot be triggered again until the end of time. When not in a team (increase): 50% physical damage reduction in Heavy Form. Heavy Dimensional Shield: 1 point of Heavy Dimensional Energy is awarded for Heavy Dimensional Punch/Double Slash/Impact Slash hits. Converts 20% of your current life into 1.5 times your maximum life (up to 1.5 times your maximum life, healing is reduced by 50%), shield lasts 15 seconds, cannot be gained if you are below 10% of your life. At the end of the shield, 66.7% of the remaining shield value is converted to life, and 2 points of energy are gained on a hit to a weakened target. (Heavy Shield) is gained by converting other life shield values into (Heavy Shield) and is immune to life shield additions.",
+        awakening:[
+            // 1 star
+            "Immediately gains [Heavy Shield] when releasing Heavy Dimensional Entry, Form Switch or Full Shot",
+            // 2 star
+            "+16% base health increase.",
+            // 3 star
+            "1 level of 35% final damage boost at the end of [Heavy Shield] and when it breaks and refreshes. Lasts for 20 seconds, does not stack ",
+            // 4 star
+            "+32% base health increase.",
+            // 5 star
+            "[Heavy Shield] deals (160%*Current Attack + 5%*Loss of Life) damage to nearby targets at the end of [Heavy Shield] when it breaks and refreshes, and gains 50 weapon charge points on hit. ",
+            // 6 star
+            "Physical resistance is increased by 1x during [Heavy Shield] with a Heavily Wounded effect, and [Heavy Shield] is also obtained when another weapon's skill hits the target during [Heavy Shield] or when using a combo."
+        ],
+        energyCharge:"12.00",
+        shieldBreak:"9.00",
+        materials:[physical,red,black],
+        wepBaseStats: [attack, defense, health],
+        
+        chipImg:"images/chip_marc.png",
+        chipEffect:[
+            // 2 set
+            "Adds a life shield of 15% of your current HP to all teammates after  attacking an enemy for 15 seconds, resetting 10 seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by 11%/13%/15%/17% for 15 seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level. ",
+            // 4 set
+            "Increases attack power by 6%/7.5%/9%/11.5% and teammates attack power by 3%/3.5%/4.5%/5.75% for 15 seconds when life shield is granted, stacks up to 3 levels. This will effect is also active in the background, with multiple sets of equipment taking effect up to the maximum star level."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar "Marc"',
+            // 600 affinity
+            "Unlock communication [Doomsday Hunters]",
+            // 1200 affininty
+            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'revived' and taunts the surrounding enemies for 5 seconds. While 'revived', you do not take damage, but you cannot perform actions, while recovering <span class='passive-value'>1%</span> of his maximum life every second and healing received is increased by <span class='passive-value'>20%</span>. This effect has a cooldown of <span class='passive-value'>10</span> minutes. Damage from Stinging Eel and Ground Roar is reduced by 50%.",
+            // 2000 affinity
+            "Unlock communication [Reality and the Law]",
+            // 3000 affinity
+            "Unlock communication [Thinking about the present]",
+            // 4000 affinity
+            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'Nirvana' and taunts the surrounding enemies for 5 seconds. While in 'Nirvana', you do not take damage, but you cannot perform actions, while recovering <span class='passive-value'>2%</span> of his maximum life every second and healing received is increased by <span class='passive-value'>50%</span>. This effect has a cooldown of <span class='passive-value'>5</span> minutes. Damage from Stinging Eel and Ground Roar is reduced by 50%."
+        ],
+        traits: ['Male','192 cm','???','???','???'],
+        gifts: [
+            
+            kitchenware, '+60',
+            present, '+60',
+            pearl, '+60',
+            bearFigure, '+60',
+            
+            toolbox, '+30',
+            
+            dumbbells, '+15',
+        ]
+    }
+
+var nemesis = 
+    {
+        name:"Nemesis",
+        pic:"images/nemesis_nobg.png",
+
+        wepName:"Enlightenment",
+        wepImg:"images/wep/nemesis.png",
+        eleImg:"images/ele_electric.png",
+        resoImg:"images/reso_support.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).<br>Lightning resonance; triggered by equipping 2 or more lightning weapons, boosts lightning attack by 20% and lightning resistance by 40%, also effective on the backstage.",
+        awakening:[
+            // 1 star
+            "When releasing the weapon skill or QTE skill, creates 1 electrode and immediately gains 5 levels of healing chain reinforcement, and releases a healing chain that heals nearby friendly units (= 135% of the Pathfinder's attack power). The healing chain heals nearby units (= 135%*attack).",
+            // 2 star
+            "+16% base attack on the current weapon.",
+            // 3 star
+            "The electrode releases a ring every 6 seconds, dealing up to 389%*Attack of ranged damage.",
+            // 4 star
+            "+32% base attack on the current weapon.",
+            // 5 star
+            "After releasing the weapon skill, it increases its own lightning attack by (10+its own electrode number*10)% for 25 seconds.",
+            // 6 star
+            "Up to 2 electrodes are present at the same time. When a new electrode appears, it replaces the one at a greater distance from you."
+        ],
+        energyCharge:"8.00",
+        shieldBreak:"6.00",
+        materials:[lightning,green,blue],
+        wepBaseStats: [attack, health, crit],
+        
+        chipImg:"images/chip_nemesis.png",
+        chipEffect:[
+            // 2 set
+            "When healing a target, the healed target's lightning attack power is increased by 15%/18%/21%/25% for 20 seconds, non-stackable, only the highest level is in effect when repeated.",
+            // 4 set
+            "When healing yourself or your own electrodes, the healed target gains a Lightning Strike which gives the next attack within 30 seconds an extra damage boost of 300%/375%/450%/525% lightning damage to the first target hit. The Lightning damage (half the damage caused by  electrodes), can only be casted with an interval of not less than 10 seconds. The Lightning Strike mechanism is not stackable, and only the highest level is in effect when repeatedly acquired."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar "Nemesis"',
+            // 600 affinity
+            "Unlock communication [New Life and Symbiosis]",
+            // 1200 affininty
+            "<span class='passive-value'>Unlock Mimic Passive</span><br>When an electrode is summoned, all enemies within 30 metres of the electrode take <span class='passive-value'>60%</span> lightning damage and all allies (including yourself) are healed for <span class='passive-value'>120%</span> of their attack power.",
+            // 2000 affinity
+            "Unlock communication [Experimental Operation]",
+            // 3000 affinity
+            "Unlock communication [Ahead of the Righteous Eye]",
+            // 4000 affinity
+            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When an electrode is summoned, all enemies within 30 metres of the electrode take <span class='passive-value'>100%</span> lightning damage and all allies (including yourself) are healed for <span class='passive-value'>200%</span> of their attack power."
+        ],
+        traits: ['Female','165 cm','???','Gemini','25 May'],
+        gifts: [
+            peppaFigure, '+80',
+            
+            tataCards, '+60',
+            present, '+60',
+            snowglobe, '+60',
+            foxFigure, '+60',
+            catFigure, '+60',
+            
+            tataPlush, '+30',
+            suit, '+30',
+            catPlush, '+30',
+            perfume, '+30',
+            spiderFigure, '+30',
+            elfFigure, '+30',
+            robotFigure, '+30',
+            
+            flowers, '+15',
+            photoAlbum, '+15',
+            plant, '+15',
+            scarf, '+15',
+            pinwheel, '+15',
+        ]
+    }
+
+var frigg = 
+    {
+        name:"Frigg",
+        pic:"images/frigg_nobg.png",
+
+        wepName:"Balmonk",
+        wepImg:"images/wep/frigg.png",
+        eleImg:"images/ele_ice.png",
+        resoImg:"images/reso_dps.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.<br>Exclusive: After releasing the skill “Fimbulwinter” a large area of ice is formed, inside this area dodges are not consumed up to 3 times? 15% damage increase while in the ice domain. Domain lasts 25s and using the skill again will replace the old one.",
+        awakening:[
+            // 1 star
+            "deal 550% per s? to enemies in the ice domain. Any ice elemental damage you deal you gain 1 point up to 10. Once the ice domain has expired deal pointsx95% damage to every enemy in the domain. Using the skill “Fimbulwinter” will also trigger this ice domain explosion. Lose 1 point for every 3s you’re not in the domain",
+            // 2 star
+            "+16% base attack on the current weapon.",
+            // 3 star
+            "increase point max value to 15. Using your QTE will cause bonus damage to enemies (points+5)25%attack damage",
+            // 4 star
+            "+32% base attack on the current weapon.",
+            // 5 star
+            "Breaking a shield will freeze a target for 2s and cause points value35%ice atk point of damage. If target cannot be frozen deal double damage instead.",
+            // 6 star
+            "Upper limit of points to 25. While in ice domain gain an extra 25% attack damage. Switching to other weapons will cause this effect to disappear."
+        ],
+        energyCharge:"8.00",
+        shieldBreak:"8.00",
+        materials:[],
+        wepBaseStats: [attack, health, crit],
+        
+        chipImg:"images/chip_frigg.png",
+        chipEffect:[
+            // 2 set
+            "",
+            // 4 set
+            ""
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar "Frigg"',
+            // 600 affinity
+            "Unlock communication []",
+            // 1200 affininty
+            "<span class='passive-value'>Unlock Mimic Passive</span><br>",
+            // 2000 affinity
+            "Unlock communication []",
+            // 3000 affinity
+            "Unlock communication []",
+            // 4000 affinity
+            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When entering battle gain 2.4% ice attribute damage every 3 seconds up to 10 stacks, lasts for 5 seconds. Immune to CC effects in the ice domain."
+        ],
+        traits: ['Female','','','',''],
+        gifts: [
+        ]
+    }
+
+
+
 var bailing = 
     {
         name:"Bai Ling",
@@ -1311,6 +1511,11 @@ var xi =
         ]
 }
 
+
+
+
+
+
 var gadgets = [
     
     // SSR Giant arms
@@ -1359,7 +1564,7 @@ var gadgets = [
             // 1 star
             "Immune to fire damage and crowd control when driving the mech.",
             // 2 star
-            "Gains new skill: 'Barrage': Fires 6 barrages at the target, dealing 155.2%*attack damage per hit. ",
+            "Gains new skill: 'Barrage': Fires 6 barrages at the target, dealing 155.2%*attack damage per hit.",
             // 3 star
             "Add Burning effect when driving a mech.",
             // 4 star
@@ -1392,14 +1597,14 @@ var gadgets = [
     // SSR Confined Space
     {
         name: "Confined Space",
-        description: "Creates a confined space with a radius of 7m for 10 seconds, with constant energy fluctuations on the ground, dealing 73.4%*Attack of the current weapon elemental damage per second to ground targets; if the target touches the edge of the area, a strong control stun effect is applied for 2 seconds, with a cooldown of 240 seconds. ",
+        description: "Creates a confined space with a radius of 7m for 10 seconds, with constant energy fluctuations on the ground, dealing 73.4%*Attack of the current weapon elemental damage per second to ground targets; if the target touches the edge of the area, a strong control stun effect is applied for 2 seconds, with a cooldown of 240 seconds.",
         awakening: [
             // 1 star
             "Stun extended to 3 seconds, cooldown reduced to 180 seconds.",
             // 2 star
-            "Energy Wave deals an additional 30 % more damage.",
+            "Energy Wave deals an additional 30% more damage.",
             // 3 star
-            "Cooldown time reduced to 120 seconds. ",
+            "Cooldown time reduced to 120 seconds.",
             // 4 star
             "Increases physical damage by 2%, even when not in combat, but not in peak leagues",
             // 5 star
@@ -1449,7 +1654,7 @@ var gadgets = [
     // SSR Death Suppressor
     {
         name: "Death Suppressor",
-        description: "Unleashes a holographic projection based on yourself, which synchronises with the character's weapon attacks and deals 50% of the damage dealt by the character for 15 seconds, with a cooldown of 180 seconds.",
+        description: "Creates a space that lasts for 8 seconds, in which you have the effect of hegemony and you cannot go lower than 20% of your health regardless of any damage you take, with a cooldown time of 90 seconds. After 8 seconds in space, you cannot regain the same space effect for 45 seconds.",
         awakening: [
             // 1 star
             "After 8 seconds, you regain 15% of your health in the space.",
@@ -1682,7 +1887,7 @@ var gadgets = [
             // 1 star
             "Can be used while in cc (crowd controlled).",
             // 2 star
-            "Immune to crowd control for 5 seconds after use. ",
+            "Immune to crowd control for 5 seconds after use.",
             // 3 star
             "adds a 7-second magnetic bomb to the target after hitting it, which will detonate immediately after the target uses attack/dodge/skill, causing a 40% slow that will disappear after triggering.",
             // 4 star
