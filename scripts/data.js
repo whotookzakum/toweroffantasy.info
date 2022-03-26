@@ -1122,7 +1122,7 @@ var frigg =
             // 4000 affinity
             "<span class='passive-value'>Mimic Passive Upgrade</span><br>When entering battle gain 2.4% ice attribute damage every 3 seconds up to 10 stacks, lasts for 5 seconds. Immune to CC effects in the ice domain."
         ],
-        traits: ['Female','','','',''],
+        traits: ['Female','1 February','---','---','---'],
         gifts: [
         ]
     }
