@@ -199,8 +199,7 @@ p { margin: 0; }
 }
 .wep-tier-b { color: skyblue; }
 .wep-tier-a { color: #d1b9eb; }
-.wep-tier-s { color: #ffdb85; }
-.wep-tier-ss { color: #ffdb85; }
+.wep-tier-s, .wep-tier-ss { color: #ffdb85; }
 #energy-charge, #shield-break { font-weight: bold; }
 
 .passive-value {
@@ -214,5 +213,34 @@ p { margin: 0; }
     display: inline-block;
     margin: 5px;
 }
-.loadout-con { background: red; }
-.loadout-pro { background: green; }
+.guide-con { color: red; }
+.guide-pro { color: green; }
+
+.guide-header {
+    font-size: 2rem;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #111111;
+    border-bottom: 0px solid #555555;
+}
+.guide-header:hover {
+    color: inherit;
+    background-color: #222222;
+}
+.guide-header:active {
+    background-color: #222222;
+}
+
+.guide-header code {
+    color: purple;
+    font-size: 1.5rem;
+}
+#guide-2 .card-text {
+    font-size: 1.3rem;
+    text-align: left;
+}
+#guide-1 td {
+    color: lawngreen;
+    font-weight: bold;
+}
