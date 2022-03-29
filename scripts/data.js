@@ -65,8 +65,8 @@ var samir =
             // 6 star
             "1 second reduction in skill cooldown when triggering shock effects."
         ],
-        energyCharge:"10.70",
-        shieldBreak:"6.00",
+        energyCharge:["10.70","s"],
+        shieldBreak:["6.00","b"],
         materials:[lightning,red,black],
         wepBaseStats: [attack, health, crit],
         
@@ -92,7 +92,7 @@ var samir =
             // 4000 affinity
             '<span class="passive-value">Mimic Passive Upgrade</span><br>For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="passive-value">4%</span>, up to <span class="passive-value">5</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="passive-value">2</span> sec.'
         ],
-        traits: ['Female','171 cm','No record','Taurus','20 May'],
+        traits: ['Female','171 cm','???','Taurus','20 May'],
         gifts: [
             foxFigure,'+60', // pink fox
             psp,'+60', // psp
@@ -133,8 +133,8 @@ var coco =
             // 6 star
             "Heals all friendly units when the healing bee is summoned/disappears, for 100% of your attack power. All friendly units within 6 metres of the healing bee receive a 10% attack boost (does not stack)."
         ],
-        energyCharge:"12.50",
-        shieldBreak:"4.00",
+        energyCharge:["12.50","s"],
+        shieldBreak:["4.00","b"],
         materials:[ice, green, blue],
         wepBaseStats: [attack, defense, health],
         
@@ -208,8 +208,8 @@ var king =
             // 6 star
             "10% more damage for every target killed, up to 3 stacks, for 30 seconds."
         ],
-        energyCharge:"5.00",
-        shieldBreak:"12.50",
+        energyCharge:["5.00","b"],
+        shieldBreak:["12.50","s"],
         materials:[fire, green, blue],
         wepBaseStats: [attack, defense, health],
         
@@ -283,8 +283,8 @@ var shiro =
             // 6 star
             "When using Shiro Skill, the critical rate will become 100% for basic damage, lasts for 8 seconds."
         ],
-        energyCharge:"6.00",
-        shieldBreak:"10.00",
+        energyCharge:["6.00","b"],
+        shieldBreak:["10.00","a"],
         materials:[physical,green,black],
         wepBaseStats: [attack, health, crit],
         
@@ -358,8 +358,8 @@ var cobalt =
             // 6 star
             "The cooldown time of the Blast Grenade skill is reduced by 3 seconds after any weapon's Dodge attack hits the target. This ability has a 1.5 seconds cooldown time."
         ],
-        energyCharge:"10.00",
-        shieldBreak:"6.50",
+        energyCharge:["10.00","a"],
+        shieldBreak:["6.50","b"],
         materials:[fire, red, black],
         wepBaseStats: [attack, health, crit],
         
@@ -432,8 +432,8 @@ var claudia =
             // 6 star
             "Damage does not decrease after hitting with weapon skill (overrides resistance)"
         ],
-        energyCharge:"12.00",
-        shieldBreak:"7.50",
+        energyCharge:["12.00","s"],
+        shieldBreak:["7.50","a"],
         materials:[physical, red, blue],
         wepBaseStats: [attack, defense, health],
         
@@ -510,8 +510,8 @@ var baiyuekui =
             // 6 star
             "When in the range of the Force Field or matrix, you get a 7-second Battle Spirit effect that increases your final damage to 40% and stops cellular aging (the effect of switching weapons disappears)."
         ],
-        energyCharge:"8.00",
-        shieldBreak:"12.50",
+        energyCharge:["8.00","a"],
+        shieldBreak:["12.50","s"],
         materials:[lightning,green,blue],
         wepBaseStats: [attack, defense, health],
         
@@ -585,8 +585,8 @@ var meryl =
             // 6 star
             "When switching to this weapon, it gains an ice shield of 20% of your maximum health, which makes you immune to crowd control, and has a cooldown time for 60 seconds (lasts up to 10 seconds)."
         ],
-        energyCharge:"4.00",
-        shieldBreak:"12.00",
+        energyCharge:["4.00","b"],
+        shieldBreak:["12.00","s"],
         materials:[ice, red, black],
         wepBaseStats: [attack, defense, health],
         
@@ -612,7 +612,7 @@ var meryl =
             // 4000 affinity
             "<span class='passive-value'>Mimic Passive Upgrade</span><br>Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
         ],
-        traits: ['Female','170 cm','No record','Libra','10 October'],
+        traits: ['Female','170 cm','???','Libra','10 October'],
         gifts: [
             seal, '+80',
             
@@ -655,8 +655,8 @@ var hane =
             // 6 star
             "Sharp Arrow can be stacked to 5 levels. One arrow gains 3 levels immediately after hitting the target, and 5 levels if it hits the head."
         ],
-        energyCharge:"11.50",
-        shieldBreak:"4.00",
+        energyCharge:["11.50","s"],
+        shieldBreak:["4.00","b"],
         materials:[ice,red,blue],
         wepBaseStats: [attack, health, crit],
         
@@ -730,8 +730,8 @@ var huma =
             // 6 star
             "Enhances switching skills.<br>Shield Change Enhancement: skill increases damage by 60% and extends the range of the Flame Zone by 30%.<br>Axe Change Enhancement: damage taken within 5 seconds is converted into HP (Converts up to 15% MAX HP)"
         ],
-        energyCharge:"10.00",
-        shieldBreak:"10.00",
+        energyCharge:["10.00","a"],
+        shieldBreak:["10.00","a"],
         materials:[fire,green,blue],
         wepBaseStats: [attack, defense, health],
         
@@ -757,7 +757,7 @@ var huma =
             // 4000 affinity
             "<span class='passive-value'>Mimic Passive Upgrade</span><br>Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <span class='passive-value'>x0.6%</span> of your life."
         ],
-        traits: ['Female','167 cm','No record','Capricorn','12 Jan'],
+        traits: ['Female','167 cm','???','Capricorn','12 Jan'],
         gifts: [
             peppaFigure, '+80',
             
@@ -808,8 +808,8 @@ var karasuma =
             // 6 star
             "When releasing a skill, the target receives 20% more damage from the lightning element for 20 seconds."
         ],
-        energyCharge:"8.00",
-        shieldBreak:"6.00",
+        energyCharge:["8.00","a"],
+        shieldBreak:["6.00","b"],
         materials:[lightning, red, blue],
         wepBaseStats: [attack, health, crit],
         
@@ -883,8 +883,8 @@ var zero =
             // 6 star
             "When the skill is released, it adds the same number of healing and damage orbs to friendly units from the amount of orbs you have."
         ],
-        energyCharge:"13.00",
-        shieldBreak:"5.00",
+        energyCharge:["13.00","s"],
+        shieldBreak:["5.00","b"],
         materials:[fire,green,blue],
         wepBaseStats: [attack, defense, health],
         
@@ -953,8 +953,8 @@ var marc =
             // 6 star
             "Physical resistance is increased by 1x during [Heavy Shield] with a Heavily Wounded effect, and [Heavy Shield] is also obtained when another weapon's skill hits the target during [Heavy Shield] or when using a combo."
         ],
-        energyCharge:"12.00",
-        shieldBreak:"9.00",
+        energyCharge:["12.00","s"],
+        shieldBreak:["9.00","a"],
         materials:[physical,red,black],
         wepBaseStats: [attack, defense, health],
         
@@ -1018,8 +1018,8 @@ var nemesis =
             // 6 star
             "Up to 2 electrodes are present at the same time. When a new electrode appears, it replaces the one at a greater distance from you."
         ],
-        energyCharge:"8.00",
-        shieldBreak:"6.00",
+        energyCharge:["8.00","a"],
+        shieldBreak:["6.00","b"],
         materials:[lightning,green,blue],
         wepBaseStats: [attack, health, crit],
         
@@ -1095,8 +1095,8 @@ var frigg =
             // 6 star
             "Upper limit of points to 25. While in ice domain gain an extra 25% attack damage. Switching to other weapons will cause this effect to disappear."
         ],
-        energyCharge:"8.00",
-        shieldBreak:"8.00",
+        energyCharge:["8.00","a"],
+        shieldBreak:["8.00","a"],
         materials:[],
         wepBaseStats: [attack, health, crit],
         
@@ -1122,7 +1122,7 @@ var frigg =
             // 4000 affinity
             "<span class='passive-value'>Mimic Passive Upgrade</span><br>When entering battle gain 2.4% ice attribute damage every 3 seconds up to 10 stacks, lasts for 5 seconds. Immune to CC effects in the ice domain."
         ],
-        traits: ['Female','1 February','---','---','---'],
+        traits: ['Female','190 cm','???','Aquarius','1 February'],
         gifts: [
         ]
     }
@@ -1153,8 +1153,8 @@ var bailing =
             // 6 star
             "+30% crit rate and +50% higher crit damage to Heavily Wounded targets."
         ],
-        energyCharge:"10.00",
-        shieldBreak:"6.00",
+        energyCharge:["10.00","a"],
+        shieldBreak:["6.00","b"],
         materials:[physical, green, blue],
         wepBaseStats: [attack, health, crit],
         
@@ -1229,8 +1229,8 @@ var hilda =
             // 6 star
             "+60% increase in normal attack damage and shield breaking efficiency for 10 seconds after switching to this weapon, 25 seconds cooldown time."
         ],
-        energyCharge:"10.00",
-        shieldBreak:"13.00",
+        energyCharge:["10.00","a"],
+        shieldBreak:["10.00","a"],
         materials:[],
         wepBaseStats: [attack, defense, health],
         
@@ -1256,7 +1256,7 @@ var hilda =
             // 4000 affinity
             "<span class='passive-value'>Mimic Passive Upgrade</span><br>Hilda's movement speed is increased by <span class='passive-value'>10%</span> when riding on a mount"
         ],
-        traits: ['Female','165 cm','No record','Aries','11 Apr'],
+        traits: ['Female','165 cm','???','Aries','11 Apr'],
         gifts: [
             tataFigure, '+80',
             
@@ -1304,8 +1304,8 @@ var manaka =
             // 6 star
             "The longer the throw distance of the QTE skill, the higher the damage, up to 100% more damage."
         ],
-        energyCharge:"7.00",
-        shieldBreak:"12.60",
+        energyCharge:["7.00","b"],
+        shieldBreak:["12.60","s"],
         materials:[lightning, red, black],
         wepBaseStats: [attack, defense, health],
         
@@ -1381,8 +1381,8 @@ var peppa =
             // 6 star
             "The skill removes crowd control effects from the target and gives 60% damage reduction to friendly units within the range of the skill."
         ],
-        energyCharge:"13.20",
-        shieldBreak:"4.00",
+        energyCharge:["10.00","a"],
+        shieldBreak:["4.00","b"],
         materials:[lightning, red, black],
         wepBaseStats: [attack, defense, health],
         
@@ -1458,8 +1458,8 @@ var xi =
             // 6 star
             "QTE skill makes target take 10% more damage and if it's Ice damage, increases damage by another 10% for 25 seconds."
         ],
-        energyCharge:"6.00",
-        shieldBreak:"10.00",
+        energyCharge:["6.00","b"],
+        shieldBreak:["10.00","a"],
         materials:[],
         wepBaseStats: [attack, defense, health],
         

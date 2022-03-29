@@ -187,17 +187,18 @@ p { margin: 0; }
     font-weight: bold;
 }
 .wep-tier {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    width: 36px;
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: 900;
     background-color: #3b3e45;
-    border-radius: 3px;
-}
-.wep-tier-b, .wep-tier-a, .wep-tier-s {
-    padding: 0 9px;
     text-transform: uppercase;
+    transform: skew(-9deg, 0deg);
+    vertical-align: middle;
+    color: skyblue;
 }
-.wep-tier-b { color: skyblue; }
 .wep-tier-a { color: #d1b9eb; }
 .wep-tier-s, .wep-tier-ss { color: #ffdb85; }
 #energy-charge, #shield-break { font-weight: bold; }
@@ -243,4 +244,16 @@ p { margin: 0; }
 #guide-1 td {
     color: lawngreen;
     font-weight: bold;
+}
+
+
+
+
+
+
+.cl  {
+    color: gray;
+}
+.cl-date {
+    background: #222222;
 }

@@ -39,8 +39,26 @@ jQuery(document).ready(function ($){
         $("#m-pane").attr('src',m.paneImg);
         $("#wep-img").attr('src',m.wepImg);
         $("#wep-effect").html(m.wepEffect);
-        $("#energy-charge").html(m.energyCharge);
-        $("#shield-break").html(m.shieldBreak);
+        $("#energy-charge").html(m.energyCharge[0]);
+        $("#energy-charge-tier").html(m.energyCharge[1]);
+        $("#shield-break").html(m.shieldBreak[0]);
+        $("#shield-break-tier").html(m.shieldBreak[1]);
+        $("#energy-charge-tier").removeClass("wep-tier-a");
+        $("#energy-charge-tier").removeClass("wep-tier-s");
+        $("#shield-break-tier").removeClass("wep-tier-a");
+        $("#shield-break-tier").removeClass("wep-tier-s");
+        if (m.energyCharge[1] === "s") {
+            $("#energy-charge-tier").addClass("wep-tier-s");
+        } 
+        else if (m.energyCharge[1] === "a") {
+            $("#energy-charge-tier").addClass("wep-tier-a");
+        }
+        if (m.shieldBreak[1] === "s") {
+            $("#shield-break-tier").addClass("wep-tier-s");
+        } 
+        else if (m.shieldBreak[1] === "a") {
+            $("#shield-break-tier").addClass("wep-tier-a");
+        }
         $("#star-1").html(m.awakening[0]);
         $("#star-2").html(m.awakening[1]);
         $("#star-3").html(m.awakening[2]);
