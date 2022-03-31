@@ -237,15 +237,33 @@ p { margin: 0; }
     color: purple;
     font-size: 1.5rem;
 }
-#guide-2 .card-text {
+#guide-reisen-wep .card-text {
     font-size: 1.3rem;
     text-align: left;
 }
-#guide-1 td {
+#guide-stitch-wep td {
     color: lawngreen;
     font-weight: bold;
 }
+.guide-divider {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Chakra Petch";
+    border-bottom: 2px solid deepskyblue;
+}
 
+
+
+
+
+@font-face {
+    font-family: 'Noto Color Emoji';
+    src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+.flag {
+    font-family: "Noto Color Emoji";
+}
 
 
 
@@ -256,4 +274,101 @@ p { margin: 0; }
 }
 .cl-date {
     background: #222222;
+}
+
+
+
+
+
+.ingredient {
+    width: 70px;
+}
+
+.badge-tr {
+    right: 0; 
+    top: 0; 
+}
+.badge-br {
+    right: 0; 
+    bottom: 0; 
+}
+
+.badge {
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%; 
+    color: white; 
+    font-family: 'Chakra Petch';
+    font-size: inherit;
+    padding: 0;
+    width: 20px;
+    line-height: 20px;
+    filter: drop-shadow(0 0 1px black);
+}
+
+.img-holder {
+    border-radius: 0.75rem;
+    filter: drop-shadow(0 0 5px black);
+    border: 6px solid gray;
+    width: fit-content;
+    position: relative;
+}
+.food-group {
+    background: #222222;
+    border-radius: 0.75rem;
+    filter: drop-shadow(0 0 5px black);
+}
+.img-food {
+    width: 100px; 
+    height: 100px; 
+    object-fit: none; 
+    object-position: 45% 45%;
+}
+.font-chakra {
+    font-family: 'Chakra Petch';
+}
+.bg-rarity-1 {
+    border-color: #aac0da;
+    background-image: -webkit-linear-gradient(bottom right, #6d89a4 50%, #7590ab 50%);
+    background-image: -o-linear-gradient(bottom right, #6d89a4 50%, #7590ab 50%);
+    background-image: linear-gradient(to bottom right, #6d89a4 50%, #7590ab 50%);
+}
+.bg-rarity-2 {
+    border-color: #29b79b;
+    background-image: -webkit-linear-gradient(bottom right, #208475 50%, #218f79 50%);
+    background-image: -o-linear-gradient(bottom right, #208475 50%, #218f79 50%);
+    background-image: linear-gradient(to bottom right, #208475 50%, #218f79 50%);
+}
+.bg-rarity-3 {
+    border-color: #1b9cf7;
+    background-image: -webkit-linear-gradient(bottom right, #196b9e 50%, #1b6fa4 50%);
+    background-image: -o-linear-gradient(bottom right, #196b9e 50%, #1b6fa4 50%);
+    background-image: linear-gradient(to bottom right, #196b9e 50%, #1b6fa4 50%);
+}
+.bg-rarity-4 {
+    border-color: #c464e0;
+    background-image: -webkit-linear-gradient(bottom right, #865295 50%, #8d579d 50%);
+    background-image: -o-linear-gradient(bottom right, #865295 50%, #8d579d 50%);
+    background-image: linear-gradient(to bottom right, #865295 50%, #8d579d 50%);
+}
+.bg-rarity-5 {
+    border-color: #e1ad47;
+    background-image: -webkit-linear-gradient(bottom right, #ad7c37 50%, #b78332 50%);
+    background-image: -o-linear-gradient(bottom right, #ad7c37 50%, #b78332 50%);
+    background-image: linear-gradient(to bottom right, #ad7c37 50%, #b78332 50%);
+}
+.text-rarity-1 {
+    color: #d5d5e0;
+}
+.text-rarity-2 {
+    color: #58d058;
+}
+.text-rarity-3 {
+    color: #00d2ff;
+}
+.text-rarity-4 {
+    color: #f289ff;
+}
+.text-rarity-5 {
+    color: gold;
 }
