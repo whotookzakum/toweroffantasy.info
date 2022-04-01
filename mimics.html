@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -111,7 +116,7 @@
                 <div class="col-md-5 p-0 mb-0 m-auto bg-mimic">
                     <img class="img-fluid" style="display:inline;" id="mimic-pic" src="images/samir_nobg.png">
                 </div>
-                <div class="col-md-5 mx-auto p-0 bg-mimic">
+                <div class="col-md-5 mx-auto p-4 bg-mimic">
                     <h3 class="section-header" style="background:inherit; border-bottom: 2px solid #c8c8c8;">SUPERMAGNETISM DOUBLE STAR</h3>
                     <div class="row m-0">
                         <!-- Left -->
@@ -130,7 +135,6 @@
                         <!-- Radar chart -->
                         <div class="col p-0" style="text-align: left; font-weight: bold">
                             <p>PERSONALITY<br></p>
-                            <p style="font-size: 1.3rem">Traits</p>
                             <img class="img-fluid" src="images/samir-traits.png">
                         </div>
                     </div>
@@ -160,12 +164,12 @@
                         </div>
                         <div class="row m-0 mb-2">
                             <div class="col p-0">
-                                <h3 class="m-0"><span class="wep-tier wep-tier-s">S</span> Shield Break: <span id="shield-break">11.11</span></h3>
+                                <div id="shield-break-tier" class="wep-tier d-inline-block">S</div><h3 class="m-0 ms-2 d-inline-block align-middle">Shield Break: <span id="shield-break">11.11</span></h3>
                             </div>
                         </div>
                         <div class="row m-0">
                             <div class="col p-0">
-                                <h3 class="m-0"><span class="wep-tier wep-tier-a">A</span> Energy Charge: <span id="energy-charge">11.11</span></h3>
+                                <div id="energy-charge-tier" class="wep-tier d-inline-block">SS</div><h3 class="m-0 ms-2 d-inline-block align-middle">Energy Charge: <span id="energy-charge">11.11</span></h3>
                             </div>
                         </div>
                     </div>

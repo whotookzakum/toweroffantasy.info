@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -18,11 +23,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-N68SWH7ZJB');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N68SWH7ZJB');
     </script>
 </head>
 
@@ -60,25 +68,2441 @@
             </div>
         </div>
     </nav>
-
+    
+    
+    <div class="position-fixed fixed-bottom" style="left: 50%; transform: translateX(-50%); width: fit-content;">   
+        <strong class="font-chakra text-rarity-1 text-uppercase p-5">Tier 1</strong>
+        <strong class="font-chakra text-rarity-2 text-uppercase p-5">Tier 2</strong>
+        <strong class="font-chakra text-rarity-3 text-uppercase p-5">Tier 3</strong>
+        <strong class="font-chakra text-rarity-4 text-uppercase p-5">Tier 4</strong>
+        <!-- 51 ingredients -->
+    </div>
+    
     <div class="container mt-3 page-wrapper">
+
+        <!-- Fried Mushroom: 2 mushroom -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-1 mx-auto mb-3">
+                    <img class="img-food" src="images/food/friedmushroom.png">
+                </div>
+                <strong class="font-chakra text-rarity-1">Fried Mushrooms</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-1"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">5</span> hunger<br>Recovers <span class="text-rarity-2">10% + 1,500</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/mushroom.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Mushroom
+                </div>
+            </div>
+        </div>
         
-        <div class="row">
-            <div class="col">Ingredient 1</div>
-            <div class="col">Ingredient 1 obtain method</div>
-            <div class="col">Ingredient 2</div>
-            <div class="col">Ingredient 2 obtain method</div>
-            <div class="col">Ingredient 3</div>
-            <div class="col">Ingredient 3 obtain method</div>
+        <!-- Crispy Grilled Fish: 1 silver perch -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-1 mx-auto mb-3">
+                    <img class="img-food" src="images/food/crispygrilledfish.png">
+                </div>
+                <strong class="font-chakra text-rarity-1">Crispy Grilled Fish</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-1"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/silverperch.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Silver Perch
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-1"><img src="images/food/foodtest.png"></div>
-            <div class="col"><img src="images/food/sturgeon.jpg"><img src="images/food/sturgeon.jpg"><img src="images/food/sturgeon.jpg"></div>
-            <div class="col-2">Effect 1</div>
-            <div class="col-1">Dish 2</div>
-            <div class="col">Recipe 2</div>
-            <div class="col-2">Effect 2</div>
+        
+        <!-- Wheat Bread: 2 wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-1 mx-auto mb-3">
+                    <img class="img-food" src="images/food/wheatbread.png">
+                </div>
+                <strong class="font-chakra text-rarity-1">Wheat Bread</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-1"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Wheat
+                </div>
+            </div>
         </div>
+        
+        <!-- Sizzled Barbequed Meat: 2 animal meat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-1 mx-auto mb-3">
+                    <img class="img-food" src="images/food/sizzledbarbecuedmeat.png">
+                </div>
+                <strong class="font-chakra text-rarity-1">Sizzled Barbequed Meat</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-1"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/meat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Animal Meat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lettuce Salad: 2 lettuce, 1 mayonnaise -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-1 mx-auto mb-3">
+                    <img class="img-food" src="images/food/lettucesalad.png">
+                </div>
+                <strong class="font-chakra text-rarity-1">Lettuce Salad</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-1"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">5</span> hunger<br>Recovers <span class="text-rarity-2">10% + 1,500</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Lettuce
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/dressing.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Dressing
+                </div>
+            </div>
+        </div>
+
+        <!-- Fried Egg: 2 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-1 mx-auto mb-3">
+                    <img class="img-food" src="images/food/friedegg.png">
+                </div>
+                <strong class="font-chakra text-rarity-1">Fried Egg</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-1"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">5</span> hunger<br>Recovers <span class="text-rarity-2">10% + 1,500</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Bird Egg
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Vegetable Egg Soup: 2 seaweed, 1 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/vegetableseggsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Vegetable Egg Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/seaweed.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Seaweed
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Bird Egg
+                </div>
+            </div>
+        </div>
+        
+        <!-- Milk Oat: 2 wheat, 1 milk -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/milkoat.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Milk Oats</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">14</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Wheat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/milk.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Milk
+                </div>
+            </div>
+        </div>
+        
+        <!-- Crispy Chicken Drumstick Burger: 1 wheat, 1 chicken wing, 1 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/crispychickendrumstickburger.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Crispy Chicken Drumstick Burger</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Wheat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/drumstick.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Drumstick
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Egg Fried Rice: 2 rice, 1 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/eggfriedrice.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Egg Fried Rice</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">14</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/rice.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Rice
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Bird Egg
+                </div>
+            </div>
+        </div>
+        
+        <!-- Golden Chopped Tomato: 2 tomato, 2 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/goldenchoppedtomato.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Golden Chopped Tomato</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/tomato.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Tomato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Bird Egg
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mushroom Soup: 2 mushroom, 2 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/mushroomsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Mushroom Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/tomato.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Mushroom
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Steamed Snails: 2 horned conch, 1 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/steamedsnails.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Steamed Snails</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/hornedconch.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Horned Conch
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Potato Stew: 1 potato, 1 animal meat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/potatostew.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Potato Stew</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">14</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/potato.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Potato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/meat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Animal Meat
+                </div>
+            </div>
+        </div>
+        
+        <!-- French Fries: 1 potato, 1 mayonnaise -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/frenchfries.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">French Fries</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">14</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/potato.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Potato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/dressing.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Dressing
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vegetable Salad: 1 fruit drop, 1 tomato, 1 lettuce, 1 mayonnaise -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/vegetablessalad.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Vegetable Salad</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/fruitdrop.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Fruit Drop
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/tomato.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Tomato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Lettuce
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/dressing.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Dressing
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fried Chicken: 2 chicken wing, 1 wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/friedchicken.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Fried Chicken</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/drumstick.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Drumstick
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Wheat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Honey Fruit Juice: 2 fruit drop, 1 honey, 1 sparkling water -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/honeyfruitjuice.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Honey Fruit Juice</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">300</span> stamina<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/fruitdrop.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Fruit Drop
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Honey
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/sparklingwater.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Sparkling Water
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cocktail: 2 ghost mushroom, 1 milk, 1 sparkling water -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/cocktail.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Cocktail</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">300</span> stamina<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/ghostmushroom.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Ghost Mushroom
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/milk.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Milk
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/sparklingwater.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Sparkling Water
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stir Fried Broccoli: 2 broccoli -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/stirfriedbroccoli.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Stir Fried Broccoli</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">14</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/broccoli.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Broccoli
+                </div>
+            </div>
+        </div>
+        
+        <!-- Meat Buns: 2 wheat, 1 animal meat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/meatbuns.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Meat Buns</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">14</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Wheat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/meat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Animal Meat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mushroom Fillet: 2 mushroom, 1 silver perch -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/mushroomfillet.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Mushroom Fillet</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/mushroom.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Mushroom
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/silverperch.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Silver Perch
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dandelion Mushroom Soup: 1 dandelion, 2 mushroom -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/dandelionmushroomsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Dandelion Mushroom Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">7</span> hunger<br>Recovers <span class="text-rarity-2">12% + 3,300</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/dandelion.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Dandelion
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/mushroom.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Mushroom
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pearl Fish: 1 sturgeon, 2 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/pearlfish.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Pearl Fish</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">8</span> hunger<br>Recovers <span class="text-rarity-2">13% + 10,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/sturgeon.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Sturgeon
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Bird Egg
+                </div>
+            </div>
+        </div>
+        
+        <!-- Red Wheat Bread: 2 red wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/redwheatbread.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Red Wheat Bread</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">16</span> hunger
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Red Wheat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fire Ear Mushroom Soup: 2 fire ear, 2 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/fireearmushroomsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Fire Ear Mushroom Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">400</span> stamina<br>Recovers <span class="text-rarity-2">13% + 10,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/fireear.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Fire Ear
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Black Moss Soup: 2 black moss, 2 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-2 mx-auto mb-3">
+                    <img class="img-food" src="images/food/blackmosssoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-2">Black Moss Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-2"></i><i class="fa-solid fa-star text-rarity-2"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">8</span> hunger<br>Recovers <span class="text-rarity-2">13% + 10,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/blackmoss.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Black Moss
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- Seafood Soup: 3 horned conch, 2 sea conch, 1 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/seafoodsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Seafood Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Ice Damage +1%<br>
+                    Ice Damage +45</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/hornedconch.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Horned Conch
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/seaconch.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Sea Conch
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Spicy Thick Meat Burger: 3 wheat, 2 hind leg, 1 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/spicythickmeatburger.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Spicy Thick Meat Burger</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Physical Damage +1%<br>
+                    Physical Damage +45</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Wheat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/hindleg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Hind Leg Meat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Steamed Crab: 2 shuttle crab, 2 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/steamedcrab.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Steamed Crab</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">15% + 20,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/shuttlecrab.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Shuttle Crab
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Lettuce
+                </div>
+            </div>
+        </div>
+        
+        <!-- Strawberry Iced Soda: 2 strawberry, 2 honey, 1 sparkling water -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/strawberryicedsoda.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Strawberry Iced Soda</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Fire Resistance +10%<br>
+                    Fire Resistance +170</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/strawberry.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Strawberry
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/sparklingwater.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Sparkling Water
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightning Blueberry Soda: 1 blueberry, 2 honey, 1 sparkling water -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/lightningblueberrysoda.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Lightning Blueberry Soda</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Electric Resistance +10%<br>
+                    Electric Resistance +170</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/blueberry.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Blueberry
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/sparklingwater.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Sparkling Water
+                </div>
+            </div>
+        </div>
+        
+        <!-- Energy Salad: 1 broccoli, 1 tomato, 1 lettuce, 1 egg, 1 mayonnaise -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/energysalad.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Energy Salad</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Physical Resistance +10%<br>
+                    Physical Resistance +170</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/broccoli.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Broccoli
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/tomato.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Tomato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Lettuce
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Bird Egg
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/dressing.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Dressing
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sea Urchin Omelette: 2 sea urchin, 2 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/seaurchinomelette.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Sea Urchin Omelette</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">15% + 20,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/seaurchin.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Sea Urchin
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Bird Egg
+                </div>                
+            </div>
+        </div>
+        
+        <!-- Double Berry Sauce Toast: 1 blueberry, 1 strawberry, 3 wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/doubleberrysaucetoast.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Double Berry Sauce Toast</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Electric Damage +1%<br>
+                    Electric Damage +45</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/blueberry.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Blueberry
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/strawberry.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Strawberry
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Wheat
+                </div>           
+            </div>
+        </div>
+        
+        <!-- Tomato Spaghetti Omelette: 4 tomato, 3 wheat, 1 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/tomatospaghettiomelette.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Tomato Spaghetti Omelette</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Fire Damage +1%<br>
+                    Fire Damage +45</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/tomato.png">
+                        <div class="badge badge-br">4</div>
+                    </div>
+                    Tomato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Wheat
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Bird Egg
+                </div>           
+            </div>
+        </div>
+        
+        <!-- Fruit Cake: 2 strawberry, 1 wheat, 1 fruit drop, 1 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/fruitcake.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Fruit Cake</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">15% + 20,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/strawberry.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Strawberry
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/wheat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Wheat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/fruitdrop.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Fruit Drop
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Bird Egg
+                </div>                
+            </div>
+        </div>
+        
+        <!-- Boiled Sea Conch: 2 sea conch, 3 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/boiledseaconch.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Boiled Sea Conch</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">15% + 20,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/seaconch.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Sea Conch
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Lettuce
+                </div>                
+            </div>
+        </div>
+        
+        <!-- Roasted Ham: 2 hind leg meat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/roastedham.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Roasted Ham</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">500</span> stamina<br>Recovers <span class="text-rarity-2">15% + 20,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/hindleg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Hind Leg Meat
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Spinach Pie: 2 spinach, 2 wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/spinachpie.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Spinach Pie</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/spinach.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Spinach
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Red Wheat
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Chocolate Bun: 2 cocoa beans, 2 red wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/chocolatebun.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Chocolate Bun</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/cocoabeans.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Cocoa Beans
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Red Wheat
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Balloon-fruit Salad: 2 balloon fruit, 2 tomato, 1 mayonnaise -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/balloonfruitsalad.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Balloon Fruit Salad</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/balloonfruit.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Balloon Fruit
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/tomato.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Tomato
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/dressing.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Dressing
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Spinach Soup: 2 spinach, 4 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/spinachsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Spinach Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/spinach.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Spinach
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">4</div>
+                    </div>
+                    Lettuce
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Spicy Eel: 1 thunder eel -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/spicyeel.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Spicy Eel</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Electric Resistance +10%<br>
+                    Electric Resistance +290</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/thundereel.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Thunder Eel
+                </div>            
+            </div>
+        </div>
+        
+        <!-- Mushroom Eel Soup: 1 thunder eel, 2 fire ear -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/mushroomeelsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Mushroom Eel Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Electric Damage +1%<br>
+                    Electric Damage +80</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/thundereel.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Thunder Eel
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/fireear.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Fire Ear
+                </div>            
+            </div>
+        </div>
+        
+        <!-- Sea Crab Soup: 2 hermit crab, 4 mushroom -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/seacrabsoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Sea Crab Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Fire Resistance +10%<br>
+                    Fire Resistance +290</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/hermitcrab.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Hermit Crab
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/mushroom.png">
+                        <div class="badge badge-br">4</div>
+                    </div>
+                    Mushroom
+                </div>           
+            </div>
+        </div>
+        
+        <!-- Sweet Pomegranate Juice: 2 pomegranat, 2 honey, 1 sparkling water -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/sweetpomegranatejuice.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Sweet Pomegranate Juice</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">600</span> stamina<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/pomegranate.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Pomegranate
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>   
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/sparklingwater.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Sparkling Water
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Cocoa Milk: 2 cocoa beans, 2 honey, 1 milk -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/cocoamilk.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Cocoa Milk</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Ice Resistance +10%<br>
+                    Ice Resistance +290</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/cocoabeans.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Cocoa Beans
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>  
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/milk.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Milk
+                </div>             
+            </div>
+        </div>
+        
+        <!-- Dragon Fruit Tea: 2 dragon fruit, 2 honey -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/dragonfruittea.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Dragon Fruit Tea</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Fire Damage +1%<br>
+                    Fire Damage +80</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/dragonfruit.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Dragon Fruit
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>             
+            </div>
+        </div>
+        
+        <!-- Barnacle Stew: 2 barnacle, 4 lettuce -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/barnaclestew.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Barnacle Stew</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Physical Resistance +10%<br>
+                    Physical Resistance +290</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/barnacle.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Barnacle
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/lettuce.png">
+                        <div class="badge badge-br">4</div>
+                    </div>
+                    Lettuce
+                </div>             
+            </div>
+        </div>
+        
+        <!-- Barnacle Seafood Pizza: 1 barnacle, 2 red wheat, 1 onion -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/barnacleseafoodpizza.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Barnacle Seafood Pizza</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/barnacle.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Barnacle
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Red Wheat
+                </div>   
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/onion.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Onion
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Snow Cuckoo Tea: 1 snow blossom, 1 milk, 2 honey -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/snowcuckootea.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Snow Cuckoo Tea</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Ice Damage +1%<br>
+                    Ice Damage +80</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/snowblossom.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Snow Blossom
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/milk.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Milk
+                </div>  
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>             
+            </div>
+        </div>
+        
+        <!-- Pine Nut Cocoa: 1 pine cone, 1 cocoa bean, 2 milk -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/pinenutcocoa.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Pine Nut Cocoa</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/pinecone.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Pine Cone
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/cocoabeans.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Cocoa Beans
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/milk.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Milk
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Caviar Sushi: 1 caviar, 2 rice, 2 seaweed -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/caviarsushi.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Caviar Sushi</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>Recovers <span class="text-rarity-2">16% + 34,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/caviar.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Caviar
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/rice.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Rice
+                </div>   
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/seaweed.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Seaweed
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Caviar Potato Balls: 1 caviar, 2 potato -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-3 mx-auto mb-3">
+                    <img class="img-food" src="images/food/caviarpotatoballs.png">
+                </div>
+                <strong class="font-chakra text-rarity-3">Caviar Potato Balls</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-3"></i><i class="fa-solid fa-star text-rarity-3"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">10</span> hunger<br>
+                <span class="text-rarity-2">Physical Damage +1%<br>
+                    Physical Damage +80</span><br>
+                Duration <span class="text-rarity-2">900</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/caviar.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Caviar
+                </div> 
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/potato.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Potato
+                </div>             
+            </div>
+        </div>
+
+        
+        
+        <!-- Nut Tea: 1 nut, 2 pine cone, 2 honey -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/nuttea.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Nut Tea</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>Recovers <span class="text-rarity-2">20% + 60,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/nut.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Nut
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-3" src="images/food/pinecone.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Pine Cone
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bird's Head Potato Cake: 1 bird's head potato, 3 red wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/birdsheadpotatocake.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Bird's Head Potato Cake</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Electric Damage +2%<br>
+                    Electric Damage +150</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/birdpotato.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Bird's Head Potato
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Red Wheat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Snow Lotus Soup: 1 snow lotus, 2 honey -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/snowlotussoup.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Snow Lotus Soup</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">800</span> stamina<br>Recovers <span class="text-rarity-2">20% + 60,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/snowlotus.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Snow Lotus
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/honey.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Honey
+                </div>
+            </div>
+        </div>
+        
+        <!-- Truffle Fried Rice: 1 black truffle, 1 onion, 2 rice -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/trufflefriedrice.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Truffle Fried Rice</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Physical Damage +2%<br>
+                    Physical Damage +150</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/blacktruffle.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Black Truffle
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/onion.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Onion
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/rice.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Rice
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cordyceps Noodles: 1 cordyceps, 3 red wheat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/cordycepsnoodles.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Cordyceps Noodles</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>Recovers <span class="text-rarity-2">20% + 60,000</span> HP
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/cordyceps.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Cordyceps
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Red Wheat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Barbeque Steak: 1 firm meat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/barbequesteak.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Barbeque Steak</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Electric Resistance +15%<br>
+                    Electric Resistance +675</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/firmmeat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Firm Meat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mushroom Steak: 1 firm meat, 3 fire ear -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/mushroomsteak.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Mushroom Steak</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Fire Damage +2%<br>
+                    Fire Damage +150</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/firmmeat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Firm Meat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/fireear.png">
+                        <div class="badge badge-br">3</div>
+                    </div>
+                    Fire Ear
+                </div>
+            </div>
+        </div>
+        
+        <!-- Braised Pork: 1 fatty meat -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/braisedpork.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Braised Pork</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Ice Resistance +15%<br>
+                    Ice Resistance +675</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/fattymeat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Fatty Meat
+                </div>
+            </div>
+        </div>
+        
+        <!-- Juicy Meat Sandwich: 1 fatty meat, 2 red wheat, 2 egg -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/juicymeatsandwich.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Juicy Meat Sandwich</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Fire Resistance +15%<br>
+                    Fire Resistance +675</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/fattymeat.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Fatty Meat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-2" src="images/food/redwheat.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Red Wheat
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/egg.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Bird Egg
+                </div>
+            </div>
+        </div>
+        
+        <!-- Salmon Sashimi: 1 salmon -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/salmonsashimi.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Salmon Sashimi</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Ice Damage +2%<br>
+                    Ice Damage +150</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/salmon.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Salmon
+                </div>
+            </div>
+        </div>
+        
+        <!-- Snail Baked Rice: 1 snail, 2 rice -->
+        <div class="row m-3 p-3 food-group">
+            <!-- Dish -->
+            <div class="col-2">
+                <div class="img-holder bg-rarity-4 mx-auto mb-3">
+                    <img class="img-food" src="images/food/snailbakedrice.png">
+                </div>
+                <strong class="font-chakra text-rarity-4">Snail Baked Rice</strong>
+            </div>
+            <!-- Rarity -->
+            <div class="col-1 p-0 align-self-center"><i class="fa-solid fa-star text-rarity-4"></i><i class="fa-solid fa-star text-rarity-4"></i></div>
+            <!-- Effect -->
+            <div class="col-3 align-self-center">
+                Recovers <span class="text-rarity-2">20</span> hunger<br>
+                <span class="text-rarity-2">Physical Resistance +15%<br>
+                    Physical Resistance +675</span><br>
+                Duration <span class="text-rarity-2">1200</span> sec
+            </div>
+            <!-- Ingredients -->
+            <div class="col align-self-center">
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-4" src="images/food/snail.png">
+                        <div class="badge badge-br">1</div>
+                    </div>
+                    Snail
+                </div>
+                <div class="d-inline-block mx-3">
+                    <div class="ingredient-group position-relative mx-auto" style="width:fit-content">
+                        <img class="ingredient bg-rarity-1" src="images/food/rice.png">
+                        <div class="badge badge-br">2</div>
+                    </div>
+                    Rice
+                </div>
+            </div>
+        </div>
+
+        <!-- Stamina Mushroom -->
+        
+        
+        
+        
+        
 
     </div>
 
@@ -90,77 +2514,4 @@
 
 
 
-<!-- Fried Mushroom: 2 mushroom -->
-<!-- Crispy Grilled Fish: 1 silver perch -->
-<!-- Wheat Bread: 2 wheat -->
-<!-- Sizzled Barbequed Meat: 2 animal meat -->
-<!-- Lettuce Salad: 2 lettuce, 1 mayonnaise -->
-<!-- Fried Egg: 2 egg -->
 
-
-<!-- Vegetable Egg Soup: 2 seaweed, 1 egg -->
-<!-- Milk Oat: 2 wheat, 1 milk -->
-<!-- Crispy Chicken Drumstick Burger: 1 wheat, 1 chicken wing, 1 lettuce -->
-<!-- Egg Fried Rice: 2 rice, 1 egg -->
-<!-- Golden Chopped Tomato: 2 tomato, 2 egg -->
-<!-- Mushroom Soup: 2 mushroom, 2 lettuce -->
-<!-- Steamed Snails: 2 horned conch, 1 lettuce -->
-<!-- Potato Stew: 1 potato, 1 animal meat -->
-<!-- French Fries: 1 potato, 1 mayonnaise -->
-<!-- Vegetable Salad: 1 fruit drop, 1 tomato, 1 lettuce, 1 mayonnaise -->
-<!-- Fried Chicken: 2 chicken wing, 1 wheat -->
-<!-- Honey Fruit Juice: 2 fruit drop, 1 honey, 1 sparkling water -->
-<!-- Cocktail: 2 ghost mushroom, 1 milk, 1 sparkling water -->
-<!-- Stir Fried Broccoli: 2 broccoli -->
-<!-- Meat Buns: 2 wheat, 1 animal meat -->
-<!-- Mushroom Fillet: 2 mushroom, 1 silver perch -->
-<!-- Dandelion Mushroom Soup: 1 dandelion, 2 mushroom -->
-<!-- Pearl Fish: 1 sturgeon, 2 egg -->
-<!-- Red Wheat Bread: 2 red wheat -->
-<!-- Fire Ear Mushroom Soup: 2 fire ear, 2 lettuce -->
-<!-- Black Moss Soup: 2 black moss, 2 lettuce -->
-
-
-<!-- Seafood Soup: 3 horned conch, 2 sea conch, 1 lettuce -->
-<!-- Spicy Thick Meat Burger: 3 wheat, 2 hind leg, 1 lettuce -->
-<!-- Steamed Crab: 2 shuttle crab, 2 lettuce -->
-<!-- Strawberry Iced Soda: 2 strawberry, 2 honey, 1 sparkling water -->
-<!-- Lightning Blueberry Soda: 1 blueberry, 2 honey, 1 sparkling water -->
-<!-- Energy Salad: 1 broccoli, 1 tomato, 1 lettuce, 1 egg, 1 mayonnaise -->
-<!-- Sea Urchin Omelette: 2 sea urchin, 2 egg -->
-<!-- Double Berry Sauce Toast: 1 blueberry, 1 strawberry, 3 wheat -->
-<!-- Tomato Spaghetti Omelette: 4 tomato, 3 wheat, 1 egg -->
-<!-- Fruit Cake: 2 strawberry, 1 wheat, 1 fruit drop, 1 egg -->
-<!-- Boiled Sea Conch: 2 sea conch, 3 lettuce -->
-<!-- Roasted Ham: 2 hind leg meat -->
-<!-- Spinach Pie: 2 spinach, 2 wheat -->
-<!-- Chocolate Bun: 2 cocoa beans, 2 red wheat -->
-<!-- Balloon-fruit Salad: 2 balloon fruit, 2 tomato, 1 mayonnaise -->
-<!-- Spinach Soup: 2 spinach, 4 lettuce -->
-<!-- Spicy Eel: 1 thunder eel -->
-<!-- Mushroom Eel Soup: 1 thunder eel, 2 fire ear -->
-<!-- Sea Crab Soup: 2 hermit crab, 4 mushroom -->
-<!-- Sweet Pomegranate Juice: 2 pomegranat, 2 honey, 1 sparkling water -->
-<!-- Cocoa Milk: 2 cocoa beans, 2 honey, 1 milk -->
-<!-- Dragon Fruit Tea: 2 dragon fruit, 2 honey -->
-<!-- Barnacle Stew: 2 barnacle, 4 lettuce -->
-<!-- Barnacle Seafood Pizza: 1 barnacle, 2 red wheat, 1 onion -->
-<!-- Snow Cuckoo Tea: 1 snow blossom, 1 milk, 2 honey -->
-<!-- Pine Nut Cocoa: 1 pine cone, 1 cocoa bean, 2 milk -->
-<!-- Caviar Sushi: 1 caviar, 2 rice, 2 seaweed -->
-<!-- Caviar Potato Balls: 1 caviar, 2 potato -->
-
-
-<!-- Nut Tea: 1 nut, 2 pine cone, 2 honey -->
-<!-- Bird's Head Potato Cake: 1 bird's head potato, 3 red wheat -->
-<!-- Snow Lotus Soup: 1 snow lotus, 2 honey -->
-<!-- Truffle Fried Rice: 1 black truffle, 1 onion, 2 rice -->
-<!-- Cordyceps Noodles: 1 cordyceps, 3 red wheat -->
-<!-- Barbeque Steak: 1 firm meat -->
-<!-- Mushroom Steak: 1 firm meat, 3 fire ear -->
-<!-- Braised Pork: 1 fatty meat -->
-<!-- Juicy Meat Sandwich: 1 fatty meat, 2 red wheat, 2 egg -->
-<!-- Salmon Sashimi: 1 salmon -->
-<!-- Snail Baked Rice: 1 snail, 2 rice -->
-
-<!-- Stamina Mushroom -->
