@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -23,11 +23,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-N68SWH7ZJB');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N68SWH7ZJB');
     </script>
 </head>
 
@@ -53,7 +56,7 @@
                         <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-hammer"></i> Gadgets</a>
                     </li>
                     <li class="nav-item p-3">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-carrot"></i> Food</a>
+                        <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
                     </li>
                     <li class="nav-item p-3">
                         <a class="nav-link" href="mounts.html"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
@@ -66,15 +69,101 @@
         </div>
     </nav>
 
-
+    <!-- 
+    Exodus: Achievements -> Black Crystal Farm Guide
+    Exodus: Dungeons
+    Stitch: Chips
+    Overworld
+    World Bosses
+    Housing
+    Currencies
+    Overworld
+    Things you MUST Know (infinite climb etc)
+    Combat
+    -->
 
     <div class="container mt-3 page-wrapper p-0">
         <div class="my-3 text-warning fw-bold">The opinions expressed in these guides belong solely to the author(s) and may not reflect those of the site curators.</div>
-        
+
         <!-- Gear Related -->
         <div class="my-5" style="border-bottom: 2px solid deepskyblue;">
             <div class="guide-divider text-start ps-3" style="color: deepskyblue">Gear Related</div>
-            
+
+            <!-- Zakum Enhancing Guide -->
+            <a class="guide-header d-block" data-bs-toggle="collapse" href="#guide-zakum-enhancing" role="button" aria-expanded="false" aria-controls="guide-zakum-enhancing">Armor &amp; Weapon Upgrading <code>Zakum#3080</code></a>
+            <div class="collapse" id="guide-zakum-enhancing">
+                <div class="container my-4 px-5 text-start">
+                    <h1 class="mt-4 passive-value">Armor</h1>
+                    Armor improves your combat effectiveness through passive stat increases, and can be obtained through various dungeons and shops.<br>
+                    Each piece of armor has fixed stats, which increase through <strong>Enhancement</strong>, and random stats, which increase through <strong>Fusion</strong>.<br>
+                    <div class="text-center">
+                        <img style="width: 64px" src="images/armor/helmet.png">
+                        <img style="width: 64px" src="images/armor/shoulder.png">
+                        <img style="width: 64px" src="images/armor/arm.png">
+                        <img style="width: 64px" src="images/armor/top.png">
+                        <img style="width: 64px" src="images/armor/gloves.png">
+                        <img style="width: 64px" src="images/armor/belt.png">
+                        <img style="width: 64px" src="images/armor/bottom.png">
+                        <img style="width: 64px" src="images/armor/shoes.png">
+                    </div>
+                    <h3 class="passive-value">Enhancement</h3>
+                    Enhancement will add a + sign on your armor, increasing the fixed stats of that piece. Every 5th enhancement (+5, +10, +15...) is a breakthrough level--when all of your pieces reach that level, you will receive bonus stats. How high you can enhance your equipment is limited by your character level.<br>
+                    <div class="text-center">
+                        <img style="width: 64px" src="images/mat/armor1.png">
+                        <img style="width: 64px" src="images/coin/gold.png">
+                        <img style="width: 64px" src="images/mat/armor2.png">
+                    </div>
+                    You will need Enhancement Modules and Gold, and breakthrough levels require Superior Modules as well.<br>
+                    <br>
+                    <strong>Enhancement level will carry over when replacing armor</strong>, given that you don't discard the item it was last attached to. In other words, if you have +10 on your current gloves, you can equip a new pair of gloves and they will also be +10. Think of it as enhancing the slot where they are equipped. Be careful though, if you choose to unequip an enhanced armor piece (without replacing), it is possible to dismantle the enhanced one.<br>
+                    <br>
+                    <h3 class="passive-value">Fusion</h3>
+                    Fusion will add stars on your armor, increasing one random stat per star. The rarity of your armor will determine how many stars it can have, and how much EXP is required to level it up.<br>
+                    <div class="text-center">
+                        <img style="width: 64px" src="images/mat/exp1.png">
+                        <img style="width: 64px" src="images/mat/exp2.png">
+                        <img style="width: 64px" src="images/mat/exp3.png">
+                    </div>
+                    You will need EXP crystals, which can be obtained from breaking the large crystal veins in the overworld and through various shops. You can also use armor copies of the same piece (i.e. feed pants into pants) or dismantle the armor into crystals--it will give half the EXP if you dismantle it.<br>
+                    <br>
+                    <strong>Fusion stars will NOT carry over between pieces</strong>, meaning new armor will have to be leveled up from the beginning. You can use previously starred armor for EXP, though it will not give 100% of the EXP you spent to reach that star (it's something like base EXP of that armor + 70-80% I think). Meaning feeding a 5 star armor into a brand new one will result in 4 stars + some EXP.<br>
+                    <div class="text-center">
+                        <img style="width: 64px" src="images/armor/core_orange_fire.png">
+                        <img style="width: 64px" src="images/armor/core_orange_ice.png">
+                        <img style="width: 64px" src="images/armor/core_orange_physic.png">
+                        <img style="width: 64px" src="images/armor/core_orange_thunder.png">
+                    </div>
+                    Arc Cores are a unique piece of armor acquired through 8-player raids. You must use materials rewarded from these raids for fusion on them--armor and EXP crystals will not work.<br>
+                    <br>
+                    <h1 class="mt-4 passive-value">Weapons</h1>
+                    Weapons can be obtained through the various gacha banners in the game, through world bosses, and potentially through events. They can be upgraded with duplicate copies which add stars, and through leveling them up.<br>
+                    <br>
+                    <h3 class="passive-value">Upgrading</h3>
+                    Leveling a weapon consumes Weapon Batteries to provide EXP to the weapon. Every level will provide stat increases to that weapon, and every 10 levels will increase its damage multiplier for attacks. Every 10 levels you will need breakthrough materials to raise the level cap further.<br>
+                    <div class="text-center">
+                        <img style="width: 64px" src="images/mat/red1.png">
+                        <img style="width: 64px" src="images/mat/green1.png">
+                        <img style="width: 64px" src="images/mat/blue1.png">
+                        <img style="width: 64px" src="images/mat/black1.png">
+                        <img style="width: 64px" src="images/mat/fire1.png">
+                        <img style="width: 64px" src="images/mat/ice1.png">
+                        <img style="width: 64px" src="images/mat/phys1.png">
+                        <img style="width: 64px" src="images/mat/elec1.png">
+                    </div>
+                    Weapon breakthrough materials can be obtained through dungeons, events, battle pass, overworld veins (elemental materials only) and shops. The required materials increase as the weapon level increases. How high you can level your weapon is limited by your character level.<br>
+                    <br>
+                    <h3 class="passive-value">Transcending</h3>
+                    Using duplicate copies will add stars to your current weapon, unlocking powerful effects and considerably increasing its stats.<br>
+                    <div class="text-center">
+                        <img style="width: 64px" src="images/mat/weapon_star.png">
+                    </div>
+                    The max stars is 6, so with the base copy you will need to pull a weapon 7 times to max it out. Subsequent copies will be converted into 10 Black Market Tokens.
+
+
+
+                </div>
+            </div>
+
             <!-- Stitch Wep Guide -->
             <a class="guide-header accordion-flush d-block" data-bs-toggle="collapse" href="#guide-stitch-wep" role="button" aria-expanded="false" aria-controls="guide-stitch-wep">Beginner Weapon Guide <code>Stitch#8913</code></a>
             <div class="collapse" id="guide-stitch-wep">
@@ -93,7 +182,7 @@
                         <br><br>
                         <strong>Attacker</strong> is primarily damage focused weapons, where having 2 or more equipped will give you the attack resonance. This gives you a 10% damage boost in solo play, and a 40% damage boost in team play.
                         <br><br>
-                        <strong>Tank</strong> is primarily shield break/shields/damage reduction focused weapons where equipping 2 or more will give you the tank resonance. This gives you a 60% aggro buff and 25% damage reduction in solo play, and a 60% aggro buff with 45% damage reduction in team play. 
+                        <strong>Tank</strong> is primarily shield break/shields/damage reduction focused weapons where equipping 2 or more will give you the tank resonance. This gives you a 60% aggro buff and 25% damage reduction in solo play, and a 60% aggro buff with 45% damage reduction in team play.
                         <br><br>
                         <strong>Support</strong> is primarily healing and buff focused weapons, where having 2 or more equipped gives you the support resonance. This gives you a 100% increase to outgoing heals in solo play, and a 200% increase in team play.
                         <br><br>
@@ -575,21 +664,21 @@
                         <br><br>
                         On my alt; I plan on using Bai, Hane, Claudia. This is far more optimal as it has most of what you look for in an offensive oriented build. While this build may lack shields and survivability, it has damage, damage, and more damage. Bai handles the heavy lifting, shield break as well as having iframes during her active skill. Hane and Claudia both are used to charge energy for bai to spam her switch skills, while also buffing her damage. With Hane gives 24(40%) damage buff, and Claudia giving 24% as well, in solo play bosses get shredded, and in team play you can carry DPS. While it may not be as forgiving as other builds in terms of survivability, it makes up for it with damage output. As of now I don’t have Claudia and am not willing to invest in another third weapon for now because as a f2p, its already hard enough to get dupes of a weapon if you want to stay on a competitive level.
                         <br><br>
-                        A more balanced DPS build can output even more however. One example of this is Marc, Nemesis, Bai. While Marc really wants dupes to grant his attack buff and provide more shields, it truly is worth the investment. Nemesis in this case provides DoT, heals, and energy recharge; while Marc basically ensures you don’t die by providing shields. Nemesis also provides a strong lightning element buff, as marc provides an attack buff. 
+                        A more balanced DPS build can output even more however. One example of this is Marc, Nemesis, Bai. While Marc really wants dupes to grant his attack buff and provide more shields, it truly is worth the investment. Nemesis in this case provides DoT, heals, and energy recharge; while Marc basically ensures you don’t die by providing shields. Nemesis also provides a strong lightning element buff, as marc provides an attack buff.
                         <br><br>
-                        The best early game whale DPS build is Samir, Hane and King. This is because King offers shield break, as well as DoT off his shield break. King also happens to be one of two options for attack role shield break, the other being Shiro.  Hane gives a 40% damage buff as well as charges energy for switch skills. Samir carries damage while safely attacking from the air. It also helps that this is a tri-elemental build so there is always the option of using a non-resisted weapon. Samir in this case provides energy as well as being the main DPS provider. 
+                        The best early game whale DPS build is Samir, Hane and King. This is because King offers shield break, as well as DoT off his shield break. King also happens to be one of two options for attack role shield break, the other being Shiro. Hane gives a 40% damage buff as well as charges energy for switch skills. Samir carries damage while safely attacking from the air. It also helps that this is a tri-elemental build so there is always the option of using a non-resisted weapon. Samir in this case provides energy as well as being the main DPS provider.
                         <br><br>
                         The best DPS build as of current consists of 6★ Bai Yuekui, Marc, and Nemesis. Bai breaks shields while having a very strong dodge attack and the highest damage in game as of now. Marc grants a 35% damage buff as well as shields making one almost invincible. Nemesis provides a strong 50% lightning damage buff, as well as a powerful DoT effect.
                     </p>
                     <h2 class="mt-5 passive-value">Tank</h2>
                     <p>
-                        Much of the utility each weapon can provide highly depends on the amount of dupes you can get on the weapon. As such it’s important to know what you want to work with as a free to play. Personally, this ended up with me giving Hane a lot of value because she provides a strong damage buff, as well as energy to charge switch skills more often. 
+                        Much of the utility each weapon can provide highly depends on the amount of dupes you can get on the weapon. As such it’s important to know what you want to work with as a free to play. Personally, this ended up with me giving Hane a lot of value because she provides a strong damage buff, as well as energy to charge switch skills more often.
                         <br><br>
                         DPS isn’t all that matters however. Even if it generally is the best way to clear solo content for a couple of reasons - solo content will want you to have more damage though, survivability is also valued - ded DPS is no DPS: the same applies to bosses, some content just hits too hard and optimal gameplay would require good dodges resulting in rarely any damage taken, so going all attack often fares better. This is in addition to things like Marc that enable a damage focused set up to boast strong survivability as well. As such tanking is generally not optimal because of mechanics (tanks lose out damage just from resonance, in addition to what weapons are available and how much damage each provides). Simply put, in this game tanks have an aggro buff and damage reduction, but if a DPS can maintain aggro through their damage while avoiding damage, wouldn’t a good DPS just outperform a tank? Yes. All of this still doesn’t discount the value tanks have. In specific end game content such as frontier clash (Hard) the boost tanks get in breaking power is what you need to prevent annoying mechanics such as enemies taking flight. We all know how annoying a boss that jumps across the map can be, especially when you have long cooldowns.
                         <br><br>
                         A good tank build could easily be Marc, Meryl, and Hane. Meryl has the best breaking power as of now, as well as cc immunity already proving her worth in this comp. Her switch skill can also trap enemies, thought it’ll trap your allies as well… She also does decent damage with her spin attack. Marc provides shield, energy, and an attack buff, as well as cc immunity. Hane provides ranged damage, DoT, and energy recharge to spam more switch skills.
                         <br><br>
-                        <a href="https://youtu.be/wEPNMDxLkDQ">Tank Showcase</a> 
+                        <a href="https://youtu.be/wEPNMDxLkDQ">Tank Showcase</a>
                     </p>
                     <h2 class="mt-5 passive-value">Support</h2>
                     <p>
@@ -855,7 +944,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                         <div class="row m-3">
                             <div class="col">
@@ -1005,7 +1094,7 @@
 
                     <h2 class="mt-4 passive-value">Power Support</h2>
                     <div class="row">
-                        <div class="col p-3">  
+                        <div class="col p-3">
                         </div>
                         <div class="col">
                             <div class="card bg-dark">
@@ -1049,7 +1138,7 @@
                                 <h5 class="card-title"></h5>
                             </div>
                         </div>
-                        <div class="col p-3">  
+                        <div class="col p-3">
                         </div>
                         <div class="col">
                             <div class="card bg-dark">
@@ -1065,7 +1154,7 @@
 
                     <h2 class="mt-4 passive-value">Healing Support (for Healers)</h2>
                     <div class="row">
-                        <div class="col p-3">  
+                        <div class="col p-3">
                         </div>
                         <div class="col">
                             <div class="card bg-dark">
@@ -1095,11 +1184,11 @@
 
             </div>
         </div>
-        
+
         <!-- Gathering Related -->
         <div class="my-5" style="border-bottom: 2px solid hotpink;">
             <div class="guide-divider text-start ps-3" style="border-color: hotpink; color: hotpink;">Gathering Related</div>
-            
+
             <!-- Abyss Achievements guide -->
             <a class="guide-header d-block" data-bs-toggle="collapse" href="#guide-abyss-achievement" role="button" aria-expanded="false" aria-controls="guide-abyss-achievement">Achievements that reward Black Crystals <code>Unconsidered#5010</code></a>
             <div class="collapse" id="guide-abyss-achievement">
@@ -1213,17 +1302,17 @@
                 Coming soon
             </div>
         </div>
-        
+
         <!-- Technical Guides -->
         <div class="mt-5" style="border-bottom: 2px solid mediumaquamarine">
             <div class="guide-divider text-start ps-3" style="color: mediumaquamarine; border-color: mediumaquamarine">Technical</div>
-            
+
             <!-- Pyrosu signup guide -->
             <a class="guide-header d-block" data-bs-toggle="collapse" href="#guide-pyrosu-cnreg" role="button" aria-expanded="false" aria-controls="guide-pyrosu-cnreg"><span class="flag">🇨🇳</span> Registration Guide <code>Pyrosu#6969</code></a>
             <div class="collapse" id="guide-pyrosu-cnreg">
                 Coming soon
             </div>
-            
+
             <!-- Pyrosu Top-up guide -->
             <a class="guide-header d-block" data-bs-toggle="collapse" href="#guide-pyrosu-cntopup" role="button" aria-expanded="false" aria-controls="guide-pyrosu-cntopup"><span class="flag">🇨🇳</span> Top-up Guide <code>Pyrosu#6969</code></a>
             <div class="collapse" id="guide-pyrosu-cntopup">
@@ -1231,9 +1320,9 @@
             </div>
         </div>
 
-            
 
-            
+
+
 
     </div>
 

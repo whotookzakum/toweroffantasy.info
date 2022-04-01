@@ -279,9 +279,13 @@ p { margin: 0; }
 
 
 
-
+.ingredient-group {
+    filter: drop-shadow(0 0 5px black);
+}
 .ingredient {
     width: 70px;
+    border-radius: 0.75rem;
+    border: 4px solid gray;
 }
 
 .badge-tr {
@@ -289,21 +293,19 @@ p { margin: 0; }
     top: 0; 
 }
 .badge-br {
-    right: 0; 
-    bottom: 0; 
+    right: 2px; 
+    bottom: 4px; 
 }
 
 .badge {
-    background-color: blue;
     position: absolute;
     border-radius: 50%; 
     color: white; 
     font-family: 'Chakra Petch';
-    font-size: inherit;
+    font-size: 2.3rem;
     padding: 0;
     width: 20px;
     line-height: 20px;
-    filter: drop-shadow(0 0 1px black);
 }
 
 .img-holder {
@@ -372,3 +374,43 @@ p { margin: 0; }
 .text-rarity-5 {
     color: gold;
 }
+
+
+/* PALETTE
+
+
+#111111 navbar black
+#181414 body charcoal 
+#439eac navlink blue
+#c8c8c8 text color
+
+#c41c36 page border cherry
+
+#3b3e45 wep tier background
+#d1b9eb wep tier A
+#ffdb85 wep tier S/SS
+
+#222222 guide title hover
+
+bg-rarity-1 through 5 for item box gradients
+
+#d5d5e0 text-rarity-1
+#58d058 text-rarity-2
+#00d2ff text-rarity-3
+#f289ff text-rarity-4
+gold text-rarity-5
+
+constellation table:
+black
+#050505
+#101010
+#151515
+#202020
+#252525
+
+guides sections:
+deepskyblue
+hotpink
+mediumaquamarine
+
+*/
