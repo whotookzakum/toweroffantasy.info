@@ -378,20 +378,20 @@ p { margin: 0; }
 
 /* PALETTE
 
-
+UI:
 #111111 navbar black
 #181414 body charcoal 
 #439eac navlink blue
 #c8c8c8 text color
-
 #c41c36 page border cherry
 
+shield break and energy recharge:
 #3b3e45 wep tier background
 #d1b9eb wep tier A
 #ffdb85 wep tier S/SS
 
-#222222 guide title hover
 
+Food/item rarity:
 bg-rarity-1 through 5 for item box gradients
 
 #d5d5e0 text-rarity-1
@@ -400,7 +400,7 @@ bg-rarity-1 through 5 for item box gradients
 #f289ff text-rarity-4
 gold text-rarity-5
 
-constellation table:
+constellation table background:
 black
 #050505
 #101010
@@ -408,9 +408,10 @@ black
 #202020
 #252525
 
-guides sections:
+guides section headers:
 deepskyblue
 hotpink
 mediumaquamarine
+#222222 hovering over a guide title
 
 */
