@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Font Awesome (CDN) -->
@@ -23,15 +23,32 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-N68SWH7ZJB');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N68SWH7ZJB');
     </script>
 </head>
 
 <body>
+    <img src="images/art/karasuma.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/meryl.png" style="display: non; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/baiyuekui.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/king.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/zero.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/huma.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/shiro.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/marc.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/nemesis.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/frigg.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/claudia.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/cobalt.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+    <img src="images/art/coco.png" style="display: none; position: fixed; right: 0; object-fit: none; object-position: 200px;">
+
 
     <nav class="navbar navbar-expand-sm navbar-dark nav-bg flex-sm-nowrap flex-wrap p-0 fixed-top">
         <div class="container-fluid">
@@ -66,35 +83,162 @@
         </div>
     </nav>
 
-        
+
     <!-- Sort by element, role, rarity, limited/standard -->
     <nav class="text-center" id="mimic-list">
-        <ul class="text-center p-0">
-            <li class="mimic-button"><img id="btn-meryl" src="images/avatar/meryl.png"><h3>Meryl</h3></li>
-            <li class="mimic-button"><img id="btn-hane" src="images/avatar/hane.png"><h3>Hane</h3></li>
-            <li class="mimic-button"><img id="btn-coco" src="images/avatar/coco.png"><h3>Coco Ritter</h3></li>
-            <li class="mimic-button"><img id="btn-king" src="images/avatar/king.png"><h3>KING</h3></li>
-            <li class="mimic-button"><img id="btn-shiro" src="images/avatar/shiro.png"><h3>Shiro</h3></li>
-            <li class="mimic-button"><img id="btn-zero" src="images/avatar/zero.png"><h3>Zero</h3></li>
-            <li class="mimic-button"><img id="btn-samir" src="images/avatar/samir.png"><h3>Samir</h3></li>
-            <li class="mimic-button"><img id="btn-huma" src="images/avatar/huma.png"><h3>Huma</h3></li>
-            <li class="mimic-button"><img id="btn-karasuma" src="images/avatar/karasuma.png"><h3>Karasuma</h3></li>
-            <li class="mimic-button"><img id="btn-claudia" src="images/avatar/claudia.png"><h3>Claudia</h3></li>
-            <li class="mimic-button"><img id="btn-cobalt" src="images/avatar/cobalt.png"><h3>Cobalt-B</h3></li>
-            <li class="mimic-button"><img id="btn-baiyuekui" src="images/avatar/baiyuekui.png"><h3>Baiyuekui</h3></li>
-            <li class="mimic-button"><img id="btn-marc" src="images/avatar/marc.png"><h3>Marc</h3></li>
-            <li class="mimic-button"><img id="btn-nemesis" src="images/avatar/nemesis.png"><h3>Nemesis</h3></li>
-            <li class="mimic-button"><img id="btn-frigg" src="images/avatar/frigg.png"><h3>Frigg</h3></li>
-            <li class="mimic-button"><img id="btn-peppa" src="images/avatar/peppa.png"><h3>Peppa</h3></li>
-            <li class="mimic-button"><img id="btn-hilda" src="images/avatar/hilda.png"><h3>Hilda</h3></li>
-            <li class="mimic-button"><img id="btn-xi" src="images/avatar/xi.png"><h3>Xi</h3></li>
-            <li class="mimic-button"><img id="btn-bailing" src="images/avatar/bailing.png"><h3>Bai Ling</h3></li>
-            <li class="mimic-button"><img id="btn-manaka" src="images/avatar/manaka.png"><h3>Manaka</h3></li>
-        </ul>
+
     </nav>
 
+    <!-- Page container -->
+    <div class="container p-5 position-relative">
+        
+        <!-- Mimics List -->
+        <div class="">
+            <div class="wep-tier wep-tier-s d-inline-block m-3 mimic-rarity-header">SSR Mimics</div>
+            <ul class="p-0 mx-3">
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-frigg" src="images/avatar/frigg.png">
+                    <h3>Frigg</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-nemesis" src="images/avatar/nemesis.png">
+                    <h3>Nemesis</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-marc" src="images/avatar/marc.png">
+                    <h3>Marc</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-baiyuekui" src="images/avatar/baiyuekui.png">
+                    <h3>Baiyuekui</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-cobalt" src="images/avatar/cobalt.png">
+                    <h3>Cobalt-B</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-claudia" src="images/avatar/claudia.png">
+                    <h3>Claudia</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-coco" src="images/avatar/coco.png">
+                    <h3>Coco Ritter</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-huma" src="images/avatar/huma.png">
+                    <h3>Huma</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-karasuma" src="images/avatar/karasuma.png">
+                    <h3>Karasuma</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-king" src="images/avatar/king.png">
+                    <h3>KING</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-meryl" src="images/avatar/meryl.png">
+                    <h3>Meryl</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-samir" src="images/avatar/samir.png">
+                    <h3>Samir</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-shiro" src="images/avatar/shiro.png">
+                    <h3>Shiro</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-hane" src="images/avatar/hane.png">
+                    <h3>Tsubasa</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-zero" src="images/avatar/zero.png">
+                    <h3>Zero</h3>
+                </li>
+            </ul>
+            <div class="wep-tier wep-tier-a d-inline-block m-3 mimic-rarity-header">SR Mimics</div>
+            <ul class="p-0 mx-3">
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-peppa" src="images/avatar/peppa.png">
+                    <h3>Peppa</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-hilda" src="images/avatar/hilda.png">
+                    <h3>Hilda</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-xi" src="images/avatar/xi.png">
+                    <h3>Xi</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-bailing" src="images/avatar/bailing.png">
+                    <h3>Bai Ling</h3>
+                </li>
+                <li class="mimic-button" data-bs-toggle="modal" data-bs-target="#mimicModal">
+                    <img id="btn-manaka" src="images/avatar/manaka.png">
+                    <h3>Manaka</h3>
+                </li>
+            </ul>
+        </div>
+            
 
-    <div class="container mt-3 page-wrapper">
+        <!-- Modal -->
+        <div class="modal fade" id="mimicModal" tabindex="-1" aria-labelledby="mimicModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen mx-auto">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body px-5">
+                        <p>This <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" title="Samir" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a> triggers a popover on click.</p>
+                        
+                        <!-- Weapon Info -->
+                        <div class="text-center p-md-5 weapon-info-wrapper">
+                            <!-- Overview -->
+                            <div class="row">
+                                <div class="col-lg-6 d-flex text-start px-0 py-4">
+                                    <img id="wep-img" class="align-self-center" style="width: 128px; height: 128px;" src="images/wep/samir.png">
+                                    <div class="ms-4 align-self-center">
+                                        <h1 id="wep-name">Weapon Name</h1>
+                                        <img id="wep-type-img" src="images/reso_dps.png" data-bs-toggle="tooltip" title="Resonance">
+                                        <img id="wep-element-img" src="images/ele_electric.png" data-bs-toggle="tooltip" title="Element"><br>
+                                        <div id="shield-break-tier" class="wep-tier d-inline-block me-2 my-2">S</div>
+                                        <h3 class="m-0 d-inline-block align-middle">Shield Break: <span id="shield-break">11.11</span></h3><br>
+                                        <div id="energy-charge-tier" class="wep-tier d-inline-block me-2">SS</div>
+                                        <h3 class="m-0 d-inline-block align-middle">Energy Charge: <span id="energy-charge">11.11</span></h3>
+                                    </div> 
+                                </div>
+                                <div class="col px-0 py-4"><p id="wep-effect">Weapon effect goes here</p></div>
+                            </div>
+                            <hr>
+                            <!-- Attack Combos -->
+                            <!-- Awakening effects -->
+                            <div class="py-4">
+                                <i class="fa-solid fa-1"></i> <i class="fa-solid fa-star"></i>
+                                <span class="d-block mb-5" id="star-1">Star 1 effects</span>
+                                <i class="fa-solid fa-2"></i> <i class="fa-solid fa-star"></i>
+                                <span class="d-block mb-5" id="star-2">Star 2 effects</span>
+                                <i class="fa-solid fa-3"></i> <i class="fa-solid fa-star"></i>
+                                <span class="d-block mb-5" id="star-3">Star 3 effects</span>
+                                <i class="fa-solid fa-4"></i> <i class="fa-solid fa-star"></i>
+                                <span class="d-block mb-5" id="star-4">Star 4 effects</span>
+                                <i class="fa-solid fa-5"></i> <i class="fa-solid fa-star"></i>
+                                <span class="d-block mb-5" id="star-5">Star 5 effects</span>
+                                <i class="fa-solid fa-6"></i> <i class="fa-solid fa-star"></i>
+                                <span class="d-block" id="star-6">Star 6 effects</span>
+                            </div>
+                        </div>
+                    </div> <!-- Modal body end -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-3 page-wrapper d-none">
         <!--
         <div style="height: 167px; position: relative; z-index: 3; overflow: hidden;">
             <img src="images/header_bg2.png" style="position: absolute; left: 0; z-index; 2;">
@@ -108,7 +252,6 @@
         <h3 id="mimic-name" class="section-header">Name</h3>
         <div class="triangle-topleft">&nbsp;</div>
         -->
-
         <!-- Mimic | Personality -->
         <div class="row my-5">
             <!-- Headshot | Traits -->
@@ -141,40 +284,7 @@
                 </div>
             </div>
 
-            <!-- Weapon Info -->
-            <div class="col-md-5 p-0 mx-auto bg-mimic">
-                <h3 class="section-header">WEAPON INFO</h3>
-                <div class="row m-0 p-4">
-                    <!-- Image -->
-                    <div class="col-3 p-0 me-4">
-                        <img class="img-fluid" id="wep-img" src="images/wep/samir.png">
-                    </div>
-                    <!-- Text -->
-                    <div class="col p-0 my-auto text-start">
-                        <div class="row m-0">
-                            <div class="col p-0">
-                                <h1 id="wep-name">Weapon Name</h1>
-                            </div>
-                        </div>
-                        <div class="row m-0 mb-2">
-                            <div class="col p-0">
-                                <img id="wep-type-img" src="images/reso_dps.png">
-                                <img id="wep-element-img" src="images/ele_electric.png">
-                            </div>
-                        </div>
-                        <div class="row m-0 mb-2">
-                            <div class="col p-0">
-                                <div id="shield-break-tier" class="wep-tier d-inline-block">S</div><h3 class="m-0 ms-2 d-inline-block align-middle">Shield Break: <span id="shield-break">11.11</span></h3>
-                            </div>
-                        </div>
-                        <div class="row m-0">
-                            <div class="col p-0">
-                                <div id="energy-charge-tier" class="wep-tier d-inline-block">SS</div><h3 class="m-0 ms-2 d-inline-block align-middle">Energy Charge: <span id="energy-charge">11.11</span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Breakthrough -->
             <div class="col-md-5 p-0 mx-auto bg-mimic">
@@ -183,48 +293,7 @@
             </div>
         </div>
 
-        <!-- Elemental Effect | Attack Combos -->
-        <div class="row my-5">
-            <div class="col-md-5 p-0 mx-auto bg-mimic">
-                <h3 class="section-header">ELEMENTAL EFFECT</h3>
-                <p class="p-4" id="wep-effect">Weapon effect goes here</p>
-            </div>
-            <div class="col-md-5 p-0 mx-auto bg-mimic">
-                <h3 class="section-header">ATTACK COMBOS</h3>
-                <div>Video here</div>
-            </div>
-        </div>
 
-        <!-- Awakening effects -->
-        <div class="row my-5">
-            <div class="col-12 col-md-11 p-0 mx-auto bg-mimic p-0">
-                <h3 class="section-header">AWAKENING EFFECTS</h3>
-                <div class="row m-0 p-4 align-items-center" style="background:black">
-                    <span class="col"><i class="fa-solid fa-1"></i> <i class="fa-solid fa-star"></i></span>
-                    <span class="col-md-10" id="star-1">Star 1 effects</span>
-                </div>
-                <div class="row m-0 p-4 align-items-center" style="background:#050505">
-                    <span class="col"><i class="fa-solid fa-2"></i> <i class="fa-solid fa-star"></i></span>
-                    <span class="col-md-10" id="star-2">Star 2 effects</span>
-                </div>
-                <div class="row m-0 p-4 align-items-center" style="background:#101010">
-                    <span class="col"><i class="fa-solid fa-3"></i> <i class="fa-solid fa-star"></i></span>
-                    <span class="col-md-10" id="star-3">Star 3 effects</span>
-                </div>
-                <div class="row m-0 p-4 align-items-center" style="background:#151515">
-                    <span class="col"><i class="fa-solid fa-4"></i> <i class="fa-solid fa-star"></i></span>
-                    <span class="col-md-10" id="star-4">Star 4 effects</span>
-                </div>
-                <div class="row m-0 p-4 align-items-center" style="background:#202020">
-                    <span class="col"><i class="fa-solid fa-5"></i> <i class="fa-solid fa-star"></i></span>
-                    <span class="col-md-10" id="star-5">Star 5 effects</span>
-                </div>
-                <div class="row m-0 p-4 align-items-center" style="background:#252525">
-                    <span class="col"><i class="fa-solid fa-6"></i> <i class="fa-solid fa-star"></i></span>
-                    <span class="col-md-10" id="star-6">Star 6 effects</span>
-                </div>
-            </div>
-        </div>
 
         <!-- Chips -->
         <div class="row my-5">

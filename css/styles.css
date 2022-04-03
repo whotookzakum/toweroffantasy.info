@@ -2,15 +2,14 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: #111111;
-    color: #c8c8c8;
+    background-color: #15141a;
+    color: #dedede;
     font-family: 'Helvetica', 'Roboto', 'Times New Roman';
     font-size: 1.6rem;
     /* 18 pt and 12 pt */
     /* scrollbar-width: none;
     -ms-overflow-style: none; */
-    background: #181414;
-    padding-top: 5rem;
+    padding-top: 5.5rem;
 }
 @font-face {
     font-family: 'Helvetica';
@@ -24,7 +23,6 @@ body {
 } */
 p { margin: 0; }
 
-
 /* NAV RELATED
 =============================================== */
 
@@ -34,7 +32,7 @@ p { margin: 0; }
 }
 
 .navbar {
-    filter: drop-shadow(0 0 3px #111111);
+    filter: drop-shadow(0 0 4px #121212);
 }
 
 .nav-link {
@@ -54,7 +52,7 @@ p { margin: 0; }
 }
 
 .nav-bg {
-    background-color: #111111;
+    background: #1a1921;
 }
 
 .navbar-brand {
@@ -81,15 +79,18 @@ p { margin: 0; }
     }
 }
 .mimic-button {
-    padding: 10px 5px 5px;
     display: inline-block;
+    padding: 10px;
     transition: color 125ms ease-in-out;
+    text-align: center;
+    filter: drop-shadow(0 0 4px #111111);
 }
 .mimic-button img {
-    width: 60px;
-    height: 60px;
     margin-bottom: 5px;
     border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    object-fit: none;
     /* transition: background-color 125ms ease-in-out; */
 }
 .mimic-button:after {
@@ -374,6 +375,55 @@ p { margin: 0; }
 .text-rarity-5 {
     color: gold;
 }
+
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+.container { 
+    padding: 0;
+    background: rgba(26, 25, 33, 0.9); 
+    box-shadow: 0 0 4px #111111;
+}
+
+.modal-backdrop { opacity: 0 !important; }
+.modal-dialog { max-width: 1000px !important; }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.modal-body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.modal-header { border :none; }
+
+.modal {
+    padding-top: 5.5rem; 
+    box-shadow: 0 0 4px #111111;
+}
+.modal-content {
+    background: rgba(26, 25, 33, 0.9); 
+}
+.tooltip {
+    font-size: 1.6rem;
+}
+
+.mimic-rarity-header {
+    width: 140px; 
+    padding: 0 3px; 
+    box-shadow: 0 3px 3px #111111;
+}
+
+.weapon-info-wrapper i {
+    font-size: 2rem;
+}
+
 
 
 /* PALETTE
