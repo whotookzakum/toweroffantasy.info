@@ -112,7 +112,7 @@ p { margin: 0; }
     object-fit: none; 
     object-position: 200px;
 }
-#mimic-list {
+#modal-menu {
     transition: opacity 0.5s ease;
 }
 .mimic-button {
@@ -320,9 +320,6 @@ p { margin: 0; }
 /* CHIPS RELATED
 =============================================== */
 
-#chip-list {
-    transition: opacity 0.5s ease;
-}
 .chip-button {
     display: inline-block;
     transition: color 125ms ease-in-out;
@@ -354,6 +351,15 @@ p { margin: 0; }
 
 
 /* Changelog */
+.cl-wrapper {
+    height: 200px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.cl-wrapper::-webkit-scrollbar {
+  display: none;
+}
 .cl  {
     color: gray;
 }

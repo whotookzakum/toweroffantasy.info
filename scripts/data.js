@@ -47,6 +47,7 @@ var snackBox = 'images/affinity/40.jpg';
 var samir = 
     {
         name:"Samir",
+        rarity: "SSR",
         pic:"images/samir_nobg.png",
         artwork:"images/art/samir.png",
         wepName:"Supermagnetism Double Star",
@@ -73,7 +74,7 @@ var samir =
         materials:["electric","red","black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_samir.png",
+        chipImg:"images/chip/samir.png",
         chipEffect:[
             // 2 set
             "Each hit increases attack by 1.5%, up to 10/13/16/20 stacks, lasting 2 seconds and refreshing with each hit.",
@@ -115,6 +116,7 @@ var samir =
 var coco = 
     {
         name:"Coco Ritter",
+        rarity: "SSR",
         pic:"images/coco_nobg.png",
         artwork:"images/art/coco.png",
         wepName:"Zero Pointer",
@@ -141,7 +143,7 @@ var coco =
         materials:["ice", "green", "blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_coco.png",
+        chipImg:"images/chip/coco.png",
         chipEffect:[
             // 2 set
             "Healing power and healing received increased by 8%/10%/12%/14%.",
@@ -190,6 +192,7 @@ var coco =
 var king = 
     {
         name:"KING",
+        rarity: "SSR",
         pic:"images/king_nobg.png",
         artwork:"images/art/king.png",
         wepName:"Black Crow Scythe",
@@ -216,7 +219,7 @@ var king =
         materials:["fire", "green", "blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_king.png",
+        chipImg:"images/chip/king.png",
         chipEffect:[
             // 2 set
             "For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25s",
@@ -265,6 +268,7 @@ var king =
 var shiro = 
     {
         name:"Shiro",
+        rarity: "SSR",
         pic:"images/shiro_nobg.png",
         artwork:"images/art/shiro.png",
         wepName:"Ring Blade of the Sea",
@@ -291,7 +295,7 @@ var shiro =
         materials:["physical","green","black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_shiro.png",
+        chipImg:"images/chip/shiro.png",
         chipEffect:[
             // 2 set
             "15%/19%/22.5%/26% increase in damage and shield breaking to targets above 50% health",
@@ -340,6 +344,7 @@ var shiro =
 var cobalt = 
     {
         name:"Cobalt-B",
+        rarity: "SSR",
         pic:"images/cobalt_nobg.png",
         artwork:"images/art/cobalt.png",
         wepName:"Blazing Revolver",
@@ -366,7 +371,7 @@ var cobalt =
         materials:["fire", "red", "black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_cobalt.png",
+        chipImg:"images/chip/cobalt.png",
         chipEffect:[
             // 2 set
             "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 12%/15%/18%/21% attack damage per second  for 6 seconds.",
@@ -414,6 +419,7 @@ var cobalt =
 var claudia = 
     {
         name:"Claudia",
+        rarity: "SSR",
         pic:"images/claudia_nobg.png",
         artwork:"images/art/claudia.png",
         wepName:"Red Lotus Blade",
@@ -440,7 +446,7 @@ var claudia =
         materials:["physical", "red", "blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_claudia.png",
+        chipImg:"images/chip/claudia.png",
         chipEffect:[
             // 2 set
             "Aerial attack damage increased 13%/17%/20%/23% and double jump is reset after hitting a target in the air",
@@ -492,6 +498,7 @@ var claudia =
 var baiyuekui = 
     {
         name:"Baiyuekui",
+        rarity: "SSR",
         pic:"images/baiyuekui_nobg.png", 
         artwork:"images/art/baiyuekui.png",
         wepName:"Eighth Consciousness", //Alaya Vijnana "Base [of] Consciousness"
@@ -519,7 +526,7 @@ var baiyuekui =
         materials:["electric","green","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_baiyuekui.png",
+        chipImg:"images/chip/baiyuekui.png",
         chipEffect:[
             // 2 set
             "If you have 300~999 charge when switching to this weapon, use 300 points to gain a 15%/18%/21%/25% attack boost for 10 seconds, cooldown 5 seconds, does not stack.",
@@ -568,6 +575,7 @@ var baiyuekui =
 var meryl = 
     {
         name:"Meryl",
+        rarity: "SSR",
         pic:"images/meryl_nobg.png",
         artwork:"images/art/meryl.png",
         wepName:"Rose's Edge",
@@ -594,7 +602,7 @@ var meryl =
         materials:["ice", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_meryl.png",
+        chipImg:"images/chip/meryl.png",
         chipEffect:[
             // 2 set
             "When dropping below 30% health, gain a shield of 15%/19%/22.5%/26% of maximum life for 10 seconds, cooldown 120 seconds",
@@ -638,6 +646,7 @@ var meryl =
 var hane = 
     {
         name:"Hane",
+        rarity: "SSR",
         pic:"images/hane_nobg.png",
         artwork:"images/art/hane.png",
         wepName:"Ice Wind Vector",
@@ -664,7 +673,7 @@ var hane =
         materials:["ice","red","blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_hane.png",
+        chipImg:"images/chip/hane.png",
         chipEffect:[
             // 2 set
             "Increase damage by 10%/12.5%/15%/17.5% if no enemy unit is within 4 meters",
@@ -713,6 +722,7 @@ var hane =
 var huma = 
     {
         name:"Huma",
+        rarity: "SSR",
         pic:"images/huma_nobg.png",
         artwork:"images/art/huma.png",
         wepName:"V2 Meltdown Shield",
@@ -739,7 +749,7 @@ var huma =
         materials:["fire","green","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_huma.png",
+        chipImg:"images/chip/huma.png",
         chipEffect:[
             // 2 set
             "After the dodge skill hits a target, applies bleed, causing 15%/19%/22.5%/26% * attack damage per sec for 5 sec.",
@@ -791,6 +801,7 @@ var huma =
 var karasuma = 
     {
         name:"Karasuma",
+        rarity: "SSR",
         pic:"images/karasuma_nobg.png",
         artwork:"images/art/karasuma.png",
         wepName:"Lightning Blades",
@@ -817,7 +828,7 @@ var karasuma =
         materials:["electric", "red", "blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_karasuma.png",
+        chipImg:"images/chip/karasuma.png",
         chipEffect:[
             // 2 set
             "Crit damage is increased by 33%/42%/50%/58% against targets below 60% health",
@@ -866,6 +877,7 @@ var karasuma =
 var zero = 
     {
         name:"Zero",
+        rarity: "SSR",
         pic:"images/zero_nobg.png",
         artwork:"images/art/zero.png",
         wepName:"Veto Cube",
@@ -892,7 +904,7 @@ var zero =
         materials:["fire","green","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_zero.png",
+        chipImg:"images/chip/zero.png",
         chipEffect:[
             // 2 set
             "When you release a combo, you gain a shield of 120%/150%/180%/210% of your attack power for 4 seconds.",
@@ -936,6 +948,7 @@ var zero =
 var marc = 
     {
         name:"Marc",
+        rarity: "SSR",
         pic:"images/marc_nobg.png",
         artwork:"images/art/marc.png",
         wepName:"Breaking Dawn",
@@ -963,7 +976,7 @@ var marc =
         materials:["physical","red","black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_marc.png",
+        chipImg:"images/chip/marc.png",
         chipEffect:[
             // 2 set
             "Adds a life shield of 15% of your current HP to all teammates after  attacking an enemy for 15 seconds, resetting 10 seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by 11%/13%/15%/17% for 15 seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level. ",
@@ -1002,6 +1015,7 @@ var marc =
 var nemesis = 
     {
         name:"Nemesis",
+        rarity: "SSR",
         pic:"images/nemesis_nobg.png",
         artwork:"images/art/nemesis.png",
         wepName:"Enlightenment",
@@ -1029,7 +1043,7 @@ var nemesis =
         materials:["electric","green","blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_nemesis.png",
+        chipImg:"images/chip/nemesis.png",
         chipEffect:[
             // 2 set
             "When healing a target, the healed target's electric attack power is increased by 15%/18%/21%/25% for 20 seconds, non-stackable, only the highest level is in effect when repeated.",
@@ -1080,6 +1094,7 @@ var nemesis =
 var frigg = 
     {
         name:"Frigg",
+        rarity: "SSR",
         pic:"images/frigg_nobg.png",
         artwork:"images/art/frigg.png",
         wepName:"Ice Balmung",
@@ -1107,7 +1122,7 @@ var frigg =
         materials:["ice","red","black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_frigg.png",
+        chipImg:"images/chip/frigg.png",
         chipEffect:[
             // 2 set
             "When switching from ice weapon to ice weapon, the ice attack power is increased by 15%/18%/21%/25% for 10 seconds. This set also works in the background (when not using the weapon where this set is equipped on), but only the set with the highest star rating will work when  multiple sets are equipped.",
@@ -1139,6 +1154,7 @@ var frigg =
 var bailing = 
     {
         name:"Bai Ling",
+        rarity: "SR",
         pic:"images/bailing_nobg.png",
         artwork:"images/art/bailing.png",
         wepName:"Nightbird's Feather",
@@ -1165,7 +1181,7 @@ var bailing =
         materials:["physical", "green", "blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_bailing.png",
+        chipImg:"images/chip/bailing.png",
         chipEffect:[
             //
             "",
@@ -1215,6 +1231,7 @@ var bailing =
 var hilda = 
     {
         name:"Hilda",
+        rarity: "SR",
         pic:"images/hilda_nobg.png",
         artwork:"images/art/hilda.png",
         wepName:"The Terminator",
@@ -1241,7 +1258,7 @@ var hilda =
         materials:["ice","red","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_hilda.png",
+        chipImg:"images/chip/hilda.png",
         chipEffect:[
             //
             "",
@@ -1290,6 +1307,7 @@ var hilda =
 var manaka = 
     {
         name:"Manaka",
+        rarity: "SR",
         pic:"images/manaka_nobg.png",
         artwork:"images/art/manaka.png",
         wepName:"Thunderbolt",
@@ -1316,7 +1334,7 @@ var manaka =
         materials:["electric", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_manaka.png",
+        chipImg:"images/chip/manaka.png",
         chipEffect:[
             //
             "",
@@ -1367,6 +1385,7 @@ var manaka =
 var peppa = 
     {
         name:"Peppa",
+        rarity: "SR",
         pic:"images/peppa_nobg.png",
         artwork:"images/art/peppa.png",
         wepName:"Sceptre of the Stigmata",
@@ -1393,7 +1412,7 @@ var peppa =
         materials:["electric", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_peppa.png",
+        chipImg:"images/chip/peppa.png",
         chipEffect:[
             //
             "",
@@ -1444,6 +1463,7 @@ var peppa =
 var xi = 
     {
         name:"Xi",
+        rarity: "SR",
         pic:"images/xi_nobg.png",
         artwork:"images/art/xi.png",
         wepName:"Initial Strike",
@@ -1470,7 +1490,7 @@ var xi =
         materials:["ice","green","black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_xi.png",
+        chipImg:"images/chip/xi.png",
         chipEffect:[
             //
             "",
@@ -1518,8 +1538,128 @@ var xi =
         ]
 }
 
-
-
+// Chip exclusives
+var roberag = {
+    name:"Roberag",
+    rarity:"SR",
+    chipImg:"images/chip/roberag.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Poison the target when breaking shields, dealing 45%/56%/67.5%"
+        ]
+}
+var apophis = {
+    name:"Apophis",
+    rarity:"SR",
+    chipImg:"images/chip/apophis.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "The lower your health, the more damage you can do, at 20% health, the maximum value is reached and the maximum damage increased by 20%/25%/30%."
+        ]
+}
+var frozenmech = {
+    name:"Frozen Mech",
+    rarity:"SR",
+    chipImg:"images/chip/frozenmech.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "When the health is lower than 40%, cast a combo technique to restore the health value of 160%/200%/240% of the attack power."
+        ]
+}
+var sobek = {
+    name:"Sobek",
+    rarity:"SR",
+    chipImg:"images/chip/sobek.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Increases damage by 6%/7.5%/9% for each enemy unit that is around, up to 3 levels."
+        ]
+}
+var barbarossa = {
+    name:"Barbarossa",
+    rarity:"SR",
+    chipImg:"images/chip/barbarossa.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "when switching to (this) weapon, get 50%/62.5%/75% counter damage that last for 3 seconds, cool down for 30 seconds; when switch to other weapons, get 20%/25%/30% damage increase, lasting 5 seconds, with a cooldown time of 30 seconds."
+        ]
+}
+var burstingcore = {
+    name:"Bursting Core",
+    rarity:"R",
+    chipImg:"images/chip/burstingcore.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Fire weapon damage increased by 6%"
+        ]
+}
+var transportthinking = {
+    name:"Transport Thinking",
+    rarity:"R",
+    chipImg:"images/chip/transportthinking.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Ice weapon damage increased by 6%"
+        ]
+}
+var guardscode = {
+    name:"Guard's Code",
+    rarity:"R",
+    chipImg:"images/chip/guardscode.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Electricity weapon damage increased by 6%"
+        ]
+}
+var arrogantprovocation = {
+    name:"Arrogant Provocation",
+    rarity:"R",
+    chipImg:"images/chip/arrogantprovocation.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Physical weapon damage increased by 6%"
+        ]
+}
+var cleanupagreement = {
+    name:"Cleanup Agreement",
+    rarity:"R",
+    chipImg:"images/chip/cleanupagreement.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Damage taken reduced by 6%"
+        ]
+}
+var offensivelogic = {
+    name:"Offensive Logic",
+    rarity:"SR",
+    chipImg:"images/chip/offensivelogic.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Shield breaking efficiency increased by 18%"
+        ]
+}
 
 
 
