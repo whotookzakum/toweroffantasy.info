@@ -1,5 +1,8 @@
-var physical, lightning, fire, ice, red, green, blue, black, attack, defense, health, crit;
+var attack, defense, health, crit;
 
+// 1-15 purple
+// 16-30 blue
+// 31-40 green
 var psp = 'images/affinity/1.jpg';
 var snowglobe = 'images/affinity/2.jpg';
 var pearl = 'images/affinity/3.jpg';
@@ -44,12 +47,13 @@ var snackBox = 'images/affinity/40.jpg';
 var samir = 
     {
         name:"Samir",
+        rarity: "SSR",
         pic:"images/samir_nobg.png",
-
+        artwork:"images/art/samir.png",
         wepName:"Supermagnetism Double Star",
         wepImg:"images/wep/samir.png",
         eleImg:"images/ele_electric.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
         awakening:[
             // 1 star
@@ -67,10 +71,10 @@ var samir =
         ],
         energyCharge:["10.70","s"],
         shieldBreak:["6.00","b"],
-        materials:[lightning,red,black],
+        materials:["electric","red","black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_samir.png",
+        chipImg:"images/chip/samir.png",
         chipEffect:[
             // 2 set
             "Each hit increases attack by 1.5%, up to 10/13/16/20 stacks, lasting 2 seconds and refreshing with each hit.",
@@ -84,13 +88,13 @@ var samir =
             // 600 affinity
             "Unlock communication [Solo Dance]",
             // 1200 affininty
-            '<span class="passive-value">Unlock Mimic Passive</span><br>For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="passive-value">3%</span>, up to <span class="passive-value">4</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="passive-value">1</span> sec.',
+            'For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="text-blue">3%</span>, up to <span class="text-blue">4</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="text-blue">1</span> sec.',
             // 2000 affinity
             "Unlock communication [Resonance]",
             // 3000 affinity
             "Unlock communication [Concerto]",
             // 4000 affinity
-            '<span class="passive-value">Mimic Passive Upgrade</span><br>For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="passive-value">4%</span>, up to <span class="passive-value">5</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="passive-value">2</span> sec.'
+            'For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="text-blue">4%</span>, up to <span class="text-blue">5</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="text-blue">2</span> sec.'
         ],
         traits: ['Female','171 cm','???','Taurus','20 May'],
         gifts: [
@@ -112,8 +116,9 @@ var samir =
 var coco = 
     {
         name:"Coco Ritter",
+        rarity: "SSR",
         pic:"images/coco_nobg.png",
-
+        artwork:"images/art/coco.png",
         wepName:"Zero Pointer",
         wepImg:"images/wep/coco.png",
         eleImg:"images/ele_ice.png",
@@ -135,10 +140,10 @@ var coco =
         ],
         energyCharge:["12.50","s"],
         shieldBreak:["4.00","b"],
-        materials:[ice, green, blue],
+        materials:["ice", "green", "blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_coco.png",
+        chipImg:"images/chip/coco.png",
         chipEffect:[
             // 2 set
             "Healing power and healing received increased by 8%/10%/12%/14%.",
@@ -152,13 +157,13 @@ var coco =
             // 600 affinity
             "Unlock communication [Some Memories]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Coco uses a secondary weapon, the healing effect is increased 20%",
+            "When Coco uses a secondary weapon, the healing effect is increased 20%",
             // 2000 affinity
             "Unlock communication [Some Obsessions]",
             // 3000 affinity
             "Unlock communication [Some Companionship]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Coco uses a secondary weapon, the healing effect is increased 20% and attack power of surrounding allies is increased 15% for 3 seconds when using a secondary weapon's combo or weapon skill"
+            "When Coco uses a secondary weapon, the healing effect is increased 20% and attack power of surrounding allies is increased 15% for 3 seconds when using a secondary weapon's combo or weapon skill"
         ],
         traits: ['Female','147 cm','Hagarde','Gemini','1 Jun'],
         gifts: [
@@ -187,12 +192,13 @@ var coco =
 var king = 
     {
         name:"KING",
+        rarity: "SSR",
         pic:"images/king_nobg.png",
-
+        artwork:"images/art/king.png",
         wepName:"Black Crow Scythe",
         wepImg:"images/wep/king.png",
         eleImg:"images/ele_fire.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
         awakening:[
             // 1 star
@@ -210,10 +216,10 @@ var king =
         ],
         energyCharge:["5.00","b"],
         shieldBreak:["12.50","s"],
-        materials:[fire, green, blue],
+        materials:["fire", "green", "blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_king.png",
+        chipImg:"images/chip/king.png",
         chipEffect:[
             // 2 set
             "For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25s",
@@ -227,13 +233,13 @@ var king =
             // 600 affinity
             "Unlock communication [Trading Fiction]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>King restores <span class='passive-value'>8%</span> HP for every <span class='passive-value'>7</span> enemies he defeats",
+            "King restores <span class='text-blue'>8%</span> HP for every <span class='text-blue'>7</span> enemies he defeats",
             // 2000 affinity
             "Unlock communication [Peer-to-peer Contract]",
             // 3000 affinity
             "Unlock communication [Betting]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>King restores <span class='passive-value'>10%</span> HP for every <span class='passive-value'>5</span> enemies he defeats"
+            "King restores <span class='text-blue'>10%</span> HP for every <span class='text-blue'>5</span> enemies he defeats"
         ],
         traits: ['Male','190 cm','Krohn','Scorpio','3 Nov'],
         gifts: [
@@ -262,12 +268,13 @@ var king =
 var shiro = 
     {
         name:"Shiro",
+        rarity: "SSR",
         pic:"images/shiro_nobg.png",
-
+        artwork:"images/art/shiro.png",
         wepName:"Ring Blade of the Sea",
         wepImg:"images/wep/shiro.png",
         eleImg:"images/ele_physical.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
         awakening:[
             // 1 star
@@ -285,10 +292,10 @@ var shiro =
         ],
         energyCharge:["6.00","b"],
         shieldBreak:["10.00","a"],
-        materials:[physical,green,black],
+        materials:["physical","green","black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_shiro.png",
+        chipImg:"images/chip/shiro.png",
         chipEffect:[
             // 2 set
             "15%/19%/22.5%/26% increase in damage and shield breaking to targets above 50% health",
@@ -302,13 +309,13 @@ var shiro =
             // 600 affinity
             "Unlock communication [Passive Partner]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Shiro releases her weapon skill or combo skill, her full attack is increased by <span class='passive-value'>10%</span>, and her physical attack is increased by <span class='passive-value'>7%</span> for 8 seconds, cooldown 16 sec.",
+            "When Shiro releases her weapon skill or combo skill, her full attack is increased by <span class='text-blue'>10%</span>, and her physical attack is increased by <span class='text-blue'>7%</span> for 8 seconds, cooldown 16 sec.",
             // 2000 affinity
             "Unlock communication [Sea Waves]",
             // 3000 affinity
             "Unlock communication [Song of the Secret Collection]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Shiro releases her weapon skill or combo skill, her full attack is increased by <span class='passive-value'>16%</span>, and her physical attack is increased by <span class='passive-value'>10%</span> for 8 seconds, cooldown 16 sec."
+            "When Shiro releases her weapon skill or combo skill, her full attack is increased by <span class='text-blue'>16%</span>, and her physical attack is increased by <span class='text-blue'>10%</span> for 8 seconds, cooldown 16 sec."
         ],
         traits: ['Female','163 cm','Volan','Virgo','22 Sep'],
         gifts: [
@@ -337,12 +344,13 @@ var shiro =
 var cobalt = 
     {
         name:"Cobalt-B",
+        rarity: "SSR",
         pic:"images/cobalt_nobg.png",
-
+        artwork:"images/art/cobalt.png",
         wepName:"Blazing Revolver",
         wepImg:"images/wep/cobalt.png",
         eleImg:"images/ele_fire.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
         awakening:[
             // 1 star
@@ -360,10 +368,10 @@ var cobalt =
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["6.50","b"],
-        materials:[fire, red, black],
+        materials:["fire", "red", "black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_cobalt.png",
+        chipImg:"images/chip/cobalt.png",
         chipEffect:[
             // 2 set
             "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 12%/15%/18%/21% attack damage per second  for 6 seconds.",
@@ -377,13 +385,13 @@ var cobalt =
             // 600 affinity
             "Unlock communication [Respect]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Cobalt-B releases a combo, it restores <span class='passive-value'>50-120</span> points of energy charge at random.",
+            "When Cobalt-B releases a combo, it restores <span class='text-blue'>50-120</span> points of energy charge at random.",
             // 2000 affinity
             "Unlock communication [Pleasant Cooperation]",
             // 3000 affinity
             "Unlock communication [Comapnions & Weapons]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Cobalt-B releases a combo, it restores <span class='passive-value'>90-180</span> points of energy charge at random."
+            "When Cobalt-B releases a combo, it restores <span class='text-blue'>90-180</span> points of energy charge at random."
         ],
         traits: ['Female','157 cm','Krohn','Cancer','26 Jun'],
         gifts: [
@@ -411,12 +419,13 @@ var cobalt =
 var claudia = 
     {
         name:"Claudia",
+        rarity: "SSR",
         pic:"images/claudia_nobg.png",
-
+        artwork:"images/art/claudia.png",
         wepName:"Red Lotus Blade",
         wepImg:"images/wep/claudia.png",
         eleImg:"images/ele_physical.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
         awakening:[
             // 1 star
@@ -434,10 +443,10 @@ var claudia =
         ],
         energyCharge:["12.00","s"],
         shieldBreak:["7.50","a"],
-        materials:[physical, red, blue],
+        materials:["physical", "red", "blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_claudia.png",
+        chipImg:"images/chip/claudia.png",
         chipEffect:[
             // 2 set
             "Aerial attack damage increased 13%/17%/20%/23% and double jump is reset after hitting a target in the air",
@@ -451,13 +460,13 @@ var claudia =
             // 600 affinity
             "Unlock communication [Please Tell Me More]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Stealth for <span class='passive-value'>1s</span> after dodging",
+            "Stealth for <span class='text-blue'>1s</span> after dodging",
             // 2000 affinity
             "Unlock communication [Enthusiasm]",
             // 3000 affinity
             "Unlock communication [Engagement]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Stealth for <span class='passive-value'>1.5s</span> after dodging"
+            "Stealth for <span class='text-blue'>1.5s</span> after dodging"
         ],
         traits: ['Female','170 cm','Hagarde','Capricorn','16 Jan'],
         gifts: [
@@ -489,13 +498,15 @@ var claudia =
 var baiyuekui = 
     {
         name:"Baiyuekui",
+        rarity: "SSR",
         pic:"images/baiyuekui_nobg.png", 
-        
+        artwork:"images/art/baiyuekui.png",
         wepName:"Eighth Consciousness", //Alaya Vijnana "Base [of] Consciousness"
         wepImg:"images/wep/baiyuekui.png",
         eleImg:"images/ele_electric.png",
-        resoImg:"images/reso_dps.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).<br>Exclusive Effect: When entering combat, turn on Battle Spirit and increase your final damage by 15%. and your cellular aging is accelerated (reducing your current life by 1% every 5 seconds), which clears when you leave combat [the effect of switching weapons disappears]. If your life drops below 50%, cellular aging stops and the Battle Intent booster effect remains (the effect of switching weapons disappears).",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
+        exclusiveEffect:"When entering combat, turn on Battle Spirit and increase your final damage by 15%. and your cellular aging is accelerated (reducing your current life by 1% every 5 seconds), which clears when you leave combat [the effect of switching weapons disappears]. If your life drops below 50%, cellular aging stops and the Battle Intent booster effect remains (the effect of switching weapons disappears).",
         awakening:[
             // 1 star
             "Dodge attacks hits for an additional 80% attack + 2.5% of your lost life. The weapon skill explodes with additional 160% attack + 5% damage to your lost life. The Force Field release hits with an additional 160% attack + 5% of your lost life (continuous damage does not trigger).",
@@ -512,10 +523,10 @@ var baiyuekui =
         ],
         energyCharge:["8.00","a"],
         shieldBreak:["12.50","s"],
-        materials:[lightning,green,blue],
+        materials:["electric","green","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_baiyuekui.png",
+        chipImg:"images/chip/baiyuekui.png",
         chipEffect:[
             // 2 set
             "If you have 300~999 charge when switching to this weapon, use 300 points to gain a 15%/18%/21%/25% attack boost for 10 seconds, cooldown 5 seconds, does not stack.",
@@ -529,13 +540,13 @@ var baiyuekui =
             // 600 affinity
             "Unlock communication [I am Baiyuekui]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Bai Yuekui enters combat, the lightning attack power is increased by <span class='passive-value'>21%</span>, the effect decays over time and lasts for 120 seconds. The effect can be reset after 5 seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by 50%.",
+            "When Bai Yuekui enters combat, the electric attack power is increased by <span class='text-blue'>21%</span>, the effect decays over time and lasts for 120 seconds. The effect can be reset after 5 seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by 50%.",
             // 2000 affinity
             "Unlock communication [Knowing the New World]",
             // 3000 affinity
             "Unlock communication [I Have Many Stories]",
             // 4000 affinity
-            '<span class="passive-value">Mimic Passive Upgrade</span><br>When Bai Yuekui enters combat, the lightning attack power is increased by <span class="passive-value">33%</span>, the effect decays over time and lasts for 120 seconds. The effect can be reset after 5 seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by 50%.'
+            'When Bai Yuekui enters combat, the electric attack power is increased by <span class="text-blue">33%</span>, the effect decays over time and lasts for 120 seconds. The effect can be reset after 5 seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by 50%.'
         ],
         traits: ['Female','172 cm','???','???','???'],
         gifts: [
@@ -564,8 +575,9 @@ var baiyuekui =
 var meryl = 
     {
         name:"Meryl",
+        rarity: "SSR",
         pic:"images/meryl_nobg.png",
-
+        artwork:"images/art/meryl.png",
         wepName:"Rose's Edge",
         wepImg:"images/wep/meryl.png",
         eleImg:"images/ele_ice.png",
@@ -587,10 +599,10 @@ var meryl =
         ],
         energyCharge:["4.00","b"],
         shieldBreak:["12.00","s"],
-        materials:[ice, red, black],
+        materials:["ice", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_meryl.png",
+        chipImg:"images/chip/meryl.png",
         chipEffect:[
             // 2 set
             "When dropping below 30% health, gain a shield of 15%/19%/22.5%/26% of maximum life for 10 seconds, cooldown 120 seconds",
@@ -604,13 +616,13 @@ var meryl =
             // 600 affinity
             "Unlock communication [Cold Conversation]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time.",
+            "Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time.",
             // 2000 affinity
             "Unlock communication [Severe Cold Daily]",
             // 3000 affinity
             "Unlock communication [Melting Ice]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
+            "Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
         ],
         traits: ['Female','170 cm','???','Libra','10 October'],
         gifts: [
@@ -634,12 +646,13 @@ var meryl =
 var hane = 
     {
         name:"Hane",
+        rarity: "SSR",
         pic:"images/hane_nobg.png",
-
+        artwork:"images/art/hane.png",
         wepName:"Ice Wind Vector",
         wepImg:"images/wep/hane.png",
         eleImg:"images/ele_ice.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
         awakening:[
             // 1 star
@@ -657,10 +670,10 @@ var hane =
         ],
         energyCharge:["11.50","s"],
         shieldBreak:["4.00","b"],
-        materials:[ice,red,blue],
+        materials:["ice","red","blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_hane.png",
+        chipImg:"images/chip/hane.png",
         chipEffect:[
             // 2 set
             "Increase damage by 10%/12.5%/15%/17.5% if no enemy unit is within 4 meters",
@@ -674,13 +687,13 @@ var hane =
             // 600 affinity
             "Unlock communication [Natural Warmth]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <span class='passive-value'>15</span> stacks). Each stack increases attack by <span class='passive-value'>0.5%</span> and refreshes buff duration.",
+            "Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <span class='text-blue'>15</span> stacks). Each stack increases attack by <span class='text-blue'>0.5%</span> and refreshes buff duration.",
             // 2000 affinity
             "Unlock communication [Cooling Alarm]",
             // 3000 affinity
             "Unlock communication [Hot and Cold]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <span class='passive-value'>30</span> stacks). Each stack increases attack by <span class='passive-value'>0.6%</span> and refreshes buff duration."
+            "Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <span class='text-blue'>30</span> stacks). Each stack increases attack by <span class='text-blue'>0.6%</span> and refreshes buff duration."
         ],
         traits: ['Female','169 cm','Star Island','Aries','24 Mar'],
         gifts: [
@@ -709,8 +722,9 @@ var hane =
 var huma = 
     {
         name:"Huma",
+        rarity: "SSR",
         pic:"images/huma_nobg.png",
-
+        artwork:"images/art/huma.png",
         wepName:"V2 Meltdown Shield",
         wepImg:"images/wep/huma.png",
         eleImg:"images/ele_fire.png",
@@ -732,10 +746,10 @@ var huma =
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["10.00","a"],
-        materials:[fire,green,blue],
+        materials:["fire","green","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_huma.png",
+        chipImg:"images/chip/huma.png",
         chipEffect:[
             // 2 set
             "After the dodge skill hits a target, applies bleed, causing 15%/19%/22.5%/26% * attack damage per sec for 5 sec.",
@@ -749,13 +763,13 @@ var huma =
             // 600 affinity
             "Unlock communication [Acquaintance]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <span class='passive-value'>x0.4%</span> of your life.",
+            "Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <span class='text-blue'>x0.4%</span> of your life.",
             // 2000 affinity
             "Unlock communication [Echo]",
             // 3000 affinity
             "Unlock communication [Symphony]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <span class='passive-value'>x0.6%</span> of your life."
+            "Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <span class='text-blue'>x0.6%</span> of your life."
         ],
         traits: ['Female','167 cm','???','Capricorn','12 Jan'],
         gifts: [
@@ -787,12 +801,13 @@ var huma =
 var karasuma = 
     {
         name:"Karasuma",
+        rarity: "SSR",
         pic:"images/karasuma_nobg.png",
-
+        artwork:"images/art/karasuma.png",
         wepName:"Lightning Blades",
         wepImg:"images/wep/karasuma.png",
         eleImg:"images/ele_electric.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
         awakening:[
             // 1 star
@@ -806,14 +821,14 @@ var karasuma =
             // 5 star
             "When triggering the backstab effect, you will gain 100% crit rate that lasts for 4 seconds and crit damage is increased by 50%, with a cooldown time of 10 seconds.",
             // 6 star
-            "When releasing a skill, the target receives 20% more damage from the lightning element for 20 seconds."
+            "When releasing a skill, the target receives 20% more damage from the electric element for 20 seconds."
         ],
         energyCharge:["8.00","a"],
         shieldBreak:["6.00","b"],
-        materials:[lightning, red, blue],
+        materials:["electric", "red", "blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_karasuma.png",
+        chipImg:"images/chip/karasuma.png",
         chipEffect:[
             // 2 set
             "Crit damage is increased by 33%/42%/50%/58% against targets below 60% health",
@@ -827,13 +842,13 @@ var karasuma =
             // 600 affinity
             "Unlock communication [Friendship Achieved]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When not in a group, Karasuma's damage is increased by 6% and damage taken is reduced by 4%.",
+            "When not in a group, Karasuma's damage is increased by 6% and damage taken is reduced by 4%.",
             // 2000 affinity
             "Unlock communication [Happy-go-lucky]",
             // 3000 affinity
             "Unlock communication [Jokes]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When not in a group, Karasuma's damage is increased by 10% and damage taken is reduced by 6%. When Karasuma starts a fight, damage is increased by 12% for 12 seconds."
+            "When not in a group, Karasuma's damage is increased by 10% and damage taken is reduced by 6%. When Karasuma starts a fight, damage is increased by 12% for 12 seconds."
         ],
         traits: ['Male','162 cm','Star Island','Sagittarius','17 Dec'],
         gifts: [
@@ -862,8 +877,9 @@ var karasuma =
 var zero = 
     {
         name:"Zero",
+        rarity: "SSR",
         pic:"images/zero_nobg.png",
-
+        artwork:"images/art/zero.png",
         wepName:"Veto Cube",
         wepImg:"images/wep/zero.png",
         eleImg:"images/ele_fire.png",
@@ -885,10 +901,10 @@ var zero =
         ],
         energyCharge:["13.00","s"],
         shieldBreak:["5.00","b"],
-        materials:[fire,green,blue],
+        materials:["fire","green","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_zero.png",
+        chipImg:"images/chip/zero.png",
         chipEffect:[
             // 2 set
             "When you release a combo, you gain a shield of 120%/150%/180%/210% of your attack power for 4 seconds.",
@@ -902,13 +918,13 @@ var zero =
             // 600 affinity
             "Unlock communication [Unintelligible Dialogue]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Zero reduces the cooldown of gadgets by <span class='passive-value'>1.5s</span> when releasing a weapon skill.",
+            "Zero reduces the cooldown of gadgets by <span class='text-blue'>1.5s</span> when releasing a weapon skill.",
             // 2000 affinity
             "Unlock communication [Rules]",
             // 3000 affinity
             "Unlock communication [Zero]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Zero reduces the cooldown of gadgets by <span class='passive-value'>3s</span> when releasing a weapon skill."
+            "Zero reduces the cooldown of gadgets by <span class='text-blue'>3s</span> when releasing a weapon skill."
         ],
         traits: ['Male','155 cm','Bengis','Gemini','6 Jun'],
         gifts: [
@@ -932,13 +948,15 @@ var zero =
 var marc = 
     {
         name:"Marc",
+        rarity: "SSR",
         pic:"images/marc_nobg.png",
-
+        artwork:"images/art/marc.png",
         wepName:"Breaking Dawn",
         wepImg:"images/wep/marc.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_tank.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.<br>In group status (Guardian): When releasing Re-entry, Form Switch or Full Shot, it will damage a friendly player with the lowest life for 60% for 10 seconds, and restore 10% of lost blood after the damage. The effect will not be removed and cannot be triggered again until the end of time. When not in a team (increase): 50% physical damage reduction in Heavy Form. Heavy Dimensional Shield: 1 point of Heavy Dimensional Energy is awarded for Heavy Dimensional Punch/Double Slash/Impact Slash hits. Converts 20% of your current life into 1.5 times your maximum life (up to 1.5 times your maximum life, healing is reduced by 50%), shield lasts 15 seconds, cannot be gained if you are below 10% of your life. At the end of the shield, 66.7% of the remaining shield value is converted to life, and 2 points of energy are gained on a hit to a weakened target. (Heavy Shield) is gained by converting other life shield values into (Heavy Shield) and is immune to life shield additions.",
+        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
+        exclusiveEffect:"In group status (Guardian): When releasing Re-entry, Form Switch or Full Shot, it will damage a friendly player with the lowest life for 60% for 10 seconds, and restore 10% of lost blood after the damage. The effect will not be removed and cannot be triggered again until the end of time. When not in a team (increase): 50% physical damage reduction in Heavy Form. Heavy Dimensional Shield: 1 point of Heavy Dimensional Energy is awarded for Heavy Dimensional Punch/Double Slash/Impact Slash hits. Converts 20% of your current life into 1.5 times your maximum life (up to 1.5 times your maximum life, healing is reduced by 50%), shield lasts 15 seconds, cannot be gained if you are below 10% of your life. At the end of the shield, 66.7% of the remaining shield value is converted to life, and 2 points of energy are gained on a hit to a weakened target. (Heavy Shield) is gained by converting other life shield values into (Heavy Shield) and is immune to life shield additions.",
         awakening:[
             // 1 star
             "Immediately gains [Heavy Shield] when releasing Heavy Dimensional Entry, Form Switch or Full Shot",
@@ -955,10 +973,10 @@ var marc =
         ],
         energyCharge:["12.00","s"],
         shieldBreak:["9.00","a"],
-        materials:[physical,red,black],
+        materials:["physical","red","black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_marc.png",
+        chipImg:"images/chip/marc.png",
         chipEffect:[
             // 2 set
             "Adds a life shield of 15% of your current HP to all teammates after  attacking an enemy for 15 seconds, resetting 10 seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by 11%/13%/15%/17% for 15 seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level. ",
@@ -972,13 +990,13 @@ var marc =
             // 600 affinity
             "Unlock communication [Doomsday Hunters]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'revived' and taunts the surrounding enemies for 5 seconds. While 'revived', you do not take damage, but you cannot perform actions, while recovering <span class='passive-value'>1%</span> of his maximum life every second and healing received is increased by <span class='passive-value'>20%</span>. This effect has a cooldown of <span class='passive-value'>10</span> minutes. Damage from Stinging Eel and Ground Roar is reduced by 50%.",
+            "When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'revived' and taunts the surrounding enemies for 5 seconds. While 'revived', you do not take damage, but you cannot perform actions, while recovering <span class='text-blue'>1%</span> of his maximum life every second and healing received is increased by <span class='text-blue'>20%</span>. This effect has a cooldown of <span class='text-blue'>10</span> minutes. Damage from Stinging Eel and Ground Roar is reduced by 50%.",
             // 2000 affinity
             "Unlock communication [Reality and the Law]",
             // 3000 affinity
             "Unlock communication [Thinking about the present]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'Nirvana' and taunts the surrounding enemies for 5 seconds. While in 'Nirvana', you do not take damage, but you cannot perform actions, while recovering <span class='passive-value'>2%</span> of his maximum life every second and healing received is increased by <span class='passive-value'>50%</span>. This effect has a cooldown of <span class='passive-value'>5</span> minutes. Damage from Stinging Eel and Ground Roar is reduced by 50%."
+            "When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'Nirvana' and taunts the surrounding enemies for 5 seconds. While in 'Nirvana', you do not take damage, but you cannot perform actions, while recovering <span class='text-blue'>2%</span> of his maximum life every second and healing received is increased by <span class='text-blue'>50%</span>. This effect has a cooldown of <span class='text-blue'>5</span> minutes. Damage from Stinging Eel and Ground Roar is reduced by 50%."
         ],
         traits: ['Male','192 cm','???','???','???'],
         gifts: [
@@ -997,13 +1015,15 @@ var marc =
 var nemesis = 
     {
         name:"Nemesis",
+        rarity: "SSR",
         pic:"images/nemesis_nobg.png",
-
+        artwork:"images/art/nemesis.png",
         wepName:"Enlightenment",
         wepImg:"images/wep/nemesis.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_support.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).<br>Lightning resonance; triggered by equipping 2 or more lightning weapons, boosts lightning attack by 20% and lightning resistance by 40%, also effective on the backstage.",
+        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
+        exclusiveEffect:"electric resonance; triggered by equipping 2 or more electric weapons, boosts electric attack by 20% and electric resistance by 40%, also effective on the backstage.",
         awakening:[
             // 1 star
             "When releasing the weapon skill or QTE skill, creates 1 electrode and immediately gains 5 levels of healing chain reinforcement, and releases a healing chain that heals nearby friendly units (= 135% of the Pathfinder's attack power). The healing chain heals nearby units (= 135%*attack).",
@@ -1014,21 +1034,21 @@ var nemesis =
             // 4 star
             "+32% base attack on the current weapon.",
             // 5 star
-            "After releasing the weapon skill, it increases its own lightning attack by (10+its own electrode number*10)% for 25 seconds.",
+            "After releasing the weapon skill, it increases its own electric attack by (10+its own electrode number*10)% for 25 seconds.",
             // 6 star
             "Up to 2 electrodes are present at the same time. When a new electrode appears, it replaces the one at a greater distance from you."
         ],
         energyCharge:["8.00","a"],
         shieldBreak:["6.00","b"],
-        materials:[lightning,green,blue],
+        materials:["electric","green","blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_nemesis.png",
+        chipImg:"images/chip/nemesis.png",
         chipEffect:[
             // 2 set
-            "When healing a target, the healed target's lightning attack power is increased by 15%/18%/21%/25% for 20 seconds, non-stackable, only the highest level is in effect when repeated.",
+            "When healing a target, the healed target's electric attack power is increased by 15%/18%/21%/25% for 20 seconds, non-stackable, only the highest level is in effect when repeated.",
             // 4 set
-            "When healing yourself or your own electrodes, the healed target gains a Lightning Strike which gives the next attack within 30 seconds an extra damage boost of 300%/375%/450%/525% lightning damage to the first target hit. The Lightning damage (half the damage caused by  electrodes), can only be casted with an interval of not less than 10 seconds. The Lightning Strike mechanism is not stackable, and only the highest level is in effect when repeatedly acquired."
+            "When healing yourself or your own electrodes, the healed target gains a electric Strike which gives the next attack within 30 seconds an extra damage boost of 300%/375%/450%/525% electric damage to the first target hit. The electric damage (half the damage caused by  electrodes), can only be casted with an interval of not less than 10 seconds. The electric Strike mechanism is not stackable, and only the highest level is in effect when repeatedly acquired."
         ],
         
         mimicEffect:[
@@ -1037,13 +1057,13 @@ var nemesis =
             // 600 affinity
             "Unlock communication [New Life and Symbiosis]",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When an electrode is summoned, all enemies within 30 metres of the electrode take <span class='passive-value'>60%</span> lightning damage and all allies (including yourself) are healed for <span class='passive-value'>120%</span> of their attack power.",
+            "When an electrode is summoned, all enemies within 30 metres of the electrode take <span class='text-blue'>60%</span> electric damage and all allies (including yourself) are healed for <span class='text-blue'>120%</span> of their attack power.",
             // 2000 affinity
             "Unlock communication [Experimental Operation]",
             // 3000 affinity
             "Unlock communication [Ahead of the Righteous Eye]",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When an electrode is summoned, all enemies within 30 metres of the electrode take <span class='passive-value'>100%</span> lightning damage and all allies (including yourself) are healed for <span class='passive-value'>200%</span> of their attack power."
+            "When an electrode is summoned, all enemies within 30 metres of the electrode take <span class='text-blue'>100%</span> electric damage and all allies (including yourself) are healed for <span class='text-blue'>200%</span> of their attack power."
         ],
         traits: ['Female','165 cm','???','Gemini','25 May'],
         gifts: [
@@ -1074,38 +1094,40 @@ var nemesis =
 var frigg = 
     {
         name:"Frigg",
+        rarity: "SSR",
         pic:"images/frigg_nobg.png",
-
-        wepName:"Balmonk",
+        artwork:"images/art/frigg.png",
+        wepName:"Ice Balmung",
         wepImg:"images/wep/frigg.png",
         eleImg:"images/ele_ice.png",
-        resoImg:"images/reso_dps.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.<br>Exclusive: After releasing the skill “Fimbulwinter” a large area of ice is formed, inside this area dodges are not consumed up to 3 times? 15% damage increase while in the ice domain. Domain lasts 25s and using the skill again will replace the old one.",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
+        exclusiveEffect:"After releasing the skill “Fimbulwinter” a large area of ice is formed, inside this area dodges are not consumed up to 3 times? 15% damage increase while in the ice domain. Domain lasts 25s and using the skill again will replace the old one.",
         awakening:[
             // 1 star
-            "deal 550% per s? to enemies in the ice domain. Any ice elemental damage you deal you gain 1 point up to 10. Once the ice domain has expired deal pointsx95% damage to every enemy in the domain. Using the skill “Fimbulwinter” will also trigger this ice domain explosion. Lose 1 point for every 3s you’re not in the domain",
+            "Gain 1 Ice point for every 550%*Ice Attack of any elemental damage dealt by yourself in the ice area, up to a maximum of 10 ice points. At the end of the Ice area, it will cause explosive field damage to all enemy targets within the ice area with ice value points*95%*ice attack. After leaving the ice area, you lose 1 ice point every 3 seconds.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "+16% increase in HP growth.",
             // 3 star
-            "increase point max value to 15. Using your QTE will cause bonus damage to enemies (points+5)25%attack damage",
+            "Ice points limit increased to 15, any Ice element weapon attacks released in the ice area deals (+5) *25%* Ice Attack damage to all targets in the ice area.",
             // 4 star
             "+32% base attack on the current weapon.",
             // 5 star
-            "Breaking a shield will freeze a target for 2s and cause points value35%ice atk point of damage. If target cannot be frozen deal double damage instead.",
+            "Using an ice weapon to break a shield in the ice field freezes the target for 2 seconds and deals an additional 2 ice points*35%*Ice Attack damage (doubled if the target cannot be frozen).",
             // 6 star
-            "Upper limit of points to 25. While in ice domain gain an extra 25% attack damage. Switching to other weapons will cause this effect to disappear."
+            "When you reach 15 Ice Points, you gain an additional Ice Domain (2) buff. When you are in the Ice Domain: your Ice Attack is increased by 25% when using an Ice weapon."
         ],
         energyCharge:["8.00","a"],
         shieldBreak:["8.00","a"],
-        materials:[],
+        materials:["ice","red","black"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_frigg.png",
+        chipImg:"images/chip/frigg.png",
         chipEffect:[
             // 2 set
-            "",
+            "When switching from ice weapon to ice weapon, the ice attack power is increased by 15%/18%/21%/25% for 10 seconds. This set also works in the background (when not using the weapon where this set is equipped on), but only the set with the highest star rating will work when  multiple sets are equipped.",
             // 4 set
-            ""
+            "When the ice field is released by the weapon 'Balmung', the enemy targets within the ice field take 60%/75%/90%/105% ice damage per second. "
         ],
         
         mimicEffect:[
@@ -1114,13 +1136,13 @@ var frigg =
             // 600 affinity
             "Unlock communication []",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>",
+            "When entering combat, gain <span class='text-blue'>+1.5%</span> ice attribute attack power every 3 seconds, stack up to 10 times for <span class='text-blue'>2</span> seconds.",
             // 2000 affinity
             "Unlock communication []",
             // 3000 affinity
             "Unlock communication []",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When entering battle gain 2.4% ice attribute damage every 3 seconds up to 10 stacks, lasts for 5 seconds. Immune to CC effects in the ice domain."
+            "When entering battle gain <span class='text-blue'>2.4%</span> ice attribute damage every 3 seconds up to 10 stacks, lasts for <span class='text-blue'>5</span> seconds. Immune to CC effects in the ice domain."
         ],
         traits: ['Female','190 cm','???','Aquarius','1 February'],
         gifts: [
@@ -1132,12 +1154,13 @@ var frigg =
 var bailing = 
     {
         name:"Bai Ling",
+        rarity: "SR",
         pic:"images/bailing_nobg.png",
-
+        artwork:"images/art/bailing.png",
         wepName:"Nightbird's Feather",
         wepImg:"images/wep/bailing.png",
         eleImg:"images/ele_physical.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (100% x ATK) damage.",
         awakening:[
             // 1 star
@@ -1155,10 +1178,10 @@ var bailing =
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["6.00","b"],
-        materials:[physical, green, blue],
+        materials:["physical", "green", "blue"],
         wepBaseStats: [attack, health, crit],
         
-        chipImg:"images/chip_bailing.png",
+        chipImg:"images/chip/bailing.png",
         chipEffect:[
             //
             "",
@@ -1172,13 +1195,13 @@ var bailing =
             // 600 affinity
             "",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Bai Ling retracts her Jetpack or Jet Skis, her movement speed is increased by <span class='passive-value'>8%</span> for 12 seconds, with a cooldown time of 60 seconds",
+            "When Bai Ling retracts her Jetpack or Jet Skis, her movement speed is increased by <span class='text-blue'>8%</span> for 12 seconds, with a cooldown time of 60 seconds",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Bai Ling retracts her Jetpack or Jet Skis, her movement speed is increased by <span class='passive-value'>15%</span> for 12 seconds, with a cooldown time of 60 seconds"
+            "When Bai Ling retracts her Jetpack or Jet Skis, her movement speed is increased by <span class='text-blue'>15%</span> for 12 seconds, with a cooldown time of 60 seconds"
         ],
         traits: ['Female','163 cm','HT201 Sanctuary','Taurus','8 May'],
         gifts: [
@@ -1208,12 +1231,13 @@ var bailing =
 var hilda = 
     {
         name:"Hilda",
+        rarity: "SR",
         pic:"images/hilda_nobg.png",
-
+        artwork:"images/art/hilda.png",
         wepName:"The Terminator",
         wepImg:"images/wep/hilda.png",
         eleImg:"images/ele_ice.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"The next attack freezes the enemy for 2 seconds when the weapon is fully charged and causes frostbite for 6 seconds, and deals 111.00%*attack damage when the freeze breaks.The target's weapon recharge speed will be reduced by 50% during frostbite.",
         awakening:[
             // 1 star
@@ -1231,10 +1255,10 @@ var hilda =
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["10.00","a"],
-        materials:[],
+        materials:["ice","red","blue"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_hilda.png",
+        chipImg:"images/chip/hilda.png",
         chipEffect:[
             //
             "",
@@ -1248,13 +1272,13 @@ var hilda =
             // 600 affinity
             "",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Hilda's movement speed is increased by <span class='passive-value'>7%</span> when riding on a mount",
+            "Hilda's movement speed is increased by <span class='text-blue'>7%</span> when riding on a mount",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Hilda's movement speed is increased by <span class='passive-value'>10%</span> when riding on a mount"
+            "Hilda's movement speed is increased by <span class='text-blue'>10%</span> when riding on a mount"
         ],
         traits: ['Female','165 cm','???','Aries','11 Apr'],
         gifts: [
@@ -1283,12 +1307,13 @@ var hilda =
 var manaka = 
     {
         name:"Manaka",
+        rarity: "SR",
         pic:"images/manaka_nobg.png",
-
+        artwork:"images/art/manaka.png",
         wepName:"Thunderbolt",
         wepImg:"images/wep/manaka.png",
         eleImg:"images/ele_electric.png",
-        resoImg:"images/reso_dps.png",
+        resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deals 106.00%* attack damage, They cannot gain any buffs for 6 seconds. (Also applies electro charged for 6 seconds)",
         awakening:[
             // 1 star
@@ -1306,10 +1331,10 @@ var manaka =
         ],
         energyCharge:["7.00","b"],
         shieldBreak:["12.60","s"],
-        materials:[lightning, red, black],
+        materials:["electric", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_manaka.png",
+        chipImg:"images/chip/manaka.png",
         chipEffect:[
             //
             "",
@@ -1323,13 +1348,13 @@ var manaka =
             // 600 affinity
             "",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When teaming up with Manaka, all teammates within 10m of Manaka receive a <span class='passive-value'>4%</span> damage boost (excluding yourself).",
+            "When teaming up with Manaka, all teammates within 10m of Manaka receive a <span class='text-blue'>4%</span> damage boost (excluding yourself).",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When teaming up with Manaka, all teammates within 10m of Manaka receive a <span class='passive-value'>6%</span> damage boost (excluding yourself)."
+            "When teaming up with Manaka, all teammates within 10m of Manaka receive a <span class='text-blue'>6%</span> damage boost (excluding yourself)."
         ],
         traits: ['Female','162 cm','Volan','Leo','14 Aug'],
         gifts: [
@@ -1360,8 +1385,9 @@ var manaka =
 var peppa = 
     {
         name:"Peppa",
+        rarity: "SR",
         pic:"images/peppa_nobg.png",
-
+        artwork:"images/art/peppa.png",
         wepName:"Sceptre of the Stigmata",
         wepImg:"images/wep/peppa.png",
         eleImg:"images/ele_electric.png",
@@ -1383,10 +1409,10 @@ var peppa =
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["4.00","b"],
-        materials:[lightning, red, black],
+        materials:["electric", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_peppa.png",
+        chipImg:"images/chip/peppa.png",
         chipEffect:[
             //
             "",
@@ -1400,13 +1426,13 @@ var peppa =
             // 600 affinity
             "",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>When Peppa uses satiety (Hunger) to restore life, the recovery effect is increased by <span class='passive-value'>100%</span>",
+            "When Peppa uses satiety (Hunger) to restore life, the recovery effect is increased by <span class='text-blue'>100%</span>",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>When Peppa uses satiety (Hunger) to restore life, the recovery effect is increased by <span class='passive-value'>200%</span>"
+            "When Peppa uses satiety (Hunger) to restore life, the recovery effect is increased by <span class='text-blue'>200%</span>"
         ],
         traits: ['Female','160 cm','Bengis','Cancer','9 Jul'],
         gifts: [
@@ -1437,8 +1463,9 @@ var peppa =
 var xi = 
     {
         name:"Xi",
+        rarity: "SR",
         pic:"images/xi_nobg.png",
-
+        artwork:"images/art/xi.png",
         wepName:"Initial Strike",
         wepImg:"images/wep/xi.png",
         eleImg:"images/ele_ice.png",
@@ -1460,10 +1487,10 @@ var xi =
         ],
         energyCharge:["6.00","b"],
         shieldBreak:["10.00","a"],
-        materials:[],
+        materials:["ice","green","black"],
         wepBaseStats: [attack, defense, health],
         
-        chipImg:"images/chip_xi.png",
+        chipImg:"images/chip/xi.png",
         chipEffect:[
             //
             "",
@@ -1477,13 +1504,13 @@ var xi =
             // 600 affinity
             "",
             // 1200 affininty
-            "<span class='passive-value'>Unlock Mimic Passive</span><br>Reduces stamina consumption by <span class='passive-value'>12%</span> when swimming, climbing or gliding.",
+            "Reduces stamina consumption by <span class='text-blue'>12%</span> when swimming, climbing or gliding.",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "<span class='passive-value'>Mimic Passive Upgrade</span><br>Reduces stamina consumption by <span class='passive-value'>20%</span> when swimming, climbing or gliding."
+            "Reduces stamina consumption by <span class='text-blue'>20%</span> when swimming, climbing or gliding."
         ],
         traits: ['Female','145 cm','Krohn','Leo','17 Aug'],
         gifts: [
@@ -1511,8 +1538,128 @@ var xi =
         ]
 }
 
-
-
+// Chip exclusives
+var roberag = {
+    name:"Roberag",
+    rarity:"SR",
+    chipImg:"images/chip/roberag.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Poison the target when breaking shields, dealing 45%/56%/67.5%"
+        ]
+}
+var apophis = {
+    name:"Apophis",
+    rarity:"SR",
+    chipImg:"images/chip/apophis.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "The lower your health, the more damage you can do, at 20% health, the maximum value is reached and the maximum damage increased by 20%/25%/30%."
+        ]
+}
+var frozenmech = {
+    name:"Frozen Mech",
+    rarity:"SR",
+    chipImg:"images/chip/frozenmech.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "When the health is lower than 40%, cast a combo technique to restore the health value of 160%/200%/240% of the attack power."
+        ]
+}
+var sobek = {
+    name:"Sobek",
+    rarity:"SR",
+    chipImg:"images/chip/sobek.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Increases damage by 6%/7.5%/9% for each enemy unit that is around, up to 3 levels."
+        ]
+}
+var barbarossa = {
+    name:"Barbarossa",
+    rarity:"SR",
+    chipImg:"images/chip/barbarossa.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "when switching to (this) weapon, get 50%/62.5%/75% counter damage that last for 3 seconds, cool down for 30 seconds; when switch to other weapons, get 20%/25%/30% damage increase, lasting 5 seconds, with a cooldown time of 30 seconds."
+        ]
+}
+var burstingcore = {
+    name:"Bursting Core",
+    rarity:"R",
+    chipImg:"images/chip/burstingcore.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Fire weapon damage increased by 6%"
+        ]
+}
+var transportthinking = {
+    name:"Transport Thinking",
+    rarity:"R",
+    chipImg:"images/chip/transportthinking.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Ice weapon damage increased by 6%"
+        ]
+}
+var guardscode = {
+    name:"Guard's Code",
+    rarity:"R",
+    chipImg:"images/chip/guardscode.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Electricity weapon damage increased by 6%"
+        ]
+}
+var arrogantprovocation = {
+    name:"Arrogant Provocation",
+    rarity:"R",
+    chipImg:"images/chip/arrogantprovocation.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Physical weapon damage increased by 6%"
+        ]
+}
+var cleanupagreement = {
+    name:"Cleanup Agreement",
+    rarity:"R",
+    chipImg:"images/chip/cleanupagreement.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Damage taken reduced by 6%"
+        ]
+}
+var offensivelogic = {
+    name:"Offensive Logic",
+    rarity:"SR",
+    chipImg:"images/chip/offensivelogic.png",
+    chipEffect:[
+            //
+            "",
+            // 3 set
+            "Shield breaking efficiency increased by 18%"
+        ]
+}
 
 
 
@@ -1534,7 +1681,8 @@ var gadgets = [
             // 5 star
             "Giant Arm lasts for 30 seconds, all damage taken is reduced by 20% for the duration."
         ],
-        pic: "images/gadgets/10.jpg"
+        pic: "images/gadget/giantarms.png",
+        rarity:"SSR"
     },
     
     // SSR Atomic Shield
@@ -1553,7 +1701,8 @@ var gadgets = [
             // 5 star
             "You and friendly team-members will receive a 25% damage boost for 7 seconds when they pass through the energy shield."
         ],
-        pic: "images/gadgets/11.jpg"
+        pic: "images/gadget/atomicshield.png",
+        rarity:"SSR"
     },
     
     // SSR V-Mech
@@ -1572,7 +1721,8 @@ var gadgets = [
             // 5 star
             "New skill: 'Flame Field': Releases a large flame field in place, dealing up to 1146.8%* attack damage"
         ],
-        pic: "images/gadgets/12.jpg"
+        pic: "images/gadget/vmech.png",
+        rarity:"SSR"
     },
     
     // SSR Time Rift
@@ -1591,7 +1741,8 @@ var gadgets = [
             // 5 star
             "Enemy units in the collapsed space cannot be healed."
         ],
-        pic: "images/gadgets/13.jpg"
+        pic: "images/gadget/timerift.png",
+        rarity:"SSR"
     },
     
     // SSR Confined Space
@@ -1610,7 +1761,8 @@ var gadgets = [
             // 5 star
             "Extra seismic waves are triggered every 3 seconds, every hit floats the targets (can be dodged by jumping)."
         ],
-        pic: "images/gadgets/14.jpg"
+        pic: "images/gadget/confinedspace.png",
+        rarity:"SSR"
     },
     
     // SSR Drone
@@ -1629,7 +1781,8 @@ var gadgets = [
             // 5 star
             "During the duration of the drone, the Pioneer receives an attack recovery effect, converting 20% of the damage value to its own life."
         ],
-        pic: "images/gadgets/15.jpg"
+        pic: "images/gadget/drone.png",
+        rarity:"SSR"
     },
     
     // SSR Holographic Projection
@@ -1644,11 +1797,12 @@ var gadgets = [
             // 3 star
             "Click again to shift yourself to the position of the projection.",
             // 4 star
-            "Increases lightning damage by 2%, even if you are not in combat, but not in the peak league (PvP)",
+            "Increases electric damage by 2%, even if you are not in combat, but not in the peak league (PvP)",
             // 5 star
             "Projected damage is increased to 100% of the character's damage, and you are self-controlled when shifting."
         ],
-        pic: "images/gadgets/16.jpg"
+        pic: "images/gadget/holographicprojection.png",
+        rarity:"SSR"
     },
     
     // SSR Death Suppressor
@@ -1667,7 +1821,28 @@ var gadgets = [
             // 5 star
             "When you are below or equal to 40% of your life in space, your blood-suck effect is doubled until the space disappears."
         ],
-        pic: "images/gadgets/17.jpg"
+        pic: "images/gadget/deathsuppressor.png",
+        rarity:"SSR"
+    },
+    
+    // SSR Counter 2
+    {
+        name: "Counter 2",
+        description: "Gain a shield that lasts for 5 seconds. After 1 attack it disappears, knocking surrounding enemies and deal 100% of attack power+50 points of damage. When the shield is broken within 1 second of generating, it stuns the enemy for 2 seconds and you will receive a damage boost by a percentage of your current life for 10 seconds (up to 60%).",
+        awakening: [
+            // 1 star
+            "Immediately gain 100 energy if your HP is more than 90%. Immediately gain 50 energy if your HP is less than 90%. Immediately gain another 50 energy when the damage boost ends.",
+            // 2 star
+            "Damage booster time is increased by 1 second.",
+            // 3 star
+            "Increase the damage boost limit to 70%",
+            // 4 star
+            "Increases fire damage by 2%, even if you are not in combat, but not in Apex league (PvP)",
+            // 5 star
+            "If the HP loss is greater than the current HP loss, the damage increase is based on the percentage of HP lost (up to 70%)."
+        ],
+        pic: "images/gadget/counter2.png",
+        rarity:"SSR"
     },
     
     // SR Jetpack 
@@ -1686,7 +1861,8 @@ var gadgets = [
             // 5 star
             "Jetpack can be used up to 3 times."
         ],
-        pic: "images/gadgets/1.jpg"
+        pic: "images/gadget/jetpack.png",
+        rarity:"SR"
     },
     
     // SR Quantum Cloak
@@ -1701,11 +1877,12 @@ var gadgets = [
             // 3 star
             "100% more damage to attacks launched in Quantum state, this effect is removed after 1 attack.",
             // 4 star
-            "Increases Lightning damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Increases electric damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
             // 5 star
             "100% more damage to attacks launched in Quantum state, this effect is removed after 3 attacks."
         ],
-        pic: "images/gadgets/2.jpg"
+        pic: "images/gadget/quantumcloak.png",
+        rarity:"SR"
     },
     
     // SR Floating Ice Cannon
@@ -1724,7 +1901,8 @@ var gadgets = [
             // 5 star
             "New skill: 'Shock', which deals 55.9%*attack damage to the target and stuns the target for 0.5 seconds"
         ],
-        pic: "images/gadgets/3.jpg"
+        pic: "images/gadget/floatingicecannon.png",
+        rarity:"SR"
     },
     
     // SR Jet Ski
@@ -1743,7 +1921,8 @@ var gadgets = [
             // 5 star
             "Immune to crowd control while using Jet skis, 5-second stun effect on colliding targets"
         ],
-        pic: "images/gadgets/4.jpg"
+        pic: "images/gadget/jetski.png",
+        rarity:"SR"
     },
     
     // SR Magnetic Storm
@@ -1758,11 +1937,12 @@ var gadgets = [
             // 3 star
             "Releases 3 whirlwinds with electric cores.",
             // 4 star
-            "Increases Lightning damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Increases electric damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
             // 5 star
             "units in the whirlwind have a 50% chance of being confused for 3 seconds every time they take damage (moving in the opposite direction of the joystick/keybinds)."
         ],
-        pic: "images/gadgets/5.jpg"
+        pic: "images/gadget/magneticstorm.png",
+        rarity:"SR"
     },
     
     // SR Multiple Missile
@@ -1781,7 +1961,8 @@ var gadgets = [
             // 5 star
             "the number of missiles released per second is increased again."
         ],
-        pic: "images/gadgets/6.jpg"
+        pic: "images/gadget/multiplemissile.png",
+        rarity:"SR"
     },
     
     // SR Shielding Robot
@@ -1800,7 +1981,8 @@ var gadgets = [
             // 5 star
             "When the shield is broken, it gains 5 seconds of anti-damage effect, returning 0.6 times the damage taken to the attacker."
         ],
-        pic: "images/gadgets/7.jpg"
+        pic: "images/gadget/shieldingrobot.png",
+        rarity:"SR"
     },
     
     // SR Singularity Magic Cube
@@ -1819,7 +2001,8 @@ var gadgets = [
             // 5 star
             "When the Cube is activated, the weapon gains power based on the amount of blood lost. For every 1% of blood lost, 10 points of weapon power are gained."
         ],
-        pic: "images/gadgets/8.jpg"
+        pic: "images/gadget/singularitymagiccube.png",
+        rarity:"SR"
     },
     
     // SR Atomic Hand Cannon
@@ -1838,7 +2021,8 @@ var gadgets = [
             // 5 star
             "Cooldown time reduced to 40 seconds."
         ],
-        pic: "images/gadgets/9.jpg"
+        pic: "images/gadget/atomichandcannon.png",
+        rarity:"SR"
     },
     
     // SR Lava Grenade
@@ -1857,7 +2041,8 @@ var gadgets = [
             // 5 star
             "3 seconds stun on hit, 10 seconds stamina burn added to target, 100 stamina points deducted per use."
         ],
-        pic: "images/gadgets/18.jpg"
+        pic: "images/gadget/lavagrenade.png",
+        rarity:"SR"
     },
     
     // SR Mechanical Arm
@@ -1876,7 +2061,8 @@ var gadgets = [
             // 5 star
             "Reduce 30% of final damage to the target for 7 seconds on hit."
         ],
-        pic: "images/gadgets/19.jpg"
+        pic: "images/gadget/mechanicalarm.png",
+        rarity:"SR"
     },
     
     // SR Magneto Pulse
@@ -1891,11 +2077,12 @@ var gadgets = [
             // 3 star
             "adds a 7-second magnetic bomb to the target after hitting it, which will detonate immediately after the target uses attack/dodge/skill, causing a 40% slow that will disappear after triggering.",
             // 4 star
-            "Reduces lightning element damage by 1.5%, even if not in combat, but not in peak league (PvP)",
+            "Reduces electric element damage by 1.5%, even if not in combat, but not in peak league (PvP)",
             // 5 star
             "When the target detonates the magnetic bomb, it removes all of the target's current buffs."
         ],
-        pic: "images/gadgets/20.jpg"
+        pic: "images/gadget/magnetopulse.png",
+        rarity:"SR"
     }
     
 ]

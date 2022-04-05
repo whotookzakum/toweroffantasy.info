@@ -5,83 +5,227 @@
 
 
 jQuery(document).ready(function ($){
-
-    setMimicInfo(meryl);
     
-    $(".mimic-button").click(function(){
-        if ($(this).children().is("#btn-samir")) { setMimicInfo(samir); }
-        else if ($(this).children().is("#btn-coco")) { setMimicInfo(coco); }
-        else if ($(this).children().is("#btn-king")) { setMimicInfo(king); }
-        else if ($(this).children().is("#btn-shiro")) { setMimicInfo(shiro); }
-        else if ($(this).children().is("#btn-meryl")) { setMimicInfo(meryl); }
-        else if ($(this).children().is("#btn-huma")) { setMimicInfo(huma); }
-        else if ($(this).children().is("#btn-hane")) { setMimicInfo(hane); }
-        else if ($(this).children().is("#btn-karasuma")) { setMimicInfo(karasuma); }
-        else if ($(this).children().is("#btn-zero")) { setMimicInfo(zero); }
-        else if ($(this).children().is("#btn-claudia")) { setMimicInfo(claudia); }
-        else if ($(this).children().is("#btn-cobalt")) { setMimicInfo(cobalt); }
-        else if ($(this).children().is("#btn-baiyuekui")) { setMimicInfo(baiyuekui); }
-        else if ($(this).children().is("#btn-marc")) { setMimicInfo(marc); }
-        else if ($(this).children().is("#btn-nemesis")) { setMimicInfo(nemesis); }
-        else if ($(this).children().is("#btn-frigg")) { setMimicInfo(frigg); }
-        else if ($(this).children().is("#btn-peppa")) { setMimicInfo(peppa); }
-        else if ($(this).children().is("#btn-hilda")) { setMimicInfo(hilda); }
-        else if ($(this).children().is("#btn-xi")) { setMimicInfo(xi); }
-        else if ($(this).children().is("#btn-bailing")) { setMimicInfo(bailing); }
-        else if ($(this).children().is("#btn-manaka")) { setMimicInfo(manaka); }
+    // Popper Popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
     });
     
-    function setMimicInfo (m) {
-        $("#mimic-name").html(m.name);
-        $("#wep-name").html(m.wepName);
-        $("#wep-type-img").attr('src',m.resoImg);
-        $("#wep-element-img").attr('src',m.eleImg);
-        $("#m-pane").attr('src',m.paneImg);
-        $("#wep-img").attr('src',m.wepImg);
-        $("#wep-effect").html(m.wepEffect);
-        $("#energy-charge").html(m.energyCharge[0]);
-        $("#energy-charge-tier").html(m.energyCharge[1]);
-        $("#shield-break").html(m.shieldBreak[0]);
-        $("#shield-break-tier").html(m.shieldBreak[1]);
-        $("#energy-charge-tier").removeClass("wep-tier-a");
-        $("#energy-charge-tier").removeClass("wep-tier-s");
-        $("#shield-break-tier").removeClass("wep-tier-a");
-        $("#shield-break-tier").removeClass("wep-tier-s");
-        if (m.energyCharge[1] === "s") {
-            $("#energy-charge-tier").addClass("wep-tier-s");
-        } 
-        else if (m.energyCharge[1] === "a") {
-            $("#energy-charge-tier").addClass("wep-tier-a");
-        }
-        if (m.shieldBreak[1] === "s") {
-            $("#shield-break-tier").addClass("wep-tier-s");
-        } 
-        else if (m.shieldBreak[1] === "a") {
-            $("#shield-break-tier").addClass("wep-tier-a");
-        }
-        $("#star-1").html(m.awakening[0]);
-        $("#star-2").html(m.awakening[1]);
-        $("#star-3").html(m.awakening[2]);
-        $("#star-4").html(m.awakening[3]);
-        $("#star-5").html(m.awakening[4]);
-        $("#star-6").html(m.awakening[5]);
-        $("#chip-2").html(m.chipEffect[0]);
-        $("#chip-4").html(m.chipEffect[1]);
-        $("#affinity-200").html(m.mimicEffect[0]);
-        $("#affinity-600").html(m.mimicEffect[1]);
-        $("#affinity-1200").html(m.mimicEffect[2]);
-        $("#affinity-2000").html(m.mimicEffect[3]);
-        $("#affinity-3000").html(m.mimicEffect[4]);
-        $("#affinity-4000").html(m.mimicEffect[5]);
+    // Popper Tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+    
+    
+    
+    setModalData(meryl);
+    
+    $(".modal-menu-item").click(function(){
         
-        $("#mimic-gender").html(m.traits[0]);
-        $("#mimic-height").html(m.traits[1]);
-        $("#mimic-birthplace").html(m.traits[2]);
-        $("#mimic-horoscope").html(m.traits[3]);
-        $("#mimic-birthday").html(m.traits[4]);
-        $("#mimic-pic").attr('src',m.pic);
-        $("#banner-character").attr('src',m.pic);
+        // MIMICS & CHIPS PAGES
+        if (document.URL.includes("mimics") || document.URL.includes("chips")) {
+            if ($(this).children().is("#btn-samir")) { setModalData(samir); }
+            else if ($(this).children().is("#btn-coco")) { setModalData(coco); }
+            else if ($(this).children().is("#btn-king")) { setModalData(king); }
+            else if ($(this).children().is("#btn-shiro")) { setModalData(shiro); }
+            else if ($(this).children().is("#btn-meryl")) { setModalData(meryl); }
+            else if ($(this).children().is("#btn-huma")) { setModalData(huma); }
+            else if ($(this).children().is("#btn-hane")) { setModalData(hane); }
+            else if ($(this).children().is("#btn-karasuma")) { setModalData(karasuma); }
+            else if ($(this).children().is("#btn-zero")) { setModalData(zero); }
+            else if ($(this).children().is("#btn-claudia")) { setModalData(claudia); }
+            else if ($(this).children().is("#btn-cobalt")) { setModalData(cobalt); }
+            else if ($(this).children().is("#btn-baiyuekui")) { setModalData(baiyuekui); }
+            else if ($(this).children().is("#btn-marc")) { setModalData(marc); }
+            else if ($(this).children().is("#btn-nemesis")) { setModalData(nemesis); }
+            else if ($(this).children().is("#btn-frigg")) { setModalData(frigg); }
+            else if ($(this).children().is("#btn-peppa")) { setModalData(peppa); }
+            else if ($(this).children().is("#btn-hilda")) { setModalData(hilda); }
+            else if ($(this).children().is("#btn-xi")) { setModalData(xi); }
+            else if ($(this).children().is("#btn-bailing")) { setModalData(bailing); }
+            else if ($(this).children().is("#btn-manaka")) { setModalData(manaka); }
+            // R chips
+            else if (document.URL.includes("chips")) {
+                if ($(this).children().is("#btn-burstingcore")) { setModalData(burstingcore); }
+                else if ($(this).children().is("#btn-transportthinking")) { setModalData(transportthinking); }
+                else if ($(this).children().is("#btn-guardscode")) { setModalData(guardscode); }
+                else if ($(this).children().is("#btn-arrogantprovocation")) { setModalData(arrogantprovocation); }
+                else if ($(this).children().is("#btn-offensivelogic")) { setModalData(offensivelogic); }
+                else if ($(this).children().is("#btn-cleanupagreement")) { setModalData(cleanupagreement); }
+            }
+        }      
+        
+        // GADGETS PAGE
+        if (document.URL.includes("gadgets")) {
+            if ($(this).children().is("#btn-giantarms")) { setModalData(gadgets[0]); }
+            else if ($(this).children().is("#btn-atomicshield")) { setModalData(gadgets[1]); }
+            else if ($(this).children().is("#btn-vmech")) { setModalData(gadgets[2]); }
+            else if ($(this).children().is("#btn-timerift")) { setModalData(gadgets[3]); }
+            else if ($(this).children().is("#btn-confinedspace")) { setModalData(gadgets[4]); }
+            else if ($(this).children().is("#btn-drone")) { setModalData(gadgets[5]); }
+            else if ($(this).children().is("#btn-holographicprojection")) { setModalData(gadgets[6]); }
+            else if ($(this).children().is("#btn-deathsuppressor")) { setModalData(gadgets[7]); }
+            else if ($(this).children().is("#btn-counter2")) { setModalData(gadgets[8]); }
+            else if ($(this).children().is("#btn-jetpack")) { setModalData(gadgets[9]); }
+            else if ($(this).children().is("#btn-quantumcloak")) { setModalData(gadgets[10]); }
+            else if ($(this).children().is("#btn-floatingicecannon")) { setModalData(gadgets[11]); }
+            else if ($(this).children().is("#btn-jetski")) { setModalData(gadgets[12]); }
+            else if ($(this).children().is("#btn-magneticstorm")) { setModalData(gadgets[13]); }
+            else if ($(this).children().is("#btn-multiplemissile")) { setModalData(gadgets[14]); }
+            else if ($(this).children().is("#btn-shieldingrobot")) { setModalData(gadgets[15]); }
+            else if ($(this).children().is("#btn-singularitymagiccube")) { setModalData(gadgets[16]); }
+            else if ($(this).children().is("#btn-atomichandcannon")) { setModalData(gadgets[17]); }
+            else if ($(this).children().is("#btn-lavagrenade")) { setModalData(gadgets[18]); }
+            else if ($(this).children().is("#btn-mechanicalarm")) { setModalData(gadgets[19]); }
+            else if ($(this).children().is("#btn-magnetopulse")) { setModalData(gadgets[20]); }
+        }
+        
+    });
+    
+    function setModalData (i) {
+        
+        // Header
+        $("#item-name").html(i.name);
+        $("#item-tier").html(i.rarity);
+        if (i.rarity === "SSR") {
+            $("#chip-sr-sets").addClass("d-none");
+            $("#chip-ssr-sets").removeClass("d-none");
+            $("#item-tier").removeClass("wep-tier-a");
+            $("#item-tier").removeClass("wep-tier-b");
+            $("#item-tier").addClass("wep-tier-s");
+        }
+        else if (i.rarity === "SR") {
+            $("#chip-ssr-sets").addClass("d-none");
+            $("#chip-sr-sets").removeClass("d-none");
+            $("#item-tier").removeClass("wep-tier-s");
+            $("#item-tier").removeClass("wep-tier-b");
+            $("#item-tier").addClass("wep-tier-a");
+        } 
+        else if (i.rarity === "R") {
+            $("#chip-ssr-sets").addClass("d-none");
+            $("#chip-sr-sets").removeClass("d-none");
+            $("#item-tier").removeClass("wep-tier-s");
+            $("#item-tier").removeClass("wep-tier-a");
+            $("#item-tier").addClass("wep-tier-b");
+        }
+        
+        
+        // MIMIC PAGE
+        if (document.URL.includes("mimics")) {
+            // Weapon
+            $("#wep-name").html(i.wepName);
+            $("#wep-type-img").attr('src',i.resoImg);
+            $("#wep-element-img").attr('src',i.eleImg);
+            $("#modal-bg-img").attr('src', i.artwork);
+            $("#wep-img").attr('src',i.wepImg);
+            $("#wep-effect").html(i.wepEffect);
+            if (i.hasOwnProperty('exclusiveEffect')) {
+                $("#exclusive-effect-wrapper").removeClass("d-none");
+                $("#exclusive-effect").html(i.exclusiveEffect);
+            } else {
+                $("#exclusive-effect-wrapper").addClass("d-none");
+            }
+            $("#energy-charge").html(i.energyCharge[0]);
+            $("#energy-charge-tier").html(i.energyCharge[1]);
+            $("#shield-break").html(i.shieldBreak[0]);
+            $("#shield-break-tier").html(i.shieldBreak[1]);
+            $("#energy-charge-tier").removeClass("wep-tier-a");
+            $("#energy-charge-tier").removeClass("wep-tier-s");
+            $("#shield-break-tier").removeClass("wep-tier-a");
+            $("#shield-break-tier").removeClass("wep-tier-s");
+            if (i.energyCharge[1] === "s") {$("#energy-charge-tier").addClass("wep-tier-s");} 
+            else if (i.energyCharge[1] === "a") {$("#energy-charge-tier").addClass("wep-tier-a");}
+            if (i.shieldBreak[1] === "s") {$("#shield-break-tier").addClass("wep-tier-s");} 
+            else if (i.shieldBreak[1] === "a") {$("#shield-break-tier").addClass("wep-tier-a");}
+            var mimicEle = i.eleImg.slice(i.eleImg.indexOf("_")+1, i.eleImg.indexOf("."));
+            $("#mimic-element").html(mimicEle.charAt(0).toUpperCase() + mimicEle.slice(1));
+            var mimicReso = i.resoImg.slice(i.resoImg.indexOf("_")+1, i.resoImg.indexOf("."));
+            $("#mimic-reso").html(mimicReso.charAt(0).toUpperCase() + mimicReso.slice(1));
+            $(".btmat-1").each(function(index){
+                $(this).attr("src","images/mat/" + i.materials[0] + (index+1) + ".png");
+            });
+            $(".btmat-2").each(function(index){
+                $(this).attr("src","images/mat/" + i.materials[1] + (index+1) + ".png");
+            });
+            $(".btmat-3").each(function(index){
+                $(this).attr("src","images/mat/" + i.materials[2] + (index+1) + ".png");
+            });
+            
+            // Stars
+            $("#star-1").html(i.awakening[0]);
+            $("#star-2").html(i.awakening[1]);
+            $("#star-3").html(i.awakening[2]);
+            $("#star-4").html(i.awakening[3]);
+            $("#star-5").html(i.awakening[4]);
+            $("#star-6").html(i.awakening[5]);
+            $("#star-all-1").html(i.awakening[0]);
+            $("#star-all-2").html(i.awakening[1]);
+            $("#star-all-3").html(i.awakening[2]);
+            $("#star-all-4").html(i.awakening[3]);
+            $("#star-all-5").html(i.awakening[4]);
+            $("#star-all-6").html(i.awakening[5]);
+            
+            // Chips
+            $("#chip-img").attr("src", i.chipImg);
+            $("#chip-2").html(i.chipEffect[0]);
+            $("#chip-3").html(i.chipEffect[1]);
+            $("#chip-4").html(i.chipEffect[1]);
+            
+            // Recommended chips
+            
+            // Affinity
+            $("#affinity-1200").html(i.mimicEffect[2]);
+            $("#affinity-4000").html(i.mimicEffect[5]);
+            
+            // Character Info
+            $("#mimic-gender").html(i.traits[0]);
+            $("#mimic-height").html(i.traits[1]);
+            $("#mimic-birthplace").html(i.traits[2]);
+            $("#mimic-horoscope").html(i.traits[3]);
+            $("#mimic-birthday").html(i.traits[4]);
+        }
+            
+        // GADGET PAGE
+        if (document.URL.includes("gadgets")) {
+            $("#gadget-img").attr("src", i.pic);
+            $("#gadget-desc").html(i.description);
+            
+            // Stars
+            $("#star-1").html(i.awakening[0]);
+            $("#star-2").html(i.awakening[1]);
+            $("#star-3").html(i.awakening[2]);
+            $("#star-4").html(i.awakening[3]);
+            $("#star-5").html(i.awakening[4]);
+            $("#star-6").html(i.awakening[5]);
+            $("#star-all-1").html(i.awakening[0]);
+            $("#star-all-2").html(i.awakening[1]);
+            $("#star-all-3").html(i.awakening[2]);
+            $("#star-all-4").html(i.awakening[3]);
+            $("#star-all-5").html(i.awakening[4]);
+            $("#star-all-6").html(i.awakening[5]);
+        }
+        
+        // CHIP PAGE
+        if (document.URL.includes("chips")) {
+            $("#item-name").html(i.name + " Chip");
+            $("#chip-img").attr("src", i.chipImg);
+            $("#chip-2").html(i.chipEffect[0]);
+            $("#chip-3").html(i.chipEffect[1]);
+            $("#chip-4").html(i.chipEffect[1]);
+            // recomended weapons to use with
+            // where to obtain
+        }
+
     }
     
-    
+    // Animate modal menu when modal is opened/closed
+    const modalContent = document.getElementById("modal-content");
+    modalContent.addEventListener('hide.bs.modal', function(){
+        $("#modal-menu").css("opacity","1");
+    });
+    modalContent.addEventListener('show.bs.modal', function(){
+        $("#modal-menu").css("opacity","0");
+    });
 });
