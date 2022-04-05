@@ -42,7 +42,9 @@ Fire Weakness / Ice resistance
 Drops Meryl Chip
 
 
+7. frog lightning weakness ice resistance
 
+8. dragon no weaknesses no resistance
 
 # Energy Crystal Dust
 Enhancement Modules, Superior Modules, Gold, Armor, Gadget fragments, gift boxes, armor exp crystals
