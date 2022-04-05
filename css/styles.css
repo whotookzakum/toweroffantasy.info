@@ -77,6 +77,7 @@ p { margin: 0; }
 .navbar * {
     color: #439eac !important;
     font-weight: bold;
+    background: #1a1921;
 }
 .navbar {
     filter: drop-shadow(0 0 4px #121212);
@@ -93,9 +94,6 @@ p { margin: 0; }
 }
 .navbar .nav-link:hover:after {
     transform: scaleX(1);
-}
-.nav-bg {
-    background: #1a1921;
 }
 .navbar-brand {
     font-size: 16px;
@@ -310,9 +308,6 @@ p { margin: 0; }
     transform: scaleX(1);
 }
 .bg-img-gadget {
-    position: fixed; 
-    right: 0; 
-    object-fit: none; 
     object-position: 160px;
 }
 
