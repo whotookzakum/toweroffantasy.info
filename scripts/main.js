@@ -6,6 +6,10 @@
 
 jQuery(document).ready(function ($){
     
+    if (window.innerWidth >= 1440) {
+        //$("#sidenav-shown").addClass("show");
+    }
+    
     // Popper Popovers
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
@@ -17,8 +21,6 @@ jQuery(document).ready(function ($){
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
-    
-    
     
     setModalData(meryl);
     
@@ -224,8 +226,10 @@ jQuery(document).ready(function ($){
     const modalContent = document.getElementById("modal-content");
     modalContent.addEventListener('hide.bs.modal', function(){
         $("#modal-menu").css("opacity","1");
+        $("#modal-bg-img").css("opacity","0");
     });
     modalContent.addEventListener('show.bs.modal', function(){
         $("#modal-menu").css("opacity","0");
+        $("#modal-bg-img").css("opacity","1");
     });
 });
