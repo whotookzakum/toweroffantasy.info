@@ -32,10 +32,17 @@ p { margin: 0; }
         max-width: 1000px;
     }
 }
+@media (max-width: 768px) {
+    .container {
+        min-width: 100%;
+    }
+}
 .container { 
     padding: 0;
     background: rgba(26, 25, 33, 0.9); 
     box-shadow: 0 0 4px #111111;
+    min-height: 100vh !important;
+    height: 100vh !important;
 }
 .modal-backdrop { 
     background: #15141a;
@@ -86,7 +93,6 @@ p { margin: 0; }
     align-content: space-between;
     white-space: nowrap;
 }
-
 .navbar .nav-link {
     margin-bottom: -3px;
     padding: 10px 0;
@@ -106,8 +112,9 @@ p { margin: 0; }
     background-color: #282633 !important;
     padding: 0 0 0 5px;
 }
-.navbar .active > .nav-link, .navbar .active > .nav-link i {
+.navbar .active * {
     color: #dedede !important;
+    font-weight: bold;
 }
 .navbar-brand {
     display: block;
@@ -133,19 +140,20 @@ p { margin: 0; }
 .offcanvas-backdrop {
     z-index: 9000;
 }
-
 #sidenav-toggler { 
     display: none;
 }
-
 @media only screen and (max-width: 1440px) {
     #sidenav-toggler {
         display: block;
     }
 }
+#sidenav-static {
+    display: none;
+}
 @media only screen and (min-width: 1440px) {
     #sidenav-static {
-        display: block;
+        display: flex;
     }
 }
 
