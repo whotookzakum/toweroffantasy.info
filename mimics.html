@@ -35,56 +35,113 @@
 </head>
 
 <body>
+    <!-- Top Nav for Mobile -->
+    <nav class="navbar fixed-top py-3 d-xl-none d-none" style="top: 0; background-color: #1a1921; width: auto;">
+        <div class="container-fluid">
+            <a class="ms-3 position-absolute" data-bs-toggle="collapse" href="#sidenav"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
+            <strong class="mx-auto" style="font-size: 2rem; padding: 5px;">Tower of Fantasy Index</strong>
+        </div>
+    </nav>
+
+    <!-- Nav toggler -->
+    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
+        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
+    </nav>
     
-    
-    
-        <nav class="navbar flex-shrink-0 position-fixed collapse collapse-horizontal show" id="sidenav">
-            <div class="nav-body p-5">
-                <a class="navbar-brand" href="index.html">
-                    <img class="mb-3" src="images/avatar/tata.png"><br>
-                    Tower of Fantasy Index
-                </a>
-                <hr class="my-3">
+    <!-- Sidenav offcanvas (smaller screens) -->
+    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-scroll="true" data-bs-keyboard="true" tabindex="-1">
+        <div class="offcanvas-body p-5">
+            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
+            <a class="navbar-brand" href="index.html">
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Mimics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips.html"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides.html"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials d-block">
                 <ul class="nav flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Mimics</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="chips.html"><i class="fa-solid fa-sd-card"></i> Chips</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guides.html"><i class="fa-solid fa-book"></i> Guides</a>
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
                     </li>
                 </ul>
-                <hr class="my-3">
-                <div class="nav-socials d-block">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="nav-footer fs-5 d-flex mt-auto p-5">
-                &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+    </nav>
+
+    <!-- Sidenav static (larger screens) -->
+    <nav id="sidenav-static" class="navbar sidenav position-fixed">
+        <div class="nav-body p-5">
+            <a class="navbar-brand" href="index.html">
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Mimics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips.html"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides.html"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials d-block">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <a id="sidebar-collapser" class="nav-collapser" data-bs-toggle="collapse" href="#sidenav"><i class="fa-solid fa-angles-left align-middle fs-2"></i></a>
+        </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+    </nav>
     
-        
     
+
+
     <!-- DISPOSABLE -->
     <div id="modal-menu">
         <img id="mimic-bg-img" class="bg-img" style="padding:0" src="images/art/frigg.png">
@@ -189,7 +246,7 @@
             </ul>
         </div>
     </div>
-    
+
     <!-- Mimics List -->
     <div id="modal-menu">
         <img id="mimic-bg-img" class="bg-img" style="padding:0" src="images/art/frigg.png">
@@ -294,10 +351,10 @@
             </ul>
         </div>
     </div>
-    
-    
+
+
     <!-- Modal -->
-    <div class="modal fade" id="modal-content" tabindex="-1" aria-labelledby="modal-contentLabel" aria-hidden="true">
+    <div class="modal fade pt-5 mt-5 mt-sm-0 pt-sm-0 " id="modal-content" tabindex="-1" aria-labelledby="modal-contentLabel" aria-hidden="true">
         <img id="modal-bg-img" class="bg-img" src="images/art/meryl.png">
 
         <div class="modal-dialog modal-fullscreen mx-auto">
@@ -324,7 +381,7 @@
 
                     <!-- Weapon Info -->
                     <div class="px-md-5 weapon-info-wrapper">
-                        
+
                         <!-- Overview -->
                         <div class="row">
                             <div class="col-lg-6 d-flex px-0 py-4">
@@ -345,7 +402,7 @@
                             </div>
                         </div>
                         <hr>
-                        
+
                         <!-- Exclusive weapon effects -->
                         <div id="exclusive-effect-wrapper">
                             <div class="py-4">
@@ -409,7 +466,7 @@
                             </div>
                         </div>
                         <hr>
-                        
+
                         <!-- Breakthrough Mats -->
                         <div class="py-4">
                             <div class="row text-center">
@@ -429,18 +486,18 @@
                                     <img class="bg-rarity-5 breakthrough-mat item-border btmat-3" src="images/mat/black3.png">
                                 </div>
                             </div>
-                            
-                                    
+
+
                         </div>
                         <hr>
-                        
+
                         <!-- Combat (Attacks, Combos, Skills) -->
-                        
+
                     </div> <!-- end weapon info -->
-                    
+
                     <!-- Chips -->
                     <div class="px-md-5">
-                        
+
                         <div class="row py-4">
                             <div class="col-4 col-md-3 col-lg-2 align-self-center"><img id="chip-img" src="images/chip/samir.png"></div>
                             <div class="col align-self-center">
@@ -457,12 +514,12 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Recommended Chips for <span id="item-name-2">Samir</span> -->
                         <!-- Submitted by: xxxx#1234 -->
                         <hr>
                     </div>
-                    
+
 
                     <!-- Affinity -->
                     <div class="px-md-5">
@@ -483,7 +540,7 @@
                             </tr>
                         </table>
                     </div>
-                    
+
                 </div> <!-- Modal body end -->
             </div>
         </div>

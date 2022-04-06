@@ -6,6 +6,10 @@
 
 jQuery(document).ready(function ($){
     
+    if (window.innerWidth >= 1440) {
+        //$("#sidenav-shown").addClass("show");
+    }
+    
     // Popper Popovers
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
@@ -16,20 +20,6 @@ jQuery(document).ready(function ($){
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
-    });
-    
-    $("#sidebar-collapser").click(function(){
-        if ($(this).hasClass("closed")) {
-            $(this).removeClass("closed");
-            $(this).children().removeClass("fa-angles-right");
-            $(this).children().addClass("fa-angles-left");
-        } else {
-            $(this).addClass("closed");
-            
-            $(this).children().removeClass("fa-angles-left");
-            $(this).children().addClass("fa-angles-right");
-        }
-        
     });
     
     setModalData(meryl);
