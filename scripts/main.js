@@ -18,7 +18,19 @@ jQuery(document).ready(function ($){
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
     
-    
+    $("#sidebar-collapser").click(function(){
+        if ($(this).hasClass("closed")) {
+            $(this).removeClass("closed");
+            $(this).children().removeClass("fa-angles-right");
+            $(this).children().addClass("fa-angles-left");
+        } else {
+            $(this).addClass("closed");
+            
+            $(this).children().removeClass("fa-angles-left");
+            $(this).children().addClass("fa-angles-right");
+        }
+        
+    });
     
     setModalData(meryl);
     
@@ -224,8 +236,10 @@ jQuery(document).ready(function ($){
     const modalContent = document.getElementById("modal-content");
     modalContent.addEventListener('hide.bs.modal', function(){
         $("#modal-menu").css("opacity","1");
+        $("#modal-bg-img").css("opacity","0");
     });
     modalContent.addEventListener('show.bs.modal', function(){
         $("#modal-menu").css("opacity","0");
+        $("#modal-bg-img").css("opacity","1");
     });
 });

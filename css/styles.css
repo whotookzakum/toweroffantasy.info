@@ -7,7 +7,6 @@ body {
     color: #dedede;
     font-family: 'Helvetica', 'Roboto', 'Times New Roman';
     font-size: 1.6rem;
-    padding-top: 5.5rem;
 }
 @font-face {
     font-family: 'Helvetica';
@@ -40,21 +39,20 @@ p { margin: 0; }
 }
 .modal-backdrop { 
     background: #15141a;
-    opacity: 0 !important;
+    opacity: 0!important;
 }
 .modal-dialog { max-width: 1000px !important; }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .modal-body::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 .modal-body, body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .modal-header { border: none; }
 .modal {
-    padding-top: 5.5rem; 
     box-shadow: 0 0 4px #111111;
 }
 .modal-content {
@@ -75,30 +73,87 @@ p { margin: 0; }
 =============================================== */
 
 .navbar * {
-    color: #439eac !important;
-    font-weight: bold;
-    background: #1a1921;
+    color: darkgray !important; /* #439eac */
 }
 .navbar {
+    background-color: #1a1921;
     filter: drop-shadow(0 0 4px #121212);
+    z-index: 80000;
+    width: 250px;
+    min-height: 100%;
+    align-content: space-between;
+    white-space: nowrap;
 }
-.nav-link {
+.navbar .nav-link {
     margin-bottom: -3px;
+    padding: 10px 0;
+    font-size: 1.8rem;
 }
-.navbar .nav-link:after {
-    display: block;
-    content: '';
-    border-bottom: solid 3px #439eac;
-    transform: scaleX(0);
-    transition: transform 125ms ease-in-out;
+.navbar .nav-item {
+    border-radius: 0.75rem;
+    padding: 0 0 0 0;
+    transition: background 125ms ease, padding 125ms ease;
 }
-.navbar .nav-link:hover:after {
-    transform: scaleX(1);
+.navbar .nav-link i {
+    width: 25px;
+    text-align: center;
+    margin-right: 3px;
+}
+.navbar .nav-item:hover {
+    background-color: #282633 !important;
+    padding: 0 0 0 5px;
+}
+.navbar .active > .nav-link, .navbar .active > .nav-link i {
+    color: #dedede !important;
 }
 .navbar-brand {
-    font-size: 16px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 190px; 
+    object-fit: none;
+    transition: color 125ms ease;
 }
-
+.navbar-brand:hover {
+    color: #439eac !important;
+}
+.navbar hr {              
+    background-color: gray;
+}
+.navbar .nav-socials * {
+    color: #439eac !important;
+}
+.nav-body {
+    width: 100%;
+}
+.nav-footer {
+    color: #686868 !important;
+}
+.nav-collapser {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    z-index: 90000; 
+    color: #439eac;
+    transition: width 0.35s ease;
+    width: 300px;
+    text-align: right;
+}
+.nav-collapser i {
+    font-size: 3rem;
+    padding: 15px 15px 15px 30px;
+    background-color: #1a1921; 
+    border-top-right-radius: 0.75rem;
+    margin-left: 0px;
+    transition: margin 0.35s ease;
+}
+.nav-collapser.closed {
+    width: 50px;
+}
+.nav-collapser.closed i {
+    margin-left: -15px;
+}
 
 /* MIMIC PAGE
 =============================================== */
@@ -106,7 +161,7 @@ p { margin: 0; }
 /* Mimic list UI */
 .bg-img {
     position: fixed; 
-    right: 0; 
+    right: 0;
     object-fit: none; 
     object-position: 200px;
 }
