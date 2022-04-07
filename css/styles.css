@@ -22,7 +22,7 @@ p { margin: 0; }
     src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
 }
 .flag {
-    font-family: "Noto Color Emoji";
+    font-family: "Noto Color Emoji"; 
 }
 
 
