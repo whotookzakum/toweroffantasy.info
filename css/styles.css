@@ -1,12 +1,14 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 body {
     background-color: #15141a;
     color: #dedede;
     font-family: 'Helvetica', 'Roboto', 'Times New Roman';
     font-size: 1.6rem;
+    height: 100vh;
 }
 @font-face {
     font-family: 'Helvetica';
@@ -37,12 +39,17 @@ p { margin: 0; }
         min-width: 100%;
     }
 }
-.container { 
-    padding: 0;
+@media (max-width: 768px) {
+    .container {
+        min-height: 100%;
+    }
+}
+.container {
+    position: relative;
+    z-index: 60000;
     background: rgba(26, 25, 33, 0.9); 
-    box-shadow: 0 0 4px #111111;
-    min-height: 100vh !important;
-    height: 100vh !important;
+    box-shadow: 0 0 4px #121212;
+    min-height: 100%;
 }
 .modal-backdrop { 
     background: #15141a;
@@ -70,6 +77,14 @@ p { margin: 0; }
 }
 .popover {
     font-size: 1.6rem;
+    z-index: 70000;
+    filter: drop-shadow(0 0 4px #121212);
+    max-width: fit-content;
+    background-color: #282633;
+    border-radius: 0.75rem;
+}
+.popover-arrow::after {
+    border-bottom-color: #282633 !important;
 }
 .fa-star, .fa-1, .fa-2, .fa-3, .fa-4, .fa-5, .fa-6 {
     color: gold;
@@ -138,7 +153,7 @@ p { margin: 0; }
     color: #686868 !important;
 }
 .offcanvas-backdrop {
-    z-index: 9000;
+    z-index: 70000;
 }
 #sidenav-toggler { 
     display: none;
@@ -167,6 +182,7 @@ p { margin: 0; }
     right: 0;
     object-fit: none; 
     object-position: 200px;
+    transition: opacity 0.5s ease;
 }
 #modal-menu {
     transition: opacity 0.5s ease;
@@ -175,7 +191,7 @@ p { margin: 0; }
     display: inline-block;
     transition: color 125ms ease-in-out;
     text-align: center;
-    filter: drop-shadow(0 0 4px #111111);
+    filter: drop-shadow(0 0 4px #121212);
 }
 .mimic-button img {
     margin-bottom: 5px;
@@ -206,18 +222,23 @@ p { margin: 0; }
 .weapon-info-wrapper .fa-solid {
     font-size: 2rem;
 }
-.trait-title {
+.traits span {
     margin-bottom: 3px;
-    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    display: block;
+    width: fit-content;
 }
-#mimic-gender,
-#mimic-height,
-#mimic-birthplace,
-#mimic-horoscope,
-#mimic-birthday {
-    font-size: 1.3rem;
+.traits {
+    width: 626px;
+    font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    color: #dedede;
+}
+.traits-img {
+    filter: invert();
+    width: 500px;
 }
 #wep-name {
     font-size: 2rem;
@@ -405,7 +426,7 @@ p { margin: 0; }
 
 /* Changelog */
 .cl-wrapper {
-    height: 200px;
+    /*height: 200px;*/
     overflow-y: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
