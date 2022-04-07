@@ -31,41 +31,107 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark nav-bg flex-sm-nowrap flex-wrap p-0 fixed-top">
-        <div class="container-fluid">
-            <div class="position-absolute">
-                <a class="navbar-brand d-none" href="#"><img src="images/avatar/tata.png" style="width: 40px"></a>
-                <a class="navbar-brand d-none d-md-block d-lg-none" href="#">ToF Index</a>
-                <a class="navbar-brand d-none d-sm-none d-lg-block" href="#">Tower of Fantasy Index</a>
-            </div>
-            <a class="navbar-brand d-sm-none" href="#">Tower of Fantasy Index</a>
-            <button class="navbar-toggler p-3 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5" style="border:none;">
-                <i class="fa-solid fa-bars" style="font-size: 3.2rem;"></i>
-            </button>
-            <div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="navbar5">
-                <ul class="navbar-nav mx-auto" id="bs-override">
-                    <li class="nav-item p-3 active">
-                        <a class="nav-link" href="mimics.html"><i class="fa-solid fa-user"></i> Mimics</a>
+    <!-- Nav toggler -->
+    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
+        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
+    </nav>
+
+    <!-- Sidenav offcanvas (smaller screens) -->
+    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-keyboard="true" tabindex="-1">
+        <div class="offcanvas-body p-5 pb-0">
+            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
+            <a class="navbar-brand" href="#">
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item active">
+                    <a class="nav-link" href="mimics.html"><i class="fa-solid fa-user"></i> Mimics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips.html"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mounts.html"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides.html"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
                     </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="chips.html"><i class="fa-solid fa-sd-card"></i> Chips</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
-                    </li>
-                    <li class="nav-item p-3">
-                        <a class="nav-link" href="guides.html"><i class="fa-solid fa-book"></i> Guides</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+    </nav>
+
+    <!-- Sidenav static (larger screens) -->
+    <nav id="sidenav-static" class="navbar sidenav position-fixed">
+        <div class="nav-body p-5 pb-0">
+            <a class="navbar-brand" href="#">
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="mimics.html"><i class="fa-solid fa-user"></i> Mimics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips.html"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets.html"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food.html"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mounts.html"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides.html"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
     </nav>
     
-    <div class="container p-5">
-        <p>
+    <!-- Background image -->
+    <img id="page-bg-img" class="bg-img" src="images/weila_lihui.png" style="object-position: 400px;">
+    
+    <div class="container">
+        <p class="p-5">
             <strong style="color: orange; font-size: 2rem">We are currently recruiting contributors to the project. If you would like to help, please DM Zakum on discord. All skill sets are welcome.</strong><br>
             <br>
             <span style="font-size: 32px;">Welcome to the Tower of Fantasy Index.</span><br>
@@ -77,13 +143,16 @@
             For corrections, suggestions, and bug reports, use <code>#guide-feedback</code> on <a href="https://discord.gg/qhDevpbJ4N" title="Join Aida Cafe!">Discord</a>, or contact <code>Pyrosu#6969</code> or <code>Zakum#3080</code> directly.<br>
             <br>
             Original contents by Pyrosu#6969, BakuBaku#1314, Sera Naoki#7502<br>
-            Created by Pyrosu#6969 and Zakum#3080.
+            Created by Pyrosu#6969 and Zakum#3080.<br>
+            <br>
+            Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.
         </p>
         
-        <div class="cl-wrapper mt-5">
+        <div class="cl-wrapper p-5 pt-0">
             <code class="cl">
                 <h3>Changelog</h3>
                 <ul>
+                    <li><span class="cl-date">6 April 2022</span> Sidebar navigation implemented; Mounts added back as a page; Character details added</li>
                     <li><span class="cl-date">5 April 2022</span> Chips page added; Mounts page moved into guides</li>
                     <li><span class="cl-date">4 April 2022</span> Mimic page content formatted; Gadget page content formatted</li>
                     <li><span class="cl-date">3 April 2022</span> Design updated; Mimic page streamlined</li>
@@ -98,9 +167,8 @@
                 </ul>
             </code>
         </div>
+        
     </div>
-    
-    <footer class="position-fixed mb-2 ms-2" style="color:gray; bottom: 0; left: 0; font-size: 1.4rem">&copy; Copyright 2022 Toweroffantasy.info. All rights reserved.<br>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</footer>
     
     <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
