@@ -247,10 +247,10 @@
                             <div id="item-tier" class="wep-tier wep-tier-s d-inline-block me-3" style="width: 50px; padding: 0 3px;">SSR</div>
                             <span id="item-name" class="me-3 fw-bold">Name</span>
                             <nav class="d-inline-block">
-                                <a class="btn btn-lg btn-minimal" href="#wep-name">Weapon</a>
-                                <a class="btn btn-lg btn-minimal" href="#">Combat</a>
-                                <a class="btn btn-lg btn-minimal" href="#chip-img">Chips</a>
-                                <a class="btn btn-lg btn-minimal" href="#affinity-info">Affinity</a>
+                                <a class="btn btn-lg btn-minimal" href="#header-weapon">Weapon</a>
+                                <a class="btn btn-lg btn-minimal" href="#header-combat">Combat</a>
+                                <a class="btn btn-lg btn-minimal" href="#header-chips">Chip</a>
+                                <a class="btn btn-lg btn-minimal" href="#header-affinity">Affinity</a>
                             </nav>
                             <a id="popover-mimic" tabindex="0" class="btn btn-lg btn-minimal" role="button" data-bs-toggle="popover" data-bs-placement="bottom">Character Info</a>
                         </div>
@@ -259,8 +259,8 @@
                     <div class="modal-body px-5">
                         
                         <!-- Weapon Info -->
-                        <div class="px-md-5 weapon-info-wrapper">
-                            
+                        <div class="px-md-5 weapon-info-wrapper mb-5">
+                            <h1 class="modal-section-header" id="header-weapon">Weapon</h1>
                             <!-- Overview -->
                             <div class="row">
                                 <div class="col-lg-6 d-flex py-4">
@@ -347,6 +347,7 @@
 
                             <!-- Breakthrough Mats -->
                             <div class="py-4">
+                                <h2 class="text-blue mb-4">Breakthrough Materials</h2>
                                 <div class="row text-center">
                                     <div class="col-4 p-0">
                                         <img class="bg-rarity-2 breakthrough-mat item-border btmat-1" src="images/mat/electric1.png">
@@ -364,26 +365,27 @@
                                         <img class="bg-rarity-5 breakthrough-mat item-border btmat-3" src="images/mat/black3.png">
                                     </div>
                                 </div>
-
-
                             </div>
-                            <hr>
-
-                            <!-- Combat (Attacks, Combos, Skills) -->
-
                         </div> <!-- end weapon info -->
-
+                        
+                        <!-- Combat -->
+                        <div class="px-md-5 mb-5">
+                            <h1 class="modal-section-header" id="header-combat">Combat</h1>
+                            Attack combos and skills coming soon
+                        </div>
+                        
                         <!-- Chips -->
-                        <div class="px-md-5">
-                            <table>
+                        <div class="px-md-5 mb-5">
+                            <h1 class="modal-section-header" id="header-chips">Chip</h1>
+                            <table class="my-4">
                                 <tr>
                                     <td style="width: 139px; text-align: center"><img id="chip-img" src="images/chip/samir.png"></td>
                                     <td class="p-4">
                                         <div id="chip-ssr-sets" class="align-self-center">
-                                            <span class="text-blue">Set effect (2 pieces)</span><br>
+                                            <h3 class="text-blue">Set effect (2 pieces)</h3>
                                             <span id="chip-2">Chip Effect 2 piece</span><br>
                                             <br>
-                                            <span class="text-blue">Set effect (4 pieces)</span><br>
+                                            <h3 class="text-blue">Set effect (4 pieces)</h3>
                                             <span id="chip-4">Chip Effect 4 piece</span>
                                         </div>
                                         <div id="chip-sr-sets" class="align-self-center d-none">
@@ -393,25 +395,29 @@
                                     </td>
                                 </tr>
                             </table>
-                            <!-- Recommended Chips for <span id="item-name-2">Samir</span> -->
-                            <!-- Submitted by: xxxx#1234 -->
                             <hr>
+                            <div class="py-4">
+                                <h2 class="text-blue">Recommended Chips for <span id="recommended-chips-for-wep"></span></h2>
+                                Coming soon
+                                <div class="submitted-by">Submitted by user#0000</div>
+                            </div>
                         </div>
 
                         <!-- Affinity -->
                         <div class="px-md-5">
-                            <table id="affinity-info">
+                            <h1 class="modal-section-header" id="header-affinity">Affinity</h1>
+                            <table class="my-4">
                                 <tr>
                                     <td style="transform: scale(0.8);"><img src="images/affinity/Checkpoint_1200.png" alt="1200 Affinity Bonus"></td>
                                     <td class="p-4">
-                                        <span class="text-blue">Unlock Mimic Passive</span><br>
+                                        <h3 class="text-blue">Unlock Mimic Passive</h3>
                                         <span id="affinity-1200">Affinity 1200 effect here</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="transform: scale(0.8)"><img src="images/affinity/Checkpoint_4000.png" alt="4000 Affinity Bonus"></td>
                                     <td class="p-4">
-                                        <span class="text-blue">Mimic Passive Upgrade</span><br>
+                                        <h3 class="text-blue">Mimic Passive Upgrade</h3>
                                         <span id="affinity-4000">Affinity 4000 effect here</span>
                                     </td>
                                 </tr>

@@ -232,6 +232,7 @@ jQuery(document).ready(function ($) {
             $("#chip-2").html(i.chipEffect[0]);
             $("#chip-3").html(i.chipEffect[1]);
             $("#chip-4").html(i.chipEffect[1]);
+            $("#recommended-chips-for-wep").html(i.wepName);
 
             // Recommended chips
 

@@ -89,7 +89,17 @@ p { margin: 0; }
 .fa-star, .fa-1, .fa-2, .fa-3, .fa-4, .fa-5, .fa-6 {
     color: gold;
 }
-
+.modal-section-header {
+    font-weight: bold;
+    color: gold;
+    font-size: 3.5rem;
+    font-family: 'Chakra Petch', sans-serif;
+    filter: drop-shadow(0 0 4px #121212);
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Chakra Petch', sans-serif;
+}
 
 /* NAV RELATED
 =============================================== */
@@ -303,12 +313,19 @@ p { margin: 0; }
     border: 6px solid gray;
     position: relative;
 }
-#chip-img {
+#chip-img, .chip-img {
     width: 128px;
     height: 128px;
     object-fit: none;
 }
-
+#recommended-chips-for-wep {
+    font-style: italic;
+}
+.submitted-by {
+    text-align: right; 
+    color: gray; 
+    font-style: italic
+}
 
 /* GUIDE RELATED
 =============================================== */
