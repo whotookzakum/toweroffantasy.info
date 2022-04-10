@@ -68,7 +68,17 @@ jQuery(document).ready(function ($) {
             }
             // R chips
             else if (document.URL.includes("chips")) {
-                if ($(this).children().is("#btn-burstingcore")) {
+                if ($(this).children().is("#btn-roberag")) {
+                    setModalData(roberag);
+                } else if ($(this).children().is("#btn-apophis")) {
+                    setModalData(apophis);
+                } else if ($(this).children().is("#btn-frozenmech")) {
+                    setModalData(frozenmech);
+                } else if ($(this).children().is("#btn-sobek")) {
+                    setModalData(sobek);
+                } else if ($(this).children().is("#btn-barbarossa")) {
+                    setModalData(barbarossa);
+                } else if ($(this).children().is("#btn-burstingcore")) {
                     setModalData(burstingcore);
                 } else if ($(this).children().is("#btn-transportthinking")) {
                     setModalData(transportthinking);

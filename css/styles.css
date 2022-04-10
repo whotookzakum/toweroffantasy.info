@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 0 0 5px;
 }
 .navbar .active * {
-    color: #dedede !important;
+    color: #ffdb85 !important;
     font-weight: bold;
 }
 .navbar-brand {
@@ -583,4 +583,28 @@ h1, h2, h3, h4, h5, h6 {
 .bg-stat-rareobject { background-color: #dd64a9; }
 .bg-stat-toy { background-color: #dd9cea; }
 
+
+.sitemap-toggle {
+    display: block;
+    width: fit-content;
+    padding: 1rem;
+    background-color: #282633;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: deepskyblue;
+    font-weight: bold;
+    margin: 2rem 0;
+    box-shadow: 0 0 2px #121212;
+}
+#sitemap {
+    margin-bottom: 2em;
+}
+
+#sitemap h2 {
+    color: deepskyblue;
+    font-weight: bold;
+}
+#sitemap strong {
+    color: gray;
+}
 
