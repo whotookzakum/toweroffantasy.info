@@ -6,20 +6,11 @@
 
 jQuery(document).ready(function ($) {
 
-    if (window.innerWidth >= 1440) {
-        //$("#sidenav-shown").addClass("show");
-    }
-
-    // Popper Popovers
-    
-
     // Popper Tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
-
-    //setModalData(meryl);
     
     $(".modal-menu-item").click(function () {
 
@@ -143,15 +134,8 @@ jQuery(document).ready(function ($) {
 
     });
     
-    
-    
-
-   
-    
     function setModalData(i) {
-        
-        
-        
+
         // Header
         $("#item-name").html(i.name);
         $("#item-tier").html(i.rarity);
@@ -174,7 +158,6 @@ jQuery(document).ready(function ($) {
             $("#item-tier").removeClass("wep-tier-a");
             $("#item-tier").addClass("wep-tier-b");
         }
-
 
         // MIMIC PAGE
         if (document.URL.includes("mimics")) {
@@ -301,6 +284,52 @@ jQuery(document).ready(function ($) {
             // where to obtain
         }
         
+    }
+    
+
+    // for each food item
+    for (let i = 0; i < food.length; i++) {
+        var recipe = '';
+        for (let j = 0; j < food[i].ingredients.length; j++) {
+            recipe += `
+            <div class="col-2 mx-2 p-0 ingredient-group">
+                <div class="item-img-wrapper bg-rarity-${food[i].ingredients[j][0].rarity} mx-auto mb-2">
+                    <img class="item-img" src="images/food/${food[i].ingredients[j][0].imgSrc}">
+                    <div class="badge">${food[i].ingredients[j][1]}</div>
+                </div>
+                ${food[i].ingredients[j][0].name}
+            </div>
+            `;
+        }
+
+        var starCount = `<i class="fa-solid fa-star text-rarity-${food[i].rarity}"></i>`;
+        if (food[i].stars === 2) {
+            starCount += `<i class="fa-solid fa-star text-rarity-${food[i].rarity}"></i>`;
+        }
+
+        $("#food-wrapper").append(`
+        <div class="row p-3 food-group">
+
+            <div class="col col-lg-2 text-center">
+                <div class="item-img-wrapper bg-rarity-${food[i].rarity} mx-auto my-3">
+                    <img class="item-img" src="images/food/${food[i].imgSrc}">
+                </div>
+                <strong class="font-chakra text-rarity-${food[i].rarity}">${food[i].name}</strong>
+            </div>
+
+            <div class="col p-0 align-self-center text-center">${starCount}</div>
+
+            <div class="col-4 col-lg-3 text-center text-lg-start align-self-center">
+                ${food[i].effect}
+            </div>
+
+            <div class="col-lg-6 align-self-center">
+                <div class="row mt-4 mt-lg-0">
+                    ${recipe}
+                </div>
+            </div>
+        </div>
+        `);
     }
 
     // Animate modal menu when modal is opened/closed
