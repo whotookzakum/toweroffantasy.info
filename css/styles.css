@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav-item {
     border-radius: 0.75rem;
     padding: 0 0 0 0;
-    transition: background 125ms ease, padding 125ms ease;
+    transition: background 125ms ease, padding 125ms ease, color 125ms ease;
 }
 .navbar .nav-link i {
     width: 25px;
@@ -137,7 +137,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #282633 !important;
     padding: 0 0 0 5px;
 }
-.navbar .active * {
+.navbar .nav-item:hover * {
+    color: #dedede !important;
+}
+.navbar .active *, .navbar .active:hover * {
     color: #ffdb85 !important;
     font-weight: bold;
 }
@@ -463,21 +466,9 @@ h1, h2, h3, h4, h5, h6 {
 =============================================== */
 
 .ingredient-group {
-    filter: drop-shadow(0 0 5px black);
-}
-.ingredient {
-    width: 70px;
-    border-radius: 0.75rem;
-    border: 4px solid gray;
-}
-
-.badge-tr {
-    right: 0; 
-    top: 0; 
-}
-.badge-br {
-    right: 2px; 
-    bottom: 4px; 
+    text-align: center;
+    white-space: normal;
+    line-height: 2rem;
 }
 
 .badge {
@@ -489,24 +480,28 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     width: 20px;
     line-height: 20px;
+    right: 0px; 
+    bottom: 2px;
 }
-.img-holder {
+.item-img-wrapper {
     border-radius: 0.75rem;
-    filter: drop-shadow(0 0 5px black);
-    border: 6px solid gray;
+    filter: drop-shadow(0 0 4px #121212);
+    border: 4px solid gray;
     width: fit-content;
     position: relative;
+    width: 80px;
+    height: 80px;
 }
-.food-group {
-    background: #222222;
-    border-radius: 0.75rem;
-    filter: drop-shadow(0 0 5px black);
+.food-group:nth-child(odd) {
+    background: #282633;
 }
-.img-food {
-    width: 100px; 
-    height: 100px; 
-    object-fit: none; 
-    object-position: 45% 45%;
+.food-group:nth-child(even) {
+    background: #1e1d26;
+}
+.item-img {
+    width: 91px; 
+    height: 91px;
+    object-position: -9px -9px;
 }
 .font-chakra {
     font-family: 'Chakra Petch';
@@ -599,12 +594,37 @@ h1, h2, h3, h4, h5, h6 {
 #sitemap {
     margin-bottom: 2em;
 }
-
+#sitemap a {
+    text-decoration: none;
+}
+#sitemap h2:hover {
+    color: gold;
+}
 #sitemap h2 {
     color: deepskyblue;
     font-weight: bold;
+    transition: color 250ms ease;
 }
 #sitemap strong {
     color: gray;
 }
+
+
+
+/* MOUNTS RELATED
+=============================================== */
+.mount-mat-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #282633;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    padding: 2rem;
+    box-shadow: 0 0 4px #121212;
+}
+
+.mount-mat-img {
+    width: 91px;
+}
+
 
