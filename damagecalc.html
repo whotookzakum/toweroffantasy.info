@@ -177,16 +177,24 @@
             <div class="row mt-5">
                 
                 <div class="col-8">
-                    <div id="wepBuffOptions">
+                    <div id="wepBuffOptions" >
                         <h3>Weapon Buff</h3>
-                        <input type="checkbox" id="wepBuffHane1" value="hane1">
-                        <label for="wepBuffHane1">Hane <i class="fa-solid" style="color: gold">1</i> <i class="fa-solid fa-star"></i></label>
-                        <input type="checkbox" id="wepBuffHane6" value="hane6">
-                        <label for="wepBuffHane6">Hane <i class="fa-solid" style="color: gold">6</i> <i class="fa-solid fa-star"></i></label>
-                        <input type="checkbox" id="wepBuffClaudia1" value="claudia1">
-                        <label for="wepBuffClaudia1">Claudia <i class="fa-solid" style="color: gold">1</i> <i class="fa-solid fa-star"></i></label>
-                        <input type="checkbox" id="wepBuffMarc3" value="marc3">
-                        <label for="wepBuffMarc3">Marc <i class="fa-solid" style="color: gold">3</i> <i class="fa-solid fa-star"></i></label>
+                        <div class="me-1">
+                            <input type="checkbox" id="wepBuffHane1" value="hane1">
+                            <label for="wepBuffHane1">Hane <i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="mx-1">
+                            <input type="checkbox" id="wepBuffHane6" value="hane6">
+                            <label for="wepBuffHane6">Hane <i class="fa-solid">6</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="mx-1">
+                            <input type="checkbox" id="wepBuffClaudia1" value="claudia1">
+                            <label for="wepBuffClaudia1">Claudia <i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="mx-1">
+                            <input type="checkbox" id="wepBuffMarc3" value="marc3">
+                            <label for="wepBuffMarc3">Marc <i class="fa-solid" style="color: gold">3</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3">
@@ -246,6 +254,12 @@
                     </div>
                 </div>
                 <div class="col-2">
+                    <div class="position-relative">
+                        <h3>Heavily Wounded</h3>
+                        <input type="checkbox" id="heavilyWounded">
+                    </div>
+                </div>
+                <div class="col-2">
                     <h3>Arc Core<br>% Damage</h3>
                     <div class="input-number-wrapper">
                         <input id="arcCore" type="number" value="0">
@@ -264,7 +278,7 @@
             
 
             <span id="totalDmgOutput">100%</span> <span id="additionalText"></span>
-            
+            <hr>
             <div class="mt-5" style="color:gray">
                 <h3 class="fw-bold">Important</h3>
                 This calculator only covers <strong>damage</strong> multipliers; it <strong>does not include attack</strong> multipliers.<br>

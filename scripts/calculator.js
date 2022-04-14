@@ -55,8 +55,9 @@ jQuery(document).ready(function ($) {
     ]);
     
     var wepBuff = 1;
-    var wepBuffCheckCount = 0;
+    var wepBuffsCheckedAmt = 0;
     var chipBuffOne = 0;
+    var heavilyWounded = 1;
     
     function calculateTotalDmgPercent() {
         var critRate = parseFloat(document.getElementById('critRate').value) * .01;
@@ -92,7 +93,7 @@ jQuery(document).ready(function ($) {
         chipBuffOne = chipSet1[parseInt(document.querySelector('input[name="chipSet1StarOptions"]:checked').value)];
         
         
-        var totalDmg = 1 * (dmgFromNoncrit + dmgFromCrit) * (1 - enemyEleResist) * (1 + enemyEleWeakness) * (wepBuff) * (1 + bonusWepEffect) * arcCore * (1 + mimicBuff) * (1 + resoBuff) * (1 + chipBuffOne) * (1 + otherMultipliers);
+        var totalDmg = 1 * (dmgFromNoncrit + dmgFromCrit) * (1 - enemyEleResist) * (1 + enemyEleWeakness) * (wepBuff) * (1 + bonusWepEffect) * arcCore * (1 + mimicBuff) * (1 + resoBuff) * (1 + chipBuffOne) * heavilyWounded * (1 + otherMultipliers);
         
         $("#totalDmgOutput").html(Math.round(totalDmg * 100) + "%");
     }
@@ -135,17 +136,26 @@ jQuery(document).ready(function ($) {
         }
         
         wepBuff = 1;
-        wepBuffCheckCount = 0;
+        wepBuffsCheckedAmt = 0;
         $("#wepBuffOptions input:checked").each(function(){
-            wepBuffCheckCount += 1;
+            wepBuffsCheckedAmt += 1;
             wepBuff *= 1 + wepBuffTypes.get(this.value);
         });
         
-        // If 3 weapon buffs are selected, disable Bonus Weapon Effect because buffers =/= bai/frigg
-        if (wepBuffCheckCount >= 3) {
+        // If 3 weapon buffs are selected, disable Bonus Weapon Effect
+        if (wepBuffsCheckedAmt >= 3) {
             document.getElementById("bonusWepEffectDropdown").disabled = true;
             document.getElementById("bonusWepEffectDropdown").value = 'none';
-        } else {
+        } 
+        // If 2 weapon buffs and a bonus wep effect are selected, disable the others
+        else if ( wepBuffsCheckedAmt === 2 && document.getElementById('bonusWepEffectDropdown').value !== 'none') {
+            $("#wepBuffOptions input").each(function(){
+                if (!(this.checked == true)) {
+                    this.disabled = true;
+                }
+            });
+        }
+        else {
             document.getElementById("bonusWepEffectDropdown").disabled = false;
         }
         
@@ -154,6 +164,35 @@ jQuery(document).ready(function ($) {
         calculateTotalDmgPercent();
     });
     $("#bonusWepEffectDropdown").on('input', function(){
+        
+        // If a bonus wep effect is selected, and 2 wep buffs are already selected, disable the others
+        if ( wepBuffsCheckedAmt === 2 && document.getElementById('bonusWepEffectDropdown').value !== 'none') {
+            $("#wepBuffOptions input").each(function(){
+                if (!(this.checked == true)) {
+                    this.disabled = true;
+                }
+            });
+        }
+        else {
+            $("#wepBuffOptions input").each(function(){
+                this.disabled = false;
+                // If hane1 is enabled, disable hane6
+                if (document.getElementById("wepBuffHane1").checked == true) {
+                    document.getElementById("wepBuffHane6").disabled = true;
+                }
+                else {
+                    document.getElementById("wepBuffHane6").disabled = false;
+                }
+                // If hane6 is enabled, disable hane1
+                if (document.getElementById("wepBuffHane6").checked == true) {
+                    document.getElementById("wepBuffHane1").disabled = true;
+                }
+                else {
+                    document.getElementById("wepBuffHane1").disabled = false;
+                }
+            });
+        }
+        
         calculateTotalDmgPercent();
     });
     $("#otherMultipliers").on('keyup', function(){
@@ -194,5 +233,24 @@ jQuery(document).ready(function ($) {
 
         calculateTotalDmgPercent();
     });
+    $("#heavilyWounded").on('input', function(){
+        
+        if (document.getElementById('heavilyWounded').checked == true) {
+            heavilyWounded = 1.2;
+        }
+        else {
+            heavilyWounded = 1.0;
+        }
+        
+        
+        
+        calculateTotalDmgPercent();
+    });
+    
+    
+    function validateWepBuffs() {
+        
+    }
+    
     
 });
