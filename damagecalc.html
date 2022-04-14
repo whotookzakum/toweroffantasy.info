@@ -137,7 +137,6 @@
     
     <div class="container p-5">
         <div class="p-5">
-            
             <div class="row">
                 <h1 class="text-blue mb-3">Main Multipliers</h1>
                 <div class="col-2">
@@ -154,75 +153,84 @@
                         <span>%</span>
                     </div>
                 </div>
-                <div class="col-2">
-                    <h3>Weapon Buff</h3>
-                    <select>
-                        <option value="">None</option>
-                        <option value="">Hane</option>
-                        <option value="">Claudia</option>
-                        <option value="">Marc</option>
-                    </select>
-                </div>
-                <div class="col-2">
+                
+                <div class="col-3">
                     <h3>Mimic Passive</h3>
-                    <select>
-                        <option>None</option>
-                        <option>Samir</option>
-                        <option>Karasuma</option>
+                    <select id="mimicBuffDropdown">
+                        <option value="none">None</option>
+                        <option value="samir">Samir</option>
+                        <option value="karasuma">Karasuma</option>
                     </select>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                     <h3>Resonance</h3>
-                    <select>
-                        <option value="">None</option>
-                        <option value="">Balanced - Solo</option>
-                        <option value="">Balanced - Group</option>
-                        <option value="">Attacker - Solo</option>
-                        <option value="">Attacker - Group</option>
+                    <select id="resoBuffDropdown">
+                        <option value="none">None</option>
+                        <option value="balancedSolo">Balanced - Solo</option>
+                        <option value="balancedGroup">Balanced - Group</option>
+                        <option value="attackerSolo">Attacker - Solo</option>
+                        <option value="attackerGroup">Attacker - Group</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                
+                <div class="col-8">
+                    <div id="wepBuffOptions">
+                        <h3>Weapon Buff</h3>
+                        <input type="checkbox" id="wepBuffHane1" value="hane1">
+                        <label for="wepBuffHane1">Hane <i class="fa-solid" style="color: gold">1</i> <i class="fa-solid fa-star"></i></label>
+                        <input type="checkbox" id="wepBuffHane6" value="hane6">
+                        <label for="wepBuffHane6">Hane <i class="fa-solid" style="color: gold">6</i> <i class="fa-solid fa-star"></i></label>
+                        <input type="checkbox" id="wepBuffClaudia1" value="claudia1">
+                        <label for="wepBuffClaudia1">Claudia <i class="fa-solid" style="color: gold">1</i> <i class="fa-solid fa-star"></i></label>
+                        <input type="checkbox" id="wepBuffMarc3" value="marc3">
+                        <label for="wepBuffMarc3">Marc <i class="fa-solid" style="color: gold">3</i> <i class="fa-solid fa-star"></i></label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>Bonus Weapon Effect</h3>
+                    <select id="bonusWepEffectDropdown">
+                        <option value="none">None</option>
+                        <option value="baiyuekui">Baiyuekui</option>
+                        <option value="frigg">Frigg</option>
                     </select>
                 </div>
             </div>
             
             <div class="row mt-5">
                 <div class="col-3">
-                    <h3>Chip Set 1</h3>
-                    <select>
-                        <option value="">None</option>
-                        <option value="">Cobalt (4)</option>
-                        <option value="">Claudia (2)</option>
-                        <option value="">Claudia (4)</option>
-                        <option value="">Karasuma (2)</option>
-                        <option value="">KING (2)</option>
-                        <option value="">Samir (2)</option>
-                        <option value="">Samir (4)</option>
-                        <option value="">Shiro (2)</option>
-                        <option value="">Shiro (4)</option>
-                        <option value="">Hane (2)</option>
-                        <option value="">Zero (4)</option>
+                    <h3>Chip Set</h3>
+                    <select id="chipSet1Dropdown">
+                        <option value="none">None</option>
+                        <option value="cobalt4">Cobalt (4)</option>
+                        <option value="claudia2">Claudia (2)</option>
+                        <option value="claudia4">Claudia (4)</option>
+                        <option value="karasuma2">Karasuma (2)</option>
+                        <option value="king2">KING (2)</option>
+                        <option value="samir2">Samir (2)</option>
+                        <option value="samir4">Samir (4)</option>
+                        <option value="shiro2">Shiro (2)</option>
+                        <option value="shiro4">Shiro (4)</option>
+                        <option value="hane2">Hane (2)</option>
                     </select>
                 </div>
                 <div class="col-3">
-                    <h3>Chip Set 2</h3>
-                    <select>
-                        <option value="">None</option>
-                        <option value="">Claudia (2)</option>
-                        <option value="">Karasuma (2)</option>
-                        <option value="">KING (2)</option>
-                        <option value="">Samir (2)</option>
-                        <option value="">Shiro (2)</option>
-                        <option value="">Hane (2)</option>
-                    </select>
-                </div>
-                <div class="col-3">
-                    <h3>Bonus Effect</h3>
-                    <select>
-                        <option value="">None</option>
-                        <option value="">Baiyuekui</option>
-                        <option value="">Frigg</option>
-                    </select>
+                    <h3>&nbsp;</h3>
+                    <div id="chipSet1StarOptions" class="d-none">
+                        <input id="chipSet1Star0" type="radio" value="0" name="chipSet1StarOptions" checked>
+                        <label for="chipSet1Star0">0*</label>
+                        <input id="chipSet1Star0" type="radio" value="1" name="chipSet1StarOptions">
+                        <label for="chipSet1Star0">1*</label>
+                        <input id="chipSet1Star0" type="radio" value="2" name="chipSet1StarOptions">
+                        <label for="chipSet1Star0">2*</label>
+                        <input id="chipSet1Star0" type="radio" value="3" name="chipSet1StarOptions">
+                        <label for="chipSet1Star0">3*</label>
+                    </div>
                 </div>
             </div>
-                
+            
             <div class="row mt-5">
                 <h1 class="text-blue mb-3">Extra Options</h1>
                 <div class="col-3">
@@ -247,7 +255,7 @@
                 <div class="col-2">
                     <h3>Any other multipliers</h3>
                     <div class="input-number-wrapper">
-                        <input id="otherMultipliers" type="number" value="0">
+                        <input id="otherMultipliers" type="number" value="0" checked>
                         <span>%</span>
                     </div>
                 </div>
@@ -255,9 +263,20 @@
             
             
 
+            <span id="totalDmgOutput">100%</span> <span id="additionalText"></span>
             
-            
-                
+            <div class="mt-5" style="color:gray">
+                <h3 class="fw-bold">Important</h3>
+                This calculator only covers <strong>damage</strong> multipliers; it <strong>does not include attack</strong> multipliers.<br>
+                This is done to produce a percentage total rather a number total.<br>
+                Your true damage is also influenced by other things like attack multipliers and DoT.
+                <br><br>
+                <h3 class="fw-bold">Other Notes</h3>
+                Effects that activate <span class="fst-italic">"when entering combat"</span> are <strong>not included</strong>.<br>
+                Zero's 4 set not included because it only lasts 4 seconds.<br><br>
+                Additional buffs should be multiplied together and inputted in <span class="fst-italic">Any other multipliers</span>.<br>
+                Ex. To calculate two buffs, 30% and 15%, do 1.30 &times; 1.15 to get 1.495. Then input 49.5% to get your result.
+            </div>    
             
             
                     
