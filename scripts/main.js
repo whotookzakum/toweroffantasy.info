@@ -331,7 +331,7 @@ jQuery(document).ready(function ($) {
         </div>
         `);
     }
-
+    
     // Animate modal menu when modal is opened/closed
     const modalContent = document.getElementById("modal-content");
     modalContent.addEventListener('hide.bs.modal', function () {

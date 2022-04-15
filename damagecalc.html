@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome (CDN) -->
+    <script src="https://kit.fontawesome.com/285bd2cf5d.js" crossorigin="anonymous"></script>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Tower of Fantasy - Damage Calculator</title>
+    <link rel="icon" type="image/x-icon" href="images/avatar/tata.png">
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N68SWH7ZJB');
+    </script>
+</head>
+
+<body>
+    <!-- Nav toggler -->
+    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
+        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
+    </nav>
+
+    <!-- Sidenav offcanvas (smaller screens) -->
+    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-keyboard="true" tabindex="-1">
+        <div class="offcanvas-body p-5 pb-0">
+            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
+            <a class="navbar-brand" >
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="mimics"><i class="fa-solid fa-user"></i> Mimics<!-- <i class="fa-solid fa-star" style="color: gold !important;"></i>--></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+    </nav>
+    
+    <!-- Sidenav static (larger screens) -->
+    <nav id="sidenav-static" class="navbar sidenav position-fixed">
+        <div class="nav-body p-5 pb-0">
+            <a class="navbar-brand" >
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="mimics"><i class="fa-solid fa-user"></i> Mimics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+    </nav>
+    
+    <!-- Background image -->
+    <img id="page-bg-img" class="bg-img" src="images/weila_lihui.png" style="object-position: 400px;">
+    
+    <div class="container p-5">
+        <h1 class="page-header">Damage Calculator</h1>
+        <div class="px-5">
+            
+            <div class="row mt-5 position-relative">
+                <h1 class="text-blue mb-3">Main Multipliers</h1>
+                <button id="reset-button"><h3 class="m-0">Reset</h3></button>
+                <div class="col-2">
+                    <h3>Critical Rate</h3>
+                    <div class="input-number-wrapper">
+                        <input id="critRate" type="number" value="0" max="100" oninput="if (this.value > 100) this.value=100">
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>Critical Damage</h3>
+                    <div class="input-number-wrapper">
+                        <input id="critDmg" type="number" value="50" maxlength="6">
+                        <span>%</span>
+                    </div>
+                </div>
+                
+                <div class="col-3">
+                    <h3>Mimic Passive</h3>
+                    <select id="mimicBuffDropdown">
+                        <option value="none">None</option>
+                        <option value="samir">Samir</option>
+                        <option value="karasuma">Karasuma</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <h3>Resonance</h3>
+                    <select id="resoBuffDropdown">
+                        <option value="none">None</option>
+                        <option value="balancedSolo">Balanced - Solo</option>
+                        <option value="balancedGroup">Balanced - Group</option>
+                        <option value="attackerSolo">Attacker - Solo</option>
+                        <option value="attackerGroup">Attacker - Group</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                
+                <div class="col-8">
+                    <h3>Weapon Buffs</h3>
+                    <div id="wepBuffOptions" class="input-section-wrapper">
+                        <div class="me-1">
+                            <input type="checkbox" id="wepBuffHane1" value="hane1">
+                            <label for="wepBuffHane1">Hane <i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="mx-1">
+                            <input type="checkbox" id="wepBuffHane6" value="hane6">
+                            <label for="wepBuffHane6">Hane <i class="fa-solid">6</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="mx-1">
+                            <input type="checkbox" id="wepBuffClaudia1" value="claudia1">
+                            <label for="wepBuffClaudia1">Claudia <i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="mx-1">
+                            <input type="checkbox" id="wepBuffMarc3" value="marc3">
+                            <label for="wepBuffMarc3">Marc <i class="fa-solid">3</i> <i class="fa-solid fa-star"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>Bonus Weapon Effect</h3>
+                    <select id="bonusWepEffectDropdown">
+                        <option value="none">None</option>
+                        <option value="baiyuekui">Baiyuekui</option>
+                        <option value="frigg">Frigg</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+            
+                <div class="col-6">
+                    <div class="d-inline-block me-3">
+                        <h3>Chip Set 1</h3>
+                        <select id="chipSet1Dropdown">
+                            <option value="none">None</option>
+                            <option value="cobalt4">Cobalt (4)</option>
+                            <option value="claudia2">Claudia (2)</option>
+                            <option value="karasuma2">Karasuma (2)</option>
+                            <option value="king2">KING (2)</option>
+                            <option value="samir2">Samir (2)</option>
+                            <option value="samir4">Samir (4)</option>
+                            <option value="shiro2">Shiro (2)</option>
+                            <option value="hane2">Hane (2)</option>
+                        </select>
+                    </div>
+                    <div class="d-inline-block">
+                        <h3>&nbsp;</h3>
+                        <div id="chipSet1StarOptions" class="input-section-wrapper">
+                            <div class="me-1">
+                                <input id="chipSet1Star0" type="radio" value="0" name="chipSet1StarOptions" checked>
+                                <label for="chipSet1Star0"><i class="fa-solid">0</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet1Star1" type="radio" value="1" name="chipSet1StarOptions">
+                                <label for="chipSet1Star1"><i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet1Star2" type="radio" value="2" name="chipSet1StarOptions">
+                                <label for="chipSet1Star2"><i class="fa-solid">2</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet1Star3" type="radio" value="3" name="chipSet1StarOptions">
+                                <label for="chipSet1Star3"><i class="fa-solid">3</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="d-inline-block me-3">
+                        <h3>Chip Set 2</h3>
+                        <select id="chipSet2Dropdown">
+                            <option value="none">None</option>
+                            <option value="claudia2">Claudia (2)</option>
+                            <option value="karasuma2">Karasuma (2)</option>
+                            <option value="king2">KING (2)</option>
+                            <option value="samir2">Samir (2)</option>
+                            <option value="shiro2">Shiro (2)</option>
+                            <option value="hane2">Hane (2)</option>
+                        </select>
+                    </div>
+                    <div class="d-inline-block">
+                        <h3>&nbsp;</h3>
+                        <div id="chipSet2StarOptions" class="input-section-wrapper">
+                            <div class="me-1">
+                                <input id="chipSet2Star0" type="radio" value="0" name="chipSet2StarOptions" checked>
+                                <label for="chipSet2Star0"><i class="fa-solid">0</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet2Star1" type="radio" value="1" name="chipSet2StarOptions">
+                                <label for="chipSet2Star1"><i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet2Star2" type="radio" value="2" name="chipSet2StarOptions">
+                                <label for="chipSet2Star2"><i class="fa-solid">2</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet2Star3" type="radio" value="3" name="chipSet2StarOptions">
+                                <label for="chipSet2Star3"><i class="fa-solid">3</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <h1 class="text-blue mb-3">Extra Options</h1>
+                <div class="col-3">
+                    <h3>Enemy's Elemental Resistance</h3>
+                    <div class="input-range-wrapper">
+                        <input id="enemyEleResist" type="range" list="enemyEleResistValues" min="0" max="2" step="1" value="0">
+                        <div class="tick-marks font-chakra">
+                            <div class="me-auto">0%&nbsp;</div>
+                            <div class="mx-auto">50%</div>
+                            <div class="ms-auto">65%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>Enemy's Elemental Weakness</h3>
+                    <div class="input-range-wrapper">
+                        <input id="enemyEleWeakness" type="range" min="0" max="1" step="1" value="0">
+                        <div class="tick-marks font-chakra">
+                            <div class="me-auto">0%&nbsp;</div>
+                            <div class="ms-auto">30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="position-relative">
+                        <h3>Heavily Wounded</h3>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="heavilyWounded">
+                            <div class="checkbox-knob"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h3>Arc Core<br>% Damage</h3>
+                    <div class="input-number-wrapper">
+                        <input id="arcCore" type="number" value="0">
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h3>Any other multipliers</h3>
+                    <div class="input-number-wrapper">
+                        <input id="otherMultipliers" type="number" value="0" checked>
+                        <span>%</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="mt-3 calculator-result">
+                <div id="footnote-warning">&nbsp;</div>
+                Total Damage<br>
+                <span id="totalDmgOutput">100%</span>
+                <span id="footnote-one"></span>
+                <span id="footnote-two"></span>
+            </div>
+            
+            <hr>
+            <div class="mt-5" style="color:gray">
+                <h3 class="fw-bold">Important</h3>
+                This calculator only covers <strong>damage</strong> multipliers; it <strong>does not include attack</strong> multipliers.<br>
+                This is done to produce a percentage total rather a number total.<br>
+                Your true damage is also influenced by other things like attack multipliers and DoT.
+                <br><br>
+                <h3 class="fw-bold">Other Notes</h3>
+                Effects that activate <span class="fst-italic">"when entering combat"</span> are <strong>not included</strong>.<br>
+                Zero's 4 set not included because it only lasts 4 seconds. Claudia's 4 set not included because it's only for combo skills.<br>
+                Karasuma &amp; Shiro's chip sets are calculated assuming you will fight an enemy from 100% HP to 0%.<br><br>
+                Additional buffs should be multiplied together and inputted in <span class="fst-italic">Any other multipliers</span>.<br>
+                Ex. To calculate two buffs, 30% and 15%, do 1.30 &times; 1.15 to get 1.495. Then input 49.5% to get your result.
+                <br><br>
+                <h3 class="fw-bold">Full Damage Formula</h3>
+                <code>(ActionMultiplier &times; BaseAttack + ExtraDamage) &times; CritDmg &times; (0.95~1.05) &times; AnyOtherMultipliers</code><br>
+                <div class="submitted-by mt-2">Provided by Oto酱 (Mamako#7385)</div>
+            </div>    
+            
+            
+                    
+            
+            
+        </div>
+    </div> 
+    
+    <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/data.js"></script>
+    <script type="text/javascript" src="scripts/calculator.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body></html>
