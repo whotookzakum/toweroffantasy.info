@@ -66,6 +66,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                </li>
             </ul>
             <hr class="my-3">
             <div class="nav-socials">
@@ -136,9 +139,12 @@
     <img id="page-bg-img" class="bg-img" src="images/weila_lihui.png" style="object-position: 400px;">
     
     <div class="container p-5">
-        <div class="p-5">
-            <div class="row">
+        <h1 class="page-header">Damage Calculator</h1>
+        <div class="px-5">
+            
+            <div class="row mt-5 position-relative">
                 <h1 class="text-blue mb-3">Main Multipliers</h1>
+                <button id="reset-button"><h3 class="m-0">Reset</h3></button>
                 <div class="col-2">
                     <h3>Critical Rate</h3>
                     <div class="input-number-wrapper">
@@ -177,8 +183,8 @@
             <div class="row mt-5">
                 
                 <div class="col-8">
-                    <div id="wepBuffOptions" >
-                        <h3>Weapon Buff</h3>
+                    <h3>Weapon Buffs</h3>
+                    <div id="wepBuffOptions" class="input-section-wrapper">
                         <div class="me-1">
                             <input type="checkbox" id="wepBuffHane1" value="hane1">
                             <label for="wepBuffHane1">Hane <i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
@@ -193,7 +199,7 @@
                         </div>
                         <div class="mx-1">
                             <input type="checkbox" id="wepBuffMarc3" value="marc3">
-                            <label for="wepBuffMarc3">Marc <i class="fa-solid" style="color: gold">3</i> <i class="fa-solid fa-star"></i></label>
+                            <label for="wepBuffMarc3">Marc <i class="fa-solid">3</i> <i class="fa-solid fa-star"></i></label>
                         </div>
                     </div>
                 </div>
@@ -208,33 +214,78 @@
             </div>
             
             <div class="row mt-5">
-                <div class="col-3">
-                    <h3>Chip Set</h3>
-                    <select id="chipSet1Dropdown">
-                        <option value="none">None</option>
-                        <option value="cobalt4">Cobalt (4)</option>
-                        <option value="claudia2">Claudia (2)</option>
-                        <option value="claudia4">Claudia (4)</option>
-                        <option value="karasuma2">Karasuma (2)</option>
-                        <option value="king2">KING (2)</option>
-                        <option value="samir2">Samir (2)</option>
-                        <option value="samir4">Samir (4)</option>
-                        <option value="shiro2">Shiro (2)</option>
-                        <option value="shiro4">Shiro (4)</option>
-                        <option value="hane2">Hane (2)</option>
-                    </select>
+            
+                <div class="col-6">
+                    <div class="d-inline-block me-3">
+                        <h3>Chip Set 1</h3>
+                        <select id="chipSet1Dropdown">
+                            <option value="none">None</option>
+                            <option value="cobalt4">Cobalt (4)</option>
+                            <option value="claudia2">Claudia (2)</option>
+                            <option value="karasuma2">Karasuma (2)</option>
+                            <option value="king2">KING (2)</option>
+                            <option value="samir2">Samir (2)</option>
+                            <option value="samir4">Samir (4)</option>
+                            <option value="shiro2">Shiro (2)</option>
+                            <option value="hane2">Hane (2)</option>
+                        </select>
+                    </div>
+                    <div class="d-inline-block">
+                        <h3>&nbsp;</h3>
+                        <div id="chipSet1StarOptions" class="input-section-wrapper">
+                            <div class="me-1">
+                                <input id="chipSet1Star0" type="radio" value="0" name="chipSet1StarOptions" checked>
+                                <label for="chipSet1Star0"><i class="fa-solid">0</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet1Star1" type="radio" value="1" name="chipSet1StarOptions">
+                                <label for="chipSet1Star1"><i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet1Star2" type="radio" value="2" name="chipSet1StarOptions">
+                                <label for="chipSet1Star2"><i class="fa-solid">2</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet1Star3" type="radio" value="3" name="chipSet1StarOptions">
+                                <label for="chipSet1Star3"><i class="fa-solid">3</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <h3>&nbsp;</h3>
-                    <div id="chipSet1StarOptions" class="d-none">
-                        <input id="chipSet1Star0" type="radio" value="0" name="chipSet1StarOptions" checked>
-                        <label for="chipSet1Star0">0*</label>
-                        <input id="chipSet1Star0" type="radio" value="1" name="chipSet1StarOptions">
-                        <label for="chipSet1Star0">1*</label>
-                        <input id="chipSet1Star0" type="radio" value="2" name="chipSet1StarOptions">
-                        <label for="chipSet1Star0">2*</label>
-                        <input id="chipSet1Star0" type="radio" value="3" name="chipSet1StarOptions">
-                        <label for="chipSet1Star0">3*</label>
+            
+                <div class="col-6">
+                    <div class="d-inline-block me-3">
+                        <h3>Chip Set 2</h3>
+                        <select id="chipSet2Dropdown">
+                            <option value="none">None</option>
+                            <option value="claudia2">Claudia (2)</option>
+                            <option value="karasuma2">Karasuma (2)</option>
+                            <option value="king2">KING (2)</option>
+                            <option value="samir2">Samir (2)</option>
+                            <option value="shiro2">Shiro (2)</option>
+                            <option value="hane2">Hane (2)</option>
+                        </select>
+                    </div>
+                    <div class="d-inline-block">
+                        <h3>&nbsp;</h3>
+                        <div id="chipSet2StarOptions" class="input-section-wrapper">
+                            <div class="me-1">
+                                <input id="chipSet2Star0" type="radio" value="0" name="chipSet2StarOptions" checked>
+                                <label for="chipSet2Star0"><i class="fa-solid">0</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet2Star1" type="radio" value="1" name="chipSet2StarOptions">
+                                <label for="chipSet2Star1"><i class="fa-solid">1</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet2Star2" type="radio" value="2" name="chipSet2StarOptions">
+                                <label for="chipSet2Star2"><i class="fa-solid">2</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                            <div class="mx-1">
+                                <input id="chipSet2Star3" type="radio" value="3" name="chipSet2StarOptions">
+                                <label for="chipSet2Star3"><i class="fa-solid">3</i> <i class="fa-solid fa-star"></i></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,18 +296,30 @@
                     <h3>Enemy's Elemental Resistance</h3>
                     <div class="input-range-wrapper">
                         <input id="enemyEleResist" type="range" list="enemyEleResistValues" min="0" max="2" step="1" value="0">
+                        <div class="tick-marks font-chakra">
+                            <div class="me-auto">0%&nbsp;</div>
+                            <div class="mx-auto">50%</div>
+                            <div class="ms-auto">65%</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <h3>Enemy's Elemental Weakness</h3>
                     <div class="input-range-wrapper">
                         <input id="enemyEleWeakness" type="range" min="0" max="1" step="1" value="0">
+                        <div class="tick-marks font-chakra">
+                            <div class="me-auto">0%&nbsp;</div>
+                            <div class="ms-auto">30%</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="position-relative">
                         <h3>Heavily Wounded</h3>
-                        <input type="checkbox" id="heavilyWounded">
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="heavilyWounded">
+                            <div class="checkbox-knob"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-2">
@@ -276,8 +339,14 @@
             </div>
             
             
-
-            <span id="totalDmgOutput">100%</span> <span id="additionalText"></span>
+            <div class="mt-3 calculator-result">
+                <div id="footnote-warning">&nbsp;</div>
+                Total Damage<br>
+                <span id="totalDmgOutput">100%</span>
+                <span id="footnote-one"></span>
+                <span id="footnote-two"></span>
+            </div>
+            
             <hr>
             <div class="mt-5" style="color:gray">
                 <h3 class="fw-bold">Important</h3>
@@ -287,9 +356,14 @@
                 <br><br>
                 <h3 class="fw-bold">Other Notes</h3>
                 Effects that activate <span class="fst-italic">"when entering combat"</span> are <strong>not included</strong>.<br>
-                Zero's 4 set not included because it only lasts 4 seconds.<br><br>
+                Zero's 4 set not included because it only lasts 4 seconds. Claudia's 4 set not included because it's only for combo skills.<br>
+                Karasuma &amp; Shiro's chip sets are calculated assuming you will fight an enemy from 100% HP to 0%.<br><br>
                 Additional buffs should be multiplied together and inputted in <span class="fst-italic">Any other multipliers</span>.<br>
                 Ex. To calculate two buffs, 30% and 15%, do 1.30 &times; 1.15 to get 1.495. Then input 49.5% to get your result.
+                <br><br>
+                <h3 class="fw-bold">Full Damage Formula</h3>
+                <code>(ActionMultiplier &times; BaseAttack + ExtraDamage) &times; CritDmg &times; (0.95~1.05) &times; AnyOtherMultipliers</code><br>
+                <div class="submitted-by mt-2">Provided by Oto酱 (Mamako#7385)</div>
             </div>    
             
             

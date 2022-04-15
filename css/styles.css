@@ -872,7 +872,7 @@ input[type=number]:focus {
 
 .input-number-wrapper {
     width: 46px;
-    font-size: 2rem;
+    font-size: 20px;
     display: flex;
     position: relative;
     color: #dedede;
@@ -882,9 +882,10 @@ input[type=number]:focus {
     background-color: #282633;
     box-shadow: 0 0 4px #121212;
     border: 2px solid transparent;
+    transition: border 0.1s linear;
 }
 .input-number-wrapper:focus-within {
-    border: 2px solid deepskyblue;
+    border-color: deepskyblue;
 }
 .input-number-wrapper input {
     width: 3em;
@@ -892,6 +893,7 @@ input[type=number]:focus {
     text-align: right;
     background: none;
     border: none;
+    padding: 0;
 }
 
 .input-number-wrapper span {
@@ -920,6 +922,7 @@ input[type=range]::-webkit-slider-runnable-track {
     background: #282633;
     border-radius: 1rem;
     box-shadow: 0 0 4px #121212;
+    transition: background 0.1s linear;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -1005,39 +1008,52 @@ input[type=range]:focus::-ms-fill-upper {
     background: deepskyblue;
 }
 
+.tick-marks {
+    width: 135px;
+    display: flex;
+    margin-top: -13px;
+    font-size: 1.4rem;
+}
+
 
 
 select {
     font-size: 2rem;
     background-color: #282633;
     color: #dedede;
-    border: none;
+    border: 2px solid transparent;
+    outline: none;
     padding: .5rem;
     border-radius: 0.75rem;
     box-shadow: 0 0 4px #121212;
     border: 2px solid transparent;
+    transition: border 0.1s linear;
 }
 select:focus, select:focus-within {
-    border: 2px solid deepskyblue;
+    border-color: deepskyblue;
+    transition: border 0.1s linear;
 }
-
-#wepBuffOptions div {
+.input-section-wrapper {
+    display: flex;
+}
+.input-section-wrapper div {
     width: fit-content;
+    font-size: 2rem;
     position: relative;
-    display: inline-block;
     align-items: center;
-    padding: 5px 10px;
+    padding: .5rem 10px;
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0 0 4px #121212;
 }
 label i {
     color: gold;
+    align-self: center;
 }
-#wepBuffOptions input[type="checkbox"] {
+input[type="checkbox"], 
+input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
-    background-color: #fff;
     margin: 0;
     place-content: center;
     position: absolute;
@@ -1050,55 +1066,125 @@ label i {
     border: 0;
     /* to offset the padding */ 
     margin-left: -10px; 
-    margin-top: -5px;
+    margin-top: -.5rem;
 }
-#wepBuffOptions input+label {
+input+label {
     position: relative;
     z-index: 50;
+    font-size: 2rem;
 }
-#wepBuffOptions input+label:hover {
+.input-section-wrapper div *:hover {
     cursor: pointer;
 }
-#wepBuffOptions input[type="checkbox"]:checked { 
+input:checked { 
     background-color: #4f496e; 
 }
-#wepBuffOptions input[type="checkbox"]:disabled, select:disabled {
+input:disabled, 
+select:disabled {
     background: #373738;
-    transition: background .25s;
 }
-#wepBuffOptions input[type="checkbox"]:disabled+label, #wepBuffOptions input[type="checkbox"]:disabled+label *, select:disabled {
-    transition: color .25s;
+input:disabled+label, 
+input:disabled+label i, 
+select:disabled {
     color: gray;
 }
 select {
     transition: background .25s;
 }
-#heavilyWounded {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    margin: 0;
-    width: 30px;
-    height: 30px;
+
+
+
+.checkbox-wrapper {
+    width: 34px;
+    height: 34px;
     border-radius: 0.75rem;
     overflow: hidden;
     box-shadow: 0 0 4px #121212;
-    position: relative;
     background-color: #282633;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: border 0.1s linear;
 }
-#heavilyWounded:checked::before {
-    content:'';
-    width: 20px; 
-    height: 20px;
+.checkbox-wrapper:focus-within {
+    border-color: deepskyblue;
+}
+.checkbox-wrapper:hover .checkbox-knob {
     background: #ffdb85;
     display: block;
     position: relative;
-    top: 5px;
-    left: 5px;
+    width: 40%; 
+    height: 40%;
     border-radius: 0.3rem;
+    transition: width 0.1s linear, height 0.1s linear;
+}
+.checkbox-knob {
+    border-radius: 0.3rem;
+    transition: width 0.1s linear, height 0.1s linear;
+    background: #ffdb85;
+    position: relative;
+    z-index: 50;
+    width: 0%; 
+    height: 0%;
+    opacity: 1;
     animation: pop 0.3s linear 1;
 }
+#heavilyWounded {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    background: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%; 
+    height: 100%;
+}
+#heavilyWounded:checked+.checkbox-knob {
+    width: 60%; 
+    height: 60%;
+}
+
 @keyframes pop{
     0% {transform: scale(0);}
     50% {transform: scale(1.2);}
+}
+
+
+
+.calculator-result {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+}
+#totalDmgOutput {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: indianred;
+}
+#footnote-warning {
+    color: red;
+    font-weight: bold;
+}
+
+
+#reset-button {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    background-color: #282633;
+    border-radius: 0.75rem;
+    filter: drop-shadow(0 0 4px #121212);
+    border: none;
+    box-shadow: inset 0 0 0 0 #373738;
+    color: indianred;
+    transition: box-shadow 0.2s ease;
+}
+#reset-button:hover {
+    box-shadow: inset 0 0 50px 20px #373738;
+}
+#reset-button:active {
+    filter: drop-shadow(0 0 4px #121212) brightness(0.85);
 }

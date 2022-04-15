@@ -44,25 +44,24 @@ jQuery(document).ready(function ($) {
         ['none', [0, 0, 0, 0]],
         ['cobalt4', [0.12, 0.15, 0.18, 0.21]], // on abnormal status inflicted enemies
         ['claudia2', [0.13, 0.17, 0.20, 0.23]], // while airborne
-        ['claudia4', [0.36, 0.45, 0.54, 0.63]], // on combo skills for 15s
-        ['karasuma4', [0.33, 0.42, 0.50, 0.58]], // crit damage on targets below 60% hp
+        ['karasuma2', [0.33, 0.42, 0.50, 0.58]], // crit damage on targets below 60% hp
         ['king2', [0.12, 0.15, 0.18, 0.21]], // with 3 stacks for 25s
         ['samir2', [0.15, 0.195, 0.24, 0.30]],
         ['samir4', [0.10, 0.125, 0.15, 0.175]], // can not crit
         ['shiro2', [0.15, 0.19, 0.225, 0.26]], // targets above 50% hp
-        ['shiro4', [0.20, 0.25, 0.30, 0.35]], // when entering combat, for 20s
         ['hane2', [0.10, 0.125, 0.15, 0.175]] // if no enemy within 4m
     ]);
     
     var wepBuff = 1;
     var wepBuffsCheckedAmt = 0;
     var chipBuffOne = 0;
+    var chipBuffTwo = 0;
     var heavilyWounded = 1;
     
     function calculateTotalDmgPercent() {
         var critRate = parseFloat(document.getElementById('critRate').value) * .01;
         var critDmg = parseFloat(document.getElementById('critDmg').value) * .01;
-        var dmgFromNoncrit = 1 * ( 1 - critRate );
+        var dmgFromNoncrit = ( 1 - critRate );
         var dmgFromCrit = ( 1 + critDmg ) * critRate;
         var arcCore = 1 + (parseFloat(document.getElementById('arcCore').value) * .01);
         var enemyEleResist = parseFloat(document.getElementById('enemyEleResist').value);
@@ -81,21 +80,52 @@ jQuery(document).ready(function ($) {
         var otherMultipliers = parseFloat(document.getElementById('otherMultipliers').value) * .01;
         var resoBuff = resoBuffTypes.get(document.getElementById('resoBuffDropdown').value);
         var bonusWepEffect = bonusWepEffectTypes.get(document.getElementById('bonusWepEffectDropdown').value);
-        // if using a bonus effect, disable 3rd wep buff
         var mimicBuff = mimicBuffTypes.get(document.getElementById('mimicBuffDropdown').value);
         
         
-        
-        // Calculate chip buff from selected chip and selected constellation
+        // CHIP SET 1
         // Find selected chip
-        var chipSet1 = chipBuffTypes.get(document.getElementById('chipSet1Dropdown').value);
-        // Constellation level is the index for [chip values]
+        var selectedChipSet = document.getElementById('chipSet1Dropdown').value;
+        var chipSet1 = chipBuffTypes.get(selectedChipSet); // returns array
+        // Calculate buff value based on constellation level
         chipBuffOne = chipSet1[parseInt(document.querySelector('input[name="chipSet1StarOptions"]:checked').value)];
+        if (selectedChipSet == 'karasuma2') {
+            dmgFromCrit = (( 1 + critDmg ) * critRate * 0.40) + (( 1 + critDmg + chipBuffOne ) * critRate * 0.60);
+            chipBuffOne = 0;
+        }
+        else if (selectedChipSet == 'samir4') {
+            
+            chipBuffOne = 0;
+        }
+        else if (selectedChipSet == 'shiro2') {
+            chipBuffOne *= 0.5;
+        }
+        
+        // CHIP SET 2
+        // Find selected chip
+        selectedChipSet = document.getElementById('chipSet2Dropdown').value;
+        var chipSet2 = chipBuffTypes.get(selectedChipSet); // returns array
+        // Calculate buff value based on constellation level
+        chipBuffTwo = chipSet2[parseInt(document.querySelector('input[name="chipSet2StarOptions"]:checked').value)];
+        if (selectedChipSet == 'karasuma2') {
+            dmgFromCrit = (( 1 + critDmg ) * critRate * 0.40) + (( 1 + critDmg + chipBuffTwo ) * critRate * 0.60);
+            chipBuffTwo = 0;
+        }
+        else if (selectedChipSet == 'samir4') {
+            
+            chipBuffTwo = 0;
+        }
+        else if (selectedChipSet == 'shiro2') {
+            chipBuffTwo *= 0.5;
+        }
         
         
-        var totalDmg = 1 * (dmgFromNoncrit + dmgFromCrit) * (1 - enemyEleResist) * (1 + enemyEleWeakness) * (wepBuff) * (1 + bonusWepEffect) * arcCore * (1 + mimicBuff) * (1 + resoBuff) * (1 + chipBuffOne) * heavilyWounded * (1 + otherMultipliers);
         
-        $("#totalDmgOutput").html(Math.round(totalDmg * 100) + "%");
+        
+        
+        var totalDmg = 1 * (dmgFromNoncrit + dmgFromCrit) * (1 - enemyEleResist) * (1 + enemyEleWeakness) * (wepBuff) * (1 + bonusWepEffect) * arcCore * (1 + mimicBuff) * (1 + resoBuff) * (1 + chipBuffOne) * (1 + chipBuffTwo) * heavilyWounded * (1 + otherMultipliers);
+        
+        $("#totalDmgOutput").html( (Math.round(totalDmg * 100 * 100))/100 + "%");
     }
         
     
@@ -104,6 +134,9 @@ jQuery(document).ready(function ($) {
         calculateTotalDmgPercent();
     });
     $("#critRate").on('keyup', function(){
+        calculateTotalDmgPercent();
+    });
+    $("#critDmg").on('keyup', function(){
         calculateTotalDmgPercent();
     });
     $("#enemyEleResist").on('input', function(){
@@ -119,118 +152,88 @@ jQuery(document).ready(function ($) {
         calculateTotalDmgPercent();
     });
     $("#wepBuffOptions").on('input', function(){
-        
-        // If hane1 is enabled, disable hane6
-        if (document.getElementById("wepBuffHane1").checked == true) {
-            document.getElementById("wepBuffHane6").disabled = true;
-        }
-        else {
-            document.getElementById("wepBuffHane6").disabled = false;
-        }
-        // If hane6 is enabled, disable hane1
-        if (document.getElementById("wepBuffHane6").checked == true) {
-            document.getElementById("wepBuffHane1").disabled = true;
-        }
-        else {
-            document.getElementById("wepBuffHane1").disabled = false;
-        }
-        
-        wepBuff = 1;
-        wepBuffsCheckedAmt = 0;
-        $("#wepBuffOptions input:checked").each(function(){
-            wepBuffsCheckedAmt += 1;
-            wepBuff *= 1 + wepBuffTypes.get(this.value);
-        });
-        
-        // If 3 weapon buffs are selected, disable Bonus Weapon Effect
-        if (wepBuffsCheckedAmt >= 3) {
-            document.getElementById("bonusWepEffectDropdown").disabled = true;
-            document.getElementById("bonusWepEffectDropdown").value = 'none';
-        } 
-        // If 2 weapon buffs and a bonus wep effect are selected, disable the others
-        else if ( wepBuffsCheckedAmt === 2 && document.getElementById('bonusWepEffectDropdown').value !== 'none') {
-            $("#wepBuffOptions input").each(function(){
-                if (!(this.checked == true)) {
-                    this.disabled = true;
-                }
-            });
-        }
-        else {
-            document.getElementById("bonusWepEffectDropdown").disabled = false;
-        }
-        
-        // If 3 are selected, disable the others (may be useful when more %dmg buffers arrive)
-
+        validateWepBuffs();
         calculateTotalDmgPercent();
     });
     $("#bonusWepEffectDropdown").on('input', function(){
-        
-        // If a bonus wep effect is selected, and 2 wep buffs are already selected, disable the others
-        if ( wepBuffsCheckedAmt === 2 && document.getElementById('bonusWepEffectDropdown').value !== 'none') {
-            $("#wepBuffOptions input").each(function(){
-                if (!(this.checked == true)) {
-                    this.disabled = true;
-                }
-            });
-        }
-        else {
-            $("#wepBuffOptions input").each(function(){
-                this.disabled = false;
-                // If hane1 is enabled, disable hane6
-                if (document.getElementById("wepBuffHane1").checked == true) {
-                    document.getElementById("wepBuffHane6").disabled = true;
-                }
-                else {
-                    document.getElementById("wepBuffHane6").disabled = false;
-                }
-                // If hane6 is enabled, disable hane1
-                if (document.getElementById("wepBuffHane6").checked == true) {
-                    document.getElementById("wepBuffHane1").disabled = true;
-                }
-                else {
-                    document.getElementById("wepBuffHane1").disabled = false;
-                }
-            });
-        }
-        
+        validateWepBuffs();
         calculateTotalDmgPercent();
     });
     $("#otherMultipliers").on('keyup', function(){
         calculateTotalDmgPercent();
     });
     $("#chipSet1Dropdown").on('input', function(){
-        
-        // Hide constellation level selector
+        /*
+        // Disable and reset values for set 2; disable set 1 & 2 awakening
         if (document.getElementById("chipSet1Dropdown").value == 'none') {
-            $("#chipSet1StarOptions").addClass("d-none");
+            document.getElementById('chipSet2Dropdown').disabled = true;
+            document.getElementById('chipSet2Dropdown').value = 'none';
+            $("input[name='chipSet1StarOptions']").each(function(){
+                this.disabled = true;
+            });
+            $("input[name='chipSet2StarOptions']").each(function(){
+                this.disabled = true;
+            });
         }
+        // Enable set 2 & set 1 awakening
         else {
-            $("#chipSet1StarOptions").removeClass("d-none");
+            document.getElementById('chipSet2Dropdown').disabled = false;
+            $("input[name='chipSet1StarOptions']").each(function(){
+                this.disabled = false;
+            });
+        }
+        */
+        
+        // Disable and reset values for set 2; disable set 1 & 2 awakening
+        if (document.getElementById("chipSet1Dropdown").value == 'samir4' || document.getElementById("chipSet1Dropdown").value == 'cobalt4') {
+            
+            document.getElementById('chipSet2Dropdown').disabled = true;
+            document.getElementById('chipSet2Dropdown').value = 'none';
+            $("input[name='chipSet2StarOptions']").each(function(){
+                this.disabled = true;
+            });
+            
+        }
+        // Enable set 2 & set 1 awakening
+        else {
+            
+            document.getElementById('chipSet2Dropdown').disabled = false;
+            $("input[name='chipSet2StarOptions']").each(function(){
+                this.disabled = false;
+            });
+            
         }
         
-        // Add lemma to the total damage value
-        if (document.getElementById("chipSet1Dropdown").value == 'claudia2') {
-            $("#additionalText").html("while airborne");
-        }
-        else if (document.getElementById("chipSet1Dropdown").value == 'hane2') {
-            $("#additionalText").html("while no enemies are within 4 meters");
-        }
-        else if (document.getElementById("chipSet1Dropdown").value == 'cobalt4') {
-            $("#additionalText").html("to targets inflicted with an abnormal status");
-        }
-        else if (document.getElementById("chipSet1Dropdown").value == 'king2') {
-            $("#additionalText").html("with 3 stacks of KING's chip buff");
-        }
-        else {
-            $("#additionalText").html(" ");
-        }
-        
+        chipSetFootnote(document.getElementById('chipSet1Dropdown').value);
         
         calculateTotalDmgPercent();
     });
     
     $("#chipSet1StarOptions").on('input', function(){
-
+        calculateTotalDmgPercent();
+    });
+    $("#chipSet2Dropdown").on('input', function(){
+        /*
+        // Disable set 2 awakening
+        if (document.getElementById("chipSet2Dropdown").value == 'none') {
+            $("input[name='chipSet2StarOptions']").each(function(){
+                this.disabled = true;
+            });
+        }
+        // Enable set 2 awakening
+        else {
+            $("input[name='chipSet2StarOptions']").each(function(){
+                this.disabled = false;
+            });
+        }
+        */
+        
+        chipSetFootnote(document.getElementById('chipSet2Dropdown').value);
+        
+        calculateTotalDmgPercent();
+    });
+    
+    $("#chipSet2StarOptions").on('input', function(){
         calculateTotalDmgPercent();
     });
     $("#heavilyWounded").on('input', function(){
@@ -250,7 +253,127 @@ jQuery(document).ready(function ($) {
     
     function validateWepBuffs() {
         
+        // If hane1 is enabled, disable hane6
+        if (document.getElementById("wepBuffHane1").checked == true) {
+            document.getElementById("wepBuffHane6").disabled = true;
+        }
+        else if ( !(document.getElementById("wepBuffHane1").checked == true) ) {
+            document.getElementById("wepBuffHane6").disabled = false;
+        }
+        // If hane6 is enabled, disable hane1
+        if (document.getElementById("wepBuffHane6").checked == true) {
+            document.getElementById("wepBuffHane1").disabled = true;
+        }
+        else if ( !(document.getElementById("wepBuffHane6").checked == true) ) {
+            document.getElementById("wepBuffHane1").disabled = false;
+        }
+        
+        // Find amount of checked inputs
+        wepBuff = 1;
+        wepBuffsCheckedAmt = 0;
+        $("#wepBuffOptions input:checked").each(function(){
+            wepBuffsCheckedAmt += 1;
+            wepBuff *= 1 + wepBuffTypes.get(this.value);
+        });
+        
+        // If 3 weapon buffs are selected, disable bonus effect and other wep effects
+        if (wepBuffsCheckedAmt >= 3) {
+            // Disable bonus effect and reset value to none
+            document.getElementById("bonusWepEffectDropdown").disabled = true;
+            document.getElementById("bonusWepEffectDropdown").value = 'none';
+            // Disable unchecked wep buffs
+            $("#wepBuffOptions input").each(function(){
+                if (!(this.checked == true)) {
+                    this.disabled = true;
+                }
+            });
+        } 
+        // If 2 weapon buffs and a bonus wep effect are selected, disable other wep buffs
+        else if (wepBuffsCheckedAmt === 2 && document.getElementById('bonusWepEffectDropdown').value !== 'none') {
+            // Disable unchecked wep buffs
+            $("#wepBuffOptions input").each(function(){
+                if (!(this.checked == true)) {
+                    this.disabled = true;
+                }
+            });
+        }
+        // Enable if only 2 or less options are selected
+        else {
+            // Enable bonus effect
+            document.getElementById("bonusWepEffectDropdown").disabled = false;
+            
+            // if (bonus effect disabled), enable wep buffs BUT mitigate for duplicates of the same wep
+        }
+        
     }
+    
+    
+    function chipSetFootnote(selectedChipSet) {
+        
+        // Select which footnote to amend based on which chip set was passed
+        var selectedFootnote = $("#footnote-one");;
+        if (selectedChipSet == document.getElementById('chipSet2Dropdown').value) {
+            selectedFootnote = $("#footnote-two");
+        }
+        
+        // Add footnote based on chip
+        if (selectedChipSet == 'claudia2') {
+            selectedFootnote.html("while airborne");
+        }
+        else if (selectedChipSet == 'hane2') {
+            selectedFootnote.html("while no enemies are within 4 meters");
+        }
+        else if (selectedChipSet == 'cobalt4') {
+            selectedFootnote.html("to targets inflicted with an abnormal status");
+        }
+        else if (selectedChipSet == 'king2') {
+            selectedFootnote.html("with 3 stacks of KING's chip buff");
+        }
+        else if (selectedChipSet == 'karasuma2') {
+            selectedFootnote.html("overall damage");
+        }
+        else if (selectedChipSet == 'samir4') {
+            selectedFootnote.html("(Samir's 4 set does not crit)");
+        }
+        else {
+            selectedFootnote.html("");
+        }
+        
+        // Warn user if chip sets are identical
+        if (document.getElementById('chipSet1Dropdown').value === document.getElementById('chipSet2Dropdown').value) {
+            $("#footnote-warning").html("Warning: Chip sets 1 and 2 are identical")
+        }
+        else {
+            $("#footnote-warning").html("&nbsp;")
+        }
+        
+    }
+    
+    $("#reset-button").click(function(){
+        document.getElementById('critRate').value = 0;
+        document.getElementById('critDmg').value = 50;
+        document.getElementById('arcCore').value = 0;
+        document.getElementById('enemyEleResist').value = 0;
+        document.getElementById('enemyEleWeakness').value = 0;
+        document.getElementById('otherMultipliers').value = 0;
+        document.getElementById('resoBuffDropdown').value = 'none';
+        document.getElementById('bonusWepEffectDropdown').value = 'none';
+        document.getElementById('mimicBuffDropdown').value = 'none';
+        document.getElementById('heavilyWounded').checked = false;
+        heavilyWounded = 1;
+        document.getElementById('chipSet1Dropdown').value = 'none';
+        document.getElementById('chipSet1StarOptions').value = '0';
+        document.getElementById('chipSet2Dropdown').value = 'none';
+        document.getElementById('chipSet2StarOptions').value = '0';
+        $("#wepBuffOptions input").each(function(){
+            this.checked = false;
+        });
+        wepBuff = 1;
+        $("#footnote-one").html("");
+        $("#footnote-two").html("");
+        
+        calculateTotalDmgPercent();
+    });
     
     
 });
