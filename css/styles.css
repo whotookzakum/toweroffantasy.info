@@ -148,6 +148,53 @@ h6 {
     text-align: center;
 }
 
+.page-info-icon {
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+}
+.page-info-icon:hover {
+    filter: brightness(0.6);
+}
+.page-info {
+    position: absolute;
+    z-index: 90000;
+    background-color: #282633;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 4px #121212;
+    width: auto;
+    max-width: 80%;
+    right: 2.2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.page-info-icon:hover+.page-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    position: fixed;
+    z-index: 90000;
+}
+.tooltip-inner {
+    background-color: #282633;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #282633;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #282633;
+}
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #282633;
+}
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #282633;
+}
+
 /* NAV RELATED
 =============================================== */
 
@@ -801,17 +848,17 @@ h6 {
     text-decoration: none;
 }
 
-#sitemap h2:hover {
+#sitemap h3:hover {
     color: #ffdb85;
 }
 
-#sitemap h2 {
+#sitemap h3 {
     color: deepskyblue;
     font-weight: bold;
 }
 
 #sitemap strong {
-    color: gray;
+    
 }
 
 
@@ -1088,7 +1135,7 @@ input+label {
     cursor: pointer;
 }
 input:checked { 
-    background-color: #4f496e; 
+    background-color: #4f496e;
 }
 input:disabled, 
 select:disabled {

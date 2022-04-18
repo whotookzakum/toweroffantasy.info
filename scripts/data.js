@@ -1814,7 +1814,7 @@ var gadgets = [
     
     // SSR Giant arms
     {
-        name: "Giant Arms",
+        name: "Colossus Arm",
         description: "Uses the arms to fight for 20 seconds, cooldown 300 seconds, immune to hardness, click again to cancel. Deals a total of 1,387.7% attack damage from normal attacks; 453.5% attack damage from skills which has a 10 sec cooldown.",
         awakening: [
             // 1 star
@@ -1834,7 +1834,7 @@ var gadgets = [
     
     // SSR Atomic Shield
     {
-        name: "Atomic Shield",
+        name: "Omnium Shield",
         description: "A shield of raw energy is assembled for 10 seconds, blocking bullet penetration. The shield has 200% of the Pioneer's maximum life and has a cooldown of 90 seconds.",
         awakening: [
             // 1 star
@@ -1854,7 +1854,7 @@ var gadgets = [
     
     // SSR V-Mech
     {
-        name: "V-Mech",
+        name: "Type V Armor",
         description: "Drive a robot into battle, lasts 30 seconds, cooldown 200 seconds. Immune to hardness, click again to cancel. V-Mech possesses the skill: Aimed Shot. Aimed Shot: Fires flaming bullets at high frequency, dealing 44.4%*attack damage per hit.",
         awakening: [
             // 1 star
@@ -1874,7 +1874,7 @@ var gadgets = [
     
     // SSR Time Rift
     {
-        name: "Time Rift",
+        name: "Spacetime Rift",
         description: "Using a proton bomb, it collapses the space in front of it and continues to attract targets within its range for 10 seconds, After a delay of 1.5 seconds, dealing 39.6%*attack damage every 0.5 seconds to the central area, with a cooldown time of 100 seconds.",
         awakening: [
             // 1 star
@@ -1894,7 +1894,7 @@ var gadgets = [
     
     // SSR Confined Space
     {
-        name: "Confined Space",
+        name: "Confinement",
         description: "Creates a confined space with a radius of 7m for 10 seconds, with constant energy fluctuations on the ground, dealing 73.4%*Attack of the current weapon elemental damage per second to ground targets; if the target touches the edge of the area, a strong control stun effect is applied for 2 seconds, with a cooldown of 240 seconds.",
         awakening: [
             // 1 star
@@ -1934,7 +1934,7 @@ var gadgets = [
     
     // SSR Holographic Projection
     {
-        name: "Holographic Projection",
+        name: "Hologram Projector",
         description: "Unleashes a holographic projection based on yourself, which synchronises with the character's weapon attacks and deals 50% of the damage dealt by the character for 15 seconds, with a cooldown of 180 seconds.",
         awakening: [
             // 1 star
@@ -1954,7 +1954,7 @@ var gadgets = [
     
     // SSR Death Suppressor
     {
-        name: "Death Suppressor",
+        name: "Alternate Destiny",
         description: "Creates a space that lasts for 8 seconds, in which you have the effect of hegemony and you cannot go lower than 20% of your health regardless of any damage you take, with a cooldown time of 90 seconds. After 8 seconds in space, you cannot regain the same space effect for 45 seconds.",
         awakening: [
             // 1 star
@@ -1974,7 +1974,7 @@ var gadgets = [
     
     // SSR Counter 2
     {
-        name: "Counter 2",
+        name: "Couant 2",
         description: "Gain a shield that lasts for 5 seconds. After 1 attack it disappears, knocking surrounding enemies and deal 100% of attack power+50 points of damage. When the shield is broken within 1 second of generating, it stuns the enemy for 2 seconds and you will receive a damage boost by a percentage of your current life for 10 seconds (up to 60%).",
         awakening: [
             // 1 star
@@ -2034,7 +2034,7 @@ var gadgets = [
     
     // SR Floating Ice Cannon
     {
-        name: "Floating Ice Cannon",
+        name: "Hovering Cannon",
         description: "Summons a floating ice cannon that lasts for 20 seconds and has a cooldown of 240 seconds. The Floating Cannon has the skill: Laser Beam, which deals 5.6%*attack damage to the target each time.",
         awakening: [
             // 1 star
@@ -2054,7 +2054,7 @@ var gadgets = [
     
     // SR Jet Ski
     {
-        name: "Jet Ski",
+        name: "Jetboard",
         description: "When used, it dashes forward a distance and slowly decelerates  until it stops, dealing 380% of current attack damage to colliding targets and inflicting a knockback effect during the dash, with a 90-second cooldown. The ability to use the Jet ski is possible while in swimming state.",
         awakening: [
             // 1 star
@@ -2094,7 +2094,7 @@ var gadgets = [
     
     // SR Multiple Missile
     {
-        name: "Multiple Missile",
+        name: "Missile Barrage",
         description: "Throws a missile launcher behind you for 8 seconds, with a cooldown of 60 seconds. Releases multiple missiles to attack nearby enemy units, each dealing 34.8% of current attack damage.",
         awakening: [
             // 1 star
@@ -2114,7 +2114,7 @@ var gadgets = [
     
     // SR Shielding Robot
     {
-        name: "Shielding Robot",
+        name: "Couant",
         description: "The summoned robot opens a shield that lasts 5 seconds. The shield disappears after 5 seconds or when you take an attack, knocking back the surrounding enemies and deals 100% attack +50 damage. If the shield is broken within 1 second of being created, it stuns the enemy for an additional 2 seconds. Cooldown time of 30 seconds.",
         awakening: [
             // 1 star
@@ -2134,7 +2134,7 @@ var gadgets = [
     
     // SR Singularity Magic Cube
     {
-        name: "Singularity Magic Cube",
+        name: "Strange Cube",
         description: "Use the Cube to change the gravitational pull around you, causing the enemy to take 100% attack damage, then grab the enemy to make them float and send them flying and deal 120% attack damage again. Cooldown of 30 seconds.",
         awakening: [
             // 1 star
@@ -2154,7 +2154,7 @@ var gadgets = [
     
     // SR Atomic Hand Cannon
     {
-        name: "Atomic Hand Cannon",
+        name: "Omnium Handcannon",
         description: "Fires 1 mechanical energy projectile at the designated target, hits the ground or water to create a climbable mechanical cylinder for a maximum of 20 seconds. A maximum of 2 projectiles can be used. Each with a cooldown time of 50 seconds.",
         awakening: [
             // 1 star
@@ -2174,7 +2174,7 @@ var gadgets = [
     
     // SR Lava Grenade
     {
-        name: "Lava Grenade",
+        name: "Lava Bomb",
         description: "Throws lava bombs in front of the target, dealing 567% of current attack damage with knockback, 45 sec cooldown.",
         awakening: [
             // 1 star
@@ -2194,7 +2194,7 @@ var gadgets = [
     
     // SR Mechanical Arm
     {
-        name: "Mechanical Arm",
+        name: "Cybernetic Arm",
         description: "Ejects a robotic arm, pulling a given target to it, or pulling itself to it, causing 100% damage and floating on a hit, while returning 300 points of weapon charge to yourself; can also be used to reach hard-to-reach places, can be used 2 times, restoring 1 charge every 30 seconds.",
         awakening: [
             // 1 star
@@ -2214,7 +2214,7 @@ var gadgets = [
     
     // SR Magneto Pulse
     {
-        name: "Magneto Pulse",
+        name: "Magnetic Pulse",
         description: "The Pioneer detonates a magnetic bomb, knocking the target back, dealing 38.8% of current attack damage to the target and making himself immune to hard effects for 5 seconds, with a 35 second cooldown.",
         awakening: [
             // 1 star
