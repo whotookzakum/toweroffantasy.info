@@ -578,6 +578,10 @@ h6 {
     color: #ffdb85;
     cursor: pointer;
 }
+#guide-pyrosu-housing table img {
+    width: 64px;
+}
+
 
 /* GADGETS RELATED
 =============================================== */
@@ -1246,3 +1250,4 @@ select {
 #reset-button:active {
     filter: drop-shadow(0 0 4px #121212) brightness(0.85);
 }
+
