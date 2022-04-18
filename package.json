@@ -1,0 +1,29 @@
+{
+    "eslintConfig": {
+        "globals": {
+            "Vue": true
+        },
+        "env": {
+            "browser": true,
+            "es6": true,
+            "jquery": true
+        },
+        "extends": [
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "sourceType": "module"
+        },
+        "rules": {
+            "no-console": 0,
+            "indent": [
+                "error",
+                4
+            ],
+            "linebreak-style": [
+                "error",
+                "unix"
+            ]
+        }
+    }
+}

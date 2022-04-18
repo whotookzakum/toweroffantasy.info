@@ -79,7 +79,7 @@ var samir =
             // 2 set
             "Each hit increases attack by 1.5%, up to 10/13/16/20 stacks, lasting 2 seconds and refreshing with each hit.",
             // 4 set
-            "Adds 10%/12.5%/15%/17.5% damage to every hit."
+            "Adds an extra hit to every attack for 10%/12.5%/15%/17.5% damage (can not crit)."
         ],
         
         mimicEffect:[
@@ -110,6 +110,14 @@ var samir =
             robotFigure,'+30', //r2d2 figure
             tradingCard,'+15', // trading card
             pinwheel,'+15' // pinwheel
+        ],
+        recChips: [
+            ['samir', 2],
+            ['claudia', 2],
+            ['karasuma', 2],
+            ['samir', 4],
+            ['guardscode', 3],
+            ['peppa', 3]
         ]
     }
 
@@ -186,6 +194,14 @@ var coco =
             plant, '+15',
             harmonica, '+15',
             pinwheel, '+15'
+        ],
+        recChips: [
+            ['coco', 2],
+            ['coco', 4],
+            ['meryl', 2],
+            ['zero', 4],
+            ['peppa', 3],
+            ['transportthinking', 3]
         ]
     }
 
@@ -262,6 +278,12 @@ var king =
             photo, '+15',
             snackBox, '+15',
             harmonica, '+15'
+        ],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['burstingcore', 3],
+            ['offensivelogic', 3]
         ]
     }
 
@@ -338,6 +360,13 @@ var shiro =
             dumbbells, '+15',
             harmonica, '+15',
             photo, '+15'
+        ],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['samir', 2],
+            ['arrogantprovocation', 3],
+            ['offensivelogic', 3]
         ]
     }
 
@@ -413,6 +442,13 @@ var cobalt =
             
             dumbbells, '+15',
             snackBox, '+15'            
+        ],
+        recChips: [
+            ['cobalt', 4],
+            ['samir', 2],
+            ['samir', 4],
+            ['karasuma', 2],
+            ['burstingcore', 3]
         ]
     }
 
@@ -492,6 +528,14 @@ var claudia =
             scarf, '+15',
             plant, '+15',
             harmonica, '+15'
+        ],
+        recChips: [
+            ['claudia', 2],
+            ['claudia', 4],
+            ['samir', 2],
+            ['karasuma', 2],
+            ['peppa', 3],
+            ['arrogantprovocation', 3]
         ]
     }
 
@@ -569,6 +613,14 @@ var baiyuekui =
             photoAlbum, '+15',
             snackBox, '+15',
             plant, '+15'
+        ],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['samir', 2],
+            ['karasuma', 2],
+            ['guardscode', 3],
+            ['offensivelogic', 3]
         ]
     }
 
@@ -640,6 +692,13 @@ var meryl =
             
             photo, '+15',
             harmonica, '+15'
+        ],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['transportthinking', 2],
+            ['offensivelogic', 3],
+            ['cleanupagreement', 3]
         ]
     }
 
@@ -716,6 +775,13 @@ var hane =
             photo, '+15',
             snackBox, '+15',
             harmonica, '+15'
+        ],
+        recChips: [
+            ['samir', 2],
+            ['claudia', 2],
+            ['karasuma', 2],
+            ['peppa', 3],
+            ['transportthinking', 3]
         ]
     }
 
@@ -795,6 +861,14 @@ var huma =
             scarf, '+15',
             tradingCard, '+15',
             plant, '+15'
+        ],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['huma', 4],
+            ['burstingcore', 3],
+            ['offensivelogic', 3],
+            ['cleanupagreement', 3]
         ]
     }
 
@@ -871,6 +945,14 @@ var karasuma =
             flowers, '+15',
             snackBox, '+15',
             scarf, '+15'
+        ],
+        recChips: [
+            ['samir', 2],
+            ['claudia', 2],
+            ['samir', 4],
+            ['karasuma', 2],
+            ['peppa', 3],
+            ['guardscode', 3]
         ]
     }
 
@@ -942,6 +1024,13 @@ var zero =
             
             tradingCard, '+15',
             snackBox, '+15'
+        ],
+        recChips: [
+            ['samir', 4],
+            ['coco', 2],
+            ['coco', 4],
+            ['peppa', 3],
+            ['burstingcore', 3]
         ]
     }
 
@@ -1009,6 +1098,14 @@ var marc =
             toolbox, '+30',
             
             dumbbells, '+15',
+        ],
+        recChips: [
+            ['marc', 2],
+            ['marc', 4],
+            ['king', 2],
+            ['shiro', 2],
+            ['arrogantprovocation', 3],
+            ['cleanupagreement', 3]
         ]
     }
 
@@ -1088,6 +1185,13 @@ var nemesis =
             plant, '+15',
             scarf, '+15',
             pinwheel, '+15',
+        ],
+        recChips: [
+            ['nemesis', 2],
+            ['nemesis', 4],
+            ['coco', 2],
+            ['coco', 4],
+            ['guardscode', 3]
         ]
     }
 
@@ -1146,6 +1250,13 @@ var frigg =
         ],
         traits: ['Female','190 cm','???','Aquarius','1 February'],
         gifts: [
+        ],
+        recChips: [
+            ['samir', 2],
+            ['karasuma', 2],
+            ['samir', 4],
+            ['frigg', 4],
+            ['transportthinking', 3]
         ]
     }
 
@@ -1225,6 +1336,13 @@ var bailing =
             harmonica, '+15',
             photo, '+15',
             plant, '+15'
+        ],
+        recChips: [
+            ['samir', 2],
+            ['claudia', 2],
+            ['karasuma', 2],
+            ['peppa', 3],
+            ['arrogantprovocation', 3]
         ]
 }
 
@@ -1301,6 +1419,14 @@ var hilda =
             
             pinwheel, '+15',
             snackBox, '+15'
+        ],
+        recChips: [
+            ['samir', 2],
+            ['king', 2],
+            ['shiro', 2],
+            ['peppa', 3],
+            ['transportthinking', 3],
+            ['offensivelogic', 3]
         ]
 }
 
@@ -1379,6 +1505,13 @@ var manaka =
             tradingCard, '+15',
             harmonica, '+15',
             scarf, '+15'
+        ],
+        recChips: [
+            ['samir', 2],
+            ['king', 2],
+            ['shiro', 2],
+            ['guardscode', 2],
+            ['offensivelogic', 2]
         ]
 }
 
@@ -1457,6 +1590,13 @@ var peppa =
             flowers, '+15',
             plant, '+15',
             scarf, '+15'
+        ],
+        recChips: [
+            ['coco', 2],
+            ['coco', 4],
+            ['peppa', 3],
+            ['guardscode', 3],
+            ['cleanupagreement', 3],
         ]
 }
 
@@ -1535,6 +1675,13 @@ var xi =
             tradingCard, '+15',
             pinwheel, '+15',
             plant, '+15'
+        ],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['transportthinking', 2],
+            ['offensivelogic', 2],
+            ['cleanupagreement', 2],
         ]
 }
 

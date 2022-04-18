@@ -1,20 +1,5 @@
 jQuery(document).ready(function ($) {
     
-    
-    
-    
-    
-    // Damage Calculator
-    
-    
-    
-
-    
-    // noncrits damage
-    
-    
-    
-    
     var resoBuffTypes = new Map([
         ['none', 0],
         ['balancedSolo', 0.05],
@@ -75,7 +60,15 @@ jQuery(document).ready(function ($) {
         } 
         var enemyEleWeakness = parseFloat(document.getElementById('enemyEleWeakness').value);
         if (enemyEleWeakness > 0) {
-            enemyEleWeakness = 0.3;
+            if (enemyEleWeakness === 1) {
+                enemyEleWeakness = 0.3;
+            }
+            else if (enemyEleWeakness === 2) {
+                enemyEleWeakness = 0.5;
+            }
+            else if (enemyEleWeakness === 3) {
+                enemyEleWeakness = 0.75;
+            }
         }
         var otherMultipliers = parseFloat(document.getElementById('otherMultipliers').value) * .01;
         var resoBuff = resoBuffTypes.get(document.getElementById('resoBuffDropdown').value);
