@@ -226,8 +226,25 @@ jQuery(document).ready(function ($) {
             $("#chip-3").html(i.chipEffect[1]);
             $("#chip-4").html(i.chipEffect[1]);
             $("#recommended-chips-for-wep").html(i.wepName);
-
+            
             // Recommended chips
+            $("#recommended-chips-wrapper").html('');
+            if (i.recChips) {
+                for (let currentChip = 0; currentChip < i.recChips.length; currentChip++ ) {
+                    // index 0 = name (string)
+                    // index 1 = amount (int)
+                    $("#recommended-chips-wrapper").append(
+                        `<div class="chip-recommended col-2">
+                            <img class="chip-img" src="images/chip/${i.recChips[currentChip][0]}.png">
+                            <div class="badge">x${i.recChips[currentChip][1]}</div>
+                        </div>`
+                    );
+                    // Tooltip to show set effect when chip:hover
+                    // if amount > 2, show chipEffect[1]
+                    // if amount <== 2, show chipEffect[0]
+                }
+            }
+            
 
             // Affinity
             $("#affinity-1200").html(i.mimicEffect[2]);
@@ -249,7 +266,6 @@ jQuery(document).ready(function ($) {
                     </div>
                     <div class="d-inline-block"><img class="traits-img" src="images/charts/${i.artwork.slice(i.artwork.indexOf("art/") + 4)}"></div>
                 </div>`;
-            console.log("images/charts/" + i.artwork.slice(i.artwork.indexOf("art/") + 4));
         }
 
         // GADGET PAGE
