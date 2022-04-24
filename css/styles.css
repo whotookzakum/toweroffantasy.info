@@ -23,15 +23,13 @@ p {
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Noto Color Emoji';
-    src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+img[src="images/globe.svg"] {
+    height: 2.4rem;
 }
 
-.flag {
-    font-family: "Noto Color Emoji";
+img[src="images/cn.svg"] {
+    height: 3rem;
 }
-
 
 /* LIBRARY RELATED
 =============================================== */

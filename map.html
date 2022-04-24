@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome (CDN) -->
+    <script src="https://kit.fontawesome.com/285bd2cf5d.js" crossorigin="anonymous"></script>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>    
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/map.css" />
+
+    <title>Tower of Fantasy - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/avatar/tata.png">
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N68SWH7ZJB');
+    </script>
+</head>
+
+<body>
+    <!-- Nav toggler -->
+    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
+        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
+    </nav>
+
+    <!-- Sidenav offcanvas (smaller screens) -->
+    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-keyboard="true" tabindex="-1">
+        <div class="offcanvas-body p-5 pb-0">
+            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
+            <a class="navbar-brand" >
+                <img class="mb-3" src="images/avatar/tata.png"><br>
+                Tower of Fantasy Index
+            </a>
+            <hr class="my-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="mimics"><i class="fa-solid fa-user"></i> Mimics<!-- <i class="fa-solid fa-star" style="color: gold !important;"></i>--></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chips"><i class="fa-solid fa-sd-card"></i> Chips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gadgets"><i class="fa-solid fa-screwdriver-wrench"></i> Gadgets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                </li>
+            </ul>
+            <hr class="my-3">
+            <div class="nav-socials">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
+            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
+        </div>
+    </nav>
+    
+    <div id="map"></div>
+    
+    <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script type="text/javascript" src="scripts/data.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/map.js"></script>
+</body></html>
