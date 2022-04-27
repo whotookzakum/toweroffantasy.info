@@ -43,6 +43,12 @@ var plant = 'images/affinity/37.jpg';
 var harmonica = 'images/affinity/38.jpg';
 var pinwheel = 'images/affinity/39.jpg';
 var snackBox = 'images/affinity/40.jpg';
+var strangePlant = 'images/affinity/41.jpg';
+var strangeFragment = 'images/affinity/42.jpg';
+var princeTataFigure = 'images/affinity/43.jpg';
+var bunnyDoll = 'images/affinity/44.jpg';
+var linyeFigure = 'images/affinity/45.jpg';
+
 
 var samir = 
     {
@@ -1259,6 +1265,94 @@ var frigg =
             ['transportthinking', 3]
         ]
     }
+
+var ruby = 
+    {
+        name:"Ruby",
+        rarity: "SSR",
+        pic:"images/ruby_nobg.png",
+        artwork:"images/art/ruby.png",
+        wepName:"White Rabbit",
+        wepImg:"images/wep/ruby.png",
+        eleImg:"images/ele_fire.png",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        exclusiveEffect:'Fire Resonance; triggered by equipping 2 or more fire element weapons, boosts fire attack by 20% and fire resistance by 40%, can take effect after equipping them in the background',
+        awakening:[
+            // 1 star
+            "[Scorching Heat] increases Sparky's attack damage to 182%; skill cooldown is reduced to 24 seconds.",
+            // 2 star
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
+            // 3 star
+            "[Scorching Heat] Incidental fire damage increased by 18%; scorch settlement multiplier increased to 150%",
+            // 4 star
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
+            // 5 star
+            "Each time Sparky's basic attack hits an enemy unit, it returns an additional 75 points to the weapon's charge value, and the cooldown will be 0.9 seconds; during [Ultimate Heat], the efficiency of shield breaking is increased by 25%. ",
+            // 6 star
+            "[Scorching Heat] increases Sparky's attack damage to 240%, and [Heat] doubles the efficiency; skill cooldown is reduced to 16 seconds."
+        ],
+        energyCharge:["8.00","a"],
+        shieldBreak:["11.50","s"],
+        materials:["fire","green","blue"],
+        wepBaseStats: [attack, health, crit],
+        
+        chipImg:"images/chip/ruby.png",
+        chipEffect:[
+            // 2 set
+            "After releasing weapon skill, fire attack is increased by  15%/18%/21%/25% for 25 seconds, the effect is triggered by different star levels, the effect is not stackable",
+            // 4 set
+            "After releasing the weapon skill, gain (mastery) for 15 seconds, cooldown 15 seconds (different of levels (mastery) shares the cooldown), (mastery) cannot be stacked. Each time the basic attack hits the target, the fire damage is increased by 4%/5%/6%/7% which lasts until the end of (mastery), stacks up to 6 levels, adding up to 1 level every 0.2 seconds, after 6 levels are added, you get a shield to resist 1 damage."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar ',
+            // 600 affinity
+            "Unlock communication ",
+            // 1200 affininty
+            "Within 5 meters of Dolly, monsters receive 8% more fire damage, not stackable",
+            // 2000 affinity
+            "Unlock communication ",
+            // 3000 affinity
+            "Unlock communication ",
+            // 4000 affinity
+            "Within 5 meters of Dolly, monsters receive 8% more fire damage, not stackable; after throwing Dolly, the fire attack increases for 10 seconds, not stackable"
+        ],
+        traits: ['Female','140 cm','???','Cancer','15 July'],
+        gifts: [
+            princeTataFigure, '+80', // prince tata figure
+            
+            pearl,'+60',
+            ufo,'+60', 
+            present,'+60', 
+            psp,'+60',  
+            linyeFigure,'+60',  
+            foxFigure,'+60', 
+            
+            bunnyDoll,'+40',
+            
+            diary,'+30',
+            catPlush,'+30',
+            chessSet,'+30',
+            strangeFragment,'+30',
+            robotFigure,'+30',
+            tataPlush,'+30',
+            
+            pinwheel,'+15',
+            strangePlant,'+15',
+            tradingCard,'+15',
+        ],
+        recChips: [
+            ['ruby', 2],
+            ['ruby', 4],
+            ['samir', 2],
+            ['hane', 2],
+            ['karasuma', 2],
+            ['sobek', 3]
+        ]
+    }
+
 
 
 
