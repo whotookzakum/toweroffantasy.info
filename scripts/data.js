@@ -43,6 +43,12 @@ var plant = 'images/affinity/37.jpg';
 var harmonica = 'images/affinity/38.jpg';
 var pinwheel = 'images/affinity/39.jpg';
 var snackBox = 'images/affinity/40.jpg';
+var strangePlant = 'images/affinity/41.jpg';
+var strangeFragment = 'images/affinity/42.jpg';
+var princeTataFigure = 'images/affinity/43.jpg';
+var bunnyDoll = 'images/affinity/44.jpg';
+var linyeFigure = 'images/affinity/45.jpg';
+
 
 var samir = 
     {
@@ -54,20 +60,20 @@ var samir =
         wepImg:"images/wep/samir.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
+        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
-            "Causes an electrical explosion on crit, dealing an additional 30% attack damage to the target and nearby units.",
+            "Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to <span class='text-blue'>30%</span> of ATK to the target and nearby enemies. Cooldown: <span class='text-blue'>0.5</span> seconds.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "+40% crit rate against shocked targets, and extends the duration of shocks by 0.5 seconds, with a cooldown time of 5 seconds.",
+            "Increase crit rate to electrified targets by <span class='text-blue'>40%</span>. Electrical explosions extend the duration of electrified effects by <span class='text-blue'>0.5</span> seconds, up to a maximum of <span class='text-blue'>5</span> seconds.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Double the duration of the weapon skill, and pull targets to the center of it.",
+            "Double the duration of Electro Field and pull targets into the center of the attack.",
             // 6 star
-            "1 second reduction in skill cooldown when triggering shock effects."
+            "Triggering an electrical explosion reduces skill cooldowns by 1 second."
         ],
         energyCharge:["10.70","s"],
         shieldBreak:["6.00","b"],
@@ -77,9 +83,9 @@ var samir =
         chipImg:"images/chip/samir.png",
         chipEffect:[
             // 2 set
-            "Each hit increases attack by 1.5%, up to 10/13/16/20 stacks, lasting 2 seconds and refreshing with each hit.",
+            "Increase damage progressively by <span class='text-blue'>1%</span> upon hitting a target. Stack up to <span class='text-blue'>10/13/16/20</span> times. Lasts <span class='text-blue'>1.5</span> seconds.<br><img class='flag' src='images/cn.svg'> Each hit increases attack by <span class='text-blue'>1.5%</span>, up to <span class='text-blue'>10/13/16/20</span> stacks, lasting <span class='text-blue'>2</span> seconds and refreshing with each hit.",
             // 4 set
-            "Adds an extra hit to every attack for 10%/12.5%/15%/17.5% damage (can not crit)."
+            "Increase Dual EM Stars' electrical explosion damage by <span class='text-blue'>16%/22%/30%/40%</span> of ATK.<br><img class='flag' src='images/cn.svg'> Adds an extra hit to every attack for <span class='text-blue'>10%/12.5%/15%/17.5%</span> damage (can not crit)."
         ],
         
         mimicEffect:[
@@ -88,13 +94,13 @@ var samir =
             // 600 affinity
             "Unlock communication [Solo Dance]",
             // 1200 affininty
-            'For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="text-blue">3%</span>, up to <span class="text-blue">4</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="text-blue">1</span> sec.',
+            "Grant <span class='text-blue'>1</span> stack of Concentration for every <span class='text-blue'>4</span> seconds when Samir receives no damage. Each stack increases damage dealt by <span class='text-blue'>3%</span>, and can stack up to <span class='text-blue'>4</span> times. After being hit, Samir loses <span class='text-blue'>1</span> stack of Concentration, up to <span class='text-blue'>1</span> stack per <span class='text-blue'>1</span> second.",
             // 2000 affinity
             "Unlock communication [Resonance]",
             // 3000 affinity
             "Unlock communication [Concerto]",
             // 4000 affinity
-            'For every 4 seconds that Samir does not take damage, she gains 1 stack of Focus, which increases damage by <span class="text-blue">4%</span>, up to <span class="text-blue">5</span> stacks. Each time you take damage, you lose 1 stack of Focus, only once within <span class="text-blue">2</span> sec.'
+            "Grant <span class='text-blue'>1</span> stack of Concentration for every <span class='text-blue'>4</span> seconds when Samir receives no damage. Each stack increases damage dealt by <span class='text-blue'>4%</span>, and can stack up to <span class='text-blue'>5</span> times. After being hit, Samir loses <span class='text-blue'>1</span> stack of Concentration, up to <span class='text-blue'>1</span> stack per <span class='text-blue'>2</span> second."
         ],
         traits: ['Female','171 cm','???','Taurus','20 May'],
         gifts: [
@@ -224,7 +230,7 @@ var king =
             // 3 star
             "For every enemy target within 6 meters, damage is increased by 10%, up to 30%.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "Increases damage by 100% to targets with shields.",
             // 6 star
@@ -302,7 +308,7 @@ var shiro =
             // 1 star
             "While inside Shiro Skill area, damage and shield breaking efficiency is increased by 30%.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "15% increase in shield breaking efficiency, clears the cooldown of all weapon skills when the shield is broken.",
             // 4 star
@@ -385,11 +391,11 @@ var cobalt =
             // 1 star
             "3% of the target's current life is added to each attack, up to a maximum of 180% of the attack.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "the skill Blast Grenade applies a powerful burn to the target in ignition state, dealing 1% of the target's current life per second, up to a maximum of 60% of the attack, for 10 seconds.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "The effect of Blast Grenade is increased to no more than 90% of the attack, and a hit from any weapon's Dodge attack refreshes the duration of Blast Grenade Debuff time.  ",
             // 6 star
@@ -467,7 +473,7 @@ var claudia =
             // 1 star
             "Each time the weapon skill hits its target, it gains a damage increase of 8% for 25 seconds, up to 3 stacks (maximum of one stack per skill release).",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "When the skill hits the target, it increases the physical damage and shield breaking efficiency by 10% for 15 seconds, does not stack.",
             // 4 star
@@ -549,13 +555,13 @@ var baiyuekui =
         wepImg:"images/wep/baiyuekui.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
+        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         exclusiveEffect:"When entering combat, turn on Battle Spirit and increase your final damage by 15%. and your cellular aging is accelerated (reducing your current life by 1% every 5 seconds), which clears when you leave combat [the effect of switching weapons disappears]. If your life drops below 50%, cellular aging stops and the Battle Intent booster effect remains (the effect of switching weapons disappears).",
         awakening:[
             // 1 star
             "Dodge attacks hits for an additional 80% attack + 2.5% of your lost life. The weapon skill explodes with additional 160% attack + 5% damage to your lost life. The Force Field release hits with an additional 160% attack + 5% of your lost life (continuous damage does not trigger).",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "15% more shield break efficiency, and releases an instant burst canister at the target location, dealing 680% attack damage to targets within range, or 1500% attack damage to monsters if there is only one target within range.",
             // 4 star
@@ -717,11 +723,11 @@ var hane =
             // 1 star
             "For each arrow that hits the target with a dodge attack, you gain a Sharp Arrow effect that increases damage by 8% per stack, can be stacked 3 times, for 15 seconds.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "Dodge attack shoots out 3 arrows.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "The duration of Sharp Arrow is doubled, and decreases the target's movement speed by 25%.",
             // 6 star
@@ -804,7 +810,7 @@ var huma =
             // 3 star
             "In shield form, a dodging attack that hits the target adds an additional 4% of your current health to damage.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "Gain 30% damage reduction immediately when switching to Shield or Axe, the buff decreases by 10% every 3 seconds to a minimum of 10%. Disappears when switching to another weapon, 30 seconds cooldown.",
             // 6 star
@@ -882,12 +888,12 @@ var karasuma =
         wepImg:"images/wep/karasuma.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
+        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
             "40% increase in crit rate of all attacks with the twin blades when they hit the target's back: 100% increase in the crit rate of back stabs against electrified targets. Crit damage is increased by 30%.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "30% more damage to targets with less than 60% health.",
             // 4 star
@@ -971,7 +977,7 @@ var zero =
             // 1 star
             "20% chance of generating a healing sphere when dealing damage, lasts 20 seconds and restores 60% of attack power as health to the player who picks up the healing sphere.",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "Skill cooldown reduced from 90 seconds to 45 seconds. Immunity to debuffs during the skill and gain a shield of 30% from current weapon power that regenerate health per second.",
             // 4 star
@@ -1119,17 +1125,17 @@ var nemesis =
         wepImg:"images/wep/nemesis.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_support.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deal (144.00% x ATK) damage, and preventing them from gaining any buffs for 6 seconds. (Also applies electro charged for 6 seconds).",
+        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         exclusiveEffect:"electric resonance; triggered by equipping 2 or more electric weapons, boosts electric attack by 20% and electric resistance by 40%, also effective on the backstage.",
         awakening:[
             // 1 star
             "When releasing the weapon skill or QTE skill, creates 1 electrode and immediately gains 5 levels of healing chain reinforcement, and releases a healing chain that heals nearby friendly units (= 135% of the Pathfinder's attack power). The healing chain heals nearby units (= 135%*attack).",
             // 2 star
-            "+16% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "The electrode releases a ring every 6 seconds, dealing up to 389%*Attack of ranged damage.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "After releasing the weapon skill, it increases its own electric attack by (10+its own electrode number*10)% for 25 seconds.",
             // 6 star
@@ -1215,7 +1221,7 @@ var frigg =
             // 3 star
             "Ice points limit increased to 15, any Ice element weapon attacks released in the ice area deals (+5) *25%* Ice Attack damage to all targets in the ice area.",
             // 4 star
-            "+32% base attack on the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "Using an ice weapon to break a shield in the ice field freezes the target for 2 seconds and deals an additional 2 ice points*35%*Ice Attack damage (doubled if the target cannot be frozen).",
             // 6 star
@@ -1259,6 +1265,94 @@ var frigg =
             ['transportthinking', 3]
         ]
     }
+
+var ruby = 
+    {
+        name:"Ruby",
+        rarity: "SSR",
+        pic:"images/ruby_nobg.png",
+        artwork:"images/art/ruby.png",
+        wepName:"White Rabbit",
+        wepImg:"images/wep/ruby.png",
+        eleImg:"images/ele_fire.png",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        exclusiveEffect:'Fire Resonance; triggered by equipping 2 or more fire element weapons, boosts fire attack by 20% and fire resistance by 40%, can take effect after equipping them in the background',
+        awakening:[
+            // 1 star
+            "[Scorching Heat] increases Sparky's attack damage to 182%; skill cooldown is reduced to 24 seconds.",
+            // 2 star
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
+            // 3 star
+            "[Scorching Heat] Incidental fire damage increased by 18%; scorch settlement multiplier increased to 150%",
+            // 4 star
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
+            // 5 star
+            "Each time Sparky's basic attack hits an enemy unit, it returns an additional 75 points to the weapon's charge value, and the cooldown will be 0.9 seconds; during [Ultimate Heat], the efficiency of shield breaking is increased by 25%. ",
+            // 6 star
+            "[Scorching Heat] increases Sparky's attack damage to 240%, and [Heat] doubles the efficiency; skill cooldown is reduced to 16 seconds."
+        ],
+        energyCharge:["8.00","a"],
+        shieldBreak:["11.50","s"],
+        materials:["fire","green","blue"],
+        wepBaseStats: [attack, health, crit],
+        
+        chipImg:"images/chip/ruby.png",
+        chipEffect:[
+            // 2 set
+            "After releasing weapon skill, fire attack is increased by  15%/18%/21%/25% for 25 seconds, the effect is triggered by different star levels, the effect is not stackable",
+            // 4 set
+            "After releasing the weapon skill, gain (mastery) for 15 seconds, cooldown 15 seconds (different of levels (mastery) shares the cooldown), (mastery) cannot be stacked. Each time the basic attack hits the target, the fire damage is increased by 4%/5%/6%/7% which lasts until the end of (mastery), stacks up to 6 levels, adding up to 1 level every 0.2 seconds, after 6 levels are added, you get a shield to resist 1 damage."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar ',
+            // 600 affinity
+            "Unlock communication ",
+            // 1200 affininty
+            "Within 5 meters of Dolly, monsters receive 8% more fire damage, not stackable",
+            // 2000 affinity
+            "Unlock communication ",
+            // 3000 affinity
+            "Unlock communication ",
+            // 4000 affinity
+            "Within 5 meters of Dolly, monsters receive 8% more fire damage, not stackable; after throwing Dolly, the fire attack increases for 10 seconds, not stackable"
+        ],
+        traits: ['Female','140 cm','???','Cancer','15 July'],
+        gifts: [
+            princeTataFigure, '+80', // prince tata figure
+            
+            pearl,'+60',
+            ufo,'+60', 
+            present,'+60', 
+            psp,'+60',  
+            linyeFigure,'+60',  
+            foxFigure,'+60', 
+            
+            bunnyDoll,'+40',
+            
+            diary,'+30',
+            catPlush,'+30',
+            chessSet,'+30',
+            strangeFragment,'+30',
+            robotFigure,'+30',
+            tataPlush,'+30',
+            
+            pinwheel,'+15',
+            strangePlant,'+15',
+            tradingCard,'+15',
+        ],
+        recChips: [
+            ['ruby', 2],
+            ['ruby', 4],
+            ['samir', 2],
+            ['hane', 2],
+            ['karasuma', 2],
+            ['sobek', 3]
+        ]
+    }
+
 
 
 

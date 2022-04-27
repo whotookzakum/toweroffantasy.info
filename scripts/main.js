@@ -46,6 +46,8 @@ jQuery(document).ready(function ($) {
                 setModalData(nemesis);
             } else if ($(this).children().is("#btn-frigg")) {
                 setModalData(frigg);
+            } else if ($(this).children().is("#btn-ruby")) {
+                setModalData(ruby);
             } else if ($(this).children().is("#btn-peppa")) {
                 setModalData(peppa);
             } else if ($(this).children().is("#btn-hilda")) {
