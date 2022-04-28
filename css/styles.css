@@ -59,6 +59,13 @@ img[src="images/cn.svg"] {
     box-shadow: 0 0 4px #121212;
     min-height: 100%;
 }
+.p-6 {
+    padding: 6rem !important;
+}
+.px-6 {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+}
 
 .modal-backdrop {
     background: #15141a;
@@ -654,23 +661,17 @@ h6 {
 
 
 /* Changelog */
-.cl-wrapper {
-    /*height: 200px;*/
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-.cl-wrapper::-webkit-scrollbar {
-    display: none;
-}
-
 .cl {
     color: gray;
+    display: block;
+    height: 200px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
+.cl::-webkit-scrollbar {
+    display: none;
+}
 .cl-date {
     background: #222222;
 }
@@ -890,23 +891,29 @@ h6 {
     font-weight: bold;
 }
 
-.mount-wrapper:nth-child(odd) {
-    background-color: #282633;
-}
 
-.mount-wrapper:nth-child(even) {
-    background: #1e1d26;
-}
 
 .mount-mat-img {
-    width: 91px;
+    width: 64px;
 }
-
+.mount-img {
+    width: 220px;
+}
 .mount-name {
-    font: bold 4rem 'Chakra Petch';
+    font: bold 3rem 'Chakra Petch';
 }
-
-
+.mount-wrapper .nav {
+    
+}
+.mount-wrapper .nav-link {
+    padding: 0;
+    margin: 0 .5rem;
+    border-radius: 0.75em;
+}
+.mount-wrapper .nav-link.active {
+    background-color: #439eac;
+    box-shadow: 0 0 4px #121212;
+}
 
 
 
@@ -1249,3 +1256,17 @@ select {
     filter: drop-shadow(0 0 4px #121212) brightness(0.85);
 }
 
+
+.tag {
+    text-transform: uppercase;
+    background-color: gold;
+    color: black;
+    font-size: 1.2rem;
+    padding: .1em .3em;
+    font-weight: bold;
+    border-radius: 0.2em;
+}
+.tag-recommended {
+    color: white;
+    background-color: purple;
+}
