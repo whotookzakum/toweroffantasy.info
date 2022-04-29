@@ -198,14 +198,17 @@ jQuery(document).ready(function ($) {
             $("#mimic-element").html(mimicEle.charAt(0).toUpperCase() + mimicEle.slice(1));
             var mimicReso = i.resoImg.slice(i.resoImg.indexOf("_") + 1, i.resoImg.indexOf("."));
             $("#mimic-reso").html(mimicReso.charAt(0).toUpperCase() + mimicReso.slice(1));
-            $(".btmat-1").each(function (index) {
-                $(this).attr("src", "images/mat/" + i.materials[0] + (index + 1) + ".png");
-            });
-            $(".btmat-2").each(function (index) {
-                $(this).attr("src", "images/mat/" + i.materials[1] + (index + 1) + ".png");
-            });
-            $(".btmat-3").each(function (index) {
-                $(this).attr("src", "images/mat/" + i.materials[2] + (index + 1) + ".png");
+            
+            // Breakthrough mats
+            let thisMat = 0;
+            let imgNum = 1;
+            $("#breakthrough-mats .item-wrapper-with-bg").each(function() {
+                if (imgNum >= 4) {
+                    imgNum = 1;
+                    thisMat++;
+                }
+                $(this).children("img").attr("src", `images/mat/${i.materials[thisMat]}${imgNum}.png`);
+                imgNum++;
             });
 
             // Stars

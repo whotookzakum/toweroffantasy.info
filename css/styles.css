@@ -455,19 +455,29 @@ h6 {
     transform: scaleX(1);
 }
 
-.breakthrough-mat {
-    width: 96px;
-    height: 96px;
-    object-fit: none;
-    object-position: 45% 50%;
+#breakthrough-mats .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+/*
+    background-color: #282633;
+    padding: 10px 0px;
+    border-radius: 0.75rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    box-shadow: 0 0 4px #121212;
+*/
+}
+#breakthrough-mats .item-wrapper-with-bg {
+    margin: 0 .4rem;
+    filter: none;
+    box-shadow: 0 0 4px 2px #121212;
+}
+#breakthrough-mats img {
+    width: 64px;
 }
 
-.item-border {
-    border-radius: 0.75rem;
-    filter: drop-shadow(0 0 5px black);
-    border: 6px solid gray;
-    position: relative;
-}
 
 #chip-img,
 .chip-img {
@@ -502,6 +512,8 @@ h6 {
     color: gray;
     font-style: italic
 }
+
+
 
 /* GUIDE RELATED
 =============================================== */
@@ -697,7 +709,7 @@ h6 {
 .item-img-wrapper {
     border-radius: 0.75rem;
     filter: drop-shadow(0 0 4px #121212);
-    border: 4px solid gray;
+    
     position: relative;
     width: 80px;
     height: 80px;
@@ -731,6 +743,7 @@ h6 {
     background-image: -webkit-linear-gradient(bottom right, #6d89a4 50%, #7590ab 50%);
     background-image: -o-linear-gradient(bottom right, #6d89a4 50%, #7590ab 50%);
     background-image: linear-gradient(to bottom right, #6d89a4 50%, #7590ab 50%);
+    background: radial-gradient(#a7bacb, 30%, #9caec6);
 }
 
 .bg-rarity-2 {
@@ -738,6 +751,7 @@ h6 {
     background-image: -webkit-linear-gradient(bottom right, #208475 50%, #218f79 50%);
     background-image: -o-linear-gradient(bottom right, #208475 50%, #218f79 50%);
     background-image: linear-gradient(to bottom right, #208475 50%, #218f79 50%);
+    background: radial-gradient(#68c5b2, 30%, #5aae9c);
 }
 
 .bg-rarity-3 {
@@ -745,6 +759,7 @@ h6 {
     background-image: -webkit-linear-gradient(bottom right, #196b9e 50%, #1b6fa4 50%);
     background-image: -o-linear-gradient(bottom right, #196b9e 50%, #1b6fa4 50%);
     background-image: linear-gradient(to bottom right, #196b9e 50%, #1b6fa4 50%);
+    background: radial-gradient(#70b3e7, 30%, #65a0cd);
 }
 
 .bg-rarity-4 {
@@ -752,6 +767,7 @@ h6 {
     background-image: -webkit-linear-gradient(bottom right, #865295 50%, #8d579d 50%);
     background-image: -o-linear-gradient(bottom right, #865295 50%, #8d579d 50%);
     background-image: linear-gradient(to bottom right, #865295 50%, #8d579d 50%);
+    background: radial-gradient(#d3c0de, 30%, #c2abd0);
 }
 
 .bg-rarity-5 {
@@ -759,6 +775,30 @@ h6 {
     background-image: -webkit-linear-gradient(bottom right, #ad7c37 50%, #b78332 50%);
     background-image: -o-linear-gradient(bottom right, #ad7c37 50%, #b78332 50%);
     background-image: linear-gradient(to bottom right, #ad7c37 50%, #b78332 50%);
+    background: radial-gradient(#efdbad, 30%, #e9d197);
+}
+
+.item-wrapper, .item-wrapper-with-bg {
+    position: relative; 
+    width: fit-content;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 4px 2px #121212;
+}
+.item-wrapper-with-bg::before {
+    content: '';
+    background: url(/images/itembg.svg) no-repeat center;
+    background-size: contain;
+    opacity: 0.25;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.item-wrapper img, .item-wrapper-with-bg img {
+    position: relative; 
+    z-index: 3; 
 }
 
 .text-rarity-1 {
@@ -827,41 +867,6 @@ h6 {
 
 .bg-stat-toy {
     background-color: #dd9cea;
-}
-
-
-.sitemap-toggle {
-    display: block;
-    width: fit-content;
-    padding: 1rem;
-    background-color: #282633;
-    border-radius: 1rem;
-    text-decoration: none;
-    color: deepskyblue;
-    font-weight: bold;
-    margin: 2rem 0;
-    box-shadow: 0 0 2px #121212;
-}
-
-#sitemap {
-    margin-bottom: 2em;
-}
-
-#sitemap a {
-    text-decoration: none;
-}
-
-#sitemap h3:hover {
-    color: #ffdb85;
-}
-
-#sitemap h3 {
-    color: deepskyblue;
-    font-weight: bold;
-}
-
-#sitemap strong {
-    
 }
 
 

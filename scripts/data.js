@@ -263,7 +263,7 @@ var king =
             // 4000 affinity
             "King restores <span class='text-blue'>10%</span> HP for every <span class='text-blue'>5</span> enemies he defeats"
         ],
-        traits: ['Male','190 cm','Krohn','Scorpio','3 Nov'],
+        traits: ['Male','190 cm','Crown','Scorpio','3 Nov'],
         gifts: [
             seal, '+80',
             goldCoin, '+80',
@@ -345,7 +345,7 @@ var shiro =
             // 4000 affinity
             "When Shiro releases her weapon skill or combo skill, her full attack is increased by <span class='text-blue'>16%</span>, and her physical attack is increased by <span class='text-blue'>10%</span> for 8 seconds, cooldown 16 sec."
         ],
-        traits: ['Female','163 cm','Volan','Virgo','22 Sep'],
+        traits: ['Female','163 cm','Warren','Virgo','22 Sep'],
         gifts: [
             kitchenware, '+80',
             seal, '+80',
@@ -428,7 +428,7 @@ var cobalt =
             // 4000 affinity
             "When Cobalt-B releases a combo, it restores <span class='text-blue'>90-180</span> points of energy charge at random."
         ],
-        traits: ['Female','157 cm','Krohn','Cancer','26 Jun'],
+        traits: ['Female','157 cm','Crown','Cancer','26 Jun'],
         gifts: [
             kitchenware, '+80',
             goldCoin, '+80',
@@ -760,7 +760,7 @@ var hane =
             // 4000 affinity
             "Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <span class='text-blue'>30</span> stacks). Each stack increases attack by <span class='text-blue'>0.6%</span> and refreshes buff duration."
         ],
-        traits: ['Female','169 cm','Star Island','Aries','24 Mar'],
+        traits: ['Female','169 cm','Astra','Aries','24 Mar'],
         gifts: [
             tataPlush, '+80',
             miaFigure, '+80',
@@ -880,7 +880,7 @@ var huma =
 
 var karasuma = 
     {
-        name:"Karasuma",
+        name:"Crow",
         rarity: "SSR",
         pic:"images/karasuma_nobg.png",
         artwork:"images/art/karasuma.png",
@@ -922,15 +922,15 @@ var karasuma =
             // 600 affinity
             "Unlock communication [Friendship Achieved]",
             // 1200 affininty
-            "When not in a group, Karasuma's damage is increased by 6% and damage taken is reduced by 4%.",
+            "When not in a group, Crow's damage is increased by 6% and damage taken is reduced by 4%.",
             // 2000 affinity
             "Unlock communication [Happy-go-lucky]",
             // 3000 affinity
             "Unlock communication [Jokes]",
             // 4000 affinity
-            "When not in a group, Karasuma's damage is increased by 10% and damage taken is reduced by 6%. When Karasuma starts a fight, damage is increased by 12% for 12 seconds."
+            "When not in a group, Crow's damage is increased by 10% and damage taken is reduced by 6%. When Crow starts a fight, damage is increased by 12% for 12 seconds."
         ],
-        traits: ['Male','162 cm','Star Island','Sagittarius','17 Dec'],
+        traits: ['Male','162 cm','Astra','Sagittarius','17 Dec'],
         gifts: [
             tataCards, '+80',
             tataFigure, '+80',
@@ -1576,7 +1576,7 @@ var manaka =
             // 4000 affinity
             "When teaming up with Manaka, all teammates within 10m of Manaka receive a <span class='text-blue'>6%</span> damage boost (excluding yourself)."
         ],
-        traits: ['Female','162 cm','Volan','Leo','14 Aug'],
+        traits: ['Female','162 cm','Warren','Leo','14 Aug'],
         gifts: [
             psp, '+80',
             tataCards, '+80',
@@ -1746,7 +1746,7 @@ var xi =
             // 4000 affinity
             "Reduces stamina consumption by <span class='text-blue'>20%</span> when swimming, climbing or gliding."
         ],
-        traits: ['Female','145 cm','Krohn','Leo','17 Aug'],
+        traits: ['Female','145 cm','Crown','Leo','17 Aug'],
         gifts: [
             peppaFigure, '+60',
             ufo, '+60',
@@ -1908,7 +1908,7 @@ var gadgets = [
     
     // SSR Giant arms
     {
-        name: "Colossus Arm",
+        name: "Colossus Arms",
         description: "Uses the arms to fight for 20 seconds, cooldown 300 seconds, immune to hardness, click again to cancel. Deals a total of 1,387.7% attack damage from normal attacks; 453.5% attack damage from skills which has a 10 sec cooldown.",
         awakening: [
             // 1 star
@@ -2332,7 +2332,7 @@ var mushroom = {
     name: 'Mushroom',
     imgSrc: 'mushroom.png',
     rarity: 1,
-    source: "Found on Star Island (around giant mushrooms) and in Krohn"
+    source: "Found on Astra (around giant mushrooms) and in Crown"
 };
 var silverperch = {
     name: 'Silver Perch',
@@ -2344,7 +2344,7 @@ var wheat = {
     name: 'Wheat',
     imgSrc: 'wheat.png',
     rarity: 1,
-    source: 'Found on Star Island (meadows) and Banges (meadows)'
+    source: 'Found on Astra (meadows) and Banges (meadows)'
 }
 var meat = {
     name: 'Meat',
@@ -2356,7 +2356,7 @@ var lettuce = {
     name: 'Lettuce',
     imgSrc: 'lettuce.png',
     rarity: 1,
-    source: 'Found on Star Island (meadows)'
+    source: 'Found on Astra (meadows)'
 }
 var dressing = {
     name: 'Dressing',
@@ -2398,7 +2398,7 @@ var tomato = {
     name: 'Tomato',
     imgSrc: 'tomato.png',
     rarity: 2,
-    source: 'Found on Star Island (around alpine shrubs) and in Navia (around trees)'
+    source: 'Found on Astra (around alpine shrubs) and in Navia (around trees)'
 }
 var hornedconch = {
     name: 'Horned Conch',
@@ -2416,7 +2416,7 @@ var fruitdrop = {
     name: 'Fruit Drop',
     imgSrc: 'fruitdrop.png',
     rarity: 2,
-    source: 'Found on Star Island (around trees) and in Banges (around trees)'
+    source: 'Found on Astra (around trees) and in Banges (around trees)'
 }
 var honey = {
     name: 'Honey',
@@ -2428,13 +2428,13 @@ var ghostmushroom = {
     name: 'Ghost Mushroom',
     imgSrc: 'ghostmushroom.png',
     rarity: 2,
-    source: 'Found on Star Island (Keel, Graveyard)'
+    source: 'Found on Astra (Keel, Graveyard)'
 }
 var broccoli = {
     name: 'Broccoli',
     imgSrc: 'broccoli.png',
     rarity: 2,
-    source: 'Found on Star Island (meadows)'
+    source: 'Found on Astra (meadows)'
 }
 var dandelion = {
     name: 'Dandelion',
@@ -2446,7 +2446,7 @@ var sturgeon = {
     name: 'Sturgeon',
     imgSrc: 'sturgeon.png',
     rarity: 2,
-    source: 'Found in rivers of Star Island, Navia, and Volan'
+    source: 'Found in rivers of Astra, Navia, and Warren'
 }
 var redwheat = {
     name: 'Red Wheat',
@@ -2458,13 +2458,13 @@ var fireear = {
     name: 'Fire Ear',
     imgSrc: 'fireear.png',
     rarity: 2,
-    source: 'Found in Krohn'
+    source: 'Found in Crown'
 }
 var blackmoss = {
     name: 'Black Moss',
     imgSrc: 'blackmoss.png',
     rarity: 2,
-    source: 'Found in Krohn'
+    source: 'Found in Crown'
 }
 var seaconch = {
     name: 'Sea Conch',
@@ -2482,7 +2482,7 @@ var shuttlecrab = {
     name: 'Shuttle Crab',
     imgSrc: 'shuttlecrab.png',
     rarity: 3,
-    source: 'Found on the beaches of Star Island, Banges, and Krohn'
+    source: 'Found on the beaches of Astra, Banges, and Crown'
 }
 var strawberry = {
     name: 'Strawberry',
@@ -2506,7 +2506,7 @@ var seaurchin = {
     name: 'Sea Urchin',
     imgSrc: 'seaurchin.png',
     rarity: 3,
-    source: 'Found in Banges (North Sea Beach) and Krohn (beach)'
+    source: 'Found in Banges (North Sea Beach) and Crown (beach)'
 }
 var spinach = {
     name: 'Spinach',
@@ -2524,19 +2524,19 @@ var balloonfruit = {
     name: 'Balloon Fruit',
     imgSrc: 'balloonfruit.png',
     rarity: 3,
-    source: 'Found on Star Island and in Navia'
+    source: 'Found on Astra and in Navia'
 }
 var thundereel = {
     name: 'Thunder Eel',
     imgSrc: 'thundereel.png',
     rarity: 3,
-    source: 'Found in the rivers of Banges, Navia, and Volan'
+    source: 'Found in the rivers of Banges, Navia, and Warren'
 }
 var hermitcrab = {
     name: 'Hermit Crab',
     imgSrc: 'hermitcrab.png',
     rarity: 3,
-    source: 'Found on the beaches of Banges, Navia, and Krohn'
+    source: 'Found on the beaches of Banges, Navia, and Crown'
 }
 var pomegranate = {
     name: 'Pomegranate',
@@ -2548,13 +2548,13 @@ var dragonfruit = {
     name: 'Dragon Fruit',
     imgSrc: 'dragonfruit.png',
     rarity: 3,
-    source: 'Found near rivers in Navia and Krohn'
+    source: 'Found near rivers in Navia and Crown'
 }
 var barnacle = {
     name: 'Barnacle',
     imgSrc: 'barnacle.png',
     rarity: 3,
-    source: 'Found near the sea in Volan'
+    source: 'Found near the sea in Warren'
 }
 var onion = {
     name: 'Onion',
@@ -2566,13 +2566,13 @@ var snowblossom = {
     name: 'Snow Blossom',
     imgSrc: 'snowblossom.png',
     rarity: 3,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var pinecone = {
     name: 'Pine Cone',
     imgSrc: 'pinecone.png',
     rarity: 3,
-    source: 'Found in Volan (around pine trees)'
+    source: 'Found in Warren (around pine trees)'
 }
 var caviar = {
     name: 'Caviar',
@@ -2590,25 +2590,25 @@ var birdpotato = {
     name: "Bird's Head Potato",
     imgSrc: 'birdpotato.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var snowlotus = {
     name: 'Snow Lotus',
     imgSrc: 'snowlotus.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var blacktruffle = {
     name: 'Black Truffle',
     imgSrc: 'blacktruffle.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var cordyceps = {
     name: 'Cordyceps',
     imgSrc: 'cordyceps.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var firmmeat = {
     name: 'Firm Meat',
@@ -2626,7 +2626,7 @@ var salmon = {
     name: 'Salmon',
     imgSrc: 'salmon.png',
     rarity: 4,
-    source: 'Found in rivers in Krohn and Volan'
+    source: 'Found in rivers in Crown and Warren'
 }
 var snail = {
     name: 'Snail',
