@@ -198,14 +198,20 @@ jQuery(document).ready(function ($) {
             $("#mimic-element").html(mimicEle.charAt(0).toUpperCase() + mimicEle.slice(1));
             var mimicReso = i.resoImg.slice(i.resoImg.indexOf("_") + 1, i.resoImg.indexOf("."));
             $("#mimic-reso").html(mimicReso.charAt(0).toUpperCase() + mimicReso.slice(1));
-            $(".btmat-1").each(function (index) {
-                $(this).attr("src", "images/mat/" + i.materials[0] + (index + 1) + ".png");
-            });
-            $(".btmat-2").each(function (index) {
-                $(this).attr("src", "images/mat/" + i.materials[1] + (index + 1) + ".png");
-            });
-            $(".btmat-3").each(function (index) {
-                $(this).attr("src", "images/mat/" + i.materials[2] + (index + 1) + ".png");
+            
+            // Breakthrough mats
+            let thisMat = 0;
+            let imgNum = 1;
+            // For each index (0-2), load images 1-3.png
+            $("#breakthrough-mats .item-wrapper-with-bg").each(function() {
+                // Each iteration increase the image number
+                // If all 3 images loaded, increase index to switch to next material
+                if (imgNum >= 4) {
+                    imgNum = 1;
+                    thisMat++;
+                }
+                $(this).children("img").attr("src", `images/mat/${i.materials[thisMat]}${imgNum}.png`);
+                imgNum++;
             });
 
             // Stars
@@ -251,6 +257,26 @@ jQuery(document).ready(function ($) {
             // Affinity
             $("#affinity-1200").html(i.mimicEffect[2]);
             $("#affinity-4000").html(i.mimicEffect[5]);
+            
+            let giftTier = 1;
+            
+            // Gifts
+            $("#gifts-wrapper").html('');
+            for (let thisGift = 0; thisGift < i.gifts.length; thisGift+=2) {
+                // Since the array is structured as [ gift, 'num', gift, 'num' ...] we need to skip loading the num.
+                let giftPoints = thisGift + 1;
+                
+                if ( i.gifts[giftPoints] == '+60' || i.gifts[giftPoints] == '+80' ) { giftTier = 4; }
+                else if ( i.gifts[giftPoints] == '+30' || i.gifts[giftPoints] == '+40' ) { giftTier = 3; }
+                else if ( i.gifts[giftPoints] == '+15' ) { giftTier = 2; }
+                
+                $("#gifts-wrapper").append(
+                    `<div class="item-wrapper-with-bg bg-rarity-${giftTier}">
+                        <img src='${i.gifts[thisGift]}'>
+                        <div class="badge">${i.gifts[giftPoints]}</div>
+                    </div>`
+                );
+            }
             
             // Character Info
             const bsPopover = new bootstrap.Popover(document.querySelector('#popover-mimic'), {
@@ -305,7 +331,7 @@ jQuery(document).ready(function ($) {
     }
     
 
-    // for each food item
+    // Load Food
     for (let i = 0; i < food.length; i++) {
         var recipe = '';
         for (let j = 0; j < food[i].ingredients.length; j++) {

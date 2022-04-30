@@ -3,51 +3,51 @@ var attack, defense, health, crit;
 // 1-15 purple
 // 16-30 blue
 // 31-40 green
-var psp = 'images/affinity/1.jpg';
-var snowglobe = 'images/affinity/2.jpg';
-var pearl = 'images/affinity/3.jpg';
-var kitchenware = 'images/affinity/4.jpg';
-var tataCards = 'images/affinity/5.jpg';
-var present = 'images/affinity/6.jpg';
-var ufo = 'images/affinity/7.jpg';
-var seal = 'images/affinity/8.jpg';
-var goldCoin = 'images/affinity/9.jpg';
-var tataFigure = 'images/affinity/10.jpg';
-var bearFigure = 'images/affinity/11.jpg';
-var foxFigure = 'images/affinity/12.jpg';
-var catFigure = 'images/affinity/13.jpg';
-var miaFigure = 'images/affinity/14.jpg';
-var peppaFigure = 'images/affinity/15.jpg';
-var toolbox = 'images/affinity/16.jpg';
-var chessSet = 'images/affinity/17.jpg';
-var tataPlush = 'images/affinity/18.jpg';
-var suit = 'images/affinity/19.jpg';
-var juicePouch = 'images/affinity/20.jpg';
-var necklace = 'images/affinity/21.jpg';
-var catPlush = 'images/affinity/22.jpg';
-var diary = 'images/affinity/23.jpg';
-var vial = 'images/affinity/24.jpg';
-var perfume = 'images/affinity/25.jpg';
-var spiderFigure = 'images/affinity/26.jpg';
-var elfFigure = 'images/affinity/27.jpg';
-var pumpkinFigure = 'images/affinity/28.jpg';
-var robotFigure = 'images/affinity/29.jpg';
-var androidFigure = 'images/affinity/30.jpg';
-var flowers = 'images/affinity/31.jpg';
-var dumbbells = 'images/affinity/32.jpg';
-var photoAlbum = 'images/affinity/33.jpg';
-var photo = 'images/affinity/34.jpg';
-var scarf = 'images/affinity/35.jpg';
-var tradingCard = 'images/affinity/36.jpg';
-var plant = 'images/affinity/37.jpg';
-var harmonica = 'images/affinity/38.jpg';
-var pinwheel = 'images/affinity/39.jpg';
-var snackBox = 'images/affinity/40.jpg';
-var strangePlant = 'images/affinity/41.jpg';
-var strangeFragment = 'images/affinity/42.jpg';
-var princeTataFigure = 'images/affinity/43.jpg';
-var bunnyDoll = 'images/affinity/44.jpg';
-var linyeFigure = 'images/affinity/45.jpg';
+var psp = 'images/affinity/1.png';
+var snowglobe = 'images/affinity/2.png';
+var pearl = 'images/affinity/3.png';
+var kitchenware = 'images/affinity/4.png';
+var tataCards = 'images/affinity/5.png';
+var present = 'images/affinity/6.png';
+var ufo = 'images/affinity/7.png';
+var seal = 'images/affinity/8.png';
+var goldCoin = 'images/affinity/9.png';
+var tataFigure = 'images/affinity/10.png';
+var bearFigure = 'images/affinity/11.png';
+var foxFigure = 'images/affinity/12.png';
+var catFigure = 'images/affinity/13.png';
+var miaFigure = 'images/affinity/14.png';
+var peppaFigure = 'images/affinity/15.png';
+var toolbox = 'images/affinity/16.png';
+var chessSet = 'images/affinity/17.png';
+var tataPlush = 'images/affinity/18.png';
+var suit = 'images/affinity/19.png';
+var juicePouch = 'images/affinity/20.png';
+var necklace = 'images/affinity/21.png';
+var catPlush = 'images/affinity/22.png';
+var diary = 'images/affinity/23.png';
+var vial = 'images/affinity/24.png';
+var perfume = 'images/affinity/25.png';
+var spiderFigure = 'images/affinity/26.png';
+var elfFigure = 'images/affinity/27.png';
+var pumpkinFigure = 'images/affinity/28.png';
+var robotFigure = 'images/affinity/29.png';
+var androidFigure = 'images/affinity/30.png';
+var flowers = 'images/affinity/31.png';
+var dumbbells = 'images/affinity/32.png';
+var photoAlbum = 'images/affinity/33.png';
+var photo = 'images/affinity/34.png';
+var scarf = 'images/affinity/35.png';
+var tradingCard = 'images/affinity/36.png';
+var plant = 'images/affinity/37.png';
+var harmonica = 'images/affinity/38.png';
+var pinwheel = 'images/affinity/39.png';
+var snackBox = 'images/affinity/40.png';
+var strangePlant = 'images/affinity/41.png';
+var strangeFragment = 'images/affinity/42.png';
+var princeTataFigure = 'images/affinity/43.png';
+var bunnyDoll = 'images/affinity/44.png';
+var linyeFigure = 'images/affinity/45.png';
 
 
 var samir = 
@@ -109,11 +109,15 @@ var samir =
             present,'+60', // pink present
             ufo,'+60', // ufo
             pearl,'+60', // pearl
+            princeTataFigure, '+60',
+            
             tataPlush,'+30', // tata plush
             chessSet,'+30', // chessboard
             catPlush,'+30', // cat plush
             diary,'+30', // diary
             robotFigure,'+30', //r2d2 figure
+            bunnyDoll, '+30',
+            
             tradingCard,'+15', // trading card
             pinwheel,'+15' // pinwheel
         ],
@@ -192,6 +196,7 @@ var coco =
             spiderFigure, '+30',
             vial, '+30',
             elfFigure, '+30',
+            bunnyDoll, '+30',
             catPlush,'+30', // cat plush
             robotFigure,'+30', //r2d2 figure
             
@@ -263,7 +268,7 @@ var king =
             // 4000 affinity
             "King restores <span class='text-blue'>10%</span> HP for every <span class='text-blue'>5</span> enemies he defeats"
         ],
-        traits: ['Male','190 cm','Krohn','Scorpio','3 Nov'],
+        traits: ['Male','190 cm','Crown','Scorpio','3 Nov'],
         gifts: [
             seal, '+80',
             goldCoin, '+80',
@@ -277,13 +282,15 @@ var king =
             ufo, '+60',
             psp, '+60',
             snowglobe, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             vial, '+30',
             
             photo, '+15',
             snackBox, '+15',
-            harmonica, '+15'
+            harmonica, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -345,7 +352,7 @@ var shiro =
             // 4000 affinity
             "When Shiro releases her weapon skill or combo skill, her full attack is increased by <span class='text-blue'>16%</span>, and her physical attack is increased by <span class='text-blue'>10%</span> for 8 seconds, cooldown 16 sec."
         ],
-        traits: ['Female','163 cm','Volan','Virgo','22 Sep'],
+        traits: ['Female','163 cm','Warren','Virgo','22 Sep'],
         gifts: [
             kitchenware, '+80',
             seal, '+80',
@@ -358,14 +365,17 @@ var shiro =
             snowglobe, '+60',
             present, '+60',
             pearl, '+60',
+            linyeFigure, '+60',
             
             vial, '+30',
             necklace, '+30',
             toolbox, '+30',
+            strangeFragment, '+30',
             
             dumbbells, '+15',
             harmonica, '+15',
-            photo, '+15'
+            photo, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -428,7 +438,7 @@ var cobalt =
             // 4000 affinity
             "When Cobalt-B releases a combo, it restores <span class='text-blue'>90-180</span> points of energy charge at random."
         ],
-        traits: ['Female','157 cm','Krohn','Cancer','26 Jun'],
+        traits: ['Female','157 cm','Crown','Cancer','26 Jun'],
         gifts: [
             kitchenware, '+80',
             goldCoin, '+80',
@@ -441,13 +451,16 @@ var cobalt =
             tataFigure, '+60',
             present, '+60',
             psp, '+60',
+            linyeFigure, '+60',
             pearl, '+60',
             
             necklace, '+30',
             toolbox, '+30',
+            strangeFragment, "+30",
             
             dumbbells, '+15',
-            snackBox, '+15'            
+            snackBox, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['cobalt', 4],
@@ -519,6 +532,7 @@ var claudia =
             tataCards, '+60',
             miaFigure, '+60',
             catFigure, '+60',
+            princeTataFigure, '+60',
             ufo, '+60',
             
             suit, '+30',
@@ -611,6 +625,8 @@ var baiyuekui =
             psp, '+60',
             foxFigure, '+60',
             seal, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             elfFigure, '+30',
@@ -618,7 +634,8 @@ var baiyuekui =
             
             photoAlbum, '+15',
             snackBox, '+15',
-            plant, '+15'
+            plant, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -692,12 +709,14 @@ var meryl =
             snowglobe, '+60',
             kitchenware, '+60',
             ufo, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             vial, '+30',
             
             photo, '+15',
-            harmonica, '+15'
+            harmonica, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -710,7 +729,7 @@ var meryl =
 
 var hane = 
     {
-        name:"Hane",
+        name:"Tsubasa",
         rarity: "SSR",
         pic:"images/hane_nobg.png",
         artwork:"images/art/hane.png",
@@ -760,7 +779,7 @@ var hane =
             // 4000 affinity
             "Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <span class='text-blue'>30</span> stacks). Each stack increases attack by <span class='text-blue'>0.6%</span> and refreshes buff duration."
         ],
-        traits: ['Female','169 cm','Star Island','Aries','24 Mar'],
+        traits: ['Female','169 cm','Astra','Aries','24 Mar'],
         gifts: [
             tataPlush, '+80',
             miaFigure, '+80',
@@ -773,6 +792,7 @@ var hane =
             psp, '+60',
             goldCoin, '+60',
             snowglobe, '+60',
+            linyeFigure, '+60',
             
             vial, '+30',
             pumpkinFigure, '+30',
@@ -853,6 +873,7 @@ var huma =
             psp, '+60',
             pearl, '+60',
             snowglobe, '+60',
+            princeTataFigure, '+60',
             
             chessSet, '+30',
             diary, '+30',
@@ -880,7 +901,7 @@ var huma =
 
 var karasuma = 
     {
-        name:"Karasuma",
+        name:"Crow",
         rarity: "SSR",
         pic:"images/karasuma_nobg.png",
         artwork:"images/art/karasuma.png",
@@ -922,15 +943,15 @@ var karasuma =
             // 600 affinity
             "Unlock communication [Friendship Achieved]",
             // 1200 affininty
-            "When not in a group, Karasuma's damage is increased by 6% and damage taken is reduced by 4%.",
+            "When not in a group, Crow's damage is increased by 6% and damage taken is reduced by 4%.",
             // 2000 affinity
             "Unlock communication [Happy-go-lucky]",
             // 3000 affinity
             "Unlock communication [Jokes]",
             // 4000 affinity
-            "When not in a group, Karasuma's damage is increased by 10% and damage taken is reduced by 6%. When Karasuma starts a fight, damage is increased by 12% for 12 seconds."
+            "When not in a group, Crow's damage is increased by 10% and damage taken is reduced by 6%. When Crow starts a fight, damage is increased by 12% for 12 seconds."
         ],
-        traits: ['Male','162 cm','Star Island','Sagittarius','17 Dec'],
+        traits: ['Male','162 cm','Astra','Sagittarius','17 Dec'],
         gifts: [
             tataCards, '+80',
             tataFigure, '+80',
@@ -941,6 +962,7 @@ var karasuma =
             peppaFigure, '+60',
             bearFigure, '+60',
             psp, '+60',
+            linyeFigure, '+60',
             
             suit, '+30',
             juicePouch, '+30',
@@ -1102,6 +1124,7 @@ var marc =
             bearFigure, '+60',
             
             toolbox, '+30',
+            strangeFragment, '+30',
             
             dumbbells, '+15',
         ],
@@ -1171,6 +1194,7 @@ var nemesis =
         traits: ['Female','165 cm','???','Gemini','25 May'],
         gifts: [
             peppaFigure, '+80',
+            princeTataFigure, '+80',
             
             tataCards, '+60',
             present, '+60',
@@ -1185,6 +1209,7 @@ var nemesis =
             spiderFigure, '+30',
             elfFigure, '+30',
             robotFigure, '+30',
+            bunnyDoll, '+30',
             
             flowers, '+15',
             photoAlbum, '+15',
@@ -1256,6 +1281,22 @@ var frigg =
         ],
         traits: ['Female','190 cm','???','Aquarius','1 February'],
         gifts: [
+            present, '+60',
+            tataCards, '+60',
+            pearl, '+60',
+            peppaFigure, '+60',
+            catFigure, '+60',
+            kitchenware, '+60',
+            
+            juicePouch, '+30',
+            suit, '+30',
+            toolbox, '+30',
+            perfume, '+30',
+            strangeFragment, '+30',
+            
+            flowers, '+15',
+            dumbbells, '+15',
+            scarf, '+15'
         ],
         recChips: [
             ['samir', 2],
@@ -1420,6 +1461,8 @@ var bailing =
             ufo, '+60',
             peppaFigure, '+60',
             kitchenware, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             vial, '+30',
@@ -1429,7 +1472,8 @@ var bailing =
             photoAlbum, '+15',
             harmonica, '+15',
             photo, '+15',
-            plant, '+15'
+            plant, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['samir', 2],
@@ -1504,12 +1548,15 @@ var hilda =
             miaFigure, '+60',
             present, '+60',
             psp, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             tataPlush, '+30',
             catPlush, '+30',
             robotFigure, '+30',
             pumpkinFigure, '+30',
             androidFigure, '+30',
+            bunnyDoll, '+30',
             
             pinwheel, '+15',
             snackBox, '+15'
@@ -1526,7 +1573,7 @@ var hilda =
 
 var manaka = 
     {
-        name:"Manaka",
+        name:"Echo",
         rarity: "SR",
         pic:"images/manaka_nobg.png",
         artwork:"images/art/manaka.png",
@@ -1576,7 +1623,7 @@ var manaka =
             // 4000 affinity
             "When teaming up with Manaka, all teammates within 10m of Manaka receive a <span class='text-blue'>6%</span> damage boost (excluding yourself)."
         ],
-        traits: ['Female','162 cm','Volan','Leo','14 Aug'],
+        traits: ['Female','162 cm','Warren','Leo','14 Aug'],
         gifts: [
             psp, '+80',
             tataCards, '+80',
@@ -1611,7 +1658,7 @@ var manaka =
 
 var peppa = 
     {
-        name:"Peppa",
+        name:"Pepper",
         rarity: "SR",
         pic:"images/peppa_nobg.png",
         artwork:"images/art/peppa.png",
@@ -1672,6 +1719,8 @@ var peppa =
             goldCoin, '+60',
             snowglobe, '+60',
             kitchenware, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             suit, '+30',
             juicePouch, '+30',
@@ -1683,7 +1732,8 @@ var peppa =
             photoAlbum, '+15',
             flowers, '+15',
             plant, '+15',
-            scarf, '+15'
+            scarf, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['coco', 2],
@@ -1696,7 +1746,7 @@ var peppa =
 
 var xi = 
     {
-        name:"Xi",
+        name:"Ene",
         rarity: "SR",
         pic:"images/xi_nobg.png",
         artwork:"images/art/xi.png",
@@ -1746,8 +1796,10 @@ var xi =
             // 4000 affinity
             "Reduces stamina consumption by <span class='text-blue'>20%</span> when swimming, climbing or gliding."
         ],
-        traits: ['Female','145 cm','Krohn','Leo','17 Aug'],
+        traits: ['Female','145 cm','Crown','Leo','17 Aug'],
         gifts: [
+            princeTataFigure, '+80',
+            
             peppaFigure, '+60',
             ufo, '+60',
             foxFigure, '+60',
@@ -1764,6 +1816,7 @@ var xi =
             spiderFigure, '+30',
             elfFigure, '+30',
             robotFigure, '+30',
+            bunnyDoll, '+30',
             
             photoAlbum, '+15',
             tradingCard, '+15',
@@ -1908,7 +1961,7 @@ var gadgets = [
     
     // SSR Giant arms
     {
-        name: "Colossus Arm",
+        name: "Colossus Arms",
         description: "Uses the arms to fight for 20 seconds, cooldown 300 seconds, immune to hardness, click again to cancel. Deals a total of 1,387.7% attack damage from normal attacks; 453.5% attack damage from skills which has a 10 sec cooldown.",
         awakening: [
             // 1 star
@@ -2332,7 +2385,7 @@ var mushroom = {
     name: 'Mushroom',
     imgSrc: 'mushroom.png',
     rarity: 1,
-    source: "Found on Star Island (around giant mushrooms) and in Krohn"
+    source: "Found on Astra (around giant mushrooms) and in Crown"
 };
 var silverperch = {
     name: 'Silver Perch',
@@ -2344,7 +2397,7 @@ var wheat = {
     name: 'Wheat',
     imgSrc: 'wheat.png',
     rarity: 1,
-    source: 'Found on Star Island (meadows) and Banges (meadows)'
+    source: 'Found on Astra (meadows) and Banges (meadows)'
 }
 var meat = {
     name: 'Meat',
@@ -2356,7 +2409,7 @@ var lettuce = {
     name: 'Lettuce',
     imgSrc: 'lettuce.png',
     rarity: 1,
-    source: 'Found on Star Island (meadows)'
+    source: 'Found on Astra (meadows)'
 }
 var dressing = {
     name: 'Dressing',
@@ -2398,7 +2451,7 @@ var tomato = {
     name: 'Tomato',
     imgSrc: 'tomato.png',
     rarity: 2,
-    source: 'Found on Star Island (around alpine shrubs) and in Navia (around trees)'
+    source: 'Found on Astra (around alpine shrubs) and in Navia (around trees)'
 }
 var hornedconch = {
     name: 'Horned Conch',
@@ -2416,7 +2469,7 @@ var fruitdrop = {
     name: 'Fruit Drop',
     imgSrc: 'fruitdrop.png',
     rarity: 2,
-    source: 'Found on Star Island (around trees) and in Banges (around trees)'
+    source: 'Found on Astra (around trees) and in Banges (around trees)'
 }
 var honey = {
     name: 'Honey',
@@ -2428,13 +2481,13 @@ var ghostmushroom = {
     name: 'Ghost Mushroom',
     imgSrc: 'ghostmushroom.png',
     rarity: 2,
-    source: 'Found on Star Island (Keel, Graveyard)'
+    source: 'Found on Astra (Keel, Graveyard)'
 }
 var broccoli = {
     name: 'Broccoli',
     imgSrc: 'broccoli.png',
     rarity: 2,
-    source: 'Found on Star Island (meadows)'
+    source: 'Found on Astra (meadows)'
 }
 var dandelion = {
     name: 'Dandelion',
@@ -2446,7 +2499,7 @@ var sturgeon = {
     name: 'Sturgeon',
     imgSrc: 'sturgeon.png',
     rarity: 2,
-    source: 'Found in rivers of Star Island, Navia, and Volan'
+    source: 'Found in rivers of Astra, Navia, and Warren'
 }
 var redwheat = {
     name: 'Red Wheat',
@@ -2458,13 +2511,13 @@ var fireear = {
     name: 'Fire Ear',
     imgSrc: 'fireear.png',
     rarity: 2,
-    source: 'Found in Krohn'
+    source: 'Found in Crown'
 }
 var blackmoss = {
     name: 'Black Moss',
     imgSrc: 'blackmoss.png',
     rarity: 2,
-    source: 'Found in Krohn'
+    source: 'Found in Crown'
 }
 var seaconch = {
     name: 'Sea Conch',
@@ -2482,7 +2535,7 @@ var shuttlecrab = {
     name: 'Shuttle Crab',
     imgSrc: 'shuttlecrab.png',
     rarity: 3,
-    source: 'Found on the beaches of Star Island, Banges, and Krohn'
+    source: 'Found on the beaches of Astra, Banges, and Crown'
 }
 var strawberry = {
     name: 'Strawberry',
@@ -2506,7 +2559,7 @@ var seaurchin = {
     name: 'Sea Urchin',
     imgSrc: 'seaurchin.png',
     rarity: 3,
-    source: 'Found in Banges (North Sea Beach) and Krohn (beach)'
+    source: 'Found in Banges (North Sea Beach) and Crown (beach)'
 }
 var spinach = {
     name: 'Spinach',
@@ -2524,19 +2577,19 @@ var balloonfruit = {
     name: 'Balloon Fruit',
     imgSrc: 'balloonfruit.png',
     rarity: 3,
-    source: 'Found on Star Island and in Navia'
+    source: 'Found on Astra and in Navia'
 }
 var thundereel = {
     name: 'Thunder Eel',
     imgSrc: 'thundereel.png',
     rarity: 3,
-    source: 'Found in the rivers of Banges, Navia, and Volan'
+    source: 'Found in the rivers of Banges, Navia, and Warren'
 }
 var hermitcrab = {
     name: 'Hermit Crab',
     imgSrc: 'hermitcrab.png',
     rarity: 3,
-    source: 'Found on the beaches of Banges, Navia, and Krohn'
+    source: 'Found on the beaches of Banges, Navia, and Crown'
 }
 var pomegranate = {
     name: 'Pomegranate',
@@ -2548,13 +2601,13 @@ var dragonfruit = {
     name: 'Dragon Fruit',
     imgSrc: 'dragonfruit.png',
     rarity: 3,
-    source: 'Found near rivers in Navia and Krohn'
+    source: 'Found near rivers in Navia and Crown'
 }
 var barnacle = {
     name: 'Barnacle',
     imgSrc: 'barnacle.png',
     rarity: 3,
-    source: 'Found near the sea in Volan'
+    source: 'Found near the sea in Warren'
 }
 var onion = {
     name: 'Onion',
@@ -2566,13 +2619,13 @@ var snowblossom = {
     name: 'Snow Blossom',
     imgSrc: 'snowblossom.png',
     rarity: 3,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var pinecone = {
     name: 'Pine Cone',
     imgSrc: 'pinecone.png',
     rarity: 3,
-    source: 'Found in Volan (around pine trees)'
+    source: 'Found in Warren (around pine trees)'
 }
 var caviar = {
     name: 'Caviar',
@@ -2590,25 +2643,25 @@ var birdpotato = {
     name: "Bird's Head Potato",
     imgSrc: 'birdpotato.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var snowlotus = {
     name: 'Snow Lotus',
     imgSrc: 'snowlotus.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var blacktruffle = {
     name: 'Black Truffle',
     imgSrc: 'blacktruffle.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var cordyceps = {
     name: 'Cordyceps',
     imgSrc: 'cordyceps.png',
     rarity: 4,
-    source: 'Found in Volan'
+    source: 'Found in Warren'
 }
 var firmmeat = {
     name: 'Firm Meat',
@@ -2626,7 +2679,7 @@ var salmon = {
     name: 'Salmon',
     imgSrc: 'salmon.png',
     rarity: 4,
-    source: 'Found in rivers in Krohn and Volan'
+    source: 'Found in rivers in Crown and Warren'
 }
 var snail = {
     name: 'Snail',

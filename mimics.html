@@ -21,7 +21,7 @@
 
     <title>Tower of Fantasy - Mimics</title>
     <link rel="icon" type="image/x-icon" href="images/avatar/tata.png">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
     <script>
@@ -138,10 +138,10 @@
             &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
         </div>
     </nav>
-    
+
     <!-- Background image -->
     <img id="page-bg-img" class="bg-img" src="images/art/ruby.png">
-    
+
     <div class="container p-5">
         <!-- Mimics List -->
         <div id="modal-menu">
@@ -150,7 +150,7 @@
                 <div class="page-info">Mimics are the player's representation of the characters found in Tower of Fantasy.<br>They have an associated weapon and a passive effect that can be enabled through the simulacrum. Their associated chips must be obtained separately.</div>
             </div>
             <h1 class="page-header">Mimics</h1>
-            
+
             <div class="wep-tier wep-tier-s d-inline-block m-3 mimic-rarity-header">SSR Mimics</div>
             <ul class="p-0 text-center mt-3">
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
@@ -191,7 +191,7 @@
                 </li>
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-karasuma" src="images/avatar/karasuma.png">
-                    <h3>Karasuma</h3>
+                    <h3>Crow</h3>
                 </li>
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-king" src="images/avatar/king.png">
@@ -225,7 +225,7 @@
             <ul class="p-0 text-center mb-0 mt-3">
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-peppa" src="images/avatar/peppa.png">
-                    <h3>Peppa</h3>
+                    <h3>Pepper</h3>
                 </li>
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-hilda" src="images/avatar/hilda.png">
@@ -233,7 +233,7 @@
                 </li>
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-xi" src="images/avatar/xi.png">
-                    <h3>Xi</h3>
+                    <h3>Ene</h3>
                 </li>
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-bailing" src="images/avatar/bailing.png">
@@ -241,7 +241,7 @@
                 </li>
                 <li class="modal-menu-item mimic-button p-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-manaka" src="images/avatar/manaka.png">
-                    <h3>Manaka</h3>
+                    <h3>Echo</h3>
                 </li>
                 <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
                     <div style="width: 88px"></div>
@@ -275,7 +275,7 @@
                         <button type="button" class="btn-close btn-close-white mb-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body px-5">
-                        
+
                         <!-- Weapon Info -->
                         <div class="px-md-5 weapon-info-wrapper mb-5">
                             <h1 class="modal-section-header" id="header-weapon">Weapon</h1>
@@ -362,36 +362,73 @@
                                 </div>
                             </div>
                             <hr>
-
+                            
                             <!-- Breakthrough Mats -->
                             <div class="py-4">
                                 <h2 class="text-blue mb-4">Breakthrough Materials</h2>
-                                <div class="row text-center">
-                                    <div class="col-4 p-0">
-                                        <img class="bg-rarity-2 breakthrough-mat item-border btmat-1" src="images/mat/electric1.png">
-                                        <img class="bg-rarity-3 breakthrough-mat item-border btmat-1" src="images/mat/electric2.png">
-                                        <img class="bg-rarity-4 breakthrough-mat item-border btmat-1" src="images/mat/electric3.png">
+                                <div id="breakthrough-mats" class="row m-0">
+                                    <div class="col mb-3 mb-lg-0">
+                                        <div class="item-wrapper-with-bg bg-rarity-2">
+                                            <img src="images/mat/electric1.png">
+                                        </div>
+                                        <div class="mx-2">
+                                            <i class="fa-solid fa-right-long d-block"></i>x4
+                                        </div>
+                                        <div class="item-wrapper-with-bg bg-rarity-3">
+                                            <img src="images/mat/electric2.png">
+                                        </div>
+                                        <div class="mx-2">
+                                            <i class="fa-solid fa-right-long d-block"></i>x5
+                                        </div>
+                                        <div class="item-wrapper-with-bg bg-rarity-4">
+                                            <img src="images/mat/electric3.png">
+                                        </div>
                                     </div>
-                                    <div class="col-4 p-0">
-                                        <img class="bg-rarity-3 breakthrough-mat item-border btmat-2" src="images/mat/red1.png">
-                                        <img class="bg-rarity-4 breakthrough-mat item-border btmat-2" src="images/mat/red2.png">
-                                        <img class="bg-rarity-5 breakthrough-mat item-border btmat-2" src="images/mat/red3.png">
+                                    <div class="col mb-3 mb-lg-0">
+                                        <div class="item-wrapper-with-bg bg-rarity-3">
+                                            <img src="images/mat/red1.png">
+                                        </div>
+                                        <div class="mx-2">
+                                            <i class="fa-solid fa-right-long d-block"></i>x4
+                                        </div>
+                                        <div class="item-wrapper-with-bg bg-rarity-4">
+                                            <img src="images/mat/red2.png">
+                                        </div>
+                                        <div class="mx-2">
+                                            <i class="fa-solid fa-right-long d-block"></i>x5
+                                        </div>
+                                        <div class="item-wrapper-with-bg bg-rarity-5">
+                                            <img src="images/mat/red3.png">
+                                        </div>
                                     </div>
-                                    <div class="col-4 p-0">
-                                        <img class="bg-rarity-4 breakthrough-mat item-border btmat-3" src="images/mat/black1.png">
-                                        <img class="bg-rarity-5 breakthrough-mat item-border btmat-3" src="images/mat/black2.png">
-                                        <img class="bg-rarity-5 breakthrough-mat item-border btmat-3" src="images/mat/black3.png">
+                                    <div class="col">
+                                        <div class="item-wrapper-with-bg bg-rarity-4">
+                                            <img src="images/mat/black1.png">
+                                        </div>
+                                        <div class="mx-2">
+                                            <i class="fa-solid fa-right-long d-block"></i>x4
+                                        </div>
+                                        <div class="item-wrapper-with-bg bg-rarity-5">
+                                            <img src="images/mat/black2.png">
+                                        </div>
+                                        <div class="mx-2">
+                                            <i class="fa-solid fa-right-long d-block"></i>x5
+                                        </div>
+                                        <div class="item-wrapper-with-bg bg-rarity-5">
+                                            <img src="images/mat/black3.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                                
                         </div> <!-- end weapon info -->
-                        
+
                         <!-- Combat -->
                         <div class="px-md-5 mb-5">
                             <h1 class="modal-section-header" id="header-combat">Combat</h1>
                             Attack combos and skills coming soon
                         </div>
-                        
+
                         <!-- Chips -->
                         <div class="px-md-5 mb-5">
                             <h1 class="modal-section-header" id="header-chips">Chip</h1>
@@ -468,7 +505,7 @@
                             <hr>
                             <div class="py-4">
                                 <h2 class="text-blue mb-4">Preferred Gifts</h2>
-                                Coming soon
+                                <div id="gifts-wrapper"></div>
                             </div>
                         </div>
 
