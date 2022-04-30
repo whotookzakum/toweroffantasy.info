@@ -3,51 +3,51 @@ var attack, defense, health, crit;
 // 1-15 purple
 // 16-30 blue
 // 31-40 green
-var psp = 'images/affinity/1.jpg';
-var snowglobe = 'images/affinity/2.jpg';
-var pearl = 'images/affinity/3.jpg';
-var kitchenware = 'images/affinity/4.jpg';
-var tataCards = 'images/affinity/5.jpg';
-var present = 'images/affinity/6.jpg';
-var ufo = 'images/affinity/7.jpg';
-var seal = 'images/affinity/8.jpg';
-var goldCoin = 'images/affinity/9.jpg';
-var tataFigure = 'images/affinity/10.jpg';
-var bearFigure = 'images/affinity/11.jpg';
-var foxFigure = 'images/affinity/12.jpg';
-var catFigure = 'images/affinity/13.jpg';
-var miaFigure = 'images/affinity/14.jpg';
-var peppaFigure = 'images/affinity/15.jpg';
-var toolbox = 'images/affinity/16.jpg';
-var chessSet = 'images/affinity/17.jpg';
-var tataPlush = 'images/affinity/18.jpg';
-var suit = 'images/affinity/19.jpg';
-var juicePouch = 'images/affinity/20.jpg';
-var necklace = 'images/affinity/21.jpg';
-var catPlush = 'images/affinity/22.jpg';
-var diary = 'images/affinity/23.jpg';
-var vial = 'images/affinity/24.jpg';
-var perfume = 'images/affinity/25.jpg';
-var spiderFigure = 'images/affinity/26.jpg';
-var elfFigure = 'images/affinity/27.jpg';
-var pumpkinFigure = 'images/affinity/28.jpg';
-var robotFigure = 'images/affinity/29.jpg';
-var androidFigure = 'images/affinity/30.jpg';
-var flowers = 'images/affinity/31.jpg';
-var dumbbells = 'images/affinity/32.jpg';
-var photoAlbum = 'images/affinity/33.jpg';
-var photo = 'images/affinity/34.jpg';
-var scarf = 'images/affinity/35.jpg';
-var tradingCard = 'images/affinity/36.jpg';
-var plant = 'images/affinity/37.jpg';
-var harmonica = 'images/affinity/38.jpg';
-var pinwheel = 'images/affinity/39.jpg';
-var snackBox = 'images/affinity/40.jpg';
-var strangePlant = 'images/affinity/41.jpg';
-var strangeFragment = 'images/affinity/42.jpg';
-var princeTataFigure = 'images/affinity/43.jpg';
-var bunnyDoll = 'images/affinity/44.jpg';
-var linyeFigure = 'images/affinity/45.jpg';
+var psp = 'images/affinity/1.png';
+var snowglobe = 'images/affinity/2.png';
+var pearl = 'images/affinity/3.png';
+var kitchenware = 'images/affinity/4.png';
+var tataCards = 'images/affinity/5.png';
+var present = 'images/affinity/6.png';
+var ufo = 'images/affinity/7.png';
+var seal = 'images/affinity/8.png';
+var goldCoin = 'images/affinity/9.png';
+var tataFigure = 'images/affinity/10.png';
+var bearFigure = 'images/affinity/11.png';
+var foxFigure = 'images/affinity/12.png';
+var catFigure = 'images/affinity/13.png';
+var miaFigure = 'images/affinity/14.png';
+var peppaFigure = 'images/affinity/15.png';
+var toolbox = 'images/affinity/16.png';
+var chessSet = 'images/affinity/17.png';
+var tataPlush = 'images/affinity/18.png';
+var suit = 'images/affinity/19.png';
+var juicePouch = 'images/affinity/20.png';
+var necklace = 'images/affinity/21.png';
+var catPlush = 'images/affinity/22.png';
+var diary = 'images/affinity/23.png';
+var vial = 'images/affinity/24.png';
+var perfume = 'images/affinity/25.png';
+var spiderFigure = 'images/affinity/26.png';
+var elfFigure = 'images/affinity/27.png';
+var pumpkinFigure = 'images/affinity/28.png';
+var robotFigure = 'images/affinity/29.png';
+var androidFigure = 'images/affinity/30.png';
+var flowers = 'images/affinity/31.png';
+var dumbbells = 'images/affinity/32.png';
+var photoAlbum = 'images/affinity/33.png';
+var photo = 'images/affinity/34.png';
+var scarf = 'images/affinity/35.png';
+var tradingCard = 'images/affinity/36.png';
+var plant = 'images/affinity/37.png';
+var harmonica = 'images/affinity/38.png';
+var pinwheel = 'images/affinity/39.png';
+var snackBox = 'images/affinity/40.png';
+var strangePlant = 'images/affinity/41.png';
+var strangeFragment = 'images/affinity/42.png';
+var princeTataFigure = 'images/affinity/43.png';
+var bunnyDoll = 'images/affinity/44.png';
+var linyeFigure = 'images/affinity/45.png';
 
 
 var samir = 
@@ -109,11 +109,15 @@ var samir =
             present,'+60', // pink present
             ufo,'+60', // ufo
             pearl,'+60', // pearl
+            princeTataFigure, '+60',
+            
             tataPlush,'+30', // tata plush
             chessSet,'+30', // chessboard
             catPlush,'+30', // cat plush
             diary,'+30', // diary
             robotFigure,'+30', //r2d2 figure
+            bunnyDoll, '+30',
+            
             tradingCard,'+15', // trading card
             pinwheel,'+15' // pinwheel
         ],
@@ -192,6 +196,7 @@ var coco =
             spiderFigure, '+30',
             vial, '+30',
             elfFigure, '+30',
+            bunnyDoll, '+30',
             catPlush,'+30', // cat plush
             robotFigure,'+30', //r2d2 figure
             
@@ -277,13 +282,15 @@ var king =
             ufo, '+60',
             psp, '+60',
             snowglobe, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             vial, '+30',
             
             photo, '+15',
             snackBox, '+15',
-            harmonica, '+15'
+            harmonica, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -358,14 +365,17 @@ var shiro =
             snowglobe, '+60',
             present, '+60',
             pearl, '+60',
+            linyeFigure, '+60',
             
             vial, '+30',
             necklace, '+30',
             toolbox, '+30',
+            strangeFragment, '+30',
             
             dumbbells, '+15',
             harmonica, '+15',
-            photo, '+15'
+            photo, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -441,13 +451,16 @@ var cobalt =
             tataFigure, '+60',
             present, '+60',
             psp, '+60',
+            linyeFigure, '+60',
             pearl, '+60',
             
             necklace, '+30',
             toolbox, '+30',
+            strangeFragment, "+30",
             
             dumbbells, '+15',
-            snackBox, '+15'            
+            snackBox, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['cobalt', 4],
@@ -519,6 +532,7 @@ var claudia =
             tataCards, '+60',
             miaFigure, '+60',
             catFigure, '+60',
+            princeTataFigure, '+60',
             ufo, '+60',
             
             suit, '+30',
@@ -611,6 +625,8 @@ var baiyuekui =
             psp, '+60',
             foxFigure, '+60',
             seal, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             elfFigure, '+30',
@@ -618,7 +634,8 @@ var baiyuekui =
             
             photoAlbum, '+15',
             snackBox, '+15',
-            plant, '+15'
+            plant, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -692,12 +709,14 @@ var meryl =
             snowglobe, '+60',
             kitchenware, '+60',
             ufo, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             vial, '+30',
             
             photo, '+15',
-            harmonica, '+15'
+            harmonica, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['king', 2],
@@ -710,7 +729,7 @@ var meryl =
 
 var hane = 
     {
-        name:"Hane",
+        name:"Tsubasa",
         rarity: "SSR",
         pic:"images/hane_nobg.png",
         artwork:"images/art/hane.png",
@@ -773,6 +792,7 @@ var hane =
             psp, '+60',
             goldCoin, '+60',
             snowglobe, '+60',
+            linyeFigure, '+60',
             
             vial, '+30',
             pumpkinFigure, '+30',
@@ -853,6 +873,7 @@ var huma =
             psp, '+60',
             pearl, '+60',
             snowglobe, '+60',
+            princeTataFigure, '+60',
             
             chessSet, '+30',
             diary, '+30',
@@ -941,6 +962,7 @@ var karasuma =
             peppaFigure, '+60',
             bearFigure, '+60',
             psp, '+60',
+            linyeFigure, '+60',
             
             suit, '+30',
             juicePouch, '+30',
@@ -1102,6 +1124,7 @@ var marc =
             bearFigure, '+60',
             
             toolbox, '+30',
+            strangeFragment, '+30',
             
             dumbbells, '+15',
         ],
@@ -1171,6 +1194,7 @@ var nemesis =
         traits: ['Female','165 cm','???','Gemini','25 May'],
         gifts: [
             peppaFigure, '+80',
+            princeTataFigure, '+80',
             
             tataCards, '+60',
             present, '+60',
@@ -1185,6 +1209,7 @@ var nemesis =
             spiderFigure, '+30',
             elfFigure, '+30',
             robotFigure, '+30',
+            bunnyDoll, '+30',
             
             flowers, '+15',
             photoAlbum, '+15',
@@ -1256,6 +1281,22 @@ var frigg =
         ],
         traits: ['Female','190 cm','???','Aquarius','1 February'],
         gifts: [
+            present, '+60',
+            tataCards, '+60',
+            pearl, '+60',
+            peppaFigure, '+60',
+            catFigure, '+60',
+            kitchenware, '+60',
+            
+            juicePouch, '+30',
+            suit, '+30',
+            toolbox, '+30',
+            perfume, '+30',
+            strangeFragment, '+30',
+            
+            flowers, '+15',
+            dumbbells, '+15',
+            scarf, '+15'
         ],
         recChips: [
             ['samir', 2],
@@ -1420,6 +1461,8 @@ var bailing =
             ufo, '+60',
             peppaFigure, '+60',
             kitchenware, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             necklace, '+30',
             vial, '+30',
@@ -1429,7 +1472,8 @@ var bailing =
             photoAlbum, '+15',
             harmonica, '+15',
             photo, '+15',
-            plant, '+15'
+            plant, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['samir', 2],
@@ -1504,12 +1548,15 @@ var hilda =
             miaFigure, '+60',
             present, '+60',
             psp, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             tataPlush, '+30',
             catPlush, '+30',
             robotFigure, '+30',
             pumpkinFigure, '+30',
             androidFigure, '+30',
+            bunnyDoll, '+30',
             
             pinwheel, '+15',
             snackBox, '+15'
@@ -1526,7 +1573,7 @@ var hilda =
 
 var manaka = 
     {
-        name:"Manaka",
+        name:"Echo",
         rarity: "SR",
         pic:"images/manaka_nobg.png",
         artwork:"images/art/manaka.png",
@@ -1611,7 +1658,7 @@ var manaka =
 
 var peppa = 
     {
-        name:"Peppa",
+        name:"Pepper",
         rarity: "SR",
         pic:"images/peppa_nobg.png",
         artwork:"images/art/peppa.png",
@@ -1672,6 +1719,8 @@ var peppa =
             goldCoin, '+60',
             snowglobe, '+60',
             kitchenware, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
             
             suit, '+30',
             juicePouch, '+30',
@@ -1683,7 +1732,8 @@ var peppa =
             photoAlbum, '+15',
             flowers, '+15',
             plant, '+15',
-            scarf, '+15'
+            scarf, '+15',
+            strangePlant, '+15'
         ],
         recChips: [
             ['coco', 2],
@@ -1696,7 +1746,7 @@ var peppa =
 
 var xi = 
     {
-        name:"Xi",
+        name:"Ene",
         rarity: "SR",
         pic:"images/xi_nobg.png",
         artwork:"images/art/xi.png",
@@ -1748,6 +1798,8 @@ var xi =
         ],
         traits: ['Female','145 cm','Crown','Leo','17 Aug'],
         gifts: [
+            princeTataFigure, '+80',
+            
             peppaFigure, '+60',
             ufo, '+60',
             foxFigure, '+60',
@@ -1764,6 +1816,7 @@ var xi =
             spiderFigure, '+30',
             elfFigure, '+30',
             robotFigure, '+30',
+            bunnyDoll, '+30',
             
             photoAlbum, '+15',
             tradingCard, '+15',

@@ -513,6 +513,23 @@ h6 {
     font-style: italic
 }
 
+#gifts-wrapper .item-wrapper-with-bg {
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+}
+
+#gifts-wrapper img {
+    width: 64px;
+}
+
+#gifts-wrapper .badge {
+    z-index: 4;
+    font-size: 2rem;
+    line-height: 20px;
+    right: 2px;
+    bottom: 2px;
+    text-shadow: 0 0 4px #121212;
+}
 
 
 /* GUIDE RELATED
@@ -885,7 +902,7 @@ h6 {
 }
 
 .mount-wrapper {
-    padding: 2rem;
+    padding: 1.5rem 0;
 }
 
 .mount-wrapper h1 {
