@@ -56,7 +56,7 @@ var samir =
         rarity: "SSR",
         pic:"images/samir_nobg.png",
         artwork:"images/art/samir.png",
-        wepName:"Supermagnetism Double Star",
+        wepName:"Dual EM Stars",
         wepImg:"images/wep/samir.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
@@ -137,24 +137,24 @@ var coco =
         rarity: "SSR",
         pic:"images/coco_nobg.png",
         artwork:"images/art/coco.png",
-        wepName:"Zero Pointer",
+        wepName:"Absolute Zero",
         wepImg:"images/wep/coco.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_support.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
+        wepEffect:"Fully charged weapons will <span class='text-blue'>freeze</span> the target for <span class='text-blue'>2</span> seconds and leave it frostbitten for <span class='text-blue'>6</span> seconds. Breaking the ice shell causes additional damage equal to <span class='text-blue'>151.00%</span> of ATK. While frostbitten, the target's weapon charge rate is reduced by <span class='text-blue'>50%</span>.",
         awakening:[
             // 1 star
-            "After dodging, summon a healing bee to follow you. The healing bee heals the lowest HP teammate within 15 meters, healing 25% of your attack and restoring 50 points to your energy charge.",
+            "After dodging, summon a healing bee that follows the user and heals the ally with the lowest percentage of HP within <span class='text-blue'>15</span> meters. Heal for <span class='text-blue'>25%</span> of ATK and restore <span class='text-blue'>50</span> weapon charge points each time and last for <span class='text-blue'>25</span> seconds. Cooldown: <span class='text-blue'>25</span> seconds.",
             // 2 star
-            "+16% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "Using the skill Asylum removes debuffs from the target, can be released while under crowd control, all teammates within range gain a 20% damage and shield breaking buff, and are immune to crowd control and shield breaking effects.",
+            "Use <strong class='text-orange'>Sanctuary</strong> or discharge skills to remove debuffs from targets, can be used while being affect by control effects. Increase shatter and damage dealt for all teammates within range by <span class='text-blue'>20%</span>, and grant them immunity to control effects and shatter.",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Healing effect is increased by 15%, and by another 20% for targets with less than 60% health.",
+            "Increase healing effect by <span class='text-blue'>15%</span>, plus an additional <span class='text-blue'>20%</span> when healing targets with less than <span class='text-blue'>60%</span> HP.",
             // 6 star
-            "Heals all friendly units when the healing bee is summoned/disappears, for 100% of your attack power. All friendly units within 6 metres of the healing bee receive a 10% attack boost (does not stack)."
+            "Whenever a healing bee is summoned or disappears from battle, heal all allies for <span class='text-blue'>100%</span> of the user's ATK. All allies within <span class='text-blue'>6<span> meters of the healing bee also gain <span class='text-blue'>10%</span> damage boost (cannot stack)."
         ],
         energyCharge:["12.50","s"],
         shieldBreak:["4.00","b"],
@@ -222,24 +222,24 @@ var king =
         rarity: "SSR",
         pic:"images/king_nobg.png",
         artwork:"images/art/king.png",
-        wepName:"Black Crow Scythe",
+        wepName:"Scythe of the Crow",
         wepImg:"images/wep/king.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        wepEffect:"Fully charged weapons will set the target on fire for <span class='text-blue'>8</span> seconds with the next attack, causing ongoing damage of <span class='text-blue'>58.00%</span> of ATK every second. Ignited targets receive <span class='text-blue'>50%</span> efficacy from healing.",
         awakening:[
             // 1 star
-            "Shield breaking power is increased by 15%, and after the shield breaks, the target receives a bleed that does 120% of attack damage per second for 15 seconds",
+            "Increase shatter by <span class='text-blue'>15%</span>. After shattering the target's shield, deal damage equal to <span class='text-blue'>120%</span> of ATK to the target every second for <span class='text-blue'>15</span> seconds.",
             // 2 star
-            "+16% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "For every enemy target within 6 meters, damage is increased by 10%, up to 30%.",
+            "Increase damage dealt by <span class='text-blue'>6%</span> for each enemy within <span class='text-blue'>6</span> meters, up to a maximum of <span class='text-blue'>30%</span>.",
             // 4 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Increases damage by 100% to targets with shields.",
+            "Increase damage dealt against HP shields or shielded enemies by <span class='text-blue'>100%</span>.",
             // 6 star
-            "10% more damage for every target killed, up to 3 stacks, for 30 seconds."
+            "Increase damage dealt by <span class='text-blue'>10%</span> for each enemy slain for <span class='text-blue'>30</span> seconds (stack up to <span class='text-blue'>3</span> times)."
         ],
         energyCharge:["5.00","b"],
         shieldBreak:["12.50","s"],
@@ -306,24 +306,24 @@ var shiro =
         rarity: "SSR",
         pic:"images/shiro_nobg.png",
         artwork:"images/art/shiro.png",
-        wepName:"Ring Blade of the Sea",
+        wepName:"Chakram of the Seas",
         wepImg:"images/wep/shiro.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
+        wepEffect:"Fully charged weapons will inflict damage equal to <span class='text-blue'>137.00%</span> of ATK with the next attack, and make the target grievous for <span class='text-blue'>7</span> seconds, taking <span class='text-blue'>20%</span> extra damage.",
         awakening:[
             // 1 star
-            "While inside Shiro Skill area, damage and shield breaking efficiency is increased by 30%.",
+            "Increase damage dealt to and all elemental shattering effects on targets within <span class='text-green'>Full Bloom</span>'s range by <span class='text-blue'>30%</span>.",
             // 2 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "15% increase in shield breaking efficiency, clears the cooldown of all weapon skills when the shield is broken.",
+            "Increase shatter by <span class='text-blue'>15%</span> and reset all weapon skill cooldowns upon shattering the target's shield. Can only be triggered once every <span class='text-blue'>30</span> seconds.",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Every hit on targets with a Heavily wounded effect, will extend this debuff time by an additional 7 seconds, up to one time within the same effect (does not stack).",
+            "Attacking a grievous target extends the duration of grievous by an additional <span class='text-blue'>7</span> seconds (only take effect once for the same effect).",
             // 6 star
-            "When using Shiro Skill, the critical rate will become 100% for basic damage, lasts for 8 seconds."
+            "After using <span class='text-green'>Full Bloom</span>, grant a 100% crit chance for the next <span class='text-blue'>8</span> seconds."
         ],
         energyCharge:["6.00","b"],
         shieldBreak:["10.00","a"],
@@ -396,7 +396,7 @@ var cobalt =
         wepImg:"images/wep/cobalt.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        wepEffect:"Fully charged weapons will set the target on fire for <span class='text-blue'>8</span> seconds with the next attack, causing ongoing damage of <span class='text-blue'>58.00%</span> of ATK every second. Ignited targets receive <span class='text-blue'>50%</span> efficacy from healing.",
         awakening:[
             // 1 star
             "3% of the target's current life is added to each attack, up to a maximum of 180% of the attack.",
@@ -477,24 +477,24 @@ var claudia =
         rarity: "SSR",
         pic:"images/claudia_nobg.png",
         artwork:"images/art/claudia.png",
-        wepName:"Red Lotus Blade",
+        wepName:"Guren Blade",
         wepImg:"images/wep/claudia.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
+        wepEffect:"Fully charged weapons will inflict damage equal to <span class='text-blue'>137.00%</span> of ATK with the next attack, and make the target grievous for <span class='text-blue'>7</span> seconds, taking <span class='text-blue'>20%</span> extra damage.",
         awakening:[
             // 1 star
-            "Each time the weapon skill hits its target, it gains a damage increase of 8% for 25 seconds, up to 3 stacks (maximum of one stack per skill release).",
+            "After hitting a target with a skill or discharge skill, grant a stack of damage boost, which increases damage dealt by <span class='text-blue'>8%</span> for <span class='text-blue'>25</span> seconds (stacks up to <span class='text-blue'>3</span> times; each successful skill or discharge use can only grant a single stack).",
             // 2 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "When the skill hits the target, it increases the physical damage and shield breaking efficiency by 10% for 15 seconds, does not stack.",
+            "Hitting a target with a skill or discharge skill applies a stack of War Wounds to the target, increasing incoming physical damage and shatter effects from physical and elemental weapons taken by the target by <span class='text-blue'>10%</span> for <span class='text-blue'>15</span> seconds. Stack up to <span class='text-blue'>1</span> time.",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Every hit from the weapon skill, increases the damage of all weapon skills by 20% for 15 seconds (does not stack)",
+            "Hitting targets with discharge skills grants skill damage boost, which increases all weapon skill damage by <span class='text-blue'>20%</span> for <span class='text-blue'>15</span> seconds (cannot stack).",
             // 6 star
-            "Damage does not decrease after hitting with weapon skill (overrides resistance)"
+            "Hitting the same target no longer reduces the damage dealt. After using Guren Blade or a discharge skill, applies <span class='text-blue'>1</span> stack of War Wounds to all targets within 8 meters."
         ],
         energyCharge:["12.00","s"],
         shieldBreak:["7.50","a"],
@@ -653,24 +653,24 @@ var meryl =
         rarity: "SSR",
         pic:"images/meryl_nobg.png",
         artwork:"images/art/meryl.png",
-        wepName:"Rose's Edge",
+        wepName:"Rosy Edge",
         wepImg:"images/wep/meryl.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
+        wepEffect:"Fully charged weapons will <span class='text-blue'>freeze</span> the target for <span class='text-blue'>2</span> seconds and leave it frostbitten for <span class='text-blue'>6</span> seconds. Breaking the ice shell causes additional damage equal to <span class='text-blue'>151.00%</span> of ATK. While frostbitten, the target's weapon charge rate is reduced by <span class='text-blue'>50%</span>.",
         awakening:[
             // 1 star
-            "15% increase in shield breaking efficiency, gain 10% Health after breaking the target's shield.",
+            "Increase shatter by <span class='text-blue'>15%</span> and restore <span class='text-blue'>10%</span> of HP after shattering the target's shield.",
             // 2 star
-            "+16% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "When switching to this weapon, it gains an ice shield of 10% of your maximum health, which has a cooldown of 60 seconds and lasts up to 10 seconds.",
+            "Obtain Health Ice Shield with <span class='text-blue'>10%</span> maximum health value when the weapon is switched; cooldown takes <span class='text-blue'>20</span> seconds; Ice Shield lasts up to <span class='text-blue'>10</span> seconds.",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "50% increase in damage and shield breaking efficiency during the ice shield state.",
+            "Increase damage and shatter by <span class='text-blue'>50%</span> while the shield is active.",
             // 6 star
-            "When switching to this weapon, it gains an ice shield of 20% of your maximum health, which makes you immune to crowd control, and has a cooldown time for 60 seconds (lasts up to 10 seconds)."
+            "Health Ice Shield with a health value of up to <span class='text-blue'>20%</span> is obtained when switched to the weapon. The shield provides immunity to control effects; cooldown takes <span class='text-blue'>20</span> seconds; Ice Shield lasts up to <span class='text-blue'>10</span> seconds."
         ],
         energyCharge:["4.00","b"],
         shieldBreak:["12.00","s"],
@@ -733,24 +733,24 @@ var hane =
         rarity: "SSR",
         pic:"images/hane_nobg.png",
         artwork:"images/art/hane.png",
-        wepName:"Ice Wind Vector",
+        wepName:"Icewind Arrow",
         wepImg:"images/wep/hane.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
+        wepEffect:"Fully charged weapons will <span class='text-blue'>freeze</span> the target for <span class='text-blue'>2</span> seconds and leave it frostbitten for <span class='text-blue'>6</span> seconds. Breaking the ice shell causes additional damage equal to <span class='text-blue'>151.00%</span> of ATK. While frostbitten, the target's weapon charge rate is reduced by <span class='text-blue'>50%</span>.",
         awakening:[
             // 1 star
-            "For each arrow that hits the target with a dodge attack, you gain a Sharp Arrow effect that increases damage by 8% per stack, can be stacked 3 times, for 15 seconds.",
+            "Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by <span class='text-blue'>8%</span> for <span class='text-blue'>15</span> seconds. Stack up to <span class='text-blue'>3</span>.",
             // 2 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "Dodge attack shoots out 3 arrows.",
+            "Launching a Dodge attack fires <span class='text-blue'>3</span> Charged Arrows.",
             // 4 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "The duration of Sharp Arrow is doubled, and decreases the target's movement speed by 25%.",
+            "Double duration of Arrow Rain and slow targets by <span class='text-blue'>25%</span>.",
             // 6 star
-            "Sharp Arrow can be stacked to 5 levels. One arrow gains 3 levels immediately after hitting the target, and 5 levels if it hits the head."
+            "Sharp Arrow stacks up to <span class='text-blue'>5<span> times. Hitting a target with Charged Arrow immediately grants <span class='text-blue'>3</span> stacks, headshots grant <span class='text-blue'>5</span> stacks."
         ],
         energyCharge:["11.50","s"],
         shieldBreak:["4.00","b"],
@@ -817,24 +817,24 @@ var huma =
         rarity: "SSR",
         pic:"images/huma_nobg.png",
         artwork:"images/art/huma.png",
-        wepName:"V2 Meltdown Shield",
+        wepName:"Molten Shield V2",
         wepImg:"images/wep/huma.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_tank.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        wepEffect:"Fully charged weapons will set the target on fire for <span class='text-blue'>8</span> seconds with the next attack, causing ongoing damage of <span class='text-blue'>58.00%</span> of ATK every second. Ignited targets receive <span class='text-blue'>50%</span> efficacy from healing.",
         awakening:[
             // 1 star
-            "When dodging while in shield form, you gain a layer of Shield, up to 3 layers, each layer providing 5% damage reduction for 8 seconds.<br>When switching to Axe form, the Shield is transformed into an Axe, and each layer of Shield increases the damage of Axe by 15% each layer for 8 seconds. (Clears when switching to another weapon)",
+            "Using a Dodge skill or branch skill while in shield form grants a stack of Strong Shield, which grants <span class='text-blue'>10%</span> damage reduction for <span class='text-blue'>15</span> seconds and stacks up to <span class='text-blue'>3</span> times. Switching to axe form converts all Strong Shield stacks to Sharp Axe stacks, each of which increases damage dealt by <span class='text-blue'>15%</span> for <span class='text-blue'>15</span> seconds. Switching to a different weapon cancels this effect.",
             // 2 star
-            "+16% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "In shield form, a dodging attack that hits the target adds an additional 4% of your current health to damage.",
+            "While in shield form, branch/dodge attacks deal additional damage to targets equal to <span class='text-blue'>4%</span> of the user's current HP.",
             // 4 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Gain 30% damage reduction immediately when switching to Shield or Axe, the buff decreases by 10% every 3 seconds to a minimum of 10%. Disappears when switching to another weapon, 30 seconds cooldown.",
+            "After switching to a shield axe, immediately grant <span class='text-blue'>30%</span> damage reduction that diminishes by <span class='text-blue'>10%</span> every <span class='text-blue'>3<span> seconds, down to a minimum of <span class='text-blue'>10%</span>. Switching weapons cancels this effect. Cooldown: <span class='text-blue'>30</span> seconds.",
             // 6 star
-            "Enhances switching skills.<br>Shield Change Enhancement: skill increases damage by 60% and extends the range of the Flame Zone by 30%.<br>Axe Change Enhancement: damage taken within 5 seconds is converted into HP (Converts up to 15% MAX HP)"
+            "Enhance conversion skills.<br>Shield Enhancement: Increase damage dealt by <span class='text-blue'>60%</span> and expand the radius of the flame zome by <span class='text-blue'>30%</span>.<br>Axe Enhancement: For the next <span class='text-blue'>5</span> seconds after using this ability, turn all damage received into HP (up to a maximum of <span class='text-blue'>15%</span> of the user's Max HP)."
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["10.00","a"],
@@ -905,24 +905,24 @@ var karasuma =
         rarity: "SSR",
         pic:"images/karasuma_nobg.png",
         artwork:"images/art/karasuma.png",
-        wepName:"Lightning Blades",
+        wepName:"Thunderblades",
         wepImg:"images/wep/karasuma.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
         wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
-            "40% increase in crit rate of all attacks with the twin blades when they hit the target's back: 100% increase in the crit rate of back stabs against electrified targets. Crit damage is increased by 30%.",
+            "Attacking targets from behind increases crit rate of all dual blades attacks by <span class='text-blue'>40%</span>. Attacking an electrified target from behind increases crit rate by <span class='text-blue'>100%</span> and crit damage by <span class='text-blue'>30%</span>.",
             // 2 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "30% more damage to targets with less than 60% health.",
+            "Increase damage by <span class='text-blue'>30%</span> to targets with less than <span class='text-blue'>60%</span> HP.",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "When triggering the backstab effect, you will gain 100% crit rate that lasts for 4 seconds and crit damage is increased by 50%, with a cooldown time of 10 seconds.",
+            "Triggering a Back Attack grants a 100% crit chance for the next <span class='text-blue'>4</span> seconds and increases crit damage by <span class='text-blue'>50%</span>. Cooldown: <span class='text-blue'>10</span> seconds.",
             // 6 star
-            "When releasing a skill, the target receives 20% more damage from the electric element for 20 seconds."
+            "After using a skill, increase volt damage dealt to the target by <span class='text-blue'>20%</span> for <span class='text-blue'>20</span> seconds."
         ],
         energyCharge:["8.00","a"],
         shieldBreak:["6.00","b"],
@@ -990,24 +990,28 @@ var zero =
         rarity: "SSR",
         pic:"images/zero_nobg.png",
         artwork:"images/art/zero.png",
-        wepName:"Veto Cube",
+        wepName:"Negating Cube",
         wepImg:"images/wep/zero.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_support.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        wepEffect:"Fully charged weapons will set the target on fire for <span class='text-blue'>8</span> seconds with the next attack, causing ongoing damage of <span class='text-blue'>58.00%</span> of ATK every second. Ignited targets receive <span class='text-blue'>50%</span> efficacy from healing.",
         awakening:[
             // 1 star
-            "20% chance of generating a healing sphere when dealing damage, lasts 20 seconds and restores 60% of attack power as health to the player who picks up the healing sphere.",
+            "Deal damage and produce a healing orb, which lasts for <span class='text-blue'>20</span> seconds and restore HP of any teammate who picks it up equal to <span class='text-blue'>60%</span> of ATK. <span class='text-blue'>2</span>-second cooldown.",
+            // 20% chance of generating a healing sphere when dealing damage, lasts 20 seconds and restores 60% of attack power as health to the player who picks up the healing sphere.
+            
             // 2 star
             "Increase the current weapon's base ATK growth by <span class='text-blue'>16%</span>.",
             // 3 star
-            "Skill cooldown reduced from 90 seconds to 45 seconds. Immunity to debuffs during the skill and gain a shield of 30% from current weapon power that regenerate health per second.",
+            "Reduce skill cooldown from <span class='text-blue'>90</span> seconds to <span class='text-blue'>45</span> seconds. Restore HP equal to <span class='text-blue'>30%</span> of ATK every second while the shield is active.",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "20% chance to create a damage energy sphere when dealing damage, lasts for 20 seconds, players who pick up the energy sphere receive a 1.5% attack boost, stacks up to 10 levels, lasts 45 seconds.",
+            "Deal damage and produce a damage orb, which lsts for <span class='text-blue'>20</span> seconds and increases ATK of any teammate who picks it up by <span class='text-blue'>1.5%</span>. Stacks up to <span class='text-blue'>10</span> times and lasts for <span class='text-blue'>45</span> seconds. <span class='text-blue'>2.5</span>-second cooldown.",
+            // 2% IN CHINA
+            
             // 6 star
-            "When the skill is released, it adds the same number of healing and damage orbs to friendly units from the amount of orbs you have."
+            "Using an ability grants allies healing orbs and damage orbs equal to the number of Omnium Cubes."
         ],
         energyCharge:["13.00","s"],
         shieldBreak:["5.00","b"],
@@ -1072,17 +1076,17 @@ var marc =
         wepImg:"images/wep/marc.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_tank.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (137% x ATK) damage.",
+        wepEffect:"Fully charged weapons will inflict damage equal to <span class='text-blue'>137.00%</span> of ATK with the next attack, and make the target grievous for <span class='text-blue'>7</span> seconds, taking <span class='text-blue'>20%</span> extra damage.",
         exclusiveEffect:"In group status (Guardian): When releasing Re-entry, Form Switch or Full Shot, it will damage a friendly player with the lowest life for 60% for 10 seconds, and restore 10% of lost blood after the damage. The effect will not be removed and cannot be triggered again until the end of time. When not in a team (increase): 50% physical damage reduction in Heavy Form. Heavy Dimensional Shield: 1 point of Heavy Dimensional Energy is awarded for Heavy Dimensional Punch/Double Slash/Impact Slash hits. Converts 20% of your current life into 1.5 times your maximum life (up to 1.5 times your maximum life, healing is reduced by 50%), shield lasts 15 seconds, cannot be gained if you are below 10% of your life. At the end of the shield, 66.7% of the remaining shield value is converted to life, and 2 points of energy are gained on a hit to a weakened target. (Heavy Shield) is gained by converting other life shield values into (Heavy Shield) and is immune to life shield additions.",
         awakening:[
             // 1 star
             "Immediately gains [Heavy Shield] when releasing Heavy Dimensional Entry, Form Switch or Full Shot",
             // 2 star
-            "+16% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>16%</span>.",
             // 3 star
             "1 level of 35% final damage boost at the end of [Heavy Shield] and when it breaks and refreshes. Lasts for 20 seconds, does not stack ",
             // 4 star
-            "+32% base health increase.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
             "[Heavy Shield] deals (160%*Current Attack + 5%*Loss of Life) damage to nearby targets at the end of [Heavy Shield] when it breaks and refreshes, and gains 50 weapon charge points on hit. ",
             // 6 star
@@ -1236,7 +1240,7 @@ var frigg =
         wepImg:"images/wep/frigg.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will freeze the enemy for 2 seconds, cause frostbite for 6 seconds, and deal (151.00% x ATK) damage when the freeze breaks. The target's energy recharge speed will be reduced by 50% during frostbite.",
+        wepEffect:"Fully charged weapons will <span class='text-blue'>freeze</span> the target for <span class='text-blue'>2</span> seconds and leave it frostbitten for <span class='text-blue'>6</span> seconds. Breaking the ice shell causes additional damage equal to <span class='text-blue'>151.00%</span> of ATK. While frostbitten, the target's weapon charge rate is reduced by <span class='text-blue'>50%</span>.",
         exclusiveEffect:"After releasing the skill “Fimbulwinter” a large area of ice is formed, inside this area dodges are not consumed up to 3 times? 15% damage increase while in the ice domain. Domain lasts 25s and using the skill again will replace the old one.",
         awakening:[
             // 1 star
@@ -1317,7 +1321,7 @@ var ruby =
         wepImg:"images/wep/ruby.png",
         eleImg:"images/ele_fire.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will ignite enemies for 8 seconds, dealing 58% damage per second and reducing their healing by 50% during the burn.",
+        wepEffect:"Fully charged weapons will set the target on fire for <span class='text-blue'>8</span> seconds with the next attack, causing ongoing damage of <span class='text-blue'>58.00%</span> of ATK every second. Ignited targets receive <span class='text-blue'>50%</span> efficacy from healing.",
         exclusiveEffect:'Fire Resonance; triggered by equipping 2 or more fire element weapons, boosts fire attack by 20% and fire resistance by 40%, can take effect after equipping them in the background',
         awakening:[
             // 1 star
@@ -1403,7 +1407,7 @@ var bailing =
         rarity: "SR",
         pic:"images/bailing_nobg.png",
         artwork:"images/art/bailing.png",
-        wepName:"Nightbird's Feather",
+        wepName:"Nightingale's Feather",
         wepImg:"images/wep/bailing.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_damage.png",
@@ -1577,7 +1581,7 @@ var manaka =
         rarity: "SR",
         pic:"images/manaka_nobg.png",
         artwork:"images/art/manaka.png",
-        wepName:"Thunderbolt",
+        wepName:"Thunderous Halberd",
         wepImg:"images/wep/manaka.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
@@ -1662,7 +1666,7 @@ var peppa =
         rarity: "SR",
         pic:"images/peppa_nobg.png",
         artwork:"images/art/peppa.png",
-        wepName:"Sceptre of the Stigmata",
+        wepName:"Staff of Scars",
         wepImg:"images/wep/peppa.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_support.png",
@@ -1750,7 +1754,7 @@ var xi =
         rarity: "SR",
         pic:"images/xi_nobg.png",
         artwork:"images/art/xi.png",
-        wepName:"Initial Strike",
+        wepName:"Pummeler",
         wepImg:"images/wep/xi.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
