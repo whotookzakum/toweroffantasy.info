@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
     $(".modal-menu-item").click(function () {
 
         // MIMICS & CHIPS PAGES
-        if (document.URL.includes("mimics") || document.URL.includes("chips")) {
+        if (document.URL.includes("simulacra") || document.URL.includes("matrices")) {
             if ($(this).children().is("#btn-samir")) {
                 setModalData(samir);
             } else if ($(this).children().is("#btn-coco")) {
@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
             } else if ($(this).children().is("#btn-manaka")) {
                 setModalData(manaka);
             }
-            // R chips
+            // SR & R chips
             else if (document.URL.includes("chips")) {
                 if ($(this).children().is("#btn-roberag")) {
                     setModalData(roberag);
@@ -88,7 +88,7 @@ jQuery(document).ready(function ($) {
         }
 
         // GADGETS PAGE
-        if (document.URL.includes("gadgets")) {
+        if (document.URL.includes("relics")) {
             if ($(this).children().is("#btn-giantarms")) {
                 setModalData(gadgets[0]);
             } else if ($(this).children().is("#btn-atomicshield")) {
@@ -162,13 +162,44 @@ jQuery(document).ready(function ($) {
         }
 
         // MIMIC PAGE
-        if (document.URL.includes("mimics")) {
+        if (document.URL.includes("simulacra")) {
             // Weapon
             $("#wep-name").html(i.wepName);
             $("#wep-type-img").attr('src', i.resoImg);
             $("#wep-element-img").attr('src', i.eleImg);
             $("#modal-bg-img").attr('src', i.artwork);
             $("#wep-img").attr('src', i.wepImg);
+            
+            let wepEffectName = '';
+            let wepEffectNameColor = '';
+            
+            switch (i.eleImg) {
+                case "images/ele_fire.png":
+                    wepEffectName = 'Flame';
+                    wepEffectNameColor = 'text-flame';
+                    break;
+                case "images/ele_physical.png":
+                    wepEffectName = 'Grievous';
+                    wepEffectNameColor = 'text-phys';
+                    break;
+                case "images/ele_ice.png":
+                    wepEffectName = 'Ice Shell';
+                    wepEffectNameColor = 'text-ice';
+                    break;
+                case "images/ele_electric.png":
+                    wepEffectName = 'Volt';
+                    wepEffectNameColor = 'text-volt';
+                    break;
+                default:
+                    wepEffectName = 'Elemental Efect';
+                    wepEffectNameColor = 'text-blue';
+            }
+            
+            $("#wep-effect-name").html(
+                //<img src=${i.eleImg}> for the image
+                `<strong class="${wepEffectNameColor}">${wepEffectName}</strong>`
+            );
+            
             $("#wep-effect").html(i.wepEffect);
             if (i.hasOwnProperty('exclusiveEffect')) {
                 $("#exclusive-effect-wrapper").removeClass("d-none");
@@ -227,13 +258,6 @@ jQuery(document).ready(function ($) {
             $("#star-all-4").html(i.awakening[3]);
             $("#star-all-5").html(i.awakening[4]);
             $("#star-all-6").html(i.awakening[5]);
-
-            // Chips
-            $("#chip-img").attr("src", i.chipImg);
-            $("#chip-2").html(i.chipEffect[0]);
-            $("#chip-3").html(i.chipEffect[1]);
-            $("#chip-4").html(i.chipEffect[1]);
-            $("#recommended-chips-for-wep").html(i.wepName);
             
             // Recommended chips
             $("#recommended-chips-wrapper").html('');
@@ -297,7 +321,7 @@ jQuery(document).ready(function ($) {
         }
 
         // GADGET PAGE
-        if (document.URL.includes("gadgets")) {
+        if (document.URL.includes("relics")) {
             $("#gadget-img").attr("src", i.pic);
             $("#gadget-desc").html(i.description);
 
@@ -317,8 +341,8 @@ jQuery(document).ready(function ($) {
         }
 
         // CHIP PAGE
-        if (document.URL.includes("chips")) {
-            $("#item-name").html(i.name + " Chip");
+        if (document.URL.includes("matrices")) {
+            $("#item-name").html(i.name + " Matrices");
             $("#modal-bg-img").attr('src', i.artwork);
             $("#chip-img").attr("src", i.chipImg);
             $("#chip-2").html(i.chipEffect[0]);
