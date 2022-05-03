@@ -361,7 +361,7 @@ jQuery(document).ready(function ($) {
         for (let j = 0; j < food[i].ingredients.length; j++) {
             recipe += `
             <div class="col-2 mx-2 p-0 ingredient-group">
-                <div class="item-img-wrapper bg-rarity-${food[i].ingredients[j][0].rarity} mx-auto mb-2">
+                <div class="item-wrapper-with-bg bg-rarity-${food[i].ingredients[j][0].rarity}">
                     <img class="item-img" src="images/food/${food[i].ingredients[j][0].imgSrc}">
                     <div class="badge">${food[i].ingredients[j][1]}</div>
                 </div>
@@ -376,10 +376,10 @@ jQuery(document).ready(function ($) {
         }
 
         $("#food-wrapper").append(`
-        <div class="row p-3 food-group">
+        <div class="row food-group">
 
             <div class="col col-lg-2 text-center">
-                <div class="item-img-wrapper bg-rarity-${food[i].rarity} mx-auto my-3">
+                <div class="item-wrapper-with-bg bg-rarity-${food[i].rarity}">
                     <img class="item-img" src="images/food/${food[i].imgSrc}">
                 </div>
                 <strong class="font-chakra text-rarity-${food[i].rarity}">${food[i].name}</strong>
