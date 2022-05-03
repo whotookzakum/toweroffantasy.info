@@ -60,7 +60,7 @@ jQuery(document).ready(function ($) {
                 setModalData(manaka);
             }
             // SR & R chips
-            else if (document.URL.includes("chips")) {
+            else if (document.URL.includes("matrices")) {
                 if ($(this).children().is("#btn-roberag")) {
                     setModalData(roberag);
                 } else if ($(this).children().is("#btn-apophis")) {
