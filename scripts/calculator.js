@@ -77,9 +77,10 @@ jQuery(document).ready(function ($) {
         
         
         // CHIP SET 1
-        // Find selected chip
+        // Get selected chip
         var selectedChipSet = document.getElementById('chipSet1Dropdown').value;
-        var chipSet1 = chipBuffTypes.get(selectedChipSet); // returns array
+        // Fetch the array containing values for that chip
+        var chipSet1 = chipBuffTypes.get(selectedChipSet);
         // Calculate buff value based on constellation level
         chipBuffOne = chipSet1[parseInt(document.querySelector('input[name="chipSet1StarOptions"]:checked').value)];
         if (selectedChipSet == 'karasuma2') {
@@ -87,15 +88,19 @@ jQuery(document).ready(function ($) {
             chipBuffOne = 0;
         }
         else if (selectedChipSet == 'samir4') {
+            // Calculate the damage from non crit for samir4
+            dmgFromNoncrit *= (1 + chipBuffOne);
             
-            chipBuffOne = 0;
+            // Set the buff value to samir2
+            chipSet1 = chipBuffTypes.get('samir2');
+            chipBuffOne = chipSet1[parseInt(document.querySelector('input[name="chipSet1StarOptions"]:checked').value)];
         }
         else if (selectedChipSet == 'shiro2') {
             chipBuffOne *= 0.5;
         }
         
         // CHIP SET 2
-        // Find selected chip
+        // Get selected chip
         selectedChipSet = document.getElementById('chipSet2Dropdown').value;
         var chipSet2 = chipBuffTypes.get(selectedChipSet); // returns array
         // Calculate buff value based on constellation level
@@ -197,7 +202,7 @@ jQuery(document).ready(function ($) {
             
         }
         
-        chipSetFootnote(document.getElementById('chipSet1Dropdown').value);
+        chipSetFootnote('chipSet1Dropdown');
         
         calculateTotalDmgPercent();
     });
@@ -221,7 +226,7 @@ jQuery(document).ready(function ($) {
         }
         */
         
-        chipSetFootnote(document.getElementById('chipSet2Dropdown').value);
+        chipSetFootnote('chipSet2Dropdown');
         
         calculateTotalDmgPercent();
     });
@@ -305,35 +310,40 @@ jQuery(document).ready(function ($) {
         
         // Select which footnote to amend based on which chip set was passed
         var selectedFootnote = $("#footnote-one");;
-        if (selectedChipSet == document.getElementById('chipSet2Dropdown').value) {
+        if (selectedChipSet == 'chipSet2Dropdown') {
             selectedFootnote = $("#footnote-two");
         }
         
         // Add footnote based on chip
-        if (selectedChipSet == 'claudia2') {
-            selectedFootnote.html("while airborne");
-        }
-        else if (selectedChipSet == 'hane2') {
-            selectedFootnote.html("while no enemies are within 4 meters");
-        }
-        else if (selectedChipSet == 'cobalt4') {
-            selectedFootnote.html("to targets inflicted with an abnormal status");
-        }
-        else if (selectedChipSet == 'king2') {
-            selectedFootnote.html("with 3 stacks of KING's chip buff");
-        }
-        else if (selectedChipSet == 'karasuma2') {
-            selectedFootnote.html("overall damage");
-        }
-        else if (selectedChipSet == 'samir4') {
-            selectedFootnote.html("(Samir's 4 set does not crit)");
-        }
-        else {
-            selectedFootnote.html("");
+        
+        switch (document.getElementById(selectedChipSet).value) {
+            case 'claudia2':
+                selectedFootnote.html("while airborne");
+                break;
+            case 'hane2':
+                selectedFootnote.html("while no enemies are within 4 meters");
+                break;
+            case 'cobalt4':
+                selectedFootnote.html("to targets inflicted with an abnormal status");
+                $("#footnote-two").html("");
+                break;
+            case 'king2':
+                selectedFootnote.html("with 3 stacks of KING's chip buff");
+                break;
+            case 'shiro2':
+            case 'karasuma2':
+                selectedFootnote.html("overall damage");
+                break;
+            case 'samir4':
+                selectedFootnote.html("(Samir's 4 set does not crit)");
+                $("#footnote-two").html("");
+                break;
+            default:
+                selectedFootnote.html("");
         }
         
-        // Warn user if chip sets are identical
-        if (document.getElementById('chipSet1Dropdown').value === document.getElementById('chipSet2Dropdown').value) {
+        // Warn user if chip sets are identical and set 1 is not "none"
+        if (document.getElementById('chipSet1Dropdown').value === document.getElementById('chipSet2Dropdown').value && document.getElementById('chipSet1Dropdown').value != 'none') {
             $("#footnote-warning").html("Warning: Chip sets 1 and 2 are identical")
         }
         else {
