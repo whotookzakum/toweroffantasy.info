@@ -60,7 +60,7 @@ var samir =
         wepImg:"images/wep/samir.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
+        wepEffect:"When the weapon is fully charged, the next attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
             "Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to <span class='text-blue'>30%</span> of ATK to the target and nearby enemies. Cooldown: <span class='text-blue'>0.5</span> seconds.",
@@ -569,7 +569,7 @@ var baiyuekui =
         wepImg:"images/wep/baiyuekui.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
+        wepEffect:"When the weapon is fully charged, the next attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         exclusiveEffect:"When entering combat, turn on Battle Spirit and increase your final damage by 15%. and your cellular aging is accelerated (reducing your current life by 1% every 5 seconds), which clears when you leave combat [the effect of switching weapons disappears]. If your life drops below 50%, cellular aging stops and the Battle Intent booster effect remains (the effect of switching weapons disappears).",
         awakening:[
             // 1 star
@@ -909,7 +909,7 @@ var karasuma =
         wepImg:"images/wep/karasuma.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
+        wepEffect:"When the weapon is fully charged, the next attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
             "Attacking targets from behind increases crit rate of all dual blades attacks by <span class='text-blue'>40%</span>. Attacking an electrified target from behind increases crit rate by <span class='text-blue'>100%</span> and crit damage by <span class='text-blue'>30%</span>.",
@@ -1152,7 +1152,7 @@ var nemesis =
         wepImg:"images/wep/nemesis.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_support.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
+        wepEffect:"When the weapon is fully charged, the next attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>144.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         exclusiveEffect:"electric resonance; triggered by equipping 2 or more electric weapons, boosts electric attack by 20% and electric resistance by 40%, also effective on the backstage.",
         awakening:[
             // 1 star
@@ -1411,20 +1411,20 @@ var bailing =
         wepImg:"images/wep/bailing.png",
         eleImg:"images/ele_physical.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will inflicted 'Heavily Wounded' on enemies for 7 seconds. Enemies will receive 20% extra damage, and deals (100% x ATK) damage.",
+        wepEffect:"Fully charged weapons will inflict damage equal to <span class='text-blue'>100.00%</span> of ATK with the next attack, and make the target grievous for <span class='text-blue'>7</span> seconds, taking <span class='text-blue'>20%</span> extra damage.",
         awakening:[
             // 1 star
-            "The fifth hit of a normal attack or when using weapon skill, restores one dodge.",
+            "Restore 1 dodge attempt every fifth normal attack or after using <span class='text-green'>Piercing Shot</span>",
             // 2 star
-            "+10% to the base attack growth of the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>10%</span>.",
             // 3 star
-            "+30% increase in headshot damage.",
+            "Increase headshot damage by <span class='text-blue'>30%</span>.",
             // 4 star
-            "+20% to the base attack growth of the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>20%</span>.",
             // 5 star
-            "A dodge attack applies Heavily Wounded to the target for 7 seconds.",
+            "Dodge skills inflict grievous on targets for <span class='text-blue'>7</span> seconds.",
             // 6 star
-            "+30% crit rate and +50% higher crit damage to Heavily Wounded targets."
+            "Increase crit rate by <span class='text-blue'>30%</span> and crit damage by <span class='text-blue'>50%</span> against grievous targets."
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["6.00","b"],
@@ -1498,20 +1498,20 @@ var hilda =
         wepImg:"images/wep/hilda.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"The next attack freezes the enemy for 2 seconds when the weapon is fully charged and causes frostbite for 6 seconds, and deals 111.00%*attack damage when the freeze breaks.The target's weapon recharge speed will be reduced by 50% during frostbite.",
+        wepEffect:"Fully charged weapons will <span class='text-blue'>freeze</span> the target for <span class='text-blue'>2</span> seconds and leave it frostbitten for <span class='text-blue'>6</span> seconds. Breaking the ice shell causes additional damage equal to <span class='text-blue'>111.00%</span> of ATK. While frostbitten, the target's weapon charge rate is reduced by <span class='text-blue'>50%</span>.",
         awakening:[
             // 1 star
-            "Each hit on a normal attack increases damage by 1% for 2 seconds, stacking up to 15 levels, and increases the number of ammunition rounds to 60.",
+            "Every successful normal attack increases damage by <span class='text-blue'>1%</span> for <span class='text-blue'>2</span> seconds (stack up to <span class='text-blue'>15</span> times). Increase ammo count to <span class='text-blue'>60</span>.",
             // 2 star
-            "+10% to the base attack growth of the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>10%</span>.",
             // 3 star
-            "+30% increase in damage and shield breaking for 10 seconds after switching to this weapon, 25 seconds cooldown time and increases the number of ammunition rounds to 80.",
+            "Within <span class='text-blue'>10</span> seconds of switching to the weapon, increase damage of normal attacks and shatter by <span class='text-blue'>30%</span>. Cooldown: <span class='text-blue'>25</span> seconds. Increase ammo to <span class='text-blue'>80</span>.",
             // 4 star
-            "+20% to the base attack growth of the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>20%</span>.",
             // 5 star
-            "Cooldown time for normal attack in turret form is reduced to 2 seconds. ",
+            "Reduce cooldown of normal attacks while in turret mode to <span class='text-blue'>2</span> seconds.",
             // 6 star
-            "+60% increase in normal attack damage and shield breaking efficiency for 10 seconds after switching to this weapon, 25 seconds cooldown time."
+            "Within <span class='text-blue'>10</span> seconds upon switching to the weapon, increase damage of normal attacks and shatter by <span class='text-blue'>60%</span>. Cooldown: <span class='text-blue'>25</span> seconds."
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["10.00","a"],
@@ -1585,23 +1585,23 @@ var manaka =
         wepImg:"images/wep/manaka.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deals 106.00%* attack damage, They cannot gain any buffs for 6 seconds. (Also applies electro charged for 6 seconds)",
+        wepEffect:"When the weapon is fully charged, the next attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>106.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
-            "+15% more shield breaking efficiency, +15% more attack for the whole team when the shield is breached, does not stack, lasts 30 seconds.",
+            "Increase shatter by <span class='text-blue'>15%</span>. After shattering the target's shield, increase all teammates' ATK by <span class='text-blue'>15%</span> for <span class='text-blue'>30</span> seconds. This cannot be stacked.",
             // 2 star
-            "+10% base health growth.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>10%</span>.",
             // 3 star
-            "When the weapon skill hits a target, it reduces the target's attack by 5% while increasing your own attack by 5% for 15 seconds, stacks when hitting multiple targets, up to 3 stacks. The effect is doubled when hitting Heavily Wounded targets.",
+            "After hitting a target with <span class='text-green'>Moonchase</span>, reduce their ATK by <span class='text-blue'>5%</span> and increase the user's ATK by <span class='text-blue'>5%</span> for <span class='text-blue'>15</span> seconds (effect can be stacked up to <span class='text-blue'>3</span> times by hitting multiple targets). Effect is doubled to grievous targets.",
             // 4 star
-            "+20% to the base attack growth of the current weapon.",
+            "Increase the current weapon's base ATK growth by <span class='text-blue'>20%</span>.",
             // 5 star
-            "Doubles the stun duration of the forward dodge attack.",
+            "Double stun duration from dodge skills.<br><img class='flag' src='images/cn.svg'> Double stun duration from forward dodge skills.",
             // 6 star
-            "The longer the throw distance of the QTE skill, the higher the damage, up to 100% more damage."
+            "Discharge deals more damage the further it travels, up to <span class='text-blue'>100%</span> more damage."
         ],
         energyCharge:["7.00","b"],
-        shieldBreak:["12.60","s"],
+        shieldBreak:["11.00","s"],
         materials:["electric", "red", "black"],
         wepBaseStats: [attack, defense, health],
         
@@ -1670,20 +1670,20 @@ var peppa =
         wepImg:"images/wep/peppa.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_support.png",
-        wepEffect:"When the weapon is fully charged, the next basic attack will shock/stun the enemy for 1 second, removing their current buffs and deals 106.00%* attack damage, They cannot gain any buffs for 6 seconds. (Also applies electro charged for 6 seconds)",
+        wepEffect:"When the weapon is fully charged, the next attack will <span class='text-blue'>paralyze</span> targets for <span class='text-blue'>1</span> second and electrify them for <span class='text-blue'>6</span> seconds, negating all buffs and dealing damage equal to <span class='text-blue'>106.00%</span> of ATK. Targets can't receive any buffs for the next <span class='text-blue'>6</span> seconds.",
         awakening:[
             // 1 star
-            "Heals all teammates within 10 metres of the weapon when the dodge attack is released, healing 100 % of the attack.",
+            "Heal all teammates within <span class='text-blue'>10</span> meters for <span class='text-blue'>100%</span> of ATK after using a Dodge skill.",
             // 2 star
-            "+10% base health growth.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>10%</span>.",
             // 3 star
-            "Two missiles are fired to each normal attack, each dealing 5% attack damage to the target and gaining 5 points of weapon power.",
+            "Normal attacks also fire two missiles, each dealing damage equal to <span class='text-blue'>5%</span> of ATK to the target and restoring <span class='text-blue'>5</span> weapon charge points.",
             // 4 star
-            "+20% base health growth.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>20%</span>.",
             // 5 star
-            "20% increase in weapon recharge rate. (Missile attacks do not receive this bonus) ",
+            "Increase speed of obtaining weapon charge by <span class='text-blue'>20%</span> (not applicable to missile attacks).",
             // 6 star
-            "The skill removes crowd control effects from the target and gives 60% damage reduction to friendly units within the range of the skill."
+            "Grant all teammates within range of the skill <span class='text-blue'>60%</span> damage reduction and immunity to crowd control effects."
         ],
         energyCharge:["10.00","a"],
         shieldBreak:["4.00","b"],
@@ -1758,20 +1758,20 @@ var xi =
         wepImg:"images/wep/xi.png",
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
-        wepEffect:"The next attack freezes the enemy for 2 seconds when the weapon is fully charged and causes frostbite for 6 seconds, and deals 111.00%*attack damage when the freeze breaks.The target's weapon recharge speed will be reduced by 50% during frostbite.",
+        wepEffect:"Fully charged weapons will <span class='text-blue'>freeze</span> the target for <span class='text-blue'>2</span> seconds and leave it frostbitten for <span class='text-blue'>6</span> seconds. Breaking the ice shell causes additional damage equal to <span class='text-blue'>111.00%</span> of ATK. While frostbitten, the target's weapon charge rate is reduced by <span class='text-blue'>50%</span>.",
         awakening:[
             // 1 star
-            "Taunts nearby enemies when switching to this weapon, and gains invulnerability for 1 hit (lasts 4 seconds) and gain super armor (lasts 8 seconds). 15 seconds cooldown.",
+            "Taunt nearby targets after switching to this weapon, preventing <span class='text-blue'>1</span> instance of damage in the next <span class='text-blue'>8</span> seconds and granting hyperbody for the next <span class='text-blue'>8</span> seconds. Cooldown: <span class='text-blue'>15</span> seconds.",
             // 2 star
-            "+10% base health growth.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>10%</span>.",
             // 3 star
-            "Damage received is reduced by 50% after taking damage, for the next 6 seconds, cooldown 20 seconds. ",
+            "After taking damage, reduce all damage received by <span class='text-blue'>50%</span> for the next <span class='text-blue'>6</span> seconds. Cooldown: <span class='text-blue'>20</span> seconds.",
             // 4 star
-            "+20% base health growth.",
+            "Increase the current weapon's base HP growth by <span class='text-blue'>20%</span>.",
             // 5 star
-            "Apply 2.5 seconds stun effect on normal attacks, 20 seconds cooldown.",
+            "Normal attacks <span class='text-blue'>stun</span> targets for <span class='text-blue'>2.5</span> seconds. Cooldown: <span class='text-blue'>20</span> seconds.",
             // 6 star
-            "QTE skill makes target take 10% more damage and if it's Ice damage, increases damage by another 10% for 25 seconds."
+            "Discharge skills deal an additional <span class='text-blue'>10%</span> damage to targets and increase frost damage by an additional <span class='text-blue'>10%</span> for <span class='text-blue'>25</span> seconds."
         ],
         energyCharge:["6.00","b"],
         shieldBreak:["10.00","a"],
