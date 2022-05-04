@@ -260,6 +260,7 @@ jQuery(document).ready(function ($) {
             $("#star-all-6").html(i.awakening[5]);
             
             // Recommended chips
+            $("#recommended-chips-for-wep").html(i.wepName);
             $("#recommended-chips-wrapper").html('');
             if (i.recChips) {
                 for (let currentChip = 0; currentChip < i.recChips.length; currentChip++ ) {
