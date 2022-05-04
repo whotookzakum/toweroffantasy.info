@@ -2266,7 +2266,7 @@ var gadgets = [
     // SR Shielding Robot
     {
         name: "Couant",
-        description: "Summon a droid and generate a shield for <span class='text-blue'>5</span> seconds. The shield disappears after <span class='text-blue'>5</span> seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to <span class='text-blue'>100%</span> of ATK + <span class='text-blue'>50</span>. If broken within <span class='text-blue'>1<span> second of being created, the shield will stun enemies for <span class='text-blue'>2</span> seconds. Cooldown: <span class='text-blue'>30</span> seconds. Shares cooldown with Couant II.",
+        description: "Summon a droid and generate a shield for <span class='text-blue'>5</span> seconds. The shield disappears after <span class='text-blue'>5</span> seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to <span class='text-blue'>100%</span> of ATK + <span class='text-blue'>50</span>. If broken within <span class='text-blue'>1</span> second of being created, the shield will stun enemies for <span class='text-blue'>2</span> seconds. Cooldown: <span class='text-blue'>30</span> seconds. Shares cooldown with Couant II.",
         awakening: [
             // 1 star
             "When the shield is broken, reduce the speed of the attacker by <span class='text-blue'>35%</span> for <span class='text-blue'>6</span> seconds.<br><img class='flag' src='images/cn.svg'> When the shield is broken, reduce the speed of the attacker and nearby enemies by <span class='text-blue'>35%</span> for <span class='text-blue'>6</span> seconds.",

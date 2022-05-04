@@ -322,18 +322,22 @@ h6 {
 }
 
 .mimic-button {
+    position: relative;
     display: inline-block;
     transition: color 125ms ease-in-out;
     text-align: center;
     filter: drop-shadow(0 0 4px #121212);
 }
 
-.mimic-button img {
-    margin-bottom: 5px;
-    border-radius: 50%;
-    width: 88px;
-    height: 88px;
-    object-fit: none;
+.mimic-button h3 {
+    margin-top: 0.5rem;
+}
+
+.badge.flag {
+    display: inherit;
+    right: 0;
+    top: 50%;
+    filter: drop-shadow(0 0 2px 2px #121212);
 }
 
 .mimic-button:after {
@@ -498,7 +502,6 @@ h6 {
 }
 .badge {
     position: absolute;
-    border-radius: 50%;
     color: white;
     font-family: 'Chakra Petch';
     padding: 0;
@@ -626,10 +629,17 @@ h6 {
     text-align: center;
     filter: drop-shadow(0 0 4px #111111);
     overflow: hidden;
+    vertical-align: top;
 }
-
 .gadget-img {
     width: 128px;
+}
+.gadget-button .flag.badge {
+    top: 55%;
+    right: 5%;
+}
+.gadget-button h3 {
+    max-width: 128px;
 }
 
 .gadget-button:after {
@@ -661,13 +671,22 @@ h6 {
     transition: color 125ms ease-in-out;
     text-align: center;
     filter: drop-shadow(0 0 4px #111111);
+    vertical-align: top;
 }
 
-.chip-button img {
+.chip-button-img {
     margin-bottom: 5px;
     width: 128px;
     height: 128px;
     object-fit: none;
+}
+.chip-button h3 {
+    max-width: 128px;
+}
+
+.chip-button .flag.badge {
+    top: 60%;
+    right: 5%;
 }
 
 .chip-button:after {
