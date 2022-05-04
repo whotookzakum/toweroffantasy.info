@@ -1007,7 +1007,7 @@ var zero =
             // 4 star
             "Increase the current weapon's base HP growth by <span class='text-blue'>32%</span>.",
             // 5 star
-            "Deal damage and produce a damage orb, which lsts for <span class='text-blue'>20</span> seconds and increases ATK of any teammate who picks it up by <span class='text-blue'>1.5%</span>. Stacks up to <span class='text-blue'>10</span> times and lasts for <span class='text-blue'>45</span> seconds. <span class='text-blue'>2.5</span>-second cooldown.",
+            "Deal damage and produce a damage orb, which lsts for <span class='text-blue'>20</span> seconds and increases ATK of any teammate who picks it up by <span class='text-blue'>1.5%</span>. Stacks up to <span class='text-blue'>10</span> times and lasts for <span class='text-blue'>45</span> seconds. <span class='text-blue'>2.5</span>-second cooldown.<br><img class='flag' src='images/cn.svg'> Deal damage and produce a damage orb, which lsts for <span class='text-blue'>20</span> seconds and increases ATK of any teammate who picks it up by <span class='text-blue'>2%</span>. Stacks up to <span class='text-blue'>10</span> times and lasts for <span class='text-blue'>45</span> seconds. <span class='text-blue'>2.5</span>-second cooldown.",
             // 2% IN CHINA
             
             // 6 star
@@ -1966,18 +1966,18 @@ var gadgets = [
     // SSR Giant arms
     {
         name: "Colossus Arms",
-        description: "Uses the arms to fight for 20 seconds, cooldown 300 seconds, immune to hardness, click again to cancel. Deals a total of 1,387.7% attack damage from normal attacks; 453.5% attack damage from skills which has a 10 sec cooldown.",
+        description: "Summon a colossus arm that is immune to hitstun to fight for you for the next 20 seconds. Tap again to cancel. <span class='text-blue'>300</span> seconds. Normal attacks deal damage up to <span class='text-blue'>1,387.7%</span> of ATK and <span class='text-blue'>launch</span> enemies. Skills deal damage equal to <span class='text-blue'>453.5%</span> of ATK and knock enemies <span class='text-blue'>into the air</span. Cooldown: <span class='text-blue'>10</span> seconds.",
         awakening: [
             // 1 star
-            "Each attack shoots 2 missiles at the target, each dealing 34.8% attack damage.",
+            "Fire <span class='text-blue'>2</span> missiles with each attack, delaing damage to the target. Each missile deals damage equal to <span class='text-blue'>34.8%</span> of ATK.",
             // 2 star
-            "Cooldown reduced to 200 seconds.",
+            "Reduce cooldown to <span class='text-blue'>200</span> seconds.",
             // 3 star
-            "4 missiles can be fired per attack to deal damage to the target, each missile deals 34.8% attack damage.",
+            "Fire 4 missiles with each attack, dealing damage to the target. Each missile deals damage equal to <span class='text-blue'>34.8%</span> of ATK.",
             // 4 star
-            "Reduces physical damage by 2%, even when not in combat, but not in peak league (PvP)",
+            "Reduce physical damage received by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Giant Arm lasts for 30 seconds, all damage taken is reduced by 20% for the duration."
+            "Colossus Arm lasts for <span class='text-blue'>30</span> seconds All damage taken for this duration is reduced by <span class='text-blue'>20%</span>."
         ],
         pic: "images/gadget/giantarms.png",
         rarity:"SSR"
@@ -1986,18 +1986,18 @@ var gadgets = [
     // SSR Atomic Shield
     {
         name: "Omnium Shield",
-        description: "A shield of raw energy is assembled for 10 seconds, blocking bullet penetration. The shield has 200% of the Pioneer's maximum life and has a cooldown of 90 seconds.",
+        description: "Generate an Omnium shield that stops projectiles for <span class='text-blue'>10</span> seconds, with starting energy equal to <span class='text-blue'>200%</span> of the Wanderer's max HP and <span class='text-blue'>90</span>-second cooldown.",
         awakening: [
             // 1 star
-            "If an enemy target passes through the shield, the speed is reduced by 50% for 2 seconds.",
+            "Slow enemies that pass through the shield by <span class='text-blue'>50%</span> for <span class='text-blue'>2</span> seconds.",
             // 2 star
-            "Cooldown time reduced to 60 seconds",
+            "Reduce cooldown to <span class='text-blue'>60</span> seconds",
             // 3 star
-            "Duration extended to 20 seconds",
+            "Extend duration to <span class='text-blue'>20</span> seconds.",
             // 4 star
-            "Reduces ice damage taken by 2%, even when not in combat, but not in peak league (PvP)",
+            "Reduces frost damage received by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "You and friendly team-members will receive a 25% damage boost for 7 seconds when they pass through the energy shield."
+            "When wanderers or allies pass through the Omnium Shield, damage dealt increases by <span class='text-blue'>25%</span> for <span class='text-blue'>7</span> seconds."
         ],
         pic: "images/gadget/atomicshield.png",
         rarity:"SSR"
@@ -2006,18 +2006,18 @@ var gadgets = [
     // SSR V-Mech
     {
         name: "Type V Armor",
-        description: "Drive a robot into battle, lasts 30 seconds, cooldown 200 seconds. Immune to hardness, click again to cancel. V-Mech possesses the skill: Aimed Shot. Aimed Shot: Fires flaming bullets at high frequency, dealing 44.4%*attack damage per hit.",
+        description: "Pilot a droid to fight for <span class='text-blue'>30</span> seconds. Cooldown: <span class='text-blue'>200</span> seconds. Immune to hitstun. Tap again to exit and blow up the droid. Skill: <strong class='text-orange'>Aimed Shot</strong>. <strong class='text-orange'>Aimed Shot</strong>: Shoot rapidly to deal damage equal to <span class='text-blue'>44.4%</span> of ATK per hit.",
         awakening: [
             // 1 star
-            "Immune to fire damage and crowd control when driving the mech.",
+            "When piloting mecha, gain immunity to flame damage and control effects.",
             // 2 star
-            "Gains new skill: 'Barrage': Fires 6 barrages at the target, dealing 155.2%*attack damage per hit.",
+            "Gain the <strong class='text-orange'>Artillery Fire</strong> skill.<br><strong class='text-orange'>Artillery Fire</strong>: Fire 6 times at the locked-on target. Each hit deals damage equal to <span class='text-blue'>155.2%</span> of ATK.",
             // 3 star
-            "Add Burning effect when driving a mech.",
+            "When piloting the armor, dealing damage also inflicts burn.",
             // 4 star
-            "Increases fire element damage by 2%, even when not in combat, but not in peak league (PvP)",
+            "Increase flame damage by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "New skill: 'Flame Field': Releases a large flame field in place, dealing up to 1146.8%* attack damage"
+            "Gain <strong class='text-orange'>Flame Domain</strong> skill.<br><strong class='text-orange'>Flame Domain</strong>: Erect a wide-range Flame Domain at the current location, dealing damage equal to a maximum of <span class='text-blue'>1,146.8%</span> of ATK."
         ],
         pic: "images/gadget/vmech.png",
         rarity:"SSR"
@@ -2026,18 +2026,18 @@ var gadgets = [
     // SSR Time Rift
     {
         name: "Spacetime Rift",
-        description: "Using a proton bomb, it collapses the space in front of it and continues to attract targets within its range for 10 seconds, After a delay of 1.5 seconds, dealing 39.6%*attack damage every 0.5 seconds to the central area, with a cooldown time of 100 seconds.",
+        description: "Launch a proton bomb at the target location, creating a collapse in time-space that sucks targets in for <span class='text-blue'>10</span> seconds. After 1.5 seconds, the center of the collapse deals damage equal to <span class='text-blue'>39.6</span> of ATK to targets caught in the area every 0.5 seconds. Cooldown: <span class='text-blue'>100</span> seconds.",
         awakening: [
             // 1 star
-            "Enemies in the collapsed space cannot use dodge, and the absorption time is extended to 15 seconds.",
+            "Enemies caught within the rift who are close to the ground are unable to dodge, and the vacuum duration is increased to <span class='text-blue'>15</span> seconds.",
             // 2 star
-            "Damage range is increased by a factor of 1.",
+            "Increase the target area by <span class='text-blue'>100%</span>.",
             // 3 star
-            "20% more damage to targets in the area.",
+            "Increase damage dealt to targets in the area by <span class='text-blue'>20%</span>.",
             // 4 star
-            "Reduces fire elemental damage by 2%, even when not in combat, but not in peak league (PvP)",
+            "Reduce flame dmage received by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Enemy units in the collapsed space cannot be healed."
+            "Enemies within the rift are unable to receive any healing."
         ],
         pic: "images/gadget/timerift.png",
         rarity:"SSR"
@@ -2046,18 +2046,18 @@ var gadgets = [
     // SSR Confined Space
     {
         name: "Confinement",
-        description: "Creates a confined space with a radius of 7m for 10 seconds, with constant energy fluctuations on the ground, dealing 73.4%*Attack of the current weapon elemental damage per second to ground targets; if the target touches the edge of the area, a strong control stun effect is applied for 2 seconds, with a cooldown of 240 seconds.",
+        description: "Create an area of confinement with a radius of <span class='text-blue'>7</span> meters for <span class='text-blue'>10</span> seconds. Energy pulses within the area, dealing elemental damage equal to <span class='text-blue'>73.4%</span> of ATK every second, based on the current weapon's element. Targets that touch the edge of the area are afflicted with a <span class='text-blue'>2</span-second <span class='text-blue'>stun</span> effect. <span class='text-blue'>240</span>-second cooldown.",
         awakening: [
             // 1 star
-            "Stun extended to 3 seconds, cooldown reduced to 180 seconds.",
+            "Now stun targets for <span class='text-blue'>3</span> seconds and have a <span class='text-blue'>180</span>-second cooldown.",
             // 2 star
-            "Energy Wave deals an additional 30% more damage.",
+            "Increase damage dealt by energy pulses by <span class='text-blue'>30%</span>.",
             // 3 star
-            "Cooldown time reduced to 120 seconds.",
+            "Reduce cooldown to <span class='text-blue'>120</span> seconds.",
             // 4 star
-            "Increases physical damage by 2%, even when not in combat, but not in peak leagues",
+            "Increase physical damage by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Extra seismic waves are triggered every 3 seconds, every hit floats the targets (can be dodged by jumping)."
+            "Trigger an earthquake every <span class='text-blue'>3</span> seconds, <span class='text-blue'>launching targets into the air</span>. The waves can be dodged by jumping."
         ],
         pic: "images/gadget/confinedspace.png",
         rarity:"SSR"
@@ -2066,18 +2066,18 @@ var gadgets = [
     // SSR Drone
     {
         name: "Drone",
-        description: "Summons a drone for 15 seconds, increases your final damage by 5% every 5 seconds, cooldown 120 seconds.",
+        description: "Summon a drone for <span class='text-blue'>15</span> seconds, increase damage reduction by <span class='text-blue'>5%</span> every <span class='text-blue'>5</span> seconds. Cooldown: <span class='text-blue'>120</span> seconds.<br><img class='flag' src='images/cn.svg'> Summon a drone for <span class='text-blue'>15</span> seconds, increase final damage by <span class='text-blue'>5%</span> every <span class='text-blue'>5</span> seconds. Cooldown: <span class='text-blue'>120</span> seconds.",
         awakening: [
             // 1 star
-            "Apply crowd control immunity for the first 5 seconds.",
+            "Grant immunity to control effects for the next <span class='text-blue'>5</span> seconds.",
             // 2 star
-            "Duration extended to 25 seconds.",
+            "Extend duration to <span class='text-blue'>25</span> seconds.",
             // 3 star
-            "Adds an additional 5% damage boost to the Pioneer every 5 seconds.",
+            "Every <span class='text-blue'>5</span> seconds, additionally grant Wanderers one stack of inspiration, increasing damage dealt by <span class='text-blue'>5%</span> per stack.",
             // 4 star
-            "Adds an additional 5% damage boost to the Pioneer every 5 seconds.",
+            "Reduce volt damage received by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "During the duration of the drone, the Pioneer receives an attack recovery effect, converting 20% of the damage value to its own life."
+            "Within Drone's duration, Wanderers gain an attack recovery effect that converts <span class='text-blue'>20%</span> of damage dealt into HP."
         ],
         pic: "images/gadget/drone.png",
         rarity:"SSR"
@@ -2086,18 +2086,18 @@ var gadgets = [
     // SSR Holographic Projection
     {
         name: "Hologram Projector",
-        description: "Unleashes a holographic projection based on yourself, which synchronises with the character's weapon attacks and deals 50% of the damage dealt by the character for 15 seconds, with a cooldown of 180 seconds.",
+        description: "Project a hologram of the user that recreates their weapon attacks, dealing <span class='text-blue'>50%</span> of the user's damage. Lasts for <span class='text-blue'>15</span> seconds. Cooldown: <span class='text-blue'>180</span> seconds.",
         awakening: [
             // 1 star
-            "Duration extended to 20 seconds.",
+            "Extend duration to <span class='text-blue'>20</span> seconds.",
             // 2 star
-            "Projection damage is increased to 75% of the character's damage.",
+            "Increase damage dealt by holograms to <span class='text-blue'>75%</span> of the Wanderer's damage.",
             // 3 star
-            "Click again to shift yourself to the position of the projection.",
+            "Tap again to transpose to the hologram's position.",
             // 4 star
-            "Increases electric damage by 2%, even if you are not in combat, but not in the peak league (PvP)",
+            "Increase volt damage by 2%, even if you are not in combat, but not in the peak league (PvP)",
             // 5 star
-            "Projected damage is increased to 100% of the character's damage, and you are self-controlled when shifting."
+            "Increase damage dealt by the holograms to <span class='text-blue'>100%</span> of the Wanderer's damage. Transposing removes control effects."
         ],
         pic: "images/gadget/holographicprojection.png",
         rarity:"SSR"
@@ -2106,18 +2106,18 @@ var gadgets = [
     // SSR Death Suppressor
     {
         name: "Alternate Destiny",
-        description: "Creates a space that lasts for 8 seconds, in which you have the effect of hegemony and you cannot go lower than 20% of your health regardless of any damage you take, with a cooldown time of 90 seconds. After 8 seconds in space, you cannot regain the same space effect for 45 seconds.",
+        description: "Generate a pocket dimension for <span class='text-blue'>8</span> seconds. Allies gain immunity to hitstun effects in the dimension, and HP will not drop below <span class='text-blue'>20%</span> from enemy attacks. Cooldown: <span class='text-blue'>90</span> seconds. Leaving the dimension removes all buffs. Once you have spent <span class='text-blue'>8</span> seconds in the dimension, you cannot be buffed by it for <span class='text-blue'>45</span> seconds.",
         awakening: [
             // 1 star
-            "After 8 seconds, you regain 15% of your health in the space.",
+            "Allied Wanderers in the dimension recovers <span class='text-blue'>15%</span> HP <span class='text-blue'>8</span> seconds later.",
             // 2 star
-            "Adds a 25% blood-suck effect while in space.",
+            "Friendly units in the dimension gain <span class='text-blue'>25%</span> lifesteal.",
             // 3 star
-            "Immune to all controls while in space.",
+            "Allied Wanderers in the dimension gain immunity to all mind control.",
             // 4 star
-            "Increases ice damage by 2%, even if you are not in combat, but not in peak league (PvP)",
+            "Increase frost damage by <span class='text-blue'>2%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "When you are below or equal to 40% of your life in space, your blood-suck effect is doubled until the space disappears."
+            "Until the Relic disappears, allied Wanderers in the dimension double all lifesteal effects when HP drops to <span class='text-blue'>40%</span> or below."
         ],
         pic: "images/gadget/deathsuppressor.png",
         rarity:"SSR"
@@ -2146,18 +2146,18 @@ var gadgets = [
     // SR Jetpack 
     {
         name: "Jetpack",
-        description: "Press and hold the Jetpack gadget in the direction of the arrow to enter the gliding state. Consumes 10 points of stamina per second. Jetpack cooldown 150 seconds. Stagnant gliding is not affected by the cooldown.Jetpack can be used 2 times before going on cooldown.",
+        description: "Tap and hold to dash in the direction of the arrow for a short distance before becoming airborne and gliding. Reduce endurance by <span class='text-blue'>10</span> every second. Cooldown: <span class='text-blue'>120</span> seconds (gliding is not affected by the cooldown timer). Jetpack can hold up to <span class='text-blue'>2</span> charges.",
         awakening: [
             // 1 star
-            "Cooldown reduced to 100 seconds, gliding does not consume stamina anymore.",
+            "Replenish 1 charge every <span class='text-blue'>100</span> seconds. Gliding no longer expends endurance.",
             // 2 star
-            "Glide for more than 3 seconds to gain a critical hit enhancement and a strong control state to stun the target for 2 seconds at the moment your Jetpack hits the target.",
+            "Gliding for longer than 3 seconds empowers the user's next gliding attack to stun the target for 2 seconds.",
             // 3 star
-            "Cooldown reduced to 60 seconds.",
+            "Replenish <span class='text-blue'>1</span> charge every 60 seconds.",
             // 4 star
-            "Reduces Physical damage by 1.5%, even when not in combat, but not in peak league (PvP)",
+            "Reduces physical damage received by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Jetpack can be used up to 3 times."
+            "Store up to <span class='text-blue'>3</span> charges."
         ],
         pic: "images/gadget/jetpack.png",
         rarity:"SR"
@@ -2166,18 +2166,18 @@ var gadgets = [
     // SR Quantum Cloak
     {
         name: "Quantum Cloak",
-        description: "Enters a quantum state, making yourself invisible to enemies by optical means for 10 seconds. Launching an attack removes this effect and has a 120 second cooldown.",
+        description: "Enter a quantum state for <span class='text-blue'>10</span> seconds, during which enemies cannot detect the wearer. The wearer exits quantum state after attacking once. <span class='text-blue'>120</span-second cooldown.",
         awakening: [
             // 1 star
-            "Quantum state lasts for 20 seconds.",
+            "Quantum state lasts for <span class='text-blue'>20</span> seconds.",
             // 2 star
-            "Cooldown reduced to 80 seconds.",
+            "Reduce cooldown to <span class='text-blue'>80</span> seconds.",
             // 3 star
-            "100% more damage to attacks launched in Quantum state, this effect is removed after 1 attack.",
+            "+<span class='text-blue'>100%</span> damage in Quantum state, negated after <span class='text-blue'>1</span> successful attack.",
             // 4 star
-            "Increases electric damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Increase volt damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "100% more damage to attacks launched in Quantum state, this effect is removed after 3 attacks."
+            "+<span class='text-blue'>100%</span> damage for <span class='text-blue'>3</span> successful attacks in Quantum state."
         ],
         pic: "images/gadget/quantumcloak.png",
         rarity:"SR"
@@ -2186,18 +2186,18 @@ var gadgets = [
     // SR Floating Ice Cannon
     {
         name: "Hovering Cannon",
-        description: "Summons a floating ice cannon that lasts for 20 seconds and has a cooldown of 240 seconds. The Floating Cannon has the skill: Laser Beam, which deals 5.6%*attack damage to the target each time.",
+        description: "Summon a Hovering Cannon for <span class='text-blue'>20</span> seconds. <span class='text-blue'>240</span>-second cooldown. The Hovering Cannon has the skill: Laser Beam, which deals <span class='text-blue'>5.6%</span> ATK damage to the target each time.",
         awakening: [
             // 1 star
-            "Floating ice cannon lasts for 24 seconds.",
+            "Hovering Cannon lasts for <span class='text-blue'>24</span> seconds.",
             // 2 star
-            "New skill: 'Laser array', freezes the target by damaging it 4 times in a row, dealing up to 93.2%*attack damage to the target.",
+            "Grant the <strong class='text-orange'>Laser Array</strong> skill: Freeze targets after dealing damage to them <span class='text-blue'>4</span> times in a row. Deal up to <span class='text-blue'>93.2%</span> ATK damage to the target.",
             // 3 star
-            "Cooldown time reduced to 150 seconds.",
+            "Reduce cooldown to <span class='text-blue'>150</span> seconds.",
             // 4 star
-            "Increases ice damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Increase frost damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "New skill: 'Shock', which deals 55.9%*attack damage to the target and stuns the target for 0.5 seconds"
+            "Grant the <strong class='text-orange'>Crash</strong> skill: Deal damage to the target equal to <span class='text-blue'>55.9%</span> of ATK and stun them for <span class='text-blue'>0.5</span> seconds."
         ],
         pic: "images/gadget/floatingicecannon.png",
         rarity:"SR"
@@ -2206,18 +2206,18 @@ var gadgets = [
     // SR Jet Ski
     {
         name: "Jetboard",
-        description: "When used, it dashes forward a distance and slowly decelerates  until it stops, dealing 380% of current attack damage to colliding targets and inflicting a knockback effect during the dash, with a 90-second cooldown. The ability to use the Jet ski is possible while in swimming state.",
+        description: "Dash forward a set distance before gradually slowing down to a halt, dealing damage equal to <span class='text-blue'>380%</span> of ATK to targets along the way and <span class='text-blue'>launching</span> them. Can be used <span class='text-blue'>while swimming</span>. Cooldown: <span class='text-blue'>90</span> seconds.",
         awakening: [
             // 1 star
-            "10 weapon points charges per second during glide.",
+            "Gain <span class='text-blue'>10</span> weapon charge points ever second while gliding.",
             // 2 star
-            "Cooldown time reduced to 60 seconds.",
+            "Recude charge time to <span class='text-blue'>60</span> seconds.",
             // 3 star
-            "100% more damage from Jet skis collisions, cooldown time reduced to 45 seconds.",
+            "Wayboard collision damage is increased by <span class='text-blue'>100%</span>, and charge time is reduced to <span class='text-blue'>45</span> seconds.",
             // 4 star
-            "Reduces ice damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Reduce frost damage received by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Immune to crowd control while using Jet skis, 5-second stun effect on colliding targets"
+            "Immune to control effects while using Wayboard. Using the Wayboard to attack and hit targets <span class='text-blue'>stuns</span> them for <span class='text-blue'>5</span> seconds. Charge time is reduced to <span class='text-blue'>30</span> seconds."
         ],
         pic: "images/gadget/jetski.png",
         rarity:"SR"
@@ -2226,18 +2226,18 @@ var gadgets = [
     // SR Magnetic Storm
     {
         name: "Magnetic Storm",
-        description: "Twisted Magnetic Field, releases 1 whirlwind with an electric core that moves in a random path around the scene for 10 seconds, sweeping surrounding targets into the air, dealing 186.3% of current attack damage per second, cooldown 100 seconds.",
+        description: "Warp the magnetic field to unleash <span class='text-blue'>1</span> electric tornado that travels through the battlefield at random for <span class='text-blue'>10</span> seconds, throwing nearby enemies into the air and dealing damage equal to <span class='text-blue'>186.3%</span> of ATK every second. Cooldown: <span class='text-blue'>100</span> seconds.",
         awakening: [
             // 1 star
-            "Releases 2 whirlwinds with electric cores.",
+            "Unleash <span class='text-blue'>2</span> electric tornadoes.",
             // 2 star
-            "20% more damage to the whirlwind.",
+            "Increase tornado damage by <span class='text-blue'>20%</span>.",
             // 3 star
-            "Releases 3 whirlwinds with electric cores.",
+            "Unleash <span class='text-blue'>3</span> electric tornadoes.",
             // 4 star
-            "Increases electric damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Increase volt damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "units in the whirlwind have a 50% chance of being confused for 3 seconds every time they take damage (moving in the opposite direction of the joystick/keybinds)."
+            "Those caught in tornadoes have a <span class='text-blue'>50%</span> chance to be disoriented for <span class='text-blue'>3</span> seconds each time they take damage. Movement direction inputs will also be swapped."
         ],
         pic: "images/gadget/magneticstorm.png",
         rarity:"SR"
@@ -2246,18 +2246,18 @@ var gadgets = [
     // SR Multiple Missile
     {
         name: "Missile Barrage",
-        description: "Throws a missile launcher behind you for 8 seconds, with a cooldown of 60 seconds. Releases multiple missiles to attack nearby enemy units, each dealing 34.8% of current attack damage.",
+        description: "Place a missile launcher behind the user for <span class='text-blue'>8</span> seconds. Fire multiple missiles at nearby enemies, dealing damage equal to <span class='text-blue'>34.8%</span> of ATK with each strike. Cooldown: <span class='text-blue'>60</span> seconds.",
         awakening: [
             // 1 star
-            "Increases the number of missiles released per second",
+            "Fire more missiles every second.",
             // 2 star
-            "20% more damage from Multiple Missile",
+            "Increase Missile Barrage damage by <span class='text-blue'>20%</span>.",
             // 3 star
-            "Multiple Missile last for 12 seconds.",
+            "Missile Barrage last for <span class='text-blue'>12</span> seconds.",
             // 4 star
-            "Increases Physical damage by 1.5%, even when not in combat, but not in peak league (PvP)",
+            "Increase physical damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "the number of missiles released per second is increased again."
+            "Launch more missiles after every second."
         ],
         pic: "images/gadget/multiplemissile.png",
         rarity:"SR"
@@ -2266,18 +2266,18 @@ var gadgets = [
     // SR Shielding Robot
     {
         name: "Couant",
-        description: "The summoned robot opens a shield that lasts 5 seconds. The shield disappears after 5 seconds or when you take an attack, knocking back the surrounding enemies and deals 100% attack +50 damage. If the shield is broken within 1 second of being created, it stuns the enemy for an additional 2 seconds. Cooldown time of 30 seconds.",
+        description: "Summon a droid and generate a shield for <span class='text-blue'>5</span> seconds. The shield disappears after <span class='text-blue'>5</span> seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to <span class='text-blue'>100%</span> of ATK + <span class='text-blue'>50</span>. If broken within <span class='text-blue'>1<span> second of being created, the shield will stun enemies for <span class='text-blue'>2</span> seconds. Cooldown: <span class='text-blue'>30</span> seconds. Shares cooldown with Couant II.",
         awakening: [
             // 1 star
-            "When the shield is broken, it reduces the movement speed of the attacker and nearby enemies by 35% for 6 seconds.",
+            "When the shield is broken, reduce the speed of the attacker by <span class='text-blue'>35%</span> for <span class='text-blue'>6</span> seconds.<br><img class='flag' src='images/cn.svg'> When the shield is broken, reduce the speed of the attacker and nearby enemies by <span class='text-blue'>35%</span> for <span class='text-blue'>6</span> seconds.",
             // 2 star
-            "When the shield ends (shattered), the final damage is increased by an equal percentage of the blood lost, for 10 seconds, with a minimum of 30%.",
+            "After shield breaks, increase final damage by <span class='text-blue'>20%</span> for <span class='text-blue'>10</span> seconds.<br><img class='flag' src='images/cn.svg'> After shield breaks, increase final damage equal to the percentage of HP lost with a minimum of <span class='text-blue'>30%</span>, for <span class='text-blue'>10</span> seconds.",
             // 3 star
             "After the shield ends (shattered), it increases your movement speed by 30% for 5 seconds.",
             // 4 star
-            "Reduces fire damage by 1.5%, even when not in combat, but not in peak league (PvP)",
+            "Reduce flame damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "When the shield is broken, it gains 5 seconds of anti-damage effect, returning 0.6 times the damage taken to the attacker."
+            "if the shield breaks, gain a <span class='text-blue'>5</span>-second damage reflection effect, reflecting <span class='text-blue'>0.6</span>x damage taken back at the attacker."
         ],
         pic: "images/gadget/shieldingrobot.png",
         rarity:"SR"
@@ -2286,18 +2286,18 @@ var gadgets = [
     // SR Singularity Magic Cube
     {
         name: "Strange Cube",
-        description: "Use the Cube to change the gravitational pull around you, causing the enemy to take 100% attack damage, then grab the enemy to make them float and send them flying and deal 120% attack damage again. Cooldown of 30 seconds.",
+        description: "Use the cube to alter the surrounding gravity, dealing damage equal to <span class='text-blue'>100%</span> of ATK to enemies and suspending them in midair. Afterwards, dealing damage equal to <span class='text-blue'>120%</span> of ATK. Cooldown: <span class='text-blue'>30</span> seconds.",
         awakening: [
             // 1 star
-            "When the Cube is activated, increases your damage by 10% for 10 seconds.",
+            "Activating the Strange Cube increases damage dealt by <span class='text-blue'>10%</span> for <span class='text-blue'>10</span> seconds.",
             // 2 star
-            "When the Cube is activated, 200 points of weapon charge are deducted from surrounding enemies.",
+            "After activating a Strange Cube, reduce weapon charge of nearby enemies by <span class='text-blue'>200</span>.",
             // 3 star
-            "The number of uses of the Cube is increased to 2.",
+            "Increase Strange Cube's uses to <span class='text-blue'>2</span>",
             // 4 star
-            "Increases elemental damage by 1.5%, even if you are not in combat, but not in peak league (PvP)",
+            "Increase volt damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "When the Cube is activated, the weapon gains power based on the amount of blood lost. For every 1% of blood lost, 10 points of weapon power are gained."
+            "After activating the Strange Cube, gain weapon charge based on HP lost. For every <span class='text-blue'>1%</span> of HP lost, gain <span class='text-blue'>10</span> weapon charge."
         ],
         pic: "images/gadget/singularitymagiccube.png",
         rarity:"SR"
@@ -2306,18 +2306,18 @@ var gadgets = [
     // SR Atomic Hand Cannon
     {
         name: "Omnium Handcannon",
-        description: "Fires 1 mechanical energy projectile at the designated target, hits the ground or water to create a climbable mechanical cylinder for a maximum of 20 seconds. A maximum of 2 projectiles can be used. Each with a cooldown time of 50 seconds.",
+        description: "Launch <span class='text-blue'>1</span> Omnium bomb at target location and create a scalable energy pillar upon striking the ground or water surface for up to <span class='text-blue'>20</span> seconds. Cooldown: <span class='text-blue'>50</span> seconds. Maximum <span class='text-blue'>2</span> charges.",
         awakening: [
             // 1 star
-            "The mechanical projectile of energy is increased to 30 seconds.",
+            "Increase duration of energy pillars to <span class='text-blue'>30</span> seconds.",
             // 2 star
-            "When using the Atomic Hand Cannon, the stamina recovery will be 30% faster for 20 seconds",
+            "Increase endurance regen speed by 30% for <span class='text-blue'>20</span> seconds after switching to the Omnium Handcannon.",
             // 3 star
-            "Stores up to 3 rounds of ammunition",
+            "Stores up to <span class='text-blue'>3</span> charges.",
             // 4 star
-            "1.5% more fire elemental damage, even when not in a combat, but not in peak league (PvP)",
+            "Increase flame damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Cooldown time reduced to 40 seconds."
+            "Reduce charge time to <span class='text-blue'>40</span> seconds."
         ],
         pic: "images/gadget/atomichandcannon.png",
         rarity:"SR"
@@ -2326,18 +2326,18 @@ var gadgets = [
     // SR Lava Grenade
     {
         name: "Lava Bomb",
-        description: "Throws lava bombs in front of the target, dealing 567% of current attack damage with knockback, 45 sec cooldown.",
+        description: "Toss a Lava Bomb at a target location, dealing damage equal to <span class='text-blue'>567%</span> of ATK and launching the target <span class='text-blue'>into the air</span>. Cooldown: <span class='text-blue'>45</span> seconds.",
         awakening: [
             // 1 star
-            "Added 2 seconds stun and ignition on hit.",
+            "<span class='text-blue'>Stun</span> targets for <span class='text-blue'>2</span> seconds on hit, and ignite them.",
             // 2 star
-            "50% more blast range.",
+            "Increase blast radius by <span class='text-blue'>50%</span>.",
             // 3 star
-            "Cooldown time reduced to 30 seconds.",
+            "Reduce cooldown to <span class='text-blue'>30</span> seconds.",
             // 4 star
-            "Increases fire damage by 1.5%, even when not in combat, but not in peak league (PvP)",
+            "Increase flame damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "3 seconds stun on hit, 10 seconds stamina burn added to target, 100 stamina points deducted per use."
+            "<span class='text-blue'>Stun</span> targets for <span class='text-blue'>3</span> seconds on hit and burn their endurance for <span class='text-blue'>10</span> seconds, causing targets to lose <span class='text-blue'>100</span> endurance after every ability use."
         ],
         pic: "images/gadget/lavagrenade.png",
         rarity:"SR"
@@ -2346,18 +2346,18 @@ var gadgets = [
     // SR Mechanical Arm
     {
         name: "Cybernetic Arm",
-        description: "Ejects a robotic arm, pulling a given target to it, or pulling itself to it, causing 100% damage and floating on a hit, while returning 300 points of weapon charge to yourself; can also be used to reach hard-to-reach places, can be used 2 times, restoring 1 charge every 30 seconds.",
+        description: "Launch a Cybernetic Arm to pull selected target to you, or you to the target. Deal <span class='text-blue'>100%</span> damage on hit, and <span class='text-blue'>strongly suspend</span> the target, then launch the target into the air (or idle the target if unable). Also regenerate weapon charge by <span class='text-blue'>300</span>. Can be used to access hard-to-reach areas, and hold up to <span class='text-blue'>2</span> charges at a time. Regain <span class='text-blue'>1</span> charge every <span class='text-blue'>30</span> seconds.",
         awakening: [
             // 1 star
-            "Gives you an electromagnetic shield that reduces your damage taken by 20% for 7 seconds.",
+            "Produce an EM shield that reduces damage taken by <span class='text-blue'>20%</span> for 7 seconds.",
             // 2 star
-            "1 recovery every 15 seconds",
+            "Regain <span class='text-blue'>1</span> charge every <span class='text-blue'>15</span> seconds.",
             // 3 star
-            "can be used up to 3 times.",
+            "Store up to <span class='text-blue'>3</span> charges.",
             // 4 star
-            "Increases ice damage by 1.5%, even when not in combat, but not in peak league (PvP)",
+            "Increase frost damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "Reduce 30% of final damage to the target for 7 seconds on hit."
+            "Reduce final damage of targets hit by <span class='text-blue'>30%</span> for <span class='text-blue'>7</span> seconds."
         ],
         pic: "images/gadget/mechanicalarm.png",
         rarity:"SR"
@@ -2366,18 +2366,18 @@ var gadgets = [
     // SR Magneto Pulse
     {
         name: "Magnetic Pulse",
-        description: "The Pioneer detonates a magnetic bomb, knocking the target back, dealing 38.8% of current attack damage to the target and making himself immune to hard effects for 5 seconds, with a 35 second cooldown.",
+        description: "Detonate a Magnetic Bomb, dealing volt damage equal to <span class='text-blue'>38.8%</span> of ATK and <span class='text-blue'>launching</span> targets. Grant the user immunity to hitstun for <span class='text-blue'>5</span> seconds, Cooldown: <span class='text-blue'>35</span> seconds.",
         awakening: [
             // 1 star
-            "Can be used while in cc (crowd controlled).",
+            "Can be used while under control effects.",
             // 2 star
-            "Immune to crowd control for 5 seconds after use.",
+            "Grant immunity to control effects for the next <span class='text-blue'>5</span> seconds.",
             // 3 star
-            "adds a 7-second magnetic bomb to the target after hitting it, which will detonate immediately after the target uses attack/dodge/skill, causing a 40% slow that will disappear after triggering.",
+            "Hitting the target and planting a <span class='text-blue'>7</span>-second Magnetic Bomb detonates if the target uses normal attacks/dodges/skills, causing <span class='text-blue'>40%</span> slowdown for <span class='text-blue'>5</span> seconds, and disappears after detonation.",
             // 4 star
-            "Reduces electric element damage by 1.5%, even if not in combat, but not in peak league (PvP)",
+            "Reduce volt damage by <span class='text-blue'>1.5%</span>, even if not deployed. Unavailable in Apex League.",
             // 5 star
-            "When the target detonates the magnetic bomb, it removes all of the target's current buffs."
+            "Detonating the Magnetic Bomb removes all current buffs from the target."
         ],
         pic: "images/gadget/magnetopulse.png",
         rarity:"SR"
@@ -2392,19 +2392,19 @@ var mushroom = {
     source: "Found on Astra (around giant mushrooms) and in Crown"
 };
 var silverperch = {
-    name: 'Silver Perch',
+    name: 'Silver Bass',
     imgSrc: 'silverperch.png',
     rarity: 1,
     source: 'Found in rivers'
 }
 var wheat = {
-    name: 'Wheat',
+    name: 'Homi Grain',
     imgSrc: 'wheat.png',
     rarity: 1,
     source: 'Found on Astra (meadows) and Banges (meadows)'
 }
 var meat = {
-    name: 'Meat',
+    name: 'Game Meat',
     imgSrc: 'meat.png',
     rarity: 1,
     source: 'Obtained by hunting wild animals'
@@ -2416,21 +2416,21 @@ var lettuce = {
     source: 'Found on Astra (meadows)'
 }
 var dressing = {
-    name: 'Dressing',
+    name: 'Salad Dressing',
     imgSrc: 'dressing.png',
     rarity: 1,
     source: 'Purchased at food vendor'
 }
 var egg = {
-    name: 'Egg',
+    name: 'Poultry Egg',
     imgSrc: 'egg.png',
     rarity: 1,
     source: 'Found in bird nests (high elevations)'
 }
 var seaweed = {
-    name: 'Seaweed',
+    name: 'Laver',
     imgSrc: 'seaweed.png',
-    rarity: 1,
+    rarity: 2,
     source: 'Found in Banges (North Sea Beach)'
 }
 var milk = {
@@ -2440,7 +2440,7 @@ var milk = {
     source: 'Purchased at food vendor'
 }
 var drumstick = {
-    name: 'Drumstick',
+    name: 'Poultry Meat',
     imgSrc: 'drumstick.png',
     rarity: 1,
     source: 'Obtained by hunting birds'
@@ -2452,13 +2452,13 @@ var rice = {
     source: 'Purchased at food vendor'
 }
 var tomato = {
-    name: 'Tomato',
+    name: 'Thornmato',
     imgSrc: 'tomato.png',
     rarity: 2,
     source: 'Found on Astra (around alpine shrubs) and in Navia (around trees)'
 }
 var hornedconch = {
-    name: 'Horned Conch',
+    name: 'Conch',
     imgSrc: 'hornedconch.png',
     rarity: 2,
     source: 'Found in Bangis (South Sea Beach) and Navia (beach)'
@@ -2470,7 +2470,7 @@ var potato = {
     source: 'Found in Banges (around bushes)'
 }
 var fruitdrop = {
-    name: 'Fruit Drop',
+    name: 'Fallen Fruit',
     imgSrc: 'fruitdrop.png',
     rarity: 2,
     source: 'Found on Astra (around trees) and in Banges (around trees)'
@@ -2494,25 +2494,25 @@ var broccoli = {
     source: 'Found on Astra (meadows)'
 }
 var dandelion = {
-    name: 'Dandelion',
+    name: 'Dandelion Seed',
     imgSrc: 'dandelion.png',
     rarity: 1,
     source: 'Obtained from dandelion pom-poms'
 }
 var sturgeon = {
-    name: 'Sturgeon',
+    name: "Darby's Sturgeon",
     imgSrc: 'sturgeon.png',
     rarity: 2,
     source: 'Found in rivers of Astra, Navia, and Warren'
 }
 var redwheat = {
-    name: 'Red Wheat',
+    name: 'Brown Rice',
     imgSrc: 'redwheat.png',
     rarity: 2,
     source: 'Found in Navia (meadows)'
 }
 var fireear = {
-    name: 'Fire Ear',
+    name: 'Firecap',
     imgSrc: 'fireear.png',
     rarity: 2,
     source: 'Found in Crown'
@@ -2524,19 +2524,19 @@ var blackmoss = {
     source: 'Found in Crown'
 }
 var seaconch = {
-    name: 'Sea Conch',
+    name: 'Scallop',
     imgSrc: 'seaconch.png',
     rarity: 3,
     source: 'Found in Banges (South Sea Beach)'
 }
 var hindleg = {
-    name: 'Hind Leg Meat',
+    name: 'Rear Hock',
     imgSrc: 'hindleg.png',
     rarity: 3,
     source: 'Obtained by hunting rabbits, mountain hares, boars, bears, wolves, and honey badgers'
 }
 var shuttlecrab = {
-    name: 'Shuttle Crab',
+    name: 'Portunid',
     imgSrc: 'shuttlecrab.png',
     rarity: 3,
     source: 'Found on the beaches of Astra, Banges, and Crown'
@@ -2548,13 +2548,13 @@ var strawberry = {
     source: 'Found in Navia (around bushes)'
 }
 var blueberry = {
-    name: 'Blueberry',
+    name: 'Small Blueberry Jar',
     imgSrc: 'blueberry.png',
     rarity: 3,
     source: 'Obtained from defeating the Sons of Aida (robotic enemies)'
 }
 var sparklingwater = {
-    name: 'Sparkling Water',
+    name: 'Carbonated Water',
     imgSrc: 'sparklingwater.png',
     rarity: 1,
     source: 'Purchased at food vendor'
@@ -2566,7 +2566,7 @@ var seaurchin = {
     source: 'Found in Banges (North Sea Beach) and Crown (beach)'
 }
 var spinach = {
-    name: 'Spinach',
+    name: 'Fiddlehead',
     imgSrc: 'spinach.png',
     rarity: 3,
     source: 'Found near the Banges factory'
@@ -2584,7 +2584,7 @@ var balloonfruit = {
     source: 'Found on Astra and in Navia'
 }
 var thundereel = {
-    name: 'Thunder Eel',
+    name: 'Electric Eel',
     imgSrc: 'thundereel.png',
     rarity: 3,
     source: 'Found in the rivers of Banges, Navia, and Warren'
@@ -2596,13 +2596,13 @@ var hermitcrab = {
     source: 'Found on the beaches of Banges, Navia, and Crown'
 }
 var pomegranate = {
-    name: 'Pomegranate',
+    name: 'Phosphogranate',
     imgSrc: 'pomegranate.png',
     rarity: 3,
     source: 'Found in Navia (around rocks)'
 }
 var dragonfruit = {
-    name: 'Dragon Fruit',
+    name: 'Firedragon Fruit',
     imgSrc: 'dragonfruit.png',
     rarity: 3,
     source: 'Found near rivers in Navia and Crown'
@@ -2620,13 +2620,13 @@ var onion = {
     source: 'Purchased at food vendor'
 }
 var snowblossom = {
-    name: 'Snow Blossom',
+    name: 'Snow Azalea',
     imgSrc: 'snowblossom.png',
     rarity: 3,
     source: 'Found in Warren'
 }
 var pinecone = {
-    name: 'Pine Cone',
+    name: 'Pinecone',
     imgSrc: 'pinecone.png',
     rarity: 3,
     source: 'Found in Warren (around pine trees)'
@@ -2638,13 +2638,13 @@ var caviar = {
     source: 'Obtained from raider camp enemies'
 }
 var nut = {
-    name: 'Nut',
+    name: 'Hazelnut',
     imgSrc: 'nut.png',
     rarity: 4,
     source: 'Found in Navia'
 }
 var birdpotato = {
-    name: "Bird's Head Potato",
+    name: "Purple Yam",
     imgSrc: 'birdpotato.png',
     rarity: 4,
     source: 'Found in Warren'
@@ -2662,31 +2662,31 @@ var blacktruffle = {
     source: 'Found in Warren'
 }
 var cordyceps = {
-    name: 'Cordyceps',
+    name: 'Caterpillar Fungus',
     imgSrc: 'cordyceps.png',
     rarity: 4,
     source: 'Found in Warren'
 }
 var firmmeat = {
-    name: 'Firm Meat',
+    name: 'Prime Cut',
     imgSrc: 'firmmeat.png',
     rarity: 4,
     source: 'Obtained by hunting wild animals'
 }
 var fattymeat = {
-    name: 'Fatty Meat',
+    name: 'Fatty Cut',
     imgSrc: 'fattymeat.png',
     rarity: 4,
     source: 'Obtained by hunting wild animals'
 }
 var salmon = {
-    name: 'Salmon',
+    name: 'Lake Bass',
     imgSrc: 'salmon.png',
     rarity: 4,
     source: 'Found in rivers in Crown and Warren'
 }
 var snail = {
-    name: 'Snail',
+    name: 'Carrion Snail',
     imgSrc: 'snail.png',
     rarity: 4,
     source: 'Found in Navia (beach)'
@@ -2695,7 +2695,7 @@ var snail = {
 var food = [
     {
         id: 0,
-        name: 'Fried Mushroom',
+        name: 'Fried Mushrooms',
         imgSrc: 'friedmushroom.png',
         rarity: 1,
         stars: 1,
@@ -2717,7 +2717,7 @@ var food = [
     },
     {
         id: 2,
-        name: 'Wheat Bread',
+        name: 'Wholegrain Bread',
         imgSrc: 'wheatbread.png',
         rarity: 1,
         stars: 1,
@@ -2728,7 +2728,7 @@ var food = [
     },
     {
         id: 3,
-        name: 'Sizzled Barbequed Meat',
+        name: 'Sizzling Meat',
         imgSrc: 'sizzledbarbecuedmeat.png',
         rarity: 1,
         stars: 1,
@@ -2762,7 +2762,7 @@ var food = [
     },
     {
         id: 6,
-        name: 'Vegetable Egg Soup',
+        name: 'Seaweed and Egg Soup',
         imgSrc: 'vegetableeggsoup.png',
         rarity: 2,
         stars: 1,
@@ -2774,7 +2774,7 @@ var food = [
     },
     {
         id: 7,
-        name: 'Milk Oats',
+        name: 'Breakfast Cereal',
         imgSrc: 'milkoat.png',
         rarity: 2,
         stars: 1,
@@ -2786,7 +2786,7 @@ var food = [
     },
     {
         id: 8,
-        name: 'Crispy Chicken Drumstick Burger',
+        name: 'Crispy Chicken Burger',
         imgSrc: 'crispychickendrumstickburger.png',
         rarity: 2,
         stars: 1,
@@ -2811,7 +2811,7 @@ var food = [
     },
     {
         id: 10,
-        name: 'Golden Chopped Tomato',
+        name: 'Golden Egg and Tomato',
         imgSrc: 'goldenchoppedtomato.png',
         rarity: 2,
         stars: 1,
@@ -2835,7 +2835,7 @@ var food = [
     },
     {
         id: 12,
-        name: 'Steamed Snails',
+        name: 'Steamed Conch',
         imgSrc: 'steamedsnails.png',
         rarity: 2,
         stars: 1,
@@ -2847,7 +2847,7 @@ var food = [
     },
     {
         id: 13,
-        name: 'Potato Stew',
+        name: 'Meat and Potato Stew',
         imgSrc: 'potatostew.png',
         rarity: 2,
         stars: 1,
@@ -2859,7 +2859,7 @@ var food = [
     },
     {
         id: 14,
-        name: 'French Fries',
+        name: 'Fries',
         imgSrc: 'frenchfries.png',
         rarity: 2,
         stars: 1,
@@ -2897,7 +2897,7 @@ var food = [
     },
     {
         id: 17,
-        name: 'Honey Fruit Juice',
+        name: 'Honeyed Fruit Juice',
         imgSrc: 'honeyfruitjuice.png',
         rarity: 2,
         stars: 1,
@@ -2910,7 +2910,7 @@ var food = [
     },
     {
         id: 18,
-        name: 'Cocktail',
+        name: 'Iced Orchid Surprise',
         imgSrc: 'cocktail.png',
         rarity: 2,
         stars: 1,
@@ -2923,7 +2923,7 @@ var food = [
     },
     {
         id: 19,
-        name: 'Stir Fried Broccoli',
+        name: 'Stir-Fried Broccoli',
         imgSrc: 'stirfriedbroccoli.png',
         rarity: 2,
         stars: 1,
@@ -2934,7 +2934,7 @@ var food = [
     },
     {
         id: 20,
-        name: 'Meat Buns',
+        name: 'Meat Bun',
         imgSrc: 'meatbuns.png',
         rarity: 2,
         stars: 1,
@@ -2946,7 +2946,7 @@ var food = [
     },
     {
         id: 21,
-        name: 'Mushroom Fillet',
+        name: 'Sliced Fish with Mushroom',
         imgSrc: 'mushroomfillet.png',
         rarity: 2,
         stars: 1,
@@ -2970,7 +2970,7 @@ var food = [
     },
     {
         id: 23,
-        name: 'Pearl Fish',
+        name: 'Surf and Turf',
         imgSrc: 'pearlfish.png',
         rarity: 2,
         stars: 2,
@@ -2993,7 +2993,7 @@ var food = [
     },
     {
         id: 25,
-        name: 'Fire Ear Mushroom Soup',
+        name: 'Firecap Mushroom Soup',
         imgSrc: 'fireearmushroomsoup.png',
         rarity: 2,
         stars: 2,
@@ -3034,7 +3034,7 @@ var food = [
     },
     {
         id: 28,
-        name: 'Spicy Thick Meat Burger',
+        name: 'Spicy Burger',
         imgSrc: 'spicythickmeatburger.png',
         rarity: 3,
         stars: 1,
@@ -3063,7 +3063,7 @@ var food = [
     },
     {
         id: 30,
-        name: 'Strawberry Iced Soda',
+        name: 'Iced Strawberry Soda',
         imgSrc: 'strawberryicedsoda.png',
         rarity: 3,
         stars: 1,
@@ -3080,7 +3080,7 @@ var food = [
     },
     {
         id: 31,
-        name: 'Lightning Blueberry Soda',
+        name: 'Thundercloud Blueberry Soda',
         imgSrc: 'lightningblueberrysoda.png',
         rarity: 3,
         stars: 1,
@@ -3097,7 +3097,7 @@ var food = [
     },
     {
         id: 32,
-        name: 'Energy Salad',
+        name: 'Simple Power Salad',
         imgSrc: 'energysalad.png',
         rarity: 3,
         stars: 1,
@@ -3116,7 +3116,7 @@ var food = [
     },
     {
         id: 33,
-        name: 'Sea Urchin Omelette',
+        name: 'Steamed Egg with Sea Urchin',
         imgSrc: 'seaurchinomelette.png',
         rarity: 3,
         stars: 1,
@@ -3128,7 +3128,7 @@ var food = [
     },
     {
         id: 34,
-        name: 'Double Berry Sauce Toast',
+        name: 'Jam on Toast',
         imgSrc: 'doubleberrysaucetoast.png',
         rarity: 3,
         stars: 1,
@@ -3145,7 +3145,7 @@ var food = [
     },
     {
         id: 35,
-        name: 'Tomato Spaghetti Omelette',
+        name: 'Tomato and Fried Egg Pasta',
         imgSrc: 'tomatospaghettiomelette.png',
         rarity: 3,
         stars: 1,
@@ -3176,7 +3176,7 @@ var food = [
     },
     {
         id: 37,
-        name: 'Boiled Sea Conch',
+        name: 'Boiled Scallops',
         imgSrc: 'boiledseaconch.png',
         rarity: 3,
         stars: 1,
@@ -3188,7 +3188,7 @@ var food = [
     },
     {
         id: 38,
-        name: 'Roasted Ham',
+        name: 'Roast Rump',
         imgSrc: 'roastedham.png',
         rarity: 3,
         stars: 1,
@@ -3199,7 +3199,7 @@ var food = [
     },
     {
         id: 39,
-        name: 'Spinach Pie',
+        name: 'Fiddlehead Pie',
         imgSrc: 'spinachpie.png',
         rarity: 3,
         stars: 2,
@@ -3211,7 +3211,7 @@ var food = [
     },
     {
         id: 40,
-        name: 'Chocolate Bun',
+        name: 'Chocolate Bread',
         imgSrc: 'chocolatebun.png',
         rarity: 3,
         stars: 2,
@@ -3236,7 +3236,7 @@ var food = [
     },
     {
         id: 42,
-        name: 'Spinach Soup',
+        name: 'Fiddlehead Soup',
         imgSrc: 'spinachsoup.png',
         rarity: 3,
         stars: 2,
@@ -3263,7 +3263,7 @@ var food = [
     },
     {
         id: 44,
-        name: 'Mushroom Eel Soup',
+        name: 'Eel and Mushroom Soup',
         imgSrc: 'mushroomeelsoup.png',
         rarity: 3,
         stars: 2,
@@ -3325,7 +3325,7 @@ var food = [
     },
     {
         id: 48,
-        name: 'Dragon Fruit Tea',
+        name: 'Firedragon Fruit Tea',
         imgSrc: 'dragonfruittea.png',
         rarity: 3,
         stars: 2,
@@ -3370,7 +3370,7 @@ var food = [
     },
     {
         id: 51,
-        name: 'Snow Cuckoo Tea',
+        name: 'Snow Azalea Tea',
         imgSrc: 'snowcuckootea.png',
         rarity: 3,
         stars: 2,
@@ -3387,7 +3387,7 @@ var food = [
     },
     {
         id: 52,
-        name: 'Pine Nut Cocoa',
+        name: 'Pine Cocoa',
         imgSrc: 'pinenutcocoa.png',
         rarity: 3,
         stars: 2,
@@ -3442,7 +3442,7 @@ var food = [
     },
     {
         id: 56,
-        name: "Bird's Head Potato Cake",
+        name: "Purple Yam Pie",
         imgSrc: 'birdsheadpotatocake.png',
         rarity: 4,
         stars: 2,
@@ -3487,7 +3487,7 @@ var food = [
     },
     {
         id: 59,
-        name: 'Cordyceps Noodles',
+        name: 'Catepillar Fungus Noodles',
         imgSrc: 'cordycepsnoodles.png',
         rarity: 4,
         stars: 2,
@@ -3499,7 +3499,7 @@ var food = [
     },
     {
         id: 60,
-        name: 'Barbeque Steak',
+        name: 'Grilled Steak',
         imgSrc: 'barbequesteak.png',
         rarity: 4,
         stars: 2,
@@ -3514,7 +3514,7 @@ var food = [
     },
     {
         id: 61,
-        name: 'Mushroom Steak',
+        name: 'Steak w/ Sauce',
         imgSrc: 'mushroomsteak.png',
         rarity: 4,
         stars: 2,
@@ -3530,7 +3530,7 @@ var food = [
     },
     {
         id: 62,
-        name: 'Braised Pork',
+        name: 'Braised Meat',
         imgSrc: 'braisedpork.png',
         rarity: 4,
         stars: 2,
@@ -3545,7 +3545,7 @@ var food = [
     },
     {
         id: 63,
-        name: 'Juicy Meat Sandwich',
+        name: 'Juicy BLT',
         imgSrc: 'juicymeatsandwich.png',
         rarity: 4,
         stars: 2,

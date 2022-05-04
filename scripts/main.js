@@ -323,6 +323,7 @@ jQuery(document).ready(function ($) {
         // GADGET PAGE
         if (document.URL.includes("relics")) {
             $("#gadget-img").attr("src", i.pic);
+            $("#modal-bg-img").attr('src', i.pic);
             $("#gadget-desc").html(i.description);
 
             // Stars
