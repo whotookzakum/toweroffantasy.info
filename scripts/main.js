@@ -142,23 +142,18 @@ jQuery(document).ready(function ($) {
         $("#item-name").html(i.name);
         $("#item-tier").html(i.rarity);
         if (i.rarity === "SSR") {
+            // show 2 and 4 set effects, hide 3-set
             $("#chip-sr-sets").addClass("d-none");
             $("#chip-ssr-sets").removeClass("d-none");
-            $("#item-tier").removeClass("wep-tier-a");
-            $("#item-tier").removeClass("wep-tier-b");
-            $("#item-tier").addClass("wep-tier-s");
-        } else if (i.rarity === "SR") {
+            $("#item-tier").css('color', "var(--color-tier-s)");
+        } else if (i.rarity === "SR" || i.rarity === "R") {
+            // show 3-set effect, hide 2 and 4 sets
             $("#chip-ssr-sets").addClass("d-none");
             $("#chip-sr-sets").removeClass("d-none");
-            $("#item-tier").removeClass("wep-tier-s");
-            $("#item-tier").removeClass("wep-tier-b");
-            $("#item-tier").addClass("wep-tier-a");
-        } else if (i.rarity === "R") {
-            $("#chip-ssr-sets").addClass("d-none");
-            $("#chip-sr-sets").removeClass("d-none");
-            $("#item-tier").removeClass("wep-tier-s");
-            $("#item-tier").removeClass("wep-tier-a");
-            $("#item-tier").addClass("wep-tier-b");
+            $("#item-tier").css('color', "var(--color-tier-a)");
+            if (i.rarity === "R") {
+                $("#item-tier").css('color', "var(--color-tier-b)");
+            }
         }
 
         // MIMIC PAGE
@@ -176,29 +171,27 @@ jQuery(document).ready(function ($) {
             switch (i.eleImg) {
                 case "images/ele_fire.png":
                     wepEffectName = 'Flame';
-                    wepEffectNameColor = 'text-flame';
+                    wepEffectNameColor = 'flame';
                     break;
                 case "images/ele_physical.png":
                     wepEffectName = 'Grievous';
-                    wepEffectNameColor = 'text-phys';
+                    wepEffectNameColor = 'phys';
                     break;
                 case "images/ele_ice.png":
                     wepEffectName = 'Ice Shell';
-                    wepEffectNameColor = 'text-ice';
+                    wepEffectNameColor = 'ice';
                     break;
                 case "images/ele_electric.png":
                     wepEffectName = 'Volt';
-                    wepEffectNameColor = 'text-volt';
+                    wepEffectNameColor = 'volt';
                     break;
                 default:
                     wepEffectName = 'Elemental Efect';
-                    wepEffectNameColor = 'text-blue';
+                    wepEffectNameColor = 'blue';
             }
             
-            $("#wep-effect-name").html(
-                //<img src=${i.eleImg}> for the image
-                `<strong class="${wepEffectNameColor}">${wepEffectName}</strong>`
-            );
+            $("#wep-effect-name").html(wepEffectName);
+            $("#wep-effect-name").css('color', `var(--color-${wepEffectNameColor})`);
             
             $("#wep-effect").html(i.wepEffect);
             if (i.hasOwnProperty('exclusiveEffect')) {
@@ -211,20 +204,8 @@ jQuery(document).ready(function ($) {
             $("#energy-charge-tier").html(i.energyCharge[1]);
             $("#shield-break").html(i.shieldBreak[0]);
             $("#shield-break-tier").html(i.shieldBreak[1]);
-            $("#energy-charge-tier").removeClass("wep-tier-a");
-            $("#energy-charge-tier").removeClass("wep-tier-s");
-            $("#shield-break-tier").removeClass("wep-tier-a");
-            $("#shield-break-tier").removeClass("wep-tier-s");
-            if (i.energyCharge[1] === "s") {
-                $("#energy-charge-tier").addClass("wep-tier-s");
-            } else if (i.energyCharge[1] === "a") {
-                $("#energy-charge-tier").addClass("wep-tier-a");
-            }
-            if (i.shieldBreak[1] === "s") {
-                $("#shield-break-tier").addClass("wep-tier-s");
-            } else if (i.shieldBreak[1] === "a") {
-                $("#shield-break-tier").addClass("wep-tier-a");
-            }
+            $("#shield-break-tier").css('color', `var(--color-tier-${i.shieldBreak[1]})`);
+            $("#energy-charge-tier").css('color', `var(--color-tier-${i.energyCharge[1]})`);
             var mimicEle = i.eleImg.slice(i.eleImg.indexOf("_") + 1, i.eleImg.indexOf("."));
             $("#mimic-element").html(mimicEle.charAt(0).toUpperCase() + mimicEle.slice(1));
             var mimicReso = i.resoImg.slice(i.resoImg.indexOf("_") + 1, i.resoImg.indexOf("."));
@@ -359,7 +340,7 @@ jQuery(document).ready(function ($) {
 
     // Load Food
     for (let i = 0; i < food.length; i++) {
-        var recipe = '';
+        let recipe = '';
         for (let j = 0; j < food[i].ingredients.length; j++) {
             recipe += `
             <div class="col-2 mx-2 p-0 ingredient-group">
@@ -372,9 +353,9 @@ jQuery(document).ready(function ($) {
             `;
         }
 
-        var starCount = `<i class="fa-solid fa-star text-rarity-${food[i].rarity}"></i>`;
+        let starCount = `<i class="fa-solid fa-star" style="color: var(--color-rarity-${food[i].rarity}-text)"></i>`;
         if (food[i].stars === 2) {
-            starCount += `<i class="fa-solid fa-star text-rarity-${food[i].rarity}"></i>`;
+            starCount += starCount;
         }
 
         $("#food-wrapper").append(`
@@ -384,7 +365,7 @@ jQuery(document).ready(function ($) {
                 <div class="item-wrapper-with-bg bg-rarity-${food[i].rarity}">
                     <img class="item-img" src="images/food/${food[i].imgSrc}">
                 </div>
-                <strong class="font-chakra text-rarity-${food[i].rarity}">${food[i].name}</strong>
+                <strong class="font-chakra" style="color: var(--color-rarity-${food[i].rarity}-text)">${food[i].name}</strong>
             </div>
 
             <div class="col p-0 align-self-center text-center">${starCount}</div>

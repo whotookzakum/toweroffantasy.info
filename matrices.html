@@ -142,15 +142,15 @@
     <!-- Background image -->
     <img id="page-bg-img" class="bg-img" src="images/art/ruby.png">
 
-    <div class="container p-5">
+    <main class="container p-5">
         <!-- Chips List -->
-        <div id="modal-menu">
+        <menu id="modal-menu">
             <div class="position-relative">
                 <i class="fa-regular fa-circle-question page-info-icon"></i>
                 <div class="page-info">Matrices (AKA Chips) are weapon attachments that provide stat boosts and special effects.<br>There are 4 slots on each weapon; Emotion, Mind, Belief, and Memory. Each of these slots gives slightly different passive stats.</div>
             </div>
             <h1 class="page-header">Matrices</h1>
-            <div class="wep-tier wep-tier-s modal-menu-category">SSR Matrices</div>
+            <div class="tier tier-s modal-menu-category">SSR Matrices</div>
             <ul class="p-0 text-center mt-3">
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-ruby" class="chip-button-img" src="images/chip/ruby.png">
@@ -196,7 +196,7 @@
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-karasuma" class="chip-button-img" src="images/chip/karasuma.png">
-                    <h3>Karasuma</h3>
+                    <h3>Crow</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-king" class="chip-button-img" src="images/chip/king.png">
@@ -229,11 +229,11 @@
                     <div style="width: 128px"></div>
                 </li>
             </ul>
-            <div class="wep-tier wep-tier-a modal-menu-category">SR Matrices</div>
+            <div class="tier tier-a modal-menu-category">SR Matrices</div>
             <ul class="p-0 text-center mb-0 mt-3">
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-peppa" class="chip-button-img" src="images/chip/peppa.png">
-                    <h3>Peppa</h3>
+                    <h3>Pepper</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-hilda" class="chip-button-img" src="images/chip/hilda.png">
@@ -241,7 +241,7 @@
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-xi" class="chip-button-img" src="images/chip/xi.png">
-                    <h3>Xi</h3>
+                    <h3>Ene</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-bailing" class="chip-button-img" src="images/chip/bailing.png">
@@ -249,7 +249,7 @@
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-manaka" class="chip-button-img" src="images/chip/manaka.png">
-                    <h3>Manaka</h3>
+                    <h3>Echo</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-roberag" class="chip-button-img" src="images/chip/roberag.png">
@@ -278,7 +278,7 @@
                     <div style="width: 128px"></div>
                 </li>
             </ul>
-            <div class="wep-tier wep-tier-b modal-menu-category">R Matrices</div>
+            <div class="tier tier-b modal-menu-category">R Matrices</div>
             <ul class="p-0 text-center mb-0 mt-3">
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
                     <img id="btn-burstingcore" class="chip-button-img" src="images/chip/burstingcore.png">
@@ -305,14 +305,14 @@
                     <h3>Cleanup Agreement</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
+                    <div style="width: 128px"></div>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
+                    <div style="width: 128px"></div>
                 </li>
             </ul>
 
-        </div>
+        </menu>
 
         <!-- Modal -->
         <div class="modal fade" id="modal-content" tabindex="-1" aria-labelledby="modal-contentLabel" aria-hidden="true">
@@ -323,7 +323,7 @@
 
                     <div class="modal-header ps-5">
                         <div class="px-md-5">
-                            <div id="item-tier" class="wep-tier wep-tier-s d-inline-block me-3" style="width: 50px; padding: 0 3px;">SSR</div>
+                            <div id="item-tier" class="tier tier-s d-inline-block me-3" style="width: 50px; padding: 0 3px;">SSR</div>
                             <span id="item-name" class=" fw-bold">Name</span>
                         </div>
                         <button type="button" class="btn-close btn-close-white mb-auto" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -332,29 +332,29 @@
                     <div class="modal-body px-5">
 
                         <!-- Chips -->
-                        <div class="px-md-5">
+                        <article class="px-md-5">
 
                             <div class="row py-4">
                                 <div class="col-4 col-md-3 col-lg-2 align-self-center"><img id="chip-img" src="images/chip/samir.png"></div>
                                 <div id="chip-ssr-sets" class="col align-self-center">
-                                    <span class="text-blue">Set effect (2 pieces)</span><br>
+                                    <h3><strong>Set effect (2 pieces)</strong></h3>
                                     <span id="chip-2">Chip Effect 2 piece</span><br>
                                     <br>
-                                    <span class="text-blue">Set effect (4 pieces)</span><br>
+                                    <h3><strong>Set effect (4 pieces)</strong></h3>
                                     <span id="chip-4">Chip Effect 4 piece</span>
                                 </div>
                                 <div id="chip-sr-sets" class="col align-self-center d-none">
-                                    <span class="text-blue">Set effect (3 pieces)</span><br>
+                                    <h3><strong>Set effect (3 pieces)</strong></h3>
                                     <span id="chip-3">Chip Effect 3 piece</span><br>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                     </div> <!-- Modal body end -->
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
 
     <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
