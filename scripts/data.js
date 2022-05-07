@@ -165,9 +165,9 @@ var coco =
         chipImg:"images/chip/coco.png",
         chipEffect:[
             // 2 set
-            "Healing power and healing received increased by 8%/10%/12%/14%.",
+            "Increase healing capability and healing received by <strong>8%/10%/12%/14%</strong>.",
             // 4 set
-            "When allies and yourself receive healing effects, attack is increased by 10%/12.5%/15%/17.5% for 2 sec."
+            "When you or your teammates are healed, increase ATK by <strong>10%/12.5%/15%/17.5%</strong> for <strong>2</strong> seconds."
         ],
         
         mimicEffect:[
@@ -176,13 +176,13 @@ var coco =
             // 600 affinity
             "Unlock communication [Some Memories]",
             // 1200 affininty
-            "When Coco uses a secondary weapon, the healing effect is increased 20%",
+            "When Cocoritter uses a support weapon, increase healing effects she inflicts on others and receives by <strong>20%</strong>.",
             // 2000 affinity
             "Unlock communication [Some Obsessions]",
             // 3000 affinity
             "Unlock communication [Some Companionship]",
             // 4000 affinity
-            "When Coco uses a secondary weapon, the healing effect is increased 20% and attack power of surrounding allies is increased 15% for 3 seconds when using a secondary weapon's combo or weapon skill"
+            "When Cocoritter uses a support type weapon, the effects of healing and receiving healing are increased by <strong>20%</strong>, and when the discharge skills or weapon skills of the support-type weapon are used, the ATK of the friendly armies around you will increase by <strong>15%</strong> and lasts for <strong>5</strong> seconds."
         ],
         traits: ['Female','147 cm','Hagarde','Gemini','1 Jun'],
         gifts: [
@@ -251,9 +251,9 @@ var king =
         chipImg:"images/chip/king.png",
         chipEffect:[
             // 2 set
-            "For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25s",
+            "When a target is shattered, grant <strong>8%/10%/12%/14%</strong> damage boost for <strong>25</strong> seconds. Only the highest level is applied when the effect is obtained repeatedly.<br><img class='flag' src='images/cn.svg'> For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25 seconds.",
             // 4 set
-            "When surrounded by more than 2 enemies, attacks restore 10%/12%/13%/14% damage to HP--will not exceed 30%/33%/34.5%/36% attack power--every 0.5s."
+            "When there are more than 2 enemies around, hits restore HP equal to <strong>10%/12%/13%/14%</strong> of damage dealt upon attacking. The maximum HP restored every <strong>0.5</strong> seconds must not exceed <strong>30%/33%/34.5%/36%</strong> of ATK."
         ],
         
         mimicEffect:[
@@ -262,13 +262,13 @@ var king =
             // 600 affinity
             "Unlock communication [Trading Fiction]",
             // 1200 affininty
-            "King restores <strong>8%</strong> HP for every <strong>7</strong> enemies he defeats",
+            "Every <strong>7</strong> enemies killed by KING restores HP equal to <strong>8%</strong> of Max HP.",
             // 2000 affinity
             "Unlock communication [Peer-to-peer Contract]",
             // 3000 affinity
             "Unlock communication [Betting]",
             // 4000 affinity
-            "King restores <strong>10%</strong> HP for every <strong>5</strong> enemies he defeats"
+            "Every <strong>5</strong> enemies killed by KING restores HP equal to <strong>10%</strong> of Max HP."
         ],
         traits: ['Male','190 cm','Crown','Scorpio','3 Nov'],
         gifts: [
@@ -336,9 +336,9 @@ var shiro =
         chipImg:"images/chip/shiro.png",
         chipEffect:[
             // 2 set
-            "15%/19%/22.5%/26% increase in damage and shield breaking to targets above 50% health",
+            "Increase both damage and shatter to targets with more than <strong>50%</strong> HP by <strong>15%/19%/22.5%/26%</strong>.",
             // 4 set
-            "20%/25%/30%/35% damage boost when entering combat for 20 seconds, resets after 5 seconds out of combat."
+            "Upon entering battle, gain a <strong>20%/25%/30%/35%</strong> damage boost for <strong>20</strong> seconds. Reset <strong>5</strong> seconds after exiting battle."
         ],
         
         mimicEffect:[
@@ -347,13 +347,13 @@ var shiro =
             // 600 affinity
             "Unlock communication [Passive Partner]",
             // 1200 affininty
-            "When Shiro releases her weapon skill or combo skill, her full attack is increased by <strong>10%</strong>, and her physical attack is increased by <strong>7%</strong> for 8 seconds, cooldown 16 sec.",
+            "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by <strong>10%</strong> and physical ATK by an additional <strong>7%</strong> for <strong>8</strong> seconds. Cooldown: <strong>16</strong> seconds.",
             // 2000 affinity
             "Unlock communication [Sea Waves]",
             // 3000 affinity
             "Unlock communication [Song of the Secret Collection]",
             // 4000 affinity
-            "When Shiro releases her weapon skill or combo skill, her full attack is increased by <strong>16%</strong>, and her physical attack is increased by <strong>10%</strong> for 8 seconds, cooldown 16 sec."
+            "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by <strong>16%</strong> and physical ATK by an additional <strong>10%</strong> for <strong>8</strong> seconds. Cooldown: <strong>16</strong> seconds."
         ],
         traits: ['Female','163 cm','Warren','Virgo','22 Sep'],
         gifts: [
@@ -509,9 +509,9 @@ var claudia =
         chipImg:"images/chip/claudia.png",
         chipEffect:[
             // 2 set
-            "Aerial attack damage increased 13%/17%/20%/23% and double jump is reset after hitting a target in the air",
+            "Increase damage by <strong>13%/17%/20%/23%</strong> when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target in mid-air.",
             // 4 set
-            "After the skill hits, reduces all weapon skill cooldown by 1.5/2/2.5/3s, and increases combo skill damage by 36%/45%/54%/63% for 15s"
+            "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by0 <strong>1.5/2/2.5/3</strong> seconds and increases the damage of discharge skills by <strong>36%/45%/54%/63%</strong> for <strong>15</strong> seconds."
         ],
         
         mimicEffect:[
@@ -520,13 +520,13 @@ var claudia =
             // 600 affinity
             "Unlock communication [Please Tell Me More]",
             // 1200 affininty
-            "Stealth for <strong>1s</strong> after dodging",
+            "Hide for <strong>1</strong> seconds upon dodging.",
             // 2000 affinity
             "Unlock communication [Enthusiasm]",
             // 3000 affinity
             "Unlock communication [Engagement]",
             // 4000 affinity
-            "Stealth for <strong>1.5s</strong> after dodging"
+            "Hide for <strong>1.5</strong> seconds upon dodging."
         ],
         traits: ['Female','170 cm','Hagarde','Capricorn','16 Jan'],
         gifts: [
@@ -687,9 +687,9 @@ var meryl =
         chipImg:"images/chip/meryl.png",
         chipEffect:[
             // 2 set
-            "When dropping below 30% health, gain a shield of 15%/19%/22.5%/26% of maximum life for 10 seconds, cooldown 120 seconds",
+            "If HP is less than <strong>30%</strong> after being attacked, gain a shield equal to <strong>15%/19%/22.5%/26%</strong> of Max HP for <strong>10</strong> seconds. Cooldown: <strong>120</strong> seconds.",
             // 4 set
-            "Converts 60%/75%/90%/105% of damage dealth during shield to health, restores no more than 105%/127.5%/150%/172.5% of attack power every 0.5 seconds"
+            "Increase Whirlwind's damage by <strong>36%/45%/54%/63%</strong> and restore HP equal to <strong>30%/38%/44%/50%</strong> of the damage dealt while Whirlwind is active. The maximum HP restored every <strong>0.5</strong> seconds cannot exceed <strong>60%/72%/81%/90%</strong> of ATK.<br><img class='flag' src='images/cn.svg'> Converts 60%/75%/90%/105% of damage dealth during shield to health, restores no more than 105%/127.5%/150%/172.5% of attack power every 0.5 seconds"
         ],
         
         mimicEffect:[
@@ -698,13 +698,13 @@ var meryl =
             // 600 affinity
             "Unlock communication [Cold Conversation]",
             // 1200 affininty
-            "Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time.",
+            "Reduce frost damage received by Meryl by <strong>20%</strong>, gain immunity to the frostbitten effect, and reduce duration of being frozen by <strong>50%</strong>.",
             // 2000 affinity
             "Unlock communication [Severe Cold Daily]",
             // 3000 affinity
             "Unlock communication [Melting Ice]",
             // 4000 affinity
-            "Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
+            "Reduce frost damage received by Meryl by <strong>25%</strong>, gain immunity to the frostbitten effect, and reduce duration of being frozen by <strong>50%</strong>.<br><img class='flag' src='images/cn.svg'> Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
         ],
         traits: ['Female','170 cm','???','Libra','10 October'],
         gifts: [
@@ -768,9 +768,9 @@ var hane =
         chipImg:"images/chip/hane.png",
         chipEffect:[
             // 2 set
-            "Increase damage by 10%/12.5%/15%/17.5% if no enemy unit is within 4 meters",
+            "Increase damage dealt by <strong>10%/12.5%/15%/17.5%</strong> when there are no enemies within 4 meters.",
             // 4 set
-            "Boosts your attack by 12%/15%/18%/21% for 8 seconds after a headshot."
+            "Upon a headshot, increase ATK by <strong>12%/15%/18%/21%</strong> for 8 seconds."
         ],
         
         mimicEffect:[
@@ -779,13 +779,13 @@ var hane =
             // 600 affinity
             "Unlock communication [Natural Warmth]",
             // 1200 affininty
-            "Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <strong>15</strong> stacks). Each stack increases attack by <strong>0.5%</strong> and refreshes buff duration.",
+            "Each time Tsubasa deals damage, gain <strong>1</strong> stack of Fierce Strike, up to <strong>1</strong> stack per <strong>1</strong> second. Each stack adds <strong>0.5%</strong> ATK, up to <strong>15</strong> stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for <strong>30</strong> seconds.",
             // 2000 affinity
             "Unlock communication [Cooling Alarm]",
             // 3000 affinity
             "Unlock communication [Hot and Cold]",
             // 4000 affinity
-            "Each time Hane deals damage, gain 1 stack of Strong Strike (can stack 1 stack every 1 sec, up to <strong>30</strong> stacks). Each stack increases attack by <strong>0.6%</strong> and refreshes buff duration."
+            "Each time Tsubasa deals damage, gain <strong>1</strong> stack of Fierce Strike, up to <strong>1</strong> stack per <strong>1</strong> second. Each stack adds <strong>0.6%</strong> ATK, up to <strong>30</strong> stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for <strong>30</strong> seconds."
         ],
         traits: ['Female','169 cm','Astra','Aries','24 Mar'],
         gifts: [
@@ -853,9 +853,9 @@ var huma =
         chipImg:"images/chip/huma.png",
         chipEffect:[
             // 2 set
-            "After the dodge skill hits a target, applies bleed, causing 15%/19%/22.5%/26% * attack damage per sec for 5 sec.",
+            "Hitting targets with dodge skills inflicts bleed, dealing damage equal to <strong>15%/19%/22.5%/26%</strong> of ATK every second for <strong>5</strong> seconds.",
             // 4 set
-            "Attack power of the target affected by bleed within 8 meters is reduced by 10%/12%/13%/15%."
+            "Reduce ATK of all targets within 8 meters that are taking damage over time by <strong>10%/12%/13%/15%</strong>."
         ],
         
         mimicEffect:[
@@ -864,13 +864,13 @@ var huma =
             // 600 affinity
             "Unlock communication [Acquaintance]",
             // 1200 affininty
-            "Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <strong>x0.4%</strong> of your life.",
+            "Each time Huma receives damage, gain <strong>1</strong> Fortitude mark and gain <strong>1</strong> more Fortitude mark if it is flame damage, up to <strong>1</strong> time per <strong>1</strong> second and <strong>12</strong> stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks x <strong>0.4%</strong> HP for <strong>12</strong> seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks x <strong>0.6%</strong> HP.",
             // 2000 affinity
             "Unlock communication [Echo]",
             // 3000 affinity
             "Unlock communication [Symphony]",
             // 4000 affinity
-            "Huma gains 1 Marker of Fortitude per damage, 1 additional Marker if she takes fire damage, up to 1 per second, up to a total of 12. When releasing a weapon skill, all Markers are consumed and you gain <strong>x0.6%</strong> of your life."
+            "Each time Huma receives damage, gain <strong>1</strong> Fortitude mark and gain <strong>1</strong> more Fortitude mark if it is flame damage, up to <strong>1</strong> time per <strong>1</strong> second and <strong>12</strong> stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks x <strong>0.6%</strong> HP for <strong>12</strong> seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks x <strong>0.9%</strong> HP."
         ],
         traits: ['Female','167 cm','???','Capricorn','12 Jan'],
         gifts: [
@@ -942,9 +942,9 @@ var karasuma =
         chipImg:"images/chip/karasuma.png",
         chipEffect:[
             // 2 set
-            "Crit damage is increased by 33%/42%/50%/58% against targets below 60% health",
+            "Increase crit damage to targets with less than <strong>60%</strong> HP by <strong>24%/30%/36%/42%</strong>.<br><img class='flag' src='images/cn.svg'> Increase crit damage to targets with less than <strong>60%</strong> HP by <strong>33%/42%/50%/58%</strong>.",
             // 4 set
-            "Continuous damage is added during a crit strike, causing 12%/15%/18%/21% attack damage to the target every second for 5 seconds (does not stack)"
+            "Crits deal additional damage over time equal to <strong>18%/22%/26%/30%</strong> of ATK every second for <strong>5</strong> seconds. Does not stack.<br><img class='flag' src='images/cn.svg'> Crits deal additional damage over time equal to <strong>12%/15%/18%/21%</strong> of ATK every second for <strong>5</strong> seconds. Does not stack."
         ],
         
         mimicEffect:[
@@ -953,13 +953,13 @@ var karasuma =
             // 600 affinity
             "Unlock communication [Friendship Achieved]",
             // 1200 affininty
-            "When not in a group, Crow's damage is increased by 6% and damage taken is reduced by 4%.",
+            "When Crow is not in team play, increase damage dealt by <strong>6%</strong> and reduce damage received by <strong>4%</strong>.",
             // 2000 affinity
             "Unlock communication [Happy-go-lucky]",
             // 3000 affinity
             "Unlock communication [Jokes]",
             // 4000 affinity
-            "When not in a group, Crow's damage is increased by 10% and damage taken is reduced by 6%. When Crow starts a fight, damage is increased by 12% for 12 seconds."
+            "When Crow is not in team play, increase damage dealt by <strong>10%</strong> and reduce damage received by <strong>6%</strong> When Crow enters combat, increase damage dealt by <strong>12%</strong> for <strong>12</strong> seconds."
         ],
         traits: ['Male','162 cm','Astra','Sagittarius','17 Dec'],
         gifts: [
@@ -1032,9 +1032,9 @@ var zero =
         chipImg:"images/chip/zero.png",
         chipEffect:[
             // 2 set
-            "When you release a combo, you gain a shield of 120%/150%/180%/210% of your attack power for 4 seconds.",
+            "Upon using a discharge skill to switch to the current weapon, gain a shield equal to <strong>120%/150%/180%/210%</strong> of ATK for <strong>4</strong> seconds.",
             // 4 set
-            "Increases the damage dealt by yourself and your teammates by 16%/20%/24%/28% during the shield period"
+            "While the shield is active, you and your teammates deal <strong>16%/20%/24%/28%</strong> more damage."
         ],
         
         mimicEffect:[
@@ -1043,13 +1043,13 @@ var zero =
             // 600 affinity
             "Unlock communication [Unintelligible Dialogue]",
             // 1200 affininty
-            "Zero reduces the cooldown of gadgets by <strong>1.5s</strong> when releasing a weapon skill.",
+            "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by <strong>1.5</strong> seconds. Can only activate for the same weapon <strong>1</strong> time every <strong>5</strong> seconds.",
             // 2000 affinity
             "Unlock communication [Rules]",
             // 3000 affinity
             "Unlock communication [Zero]",
             // 4000 affinity
-            "Zero reduces the cooldown of gadgets by <strong>3s</strong> when releasing a weapon skill."
+            "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by <strong>3</strong> seconds. Can only activate for the same weapon <strong>1</strong> time every <strong>5</strong> seconds."
         ],
         traits: ['Male','155 cm','Bengis','Gemini','6 Jun'],
         gifts: [
@@ -1452,7 +1452,7 @@ var bailing =
             //
             "",
             // 3 set
-            "12%/15%/18% increase in damage to heavily injured targets"
+            "Increase damage dealt to grievous targets by <strong>12%/15%/18%</strong>."
         ],
         
         mimicEffect:[
@@ -1461,13 +1461,13 @@ var bailing =
             // 600 affinity
             "",
             // 1200 affininty
-            "When Bai Ling retracts her Jetpack or Jet Skis, her movement speed is increased by <strong>8%</strong> for 12 seconds, with a cooldown time of 60 seconds",
+            "When Bai Ling puts the Glider or the Wayboard away, increase speed by <strong>8%</strong> for <strong>12</strong> seconds. Cooldown: <strong>60</strong> seconds.",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "When Bai Ling retracts her Jetpack or Jet Skis, her movement speed is increased by <strong>15%</strong> for 12 seconds, with a cooldown time of 60 seconds"
+            "When Bai Ling puts the Glider or the Wayboard away, increase speed by <strong>15%</strong> for <strong>12</strong> seconds. Cooldown: <strong>60</strong> seconds."
         ],
         traits: ['Female','163 cm','HT201 Sanctuary','Taurus','8 May'],
         gifts: [
@@ -1540,7 +1540,7 @@ var hilda =
             //
             "",
             // 3 set
-            "Attack power is increased by 15%/19%/22.5% when no enemy unit is within 6 meters."
+            "Increase ATK by <strong>15%/19%/22.5%</strong> when there are no enemies within 6 meters."
         ],
         
         mimicEffect:[
@@ -1549,13 +1549,13 @@ var hilda =
             // 600 affinity
             "",
             // 1200 affininty
-            "Hilda's movement speed is increased by <strong>7%</strong> when riding on a mount",
+            "When Hilda uses a vehicle, increase speed by <strong>7%</strong>.",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "Hilda's movement speed is increased by <strong>10%</strong> when riding on a mount"
+            "When Hilda uses a vehicle, increase speed by <strong>10%</strong>."
         ],
         traits: ['Female','165 cm','???','Aries','11 Apr'],
         gifts: [
@@ -1628,7 +1628,7 @@ var manaka =
             //
             "",
             // 3 set
-            "Gains 80/100/120 weapon charge points after releasing a combo."
+            "Using a discharge skill to switch to the current weapon grants <strong>80/100/120</strong> weapon charge."
         ],
         
         mimicEffect:[
@@ -1637,13 +1637,13 @@ var manaka =
             // 600 affinity
             "",
             // 1200 affininty
-            "When teaming up with Manaka, all teammates within 10m of Manaka receive a <strong>4%</strong> damage boost (excluding yourself).",
+            "When teamed up with Echo, allies within <strong>10</strong> meters around Echo gain a damage boost of <strong>4%</strong> (excluding Echo).",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "When teaming up with Manaka, all teammates within 10m of Manaka receive a <strong>6%</strong> damage boost (excluding yourself)."
+            "When teamed up with Echo, allies within <strong>10</strong> meters around Echo gain a damage boost of <strong>6%</strong> (excluding Echo)."
         ],
         traits: ['Female','162 cm','Warren','Leo','14 Aug'],
         gifts: [
@@ -1714,7 +1714,7 @@ var peppa =
             //
             "",
             // 3 set
-            "Increase the speed of acquiring weapon recharge by 10%/12.5%/15%."
+            "Increase speed of obtaining weapon charge by <strong>10%/12.5%/15%</strong>."
         ],
         
         mimicEffect:[
@@ -1723,13 +1723,13 @@ var peppa =
             // 600 affinity
             "",
             // 1200 affininty
-            "When Peppa uses satiety (satiety) to restore life, the recovery effect is increased by <strong>100%</strong>",
+            "When Pepper spends satiety to restore HP, increase restoration effect by <strong>100%</strong>.",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "When Peppa uses satiety (satiety) to restore life, the recovery effect is increased by <strong>200%</strong>"
+            "When Pepper spends satiety to restore HP, increase restoration effect by <strong>200%</strong>."
         ],
         traits: ['Female','160 cm','Bengis','Cancer','9 Jul'],
         gifts: [
@@ -1803,7 +1803,7 @@ var xi =
             //
             "",
             // 3 set
-            "When causing damage higher than 100% attack power, an additional 60%/75%/90%* attack damage will be reconstituted, and the cooldown is 3 seconds"
+            "When dealing damage greater than <strong>100%</strong> of ATK, deal additional damage equal to <strong>60%/75%/90%</strong> of ATK. Cooldown: <strong>3</strong> seconds."
         ],
         
         mimicEffect:[
@@ -1812,13 +1812,13 @@ var xi =
             // 600 affinity
             "",
             // 1200 affininty
-            "Reduces stamina consumption by <strong>12%</strong> when swimming, climbing or gliding.",
+            "When Ene swims, climbs, or glides, reduce endurance consumption by <strong>12%</strong>.",
             // 2000 affinity
             "",
             // 3000 affinity
             "",
             // 4000 affinity
-            "Reduces stamina consumption by <strong>20%</strong> when swimming, climbing or gliding."
+            "When Ene swims, climbs, or glides, reduce endurance consumption by <strong>20%</strong>."
         ],
         traits: ['Female','145 cm','Crown','Leo','17 Aug'],
         gifts: [
@@ -1859,14 +1859,14 @@ var xi =
 
 // Chip exclusives
 var roberag = {
-    name:"Roberag",
+    name:"Robarg",
     rarity:"SR",
     chipImg:"images/chip/roberag.png",
     chipEffect:[
             //
             "",
             // 3 set
-            "Poison the target when breaking shields, dealing 45%/56%/67.5%"
+            "When a target is shattered, poison the target and deal damage equal to <strong>45%/56%/67.5%</strong> of ATK every second for <strong>10</strong> seconds."
         ],
     artwork:''
 }
@@ -1878,19 +1878,19 @@ var apophis = {
             //
             "",
             // 3 set
-            "The lower your health, the more damage you can do, at 20% health, the maximum value is reached and the maximum damage increased by 20%/25%/30%."
+            "Deal higher damage at lower HP. Deal maximum damage when HP is <strong>20%</strong>. The damage can be increased by up to <strong>20%/25%/30%</strong>."
         ],
     artwork:''
 }
 var frozenmech = {
-    name:"Frozen Mech",
+    name:"Frost Bot",
     rarity:"SR",
     chipImg:"images/chip/frozenmech.png",
     chipEffect:[
             //
             "",
             // 3 set
-            "When the health is lower than 40%, cast a combo technique to restore the health value of 160%/200%/240% of the attack power."
+            "When HP is below <strong>40%</strong>, using a discharge skill to switch to the current weapon restores HP equal to <strong>160%/200%/240%</strong> of ATK."
         ],
     artwork:''
 }
@@ -1902,7 +1902,7 @@ var sobek = {
             //
             "",
             // 3 set
-            "Increases damage by 6%/7.5%/9% for each enemy unit that is around, up to 3 levels."
+            "Increase damage dealt by <strong>6%/7.5%/9%</strong> for each enemy nearby. Up to 3 stacks."
         ],
     artwork:''
 }
@@ -1914,55 +1914,55 @@ var barbarossa = {
             //
             "",
             // 3 set
-            "when switching to (this) weapon, get 50%/62.5%/75% counter damage that last for 3 seconds, cool down for 30 seconds; when switch to other weapons, get 20%/25%/30% damage increase, lasting 5 seconds, with a cooldown time of 30 seconds."
+            "Upon switching to the weapon, gain <strong>50%/62.5%/75%</strong> damage reflection for <strong>3</strong> seconds. Cooldown: <strong>30</strong> seconds. Upon switching to another weapon, gain a <strong>20%/25%/30%</strong> damage boost for <strong>5</strong> seconds. Cooldown: <strong>30</strong> seconds."
         ],
     artwork:''
 }
 var burstingcore = {
-    name:"Bursting Core",
+    name:"Explosive Core",
     rarity:"R",
     chipImg:"images/chip/burstingcore.png",
     chipEffect:[
             //
             "",
             // 3 set
-            "Fire weapon damage increased by 6%"
+            "Increase damage dealt by flame weapons by <strong>6%</strong>."
         ],
     artwork:''
 }
 var transportthinking = {
-    name:"Transport Thinking",
+    name:"Bullseye",
     rarity:"R",
     chipImg:"images/chip/transportthinking.png",
     chipEffect:[
             //
             "",
             // 3 set
-            "Ice weapon damage increased by 6%"
+            "Increase damage dealt by frost weapons by <strong>6%</strong>."
         ],
     artwork:''
 }
 var guardscode = {
-    name:"Guard's Code",
+    name:"Tenet Guard",
     rarity:"R",
     chipImg:"images/chip/guardscode.png",
     chipEffect:[
             //
             "",
             // 3 set
-            "Electricity weapon damage increased by 6%"
+            "Increase damage dealt by volt weapons by <strong>6%</strong>."
         ],
     artwork:''
 }
 var arrogantprovocation = {
-    name:"Arrogant Provocation",
+    name:"Provocateurs",
     rarity:"R",
     chipImg:"images/chip/arrogantprovocation.png",
     chipEffect:[
             //
             "",
             // 3 set
-            "Physical weapon damage increased by 6%"
+            "Increase damage dealt by physical weapons by <strong>6%</strong>."
         ],
     artwork:''
 }
