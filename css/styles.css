@@ -675,6 +675,27 @@ body {
     text-align: left;
 }
 
+#guide-stitch-wep blockquote {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--color-container-accent-light);
+    margin: 0;
+}
+#guide-stitch-wep blockquote img {
+    object-fit: none;
+    margin-right: 1rem;
+}
+
+#guide-stitch-wep blockquote:nth-child(odd) {
+    background-color: var(--color-container-accent-dark);  
+}
+
+#guide-stitch-wep blockquote:nth-child(odd) img {
+    object-fit: none;
+    margin-left: 1rem;
+    order: 2;
+}
+
 #guide-stitch-wep td {
     color: lawngreen;
     font-weight: bold;
