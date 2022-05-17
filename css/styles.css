@@ -162,13 +162,15 @@ img[src="images/cn.svg"] {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .modal-body::-webkit-scrollbar,
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.navbar::-webkit-scrollbar {
     display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .modal-body,
-body {
+body,
+.navbar {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -292,12 +294,22 @@ body {
     filter: drop-shadow(var(--shadow-0-0-4));
     z-index: 80000;
     width: 250px;
+    padding: 0;
 }
 
 .sidenav {
     min-height: 100%;
     align-content: space-between;
     white-space: nowrap;
+}
+
+.nav-body, .offcanvas-body {
+    width: 100%;
+    padding: 3rem 3rem 0 3rem;
+}
+
+.offcanvas-body {
+    overflow-x: hidden;
 }
 
 .navbar .nav-link {
@@ -357,7 +369,11 @@ body {
 
 .nav-footer {
     color: var(--color-navbar-text-dark) !important;
+    font-size: 1.25rem;
+    margin: auto;
+    margin-bottom: 3rem;
 }
+
 
 .offcanvas-backdrop {
     z-index: 70000;
