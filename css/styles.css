@@ -658,6 +658,7 @@ body,
 }
 .submitted-by {
     text-align: right;
+    
     color: gray;
     font-style: italic
 }
