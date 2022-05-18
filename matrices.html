@@ -37,49 +37,47 @@
 </head>
 
 <body>
-    <!-- Nav toggler -->
-    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
-        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
-    </nav>
-
-    <!-- Sidenav offcanvas (smaller screens) -->
-    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-keyboard="true" tabindex="-1"> 
-        <div class="offcanvas-body p-5 pb-0">
-            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
-            <a class="navbar-brand" href="index">
-                <img class="mb-3" src="images/avatar/tata.png"><br>
-                Tower of Fantasy Index
-            </a>
-            <hr class="my-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                </li>
-            </ul>
-            <hr class="my-3">
-            <div class="nav-socials">
+    <nav class="navbar sidenav">
+        <a id="nav-toggler">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="nav-body">
+            <div class="nav-backdrop"></div>
+            <a id="sidenav-btn-close" class="btn-close btn-close-white"></a>
+            <div class="nav-contents">
+                <a class="navbar-brand" href="index">
+                    <img class="mb-3" src="images/avatar/tata.png"><br>
+                    Tower of Fantasy Index
+                </a>
+                <hr class="my-3">
                 <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" ><i class="fa-solid fa-carrot"></i> Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                    </li>
+                </ul>
+                <hr class="my-3">
+                <ul class="nav nav-socials flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
                     </li>
@@ -87,58 +85,9 @@
                         <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
                     </li>
                 </ul>
+                <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
             </div>
         </div>
-        <div class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</div>
-    </nav>
-
-    <!-- Sidenav static (larger screens) -->
-    <nav id="sidenav-static" class="navbar sidenav position-fixed">
-        <div class="nav-body p-5 pb-0">
-            <a class="navbar-brand" href="index">
-                <img class="mb-3" src="images/avatar/tata.png"><br>
-                Tower of Fantasy Index
-            </a>
-            <hr class="my-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                </li>
-            </ul>
-            <hr class="my-3">
-            <div class="nav-socials">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</div>
     </nav>
 
     <!-- Background image -->
@@ -154,74 +103,74 @@
             <h1 class="page-header">Matrices</h1>
             <div class="tier tier-s modal-menu-category">SSR Matrices</div>
             <ul class="p-0 text-center mt-3">
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-ruby" class="chip-button-img" src="images/chip/ruby.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-ruby">
+                    <img class="chip-button-img" src="images/chip/ruby.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Ruby <span class="tag">New</span></h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-frigg" class="chip-button-img" src="images/chip/frigg.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-frigg">
+                    <img class="chip-button-img" src="images/chip/frigg.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Frigg</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-nemesis" class="chip-button-img" src="images/chip/nemesis.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-nemesis">
+                    <img class="chip-button-img" src="images/chip/nemesis.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Nemesis</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-marc" class="chip-button-img" src="images/chip/marc.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-marc">
+                    <img class="chip-button-img" src="images/chip/marc.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Marc</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-baiyuekui" class="chip-button-img" src="images/chip/baiyuekui.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-baiyuekui">
+                    <img class="chip-button-img" src="images/chip/baiyuekui.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Baiyuekui</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-cobalt" class="chip-button-img" src="images/chip/cobalt.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-cobalt">
+                    <img class="chip-button-img" src="images/chip/cobalt.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Cobalt-B</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-claudia" class="chip-button-img" src="images/chip/claudia.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-claudia">
+                    <img class="chip-button-img" src="images/chip/claudia.png">
                     <h3>Claudia</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-coco" class="chip-button-img" src="images/chip/coco.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-coco">
+                    <img class="chip-button-img" src="images/chip/coco.png">
                     <h3>Coco Ritter</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-huma" class="chip-button-img" src="images/chip/huma.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-huma">
+                    <img class="chip-button-img" src="images/chip/huma.png">
                     <h3>Huma</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-karasuma" class="chip-button-img" src="images/chip/karasuma.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-karasuma">
+                    <img class="chip-button-img" src="images/chip/karasuma.png">
                     <h3>Crow</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-king" class="chip-button-img" src="images/chip/king.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-king">
+                    <img class="chip-button-img" src="images/chip/king.png">
                     <h3>KING</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-meryl" class="chip-button-img" src="images/chip/meryl.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-meryl">
+                    <img class="chip-button-img" src="images/chip/meryl.png">
                     <h3>Meryl</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-samir" class="chip-button-img" src="images/chip/samir.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-samir">
+                    <img class="chip-button-img" src="images/chip/samir.png">
                     <h3>Samir</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-shiro" class="chip-button-img" src="images/chip/shiro.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-shiro">
+                    <img class="chip-button-img" src="images/chip/shiro.png">
                     <h3>Shiro</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-hane" class="chip-button-img" src="images/chip/hane.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-hane">
+                    <img class="chip-button-img" src="images/chip/hane.png">
                     <h3>Tsubasa</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-zero" class="chip-button-img" src="images/chip/zero.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-zero">
+                    <img class="chip-button-img" src="images/chip/zero.png">
                     <h3>Zero</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3 align-top py-0 invisible">
@@ -233,44 +182,44 @@
             </ul>
             <div class="tier tier-a modal-menu-category">SR Matrices</div>
             <ul class="p-0 text-center mb-0 mt-3">
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-peppa" class="chip-button-img" src="images/chip/peppa.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-peppa">
+                    <img class="chip-button-img" src="images/chip/peppa.png">
                     <h3>Pepper</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-hilda" class="chip-button-img" src="images/chip/hilda.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-hilda">
+                    <img class="chip-button-img" src="images/chip/hilda.png">
                     <h3>Hilda</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-xi" class="chip-button-img" src="images/chip/xi.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-xi">
+                    <img class="chip-button-img" src="images/chip/xi.png">
                     <h3>Ene</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-bailing" class="chip-button-img" src="images/chip/bailing.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-bailing">
+                    <img class="chip-button-img" src="images/chip/bailing.png">
                     <h3>Bai Ling</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-manaka" class="chip-button-img" src="images/chip/manaka.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-manaka">
+                    <img class="chip-button-img" src="images/chip/manaka.png">
                     <h3>Echo</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-roberag" class="chip-button-img" src="images/chip/roberag.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-roberag">
+                    <img class="chip-button-img" src="images/chip/roberag.png">
                     <h3>Robarg</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-apophis" class="chip-button-img" src="images/chip/apophis.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-apophis">
+                    <img class="chip-button-img" src="images/chip/apophis.png">
                     <h3>Apophis</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-frozenmech" class="chip-button-img" src="images/chip/frozenmech.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-frozenmech">
+                    <img class="chip-button-img" src="images/chip/frozenmech.png">
                     <h3>Frost Bot</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-sobek" class="chip-button-img" src="images/chip/sobek.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-sobek">
+                    <img class="chip-button-img" src="images/chip/sobek.png">
                     <h3>Sobek</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-barbarossa" class="chip-button-img" src="images/chip/barbarossa.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-barbarossa">
+                    <img class="chip-button-img" src="images/chip/barbarossa.png">
                     <h3>Barbarossa</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3 align-top py-0 invisible">
@@ -282,28 +231,28 @@
             </ul>
             <div class="tier tier-b modal-menu-category">R Matrices</div>
             <ul class="p-0 text-center mb-0 mt-3">
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-burstingcore" class="chip-button-img" src="images/chip/burstingcore.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-burstingcore">
+                    <img class="chip-button-img" src="images/chip/burstingcore.png">
                     <h3>Exploding Core</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-transportthinking" class="chip-button-img" src="images/chip/transportthinking.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-transportthinking">
+                    <img class="chip-button-img" src="images/chip/transportthinking.png">
                     <h3>Bullseye</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-guardscode" class="chip-button-img" src="images/chip/guardscode.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-guardscode">
+                    <img class="chip-button-img" src="images/chip/guardscode.png">
                     <h3>Tenet Guard</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-arrogantprovocation" class="chip-button-img" src="images/chip/arrogantprovocation.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-arrogantprovocation">
+                    <img class="chip-button-img" src="images/chip/arrogantprovocation.png">
                     <h3>Provocateurs</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-offensivelogic" class="chip-button-img" src="images/chip/offensivelogic.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-offensivelogic">
+                    <img class="chip-button-img" src="images/chip/offensivelogic.png">
                     <h3><img class='flag' src='images/cn.svg'> Offensive Logic</h3>
                 </li>
-                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img id="btn-cleanupagreement" class="chip-button-img" src="images/chip/cleanupagreement.png">
+                <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-cleanupagreement">
+                    <img class="chip-button-img" src="images/chip/cleanupagreement.png">
                     <h3><img class='flag' src='images/cn.svg'> Cleanup Agreement</h3>
                 </li>
                 <li class="modal-menu-item chip-button p-2 p-md-3 p-lg-2 p-xl-3 align-top py-0 invisible">

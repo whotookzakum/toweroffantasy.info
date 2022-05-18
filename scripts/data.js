@@ -725,7 +725,7 @@ var meryl =
             harmonica, '+15',
             strangePlant, '+15'
         ],
-        giftPrefs: ['metal-items','rare-items'],
+        giftPrefs: ['metalware','rare-items'],
         recChips: [
             ['king', 2],
             ['shiro', 2],

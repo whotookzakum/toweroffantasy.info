@@ -33,108 +33,57 @@
 </head>
 
 <body>
-    <!-- Nav toggler -->
-    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
-        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
-    </nav>
-
-    <!-- Sidenav offcanvas (smaller screens) -->
-    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-keyboard="true" tabindex="-1">
-        <div class="offcanvas-body p-5 pb-0">
-            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
-            <a class="navbar-brand" >
-                <img class="mb-3" src="images/avatar/tata.png"><br>
-                Tower of Fantasy Index
-            </a>
-            <hr class="my-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                </li>
-            </ul>
-            <hr class="my-3">
-            <div class="nav-socials">
+    <nav class="navbar sidenav">
+        <a id="nav-toggler">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="nav-body">
+            <div class="nav-backdrop"></div>
+            <a id="sidenav-btn-close" class="btn-close btn-close-white"></a>
+            <div class="nav-contents">
+                <a class="navbar-brand" href="index">
+                    <img class="mb-3" src="images/avatar/tata.png"><br>
+                    Tower of Fantasy Index
+                </a>
+                <hr class="my-3">
                 <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" ><i class="fa-solid fa-carrot"></i> Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                    </li>
+                </ul>
+                <hr class="my-3">
+                <ul class="nav nav-socials flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle"></i> Reddit</a>
                     </li>
                 </ul>
+                <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
             </div>
         </div>
-        <div class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</div>
-    </nav>
-    
-    <!-- Sidenav static (larger screens) -->
-    <nav id="sidenav-static" class="navbar sidenav position-fixed">
-        <div class="nav-body p-5 pb-0">
-            <a class="navbar-brand" >
-                <img class="mb-3" src="images/avatar/tata.png"><br>
-                Tower of Fantasy Index
-            </a>
-            <hr class="my-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                </li>
-            </ul>
-            <hr class="my-3">
-            <div class="nav-socials">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</div>
     </nav>
     
     <!-- Background image -->

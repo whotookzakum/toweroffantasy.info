@@ -12,130 +12,55 @@ jQuery(document).ready(function ($) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
     
+    // Navigation 
+    $("#nav-toggler").click(function(){
+        $(".sidenav .nav-body").addClass("nav-open");
+    });
+    
+    $("#sidenav-btn-close").click(function(){
+        $(".sidenav .nav-body").removeClass("nav-open");
+    });
+    
+    $(".nav-backdrop").click(function(){
+        $(".sidenav .nav-body").removeClass("nav-open");
+    });
+    
+    $(window).resize(function(){
+        if (window.innerWidth > 1440) {
+            $(".sidenav .nav-body").removeClass("nav-open");
+        }
+    });
+    
+    
+    // Gets the clicked #btn-... to pass into setModalData()
     $(".modal-menu-item").click(function () {
-
+        
+        let selectedItem = $(this).attr('id').replace('btn-','');
+        
         // MIMICS & CHIPS PAGES
         if (document.URL.includes("simulacra") || document.URL.includes("matrices")) {
-            if ($(this).children().is("#btn-samir")) {
-                setModalData(samir);
-            } else if ($(this).children().is("#btn-coco")) {
-                setModalData(coco);
-            } else if ($(this).children().is("#btn-king")) {
-                setModalData(king);
-            } else if ($(this).children().is("#btn-shiro")) {
-                setModalData(shiro);
-            } else if ($(this).children().is("#btn-meryl")) {
-                setModalData(meryl);
-            } else if ($(this).children().is("#btn-huma")) {
-                setModalData(huma);
-            } else if ($(this).children().is("#btn-hane")) {
-                setModalData(hane);
-            } else if ($(this).children().is("#btn-karasuma")) {
-                setModalData(karasuma);
-            } else if ($(this).children().is("#btn-zero")) {
-                setModalData(zero);
-            } else if ($(this).children().is("#btn-claudia")) {
-                setModalData(claudia);
-            } else if ($(this).children().is("#btn-cobalt")) {
-                setModalData(cobalt);
-            } else if ($(this).children().is("#btn-baiyuekui")) {
-                setModalData(baiyuekui);
-            } else if ($(this).children().is("#btn-marc")) {
-                setModalData(marc);
-            } else if ($(this).children().is("#btn-nemesis")) {
-                setModalData(nemesis);
-            } else if ($(this).children().is("#btn-frigg")) {
-                setModalData(frigg);
-            } else if ($(this).children().is("#btn-ruby")) {
-                setModalData(ruby);
-            } else if ($(this).children().is("#btn-peppa")) {
-                setModalData(peppa);
-            } else if ($(this).children().is("#btn-hilda")) {
-                setModalData(hilda);
-            } else if ($(this).children().is("#btn-xi")) {
-                setModalData(xi);
-            } else if ($(this).children().is("#btn-bailing")) {
-                setModalData(bailing);
-            } else if ($(this).children().is("#btn-manaka")) {
-                setModalData(manaka);
-            }
-            // SR & R chips
-            else if (document.URL.includes("matrices")) {
-                if ($(this).children().is("#btn-roberag")) {
-                    setModalData(roberag);
-                } else if ($(this).children().is("#btn-apophis")) {
-                    setModalData(apophis);
-                } else if ($(this).children().is("#btn-frozenmech")) {
-                    setModalData(frozenmech);
-                } else if ($(this).children().is("#btn-sobek")) {
-                    setModalData(sobek);
-                } else if ($(this).children().is("#btn-barbarossa")) {
-                    setModalData(barbarossa);
-                } else if ($(this).children().is("#btn-burstingcore")) {
-                    setModalData(burstingcore);
-                } else if ($(this).children().is("#btn-transportthinking")) {
-                    setModalData(transportthinking);
-                } else if ($(this).children().is("#btn-guardscode")) {
-                    setModalData(guardscode);
-                } else if ($(this).children().is("#btn-arrogantprovocation")) {
-                    setModalData(arrogantprovocation);
-                } else if ($(this).children().is("#btn-offensivelogic")) {
-                    setModalData(offensivelogic);
-                } else if ($(this).children().is("#btn-cleanupagreement")) {
-                    setModalData(cleanupagreement);
-                }
-            }
+            setModalData(window[selectedItem]);
         }
 
         // GADGETS PAGE
         if (document.URL.includes("relics")) {
-            if ($(this).children().is("#btn-giantarms")) {
-                setModalData(gadgets[0]);
-            } else if ($(this).children().is("#btn-atomicshield")) {
-                setModalData(gadgets[1]);
-            } else if ($(this).children().is("#btn-vmech")) {
-                setModalData(gadgets[2]);
-            } else if ($(this).children().is("#btn-timerift")) {
-                setModalData(gadgets[3]);
-            } else if ($(this).children().is("#btn-confinedspace")) {
-                setModalData(gadgets[4]);
-            } else if ($(this).children().is("#btn-drone")) {
-                setModalData(gadgets[5]);
-            } else if ($(this).children().is("#btn-holographicprojection")) {
-                setModalData(gadgets[6]);
-            } else if ($(this).children().is("#btn-deathsuppressor")) {
-                setModalData(gadgets[7]);
-            } else if ($(this).children().is("#btn-counter2")) {
-                setModalData(gadgets[8]);
-            } else if ($(this).children().is("#btn-jetpack")) {
-                setModalData(gadgets[9]);
-            } else if ($(this).children().is("#btn-quantumcloak")) {
-                setModalData(gadgets[10]);
-            } else if ($(this).children().is("#btn-floatingicecannon")) {
-                setModalData(gadgets[11]);
-            } else if ($(this).children().is("#btn-jetski")) {
-                setModalData(gadgets[12]);
-            } else if ($(this).children().is("#btn-magneticstorm")) {
-                setModalData(gadgets[13]);
-            } else if ($(this).children().is("#btn-multiplemissile")) {
-                setModalData(gadgets[14]);
-            } else if ($(this).children().is("#btn-shieldingrobot")) {
-                setModalData(gadgets[15]);
-            } else if ($(this).children().is("#btn-singularitymagiccube")) {
-                setModalData(gadgets[16]);
-            } else if ($(this).children().is("#btn-atomichandcannon")) {
-                setModalData(gadgets[17]);
-            } else if ($(this).children().is("#btn-lavagrenade")) {
-                setModalData(gadgets[18]);
-            } else if ($(this).children().is("#btn-mechanicalarm")) {
-                setModalData(gadgets[19]);
-            } else if ($(this).children().is("#btn-magnetopulse")) {
-                setModalData(gadgets[20]);
-            }
+            
+            // Get the index of the gadget inside gadgets[]
+            let gadgetIndex = gadgets.findIndex(function(gadget){
+                // Check if clicked #btn-"..." matches gadgets[index].name without spaces
+                let gadgetName = gadget.name.replaceAll(' ','').toUpperCase();
+                if (selectedItem.toUpperCase() === gadgetName) {
+                    return true;
+                }
+            }); 
+
+            setModalData(gadgets[gadgetIndex]);
         }
 
     });
     
+    
+    // Set data to be displayed inside modals for Simulacra, Matrices, and Relics
     function setModalData(i) {
 
         // Header
@@ -265,6 +190,16 @@ jQuery(document).ready(function ($) {
             $("#affinity-4000").html(i.mimicEffect[5]);
             
             let giftTier = 1;
+            
+            // Gift categories
+            $("#gift-category-wrapper").html('');
+            // Remove dashes and store in new array to prevent nesting
+            let catText = i.giftPrefs.map(text => text.replaceAll('-', ' '));
+            for (let catIndex = 0; catIndex < i.giftPrefs.length; catIndex++) {
+                $("#gift-category-wrapper").append(
+                    `<span class="gift-category" style="background-color: var(--color-gift-category-${i.giftPrefs[catIndex]})">${catText[catIndex]}</span> `
+                );
+            } 
             
             // Gifts
             $("#gifts-wrapper").html('');
