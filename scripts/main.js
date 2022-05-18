@@ -195,6 +195,13 @@ jQuery(document).ready(function ($) {
             $("#gift-category-wrapper").html('');
             // Remove dashes and store in new array to prevent nesting
             let catText = i.giftPrefs.map(text => text.replaceAll('-', ' '));
+            // Show Vera tag disclaimer for applicable characters
+            if (catText.includes('vera')) {
+                $("#gift-vera-disclaimer").css('display', 'inline-block');
+            }
+            else {
+                $("#gift-vera-disclaimer").css('display', 'none');
+            }
             for (let catIndex = 0; catIndex < i.giftPrefs.length; catIndex++) {
                 $("#gift-category-wrapper").append(
                     `<span class="gift-category" style="background-color: var(--color-gift-category-${i.giftPrefs[catIndex]})">${catText[catIndex]}</span> `
