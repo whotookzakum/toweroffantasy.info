@@ -162,13 +162,15 @@ img[src="images/cn.svg"] {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .modal-body::-webkit-scrollbar,
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.sidenav .nav-body::-webkit-scrollbar {
     display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .modal-body,
-body {
+body,
+.sidenav .nav-body {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -228,6 +230,7 @@ body {
 .page-header {
     font-size: 5rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .page-info-icon {
@@ -281,58 +284,87 @@ body {
 /* NAV RELATED
 =============================================== */
 
-.navbar * {
-    color: var(--color-navbar-text) !important;
-    /* var(--color-turquoise) */
-}
-
-.navbar {
-    background-color: var(--color-navbar-bg);
+.sidenav {
     filter: drop-shadow(var(--shadow-0-0-4));
     z-index: 80000;
-    width: 250px;
-}
-
-.sidenav {
+    padding: 0;
     min-height: 100%;
     align-content: space-between;
-    white-space: nowrap;
+    position: fixed;
 }
 
-.navbar .nav-link {
-    margin-bottom: -3px;
-    padding: 10px 0;
-    font-size: 1.8rem;
+#sidenav-btn-close {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer
+}
+.nav-open #sidenav-btn-close {
+    display: block;
 }
 
-.navbar .nav-item {
-    border-radius: 0.75rem;
-    padding: 0 0 0 0;
-    transition: background 125ms ease, padding 125ms ease, color 125ms ease;
-}
-
-.navbar .nav-link i {
+.sidenav i {
     width: 25px;
     text-align: center;
     margin-right: 3px;
 }
 
-.navbar .nav-item:hover {
+.sidenav .nav-body {
+    position: relative;
+    background-color: var(--color-navbar-bg);
+    overflow-x: hidden;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidenav .nav-contents {
+    padding: 3rem 3rem 0 3rem;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column; 
+    display: flex;
+}
+
+.sidenav .nav-link {
+    margin-bottom: -3px;
+    padding: 10px 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-navbar-text) !important;
+}
+
+.sidenav .nav-item {
+    width: 100%;
+    border-radius: 0.75rem;
+    padding: 0 0 0 0;
+    transition: background 125ms ease, padding 125ms ease, color 125ms ease;
+}
+
+.sidenav .nav-item:hover {
     background-color: #282633 !important;
     padding: 0 0 0 5px;
 }
 
-.navbar .nav-item:hover * {
+.sidenav .nav-item:hover a {
     color: var(--color-text) !important;
 }
 
-.navbar .active *,
-.navbar .active:hover * {
+.sidenav .active a,
+.sidenav .active:hover a {
     color: var(--color-tier-s) !important;
     font-weight: bold;
 }
 
+.nav-link[href="damagecalculator"] {
+    font-size: 1.6rem;
+}
+.nav-link[href="damagecalculator"] i {
+    font-size: 1.8rem;
+}
+
 .navbar-brand {
+    color: var(--color-navbar-text) !important;
     display: block;
     margin: 0;
     text-align: center;
@@ -346,42 +378,63 @@ body {
     color: var(--color-turquoise) !important;
 }
 
-.navbar hr {
+.sidenav hr {
     background-color: gray;
 }
 
-.navbar .nav-socials * {
+.sidenav .nav-socials a {
     color: var(--color-turquoise) !important;
+}
+.nav-socials .fa-reddit-alien {
+    font-size: 2.5rem; 
+    margin-top: -8px;
 }
 
 .nav-footer {
     color: var(--color-navbar-text-dark) !important;
+    font-size: 1.25rem;
+    margin: auto auto 3rem auto;
 }
 
-.offcanvas-backdrop {
-    z-index: 70000;
-}
 
-#sidenav-toggler {
-    display: none;
+.nav-backdrop {
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed; 
+    background: black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
 }
-
-@media only screen and (max-width: 1440px) {
-    #sidenav-toggler {
-        display: block;
-    }
-}
-
-#sidenav-static {
-    display: none;
+.nav-open .nav-backdrop {
+    visibility: visible;
+    opacity: 0.4;
 }
 
 @media only screen and (min-width: 1440px) {
-    #sidenav-static {
-        display: flex;
+    .sidenav .nav-body {
+        width: 250px;
+    }
+    .sidenav .nav-toggler {
+        display: none;
     }
 }
 
+#nav-toggler {
+    padding: 0.5rem 1.5rem;
+    font-size: 2em;
+    color: var(--color-turquoise) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-navbar-bg);
+    cursor: pointer;
+}
+
+.nav-open {
+    width: 250px!important;
+}
 
 /* MIMIC PAGE
 =============================================== */
@@ -611,7 +664,7 @@ body {
 
 #gifts-wrapper .item-wrapper-with-bg {
     display: inline-block;
-    margin: 0 1rem 1rem 0;
+    margin: 0.5rem;
 }
 
 #gifts-wrapper img {
@@ -625,6 +678,16 @@ body {
     right: 2px;
     bottom: 2px;
     text-shadow: var(--shadow-0-0-4);
+}
+
+.gift-category {
+    text-transform: capitalize;
+    background-color: pink;
+    padding: 0.65rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-0-0-4);
 }
 
 
@@ -672,6 +735,27 @@ body {
 #guide-reisen-wep .card-text {
     font-size: 1.3rem;
     text-align: left;
+}
+
+#guide-stitch-wep blockquote {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--color-container-accent-light);
+    margin: 0;
+}
+#guide-stitch-wep blockquote img {
+    object-fit: none;
+    margin-right: 1rem;
+}
+
+#guide-stitch-wep blockquote:nth-child(odd) {
+    background-color: var(--color-container-accent-dark);  
+}
+
+#guide-stitch-wep blockquote:nth-child(odd) img {
+    object-fit: none;
+    margin-left: 1rem;
+    order: 2;
 }
 
 #guide-stitch-wep td {

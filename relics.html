@@ -37,47 +37,47 @@
 </head>
 
 <body>
-
-    <!-- Nav toggler -->
-    <nav id="sidenav-toggler" class="navbar fixed-top" style="width: fit-content">
-        <a class="py-2 px-4" data-bs-toggle="offcanvas" type="button" href="#sidenav-offcanvas"><i class="fa-solid fa-bars" style="font-size: 2em;"></i></a>
-    </nav>
-
-    <!-- Sidenav offcanvas (smaller screens) -->
-    <nav id="sidenav-offcanvas" class="navbar sidenav offcanvas offcanvas-start" data-bs-keyboard="true" tabindex="-1"> 
-        <div class="offcanvas-body p-5 pb-0">
-            <a id="sidenav-btn-close" class="btn-close btn-close-white position-absolute" data-bs-toggle="offcanvas" href="#sidenav" style="right: 1rem; top: 1rem"></a>
-            <a class="navbar-brand" href="index">
-                <img class="mb-3" src="images/avatar/tata.png"><br>
-                Tower of Fantasy Index
-            </a>
-            <hr class="my-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                </li>
-            </ul>
-            <hr class="my-3">
-            <div class="nav-socials">
+    <nav class="navbar sidenav">
+        <a id="nav-toggler">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="nav-body">
+            <div class="nav-backdrop"></div>
+            <a id="sidenav-btn-close" class="btn-close btn-close-white"></a>
+            <div class="nav-contents">
+                <a class="navbar-brand" href="index">
+                    <img class="mb-3" src="images/avatar/tata.png"><br>
+                    Tower of Fantasy Index
+                </a>
+                <hr class="my-3">
                 <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" ><i class="fa-solid fa-carrot"></i> Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/"><i class="fa-solid fa-globe"></i> Interactive Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                    </li>
+                </ul>
+                <hr class="my-3">
+                <ul class="nav nav-socials flex-column">
                     <li class="nav-item">
                         <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
                     </li>
@@ -85,58 +85,8 @@
                         <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
                     </li>
                 </ul>
+                <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
             </div>
-        </div>
-        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
-            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
-        </div>
-    </nav>
-
-    <!-- Sidenav static (larger screens) -->
-    <nav id="sidenav-static" class="navbar sidenav position-fixed">
-        <div class="nav-body p-5 pb-0">
-            <a class="navbar-brand" href="index">
-                <img class="mb-3" src="images/avatar/tata.png"><br>
-                Tower of Fantasy Index
-            </a>
-            <hr class="my-3">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                </li>
-            </ul>
-            <hr class="my-3">
-            <div class="nav-socials">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-footer fs-5 d-flex mt-auto p-5 pt-0">
-            &copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.
         </div>
     </nav>
 
@@ -153,40 +103,40 @@
             <h1 class="page-header">Relics</h1>
             <div class="tier tier-s modal-menu-category">SSR Relics</div>
             <ul class="p-0 text-center mt-3">
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-giantarms" src="images/gadget/giantarms.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-colossusarms">
+                    <img class="gadget-img mb-2" src="images/gadget/giantarms.png">
                     <h3>Colossus Arms</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-atomicshield" src="images/gadget/atomicshield.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-omniumshield">
+                    <img class="gadget-img mb-2" src="images/gadget/atomicshield.png">
                     <h3>Omnium Shield</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-vmech" src="images/gadget/vmech.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-typevarmor">
+                    <img class="gadget-img mb-2" src="images/gadget/vmech.png">
                     <h3>Type V Armor</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-timerift" src="images/gadget/timerift.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-spacetimerift">
+                    <img class="gadget-img mb-2" src="images/gadget/timerift.png">
                     <h3>Spacetime Rift</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-confinedspace" src="images/gadget/confinedspace.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-confinement">
+                    <img class="gadget-img mb-2" src="images/gadget/confinedspace.png">
                     <h3>Confinement</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-drone" src="images/gadget/drone.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-drone">
+                    <img class="gadget-img mb-2" src="images/gadget/drone.png">
                     <h3>Drone</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-holographicprojection" src="images/gadget/holographicprojection.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-hologramprojector">
+                    <img class="gadget-img mb-2" src="images/gadget/holographicprojection.png">
                     <h3>Hologram Projector</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-deathsuppressor" src="images/gadget/deathsuppressor.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-alternatedestiny">
+                    <img class="gadget-img mb-2" src="images/gadget/deathsuppressor.png">
                     <h3>Alternate Destiny</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-counter2" src="images/gadget/counter2.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-couant2">
+                    <img class="gadget-img mb-2" src="images/gadget/counter2.png">
                     <img class="flag badge" src='images/cn.svg'>
                     <h3>Couant 2</h3>
                 </li>
@@ -197,53 +147,53 @@
             <div class="tier tier-a modal-menu-category">SR Relics</div>
             <ul class="p-0 text-center mb-0 mt-3">
 
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-jetpack" src="images/gadget/jetpack.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-jetpack">
+                    <img class="gadget-img mb-2" src="images/gadget/jetpack.png">
                     <h3>Jetpack</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-quantumcloak" src="images/gadget/quantumcloak.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-quantumcloak">
+                    <img class="gadget-img mb-2" src="images/gadget/quantumcloak.png">
                     <h3>Quantum Cloak</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-floatingicecannon" src="images/gadget/floatingicecannon.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-hoveringcannon">
+                    <img class="gadget-img mb-2" src="images/gadget/floatingicecannon.png">
                     <h3>Hovering Cannon</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-jetski" src="images/gadget/jetski.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-jetboard">
+                    <img class="gadget-img mb-2" src="images/gadget/jetski.png">
                     <h3>Jetboard</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-magneticstorm" src="images/gadget/magneticstorm.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-magneticstorm">
+                    <img class="gadget-img mb-2" src="images/gadget/magneticstorm.png">
                     <h3>Magnetic Storm</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-multiplemissile" src="images/gadget/multiplemissile.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-missilebarrage">
+                    <img class="gadget-img mb-2" src="images/gadget/multiplemissile.png">
                     <h3>Missile Barrage</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-shieldingrobot" src="images/gadget/shieldingrobot.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-couant">
+                    <img class="gadget-img mb-2" src="images/gadget/shieldingrobot.png">
                     <h3>Couant</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-singularitymagiccube" src="images/gadget/singularitymagiccube.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-strangecube">
+                    <img class="gadget-img mb-2" src="images/gadget/singularitymagiccube.png">
                     <h3>Strange Cube</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-atomichandcannon" src="images/gadget/atomichandcannon.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-omniumhandcannon">
+                    <img class="gadget-img mb-2"  src="images/gadget/atomichandcannon.png">
                     <h3>Omnium Handcannon</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-lavagrenade" src="images/gadget/lavagrenade.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-lavabomb">
+                    <img class="gadget-img mb-2" src="images/gadget/lavagrenade.png">
                     <h3>Lava Bomb</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-mechanicalarm" src="images/gadget/mechanicalarm.png">
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-cyberneticarm">
+                    <img class="gadget-img mb-2" src="images/gadget/mechanicalarm.png">
                     <h3>Cybernetic Arm</h3>
                 </li>
-                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content">
-                    <img class="gadget-img mb-2" id="btn-magnetopulse" src="images/gadget/magnetopulse.png">
-                    <h3>Magneto Pulse</h3>
+                <li class="modal-menu-item gadget-button p-2 p-md-3 p-lg-2 p-xl-3" data-bs-toggle="modal" data-bs-target="#modal-content" id="btn-magneticpulse">
+                    <img class="gadget-img mb-2" src="images/gadget/magnetopulse.png">
+                    <h3>Magnetic Pulse</h3>
                 </li>
             </ul>
         </menu>
