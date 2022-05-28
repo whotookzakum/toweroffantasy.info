@@ -1794,6 +1794,70 @@ var ruby =
         ]
     }
 
+var fuwasaki = 
+    {
+        // 流泉彻心
+        name:"Fuwa Saki",
+        rarity: "SSR",
+        pic:"images/fuwasaki_nobg.png",
+        artwork:"images/art/fuwasaki.png",
+        wepName:"Ryusen Toshin",
+        wepImg:"images/wep/fuwasaki.png",
+        eleImg:"images/ele_ice.png",
+        resoImg:"images/reso_tank.png",
+        wepEffect:"Fully charged weapons will <strong>freeze</strong> the target for <strong>2</strong> seconds and leave it frostbitten for <strong>6</strong> seconds. Breaking the ice shell causes additional damage equal to <strong>151.00%</strong> of ATK. While frostbitten, the target's weapon charge rate is reduced by <strong>50%</strong>.",
+        exclusiveEffect:'Ice Resonance; triggered by equipping 2 or more Ice elemental weapons, permanently increasing Ice Attack by 20% and Ice Resistance by 40%.',
+        awakening:[
+            // 1 star
+            "When Ice Resonance is active, release any weapon skill 5 times in total to clear the cooldown of all weapon skills, and double the damage of [Circulation] and [Counterattack] for 25 seconds.",
+            // 2 star
+            "",
+            // 3 star
+            "[Calm Style]: Sword Shadow's [Sword Flow] cooldown reduced to 5 seconds.<br>[Motion Style]: Sword Shadow's [Sword Flow] damage increased to 900% Ice ATK.",
+            // 4 star
+            "",
+            // 5 star
+            "Sword Shadow's [Sword Flow] triggers Phantasia upon hitting a target, shares cooldown with Phantasia trigged by dodging.",
+            // 6 star
+            "Sword Shadow's [Sword Flow] increases your ice damage by 20% for 15 seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' ice damage by 25% for 12 seconds."
+        ],
+        energyCharge:["?","?"],
+        shieldBreak:["?","?"],
+        materials:["ice","",""],
+        wepBaseStats: [attack, health, crit],
+        
+        chipImg:"images/chip/fuwasaki.png",
+        chipEffect:[
+            // 2 set
+            "While Ice Resonance is active: Every 3 seconds, deal 60%/100%/150%/220% * Ice ATK to enemies within 10 meters of the surrounding area and apply [Frost] effect: 5% slowing effect for 3.5 seconds, after 3 stacks Freeze the target for 3 seconds (cannot freeze bosses) and increase the target's Ice Damage by 12% (lasts 18 seconds). These matrices work in the background, and for multiple sets the highest star set will be used.",
+            // 4 set
+            "Attack the target 10 times and add a 12-second [Frozen] mark: Attack the marked target to increase the ice element damage by 25%/28%/31%/34%. These matrices work in the background, and for multiple sets the highest star set will be used."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar ',
+            // 600 affinity
+            "Unlock communication ",
+            // 1200 affininty
+            "When health is below 70%, gain 40% all-element resistance.",
+            // 2000 affinity
+            "Unlock communication ",
+            // 3000 affinity
+            "Unlock communication ",
+            // 4000 affinity
+            "When health is below 70%, gain 40% all-element resistance and an additional 60% ice resistance. Silent flow [Surge] when providing a block, the teammate with the lowest health percentage (excluding yourself) will have 3 additional block abilities, and the block amount will not exceed 15% of the teammate's maximum health, lasting 10 seconds."
+        ],
+        traits: ['Female','','','',''],
+        gifts: [
+            
+        ],
+        giftPrefs: ['','',''],
+        recChips: [
+            
+        ]
+    }
+
 
 
 
