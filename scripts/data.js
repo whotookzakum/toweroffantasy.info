@@ -1821,8 +1821,8 @@ var fuwasaki =
             // 6 star
             "Sword Shadow's [Sword Flow] increases your ice damage by 20% for 15 seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' ice damage by 25% for 12 seconds."
         ],
-        energyCharge:["?","?"],
-        shieldBreak:["?","?"],
+        energyCharge:["8.00","a"],
+        shieldBreak:["13.90","s"],
         materials:["ice","",""],
         wepBaseStats: [attack, health, crit],
         
