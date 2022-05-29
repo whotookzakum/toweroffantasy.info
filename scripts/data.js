@@ -542,308 +542,6 @@ var shiro =
         ]
     }
 
-var cobalt = 
-    {
-        name:"Cobalt-B",
-        rarity: "SSR",
-        pic:"images/cobalt_nobg.png",
-        artwork:"images/art/cobalt.png",
-        wepName:"Blazing Revolver",
-        wepImg:"images/wep/cobalt.png",
-        eleImg:"images/ele_fire.png",
-        resoImg:"images/reso_damage.png",
-        wepEffect:"Fully charged weapons will set the target on fire for <strong>8</strong> seconds with the next attack, causing ongoing damage of <strong>58.00%</strong> of ATK every second. Ignited targets receive <strong>50%</strong> efficacy from healing.",
-        awakening:[
-            // 1 star
-            "Each hit of the skill returns <strong>2%</strong> of damage dealt as health, up to <strong>200%</strong> of ATK.",
-            // 2 star
-            "Increase the current weapon's base ATK growth by <strong>16%</strong>.",
-            // 3 star
-            'The skill Blast Grenade and dodge attack Melee Break will apply <strong class="text-green">Ionic Burn</strong> to targets, dealing <strong>90%</strong> of ATK every second for <strong>10</strong> seconds.',
-            // 4 star
-            "Increase the current weapon's base ATK growth by <strong>32%</strong>.",
-            // 5 star
-            "<strong class='text-green'>Ionic Burn</strong> damage increased to <strong>140%</strong> and dodge attacks from any weapon will refresh the burn's duration.",
-            // 6 star
-            "The skill <strong class='text-green'>Barrage</strong> has a burning effect that lasts for <strong>15</strong> seconds. Hitting a target with any weapon's dodge attack reduces the cooldown of <strong class='text-green'>Barrage</strong> by <strong>4</strong> seconds, up to once every <strong>1.5</strong> seconds. Damage over time effects trigged from a dodge attack can also trigger the effect."
-        ],
-        energyCharge:["10.00","a"],
-        shieldBreak:["6.50","b"],
-        materials:["fire", "red", "black"],
-        wepBaseStats: [attack, health, crit],
-        
-        chipImg:"images/chip/cobalt.png",
-        chipEffect:[
-            // 2 set
-            "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 12%/15%/18%/21% attack damage per second  for 6 seconds.",
-            // 4 set
-            "Increases damage by 12%/15%/18%/21% to targets with abnormal statuses."
-        ],
-        
-        mimicEffect:[
-            // 200 affinity
-            'Unlock profile avatar "Cobalt-B"',
-            // 600 affinity
-            "Unlock communication [Respect]",
-            // 1200 affininty
-            "When Cobalt-B releases a combo, it restores <strong>50</strong> - <strong>120</strong> points of energy charge at random.",
-            // 2000 affinity
-            "Unlock communication [Pleasant Cooperation]",
-            // 3000 affinity
-            "Unlock communication [Comapnions & Weapons]",
-            // 4000 affinity
-            "When Cobalt-B releases a combo, it restores <strong>90</strong> - <strong>180</strong> points of energy charge at random."
-        ],
-        traits: ['Female','157 cm','Crown','Cancer','26 Jun'],
-        gifts: [
-            kitchenware, '+80',
-            goldCoin, '+80',
-            
-            seal, '+60',
-            tataCards, '+60',
-            foxFigure, '+60',
-            catFigure, '+60',
-            bearFigure, '+60',
-            tataFigure, '+60',
-            present, '+60',
-            psp, '+60',
-            linyeFigure, '+60',
-            pearl, '+60',
-            
-            necklace, '+30',
-            toolbox, '+30',
-            strangeFragment, "+30",
-            
-            dumbbells, '+15',
-            snackBox, '+15',
-            strangePlant, '+15'
-        ],
-        giftPrefs: ['metalware','collectibles','limited-time-items'],
-        recChips: [
-            ['cobalt', 4],
-            ['samir', 2],
-            ['samir', 4],
-            ['karasuma', 2],
-            ['burstingcore', 3]
-        ]
-    }
-
-var claudia = 
-    {
-        name:"Claudia",
-        rarity: "SSR",
-        pic:"images/claudia_nobg.png",
-        artwork:"images/art/claudia.png",
-        wepName:"Guren Blade",
-        wepImg:"images/wep/claudia.png",
-        eleImg:"images/ele_physical.png",
-        resoImg:"images/reso_damage.png",
-        wepEffect:"Fully charged weapons will inflict damage equal to <strong>137.00%</strong> of ATK with the next attack, and make the target grievous for <strong>7</strong> seconds, taking <strong>20%</strong> extra damage.",
-        awakening:[
-            // 1 star
-            "After hitting a target with a skill or discharge skill, grant a stack of damage boost, which increases damage dealt by <strong>8%</strong> for <strong>25</strong> seconds (stacks up to <strong>3</strong> times; each successful skill or discharge use can only grant a single stack).",
-            // 2 star
-            "Increase the current weapon's base ATK growth by <strong>16%</strong>.",
-            // 3 star
-            "Hitting a target with a skill or discharge skill applies a stack of War Wounds to the target, increasing incoming physical damage and shatter effects from physical and elemental weapons taken by the target by <strong>10%</strong> for <strong>15</strong> seconds. Stack up to <strong>1</strong> time.",
-            // 4 star
-            "Increase the current weapon's base HP growth by <strong>32%</strong>.",
-            // 5 star
-            "Hitting targets with discharge skills grants skill damage boost, which increases all weapon skill damage by <strong>20%</strong> for <strong>15</strong> seconds (cannot stack).",
-            // 6 star
-            "Hitting the same target no longer reduces the damage dealt. After using Guren Blade or a discharge skill, applies <strong>1</strong> stack of War Wounds to all targets within 8 meters."
-        ],
-        energyCharge:["12.00","s"],
-        shieldBreak:["7.50","a"],
-        materials:["physical", "red", "blue"],
-        wepBaseStats: [attack, defense, health],
-        
-        chipImg:"images/chip/claudia.png",
-        chipEffect:[
-            // 2 set
-            "Increase damage by <strong>13%/17%/20%/23%</strong> when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target in mid-air.",
-            // 4 set
-            "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by0 <strong>1.5/2/2.5/3</strong> seconds and increases the damage of discharge skills by <strong>36%/45%/54%/63%</strong> for <strong>15</strong> seconds."
-        ],
-        
-        mimicEffect:[
-            // 200 affinity
-            'Unlock profile avatar "Claudia"',
-            // 600 affinity
-            "Unlock communication [Please Tell Me More]",
-            // 1200 affininty
-            "Hide for <strong>1</strong> seconds upon dodging.",
-            // 2000 affinity
-            "Unlock communication [Enthusiasm]",
-            // 3000 affinity
-            "Unlock communication [Engagement]",
-            // 4000 affinity
-            "Hide for <strong>1.5</strong> seconds upon dodging."
-        ],
-        traits: ['Female','170 cm','Hagarde','Capricorn','16 Jan'],
-        gifts: [
-            snowglobe, '+80',
-            peppaFigure, '+80',
-            
-            seal, '+60',
-            tataCards, '+60',
-            miaFigure, '+60',
-            catFigure, '+60',
-            princeTataFigure, '+60',
-            ufo, '+60',
-            
-            suit, '+30',
-            juicePouch, '+30',
-            vial, '+30',
-            perfume, '+30',
-            spiderFigure, '+30',
-            elfFigure, '+30',
-            
-            flowers, '+15',
-            photoAlbum, '+15',
-            photo, '+15',
-            scarf, '+15',
-            plant, '+15',
-            harmonica, '+15'
-        ],
-        giftPrefs: ['everyday-items','rare-items','decorations'],
-        recChips: [
-            ['claudia', 2],
-            ['claudia', 4],
-            ['samir', 2],
-            ['karasuma', 2],
-            ['peppa', 3],
-            ['arrogantprovocation', 3]
-        ],
-        skills: [
-            {
-                name: "Quick Slash",
-                desc: "While on the ground, swing the blade to attack 5 times in a row. First Attack: Deal damage equal to 39% of ATK + 2 and knock the target back a short distance. Second Attack: Deal damage equal to 54.6% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 49.4% of ATK + 3 and knock the target back a short distance. Fourth Attack: Deal damage equal to 87% of ATK + 5 and knock the target back a short distance. Fifth Attack: Deal damage equal to 148.1% of ATK + 8 and launch the target.",
-            },
-            {
-                name: "Jumping Strike",
-                desc: "While airborne, tap normal attack to attack 4 times in a row. First Attack: Deal damage equal to 23.2% of ATK + 1. Second Attack: Deal damage equal to 40.3% of ATK + 2. Third Attack: Deal damage equal to 95.4% of ATK + 5. Fourth Attack: Deal damage equal to 115.8% of ATK + 6 and deliver a knockdown.",
-            },
-            {
-                name: "Cyclone",
-                desc: "Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal 39.8% of ATK + 2 to a single target.",
-            },
-            {
-                name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
-            },
-            {
-                name: "Leap Attack",
-                desc: "Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to 31.6% of ATK + 2, knocking the target into the air and becoming airborne, then deal additional damage equal to 47.3% of ATK + 2.",
-            },
-            {
-                name: "Diving Edge",
-                desc: "Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to 10% of ATK + 1 each hit. Upon landing, deal damage equal to 63.6% of ATK + 3 and knock the target back. The higher the location is when triggered, the higher the damage dealt, up to <>600% of ATK.",
-            },
-            {
-                name: "Sneak Attack",
-                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 570% of ATK + 30.",
-            },
-            {
-                name: "Roam",
-                desc: "Dance through targets while swinging the blade, dealing damage equal to 348.5% of ATK + 18 in total to up to 5 targets (attack on the same target deal 20% less damage). At the end of the ability, slash the space in front, dealing damage equal to 264% of ATK + 14 to targets and knocking them into the air. Immune to crowd-control effects while ability is in use. Cooldown: 15 seconds.",
-            },
-            {
-                name: "Unbridled Flurry",
-                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder, who charges and airbornes a target to deal 436.2% x ATK +23 damage, leaving behind a bladestorm that deals 174.4% x ATK +9 damage to the target, while immunizing self to grievous/freeze/burn/electrify effects for 5 seconds.",
-            }
-        ]
-    }
-
-var baiyuekui = 
-    {
-        name:"Baiyuekui",
-        rarity: "SSR",
-        pic:"images/baiyuekui_nobg.png", 
-        artwork:"images/art/baiyuekui.png",
-        wepName:"Eighth Consciousness", //Alaya Vijnana "Base [of] Consciousness"
-        wepImg:"images/wep/baiyuekui.png",
-        eleImg:"images/ele_electric.png",
-        resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next attack will <strong>paralyze</strong> targets for <strong>1</strong> second and electrify them for <strong>6</strong> seconds, negating all buffs and dealing damage equal to <strong>144.00%</strong> of ATK. Targets can't receive any buffs for the next <strong>6</strong> seconds.",
-        exclusiveEffect:"When entering combat, trigger War Intent, increasing your final damage by <strong>15%</strong> but accelerating your cellular aging (lose <strong>1%</strong> of your current HP every <strong>5</strong> seconds). The effect disappears when leaving battle or switching weapons. If your HP drops below <strong>50%</strong>, cellular aging stops but the damage boost from War Intent remains (switching weapons causes the effect to disappear).",
-        awakening:[
-            // 1 star
-            "<strong>Dodge attacks</strong> gain an additional hit dealing <strong>80%</strong> of ATK + <strong>2.5%</strong> of HP lost.<br>The <strong>Weapon Skill</strong> explodes for an additional <strong>160%</strong> of ATK + <strong>5%</strong> of HP lost.<br>The <strong>Discharge Skill</strong> deals an additional <strong>160%</strong> of ATK + <strong>5%</strong> of lost HP (does not apply to the DoT).",
-            // 2 star
-            "Increase the current weapon's base ATK growth by <strong>16%</strong>.",
-            // 3 star
-            "Increase shatter by <strong>15%</strong>. Breaking a shield releases an instant burst of damage at the target's location, dealing <strong>680%</strong> of ATK to targets within range, or <strong>1500%</strong> of ATK if there is only one target within range.",
-            // 4 star
-            "Increase the current weapon's base HP growth by <strong>32%</strong>.",
-            // 5 star
-            "When attacked, automatically trigger a <strong>1</strong> second block (immediately negates crowd control), blocking one hit up to <strong>20%</strong> of your max HP. Performing a basic attack during the block period will initiate a <strong>counter attack</strong>, dealing <strong>240%</strong> of ATK and <strong>launching the target airborne</strong>, cooldown <strong>18</strong> seconds. ",
-            // 6 star
-            "While inside the area of the <strong>Discharge Skill</strong> or <strong>Phantasia</strong>, trigger War Intent for <strong>7</strong> seconds, increasing your final damage by <strong>40%</strong> and halting cellular aging (switching weapons causes the effect to disappear)."
-        ],
-        energyCharge:["8.00","a"],
-        shieldBreak:["12.50","s"],
-        materials:["electric","green","blue"],
-        wepBaseStats: [attack, defense, health],
-        
-        chipImg:"images/chip/baiyuekui.png",
-        chipEffect:[
-            // 2 set
-            "If you have 300~999 charge when switching to this weapon, use 300 points to gain a 15%/18%/21%/25% attack boost for 10 seconds, cooldown 5 seconds, does not stack.",
-            // 4 set
-            "For every 1 second that a combo is released, the next combo will deal 106%/122%/140%/160% ranged damage (3m radius) to the first enemy, up to 530%/610%/700%/800%; and gain 4 seconds of shield breaking increase of 7%/14%/21%/28%, does not stack. This set also works in the background but only the highest star level set works when multiple sets are equipped."
-        ],
-        
-        mimicEffect:[
-            // 200 affinity
-            'Unlock profile avatar "Baiyuekui"',
-            // 600 affinity
-            "Unlock communication [I am Baiyuekui]",
-            // 1200 affininty
-            "When Bai Yuekui enters combat, the electric attack power is increased by <strong>21%</strong>, the effect decays over time and lasts for <strong>120</strong> seconds. The effect can be reset after <strong>5</strong> seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by <strong>50%</strong>.",
-            // 2000 affinity
-            "Unlock communication [Knowing the New World]",
-            // 3000 affinity
-            "Unlock communication [I Have Many Stories]",
-            // 4000 affinity
-            'When Bai Yuekui enters combat, the electric attack power is increased by <strong>33%</strong>, the effect decays over time and lasts for <strong>120</strong> seconds. The effect can be reset after <strong>5</strong> seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by <strong>50%</strong>.'
-        ],
-        traits: ['Female','172 cm','???','???','???'],
-        gifts: [
-            goldCoin, '+80',
-            catFigure, '+80',
-            
-            kitchenware, '+60',
-            tataFigure, '+60',
-            tataCards, '+60',
-            peppaFigure, '+60',
-            snowglobe, '+60',
-            psp, '+60',
-            foxFigure, '+60',
-            seal, '+60',
-            princeTataFigure, '+60',
-            linyeFigure, '+60',
-            
-            necklace, '+30',
-            elfFigure, '+30',
-            spiderFigure, '+30',
-            
-            photoAlbum, '+15',
-            snackBox, '+15',
-            plant, '+15',
-            strangePlant, '+15'
-        ],
-        giftPrefs: ['collectibles','limited-time-items','decorations'],
-        recChips: [
-            ['king', 2],
-            ['shiro', 2],
-            ['samir', 2],
-            ['karasuma', 2],
-            ['guardscode', 3],
-            ['offensivelogic', 3]
-        ]
-    }
-
 var meryl = 
     {
         name:"Meryl",
@@ -1458,6 +1156,308 @@ var zero =
         ]
     }
 
+var claudia = 
+    {
+        name:"Claudia",
+        rarity: "SSR",
+        pic:"images/claudia_nobg.png",
+        artwork:"images/art/claudia.png",
+        wepName:"Guren Blade",
+        wepImg:"images/wep/claudia.png",
+        eleImg:"images/ele_physical.png",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"Fully charged weapons will inflict damage equal to <strong>137.00%</strong> of ATK with the next attack, and make the target grievous for <strong>7</strong> seconds, taking <strong>20%</strong> extra damage.",
+        awakening:[
+            // 1 star
+            "After hitting a target with a skill or discharge skill, grant a stack of damage boost, which increases damage dealt by <strong>8%</strong> for <strong>25</strong> seconds (stacks up to <strong>3</strong> times; each successful skill or discharge use can only grant a single stack).",
+            // 2 star
+            "Increase the current weapon's base ATK growth by <strong>16%</strong>.",
+            // 3 star
+            "Hitting a target with a skill or discharge skill applies a stack of War Wounds to the target, increasing incoming physical damage and shatter effects from physical and elemental weapons taken by the target by <strong>10%</strong> for <strong>15</strong> seconds. Stack up to <strong>1</strong> time.",
+            // 4 star
+            "Increase the current weapon's base HP growth by <strong>32%</strong>.",
+            // 5 star
+            "Hitting targets with discharge skills grants skill damage boost, which increases all weapon skill damage by <strong>20%</strong> for <strong>15</strong> seconds (cannot stack).",
+            // 6 star
+            "Hitting the same target no longer reduces the damage dealt. After using Guren Blade or a discharge skill, applies <strong>1</strong> stack of War Wounds to all targets within 8 meters."
+        ],
+        energyCharge:["12.00","s"],
+        shieldBreak:["7.50","a"],
+        materials:["physical", "red", "blue"],
+        wepBaseStats: [attack, defense, health],
+        
+        chipImg:"images/chip/claudia.png",
+        chipEffect:[
+            // 2 set
+            "Increase damage by <strong>13%/17%/20%/23%</strong> when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target in mid-air.",
+            // 4 set
+            "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by0 <strong>1.5/2/2.5/3</strong> seconds and increases the damage of discharge skills by <strong>36%/45%/54%/63%</strong> for <strong>15</strong> seconds."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar "Claudia"',
+            // 600 affinity
+            "Unlock communication [Please Tell Me More]",
+            // 1200 affininty
+            "Hide for <strong>1</strong> seconds upon dodging.",
+            // 2000 affinity
+            "Unlock communication [Enthusiasm]",
+            // 3000 affinity
+            "Unlock communication [Engagement]",
+            // 4000 affinity
+            "Hide for <strong>1.5</strong> seconds upon dodging."
+        ],
+        traits: ['Female','170 cm','Hagarde','Capricorn','16 Jan'],
+        gifts: [
+            snowglobe, '+80',
+            peppaFigure, '+80',
+            
+            seal, '+60',
+            tataCards, '+60',
+            miaFigure, '+60',
+            catFigure, '+60',
+            princeTataFigure, '+60',
+            ufo, '+60',
+            
+            suit, '+30',
+            juicePouch, '+30',
+            vial, '+30',
+            perfume, '+30',
+            spiderFigure, '+30',
+            elfFigure, '+30',
+            
+            flowers, '+15',
+            photoAlbum, '+15',
+            photo, '+15',
+            scarf, '+15',
+            plant, '+15',
+            harmonica, '+15'
+        ],
+        giftPrefs: ['everyday-items','rare-items','decorations'],
+        recChips: [
+            ['claudia', 2],
+            ['claudia', 4],
+            ['samir', 2],
+            ['karasuma', 2],
+            ['peppa', 3],
+            ['arrogantprovocation', 3]
+        ],
+        skills: [
+            {
+                name: "Quick Slash",
+                desc: "While on the ground, swing the blade to attack 5 times in a row. First Attack: Deal damage equal to 39% of ATK + 2 and knock the target back a short distance. Second Attack: Deal damage equal to 54.6% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 49.4% of ATK + 3 and knock the target back a short distance. Fourth Attack: Deal damage equal to 87% of ATK + 5 and knock the target back a short distance. Fifth Attack: Deal damage equal to 148.1% of ATK + 8 and launch the target.",
+            },
+            {
+                name: "Jumping Strike",
+                desc: "While airborne, tap normal attack to attack 4 times in a row. First Attack: Deal damage equal to 23.2% of ATK + 1. Second Attack: Deal damage equal to 40.3% of ATK + 2. Third Attack: Deal damage equal to 95.4% of ATK + 5. Fourth Attack: Deal damage equal to 115.8% of ATK + 6 and deliver a knockdown.",
+            },
+            {
+                name: "Cyclone",
+                desc: "Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal 39.8% of ATK + 2 to a single target.",
+            },
+            {
+                name: "Dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+            },
+            {
+                name: "Leap Attack",
+                desc: "Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to 31.6% of ATK + 2, knocking the target into the air and becoming airborne, then deal additional damage equal to 47.3% of ATK + 2.",
+            },
+            {
+                name: "Diving Edge",
+                desc: "Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to 10% of ATK + 1 each hit. Upon landing, deal damage equal to 63.6% of ATK + 3 and knock the target back. The higher the location is when triggered, the higher the damage dealt, up to <>600% of ATK.",
+            },
+            {
+                name: "Sneak Attack",
+                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 570% of ATK + 30.",
+            },
+            {
+                name: "Roam",
+                desc: "Dance through targets while swinging the blade, dealing damage equal to 348.5% of ATK + 18 in total to up to 5 targets (attack on the same target deal 20% less damage). At the end of the ability, slash the space in front, dealing damage equal to 264% of ATK + 14 to targets and knocking them into the air. Immune to crowd-control effects while ability is in use. Cooldown: 15 seconds.",
+            },
+            {
+                name: "Unbridled Flurry",
+                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder, who charges and airbornes a target to deal 436.2% x ATK +23 damage, leaving behind a bladestorm that deals 174.4% x ATK +9 damage to the target, while immunizing self to grievous/freeze/burn/electrify effects for 5 seconds.",
+            }
+        ]
+    }
+
+var cobalt = 
+    {
+        name:"Cobalt-B",
+        rarity: "SSR",
+        pic:"images/cobalt_nobg.png",
+        artwork:"images/art/cobalt.png",
+        wepName:"Blazing Revolver",
+        wepImg:"images/wep/cobalt.png",
+        eleImg:"images/ele_fire.png",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"Fully charged weapons will set the target on fire for <strong>8</strong> seconds with the next attack, causing ongoing damage of <strong>58.00%</strong> of ATK every second. Ignited targets receive <strong>50%</strong> efficacy from healing.",
+        awakening:[
+            // 1 star
+            "Each hit of the skill returns <strong>2%</strong> of damage dealt as health, up to <strong>200%</strong> of ATK.",
+            // 2 star
+            "Increase the current weapon's base ATK growth by <strong>16%</strong>.",
+            // 3 star
+            'The skill Blast Grenade and dodge attack Melee Break will apply <strong class="text-green">Ionic Burn</strong> to targets, dealing <strong>90%</strong> of ATK every second for <strong>10</strong> seconds.',
+            // 4 star
+            "Increase the current weapon's base ATK growth by <strong>32%</strong>.",
+            // 5 star
+            "<strong class='text-green'>Ionic Burn</strong> damage increased to <strong>140%</strong> and dodge attacks from any weapon will refresh the burn's duration.",
+            // 6 star
+            "The skill <strong class='text-green'>Barrage</strong> has a burning effect that lasts for <strong>15</strong> seconds. Hitting a target with any weapon's dodge attack reduces the cooldown of <strong class='text-green'>Barrage</strong> by <strong>4</strong> seconds, up to once every <strong>1.5</strong> seconds. Damage over time effects trigged from a dodge attack can also trigger the effect."
+        ],
+        energyCharge:["10.00","a"],
+        shieldBreak:["6.50","b"],
+        materials:["fire", "red", "black"],
+        wepBaseStats: [attack, health, crit],
+        
+        chipImg:"images/chip/cobalt.png",
+        chipEffect:[
+            // 2 set
+            "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 12%/15%/18%/21% attack damage per second  for 6 seconds.",
+            // 4 set
+            "Increases damage by 12%/15%/18%/21% to targets with abnormal statuses."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar "Cobalt-B"',
+            // 600 affinity
+            "Unlock communication [Respect]",
+            // 1200 affininty
+            "When Cobalt-B releases a combo, it restores <strong>50</strong> - <strong>120</strong> points of energy charge at random.",
+            // 2000 affinity
+            "Unlock communication [Pleasant Cooperation]",
+            // 3000 affinity
+            "Unlock communication [Comapnions & Weapons]",
+            // 4000 affinity
+            "When Cobalt-B releases a combo, it restores <strong>90</strong> - <strong>180</strong> points of energy charge at random."
+        ],
+        traits: ['Female','157 cm','Crown','Cancer','26 Jun'],
+        gifts: [
+            kitchenware, '+80',
+            goldCoin, '+80',
+            
+            seal, '+60',
+            tataCards, '+60',
+            foxFigure, '+60',
+            catFigure, '+60',
+            bearFigure, '+60',
+            tataFigure, '+60',
+            present, '+60',
+            psp, '+60',
+            linyeFigure, '+60',
+            pearl, '+60',
+            
+            necklace, '+30',
+            toolbox, '+30',
+            strangeFragment, "+30",
+            
+            dumbbells, '+15',
+            snackBox, '+15',
+            strangePlant, '+15'
+        ],
+        giftPrefs: ['metalware','collectibles','limited-time-items'],
+        recChips: [
+            ['cobalt', 4],
+            ['samir', 2],
+            ['samir', 4],
+            ['karasuma', 2],
+            ['burstingcore', 3]
+        ]
+    }
+
+var baiyuekui = 
+    {
+        name:"Baiyuekui",
+        rarity: "SSR",
+        pic:"images/baiyuekui_nobg.png", 
+        artwork:"images/art/baiyuekui.png",
+        wepName:"Eighth Consciousness", //Alaya Vijnana "Base [of] Consciousness"
+        wepImg:"images/wep/baiyuekui.png",
+        eleImg:"images/ele_electric.png",
+        resoImg:"images/reso_damage.png",
+        wepEffect:"When the weapon is fully charged, the next attack will <strong>paralyze</strong> targets for <strong>1</strong> second and electrify them for <strong>6</strong> seconds, negating all buffs and dealing damage equal to <strong>144.00%</strong> of ATK. Targets can't receive any buffs for the next <strong>6</strong> seconds.",
+        exclusiveEffect:"When entering combat, trigger War Intent, increasing your final damage by <strong>15%</strong> but accelerating your cellular aging (lose <strong>1%</strong> of your current HP every <strong>5</strong> seconds). The effect disappears when leaving battle or switching weapons. If your HP drops below <strong>50%</strong>, cellular aging stops but the damage boost from War Intent remains (switching weapons causes the effect to disappear).",
+        awakening:[
+            // 1 star
+            "<strong>Dodge attacks</strong> gain an additional hit dealing <strong>80%</strong> of ATK + <strong>2.5%</strong> of HP lost.<br>The <strong>Weapon Skill</strong> explodes for an additional <strong>160%</strong> of ATK + <strong>5%</strong> of HP lost.<br>The <strong>Discharge Skill</strong> deals an additional <strong>160%</strong> of ATK + <strong>5%</strong> of lost HP (does not apply to the DoT).",
+            // 2 star
+            "Increase the current weapon's base ATK growth by <strong>16%</strong>.",
+            // 3 star
+            "Increase shatter by <strong>15%</strong>. Breaking a shield releases an instant burst of damage at the target's location, dealing <strong>680%</strong> of ATK to targets within range, or <strong>1500%</strong> of ATK if there is only one target within range.",
+            // 4 star
+            "Increase the current weapon's base HP growth by <strong>32%</strong>.",
+            // 5 star
+            "When attacked, automatically trigger a <strong>1</strong> second block (immediately negates crowd control), blocking one hit up to <strong>20%</strong> of your max HP. Performing a basic attack during the block period will initiate a <strong>counter attack</strong>, dealing <strong>240%</strong> of ATK and <strong>launching the target airborne</strong>, cooldown <strong>18</strong> seconds. ",
+            // 6 star
+            "While inside the area of the <strong>Discharge Skill</strong> or <strong>Phantasia</strong>, trigger War Intent for <strong>7</strong> seconds, increasing your final damage by <strong>40%</strong> and halting cellular aging (switching weapons causes the effect to disappear)."
+        ],
+        energyCharge:["8.00","a"],
+        shieldBreak:["12.50","s"],
+        materials:["electric","green","blue"],
+        wepBaseStats: [attack, defense, health],
+        
+        chipImg:"images/chip/baiyuekui.png",
+        chipEffect:[
+            // 2 set
+            "If you have 300~999 charge when switching to this weapon, use 300 points to gain a 15%/18%/21%/25% attack boost for 10 seconds, cooldown 5 seconds, does not stack.",
+            // 4 set
+            "For every 1 second that a combo is released, the next combo will deal 106%/122%/140%/160% ranged damage (3m radius) to the first enemy, up to 530%/610%/700%/800%; and gain 4 seconds of shield breaking increase of 7%/14%/21%/28%, does not stack. This set also works in the background but only the highest star level set works when multiple sets are equipped."
+        ],
+        
+        mimicEffect:[
+            // 200 affinity
+            'Unlock profile avatar "Baiyuekui"',
+            // 600 affinity
+            "Unlock communication [I am Baiyuekui]",
+            // 1200 affininty
+            "When Bai Yuekui enters combat, the electric attack power is increased by <strong>21%</strong>, the effect decays over time and lasts for <strong>120</strong> seconds. The effect can be reset after <strong>5</strong> seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by <strong>50%</strong>.",
+            // 2000 affinity
+            "Unlock communication [Knowing the New World]",
+            // 3000 affinity
+            "Unlock communication [I Have Many Stories]",
+            // 4000 affinity
+            'When Bai Yuekui enters combat, the electric attack power is increased by <strong>33%</strong>, the effect decays over time and lasts for <strong>120</strong> seconds. The effect can be reset after <strong>5</strong> seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by <strong>50%</strong>.'
+        ],
+        traits: ['Female','172 cm','???','???','???'],
+        gifts: [
+            goldCoin, '+80',
+            catFigure, '+80',
+            
+            kitchenware, '+60',
+            tataFigure, '+60',
+            tataCards, '+60',
+            peppaFigure, '+60',
+            snowglobe, '+60',
+            psp, '+60',
+            foxFigure, '+60',
+            seal, '+60',
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
+            
+            necklace, '+30',
+            elfFigure, '+30',
+            spiderFigure, '+30',
+            
+            photoAlbum, '+15',
+            snackBox, '+15',
+            plant, '+15',
+            strangePlant, '+15'
+        ],
+        giftPrefs: ['collectibles','limited-time-items','decorations'],
+        recChips: [
+            ['king', 2],
+            ['shiro', 2],
+            ['samir', 2],
+            ['karasuma', 2],
+            ['guardscode', 3],
+            ['offensivelogic', 3]
+        ]
+    }
+
 var marc = 
     {
         name:"Marc",
@@ -1807,7 +1807,7 @@ var fuwasaki =
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
         wepEffect:"Fully charged weapons will <strong>freeze</strong> the target for <strong>2</strong> seconds and leave it frostbitten for <strong>6</strong> seconds. Breaking the ice shell causes additional damage equal to <strong>151.00%</strong> of ATK. While frostbitten, the target's weapon charge rate is reduced by <strong>50%</strong>.",
-        exclusiveEffect:'<strong>Ice Resonance</strong>: When equipped with <strong>2</strong> or more Ice weapons, increase Volt ATK by <strong>20%</strong> and Ice Resistance by <strong>40%</strong>, taking effect in the background.',
+        exclusiveEffect:'<strong>Ice Resonance</strong>: When equipped with <strong>2</strong> or more Ice weapons, increase Ice ATK by <strong>20%</strong> and Ice Resistance by <strong>40%</strong>, taking effect in the background.',
         awakening:[
             // 1 star
             "When Ice Resonance is active, release any weapon skill <strong>5</strong> times in total to clear the cooldown of all weapon skills, and <strong>double</strong> the damage of [Circulation] and [Counterattack] for <strong>25</strong> seconds.",
