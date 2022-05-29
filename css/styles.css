@@ -358,6 +358,7 @@ body,
 
 .nav-link[href="damagecalculator"] {
     font-size: 1.6rem;
+    width: 101%;
 }
 .nav-link[href="damagecalculator"] i {
     font-size: 1.8rem;
@@ -1441,11 +1442,27 @@ select {
     font-weight: bold;
     border-radius: 0.2em;
 }
+
+.tag-new {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+}
+
+.chip-button .tag-new {
+    top: 65%;
+}
+
 .tag-recommended {
     color: white;
     background-color: purple;
 }
-
+.tag-cn {
+    position: absolute;
+    background-color: #de2910; 
+    color: #ffde02;
+}
 
 .widget-discord {
     position: absolute;
