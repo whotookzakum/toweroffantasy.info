@@ -800,7 +800,31 @@ body,
 #guide-pyrosu-housing table img {
     width: 64px;
 }
-
+.guide-game-version {
+    background-color: var(--color-container-accent-light);
+    padding: .5rem 1rem;
+    border-radius: 0.5rem;
+}
+.guide-game-version h2 {
+    margin: 0;
+    display: flex;
+}
+.guide-game-version h2 span {
+    padding: .25rem .5rem;
+    border-radius: 0.45rem;
+    margin-right: 1rem;
+    margin-left: auto;
+    font-size: 1.7rem;
+}
+.guide-game-version h2 i {
+    font-size: 1.7rem;
+}
+.guide-game-version hr {
+    margin: 0.5rem 0;
+}
+.guide-game-version h3 strong {
+    color: var(--color-clay) !important;
+}
 
 /* GADGETS RELATED
 =============================================== */
