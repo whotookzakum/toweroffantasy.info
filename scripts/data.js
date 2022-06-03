@@ -1824,8 +1824,8 @@ var fuwasaki =
         ],
         energyCharge:["8.00","a"],
         shieldBreak:["13.90","s"],
-        materials:["ice","",""],
-        wepBaseStats: [attack, defense, crit],
+        materials:["ice","red","black"],
+        wepBaseStats: [attack, defense, health],
         
         chipImg:"images/chip/fuwasaki.png",
         chipEffect:[
@@ -1849,11 +1849,14 @@ var fuwasaki =
             // 4000 affinity
             "When health is below <strong>70%</strong>, gain <strong>40%</strong> all-element resistance and an additional <strong>60%</strong> ice resistance.<br>When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself). Lasting <strong>10</strong> seconds, the block amount will not exceed <strong>15%</strong> of the teammate's maximum health."
         ],
-        traits: ['Female','','','',''],
+        traits: ['Female','157 cm','Mirror City','Libra','11 October'],
         gifts: [
-            
+            princeTataFigure, '+60',
+            linyeFigure, '+60',
+            strangeFragment, '+40',
+            strangePlant, '+15'
         ],
-        giftPrefs: ['','',''],
+        giftPrefs: ['metalware','everyday-items','vera'],
         recChips: [
             
         ]
