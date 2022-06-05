@@ -1191,7 +1191,7 @@ var claudia =
             // 2 set
             "Increase damage by <strong>13%/17%/20%/23%</strong> when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target in mid-air.",
             // 4 set
-            "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by0 <strong>1.5/2/2.5/3</strong> seconds and increases the damage of discharge skills by <strong>36%/45%/54%/63%</strong> for <strong>15</strong> seconds."
+            "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by <strong>1.5/2/2.5/3</strong> seconds and increases the damage of discharge skills by <strong>36%/45%/54%/63%</strong> for <strong>15</strong> seconds."
         ],
         
         mimicEffect:[
