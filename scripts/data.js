@@ -1316,9 +1316,9 @@ var cobalt =
         chipImg:"images/chip/cobalt.png",
         chipEffect:[
             // 2 set
-            "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 12%/15%/18%/21% attack damage per second  for 6 seconds.",
+            "Restore 1 dodge every <strong>4</strong> dodges. Dodge attacks add burn to the target, dealing <strong>13%/17%/21%/25%</strong> attack damage per second for <strong>10</strong> seconds.",
             // 4 set
-            "Increases damage by 12%/15%/18%/21% to targets with abnormal statuses."
+            "Increases damage by <strong>13%/17%/21%/25%</strong> to targets with abnormal statuses."
         ],
         
         mimicEffect:[
@@ -1403,9 +1403,9 @@ var baiyuekui =
         chipImg:"images/chip/baiyuekui.png",
         chipEffect:[
             // 2 set
-            "If you have 300~999 charge when switching to this weapon, use 300 points to gain a 15%/18%/21%/25% attack boost for 10 seconds, cooldown 5 seconds, does not stack.",
+            "If you have <strong>200~999</strong> charge when switching to this weapon, use <strong>200</strong> points to gain a <strong>15%/18%/21%/25%</strong> attack boost for <strong>15</strong> seconds, cooldown <strong>5</strong> seconds, does not stack.",
             // 4 set
-            "For every 1 second that a combo is released, the next combo will deal 106%/122%/140%/160% ranged damage (3m radius) to the first enemy, up to 530%/610%/700%/800%; and gain 4 seconds of shield breaking increase of 7%/14%/21%/28%, does not stack. This set also works in the background but only the highest star level set works when multiple sets are equipped."
+            "For every <strong>0.6</strong> seconds that a combo is released, the <strong>next</strong> combo will hit the <strong>first</strong> enemy for <strong>106%/122%/140%/160%</strong> ranged damage (5m radius), up to <strong>530%/610%/700%/800%</strong>; shatter increases by <strong>7%/14%/21%/28%</strong> for <strong>4</strong> seconds, does not stack. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
         ],
         
         mimicEffect:[
@@ -1493,9 +1493,9 @@ var marc =
         chipImg:"images/chip/marc.png",
         chipEffect:[
             // 2 set
-            "Adds a life shield of 15% of your current HP to all teammates after attacking an enemy for 15 seconds, resetting 10 seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by 11%/13%/15%/17% for 15 seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level. ",
+            "Adds a life shield of <strong>15%</strong> of your current HP to all teammates after attacking an enemy for <strong>15</strong> seconds, resetting <strong>10</strong> seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by <strong>11%/13%/15%/17%</strong> for <strong>15</strong> seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level. ",
             // 4 set
-            "Increases attack power by 6%/7.5%/9%/11.5% and teammates attack power by 3%/3.5%/4.5%/5.75% for 15 seconds when life shield is granted, stacks up to 3 levels. This will effect is also active in the background, with multiple sets of equipment taking effect up to the maximum star level."
+            "Increases attack power by <strong>6%/7.5%/9%/11.5%</strong> and teammates attack power by <strong>3%/3.5%/4.5%/5.75%</strong> for <strong>15</strong> seconds when life shield is granted, stacks up to <strong>3</strong> levels. This will effect is also active in the background, with multiple sets of equipment taking effect up to the maximum star level."
         ],
         
         mimicEffect:[
@@ -1659,9 +1659,9 @@ var frigg =
         chipImg:"images/chip/frigg.png",
         chipEffect:[
             // 2 set
-            "When switching from ice weapon to ice weapon, the ice attack power is increased by 15%/18%/21%/25% for 10 seconds. This set also works in the background (when not using the weapon where this set is equipped on), but only the set with the highest star rating will work when  multiple sets are equipped.",
+            "When switching from ice weapon to ice weapon, the ice attack power is increased by <strong>15%/18%/21%/25%</strong> for <strong>10</strong> seconds. This set also works in the background (when not using the weapon where this set is equipped on), but only the set with the highest star rating will work when  multiple sets are equipped.",
             // 4 set
-            "When the ice field is released by the weapon 'Balmung', the enemy targets within the ice field take 60%/75%/90%/105% ice damage per second. "
+            "When the ice field is released by the weapon 'Balmung', the enemy targets within the ice field take <strong>60%/75%/90%/105%</strong> ice damage per second. "
         ],
         
         mimicEffect:[
@@ -1741,9 +1741,9 @@ var ruby =
         chipImg:"images/chip/ruby.png",
         chipEffect:[
             // 2 set
-            "After releasing weapon skill, fire attack is increased by 15%/18%/21%/25% for 25 seconds, the effect is triggered by different star levels, the effect is not stackable",
+            "After releasing weapon skill, fire attack is increased by <strong>15%/18%/21%/25%</strong> for <strong>25</strong> seconds, the effect is triggered by different star levels, the effect is not stackable.",
             // 4 set
-            "After releasing the weapon skill, gain (mastery) for 15 seconds, cooldown 15 seconds (different of levels (mastery) shares the cooldown), (mastery) cannot be stacked. Each time the basic attack hits the target, the fire damage is increased by 4%/5%/6%/7% which lasts until the end of (mastery), stacks up to 6 levels, adding up to 1 level every 0.2 seconds, after 6 levels are added, you get a shield to resist 1 damage."
+            "After releasing the weapon skill, gain (mastery) for <strong>15</strong> seconds, cooldown <strong>15</strong> seconds (different of levels (mastery) shares the cooldown), (mastery) cannot be stacked. Each time the basic attack hits the target, the fire damage is increased by <strong>4%/5%/6%/7%</strong> which lasts until the end of (mastery), stacks up to <strong>6</strong> levels, adding up to <strong>1</strong> level every <strong>0.2</strong> seconds, after <strong>6</strong> levels are added, you get a shield to resist <strong>1</strong> damage."
         ],
         
         mimicEffect:[
@@ -1830,9 +1830,9 @@ var fuwasaki =
         chipImg:"images/chip/fuwasaki.png",
         chipEffect:[
             // 2 set
-            "While Ice Resonance is active: Every 3 seconds, deal 60%/100%/150%/220% * Ice ATK to enemies within 10 meters of the surrounding area and apply [Frost] effect: 5% slowing effect for 3.5 seconds, after 3 stacks Freeze the target for 3 seconds (cannot freeze bosses) and increase the target's Ice Damage by 12% (lasts 18 seconds). These matrices work in the background, and for multiple sets the highest star set will be used.",
+            "While Ice Resonance is active: Every <strong>3</strong> seconds, deal <strong>60%/100%/150%/220%</strong> * Ice ATK to enemies within 10 meters of the surrounding area and apply [Frost] effect: 5% slowing effect for <strong>3.5</strong> seconds, after 3 stacks Freeze the target for <strong>3</strong> seconds (excluding bosses) and increase the target's Ice Damage by <strong>12%</strong> (lasts <strong>18</strong> seconds). These matrices work in the background, and for multiple sets the highest star set will be used.",
             // 4 set
-            "Attack the target 10 times and add a 12-second [Frozen] mark: Attack the marked target to increase the ice element damage by 25%/28%/31%/34%. These matrices work in the background, and for multiple sets the highest star set will be used."
+            "Attack the target <strong>10</strong> times and add a 12-second [Frozen] mark: Attack the marked target to increase the ice element damage by <strong>25%/28%/31%/34%</strong>. These matrices work in the background, and for multiple sets the highest star set will be used."
         ],
         
         mimicEffect:[
