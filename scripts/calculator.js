@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
     
     var resoBuffTypes = new Map([
-        ['none', 0],
+        ['other', 0],
         ['balancedSolo', 0.05],
         ['balancedGroup', 0.25],
         ['attackerSolo', 0.10],
@@ -359,7 +359,7 @@ jQuery(document).ready(function ($) {
         document.getElementById('enemyEleResist').value = 0;
         document.getElementById('enemyEleWeakness').value = 0;
         document.getElementById('otherMultipliers').value = 0;
-        document.getElementById('resoBuffDropdown').value = 'none';
+        document.getElementById('resoBuffDropdown').value = 'other';
         document.getElementById('bonusWepEffectDropdown').value = 'none';
         document.getElementById('mimicBuffDropdown').value = 'none';
         document.getElementById('heavilyWounded').checked = false;
