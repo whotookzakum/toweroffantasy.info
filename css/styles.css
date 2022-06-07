@@ -28,6 +28,7 @@
     --color-darkteal: #065969;
     --color-clay: #ba4232;
     --color-red: #ff1b1b;
+    --color-lightred: #f15151;
     
     /* Text colors (food) subject to change */
     --color-rarity-1-text: #d5d5e0;
@@ -657,6 +658,18 @@ body,
     right: 0;
     bottom: 0.3rem;
 }
+
+#combat-text ul {
+    list-style: none;
+    padding: 0;
+}
+#combat-text ul li {
+    margin: 15px 0;
+}
+#combat-text b {
+    color: var(--color-lightred);
+}
+
 .submitted-by {
     text-align: right;
     
@@ -926,7 +939,7 @@ body,
 .cl::-webkit-scrollbar {
     display: none;
 }
-.cl-date {
+.cl span {
     background: #222222;
 }
 

@@ -11,32 +11,32 @@ jQuery(document).ready(function ($) {
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
-    
+
     // Navigation 
-    $("#nav-toggler").click(function(){
+    $("#nav-toggler").click(function () {
         $(".sidenav .nav-body").addClass("nav-open");
     });
-    
-    $("#sidenav-btn-close").click(function(){
+
+    $("#sidenav-btn-close").click(function () {
         $(".sidenav .nav-body").removeClass("nav-open");
     });
-    
-    $(".nav-backdrop").click(function(){
+
+    $(".nav-backdrop").click(function () {
         $(".sidenav .nav-body").removeClass("nav-open");
     });
-    
-    $(window).resize(function(){
+
+    $(window).resize(function () {
         if (window.innerWidth > 1440) {
             $(".sidenav .nav-body").removeClass("nav-open");
         }
     });
-    
-    
+
+
     // Gets the clicked #btn-... to pass into setModalData()
     $(".modal-menu-item").click(function () {
-        
-        let selectedItem = $(this).attr('id').replace('btn-','');
-        
+
+        let selectedItem = $(this).attr('id').replace('btn-', '');
+
         // MIMICS & CHIPS PAGES
         if (document.URL.includes("simulacra") || document.URL.includes("matrices")) {
             setModalData(window[selectedItem]);
@@ -44,22 +44,22 @@ jQuery(document).ready(function ($) {
 
         // GADGETS PAGE
         if (document.URL.includes("relics")) {
-            
+
             // Get the index of the gadget inside gadgets[]
-            let gadgetIndex = gadgets.findIndex(function(gadget){
+            let gadgetIndex = gadgets.findIndex(function (gadget) {
                 // Check if clicked #btn-"..." matches gadgets[index].name without spaces
-                let gadgetName = gadget.name.replaceAll(' ','').toUpperCase();
+                let gadgetName = gadget.name.replaceAll(' ', '').toUpperCase();
                 if (selectedItem.toUpperCase() === gadgetName) {
                     return true;
                 }
-            }); 
+            });
 
             setModalData(gadgets[gadgetIndex]);
         }
 
     });
-    
-    
+
+
     // Set data to be displayed inside modals for Simulacra, Matrices, and Relics
     function setModalData(i) {
 
@@ -89,10 +89,10 @@ jQuery(document).ready(function ($) {
             $("#wep-element-img").attr('src', i.eleImg);
             $("#modal-bg-img").attr('src', i.artwork);
             $("#wep-img").attr('src', i.wepImg);
-            
+
             let wepEffectName = '';
             let wepEffectNameColor = '';
-            
+
             switch (i.eleImg) {
                 case "images/ele_fire.png":
                     wepEffectName = 'Flame';
@@ -114,10 +114,10 @@ jQuery(document).ready(function ($) {
                     wepEffectName = 'Elemental Efect';
                     wepEffectNameColor = 'blue';
             }
-            
+
             $("#wep-effect-name").html(wepEffectName);
             $("#wep-effect-name").css('color', `var(--color-${wepEffectNameColor})`);
-            
+
             $("#wep-effect").html(i.wepEffect);
             if (i.hasOwnProperty('exclusiveEffect')) {
                 $("#exclusive-effect-wrapper").removeClass("d-none");
@@ -135,12 +135,12 @@ jQuery(document).ready(function ($) {
             $("#mimic-element").html(mimicEle.charAt(0).toUpperCase() + mimicEle.slice(1));
             var mimicReso = i.resoImg.slice(i.resoImg.indexOf("_") + 1, i.resoImg.indexOf("."));
             $("#mimic-reso").html(mimicReso.charAt(0).toUpperCase() + mimicReso.slice(1));
-            
+
             // Breakthrough mats
             let thisMat = 0;
             let imgNum = 1;
             // For each index (0-2), load images 1-3.png
-            $("#breakthrough-mats .item-wrapper-with-bg").each(function() {
+            $("#breakthrough-mats .item-wrapper-with-bg").each(function () {
                 // Each iteration increase the image number
                 // If all 3 images loaded, increase index to switch to next material
                 if (imgNum >= 4) {
@@ -164,12 +164,12 @@ jQuery(document).ready(function ($) {
             $("#star-all-4").html(i.awakening[3]);
             $("#star-all-5").html(i.awakening[4]);
             $("#star-all-6").html(i.awakening[5]);
-            
+
             // Recommended chips
             $("#recommended-chips-for-wep").html(i.wepName);
             $("#recommended-chips-wrapper").html('');
             if (i.recChips) {
-                for (let currentChip = 0; currentChip < i.recChips.length; currentChip++ ) {
+                for (let currentChip = 0; currentChip < i.recChips.length; currentChip++) {
                     // index 0 = name (string)
                     // index 1 = amount (int)
                     $("#recommended-chips-wrapper").append(
@@ -183,14 +183,30 @@ jQuery(document).ready(function ($) {
                     // if amount <== 2, show chipEffect[0]
                 }
             }
-            
+
+            // Combat
+            $("#combat-normal").html('');
+            $("#combat-dodge").html('');
+            $("#combat-skill").html('');
+            $("#combat-discharge").html('');
+            if (i.skills) { 
+                for (let currentSkill = 0; currentSkill < i.skills.length; currentSkill++) {
+                    let listToAppend = "#combat-" + i.skills[currentSkill].type;
+                    $(listToAppend).append(
+                        `<li>
+                            <h3><strong>${i.skills[currentSkill].name}</strong></h3>
+                            <span>${i.skills[currentSkill].desc}</span>
+                        </li>`
+                    );
+                }
+            }
 
             // Affinity
             $("#affinity-1200").html(i.mimicEffect[2]);
             $("#affinity-4000").html(i.mimicEffect[5]);
-            
+
             let giftTier = 1;
-            
+
             // Gift categories
             $("#gift-category-wrapper").html('');
             // Remove dashes and store in new array to prevent nesting
@@ -198,26 +214,29 @@ jQuery(document).ready(function ($) {
             // Show Vera tag disclaimer for applicable characters
             if (catText.includes('vera')) {
                 $("#gift-vera-disclaimer").css('display', 'inline-block');
-            }
-            else {
+            } else {
                 $("#gift-vera-disclaimer").css('display', 'none');
             }
             for (let catIndex = 0; catIndex < i.giftPrefs.length; catIndex++) {
                 $("#gift-category-wrapper").append(
                     `<span class="gift-category" style="background-color: var(--color-gift-category-${i.giftPrefs[catIndex]})">${catText[catIndex]}</span> `
                 );
-            } 
-            
+            }
+
             // Gifts
             $("#gifts-wrapper").html('');
-            for (let thisGift = 0; thisGift < i.gifts.length; thisGift+=2) {
+            for (let thisGift = 0; thisGift < i.gifts.length; thisGift += 2) {
                 // Since the array is structured as [ gift, 'num', gift, 'num' ...] we need to skip loading the num.
                 let giftPoints = thisGift + 1;
-                
-                if ( i.gifts[giftPoints] == '+60' || i.gifts[giftPoints] == '+80' ) { giftTier = 4; }
-                else if ( i.gifts[giftPoints] == '+30' || i.gifts[giftPoints] == '+40' ) { giftTier = 3; }
-                else if ( i.gifts[giftPoints] == '+15' ) { giftTier = 2; }
-                
+
+                if (i.gifts[giftPoints] == '+60' || i.gifts[giftPoints] == '+80') {
+                    giftTier = 4;
+                } else if (i.gifts[giftPoints] == '+30' || i.gifts[giftPoints] == '+40') {
+                    giftTier = 3;
+                } else if (i.gifts[giftPoints] == '+15') {
+                    giftTier = 2;
+                }
+
                 $("#gifts-wrapper").append(
                     `<div class="item-wrapper-with-bg bg-rarity-${giftTier}">
                         <img src='${i.gifts[thisGift]}'>
@@ -225,13 +244,13 @@ jQuery(document).ready(function ($) {
                     </div>`
                 );
             }
-            
+
             // Character Info
             const bsPopover = new bootstrap.Popover(document.querySelector('#popover-mimic'), {
                 trigger: 'focus',
                 html: true
             });
-            bsPopover._config.content = 
+            bsPopover._config.content =
                 `<div class="traits p-4">
                     <div class="d-inline-block align-middle">
                         <span class="mt-0">GENDER</span>${i.traits[0]}<br>
@@ -276,9 +295,9 @@ jQuery(document).ready(function ($) {
             // recomended weapons to use with
             // where to obtain
         }
-        
+
     }
-    
+
 
     // Load Food
     for (let i = 0; i < food.length; i++) {
@@ -324,7 +343,7 @@ jQuery(document).ready(function ($) {
         </div>
         `);
     }
-    
+
     // Animate modal menu when modal is opened/closed
     const modalContent = document.getElementById("modal-content");
     modalContent.addEventListener('hide.bs.modal', function () {

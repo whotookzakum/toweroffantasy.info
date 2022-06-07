@@ -133,35 +133,43 @@ var samir =
         skills: [
             {
                 name: "Dual Fire",
-                desc: "While on the ground, tap normal attack to attack 5 times in a row. First Attack: Deal total damage equal to 47.1% of ATK + 2. Second Attack: Deal total damage equal to 35.8% of ATK + 2. brine Third Attack: Deal total damage equal to 119.7% of ATK + 6. Fourth attack: Deal total damage equal to 113.1% of ATK + 6. Fifth Attack: Deal total damage equal to 154% of ATK + 8 and launch the target."
+                type: "normal",
+                desc: "While on the ground, tap normal attack to attack 5 times in a row.<br>First Attack: Deal total damage equal to 47.1% of ATK + 2.<br>Second Attack: Deal total damage equal to 35.8% of ATK + 2.<br>Third Attack: Deal total damage equal to 119.7% of ATK + 6.<br>Fourth Attack: Deal total damage equal to 113.1% of ATK + 6.<br>Fifth Attack: Deal total damage equal to 154% of ATK + 8 and launch the target."
             },
             {
                 name: "Bullet Rain",
+                type: "normal",
                 desc: "While airborne, tap normal attack to fire continuously at the ground, dealing damage equal to % of ATK + each. hit Consumes 150 Endurance."
             },
             {
                 name: "Energy Burst",
+                type: "normal",
                 desc: "Hold attack button to maintain constant fire, each hit dealing 23% x ATK +1 base damage."
             },
             {
                 name: "Phantom Kick",
+                type: "normal",
                 desc: "While airborne, tap and hold normal attack to trigger Phantom Kick. Knock the target down and deal damage equal to 70.5% of ATK + 4. Upon landing, deal damage equal to 98.7% of ATK + 5 to nearby targets and launch them."
             },
             {
                 name: "Rising Lightning Kick",
+                type: "dodge",
                 desc: "Tap normal attack after dodging to knock targets into the air and deal damage equal to 122.6% of ATK + 6."
             },
             {
                 name: "Dodge",
+                type: "dodge",
                 desc: "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging."
             },
             {
                 name: "Electro Field",
+                type: "skill",
                 desc: "Fire an energy shield at the target location, reflecting beams within the barrier. Deal damage equal to 269.8% of ATK + 14, and the last hit launches targets into the air. 45-second cooldown."
             },
             {
                 name: "Domain of Thunder",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder, and create a Domain of Thunder at the target location upon switching to this weapon, dealing a total of  238.3% of ATK + 13 damage over 3 attacks to enemies within the area and dispelling their buffs. The domain lasts for 3.5 seconds and deals damage equal to 42.4% of ATK + 2 to a target every 0.5 seconds."
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, remove all debuffs from the wielder, and create a Domain of Thunder at the target location upon switching to this weapon, dealing a total of  238.3% of ATK + 13 damage over 3 attacks to enemies within the area and dispelling their buffs. The domain lasts for 3.5 seconds and deals damage equal to 42.4% of ATK + 2 to a target every 0.5 seconds."
             }
         ]
     }
@@ -253,39 +261,48 @@ var coco =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "While on the ground, swing the staff to attack 5 times in a row. First Attack: Deal damage equal to 41.9% of ATK + 2. Second Attack: Deal damage equal to 31.4% of ATK + 2.  Third Attack: Deal damage equal to 50.6% of ATK + 3. Fourth Attack: Deal damage equal to 69% of ATK + 4. Fifth Attack: Deal damage equal to 122% of ATK + 6."
+                type: "normal",
+                desc: "While on the ground, swing the staff to attack 5 times in a row.<br>First Attack: Deal damage equal to <strong>41.9%</strong> of ATK + <strong>2</strong>.<br>Second Attack: Deal damage equal to <strong>31.4%</strong> of ATK + <strong>2</strong>.<br>Third Attack: Deal damage equal to <strong>50.6%</strong> of ATK + <strong>3</strong>.<br>Fourth Attack: Deal damage equal to <strong>69%</strong> of ATK + <strong>4</strong>.<br>Fifth Attack: Deal damage equal to <strong>122%</strong> of ATK + <strong>6</strong>."
             },
             {
                 name: "Focused Assault",
-                desc: "After the third normal attack, hold the normal attack button to trigger branch attacks, consuming 300 points of endurance. First Attack: Pull in enemies in front of the user, knocking them into the air and dealing damage equal to 26.8% of ATK + 1 every 0.3 seconds (up to 4 times). Second Attack: Deal damage equal to 31.1% of ATK + 2 at the target location and to nearby enemies every 0.3 seconds."
+                type: "normal",
+                desc: "After the third normal attack, hold the normal attack button to trigger branch attacks, consuming <strong>300</strong> points of endurance.<br>First Attack: Pull in enemies in front of the user, knocking them <strong>into the air</strong> and dealing damage equal to <strong>26.8%</strong> of ATK + <strong>1</strong> every <strong>0.3</strong> seconds (up to <strong>4</strong> times).<br>Second Attack: Deal damage equal to <strong>31.1%</strong> of ATK + <strong>2</strong> at the target location and to nearby enemies every <strong>0.3</strong> seconds."
             },
             {
                 name: "Soaring Barrage",
-                desc: "While airborne or after jumping once, tap normal attack to attack 5 times in a row. First Attack: Deal damage equal to 54.2% of ATK + 3. Second Attack: Deal damage equal to 39.1% of ATK + 2. Third Attack: Deal damage equal to 42.4% of ATK + 2. Fourth Attack: Deal damage equal to 76.2% of ATK + 4. Fifth Attack: Deal damage equal to 79.4% of ATK + 4.",
+                type: "normal",
+                desc: "While airborne or after jumping once, tap normal attack to attack 5 times in a row.<br>First Attack: Deal damage equal to <strong>54.2%</strong> of ATK + <strong>3</strong>.<br>Second Attack: Deal damage equal to <strong>39.1%</strong> of ATK + <strong>2</strong>.<br>Third Attack: Deal damage equal to <strong>42.4%</strong> of ATK + <strong>2</strong>.<br>Fourth Attack: Deal damage equal to <strong>76.2%</strong> of ATK + <strong>4</strong>.<br>Fifth Attack: Deal damage equal to <strong>79.4%</strong> of ATK + <strong>4</strong>.",
             },
             {
                 name: "Moonfall",
-                desc: "Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every 0.2 seconds, for a total of 95.2% of ATK + 5 damage.",
+                type: "normal",
+                desc: "Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every <strong>0.2</strong> seconds, for a total of <strong>95.2%</strong> of ATK + <strong>5</strong> damage.",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Surge",
-                desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to 35.3% of ATK + 2 to targets. Grant 75 weapon charge points upon use.",
+                type: "dodge",
+                desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to <strong>35.3%</strong> of ATK + <strong>2</strong> to targets. Grant <strong>75</strong> weapon charge points upon use.",
             },
             {
                 name: "Tesseract",
-                desc: "Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to 51.1% of ATK + 3 to targets in its path every 0.3 seconds (up to 5 times). Grant 75 weapon charge points upon use.",
+                type: "dodge",
+                desc: "Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to <strong>51.1%</strong> of ATK + <strong>3</strong> to targets in its path every <strong>0.3</strong> seconds (up to 5 times). Grant <strong>75</strong> weapon charge points upon use.",
             },
             {
                 name: "Sanctuary",
-                desc: "Create a healing zone that moves with the Wanderer and heals nearby allies for 95% of ATK + 5 once every 0.5 seconds for 6 seconds. 60-second cooldown.",
+                type: "skill",
+                desc: "Create a healing zone that moves with the Wanderer and heals nearby allies for <strong>95%</strong> of ATK + <strong>5</strong> once every <strong>0.5</strong> seconds for <strong>6</strong> seconds. <strong>60</strong>-second cooldown.",
             },
             {
                 name: "Swift Deliverance",
-                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for 118.8% x ATK +6 HP for 7 seconds.",
+                type: "discharge",
+                desc: "When a <b>weapon is fully charged</b> or triggers <b>Phantasia</b>, switching to this weapon from another weapon <strong>removes all debuffs from the wielder</strong>, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for <strong>118.8%</strong> x ATK + <strong>6</strong> HP for <strong>7</strong> seconds.",
             }
         ]
     }
@@ -376,43 +393,53 @@ var king =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "While on the ground, swing the scythe to launch 5 consecutive attacks. First Attack: Deal damage equal to 51.9% of ATK + 3 and knock the target back a short distance. Second Attack: Deal damage equal to 44.7% of ATK + 2 and knock the target back a short distance. Third Attack: Deal damage equal to 97.2% of ATK + 5 and knock the target back a short distance. Fourth Attack: Deal damage equal to 99.6% of ATK + 5 and knock the target back a short distance. Fifth Attack: Deal damage equal to 94.7% of ATK + 5, knock the target into the air, and cause the Wanderer to go airborne.",
+                type: "normal",
+                desc: "While on the ground, swing the scythe to launch 5 consecutive attacks.<br>First Attack: Deal damage equal to 51.9% of ATK + 3 and knock the target back a short distance.<br>Second Attack: Deal damage equal to 44.7% of ATK + 2 and knock the target back a short distance.<br>Third Attack: Deal damage equal to 97.2% of ATK + 5 and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to 99.6% of ATK + 5 and knock the target back a short distance.<br>Fifth Attack: Deal damage equal to 94.7% of ATK + 5, knock the target into the air, and cause the Wanderer to go airborne.",
             },
             {
                 name: "Rising Scythe",
-                desc: "While airborne or after jumping once, attack 5 times in a row. First Attack: Deal damage equal to 57.6% of ATK + 3. Second Attack: Deal damage equal to 62.6% of ATK + 3. Third Attack: Deal damage equal to 173% of ATK + 9. Fourth Attack: Deal damage equal to 194.4% of ATK + 10. Fifth Attack: Deal damage equal to 158.1% of ATK + 8 and knock the target down. The higher the target is from the ground, the more damage is dealt, up to 600% of ATK.",
+                type: "normal",
+                desc: "While airborne or after jumping once, attack 5 times in a row.<br>First Attack: Deal damage equal to 57.6% of ATK + 3.<br>Second Attack: Deal damage equal to 62.6% of ATK + 3.<br>Third Attack: Deal damage equal to 173% of ATK + 9.<br>Fourth Attack: Deal damage equal to 194.4% of ATK + 10.<br>Fifth Attack: Deal damage equal to 158.1% of ATK + 8 and knock the target down. The higher the target is from the ground, the more damage is dealt, up to 600% of ATK.",
             },
             {
                 name: "Asunder",
+                type: "normal",
                 desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Asunder. While falling, deal damage equal to 12.5% of ATK + 1 each hit. Upon landing, deal damage equal to 65.4% of ATK + 3 and deliver a knockdown. The higher the location is when triggered, the higher the damage dealt, up to 600% of ATK.",
             },
             {
                 name: "Returning Chainblade",
+                type: "normal",
                 desc: "After the fourth normal attack, hold the normal attack button to trigger Returning Chainblade. Transform into a chainblade, dealing damage equal to 124.9% of ATK + 7 to nearby targets and pulling them in.",
             },
             {
                 name: "Sneak Attack",
+                type: "normal",
                 desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 570% of ATK + 30.",
             },
             {
                 name: "Returning Chainblade",
+                type: "dodge",
                 desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Rapid Lunge. Deal up to 115.5% of ATK + 6 damage and pull in nearby enemies.",
             },
             {
                 name: "Domain of the Bat",
+                type: "dodge",
                 desc: "When dodging, summon a group of bats that pulls the target into the center. Tap normal attack during the short period after dodging to swing the scythe, dealing up to 103.8% of ATK + 5 damage to the target.",
             },
             {
                 name: "Dodge",
+                type: "dodge",
                 desc: "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging.",
             },
             {
                 name: "Mortal Coil",
+                type: "skill",
                 desc: "Swing the scythe, dealing damage equal to 284% of ATK + 15. 45 second cooldown.",
             },
             {
                 name: "Flaming Scythe",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder and create a Flaming Scythe upon switching to this weapon, dealing damage equal to 277% of ATK + 15 and lasts for 10 seconds. Additionally, spawn Flaming Scythes every 2 seconds. The scythes summon volcanic eruptions from the ground, which deal damage equal to 60% of ATK + 3 to targets and knock them into the air.",
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, remove all debuffs from the wielder and create a Flaming Scythe upon switching to this weapon, dealing damage equal to 277% of ATK + 15 and lasts for 10 seconds. Additionally, spawn Flaming Scythes every 2 seconds. The scythes summon volcanic eruptions from the ground, which deal damage equal to 60% of ATK + 3 to targets and knock them into the air.",
             }
         ]
     }
@@ -505,39 +532,48 @@ var shiro =
         skills: [
             {
                 name: "Rapid Throw",
-                desc: "While on the ground, swing the chakram to unleash 5 spinning attacks. First Attack: Deal damage equal to 23.6% of ATK + 1. Second Attack: Deal damage equal to 18.3% of ATK + 1. Third Attack: Deal damage equal to 26.2% of ATK + 1. Fourth Attack: Deal damage equal to 23.6% of ATK + 1. Fifth Attack: Deal damage equal to 41.4% of ATK + 2 and knock the target back a short distance."
+                type: "normal",
+                desc: "While on the ground, swing the chakram to unleash 5 spinning attacks.<br>First Attack: Deal damage equal to 23.6% of ATK + 1.<br>Second Attack: Deal damage equal to 18.3% of ATK + 1.<br>Third Attack: Deal damage equal to 26.2% of ATK + 1.<br>Fourth Attack: Deal damage equal to 23.6% of ATK + 1.<br>Fifth Attack: Deal damage equal to 41.4% of ATK + 2 and knock the target back a short distance."
             },
             {
                 name: "Aerial Discharge",
-                desc: "While airborne or after jumping once, tap normal attack to unleash 3 spinning attacks in a row. First Attack: Deal damage equal to 20.1% of ATK + 1. Second Attack: Deal damage equal to 22.5% of ATK + 1. Third Attack: Deal damage equal to 28.6% of ATK + 2."
+                type: "normal",
+                desc: "While airborne or after jumping once, tap normal attack to unleash 3 spinning attacks in a row.<br>First Attack: Deal damage equal to 20.1% of ATK + 1.<br>Second Attack: Deal damage equal to 22.5% of ATK + 1.<br>Third Attack: Deal damage equal to 28.6% of ATK + 2."
             },
             {
                 name: "Scatter",
+                type: "normal",
                 desc: "After the second normal attack, hold attack button to activate Scatter. Fire five penetrating chakrams forward, each hit dealing 33.5% x ATK +2 damage, with minor knockback."
             },
             {
                 name: "Air Spin",
+                type: "normal",
                 desc: "Tap and hold normal attack while airborne to trigger Air Spin. Unleash a powerful strike, dealing damage equal to 147.3% of ATK + 8 to the target and nearby enemies, and knocking them into the air."
             },
             {
                 name: "Sneak Attack",
+                type: "normal",
                 desc: "Approach the enemy from behind while crouching, then tap normal ed attack to use Sneak Attack, dealing damage equal to 427.5% of ATK + 23."
             },
             {
                 name: "Waning Moon",
+                type: "dodge",
                 desc: "Tap normal attack during the short period after dodging to trigger Waning Moon. Toss a spinning chakram forward, dealing damage equal to 102.2% of ATK + 5 to the target and inflicting a stun effect for 0.5 seconds. The chakram then splits into 3 and keeps traveling, dealing damage equal to 14.6% of ATK + 1 to targets along their path. Split chakrams will bounce during Full Bloom."
             },
             {
                 name: "Dodge",
+                type: "dodge",
                 desc: "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging."
             },
             {
                 name: "Full Bloom",
+                type: "skill",
                 desc: "Create a Chakram Domain with the Wanderer at the center for 8 seconds. For 8 seconds after unleashing, pull in targets and reduce their speed by 30%. Also fire 5 chakrams that bounce between  enemies, dealing damage equal to 14.3% of ATK +1 to targets on their paths, bouncing up to 5 times. The split chakrams triggered by Waning Moon also bounce up to 5 times. 60-second cooldown."
             },
             {
                 name: "Spirit of the Air",
-                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder and unleashes Chakram of the Seas at a target. Struck target causes AOE stun for 1 second, plus 1 attack each against up to 3 units every second (each attack has 10% chance of stunning the target for 1.5 seconds), dealing 31.8% x ATK + 2 damage for 10 seconds."
+                type: "discharge",
+                desc: "When a <b>weapon is fully charged</b> or triggers <b>Phantasia</b>, switching to this weapon from another weapon <strong>removes all debuffs from the wielder</strong> and unleashes Chakram of the Seas at a target. Struck target causes AOE stun for 1 second, plus 1 attack each against up to 3 units every second (each attack has 10% chance of stunning the target for 1.5 seconds), dealing 31.8% x ATK + 2 damage for 10 seconds."
             }
         ]
     }
@@ -624,47 +660,58 @@ var meryl =
         skills: [
             {
                 name: "Heavy Cleave",
-                desc: "While on the ground, swing a greatsword to attack 4 times in a row. First Attack: Deal damage equal to 60.7% of ATK + 3 and knock the target back a short distance. Second Attack: Deal damage equal to 50.1% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 87.9% of ATK + 5 and knock the target back a short distance. Fourth Attack: Deal damage equal to 130.3% of ATK + 7, knock the target into the air, then launch them upon landing.",
+                type: "normal",
+                desc: "While on the ground, swing a greatsword to attack 4 times in a row.<br>First Attack: Deal damage equal to 60.7% of ATK + 3 and knock the target back a short distance.<br>Second Attack: Deal damage equal to 50.1% of ATK + 3 and knock the target back a short distance.<br>Third Attack: Deal damage equal to 87.9% of ATK + 5 and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to 130.3% of ATK + 7, knock the target into the air, then launch them upon landing.",
             },
             {
                 name: "Aerial Strike",
-                desc: "While airborne or after jumping once, tap normal attack to attack 4 times in a row. First Attack: Deal damage equal to 88.7% of ATK + 5. Second Attack: Deal damage equal to 72.9% of ATK + 4. Third Attack: Deal damage equal to 130% of ATK + 7. Fourth Attack: Deal damage equal to 117.1% of ATK + 6 and deliver a knockdown, launch the target upon landing.",
+                type: "normal",
+                desc: "While airborne or after jumping once, tap normal attack to attack 4 times in a row.<br>First Attack: Deal damage equal to 88.7% of ATK + 5.<br>Second Attack: Deal damage equal to 72.9% of ATK + 4.<br>Third Attack: Deal damage equal to 130% of ATK + 7.<br>Fourth Attack: Deal damage equal to 117.1% of ATK + 6 and deliver a knockdown, launch the target upon landing.",
             },
             {
                 name: "Rising Slash",
+                type: "normal",
                 desc: "After the third normal attack, hold normal attack to trigger Rising Slash. Knock the target into the air and go airborne, dealing damage equal to 53.6%of ATK + 3.",
             },
             {
                 name: "Moonset Slash",
+                type: "normal",
                 desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Moonset Slash. While falling, each hit deals damage equal to 12.5% of ATK + 1. Upon landing, deal damage equal to 117.1% of ATK + 6 and launch targets. Deal greater damage depending on the user's altitude when Moonset Slash triggered, up to 600% of ATK.",
             },
             {
                 name: "Sneak Attack",
+                type: "normal",
                 desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 570% of ATK + 30.",
             },
             {
                 name: "Whirlwind",
+                type: "normal",
                 desc: "While standing still or moving, tap and hold normal attack to trigger Whirlwind, dealing damage equal to 82% of ATK + 4 every 0.5 seconds to the target. Grant hitstun immunity while in use.",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Devastate",
+                type: "dodge",
                 desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Devastate. Deal damage equal to 55% of ATK + 3 each hit and launch targets.",
             },
             {
                 name: "Crescent Slash",
+                type: "dodge",
                 desc: "Tap normal attack during the short period after dodging to trigger Crescent Slash. Swing the blade to unleash sword auras forward, each dealing damage equal to 41.3% of ATK + 2.",
             },
             {
                 name: "Blizzard",
+                type: "skill",
                 desc: "Swing the blade to launch sword auras forward, each dealing damage equal to 90.8% of ATK + 5 and increasing damage dealt by 5% with each hit. While active, immune to control effects. 45-second cooldown.",
             },
             {
                 name: "Frost Barrier",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder, and smash the ground to form a barrier upon switching to this weapon, dealing damage equal to 419.3% of ATK + 22 to nearby enemies, knocking enemies into the air. This reduces their speed by 50% and stops them from dodge or jump. The barrier lasts 5 seconds and blocks projectiles.",
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, remove all debuffs from the wielder, and smash the ground to form a barrier upon switching to this weapon, dealing damage equal to 419.3% of ATK + 22 to nearby enemies, knocking enemies into the air. This reduces their speed by 50% and stops them from dodge or jump. The barrier lasts 5 seconds and blocks projectiles.",
             }
         ]
     }
@@ -755,35 +802,43 @@ var hane =
         skills: [
             {
                 name: "Quickdraw",
-                desc: "While on the ground, draw the bow repeatedly to attack 5 times. First Attack: Deal damage equal to 48.8% of ATK + 3. Second Attack: Deal damage equal to 43.7% of ATK + 2. Third Attack: Deal damage equal to 78.6% of ATK + 4. Fourth Attack: Deal damage equal to 121.2% of ATK + 6. Fifth Attack: Deal damage equal to 112.5% of ATK + 6 and knock the target back a short distance."
+                type: "normal",
+                desc: "While on the ground, draw the bow repeatedly to attack 5 times.<br>First Attack: Deal damage equal to 48.8% of ATK + 3.<br>Second Attack: Deal damage equal to 43.7% of ATK + 2.<br>Third Attack: Deal damage equal to 78.6% of ATK + 4.<br>Fourth Attack: Deal damage equal to 121.2% of ATK + 6.<br>Fifth Attack: Deal damage equal to 112.5% of ATK + 6 and knock the target back a short distance."
             },
             {
                 name: "Charged Arrow",
+                type: "normal",
                 desc: "Tap and hold normal attack to charge the weapon. Deal basic damage equal to 87.8% of ATK + 5, and 50% more for each 1 second spent charging, up to 3 seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers)."
             },
             {
                 name: "Arrow Rain",
+                type: "normal",
                 desc: "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to 287.2% of ATK + 15 area damage to targets."
             },
             {
                 name: "Air Volley",
-                desc: "While airborne, tap normal attack to attack 4 times in a row in the air. First Attack: Deal damage equal to 56.3% of ATK + 3. Second Attack: Deal damage equal to 74% of ATK + 4. Third Attack: Deal damage equal to 112.7% of ATK + 6. Fourth Attack: Deal damage equal to 169.8% of ATK + 9."
+                type: "normal",
+                desc: "While airborne, tap normal attack to attack 4 times in a row in the air.<br>First Attack: Deal damage equal to 56.3% of ATK + 3.<br>Second Attack: Deal damage equal to 74% of ATK + 4.<br>Third Attack: Deal damage equal to 112.7% of ATK + 6.<br>Fourth Attack: Deal damage equal to 169.8% of ATK + 9."
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds."
             },
             {
                 name: "Loaded Arrow",
+                type: "dodge",
                 desc: "Tap attack after dodging to trigger a Loaded Arrow, which knocking the target back and dealing damage equal to 124% of ATK + 7."
             },
             {
                 name: "Piercing Arrow",
+                type: "skill",
                 desc: "Perform a backflip and fire 3 piercing arrows, with the main arrow deals damage equal to 224.6% of ATK + 12, and the other two arrows deal 60% damage. In addition, knock targets back and stun them for 5 seconds if they collide with an obstacle. Cooldown: 12 seconds."
             },
             {
                 name: "Explosive Barrage",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to 570% of ATK + 30. The storm has a 10% chance to inflict a 2 seconds freeze effect. Gain cold front, increasing damage dealt by 15%, and speed by 45% for 7 seconds."
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, remove all debuffs from the wielder, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to 570% of ATK + 30. The storm has a 10% chance to inflict a 2 seconds freeze effect. Gain cold front, increasing damage dealt by 15%, and speed by 45% for 7 seconds."
             }
         ]
     }
@@ -878,34 +933,42 @@ var huma =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "While on the ground, swing the shield axe to attack 4 times in a row. First Attack in Shield Form: Deal damage equal to 70.6% of ATK + 4 and knock the target back a short distance. Second Attack: Deal damage equal to 51.7% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 57.1% of ATK + 3 and knock the target back a short distance. Fourth Attack: Deal damage equal to 167.3% of ATK + 9 and launch the target into the air. First Attack in Axe Form: Deal damage equal to 122.9% of ATK + 6 and knock the target back a short distance. Second Attack: Deal damage equal to 72.2% of ATK + 4 and knock the target back a short distance. Third Attack: Deal damage equal to 109% of ATK + 6 and knock the target back a short distance. Fourth Attack: Deal damage equal to 201.1% of ATK + 11 and knock the target back.",
+                type: "normal",
+                desc: "While on the ground, swing the shield axe to attack 4 times in a row. First Attack in Shield Form: Deal damage equal to 70.6% of ATK + 4 and knock the target back a short distance.<br>Second Attack: Deal damage equal to 51.7% of ATK + 3 and knock the target back a short distance.<br>Third Attack: Deal damage equal to 57.1% of ATK + 3 and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to 167.3% of ATK + 9 and launch the target into the air. First Attack in Axe Form: Deal damage equal to 122.9% of ATK + 6 and knock the target back a short distance.<br>Second Attack: Deal damage equal to 72.2% of ATK + 4 and knock the target back a short distance.<br>Third Attack: Deal damage equal to 109% of ATK + 6 and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to 201.1% of ATK + 11 and knock the target back.",
             },
             {
                 name: "Aerial Strike",
-                desc: "While airborne or after jumping once, attack 3 times in a row. First Attack in Shield Form: Deal damage equal to 69% of ATK + 4. Second Attack: Deal damage equal to 72.9% of ATK + 4. Third Attack: Deal damage equal to 93.7% of ATK + 5. First Attack in Axe Form: Deal damage equal to 107.8% of ATK + 6. Second Attack: Deal damage equal to 82.8% of ATK + 4. Third Attack: Deal damage equal to 252.7% of ATK + 13.",
+                type: "normal",
+                desc: "While airborne or after jumping once, attack 3 times in a row. First Attack in Shield Form: Deal damage equal to 69% of ATK + 4.<br>Second Attack: Deal damage equal to 72.9% of ATK + 4.<br>Third Attack: Deal damage equal to 93.7% of ATK + 5. First Attack in Axe Form: Deal damage equal to 107.8% of ATK + 6.<br>Second Attack: Deal damage equal to 82.8% of ATK + 4.<br>Third Attack: Deal damage equal to 252.7% of ATK + 13.",
             },
             {
                 name: "Anticipation",
+                type: "normal",
                 desc: "Shield Form: While on the ground, tap and hold normal attack to enter shield form (release to exit) for 3 seconds, during which the Wanderer is unable to move, and all damage taken is reduced by 50%. While in shield form, releasing the normal attack button after taking damage or after holding the button for 3 seconds, unleash fire crash, dealing damage equal to 152.1% of ATK + 8 and inflicting a 1-second stun effect on the target. Axe Form: Smash the target, dealing damage equal to 111.1% of ATK + 6 and knocking the target into the air.",
             },
             {
                 name: "Valor",
+                type: "normal",
                 desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Air Branch attacks. Shield Form: While falling, deal damage equal to 12.5% of ATK + 1 each hit. Upon landing, deal damage equal to 81.1% of ATK + 4 and knock the target into the air. Axe Form: While falling, deal damage equal to 12.5% of ATK + 1 each hit. Upon landing, deal damage equal to 116.6% of ATK + 6 and knock the target into the air. The higher the location is when triggered, the higher the damage dealt, up to 600% of ATK.",
             },
             {
                 name: "Erupt",
+                type: "dodge",
                 desc: "Tap normal attack during the short period after dodging to trigger a Dodge Attack Shield Form: Unleash a flaming shield, dealing damage equal to 50.7% of ATK + 3 and knocking back targets. In addition, trigger an explosion that deals damage equal to 50.7% of ATK +3, stun targets for 0.5 seconds, and reduce incoming healing effects on targets by 30% for 10 seconds. Axe Form: Swing an axe to deal damage equal to 205.8% of ATK + 11, and reduce incoming healing effects on targets by 30% for 10 seconds.",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Fission",
+                type: "skill",
                 desc: "Shield Conversion: Switch from shield form to axe form and smash the ground, dealing damage equal to 339.9% of ATK + 18 and knocking the target into the air. Leave a flame zone for 5 seconds that burns the target, dealing continuous damage equal to 212.4% of ATK + 11. Axe Conversion: Switch from axe form to shield form and slam it to the ground, dealing damage equal to 281.4% of ATK + 15 to the target and knocking them back. Prevent the target from switching weapons for 5 seconds. 45-second cooldown, Shield Conversion and Axe Conversion share a cooldown.",
             },
             {
                 name: "Seething Rage",
+                type: "discharge",
                 desc: "When weapon charge is full or when Phantasia is triggered, remove all debuffs from the wielder and unleash a flame shockwave upon switching to this weapon, dealing damage equal to 320% of ATK + 17. Taunt enemies for 5 seconds, during which gain 15% damage reduction. Scatter shield-shaped objects based on the number of targets taunted. Objects last 20 seconds and provide 10 seconds of 5% damage reduction (stackable), restoring dodge by 1.",
             }
         ]
@@ -998,39 +1061,48 @@ var karasuma =
         skills: [
             {
                 name: "Twin Blades",
-                desc: "While on the ground, swing the blades to attack 5 times in a row. First Attack: Deal damage equal to 42.9% of ATK + 2 and knock the target back a short distance. Second Attack: Deal damage equal to 52.2% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 64.8% of ATK + 3 and knock the target back a short distance. Fourth Attack: Deal damage equal to 69.2% of ATK + 4 and knock the target back a short distance. Fifth Attack: Deal damage equal to 144.3% of ATK + 8 and knock the target back a short distance.",
+                type: "normal",
+                desc: "While on the ground, swing the blades to attack 5 times in a row.<br>First Attack: Deal damage equal to <strong>42.9%</strong> of ATK + <strong>2</strong> and knock the target back a short distance.<br>Second Attack: Deal damage equal to <strong>52.2%</strong> of ATK + <strong>3</strong> and knock the target back a short distance.<br>Third Attack: Deal damage equal to <strong>64.8%</strong> of ATK + <strong>3</strong> and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to <strong>69.2%</strong> of ATK + <strong>4</strong> and knock the target back a short distance.<br>Fifth Attack: Deal damage equal to <strong>144.3%</strong> of ATK + <strong>8</strong> and knock the target back a short distance.",
             },
             {
                 name: "Sky Flurry",
-                desc: "While airborne or after jumping once, tap normal attack to attack 4 times in a row. First Attack: Deal damage equal to 46.8% of ATK + 2. Second Attack: Deal damage equal to 27.5% of ATK + 1. Third Attack: Deal damage equal to 65.8% of ATK + 3. Fourth Attack: Deal damage equal to 98.5% of ATK + 5.",
+                type: "normal",
+                desc: "While airborne or after jumping once, tap normal attack to attack 4 times in a row.<br>First Attack: Deal damage equal to <strong>46.8%</strong> of ATK + <strong>2</strong>.<br>Second Attack: Deal damage equal to <strong>27.5%</strong> of ATK + <strong>1</strong>.<br>Third Attack: Deal damage equal to <strong>65.8%</strong> of ATK + <strong>3</strong>.<br>Fourth Attack: Deal damage equal to <strong>98.5%</strong> of ATK + <strong>5</strong>.",
             },
             {
                 name: "Rapid Lunge",
-                desc: "After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them into the air, dealing total damage equal to 83.4% of ATK + 4.",
+                type: "normal",
+                desc: "After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them <strong>into the air</strong>, dealing total damage equal to <strong>83.4%</strong> of ATK + <strong>4</strong>.",
             },
             {
                 name: "Spiral Drive",
-                desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Spiral Drive. While falling, deal damage equal to 42% of ATK + 2 each hit.",
+                type: "normal",
+                desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Spiral Drive. While falling, deal damage equal to <strong>42%</strong> of ATK + <strong>2</strong> each hit.",
             },
             {
                 name: "Sneak Attack",
-                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 570% of ATK + 30.",
+                type: "normal",
+                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to <strong>570%</strong> of ATK + <strong>30</strong>.",
             },
             {
                 name: "Flying Blades",
-                desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target 5 times, each dealing damage equal to 18.8% of ATK + 1. Grant immunity to control effects while phasing.",
+                type: "dodge",
+                desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target <strong>5</strong> times, each dealing damage equal to <strong>18.8%</strong> of ATK + <strong>1</strong>. Grant immunity to control effects while phasing.",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the red area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the red area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Returning Blades",
-                desc: "Fires 6 returning blades, each dealing damage equal to 20.7% of ATK + 1. Gains hyperbody for up to 8 seconds, and the effect is removed when the blades return. 45-second cooldown. ",
+                type: "skill",
+                desc: "Fires 6 returning blades, each dealing damage equal to <strong>20.7%</strong> of ATK + <strong>1</strong>. Gains <strong>hyperbody</strong> for up to <strong>8</strong> seconds, and the effect is removed when the blades return. <strong>45</strong>-second cooldown. ",
             },
             {
                 name: "Orbiting Blades",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder and blink to the target location upon switching to this weapon and attack, dealing damage equal to 62.1% of ATK + 3 and electrocuting the target (after 5 seconds, deals volt damage equal to 15% of damage dealt, up to 350% of the Wanderer's ATK. This is an abnormal status that can be dispelled). Also spawn 3 blades that orbit around the Wanderer, dealing damage equal to 46.5% of ATK + 2 to those that touch them.",
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, <strong>remove all debuffs from the wielder</strong> and blink to the target location upon switching to this weapon and attack, dealing damage equal to <strong>62.1%</strong> of ATK + <strong>3</strong> and electrocuting the target (after <strong>5</strong> seconds, deals volt damage equal to <strong>15%</strong> of damage dealt, up to <strong>350%</strong> of the Wanderer's ATK. This is an abnormal status that can be dispelled). Also spawn 3 blades that orbit around the Wanderer, dealing damage equal to <strong>46.5%</strong> of ATK + <strong>2</strong> to those that touch them.",
             }
         ]
     }
@@ -1119,39 +1191,48 @@ var zero =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "While on the ground, manipulate the cube to attack 5 times in a row. First Attack: Deal damage equal to 35.9% of ATK + 2. Second Attack: Deal damage equal to 29.4% of ATK + 2. Third Attack: Deal damage equal to 91.5% of ATK + 5. Fourth Attack: Deal damage equal to 61.2% of ATK + 3. Fifth Attack: Deal damage equal to 62.3% of ATK + 3 up to 3 times and launch the target. Passive: If normal attacks hit targets 6 times, gain 1 cube. Up to 5 cubes can be stored."
+                type: "normal",
+                desc: "While on the ground, manipulate the cube to attack 5 times in a row.<br>First Attack: Deal damage equal to 35.9% of ATK + 2.<br>Second Attack: Deal damage equal to 29.4% of ATK + 2.<br>Third Attack: Deal damage equal to 91.5% of ATK + 5.<br>Fourth Attack: Deal damage equal to 61.2% of ATK + 3.<br>Fifth Attack: Deal damage equal to 62.3% of ATK + 3 up to 3 times and launch the target. Passive: If normal attacks hit targets 6 times, gain 1 cube. Up to 5 cubes can be stored."
             },
             {
                 name: "Omnium Missile",
+                type: "normal",
                 desc: "While airborne, tap normal attack to activate the energy within the cube, firing up to 5 missiles and dealing total damage equal to 45.6% of ATK + 2. Consume up to 250 endurance. Passive: If the Wanderer has any stored cubes, consume all cubes to fire Omnium Missiles at targets to deal damage."
             },
             {
                 name: "Energy Overflow",
+                type: "normal",
                 desc: "While airborne or after jumping once, tap normal attack to trigger Energy Overflow. Upon landing, fire a shockwave that travels forward, dealing up to 18% of ATK + 1 damage to targets in its path."
             },
             {
                 name: "Omnium Shock",
+                type: "normal",
                 desc: "On the third normal attack, hold the normal attack button to trigger Omnium Shock. A pillar of energy launches nearby targets into the air, dealing damage equal to 52.8% of ATK + 3. The pillar lasts 5 seconds and deals damage equal to 22% of ATK + 1 to nearby targets every second."
             },
             {
                 name: "Energy Sentinel",
+                type: "normal",
                 desc: "Cubes orbiting the Wanderer deal damage equal to 7.5% of ATK + 1 to enemies."
             },
             {
                 name: "Energy Missile",
+                type: "normal",
                 desc: "When the Wanderer casts Omnium Missiles and Energy Overflow, their orbiting cubes are fired as well, dealing damage equal to 37.3% of ATK + 2 to the target."
             },
             {
                 name: "Soul Surge",
+                type: "dodge",
                 desc: "Dodge right before getting hit to trigger a Phantasia, which reduces speed of enemies within range and grants hitstun immunity for 0.5 seconds. If the Wanderer has less than 5 cubes, each successful dodge has a 40% chance to restore 1 dodge attempt. Successful dodges do not interrupt normal attack combos. Passive: Gain a cube for every successful aerial dodge."
             },
             {
                 name: "Omnium Shield",
+                type: "skill",
                 desc: "Create shielding for self and nearby allies to block up to 800% x ATK in damage for 10 seconds, and deal 109.9% x ATK + 6 damage to nearby targets and launch them. Each cube in possession when this skill is used adds 160% of ATK to max shielding and exhaust the cube. Cooldown: 90 seconds."
             },
             {
                 name: "Omnium Wave",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder and gain 5 cubes upon switching to this weapon, then unleash the 5 cubes along with a Shockwave. This Shockwave deals damage equal to 131.5% of ATK + 7 to nearby targets, and launches them into the air. Each cube also deals damage equal to 37.3% of ATK + 2. If allies are in the vicinity, they gain damage immunity for 3 seconds."
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, remove all debuffs from the wielder and gain 5 cubes upon switching to this weapon, then unleash the 5 cubes along with a Shockwave. This Shockwave deals damage equal to 131.5% of ATK + 7 to nearby targets, and launches them into the air. Each cube also deals damage equal to 37.3% of ATK + 2. If allies are in the vicinity, they gain damage immunity for 3 seconds."
             },
         ]
     }
@@ -1246,39 +1327,48 @@ var claudia =
         skills: [
             {
                 name: "Quick Slash",
-                desc: "While on the ground, swing the blade to attack 5 times in a row. First Attack: Deal damage equal to 39% of ATK + 2 and knock the target back a short distance. Second Attack: Deal damage equal to 54.6% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 49.4% of ATK + 3 and knock the target back a short distance. Fourth Attack: Deal damage equal to 87% of ATK + 5 and knock the target back a short distance. Fifth Attack: Deal damage equal to 148.1% of ATK + 8 and launch the target.",
+                type: "normal",
+                desc: "While on the ground, swing the blade to attack 5 times in a row.<br>First Attack: Deal damage equal to <strong>39%</strong> of ATK + <strong>2</strong> and knock the target back a short distance.<br>Second Attack: Deal damage equal to <strong>54.6%</strong> of ATK + <strong>3</strong> and knock the target back a short distance.<br>Third Attack: Deal damage equal to <strong>49.4%</strong> of ATK + <strong>3</strong> and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to <strong>87%</strong> of ATK + <strong>5</strong> and knock the target back a short distance.<br>Fifth Attack: Deal damage equal to <strong>148.1%</strong> of ATK + <strong>8</strong> and <strong>launch</strong> the target.",
             },
             {
                 name: "Jumping Strike",
-                desc: "While airborne, tap normal attack to attack 4 times in a row. First Attack: Deal damage equal to 23.2% of ATK + 1. Second Attack: Deal damage equal to 40.3% of ATK + 2. Third Attack: Deal damage equal to 95.4% of ATK + 5. Fourth Attack: Deal damage equal to 115.8% of ATK + 6 and deliver a knockdown.",
+                type: "normal",
+                desc: "While airborne, tap normal attack to attack 4 times in a row.<br>First Attack: Deal damage equal to <strong>23.2%</strong> of ATK + <strong>1</strong>.<br>Second Attack: Deal damage equal to <strong>40.3%</strong> of ATK + <strong>2</strong>.<br>Third Attack: Deal damage equal to <strong>95.4%</strong> of ATK + <strong>5</strong>.<br>Fourth Attack: Deal damage equal to <strong>115.8%</strong> of ATK + <strong>6</strong> and deliver a <strong>knockdown</strong>.",
             },
             {
                 name: "Cyclone",
-                desc: "Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal 39.8% of ATK + 2 to a single target.",
-            },
-            {
-                name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
-            },
-            {
-                name: "Leap Attack",
-                desc: "Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to 31.6% of ATK + 2, knocking the target into the air and becoming airborne, then deal additional damage equal to 47.3% of ATK + 2.",
+                type: "normal",
+                desc: "Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal <strong>39.8%</strong> of ATK + <strong>2</strong> to a single target.",
             },
             {
                 name: "Diving Edge",
-                desc: "Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to 10% of ATK + 1 each hit. Upon landing, deal damage equal to 63.6% of ATK + 3 and knock the target back. The higher the location is when triggered, the higher the damage dealt, up to <>600% of ATK.",
+                type: "normal",
+                desc: "Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to <strong>10%</strong> of ATK + <strong>1</strong> each hit. Upon landing, deal damage equal to <strong>63.6%</strong> of ATK + <strong>3</strong> and knock the target back. The higher you are when cast, the higher the damage dealt, up to <strong>600%</strong> of ATK.",
             },
             {
                 name: "Sneak Attack",
-                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 570% of ATK + 30.",
+                type: "normal",
+                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to <strong>570%</strong> of ATK + <strong>30</strong>.",
+            },
+            {
+                name: "Dodge",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
+            },
+            {
+                name: "Leap Attack",
+                type: "dodge",
+                desc: "Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to 31.6% of ATK + 2, knocking the target into the air and becoming airborne, then deal additional damage equal to 47.3% of ATK + 2.",
             },
             {
                 name: "Roam",
-                desc: "Dance through targets while swinging the blade, dealing damage equal to 348.5% of ATK + 18 in total to up to 5 targets (attack on the same target deal 20% less damage). At the end of the ability, slash the space in front, dealing damage equal to 264% of ATK + 14 to targets and knocking them into the air. Immune to crowd-control effects while ability is in use. Cooldown: 15 seconds.",
+                type: "skill",
+                desc: "Dance through targets while swinging the blade, dealing damage equal to <strong>348.5%</strong> of ATK + <strong>18</strong> in total to up to <strong>5</strong> targets (attacks on the same target deal <strong>20%</strong> less damage). At the end of the ability, slash the space in front, dealing damage equal to <strong>264%</strong> of ATK + <strong>14</strong> to targets and knocking them into the air. Immune to crowd-control effects while ability is in use. Cooldown: <strong>15</strong> seconds.",
             },
             {
                 name: "Unbridled Flurry",
-                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder, who charges and airbornes a target to deal 436.2% x ATK +23 damage, leaving behind a bladestorm that deals 174.4% x ATK +9 damage to the target, while immunizing self to grievous/freeze/burn/electrify effects for 5 seconds.",
+                type: "discharge",
+                desc: "When a <b>weapon is fully charged</b> or triggers <b>Phantasia</b>, switching to this weapon from another weapon <strong><strong>removes all debuffs from the wielder</strong></strong>, who charges and <strong>airbornes</strong> a target to deal <strong>436.2%</strong> x ATK + <strong>23</strong> damage, leaving behind a bladestorm that deals <strong>174.4%</strong> x ATK + <strong>9</strong> damage to the target, while immunizing self to grievous/freeze/burn/electrify effects for <strong>5</strong> seconds.",
             }
         ]
     }
@@ -1954,34 +2044,42 @@ var bailing =
         skills: [
             {
                 name: "Quickdraw",
-                desc: "While on the ground, draw the bow repeatedly to attack 5 times. First Attack: Deal damage equal to <strong>33.7%</strong> of ATK + <strong>2</strong>. Second Attack: Deal damage equal to <strong>30.2%</strong> of ATK + <strong>2</strong>. Third Attack: Deal damage equal to strong>54.3%</strong> of ATK + <strong>3</strong>. Fourth Attack: Deal damage equal to <strong>83.5%</strong> of ATK + <strong>4</strong>. Fifth Attack: Deal damage equal to <strong>77.7%</strong> of ATK + <strong>4</strong> and knock the target back a short distance.",
+                type: "normal",
+                desc: "While on the ground, draw the bow repeatedly to attack 5 times.<br>First Attack: Deal damage equal to <strong>33.7%</strong> of ATK + <strong>2</strong>.<br>Second Attack: Deal damage equal to <strong>30.2%</strong> of ATK + <strong>2</strong>.<br>Third Attack: Deal damage equal to strong>54.3%</strong> of ATK + <strong>3</strong>.<br>Fourth Attack: Deal damage equal to <strong>83.5%</strong> of ATK + <strong>4</strong>.<br>Fifth Attack: Deal damage equal to <strong>77.7%</strong> of ATK + <strong>4</strong> and knock the target back a short distance.",
             },
             {
                 name: "Charged Arrow",
+                type: "normal",
                 desc: "Tap and hold normal attack to charge the weapon. Deal basic damage equal to <strong>60.5%</strong> of ATK + <strong>3</strong>, and <strong>50%</strong> more for each <strong>1</strong> second spent charging, up to <strong>3</strong> seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers).",
             },
             {
                 name: "Arrow Rain",
+                type: "normal",
                 desc: "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to <strong>198.7%</strong> of ATK + <strong>10</strong> area damage to targets.",
             },
             {
                 name: "Air Volley",
-                desc: "While airborne, tap normal attack to attack 4 times in a row in the air. First Attack: Deal damage equal to <strong>38.8%</strong> of ATK + <strong>2</strong>. Second Attack: Deal damage equal to <strong>51%</strong> of ATK + <strong>3</strong>. Third Attack: Deal damage equal to <strong>77.7%</strong> of ATK + <strong>4</strong>. Fourth Attack: Deal damage equal to <strong>117%</strong> of ATK + <strong>6</strong>.",
+                type: "normal",
+                desc: "While airborne, tap normal attack to attack 4 times in a row in the air.<br>First Attack: Deal damage equal to <strong>38.8%</strong> of ATK + <strong>2</strong>.<br>Second Attack: Deal damage equal to <strong>51%</strong> of ATK + <strong>3</strong>.<br>Third Attack: Deal damage equal to <strong>77.7%</strong> of ATK + <strong>4</strong>.<br>Fourth Attack: Deal damage equal to <strong>117%</strong> of ATK + <strong>6</strong>.",
             },
             {
                 name: "Dodge",
+                type: "dodge",
                 desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Loaded Arrow",
-                desc: "Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to strong>85.5%</strong> of ATK + <strong>5</strong>.",
+                type: "dodge",
+                desc: "Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to <strong>85.5%</strong> of ATK + <strong>5</strong>.",
             },
             {
                 name: "Piecing Shot",
+                type: "skill",
                 desc: "Backflips and fires <strong>1</strong> piercing arrow forward, dealing damage equal to <strong>154.8%</strong> of ATK + <strong>8</strong> and knocking the target back. <strong>12</strong>-second cooldown.",
             },
             {
                 name: "Explosive Barrage",
+                type: "discharge",
                 desc: "When <b>weapon charge</b> is full or <b>Phantasia</b> is triggered, <strong>remove all debuffs from the wielder</strong>, and unleashes Explosive Barrage on the target upon switching to this weapon, dealing damage equal to <strong>486.6%</strong> of ATK + <strong>26</strong>.",
             }
         ]
@@ -2076,19 +2174,23 @@ var hilda =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "Tap normal attack to enter aiming mode. Hold normal attack to fire continuously, up to 40 rounds. Each shot deals damage equal to 11.4% of ATK + 1. Deal double damage when scoring a headshot or hitting the enemy's weakness, knocking them down (headshots are ineffective against Wanderers).",
+                type: "normal",
+                desc: "Tap normal attack to enter aiming mode. Hold normal attack to fire continuously, up to <strong>40</strong> rounds. Each shot deals damage equal to <strong>11.4%</strong> of ATK + <strong>1</strong>. Deal double damage when scoring a headshot or hitting the enemy's weakness, knocking them down (headshots are ineffective against Wanderers).",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Turret",
-                desc: "Enable turret mode and fire large energy orbs, each dealing damage equal to 213.3% of ATK + 11 and launching the target into the air. Become immune to hitstun and control effects while setting up the turret. 3.5-second cooldown.",
+                type: "skill",
+                desc: "Enable turret mode and fire large energy orbs, each dealing damage equal to <strong>213.3%</strong> of ATK + <strong>11</strong> and launching the target into the air. Become immune to hitstun and control effects while setting up the turret. <strong>3.5</strong>-second cooldown.",
             },
             {
                 name: "Arctic Beam",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder and fire an arctic beam upon switching to this weapon, dealing damage equal to 329.2% of ATK + 17 and inflict a 3-second freeze effect. Also reduce the target's frost resistance by 50% for 10 seconds.",
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, <strong>remove all debuffs from the wielder</strong> and fire an arctic beam upon switching to this weapon, dealing damage equal to <strong>329.2%</strong> of ATK + <strong>17</strong> and inflict a <strong>3</strong>-second <strong>freeze</strong> effect. Also reduce the target's frost resistance by <strong>50%</strong> for <strong>10</strong> seconds.",
             }
         ]
 }
@@ -2180,43 +2282,53 @@ var manaka =
         skills: [
             {
                 name: "Thrust",
-                desc: "While on the ground, swing the spear to attack 5 times in a row. First Attack: Deal damage equal to 24.7% of ATK + 1 and knock the target back a short distance. Second Attack: Deal damage equal to 22.6% of ATK + 1 and knock the target back a short distance. Third Attack: Deal damage equal to 47.2% of ATK + 2 and knock the target back a short distance. Fourth Attack: Deal damage equal to 65.2% of ATK + 3 and knock the target back a short distance. Fifth Attack: Deal damage equal to 114.95% of ATK + 6 and knock the target back a significant distance.",
+                type: "normal",
+                desc: "While on the ground, swing the spear to attack 5 times in a row.<br>First Attack: Deal damage equal to <strong>24.7%</strong> of ATK + <strong>1</strong> and knock the target back a short distance.<br>Second Attack: Deal damage equal to <strong>22.6%</strong> of ATK + <strong>1</strong> and knock the target back a short distance.<br>Third Attack: Deal damage equal to <strong>47.2%</strong> of ATK + <strong>2</strong> and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to <strong>65.2%</strong> of ATK + <strong>3</strong> and knock the target back a short distance.<br>Fifth Attack: Deal damage equal to <strong>114.95%</strong> of ATK + <strong>6</strong> and knock the target back a significant distance.",
             },
             {
                 name: "Jumping Strike",
-                desc: "While airborne, tap normal attack to attack 4 times in a row in the air. First Attack: Deal damage equal to 27.4% of ATK + 1. Second Attack: Deal damage equal to 23.2% of ATK + 1. Third Attack: Deal damage equal to 45.8% of ATK + 2. Fourth Attack: Deal damage equal to 110% of ATK + 6.",
+                type: "normal",
+                desc: "While airborne, tap normal attack to attack 4 times in a row in the air.<br>First Attack: Deal damage equal to <strong>27.4%</strong> of ATK + <strong>1</strong>.<br>Second Attack: Deal damage equal to <strong>23.2%</strong> of ATK + <strong>1</strong>.<br>Third Attack: Deal damage equal to <strong>45.8%</strong> of ATK + <strong>2</strong>.<br>Fourth Attack: Deal damage equal to <strong>110%</strong> of ATK + <strong>6</strong>.",
             },
             {
                 name: "Crashing Drive",
-                desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Crashing Drive. While falling, deal damage equal to 8% of ATK + 1 each hit. Upon landing, deal damage equal to 48.5% of ATK + 3 and knock the target down. The higher the location is when triggered, the higher the damage dealt, up to 600% of ATK.",
+                type: "normal",
+                desc: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Crashing Drive. While falling, deal damage equal to <strong>8%</strong> of ATK + <strong>1</strong> each hit. Upon landing, deal damage equal to <strong>48.5%</strong> of ATK + <strong>3</strong> and knock the target down. The higher the location is when triggered, the higher the damage dealt, up to <strong>600%</strong> of ATK.",
             },
             {
                 name: "Spear Flurry",
-                desc: "After the third normal attack, hold the normal attack button to trigger Spear Flurry. Strike the target and knock them into the air, dealing damage equal to 49.2% of ATK + 3. Tap again to continue attacking the airborne target, dealing up to 98% of ATK + 5 damage to a single target.",
+                type: "normal",
+                desc: "After the third normal attack, hold the normal attack button to trigger Spear Flurry. Strike the target and knock them <strong>into the air</strong>, dealing damage equal to <strong>49.2%</strong> of ATK + <strong>3</strong>. Tap again to continue attacking the airborne target, dealing up to <strong>98%</strong> of ATK + <strong>5</strong> damage to a single target.",
             },
             {
                 name: "Sneak Attack",
-                desc: "Thrust the spear forward, dealing damage equal to 570% of ATK + 30.",
+                type: "normal",
+                desc: "Thrust the spear forward, dealing damage equal to <strong>570%</strong> of ATK + <strong>30</strong>.",
             },
             {
                 name: "Flying Kick",
-                desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Kick. Once hit the target, deal damage equal to 72% of ATK + 4, knock the target back significantly, and stun them for 1 second (non-Wanderer targets) or 0.5 seconds (Wanderers).",
+                type: "dodge",
+                desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Kick. Once hit the target, deal damage equal to <strong>72%</strong> of ATK + <strong>4</strong>, knock the target back significantly, and stun them for <strong>1</strong> second (non-Wanderer targets) or <strong>0.5</strong> seconds (Wanderers).",
             },
             {
                 name: "Lunging Smash",
-                desc: "Tap normal attack during the short period after dodging to trigger Lunging Smash. Slam the long spear into the ground, dealing damage equal to 52.8% of ATK + 3 and knocking targets into the air.",
+                type: "dodge",
+                desc: "Tap normal attack during the short period after dodging to trigger Lunging Smash. Slam the long spear into the ground, dealing damage equal to <strong>52.8%</strong> of ATK + <strong>3</strong> and knocking targets <strong>into the air</strong>.",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for 0.5 seconds while dodging.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for <strong>0.5</strong> seconds while dodging.",
             },
             {
                 name: "Moonchaser",
-                desc: "Launch the target into the air and go airborne, dealing damage equal to 127.5% of ATK + 7. 25-second cooldown.",
+                type: "skill",
+                desc: "Launch the target into the air and go airborne, dealing damage equal to <strong>127.5%</strong> of ATK + <strong>7</strong>. <strong>25</strong>-second cooldown.",
             },
             {
                 name: "Thunderclap",
-                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder, who jumps in the air and throws a lightning spear that causes area explosion to deal 296.7% x ATK +16 damage plus paralyzing the target for 1 second.",
+                type: "discharge",
+                desc: "When a <b>weapon is fully charged</b> or triggers <b>Phantasia</b>, switching to this weapon from another weapon <strong>removes all debuffs from the wielder</strong>, who jumps in the air and throws a lightning spear that causes area explosion to deal <strong>296.7%</strong> x ATK + <strong>16</strong> damage plus <strong>paralyzing</strong> the target for <strong>1</strong> second.",
             }
         ]
 }
@@ -2311,39 +2423,48 @@ var peppa =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "While on the ground, swing the staff to attack 5 times in a row. First Attack: Deal damage equal to 25.1% of ATK + 1. Second Attack: Deal damage equal to 18.8% of ATK + 1. Third Attack: Deal damage equal to 30.4% of ATK + 2. Fourth Attack: Deal damage equal to 41.4% of ATK + 2. Fifth Attack: Deal damage equal to 73.2% of ATK + 4."
+                type: "normal",
+                desc: "While on the ground, swing the staff to attack 5 times in a row.<br>First Attack: Deal damage equal to 25.1% of ATK + 1.<br>Second Attack: Deal damage equal to 18.8% of ATK + 1.<br>Third Attack: Deal damage equal to 30.4% of ATK + 2.<br>Fourth Attack: Deal damage equal to 41.4% of ATK + 2.<br>Fifth Attack: Deal damage equal to 73.2% of ATK + 4."
             },
             {
                 name: "Soaring Barrage",
-                desc: "While airborne or after jumping once, tap normal attack to attack 5 times in a row. First Attack: Deal damage equal to 32.5% of ATK + 2. Second Attack: Deal damage equal to 23.5% of ATK + 1. Third Attack: Deal damage equal to 25.5% of ATK + 1. Fourth Attack: Deal damage equal to 45.6% of ATK + 2. Fifth Attack: Deal damage equal to 47.7% of ATK + 3."
+                type: "normal",
+                desc: "While airborne or after jumping once, tap normal attack to attack 5 times in a row.<br>First Attack: Deal damage equal to 32.5% of ATK + 2.<br>Second Attack: Deal damage equal to 23.5% of ATK + 1.<br>Third Attack: Deal damage equal to 25.5% of ATK + 1.<br>Fourth Attack: Deal damage equal to 45.6% of ATK + 2.<br>Fifth Attack: Deal damage equal to 47.7% of ATK + 3."
             },
             {
                 name: "Moonfall",
+                type: "normal",
                 desc: "Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every 0.2 seconds, for a total of 57.2% of ATK + 3 damage."
             },
             {
                 name: "Focused Assault",
-                desc: "After the third normal attack, hold the normal attack button to trigger branch attacks, consuming 300 points of endurance. First Attack: Pull in enemies in front of the user, knocking them into the air and dealing damage equal to 16.1% of ATK + 1 every 0.3 seconds (up to 4 times). Second Attack: Deal damage equal to 18.6% of ATK + 1 at the target location and to nearby enemies every 0.3 seconds."
+                type: "normal",
+                desc: "After the third normal attack, hold the normal attack button to trigger branch attacks, consuming 300 points of endurance.<br>First Attack: Pull in enemies in front of the user, knocking them into the air and dealing damage equal to 16.1% of ATK + 1 every 0.3 seconds (up to 4 times).<br>Second Attack: Deal damage equal to 18.6% of ATK + 1 at the target location and to nearby enemies every 0.3 seconds."
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds."
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds."
             },
             {
                 name: "Surge",
+                type: "dodge",
                 desc: "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to 22.6% of ATK+ 1 to targets. Grant 75 weapon charge points upon use."
             },
             {
                 name: "Tesseract",
+                type: "dodge",
                 desc: "Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to 32.1% of ATK + 2 to targets in its path every 0.3 seconds (up to 5 times). Grant 75 weapon charge points upon use."
             },
             {
                 name: "Sanctuary",
+                type: "dodge",
                 desc: "Create an energy shield at the Wanderer's location. Heal allies within the shield for 81.7% of ATK + 4 every second and reduce their damage taken by 3% for 10 seconds. 60-second cooldown."
             },
             {
                 name: "Swift Deliverance",
-                desc: "When a weapon is fully charged or triggers Phantasia, switching to this weapon from another weapon removes all debuffs from the wielder, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for 79% x ATK +4 HP for 7 seconds."
+                type: "discharge",
+                desc: "When a <b>weapon is fully charged</b> or triggers <b>Phantasia</b>, switching to this weapon from another weapon <strong>removes all debuffs from the wielder</strong>, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for 79% x ATK +4 HP for 7 seconds."
             }
         ]
 }
@@ -2438,43 +2559,53 @@ var xi =
         skills: [
             {
                 name: "Normal Attack",
-                desc: "While on the ground, swing the hammer to attack 4 times in a row. First Attack: Deal damage equal to 76.3% of ATK + 4 and knock the target back a short distance. Second Attack: Deal damage equal to 62.1% of ATK + 3 and knock the target back a short distance. Third Attack: Deal damage equal to 157.4% of ATK + 8 and knock the target back a short distance. Fourth Attack: Deal damage equal to 263.8% of ATK + 14 and launch the target. While Outburst is active, swing the hammer to attack 4 times in a row. First Attack: Deal damage equal to 75.5% of ATK + 4 and knock the target back a short distance. Second Attack: Deal damage equal to 65% of ATK + 3 and knock the ed target back a short distance. Third Attack: Deal damage equal to 171.3% of ATK + 9 and knock the target back a short distance. Fourth Attack: Deal damage equal to 315.3% of ATK + 17 and knock the target into the air.",
+                type: "normal",
+                desc: "While on the ground, swing the hammer to attack 4 times in a row.<br>First Attack: Deal damage equal to <strong>76.3%</strong> of ATK + <strong>4</strong> and knock the target back a short distance.<br>Second Attack: Deal damage equal to <strong>62.1%</strong> of ATK + <strong>3</strong> and knock the target back a short distance.<br>Third Attack: Deal damage equal to <strong>157.4%</strong> of ATK + <strong>8</strong> and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to <strong>263.8%</strong> of ATK + <strong>14</strong> and launch the target.<br>While Outburst is active, swing the hammer to attack 4 times in a row.<br>First Attack: Deal damage equal to <strong>75.5%</strong> of ATK + <strong>4</strong> and knock the target back a short distance.<br>Second Attack: Deal damage equal to <strong>65%</strong> of ATK + <strong>3</strong> and knock the ed target back a short distance.<br>Third Attack: Deal damage equal to <strong>171.3%</strong> of ATK + <strong>9</strong> and knock the target back a short distance.<br>Fourth Attack: Deal damage equal to <strong>315.3%</strong> of ATK + <strong>17</strong> and knock the target <strong>into the air</strong>.",
             },
             {
                 name: "Pummel",
-                desc: "While airborne or after jumping once, tap normal attack to trigger Jumping Blast. Deal damage equal to 121.7% of ATK + 6 and knock the target into the air. While Outburst is active, deal damage equal to 133.9% of ATK + 7 and knock the target into the air. Deal greater damage depending on the user's altitude when the ability is triggered, up to 600% of ATK.",
+                type: "normal",
+                desc: "While airborne or after jumping once, tap normal attack to trigger Jumping Blast. Deal damage equal to <strong>121.7%</strong> of ATK + <strong>6</strong> and knock the target into the air.<br>While Outburst is active, deal damage equal to <strong>133.9%</strong> of ATK + <strong>7</strong> and knock the target <strong>into the air</strong>. Deal greater damage depending on the user's altitude when the ability is triggered, up to <strong>600%</strong> of ATK.",
             },
             {
                 name: "Shockwave",
-                desc: "Tapping and holding while airborne, Double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. Knock the target into the air 4 times, dealing damage equal to 34.8% of ATK+ 2 each time. Cost 250 endurance While Outburst is active, Shockwave knocks the target into the air 5 times, dealing damage equal to 38.3% of *ATK + 2 each time. Deal greater damage depending on the user's altitude when the ability is triggered, up to 600% of ATK.",
+                type: "normal",
+                desc: "Tapping and holding while airborne, Double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. Knock the target <strong>into the air 4</strong> times, dealing damage equal to <strong>34.8%</strong> of ATK + <strong>2</strong> each time. Cost <strong>250</strong> endurance.<br>While Outburst is active, Shockwave knocks the target <strong>into the air 5</strong> times, dealing damage equal to <strong>38.3%</strong> of ATK + <strong>2</strong> each time. Deal greater damage depending on the user's altitude when the ability is triggered, up to <strong>600%</strong> of ATK.",
             },
             {
                 name: "Sneak Attack",
-                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to 427.5% of ATK+ 23.",
+                type: "normal",
+                desc: "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to <strong>427.5%</strong> of ATK + <strong>23</strong>.",
             },
             {
                 name: "Focus Smash",
-                desc: "Tap and hold normal attack to trigger Focus Smash (can be charged up to 3 stacks). Grant immunity to all control effects and hyperbody while charging. First Stack: Deal damage equal to 110% of ATK + 6 and knock the target into the air. Second Stack: Deal damage equal to 276% of ATK + 15 and knock the target into the air. Third Stack: Deal damage equal to 518% of ATK + 27 and knock the target into the air. While Outburst is active, tap and hold normal attack to trigger Furious Strikes, dealing damage equal to 501.6% of ATK + 26 and knocking the target into the air.",
+                type: "normal",
+                desc: "Tap and hold normal attack to trigger Focus Smash (can be charged up to 3 stacks). Grant immunity to all control effects and hyperbody while charging.<br>First Stack: Deal damage equal to <strong>110%</strong> of ATK + <strong>6</strong> and knock the target into the air.<br>Second Stack: Deal damage equal to <strong>276%</strong> of ATK + <strong>15</strong> and knock the target <strong>into the air</strong>.<br>Third Stack: Deal damage equal to <strong>518%</strong> of ATK + <strong>27</strong> and knock the target <strong>into the air</strong>.<br>While Outburst is active, tap and hold normal attack to trigger Furious Strikes, dealing damage equal to <strong>501.6%</strong> of ATK + <strong>26</strong> and knocking the target <strong>into the air</strong>.",
             },
             {
                 name: "Jumping Smash",
-                desc: "Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that knocks the enemy into the air 4 times, dealing damage equal to 161.6% of ATK + 9.",
+                type: "dodge",
+                desc: "Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that knocks the enemy into the air <strong>4</strong> times, dealing damage equal to <strong>161.6%</strong> of ATK + <strong>9</strong>.",
             },
             {
                 name: "Worldsplitter",
-                desc: "Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing 3 shockwaves forward, each dealing damage equal to 52.4% of ATK + 3, and knocking enemies into the air. While in Outburst mode, fire 5 shockwaves forward, each dealing damage equal to 52.4% of ATK + 3 and knocking the target into the air.",
+                type: "dodge",
+                desc: "Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing <strong>3</strong> shockwaves forward, each dealing damage equal to <strong>52.4%</strong> of ATK + <strong>3</strong>, and knocking enemies into the air.<br>While in Outburst mode, fire <strong>5</strong> shockwaves forward, each dealing damage equal to <strong>52.4%</strong> of ATK + <strong>3</strong> and knocking the target into the air.",
             },
             {
                 name: "Dodge",
-                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for 0.5 seconds.",
+                type: "dodge",
+                desc: "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for <strong>0.5</strong> seconds.",
             },
             {
                 name: "Outburst",
-                desc: "Switch to activate Outburst, increasing damage dealt for 25 seconds. While Outburst is active, skills trigger Windfury, dealing damage equal to 219% of ATK + 12, knock the target into the air, and create an air current on the ground. While standing in the current, dodging has no cost. Cooldown: 45 seconds (Windfury's cooldown: 10 seconds).",
+                type: "skill",
+                desc: "Switch to activate Outburst, increasing damage dealt for <strong>25</strong> seconds. While Outburst is active, skills trigger Windfury, dealing damage equal to <strong>219%</strong> of ATK + <strong>12</strong>, knock the target <strong>into the air</strong>, and create an air current on the ground. While standing in the current, dodging has no cost. Cooldown: <strong>45</strong> seconds (Windfury's cooldown: <strong>10</strong> seconds).",
             },
             {
                 name: "Overwhelming Maul",
-                desc: "When weapon charge is full or Phantasia is triggered, remove all debuffs from the wielder and knock nearby targets into the air upon switching to this weapon, dealing damage equal to 153.3% of ATK + 8. Also summon a hammer to fall on nearby targets, dealing damage equal to 153.3% of ATK + 8.",
+                type: "discharge",
+                desc: "When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, <strong>remove all debuffs from the wielder</strong> and knock nearby targets <strong>into the air</strong> upon switching to this weapon, dealing damage equal to <strong>153.3%</strong> of ATK + <strong>8</strong>. Also summon a hammer to fall on nearby targets, dealing damage equal to <strong>153.3%</strong> of ATK + <strong>8</strong>.",
             }
         ]
 }

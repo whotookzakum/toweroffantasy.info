@@ -438,7 +438,29 @@
                         <!-- Combat -->
                         <article class="px-md-5">
                             <h1 class="modal-section-header" id="header-combat">Combat</h1>
-                            Attack combos and skills coming soon
+                            <!-- Tabs -->
+                            <ul class="nav star-list mb-3" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active ps-0" aria-current="page" data-bs-toggle="tab" data-bs-target="#combat-normal" type="button" role="tab" aria-controls="combat-normal-tab" aria-selected="true"><i class="fa">Normal</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-dodge" type="button" role="tab" aria-controls="combat-dodge-tab" aria-selected="false"><i class="fa">Dodge</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-skill" type="button" role="tab" aria-controls="combat-skill-tab" aria-selected="false"><i class="fa">Skill</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-discharge" type="button" role="tab" aria-controls="combat-discharge-tab" aria-selected="false"><i class="fa">Discharge</i></a>
+                                </li>
+                            </ul>
+                            <!-- Combat Text -->
+                            <div id="combat-text" class="tab-content">
+                                <ul id="combat-normal" class="tab-pane fade show active" role="tabpanel">Normal</ul>
+                                <ul id="combat-dodge" class="tab-pane fade" role="tabpanel">Dodge</ul>
+                                <ul id="combat-skill" class="tab-pane fade" role="tabpanel">Skill</ul>
+                                <ul id="combat-discharge" class="tab-pane fade" role="tabpanel">Discharge</ul>
+                            </div>
+                            <div class="submitted-by">Data reflects unleveled weapons.</div>
                         </article>
 
                         <!-- Affinity -->
