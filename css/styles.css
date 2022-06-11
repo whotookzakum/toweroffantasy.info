@@ -813,6 +813,11 @@ body,
 #guide-pyrosu-housing table img {
     width: 64px;
 }
+
+#guide-pyrosu-housing table:first-of-type {
+    line-height: 64px;
+}
+
 .guide-game-version {
     background-color: var(--color-container-accent-light);
     padding: .5rem 1rem;
