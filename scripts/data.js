@@ -83,9 +83,9 @@ var samir =
         chipImg:"images/chip/samir.png",
         chipEffect:[
             // 2 set
-            "Increase damage progressively by <strong>1%</strong> upon hitting a target. Stack up to <strong>10/13/16/20</strong> times. Lasts <strong>1.5</strong> seconds.<br><img class='flag' src='images/cn.svg'> Each hit increases attack by <strong>1.5%</strong>, up to <strong>10/13/16/20</strong> stacks, lasting <strong>2</strong> seconds and refreshing with each hit.",
+            "Increase damage progressively by <strong>1%</strong> upon hitting a target. Stack up to <strong>10/13/16/20</strong> times. Lasts <strong>1.5</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Each hit increases attack by <strong>1.5%</strong>, up to <strong>10/13/16/20</strong> stacks, lasting <strong>2</strong> seconds and refreshing with each hit.",
             // 4 set
-            "Increase Dual EM Stars' electrical explosion damage by <strong>16%/22%/30%/40%</strong> of ATK.<br><img class='flag' src='images/cn.svg'> Adds an extra hit to every attack for <strong>10%/12.5%/15%/17.5%</strong> damage (can not crit)."
+            "Increase Dual EM Stars' electrical explosion damage by <strong>16%/22%/30%/40%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Adds an extra hit to every attack for <strong>10%/12.5%/15%/17.5%</strong> damage (can not crit)."
         ],
         
         mimicEffect:[
@@ -340,7 +340,7 @@ var king =
         chipImg:"images/chip/king.png",
         chipEffect:[
             // 2 set
-            "When a target is shattered, grant <strong>8%/10%/12%/14%</strong> damage boost for <strong>25</strong> seconds. Only the highest level is applied when the effect is obtained repeatedly.<br><img class='flag' src='images/cn.svg'> For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25 seconds.",
+            "When a target is shattered, grant <strong>8%/10%/12%/14%</strong> damage boost for <strong>25</strong> seconds. Only the highest level is applied when the effect is obtained repeatedly.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25 seconds.",
             // 4 set
             "When there are more than 2 enemies around, hits restore HP equal to <strong>10%/12%/13%/14%</strong> of damage dealt upon attacking. The maximum HP restored every <strong>0.5</strong> seconds must not exceed <strong>30%/33%/34.5%/36%</strong> of ATK."
         ],
@@ -613,7 +613,7 @@ var meryl =
             // 2 set
             "If HP is less than <strong>30%</strong> after being attacked, gain a shield equal to <strong>15%/19%/22.5%/26%</strong> of Max HP for <strong>10</strong> seconds. Cooldown: <strong>120</strong> seconds.",
             // 4 set
-            "Increase Whirlwind's damage by <strong>36%/45%/54%/63%</strong> and restore HP equal to <strong>30%/38%/44%/50%</strong> of the damage dealt while Whirlwind is active. The maximum HP restored every <strong>0.5</strong> seconds cannot exceed <strong>60%/72%/81%/90%</strong> of ATK.<br><img class='flag' src='images/cn.svg'> Converts 60%/75%/90%/105% of damage dealth during shield to health, restores no more than 105%/127.5%/150%/172.5% of attack power every 0.5 seconds"
+            "Increase Whirlwind's damage by <strong>36%/45%/54%/63%</strong> and restore HP equal to <strong>30%/38%/44%/50%</strong> of the damage dealt while Whirlwind is active. The maximum HP restored every <strong>0.5</strong> seconds cannot exceed <strong>60%/72%/81%/90%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Converts 60%/75%/90%/105% of damage dealth during shield to health, restores no more than 105%/127.5%/150%/172.5% of attack power every 0.5 seconds"
         ],
         
         mimicEffect:[
@@ -628,7 +628,7 @@ var meryl =
             // 3000 affinity
             "Unlock communication [Melting Ice]",
             // 4000 affinity
-            "Reduce frost damage received by Meryl by <strong>25%</strong>, gain immunity to the frostbitten effect, and reduce duration of being frozen by <strong>50%</strong>.<br><img class='flag' src='images/cn.svg'> Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
+            "Reduce frost damage received by Meryl by <strong>25%</strong>, gain immunity to the frostbitten effect, and reduce duration of being frozen by <strong>50%</strong>.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Meryl takes 20% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze."
         ],
         traits: ['Female','170 cm','???','Libra','10 October'],
         gifts: [
@@ -1007,9 +1007,9 @@ var karasuma =
         chipImg:"images/chip/karasuma.png",
         chipEffect:[
             // 2 set
-            "Increase crit damage to targets with less than <strong>60%</strong> HP by <strong>24%/30%/36%/42%</strong>.<br><img class='flag' src='images/cn.svg'> Increase crit damage to targets with less than <strong>60%</strong> HP by <strong>33%/42%/50%/58%</strong>.",
+            "Increase crit damage to targets with less than <strong>60%</strong> HP by <strong>24%/30%/36%/42%</strong>.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Increase crit damage to targets with less than <strong>60%</strong> HP by <strong>33%/42%/50%/58%</strong>.",
             // 4 set
-            "Crits deal additional damage over time equal to <strong>18%/22%/26%/30%</strong> of ATK every second for <strong>5</strong> seconds. Does not stack.<br><img class='flag' src='images/cn.svg'> Crits deal additional damage over time equal to <strong>12%/15%/18%/21%</strong> of ATK every second for <strong>5</strong> seconds. Does not stack."
+            "Crits deal additional damage over time equal to <strong>18%/22%/26%/30%</strong> of ATK every second for <strong>5</strong> seconds. Does not stack.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Crits deal additional damage over time equal to <strong>12%/15%/18%/21%</strong> of ATK every second for <strong>5</strong> seconds. Does not stack."
         ],
         
         mimicEffect:[
@@ -1130,7 +1130,7 @@ var zero =
             // 4 star
             "Increase the current weapon's base HP growth by <strong>32%</strong>.",
             // 5 star
-            "Deal damage and produce a damage orb, which lsts for <strong>20</strong> seconds and increases ATK of any teammate who picks it up by <strong>1.5%</strong>. Stacks up to <strong>10</strong> times and lasts for <strong>45</strong> seconds. <strong>2.5</strong>-second cooldown.<br><img class='flag' src='images/cn.svg'> Deal damage and produce a damage orb, which lsts for <strong>20</strong> seconds and increases ATK of any teammate who picks it up by <strong>2%</strong>. Stacks up to <strong>10</strong> times and lasts for <strong>45</strong> seconds. <strong>2.5</strong>-second cooldown.",
+            "Deal damage and produce a damage orb, which lsts for <strong>20</strong> seconds and increases ATK of any teammate who picks it up by <strong>1.5%</strong>. Stacks up to <strong>10</strong> times and lasts for <strong>45</strong> seconds. <strong>2.5</strong>-second cooldown.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Deal damage and produce a damage orb, which lsts for <strong>20</strong> seconds and increases ATK of any teammate who picks it up by <strong>2%</strong>. Stacks up to <strong>10</strong> times and lasts for <strong>45</strong> seconds. <strong>2.5</strong>-second cooldown.",
             // 2% IN CHINA
             
             // 6 star
@@ -2216,7 +2216,7 @@ var manaka =
             // 4 star
             "Increase the current weapon's base ATK growth by <strong>20%</strong>.",
             // 5 star
-            "Double stun duration from dodge skills.<br><img class='flag' src='images/cn.svg'> Double stun duration from forward dodge skills.",
+            "Double stun duration from dodge skills.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Double stun duration from forward dodge skills.",
             // 6 star
             "Discharge deals more damage the further it travels, up to <strong>100%</strong> more damage."
         ],
@@ -3054,9 +3054,9 @@ var gadgets = [
         description: "Summon a droid and generate a shield for <strong>5</strong> seconds. The shield disappears after <strong>5</strong> seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to <strong>100%</strong> of ATK + <strong>50</strong>. If broken within <strong>1</strong> second of being created, the shield will stun enemies for <strong>2</strong> seconds. Cooldown: <strong>30</strong> seconds. Shares cooldown with Couant II.",
         awakening: [
             // 1 star
-            "When the shield is broken, reduce the speed of the attacker by <strong>35%</strong> for <strong>6</strong> seconds.<br><img class='flag' src='images/cn.svg'> When the shield is broken, reduce the speed of the attacker and nearby enemies by <strong>35%</strong> for <strong>6</strong> seconds.",
+            "When the shield is broken, reduce the speed of the attacker by <strong>35%</strong> for <strong>6</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> When the shield is broken, reduce the speed of the attacker and nearby enemies by <strong>35%</strong> for <strong>6</strong> seconds.",
             // 2 star
-            "After shield breaks, increase final damage by <strong>20%</strong> for <strong>10</strong> seconds.<br><img class='flag' src='images/cn.svg'> After shield breaks, increase final damage equal to the percentage of HP lost with a minimum of <strong>30%</strong>, for <strong>10</strong> seconds.",
+            "After shield breaks, increase final damage by <strong>20%</strong> for <strong>10</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> After shield breaks, increase final damage equal to the percentage of HP lost with a minimum of <strong>30%</strong>, for <strong>10</strong> seconds.",
             // 3 star
             "After the shield ends (shattered), it increases your movement speed by 30% for 5 seconds.",
             // 4 star
