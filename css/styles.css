@@ -946,20 +946,44 @@ body,
 
 
 
-/* Changelog */
-.cl {
-    color: gray;
+/* Changelog and Banner Schedule */
+.cl, .banners {
     display: block;
     height: 200px;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.cl::-webkit-scrollbar {
+.cl::-webkit-scrollbar, .banners::-webkit-scrollbar {
     display: none;
 }
-.cl span {
+.cl span, .banners code {
     background: #222222;
+}
+.cl {
+    color: gray;
+}
+
+.banners {
+    font-size: 1.2rem;
+}
+#banners-expand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: transparent;
+    color: var(--color-blue);
+    border: none;
+    border-radius: 0.5rem;
+    float: right;
+}
+#banners-expand:hover {
+    filter: brightness(0.8);
+}
+#banners-expand:active {
+    filter: brightness(0.6);
+}
+.banners-expanded {
+    height: fit-content;
 }
 
 
