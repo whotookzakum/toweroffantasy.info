@@ -1660,9 +1660,9 @@ var nemesis =
         chipImg:"images/chip/nemesis.png",
         chipEffect:[
             // 2 set
-            "When healing a target, the healed target's electric attack power is increased by 15%/18%/21%/25% for 20 seconds, non-stackable, only the highest level is in effect when repeated.",
+            "When healing a target, the healed target's Volt ATK is increased by <strong>15%/18%/21%/25%</strong> for <strong>20</strong> seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.",
             // 4 set
-            "When healing yourself or your own electrodes, the healed target gains a electric Strike which gives the next attack within 30 seconds an extra damage boost of 300%/375%/450%/525% electric damage to the first target hit. The electric damage (half the damage caused by  electrodes), can only be casted with an interval of not less than 10 seconds. The electric Strike mechanism is not stackable, and only the highest level is in effect when repeatedly acquired."
+            "When healing yourself or your own electrodes, the healed target gains a chance to Lightning Strike; the next attack within <strong>30</strong> seconds deals <strong>300%/375%/450%/525%</strong> of Volt ATK (half for electrodes) as Volt damage to the first target hit. Can only be triggered again after <strong>10</strong> seconds. Lightning Strike is not stackable, and only the highest level will take effect when using multiple sets."
         ],
         
         mimicEffect:[
