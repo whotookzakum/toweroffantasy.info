@@ -1,9 +1,3 @@
-// TO DO
-// World map with passcodes, world bosses (and their drops)
-// Joint op day-of-the-week dungeon rewards
-// Shield break and energy rechard tier should change with the corresponding values
-
-
 jQuery(document).ready(function ($) {
 
     // Popper Tooltips
@@ -30,7 +24,11 @@ jQuery(document).ready(function ($) {
             $(".sidenav .nav-body").removeClass("nav-open");
         }
     });
-
+    
+    // Home page Banners Schedule expand view
+    $("#banners-expand").click(function(){
+        $(".banners").toggleClass("banners-expanded");
+    });
 
     // Gets the clicked #btn-... to pass into setModalData()
     $(".modal-menu-item").click(function () {
