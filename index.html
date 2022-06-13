@@ -6,12 +6,12 @@
     <title>Home | Tower of Fantasy Index</title>
     <meta name="description" content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
     <link rel="icon" type="image/x-icon" href="images/avatar/tata.png">
-        
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
+
     <!-- Bootstrap CSS, JS, and Popper JS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -24,11 +24,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-N68SWH7ZJB');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N68SWH7ZJB');
     </script>
 </head>
 
@@ -85,73 +88,167 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Background image -->
     <img id="page-bg-img" class="bg-img" src="images/weila_lihui.png" style="object-position: 400px;">
-    
+
     <div class="container p-6 px-6">
 
         <span style="font-size: 32px;">Welcome to the Tower of Fantasy Index.</span><br>
-        
+
         This site will mainly follow the <strong>Global version</strong> of Tower of Fantasy.<br>
         Content that is exclusive to the Chinese version will be indicated with <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-        
+
         <div class="my-3 text-warning fw-bold">Global version localizations and balance changes may not be finalized. We will do our best to bring you any updates as accurately and quickly as possible. </div>
-        
-        <h3 class="d-inline"><strong>New here? Check out our <a href="guides">Guides</a>!</strong></h3>
-        <br><br>
-        
+
+        <h3 class="m-0"><strong>New here? Check out our <a href="guides">Guides</a>!</strong></h3>
+        <br>
+
         For corrections, suggestions, and bug reports, use <code>#guide-makers-hub</code> on <a href="https://discord.gg/qhDevpbJ4N" title="Join Aida Cafe!">Discord</a>, or contact <code>Zakum#3080</code> directly.
         <br><br>
-        
-        <h3 style="color:gray">Changelog</h3>
-        <code class="cl">
-            <ul>
-                <li><span>12 June 2022</span> Updated Nemesis Matrix for clarity and text highlighting</li>
-                <li><span>11 June 2022</span> Finished text highlighting for Combat section (default set to Discharge skill's text to hide the wall of text); updated Housing System guide (now all mobs respawn weekly); added meta tags; added CN Top Up guide; changed CN flag icon to a tag</li>
-                <li><span>6 June 2022</span> Added Combat section for simulacra reflecting ToF Global data (text highlighting and formating WIP); Added text highlighting for CN matrices (except nemesis) and updated to buffed values (Baiyuekui and Cobalt); fixed typo in Claudia's matrix</li>
-                <li><span>3 June 2022</span> Added 2 CN mounts, Saki Fuwa's character info, breakthrough mats, and affinity gifts (partial); fixed Ruby's radar chart</li>
-                <li><span>1 June 2022</span> "Things you MUST know" guide tip #15 updated with extra gifts; updated page background images</li>
-                <li><span>30 May 2022</span> Registration guides added; Added Things You MUST Know guide</li>
-                <li><span>29 May 2022</span> The 17th SSR simulacra, Saki Fuwa, added with CN Test server data; Fixed bugs on navigation; CN simulacra updated with value highlighting on weapon advancements and affinity, and weapon section descriptions updated</li>
-                <li><span>18 May 2022</span> Interactive map now opens in a new tab; Fixed an issue displaying the active link</li>
-                <li><span>17 May 2022</span> Guide "Dungeons Overview" added; Simulacra Preferred Gift categories added; Refactored sidenav; Refactored how modal data is set</li>
-                <li><span>16 May 2022</span> Added interactive map link (English version coming soon!)</li>
-                <li><span>14 May 2022</span> Mounts: Improved presentation of maps and videos</li>
-                <li><span>7 May 2022</span> Localized simulacra names on Guides; Localized simulacra passive effects and matrices effects for available global contents</li>
-                <li><span>5 May 2022</span> Hovering over a menu item now shows proper cursor; Added available english radar charts under character info (simulacra); Fixed Ruby's preffered gifts; Implemented color palette and refactored blue text; Updated Cytus' DPS loadout guide; fixed padding on guides</li>
-                <li><span>4 May 2022</span> Localized Relic descriptions; Damage calculator: added 4samir chip set and fixed warning message displaying when no sets selected; left-aligned menu items; added flags to current CN exclusives; corrected Echo's base Shatter value; localized wep awakening for SR mimics; updated background images on pages</li>
-                <li><span>3 May 2022</span> Fixed matrix sets not loading for non-simulacra matrices; localized food names;</li>
-                <li><span>2 May 2022</span> Localized SSR weapons awakening text to match global CBT; Added the 2.0 mounts; Stylized elemental effect to match in-game terms; Localized weapon names; Localized "shatter" and "charge"; Added discord banner; Optimized palette for later implementation; Chips removed from Mimics page (redundancy); Streamlined language ("simulacra" "matrices" "relics) to reflect that of the english client (link extensions updated.. sorry!); updated Mounts and Food layouts</li>
-                <li><span>30 April 2022</span> Added affinity gifts; localized some mimic names</li>
-                <li><span>29 April 2022</span> Item rarity background colors updated to match 2.0 version; Breakthrough mats reorganized; Some localizations updated to match Global</li>
-                <li><span>28 April 2022</span> Home page updated;</li>
-                <li><span>26 April 2022</span> Mimics: Ruby added</li>
-                <li><span>24 April 2022</span> Mounts: horse heart guide updated to english</li>
-                <li><span>18 April 2022</span> Housing guide added; Stitch's chip guide intro edited</li>
-                <li><span>17 April 2022</span> Mimics: recommended chips added; Damage Calc: enemy elemental weakness up to 75%; added page hints and updated newcomer's sitemap; updated gadget/relic names</li>
-                <li><span>14 April 2022</span> Damage calculator finished</li>
-                <li><span>13 April 2022</span> Damage calculator styled</li>
-                <li><span>12 April 2022</span> Updated Stitch's DPS guide; Damage calculator in the works</li>
-                <li><span>11 April 2022</span> Mounts page design finished; Black Crystal Sources guide added; page headers added</li>
-                <li><span>10 April 2022</span> Food page refactored and redesigned; Added sitemap; Cleaned link extensions; Fixed some purple chips not displaying information</li>
-                <li><span>7 April 2022</span> Modal headers &amp; some sections added; Added Stitch's chip guide; Fixed bulleting in Stitch's weapon guide</li>
-                <li><span>6 April 2022</span> Sidebar navigation implemented; Mounts added back as a page; Character details added</li>
-                <li><span>5 April 2022</span> Chips page added; Mounts page moved into guides</li>
-                <li><span>4 April 2022</span> Mimic page content formatted; Gadget page content formatted</li>
-                <li><span>3 April 2022</span> Design updated; Mimic page streamlined</li>
-                <li><span>31 Mar 2022</span> Food page format cleaned; gear enhancement guide added</li>
-                <li><span>30 Mar 2022</span> Food page contents added; Cytus's DPS loadouts guide updated</li>
-                <li><span>28 Mar 2022</span> Categorized guides, weapon shield break/energy recharge tiers implemented, new SSR gadget 'Counter 2' added</li>
-                <li><span>26 Mar 2022</span> Guide page implemented; Site goes live as toweroffantasy.info</li>
-                <li><span>25 Mar 2022</span> Home page implemented</li>
-                <li><span>23 Mar 2022</span> Gadgets, mounts, food pages implemented; temporary navigation added</li>
-                <li><span>4 Feb 2022</span> Initial design implemented for mimics page</li>
-                <li><span>31 Jan 2022</span> Project is conceived</li>
-            </ul>
-        </code>
-        
-        
+
+        <div class="row">
+            <div class="banners col-md-6" style="color: inherit">
+                <h3>Limited Banner Schedule <button id="banners-expand">Expand</button></h3>
+                ✦ Collaboration Event character<br>
+                ≛ Added to Standard Banner afterwards
+                
+                <table class="table table-borderless table-dark mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col"><abbr title="China Exclusive" class="cn-flag">CN</abbr> Banner</th>
+                            <th scope="col">Duration </th>
+                            <th scope="col">Days</th>
+                            <th scope="col">Week #</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="color: var(--color-ice)">
+                            <th scope="row">Saki Fuwa</th>
+                            <td>03 Jun 2022<br>23 Jun 2022</td>
+                            <td>20d</td>
+                            <td>25~28</td>
+                        </tr>
+                        <tr style="color: var(--color-phys)">
+                            <th scope="row">Marc ✦</th>
+                            <td>24 May 2022<br>3 Jun 2022</td>
+                            <td>10d</td>
+                            <td>24~25</td>
+                        </tr>
+                        <tr style="color: var(--color-volt)">
+                            <th scope="row">Baiyuekui ✦</th>
+                            <td>13 May 2022<br>23 May 2022</td>
+                            <td>10d</td>
+                            <td>22~24</td>
+                        </tr>
+                        <tr style="color: var(--color-flame)">
+                            <th scope="row">Ruby</th>
+                            <td>25 Apr 2022<br>13 May 2022</td>
+                            <td>18d</td>
+                            <td>20~22</td>
+                        </tr>
+                        <tr style="color: var(--color-flame)">
+                            <th scope="row">Cobalt-B ≛</th>
+                            <td>13 Apr 2022<br>27 Apr 2022</td>
+                            <td>14d</td>
+                            <td>18~20</td>
+                        </tr>
+                        <tr style="color: var(--color-ice)">
+                            <th scope="row">Frigg</th>
+                            <td>25 Mar 2022<br>12 Apr 2022</td>
+                            <td>18d</td>
+                            <td>15~18</td>
+                        </tr>
+                        <tr style="color: var(--color-phys)">
+                            <th scope="row">Claudia ≛</th>
+                            <td>19 Mar 2022<br>21 Mar 2022</td>
+                            <td>2d</td>
+                            <td>14/15</td>
+                        </tr>
+                        <tr style="color: var(--color-volt)">
+                            <th scope="row">Nemesis</th>
+                            <td>05 Mar 2022<br>24 Marc 2022</td>
+                            <td>19d</td>
+                            <td>12~15</td>
+                        </tr>
+                        <tr style="color: var(--color-phys)">
+                            <th scope="row">Marc ✦</th>
+                            <td>14 Feb 2022<br>4 Mar 2022</td>
+                            <td>18d</td>
+                            <td>10~12</td>
+                        </tr>
+                        <tr style="color: var(--color-volt)">
+                            <th scope="row">Baiyuekui ✦</th>
+                            <td>26 Jan 2022<br>13 Feb 2022</td>
+                            <td>18d</td>
+                            <td>7~9</td>
+                        </tr>
+                        <tr style="color: var(--color-flame)">
+                            <th scope="row">Cobalt-B</th>
+                            <td>8 Jan 2022<br>26 Jan 2022</td>
+                            <td>18d</td>
+                            <td>4~7</td>
+                        </tr>
+                        <tr style="color: var(--color-phys)">
+                            <th scope="row">Claudia</th>
+                            <td>22 Dec 2021<br>5 Jan 2022</td>
+                            <td>14d</td>
+                            <td>2~4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <code class="cl col-md-6 mt-5 mt-md-0">
+                <h3 style="color:gray">Changelog</h3>
+                <ul>
+                    <li><span>12 June 2022</span> Updated Nemesis Matrix wording and text highlighting; added CN banner schedule</li>
+                    <li><span>11 June 2022</span> Finished text highlighting for Combat section (default set to Discharge skill's text to hide the wall of text); updated Housing System guide (now all mobs respawn weekly); added meta tags; added CN Top Up guide; changed CN flag icon to a tag</li>
+                    <li><span>6 June 2022</span> Added Combat section for simulacra reflecting ToF Global data (text highlighting and formating WIP); Added text highlighting for CN matrices (except nemesis) and updated to buffed values (Baiyuekui and Cobalt); fixed typo in Claudia's matrix</li>
+                    <li><span>3 June 2022</span> Added 2 CN mounts, Saki Fuwa's character info, breakthrough mats, and affinity gifts (partial); fixed Ruby's radar chart</li>
+                    <li><span>1 June 2022</span> "Things you MUST know" guide tip #15 updated with extra gifts; updated page background images</li>
+                    <li><span>30 May 2022</span> Registration guides added; Added Things You MUST Know guide</li>
+                    <li><span>29 May 2022</span> The 17th SSR simulacra, Saki Fuwa, added with CN Test server data; Fixed bugs on navigation; CN simulacra updated with value highlighting on weapon advancements and affinity, and weapon section descriptions updated</li>
+                    <li><span>18 May 2022</span> Interactive map now opens in a new tab; Fixed an issue displaying the active link</li>
+                    <li><span>17 May 2022</span> Guide "Dungeons Overview" added; Simulacra Preferred Gift categories added; Refactored sidenav; Refactored how modal data is set</li>
+                    <li><span>16 May 2022</span> Added interactive map link (English version coming soon!)</li>
+                    <li><span>14 May 2022</span> Mounts: Improved presentation of maps and videos</li>
+                    <li><span>7 May 2022</span> Localized simulacra names on Guides; Localized simulacra passive effects and matrices effects for available global contents</li>
+                    <li><span>5 May 2022</span> Hovering over a menu item now shows proper cursor; Added available english radar charts under character info (simulacra); Fixed Ruby's preffered gifts; Implemented color palette and refactored blue text; Updated Cytus' DPS loadout guide; fixed padding on guides</li>
+                    <li><span>4 May 2022</span> Localized Relic descriptions; Damage calculator: added 4samir chip set and fixed warning message displaying when no sets selected; left-aligned menu items; added flags to current CN exclusives; corrected Echo's base Shatter value; localized wep awakening for SR mimics; updated background images on pages</li>
+                    <li><span>3 May 2022</span> Fixed matrix sets not loading for non-simulacra matrices; localized food names;</li>
+                    <li><span>2 May 2022</span> Localized SSR weapons awakening text to match global CBT; Added the 2.0 mounts; Stylized elemental effect to match in-game terms; Localized weapon names; Localized "shatter" and "charge"; Added discord banner; Optimized palette for later implementation; Chips removed from Mimics page (redundancy); Streamlined language ("simulacra" "matrices" "relics) to reflect that of the english client (link extensions updated.. sorry!); updated Mounts and Food layouts</li>
+                    <li><span>30 April 2022</span> Added affinity gifts; localized some mimic names</li>
+                    <li><span>29 April 2022</span> Item rarity background colors updated to match 2.0 version; Breakthrough mats reorganized; Some localizations updated to match Global</li>
+                    <li><span>28 April 2022</span> Home page updated;</li>
+                    <li><span>26 April 2022</span> Mimics: Ruby added</li>
+                    <li><span>24 April 2022</span> Mounts: horse heart guide updated to english</li>
+                    <li><span>18 April 2022</span> Housing guide added; Stitch's chip guide intro edited</li>
+                    <li><span>17 April 2022</span> Mimics: recommended chips added; Damage Calc: enemy elemental weakness up to 75%; added page hints and updated newcomer's sitemap; updated gadget/relic names</li>
+                    <li><span>14 April 2022</span> Damage calculator finished</li>
+                    <li><span>13 April 2022</span> Damage calculator styled</li>
+                    <li><span>12 April 2022</span> Updated Stitch's DPS guide; Damage calculator in the works</li>
+                    <li><span>11 April 2022</span> Mounts page design finished; Black Crystal Sources guide added; page headers added</li>
+                    <li><span>10 April 2022</span> Food page refactored and redesigned; Added sitemap; Cleaned link extensions; Fixed some purple chips not displaying information</li>
+                    <li><span>7 April 2022</span> Modal headers &amp; some sections added; Added Stitch's chip guide; Fixed bulleting in Stitch's weapon guide</li>
+                    <li><span>6 April 2022</span> Sidebar navigation implemented; Mounts added back as a page; Character details added</li>
+                    <li><span>5 April 2022</span> Chips page added; Mounts page moved into guides</li>
+                    <li><span>4 April 2022</span> Mimic page content formatted; Gadget page content formatted</li>
+                    <li><span>3 April 2022</span> Design updated; Mimic page streamlined</li>
+                    <li><span>31 Mar 2022</span> Food page format cleaned; gear enhancement guide added</li>
+                    <li><span>30 Mar 2022</span> Food page contents added; Cytus's DPS loadouts guide updated</li>
+                    <li><span>28 Mar 2022</span> Categorized guides, weapon shield break/energy recharge tiers implemented, new SSR gadget 'Counter 2' added</li>
+                    <li><span>26 Mar 2022</span> Guide page implemented; Site goes live as toweroffantasy.info</li>
+                    <li><span>25 Mar 2022</span> Home page implemented</li>
+                    <li><span>23 Mar 2022</span> Gadgets, mounts, food pages implemented; temporary navigation added</li>
+                    <li><span>4 Feb 2022</span> Initial design implemented for mimics page</li>
+                    <li><span>31 Jan 2022</span> Project is conceived</li>
+                </ul>
+            </code>
+        </div>
+
+
+
+
         <div class="mt-5 fs-4" style="color: gray">
             Created by Pyrosu#6969 and Zakum#3080<br>
             Original contents by Pyrosu#6969, BakuBaku#1314, Sera Naoki#7502<br>
@@ -159,16 +256,16 @@
             <br>
             <span class="fst-italic">Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</span>
         </div>
-        
+
         <div class="mt-5 position-relative">
             <a class="position-absolute mb-5" href="https://discord.gg/qhDevpbJ4N"><img class="img-fluid" src="images/banner-aidacafe.png" style="filter: drop-shadow(0 0 7px #121212)"></a>
-            
+
             <iframe class="d-none widget-discord" src="https://discord.com/widget?id=670617630717116426&theme=dark" width="300" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
 
-        
-    </div> 
-    
+
+    </div>
+
     <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
