@@ -83,9 +83,9 @@ var samir =
         chipImg:"images/chip/samir.png",
         chipEffect:[
             // 2 set
-            "Increase damage progressively by <strong>1%</strong> upon hitting a target. Stack up to <strong>10/13/16/20</strong> times. Lasts <strong>1.5</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Each hit increases attack by <strong>1.5%</strong>, up to <strong>10/13/16/20</strong> stacks, lasting <strong>2</strong> seconds and refreshing with each hit.",
+            "Increase damage progressively by <strong>1%</strong> upon hitting a target. Stack up to <strong>10/13/16/20</strong> times. Lasts <strong>1.5</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Increase damage progressively by <strong>1.5%</strong> upon hitting a target. Stack up to <strong>10/13/16/20</strong> times. Lasts <strong>2</strong> seconds.",
             // 4 set
-            "Increase Dual EM Stars' electrical explosion damage by <strong>16%/22%/30%/40%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Adds an extra hit to every attack for <strong>10%/12.5%/15%/17.5%</strong> damage (can not crit)."
+            "Increase Dual EM Stars' electrical explosion damage by <strong>16%/22%/30%/40%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Adds an extra hit to the locked on target for every attack for <strong>10%/12.5%/15%/17.5%</strong> damage (can not crit)."
         ],
         
         mimicEffect:[
@@ -207,9 +207,9 @@ var coco =
         chipImg:"images/chip/coco.png",
         chipEffect:[
             // 2 set
-            "Increase healing capability and healing received by <strong>8%/10%/12%/14%</strong>.",
+            "Increase healing capability and healing received by <strong>8%/10%/12%/14%</strong>.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Increase healing capability and healing received by <strong>10%/12%/14%/16%</strong>.",
             // 4 set
-            "When you or your teammates are healed, increase ATK by <strong>10%/12.5%/15%/17.5%</strong> for <strong>2</strong> seconds."
+            "When you or your teammates are healed, increase ATK by <strong>10%/12.5%/15%/17.5%</strong> for <strong>2</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> When you or your teammates are healed, increase ATK by <strong>12.5%/15%/17.5%/20%</strong> for <strong>6</strong> seconds."
         ],
         
         mimicEffect:[
@@ -340,9 +340,9 @@ var king =
         chipImg:"images/chip/king.png",
         chipEffect:[
             // 2 set
-            "When a target is shattered, grant <strong>8%/10%/12%/14%</strong> damage boost for <strong>25</strong> seconds. Only the highest level is applied when the effect is obtained repeatedly.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> For every 10% of shield broken, gain a 4%/5%/6%/7% damage buff, up to 3 stacks, lasting 25 seconds.",
+            "When a target is shattered, grant <strong>8%/10%/12%/14%</strong> damage boost for <strong>25</strong> seconds. Only the highest level is applied when the effect is obtained repeatedly.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> For every 10% of shield broken, gain a <strong>4%/5%/6%/7%</strong> damage buff, up to <strong>3</strong> stacks, lasting <strong>25</strong> seconds.",
             // 4 set
-            "When there are more than 2 enemies around, hits restore HP equal to <strong>10%/12%/13%/14%</strong> of damage dealt upon attacking. The maximum HP restored every <strong>0.5</strong> seconds must not exceed <strong>30%/33%/34.5%/36%</strong> of ATK."
+            "When there are more than 2 enemies around, hits restore HP equal to <strong>10%/12%/13%/14%</strong> of damage dealt upon attacking. The maximum HP restored every <strong>0.5</strong> seconds must not exceed <strong>30%/33%/34.5%/36%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> When there are more than 2 enemies around, hits restore HP equal to <strong>14%/18%/22%/26%</strong> of damage dealt upon attacking. The maximum HP restored every <strong>0.5</strong> seconds must not exceed <strong>36%/42%/48%/54%</strong> of ATK."
         ],
         
         mimicEffect:[
@@ -479,7 +479,7 @@ var shiro =
             // 2 set
             "Increase both damage and shatter to targets with more than <strong>50%</strong> HP by <strong>15%/19%/22.5%/26%</strong>.",
             // 4 set
-            "Upon entering battle, gain a <strong>20%/25%/30%/35%</strong> damage boost for <strong>20</strong> seconds. Reset <strong>5</strong> seconds after exiting battle."
+            "Upon entering battle, gain a <strong>20%/25%/30%/35%</strong> damage boost for <strong>20</strong> seconds. Reset <strong>5</strong> seconds after exiting battle.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Upon entering battle, gain a <strong>20%/25%/30%/35%</strong> damage boost for <strong>35</strong> seconds. Reset <strong>5</strong> seconds after exiting battle."
         ],
         
         mimicEffect:[
@@ -611,9 +611,9 @@ var meryl =
         chipImg:"images/chip/meryl.png",
         chipEffect:[
             // 2 set
-            "If HP is less than <strong>30%</strong> after being attacked, gain a shield equal to <strong>15%/19%/22.5%/26%</strong> of Max HP for <strong>10</strong> seconds. Cooldown: <strong>120</strong> seconds.",
+            "If HP is less than <strong>30%</strong> after being attacked, gain a shield equal to <strong>15%/19%/22.5%/26%</strong> of Max HP for <strong>10</strong> seconds. Cooldown: <strong>120</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> If HP is less than <strong>30%</strong> after being attacked, gain a shield equal to <strong>20%/26%/32%/40%</strong> of Max HP for <strong>10</strong> seconds. Cooldown: <strong>90</strong> seconds.",
             // 4 set
-            "Increase Whirlwind's damage by <strong>36%/45%/54%/63%</strong> and restore HP equal to <strong>30%/38%/44%/50%</strong> of the damage dealt while Whirlwind is active. The maximum HP restored every <strong>0.5</strong> seconds cannot exceed <strong>60%/72%/81%/90%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Converts 60%/75%/90%/105% of damage dealth during shield to health, restores no more than 105%/127.5%/150%/172.5% of attack power every 0.5 seconds"
+            "Increase Whirlwind's damage by <strong>36%/45%/54%/63%</strong> and restore HP equal to <strong>30%/38%/44%/50%</strong> of the damage dealt while Whirlwind is active. The maximum HP restored every <strong>0.5</strong> seconds cannot exceed <strong>60%/72%/81%/90%</strong> of ATK.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Converts <strong>60%/75%/90%/105%</strong> of damage dealth during shield to health, restores no more than <strong>105%/127.5%/150%/172.5%</strong> of attack power every 0.5 seconds"
         ],
         
         mimicEffect:[
@@ -749,9 +749,9 @@ var hane =
         chipImg:"images/chip/hane.png",
         chipEffect:[
             // 2 set
-            "Increase damage dealt by <strong>10%/12.5%/15%/17.5%</strong> when there are no enemies within 4 meters.",
+            "Increase damage dealt by <strong>10%/12.5%/15%/17.5%</strong> when there are no enemies within 4 meters.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Increase damage dealt by <strong>12.5%/15%/17.5%/20%</strong> when there are no enemies within 4 meters.",
             // 4 set
-            "Upon a headshot, increase ATK by <strong>12%/15%/18%/21%</strong> for 8 seconds."
+            "Upon a headshot, increase ATK by <strong>12%/15%/18%/21%</strong> for 8 seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by <strong>15%/18%/21%/25%</strong> for 8 seconds."
         ],
         
         mimicEffect:[
@@ -1144,7 +1144,7 @@ var zero =
         chipImg:"images/chip/zero.png",
         chipEffect:[
             // 2 set
-            "Upon using a discharge skill to switch to the current weapon, gain a shield equal to <strong>120%/150%/180%/210%</strong> of ATK for <strong>4</strong> seconds.",
+            "Upon using a discharge skill to switch to the current weapon, gain a shield equal to <strong>120%/150%/180%/210%</strong> of ATK for <strong>4</strong> seconds.<br><abbr title='China Exclusive' class='cn-flag'>CN</abbr> Upon using a discharge skill to switch to the current weapon, gain a shield equal to <strong>150%/200%/250%/300%</strong> of ATK for <strong>6</strong> seconds.",
             // 4 set
             "While the shield is active, you and your teammates deal <strong>16%/20%/24%/28%</strong> more damage."
         ],
