@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
 
+    // Markdown Parser
+    var md = window.markdownit();
+    var result = md.render('**markdown-it rulezz!**');
+    
     // Popper Tooltips
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -112,11 +116,13 @@ jQuery(document).ready(function ($) {
                     wepEffectName = 'Elemental Efect';
                     wepEffectNameColor = 'blue';
             }
-
+            
+            
+            
             $("#wep-effect-name").html(wepEffectName);
             $("#wep-effect-name").css('color', `var(--color-${wepEffectNameColor})`);
 
-            $("#wep-effect").html(i.wepEffect);
+            $("#wep-effect").html(md.render(i.wepEffect));
             if (i.hasOwnProperty('exclusiveEffect')) {
                 $("#exclusive-effect-wrapper").removeClass("d-none");
                 $("#exclusive-effect").html(i.exclusiveEffect);
@@ -296,7 +302,7 @@ jQuery(document).ready(function ($) {
 
     }
 
-
+    
     // Load Food
     for (let i = 0; i < food.length; i++) {
         let recipe = '';

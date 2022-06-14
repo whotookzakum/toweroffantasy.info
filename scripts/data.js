@@ -60,7 +60,7 @@ var samir =
         wepImg:"images/wep/samir.png",
         eleImg:"images/ele_electric.png",
         resoImg:"images/reso_damage.png",
-        wepEffect:"When the weapon is fully charged, the next attack will <strong>paralyze</strong> targets for <strong>1</strong> second and electrify them for <strong>6</strong> seconds, negating all buffs and dealing damage equal to <strong>144.00%</strong> of ATK. Targets can't receive any buffs for the next <strong>6</strong> seconds.",
+        wepEffect:`When the weapon is fully charged, the next attack will <strong>paralyze</strong> targets for <strong>1</strong> second and electrify them for <strong>6</strong> seconds, negating all buffs and dealing damage equal to <strong>144.00%</strong> of ATK. Targets can't receive any buffs for the next **6** seconds.`,
         awakening:[
             // 1 star
             "Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to <strong>30%</strong> of ATK to the target and nearby enemies. Cooldown: <strong>0.5</strong> seconds.",
@@ -589,6 +589,7 @@ var meryl =
         eleImg:"images/ele_ice.png",
         resoImg:"images/reso_tank.png",
         wepEffect:"Fully charged weapons will <strong>freeze</strong> the target for <strong>2</strong> seconds and leave it frostbitten for <strong>6</strong> seconds. Breaking the ice shell causes additional damage equal to <strong>151.00%</strong> of ATK. While frostbitten, the target's weapon charge rate is reduced by <strong>50%</strong>.",
+        
         awakening:[
             // 1 star
             "Increase shatter by <strong>15%</strong> and restore <strong>10%</strong> of HP after shattering the target's shield.",
