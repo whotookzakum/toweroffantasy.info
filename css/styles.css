@@ -59,6 +59,7 @@
     --color-gift-category-vera: #cba79a;
 }
 
+
 html {
     font-size: 62.5%;
     scroll-behavior: auto !important;
@@ -104,34 +105,75 @@ menu {
     padding: 0;
 }
 
-/* LIBRARY RELATED
+/* LIBRARY AND LAYOUT RELATED
 =============================================== */
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1000px;
-    }
+:root {
+    --sidebar-width: 250px;
+    --container-width: 1000px;
+    --spacing: clamp(2rem, calc(3vw + 1rem), 6rem);
 }
 
-@media (max-width: 768px) {
-    .container {
+.wrapper {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.right-gutter {
+    min-width: var(--sidebar-width);
+}
+
+.middle {
+    min-width: clamp(var(--container-width), calc(100% - var(--sidebar-width)), calc(1920px - var(--sidebar-width) * 2));
+    width: 100%;
+    max-width: clamp(var(--container-width), calc(100% - var(--sidebar-width)), calc(1920px - var(--sidebar-width) * 2));
+    margin: 0 auto;
+}
+
+@media (min-width: 1921px) {
+    .middle {
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1000px) {
+    .middle {
         min-width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    .container {
-        min-height: 100%;
+main {
+    position: relative;
+    z-index: 300;
+    background: var(--color-container);
+    box-shadow: var(--shadow-0-0-4);
+    max-width: clamp(var(--container-width), 100%, var(--container-width));
+    margin: 0 auto;
+    padding: var(--spacing);
+    height: 100%;
+}
+
+.sidenav {
+    min-width: var(--sidebar-width);
+    box-shadow: var(--shadow-0-0-4);
+    padding: 0;
+    height: 100%;
+    align-content: space-between;
+}
+
+.sidenav .nav-body {
+    background-color: var(--color-navbar-bg);
+    transition: transform 0.3s ease;
+    transform: translateX(-0px);
+}
+
+@media (max-width: 1249px) {
+    .sidenav,
+    .right-gutter {
+        display: none;
     }
 }
 
-.container {
-    position: relative;
-    z-index: 60000;
-    background: var(--color-container);
-    box-shadow: var(--shadow-0-0-4);
-    min-height: 100%;
-}
 
 .p-6 {
     padding: 6rem !important;
@@ -143,8 +185,8 @@ menu {
 }
 
 #modal-bg-img {
-	top: 0;
-	z-index: -1;
+    top: 0;
+    z-index: -1;
 }
 
 .cool-modal {
@@ -324,14 +366,7 @@ body,
 /* NAV RELATED
 =============================================== */
 
-.sidenav {
-    filter: drop-shadow(var(--shadow-0-0-4));
-    z-index: 80000;
-    padding: 0;
-    min-height: 100%;
-    align-content: space-between;
-    position: fixed;
-}
+
 
 #sidenav-btn-close {
     display: none;
@@ -351,17 +386,11 @@ body,
     margin-right: 3px;
 }
 
-.sidenav .nav-body {
-    position: relative;
-    background-color: var(--color-navbar-bg);
-    overflow-x: hidden;
-    width: 0;
-    transition: width 0.3s ease-in-out;
-}
+
 
 .sidenav .nav-contents {
     padding: 3rem 3rem 0 3rem;
-    width: 250px;
+    width: var(--sidenav-width);
     height: 100vh;
     flex-direction: column;
     display: flex;
@@ -454,16 +483,6 @@ body,
 .nav-open .nav-backdrop {
     visibility: visible;
     opacity: 0.4;
-}
-
-@media only screen and (min-width: 1440px) {
-    .sidenav .nav-body {
-        width: 250px;
-    }
-
-    .sidenav .nav-toggler {
-        display: none;
-    }
 }
 
 #nav-toggler {
@@ -1224,8 +1243,7 @@ body,
     font: bold 3rem "Chakra Petch";
 }
 
-.mount-wrapper .nav {
-}
+.mount-wrapper .nav {}
 
 .mount-wrapper .nav-link {
     padding: 0;
