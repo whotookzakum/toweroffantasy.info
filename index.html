@@ -37,13 +37,14 @@
 
 <body>
     <div class="wrapper">
+        
         <nav class="navbar sidenav">
-            <a id="nav-toggler">
-                <i class="fa-solid fa-bars"></i>
-            </a>
+            <input type="checkbox" id="nav-toggler">
+            <label for="nav-toggler">
+                <i class="toggler-lines"></i><h1>&nbsp;&nbsp;Menu</h1>
+            </label>
+            <div class="nav-backdrop"></div>
             <div class="nav-body">
-                <div class="nav-backdrop"></div>
-                <a id="sidenav-btn-close" class="btn-close btn-close-white"></a>
                 <div class="nav-contents">
                     <a class="navbar-brand">
                         <img class="mb-3" src="images/avatar/tata.png"><br>
@@ -89,9 +90,11 @@
                 </div>
             </div>
         </nav>
+        
+        <div class="left-gutter"></div>
 
         <!-- Background image -->
-        <img id="page-bg-img" class="bg-img d-none" src="images/weila_lihui.png" style="object-position: 400px;">
+        <img id="page-bg-img" class="bg-img" src="images/weila_lihui.png" style="object-position: 400px;">
 
         <div class="middle">
             <main>

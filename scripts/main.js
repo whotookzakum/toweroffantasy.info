@@ -8,8 +8,7 @@ function setOnlineCount(count) {
     $("#discordOnlineCount").html(count);
 }
 
-// Markdown Parser
-//var md = window.markdownit();
+
 
 // Popper Tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll("[data-bs-toggle=\"tooltip\"]"));
@@ -18,23 +17,10 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 });
 
 // Navigation
-$("#nav-toggler").click(function () {
-    $(".sidenav .nav-body").addClass("nav-open");
-});
-
-$("#sidenav-btn-close").click(function () {
-    $(".sidenav .nav-body").removeClass("nav-open");
-});
-
 $(".nav-backdrop").click(function () {
-    $(".sidenav .nav-body").removeClass("nav-open");
+    document.getElementById("nav-toggler").checked = false;
 });
 
-$(window).resize(function () {
-    if (window.innerWidth > 1440) {
-        $(".sidenav .nav-body").removeClass("nav-open");
-    }
-});
 
 // Home page Banners Schedule expand view
 $("#banners-expand").click(function () {
@@ -44,7 +30,7 @@ $("#banners-expand").click(function () {
 
 // Gets the clicked #btn-... to pass into setModalData()
 $(".modal-menu-item").click(function () {
-
+    console.log("Hey");
     let selectedItem = $(this).attr("id").replace("btn-", "");
 
     // MIMICS & CHIPS PAGES
@@ -187,6 +173,10 @@ function setModalData(i) {
 
     // MIMIC PAGE
     if (document.URL.includes("simulacra")) {
+        
+        // Markdown Parser
+        var md = window.markdownit();
+        
         // Weapon
         $("#wep-name").html(i.wepName);
         $("#wep-type-img").attr("src", i.resoImg);

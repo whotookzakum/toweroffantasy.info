@@ -21,7 +21,7 @@
 
     <!-- Project CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"></script>
     <script>
@@ -37,82 +37,86 @@
 </head>
 
 <body>
-    <nav class="navbar sidenav">
-        <a id="nav-toggler">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-        <div class="nav-body">
+    <div class="wrapper">
+        <nav class="navbar sidenav">
+            <input type="checkbox" id="nav-toggler">
+            <label for="nav-toggler">
+                <i class="toggler-lines"></i>
+                <h1>&nbsp;&nbsp;Menu</h1>
+            </label>
             <div class="nav-backdrop"></div>
-            <a id="sidenav-btn-close" class="btn-close btn-close-white"></a>
-            <div class="nav-contents">
-                <a class="navbar-brand" href="index">
-                    <img class="mb-3" src="images/avatar/tata.png"><br>
-                    Tower of Fantasy Index
-                </a>
-                <hr class="my-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link"><i class="fa-solid fa-carrot"></i> Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-globe"></i> Interactive Map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                    </li>
-                </ul>
-                <hr class="my-3">
-                <ul class="nav nav-socials flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
-                    </li>
-                </ul>
-                <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
+            <div class="nav-body">
+                <div class="nav-contents">
+                    <a class="navbar-brand" href="index">
+                        <img class="mb-3" src="images/avatar/tata.png"><br>
+                        Tower of Fantasy Index
+                    </a>
+                    <hr class="my-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="simulacra"><i class="fa-solid fa-user"></i> Simulacra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link"><i class="fa-solid fa-carrot"></i> Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-globe"></i> Interactive Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                        </li>
+                    </ul>
+                    <hr class="my-3">
+                    <ul class="nav nav-socials flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                        </li>
+                    </ul>
+                    <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
+                </div>
             </div>
+        </nav>
+
+        <div class="left-gutter"></div>
+
+        <!-- Background image -->
+        <img id="page-bg-img" class="bg-img" src="images/food/huodong_meishi_guo.png" style="object-position: 0px; bottom: 0;">
+        <div class="middle">
+            <main style="padding: 0; overflow-x: hidden;">
+                <div class="row" style="background: rgba(26, 25, 33, 0.9); padding: 6rem var(--spacing);">
+                    <h1 class="page-header">Food</h1>
+                    <p class="page-info">
+                        Food can <strong>provide buffs, recover HP, and recover satiety</strong> (hunger).<br>
+                        Satiety level determines how much HP you will <strong>passively recover while out of combat</strong>.<br>
+                        When learning a new recipe, adding extra of the required ingredients will boost the chance of permanently unlocking the recipe.</p>
+                </div>
+                <div id="food-wrapper"></div>
+            </main>
         </div>
-    </nav>
-    
-    <!-- Background image -->
-    <img id="page-bg-img" class="bg-img" src="images/food/huodong_meishi_guo.png" style="object-position: 0px; bottom: 0;">
-    
-    
-    <div class="position-fixed fixed-bottom" style="left: 50%; transform: translateX(-50%); width: fit-content;">   
-        <strong class="font-chakra text-rarity-1 text-uppercase p-5">Tier 1</strong>
-        <strong class="font-chakra text-rarity-2 text-uppercase p-5">Tier 2</strong>
-        <strong class="font-chakra text-rarity-3 text-uppercase p-5">Tier 3</strong>
-        <strong class="font-chakra text-rarity-4 text-uppercase p-5">Tier 4</strong>
-        <!-- 51 item-imgs -->
+
+        <div class="right-gutter"></div>
     </div>
-    
-    <div class="container" style="background:none">
-        <div class="p-5 row" style="background: rgba(26, 25, 33, 0.9);">
-            <div class="position-relative">
-                <i class="fa-regular fa-circle-question page-info-icon"></i>
-                <div class="page-info">Food can provide buffs, recover HP, and recover satiety (hunger).<br>When unlocking a recipe for the first time, you can add more of the required ingredients to boost the success rate of revealing the recipe.</div>
-            </div>
-            <h1 class="page-header">Food</h1>
-        </div>
-        <div id="food-wrapper"></div>
-    </div>
-    
+
+
+
+
+
+
 
     <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

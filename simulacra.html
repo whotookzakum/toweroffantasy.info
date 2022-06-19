@@ -40,473 +40,486 @@
 </head>
 
 <body>
-    <nav class="navbar sidenav">
-        <a id="nav-toggler">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-        <div class="nav-body">
+    <div class="wrapper">
+        <nav class="navbar sidenav">
+            <input type="checkbox" id="nav-toggler">
+            <label for="nav-toggler">
+                <i class="toggler-lines"></i>
+                <h1>&nbsp;&nbsp;Menu</h1>
+            </label>
             <div class="nav-backdrop"></div>
-            <a id="sidenav-btn-close" class="btn-close btn-close-white"></a>
-            <div class="nav-contents">
-                <a class="navbar-brand" href="index">
-                    <img class="mb-3" src="images/avatar/tata.png"><br>
-                    Tower of Fantasy Index
-                </a>
-                <hr class="my-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link"><i class="fa-solid fa-user"></i> Simulacra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-globe"></i> Interactive Map</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
-                    </li>
-                </ul>
-                <hr class="my-3">
-                <ul class="nav nav-socials flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
-                    </li>
-                </ul>
-                <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Background image -->
-    <img id="page-bg-img" class="bg-img" src="images/art/fuwasaki.png">
-
-    <main class="container p-5">
-        <!-- Mimics List -->
-        <menu id="modal-menu">
-            <div class="position-relative">
-                <i class="fa-regular fa-circle-question page-info-icon"></i>
-                <div class="page-info">Simulacra (AKA Mimics) are the player's representation of the characters found in Tower of Fantasy.<br>They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.</div>
-            </div>
-            <h1 class="page-header">Simulacra</h1>
-
-            <div class="tier tier-s modal-menu-category">SSR Simulacra</div>
-            <ul class="p-0 text-center mt-3">
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-fuwasaki">
-                    <img src="images/avatar/fuwasaki.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <span class="tag tag-new">New</span>
-                    <h3>Saki Fuwa</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-ruby">
-                    <img src="images/avatar/ruby.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <h3>Ruby</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-frigg">
-                    <img src="images/avatar/frigg.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <h3>Frigg</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-nemesis">
-                    <img src="images/avatar/nemesis.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <h3>Nemesis</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-marc">
-                    <img src="images/avatar/marc.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <h3>Marc</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-baiyuekui">
-                    <img src="images/avatar/baiyuekui.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <h3>Baiyuekui</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-cobalt">
-                    <img src="images/avatar/cobalt.png">
-                    <abbr title="China Exclusive" class="cn-flag">CN</abbr>
-                    <h3>Cobalt-B</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-claudia">
-                    <img src="images/avatar/claudia.png">
-                    <h3>Claudia</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-coco">
-                    <img src="images/avatar/coco.png">
-                    <h3>Coco Ritter</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-huma">
-                    <img src="images/avatar/huma.png">
-                    <h3>Huma</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-karasuma">
-                    <img src="images/avatar/karasuma.png">
-                    <h3>Crow</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-king">
-                    <img src="images/avatar/king.png">
-                    <h3>KING</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-meryl">
-                    <img src="images/avatar/meryl.png">
-                    <h3>Meryl</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-samir">
-                    <img src="images/avatar/samir.png">
-                    <h3>Samir</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-shiro">
-                    <img src="images/avatar/shiro.png">
-                    <h3>Shiro</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-hane">
-                    <img src="images/avatar/hane.png">
-                    <h3>Tsubasa</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-zero">
-                    <img src="images/avatar/zero.png">
-                    <h3>Zero</h3>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-            </ul>
-            <div class="tier tier-a modal-menu-category">SR Simulacra</div>
-            <ul class="p-0 text-center mb-0 mt-3">
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-peppa">
-                    <img src="images/avatar/peppa.png">
-                    <h3>Pepper</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-hilda">
-                    <img src="images/avatar/hilda.png">
-                    <h3>Hilda</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-xi">
-                    <img src="images/avatar/xi.png">
-                    <h3>Ene</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-bailing">
-                    <img src="images/avatar/bailing.png">
-                    <h3>Bai Ling</h3>
-                </li>
-                <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-manaka">
-                    <img src="images/avatar/manaka.png">
-                    <h3>Echo</h3>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-                <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
-                    <div style="width: 88px"></div>
-                </li>
-            </ul>
-        </menu>
-
-        <!-- Modal -->
-        <img id="modal-bg-img" class="bg-img" src="images/art/meryl.png" style="opacity: 0;">
-        <div class="cool-modal fade" id="modal-content" tabindex="-1" aria-labelledby="modal-contentLabel" aria-hidden="true" aria-live="assertive">
-            <div class="modal-dialog mx-auto">
-                <div class="modal-content">
-                    <div class="modal-header ps-5">
-                        <div class="px-md-5">
-                            <div id="tier" class="tier tier-s d-inline-block me-3" style="width: 50px; padding: 0 3px;">SSR</div>
-                            <span id="item-name" class="me-3 fw-bold">Name</span>
-                            <nav class="d-inline-block">
-                                <a class="btn btn-lg btn-minimal" href="#header-weapon">Weapon</a>
-                                <a class="btn btn-lg btn-minimal" href="#header-combat">Combat</a>
-                                <a class="btn btn-lg btn-minimal" href="#header-affinity">Affinity</a>
-                            </nav>
-                            <button id="popover-mimic" tabindex="0" class="btn btn-lg btn-minimal" data-bs-toggle="popover" data-bs-placement="bottom">Character Info</button>
-                        </div>
-                        <button type="button" class="btn-close btn-close-white mb-auto" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body px-5">
-
-                        <!-- Weapon Info -->
-                        <article class="px-md-5 weapon-info-wrapper">
-                            <h1 class="modal-section-header" id="header-weapon">Weapon</h1>
-                            <!-- Overview -->
-                            <div class="row">
-                                <div class="wep-basic-info col-lg-6 d-flex py-4">
-                                    <img id="wep-img" class="align-self-center" width="128" height="128" src="images/wep/samir.png">
-                                    <div class="ms-4 align-self-center">
-                                        <h1 id="wep-name">Weapon Name</h1>
-                                        <img id="wep-type-img" src="images/reso_damage.png" data-bs-toggle="tooltip" title="Resonance" width="34" height="31">
-                                        <img id="wep-element-img" src="images/ele_electric.png" data-bs-toggle="tooltip" title="Element" width="34" height="31"><br>
-                                        <div id="shield-break-tier" class="tier my-2">S</div>
-                                        <h3 class="m-0 d-inline-block align-middle">Shatter: <span id="shield-break">11.11</span></h3><br>
-                                        <div id="energy-charge-tier" class="tier">SS</div>
-                                        <h3 class="m-0 d-inline-block align-middle">Charge: <span id="energy-charge">11.11</span></h3>
-                                    </div>
-                                </div>
-                                <div class="col py-4">
-                                    <h2 id="wep-effect-name" class="fw-bold">Elemental Effect</h2>
-                                    <p id="wep-effect">Weapon effect goes here</p>
-                                </div>
-                            </div>
-                            <hr>
-                            <!-- Exclusive weapon effects -->
-                            <div id="exclusive-effect-wrapper">
-                                <section>
-                                    <h2><strong>Bonus Effect</strong></h2>
-                                    <p id="exclusive-effect">Exclusive effect goes here</p>
-                                </section>
-                                <hr>
-                            </div>
-
-                            <!-- Awakening effects -->
-                            <section>
-                                <!-- Tabs -->
-                                <ul class="nav star-list mb-3" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active ps-0" aria-current="page" data-bs-toggle="tab" data-bs-target="#star-1" type="button" role="tab" aria-controls="star-1-tab" aria-selected="true"><i class="fa-solid fa-1"></i> <i class="fa-solid fa-star"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-2" type="button" role="tab" aria-controls="star-2-tab" aria-selected="false"><i class="fa-solid fa-2"></i> <i class="fa-solid fa-star"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-3" type="button" role="tab" aria-controls="star-3-tab" aria-selected="false"><i class="fa-solid fa-3"></i> <i class="fa-solid fa-star"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-4" type="button" role="tab" aria-controls="star-4-tab" aria-selected="false"><i class="fa-solid fa-4"></i> <i class="fa-solid fa-star"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-5" type="button" role="tab" aria-controls="star-5-tab" aria-selected="false"><i class="fa-solid fa-5"></i> <i class="fa-solid fa-star"></i></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-6" type="button" role="tab" aria-controls="star-6-tab" aria-selected="false"><i class="fa-solid fa-6"></i> <i class="fa-solid fa-star"></i></a>
-                                    </li>
-                                    <li class="nav-item ms-auto">
-                                        <a class="nav-link pe-0" data-bs-toggle="tab" data-bs-target="#star-all" type="button" role="tab" aria-controls="star-all-tab" aria-selected="false"><i class="fa-solid" style="font-size: initial">Show All</i></a>
-                                    </li>
-                                </ul>
-
-                                <!-- Star text -->
-                                <div class="tab-content">
-                                    <span class="tab-pane fade show active" id="star-1" role="tabpanel">Star 1 effects</span>
-                                    <span class="tab-pane fade" id="star-2" role="tabpanel">Star 2 effects</span>
-                                    <span class="tab-pane fade" id="star-3" role="tabpanel">Star 3 effects</span>
-                                    <span class="tab-pane fade" id="star-4" role="tabpanel">Star 4 effects</span>
-                                    <span class="tab-pane fade" id="star-5" role="tabpanel">Star 5 effects</span>
-                                    <span class="tab-pane fade" id="star-6" role="tabpanel">Star 6 effects</span>
-
-                                    <div id="star-all" class="tab-pane fade">
-                                        <i class="fa-solid fa-1"></i> <i class="fa-solid fa-star"></i>
-                                        <span class="d-block mb-4" id="star-all-1">Star 1 effects</span>
-                                        <i class="fa-solid fa-2"></i> <i class="fa-solid fa-star"></i>
-                                        <span class="d-block mb-4" id="star-all-2">Star 2 effects</span>
-                                        <i class="fa-solid fa-3"></i> <i class="fa-solid fa-star"></i>
-                                        <span class="d-block mb-4" id="star-all-3">Star 3 effects</span>
-                                        <i class="fa-solid fa-4"></i> <i class="fa-solid fa-star"></i>
-                                        <span class="d-block mb-4" id="star-all-4">Star 4 effects</span>
-                                        <i class="fa-solid fa-5"></i> <i class="fa-solid fa-star"></i>
-                                        <span class="d-block mb-4" id="star-all-5">Star 5 effects</span>
-                                        <i class="fa-solid fa-6"></i> <i class="fa-solid fa-star"></i>
-                                        <span class="d-block" id="star-all-6">Star 6 effects</span>
-                                    </div>
-
-                                </div>
-                            </section>
-                            <hr>
-
-                            <!-- Breakthrough Mats -->
-                            <section>
-                                <h2 class="mb-4"><strong>Breakthrough Materials</strong></h2>
-                                <div id="breakthrough-mats" class="row m-0">
-                                    <div class="col mb-3 mb-lg-0">
-                                        <div class="item-wrapper-with-bg bg-rarity-2">
-                                            <img src="images/mat/electric1.png" width="64" height="64">
-                                        </div>
-                                        <div class="mx-2">
-                                            <i class="fa-solid fa-right-long d-block"></i>x4
-                                        </div>
-                                        <div class="item-wrapper-with-bg bg-rarity-3">
-                                            <img src="images/mat/electric2.png" width="64" height="64">
-                                        </div>
-                                        <div class="mx-2">
-                                            <i class="fa-solid fa-right-long d-block"></i>x5
-                                        </div>
-                                        <div class="item-wrapper-with-bg bg-rarity-4">
-                                            <img src="images/mat/electric3.png" width="64" height="64">
-                                        </div>
-                                    </div>
-                                    <div class="col mb-3 mb-lg-0">
-                                        <div class="item-wrapper-with-bg bg-rarity-3">
-                                            <img src="images/mat/red1.png" width="64" height="64">
-                                        </div>
-                                        <div class="mx-2">
-                                            <i class="fa-solid fa-right-long d-block"></i>x4
-                                        </div>
-                                        <div class="item-wrapper-with-bg bg-rarity-4">
-                                            <img src="images/mat/red2.png" width="64" height="64">
-                                        </div>
-                                        <div class="mx-2">
-                                            <i class="fa-solid fa-right-long d-block"></i>x5
-                                        </div>
-                                        <div class="item-wrapper-with-bg bg-rarity-5">
-                                            <img src="images/mat/red3.png" width="64" height="64">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="item-wrapper-with-bg bg-rarity-4">
-                                            <img src="images/mat/black1.png" width="64" height="64">
-                                        </div>
-                                        <div class="mx-2">
-                                            <i class="fa-solid fa-right-long d-block"></i>x4
-                                        </div>
-                                        <div class="item-wrapper-with-bg bg-rarity-5">
-                                            <img src="images/mat/black2.png" width="64" height="64">
-                                        </div>
-                                        <div class="mx-2">
-                                            <i class="fa-solid fa-right-long d-block"></i>x5
-                                        </div>
-                                        <div class="item-wrapper-with-bg bg-rarity-5">
-                                            <img src="images/mat/black3.png" width="64" height="64">
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <hr>
-
-                            <!-- Recommended chips -->
-                            <section>
-                                <h2><strong>Recommended Matrices for <em id="recommended-chips-for-wep"></em></strong></h2>
-                                <div id="recommended-chips-wrapper" class="row justify-content-center my-4">
-                                    <div class="chip-recommended col-2">
-                                        <img class="chip-img" src="images/chip/samir.png">
-                                        <div class="badge">x2</div>
-                                    </div>
-                                    <div class="chip-recommended col-2">
-                                        <img class="chip-img" src="images/chip/samir.png">
-                                        <div class="badge">x2</div>
-                                    </div>
-                                    <div class="chip-recommended col-2">
-                                        <img class="chip-img" src="images/chip/samir.png">
-                                        <div class="badge">x2</div>
-                                    </div>
-                                    <div class="chip-recommended col-2">
-                                        <img class="chip-img" src="images/chip/samir.png">
-                                        <div class="badge">x2</div>
-                                    </div>
-                                    <div class="chip-recommended col-2">
-                                        <img class="chip-img" src="images/chip/samir.png">
-                                        <div class="badge">x3</div>
-                                    </div>
-                                    <div class="chip-recommended col-2">
-                                        <img class="chip-img" src="images/chip/samir.png">
-                                        <div class="badge">x4</div>
-                                    </div>
-                                </div>
-                                <div class="submitted-by d-none">Submitted by Pyrosu#6969</div>
-                            </section>
-                        </article> <!-- end weapon info -->
-
-                        <!-- Combat -->
-                        <article class="px-md-5">
-                            <h1 class="modal-section-header" id="header-combat">Combat</h1>
-                            <!-- Tabs -->
-                            <ul class="nav star-list mb-3" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link ps-0" aria-current="page" data-bs-toggle="tab" data-bs-target="#combat-normal" type="button" role="tab" aria-controls="combat-normal-tab" aria-selected="true"><i class="fa">Normal</i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-dodge" type="button" role="tab" aria-controls="combat-dodge-tab" aria-selected="false"><i class="fa">Dodge</i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-skill" type="button" role="tab" aria-controls="combat-skill-tab" aria-selected="false"><i class="fa">Skill</i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#combat-discharge" type="button" role="tab" aria-controls="combat-discharge-tab" aria-selected="false"><i class="fa">Discharge</i></a>
-                                </li>
-                            </ul>
-                            <!-- Combat Text -->
-                            <div id="combat-text" class="tab-content">
-                                <ul id="combat-normal" class="tab-pane fade" role="tabpanel">Normal</ul>
-                                <ul id="combat-dodge" class="tab-pane fade" role="tabpanel">Dodge</ul>
-                                <ul id="combat-skill" class="tab-pane fade" role="tabpanel">Skill</ul>
-                                <ul id="combat-discharge" class="tab-pane fade show active" role="tabpanel">Discharge</ul>
-                            </div>
-                            <div class="submitted-by">Data reflects unleveled weapons. CN data unavailable.</div>
-                        </article>
-
-                        <!-- Affinity -->
-                        <article class="affinity-wrapper px-md-5">
-                            <h1 class="modal-section-header" id="header-affinity">Affinity</h1>
-                            <table>
-                                <tr>
-                                    <td style="transform: scale(0.8);"><img src="images/affinity/Checkpoint_1200.png" alt="1200 Affinity Bonus"></td>
-                                    <td class="p-4">
-                                        <h3><strong>Unlock Simulacra Passive</strong></h3>
-                                        <span id="affinity-1200">Affinity 1200 effect here</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="transform: scale(0.8)"><img src="images/affinity/Checkpoint_4000.png" alt="4000 Affinity Bonus"></td>
-                                    <td class="p-4">
-                                        <h3><strong>Simulacra Passive Upgrade</strong></h3>
-                                        <span id="affinity-4000">Affinity 4000 effect here</span>
-                                    </td>
-                                </tr>
-                            </table>
-                            <hr>
-                            <section>
-                                <div class="row">
-                                    <div class="col col-sm-3 p-0">
-                                        <h2 class="mb-4" style="width: fit-content; display: inline-block;"><strong>Preferred Gifts</strong></h2>
-                                    </div>
-                                    <div id="gift-category-wrapper" class="col-12 col-sm p-0 text-center text-sm-end mb-3">
-                                        <span class="gift-category">rare items</span>
-                                        <span class="gift-category">rare items</span>
-                                        <span class="gift-category">rare items</span>
-                                    </div>
-                                </div>
-                                <div id="gifts-wrapper" class="text-center text-md-start"></div>
-                                <span id="gift-vera-disclaimer" class="submitted-by">Characters with the Vera tag will only receive full affinity from Vera gifts.</span>
-                            </section>
-                        </article>
-
-                    </div> <!-- Modal body end -->
+            <div class="nav-body">
+                <div class="nav-contents">
+                    <a class="navbar-brand" href="index">
+                        <img class="mb-3" src="images/avatar/tata.png"><br>
+                        Tower of Fantasy Index
+                    </a>
+                    <hr class="my-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item active">
+                            <a class="nav-link"><i class="fa-solid fa-user"></i> Simulacra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matrices"><i class="fa-solid fa-sd-card"></i> Matrices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relics"><i class="fa-solid fa-screwdriver-wrench"></i> Relics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="food"><i class="fa-solid fa-carrot"></i> Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mounts"><i class="fa-solid fa-motorcycle"></i> Mounts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guides"><i class="fa-solid fa-book"></i> Guides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-globe"></i> Interactive Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="damagecalculator"><i class="fa-solid fa-calculator"></i> Damage Calculator&nbsp;&nbsp;</a>
+                        </li>
+                    </ul>
+                    <hr class="my-3">
+                    <ul class="nav nav-socials flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://discord.gg/qhDevpbJ4N"><i class="fa-brands fa-discord"></i> Discord</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.reddit.com/r/TowerofFantasy/"><i class="fa-brands fa-reddit-alien align-middle" style="font-size: 25px; margin-top: -8px"></i> Reddit</a>
+                        </li>
+                    </ul>
+                    <span class="nav-footer">&copy; Copyright 2022 Tower of <br>Fantasy Index. All rights reserved.</span>
                 </div>
             </div>
+        </nav>
+
+        <div class="left-gutter"></div>
+
+        <!-- Background image -->
+        <img id="page-bg-img" class="bg-img" src="images/art/fuwasaki.png">
+
+        <div class="middle">
+            <main>
+                <!-- Mimics List -->
+                <menu id="modal-menu">
+                    <div style="padding-bottom: var(--spacing)">
+                        <h1 class="page-header">Simulacra</h1>
+                        <p class="page-info">Simulacra (AKA Mimics) are the player's representation of the characters found in Tower of Fantasy.<br>They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.</p>
+                    </div>
+
+                    <div class="tier tier-s modal-menu-category">SSR Simulacra</div>
+                    <ul class="p-0 text-center mt-3">
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-fuwasaki">
+                            <img src="images/avatar/fuwasaki.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <span class="tag tag-new">New</span>
+                            <h3>Saki Fuwa</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-ruby">
+                            <img src="images/avatar/ruby.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <h3>Ruby</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-frigg">
+                            <img src="images/avatar/frigg.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <h3>Frigg</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-nemesis">
+                            <img src="images/avatar/nemesis.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <h3>Nemesis</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-marc">
+                            <img src="images/avatar/marc.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <h3>Marc</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-baiyuekui">
+                            <img src="images/avatar/baiyuekui.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <h3>Baiyuekui</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-cobalt">
+                            <img src="images/avatar/cobalt.png">
+                            <abbr title="China Exclusive" class="cn-flag">CN</abbr>
+                            <h3>Cobalt-B</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-claudia">
+                            <img src="images/avatar/claudia.png">
+                            <h3>Claudia</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-coco">
+                            <img src="images/avatar/coco.png">
+                            <h3>Coco Ritter</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-huma">
+                            <img src="images/avatar/huma.png">
+                            <h3>Huma</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-karasuma">
+                            <img src="images/avatar/karasuma.png">
+                            <h3>Crow</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-king">
+                            <img src="images/avatar/king.png">
+                            <h3>KING</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-meryl">
+                            <img src="images/avatar/meryl.png">
+                            <h3>Meryl</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-samir">
+                            <img src="images/avatar/samir.png">
+                            <h3>Samir</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-shiro">
+                            <img src="images/avatar/shiro.png">
+                            <h3>Shiro</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-hane">
+                            <img src="images/avatar/hane.png">
+                            <h3>Tsubasa</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-zero">
+                            <img src="images/avatar/zero.png">
+                            <h3>Zero</h3>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                    </ul>
+                    <div class="tier tier-a modal-menu-category">SR Simulacra</div>
+                    <ul class="p-0 text-center mb-0 mt-3">
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-peppa">
+                            <img src="images/avatar/peppa.png">
+                            <h3>Pepper</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-hilda">
+                            <img src="images/avatar/hilda.png">
+                            <h3>Hilda</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-xi">
+                            <img src="images/avatar/xi.png">
+                            <h3>Ene</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-bailing">
+                            <img src="images/avatar/bailing.png">
+                            <h3>Bai Ling</h3>
+                        </li>
+                        <li class="modal-menu-item mimic-button p-2 p-xl-3" data-toggle="cool-modal" id="btn-manaka">
+                            <img src="images/avatar/manaka.png">
+                            <h3>Echo</h3>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                        <li class="mimic-button p-2 p-xl-3 align-top py-0 invisible">
+                            <div style="width: 88px"></div>
+                        </li>
+                    </ul>
+                </menu>
+
+                <!-- Modal -->
+                <img id="modal-bg-img" class="bg-img" src="images/art/meryl.png" style="opacity: 0;">
+                <div class="cool-modal fade position-absolute" id="modal-content" tabindex="-1" aria-labelledby="modal-contentLabel" aria-hidden="true" aria-live="assertive">
+                    <div class="modal-dialog mx-auto">
+                        <div class="modal-content">
+                            <div class="modal-header ps-5">
+                                <div class="px-md-5">
+                                    <div id="tier" class="tier tier-s d-inline-block me-3" style="width: 50px; padding: 0 3px;">SSR</div>
+                                    <span id="item-name" class="me-3 fw-bold">Name</span>
+                                    <nav class="d-inline-block">
+                                        <a class="btn btn-lg btn-minimal" href="#header-weapon">Weapon</a>
+                                        <a class="btn btn-lg btn-minimal" href="#header-combat">Combat</a>
+                                        <a class="btn btn-lg btn-minimal" href="#header-affinity">Affinity</a>
+                                    </nav>
+                                    <button id="popover-mimic" tabindex="0" class="btn btn-lg btn-minimal" data-bs-toggle="popover" data-bs-placement="bottom">Character Info</button>
+                                </div>
+                                <button type="button" class="btn-close btn-close-white mb-auto" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-5">
+
+                                <!-- Weapon Info -->
+                                <article class="px-md-5 weapon-info-wrapper">
+                                    <h1 class="modal-section-header" id="header-weapon">Weapon</h1>
+                                    <!-- Overview -->
+                                    <div class="row">
+                                        <div class="wep-basic-info col-lg-6 d-flex py-4">
+                                            <img id="wep-img" class="align-self-center" width="128" height="128" src="images/wep/samir.png">
+                                            <div class="ms-4 align-self-center">
+                                                <h1 id="wep-name">Weapon Name</h1>
+                                                <img id="wep-type-img" src="images/reso_damage.png" data-bs-toggle="tooltip" title="Resonance" width="34" height="31">
+                                                <img id="wep-element-img" src="images/ele_electric.png" data-bs-toggle="tooltip" title="Element" width="34" height="31"><br>
+                                                <div id="shield-break-tier" class="tier my-2">S</div>
+                                                <h3 class="m-0 d-inline-block align-middle">Shatter: <span id="shield-break">11.11</span></h3><br>
+                                                <div id="energy-charge-tier" class="tier">SS</div>
+                                                <h3 class="m-0 d-inline-block align-middle">Charge: <span id="energy-charge">11.11</span></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col py-4">
+                                            <h2 id="wep-effect-name" class="fw-bold">Elemental Effect</h2>
+                                            <p id="wep-effect">Weapon effect goes here</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <!-- Exclusive weapon effects -->
+                                    <div id="exclusive-effect-wrapper">
+                                        <section>
+                                            <h2><strong>Bonus Effect</strong></h2>
+                                            <p id="exclusive-effect">Exclusive effect goes here</p>
+                                        </section>
+                                        <hr>
+                                    </div>
+
+                                    <!-- Awakening effects -->
+                                    <section>
+                                        <!-- Tabs -->
+                                        <ul class="nav star-list mb-3" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active ps-0" aria-current="page" data-bs-toggle="tab" data-bs-target="#star-1" type="button" role="tab" aria-controls="star-1-tab" aria-selected="true"><i class="fa-solid fa-1"></i> <i class="fa-solid fa-star"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-2" type="button" role="tab" aria-controls="star-2-tab" aria-selected="false"><i class="fa-solid fa-2"></i> <i class="fa-solid fa-star"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-3" type="button" role="tab" aria-controls="star-3-tab" aria-selected="false"><i class="fa-solid fa-3"></i> <i class="fa-solid fa-star"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-4" type="button" role="tab" aria-controls="star-4-tab" aria-selected="false"><i class="fa-solid fa-4"></i> <i class="fa-solid fa-star"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-5" type="button" role="tab" aria-controls="star-5-tab" aria-selected="false"><i class="fa-solid fa-5"></i> <i class="fa-solid fa-star"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#star-6" type="button" role="tab" aria-controls="star-6-tab" aria-selected="false"><i class="fa-solid fa-6"></i> <i class="fa-solid fa-star"></i></a>
+                                            </li>
+                                            <li class="nav-item ms-auto">
+                                                <a class="nav-link pe-0" data-bs-toggle="tab" data-bs-target="#star-all" type="button" role="tab" aria-controls="star-all-tab" aria-selected="false"><i class="fa-solid" style="font-size: initial">Show All</i></a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Star text -->
+                                        <div class="tab-content">
+                                            <span class="tab-pane fade show active" id="star-1" role="tabpanel">Star 1 effects</span>
+                                            <span class="tab-pane fade" id="star-2" role="tabpanel">Star 2 effects</span>
+                                            <span class="tab-pane fade" id="star-3" role="tabpanel">Star 3 effects</span>
+                                            <span class="tab-pane fade" id="star-4" role="tabpanel">Star 4 effects</span>
+                                            <span class="tab-pane fade" id="star-5" role="tabpanel">Star 5 effects</span>
+                                            <span class="tab-pane fade" id="star-6" role="tabpanel">Star 6 effects</span>
+
+                                            <div id="star-all" class="tab-pane fade">
+                                                <i class="fa-solid fa-1"></i> <i class="fa-solid fa-star"></i>
+                                                <span class="d-block mb-4" id="star-all-1">Star 1 effects</span>
+                                                <i class="fa-solid fa-2"></i> <i class="fa-solid fa-star"></i>
+                                                <span class="d-block mb-4" id="star-all-2">Star 2 effects</span>
+                                                <i class="fa-solid fa-3"></i> <i class="fa-solid fa-star"></i>
+                                                <span class="d-block mb-4" id="star-all-3">Star 3 effects</span>
+                                                <i class="fa-solid fa-4"></i> <i class="fa-solid fa-star"></i>
+                                                <span class="d-block mb-4" id="star-all-4">Star 4 effects</span>
+                                                <i class="fa-solid fa-5"></i> <i class="fa-solid fa-star"></i>
+                                                <span class="d-block mb-4" id="star-all-5">Star 5 effects</span>
+                                                <i class="fa-solid fa-6"></i> <i class="fa-solid fa-star"></i>
+                                                <span class="d-block" id="star-all-6">Star 6 effects</span>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                    <hr>
+
+                                    <!-- Breakthrough Mats -->
+                                    <section>
+                                        <h2 class="mb-4"><strong>Breakthrough Materials</strong></h2>
+                                        <div id="breakthrough-mats" class="row m-0">
+                                            <div class="col mb-3 mb-lg-0">
+                                                <div class="item-wrapper-with-bg bg-rarity-2">
+                                                    <img src="images/mat/electric1.png" width="64" height="64">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <i class="fa-solid fa-right-long d-block"></i>x4
+                                                </div>
+                                                <div class="item-wrapper-with-bg bg-rarity-3">
+                                                    <img src="images/mat/electric2.png" width="64" height="64">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <i class="fa-solid fa-right-long d-block"></i>x5
+                                                </div>
+                                                <div class="item-wrapper-with-bg bg-rarity-4">
+                                                    <img src="images/mat/electric3.png" width="64" height="64">
+                                                </div>
+                                            </div>
+                                            <div class="col mb-3 mb-lg-0">
+                                                <div class="item-wrapper-with-bg bg-rarity-3">
+                                                    <img src="images/mat/red1.png" width="64" height="64">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <i class="fa-solid fa-right-long d-block"></i>x4
+                                                </div>
+                                                <div class="item-wrapper-with-bg bg-rarity-4">
+                                                    <img src="images/mat/red2.png" width="64" height="64">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <i class="fa-solid fa-right-long d-block"></i>x5
+                                                </div>
+                                                <div class="item-wrapper-with-bg bg-rarity-5">
+                                                    <img src="images/mat/red3.png" width="64" height="64">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="item-wrapper-with-bg bg-rarity-4">
+                                                    <img src="images/mat/black1.png" width="64" height="64">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <i class="fa-solid fa-right-long d-block"></i>x4
+                                                </div>
+                                                <div class="item-wrapper-with-bg bg-rarity-5">
+                                                    <img src="images/mat/black2.png" width="64" height="64">
+                                                </div>
+                                                <div class="mx-2">
+                                                    <i class="fa-solid fa-right-long d-block"></i>x5
+                                                </div>
+                                                <div class="item-wrapper-with-bg bg-rarity-5">
+                                                    <img src="images/mat/black3.png" width="64" height="64">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <hr>
+
+                                    <!-- Recommended chips -->
+                                    <section>
+                                        <h2><strong>Recommended Matrices for <em id="recommended-chips-for-wep"></em></strong></h2>
+                                        <div id="recommended-chips-wrapper" class="row justify-content-center my-4">
+                                            <div class="chip-recommended col-2">
+                                                <img class="chip-img" src="images/chip/samir.png">
+                                                <div class="badge">x2</div>
+                                            </div>
+                                            <div class="chip-recommended col-2">
+                                                <img class="chip-img" src="images/chip/samir.png">
+                                                <div class="badge">x2</div>
+                                            </div>
+                                            <div class="chip-recommended col-2">
+                                                <img class="chip-img" src="images/chip/samir.png">
+                                                <div class="badge">x2</div>
+                                            </div>
+                                            <div class="chip-recommended col-2">
+                                                <img class="chip-img" src="images/chip/samir.png">
+                                                <div class="badge">x2</div>
+                                            </div>
+                                            <div class="chip-recommended col-2">
+                                                <img class="chip-img" src="images/chip/samir.png">
+                                                <div class="badge">x3</div>
+                                            </div>
+                                            <div class="chip-recommended col-2">
+                                                <img class="chip-img" src="images/chip/samir.png">
+                                                <div class="badge">x4</div>
+                                            </div>
+                                        </div>
+                                        <div class="submitted-by d-none">Submitted by Pyrosu#6969</div>
+                                    </section>
+                                </article> <!-- end weapon info -->
+
+                                <!-- Combat -->
+                                <article class="px-md-5">
+                                    <h1 class="modal-section-header" id="header-combat">Combat</h1>
+                                    <!-- Tabs -->
+                                    <ul class="nav star-list mb-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link ps-0" aria-current="page" data-bs-toggle="tab" data-bs-target="#combat-normal" type="button" role="tab" aria-controls="combat-normal-tab" aria-selected="true"><i class="fa">Normal</i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-dodge" type="button" role="tab" aria-controls="combat-dodge-tab" aria-selected="false"><i class="fa">Dodge</i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#combat-skill" type="button" role="tab" aria-controls="combat-skill-tab" aria-selected="false"><i class="fa">Skill</i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#combat-discharge" type="button" role="tab" aria-controls="combat-discharge-tab" aria-selected="false"><i class="fa">Discharge</i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- Combat Text -->
+                                    <div id="combat-text" class="tab-content">
+                                        <ul id="combat-normal" class="tab-pane fade" role="tabpanel">Normal</ul>
+                                        <ul id="combat-dodge" class="tab-pane fade" role="tabpanel">Dodge</ul>
+                                        <ul id="combat-skill" class="tab-pane fade" role="tabpanel">Skill</ul>
+                                        <ul id="combat-discharge" class="tab-pane fade show active" role="tabpanel">Discharge</ul>
+                                    </div>
+                                    <div class="submitted-by">Data reflects unleveled weapons. CN data unavailable.</div>
+                                </article>
+
+                                <!-- Affinity -->
+                                <article class="affinity-wrapper px-md-5">
+                                    <h1 class="modal-section-header" id="header-affinity">Affinity</h1>
+                                    <table>
+                                        <tr>
+                                            <td style="transform: scale(0.8);"><img src="images/affinity/Checkpoint_1200.png" alt="1200 Affinity Bonus"></td>
+                                            <td class="p-4">
+                                                <h3><strong>Unlock Simulacra Passive</strong></h3>
+                                                <span id="affinity-1200">Affinity 1200 effect here</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="transform: scale(0.8)"><img src="images/affinity/Checkpoint_4000.png" alt="4000 Affinity Bonus"></td>
+                                            <td class="p-4">
+                                                <h3><strong>Simulacra Passive Upgrade</strong></h3>
+                                                <span id="affinity-4000">Affinity 4000 effect here</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col col-sm-3 p-0">
+                                                <h2 class="mb-4" style="width: fit-content; display: inline-block;"><strong>Preferred Gifts</strong></h2>
+                                            </div>
+                                            <div id="gift-category-wrapper" class="col-12 col-sm p-0 text-center text-sm-end mb-3">
+                                                <span class="gift-category">rare items</span>
+                                                <span class="gift-category">rare items</span>
+                                                <span class="gift-category">rare items</span>
+                                            </div>
+                                        </div>
+                                        <div id="gifts-wrapper" class="text-center text-md-start"></div>
+                                        <span id="gift-vera-disclaimer" class="submitted-by">Characters with the Vera tag will only receive full affinity from Vera gifts.</span>
+                                    </section>
+                                </article>
+
+                            </div> <!-- Modal body end -->
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-    </main>
+
+        <div class="right-gutter"></div>
+
+    </div>
+
+
+
+
 
     <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
