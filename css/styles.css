@@ -152,6 +152,7 @@ main {
     margin: 0 auto;
     padding: 6rem var(--spacing);
     height: 100%;
+    
 }
 
 .left-gutter {
@@ -161,6 +162,7 @@ main {
 .sidenav {
     position: absolute;
     z-index: 90000;
+    width: 0;
     padding: 0;
     align-content: space-between;
 }
@@ -607,6 +609,16 @@ body,
 
 #modal-menu {
     transition: opacity 0.5s ease;
+}
+
+#modal-menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    row-gap: 1rem;
+}
+
+.modal-menu-item h3 {
+    font-size: 1.7rem;
 }
 
 .modal-menu-item:hover {
