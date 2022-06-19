@@ -404,19 +404,53 @@ body,
 }
 
 .sidenav .nav-item {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     border-radius: 0.75rem;
     padding: 0 0 0 0;
     transition: background 125ms ease, padding 125ms ease, color 125ms ease;
 }
 
-.sidenav .nav-item:hover {
+.sidenav .nav-item:focus-within {
     background-color: #282633 !important;
     padding: 0 0 0 5px;
 }
 
+.sidenav .nav-item:hover {
+    padding: 0 0 0 5px;
+}
+
+.sidenav .nav-item:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background-color: #282633 !important;
+}
+
 .sidenav .nav-item:hover a {
     color: var(--color-text) !important;
+}
+
+.sidenav .nav-item::before {
+    background-color: rgba(255, 255, 255, 0.02);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+}
+
+.sidenav .nav-item:active::before {
+    transform: translateX(0);
+    transition: transform 0.75s ease-in-out;
 }
 
 .sidenav .active a,
