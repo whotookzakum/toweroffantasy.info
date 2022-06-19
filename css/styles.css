@@ -149,7 +149,7 @@ main {
     box-shadow: var(--shadow-0-0-4);
     max-width: clamp(var(--container-width), 100%, var(--container-width));
     margin: 0 auto;
-    padding: var(--spacing);
+    padding: 6rem var(--spacing);
     height: 100%;
 }
 
@@ -157,7 +157,6 @@ main {
     min-width: var(--sidebar-width);
     box-shadow: var(--shadow-0-0-4);
     padding: 0;
-    height: 100%;
     align-content: space-between;
 }
 
@@ -1048,13 +1047,16 @@ body,
     display: none;
 }
 
-.cl span,
-.banners code {
+.cl span {
     background: #222222;
 }
 
 .cl {
     color: gray;
+}
+
+.cl li {
+    margin-bottom: 0.75rem;
 }
 
 .banners {
@@ -1081,6 +1083,24 @@ body,
 
 .banners-expanded {
     height: fit-content;
+}
+
+.banners th i {
+    font-weight: normal;
+    color: gray;
+}
+
+.banners table tr {
+    background-color: var(--color-container-accent-light);
+}
+
+.banners table tr:nth-child(even) {
+    background-color: var(--color-container-accent-dark);
+}
+
+.banners thead  tr{
+    color: var(--color-text);
+    background-color: var(--color-container-accent-dark);
 }
 
 /* FOOD RELATED
@@ -1668,4 +1688,44 @@ select {
 
 .widget-discord * {
     display: none;
+}
+
+.discord-banner {
+    position: relative;
+}
+
+.discord-banner h4 {
+    position: absolute;
+    bottom: 30%;
+    left: 23.8%;
+    margin: 0;
+}
+@media (max-width: 700px) {
+    .discord-banner h4 {
+        font-size: clamp(1.2rem, 1vw, 1.4rem);
+        left: 20%;
+        bottom: 20%;
+    }
+}
+
+.credits {
+    margin: 1.5rem 0;
+    color: darkgray;
+    font-size: 1.4rem;
+}
+.credits h4 {
+    text-transform: uppercase;
+    color: dimgray;
+}
+
+.credits p {
+    margin-bottom: 1rem;
+}
+
+.special-thanks ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 21ch);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }

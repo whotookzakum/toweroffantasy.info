@@ -1,38 +1,49 @@
+fetch('https://discord.com/api/guilds/670617630717116426/widget.json')
+    .then(response => {
+        return response.json();
+    })
+    .then(jsondata => setOnlineCount(jsondata.presence_count));
+
+function setOnlineCount(count) {
+    $("#discordOnlineCount").html(count);
+}
+
 // Markdown Parser
-var md = window.markdownit();
+//var md = window.markdownit();
 
 // Popper Tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll("[data-bs-toggle=\"tooltip\"]"));
-var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
 // Navigation
-$("#nav-toggler").click(function() {
+$("#nav-toggler").click(function () {
     $(".sidenav .nav-body").addClass("nav-open");
 });
 
-$("#sidenav-btn-close").click(function() {
+$("#sidenav-btn-close").click(function () {
     $(".sidenav .nav-body").removeClass("nav-open");
 });
 
-$(".nav-backdrop").click(function() {
+$(".nav-backdrop").click(function () {
     $(".sidenav .nav-body").removeClass("nav-open");
 });
 
-$(window).resize(function() {
+$(window).resize(function () {
     if (window.innerWidth > 1440) {
         $(".sidenav .nav-body").removeClass("nav-open");
     }
 });
 
 // Home page Banners Schedule expand view
-$("#banners-expand").click(function() {
+$("#banners-expand").click(function () {
     $(".banners").toggleClass("banners-expanded");
 });
 
+
 // Gets the clicked #btn-... to pass into setModalData()
-$(".modal-menu-item").click(function() {
+$(".modal-menu-item").click(function () {
 
     let selectedItem = $(this).attr("id").replace("btn-", "");
 
@@ -45,7 +56,7 @@ $(".modal-menu-item").click(function() {
     if (document.URL.includes("relics")) {
 
         // Get the index of the gadget inside gadgets[]
-        let gadgetIndex = gadgets.findIndex(function(gadget) {
+        let gadgetIndex = gadgets.findIndex(function (gadget) {
             // Check if clicked #btn-"..." matches gadgets[index].name without spaces
             let gadgetName = gadget.name.replaceAll(" ", "").toUpperCase();
             if (selectedItem.toUpperCase() === gadgetName) {
@@ -235,7 +246,7 @@ function setModalData(i) {
         let thisMat = 0;
         let imgNum = 1;
         // For each index (0-2), load images 1-3.png
-        $("#breakthrough-mats .item-wrapper-with-bg").each(function() {
+        $("#breakthrough-mats .item-wrapper-with-bg").each(function () {
             // Each iteration increase the image number
             // If all 3 images loaded, increase index to switch to next material
             if (imgNum >= 4) {
@@ -418,10 +429,10 @@ for (let i = 0; i < food.length; i++) {
 		<div class="row food-group">
 
 				<div class="col col-lg-2 text-center">
-						<div class="item-wrapper-with-bg bg-rarity-${food[i].rarity}">
-								<img class="item-img" src="images/food/${food[i].imgSrc}">
-						</div>
-						<strong class="font-chakra" style="color: var(--color-rarity-${food[i].rarity}-text)">${food[i].name}</strong>
+                    <div class="item-wrapper-with-bg bg-rarity-${food[i].rarity}">
+                            <img class="item-img" src="images/food/${food[i].imgSrc}">
+                    </div>
+                    <strong class="font-chakra" style="color: var(--color-rarity-${food[i].rarity}-text)">${food[i].name}</strong>
 				</div>
 
 				<div class="col p-0 align-self-center text-center">${starCount}</div>
@@ -439,7 +450,7 @@ for (let i = 0; i < food.length; i++) {
 		`);
 }
 
-$(".modal-header a").each(function() {
+$(".modal-header a").each(function () {
     $(this).on("click", (event) => {
         event.preventDefault();
         $(event.target.getAttribute("href"))[0].scrollIntoView({
