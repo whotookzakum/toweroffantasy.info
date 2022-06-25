@@ -1,0 +1,126 @@
+@use "../abstracts" as *;
+
+
+#banners {
+    height: 325px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 50%;
+
+    table {
+        --color-volt: #{$color-volt};
+        --color-ice: #{$color-ice};
+        --color-phys: #{$color-phys};
+        --color-flame: #{$color-flame};
+        background: clr(container, dark);
+        text-align: left;
+
+        thead {
+            position: sticky;
+            top: 0;
+            background: clr(container, dark);
+            backdrop-filter: blur(15px);
+        }
+
+        tbody tr:nth-child(odd) {
+            background: clr(container, light);
+        }
+
+        th,
+        td {
+            max-width: 150px;
+        }
+    }
+
+    i {
+        font-weight: normal;
+        text-transform: initial;
+        color: gray;
+    }
+
+    &.expanded {
+        height: auto;
+    }
+}
+
+
+.changelog {
+    color: rgb(128, 128, 128);
+
+    span {
+        background: #222;
+    }
+
+    li {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.btn-expand {
+    font-size: 1em;
+    font-weight: bold;
+    color: clr(text, blue);
+    background: none;
+    border: none;
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+
+    &:active {
+        filter: brightness(0.6);
+    }
+}
+
+
+
+.widget-discord {
+    position: absolute;
+}
+
+.widget-discord * {
+    display: none;
+}
+
+.discord-banner {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.discord-banner h4 {
+    position: absolute;
+    bottom: 30%;
+    left: 23.8%;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .discord-banner h4 {
+        font-size: clamp(1.2rem, 1vw, 1.4rem);
+        left: 20%;
+        bottom: 20%;
+    }
+}
+
+.credits {
+    margin: 1.5rem 0;
+    color: darkgray;
+    font-size: 0.9rem;
+
+    h4 {
+        text-transform: uppercase;
+        color: dimgray;
+        margin-bottom: 0;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 21ch);
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+    }
+}

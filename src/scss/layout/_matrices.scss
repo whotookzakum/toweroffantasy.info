@@ -1,0 +1,39 @@
+.chip-button {
+    display: inline-block;
+    transition: color 125ms ease-in-out;
+    text-align: center;
+    filter: drop-shadow(0 0 4px #111111);
+    vertical-align: top;
+}
+
+.chip-button-img {
+    margin-bottom: 5px;
+    width: 128px;
+    height: 128px;
+    object-fit: none;
+}
+
+.chip-button h3 {
+    max-width: 128px;
+}
+
+.chip-button .flag.badge {
+    top: 60%;
+    right: 5%;
+}
+
+.chip-button:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px var(--color-turquoise);
+    transform: scaleX(0);
+    transition: transform 125ms ease-in-out;
+}
+
+.chip-button:hover {
+    color: var(--color-turquoise);
+}
+
+.chip-button:hover:after {
+    transform: scaleX(1);
+}

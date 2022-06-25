@@ -1,0 +1,144 @@
+#dps-loadout-guide div {
+    display: inline-block;
+    margin: 5px;
+}
+
+.guide-con {
+    color: red;
+}
+
+.guide-pro {
+    color: green;
+}
+
+.guide-header {
+    font-size: 2rem;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: var(--color-shadows);
+    border-bottom: 0px solid #555555;
+}
+
+.guide-header:hover {
+    color: inherit;
+    background-color: #222222;
+}
+
+.guide-header:active {
+    background-color: #222222;
+}
+
+.guide-header code {
+    color: purple;
+    font-size: 1.5rem;
+}
+
+#guide-reisen-wep .card {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#guide-reisen-wep .card-text {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+#guide-stitch-wep blockquote {
+    display: flex;
+    padding: 1.5rem;
+    background-color: var(--color-container-accent-light);
+    margin: 0;
+}
+
+#guide-stitch-wep blockquote img {
+    object-fit: none;
+    margin-right: 1rem;
+}
+
+#guide-stitch-wep blockquote:nth-child(odd) {
+    background-color: var(--color-container-accent-dark);
+}
+
+#guide-stitch-wep blockquote:nth-child(odd) img {
+    object-fit: none;
+    margin-left: 1rem;
+    order: 2;
+}
+
+#guide-stitch-wep td {
+    color: lawngreen;
+    font-weight: bold;
+}
+
+#guide-zakum-currencies img {
+    width: 64px;
+}
+
+.guide-divider {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Chakra Petch";
+    border-bottom: 2px solid deepskyblue;
+}
+
+.table-blackcrystals td img {
+    width: 26px;
+}
+
+.table-blackcrystals td:nth-child(3) {
+    color: gray;
+}
+
+#guide-stitch-wep table {
+    text-align: center;
+}
+
+#guide-stitch-wep th {
+    text-align: left;
+}
+
+#guide-abyss-achievement h1:hover {
+    color: var(--color-tier-s);
+    cursor: pointer;
+}
+
+#guide-pyrosu-housing table img {
+    width: 64px;
+}
+
+#guide-pyrosu-housing table:first-of-type {
+    line-height: 64px;
+}
+
+.guide-game-version {
+    background-color: var(--color-container-accent-light);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.guide-game-version h2 {
+    margin: 0;
+    display: flex;
+}
+
+.guide-game-version h2 span {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.45rem;
+    margin-right: 1rem;
+    margin-left: auto;
+    font-size: 1.7rem;
+}
+
+.guide-game-version h2 i {
+    font-size: 1.7rem;
+}
+
+.guide-game-version hr {
+    margin: 0.5rem 0;
+}
+
+.guide-game-version h3 strong {
+    color: var(--color-clay) !important;
+}

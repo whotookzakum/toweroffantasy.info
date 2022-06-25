@@ -1,0 +1,55 @@
+.mount-mat-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+    /*margin: 1rem 0;*/
+    /*padding: 2rem;*/
+    /*
+    background-color: #282633;
+    box-shadow: var(--shadow-0-0-4);*/
+}
+
+.mount-wrapper {
+    padding: 2rem 6rem;
+}
+
+.mount-wrapper:nth-of-type(2n + 1) {
+    background: var(--color-container-accent-light);
+}
+
+.mount-wrapper:nth-of-type(2n) {
+    background: var(--color-container-accent-dark);
+}
+
+.mount-wrapper h1 {
+    color: var(--color-tier-a);
+    color: var(--color-tier-s);
+    color: gold;
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.mount-mat-img {
+    width: 64px;
+}
+
+.mount-img {
+    width: 220px;
+}
+
+.mount-name {
+    font: bold 3rem "Chakra Petch";
+}
+
+.mount-wrapper .nav {}
+
+.mount-wrapper .nav-link {
+    padding: 0;
+    margin: 0 0.5rem;
+    border-radius: 0.75em;
+}
+
+.mount-wrapper .nav-link.active {
+    background-color: var(--color-turquoise);
+    box-shadow: var(--shadow-0-0-4);
+}

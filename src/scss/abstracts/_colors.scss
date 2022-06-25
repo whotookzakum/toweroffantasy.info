@@ -1,0 +1,81 @@
+$color-volt: #b769be;
+$color-ice: #49a3d1;
+$color-phys: #d88c2a;
+$color-flame: #bb4033;
+
+$colors: (
+    bg: (
+        base: #15141a
+    ),
+    container: (
+        base: rgba(26, 25, 33, 0.9),
+        light: rgba(40, 38, 51, 0.9),
+        dark: rgba(30, 29, 38, 0.9)
+    ),
+    text: (
+        base: #dedede,
+        gray: #a9a9a9,
+        darkgray: #686868,
+        disabled: #6b737d,
+        dark: #39485f,
+        blue: #377dcb,
+        lightblue: #00d2ff,
+        turquoise: #439eac,
+        green: #35b400,
+        mediumgreen: #17a472,
+        teal: #2bbba8,
+        yellow: #ffcd48,
+        orange: #e07439,
+        darkteal: #065969,
+        clay: #ba4232,
+        red: #ff1b1b,
+        lightred: #f15151,
+        pink: #d63384,
+        /* Elemental colors */
+        volt: $color-volt,
+        ice: $color-ice,
+        phys: $color-phys,
+        flame: $color-flame
+    ),
+    gift: (
+        base: #fff,
+        collectibles: #8b8bc5,
+        everyday-items: #c08f8d,
+        figurines: #da849f,
+        games: #8faecb,
+        limited-time-items: #ddc392,
+        metalware: #b09cea,
+        decorations: #ababa5,
+        rare-items: #dd64a9,
+        toys: #dd9cea,
+        vera: #cba79a
+    ),
+    tier: (
+        base: #3b3e45,
+        c: #a2e4cb,
+        b: #b5dfff,
+        a: #e1beff,
+        s: #ffdb84,
+        ss: #fdebb7
+    ),
+    rarity: (
+        base: #fff,
+        1: #d5d5e0,
+        2: #58d058,
+        3: #00d2ff,
+        4: #f289ff,
+        5: gold
+    ),
+    shadow: (
+        base: #121212
+    )
+
+);
+
+
+
+
+@function clr($base, $shade: base) {
+    $color: map-get(map-get($colors, $base), $shade);
+    @return $color;
+  }

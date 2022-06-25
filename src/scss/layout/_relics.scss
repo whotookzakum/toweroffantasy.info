@@ -1,0 +1,41 @@
+.gadget-button {
+    display: inline-block;
+    transition: color 125ms ease-in-out;
+    text-align: center;
+    filter: drop-shadow(0 0 4px #111111);
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.gadget-img {
+    width: 128px;
+}
+
+.gadget-button .flag.badge {
+    top: 55%;
+    right: 5%;
+}
+
+.gadget-button h3 {
+    max-width: 128px;
+}
+
+.gadget-button:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px var(--color-turquoise);
+    transform: scaleX(0);
+    transition: transform 125ms ease-in-out;
+}
+
+.gadget-button:hover {
+    color: var(--color-turquoise);
+}
+
+.gadget-button:hover:after {
+    transform: scaleX(1);
+}
+
+.bg-img-gadget {
+    object-position: 160px;
+}
