@@ -6,8 +6,8 @@ const ruby = {
     reso: "damage",
     shieldBreak: ["11.50", "s"],
     energyCharge: ["8.00", "a"],
-    materials: [ruby.element, "green", "blue"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "green", "blue"] },
+    // wepBaseStats: [attack, health, crit],
     exclusiveEffect: `**Flame Resonance**: When equipped with **2** or more Flame weapons, increase Flame ATK by **20%** and Flame Resistance by **40%**, taking effect in the background.`,
     
     awakening: [
@@ -49,13 +49,13 @@ const ruby = {
         birthday: '15 July'
     },
     
-    gifts: [
-        [80, princeTataFigure],
-        [60, linyeFigure],
-        [40, bunnyDoll],
-        [30, strangeFragment],
-        [15, strangePlant]
-    ],
+    // gifts: [
+    //     [80, princeTataFigure],
+    //     [60, linyeFigure],
+    //     [40, bunnyDoll],
+    //     [30, strangeFragment],
+    //     [15, strangePlant]
+    // ],
     giftPrefs: ['games', 'toys', 'vera'],
     
     recChips: [

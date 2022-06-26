@@ -6,8 +6,8 @@ const samir = {
     reso: "damage",
     shieldBreak: ["6.00", "b"],
     energyCharge: ["10.70", "s"],
-    materials: [samir.element, "red", "black"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, health, crit],
 
     awakening: [
             // 1 star
@@ -50,11 +50,11 @@ const samir = {
         birthday: '20 May'
     },
 
-    gifts: [
-        [60, foxFigure, psp, present, ufo, pearl, princeTataFigure],
-        [30, tataPlush, chessSet, catPlush, diary, robotFigure, bunnyDoll],
-        [15, tradingCard, pinwheel]
-    ],
+    // gifts: [
+    //     [60, foxFigure, psp, present, ufo, pearl, princeTataFigure],
+    //     [30, tataPlush, chessSet, catPlush, diary, robotFigure, bunnyDoll],
+    //     [15, tradingCard, pinwheel]
+    // ],
     giftPrefs: ['games', 'toys'],
 
     recChips: [

@@ -6,8 +6,8 @@ var frigg = {
     reso: "damage",
     shieldBreak: ["8.00", "a"],
     energyCharge: ["8.00", "a"],
-    materials: [frigg.element, "red", "black"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, health, crit],
     exclusiveEffect: `After using the Weapon Skill **Fimbulwinter**, a large ice field will be placed at your position, lasting  **25** seconds. Inside the ice field, dodges will not be consumed while using Frigg's weapon, and gain the effect Frozen Domain I: when using Ice weapons, increase Ice ATK by **15%** and Shatter by **25%**.`,
     
     awakening: [
@@ -49,11 +49,11 @@ var frigg = {
         birthday: '1 Feb'
     },
     
-    gifts: [
-        [60, present, tataCards, pearl, peppaFigure, catFigure, kitchenware],
-        [30, juicePouch, suit, toolbox, perfume, strangeFragment],
-        [15, flowers, dumbbells, scarf]
-    ],
+    // gifts: [
+    //     [60, present, tataCards, pearl, peppaFigure, catFigure, kitchenware],
+    //     [30, juicePouch, suit, toolbox, perfume, strangeFragment],
+    //     [15, flowers, dumbbells, scarf]
+    // ],
     giftPrefs: ['metalware', 'everyday-items'],
     
     recChips: [

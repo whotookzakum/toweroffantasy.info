@@ -6,8 +6,8 @@ const zero = {
     reso: "support",
     shieldBreak: ["5.00", "b"],
     energyCharge: ["13.00", "s"],
-    materials: [zero.element, "green", "blue"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "green", "blue"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -52,12 +52,12 @@ const zero = {
         birthday: '6 Jun'
     },
 
-    gifts: [
-        [80, psp],
-        [60, goldCoin, tataCards, pearl, catFigure, ufo, tataFigure],
-        [30, chessSet, diary],
-        [15, tradingCard, snackBox]
-    ],
+    // gifts: [
+    //     [80, psp],
+    //     [60, goldCoin, tataCards, pearl, catFigure, ufo, tataFigure],
+    //     [30, chessSet, diary],
+    //     [15, tradingCard, snackBox]
+    // ],
     giftPrefs: ['limited-time-items', 'games'],
     
     recChips: [

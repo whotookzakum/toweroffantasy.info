@@ -6,8 +6,8 @@ const echo = {
     reso: "damage",
     shieldBreak: ["11.00", "s"],
     energyCharge: ["7.00", "b"],
-    materials: [echo.element, "red", "black"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -44,12 +44,12 @@ const echo = {
         birthday: '14 Aug'
     },
 
-    gifts: [
-        [80, psp, tataCards],
-        [60, goldCoin, ufo, peppaFigure, catFigure, pearl, tataFigure],
-        [30, chessSet, suit, juicePouch, diary, perfume],
-        [15, flowers, snackBox, tradingCard, harmonica, scarf]
-    ],
+    // gifts: [
+    //     [80, psp, tataCards],
+    //     [60, goldCoin, ufo, peppaFigure, catFigure, pearl, tataFigure],
+    //     [30, chessSet, suit, juicePouch, diary, perfume],
+    //     [15, flowers, snackBox, tradingCard, harmonica, scarf]
+    // ],
     giftPrefs: ['everyday-items', 'limited-time-items', 'games'],
 
     recChips: [

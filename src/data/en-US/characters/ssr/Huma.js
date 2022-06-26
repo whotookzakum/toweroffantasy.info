@@ -6,8 +6,8 @@ const huma = {
     reso: "tank",
     shieldBreak: ["10.00", "a"],
     energyCharge: ["10.00", "a"],
-    materials: [huma.element, "green", "blue"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "green", "blue"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -49,12 +49,12 @@ const huma = {
         birthday: '12 Jan'
     },
 
-    gifts: [
-        [80, peppaFigure],
-        [60, catFigure, tataCards, ufo, psp, pearl, snowglobe, princeTataFigure],
-        [30, chessSet, diary, juicePouch, suit, perfume, spiderFigure, elfFigure],
-        [15, flowers, photoAlbum, scarf, tradingCard, plant]
-    ],
+    // gifts: [
+    //     [80, peppaFigure],
+    //     [60, catFigure, tataCards, ufo, psp, pearl, snowglobe, princeTataFigure],
+    //     [30, chessSet, diary, juicePouch, suit, perfume, spiderFigure, elfFigure],
+    //     [15, flowers, photoAlbum, scarf, tradingCard, plant]
+    // ],
     giftPrefs: ['everyday-items', 'games', 'decorations'],
 
     recChips: [

@@ -7,8 +7,8 @@ const saki = {
     reso: "tank",
     shieldBreak: ["13.90", "s"],
     energyCharge: ["8.00", "a"],
-    materials: ["ice", "red", "black"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, defense, health],
     exclusiveEffect: `**Ice Resonance**: When equipped with **2** or more Ice weapons, increase Ice ATK by **20%** and Ice Resistance by **40%**, taking effect in the background.`,
     
     awakening: [
@@ -52,11 +52,11 @@ const saki = {
         birthday: '11 October'
     },
     
-    gifts: [
-        [60, princeTataFigure, linyeFigure],
-        [40, strangeFragment],
-        [15, strangePlant]
-    ],
+    // gifts: [
+    //     [60, princeTataFigure, linyeFigure],
+    //     [40, strangeFragment],
+    //     [15, strangePlant]
+    // ],
     giftPrefs: ['metalware', 'everyday-items', 'vera'],
     
     recChips: [

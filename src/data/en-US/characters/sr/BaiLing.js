@@ -6,8 +6,8 @@ const bailing = {
     reso: "damage",
     shieldBreak: ["6.00", "b"],
     energyCharge: ["10.00", "a"],
-    materials: [bailing.element, "green", "blue"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "green", "blue"] },
+    // wepBaseStats: [attack, health, crit],
 
     awakening: [
             // 1 star
@@ -42,12 +42,12 @@ const bailing = {
         birthday: '8 May'
     },
     
-    gifts: [
-        [80, snowglobe, seal],
-        [60, miaFigure, goldCoin, foxFigure, catFigure, ufo, peppaFigure, kitchenware, princeTataFigure, linyeFigure],
-        [30, necklace, vial, spiderFigure, elfFigure],
-        [15, photoAlbum, harmonica, photo, plant, strangePlant]
-    ],
+    // gifts: [
+    //     [80, snowglobe, seal],
+    //     [60, miaFigure, goldCoin, foxFigure, catFigure, ufo, peppaFigure, kitchenware, princeTataFigure, linyeFigure],
+    //     [30, necklace, vial, spiderFigure, elfFigure],
+    //     [15, photoAlbum, harmonica, photo, plant, strangePlant]
+    // ],
     giftPrefs: ['decorations', 'collectibles', 'rare-items'],
     
     recChips: [

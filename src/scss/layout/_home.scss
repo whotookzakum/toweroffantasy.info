@@ -9,10 +9,10 @@
     width: 50%;
 
     table {
-        --color-volt: #{$color-volt};
-        --color-ice: #{$color-ice};
-        --color-phys: #{$color-phys};
-        --color-flame: #{$color-flame};
+        --color-volt: #{clr(text, volt)};
+        --color-ice: #{clr(text, ice)};
+        --color-phys: #{clr(text, phys)};
+        --color-flame: #{clr(text, flame)};
         background: clr(container, dark);
         text-align: left;
 

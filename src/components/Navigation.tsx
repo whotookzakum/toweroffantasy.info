@@ -18,7 +18,7 @@ function Navigation() {
                 <hr />
                 <ul>
                     <li>
-                        <a className="active" href="simulacra">Simulacra</a>
+                        <a href="simulacra">Simulacra</a>
                     </li>
                     <li>
                         <a href="matrices">Matrices</a>

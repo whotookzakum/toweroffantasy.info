@@ -6,8 +6,8 @@ const hilda = {
     reso: "damage",
     shieldBreak: ["10.00", "a"],
     energyCharge: ["10.00", "a"],
-    materials: [hilda.element, "red", "blue"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "red", "blue"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -42,12 +42,12 @@ const hilda = {
         birthday: '11 Apr'
     },
     
-    gifts: [
-        [80, tataFigure],
-        [60, goldCoin, tataCards, foxFigure, catFigure, bearFigure, miaFigure, present, psp, princeTataFigure, linyeFigure],
-        [30, tataPlush, catPlush, robotFigure, pumpkinFigure, androidFigure, bunnyDoll],
-        [15, pinwheel, snackBox]
-    ],
+    // gifts: [
+    //     [80, tataFigure],
+    //     [60, goldCoin, tataCards, foxFigure, catFigure, bearFigure, miaFigure, present, psp, princeTataFigure, linyeFigure],
+    //     [30, tataPlush, catPlush, robotFigure, pumpkinFigure, androidFigure, bunnyDoll],
+    //     [15, pinwheel, snackBox]
+    // ],
     giftPrefs: ['toys', 'figurines', 'limited-time-items'],
     
     recChips: [

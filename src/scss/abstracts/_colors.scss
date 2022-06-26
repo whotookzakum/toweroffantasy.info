@@ -1,8 +1,3 @@
-$color-volt: #b769be;
-$color-ice: #49a3d1;
-$color-phys: #d88c2a;
-$color-flame: #bb4033;
-
 $colors: (
     bg: (
         base: #15141a
@@ -32,10 +27,10 @@ $colors: (
         lightred: #f15151,
         pink: #d63384,
         /* Elemental colors */
-        volt: $color-volt,
-        ice: $color-ice,
-        phys: $color-phys,
-        flame: $color-flame
+        volt: #b769be,
+        ice: #49a3d1,
+        phys: #d88c2a,
+        flame: #bb4033
     ),
     gift: (
         base: #fff,

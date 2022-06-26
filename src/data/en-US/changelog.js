@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "24 June 2022",
+        text: "Polished site layout"
+    },
+    {
         date: "18 June 2022",
         text: "Modal behavior fixed (can now click the image on right/scroll on right side properly); added discord online member count; improved home page layout"
     },

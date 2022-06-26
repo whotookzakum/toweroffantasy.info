@@ -6,8 +6,8 @@ const ene = {
     reso: "tank",
     shieldBreak: ["10.00", "a"],
     energyCharge: ["6.00", "b"],
-    materials: [ene.element, "green", "black"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "green", "black"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -42,12 +42,12 @@ const ene = {
         birthday: '17 Aug'
     },
     
-    gifts: [
-            [80, princeTataFigure],
-            [60, peppaFigure, ufo, foxFigure, catFigure, present, psp, pearl, snowglobe],
-            [30, chessSet, diary, catPlush, tataPlush, spiderFigure, elfFigure, robotFigure, bunnyDoll]
-            [15, photoAlbum, tradingCard, pinwheel, plant]
-        ],
+    // gifts: [
+    //         [80, princeTataFigure],
+    //         [60, peppaFigure, ufo, foxFigure, catFigure, present, psp, pearl, snowglobe],
+    //         [30, chessSet, diary, catPlush, tataPlush, spiderFigure, elfFigure, robotFigure, bunnyDoll]
+    //         [15, photoAlbum, tradingCard, pinwheel, plant]
+    //     ],
     giftPrefs: ['games', 'decorations', 'toys'],
     
     recChips: [

@@ -6,8 +6,8 @@ const pepper = {
     reso: "support",
     shieldBreak: ["4.00", "b"],
     energyCharge: ["10.00", "a"],
-    materials: [pepper.element, "red", "black"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -42,12 +42,12 @@ const pepper = {
         birthday: '9 Jul'
     },
 
-    gifts: [
-        [80, peppaFigure],
-        [60, seal, tataCards, foxFigure, catFigure, goldCoin, snowglobe, kitchenware, princeTataFigure, linyeFigure],
-        [30, suit, juicePouch, necklace, perfume, spiderFigure, elfFigure],
-        [15, photoAlbum, flowers, plant, scarf, strangePlant]
-    ],
+    // gifts: [
+    //     [80, peppaFigure],
+    //     [60, seal, tataCards, foxFigure, catFigure, goldCoin, snowglobe, kitchenware, princeTataFigure, linyeFigure],
+    //     [30, suit, juicePouch, necklace, perfume, spiderFigure, elfFigure],
+    //     [15, photoAlbum, flowers, plant, scarf, strangePlant]
+    // ],
     giftPrefs: ['everyday-items', 'decorations', 'collectibles'],
     
     recChips: [

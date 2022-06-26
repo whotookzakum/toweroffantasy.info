@@ -1,4 +1,31 @@
 export const CNBanners = [
+    // {
+    //     name: "Linye",
+    //     element: "supernatural",
+    //     subtext: "",
+    //     start: "9 Jul 2022",
+    //     end: "29 Jul 2022",
+    //     duration: "20d",
+    //     week: "30~33"
+    // },
+    {
+        name: "Frigg",
+        element: "ice",
+        subtext: "Standard afterwards",
+        start: "23 Jun 2022",
+        end: "9 Jul 2022",
+        duration: "16d",
+        week: "28~30"
+    },
+    {
+        name: "Nemesis",
+        element: "volt",
+        subtext: "Standard afterwards",
+        start: "23 Jun 2022",
+        end: "9 Jul 2022",
+        duration: "16d",
+        week: "28~30"
+    },
     {
         name: "Saki Fuwa",
         element: "ice",

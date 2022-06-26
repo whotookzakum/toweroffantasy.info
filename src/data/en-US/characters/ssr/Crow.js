@@ -6,8 +6,8 @@ const crow = {
     reso: "damage",
     shieldBreak: ["6.00", "b"],
     energyCharge: ["8.00", "a"],
-    materials: [crow.element, "red", "blue"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "red", "blue"] },
+    // wepBaseStats: [attack, health, crit],
 
     awakening: [
             // 1 star
@@ -50,12 +50,12 @@ const crow = {
         birthday: '17 Dec'
     },
     
-    gifts: [
-        [80, tataCards, tataFigure],
-        [60, goldCoin, catFigure, miaFigure, peppaFigure, bearFigure, psp, linyeFigure],
-        [30, suit, juicePouch, perfume, pumpkinFigure, androidFigure],
-        [15, flowers, snackBox, scarf]
-    ],
+    // gifts: [
+    //     [80, tataCards, tataFigure],
+    //     [60, goldCoin, catFigure, miaFigure, peppaFigure, bearFigure, psp, linyeFigure],
+    //     [30, suit, juicePouch, perfume, pumpkinFigure, androidFigure],
+    //     [15, flowers, snackBox, scarf]
+    // ],
     giftPrefs: ['everyday-items', 'figurines', 'limited-time-items'],
     
     recChips: [

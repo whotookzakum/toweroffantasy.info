@@ -6,8 +6,8 @@ const cobalt = {
     reso: "damage",
     shieldBreak: ["6.50", "b"],
     energyCharge: ["10.00", "a"],
-    materials: [cobalt.element, "red", "black"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, health, crit],
 
     awakening: [
             // 1 star
@@ -47,12 +47,12 @@ const cobalt = {
         birthday: '26 Jun'
     },
     
-    gifts: [
-        [80, kitchenware, goldCoin],
-        [60, seal, tataCards, foxFigure, catFigure, bearFigure, tataFigure, present, psp, linyeFigure, pearl],
-        [30, necklace, toolbox, strangeFragment],
-        [15, dumbbells, snackBox, strangePlant]
-    ],
+    // gifts: [
+    //     [80, kitchenware, goldCoin],
+    //     [60, seal, tataCards, foxFigure, catFigure, bearFigure, tataFigure, present, psp, linyeFigure, pearl],
+    //     [30, necklace, toolbox, strangeFragment],
+    //     [15, dumbbells, snackBox, strangePlant]
+    // ],
     giftPrefs: ['metalware', 'collectibles', 'limited-time-items'],
     
     recChips: [

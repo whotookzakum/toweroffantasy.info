@@ -6,8 +6,8 @@ const marc = {
     reso: "tank",
     shieldBreak: ["9.00", "a"],
     energyCharge: ["12.00", "s"],
-    materials: [marc.element, "red", "black"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, defense, health],
     // Omni Shield? Mecha Shield? Heavy Dimensional/3D Shield?????
     exclusiveEffect: `**Group Play [Guardian]**: When using Re-entry, Form Switch, or Full Shot, inflict **40%** damage to the lowest HP ally for **10** seconds, afterwards restoring **10%** of lost HP, only triggered while using Perseverance Resonance, the effect will not be removed and cannot be triggered again until the end of time.  
     **Solo Play [Amplify]**: Mecha Form gains **50%** physical damage reduction.  
@@ -51,11 +51,11 @@ const marc = {
         birthday: '???'
     },
     
-    gifts: [
-        [60, kitchenware, present, pearl, bearFigure],
-        [30, toolbox, strangeFragment],
-        [15, dumbbells]
-    ],
+    // gifts: [
+    //     [60, kitchenware, present, pearl, bearFigure],
+    //     [30, toolbox, strangeFragment],
+    //     [15, dumbbells]
+    // ],
     giftPrefs: ['metalware'],
     
     recChips: [

@@ -6,8 +6,8 @@ const meryl = {
     reso: "tank",
     shieldBreak: ["12.00", "s"],
     energyCharge: ["4.00", "b"],
-    materials: [meryl.element, "red", "black"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "red", "black"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -51,12 +51,12 @@ const meryl = {
         birthday: '10 October'
     },
 
-    gifts: [
-        [80, seal],
-        [60, goldCoin, miaFigure, foxFigure, snowglobe, kitchenware, ufo, linyeFigure],
-        [30, necklace, vial],
-        [15, photo, harmonica, strangePlant]
-    ],
+    // gifts: [
+    //     [80, seal],
+    //     [60, goldCoin, miaFigure, foxFigure, snowglobe, kitchenware, ufo, linyeFigure],
+    //     [30, necklace, vial],
+    //     [15, photo, harmonica, strangePlant]
+    // ],
     giftPrefs: ['metalware', 'rare-items'],
 
     recChips: [

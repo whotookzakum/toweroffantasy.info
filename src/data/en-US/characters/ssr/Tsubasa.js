@@ -6,8 +6,8 @@ const tsubasa = {
     reso: "damage",
     shieldBreak: ["4.00", "b"],
     energyCharge: ["11.50", "s"],
-    materials: [tsubasa.element, "red", "blue"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "red", "blue"] },
+    // wepBaseStats: [attack, health, crit],
 
     awakening: [
             // 1 star
@@ -50,12 +50,12 @@ const tsubasa = {
         birthday: '24 Mar'
     },
 
-    gifts: [
-        [80, tataPlush, miaFigure],
-        [60, seal, tataCards, bearFigure, catFigure, ufo, psp, goldCoin, snowglobe, linyeFigure],
-        [30, vial, pumpkinFigure, androidFigure],
-        [15, photo, snackBox, harmonica]
-    ],
+    // gifts: [
+    //     [80, tataPlush, miaFigure],
+    //     [60, seal, tataCards, bearFigure, catFigure, ufo, psp, goldCoin, snowglobe, linyeFigure],
+    //     [30, vial, pumpkinFigure, androidFigure],
+    //     [15, photo, snackBox, harmonica]
+    // ],
     giftPrefs: ['figurines', 'limited-time-items', 'rare-items'],
 
     recChips: [

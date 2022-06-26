@@ -6,8 +6,8 @@ const coco = {
     reso: "support",
     shieldBreak: ["4.00", "b"],
     energyCharge: ["12.50", "s"],
-    materials: [coco.element, "green", "blue"],
-    wepBaseStats: [attack, defense, health],
+    materials: function() { return [this.element, "green", "blue"] },
+    // wepBaseStats: [attack, defense, health],
 
     awakening: [
             // 1 star
@@ -50,11 +50,11 @@ const coco = {
         birthday: '1 Jun'
     },
 
-    gifts: [
-        [60, foxFigure, catFigure, present, ufo, miaFigure, seal],
-        [30, tataPlush, spiderFigure, vial, elfFigure, bunnyDoll, catPlush, robotFigure],
-        [15, photoAlbum, photo, plant, harmonica, pinwheel]
-    ],
+    // gifts: [
+    //     [60, foxFigure, catFigure, present, ufo, miaFigure, seal],
+    //     [30, tataPlush, spiderFigure, vial, elfFigure, bunnyDoll, catPlush, robotFigure],
+    //     [15, photoAlbum, photo, plant, harmonica, pinwheel]
+    // ],
     giftPrefs: ['toys', 'decorations', 'rare-items'],
 
     recChips: [

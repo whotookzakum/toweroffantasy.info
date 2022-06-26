@@ -1,6 +1,8 @@
 import '../scss/styles.scss';
 import HomePage from "./HomePage";
 import Navigation from './Navigation';
+import SimulacraPage from './SimulacraPage';
+import ModalMenu from './ModalMenu';
 import bgImg from "../data/images/weila_lihui.png"
 
 function Main() {
@@ -12,7 +14,9 @@ function Main() {
             <img id="page-bg-img" className="bg-img" src={bgImg} />
 
             <div className="middle">
-                <HomePage/>
+                {/* <HomePage/> */}
+                {/* <SimulacraPage/> */}
+                <ModalMenu/>
             </div>
 
             <div className="right-gutter"></div>

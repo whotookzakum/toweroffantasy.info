@@ -6,8 +6,8 @@ const shiro = {
     reso: "damage",
     shieldBreak: ["10.00", "a"],
     energyCharge: ["6.00", "b"],
-    materials: [shiro.element, "green", "black"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "green", "black"] },
+    // wepBaseStats: [attack, health, crit],
 
     awakening: [
             // 1 star
@@ -49,12 +49,12 @@ const shiro = {
         birthday: '22 Sep'
     },
 
-    gifts: [
-        [80, kitchenware, seal],
-        [60, miaFigure, goldCoin, foxFigure, ufo, bearFigure, snowglobe, present, pearl, linyeFigure],
-        [30, vial, necklace, toolbox, strangeFragment],
-        [15, dumbbells, harmonica, photo, strangePlant]
-    ],
+    // gifts: [
+    //     [80, kitchenware, seal],
+    //     [60, miaFigure, goldCoin, foxFigure, ufo, bearFigure, snowglobe, present, pearl, linyeFigure],
+    //     [30, vial, necklace, toolbox, strangeFragment],
+    //     [15, dumbbells, harmonica, photo, strangePlant]
+    // ],
     giftPrefs: ['metalware', 'collectibles', 'rare-items'],
 
     recChips: [

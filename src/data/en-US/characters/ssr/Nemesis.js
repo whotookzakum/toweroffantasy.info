@@ -6,8 +6,8 @@ const nemesis = {
     reso: "support",
     shieldBreak: ["6.00", "b"],
     energyCharge: ["8.00", "a"],
-    materials: [nemesis.element, "green", "blue"],
-    wepBaseStats: [attack, health, crit],
+    materials: function() { return [this.element, "green", "blue"] },
+    // wepBaseStats: [attack, health, crit],
     exclusiveEffect: `**Volt Resonance**: When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background.`,
     
     awakening: [
@@ -48,12 +48,12 @@ const nemesis = {
         birthday: '25 May'
     },
     
-    gifts: [
-        [80, peppaFigure, princeTataFigure],
-        [60, tataCards, present, snowglobe, foxFigure, catFigure],
-        [30, tataPlush, suit, catPlush, perfume, spiderFigure, elfFigure, robotFigure, bunnyDoll],
-        [15, flowers, photoAlbum, plant, scarf, pinwheel]
-    ],
+    // gifts: [
+    //     [80, peppaFigure, princeTataFigure],
+    //     [60, tataCards, present, snowglobe, foxFigure, catFigure],
+    //     [30, tataPlush, suit, catPlush, perfume, spiderFigure, elfFigure, robotFigure, bunnyDoll],
+    //     [15, flowers, photoAlbum, plant, scarf, pinwheel]
+    // ],
     giftPrefs: ['toys', 'everyday-items', 'decorations'],
     
     recChips: [
