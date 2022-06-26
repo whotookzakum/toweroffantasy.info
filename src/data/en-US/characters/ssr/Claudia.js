@@ -1,14 +1,15 @@
 const claudia = {
     name: "Claudia",
     rarity: "SSR",
+    chinaOnly: false,
     weapon: {
         name: "Guren Blade",
         element: "physical",
-        resonance: "damage",
+        type: "dps",
         baseStats: ["attack", "defense", "health"],
         shatter: ["A", "7.50"],
         charge: ["S", "12.00"],
-        materials: function () { return [this.element, "red", "blue"] },
+        materials: ["physical", "red", "blue"],
         advancement: {
             star1: `After hitting a target with a skill or discharge skill, grant a stack of damage boost, which increases damage dealt by **8%** for **25** seconds (stacks up to **3** times; each successful skill or discharge use can only grant a single stack).`,
 
@@ -79,12 +80,12 @@ const claudia = {
             }
         ],
         recommendedMatrix: {
-            set2: ["claudia", "samir", "karasuma"],
+            set2: ["claudia", "samir", "crow"],
             set4: ["claudia"],
-            set3: ["peppa", "sobek"]
+            set3: ["pepper", "sobek"]
         }
     },
-
+    
     matrix: {
         set2: `Increase damage by **13%/17%/20%/23%** when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target in mid-air.`,
 

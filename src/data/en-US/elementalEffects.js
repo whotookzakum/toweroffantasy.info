@@ -24,6 +24,12 @@ const elementalEffects = {
         values: ["100.00%", "137.00%"], // SR and SSR
         description: 
             `Fully charged weapons will inflict damage equal to **${this.values[rarity]}** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage.`,
+    },
+    supernatural: {
+        title: "Aberration",
+        values: ["", "560.00%"], // SR and SSR
+        description:
+            `When the weapon is fully charged, the next attack will leave a mark on the enemy that explodes after **5** seconds. The explosion deals **25%** of the damage dealt during the marked period, up to **560%** of ATK. Only one mark can exist at a time.`
     }
 }
 
