@@ -1,4 +1,4 @@
-import ModalMenu from "./ModalMenu";
+import { ModalMenu, Modal } from "./Modal";
 import { SSR_CHARACTERS, SR_CHARACTERS } from "../data/en-US/characterList";
 
 function SimulacraPage() {
@@ -16,11 +16,12 @@ function SimulacraPage() {
             <section>
                 <h2>SSR Simulacra</h2>
                 <ModalMenu listContent={SSR_CHARACTERS} />
+                <Modal/>
             </section>
 
             <section>
                 <h2>SR Simulacra</h2>
-                <ModalMenu listContent={SR_CHARACTERS} />
+                {/* <ModalMenu listContent={SR_CHARACTERS} /> */}
             </section>
 
         </main>

@@ -37,7 +37,7 @@ export const CNBanners = [
     },
     {
         name: "Marc",
-        element: "phys",
+        element: "physical",
         subtext: "Collaboration Event",
         start: "24 May 2022",
         end: "3 Jun 2022",
@@ -82,7 +82,7 @@ export const CNBanners = [
     },
     {
         name: "Claudia",
-        element: "phys",
+        element: "physical",
         subtext: "Standard afterwards",
         start: "19 Mar 2022",
         end: "21 Mar 2022",
@@ -100,7 +100,7 @@ export const CNBanners = [
     },
     {
         name: "Marc",
-        element: "phys",
+        element: "physical",
         subtext: "Collaboration Event",
         start: "14 Feb 2022",
         end: "4 Mar 2022",
@@ -127,7 +127,7 @@ export const CNBanners = [
     },
     {
         name: "Claudia",
-        element: "phys",
+        element: "physical",
         subtext: "",
         start: "22 Dec 2021",
         end: "5 Jan 2022",

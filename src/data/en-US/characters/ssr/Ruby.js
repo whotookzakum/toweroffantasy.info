@@ -3,7 +3,7 @@ const ruby = {
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
-        wepName: "Sparky",
+        name: "Sparky",
         element: "flame",
         type: "dps",
         baseStats: ["attack", "health", "crit"],

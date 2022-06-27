@@ -25,7 +25,7 @@
             left: 0.5rem;
         }
 
-        h3 { 
+        h3 {
             margin: 0 0 0.4rem 0;
         }
 
@@ -34,8 +34,226 @@
         }
 
         &:hover {
-            // transform: scale(1.05);
             background: clr(text, dark);
         }
     }
+}
+
+.modal {
+
+    h1,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.17em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: 0.83em;
+    }
+
+    strong {
+        color: clr(text, blue);
+    }
+
+    em {
+        font-style: normal;
+        font-weight: bold;
+        color: clr(text, green);
+    }
+
+    p {
+        margin: 0;
+    }
+
+    section {
+        margin: 3rem auto;
+        padding: 0;
+    }
+
+    .modal-table {
+        text-align: left;
+
+        td, th {
+            padding: 1rem;
+        }
+
+        thead {
+            background-color: clr(container, darker);
+            border-bottom: 2px solid clr(text);
+
+            th:first-of-type {
+                width: 15%;
+            }
+        }
+
+        tbody {
+            th {
+                color: clr(tier, s);
+            }
+
+            tr:not(:last-of-type) {
+                border-bottom: 1px solid clr(text, dark);
+            }
+        }
+    }
+}
+
+.weapon-header {
+    background: clr(container, light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
+    border-top: 3px solid clr(text);
+    box-shadow: $shadow;
+
+    .weapon-image {
+        object-fit: none;
+        filter: drop-shadow(0 2px 2px clr(shadow));
+    }
+
+    .weapon-info {
+        flex: 1;
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+}
+
+.weapon-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
+
+    .weapon-stat {
+        display: flex;
+        align-items: center;
+        gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
+
+        h5,
+        h4 {
+            line-height: 1;
+        }
+
+        h5 {
+            color: clr(text, gray);
+            font-weight: normal;
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        img,
+        i {
+            display: inline-block;
+            width: 34px;
+            height: 31px;
+            filter: drop-shadow(0 2px 2px rgba(23, 23, 23, 1));
+        }
+
+        i {
+            background-color: clr(tier, base);
+            color: clr(tier, a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            transform: skew(-9deg, 0deg);
+        }
+    }
+
+}
+
+.weapon-effects, 
+.weapon-advancements,
+.awakening-traits,
+.awakening-gifts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.weapon-effects { 
+    h4 {
+        color: clr(tier, s);
+    }
+}
+
+.awakening-traits {
+    strong {
+        color: clr(text, green);
+    }
+}
+
+.awakening-gifts {
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(71px), 1fr));
+        gap: 1rem 1.5rem;
+        padding: 0;
+        list-style: none;
+
+        &.gifts-grid {
+            padding: 1rem;
+            justify-items: center;
+            background-color: clr(container, dark);
+            box-shadow: $shadow;
+        }
+    }
+
+    .gift {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 71px;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+        background-color: clr(container, lighter);
+        box-shadow: $shadow;
+
+        .item-frame {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 91px;
+            }
+        }
+    }
+}
+
+.item-frame {
+    width: 71px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background-color: gray;
 }

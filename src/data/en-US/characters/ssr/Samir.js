@@ -3,7 +3,7 @@ const samir = {
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
-        wepName: "Dual EM Stars",
+        name: "Dual EM Stars",
         element: "volt",
         type: "dps",
         baseStats: ["attack", "health", "crit"],

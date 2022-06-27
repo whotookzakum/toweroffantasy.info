@@ -11,7 +11,12 @@ const saki = {
         shatter: ["S", "13.90"],
         charge: ["A", "8.00"],
         materials: ["ice", "red", "black"],
-        bonusEffect: `**Ice Resonance**: When equipped with **2** or more Ice weapons, increase Ice ATK by **20%** and Ice Resistance by **40%**, taking effect in the background.`,
+        bonusEffect: {
+            effect1: {
+                title: `Ice Resonance`,
+                description: `When equipped with **2** or more Ice weapons, increase Ice ATK by **20%** and Ice Resistance by **40%**, taking effect in the background.`
+            }
+        },
         advancement: {
             star1: `When Ice Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.`,
             

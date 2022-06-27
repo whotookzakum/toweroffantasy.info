@@ -11,9 +11,24 @@ const marc = {
         charge: ["S", "12.00"],
         materials: ["physical", "red", "black"],
         // Omni Shield? Mecha Shield? Heavy Dimensional/3D Shield?????
-        bonusEffect: `**Group Play [Guardian]**: When using Re-entry, Form Switch, or Full Shot, inflict **40%** damage to the lowest HP ally for **10** seconds, afterwards restoring **10%** of lost HP, only triggered while using Perseverance Resonance, the effect will not be removed and cannot be triggered again until the end of time.  
-        **Solo Play [Amplify]**: Mecha Form gains **50%** physical damage reduction.  
-        **Omni Shield**: Mecha basic attack/Double Smash/Impact Slash will give **1** point of Mecha Energy. At **20** points, convert **20%** of your current HP into a [Omni Shield] with **1.5x** your max HP (cannot exceed 1.5x max HP and healing is reduced by 50% while active). The shield lasts for **15** seconds and cannot be gained if you are below **10%** HP. After the duration, **66.7%** of the remaining shield value is converted to HP, and hitting a weak target nets **2** points of energy. When triggering the effect, convert active HP shields into [Omni Shield]. Other HP shields cannot be obtained while active.`,
+        bonusEffect: {
+            effect1: {
+                title: `Guardian`,
+                description: `**[GROUP PLAY]** When using Re-entry, Form Switch, or Full Shot, inflict **40%** damage to the lowest HP ally for **10** seconds, afterwards restoring **10%** of lost HP, only triggered while using Perseverance Resonance, the effect will not be removed and cannot be triggered again until the end of time.`
+            },
+            effect2: {
+                title: `Amplify`,
+                description: `**[SOLO PLAY]** Mecha Form gains **50%** physical damage reduction.`
+            },
+            effect3: {
+                title: `Omni Shield`,
+                description: `Mecha basic attack/Double Smash/Impact Slash will give **1** point of Mecha Energy. At **20** points, convert **20%** of your current HP into a [Omni Shield] with **1.5x** your max HP (cannot exceed 1.5x max HP and healing is reduced by 50% while active). The shield lasts for **15** seconds and cannot be gained if you are below **10%** HP.  
+                &nbsp;   
+                After the duration, **66.7%** of the remaining shield value is converted to HP, and hitting a weak target nets **2** points of energy.  
+                &nbsp;  
+                When triggering the effect, convert active HP shields into [Omni Shield]. Other HP shields cannot be obtained while active.`
+            }
+        },
         advancement: {
             star1: `Activating Re-entry, Form Switch, or Full Shot will instantly grant [Omni Shield].`,
 
@@ -34,7 +49,7 @@ const marc = {
             set3: ["sobek"]
         }
     },
-    
+
     matrix: {
         set2: `Adds a life shield of **15%** of your current HP to all teammates after attacking an enemy for **15** seconds, resetting **10** seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by **11%/13%/15%/17%** for **15** seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level.`,
 

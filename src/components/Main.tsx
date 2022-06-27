@@ -2,7 +2,6 @@ import '../scss/styles.scss';
 import HomePage from "./HomePage";
 import Navigation from './Navigation';
 import SimulacraPage from './SimulacraPage';
-import ModalMenu from './ModalMenu';
 import bgImg from "../data/images/weila_lihui.png"
 
 function Main() {

@@ -43,6 +43,20 @@ main {
     margin: 0 auto;
     padding: 2rem $spacing;
     // transition: transform 0.3s ease;
+    --color-volt: #{clr(text, volt)};
+    --color-ice: #{clr(text, ice)};
+    --color-physical: #{clr(text, phys)};
+    --color-flame: #{clr(text, flame)};
+    --color-tier-c: #{clr(tier, c)};
+    --color-tier-b: #{clr(tier, b)};
+    --color-tier-a: #{clr(tier, a)};
+    --color-tier-s: #{clr(tier, s)};
+    --color-tier-ss: #{clr(tier, ss)};
+    --color-rarity-1: #{clr(rarity, 1)};
+    --color-rarity-2: #{clr(rarity, 2)};
+    --color-rarity-3: #{clr(rarity, 3)};
+    --color-rarity-4: #{clr(rarity, 4)};
+    --color-rarity-5: #{clr(rarity, 5)};
 }
 
 .left-gutter, .right-gutter {
@@ -71,3 +85,10 @@ main {
     }
 }
 
+.w-60ch {
+    max-width: 60ch;
+}
+
+.w-75ch {
+    max-width: 75ch;
+}

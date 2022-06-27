@@ -5,7 +5,9 @@ $colors: (
     container: (
         base: rgba(26, 25, 33, 0.9),
         light: rgba(40, 38, 51, 0.9),
-        dark: rgba(30, 29, 38, 0.9)
+        lighter: rgba(45, 42, 59, 0.9),
+        dark: rgba(30, 29, 38, 0.9),
+        darker: rgba(20, 20, 30, 0.85),
     ),
     text: (
         base: #dedede,
@@ -66,8 +68,6 @@ $colors: (
     )
 
 );
-
-
 
 
 @function clr($base, $shade: base) {
