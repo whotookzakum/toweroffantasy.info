@@ -40,7 +40,7 @@ $colors: (
         everyday-items: #c08f8d,
         figurines: #da849f,
         games: #8faecb,
-        limited-time-items: #ddc392,
+        limited-edition: #ddc392,
         metalware: #b09cea,
         decorations: #ababa5,
         rare-items: #dd64a9,
@@ -57,11 +57,11 @@ $colors: (
     ),
     rarity: (
         base: #fff,
-        1: #d5d5e0,
-        2: #58d058,
-        3: #00d2ff,
-        4: #f289ff,
-        5: gold
+        1: radial-gradient(#a7bacb, 30%, #9caec6),
+        2: radial-gradient(#68c5b2, 30%, #5aae9c),
+        3: radial-gradient(#70b3e7, 30%, #65a0cd),
+        4: radial-gradient(#d3c0de, 30%, #c2abd0),
+        5: radial-gradient(#efdbad, 30%, #e9d197)
     ),
     shadow: (
         base: #121212

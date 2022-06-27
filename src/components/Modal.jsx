@@ -7,8 +7,8 @@ function removeSpace(string) {
     return string.toLowerCase().replace(/\s/g, '');
 }
 
-function capitalize(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+function hyphenToSpace(string) {
+    return string.replace(/-/g, ' ');
 }
 
 export function ModalMenu({ listContent }) {
@@ -38,7 +38,7 @@ function setModalData(item) {
 }
 
 export function Modal(item) {
-    item = SSR_CHARACTERS[6];
+    item = SSR_CHARACTERS[4];
 
     let rarity = 1;
     if (item.rarity === "SR") rarity = 0;
@@ -65,7 +65,13 @@ export function Modal(item) {
     }
 
     let giftCategories = [];
-    for (const gift of item.awakening.giftCategories) giftCategories.push( <li>{gift}</li> );
+    for (const gift of item.awakening.giftCategories) {
+        giftCategories.push(
+            <li style={{ color: `var(--color-${gift})`, borderColor: `var(--color-${gift})` }}>
+                {hyphenToSpace(gift)}
+            </li>
+        );
+    }
 
     let gifts = [];
     // Gifts are in a 2d array. The inner array's index [0] stores the points earned for that group of gifts.
@@ -76,7 +82,7 @@ export function Modal(item) {
         for (let gift = 1; gift < item.awakening.gifts[group].length; gift++) {
             gifts.push(
                 <li className="gift">
-                    <div className="item-frame" style={{backgroundColor: `var(--color-rarity-${rarity})`}}>
+                    <div className="item-frame" style={{ background: `var(--color-rarity-${rarity})` }}>
                         <img src={require(`../data/images/awakening/${item.awakening.gifts[group][gift]}.png`)} alt={item.awakening.gifts[group][gift]} />
                     </div>
                     <h4>+{item.awakening.gifts[group][0]}</h4>
@@ -88,16 +94,15 @@ export function Modal(item) {
     return (
         <article className="modal">
             <h1>{item.name}</h1>
-            
-            { item.chinaOnly && 
+
+            {item.chinaOnly &&
                 <section>
-                    <h2><abbr title="China Exclusive" style={{fontSize: "1.5rem", verticalAlign: "middle"}}/> China Exclusive </h2>
-                    {item.name} is currently only available the Chinese version of Tower of Fantasy.<br/>All information on this page is subject to change when {item.name} is released in the Global version.
+                    <h2><abbr title="China Exclusive" style={{ fontSize: "1.5rem", verticalAlign: "middle" }} /> China Exclusive </h2>
+                    {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
                 </section>
             }
 
             <h2>Weapon</h2>
-
             <div className="weapon-header" style={{ borderColor: elementColor }}>
                 <img className="weapon-image" src={require(`../data/images/wep/${removeSpace(item.name)}.png`)} alt={item.weapon.name} />
                 <div className="weapon-info">
@@ -134,16 +139,14 @@ export function Modal(item) {
                     </div>
                 </div>
             </div>
-
             <section className="weapon-effects w-75ch">
                 <h3>Weapon Effects</h3>
                 <div>
                     <h4 style={{ color: elementColor }}>{elementalEffects[item.weapon.element].title}</h4>
                     <ReactMarkdown>{elementalEffects[item.weapon.element].description(rarity)}</ReactMarkdown>
                 </div>
-                { item.weapon.bonusEffect && <>{bonusEffects}</> }
+                {item.weapon.bonusEffect && <>{bonusEffects}</>}
             </section>
-
             <section className="weapon-advancements w-75ch">
                 <h3>Advancements</h3>
                 <table className="modal-table">
@@ -158,22 +161,18 @@ export function Modal(item) {
                     </tbody>
                 </table>
             </section>
-
             <section className="weapon-materials w-75ch">
                 <h3>Upgrade Materials</h3>
             </section>
-
             <section className="weapon-rec-matrices w-75ch">
                 <h3>Recommended Matrices</h3>
             </section>
 
-
-
+            <hr/>
 
             <h2>Awakening</h2>
-
             <section className="awakening-traits w-75ch">
-                <h3>Passive Traits</h3>
+                <h3>Traits</h3>
                 <table className="modal-table">
                     <thead style={{ borderColor: elementColor }}>
                         <tr>
@@ -193,11 +192,43 @@ export function Modal(item) {
                     </tbody>
                 </table>
             </section>
-
             <section className="awakening-gifts w-75ch">
                 <h3>Favorite Gifts</h3>
-                <ul>{giftCategories}</ul>
+                <ul className="gift-categories-grid">{giftCategories}</ul>
                 <ul className="gifts-grid">{gifts}</ul>
+            </section>
+
+            <hr/>
+
+            <h2>Character Bio</h2>
+            <section className="character-bio w-75ch">
+                <div className="bio-container">
+                    <ul>
+                        <li>
+                            <h5>Gender</h5>
+                            <h4>{item.bio.gender}</h4>
+                        </li>
+                        <li>
+                            <h5>Height</h5>
+                            <h4>{item.bio.height}</h4>
+                        </li>
+                        <li>
+                            <h5>Birthplace</h5>
+                            <h4>{item.bio.birthplace}</h4>
+                        </li>
+                        <li>
+                            <h5>Horoscope</h5>
+                            <h4>Sagittarius</h4>
+                        </li>
+                        <li>
+                            <h5>Birthday</h5>
+                            <h4>{item.bio.birthday}</h4>
+                        </li>
+                    </ul>
+                    <img src={require(`../data/images/charts/${removeSpace(item.name)}.png`)} alt="" />
+
+                </div>
+
             </section>
 
         </article >

@@ -100,7 +100,7 @@ const echo = {
 
         trait4000: "When teamed up with Echo, allies within **10** meters around Echo gain a damage boost of **6%** (excluding Echo).",
 
-        giftCategories: ['everyday-items', 'limited-time-items', 'games'],
+        giftCategories: ['everyday-items', 'limited-edition', 'games'],
 
         gifts: [
             [80, "psp", "tataCards"],

@@ -104,7 +104,7 @@ const king = {
 
         trait4000: "Every **5** enemies killed by KING restores HP equal to **10%** of Max HP.",
 
-        giftPrefs: ['collectibles', 'rare-items', 'limited-time-items'],
+        giftPrefs: ['collectibles', 'rare-items', 'limited-edition'],
 
         gifts: [
             [80, "seal", "goldCoin"],

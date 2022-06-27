@@ -42,7 +42,7 @@ const cobalt = {
 
         trait4000: `When Cobalt-B releases a discharge skill, restore **90** - **180** points of energy charge at random.`,
 
-        giftCategories: ['metalware', 'collectibles', 'limited-time-items'],
+        giftCategories: ['metalware', 'collectibles', 'limited-edition'],
 
         gifts: [
             [80, "kitchenware", "goldCoin"],

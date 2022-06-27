@@ -99,7 +99,7 @@ const crow = {
 
         trait4000: `When Crow is not in team play, increase damage dealt by **10%** and reduce damage received by **6%** When Crow enters combat, increase damage dealt by **12%** for **12** seconds.`,
 
-        giftCategories: ['everyday-items', 'figurines', 'limited-time-items'],
+        giftCategories: ['everyday-items', 'figurines', 'limited-edition'],
 
         gifts: [
             [80, "tataCards", "tataFigure"],

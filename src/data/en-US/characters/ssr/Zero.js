@@ -98,7 +98,7 @@ const zero = {
 
         trait4000: `When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by **3** seconds. Can only activate for the same weapon **1** time every **5** seconds.`,
 
-        giftCategories: ['limited-time-items', 'games'],
+        giftCategories: ['limited-edition', 'games'],
 
         gifts: [
             [80, "psp"],

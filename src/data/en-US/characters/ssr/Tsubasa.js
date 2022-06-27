@@ -93,7 +93,7 @@ const tsubasa = {
 
         trait4000: `Each time Tsubasa deals damage, gain **1** stack of Fierce Strike, up to **1** stack per **1** second. Each stack adds **0.6%** ATK, up to **30** stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for **30** seconds.`,
 
-        giftCategories: ['figurines', 'limited-time-items', 'rare-items'],
+        giftCategories: ['figurines', 'limited-edition', 'rare-items'],
 
         gifts: [
             [80, "tataPlush", "miaFigure"],

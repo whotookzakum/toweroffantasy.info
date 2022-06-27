@@ -60,7 +60,7 @@ const hilda = {
 
         trait4000: "When Hilda uses a vehicle, increase speed by **10%**.",
 
-        giftCategories: ['toys', 'figurines', 'limited-time-items'],
+        giftCategories: ['toys', 'figurines', 'limited-edition'],
 
         gifts: [
             [80, "tataFigure"],

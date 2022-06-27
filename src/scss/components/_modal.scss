@@ -95,7 +95,8 @@
     .modal-table {
         text-align: left;
 
-        td, th {
+        td,
+        th {
             padding: 1rem;
         }
 
@@ -110,6 +111,7 @@
 
         tbody {
             th {
+                font-size: 1.17rem;
                 color: clr(tier, s);
             }
 
@@ -192,16 +194,16 @@
 
 }
 
-.weapon-effects, 
+.weapon-effects,
 .weapon-advancements,
 .awakening-traits,
-.awakening-gifts {
+.character-bio .bio-container {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.weapon-effects { 
+.weapon-effects {
     h4 {
         color: clr(tier, s);
     }
@@ -214,19 +216,41 @@
 }
 
 .awakening-gifts {
-
     ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(71px), 1fr));
+
         gap: 1rem 1.5rem;
         padding: 0;
         list-style: none;
 
         &.gifts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(71px, 1fr));
             padding: 1rem;
             justify-items: center;
             background-color: clr(container, dark);
             box-shadow: $shadow;
+        }
+
+        &.gift-categories-grid {
+            --color-collectibles: #{clr(gift, collectibles)};
+            --color-everyday-items: #{clr(gift, everyday-items)};
+            --color-figurines: #{clr(gift, figurines)};
+            --color-games: #{clr(gift, games)};
+            --color-limited-edition: #{clr(gift, limited-edition)};
+            --color-metalware: #{clr(gift, metalware)};
+            --color-decorations: #{clr(gift, decorations)};
+            --color-rare-items: #{clr(gift, rare-items)};
+            --color-toys: #{clr(gift, toys)};
+            --color-vera: #{clr(gift, vera)};
+            display: flex;
+
+            li {
+                background-color: clr(container, dark);
+                padding: 0.5rem 1rem;
+                text-transform: capitalize;
+                border-bottom: 2px solid clr(gift, base);
+                box-shadow: $shadow;
+            }
         }
     }
 
@@ -251,9 +275,46 @@
     }
 }
 
-.item-frame {
-    width: 71px;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    background-color: gray;
+.character-bio {
+    background-color: clr(container, light);
+    
+    .bio-container {
+        padding: $spacing;
+        flex-direction: column-reverse;
+    }
+    @media (min-width: 700px) {
+        .bio-container {
+            flex-direction: row;
+        }
+    }
+
+    img {
+        object-fit: scale-down;
+        overflow: hidden;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12ch, 1fr));
+        gap: 1rem;
+    }
+
+    h5 {
+        color: clr(text, gray);
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        line-height: 1;
+    }
+}
+
+summary {
+    font-size: 2em;
+    font-weight: bold;
 }
