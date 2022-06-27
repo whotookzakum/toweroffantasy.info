@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.modal-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    gap: clamp(1rem, calc(.95rem + .27vw), 1.25rem);
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        text-align: center;
+        background: clr(container, light);
+        padding: 1rem 0;
+        cursor: pointer;
+        box-shadow: $shadow;
+        transition: transform 125ms ease;
+
+
+        abbr {
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+        }
+
+        h3 { 
+            margin: 0 0 0.4rem 0;
+        }
+
+        img {
+            margin: 0 0.1rem;
+        }
+
+        &:hover {
+            // transform: scale(1.05);
+            background: clr(text, dark);
+        }
+    }
+}

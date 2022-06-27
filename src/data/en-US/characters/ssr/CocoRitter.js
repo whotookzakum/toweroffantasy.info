@@ -1,6 +1,7 @@
 const coco = {
     name: "Coco Ritter",
     rarity: "SSR",
+    chinaOnly: false,
     weapon: {
         name: "Absolute Zero",
         element: "ice",

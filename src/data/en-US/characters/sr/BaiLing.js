@@ -4,7 +4,7 @@ const bailing = {
     chinaOnly: false,
     weapon: {
         name: "Nightingale's Feather",
-        element: "phyiscal",
+        element: "physical",
         type: "dps",
         baseStats: ["attack", "health", "crit"],
         shatter: ["B", "6.00"],

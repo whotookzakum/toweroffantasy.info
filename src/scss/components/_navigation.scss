@@ -3,11 +3,13 @@
 .sidenav {
     height: 100%;
     position: fixed;
-    z-index: 90000;
+    z-index: 1000;
+    width: 0;
 }
 
 .nav-body {
     padding: 0 2rem;
+    width: calc($sidenav-width - 4rem);
     max-width: $sidenav-width;
     height: 100%;
     backdrop-filter: blur(15px);

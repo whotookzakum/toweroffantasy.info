@@ -1,6 +1,5 @@
-import fuwa from "../data/images/avatar/fuwasaki.png";
-import ele from "../data/images/ele_fire.png";
-import reso from "../data/images/reso_damage.png";
+import ModalMenu from "./ModalMenu";
+import { SSR_CHARACTERS, SR_CHARACTERS } from "../data/en-US/characterList";
 
 function SimulacraPage() {
     return (
@@ -8,7 +7,7 @@ function SimulacraPage() {
             <header>
                 <h1>Simulacra</h1>
                 <p>
-                    Simulacra (AKA Mimics) are the player's representation of the characters found in Tower of Fantasy.<br />
+                    Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy.<br />
 
                     They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.
                 </p>
@@ -16,152 +15,12 @@ function SimulacraPage() {
 
             <section>
                 <h2>SSR Simulacra</h2>
-                <menu className="modal-menu">
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                </menu>
+                <ModalMenu listContent={SSR_CHARACTERS} />
             </section>
 
             <section>
                 <h2>SR Simulacra</h2>
-                <menu className="modal-menu">
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                    <li>
-                        <img src={fuwa} alt="" />
-                        <abbr title="China Exclusive" />
-                        <h3>Saki Fuwa</h3>
-                        <img src={ele} /><img src={reso} />
-                    </li>
-                </menu>
+                <ModalMenu listContent={SR_CHARACTERS} />
             </section>
 
         </main>

@@ -15,8 +15,7 @@ function Main() {
 
             <div className="middle">
                 {/* <HomePage/> */}
-                {/* <SimulacraPage/> */}
-                <ModalMenu/>
+                <SimulacraPage/>
             </div>
 
             <div className="right-gutter"></div>
