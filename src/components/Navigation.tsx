@@ -50,6 +50,9 @@ function Navigation() {
                     <li>
                         <a href="https://www.reddit.com/r/TowerofFantasy/" target="_blank" rel="noreferrer noopener">Reddit</a>
                     </li>
+                    <li>
+                        <a href="https://twitter.com/_Aida_Cafe" target="_blank" rel="noreferrer noopener">Twitter</a>
+                    </li>
                 </ul>
                 <span className="nav-footer">&copy; Tower of Fantasy Index.<br /> All rights reserved.</span>
             </div>

@@ -15,7 +15,7 @@ function SimulacraPage() {
 
             <section>
                 <h2>SSR Simulacra</h2>
-                <ModalMenu listContent={SSR_CHARACTERS} />
+                {/* <ModalMenu listContent={SSR_CHARACTERS} /> */}
                 <Modal/>
             </section>
 

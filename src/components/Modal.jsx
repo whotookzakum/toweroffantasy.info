@@ -38,7 +38,7 @@ function setModalData(item) {
 }
 
 export function Modal(item) {
-    item = SSR_CHARACTERS[4];
+    item = SSR_CHARACTERS[13];
 
     let rarity = 1;
     if (item.rarity === "SR") rarity = 0;
@@ -82,7 +82,7 @@ export function Modal(item) {
         for (let gift = 1; gift < item.awakening.gifts[group].length; gift++) {
             gifts.push(
                 <li className="gift">
-                    <div className="item-frame" style={{ background: `var(--color-rarity-${rarity})` }}>
+                    <div className={`item-frame rarity-${rarity}`}>
                         <img src={require(`../data/images/awakening/${item.awakening.gifts[group][gift]}.png`)} alt={item.awakening.gifts[group][gift]} />
                     </div>
                     <h4>+{item.awakening.gifts[group][0]}</h4>
@@ -90,6 +90,52 @@ export function Modal(item) {
             );
         }
     }
+
+    function getInputs(inputs) {
+        let list = [];
+        if (inputs.length > 1) {
+            for (let i = 0; i < inputs.length; i++) {
+                if (i === inputs.length - 1) {
+                    list.push(<kbd>{inputs[i]}</kbd>);
+                    break;
+                }
+                list.push(<><kbd>{inputs[i]}</kbd> + </>);
+            }
+        } else { list.push(<kbd>{inputs}</kbd>); }
+        return (<div className="ability-inputs">{list}</div>);
+    }
+
+    function getBreakdown(breakdown) {
+        let list = [];
+        for (const step of breakdown) list.push(<li><ReactMarkdown>{step}</ReactMarkdown></li>)
+        return (<ol>{list}</ol>);
+    }
+
+    let abilities = [];
+    for (const category in item.weapon.abilities) {
+        let abilityList = [];
+        let thisCategory = item.weapon.abilities[category];
+
+        for (const ability in thisCategory) {
+            abilityList.push(
+                <div className="weapon-ability">
+                    <h3>{thisCategory[ability].name}</h3>
+                    {thisCategory[ability].input && getInputs(thisCategory[ability].input)}
+                    <ReactMarkdown>{thisCategory[ability].description}</ReactMarkdown>
+                    {thisCategory[ability].breakdown && getBreakdown(thisCategory[ability].breakdown)}
+                </div>
+            );
+        }
+
+        abilities.push(
+            <details>
+                <summary><h4>{category}</h4></summary>
+                <div className="details-content">{abilityList}</div>
+            </details>
+        );
+    }
+
+
 
     return (
         <article className="modal">
@@ -161,14 +207,41 @@ export function Modal(item) {
                     </tbody>
                 </table>
             </section>
-            <section className="weapon-materials w-75ch">
+            {item.weapon.abilities &&
+                <section className="weapon-abilities w-75ch">
+                    <h3>Weapon Abilities</h3>
+                    Data reflects unleveled weapons.
+                    {abilities}
+                </section>
+            }
+            <section className="weapon-materials w-75ch" >
                 <h3>Upgrade Materials</h3>
+                <ul>
+                    <li className="item-frame rarity-2"><img src={require(`../data/images/mat/${item.weapon.materials[0]}1.png`)} alt={`${item.weapon.materials[0]} 1`} /></li>
+                    <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[0]}2.png`)} alt={`${item.weapon.materials[0]} 2`} /></li>
+                    <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[0]}3.png`)} alt={`${item.weapon.materials[0]} 3`} /></li>
+
+                    <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[1]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
+                    <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[1]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
+                    <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[1]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
+
+                    <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[2]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
+                    <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
+                    <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
+                </ul>
             </section>
             <section className="weapon-rec-matrices w-75ch">
                 <h3>Recommended Matrices</h3>
+                <ul>
+                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
+                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
+                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
+                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
+                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
+                </ul>
             </section>
 
-            <hr/>
+            <hr />
 
             <h2>Awakening</h2>
             <section className="awakening-traits w-75ch">
@@ -198,7 +271,7 @@ export function Modal(item) {
                 <ul className="gifts-grid">{gifts}</ul>
             </section>
 
-            <hr/>
+            <hr />
 
             <h2>Character Bio</h2>
             <section className="character-bio w-75ch">
@@ -218,7 +291,7 @@ export function Modal(item) {
                         </li>
                         <li>
                             <h5>Horoscope</h5>
-                            <h4>Sagittarius</h4>
+                            <h4>{item.bio.horoscope}</h4>
                         </li>
                         <li>
                             <h5>Birthday</h5>

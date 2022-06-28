@@ -1,4 +1,5 @@
 @use "../abstracts" as *;
+@use "./itemframe" as *;
 
 .modal-menu {
     display: grid;
@@ -81,6 +82,11 @@
         font-style: normal;
         font-weight: bold;
         color: clr(text, green);
+    }
+
+    em strong {
+        font-weight: bold;
+        color: clr(text, lightred);
     }
 
     p {
@@ -197,7 +203,11 @@
 .weapon-effects,
 .weapon-advancements,
 .awakening-traits,
-.character-bio .bio-container {
+.awakening-gifts,
+.character-bio .bio-container,
+.weapon-materials,
+.weapon-rec-matrices,
+.weapon-abilities {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -209,6 +219,107 @@
     }
 }
 
+.weapon-materials {
+
+    ul {
+        padding: 1rem;
+        background-color: clr(container, light);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        box-shadow: $shadow;
+
+        li {
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            box-shadow: $shadow;
+
+            img {
+                width: 90px;
+            }
+        }
+    }
+}
+
+.weapon-rec-matrices {
+    flex: 1;
+
+    ul {
+        box-shadow: $shadow;
+        background-color: clr(container, light);
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+
+        img {
+            width: 128px;
+            object-fit: none;
+        }
+    }
+
+}
+
+.weapon-abilities {
+
+    details {
+        box-shadow: $shadow;
+
+        summary {
+            background-color: clr(container, blue);
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+
+            h4 {
+                display: inline-block;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .details-content {
+        background-color: clr(container, light);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .weapon-ability {
+        background-color: clr(container);
+        padding: 1.5rem;
+    }
+    .ability-inputs {
+        margin: 0.5rem 0;
+        color: #48adbd;
+        text-shadow: $shadow;
+    }
+    kbd {
+        --key-color: rgb(49, 49, 70);
+        --key-size: 2em;
+        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: var(--key-size);
+        height: var(--key-size);
+        padding: 0 0.6em 0.12em 0.6em;
+        background-color: var(--key-color);
+        background-image: radial-gradient(var(--key-color), transparent), linear-gradient(180deg, rgba(0, 0, 0, .2), transparent);
+        border: .1em solid #13141e;
+        border-radius: .26em;
+        box-shadow: var(--tw-shadow), inset 0 .1em 0 var(--key-color), inset 0 -.12em .08em .1em rgba(0, 0, 0, .3);
+        font-family: inherit;
+        font-weight: 800;
+        line-height: 1;
+    }
+}
+
 .awakening-traits {
     strong {
         color: clr(text, green);
@@ -217,10 +328,7 @@
 
 .awakening-gifts {
     ul {
-
         gap: 1rem 1.5rem;
-        padding: 0;
-        list-style: none;
 
         &.gifts-grid {
             display: grid;
@@ -277,11 +385,12 @@
 
 .character-bio {
     background-color: clr(container, light);
-    
+
     .bio-container {
         padding: $spacing;
         flex-direction: column-reverse;
     }
+
     @media (min-width: 700px) {
         .bio-container {
             flex-direction: row;
@@ -292,11 +401,8 @@
         object-fit: scale-down;
         overflow: hidden;
     }
-    
+
     ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(12ch, 1fr));
         gap: 1rem;
@@ -312,9 +418,4 @@
         text-transform: uppercase;
         line-height: 1;
     }
-}
-
-summary {
-    font-size: 2em;
-    font-weight: bold;
 }

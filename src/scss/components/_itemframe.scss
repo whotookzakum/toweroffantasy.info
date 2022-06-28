@@ -2,7 +2,7 @@
     width: 71px;
     aspect-ratio: 1/1;
     overflow: hidden;
-    background-color: gray;
+    background: gray;
     position: relative;
 
     &::before {
@@ -21,4 +21,20 @@
     img {
         z-index: 5;
     }
+}
+
+.rarity-1 { 
+    background: var(--color-rarity-1);
+}
+.rarity-2 { 
+    background: var(--color-rarity-2);
+}
+.rarity-3 { 
+    background: var(--color-rarity-3);
+}
+.rarity-4 { 
+    background: var(--color-rarity-4);
+}
+.rarity-5 { 
+    background: var(--color-rarity-5);
 }

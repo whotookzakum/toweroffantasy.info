@@ -23,53 +23,60 @@ const samir = {
             
             star6: `Triggering an electrical explosion reduces skill cooldowns by 1 second.`
         },
-        skills: [
-            {
-                name: "Dual Fire",
-                type: "normal",
-                desc: `While on the ground, tap normal attack to attack 5 times in a row.  
-                        First Attack: Deal total damage equal to **47.1%** of ATK + **2**.  
-                        Second Attack: Deal total damage equal to **35.8%** of ATK + **2**.  
-                        Third Attack: Deal total damage equal to **119.7%** of ATK + **6**.  
-                        Fourth Attack: Deal total damage equal to **113.1%** of ATK + **6**.  
-                        Fifth Attack: Deal total damage equal to **154%** of ATK + **8** and **launch** the target.`
-            },
-            {
-                name: "Bullet Rain",
-                type: "normal",
-                desc: `While airborne, tap normal attack to fire continuously at the ground, dealing damage equal to ??% of ATK + ?? each hit. Consumes 150 Endurance.`
-            },
-            {
-                name: "Energy Burst",
-                type: "normal",
-                desc: `Hold attack button to maintain constant fire, each hit dealing **23%** x ATK + **1** base damage.`
-            },
-            {
-                name: "Phantom Kick",
-                type: "normal",
-                desc: `While airborne, tap and hold normal attack to trigger Phantom Kick. Knock the target down and deal damage equal to **70.5%** of ATK + **4**. Upon landing, deal damage equal to **98.7%** of ATK + **5** to nearby targets and **launch** them.`
-            },
-            {
-                name: "Rising Lightning Kick",
-                type: "dodge",
-                desc: `Tap normal attack after dodging to **knock targets into the air** and deal damage equal to **122.6%** of ATK + **6**.`
-            },
-            {
-                name: "Dodge",
-                type: "dodge",
-                desc: `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
-            },
-            {
-                name: "Electro Field",
-                type: "skill",
-                desc: `Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to **269.8%** of ATK + **14**, and the last hit launches targets **into the air**. **45**-second cooldown.`
-            },
-            {
-                name: "Domain of Thunder",
-                type: "discharge",
-                desc: `When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder**, and create a Domain of Thunder at the target location upon switching to this weapon, dealing a total of **238.3%** of ATK + **13** damage over 3 attacks to enemies **within the area** and dispelling their buffs. The domain lasts for **3.5** seconds and deals damage equal to **42.4%** of ATK + **2** to a target every **0.5** seconds.`
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Dual Fire",
+                    input: ["Attack ×5"],
+                    description: 'While on the ground, tap normal attack to attack 5 times in a row.',
+                    breakdown: [
+                        'Deal total damage equal to **47.1%** of ATK + **2**.',
+                        'Deal total damage equal to **35.8%** of ATK + **2**.',
+                        'Deal total damage equal to **119.7%** of ATK + **6**.',
+                        'Deal total damage equal to **113.1%** of ATK + **6**.',
+                        'Deal total damage equal to **154%** of ATK + **8** and **launch** the target.'
+                    ]
+                },
+                {
+                    name: "Bullet Rain",
+                    input: ['Jump', 'Attack'],
+                    description: 'While airborne, tap normal attack to fire continuously at the ground, dealing damage equal to ??% of ATK + ?? each hit. Consumes 150 Endurance.'
+                },
+                {
+                    name: "Energy Burst",
+                    input: ['hold:Attack'],
+                    description: 'Hold attack button to maintain constant fire, each hit dealing **23%** x ATK + **1** base damage.'
+                },
+                {
+                    name: "Phantom Kick",
+                    input: ['Jump', 'hold:Attack'],
+                    description: 'While airborne, tap and hold normal attack to trigger Phantom Kick. Knock the target down and deal damage equal to **70.5%** of ATK + **4**. Upon landing, deal damage equal to **98.7%** of ATK + **5** to nearby targets and **launch** them.'
+                }
+            ],
+            dodge: [
+                {
+                    name: "Dodge",
+                    description: 'Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.'
+                },
+                {
+                    name: "Rising Lightning Kick",
+                    input: ['Dodge', 'Attack'],
+                    description: 'Tap normal attack after dodging to **knock targets into the air** and deal damage equal to **122.6%** of ATK + **6**.'
+                }
+            ],
+            skill: [
+                {
+                    name: "Electro Field",
+                    description: 'Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to **269.8%** of ATK + **14**, and the last hit launches targets **into the air**. **45**-second cooldown.'
+                }
+            ],
+            discharge: [
+                {
+                    name: "Domain of Thunder",
+                    description: 'When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a Domain of Thunder at the target location upon switching to this weapon, dealing a total of **238.3%** of ATK + **13** damage over 3 attacks to enemies **within the area** and dispelling their buffs. The domain lasts for **3.5** seconds and deals damage equal to **42.4%** of ATK + **2** to a target every **0.5** seconds.'
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set4: ["samir"],
