@@ -79,9 +79,9 @@ const zero = {
                 desc: `When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder** and gain 5 cubes upon switching to this weapon, then unleash the **5** cubes along with a Shockwave. This Shockwave deals damage equal to **131.5%** of ATK + **7** to nearby targets, and **launches** them into the air. Each cube also deals damage equal to **37.3%** of ATK + **2**. If allies are in the vicinity, they gain damage immunity for **3** seconds.`
             },
         ],
-        recChips: {
-            set2: ["coco"],
-            set4: ["coco"], // 4samir removed because global description is changed; won't proc cubes
+        recommendedMatrix: {
+            set2: ["cocoritter"],
+            set4: ["cocoritter"], // 4samir removed because global description is changed; won't proc cubes
             set3: ["pepper", "sobek"]
         }
     },
@@ -113,7 +113,12 @@ const zero = {
         height: '155 cm',
         birthplace: 'Banges',
         horoscope: 'Gemini',
-        birthday: '6 Jun'
+        birthday: '6 Jun',
+        voiceActors: {
+            jp: "村瀬歩 (Ayumu Murase)",
+            en: "",
+            cn: "幽幽"
+        }
     }
 }
 

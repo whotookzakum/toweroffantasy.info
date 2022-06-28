@@ -111,7 +111,12 @@ const samir = {
         height: '171 cm',
         birthplace: '???',
         horoscope: 'Taurus',
-        birthday: '20 May'
+        birthday: '20 May',
+        voiceActors: {
+            jp: "水樹奈々 (Nana Mizuki)",
+            en: "Brittany Cox",
+            cn: "唐雅菁"
+        }
     }
 }
 

@@ -57,7 +57,12 @@ const cobalt = {
         height: '157 cm',
         birthplace: 'Crown',
         horoscope: 'Cancer',
-        birthday: '26 Jun'
+        birthday: '26 Jun',
+        voiceActors: {
+            jp: "川澄綾子 (Ayako Kawasumi)",
+            en: "Stephanie Kerbis",
+            cn: "陈睿婕"
+        }
     }
 }
 

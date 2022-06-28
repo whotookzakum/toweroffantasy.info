@@ -10,7 +10,12 @@ const frigg = {
         shatter: ["A", "8.00"],
         charge: ["A", "8.00"],
         materials: ["ice", "red", "black"],
-        bonusEffect: `After using the Weapon Skill **Fimbulwinter**, a large ice field will be placed at your position, lasting  **25** seconds. Inside the ice field, dodges will not be consumed while using Frigg's weapon, and gain the effect Frozen Domain I: when using Ice weapons, increase Ice ATK by **15%** and Shatter by **25%**.`,
+        bonusEffect: {
+            effect1: {
+                title: "unknown",
+                description: "After using the Weapon Skill **Fimbulwinter**, a large ice field will be placed at your position, lasting  **25** seconds. Inside the ice field, dodges will not be consumed while using Frigg's weapon, and gain the effect Frozen Domain I: when using Ice weapons, increase Ice ATK by **15%** and Shatter by **25%**."
+            }
+        },
         advancement: {
             star1: `Gain **1** point of Frost every time you deal **550%** of Ice ATK with any element while inside the ice field, up to **10** points. When the ice field expires, inflict burst damage for ( Frost points &times; **95%** &times; Ice ATK ) to all enemies within the area. Lose **1** Frost point every **3** seconds that you are outside of the field.`,
 
@@ -43,7 +48,7 @@ const frigg = {
 
         trait4000: `When entering battle gain **2.4%** ice ATK every **3** seconds up to **10** stacks, lasts for **5** seconds. Immune to CC effects in the ice domain.`,
 
-        giftPrefs: ['metalware', 'everyday-items'],
+        giftCategories: ['metalware', 'everyday-items'],
 
         gifts: [
             [60, "present", "tataCards", "pearl", "peppaFigure", "catFigure", "kitchenware"],
@@ -57,7 +62,12 @@ const frigg = {
         height: '190 cm',
         birthplace: '???',
         horoscope: 'Aquarius',
-        birthday: '1 Feb'
+        birthday: '1 Feb',
+        voiceActors: {
+            jp: "伊藤静 (Shizuka Ito)",
+            en: "",
+            cn: "杨梦露"
+        }
     }
 }
 

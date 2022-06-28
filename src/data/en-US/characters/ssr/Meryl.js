@@ -127,7 +127,12 @@ const meryl = {
         height: '170 cm',
         birthplace: '???',
         horoscope: 'Libra',
-        birthday: '10 October'
+        birthday: '10 October',
+        voiceActors: {
+            jp: "石川由依 (Yui Ishikawa)",
+            en: "Kira Buckland",
+            cn: "秦紫翼"
+        }
     }
 }
 

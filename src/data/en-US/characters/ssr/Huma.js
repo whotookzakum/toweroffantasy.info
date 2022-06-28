@@ -120,7 +120,12 @@ const huma = {
         height: '167 cm',
         birthplace: '???',
         horoscope: 'Capricorn',
-        birthday: '12 Jan'
+        birthday: '12 Jan',
+        voiceActors: {
+            jp: "高橋李依 (Rie Takahashi)",
+            en: "",
+            cn: "唐雅菁"
+        }
     }
 }
 

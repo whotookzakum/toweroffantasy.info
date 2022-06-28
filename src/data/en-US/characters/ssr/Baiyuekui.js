@@ -10,7 +10,12 @@ const baiyuekui = {
         shatter: ["S", "12.50"],
         charge: ["A", "8.00"],
         materials: ["volt", "green", "blue"],
-        bonusEffect: "When entering combat, trigger War Intent, increasing your final damage by **15%** but accelerating your cellular aging (lose **1%** of your current HP every **5** seconds). The effect disappears when leaving battle or switching weapons. If your HP drops below **50%**, cellular aging stops but the damage boost from War Intent remains (switching weapons causes the effect to disappear).",
+        bonusEffect: {
+            effect1: {
+                title: "unknown",
+                description: "When entering combat, trigger War Intent, increasing your final damage by **15%** but accelerating your cellular aging (lose **1%** of your current HP every **5** seconds). The effect disappears when leaving battle or switching weapons. If your HP drops below **50%**, cellular aging stops but the damage boost from War Intent remains (switching weapons causes the effect to disappear)."
+            }
+        },
         advancement: {
             star1: `**Dodge attacks** gain an additional hit dealing **80%** of ATK + **2.5%** of HP lost.  
                 The **Weapon Skill** explodes for an additional **160%** of ATK + **5%** of HP lost.  
@@ -59,7 +64,12 @@ const baiyuekui = {
         height: '172 cm',
         birthplace: '???',
         horoscope: '???',
-        birthday: '???'
+        birthday: '???',
+        voiceActors: {
+            jp: "",
+            en: "",
+            cn: "夏一可"
+        }
     }
 }
 

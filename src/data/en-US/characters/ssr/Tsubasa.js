@@ -108,7 +108,12 @@ const tsubasa = {
         height: '169 cm',
         birthplace: 'Astra',
         horoscope: 'Aries',
-        birthday: '24 Mar'
+        birthday: '24 Mar',
+        voiceActors: {
+            jp: "小原好美 (Konomi Kohara)",
+            en: "Amber Lee Connors",
+            cn: "徐徐"
+        }
     }
 }
 

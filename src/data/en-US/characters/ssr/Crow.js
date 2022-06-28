@@ -114,7 +114,12 @@ const crow = {
         height: '162 cm',
         birthplace: 'Astra',
         horoscope: 'Sagittarius',
-        birthday: '17 Dec'
+        birthday: '17 Dec',
+        voiceActors: {
+            jp: "岡本信彦 (Nobuhiko Okamoto)",
+            en: "Casey Mongillo",
+            cn: "翟巍"
+        }
     }
 }
 

@@ -115,7 +115,12 @@ const echo = {
         height: '162 cm',
         birthplace: 'Warren',
         horoscope: 'Leo',
-        birthday: '14 Aug'
+        birthday: '14 Aug',
+        voiceActors: {
+            jp: "大久保瑠美 (Rumi Okubo)",
+            en: "Jeannie Tirado",
+            cn: ""
+        }
     }
 }
 

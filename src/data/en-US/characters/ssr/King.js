@@ -85,7 +85,7 @@ const king = {
                 desc: `When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder** and create a Flaming Scythe upon switching to this weapon, dealing damage equal to **277%** of ATK + **15** and lasts for **10** seconds. Additionally, spawn Flaming Scythes every **2** seconds. The scythes summon volcanic eruptions from the ground, which deal damage equal to **60%** of ATK + **3** to targets and knock them into the air.`
             }
         ],
-        recommendMatrix: {
+        recommendedMatrix: {
             set2: ["king", "shiro"],
             set3: ["sobek", "offensivelogic"]
         }
@@ -104,7 +104,7 @@ const king = {
 
         trait4000: "Every **5** enemies killed by KING restores HP equal to **10%** of Max HP.",
 
-        giftPrefs: ['collectibles', 'rare-items', 'limited-edition'],
+        giftCategories: ['collectibles', 'rare-items', 'limited-edition'],
 
         gifts: [
             [80, "seal", "goldCoin"],
@@ -119,7 +119,12 @@ const king = {
         height: '190 cm',
         birthplace: 'Crown',
         horoscope: 'Scorpio',
-        birthday: '3 Nov'
+        birthday: '3 Nov',
+        voiceActors: {
+            jp: "松岡禎丞 (Yoshitsugu Matsuoka)",
+            en: "Johnny Young",
+            cn: "子晰"
+        }
     }
 }
 

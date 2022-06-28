@@ -75,7 +75,12 @@ const hilda = {
         height: '165 cm',
         birthplace: '???',
         horoscope: 'Aries',
-        birthday: '11 Apr'
+        birthday: '11 Apr',
+        voiceActors: {
+            jp: "花澤香菜 (Kana Hanazawa)",
+            en: "Kira Buckland",
+            cn: ""
+        }
     }
 }
 

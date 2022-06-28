@@ -112,7 +112,12 @@ const claudia = {
         height: '170 cm',
         birthplace: 'Hagarge',
         horoscope: 'Capricorn',
-        birthday: '16 Jan'
+        birthday: '16 Jan',
+        voiceActors: {
+            jp: "小松未可子 (Mikako Komatsu)",
+            en: "",
+            cn: "文小"
+        }
     }
 }
 

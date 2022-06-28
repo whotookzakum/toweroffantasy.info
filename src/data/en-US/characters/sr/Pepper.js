@@ -113,7 +113,12 @@ const pepper = {
         height: '160 cm',
         birthplace: 'Banges',
         horoscope: 'Cancer',
-        birthday: '9 Jul'
+        birthday: '9 Jul',
+        voiceActors: {
+            jp: "能登麻美子 (Mamiko Noto)",
+            en: "Kayli Mills",
+            cn: ""
+        }
     }
 }
 

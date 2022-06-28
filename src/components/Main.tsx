@@ -10,7 +10,7 @@ function Main() {
             <Navigation/>
             <div className="left-gutter"></div>
 
-            <img id="page-bg-img" className="bg-img" src={bgImg} />
+            {/* <img id="page-bg-img" className="bg-img" src={bgImg} /> */}
 
             <div className="middle">
                 {/* <HomePage/> */}

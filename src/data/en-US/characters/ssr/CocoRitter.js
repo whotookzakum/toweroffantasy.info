@@ -83,8 +83,8 @@ const coco = {
             }
         ],
         recommendedMatrix: {
-            set2: ["coco", "meryl"],
-            set4: ["coco", "zero"],
+            set2: ["cocoritter", "meryl"],
+            set4: ["cocoritter", "zero"],
             set3: ["pepper"]
         }
     },
@@ -116,7 +116,12 @@ const coco = {
         height: '147 cm',
         birthplace: 'Hagarde',
         horoscope: 'Gemini',
-        birthday: '1 Jun'
+        birthday: '1 Jun',
+        voiceActors: {
+            jp: "鬼頭明里 (Kito Akari)",
+            en: "Lexi Fontaine",
+            cn: "胡婷婷"
+        }
     }
 }
 

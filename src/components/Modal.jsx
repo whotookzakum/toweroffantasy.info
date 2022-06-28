@@ -38,7 +38,7 @@ function setModalData(item) {
 }
 
 export function Modal(item) {
-    item = SSR_CHARACTERS[13];
+    item = SSR_CHARACTERS[2];
 
     let rarity = 1;
     if (item.rarity === "SR") rarity = 0;
@@ -71,6 +71,9 @@ export function Modal(item) {
                 {hyphenToSpace(gift)}
             </li>
         );
+        if (gift === "vera") {
+
+        }
     }
 
     let gifts = [];
@@ -135,175 +138,200 @@ export function Modal(item) {
         );
     }
 
+    let recMatrix = [];
+    for (const set in item.weapon.recommendedMatrix) {
+        for (const matrix of item.weapon.recommendedMatrix[set]) {
+            recMatrix.push(
+                <li><img src={require(`../data/images/matrix/${matrix}.png`)} alt={matrix + " Matrix"} /></li>
+            );
+        }
+    }
 
 
     return (
         <article className="modal">
-            <h1>{item.name}</h1>
+            <img className="bg-img" src={require(`../data/images/art/${removeSpace(item.name)}.png`)} alt={item.name + " Artwork"} />
+            <div className="modal-backdrop"></div>
 
-            {item.chinaOnly &&
-                <section>
-                    <h2><abbr title="China Exclusive" style={{ fontSize: "1.5rem", verticalAlign: "middle" }} /> China Exclusive </h2>
-                    {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
-                </section>
-            }
+            <header>
+                <h1>{item.name}</h1>
+                <h2>{item.rarity} Simulacrum</h2>
+            </header>
 
-            <h2>Weapon</h2>
-            <div className="weapon-header" style={{ borderColor: elementColor }}>
-                <img className="weapon-image" src={require(`../data/images/wep/${removeSpace(item.name)}.png`)} alt={item.weapon.name} />
-                <div className="weapon-info">
-                    <h3>{item.weapon.name}</h3>
-                    <div className="weapon-stat-grid">
-                        <div className="weapon-stat">
-                            <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
-                            <div>
-                                <h5>Resonance</h5>
-                                <h4>{item.weapon.type}</h4>
+            <div className="modal-body">
+                {item.chinaOnly &&
+                    <section>
+                        <h2><abbr title="China Exclusive" style={{ fontSize: "1.5rem", verticalAlign: "middle" }} /> China Exclusive </h2>
+                        {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
+                    </section>
+                }
+
+                <h2>Weapon</h2>
+                <div className="weapon-header" style={{ borderColor: elementColor }}>
+                    <img className="weapon-image" src={require(`../data/images/wep/${removeSpace(item.name)}.png`)} alt={item.weapon.name} />
+                    <div className="weapon-info">
+                        <h3>{item.weapon.name}</h3>
+                        <div className="weapon-stat-grid">
+                            <div className="weapon-stat">
+                                <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
+                                <div>
+                                    <h5>Resonance</h5>
+                                    <h4>{item.weapon.type}</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div className="weapon-stat">
-                            <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
-                            <div>
-                                <h5>Element</h5>
-                                <h4>{item.weapon.element}</h4>
+                            <div className="weapon-stat">
+                                <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
+                                <div>
+                                    <h5>Element</h5>
+                                    <h4>{item.weapon.element}</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div className="weapon-stat">
-                            <i style={{ color: `var(--color-tier-${removeSpace(item.weapon.shatter[0])})` }}>{item.weapon.shatter[0]}</i>
-                            <div>
-                                <h5>Shatter</h5>
-                                <h4>{item.weapon.shatter[1]}</h4>
+                            <div className="weapon-stat">
+                                <i style={{ color: `var(--color-tier-${removeSpace(item.weapon.shatter[0])})` }}>{item.weapon.shatter[0]}</i>
+                                <div>
+                                    <h5>Shatter</h5>
+                                    <h4>{item.weapon.shatter[1]}</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div className="weapon-stat">
-                            <i style={{ color: `var(--color-tier-${removeSpace(item.weapon.charge[0])})` }}>{item.weapon.charge[0]}</i>
-                            <div>
-                                <h5>Charge</h5>
-                                <h4>{item.weapon.charge[1]}</h4>
+                            <div className="weapon-stat">
+                                <i style={{ color: `var(--color-tier-${removeSpace(item.weapon.charge[0])})` }}>{item.weapon.charge[0]}</i>
+                                <div>
+                                    <h5>Charge</h5>
+                                    <h4>{item.weapon.charge[1]}</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <section className="weapon-effects w-75ch">
-                <h3>Weapon Effects</h3>
-                <div>
-                    <h4 style={{ color: elementColor }}>{elementalEffects[item.weapon.element].title}</h4>
-                    <ReactMarkdown>{elementalEffects[item.weapon.element].description(rarity)}</ReactMarkdown>
-                </div>
-                {item.weapon.bonusEffect && <>{bonusEffects}</>}
-            </section>
-            <section className="weapon-advancements w-75ch">
-                <h3>Advancements</h3>
-                <table className="modal-table">
-                    <thead style={{ borderColor: elementColor }}>
-                        <tr>
-                            <th><h6>Stars</h6></th>
-                            <th><h6>Effect</h6></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {advancements}
-                    </tbody>
-                </table>
-            </section>
-            {item.weapon.abilities &&
-                <section className="weapon-abilities w-75ch">
-                    <h3>Weapon Abilities</h3>
-                    Data reflects unleveled weapons.
-                    {abilities}
+                <section className="weapon-effects w-75ch">
+                    <h3>Weapon Effects</h3>
+                    <div>
+                        <h4 style={{ color: elementColor }}>{elementalEffects[item.weapon.element].title}</h4>
+                        <ReactMarkdown>{elementalEffects[item.weapon.element].description(rarity)}</ReactMarkdown>
+                    </div>
+                    {item.weapon.bonusEffect && <>{bonusEffects}</>}
                 </section>
-            }
-            <section className="weapon-materials w-75ch" >
-                <h3>Upgrade Materials</h3>
-                <ul>
-                    <li className="item-frame rarity-2"><img src={require(`../data/images/mat/${item.weapon.materials[0]}1.png`)} alt={`${item.weapon.materials[0]} 1`} /></li>
-                    <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[0]}2.png`)} alt={`${item.weapon.materials[0]} 2`} /></li>
-                    <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[0]}3.png`)} alt={`${item.weapon.materials[0]} 3`} /></li>
+                <section className="weapon-advancements w-75ch">
+                    <h3>Advancements</h3>
+                    <table className="modal-table">
+                        <thead style={{ borderColor: elementColor }}>
+                            <tr>
+                                <th><h6>Stars</h6></th>
+                                <th><h6>Effect</h6></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {advancements}
+                        </tbody>
+                    </table>
+                </section>
+                {item.weapon.abilities &&
+                    <section className="weapon-abilities w-75ch">
+                        <h3>Weapon Abilities</h3>
+                        Data reflects unleveled weapons.
+                        {abilities}
+                    </section>
+                }
+                <section className="weapon-materials w-75ch" >
+                    <h3>Upgrade Materials</h3>
+                    <ul>
+                        <li className="item-frame rarity-2"><img src={require(`../data/images/mat/${item.weapon.materials[0]}1.png`)} alt={`${item.weapon.materials[0]} 1`} /></li>
+                        <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[0]}2.png`)} alt={`${item.weapon.materials[0]} 2`} /></li>
+                        <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[0]}3.png`)} alt={`${item.weapon.materials[0]} 3`} /></li>
 
-                    <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[1]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
-                    <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[1]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
-                    <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[1]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
+                        <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[1]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
+                        <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[1]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
+                        <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[1]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
 
-                    <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[2]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
-                    <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
-                    <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
-                </ul>
-            </section>
-            <section className="weapon-rec-matrices w-75ch">
-                <h3>Recommended Matrices</h3>
-                <ul>
-                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
-                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
-                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
-                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
-                    <li><img src={require(`../data/images/matrix/baiyuekui.png`)} alt="" /></li>
-                </ul>
-            </section>
+                        <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[2]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
+                        <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
+                        <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
+                    </ul>
+                </section>
+                <section className="weapon-rec-matrices w-75ch">
+                    <h3>Recommended Matrices</h3>
+                    <ul>{recMatrix}</ul>
+                </section>
 
-            <hr />
+                <hr />
 
-            <h2>Awakening</h2>
-            <section className="awakening-traits w-75ch">
-                <h3>Traits</h3>
-                <table className="modal-table">
-                    <thead style={{ borderColor: elementColor }}>
-                        <tr>
-                            <th><h6>Points</h6></th>
-                            <th><h6>Effect</h6></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>1200</th>
-                            <td><ReactMarkdown>{item.awakening.trait1200}</ReactMarkdown></td>
-                        </tr>
-                        <tr>
-                            <th>4000</th>
-                            <td><ReactMarkdown>{item.awakening.trait4000}</ReactMarkdown></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section className="awakening-gifts w-75ch">
-                <h3>Favorite Gifts</h3>
-                <ul className="gift-categories-grid">{giftCategories}</ul>
-                <ul className="gifts-grid">{gifts}</ul>
-            </section>
+                <h2>Awakening</h2>
+                <section className="awakening-traits w-75ch">
+                    <h3>Simulacrum Traits</h3>
+                    <table className="modal-table">
+                        <thead style={{ borderColor: elementColor }}>
+                            <tr>
+                                <th><h6>Points</h6></th>
+                                <th><h6>Effect</h6></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1200</th>
+                                <td><ReactMarkdown>{item.awakening.trait1200}</ReactMarkdown></td>
+                            </tr>
+                            <tr>
+                                <th>4000</th>
+                                <td><ReactMarkdown>{item.awakening.trait4000}</ReactMarkdown></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section className="awakening-gifts w-75ch">
+                    <h3>Favorite Gifts</h3>
+                    <ul className="gift-categories-grid">{giftCategories}</ul>
+                    <ul className="gifts-grid">{gifts}</ul>
+                </section>
 
-            <hr />
+                <hr />
 
-            <h2>Character Bio</h2>
-            <section className="character-bio w-75ch">
-                <div className="bio-container">
+                <h2>Other Info</h2>
+                <section className="character-bio w-75ch">
+                    <h3>Character Profile</h3>
+                    <div className="bio-container">
+                        <ul>
+                            <li>
+                                <h5>Gender</h5>
+                                <h4>{item.bio.gender}</h4>
+                            </li>
+                            <li>
+                                <h5>Height</h5>
+                                <h4>{item.bio.height}</h4>
+                            </li>
+                            <li>
+                                <h5>Birthplace</h5>
+                                <h4>{item.bio.birthplace}</h4>
+                            </li>
+                            <li>
+                                <h5>Horoscope</h5>
+                                <h4>{item.bio.horoscope}</h4>
+                            </li>
+                            <li>
+                                <h5>Birthday</h5>
+                                <h4>{item.bio.birthday}</h4>
+                            </li>
+                        </ul>
+                        <img src={require(`../data/images/charts/${removeSpace(item.name)}.png`)} alt="" />
+                    </div>
+                </section>
+                <section className="voice-actors w-75ch">
+                    <h3>Voice Actors</h3>
                     <ul>
                         <li>
-                            <h5>Gender</h5>
-                            <h4>{item.bio.gender}</h4>
+                            <h5>English</h5>
+                            <h4>{item.bio.voiceActors.en}</h4>
                         </li>
                         <li>
-                            <h5>Height</h5>
-                            <h4>{item.bio.height}</h4>
+                            <h5>Japanese</h5>
+                            <h4>{item.bio.voiceActors.jp}</h4>
                         </li>
                         <li>
-                            <h5>Birthplace</h5>
-                            <h4>{item.bio.birthplace}</h4>
-                        </li>
-                        <li>
-                            <h5>Horoscope</h5>
-                            <h4>{item.bio.horoscope}</h4>
-                        </li>
-                        <li>
-                            <h5>Birthday</h5>
-                            <h4>{item.bio.birthday}</h4>
+                            <h5>Chinese</h5>
+                            <h4>{item.bio.voiceActors.cn}</h4>
                         </li>
                     </ul>
-                    <img src={require(`../data/images/charts/${removeSpace(item.name)}.png`)} alt="" />
-
-                </div>
-
-            </section>
-
+                </section>
+            </div>
         </article >
     );
 }

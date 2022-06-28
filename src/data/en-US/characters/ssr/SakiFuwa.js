@@ -33,8 +33,8 @@ const saki = {
         },
         skills: [],
         recommendedMatrix: {
-            set2: ["saki", "samir"],
-            set4: ["saki"],
+            set2: ["sakifuwa", "samir"],
+            set4: ["sakifuwa"],
             set3: ["sobek"]
         }
     },
@@ -65,7 +65,12 @@ const saki = {
         height: '157 cm',
         birthplace: 'Mirror City',
         horoscope: 'Libra',
-        birthday: '11 October'
+        birthday: '11 October',
+        voiceActors: {
+            jp: "",
+            en: "",
+            cn: "唐小喜"
+        }
     }
 }
 

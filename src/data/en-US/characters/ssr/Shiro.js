@@ -112,7 +112,12 @@ const shiro = {
         height: '163 cm',
         birthplace: 'Warren',
         horoscope: 'Virgo',
-        birthday: '22 Sep'
+        birthday: '22 Sep',
+        voiceActors: {
+            jp: "小澤亜李 (Ari Ozawa)",
+            en: "Kristen McGuire",
+            cn: "小耗"
+        }
     }
 }
 

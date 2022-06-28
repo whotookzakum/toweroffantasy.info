@@ -104,7 +104,12 @@ const bailing = {
         height: '163 cm',
         birthplace: 'HT201 Sanctuary',
         horoscope: 'Taurus',
-        birthday: '8 May'
+        birthday: '8 May',
+        voiceActors: {
+            jp: "日高里菜 (Rina Hidaka)",
+            en: "",
+            cn: ""
+        }
     }
 }
 

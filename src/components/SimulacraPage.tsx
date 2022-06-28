@@ -12,16 +12,16 @@ function SimulacraPage() {
                     They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.
                 </p>
             </header>
-
+            
             <section>
                 <h2>SSR Simulacra</h2>
-                {/* <ModalMenu listContent={SSR_CHARACTERS} /> */}
+                <ModalMenu listContent={SSR_CHARACTERS} />
                 <Modal/>
             </section>
 
             <section>
                 <h2>SR Simulacra</h2>
-                {/* <ModalMenu listContent={SR_CHARACTERS} /> */}
+                <ModalMenu listContent={SR_CHARACTERS} />
             </section>
 
         </main>

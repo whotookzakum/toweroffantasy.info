@@ -10,7 +10,12 @@ const ruby = {
         shatter: ["S", "11.50"],
         charge: ["A", "8.00"],
         materials: ["flame", "green", "blue"],
-        bonusEffect: `**Flame Resonance**: When equipped with **2** or more Flame weapons, increase Flame ATK by **20%** and Flame Resistance by **40%**, taking effect in the background.`,
+        bonusEffect: {
+            effect1: {
+                title: "Flame Resonance",
+                description: "When equipped with **2** or more Flame weapons, increase Flame ATK by **20%** and Flame Resistance by **40%**, taking effect in the background."
+            }
+        },
         advancement: {
             star1: `[Scorching Heat] Increases Sparky's basic attack damage to **182%**. Weapon Skill cooldown reduced to **24** seconds.`,
             
@@ -25,7 +30,7 @@ const ruby = {
             star6: `[Scorching Heat] Increases Sparky's basic attack damage to **240%** and doubles the effectiveness of [Heat]. Weapon Skill cooldown reduced to **16** seconds.`
         },
         skills: [],
-        recChips: {
+        recommendedMatrix: {
             set2: ["ruby", "samir", "tsubasa", "crow"],
             set4: ["ruby"],
             set3: ["sobek"]
@@ -59,7 +64,12 @@ const ruby = {
         height: '140 cm',
         birthplace: '???',
         horoscope: 'Cancer',
-        birthday: '15 July'
+        birthday: '15 July',
+        voiceActors: {
+            jp: "",
+            en: "",
+            cn: "赵爽"
+        }
     }
 }
 

@@ -10,7 +10,12 @@ const nemesis = {
         shatter: ["B", "6.00"],
         charge: ["A", "8.00"],
         materials: ["volt", "green", "blue"],
-        bonusEffect: `**Volt Resonance**: When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background.`,
+        bonusEffect: {
+            effect1: {
+                title: "Volt Resonance",
+                description: "When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background."
+            }
+        },
         advancement: {
             star1: `Activating the **Weapon Skill** or **Discharge Skill** creates **1** Electrode, immediately grants **5** levels of Chain Heal Enhancement, and releases a healing chain that heals nearby friendly units for **135%** of ATK.`,
 
@@ -26,8 +31,8 @@ const nemesis = {
         },
         skills: [],
         recommendedMatrix: {
-            set2: ["nemesis", "coco"],
-            set4: ["nemesis", "coco"],
+            set2: ["nemesis", "cocoritter"],
+            set4: ["nemesis", "cocoritter"],
             set3: ["sobek"]
         }
     },
@@ -58,7 +63,12 @@ const nemesis = {
         height: '165 cm',
         birthplace: '???',
         horoscope: 'Gemini',
-        birthday: '25 May'
+        birthday: '25 May',
+        voiceActors: {
+            jp: "",
+            en: "",
+            cn: "宋媛媛"
+        }
     }
 }
 

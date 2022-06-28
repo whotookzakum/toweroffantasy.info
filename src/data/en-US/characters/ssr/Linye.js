@@ -107,7 +107,12 @@ const linye = {
         height: '',
         birthplace: 'Mirror City',
         horoscope: 'Virgo',
-        birthday: '3 Sep'
+        birthday: '3 Sep',
+        voiceActors: {
+            jp: "",
+            en: "",
+            cn: ""
+        }
     }
 }
 

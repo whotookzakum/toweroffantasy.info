@@ -98,6 +98,23 @@
         padding: 0;
     }
 
+    header {
+        text-transform: uppercase;
+    }
+
+    .bg-img {
+        z-index: -1;
+    }
+
+    .modal-backdrop {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
     .modal-table {
         text-align: left;
 
@@ -204,7 +221,9 @@
 .weapon-advancements,
 .awakening-traits,
 .awakening-gifts,
+.character-bio,
 .character-bio .bio-container,
+.voice-actors, 
 .weapon-materials,
 .weapon-rec-matrices,
 .weapon-abilities {
@@ -383,12 +402,13 @@
     }
 }
 
-.character-bio {
-    background-color: clr(container, light);
+.character-bio, .voice-actors {
 
     .bio-container {
         padding: $spacing;
         flex-direction: column-reverse;
+        background-color: clr(container, light);
+        box-shadow: $shadow;
     }
 
     @media (min-width: 700px) {
@@ -417,5 +437,15 @@
     h4 {
         text-transform: uppercase;
         line-height: 1;
+    }
+}
+
+.voice-actors ul {
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+
+    li {
+        background: clr(container, light);
+        padding: 1rem;
+        box-shadow: $shadow;
     }
 }

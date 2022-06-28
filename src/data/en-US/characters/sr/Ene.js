@@ -120,7 +120,12 @@ const ene = {
         height: '145 cm',
         birthplace: 'Crown',
         horoscope: 'Leo',
-        birthday: '17 Aug'
+        birthday: '17 Aug',
+        voiceActors: {
+            jp: "小清水亜美 (Ami Koshimizu)",
+            en: "Melissa Fahn",
+            cn: ""
+        }
     }
 }
 
