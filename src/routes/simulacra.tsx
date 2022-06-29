@@ -1,7 +1,7 @@
-import { ModalMenu, Modal } from "./Modal";
+import { ModalMenu, Modal } from "../components/Modal";
 import { SSR_CHARACTERS, SR_CHARACTERS } from "../data/en-US/characterList";
 
-function SimulacraPage() {
+function Simulacra() {
     return (
         <main>
             <header>
@@ -14,13 +14,12 @@ function SimulacraPage() {
             </header>
             
             <section>
-                <h2>SSR Simulacra</h2>
+                <h2><span style={{color: "var(--color-tier-s)"}}>SSR</span> Simulacra</h2>
                 <ModalMenu listContent={SSR_CHARACTERS} />
-                <Modal/>
             </section>
 
             <section>
-                <h2>SR Simulacra</h2>
+                <h2><span style={{color: "var(--color-tier-a)"}}>SR</span> Simulacra</h2>
                 <ModalMenu listContent={SR_CHARACTERS} />
             </section>
 
@@ -28,4 +27,4 @@ function SimulacraPage() {
     );
 }
 
-export default SimulacraPage;
+export default Simulacra;

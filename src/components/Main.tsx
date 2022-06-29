@@ -1,25 +1,25 @@
 import '../scss/styles.scss';
-import HomePage from "./HomePage";
 import Navigation from './Navigation';
-import SimulacraPage from './SimulacraPage';
-import bgImg from "../data/images/weila_lihui.png"
+import Home from "../routes/home";
+import Simulacra from '../routes/simulacra';
+import { Outlet, Route, Routes } from 'react-router-dom';
+import { Modal } from './Modal';
 
-function Main() {
-    return(
+export default function Main() {
+    return (
         <div className="wrapper">
-            <Navigation/>
+            <Navigation />
             <div className="left-gutter"></div>
 
-            {/* <img id="page-bg-img" className="bg-img" src={bgImg} /> */}
-
             <div className="middle">
-                {/* <HomePage/> */}
-                <SimulacraPage/>
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path="simulacra" element={<Simulacra />} />
+                    <Route path="simulacra/*" element={<Modal/>} />
+                </Routes>
             </div>
-
+            <Outlet/>
             <div className="right-gutter"></div>
         </div>
     );
 }
-
-export default Main;

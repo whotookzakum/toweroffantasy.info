@@ -29,7 +29,7 @@ function BannerList({ data }: BannerListProps) {
 
 
 
-function HomePage() {
+function Home() {
 
     const [isExpanded, setHeight] = useState(false);
 
@@ -39,6 +39,7 @@ function HomePage() {
 
     return (
         <main>
+            <img className="bg-img" src={require("../data/images/weila_lihui.png")} />
             <h1>Welcome to the Tower of Fantasy Index.</h1>
             <p>
                 This site will mainly follow the <strong>Global version</strong> of Tower of Fantasy.<br />
@@ -100,4 +101,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default Home;

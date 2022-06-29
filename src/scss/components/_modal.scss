@@ -14,11 +14,23 @@
         position: relative;
         text-align: center;
         background: clr(container, light);
-        padding: 1rem 0;
+        
         cursor: pointer;
         box-shadow: $shadow;
         transition: transform 125ms ease;
 
+        a {
+            display: block;
+            height: calc(100% - 2rem);
+            width: 100%;
+            padding: 1rem 0;
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                background: clr(text, dark);
+            }
+        }
 
         abbr {
             position: absolute;
@@ -32,10 +44,6 @@
 
         img {
             margin: 0 0.1rem;
-        }
-
-        &:hover {
-            background: clr(text, dark);
         }
     }
 }
@@ -100,10 +108,9 @@
 
     header {
         text-transform: uppercase;
-    }
-
-    .bg-img {
-        z-index: -1;
+        h2, h1 {
+            margin: 0;
+        }
     }
 
     .modal-backdrop {
@@ -165,7 +172,7 @@
         max-width: 70%;
         display: flex;
         flex-direction: column;
-        row-gap: 0.5rem;
+        gap: 0.5rem;
     }
 }
 
@@ -173,6 +180,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
+    
 
     .weapon-stat {
         display: flex;

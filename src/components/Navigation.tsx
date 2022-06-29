@@ -1,4 +1,5 @@
 import logo from "../data/images/avatar/tata.png";
+import { Link } from "react-router-dom";
 
 function Navigation() {
     return (
@@ -10,36 +11,36 @@ function Navigation() {
             <div className="nav-backdrop"></div>
             <div className="nav-body">
                 <div className="navbar-brand">
-                    <a href="index">
+                    <Link to="">
                         <img src={logo} alt="Logo" /><br />
                         Tower of Fantasy Index
-                    </a>
+                    </Link>
                 </div>
                 <hr />
                 <ul>
                     <li>
-                        <a href="simulacra">Simulacra</a>
+                        <Link to="/simulacra">Simulacra</Link>
                     </li>
                     <li>
-                        <a href="matrices">Matrices</a>
+                        <Link to="matrices">Matrices</Link>
                     </li>
                     <li>
-                        <a href="relics">Relics</a>
+                        <Link to="/relics">Relics</Link>
                     </li>
                     <li>
-                        <a href="food">Food</a>
+                        <Link to="/food">Food</Link>
                     </li>
                     <li>
-                        <a href="mounts">Mounts</a>
+                        <Link to="/mounts">Mounts</Link>
                     </li>
                     <li>
-                        <a href="guides">Guides</a>
+                        <Link to="/guides">Guides</Link>
                     </li>
                     <li>
                         <a href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener">Interactive Map</a>
                     </li>
                     <li>
-                        <a href="damagecalculator">Damage Calculator</a>
+                        <Link to="/damagecalculator">Damage Calculator</Link>
                     </li>
                 </ul>
                 <hr />

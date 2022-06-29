@@ -1,6 +1,7 @@
 import { SSR_CHARACTERS, SR_CHARACTERS } from "../data/en-US/characterList";
 import elementalEffects from "../data/en-US/elementalEffects";
 import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
 
 
 function removeSpace(string) {
@@ -12,33 +13,34 @@ function hyphenToSpace(string) {
 }
 
 export function ModalMenu({ listContent }) {
-
-    const list = listContent.map(character =>
-        <li onClick={() => setModalData(character)}>
-            {character.chinaOnly && <abbr title="China Exclusive" />}
-            <img src={require(`../data/images/avatar/${removeSpace(character.name)}.png`)}
-                alt={character.name} />
-            <h3>{character.name}</h3>
-            <img src={require(`../data/images/${character.weapon.type}.png`)}
-                alt={character.weapon.type} />
-            <img src={require(`../data/images/${character.weapon.element}.png`)}
-                alt={character.weapon.element} />
-        </li>
-    );
-
     return (
         <menu className="modal-menu">
-            {list}
+            {listContent.map(character =>
+                <li onClick={() => setModalData(character)} key={character.name}>
+                    <Link to={`/simulacra/${removeSpace(character.name)}`}>
+                        {character.chinaOnly && <abbr title="China Exclusive" />}
+                        <img src={require(`../data/images/avatar/${removeSpace(character.name)}.png`)}
+                            alt={character.name} />
+                        <h3>{character.name}</h3>
+                        <img src={require(`../data/images/${character.weapon.type}.png`)}
+                            alt={character.weapon.type} />
+                        <img src={require(`../data/images/${character.weapon.element}.png`)}
+                            alt={character.weapon.element} />
+                    </Link>
+                </li>
+            )}
         </menu>
     );
 }
 
 function setModalData(item) {
+    console.log(item.weapon);
     Modal(item);
 }
 
 export function Modal(item) {
-    item = SSR_CHARACTERS[2];
+    // item = SSR_CHARACTERS[2];
+    
 
     let rarity = 1;
     if (item.rarity === "SR") rarity = 0;
