@@ -1,45 +1,49 @@
 import logo from "../data/images/avatar/tata.png";
 import { NavLink, Link, Outlet } from "react-router-dom";
+import { useState } from "react";
 
 function Navigation() {
+
+    const [togglerState, setTogglerState] = useState(false);
+
     return (
         <nav className="sidenav">
-            <input type="checkbox" id="nav-toggler" />
-            <label htmlFor="nav-toggler">
+            <input type="checkbox" id="nav-toggler" checked={togglerState} />
+            <label htmlFor="nav-toggler" onClick={() => setTogglerState(!togglerState)}>
                 <i className="toggler-lines"></i>
             </label>
-            <div className="nav-backdrop"></div>
+            <div className="nav-backdrop" onClick={() => setTogglerState(!togglerState)}></div>
             <div className="nav-body">
                 <div className="navbar-brand">
-                    <Link to="/">
+                    <Link to="/" onClick={() => setTogglerState(!togglerState)}>
                         <img src={logo} alt="Logo" /><br />
                         Tower of Fantasy Index
                     </Link>
                 </div>
                 <hr />
                 <ul>
-                    <li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/simulacra">Simulacra</NavLink>
                     </li>
-                    <li>
-                        <NavLink to="matrices">Matrices</NavLink>
+                    <li onClick={() => setTogglerState(!togglerState)}>
+                        <NavLink to="/matrices">Matrices</NavLink>
                     </li>
-                    <li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/relics">Relics</NavLink>
                     </li>
-                    <li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/food">Food</NavLink>
                     </li>
-                    <li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/mounts">Mounts</NavLink>
                     </li>
-                    <li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/guides">Guides</NavLink>
                     </li>
                     <li>
                         <a href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener">Interactive Map</a>
                     </li>
-                    <li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/damagecalculator">Damage Calculator</NavLink>
                     </li>
                 </ul>

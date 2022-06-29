@@ -74,10 +74,10 @@ function Home() {
 
             <div className="credits">
                 <h4>Created by</h4>
-                <span>Pyrosu#6969, Zakum#3080</span>
+                <span>Pyrosu, Zakum</span>
 
                 <h4>Original contents by</h4>
-                <span>Pyrosu#6969, BakuBaku#1314, Sera Naoki#7502</span>
+                <span>Pyrosu, BakuBaku, Sera Naoki</span>
 
                 <h4>Special Thanks</h4>
                 <ul>

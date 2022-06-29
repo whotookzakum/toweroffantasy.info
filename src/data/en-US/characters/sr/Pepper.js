@@ -83,8 +83,8 @@ const pepper = {
             }
         ],
         recommendedMatrix: {
-            set2: ["coco"],
-            set4: ["coco"],
+            set2: ["cocoritter"],
+            set4: ["cocoritter"],
             set3: ["pepper"]
         }
     },

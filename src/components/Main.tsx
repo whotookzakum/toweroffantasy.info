@@ -23,7 +23,7 @@ export default function Main() {
                     <Route
                         path="/"
                         element={
-                            <Page title="Home">
+                            <Page title="Home" description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
                                 <Home />
                             </Page>
                         }
@@ -31,7 +31,8 @@ export default function Main() {
                     <Route
                         path="simulacra"
                         element={
-                            <Page title="Simulacra">
+                            <Page 
+                                title="Simulacra" description="Information about all the characters and their weapons in Tower of Fantasy Global and Chinese versions.">
                                 <Simulacra />
                             </Page>
                         }
@@ -39,7 +40,7 @@ export default function Main() {
                     <Route
                         path="simulacra/:itemName"
                         element={
-                            <Page title={getCharacterWithSpaces(location)} >
+                            <Page title={getCharacterWithSpaces(location)} description={`${getCharacterWithSpaces(location)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal />
                             </Page>
                         }
