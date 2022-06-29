@@ -23,8 +23,9 @@ import Ene from './characters/sr/Ene';
 import Hilda from './characters/sr/Hilda';
 import Pepper from './characters/sr/Pepper';
 
+import { removeSpace } from '../../utils/stringHelper';
 
-export const SSR_CHARACTERS = [
+export const CHARACTERS = [
     SakiFuwa,
     Ruby,
     Frigg,
@@ -41,15 +42,22 @@ export const SSR_CHARACTERS = [
     Samir,
     Shiro,
     Tsubasa,
-    Zero
-]
-
-
-
-export const SR_CHARACTERS = [
+    Zero,
     BaiLing,
     Echo,
     Ene,
     Hilda,
     Pepper
 ]
+
+export function getCharacter(requestedCharacter) {
+    return CHARACTERS.find((character) => removeSpace(character.name) === requestedCharacter);
+}
+
+export function getCharacterWithSpaces(requestedCharacter) {
+    let result = "";
+    CHARACTERS.find((character) => {
+        if (removeSpace(character.name) === requestedCharacter) result = character.name
+    });
+    return result;
+}

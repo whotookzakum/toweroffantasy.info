@@ -38,7 +38,7 @@ function Home() {
     }
 
     return (
-        <main>
+        <>
             <img className="bg-img" src={require("../data/images/weila_lihui.png")} />
             <h1>Welcome to the Tower of Fantasy Index.</h1>
             <p>
@@ -97,7 +97,7 @@ function Home() {
 
 
 
-        </main >
+        </>
     );
 }
 

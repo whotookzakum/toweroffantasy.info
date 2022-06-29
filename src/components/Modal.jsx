@@ -1,22 +1,15 @@
-import { SSR_CHARACTERS, SR_CHARACTERS } from "../data/en-US/characterList";
+import { CHARACTERS, getCharacter } from "../data/en-US/characterList";
 import elementalEffects from "../data/en-US/elementalEffects";
 import ReactMarkdown from "react-markdown";
-import { Link } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
+import { removeSpace, hyphenToSpace } from "../utils/stringHelper";
 
-
-function removeSpace(string) {
-    return string.toLowerCase().replace(/\s/g, '');
-}
-
-function hyphenToSpace(string) {
-    return string.replace(/-/g, ' ');
-}
 
 export function ModalMenu({ listContent }) {
     return (
         <menu className="modal-menu">
             {listContent.map(character =>
-                <li onClick={() => setModalData(character)} key={character.name}>
+                <li key={character.name}>
                     <Link to={`/simulacra/${removeSpace(character.name)}`}>
                         {character.chinaOnly && <abbr title="China Exclusive" />}
                         <img src={require(`../data/images/avatar/${removeSpace(character.name)}.png`)}
@@ -29,18 +22,18 @@ export function ModalMenu({ listContent }) {
                     </Link>
                 </li>
             )}
+            <Outlet/>
         </menu>
     );
 }
 
-function setModalData(item) {
-    console.log(item.weapon);
+function setModalData({item}) {
     Modal(item);
 }
 
-export function Modal(item) {
-    // item = SSR_CHARACTERS[2];
-    
+export function Modal() {
+    let params = useParams();
+    let item = getCharacter(params.itemName);
 
     let rarity = 1;
     if (item.rarity === "SR") rarity = 0;

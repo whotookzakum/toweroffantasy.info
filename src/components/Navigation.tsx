@@ -1,5 +1,5 @@
 import logo from "../data/images/avatar/tata.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 
 function Navigation() {
     return (
@@ -11,7 +11,7 @@ function Navigation() {
             <div className="nav-backdrop"></div>
             <div className="nav-body">
                 <div className="navbar-brand">
-                    <Link to="">
+                    <Link to="/">
                         <img src={logo} alt="Logo" /><br />
                         Tower of Fantasy Index
                     </Link>
@@ -19,28 +19,28 @@ function Navigation() {
                 <hr />
                 <ul>
                     <li>
-                        <Link to="/simulacra">Simulacra</Link>
+                        <NavLink to="/simulacra">Simulacra</NavLink>
                     </li>
                     <li>
-                        <Link to="matrices">Matrices</Link>
+                        <NavLink to="matrices">Matrices</NavLink>
                     </li>
                     <li>
-                        <Link to="/relics">Relics</Link>
+                        <NavLink to="/relics">Relics</NavLink>
                     </li>
                     <li>
-                        <Link to="/food">Food</Link>
+                        <NavLink to="/food">Food</NavLink>
                     </li>
                     <li>
-                        <Link to="/mounts">Mounts</Link>
+                        <NavLink to="/mounts">Mounts</NavLink>
                     </li>
                     <li>
-                        <Link to="/guides">Guides</Link>
+                        <NavLink to="/guides">Guides</NavLink>
                     </li>
                     <li>
                         <a href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener">Interactive Map</a>
                     </li>
                     <li>
-                        <Link to="/damagecalculator">Damage Calculator</Link>
+                        <NavLink to="/damagecalculator">Damage Calculator</NavLink>
                     </li>
                 </ul>
                 <hr />
@@ -57,6 +57,7 @@ function Navigation() {
                 </ul>
                 <span className="nav-footer">&copy; Tower of Fantasy Index.<br /> All rights reserved.</span>
             </div>
+            <Outlet/>
         </nav>
     );
 }
