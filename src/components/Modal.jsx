@@ -27,9 +27,6 @@ export function ModalMenu({ listContent }) {
     );
 }
 
-function setModalData({item}) {
-    Modal(item);
-}
 
 export function Modal() {
     let params = useParams();

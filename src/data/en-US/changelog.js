@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
-        date: "24 June 2022",
-        text: "Polished site layout"
+        date: "??? 2022",
+        text: "Polished site layout; Hoverboard relic added; Couant II description added; Voice actors for Simulacra added;"
     },
     {
         date: "18 June 2022",

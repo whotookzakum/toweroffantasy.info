@@ -2,7 +2,7 @@ const recipes = [
     {
         id: 0,
         name: 'Fried Mushrooms',
-        imgSrc: 'friedmushroom.png',
+        chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 'Recovers **5** satiety<br>Recovers **10% + 1,500** HP',
@@ -13,7 +13,7 @@ const recipes = [
     {
         id: 1,
         name: 'Crispy Grilled Fish',
-        imgSrc: 'crispygrilledfish.png',
+        chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -24,7 +24,7 @@ const recipes = [
     {
         id: 2,
         name: 'Wholegrain Bread',
-        imgSrc: 'wheatbread.png',
+        chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -35,7 +35,7 @@ const recipes = [
     {
         id: 3,
         name: 'Sizzling Meat',
-        imgSrc: 'sizzledbarbecuedmeat.png',
+        chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -46,7 +46,7 @@ const recipes = [
     {
         id: 4,
         name: 'Lettuce Salad',
-        imgSrc: 'lettucesalad.png',
+        chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 'Recovers **5** satiety<br>Recovers **10% + 1,500** HP',
@@ -58,7 +58,7 @@ const recipes = [
     {
         id: 5,
         name: 'Fried Egg',
-        imgSrc: 'friedegg.png',
+        chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 'Recovers **5** satiety<br>Recovers **10% + 1,500** HP',
@@ -69,7 +69,7 @@ const recipes = [
     {
         id: 6,
         name: 'Seaweed and Egg Soup',
-        imgSrc: 'vegetableeggsoup.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -81,7 +81,7 @@ const recipes = [
     {
         id: 7,
         name: 'Breakfast Cereal',
-        imgSrc: 'milkoat.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -93,7 +93,7 @@ const recipes = [
     {
         id: 8,
         name: 'Crispy Chicken Burger',
-        imgSrc: 'crispychickendrumstickburger.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -106,7 +106,7 @@ const recipes = [
     {
         id: 9,
         name: 'Egg Fried Rice',
-        imgSrc: 'eggfriedrice.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -118,7 +118,7 @@ const recipes = [
     {
         id: 10,
         name: 'Golden Egg and Tomato',
-        imgSrc: 'goldenchoppedtomato.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -130,7 +130,7 @@ const recipes = [
     {
         id: 11,
         name: 'Mushroom Soup',
-        imgSrc: 'mushroomsoup.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -142,7 +142,7 @@ const recipes = [
     {
         id: 12,
         name: 'Steamed Conch',
-        imgSrc: 'steamedsnails.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -154,7 +154,7 @@ const recipes = [
     {
         id: 13,
         name: 'Meat and Potato Stew',
-        imgSrc: 'potatostew.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -166,7 +166,7 @@ const recipes = [
     {
         id: 14,
         name: 'Fries',
-        imgSrc: 'frenchfries.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -178,7 +178,7 @@ const recipes = [
     {
         id: 15,
         name: 'Vegetable Salad',
-        imgSrc: 'vegetablesalad.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -192,7 +192,7 @@ const recipes = [
     {
         id: 16,
         name: 'Fried Chicken',
-        imgSrc: 'friedchicken.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -204,7 +204,7 @@ const recipes = [
     {
         id: 17,
         name: 'Honeyed Fruit Juice',
-        imgSrc: 'honeyfruitjuice.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **300** stamina<br>Recovers **12% + 3,300** HP',
@@ -217,7 +217,7 @@ const recipes = [
     {
         id: 18,
         name: 'Iced Orchid Surprise',
-        imgSrc: 'cocktail.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **300** stamina<br>Recovers **12% + 3,300** HP',
@@ -230,7 +230,7 @@ const recipes = [
     {
         id: 19,
         name: 'Stir-Fried Broccoli',
-        imgSrc: 'stirfriedbroccoli.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -241,7 +241,7 @@ const recipes = [
     {
         id: 20,
         name: 'Meat Bun',
-        imgSrc: 'meatbuns.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -253,7 +253,7 @@ const recipes = [
     {
         id: 21,
         name: 'Sliced Fish with Mushroom',
-        imgSrc: 'mushroomfillet.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -265,7 +265,7 @@ const recipes = [
     {
         id: 22,
         name: 'Dandelion Mushroom Soup',
-        imgSrc: 'dandelionmushroomsoup.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
@@ -277,7 +277,7 @@ const recipes = [
     {
         id: 23,
         name: 'Surf and Turf',
-        imgSrc: 'pearlfish.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 'Recovers **8** satiety<br>Recovers **13% + 10,000** HP',
@@ -289,7 +289,7 @@ const recipes = [
     {
         id: 24,
         name: 'Red Wheat Bread',
-        imgSrc: 'redwheatbread.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 'Recovers **16** satiety',
@@ -300,7 +300,7 @@ const recipes = [
     {
         id: 25,
         name: 'Firecap Mushroom Soup',
-        imgSrc: 'fireearmushroomsoup.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 'Recovers **400** stamina<br>Recovers **13% + 10,000** HP',
@@ -312,7 +312,7 @@ const recipes = [
     {
         id: 26,
         name: 'Black Moss Soup',
-        imgSrc: 'blackmosssoup.png',
+        chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 'Recovers **8** satiety<br>Recovers **13% + 10,000** HP',
@@ -324,7 +324,7 @@ const recipes = [
     {
         id: 27,
         name: 'Seafood Soup',
-        imgSrc: 'seafoodsoup.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -341,7 +341,7 @@ const recipes = [
     {
         id: 28,
         name: 'Spicy Burger',
-        imgSrc: 'spicythickmeatburger.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -358,7 +358,7 @@ const recipes = [
     {
         id: 29,
         name: 'Steamed Crab',
-        imgSrc: 'steamedcrab.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
@@ -370,7 +370,7 @@ const recipes = [
     {
         id: 30,
         name: 'Iced Strawberry Soda',
-        imgSrc: 'strawberryicedsoda.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -387,7 +387,7 @@ const recipes = [
     {
         id: 31,
         name: 'Thundercloud Blueberry Soda',
-        imgSrc: 'lightningblueberrysoda.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -404,7 +404,7 @@ const recipes = [
     {
         id: 32,
         name: 'Simple Power Salad',
-        imgSrc: 'energysalad.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -423,7 +423,7 @@ const recipes = [
     {
         id: 33,
         name: 'Steamed Egg with Sea Urchin',
-        imgSrc: 'seaurchinomelette.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
@@ -435,7 +435,7 @@ const recipes = [
     {
         id: 34,
         name: 'Jam on Toast',
-        imgSrc: 'doubleberrysaucetoast.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -452,7 +452,7 @@ const recipes = [
     {
         id: 35,
         name: 'Tomato and Fried Egg Pasta',
-        imgSrc: 'tomatospaghettiomelette.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: `
@@ -469,7 +469,7 @@ const recipes = [
     {
         id: 36,
         name: 'Fruit Cake',
-        imgSrc: 'fruitcake.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
@@ -483,7 +483,7 @@ const recipes = [
     {
         id: 37,
         name: 'Boiled Scallops',
-        imgSrc: 'boiledseaconch.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
@@ -495,7 +495,7 @@ const recipes = [
     {
         id: 38,
         name: 'Roast Rump',
-        imgSrc: 'roastedham.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 'Recovers **500** stamina<br>Recovers **15% + 20,000** HP',
@@ -506,7 +506,7 @@ const recipes = [
     {
         id: 39,
         name: 'Fiddlehead Pie',
-        imgSrc: 'spinachpie.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -518,7 +518,7 @@ const recipes = [
     {
         id: 40,
         name: 'Chocolate Bread',
-        imgSrc: 'chocolatebun.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -530,7 +530,7 @@ const recipes = [
     {
         id: 41,
         name: 'Balloon Fruit Salad',
-        imgSrc: 'balloonfruitsalad.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -543,7 +543,7 @@ const recipes = [
     {
         id: 42,
         name: 'Fiddlehead Soup',
-        imgSrc: 'spinachsoup.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -555,7 +555,7 @@ const recipes = [
     {
         id: 43,
         name: 'Spicy Eel',
-        imgSrc: 'spicyeel.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -570,7 +570,7 @@ const recipes = [
     {
         id: 44,
         name: 'Eel and Mushroom Soup',
-        imgSrc: 'mushroomeelsoup.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -586,7 +586,7 @@ const recipes = [
     {
         id: 45,
         name: 'Sea Crab Soup',
-        imgSrc: 'seacrabsoup.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -602,7 +602,7 @@ const recipes = [
     {
         id: 46,
         name: 'Sweet Pomegranate Juice',
-        imgSrc: 'sweetpomegranatejuice.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **600** stamina<br>Recovers **16% + 34,000** HP',
@@ -615,7 +615,7 @@ const recipes = [
     {
         id: 47,
         name: 'Cocoa Milk',
-        imgSrc: 'cocoamilk.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -632,7 +632,7 @@ const recipes = [
     {
         id: 48,
         name: 'Firedragon Fruit Tea',
-        imgSrc: 'dragonfruittea.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -648,7 +648,7 @@ const recipes = [
     {
         id: 49,
         name: 'Barnacle Stew',
-        imgSrc: 'barnaclestew.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -664,7 +664,7 @@ const recipes = [
     {
         id: 50,
         name: 'Barnacle Seafood Pizza',
-        imgSrc: 'barnacleseafoodpizza.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -677,7 +677,7 @@ const recipes = [
     {
         id: 51,
         name: 'Snow Azalea Tea',
-        imgSrc: 'snowcuckootea.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -694,7 +694,7 @@ const recipes = [
     {
         id: 52,
         name: 'Pine Cocoa',
-        imgSrc: 'pinenutcocoa.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -707,7 +707,7 @@ const recipes = [
     {
         id: 53,
         name: 'Caviar Sushi',
-        imgSrc: 'caviarsushi.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
@@ -720,7 +720,7 @@ const recipes = [
     {
         id: 54,
         name: 'Caviar Potato Balls',
-        imgSrc: 'caviarpotatoballs.png',
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: `
@@ -736,7 +736,7 @@ const recipes = [
     {
         id: 55,
         name: 'Nut Tea',
-        imgSrc: 'nuttea.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 'Recovers **20** satiety<br>Recovers **20% + 60,000** HP',
@@ -749,7 +749,7 @@ const recipes = [
     {
         id: 56,
         name: "Purple Yam Pie",
-        imgSrc: 'birdsheadpotatocake.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -765,7 +765,7 @@ const recipes = [
     {
         id: 57,
         name: 'Snow Lotus Soup',
-        imgSrc: 'snowlotussoup.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 'Recovers **800** stamina<br>Recovers **20% + 60,000** HP',
@@ -777,7 +777,7 @@ const recipes = [
     {
         id: 58,
         name: 'Truffle Fried Rice',
-        imgSrc: 'trufflefriedrice.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -794,7 +794,7 @@ const recipes = [
     {
         id: 59,
         name: 'Catepillar Fungus Noodles',
-        imgSrc: 'cordycepsnoodles.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 'Recovers **20** satiety<br>Recovers **20% + 60,000** HP',
@@ -806,7 +806,7 @@ const recipes = [
     {
         id: 60,
         name: 'Grilled Steak',
-        imgSrc: 'barbequesteak.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -821,7 +821,7 @@ const recipes = [
     {
         id: 61,
         name: 'Steak w/ Sauce',
-        imgSrc: 'mushroomsteak.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -837,7 +837,7 @@ const recipes = [
     {
         id: 62,
         name: 'Braised Meat',
-        imgSrc: 'braisedpork.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -852,7 +852,7 @@ const recipes = [
     {
         id: 63,
         name: 'Juicy BLT',
-        imgSrc: 'juicymeatsandwich.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -869,7 +869,7 @@ const recipes = [
     {
         id: 64,
         name: 'Salmon Sashimi',
-        imgSrc: 'salmonsashimi.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `
@@ -884,7 +884,7 @@ const recipes = [
     {
         id: 65,
         name: 'Snail Baked Rice',
-        imgSrc: 'snailbakedrice.png',
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: `

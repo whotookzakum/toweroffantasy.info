@@ -1,7 +1,10 @@
 const cleanupagreement = {
     name:"Cleanup Agreement",
     rarity:"R",
-    chipEffect:"Damage taken reduced by 6%"
+    chinaOnly: true,
+    matrix: {
+        set3: "Damage taken reduced by 6%"
+    }
 }
 
 export default cleanupagreement;
