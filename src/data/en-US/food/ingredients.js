@@ -1,4 +1,101 @@
 const ingredients = {
+    // Vera recipes (2.0) https://www.taptap.com/topic/20623166
+    sandonion: {
+        name: 'Sand Onion',
+        rarity: 1,
+        chinaOnly: true,
+        source: ""
+    },
+    cactusball: {
+        name: 'Cactus Ball',
+        rarity: 1,
+        chinaOnly: true,
+        source: ""
+    },
+    beetroot: {
+        name: 'Beetroot',
+        rarity: 2,
+        chinaOnly: true,
+        source: ""
+    },
+    soybeans: {
+        name: 'Soybeans',
+        rarity: 2,
+        chinaOnly: true,
+        source: "Purchased at Mirror City food vendor"
+    },
+    corn: {
+        name: 'Corn',
+        rarity: 2,
+        chinaOnly: true,
+        source: "Purchased at Mirror City food vendor"
+    },
+    fleshytail: {
+        name: 'Fleshy Tail',
+        rarity: 2,
+        chinaOnly: true,
+        source: "折跃门-绿洲峭壁附近的沙漠猎食者有几率出，还有芦荟"
+    },
+    pepper: {
+        name: 'Pepper',
+        rarity: 3,
+        chinaOnly: true,
+        source: ""
+    },
+    desertmelon: {
+        name: 'Desert Melon',
+        rarity: 3,
+        chinaOnly: true,
+        source: "镜都哨站附近大漠甜瓜"
+    },
+    pumpkin: {
+        name: 'Pumpkin',
+        rarity: 3,
+        chinaOnly: true,
+        source: "有流沙的地方边上都有流沙南瓜"
+    },
+    ribs: {
+        name: 'Ribs',
+        rarity: 3,
+        chinaOnly: true,
+        source: "折跃门-咸水绿洲附近的盾甲兽有几率出"
+    },
+    oyster: {
+        name: 'Oyster',
+        rarity: 3,
+        chinaOnly: true,
+        source: ""
+    },
+    fishleaf: {
+        name: 'Fish Leaf',
+        rarity: 3,
+        chinaOnly: true,
+        source: ""
+    },
+    aloevera: {
+        name: 'Aloe Vera',
+        rarity: 4,
+        chinaOnly: true,
+        source: ""
+    },
+    rosepetals: {
+        name: 'Rose Petals',
+        rarity: 4,
+        chinaOnly: true,
+        source: ""
+    },
+    radish: {
+        name: 'Radish',
+        rarity: 4,
+        chinaOnly: true,
+        source: "折跃门-咸水绿洲，舒伯特附近的都是，还有辣椒"
+    },
+    oilmelon: {
+        name: 'Oil Melon',
+        rarity: 4,
+        chinaOnly: true,
+        source: ""
+    },
     
     mushroom: {
         name: 'Mushroom',

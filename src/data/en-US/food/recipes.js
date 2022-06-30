@@ -67,6 +67,30 @@ const recipes = [
         ]
     },
     {
+        id: 5,
+        name: 'Grilled Sand Onion',
+        chinaOnly: true,
+        rarity: 1,
+        stars: 1,
+        effect: 'Recovers **10** satiety',
+        ingredients: [
+            [sandonion, 2]
+        ]
+    },
+    {
+        id: 5,
+        name: 'Special Cactus Drink',
+        chinaOnly: true,
+        rarity: 1,
+        stars: 1,
+        effect: 
+            `Recovers **5** satiety  
+            Recovers **10% + 1,500** HP`,
+        ingredients: [
+            [cactusball, 2]
+        ]
+    },
+    {
         id: 6,
         name: 'Seaweed and Egg Soup',
         chinaOnly: false,
@@ -322,6 +346,69 @@ const recipes = [
         ]
     },
     {
+        id: 26,
+        name: 'Beetroot Soup',
+        chinaOnly: true,
+        rarity: 2,
+        stars: 1,
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
+        ingredients: [
+            [beetroot, 2]
+        ]
+    },
+    {
+        id: 26,
+        name: 'Deep-fried Tofu',
+        chinaOnly: true,
+        rarity: 2,
+        stars: 1,
+        effect: 'Recovers **14** satiety',
+        ingredients: [
+            [soybeans, 2]
+        ]
+    },
+    {
+        id: 26,
+        name: 'Salted Corn',
+        chinaOnly: true,
+        rarity: 2,
+        stars: 1,
+        effect: 'Recovers **14** satiety',
+        ingredients: [
+            [corn, 2]
+        ]
+    },
+    {
+        id: 26,
+        name: 'Grilled Lizard Tail',
+        chinaOnly: true,
+        rarity: 2,
+        stars: 1,
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
+        ingredients: [
+            [fleshytail, 2]
+        ]
+    },
+    {
+        id: 26,
+        name: 'Creamy Corn Soup',
+        chinaOnly: true,
+        rarity: 2,
+        stars: 1,
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
+        ingredients: [
+            [corn, 2],
+            [milk, 1],
+            [mushroom, 1]
+        ]
+    },
+    {
         id: 27,
         name: 'Seafood Soup',
         chinaOnly: false,
@@ -329,8 +416,8 @@ const recipes = [
         stars: 1,
         effect: `
             Recovers **10** satiety<br>
-            **Ice Damage +1%<br>
-            Ice Damage +45**<br>
+            **Ice Attack +1%<br>
+            Ice Attack +45**<br>
             Duration **900** sec`,
         ingredients: [
             [hornedconch, 3],
@@ -346,8 +433,8 @@ const recipes = [
         stars: 1,
         effect: `
             Recovers **10** satiety<br>
-            **Physical Damage +1%<br>
-            Physical Damage +45**<br>
+            **Physical Attack +1%<br>
+            Physical Attack +45**<br>
             Duration **900** sec`,
         ingredients: [
             [wheat, 3],
@@ -440,8 +527,8 @@ const recipes = [
         stars: 1,
         effect: `
             Recovers **10** satiety<br>
-            **Electric Damage +1%<br>
-            Electric Damage +45**<br>
+            **Electric Attack +1%<br>
+            Electric Attack +45**<br>
             Duration **900** sec`,
         ingredients: [
             [blueberry, 1],
@@ -457,8 +544,8 @@ const recipes = [
         stars: 1,
         effect: `
             Recovers **10** satiety<br>
-            **Fire Damage +1%<br>
-            Fire Damage +45**<br>
+            **Fire Attack +1%<br>
+            Fire Attack +45**<br>
             Duration **900** sec`,
         ingredients: [
             [tomato, 4],
@@ -575,8 +662,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **10** satiety<br>
-            **Electric Damage +1%<br>
-            Electric Damage +80**<br>
+            **Electric Attack +1%<br>
+            Electric Attack +80**<br>
             Duration **900** sec`,
         ingredients: [
             [thundereel, 1],
@@ -637,8 +724,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **10** satiety<br>
-            **Fire Damage +1%<br>
-            Fire Damage +80**<br>
+            **Fire Attack +1%<br>
+            Fire Attack +80**<br>
             Duration **900** sec`,
         ingredients: [
             [dragonfruit, 2],
@@ -682,8 +769,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **10** satiety<br>
-            **Ice Damage +1%<br>
-            Ice Damage +80**<br>
+            **Ice Attack +1%<br>
+            Ice Attack +80**<br>
             Duration **900** sec`,
         ingredients: [
             [snowblossom, 1],
@@ -725,12 +812,234 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **10** satiety<br>
-            **Physical Damage +1%<br>
-            Physical Damage +80**<br>
+            **Physical Attack +1%<br>
+            Physical Attack +80**<br>
             Duration **900** sec`,
         ingredients: [
             [caviar, 1],
             [potato, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Stir-fried Peppers',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety<br>
+            **Ice Resistance +10%<br>
+            Ice Resistance 170**<br>
+            Duration **900** sec`,
+        ingredients: [
+            [pepper, 2],
+            [onion, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Melon Salad',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety<br>
+            **Fire Resistance +10%<br>
+            Fire Resistance 170**<br>
+            Duration **900** sec`,
+        ingredients: [
+            [desertmelon, 2],
+            [dressing, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Pumpkin Porridge',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety  
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [pumpkin, 2],
+            [rice, 3]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Grilled Ribs',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety  
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [ribs, 1],
+            [honey, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Chocolate Soymilk',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **500** stamina  
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [cocoabeans, 2],
+            [soybeans, 1],
+            [honey, 1]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Beetroot Fern',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety 
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [spinach, 2],
+            [beetroot, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Honeydew Melon Bread',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety<br>
+            **Ice Attack +1%<br>
+            Ice Attack 45**<br>
+            Duration **900** sec`,
+        ingredients: [
+            [desertmelon, 2],
+            [honey, 1],
+            [wheat, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Mixed Grain Porridge',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **500** stamina 
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [pumpkin, 2],
+            [corn, 1],
+            [rice, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Corn & Seafood Pie',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety 
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [seaconch, 2],
+            [corn, 1],
+            [wheat, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Steamed Pumpkin',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety 
+            Recovers **15% + 20,000** HP`,
+        ingredients: [
+            [pumpkin, 2],
+            [wheat, 3]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Spicy Fried Rice',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 1,
+        effect: `
+            Recovers **10** satiety<br>
+            **Fire Attack +1%<br>
+            Fire Attack 45**<br>
+            Duration **900** sec`,
+        ingredients: [
+            [pepper, 1],
+            [fleshytail, 1],
+            [egg, 1],
+            [rice, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Grilled Oysters',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 2,
+        effect: `
+            Recovers **10** satiety<br>
+            Recovers **16% + 34,000** HP`,
+        ingredients: [
+            [oyster, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Cold Fish Leaf',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 2,
+        effect: `
+            Recovers **10** satiety<br>
+            Recovers **16% + 34,000** HP`,
+        ingredients: [
+            [fishleaf, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Oyster Tofu Soup',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 2,
+        effect: `
+            Recovers **600** stamina<br>
+            Recovers **16% + 34,000** HP`,
+        ingredients: [
+            [oyster, 2],
+            [soybeans, 2]
+        ]
+    },
+    {
+        id: 54,
+        name: 'Fishleaf Scrambled Eggs',
+        chinaOnly: true,
+        rarity: 3,
+        stars: 2,
+        effect: `
+            Recovers **600** stamina<br>
+            Recovers **16% + 34,000** HP`,
+        ingredients: [
+            [fishleaf, 2],
+            [egg, 3]
         ]
     },
     {
@@ -754,8 +1063,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **20** satiety<br>
-            **Electric Damage +2%<br>
-            Electric Damage +150**<br>
+            **Electric Attack +2%<br>
+            Electric Attack +150**<br>
             Duration **1200** sec`,
         ingredients: [
             [birdpotato, 1],
@@ -782,8 +1091,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **20** satiety<br>
-            **Physical Damage +2%<br>
-            Physical Damage +150**<br>
+            **Physical Attack +2%<br>
+            Physical Attack +150**<br>
             Duration **1200** sec`,
         ingredients: [
             [blacktruffle, 1],
@@ -826,8 +1135,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **20** satiety<br>
-            **Fire Damage +2%<br>
-            Fire Damage +150**<br>
+            **Fire Attack +2%<br>
+            Fire Attack +150**<br>
             Duration **1200** sec`,
         ingredients: [
             [firmmeat, 1],
@@ -874,8 +1183,8 @@ const recipes = [
         stars: 2,
         effect: `
             Recovers **20** satiety<br>
-            **Ice Damage +2%<br>
-            Ice Damage +150**<br>
+            **Ice Attack +2%<br>
+            Ice Attack +150**<br>
             Duration **1200** sec`,
         ingredients: [
             [salmon, 1]
@@ -896,7 +1205,159 @@ const recipes = [
             [snail, 1],
             [rice, 2]
         ]
-    }
+    },
+    {
+        id: 65,
+        name: 'Aloe Vera Yogurt',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            Recovers **20% + 60,000** HP`,
+        ingredients: [
+            [aloevera, 1],
+            [honey, 1],
+            [milk, 2]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Rose Tea',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **800** stamina  
+            Recovers **20% + 60,000** HP`,
+        ingredients: [
+            [rosepetals, 1],
+            [honey, 2]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Radish Soup',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **800** stamina  
+            Recovers **20% + 60,000** HP`,
+        ingredients: [
+            [radish, 1]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Rose Bread',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            **Volt Resistance +15%**  
+            **Volt Resistance +675**  
+            Duration **1200** sec`,
+        ingredients: [
+            [rosepetals, 1],
+            [redwheat, 2]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Chicken Noodle Soup',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            **Physical Attack +2%**  
+            **Physical Attack +150**  
+            Duration **1200** sec`,
+        ingredients: [
+            [radish, 1],
+            [drumstick, 1],
+            [wheat, 2]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Spicy Pork Noodles',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            **Fire Attack +2%**  
+            **Fire Attack +150**  
+            Duration **1200** sec`,
+        ingredients: [
+            [fattymeat, 1],
+            [pepper, 1],
+            [wheat, 2]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Barbecue Platter',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            **Fire Resistance +15%**  
+            **Fire Resistance +675**  
+            Duration **1200** sec`,
+        ingredients: [
+            [firmmeat, 1],
+            [pepper, 1],
+            [fleshytail, 1]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Radish Rib Soup',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            **Physical Resistance +15%**  
+            **Physical Resistance +675**  
+            Duration **1200** sec`,
+        ingredients: [
+            [radish, 1],
+            [rib, 1]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Crispy Oil Melon',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **20** satiety  
+            Recovers **20% + 60,000** HP`,
+        ingredients: [
+            [oilmelon, 1]
+        ]
+    },
+    {
+        id: 65,
+        name: 'Spicy Oil Melon Sticks',
+        chinaOnly: true,
+        rarity: 4,
+        stars: 2,
+        effect: `
+            Recovers **800** stamina  
+            Recovers **20% + 60,000** HP`,
+        ingredients: [
+            [oilmelon, 1],
+            [pepper, 2]
+        ]
+    },
 ]
 
 export default recipes;
