@@ -1,53 +1,66 @@
-.ingredient-group {
-    text-align: center;
-    white-space: normal;
-    line-height: 2rem;
-}
+@use "../abstracts" as *;
 
-.ingredient-group .badge {
-    font-size: 2.3rem;
-    width: 20px;
-    line-height: 20px;
-    right: 0px;
-    bottom: 2px;
-    text-shadow: var(--shadow-0-0-4);
-}
+.food-list {
+    text-align: left;
 
-.ingredient-group .item-wrapper-with-bg {
-    width: 78px;
-    height: 78px;
-    margin: auto 1rem;
-}
+    strong {
+        color: clr(text, green);
+    }
+    
+    tbody tr {
+        background-color: clr(container, light);
+    }
+    tbody tr:nth-child(even) { 
+        background-color: clr(container, dark);
+    }
 
-.food-group .item-wrapper-with-bg {
-    width: 78px;
-    height: 78px;
-    margin: 1rem auto;
-}
+    tr {
+        padding: 1rem;
+    }
 
-.food-group {
-    padding: 1.5rem;
-}
+    .col-dish,
+    .ingredient {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 
-#food-wrapper {
-    position: relative;
-    z-index: 60000;
-}
+    .col-dish {
+        .item-frame {
+            min-width: 80px;
+            box-shadow: $shadow;
+        }
+        .item-frame::before {
+            background: none;
+        }
+        img {
+            min-width: 91px;
+        }
+        abbr {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+    }
 
-.food-group:nth-child(odd) {
-    background: var(--color-container-accent-light);
-}
+    .ingredient-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background: red;
+    }
 
-.food-group:nth-child(even) {
-    background: var(--color-container-accent-dark);
-}
-
-.item-img {
-    width: 91px;
-    height: 91px;
-    object-position: -6px -6px;
-}
-
-.font-chakra {
-    font-family: "Chakra Petch";
+    .ingredient {
+        background: green;
+        .item-frame {
+            width: 43px;
+            min-width: 43px;
+            box-shadow: $shadow;
+        }
+        img {
+            width: 52px;
+            min-width: 52px;
+        }
+    }
 }

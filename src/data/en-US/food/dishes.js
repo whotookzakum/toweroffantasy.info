@@ -1,3 +1,5 @@
+import i from "./ingredients";
+
 const recipes = [
     {
         id: 0,
@@ -5,9 +7,11 @@ const recipes = [
         chinaOnly: false,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **5** satiety<br>Recovers **10% + 1,500** HP',
+        effect: 
+            `Recovers **5** satiety  
+            Recovers **10% + 1,500** HP`,
         ingredients: [
-            [mushroom, 2]
+            { item: i.mushroom, amount: 2 }
         ]
     },
     {
@@ -18,7 +22,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            [silverperch, 1]
+            { item: i.silverperch, amount: 1 }
         ]
     },
     {
@@ -29,7 +33,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            [wheat, 2]
+            { item: i.wheat, amount: 2 }
         ]
     },
     {
@@ -40,7 +44,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            [meat, 2]
+            { item: i.meat, amount: 2 }
         ]
     },
     {
@@ -49,10 +53,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **5** satiety<br>Recovers **10% + 1,500** HP',
+        effect: 
+            `Recovers **5** satiety  
+            Recovers **10% + 1,500** HP`,
         ingredients: [
-            [lettuce, 2],
-            [dressing, 1]
+            { item: i.lettuce, amount: 2 },
+            { item: i.dressing, amount: 1 }
         ]
     },
     {
@@ -61,9 +67,11 @@ const recipes = [
         chinaOnly: false,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **5** satiety<br>Recovers **10% + 1,500** HP',
+        effect: 
+            `Recovers **5** satiety  
+            Recovers **10% + 1,500** HP`,
         ingredients: [
-            [egg, 2]
+            { item: i.egg, amount: 2 }
         ]
     },
     {
@@ -74,7 +82,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            [sandonion, 2]
+            { item: i.sandonion, amount: 2 }
         ]
     },
     {
@@ -87,7 +95,7 @@ const recipes = [
             `Recovers **5** satiety  
             Recovers **10% + 1,500** HP`,
         ingredients: [
-            [cactusball, 2]
+            { item: i.cactusball, amount: 2 }
         ]
     },
     {
@@ -96,10 +104,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [seaweed, 2],
-            [egg, 1]
+            { item: i.seaweed, amount: 2 },
+            { item: i.egg, amount: 1 }
         ]
     },
     {
@@ -110,8 +120,8 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [wheat, 2],
-            [milk, 1]
+            { item: i.wheat, amount: 2 },
+            { item: i.milk, amount: 1 }
         ]
     },
     {
@@ -120,11 +130,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [wheat, 1],
-            [drumstick, 1],
-            [lettuce, 1]
+            { item: i.wheat, amount: 1 },
+            { item: i.drumstick, amount: 1 },
+            { item: i.lettuce, amount: 1 }
         ]
     },
     {
@@ -135,8 +147,8 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [rice, 2],
-            [egg, 1]
+            { item: i.rice, amount: 2 },
+            { item: i.egg, amount: 1 }
         ]
     },
     {
@@ -145,10 +157,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [tomato, 2],
-            [egg, 2]
+            { item: i.tomato, amount: 2 },
+            { item: i.egg, amount: 2 }
         ]
     },
     {
@@ -157,10 +171,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [mushroom, 2],
-            [lettuce, 2]
+            { item: i.mushroom, amount: 2 },
+            { item: i.lettuce, amount: 2 }
         ]
     },
     {
@@ -169,10 +185,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [hornedconch, 2],
-            [lettuce, 1]
+            { item: i.hornedconch, amount: 2 },
+            { item: i.lettuce, amount: 1 }
         ]
     },
     {
@@ -183,8 +201,8 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [potato, 1],
-            [meat, 1]
+            { item: i.potato, amount: 1 },
+            { item: i.meat, amount: 1 }
         ]
     },
     {
@@ -195,8 +213,8 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [potato, 1],
-            [dressing, 1]
+            { item: i.potato, amount: 1 },
+            { item: i.dressing, amount: 1 }
         ]
     },
     {
@@ -205,12 +223,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [fruitdrop, 1],
-            [tomato, 1],
-            [lettuce, 1],
-            [dressing, 1]
+            { item: i.fruitdrop, amount: 1 },
+            { item: i.tomato, amount: 1 },
+            { item: i.lettuce, amount: 1 },
+            { item: i.dressing, amount: 1 }
         ]
     },
     {
@@ -219,10 +239,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [drumstick, 2],
-            [wheat, 1]
+            { item: i.drumstick, amount: 2 },
+            { item: i.wheat, amount: 1 }
         ]
     },
     {
@@ -231,11 +253,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **300** stamina<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **300** stamina  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [fruitdrop, 2],
-            [honey, 1],
-            [sparklingwater, 1]
+            { item: i.fruitdrop, amount: 2 },
+            { item: i.honey, amount: 1 },
+            { item: i.sparklingwater, amount: 1 }
         ]
     },
     {
@@ -244,11 +268,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **300** stamina<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **300** stamina  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [ghostmushroom, 2],
-            [milk, 1],
-            [sparklingwater, 1]
+            { item: i.ghostmushroom, amount: 2 },
+            { item: i.milk, amount: 1 },
+            { item: i.sparklingwater, amount: 1 }
         ]
     },
     {
@@ -259,7 +285,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [broccoli, 2]
+            { item: i.broccoli, amount: 2 }
         ]
     },
     {
@@ -270,8 +296,8 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [wheat, 2],
-            [meat, 1]
+            { item: i.wheat, amount: 2 },
+            { item: i.meat, amount: 1 }
         ]
     },
     {
@@ -280,10 +306,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [mushroom, 2],
-            [silverperch, 1]
+            { item: i.mushroom, amount: 2 },
+            { item: i.silverperch, amount: 1 }
         ]
     },
     {
@@ -292,10 +320,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **7** satiety<br>Recovers **12% + 3,300** HP',
+        effect: 
+            `Recovers **7** satiety  
+            Recovers **12% + 3,300** HP`,
         ingredients: [
-            [dandelion, 1],
-            [mushroom, 2]
+            { item: i.dandelion, amount: 1 },
+            { item: i.mushroom, amount: 2 }
         ]
     },
     {
@@ -304,10 +334,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 2,
-        effect: 'Recovers **8** satiety<br>Recovers **13% + 10,000** HP',
+        effect: 
+            `Recovers **8** satiety  
+            Recovers **13% + 10,000** HP`,
         ingredients: [
-            [sturgeon, 1],
-            [egg, 2]
+            { item: i.sturgeon, amount: 1 },
+            { item: i.egg, amount: 2 }
         ]
     },
     {
@@ -318,7 +350,7 @@ const recipes = [
         stars: 2,
         effect: 'Recovers **16** satiety',
         ingredients: [
-            [redwheat, 2]
+            { item: i.redwheat, amount: 2 }
         ]
     },
     {
@@ -327,10 +359,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 2,
-        effect: 'Recovers **400** stamina<br>Recovers **13% + 10,000** HP',
+        effect: 
+            `Recovers **400** stamina  
+            Recovers **13% + 10,000** HP`,
         ingredients: [
-            [fireear, 2],
-            [lettuce, 2]
+            { item: i.fireear, amount: 2 },
+            { item: i.lettuce, amount: 2 }
         ]
     },
     {
@@ -339,10 +373,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 2,
-        effect: 'Recovers **8** satiety<br>Recovers **13% + 10,000** HP',
+        effect: 
+            `Recovers **8** satiety  
+            Recovers **13% + 10,000** HP`,
         ingredients: [
-            [blackmoss, 2],
-            [lettuce, 2]
+            { item: i.blackmoss, amount: 2 },
+            { item: i.lettuce, amount: 2 }
         ]
     },
     {
@@ -355,7 +391,7 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            [beetroot, 2]
+            { item: i.beetroot, amount: 2 }
         ]
     },
     {
@@ -366,7 +402,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [soybeans, 2]
+            { item: i.soybeans, amount: 2 }
         ]
     },
     {
@@ -377,7 +413,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            [corn, 2]
+            { item: i.corn, amount: 2 }
         ]
     },
     {
@@ -390,7 +426,7 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            [fleshytail, 2]
+            { item: i.fleshytail, amount: 2 }
         ]
     },
     {
@@ -403,9 +439,9 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            [corn, 2],
-            [milk, 1],
-            [mushroom, 1]
+            { item: i.corn, amount: 2 },
+            { item: i.milk, amount: 1 },
+            { item: i.mushroom, amount: 1 }
         ]
     },
     {
@@ -414,15 +450,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Ice Attack +1%<br>
-            Ice Attack +45**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Ice Attack +1%  
+            Ice Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            [hornedconch, 3],
-            [seaconch, 2],
-            [lettuce, 1]
+            { item: i.hornedconch, amount: 3 },
+            { item: i.seaconch, amount: 2 },
+            { item: i.lettuce, amount: 1 }
         ]
     },
     {
@@ -431,15 +467,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Physical Attack +1%<br>
-            Physical Attack +45**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Physical Attack +1%  
+            Physical Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            [wheat, 3],
-            [hindleg, 2],
-            [lettuce, 1]
+            { item: i.wheat, amount: 3 },
+            { item: i.hindleg, amount: 2 },
+            { item: i.lettuce, amount: 1 }
         ]
     },
     {
@@ -448,10 +484,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **15% + 20,000** HP`,
         ingredients: [
-            [shuttlecrab, 2],
-            [lettuce, 2]
+            { item: i.shuttlecrab, amount: 2 },
+            { item: i.lettuce, amount: 2 }
         ]
     },
     {
@@ -460,15 +498,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Fire Resistance +10%<br>
-            Fire Resistance +170**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Flame Resistance +10%  
+            Flame Resistance +170**  
             Duration **900** sec`,
         ingredients: [
-            [strawberry, 2],
-            [honey, 2],
-            [sparklingwater, 1]
+            { item: i.strawberry, amount: 2 },
+            { item: i.honey, amount: 2 },
+            { item: i.sparklingwater, amount: 1 }
         ]
     },
     {
@@ -477,15 +515,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Electric Resistance +10%<br>
-            Electric Resistance +170**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Volt Resistance +10%  
+            Volt Resistance +170**  
             Duration **900** sec`,
         ingredients: [
-            [blueberry, 1],
-            [honey, 2],
-            [sparklingwater, 1]
+            { item: i.blueberry, amount: 1 },
+            { item: i.honey, amount: 2 },
+            { item: i.sparklingwater, amount: 1 }
         ]
     },
     {
@@ -494,17 +532,17 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Physical Resistance +10%<br>
-            Physical Resistance +170**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Physical Resistance +10%  
+            Physical Resistance +170**  
             Duration **900** sec`,
         ingredients: [
-            [broccoli, 1],
-            [tomato, 1],
-            [lettuce, 1],
-            [egg, 1],
-            [dressing, 1]
+            { item: i.broccoli, amount: 1 },
+            { item: i.tomato, amount: 1 },
+            { item: i.lettuce, amount: 1 },
+            { item: i.egg, amount: 1 },
+            { item: i.dressing, amount: 1 }
         ]
     },
     {
@@ -513,10 +551,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **15% + 20,000** HP`,
         ingredients: [
-            [seaurchin, 2],
-            [egg, 2]
+            { item: i.seaurchin, amount: 2 },
+            { item: i.egg, amount: 2 }
         ]
     },
     {
@@ -525,15 +565,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Electric Attack +1%<br>
-            Electric Attack +45**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Volt Attack +1%  
+            Volt Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            [blueberry, 1],
-            [strawberry, 1],
-            [wheat, 3]
+            { item: i.blueberry, amount: 1 },
+            { item: i.strawberry, amount: 1 },
+            { item: i.wheat, amount: 3 }
         ]
     },
     {
@@ -542,15 +582,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Fire Attack +1%<br>
-            Fire Attack +45**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Flame Attack +1%  
+            Flame Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            [tomato, 4],
-            [wheat, 3],
-            [egg, 1]
+            { item: i.tomato, amount: 4 },
+            { item: i.wheat, amount: 3 },
+            { item: i.egg, amount: 1 }
         ]
     },
     {
@@ -559,12 +599,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **15% + 20,000** HP`,
         ingredients: [
-            [strawberry, 2],
-            [wheat, 1],
-            [fruitdrop, 1],
-            [egg, 1]
+            { item: i.strawberry, amount: 2 },
+            { item: i.wheat, amount: 1 },
+            { item: i.fruitdrop, amount: 1 },
+            { item: i.egg, amount: 1 }
         ]
     },
     {
@@ -573,10 +615,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: 'Recovers **10** satiety<br>Recovers **15% + 20,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **15% + 20,000** HP`,
         ingredients: [
-            [seaconch, 2],
-            [lettuce, 3]
+            { item: i.seaconch, amount: 2 },
+            { item: i.lettuce, amount: 3 }
         ]
     },
     {
@@ -585,9 +629,11 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 1,
-        effect: 'Recovers **500** stamina<br>Recovers **15% + 20,000** HP',
+        effect: 
+            `Recovers **500** stamina  
+            Recovers **15% + 20,000** HP`,
         ingredients: [
-            [hindleg, 2]
+            { item: i.hindleg, amount: 2 }
         ]
     },
     {
@@ -596,10 +642,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [spinach, 2],
-            [redwheat, 2]
+            { item: i.spinach, amount: 2 },
+            { item: i.redwheat, amount: 2 }
         ]
     },
     {
@@ -608,10 +656,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [cocoabeans, 2],
-            [redwheat, 2]
+            { item: i.cocoabeans, amount: 2 },
+            { item: i.redwheat, amount: 2 }
         ]
     },
     {
@@ -620,11 +670,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [balloonfruit, 2],
-            [tomato, 2],
-            [dressing, 1]
+            { item: i.balloonfruit, amount: 2 },
+            { item: i.tomato, amount: 2 },
+            { item: i.dressing, amount: 1 }
         ]
     },
     {
@@ -633,10 +685,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [spinach, 2],
-            [lettuce, 4]
+            { item: i.spinach, amount: 2 },
+            { item: i.lettuce, amount: 4 }
         ]
     },
     {
@@ -645,13 +699,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Electric Resistance +10%<br>
-            Electric Resistance +290**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Volt Resistance +10%  
+            Volt Resistance +290**  
             Duration **900** sec`,
         ingredients: [
-            [thundereel, 1]
+            { item: i.thundereel, amount: 1 }
         ]
     },
     {
@@ -660,14 +714,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Electric Attack +1%<br>
-            Electric Attack +80**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Volt Attack +1%  
+            Volt Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            [thundereel, 1],
-            [fireear, 2]
+            { item: i.thundereel, amount: 1 },
+            { item: i.fireear, amount: 2 }
         ]
     },
     {
@@ -676,14 +730,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Fire Resistance +10%<br>
-            Fire Resistance +290**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Flame Resistance +10%  
+            Flame Resistance +290**  
             Duration **900** sec`,
         ingredients: [
-            [hermitcrab, 2],
-            [mushroom, 4]
+            { item: i.hermitcrab, amount: 2 },
+            { item: i.mushroom, amount: 4 }
         ]
     },
     {
@@ -692,11 +746,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **600** stamina<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **600** stamina  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [pomegranate, 2],
-            [honey, 2],
-            [sparklingwater, 1]
+            { item: i.pomegranate, amount: 2 },
+            { item: i.honey, amount: 2 },
+            { item: i.sparklingwater, amount: 1 }
         ]
     },
     {
@@ -705,15 +761,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Ice Resistance +10%<br>
-            Ice Resistance +290**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Ice Resistance +10%  
+            Ice Resistance +290**  
             Duration **900** sec`,
         ingredients: [
-            [cocoabeans, 2],
-            [honey, 2],
-            [milk, 1]
+            { item: i.cocoabeans, amount: 2 },
+            { item: i.honey, amount: 2 },
+            { item: i.milk, amount: 1 }
         ]
     },
     {
@@ -722,14 +778,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Fire Attack +1%<br>
-            Fire Attack +80**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Flame Attack +1%  
+            Flame Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            [dragonfruit, 2],
-            [honey, 2]
+            { item: i.dragonfruit, amount: 2 },
+            { item: i.honey, amount: 2 }
         ]
     },
     {
@@ -738,14 +794,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Physical Resistance +10%<br>
-            Physical Resistance +290**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Physical Resistance +10%  
+            Physical Resistance +290**  
             Duration **900** sec`,
         ingredients: [
-            [barnacle, 2],
-            [lettuce, 4]
+            { item: i.barnacle, amount: 2 },
+            { item: i.lettuce, amount: 4 }
         ]
     },
     {
@@ -754,11 +810,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [barnacle, 1],
-            [redwheat, 2],
-            [onion, 1]
+            { item: i.barnacle, amount: 1 },
+            { item: i.redwheat, amount: 2 },
+            { item: i.onion, amount: 1 }
         ]
     },
     {
@@ -767,15 +825,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Ice Attack +1%<br>
-            Ice Attack +80**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Ice Attack +1%  
+            Ice Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            [snowblossom, 1],
-            [milk, 1],
-            [honey, 2]
+            { item: i.snowblossom, amount: 1 },
+            { item: i.milk, amount: 1 },
+            { item: i.honey, amount: 2 }
         ]
     },
     {
@@ -784,11 +842,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [pinecone, 1],
-            [cocoabeans, 1],
-            [milk, 2]
+            { item: i.pinecone, amount: 1 },
+            { item: i.cocoabeans, amount: 1 },
+            { item: i.milk, amount: 2 }
         ]
     },
     {
@@ -797,11 +857,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: 'Recovers **10** satiety<br>Recovers **16% + 34,000** HP',
+        effect: 
+            `Recovers **10** satiety  
+            Recovers **16% + 34,000** HP`,
         ingredients: [
-            [caviar, 1],
-            [rice, 2],
-            [seaweed, 2]
+            { item: i.caviar, amount: 1 },
+            { item: i.rice, amount: 2 },
+            { item: i.seaweed, amount: 2 }
         ]
     },
     {
@@ -810,14 +872,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
-            **Physical Attack +1%<br>
-            Physical Attack +80**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Physical Attack +1%  
+            Physical Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            [caviar, 1],
-            [potato, 2]
+            { item: i.caviar, amount: 1 },
+            { item: i.potato, amount: 2 }
         ]
     },
     {
@@ -826,14 +888,14 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Ice Resistance +10%<br>
-            Ice Resistance 170**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Ice Resistance +10%  
+            Ice Resistance 170**  
             Duration **900** sec`,
         ingredients: [
-            [pepper, 2],
-            [onion, 2]
+            { item: i.pepper, amount: 2 },
+            { item: i.onion, amount: 2 }
         ]
     },
     {
@@ -842,14 +904,14 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Fire Resistance +10%<br>
-            Fire Resistance 170**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Flame Resistance +10%  
+            Flame Resistance 170**  
             Duration **900** sec`,
         ingredients: [
-            [desertmelon, 2],
-            [dressing, 2]
+            { item: i.desertmelon, amount: 2 },
+            { item: i.dressing, amount: 2 }
         ]
     },
     {
@@ -858,12 +920,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety  
+        effect: 
+            `Recovers **10** satiety  
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [pumpkin, 2],
-            [rice, 3]
+            { item: i.pumpkin, amount: 2 },
+            { item: i.rice, amount: 3 }
         ]
     },
     {
@@ -872,12 +934,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety  
+        effect: 
+            `Recovers **10** satiety  
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [ribs, 1],
-            [honey, 2]
+            { item: i.ribs, amount: 1 },
+            { item: i.honey, amount: 2 }
         ]
     },
     {
@@ -886,13 +948,13 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **500** stamina  
+        effect: 
+            `Recovers **500** stamina  
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [cocoabeans, 2],
-            [soybeans, 1],
-            [honey, 1]
+            { item: i.cocoabeans, amount: 2 },
+            { item: i.soybeans, amount: 1 },
+            { item: i.honey, amount: 1 }
         ]
     },
     {
@@ -901,12 +963,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety 
+        effect: 
+            `Recovers **10** satiety 
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [spinach, 2],
-            [beetroot, 2]
+            { item: i.spinach, amount: 2 },
+            { item: i.beetroot, amount: 2 }
         ]
     },
     {
@@ -915,15 +977,15 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Ice Attack +1%<br>
-            Ice Attack 45**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Ice Attack +1%  
+            Ice Attack 45**  
             Duration **900** sec`,
         ingredients: [
-            [desertmelon, 2],
-            [honey, 1],
-            [wheat, 2]
+            { item: i.desertmelon, amount: 2 },
+            { item: i.honey, amount: 1 },
+            { item: i.wheat, amount: 2 }
         ]
     },
     {
@@ -932,28 +994,28 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **500** stamina 
+        effect: 
+            `Recovers **500** stamina 
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [pumpkin, 2],
-            [corn, 1],
-            [rice, 2]
+            { item: i.pumpkin, amount: 2 },
+            { item: i.corn, amount: 1 },
+            { item: i.rice, amount: 2 }
         ]
     },
     {
         id: 54,
-        name: 'Corn & Seafood Pie',
+        name: 'Corn and Seafood Pie',
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety 
+        effect: 
+            `Recovers **10** satiety 
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [seaconch, 2],
-            [corn, 1],
-            [wheat, 2]
+            { item: i.seaconch, amount: 2 },
+            { item: i.corn, amount: 1 },
+            { item: i.wheat, amount: 2 }
         ]
     },
     {
@@ -962,12 +1024,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety 
+        effect: 
+            `Recovers **10** satiety 
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            [pumpkin, 2],
-            [wheat, 3]
+            { item: i.pumpkin, amount: 2 },
+            { item: i.wheat, amount: 3 }
         ]
     },
     {
@@ -976,16 +1038,16 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 1,
-        effect: `
-            Recovers **10** satiety<br>
-            **Fire Attack +1%<br>
-            Fire Attack 45**<br>
+        effect: 
+            `Recovers **10** satiety  
+            **Flame Attack +1%  
+            Flame Attack 45**  
             Duration **900** sec`,
         ingredients: [
-            [pepper, 1],
-            [fleshytail, 1],
-            [egg, 1],
-            [rice, 2]
+            { item: i.pepper, amount: 1 },
+            { item: i.fleshytail, amount: 1 },
+            { item: i.egg, amount: 1 },
+            { item: i.rice, amount: 2 }
         ]
     },
     {
@@ -994,11 +1056,11 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
+        effect: 
+            `Recovers **10** satiety  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            [oyster, 2]
+            { item: i.oyster, amount: 2 }
         ]
     },
     {
@@ -1007,11 +1069,11 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **10** satiety<br>
+        effect: 
+            `Recovers **10** satiety  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            [fishleaf, 2]
+            { item: i.fishleaf, amount: 2 }
         ]
     },
     {
@@ -1020,12 +1082,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **600** stamina<br>
+        effect: 
+            `Recovers **600** stamina  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            [oyster, 2],
-            [soybeans, 2]
+            { item: i.oyster, amount: 2 },
+            { item: i.soybeans, amount: 2 }
         ]
     },
     {
@@ -1034,12 +1096,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 3,
         stars: 2,
-        effect: `
-            Recovers **600** stamina<br>
+        effect: 
+            `Recovers **600** stamina  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            [fishleaf, 2],
-            [egg, 3]
+            { item: i.fishleaf, amount: 2 },
+            { item: i.egg, amount: 3 }
         ]
     },
     {
@@ -1048,11 +1110,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: 'Recovers **20** satiety<br>Recovers **20% + 60,000** HP',
+        effect: 
+            `Recovers **20** satiety  
+            Recovers **20% + 60,000** HP`,
         ingredients: [
-            [nut, 1],
-            [pinecone, 2],
-            [honey, 2]
+            { item: i.nut, amount: 1 },
+            { item: i.pinecone, amount: 2 },
+            { item: i.honey, amount: 2 }
         ]
     },
     {
@@ -1061,14 +1125,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Electric Attack +2%<br>
-            Electric Attack +150**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Volt Attack +2%  
+            Volt Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            [birdpotato, 1],
-            [redwheat, 3]
+            { item: i.birdpotato, amount: 1 },
+            { item: i.redwheat, amount: 3 }
         ]
     },
     {
@@ -1077,10 +1141,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: 'Recovers **800** stamina<br>Recovers **20% + 60,000** HP',
+        effect: 
+            `Recovers **800** stamina  
+            Recovers **20% + 60,000** HP`,
         ingredients: [
-            [snowlotus, 1],
-            [honey, 2]
+            { item: i.snowlotus, amount: 1 },
+            { item: i.honey, amount: 2 }
         ]
     },
     {
@@ -1089,15 +1155,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Physical Attack +2%<br>
-            Physical Attack +150**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Physical Attack +2%  
+            Physical Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            [blacktruffle, 1],
-            [onion, 1],
-            [rice, 2]
+            { item: i.blacktruffle, amount: 1 },
+            { item: i.onion, amount: 1 },
+            { item: i.rice, amount: 2 }
         ]
     },
     {
@@ -1106,10 +1172,12 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: 'Recovers **20** satiety<br>Recovers **20% + 60,000** HP',
+        effect: 
+            `Recovers **20** satiety  
+            Recovers **20% + 60,000** HP`,
         ingredients: [
-            [cordyceps, 1],
-            [redwheat, 3]
+            { item: i.cordyceps, amount: 1 },
+            { item: i.redwheat, amount: 3 }
         ]
     },
     {
@@ -1118,29 +1186,29 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Electric Resistance +15%<br>
-            Electric Resistance +675**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Volt Resistance +15%  
+            Volt Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [firmmeat, 1]
+            { item: i.firmmeat, amount: 1 }
         ]
     },
     {
         id: 61,
-        name: 'Steak w/ Sauce',
+        name: 'Steak with Sauce',
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Fire Attack +2%<br>
-            Fire Attack +150**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Flame Attack +2%  
+            Flame Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            [firmmeat, 1],
-            [fireear, 3]
+            { item: i.firmmeat, amount: 1 },
+            { item: i.fireear, amount: 3 }
         ]
     },
     {
@@ -1149,13 +1217,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Ice Resistance +15%<br>
-            Ice Resistance +675**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Ice Resistance +15%  
+            Ice Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [fattymeat, 1]
+            { item: i.fattymeat, amount: 1 }
         ]
     },
     {
@@ -1164,15 +1232,15 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Fire Resistance +15%<br>
-            Fire Resistance +675**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Flame Resistance +15%  
+            Flame Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [fattymeat, 1],
-            [redwheat, 2],
-            [egg, 2]
+            { item: i.fattymeat, amount: 1 },
+            { item: i.redwheat, amount: 2 },
+            { item: i.egg, amount: 2 }
         ]
     },
     {
@@ -1181,13 +1249,13 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Ice Attack +2%<br>
-            Ice Attack +150**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Ice Attack +2%  
+            Ice Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            [salmon, 1]
+            { item: i.salmon, amount: 1 }
         ]
     },
     {
@@ -1196,14 +1264,14 @@ const recipes = [
         chinaOnly: false,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety<br>
-            **Physical Resistance +15%<br>
-            Physical Resistance +675**<br>
+        effect: 
+            `Recovers **20** satiety  
+            **Physical Resistance +15%  
+            Physical Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [snail, 1],
-            [rice, 2]
+            { item: i.snail, amount: 1 },
+            { item: i.rice, amount: 2 }
         ]
     },
     {
@@ -1212,13 +1280,13 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
+        effect: 
+            `Recovers **20** satiety  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            [aloevera, 1],
-            [honey, 1],
-            [milk, 2]
+            { item: i.aloevera, amount: 1 },
+            { item: i.honey, amount: 1 },
+            { item: i.milk, amount: 2 }
         ]
     },
     {
@@ -1227,12 +1295,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **800** stamina  
+        effect: 
+            `Recovers **800** stamina  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            [rosepetals, 1],
-            [honey, 2]
+            { item: i.rosepetals, amount: 1 },
+            { item: i.honey, amount: 2 }
         ]
     },
     {
@@ -1241,11 +1309,11 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **800** stamina  
+        effect: 
+            `Recovers **800** stamina  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            [radish, 1]
+            { item: i.radish, amount: 1 }
         ]
     },
     {
@@ -1254,14 +1322,14 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
+        effect: 
+            `Recovers **20** satiety  
             **Volt Resistance +15%**  
             **Volt Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [rosepetals, 1],
-            [redwheat, 2]
+            { item: i.rosepetals, amount: 1 },
+            { item: i.redwheat, amount: 2 }
         ]
     },
     {
@@ -1270,15 +1338,15 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
+        effect: 
+            `Recovers **20** satiety  
             **Physical Attack +2%**  
             **Physical Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            [radish, 1],
-            [drumstick, 1],
-            [wheat, 2]
+            { item: i.radish, amount: 1 },
+            { item: i.drumstick, amount: 1 },
+            { item: i.wheat, amount: 2 }
         ]
     },
     {
@@ -1287,15 +1355,15 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
-            **Fire Attack +2%**  
-            **Fire Attack +150**  
+        effect: 
+            `Recovers **20** satiety  
+            **Flame Attack +2%**  
+            **Flame Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            [fattymeat, 1],
-            [pepper, 1],
-            [wheat, 2]
+            { item: i.fattymeat, amount: 1 },
+            { item: i.pepper, amount: 1 },
+            { item: i.wheat, amount: 2 }
         ]
     },
     {
@@ -1304,15 +1372,15 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
-            **Fire Resistance +15%**  
-            **Fire Resistance +675**  
+        effect: 
+            `Recovers **20** satiety  
+            **Flame Resistance +15%**  
+            **Flame Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [firmmeat, 1],
-            [pepper, 1],
-            [fleshytail, 1]
+            { item: i.firmmeat, amount: 1 },
+            { item: i.pepper, amount: 1 },
+            { item: i.fleshytail, amount: 1 }
         ]
     },
     {
@@ -1321,14 +1389,14 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
+        effect: 
+            `Recovers **20** satiety  
             **Physical Resistance +15%**  
             **Physical Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            [radish, 1],
-            [rib, 1]
+            { item: i.radish, amount: 1 },
+            { item: i.ribs, amount: 1 }
         ]
     },
     {
@@ -1337,11 +1405,11 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **20** satiety  
+        effect: 
+            `Recovers **20** satiety  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            [oilmelon, 1]
+            { item: i.oilmelon, amount: 1 }
         ]
     },
     {
@@ -1350,12 +1418,12 @@ const recipes = [
         chinaOnly: true,
         rarity: 4,
         stars: 2,
-        effect: `
-            Recovers **800** stamina  
+        effect: 
+            `Recovers **800** stamina  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            [oilmelon, 1],
-            [pepper, 2]
+            { item: i.oilmelon, amount: 1 },
+            { item: i.pepper, amount: 2 }
         ]
     },
 ]

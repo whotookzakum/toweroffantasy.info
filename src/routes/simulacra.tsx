@@ -11,7 +11,6 @@ function Simulacra() {
                 <h1>Simulacra</h1>
                 <p>
                     Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy.<br />
-
                     They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.
                 </p>
             </header>

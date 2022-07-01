@@ -2,6 +2,7 @@ import '../scss/styles.scss';
 import Navigation from './Navigation';
 import Home from "../routes/home";
 import Simulacra from '../routes/simulacra';
+import Food from '../routes/food';
 import { Outlet, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { Modal } from './Modal';
 import { CHARACTERS, getCharacterWithSpaces } from '../data/en-US/characterList';
@@ -42,6 +43,14 @@ export default function Main() {
                         element={
                             <Page title={getCharacterWithSpaces(location)} description={`${getCharacterWithSpaces(location)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="food"
+                        element={
+                            <Page title="Food" description="Recipes for craftable food in  Tower of Fantasy Global and Chinese versions.">
+                                <Food />
                             </Page>
                         }
                     />

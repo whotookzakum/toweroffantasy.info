@@ -4,6 +4,9 @@
     overflow: hidden;
     background: gray;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &::before {
         content: "";
@@ -19,6 +22,7 @@
     }
 
     img {
+        position: relative;
         z-index: 5;
     }
 }
