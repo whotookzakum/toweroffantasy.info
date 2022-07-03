@@ -36,7 +36,7 @@ const elementalEffects = {
         },
     },
     supernatural: {
-        title: "Aberration",
+        title: "Supernatural",
         values: ["", "560.00%"], // SR and SSR
         description: function(rarity) {
             return(

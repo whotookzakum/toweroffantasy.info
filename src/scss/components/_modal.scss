@@ -246,6 +246,12 @@
     }
 }
 
+.weapon-advancements {
+    em strong {
+        color: clr(text, orange);
+    }
+}
+
 .weapon-materials {
 
     ul {
@@ -387,6 +393,10 @@
                 box-shadow: $shadow;
             }
         }
+    }
+
+    i {
+        color: clr(text, gray);
     }
 
     .gift {

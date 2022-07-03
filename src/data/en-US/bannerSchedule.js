@@ -1,13 +1,13 @@
 export const CNBanners = [
-    // {
-    //     name: "Linye",
-    //     element: "supernatural",
-    //     subtext: "",
-    //     start: "9 Jul 2022",
-    //     end: "29 Jul 2022",
-    //     duration: "20d",
-    //     week: "30~33"
-    // },
+    {
+        name: "Linye",
+        element: "supernatural",
+        subtext: "Limited Banner only",
+        start: "9 Jul 2022",
+        end: "29 Jul 2022",
+        duration: "20d",
+        week: "30~33"
+    },
     {
         name: "Frigg",
         element: "ice",

@@ -29,7 +29,7 @@ const frigg = {
 
             star6: `Reaching **15** Frost points while inside the ice field will grant the additional effect Frozen Domain II: when using Ice weapons, increase Ice ATK by **25%**.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["samir", "crow"],
             set4: ["samir", "frigg"],

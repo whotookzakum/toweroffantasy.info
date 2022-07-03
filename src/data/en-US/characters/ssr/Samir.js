@@ -86,10 +86,10 @@ const samir = {
 
     matrix: {
         set2: `Increase damage progressively by **1%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **1.5** seconds.  
-            <abbr title='China Exclusive' class='cn-flag'>CN</abbr> Increase damage progressively by **1.5%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **2** seconds.`,
+            <abbr title='China Exclusive' /> Increase damage progressively by **1.5%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **2** seconds.`,
 
         set4: `Increase Dual EM Stars' electrical explosion damage by **16%/22%/30%/40%** of ATK.  
-            <abbr title='China Exclusive' class='cn-flag'>CN</abbr> Adds an extra hit to the locked on target for every attack for **10%/12.5%/15%/17.5%** damage (can not crit).`
+            <abbr title='China Exclusive' /> Adds an extra hit to the locked on target for every attack for **10%/12.5%/15%/17.5%** damage (can not crit).`
     },
 
     awakening: {

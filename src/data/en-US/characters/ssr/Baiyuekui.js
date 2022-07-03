@@ -31,7 +31,7 @@ const baiyuekui = {
 
             star6: `While inside the area of the **Discharge Skill** or **Phantasia**, trigger War Intent for **7** seconds, increasing your final damage by **40%** and halting cellular aging (switching weapons causes the effect to disappear).`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["king", "shiro", "samir", "crow"],
             set3: ["sobek"]

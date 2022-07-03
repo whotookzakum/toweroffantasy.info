@@ -23,7 +23,7 @@ const cobalt = {
             
             star6: "The skill *Barrage* has a burning effect that lasts for **15** seconds. Hitting a target with any weapon's dodge attack reduces the cooldown of *Barrage* by **4** seconds, up to once every **1.5** seconds. Damage over time effects trigged from a dodge attack can also trigger the effect."
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["samir", "crow"],
             set4: ["cobalt-b", "samir"],

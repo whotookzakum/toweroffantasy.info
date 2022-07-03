@@ -12,7 +12,7 @@ import { removeSpace } from '../utils/stringHelper';
 
 
 export default function Main() {
-    const location = useLocation().pathname.split("/").pop();
+    const pageTitle = useLocation().pathname.split("/").pop();
 
     return (
         <div className="wrapper">
@@ -41,8 +41,8 @@ export default function Main() {
                     <Route
                         path="simulacra/:itemName"
                         element={
-                            <Page title={getCharacterWithSpaces(location)} description={`${getCharacterWithSpaces(location)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
-                                <Modal />
+                            <Page title={getCharacterWithSpaces(pageTitle)} description={`${getCharacterWithSpaces(pageTitle)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
+                                <Modal type="simulacra" />
                             </Page>
                         }
                     />

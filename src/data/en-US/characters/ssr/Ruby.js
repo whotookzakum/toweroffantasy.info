@@ -29,7 +29,7 @@ const ruby = {
            
             star6: `[Scorching Heat] Increases Sparky's basic attack damage to **240%** and doubles the effectiveness of [Heat]. Weapon Skill cooldown reduced to **16** seconds.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["ruby", "samir", "tsubasa", "crow"],
             set4: ["ruby"],

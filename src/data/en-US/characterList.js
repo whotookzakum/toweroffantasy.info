@@ -1,4 +1,4 @@
-//import Linye from './characters/ssr/Linye';
+import Lin from './characters/ssr/Lin';
 import SakiFuwa from './characters/ssr/SakiFuwa';
 import Ruby from './characters/ssr/Ruby';
 import Frigg from './characters/ssr/Frigg';
@@ -26,6 +26,7 @@ import Pepper from './characters/sr/Pepper';
 import { removeSpace } from '../../utils/stringHelper';
 
 export const CHARACTERS = [
+    Lin,
     SakiFuwa,
     Ruby,
     Frigg,

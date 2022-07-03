@@ -42,7 +42,7 @@ const marc = {
 
             star6: `While [Omni Shield] is active, Physical Resistance is **doubled** and provides Dominance effect. [Omni Shield] can be obtained when another Weapon Skill or Discharge Skill hits the target while the shield is active.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["marc", "king", "shiro"],
             set4: ["marc"],

@@ -22,129 +22,116 @@ export function ModalMenu({ listContent }) {
                     </Link>
                 </li>
             )}
-            <Outlet/>
+            <Outlet />
         </menu>
     );
 }
 
 
-export function Modal() {
+export function Modal({ type }) {
     let params = useParams();
     let item = getCharacter(params.itemName);
 
-    let rarity = 1;
-    if (item.rarity === "SR") rarity = 0;
-    const elementColor = `var(--color-${item.weapon.element})`;
 
-    let advancements = [];
-    for (const star in item.weapon.advancement) {
-        advancements.push(
-            <tr>
-                <th>{star.split("star").pop()} ★</th>
-                <td><ReactMarkdown>{item.weapon.advancement[star]}</ReactMarkdown></td>
-            </tr>
-        );
-    }
-
-    let bonusEffects = [];
-    for (const effect in item.weapon.bonusEffect) {
-        bonusEffects.push(
-            <div>
-                <h4>{item.weapon.bonusEffect[effect].title}</h4>
-                <ReactMarkdown>{item.weapon.bonusEffect[effect].description}</ReactMarkdown>
-            </div>
-        )
-    }
-
-    let giftCategories = [];
-    for (const gift of item.awakening.giftCategories) {
-        giftCategories.push(
-            <li style={{ color: `var(--color-${gift})`, borderColor: `var(--color-${gift})` }}>
-                {hyphenToSpace(gift)}
-            </li>
-        );
-        if (gift === "vera") {
-
-        }
-    }
-
-    let gifts = [];
-    // Gifts are in a 2d array. The inner array's index [0] stores the points earned for that group of gifts.
-    for (let group = 0; group < item.awakening.gifts.length; group++) {
-        let rarity = 2;
-        if (item.awakening.gifts[group][0] > 40) rarity = 4;
-        else if (item.awakening.gifts[group][0] > 15) rarity = 3;
-        for (let gift = 1; gift < item.awakening.gifts[group].length; gift++) {
-            gifts.push(
-                <li className="gift">
-                    <div className={`item-frame rarity-${rarity}`}>
-                        <img src={require(`../data/images/awakening/${item.awakening.gifts[group][gift]}.png`)} alt={item.awakening.gifts[group][gift]} />
-                    </div>
-                    <h4>+{item.awakening.gifts[group][0]}</h4>
-                </li>
-            );
-        }
-    }
-
-    function getInputs(inputs) {
-        let list = [];
-        if (inputs.length > 1) {
-            for (let i = 0; i < inputs.length; i++) {
-                if (i === inputs.length - 1) {
-                    list.push(<kbd>{inputs[i]}</kbd>);
-                    break;
-                }
-                list.push(<><kbd>{inputs[i]}</kbd> + </>);
-            }
-        } else { list.push(<kbd>{inputs}</kbd>); }
-        return (<div className="ability-inputs">{list}</div>);
-    }
-
-    function getBreakdown(breakdown) {
-        let list = [];
-        for (const step of breakdown) list.push(<li><ReactMarkdown>{step}</ReactMarkdown></li>)
-        return (<ol>{list}</ol>);
-    }
-
-    let abilities = [];
-    for (const category in item.weapon.abilities) {
-        let abilityList = [];
-        let thisCategory = item.weapon.abilities[category];
-
-        for (const ability in thisCategory) {
-            abilityList.push(
-                <div className="weapon-ability">
-                    <h3>{thisCategory[ability].name}</h3>
-                    {thisCategory[ability].input && getInputs(thisCategory[ability].input)}
-                    <ReactMarkdown>{thisCategory[ability].description}</ReactMarkdown>
-                    {thisCategory[ability].breakdown && getBreakdown(thisCategory[ability].breakdown)}
-                </div>
-            );
-        }
-
-        abilities.push(
-            <details>
-                <summary><h4>{category}</h4></summary>
-                <div className="details-content">{abilityList}</div>
-            </details>
-        );
-    }
-
-    let recMatrix = [];
-    for (const set in item.weapon.recommendedMatrix) {
-        for (const matrix of item.weapon.recommendedMatrix[set]) {
-            recMatrix.push(
-                <li><img src={require(`../data/images/matrix/${matrix}.png`)} alt={matrix + " Matrix"} /></li>
-            );
-        }
-    }
 
 
     return (
         <article className="modal">
             <img className="bg-img" src={require(`../data/images/art/${removeSpace(item.name)}.png`)} alt={item.name + " Artwork"} />
             <div className="modal-backdrop"></div>
+            <SimulacraModal item={item} />
 
+        </article >
+    );
+}
+
+function SimulacraModal({ item }) {
+    const weapon = item.weapon;
+    const awakening = item.awakening;
+    const rarity = (item.rarity === "SSR") ? 1 : 0;
+    const elementColor = `var(--color-${weapon.element})`;
+    const advancements = Object.entries(weapon.advancement).map(([star, effect]) => {
+        return (
+            <tr>
+                <th>{star.split("star").pop()} ★</th>
+                <td><ReactMarkdown>{effect}</ReactMarkdown></td>
+            </tr>
+        )
+    })
+    // const bonusEffects = Object.entries(weapon.bonusEffect).map( ([key, effect]) => {
+    //     return(
+    //         <div>
+    //             <h4>{effect.title}</h4>
+    //             <ReactMarkdown>{effect.description}</ReactMarkdown>
+    //         </div>
+    //     )
+    // })
+    const bonusEffects = "bogus";
+
+    let veraGiftDisclaimer = false;
+    const giftCategories = awakening.giftCategories.map(gift => {
+        if (gift === "vera") veraGiftDisclaimer = true;
+        const style = {
+            color: `var(--color-${gift})`,
+            borderColor: `var(--color-${gift})`
+        };
+        return <li style={style}>{hyphenToSpace(gift)}</li>;
+    })
+    const gifts = awakening.gifts.map(group => {
+        let rarity = 2;
+        if (group[0] > 40) 
+            rarity = 4;
+        else if (group[0] > 15) 
+            rarity = 3;
+        return(group.map((gift, index) => {
+            // Skip first index because it holds the points gained from the gifts in the same array i.e. [50, "gift1", "gift2"]
+            return (index === 0) ? <></> :
+                <li className="gift">
+                    <div className={`item-frame rarity-${rarity}`}>
+                        <img src={require(`../data/images/awakening/${gift}.png`)} alt={gift} />
+                    </div>
+                    <h4>+{group[0]}</h4>
+                </li>
+        }))
+    })
+
+    function getInputs(inputs) {
+        return inputs.map((input, index) => {
+            const keystroke = <kbd>{input}</kbd>;
+            return (index === inputs.length - 1) ? keystroke : <>{keystroke} + </>;
+        })
+    }
+    function getBreakdown(breakdown) {
+        return breakdown.map(step => <li><ReactMarkdown>{step}</ReactMarkdown></li>)
+    }
+    const abilitiesArray = Object.entries(weapon.abilities);
+    const abilities = abilitiesArray.map(([category, abilityList]) => {
+        const abilitiesInThisCategory = abilityList.map(ability => {
+            return (
+                <div className="weapon-ability">
+                    <h3>{ability.name}</h3>
+                    {ability.input &&
+                        <div className="ability-inputs">{getInputs(ability.input)}</div>}
+                    <ReactMarkdown>{ability.description}</ReactMarkdown>
+                    {ability.breakdown &&
+                        <ol>{getBreakdown(ability.breakdown)}</ol>}
+                </div>
+            )
+        });
+        return (
+            <details>
+                <summary><h4>{category}</h4></summary>
+                <div className="details-content">{abilitiesInThisCategory}</div>
+            </details>
+        )
+    })
+    const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
+        return(matricesList.map(matrix => 
+            <li><img src={require(`../data/images/matrix/${matrix}.png`)} alt={matrix + " Matrix"} /></li>))
+    });
+
+    return (
+        <>
             <header>
                 <h1>{item.name}</h1>
                 <h2>{item.rarity} Simulacrum</h2>
@@ -160,36 +147,36 @@ export function Modal() {
 
                 <h2>Weapon</h2>
                 <div className="weapon-header" style={{ borderColor: elementColor }}>
-                    <img className="weapon-image" src={require(`../data/images/wep/${removeSpace(item.name)}.png`)} alt={item.weapon.name} />
+                    <img className="weapon-image" src={require(`../data/images/wep/${removeSpace(item.name)}.png`)} alt={weapon.name} />
                     <div className="weapon-info">
-                        <h3>{item.weapon.name}</h3>
+                        <h3>{weapon.name}</h3>
                         <div className="weapon-stat-grid">
                             <div className="weapon-stat">
-                                <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
+                                <img src={require(`../data/images/${weapon.type}.png`)} alt={weapon.type} />
                                 <div>
                                     <h5>Resonance</h5>
-                                    <h4>{item.weapon.type}</h4>
+                                    <h4>{weapon.type}</h4>
                                 </div>
                             </div>
                             <div className="weapon-stat">
-                                <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
+                                <img src={require(`../data/images/${weapon.element}.png`)} alt={weapon.element} />
                                 <div>
                                     <h5>Element</h5>
-                                    <h4>{item.weapon.element}</h4>
+                                    <h4>{weapon.element}</h4>
                                 </div>
                             </div>
                             <div className="weapon-stat">
-                                <i style={{ color: `var(--color-tier-${removeSpace(item.weapon.shatter[0])})` }}>{item.weapon.shatter[0]}</i>
+                                <i style={{ color: `var(--color-tier-${removeSpace(weapon.shatter[0])})` }}>{weapon.shatter[0]}</i>
                                 <div>
                                     <h5>Shatter</h5>
-                                    <h4>{item.weapon.shatter[1]}</h4>
+                                    <h4>{weapon.shatter[1]}</h4>
                                 </div>
                             </div>
                             <div className="weapon-stat">
-                                <i style={{ color: `var(--color-tier-${removeSpace(item.weapon.charge[0])})` }}>{item.weapon.charge[0]}</i>
+                                <i style={{ color: `var(--color-tier-${removeSpace(weapon.charge[0])})` }}>{weapon.charge[0]}</i>
                                 <div>
                                     <h5>Charge</h5>
-                                    <h4>{item.weapon.charge[1]}</h4>
+                                    <h4>{weapon.charge[1]}</h4>
                                 </div>
                             </div>
                         </div>
@@ -198,10 +185,10 @@ export function Modal() {
                 <section className="weapon-effects w-75ch">
                     <h3>Weapon Effects</h3>
                     <div>
-                        <h4 style={{ color: elementColor }}>{elementalEffects[item.weapon.element].title}</h4>
-                        <ReactMarkdown>{elementalEffects[item.weapon.element].description(rarity)}</ReactMarkdown>
+                        <h4 style={{ color: elementColor }}>{elementalEffects[weapon.element].title}</h4>
+                        <ReactMarkdown>{elementalEffects[weapon.element].description(rarity)}</ReactMarkdown>
                     </div>
-                    {item.weapon.bonusEffect && <>{bonusEffects}</>}
+                    {weapon.bonusEffect && <>{bonusEffects}</>}
                 </section>
                 <section className="weapon-advancements w-75ch">
                     <h3>Advancements</h3>
@@ -217,7 +204,7 @@ export function Modal() {
                         </tbody>
                     </table>
                 </section>
-                {item.weapon.abilities &&
+                {weapon.abilities &&
                     <section className="weapon-abilities w-75ch">
                         <h3>Weapon Abilities</h3>
                         Data reflects unleveled weapons.
@@ -226,19 +213,7 @@ export function Modal() {
                 }
                 <section className="weapon-materials w-75ch" >
                     <h3>Upgrade Materials</h3>
-                    <ul>
-                        <li className="item-frame rarity-2"><img src={require(`../data/images/mat/${item.weapon.materials[0]}1.png`)} alt={`${item.weapon.materials[0]} 1`} /></li>
-                        <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[0]}2.png`)} alt={`${item.weapon.materials[0]} 2`} /></li>
-                        <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[0]}3.png`)} alt={`${item.weapon.materials[0]} 3`} /></li>
-
-                        <li className="item-frame rarity-3"><img src={require(`../data/images/mat/${item.weapon.materials[1]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
-                        <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[1]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
-                        <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[1]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
-
-                        <li className="item-frame rarity-4"><img src={require(`../data/images/mat/${item.weapon.materials[2]}1.png`)} alt={`${item.weapon.materials[1]} 1`} /></li>
-                        <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}2.png`)} alt={`${item.weapon.materials[1]} 2`} /></li>
-                        <li className="item-frame rarity-5"><img src={require(`../data/images/mat/${item.weapon.materials[2]}3.png`)} alt={`${item.weapon.materials[1]} 3`} /></li>
-                    </ul>
+                    {/* <ul>{weaponMaterials}</ul> */}
                 </section>
                 <section className="weapon-rec-matrices w-75ch">
                     <h3>Recommended Matrices</h3>
@@ -260,11 +235,11 @@ export function Modal() {
                         <tbody>
                             <tr>
                                 <th>1200</th>
-                                <td><ReactMarkdown>{item.awakening.trait1200}</ReactMarkdown></td>
+                                <td><ReactMarkdown>{awakening.trait1200}</ReactMarkdown></td>
                             </tr>
                             <tr>
                                 <th>4000</th>
-                                <td><ReactMarkdown>{item.awakening.trait4000}</ReactMarkdown></td>
+                                <td><ReactMarkdown>{awakening.trait4000}</ReactMarkdown></td>
                             </tr>
                         </tbody>
                     </table>
@@ -273,6 +248,7 @@ export function Modal() {
                     <h3>Favorite Gifts</h3>
                     <ul className="gift-categories-grid">{giftCategories}</ul>
                     <ul className="gifts-grid">{gifts}</ul>
+                    {veraGiftDisclaimer && <i>Vera characters will receive reduced Awakening Points from Non-Vera gifts.</i>}
                 </section>
 
                 <hr />
@@ -324,6 +300,10 @@ export function Modal() {
                     </ul>
                 </section>
             </div>
-        </article >
-    );
+        </>
+    )
 }
+
+function MatrixModal() { }
+
+function RelicModal() { }

@@ -23,57 +23,61 @@ const tsubasa = {
             
             star6: `Sharp Arrow stacks up to **5** times. Hitting a target with Charged Arrow immediately grants **3** stacks, headshots grant **5** stacks.`
         },
-        skills: [
-            {
-                name: "Quickdraw",
-                type: "normal",
-                desc: `While on the ground, draw the bow repeatedly to attack 5 times.  
-                        First Attack: Deal damage equal to **48.8%** of ATK + **3**.  
-                        Second Attack: Deal damage equal to **43.7%** of ATK + **2**.  
-                        Third Attack: Deal damage equal to **78.6%** of ATK + **4**.  
-                        Fourth Attack: Deal damage equal to **121.2%** of ATK + **6**.  
-                        Fifth Attack: Deal damage equal to **112.5%** of ATK + **6** and knock the target back a short distance.`
-            },
-            {
-                name: "Charged Arrow",
-                type: "normal",
-                desc: `Tap and hold normal attack to charge the weapon. Deal basic damage equal to **87.8%** of ATK + **5**, and **50%** more for each 1 second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers).`
-            },
-            {
-                name: "Arrow Rain",
-                type: "normal",
-                desc: `After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **287.2%** of ATK + **15** area damage to targets.`
-            },
-            {
-                name: "Air Volley",
-                type: "normal",
-                desc: `While airborne, tap normal attack to attack 4 times in a row in the air.  
-                        First Attack: Deal damage equal to **56.3%** of ATK + **3**.  
-                        Second Attack: Deal damage equal to **74%** of ATK + **4**.  
-                        Third Attack: Deal damage equal to **112.7%** of ATK + **6**.  
-                        Fourth Attack: Deal damage equal to **169.8%** of ATK + **9**.`
-            },
-            {
-                name: "Dodge",
-                type: "dodge",
-                desc: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`
-            },
-            {
-                name: "Loaded Arrow",
-                type: "dodge",
-                desc: `Tap attack after dodging to trigger a Loaded Arrow, which **knocking the target back** and dealing damage equal to **124%** of ATK + **7**.`
-            },
-            {
-                name: "Piercing Arrow",
-                type: "skill",
-                desc: `Perform a backflip and fire **3** piercing arrows, with the main arrow deals damage equal to **224.6%** of ATK + **12**, and the other two arrows deal 60% damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds.`
-            },
-            {
-                name: "Explosive Barrage",
-                type: "discharge",
-                desc: `When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, increasing damage dealt by **15%**, and speed by **45%** for **7** seconds.`
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Quickdraw",
+                    description: `While on the ground, draw the bow repeatedly to attack 5 times.`,
+                    breakdown: [
+                        'Deal damage equal to **48.8%** of ATK + **3**.',
+                        'Deal damage equal to **43.7%** of ATK + **2**.',
+                        'Deal damage equal to **78.6%** of ATK + **4**.',
+                        'Deal damage equal to **121.2%** of ATK + **6**.',
+                        'Deal damage equal to **112.5%** of ATK + **6** and knock the target back a short distance.'
+                    ]   
+                },
+                {
+                    name: "Charged Arrow",
+                    description: `Tap and hold normal attack to charge the weapon. Deal basic damage equal to **87.8%** of ATK + **5**, and **50%** more for each 1 second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers).`
+                },
+                {
+                    name: "Arrow Rain",
+                    description: `After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **287.2%** of ATK + **15** area damage to targets.`
+                },
+                {
+                    name: "Air Volley",
+                    description: `While airborne, tap normal attack to attack 4 times in a row in the air.`,
+                    breakdown: [
+                        'Deal damage equal to **56.3%** of ATK + **3**.',
+                        'Deal damage equal to **74%** of ATK + **4**.',
+                        'Deal damage equal to **112.7%** of ATK + **6**.',
+                        'Deal damage equal to **169.8%** of ATK + **9**.'
+                    ]    
+                }
+            ],
+            dodge: [
+                {
+                    name: "Dodge",
+                    description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`
+                },
+                {
+                    name: "Loaded Arrow",
+                    description: `Tap attack after dodging to trigger a Loaded Arrow, which **knocking the target back** and dealing damage equal to **124%** of ATK + **7**.`
+                }
+            ],
+            skill: [
+                {
+                    name: "Piercing Arrow",
+                    description: `Perform a backflip and fire **3** piercing arrows, with the main arrow deals damage equal to **224.6%** of ATK + **12**, and the other two arrows deal 60% damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds.`
+                }
+            ],
+            discharge: [
+                {
+                    name: "Explosive Barrage",
+                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, increasing damage dealt by **15%**, and speed by **45%** for **7** seconds.`
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set3: ["sobek", "pepper"]
@@ -82,10 +86,10 @@ const tsubasa = {
 
     matrix: {
         set2: `Increase damage dealt by **10%/12.5%/15%/17.5%** when there are no enemies within 4 meters.  
-            <abbr title='China Exclusive' class='cn-flag'>CN</abbr> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
+            <abbr title='China Exclusive' /> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
 
         set4: `Upon a headshot, increase ATK by **12%/15%/18%/21%** for 8 seconds.  
-            <abbr title='China Exclusive' class='cn-flag'>CN</abbr> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by **15%/18%/21%/25%** for 8 seconds.`
+            <abbr title='China Exclusive' /> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by **15%/18%/21%/25%** for 8 seconds.`
     },
 
     awakening: {

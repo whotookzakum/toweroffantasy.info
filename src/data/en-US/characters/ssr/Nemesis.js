@@ -29,7 +29,7 @@ const nemesis = {
 
             star6: `Up to **2** Electrodes can be created. When a new electrode appears, it replaces the one furthest from you.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["nemesis", "cocoritter"],
             set4: ["nemesis", "cocoritter"],

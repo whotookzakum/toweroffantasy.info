@@ -31,7 +31,7 @@ const saki = {
            
             star6: `Sword Shadow's [Surge] increases your ice damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' ice damage by **25%** for **12** seconds.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["sakifuwa", "samir"],
             set4: ["sakifuwa"],
