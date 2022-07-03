@@ -5,20 +5,25 @@ import { Link, Outlet, useParams } from "react-router-dom";
 import { removeSpace, hyphenToSpace } from "../utils/stringHelper";
 
 
-export function ModalMenu({ listContent }) {
+// Change getCharacter methods (2) to getItem. It will take a 2nd argument which is the array to search.
+
+export function ModalMenu({ listContent, type }) {
+    let path = (type === "simulacra") ? "avatar" : type;
     return (
         <menu className="modal-menu">
-            {listContent.map(character =>
-                <li key={character.name}>
-                    <Link to={`/simulacra/${removeSpace(character.name)}`}>
-                        {character.chinaOnly && <abbr title="China Exclusive" />}
-                        <img src={require(`../data/images/avatar/${removeSpace(character.name)}.png`)}
-                            alt={character.name} />
-                        <h3>{character.name}</h3>
-                        <img src={require(`../data/images/${character.weapon.type}.png`)}
-                            alt={character.weapon.type} />
-                        <img src={require(`../data/images/${character.weapon.element}.png`)}
-                            alt={character.weapon.element} />
+            {listContent.map(item =>
+                <li key={item.name}>
+                    <Link to={`/${type}/${removeSpace(item.name)}`}>
+                        {item.chinaOnly && <abbr title="China Exclusive" />}
+                        <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
+                            alt={item.name} />
+                        <h3>{item.name}</h3>
+                        { type === "simulacra" && 
+                            <div>
+                                <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
+                                <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
+                            </div>
+                        }
                     </Link>
                 </li>
             )}
@@ -31,16 +36,12 @@ export function ModalMenu({ listContent }) {
 export function Modal({ type }) {
     let params = useParams();
     let item = getCharacter(params.itemName);
-
-
-
-
     return (
         <article className="modal">
             <img className="bg-img" src={require(`../data/images/art/${removeSpace(item.name)}.png`)} alt={item.name + " Artwork"} />
             <div className="modal-backdrop"></div>
-            <SimulacraModal item={item} />
-
+            { type === "simulacra" && <SimulacraModal item={item} /> }
+            { type === "matrices" && <MatrixModal item={item} /> }
         </article >
     );
 }
@@ -58,16 +59,40 @@ function SimulacraModal({ item }) {
             </tr>
         )
     })
-    // const bonusEffects = Object.entries(weapon.bonusEffect).map( ([key, effect]) => {
-    //     return(
-    //         <div>
-    //             <h4>{effect.title}</h4>
-    //             <ReactMarkdown>{effect.description}</ReactMarkdown>
-    //         </div>
-    //     )
-    // })
-    const bonusEffects = "bogus";
-
+    function getBonusEffects(bonusEffects) {
+        return (
+            Object.entries(bonusEffects).map(([key, effect]) => {
+                return (
+                    <div>
+                        <h4>{effect.title}</h4>
+                        <ReactMarkdown>{effect.description}</ReactMarkdown>
+                    </div>
+                )
+            })
+        )
+    }
+    const weaponMaterials = weapon.materials.map(material => {
+        let result = [];
+        for(let i = 0; i < 3; i++) {
+            const materialUri = material + (i + 1);
+            let rarity = 5;
+            if (["flame", "ice", "volt", "physical"].includes(material)) {
+                rarity = i + 2;
+            }
+            else if (["red", "green"].includes(material)) {
+                rarity = i + 3;
+            }
+            else if (["black", "blue"].includes(material)) {
+                if (i < 2) rarity = i + 4;
+            }
+            result.push(
+                <li className={`item-frame rarity-${rarity}`}>
+                    <img src={require(`../data/images/mat/${materialUri}.png`)} alt={materialUri} />
+                </li>
+            );
+        }
+        return result;
+    });
     let veraGiftDisclaimer = false;
     const giftCategories = awakening.giftCategories.map(gift => {
         if (gift === "vera") veraGiftDisclaimer = true;
@@ -79,11 +104,11 @@ function SimulacraModal({ item }) {
     })
     const gifts = awakening.gifts.map(group => {
         let rarity = 2;
-        if (group[0] > 40) 
+        if (group[0] > 40)
             rarity = 4;
-        else if (group[0] > 15) 
+        else if (group[0] > 15)
             rarity = 3;
-        return(group.map((gift, index) => {
+        return (group.map((gift, index) => {
             // Skip first index because it holds the points gained from the gifts in the same array i.e. [50, "gift1", "gift2"]
             return (index === 0) ? <></> :
                 <li className="gift">
@@ -94,7 +119,6 @@ function SimulacraModal({ item }) {
                 </li>
         }))
     })
-
     function getInputs(inputs) {
         return inputs.map((input, index) => {
             const keystroke = <kbd>{input}</kbd>;
@@ -126,8 +150,8 @@ function SimulacraModal({ item }) {
         )
     })
     const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
-        return(matricesList.map(matrix => 
-            <li><img src={require(`../data/images/matrix/${matrix}.png`)} alt={matrix + " Matrix"} /></li>))
+        return (matricesList.map(matrix =>
+            <li><img src={require(`../data/images/matrices/${matrix}.png`)} alt={matrix + " Matrix"} /></li>))
     });
 
     return (
@@ -188,7 +212,7 @@ function SimulacraModal({ item }) {
                         <h4 style={{ color: elementColor }}>{elementalEffects[weapon.element].title}</h4>
                         <ReactMarkdown>{elementalEffects[weapon.element].description(rarity)}</ReactMarkdown>
                     </div>
-                    {weapon.bonusEffect && <>{bonusEffects}</>}
+                    {weapon.bonusEffect && <>{getBonusEffects(weapon.bonusEffect)}</>}
                 </section>
                 <section className="weapon-advancements w-75ch">
                     <h3>Advancements</h3>
@@ -204,7 +228,7 @@ function SimulacraModal({ item }) {
                         </tbody>
                     </table>
                 </section>
-                {weapon.abilities &&
+                {Object.keys(weapon.abilities).length > 0 &&
                     <section className="weapon-abilities w-75ch">
                         <h3>Weapon Abilities</h3>
                         Data reflects unleveled weapons.
@@ -213,7 +237,7 @@ function SimulacraModal({ item }) {
                 }
                 <section className="weapon-materials w-75ch" >
                     <h3>Upgrade Materials</h3>
-                    {/* <ul>{weaponMaterials}</ul> */}
+                    <ul>{weaponMaterials}</ul>
                 </section>
                 <section className="weapon-rec-matrices w-75ch">
                     <h3>Recommended Matrices</h3>
@@ -285,18 +309,24 @@ function SimulacraModal({ item }) {
                 <section className="voice-actors w-75ch">
                     <h3>Voice Actors</h3>
                     <ul>
-                        <li>
-                            <h5>English</h5>
-                            <h4>{item.bio.voiceActors.en}</h4>
-                        </li>
-                        <li>
-                            <h5>Japanese</h5>
-                            <h4>{item.bio.voiceActors.jp}</h4>
-                        </li>
-                        <li>
-                            <h5>Chinese</h5>
-                            <h4>{item.bio.voiceActors.cn}</h4>
-                        </li>
+                        { item.bio.voiceActors.en.length > 0 && 
+                            <li>
+                                <h5>English</h5>
+                                <h4>{item.bio.voiceActors.en}</h4>
+                            </li>
+                        }
+                        { item.bio.voiceActors.jp.length > 0 && 
+                            <li>
+                                <h5>Japanese</h5>
+                                <h4>{item.bio.voiceActors.jp}</h4>
+                            </li>
+                        }
+                        { item.bio.voiceActors.cn.length > 0 && 
+                            <li>
+                                <h5>Chinese</h5>
+                                <h4>{item.bio.voiceActors.cn}</h4>
+                            </li>
+                        }
                     </ul>
                 </section>
             </div>
@@ -304,6 +334,25 @@ function SimulacraModal({ item }) {
     )
 }
 
-function MatrixModal() { }
+function MatrixModal({ item }) {
+    const matrix = item.matrix;
+    return(
+        <>
+            <header>
+                <h1>{item.name}</h1>
+                <h2>{item.rarity} Matrices</h2>
+            </header>
 
-function RelicModal() { }
+            <div className="modal-body">
+                {item.chinaOnly &&
+                    <section>
+                        <h2><abbr title="China Exclusive" style={{ fontSize: "1.5rem", verticalAlign: "middle" }} /> China Exclusive </h2>
+                        {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
+                    </section>
+                }
+                <ReactMarkdown>{matrix.set2}</ReactMarkdown>
+                <ReactMarkdown>{matrix.set4}</ReactMarkdown>
+            </div>
+        </>
+    )
+}

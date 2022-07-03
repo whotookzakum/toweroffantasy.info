@@ -2,6 +2,8 @@ import '../scss/styles.scss';
 import Navigation from './Navigation';
 import Home from "../routes/home";
 import Simulacra from '../routes/simulacra';
+import Matrices from '../routes/matrices';
+import Relics from '../routes/relics';
 import Food from '../routes/food';
 import { Outlet, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { Modal } from './Modal';
@@ -47,9 +49,43 @@ export default function Main() {
                         }
                     />
                     <Route
+                        path="matrices"
+                        element={
+                            <Page 
+                                title="Matrices" description="Information about all the Matrix set effects in Tower of Fantasy Global and Chinese versions.">
+                                <Matrices />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="matrices/:itemName"
+                        element={
+                            <Page title={`${getCharacterWithSpaces(pageTitle)} Matrix`} description={`${getCharacterWithSpaces(pageTitle)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
+                                <Modal type="matrices" />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="relics"
+                        element={
+                            <Page 
+                                title="Relics" description="Information about all the Relics in Tower of Fantasy Global and Chinese versions.">
+                                <Relics />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="relics/:itemName"
+                        element={
+                            <Page title={`${getCharacterWithSpaces(pageTitle)}`} description={`${getCharacterWithSpaces(pageTitle)} effects and advancements in Tower of Fantasy Global and Chinese versions.`}>
+                                <Modal type="relics" />
+                            </Page>
+                        }
+                    />
+                    <Route
                         path="food"
                         element={
-                            <Page title="Food" description="Recipes for craftable food in  Tower of Fantasy Global and Chinese versions.">
+                            <Page title="Food" description="Recipes for craftable food in Tower of Fantasy Global and Chinese versions.">
                                 <Food />
                             </Page>
                         }

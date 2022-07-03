@@ -17,12 +17,12 @@ function Simulacra() {
             
             <section>
                 <h2><span style={{color: "var(--color-tier-s)"}}>SSR</span> Simulacra</h2>
-                <ModalMenu listContent={CHARACTERS.filter(character => character.rarity === "SSR")} />
+                <ModalMenu type="simulacra" listContent={CHARACTERS.filter(character => character.rarity === "SSR")} />
             </section>
 
             <section>
                 <h2><span style={{color: "var(--color-tier-a)"}}>SR</span> Simulacra</h2>
-                <ModalMenu listContent={CHARACTERS.filter(character => character.rarity === "SR")} />
+                <ModalMenu type="simulacra" listContent={CHARACTERS.filter(character => character.rarity === "SR")} />
             </section>
 
         </>

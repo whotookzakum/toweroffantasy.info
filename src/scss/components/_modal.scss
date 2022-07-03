@@ -253,7 +253,7 @@
 }
 
 .weapon-materials {
-
+    
     ul {
         padding: 1rem;
         background-color: clr(container, light);
@@ -263,12 +263,9 @@
         box-shadow: $shadow;
 
         li {
-            display: flex;
             justify-self: center;
-            justify-content: center;
-            align-items: center;
             box-shadow: $shadow;
-
+            
             img {
                 width: 90px;
             }

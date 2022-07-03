@@ -12,7 +12,7 @@ const frigg = {
         materials: ["ice", "red", "black"],
         bonusEffect: {
             effect1: {
-                title: "unknown",
+                title: "Frozen Domain",
                 description: "After using the Weapon Skill **Fimbulwinter**, a large ice field will be placed at your position, lasting  **25** seconds. Inside the ice field, dodges will not be consumed while using Frigg's weapon, and gain the effect Frozen Domain I: when using Ice weapons, increase Ice ATK by **15%** and Shatter by **25%**."
             }
         },
