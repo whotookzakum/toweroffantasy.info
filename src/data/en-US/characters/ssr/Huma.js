@@ -29,44 +29,56 @@ const huma = {
             normal: [
                 {
                     name: "Normal Attack",
-                    description: `While on the ground, swing the shield axe to attack 4 times in a row.  
-                            First Attack in Shield Form: Deal damage equal to **70.6%** of ATK + **4** and knock the target back a short distance.  
-                            Second Attack: Deal damage equal to **51.7%** of ATK + **3** and knock the target back a short distance.  
-                            Third Attack: Deal damage equal to **57.1%** of ATK + **3** and knock the target back a short distance.  
-                            Fourth Attack: Deal damage equal to **167.3%** of ATK + **9** and launch the target into the air.  
-                            First Attack in Axe Form: Deal damage equal to **122.9%** of ATK + **6** and knock the target back a short distance.  
-                            Second Attack: Deal damage equal to **72.2%** of ATK + **4** and knock the target back a short distance.  
-                            Third Attack: Deal damage equal to **109%** of ATK + **6** and knock the target back a short distance.  
-                            Fourth Attack: Deal damage equal to **201.1%** of ATK + **11** and knock the target back.`,
+                    description: `While on the ground, swing the shield axe to attack 4 times in a row.`,
+                    breakdown: [
+                        `Shield Form: Deal damage equal to **70.6%** of ATK + **4** and knock the target back a short distance.  
+                        Axe Form: Deal damage equal to **122.9%** of ATK + **6** and knock the target back a short distance.`,
+                        `Shield Form: Deal damage equal to **51.7%** of ATK + **3** and knock the target back a short distance.  
+                        Axe Form: Deal damage equal to **72.2%** of ATK + **4** and knock the target back a short distance.`,
+                        `Shield Form: Deal damage equal to **57.1%** of ATK + **3** and knock the target back a short distance.  
+                        Axe Form: Deal damage equal to **109%** of ATK + **6** and knock the target back a short distance.`,
+                        `Shield Form: Deal damage equal to **167.3%** of ATK + **9** and launch the target into the air.  
+                        Axe Form: Deal damage equal to **201.1%** of ATK + **11** and knock the target back.`
+                    ]
                 },
                 {
                     name: "Aerial Strike",
-                    description: `While airborne or after jumping once, attack 3 times in a row.  
-                            First Attack in Shield Form: Deal damage equal to **69%** of ATK + **4**.  
-                            Second Attack: Deal damage equal to **72.9%** of ATK + **4**.  
-                            Third Attack: Deal damage equal to **93.7%** of ATK + **5**.  
-                            First Attack in Axe Form: Deal damage equal to **107.8%** of ATK + **6**.  
-                            Second Attack: Deal damage equal to **82.8%** of ATK + **4**.  
-                            Third Attack: Deal damage equal to **252.7%** of ATK + **13**.`,
+                    description: `While airborne or after jumping once, attack 3 times in a row.`,
+                    breakdown: [
+                        `Shield Form: Deal damage equal to **69%** of ATK + **4**  
+                        Axe Form: Deal damage equal to **107.8%** of ATK + **6**.`,
+                        `Shield Form: Deal damage equal to **72.9%** of ATK + **4**.  
+                        Axe Form: Deal damage equal to **82.8%** of ATK + **4**.`,
+                        `Shield Form: Deal damage equal to **93.7%** of ATK + **5**.  
+                        Axe Form: Deal damage equal to **252.7%** of ATK + **13**.`
+                    ]
                 },
                 {
                     name: "Anticipation",
-                    description: `Shield Form: While on the ground, tap and hold normal attack to enter shield form (release to exit) for **3** seconds, during which the Wanderer is unable to move, and all damage taken is reduced by **50%**. While in shield form, releasing the normal attack button after taking damage or after holding the button for **3** seconds, unleash fire crash, dealing damage equal to **152.1%** of ATK + **8** and inflicting a **1**-second **stun** effect on the target.  
-                    Axe Form: Smash the target, dealing damage equal to **111.1%** of ATK + **6** and knocking the target into the air.`,
+                    description: 
+                        `Shield Form: While on the ground, tap and hold normal attack to enter shield form (release to exit) for **3** seconds, during which the Wanderer is unable to move, and all damage taken is reduced by **50%**. While in shield form, releasing the normal attack button after taking damage or after holding the button for **3** seconds, unleash fire crash, dealing damage equal to **152.1%** of ATK + **8** and inflicting a **1**-second **stun** effect on the target.  
+                        &nbsp;  
+                        Axe Form: Smash the target, dealing damage equal to **111.1%** of ATK + **6** and knocking the target into the air.`,
                 },
                 {
                     name: "Valor",
-                    description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Air Branch attacks.  
-                            Shield Form: While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **81.1%** of ATK + **4** and knock the target into the air.  
-                            Axe Form: While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **116.6%** of ATK + **6** and knock the target into the air. The higher the location is when triggered, the higher the damage dealt, up to **600%** of ATK.`,
+                    description: 
+                        `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Air Branch attacks.  
+                        &nbsp;  
+                        Shield Form: While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **81.1%** of ATK + **4** and knock the target into the air.  
+                        &nbsp;  
+                        Axe Form: While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **116.6%** of ATK + **6** and knock the target into the air. The higher the location is when triggered, the higher the damage dealt, up to **600%** of ATK.`,
                 }
             ],
             dodge: [
                 {
                     name: "Erupt",
-                    description: `Tap normal attack during the short period after dodging to trigger a Dodge Attack.  
-                            Shield Form: Unleash a flaming shield, dealing damage equal to **50.7%** of ATK + **3** and knocking back targets. In addition, trigger an explosion that deals damage equal to **50.7%** of ATK + **3**, stun targets for **0.5** seconds, and reduce incoming healing effects on targets by **30%** for **10** seconds.  
-                            Axe Form: Swing an axe to deal damage equal to **205.8%** of ATK + **11**, and reduce incoming healing effects on targets by **30%** for **10** seconds.`,
+                    description: 
+                        `Tap normal attack during the short period after dodging to trigger a Dodge Attack.  
+                        &nbsp;  
+                        Shield Form: Unleash a flaming shield, dealing damage equal to **50.7%** of ATK + **3** and knocking back targets. In addition, trigger an explosion that deals damage equal to **50.7%** of ATK + **3**, stun targets for **0.5** seconds, and reduce incoming healing effects on targets by **30%** for **10** seconds.  
+                        &nbsp;  
+                        Axe Form: Swing an axe to deal damage equal to **205.8%** of ATK + **11**, and reduce incoming healing effects on targets by **30%** for **10** seconds.`,
                 },
                 {
                     name: "Dodge",
@@ -76,8 +88,10 @@ const huma = {
             skill: [
                 {
                     name: "Fission",
-                    description: `Shield Conversion: Switch from shield form to axe form and smash the ground, dealing damage equal to **339.9%** of ATK + **18** and knocking the target **into the air**. Leave a flame zone for **5** seconds that burns the target, dealing continuous damage equal to **212.4%** of ATK + **11**.  
-                    Axe Conversion: Switch from axe form to shield form and slam it to the ground, dealing damage equal to **281.4%** of ATK + **15** to the target and knocking them back. Prevent the target from switching weapons for **5** seconds. **45**-second cooldown, Shield Conversion and Axe Conversion share a cooldown.`,
+                    description: 
+                        `Shield Conversion: Switch from shield form to axe form and smash the ground, dealing damage equal to **339.9%** of ATK + **18** and knocking the target **into the air**. Leave a flame zone for **5** seconds that burns the target, dealing continuous damage equal to **212.4%** of ATK + **11**.  
+                        &nbsp;  
+                        Axe Conversion: Switch from axe form to shield form and slam it to the ground, dealing damage equal to **281.4%** of ATK + **15** to the target and knocking them back. Prevent the target from switching weapons for **5** seconds. **45**-second cooldown, Shield Conversion and Axe Conversion share a cooldown.`,
                 }
             ],
             discharge: [

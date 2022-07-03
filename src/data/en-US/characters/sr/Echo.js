@@ -7,8 +7,8 @@ const echo = {
         element: "volt",
         type: "dps",
         baseStats: ["attack", "defense", "health"],
-        shatter: ["11.00", "s"],
-        charge: ["7.00", "b"],
+        shatter: ["S", "11.00"],
+        charge: ["B", "7.00"],
         materials: ["volt", "red", "black"],
         advancement: {
             star1: `Increase shatter by **15%**. After shattering the target's shield, increase all teammates' ATK by **15%** for **30** seconds. This cannot be stacked.`,
