@@ -2,7 +2,7 @@ const quantumcloak = {
     name: "Quantum Cloak",
     rarity: "SR",
     chinaOnly: false,
-    description: "Enter a quantum state for **10** seconds, during which enemies cannot detect the wearer. The wearer exits quantum state after attacking once. **120</strong-second cooldown.",
+    description: "Enter a quantum state for **10** seconds, during which enemies cannot detect the wearer. The wearer exits quantum state after attacking once. **120**-second cooldown.",
     advancement: {
             star1: "Quantum state lasts for **20** seconds.",
             

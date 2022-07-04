@@ -3,18 +3,45 @@
 
 .modal-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(8.3rem, 1fr));
     gap: clamp(1rem, calc(.95rem + .27vw), 1.25rem);
 
     list-style: none;
     padding: 0;
     margin: 0;
 
+    .flex {
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        max-height: 120px;
+    }
+
+    &.relics {
+        img {
+            max-width: 128px;
+        }
+        h3 {
+            margin: 0 0.5rem;
+        }
+    }
+
+    &.matrices {
+        img {
+            max-width: 192px;
+        }
+    }
+
+    &.mounts { 
+        img {
+            max-width: 192px;
+        }
+    }
+
     li {
         position: relative;
         text-align: center;
         background: clr(container, light);
-        
         cursor: pointer;
         box-shadow: $shadow;
         transition: transform 125ms ease;
@@ -39,11 +66,7 @@
         }
 
         h3 {
-            margin: 0 0 0.4rem 0;
-        }
-
-        img {
-            margin: 0 0.1rem;
+            margin: 0.5rem;
         }
     }
 }
@@ -108,8 +131,42 @@
 
     header {
         text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
         h2, h1 {
             margin: 0;
+            line-height: 1.1;
+        }
+        h1 {
+            text-shadow: 3px 3px 0 clr(text, dark);
+        }
+        h2 {
+            font-size: 1.6rem;
+            color: clr(text, disabled);
+            text-shadow: 2px 2px 0 clr(container, light);
+        }
+
+        .header-img-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            max-height: 120px;
+            max-width: 120px;
+
+            img {
+                filter: drop-shadow($shadow);
+            }
+
+            &.matrices img {
+                max-width: 192px;
+            }
+
+            &.relics img {
+                max-width: 128px;
+            }
         }
     }
 
@@ -225,8 +282,23 @@
 
 }
 
+section.china-exclusive {
+    background-color: clr(container, light);
+    padding: 2rem;
+    border-left: 3px solid #e72e37;
+    box-shadow: $shadow;
+    h3 {
+        margin: 0.3rem 0;
+    }
+    abbr {
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+}
+
 .weapon-effects,
-.weapon-advancements,
+.relic-effects,
+.advancements,
 .awakening-traits,
 .awakening-gifts,
 .character-bio,
@@ -246,7 +318,7 @@
     }
 }
 
-.weapon-advancements {
+.advancements {
     em strong {
         color: clr(text, orange);
     }
@@ -293,33 +365,6 @@
 
 .weapon-abilities {
 
-    details {
-        box-shadow: $shadow;
-
-        summary {
-            background-color: clr(container, blue);
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-
-            &:hover {
-                filter: brightness(1.2);
-            }
-
-            h4 {
-                display: inline-block;
-                text-transform: capitalize;
-            }
-        }
-    }
-
-    .details-content {
-        background-color: clr(container, light);
-        padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
     .weapon-ability {
         background-color: clr(container);
         padding: 1.5rem;
@@ -329,25 +374,7 @@
         color: #48adbd;
         text-shadow: $shadow;
     }
-    kbd {
-        --key-color: rgb(49, 49, 70);
-        --key-size: 2em;
-        --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: var(--key-size);
-        height: var(--key-size);
-        padding: 0 0.6em 0.12em 0.6em;
-        background-color: var(--key-color);
-        background-image: radial-gradient(var(--key-color), transparent), linear-gradient(180deg, rgba(0, 0, 0, .2), transparent);
-        border: .1em solid #13141e;
-        border-radius: .26em;
-        box-shadow: var(--tw-shadow), inset 0 .1em 0 var(--key-color), inset 0 -.12em .08em .1em rgba(0, 0, 0, .3);
-        font-family: inherit;
-        font-weight: 800;
-        line-height: 1;
-    }
+    
 }
 
 .awakening-traits {
@@ -464,3 +491,29 @@
         box-shadow: $shadow;
     }
 }
+
+.relic-effects {
+    em strong {
+        color: clr(text, orange);
+    }
+}
+
+.matrix-set {
+    & > p {
+        margin: 1rem 0;
+    }
+
+    details {
+        box-shadow: none;
+        summary {
+            box-shadow: $shadow;
+        }
+    }
+    .details-content {
+        padding: 0;
+        background: none;
+    }
+    
+}
+
+

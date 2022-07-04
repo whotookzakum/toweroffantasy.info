@@ -1,12 +1,13 @@
 import { ModalMenu, Modal } from "../components/Modal";
-import { removeSpace } from "../utils/stringHelper";
+import { RELICS } from "../data/en-US/relics/relicList";
+import { removeSpace, getItemByName } from "../utils/stringHelper";
 
 
 function Relics() {
-
+    const bgImg = "Alternate Destiny";
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/art/${removeSpace(CHARACTERS[0].name)}.png`)} alt={CHARACTERS[0].name + " Artwork"} />
+            <img className="bg-img" src={require(`../data/images/relics/${removeSpace(bgImg)}.png`)} alt={bgImg} />
             <header>
                 <h1>Relics</h1>
                 <p>
@@ -16,12 +17,12 @@ function Relics() {
             
             <section>
                 <h2><span style={{color: "var(--color-tier-s)"}}>SSR</span> Relics</h2>
-                <ModalMenu type="relics" listContent={} />
+                <ModalMenu type="relics" listContent={RELICS.filter(relic => relic.rarity === "SSR")} />
             </section>
 
             <section>
                 <h2><span style={{color: "var(--color-tier-a)"}}>SR</span> Relics</h2>
-                <ModalMenu type="relics" listContent={} />
+                <ModalMenu type="relics" listContent={RELICS.filter(relic => relic.rarity === "SR")} />
             </section>
 
         </>

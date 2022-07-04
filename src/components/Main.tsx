@@ -7,10 +7,14 @@ import Relics from '../routes/relics';
 import Food from '../routes/food';
 import { Outlet, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { Modal } from './Modal';
-import { CHARACTERS, getCharacterWithSpaces } from '../data/en-US/characterList';
+import { getItemNameWithSpaces } from '../utils/stringHelper';
 import Page from './Page';
 import { useEffect } from 'react';
 import { removeSpace } from '../utils/stringHelper';
+import { CHARACTERS } from '../data/en-US/characters/characterList';
+import { RELICS } from '../data/en-US/relics/relicList';
+import Mounts from '../routes/mounts';
+import { MOUNTS } from '../data/en-US/mounts/mountList';
 
 
 export default function Main() {
@@ -43,7 +47,7 @@ export default function Main() {
                     <Route
                         path="simulacra/:itemName"
                         element={
-                            <Page title={getCharacterWithSpaces(pageTitle)} description={`${getCharacterWithSpaces(pageTitle)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
+                            <Page title={getItemNameWithSpaces(pageTitle, CHARACTERS)} description={`${getItemNameWithSpaces(pageTitle, CHARACTERS)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal type="simulacra" />
                             </Page>
                         }
@@ -60,7 +64,7 @@ export default function Main() {
                     <Route
                         path="matrices/:itemName"
                         element={
-                            <Page title={`${getCharacterWithSpaces(pageTitle)} Matrix`} description={`${getCharacterWithSpaces(pageTitle)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
+                            <Page title={`${getItemNameWithSpaces(pageTitle, CHARACTERS)} Matrix`} description={`${getItemNameWithSpaces(pageTitle, CHARACTERS)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal type="matrices" />
                             </Page>
                         }
@@ -77,7 +81,7 @@ export default function Main() {
                     <Route
                         path="relics/:itemName"
                         element={
-                            <Page title={`${getCharacterWithSpaces(pageTitle)}`} description={`${getCharacterWithSpaces(pageTitle)} effects and advancements in Tower of Fantasy Global and Chinese versions.`}>
+                            <Page title={`${getItemNameWithSpaces(pageTitle, RELICS)}`} description={`${getItemNameWithSpaces(pageTitle, RELICS)} effects and advancements in Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal type="relics" />
                             </Page>
                         }
@@ -87,6 +91,22 @@ export default function Main() {
                         element={
                             <Page title="Food" description="Recipes for craftable food in Tower of Fantasy Global and Chinese versions.">
                                 <Food />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="mounts"
+                        element={
+                            <Page title="Mounts" description="How to obtain all the mounts in Tower of Fantasy Global and Chinese versions.">
+                                <Mounts />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="mounts/:itemName"
+                        element={
+                            <Page title={`${getItemNameWithSpaces(pageTitle, MOUNTS)}`} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
+                                <Modal type="mounts" />
                             </Page>
                         }
                     />

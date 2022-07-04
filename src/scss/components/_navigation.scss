@@ -28,7 +28,7 @@
 // LINKS RELATED 
 // =================================================================
 
-.nav-body ul {
+.nav-body ul:not(.nav-socials) {
     padding: 0;
 
     li {
@@ -58,13 +58,18 @@
             right: 0;
             transform: translateX(-100%);
         }
-
+        // show load bar only while hovering, and play animation on click
         &:active::before {
             transform: translateX(0);
             transition: transform 0.75s ease-in-out;
+            // animation: 0.5s ease-in 1 both running navLoading;
         }
     }
 }
+
+// @keyframes navLoading {
+//     to { transform: translateX(0); }
+// }
 
 .nav-body a {
     padding: 10px 0;
@@ -93,8 +98,17 @@
     }
 }
 
-.nav-socials a {
-    color: clr(text, turquoise);
+.nav-socials {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1rem;
+
+    a {
+        color: clr(text, turquoise);
+        width: fit-content;
+    }
 }
 
 
@@ -104,6 +118,9 @@
 .nav-footer {
     color: clr(text, darkgray) !important;
     font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .nav-backdrop {

@@ -1,25 +1,26 @@
-import { CHARACTERS, getCharacter } from "../data/en-US/characterList";
+import { getItemByName } from "../utils/stringHelper";
 import elementalEffects from "../data/en-US/elementalEffects";
 import ReactMarkdown from "react-markdown";
 import { Link, Outlet, useParams } from "react-router-dom";
 import { removeSpace, hyphenToSpace } from "../utils/stringHelper";
-
-
-// Change getCharacter methods (2) to getItem. It will take a 2nd argument which is the array to search.
+import { CHARACTERS } from "../data/en-US/characters/characterList";
+import { RELICS } from "../data/en-US/relics/relicList";
 
 export function ModalMenu({ listContent, type }) {
     let path = (type === "simulacra") ? "avatar" : type;
     return (
-        <menu className="modal-menu">
+        <menu className={`modal-menu ${type}`}>
             {listContent.map(item =>
                 <li key={item.name}>
                     <Link to={`/${type}/${removeSpace(item.name)}`}>
                         {item.chinaOnly && <abbr title="China Exclusive" />}
-                        <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
-                            alt={item.name} />
+                        <div className="flex">
+                            <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
+                                alt={item.name} />
+                        </div>
                         <h3>{item.name}</h3>
-                        { type === "simulacra" && 
-                            <div>
+                        {type === "simulacra" &&
+                            <div className="flex" style={{gap: "0.3rem"}}>
                                 <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
                                 <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
                             </div>
@@ -34,14 +35,18 @@ export function ModalMenu({ listContent, type }) {
 
 
 export function Modal({ type }) {
-    let params = useParams();
-    let item = getCharacter(params.itemName);
+    const params = useParams();
+    let path = (type === "simulacra" || type === "matrices") ? "art" : type;
+    let dataSet = CHARACTERS; // For both Simulacra and Matrices
+    if (type === "relics") dataSet = RELICS;
+    const item = getItemByName(params.itemName, dataSet);
     return (
         <article className="modal">
-            <img className="bg-img" src={require(`../data/images/art/${removeSpace(item.name)}.png`)} alt={item.name + " Artwork"} />
+            <img className="bg-img" src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)} alt={item.name + " Artwork"} />
             <div className="modal-backdrop"></div>
-            { type === "simulacra" && <SimulacraModal item={item} /> }
-            { type === "matrices" && <MatrixModal item={item} /> }
+            {type === "simulacra" && <SimulacraModal item={item} />}
+            {type === "matrices" && <MatrixModal item={item} />}
+            {type === "relics" && <RelicModal item={item} />}
         </article >
     );
 }
@@ -50,6 +55,9 @@ function SimulacraModal({ item }) {
     const weapon = item.weapon;
     const awakening = item.awakening;
     const rarity = (item.rarity === "SSR") ? 1 : 0;
+    let rarityColor = {color: "var(--color-tier-s)"};
+    if (item.rarity === "SR") rarityColor = {color: "var(--color-tier-a)"};
+    else if (item.rarity === "R") rarityColor = {color: "var(--color-tier-b)"};
     const elementColor = `var(--color-${weapon.element})`;
     const advancements = Object.entries(weapon.advancement).map(([star, effect]) => {
         return (
@@ -73,7 +81,7 @@ function SimulacraModal({ item }) {
     }
     const weaponMaterials = weapon.materials.map(material => {
         let result = [];
-        for(let i = 0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
             const materialUri = material + (i + 1);
             let rarity = 5;
             if (["flame", "ice", "volt", "physical"].includes(material)) {
@@ -157,14 +165,19 @@ function SimulacraModal({ item }) {
     return (
         <>
             <header>
-                <h1>{item.name}</h1>
-                <h2>{item.rarity} Simulacrum</h2>
+                <div className="header-img-wrapper simulacra">
+                    <img src={require(`../data/images/avatar/${removeSpace(item.name)}.png`)} alt="" />
+                </div>
+                <div>
+                    <h1>{item.name}</h1>
+                    <h2><i style={rarityColor}>{item.rarity}</i> Simulacra</h2>
+                </div>
             </header>
 
             <div className="modal-body">
                 {item.chinaOnly &&
-                    <section>
-                        <h2><abbr title="China Exclusive" style={{ fontSize: "1.5rem", verticalAlign: "middle" }} /> China Exclusive </h2>
+                    <section className="china-exclusive">
+                        <h3><abbr title="China Exclusive" /> China Exclusive </h3>
                         {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
                     </section>
                 }
@@ -214,7 +227,7 @@ function SimulacraModal({ item }) {
                     </div>
                     {weapon.bonusEffect && <>{getBonusEffects(weapon.bonusEffect)}</>}
                 </section>
-                <section className="weapon-advancements w-75ch">
+                <section className="advancements w-75ch">
                     <h3>Advancements</h3>
                     <table className="modal-table">
                         <thead style={{ borderColor: elementColor }}>
@@ -309,19 +322,19 @@ function SimulacraModal({ item }) {
                 <section className="voice-actors w-75ch">
                     <h3>Voice Actors</h3>
                     <ul>
-                        { item.bio.voiceActors.en.length > 0 && 
+                        {item.bio.voiceActors.en.length > 0 &&
                             <li>
                                 <h5>English</h5>
                                 <h4>{item.bio.voiceActors.en}</h4>
                             </li>
                         }
-                        { item.bio.voiceActors.jp.length > 0 && 
+                        {item.bio.voiceActors.jp.length > 0 &&
                             <li>
                                 <h5>Japanese</h5>
                                 <h4>{item.bio.voiceActors.jp}</h4>
                             </li>
                         }
-                        { item.bio.voiceActors.cn.length > 0 && 
+                        {item.bio.voiceActors.cn.length > 0 &&
                             <li>
                                 <h5>Chinese</h5>
                                 <h4>{item.bio.voiceActors.cn}</h4>
@@ -336,22 +349,127 @@ function SimulacraModal({ item }) {
 
 function MatrixModal({ item }) {
     const matrix = item.matrix;
-    return(
+    let rarityColor = {color: "var(--color-tier-s)"};
+    if (item.rarity === "SR") rarityColor = {color: "var(--color-tier-a)"};
+    else if (item.rarity === "R") rarityColor = {color: "var(--color-tier-b)"};
+    const setEffects = Object.entries(matrix).map(([key, value]) => {
+        const reqPieces = key.split("set").pop();
+        return (
+            <section className="matrix-set w-75ch">
+                <h3>{reqPieces}-piece Set</h3>
+                <ReactMarkdown>{matrix[key]}</ReactMarkdown>
+                <details style={{display: 'none'}}>
+                    <summary>Advancements</summary>
+                    <div className="details-content">
+
+                        <table className="modal-table">
+                            <thead>
+                                <tr>
+                                    <th><h6>Stars</h6></th>
+                                    <th><h6>Effect</h6></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1 ★</th>
+                                    <td><ReactMarkdown>{matrix[key]}</ReactMarkdown></td>
+                                </tr>
+                                <tr>
+                                    <th>2 ★</th>
+                                    <td><ReactMarkdown>{matrix[key]}</ReactMarkdown></td>
+                                </tr>
+                                <tr>
+                                    <th>3 ★</th>
+                                    <td><ReactMarkdown>{matrix[key]}</ReactMarkdown></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+            </section>
+        )
+    });
+
+    return (
         <>
             <header>
-                <h1>{item.name}</h1>
-                <h2>{item.rarity} Matrices</h2>
+                <div className="header-img-wrapper matrices">
+                    <img src={require(`../data/images/matrices/${removeSpace(item.name)}.png`)} alt="" />
+                </div>
+                <div>
+                    <h1>{item.name}</h1>
+                    <h2><i style={rarityColor}>{item.rarity}</i> Matrix</h2>
+                </div>
             </header>
 
             <div className="modal-body">
                 {item.chinaOnly &&
-                    <section>
-                        <h2><abbr title="China Exclusive" style={{ fontSize: "1.5rem", verticalAlign: "middle" }} /> China Exclusive </h2>
+                    <section className="china-exclusive">
+                        <h3><abbr title="China Exclusive" /> China Exclusive </h3>
                         {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
                     </section>
                 }
-                <ReactMarkdown>{matrix.set2}</ReactMarkdown>
-                <ReactMarkdown>{matrix.set4}</ReactMarkdown>
+                
+                
+                
+                {setEffects}
+            </div>
+        </>
+    )
+}
+
+function RelicModal({ item }) {
+    let rarityColor = {color: "var(--color-tier-s)"};
+    if (item.rarity === "SR") rarityColor = {color: "var(--color-tier-a)"};
+    else if (item.rarity === "R") rarityColor = {color: "var(--color-tier-b)"};
+    const advancements = Object.entries(item.advancement).map(([star, effect]) => {
+        return (
+            <tr>
+                <th>{star.split("star").pop()} ★</th>
+                <td><ReactMarkdown>{effect}</ReactMarkdown></td>
+            </tr>
+        )
+    });
+
+    return (
+        <>
+            <header>
+                <div className="header-img-wrapper relics">
+                    <img src={require(`../data/images/relics/${removeSpace(item.name)}.png`)} alt="" />
+                </div>
+                <div>
+                    <h1>{item.name}</h1>
+                    <h2><i style={rarityColor}>{item.rarity}</i> Relic</h2>
+                </div>
+            </header>
+
+            <div className="modal-body">
+                {item.chinaOnly &&
+                    <section className="china-exclusive">
+                        <h3><abbr title="China Exclusive" /> China Exclusive </h3>
+                        {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
+                    </section>
+                }
+
+                <section className="relic-effects w-75ch">
+                    <h3>Relic Effect</h3>
+                    <ReactMarkdown>{item.description}</ReactMarkdown>
+                </section>
+
+                <section className="advancements w-75ch">
+                    <h3>Advancements</h3>
+                    <table className="modal-table">
+                        <thead>
+                            <tr>
+                                <th><h6>Stars</h6></th>
+                                <th><h6>Effect</h6></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {advancements}
+                        </tbody>
+                    </table>
+                </section>
             </div>
         </>
     )

@@ -39,7 +39,7 @@ function Food() {
                 </p>
             </header>
             <section>
-                <menu className="filters">
+                <menu className="filters" style={{display: 'none'}}>
                     <li>
                         <h4>Rarity</h4>
                         <div className="flex">

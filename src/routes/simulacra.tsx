@@ -1,5 +1,5 @@
 import { ModalMenu, Modal } from "../components/Modal";
-import { CHARACTERS } from "../data/en-US/characterList";
+import { CHARACTERS } from "../data/en-US/characters/characterList";
 import { removeSpace } from "../utils/stringHelper";
 
 function Simulacra() {
