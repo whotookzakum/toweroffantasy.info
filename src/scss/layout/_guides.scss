@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 #dps-loadout-guide div {
     display: inline-block;
     margin: 5px;
@@ -141,4 +143,77 @@
 
 .guide-game-version h3 strong {
     color: var(--color-clay) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    margin: 0 auto;
+}
+
+.spotlight {
+    background-color: clr(container, light);
+    padding: 1rem;
+    box-shadow: $shadow;
+    margin: 2rem 0;
+}
+
+.pro::before, .con::before {
+    --color: #{clr(text, green)};
+    content: '+';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--color);
+    font-size: 15.3px;
+    font-weight: 600;
+    color: var(--color);
+    border-radius: 50%;
+    filter: drop-shadow($shadow);
+    margin-right: 0.5rem;
+}
+
+.con::before {
+    --color: #{clr(text, red)};
+    content: '-';
 }

@@ -15,6 +15,7 @@ import { CHARACTERS } from '../data/en-US/characters/characterList';
 import { RELICS } from '../data/en-US/relics/relicList';
 import Mounts from '../routes/mounts';
 import { MOUNTS } from '../data/en-US/mounts/mountList';
+import Guides from '../routes/guides';
 
 
 export default function Main() {
@@ -107,6 +108,14 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, MOUNTS)}`} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal type="mounts" />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="guides"
+                        element={
+                            <Page title="Guides" description="Guides for Tower of Fantasy Global and Chinese versions.">
+                                <Guides />
                             </Page>
                         }
                     />
