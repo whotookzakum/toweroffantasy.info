@@ -17,3 +17,17 @@ abbr[title*="China"] {
         content: 'CN';
     }
 }
+
+section.china-exclusive {
+    background-color: clr(container, light);
+    padding: 2rem;
+    border-left: 3px solid #e72e37;
+    box-shadow: $shadow;
+    h3 {
+        margin: 0.3rem 0;
+    }
+    abbr {
+        font-size: 1.2rem;
+        vertical-align: middle;
+    }
+}

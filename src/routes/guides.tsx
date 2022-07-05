@@ -7,7 +7,9 @@ function Guides() {
     // const bgImg = "Alternate Destiny";
     return (
         <>
-            {/* <img className="bg-img" src={require(`../data/images/relics/${removeSpace(bgImg)}.png`)} alt={bgImg} /> */}
+            
+            {/* <img className="bg-img" src={require(`../data/images/UI_SakiFuwa_BG_01.png`)} alt="Background Image" /> */}
+            <img className="bg-img" src={require(`../data/images/bg-3.png`)} alt="Background Image" />
             <header>
                 <h1>Guides</h1>
                 <p>

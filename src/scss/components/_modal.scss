@@ -166,6 +166,14 @@
             &.relics img {
                 max-width: 128px;
             }
+
+            &.mounts {
+                max-width: unset;
+                max-height: unset;
+                img {
+                    max-width: 192px;
+                }
+            }
         }
     }
 
@@ -279,20 +287,6 @@
         }
     }
 
-}
-
-section.china-exclusive {
-    background-color: clr(container, light);
-    padding: 2rem;
-    border-left: 3px solid #e72e37;
-    box-shadow: $shadow;
-    h3 {
-        margin: 0.3rem 0;
-    }
-    abbr {
-        font-size: 1.2rem;
-        vertical-align: middle;
-    }
 }
 
 .weapon-effects,
@@ -515,4 +509,30 @@ section.china-exclusive {
     
 }
 
+.modal-body.mounts {
+    em strong {
+        color: clr(text, orange);
+    }
+}
 
+.mount-part .flex {
+    align-items: center;
+
+    .mount-part-img {
+        max-width: 128px;
+    }
+
+    .mount-part-text {
+        flex: 1;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+    }
+}

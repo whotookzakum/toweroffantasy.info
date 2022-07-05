@@ -5,6 +5,8 @@ import { Link, Outlet, useParams } from "react-router-dom";
 import { removeSpace, hyphenToSpace } from "../utils/stringHelper";
 import { CHARACTERS } from "../data/en-US/characters/characterList";
 import { RELICS } from "../data/en-US/relics/relicList";
+import { MOUNTS } from "../data/en-US/mounts/mountList";
+import CNTag from "./CNTag";
 
 export function ModalMenu({ listContent, type }) {
     let path = (type === "simulacra") ? "avatar" : type;
@@ -20,7 +22,7 @@ export function ModalMenu({ listContent, type }) {
                         </div>
                         <h3>{item.name}</h3>
                         {type === "simulacra" &&
-                            <div className="flex" style={{gap: "0.3rem"}}>
+                            <div className="flex" style={{ gap: "0.3rem" }}>
                                 <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
                                 <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
                             </div>
@@ -39,14 +41,17 @@ export function Modal({ type }) {
     let path = (type === "simulacra" || type === "matrices") ? "art" : type;
     let dataSet = CHARACTERS; // For both Simulacra and Matrices
     if (type === "relics") dataSet = RELICS;
+    if (type === "mounts") dataSet = MOUNTS;
     const item = getItemByName(params.itemName, dataSet);
+    (type === "mounts") ? path = "bg-2.png" : path += `/${removeSpace(item.name)}.png`;
     return (
         <article className="modal">
-            <img className="bg-img" src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)} alt={item.name + " Artwork"} />
+            <img className="bg-img" src={require(`../data/images/${path}`)} alt={item.name + " Artwork"} />
             <div className="modal-backdrop"></div>
             {type === "simulacra" && <SimulacraModal item={item} />}
             {type === "matrices" && <MatrixModal item={item} />}
             {type === "relics" && <RelicModal item={item} />}
+            {type === "mounts" && <MountModal item={item} />}
         </article >
     );
 }
@@ -55,9 +60,9 @@ function SimulacraModal({ item }) {
     const weapon = item.weapon;
     const awakening = item.awakening;
     const rarity = (item.rarity === "SSR") ? 1 : 0;
-    let rarityColor = {color: "var(--color-tier-s)"};
-    if (item.rarity === "SR") rarityColor = {color: "var(--color-tier-a)"};
-    else if (item.rarity === "R") rarityColor = {color: "var(--color-tier-b)"};
+    let rarityColor = { color: "var(--color-tier-s)" };
+    if (item.rarity === "SR") rarityColor = { color: "var(--color-tier-a)" };
+    else if (item.rarity === "R") rarityColor = { color: "var(--color-tier-b)" };
     const elementColor = `var(--color-${weapon.element})`;
     const advancements = Object.entries(weapon.advancement).map(([star, effect]) => {
         return (
@@ -175,12 +180,7 @@ function SimulacraModal({ item }) {
             </header>
 
             <div className="modal-body">
-                {item.chinaOnly &&
-                    <section className="china-exclusive">
-                        <h3><abbr title="China Exclusive" /> China Exclusive </h3>
-                        {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
-                    </section>
-                }
+                { item.chinaOnly && <CNTag name={item.name}/> }
 
                 <h2>Weapon</h2>
                 <div className="weapon-header" style={{ borderColor: elementColor }}>
@@ -349,16 +349,16 @@ function SimulacraModal({ item }) {
 
 function MatrixModal({ item }) {
     const matrix = item.matrix;
-    let rarityColor = {color: "var(--color-tier-s)"};
-    if (item.rarity === "SR") rarityColor = {color: "var(--color-tier-a)"};
-    else if (item.rarity === "R") rarityColor = {color: "var(--color-tier-b)"};
+    let rarityColor = { color: "var(--color-tier-s)" };
+    if (item.rarity === "SR") rarityColor = { color: "var(--color-tier-a)" };
+    else if (item.rarity === "R") rarityColor = { color: "var(--color-tier-b)" };
     const setEffects = Object.entries(matrix).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
         return (
             <section className="matrix-set w-75ch">
                 <h3>{reqPieces}-piece Set</h3>
                 <ReactMarkdown>{matrix[key]}</ReactMarkdown>
-                <details style={{display: 'none'}}>
+                <details style={{ display: 'none' }}>
                     <summary>Advancements</summary>
                     <div className="details-content">
 
@@ -403,15 +403,7 @@ function MatrixModal({ item }) {
             </header>
 
             <div className="modal-body">
-                {item.chinaOnly &&
-                    <section className="china-exclusive">
-                        <h3><abbr title="China Exclusive" /> China Exclusive </h3>
-                        {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
-                    </section>
-                }
-                
-                
-                
+                { item.chinaOnly && <CNTag name={item.name}/> }
                 {setEffects}
             </div>
         </>
@@ -419,9 +411,9 @@ function MatrixModal({ item }) {
 }
 
 function RelicModal({ item }) {
-    let rarityColor = {color: "var(--color-tier-s)"};
-    if (item.rarity === "SR") rarityColor = {color: "var(--color-tier-a)"};
-    else if (item.rarity === "R") rarityColor = {color: "var(--color-tier-b)"};
+    let rarityColor = { color: "var(--color-tier-s)" };
+    if (item.rarity === "SR") rarityColor = { color: "var(--color-tier-a)" };
+    else if (item.rarity === "R") rarityColor = { color: "var(--color-tier-b)" };
     const advancements = Object.entries(item.advancement).map(([star, effect]) => {
         return (
             <tr>
@@ -444,12 +436,7 @@ function RelicModal({ item }) {
             </header>
 
             <div className="modal-body">
-                {item.chinaOnly &&
-                    <section className="china-exclusive">
-                        <h3><abbr title="China Exclusive" /> China Exclusive </h3>
-                        {item.name} is currently only available the Chinese version of Tower of Fantasy.<br />All information on this page is subject to change when {item.name} is released in the Global version.
-                    </section>
-                }
+                { item.chinaOnly && <CNTag name={item.name}/> }
 
                 <section className="relic-effects w-75ch">
                     <h3>Relic Effect</h3>
@@ -469,6 +456,57 @@ function RelicModal({ item }) {
                             {advancements}
                         </tbody>
                     </table>
+                </section>
+            </div>
+        </>
+    )
+}
+
+function MountModal({ item }) {
+    const parts = Object.entries(item.parts).map(([key, value]) => {
+        const partNum = key.split("part").pop();
+        return(
+            <div className="spotlight mount-part">
+                <div className="flex">
+                    <img className="mount-part-img" src={require(`../data/images/mounts/${removeSpace(item.name)}-${partNum}.png`)} alt={`${item.name} Part ${partNum}`} />
+                    <div className="mount-part-text" >
+                        <ReactMarkdown>{value.source}</ReactMarkdown>
+                        { value.map && 
+                            <details>
+                                <summary>Map</summary>
+                                <img src={require(`../data/images/mounts/${value.map}`)} alt="Map of Elites" />
+                            </details>
+                        }
+                        { value.video && 
+                            <details>
+                                <summary>Video</summary>
+                                <iframe src={value.video} allow="fullscreen" modestbranding={1} />
+                            </details>
+                        }
+                        { value.guide && 
+                            <a href={value.guide} target="_blank" rel="noreferrer noopener">Link to Guide</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        )
+    })
+    return (
+        <>
+            <header>
+                <div className="header-img-wrapper mounts">
+                    <img src={require(`../data/images/mounts/${removeSpace(item.name)}.png`)} alt="" />
+                </div>
+                <div>
+                    <h1>{item.name}</h1>
+                    <h2>Mount</h2>
+                </div>
+            </header>
+            <div className="modal-body mounts">
+                { item.chinaOnly && <CNTag name={item.name}/> }
+                <section className="w-75ch">
+                    <h2>Parts</h2>
+                    {parts}
                 </section>
             </div>
         </>

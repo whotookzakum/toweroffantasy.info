@@ -188,12 +188,7 @@ section {
     margin: 0 auto;
 }
 
-.spotlight {
-    background-color: clr(container, light);
-    padding: 1rem;
-    box-shadow: $shadow;
-    margin: 2rem 0;
-}
+
 
 .pro::before, .con::before {
     --color: #{clr(text, green)};

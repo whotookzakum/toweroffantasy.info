@@ -30,6 +30,7 @@ function Food() {
 
     return (
         <>
+            <img className="bg-img" src={require(`../data/images/food/huodong_meishi_guo.png`)} alt="Dancing Air Fryer" />
             <header>
                 <h1>Food</h1>
                 <p>

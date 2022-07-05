@@ -42,6 +42,7 @@ main {
     max-width: clamp($container-width, 100%, $container-width);
     margin: 0 auto;
     padding: 2rem $spacing;
+    min-height: calc(100vh - 4rem);
     // transition: transform 0.3s ease;
     --color-volt: #{clr(text, volt)};
     --color-ice: #{clr(text, ice)};
@@ -87,6 +88,12 @@ main {
     &[src*="weila_lihui"] {
         object-position: 400px;
     }
+
+    &[src*="huodong_meishi"] {
+        object-position: 0px;
+        top: unset;
+        bottom: 0;
+    }
 }
 
 .w-60ch {
@@ -95,4 +102,11 @@ main {
 
 .w-75ch {
     max-width: 75ch;
+}
+
+.spotlight {
+    background-color: clr(container, light);
+    padding: 1rem;
+    box-shadow: $shadow;
+    margin: 2rem 0;
 }
