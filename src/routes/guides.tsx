@@ -1,15 +1,14 @@
 import { ModalMenu, Modal } from "../components/Modal";
 import { removeSpace, getItemByName } from "../utils/stringHelper";
 import { Link } from "react-router-dom";
+import { GUIDES } from "../data/en-US/guides/guideList";
 
 
 function Guides() {
     // const bgImg = "Alternate Destiny";
     return (
         <>
-            
-            {/* <img className="bg-img" src={require(`../data/images/UI_SakiFuwa_BG_01.png`)} alt="Background Image" /> */}
-            <img className="bg-img" src={require(`../data/images/bg-3.png`)} alt="Background Image" />
+            <img className="bg-img" src={require(`../data/images/bg-1.png`)} alt="Background Image" />
             <header>
                 <h1>Guides</h1>
                 <p>
@@ -17,7 +16,7 @@ function Guides() {
                     <strong>Opinions expressed in these guides belong solely to the author(s) and may not reflect those of the site curators.</strong>
                 </p>
             </header>
-            
+            <ModalMenu listContent={GUIDES} type="guides" />
             <article>
                 <section className="w-75ch">
                     <h2>Shield Break</h2>

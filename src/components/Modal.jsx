@@ -7,6 +7,8 @@ import { CHARACTERS } from "../data/en-US/characters/characterList";
 import { RELICS } from "../data/en-US/relics/relicList";
 import { MOUNTS } from "../data/en-US/mounts/mountList";
 import CNTag from "./CNTag";
+import { MATRICES } from "../data/en-US/matrices/matrixList";
+import { GUIDES } from "../data/en-US/guides/guideList";
 
 export function ModalMenu({ listContent, type }) {
     let path = (type === "simulacra") ? "avatar" : type;
@@ -16,11 +18,25 @@ export function ModalMenu({ listContent, type }) {
                 <li key={item.name}>
                     <Link to={`/${type}/${removeSpace(item.name)}`}>
                         {item.chinaOnly && <abbr title="China Exclusive" />}
-                        <div className="flex">
-                            <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
-                                alt={item.name} />
-                        </div>
+                        { type !== "guides" && 
+                            <div className="flex">
+                                <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
+                                    alt={item.name} />
+                            </div>
+                        }
                         <h3>{item.name}</h3>
+                        {type === "guides" && 
+                            <div className="authors">
+                                By {
+                                    item.author.map((author, index) => {
+                                        return (index === item.author.length - 1) ?
+                                            <em>{author}</em> : 
+                                            <><em>{author}</em>, </>
+                                    })
+                                        
+                                }
+                            </div>
+                        }
                         {type === "simulacra" &&
                             <div className="flex" style={{ gap: "0.3rem" }}>
                                 <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
@@ -39,14 +55,19 @@ export function ModalMenu({ listContent, type }) {
 export function Modal({ type }) {
     const params = useParams();
     let path = (type === "simulacra" || type === "matrices") ? "art" : type;
-    let dataSet = CHARACTERS; // For both Simulacra and Matrices
-    if (type === "relics") dataSet = RELICS;
-    if (type === "mounts") dataSet = MOUNTS;
+    let dataSet = CHARACTERS;
+    if (type === "matrices") dataSet = MATRICES;
+    else if (type === "relics") dataSet = RELICS;
+    else if (type === "mounts") dataSet = MOUNTS;
+    else if (type === "simulacra") dataSet = CHARACTERS;
+    else if (type === "guides") dataSet = GUIDES;
     const item = getItemByName(params.itemName, dataSet);
+    let hasArtwork = true;
+    if (type === "matrices") hasArtwork = CHARACTERS.find(character => character.name === item.name);
     (type === "mounts") ? path = "bg-2.png" : path += `/${removeSpace(item.name)}.png`;
     return (
         <article className="modal">
-            <img className="bg-img" src={require(`../data/images/${path}`)} alt={item.name + " Artwork"} />
+            { hasArtwork && <img className="bg-img" src={require(`../data/images/${path}`)} alt={item.name + " Artwork"} /> }
             <div className="modal-backdrop"></div>
             {type === "simulacra" && <SimulacraModal item={item} />}
             {type === "matrices" && <MatrixModal item={item} />}
@@ -180,7 +201,7 @@ function SimulacraModal({ item }) {
             </header>
 
             <div className="modal-body">
-                { item.chinaOnly && <CNTag name={item.name}/> }
+                {item.chinaOnly && <CNTag name={item.name} />}
 
                 <h2>Weapon</h2>
                 <div className="weapon-header" style={{ borderColor: elementColor }}>
@@ -352,6 +373,7 @@ function MatrixModal({ item }) {
     let rarityColor = { color: "var(--color-tier-s)" };
     if (item.rarity === "SR") rarityColor = { color: "var(--color-tier-a)" };
     else if (item.rarity === "R") rarityColor = { color: "var(--color-tier-b)" };
+
     const setEffects = Object.entries(matrix).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
         return (
@@ -403,7 +425,7 @@ function MatrixModal({ item }) {
             </header>
 
             <div className="modal-body">
-                { item.chinaOnly && <CNTag name={item.name}/> }
+                {item.chinaOnly && <CNTag name={item.name} />}
                 {setEffects}
             </div>
         </>
@@ -436,7 +458,7 @@ function RelicModal({ item }) {
             </header>
 
             <div className="modal-body">
-                { item.chinaOnly && <CNTag name={item.name}/> }
+                {item.chinaOnly && <CNTag name={item.name} />}
 
                 <section className="relic-effects w-75ch">
                     <h3>Relic Effect</h3>
@@ -465,25 +487,25 @@ function RelicModal({ item }) {
 function MountModal({ item }) {
     const parts = Object.entries(item.parts).map(([key, value]) => {
         const partNum = key.split("part").pop();
-        return(
+        return (
             <div className="spotlight mount-part">
                 <div className="flex">
                     <img className="mount-part-img" src={require(`../data/images/mounts/${removeSpace(item.name)}-${partNum}.png`)} alt={`${item.name} Part ${partNum}`} />
                     <div className="mount-part-text" >
                         <ReactMarkdown>{value.source}</ReactMarkdown>
-                        { value.map && 
+                        {value.map &&
                             <details>
                                 <summary>Map</summary>
                                 <img src={require(`../data/images/mounts/${value.map}`)} alt="Map of Elites" />
                             </details>
                         }
-                        { value.video && 
+                        {value.video &&
                             <details>
                                 <summary>Video</summary>
                                 <iframe src={value.video} allow="fullscreen" modestbranding={1} />
                             </details>
                         }
-                        { value.guide && 
+                        {value.guide &&
                             <a href={value.guide} target="_blank" rel="noreferrer noopener">Link to Guide</a>
                         }
                     </div>
@@ -503,7 +525,7 @@ function MountModal({ item }) {
                 </div>
             </header>
             <div className="modal-body mounts">
-                { item.chinaOnly && <CNTag name={item.name}/> }
+                {item.chinaOnly && <CNTag name={item.name} />}
                 <section className="w-75ch">
                     <h2>Parts</h2>
                     {parts}

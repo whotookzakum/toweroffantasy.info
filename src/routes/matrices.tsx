@@ -1,5 +1,5 @@
 import { ModalMenu, Modal } from "../components/Modal";
-import { CHARACTERS } from "../data/en-US/characters/characterList";
+import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { removeSpace } from "../utils/stringHelper";
 
 // Import list of non-character matrices and merge them
@@ -8,7 +8,7 @@ function Matrices() {
 
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/art/${removeSpace(CHARACTERS[0].name)}.png`)} alt={CHARACTERS[0].name + " Artwork"} />
+            <img className="bg-img" src={require(`../data/images/art/${removeSpace(MATRICES[0].name)}.png`)} alt={MATRICES[0].name + " Artwork"} />
             <header>
                 <h1>Matrices</h1>
                 <p>
@@ -20,17 +20,17 @@ function Matrices() {
             
             <section>
                 <h2><span style={{color: "var(--color-tier-s)"}}>SSR</span> Matrices</h2>
-                <ModalMenu type="matrices" listContent={CHARACTERS.filter(character => character.rarity === "SSR")} />
+                <ModalMenu type="matrices" listContent={MATRICES.filter(character => character.rarity === "SSR")} />
             </section>
 
             <section>
                 <h2><span style={{color: "var(--color-tier-a)"}}>SR</span> Matrices</h2>
-                <ModalMenu type="matrices" listContent={CHARACTERS.filter(character => character.rarity === "SR")} />
+                <ModalMenu type="matrices" listContent={MATRICES.filter(character => character.rarity === "SR")} />
             </section>
 
             <section>
                 <h2><span style={{color: "var(--color-tier-b)"}}>R</span> Matrices</h2>
-                <ModalMenu type="matrices" listContent={CHARACTERS.filter(character => character.rarity === "R")} />
+                <ModalMenu type="matrices" listContent={MATRICES.filter(character => character.rarity === "R")} />
             </section>
 
         </>

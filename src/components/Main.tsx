@@ -16,11 +16,11 @@ import { RELICS } from '../data/en-US/relics/relicList';
 import Mounts from '../routes/mounts';
 import { MOUNTS } from '../data/en-US/mounts/mountList';
 import Guides from '../routes/guides';
+import { MATRICES } from '../data/en-US/matrices/matrixList';
 
 
 export default function Main() {
     const pageTitle = useLocation().pathname.split("/").pop();
-
     return (
         <div className="wrapper">
             <Navigation />
@@ -65,7 +65,7 @@ export default function Main() {
                     <Route
                         path="matrices/:itemName"
                         element={
-                            <Page title={`${getItemNameWithSpaces(pageTitle, CHARACTERS)} Matrix`} description={`${getItemNameWithSpaces(pageTitle, CHARACTERS)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
+                            <Page title={`${getItemNameWithSpaces(pageTitle, MATRICES)} Matrix`} description={`${getItemNameWithSpaces(pageTitle, MATRICES)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
                                 <Modal type="matrices" />
                             </Page>
                         }
@@ -119,7 +119,19 @@ export default function Main() {
                             </Page>
                         }
                     />
-                    <Route path="*" element={<Page><p>404!</p></Page>} />
+                    <Route 
+                        path="*" 
+                        element={
+                            <Page>
+                                <h1>Error 404: Page not found.</h1>
+                                <p>
+                                    The page you are looking for could not be found. It may have moved to a different URL due to localization changes.<br/>
+                                    Check to make sure the URL is correct or try going back. 
+                                </p>
+                                <img src={require(`../data/images/404.png`)} alt="Error 404" style={{display: "block", margin: "auto"}} />
+                            </Page>
+                        } 
+                    />
                 </Routes>
             </div>
             <div className="right-gutter"></div>

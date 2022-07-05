@@ -23,6 +23,9 @@
         h3 {
             margin: 0 0.5rem;
         }
+        a {
+            height: calc(100% - 2rem);
+        }
     }
 
     &.matrices {
@@ -37,6 +40,29 @@
         }
     }
 
+    &.guides {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        max-width: 75ch;
+        margin: 0 auto;
+
+        a {
+            padding: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+        h3, div {
+            margin: 0;
+            text-align: left;
+        }
+        em {
+            font-style: normal;
+            color: clr(text, turquoise);
+        }
+    }
+
     li {
         position: relative;
         text-align: center;
@@ -44,10 +70,11 @@
         cursor: pointer;
         box-shadow: $shadow;
         transition: transform 125ms ease;
+        overflow: hidden;
 
         a {
             display: block;
-            height: calc(100% - 2rem);
+            height: 100%;
             width: 100%;
             padding: 1rem 0;
             color: inherit;

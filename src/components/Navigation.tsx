@@ -50,7 +50,7 @@ function Navigation() {
                 <hr />
                 <ul className="nav-socials">
                     <li>
-                        <a href="https://discord.gg/qhDevpbJ4N" target="_blank" rel="noreferrer noopener"><DiscordIcon /></a>
+                        <a href="https://discord.gg/aidacafe" target="_blank" rel="noreferrer noopener"><DiscordIcon /></a>
                     </li>
                     <li>
                         <a href="https://www.reddit.com/r/TowerofFantasy/" target="_blank" rel="noreferrer noopener"><RedditIcon /></a>
