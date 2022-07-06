@@ -1,72 +1,115 @@
 
 
-const test = { 
-    name: "Upgrading Gear", 
+const enhancingGear = { 
+    name: "Enhancing Gear", 
+    type: "general",
     author: ["Zakum#3080"] 
 };
 
-const test2 = { 
-    name: "Beginner Weapon Guide", 
+const beginnerWeaponAndMatrices = { 
+    name: "Weapons & Matrices for Beginners", 
+    type: "general",
     author: ["Stitch#8913"] 
 };
 
-const test3 = { 
+const dpsWeaponLoadouts = { 
     name: "DPS Weapon Loadouts", 
+    type: "strategy",
     author: ["Cytus#4151"] 
 };
 
-const test4 = { 
-    name: "Beginner Chip Guide", 
-    author: ["Stitch#8913"] 
-};
 
-const test5 = { 
-    name: "Chip Progression Guide", 
+
+const chipProgression = { 
+    name: "Matrix Progression", 
+    type: "strategy",
     author: ["Cytus#4151"] 
 };
 
-const test6 = { 
+const thingsYouMustKnow = { 
     name: "15 Things You MUST Know", 
+    type: "general",
     author: ["Zakum#3080"] 
 };
 
-const test7 = { 
-    name: "Dungeons Overview", 
-    author: ["Unconsidered#1568", "Zakum#3080"] 
-};
-
-const test8 = { 
-    name: "Black Crystal Sources", 
+const vitality = { 
+    name: "Vitality",
+    type: "systems", 
     author: ["Unconsidered#1568"] 
 };
 
-const test9 = { 
-    name: "Housing System", 
+const darkCrystalSources = { 
+    name: "Dark Crystal Sources", 
+    type: "reference",
+    author: ["Unconsidered#1568"] 
+};
+
+const housing = { 
+    name: "Housing", 
+    type: "systems", 
     author: ["Pyrosu#6969"] 
 };
 
-const test10 = { 
+const registrationGuide = { 
     name: "Registration Guide", 
+    type: "technical",
     author: ["Pyrosu#6969", "Zakum#3080", "👑킹젖가슴드래곤👑#5969"] 
 };
 
-const test11 = { 
+const topUpGuide = { 
     name: "Top-up Guide", 
+    type: "technical",
     author: ["Pyrosu#6969"] 
 };
 
+const gacha = {
+    name: "Gacha",
+    type: "systems",
+    author: ["Zakum#3080"]
+}
 
+const dailies = {
+    name: "Dailies & Weeklies",
+    type: "systems",
+    author: ["Unconsidered#1568", "Zakum#3080"]
+}
+
+const simulacra = {
+    name: "Simulacra",
+    type: "systems",
+    author: ["Zakum#3080"]
+}
 
 export const GUIDES = [
-    test,
-    test2,
-    test3,
-    test4,
-    test5,
-    test6,
-    test7,
-    test8,
-    test9,
-    test10,
-    test11
+    // GENERAL
+    //thingsYouMustKnow,
+    //beginnerWeaponAndMatrices,
+    // story lore
+    
+    // GAME SYSTEMS
+    gacha,
+    // combat
+    // exploration
+    vitality,
+    //enhancingGear,
+    simulacra,
+    dailies,
+    // pvp
+    // battle royale
+    //housing,
+    // time gate
+
+    // STRATEGY
+    //dpsWeaponLoadouts,
+    //chipProgression,
+    // PvP Strategy Guide
+    // any dungeon specific guides go here
+    
+    // TECHNICAL
+    //registrationGuide,
+    //topUpGuide,
+
+    // REFERENTIAL
+    //darkCrystalSources
+    // currencies
 ]

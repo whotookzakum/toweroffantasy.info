@@ -2,10 +2,22 @@ import { ModalMenu, Modal } from "../components/Modal";
 import { removeSpace, getItemByName } from "../utils/stringHelper";
 import { Link } from "react-router-dom";
 import { GUIDES } from "../data/en-US/guides/guideList";
+import ReactMarkdown from "react-markdown";
+import { useEffect, useState } from "react";
+import remarkGfm from "remark-gfm";
+import { testGuide } from "../data/en-US/guides/test";
 
 
 function Guides() {
-    // const bgImg = "Alternate Destiny";
+    const [content, setContent] = useState("");
+
+    useEffect(() => {
+        fetch("topup.md")
+            .then((res) => res.text())
+            .then((text) => setContent(text));
+    }, []);
+    
+
     return (
         <>
             <img className="bg-img" src={require(`../data/images/bg-1.png`)} alt="Background Image" />
@@ -17,7 +29,8 @@ function Guides() {
                 </p>
             </header>
             <ModalMenu listContent={GUIDES} type="guides" />
-            <article>
+
+            <article style={{display: "none"}}>
                 <section className="w-75ch">
                     <h2>Shield Break</h2>
                     <p>Deal the highest damage to shields. Necessary as most bosses and minibosses have shields that significantly reduce damage taken. Bosses will also use powerful attacks if their shield is not broken in time. These weapons tend to unlock a crucial shield break effect at 1★ or 3★.</p>
@@ -81,6 +94,13 @@ function Guides() {
 
             </article>
 
+            <article>
+                <section className="w-75ch">
+                    <h1></h1>
+                    <i>By Zakum, Abyss</i>
+                    <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
+                </section>
+            </article>
         </>
     );
 }

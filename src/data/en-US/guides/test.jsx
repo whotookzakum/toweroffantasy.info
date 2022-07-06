@@ -1,0 +1,1 @@
+export const testGuide = <article>Hey guys!</article>;
