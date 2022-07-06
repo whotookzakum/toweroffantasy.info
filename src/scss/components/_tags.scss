@@ -18,7 +18,7 @@ abbr[title*="China"] {
     }
 }
 
-section.china-exclusive {
+section.china-exclusive, .china-exclusive {
     background-color: clr(container, light);
     padding: 2rem;
     border-left: 3px solid #e72e37;
@@ -30,4 +30,8 @@ section.china-exclusive {
         font-size: 1.2rem;
         vertical-align: middle;
     }
+}
+
+.china-exclusive {
+    padding: 1rem;
 }

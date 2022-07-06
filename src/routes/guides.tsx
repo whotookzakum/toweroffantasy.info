@@ -5,104 +5,47 @@ import { GUIDES } from "../data/en-US/guides/guideList";
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import remarkGfm from "remark-gfm";
-import { testGuide } from "../data/en-US/guides/test";
-
+import { cnTopUp } from "../data/en-US/guides/technical/cnTopUp";
+import { dailies } from "../data/en-US/guides/systems/dailies";
+import { simulacra } from "../data/en-US/guides/systems/simulacra";
+import { gacha } from "../data/en-US/guides/systems/gacha";
+import { thingsYouMustKnow } from "../data/en-US/guides/general/thingsYouMustKnow";
+import { vitality } from "../data/en-US/guides/systems/vitality";
+import { housing } from "../data/en-US/guides/systems/housing";
+import { cnRegistration } from "../data/en-US/guides/technical/cnRegistration";
+import { pvpStrategy } from "../data/en-US/guides/strategy/pvpStrategy";
 
 function Guides() {
-    const [content, setContent] = useState("");
-
-    useEffect(() => {
-        fetch("topup.md")
-            .then((res) => res.text())
-            .then((text) => setContent(text));
-    }, []);
-    
-
     return (
         <>
             <img className="bg-img" src={require(`../data/images/bg-1.png`)} alt="Background Image" />
-            <header>
+            {/* <header>
                 <h1>Guides</h1>
                 <p>
-                    Here you can learn about the game's systems, find helpful resources, and reference data that has been gathered.<br/>
+                    Here you can learn about the game's systems, find helpful resources, and reference data that has been gathered.<br />
                     <strong>Opinions expressed in these guides belong solely to the author(s) and may not reflect those of the site curators.</strong>
                 </p>
             </header>
-            <ModalMenu listContent={GUIDES} type="guides" />
-
-            <article style={{display: "none"}}>
-                <section className="w-75ch">
-                    <h2>Shield Break</h2>
-                    <p>Deal the highest damage to shields. Necessary as most bosses and minibosses have shields that significantly reduce damage taken. Bosses will also use powerful attacks if their shield is not broken in time. These weapons tend to unlock a crucial shield break effect at 1★ or 3★.</p>
-                    <div className="spotlight">
-                        <Link to="/simulacra/baiyuekui">Baiyuekui</Link>
-                        <ul>
-                            <li className="pro">Insanely high damage with skills and dash attacks, instant burst on shieldbreak (3★)</li>
-                            <li className="pro">i-frames on active skill</li>
-                            <li className="pro">Can be paired with 2 support weapons</li>
-                        </ul>
-                    </div>
-
-                    <div className="spotlight">
-                    <Link to="/simulacra/ruby">Ruby</Link>
-                        <ul>
-                            <li className="pro">Very high damage numbers, can be used as Main DPS</li>
-                            <li className="pro">Detonates burn effects, synergize with fire weapons</li>
-                            <li className="pro">Can permastun elite mobs and be effective at long range</li>
-                            <li className="con">Not as efficient as other shieldbreakers til 5★</li>
-                        </ul>
-                    </div>
-
-                    <div className="spotlight">
-                        <Link to="/simulacra/king">KING</Link>
-                        <ul>
-                            <li className="pro">High DoT on shieldbreak</li>
-                            <li className="pro">Area burst with skills</li>
-                            <li className="con">Easily interrupted when casting and basic attacking</li>
-                        </ul>
-                    </div>
-
-                    <div className="spotlight">
-                        <Link to="/simulacra/meryl">Meryl</Link>
-                        <ul>
-                            <li className="pro">Highest shieldbreak efficiency, self-heal on shieldbreak (1★)</li>
-                            <li className="pro">Immune to interrupts</li>
-                            <li className="con">No shieldbreak effect</li>
-                            <li className="con">Clunky switch skill</li>
-                        </ul>
-                    </div>
-
-                    <div className="spotlight">
-                        <Link to="/simulacra/shiro">Shiro</Link>
-                        <ul>
-                            <li className="pro">High burst with active skill + 3 dash attacks</li>
-                            <li className="pro">3★ resets CDs on shieldbreak, benefits other weapons</li>
-                            <li className="con">Skill has small range, useless if enemies are mobile</li>
-                            <li className="con">Switch skill is terrible</li>
-                        </ul>
-                    </div>
-
-                    <div className="spotlight">
-                        <Link to="/simulacra/huma">Huma</Link>
-                        <ul>
-                            <li className="pro">Decent shieldbreaking efficiency</li>
-                            <li className="pro">Relatively high energy charge</li>
-                            <li className="con">No shieldbreak effect</li>
-                        </ul>
-                    </div>
-                </section>
-
-            </article>
-
-            <article>
-                <section className="w-75ch">
-                    <h1></h1>
-                    <i>By Zakum, Abyss</i>
-                    <ReactMarkdown children={content} remarkPlugins={[remarkGfm]} />
-                </section>
-            </article>
+            <ModalMenu listContent={GUIDES} type="guides" /> */}
+            <GuideArticle/>
         </>
     );
+}
+
+function GuideArticle() {
+    const guide = pvpStrategy;
+    const author = guide.author.map((author, index) => {
+        return (index === guide.author.length - 1) ? <em>{author}</em> : <><em>{author}</em>, </>
+    })
+    return (
+        <article className="guide">
+            <header>
+                <h1>{guide.name}</h1>
+                <div className="authors">By {author}</div>
+            </header>
+            {guide.text}
+        </article>
+    )
 }
 
 export default Guides;

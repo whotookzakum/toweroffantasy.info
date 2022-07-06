@@ -1,6 +1,14 @@
+import { dailies } from "./systems/dailies";
+import { cnTopUp } from "./technical/cnTopUp";
+import { simulacra } from "./systems/simulacra";
+import { gacha } from "./systems/gacha";
+import { thingsYouMustKnow } from "./general/thingsYouMustKnow";
+import { vitality } from "./systems/vitality";
+import { housing } from "./systems/housing";
+import { cnRegistration } from "./technical/cnRegistration";
+import { pvpStrategy } from "./strategy/pvpStrategy";
 
-
-const enhancingGear = { 
+const guideEnhancingGear = { 
     name: "Enhancing Gear", 
     type: "general",
     author: ["Zakum#3080"] 
@@ -20,69 +28,16 @@ const dpsWeaponLoadouts = {
 
 
 
-const chipProgression = { 
-    name: "Matrix Progression", 
-    type: "strategy",
-    author: ["Cytus#4151"] 
-};
-
-const thingsYouMustKnow = { 
-    name: "15 Things You MUST Know", 
-    type: "general",
-    author: ["Zakum#3080"] 
-};
-
-const vitality = { 
-    name: "Vitality",
-    type: "systems", 
-    author: ["Unconsidered#1568"] 
-};
-
 const darkCrystalSources = { 
     name: "Dark Crystal Sources", 
     type: "reference",
     author: ["Unconsidered#1568"] 
 };
 
-const housing = { 
-    name: "Housing", 
-    type: "systems", 
-    author: ["Pyrosu#6969"] 
-};
-
-const registrationGuide = { 
-    name: "Registration Guide", 
-    type: "technical",
-    author: ["Pyrosu#6969", "Zakum#3080", "👑킹젖가슴드래곤👑#5969"] 
-};
-
-const topUpGuide = { 
-    name: "Top-up Guide", 
-    type: "technical",
-    author: ["Pyrosu#6969"] 
-};
-
-const gacha = {
-    name: "Gacha",
-    type: "systems",
-    author: ["Zakum#3080"]
-}
-
-const dailies = {
-    name: "Dailies & Weeklies",
-    type: "systems",
-    author: ["Unconsidered#1568", "Zakum#3080"]
-}
-
-const simulacra = {
-    name: "Simulacra",
-    type: "systems",
-    author: ["Zakum#3080"]
-}
 
 export const GUIDES = [
     // GENERAL
-    //thingsYouMustKnow,
+    thingsYouMustKnow,
     //beginnerWeaponAndMatrices,
     // story lore
     
@@ -96,18 +51,18 @@ export const GUIDES = [
     dailies,
     // pvp
     // battle royale
-    //housing,
+    housing,
     // time gate
 
     // STRATEGY
     //dpsWeaponLoadouts,
     //chipProgression,
-    // PvP Strategy Guide
+    pvpStrategy,
     // any dungeon specific guides go here
     
     // TECHNICAL
-    //registrationGuide,
-    //topUpGuide,
+    cnRegistration,
+    cnTopUp,
 
     // REFERENTIAL
     //darkCrystalSources

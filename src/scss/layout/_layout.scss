@@ -104,6 +104,11 @@ main {
     max-width: 75ch;
 }
 
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .spotlight {
     background-color: clr(container, light);
     padding: 1rem;

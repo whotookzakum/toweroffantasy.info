@@ -107,6 +107,8 @@ kbd {
     font-family: inherit;
     font-weight: 800;
     line-height: 1;
+    color: #48adbd;
+    text-shadow: $shadow;
 }
 
 details {
@@ -139,4 +141,10 @@ details {
 iframe {
     display: block;
     border: 0;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+hr {
+    color: clr(text, dark);
 }
