@@ -33,7 +33,7 @@ function Guides() {
 }
 
 function GuideArticle() {
-    const guide = pvpStrategy;
+    const guide = dailies;
     const author = guide.author.map((author, index) => {
         return (index === guide.author.length - 1) ? <em>{author}</em> : <><em>{author}</em>, </>
     })

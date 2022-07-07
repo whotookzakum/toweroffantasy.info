@@ -23,6 +23,9 @@ function Navigation() {
                 <hr />
                 <ul>
                     <li onClick={() => setTogglerState(!togglerState)}>
+                        <NavLink to="/banners">Banner Schedule</NavLink>
+                    </li>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <NavLink to="/simulacra">Simulacra</NavLink>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)}>

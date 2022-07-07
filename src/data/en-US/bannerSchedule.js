@@ -1,6 +1,6 @@
 export const CNBanners = [
     {
-        name: "Linye",
+        name: "Lin",
         element: "supernatural",
         subtext: "Limited Banner only",
         start: "9 Jul 2022",
@@ -134,4 +134,16 @@ export const CNBanners = [
         duration: "14d",
         week: "2~4"
     }
+]
+
+export const Banners = [
+    // {
+    //     name: "Test",
+    //     element: "volt",
+    //     subtext: "Test purposes",
+    //     start: "31 Feb 1978",
+    //     end: "63 Dec 2009",
+    //     duration: "8438d",
+    //     week: "30~33"
+    // }
 ]

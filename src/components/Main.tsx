@@ -17,6 +17,7 @@ import Mounts from '../routes/mounts';
 import { MOUNTS } from '../data/en-US/mounts/mountList';
 import Guides from '../routes/guides';
 import { MATRICES } from '../data/en-US/matrices/matrixList';
+import BannerSchedule from '../routes/banners';
 
 
 export default function Main() {
@@ -33,6 +34,15 @@ export default function Main() {
                         element={
                             <Page title="Home" description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
                                 <Home />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="banners"
+                        element={
+                            <Page 
+                                title="Banner Schedule" description="Limited Banner start and end dates for Tower of Fantasy Global and Chinese versions.">
+                                <BannerSchedule />
                             </Page>
                         }
                     />

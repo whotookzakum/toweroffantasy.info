@@ -1,75 +1,32 @@
-import { useState } from 'react';
-import { CNBanners } from "../data/en-US/bannerSchedule";
-
-type Banner = {
-    name: string;
-    element: string;
-    subtext: string;
-    start: string;
-    end: string;
-    duration: string;
-    week: string;
-};
-
-type BannerListProps = {
-    data: Banner[];
-};
-
-function BannerList({ data }: BannerListProps) {
-    const listItems = data.map(banner =>
-        <tr style={{ color: `var(--color-${banner.element})` }}>
-            <th>{banner.name}<br /><i>{banner.subtext}</i></th>
-            <td>{banner.start}<br />{banner.end}</td>
-            <td>{banner.duration}</td>
-            <td>{banner.week}</td>
-        </tr>
-    );
-    return (<tbody>{listItems}</tbody>);
-}
-
+import { CNBanners, Banners } from "../data/en-US/bannerSchedule";
+import { Link } from "react-router-dom";
+import { removeSpace } from "../utils/stringHelper";
 
 
 function Home() {
-
-    const [isExpanded, setHeight] = useState(false);
-
-    const handleToggle = () => {
-        setHeight(!isExpanded);
-    }
-
+    const getUniqueCount = (banners: any) => new Set(banners.map((item: any) => item.name)).size;
+    const getStandardAdditions = (banners:any) => banners.filter((banner:any) => banner.subtext.includes("Standard afterwards")).length;
+        
     return (
         <>
             <img className="bg-img" src={require("../data/images/bg-1.png")} />
             <h1>Welcome to the Tower of Fantasy Index.</h1>
             <p>
-                This site will mainly follow the <strong>Global version</strong> of Tower of Fantasy.<br />
-
+                This site will mainly follow the <strong className="yellow">Global version</strong> of Tower of Fantasy.<br />
                 Content that is exclusive to the Chinese version will be indicated with <abbr title="China Exclusive" />
             </p>
             <p>
-                For corrections, suggestions, and bug reports, use <code>#guide-makers-hub</code> on <a href="https://discord.gg/qhDevpbJ4N" title="Join Aida Cafe!">Discord</a>, or contact <code>Zakum#3080</code> directly.
+                For corrections, suggestions, and bug reports, use <strong className="turquoise">#guide-makers-hub</strong> on <a href="https://discord.gg/qhDevpbJ4N" title="Join Aida Cafe!">Discord</a>, or contact <strong className="turquoise">Zakum#3080</strong> directly.
             </p>
 
-            <h3>Limited Banner Schedule
-                <button className="btn-expand" onClick={handleToggle}>Expand</button>
-            </h3>
-            <div className="flex">
-                <div id="banners" className={isExpanded ? "expanded" : ""}>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><abbr title="China Exclusive" /> Banner</th>
-                                <th>Duration </th>
-                                <th>Days</th>
-                                <th>Week #</th>
-                            </tr>
-                        </thead>
-                        <BannerList data={CNBanners} />
-                    </table>
-
-                </div>
-            </div>
-
+            <blockquote className="banner-count" style={{ borderColor: "#e72e37"}}>
+                China has had&nbsp;
+                <strong>{CNBanners.length}</strong> Banners,&nbsp;
+                <strong>{getUniqueCount(CNBanners)}</strong> Unique, with&nbsp;
+                <strong>{getStandardAdditions(CNBanners)}</strong> additions to the Standard Banner.<br/>
+                The newest character is <Link to={`/simulacra/${removeSpace(CNBanners[0].name)}`}>{CNBanners[0].name}</Link>
+            </blockquote>
+            
             <hr />
 
             <div className="credits">
@@ -94,9 +51,6 @@ function Home() {
 
                 <i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i>
             </div>
-
-
-
         </>
     );
 }

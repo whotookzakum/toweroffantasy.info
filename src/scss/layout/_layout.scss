@@ -115,3 +115,11 @@ main {
     box-shadow: $shadow;
     margin: 2rem 0;
 }
+
+.yellow {
+    color: clr(tier, s);
+}
+
+.turquoise {
+    color: clr(text, turquoise);
+}

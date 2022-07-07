@@ -1,16 +1,31 @@
 @use "../abstracts" as *;
 
+.banners-wrapper {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
 
-#banners {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+
+.banners {
     height: 325px;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    width: 50%;
+    width: 100%;
+    
 
     table {
         background: clr(container, dark);
         text-align: left;
+        box-shadow: $shadow;
 
         thead {
             position: sticky;
@@ -40,23 +55,10 @@
     }
 }
 
-
-.changelog {
-    color: rgb(128, 128, 128);
-
-    span {
-        background: #222;
-    }
-
-    li {
-        margin-bottom: 0.75rem;
-    }
-}
-
 .btn-expand {
     font-size: 1em;
     font-weight: bold;
-    color: clr(text, blue);
+    color: clr(text, turquoise);
     background: none;
     border: none;
     float: right;
@@ -70,6 +72,30 @@
         filter: brightness(0.6);
     }
 }
+
+.banner-count {
+    font-style: normal;
+
+    strong {
+        color: clr(tier, s);
+        font-size: 1.2rem;
+    }
+}
+
+
+.changelog {
+    color: rgb(128, 128, 128);
+
+    span {
+        background: #222;
+    }
+
+    li {
+        margin-bottom: 0.75rem;
+    }
+}
+
+
 
 
 
