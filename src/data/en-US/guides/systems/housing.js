@@ -14,7 +14,7 @@ export const housing = {
                 </p>
                 <img src={require('../../../images/guides/developerlogs.jpg')} alt="Developer Logs Map" />
                 <blockquote>
-                    To build on your Home Island, you will need 1170 Exploration Points on Artificial Island (innder region only).
+                    To build on your Home Island, you will need 1170 Exploration Points on Artificial Island (inner region only).
                 </blockquote>
                 <p></p>
             </section>
@@ -23,13 +23,13 @@ export const housing = {
                 <h2>Construction</h2>
                 <p>
                     While on your Home Island, you can construct and upgrade buildings that generate materials over time. These materials are used for three things:
-                    <ol>
-                        <li>Upgrading buildings to generate more materials*</li>
-                        <li>Currency in the housing shop (Limited Matrix pulls, Avatars, <Link to="/mounts/crimsonmeteor">Crimson Meteor</Link>..)</li>
-                        <li>Crafting Matrices</li>
-                    </ol>
-                    <i>*The Development Center must be upgraded to raise the max level of other buildings.</i>
                 </p>
+                <ol>
+                    <li>Upgrading buildings to generate more materials*</li>
+                    <li>Currency in the housing shop (Limited Matrix pulls, Avatars, <Link to="/mounts/crimsonmeteor">Crimson Meteor</Link>..)</li>
+                    <li>Crafting Matrices</li>
+                </ol>
+                <i>*The Development Center must be upgraded to raise the max level of other buildings.</i>
             </section>
 
             <section>

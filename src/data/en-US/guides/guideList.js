@@ -7,11 +7,12 @@ import { vitality } from "./systems/vitality";
 import { housing } from "./systems/housing";
 import { cnRegistration } from "./technical/cnRegistration";
 import { pvpStrategy } from "./strategy/pvpStrategy";
+import { gear } from "./systems/gear";
 
 const guideEnhancingGear = { 
-    name: "Enhancing Gear", 
-    type: "general",
-    author: ["Zakum#3080"] 
+    name: "Gear", 
+    type: "system",
+    author: ["Zakum#3080"]
 };
 
 const beginnerWeaponAndMatrices = { 
@@ -46,7 +47,7 @@ export const GUIDES = [
     // combat
     // exploration
     vitality,
-    //enhancingGear,
+    gear,
     simulacra,
     dailies,
     // pvp
@@ -57,7 +58,7 @@ export const GUIDES = [
     // STRATEGY
     //dpsWeaponLoadouts,
     //chipProgression,
-    pvpStrategy,
+    //pvpStrategy,
     // any dungeon specific guides go here
     
     // TECHNICAL

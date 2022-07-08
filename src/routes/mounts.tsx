@@ -4,7 +4,6 @@ import { removeSpace, getItemByName } from "../utils/stringHelper";
 
 
 function Mounts() {
-    // const bgImg = "Alternate Destiny";
     return (
         <>
             <img className="bg-img" src={require(`../data/images/bg-2.png`)} alt="Background Image" />

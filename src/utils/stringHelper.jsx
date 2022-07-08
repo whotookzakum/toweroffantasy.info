@@ -1,5 +1,5 @@
 export function removeSpace(string) {
-    return string.toLowerCase().replace(/\s/g, '');
+    return string.toLowerCase().replace(/\s|&amp;|&/g, '');
 }
 
 export function hyphenToSpace(string) {

@@ -9,6 +9,9 @@ import { MOUNTS } from "../data/en-US/mounts/mountList";
 import CNTag from "./CNTag";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
+import { GuideArticle } from "../routes/guides";
+import { useEffect } from "react";
+import { ReactDOM } from "react";
 
 export function ModalMenu({ listContent, type }) {
     let path = (type === "simulacra") ? "avatar" : type;
@@ -18,22 +21,22 @@ export function ModalMenu({ listContent, type }) {
                 <li key={item.name}>
                     <Link to={`/${type}/${removeSpace(item.name)}`}>
                         {item.chinaOnly && <abbr title="China Exclusive" />}
-                        { type !== "guides" && 
+                        {type !== "guides" &&
                             <div className="flex">
                                 <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
                                     alt={item.name} />
                             </div>
                         }
                         <h3>{item.name}</h3>
-                        {type === "guides" && 
+                        {type === "guides" &&
                             <div className="authors">
                                 By {
                                     item.author.map((author, index) => {
                                         return (index === item.author.length - 1) ?
-                                            <em>{author}</em> : 
+                                            <em>{author}</em> :
                                             <><em>{author}</em>, </>
                                     })
-                                        
+
                                 }
                             </div>
                         }
@@ -67,7 +70,7 @@ export function Modal({ type }) {
     (type === "mounts") ? path = "bg-2.png" : path += `/${removeSpace(item.name)}.png`;
     return (
         <article className="modal">
-            { hasArtwork && <img className="bg-img" src={require(`../data/images/${path}`)} alt={item.name + " Artwork"} /> }
+            {hasArtwork && <img className="bg-img" src={require(`../data/images/${path}`)} alt={item.name + " Artwork"} />}
             <div className="modal-backdrop"></div>
             {type === "simulacra" && <SimulacraModal item={item} />}
             {type === "matrices" && <MatrixModal item={item} />}

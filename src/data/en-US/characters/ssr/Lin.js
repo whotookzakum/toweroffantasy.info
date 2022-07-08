@@ -17,17 +17,17 @@ const lin = {
             }
         },
         advancement: {
-            star1: `Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**).`,
+            star1: `Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**). **Lunar Reflection** reduces the spawn time of Nightblooms to **0.5** seconds.`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `Cast time of **Lunar Reflection** reduced to **0.3** seconds. Nightblooms now attach to enemy targets.`,
+            star3: `**Lunar Reflection** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Lunar Reflection** is increased to **20** seconds.`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
             star5: `While inside **Lunar Reflection**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.`,
 
-            star6: `**Lunar Reflection** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Lunar Reflection** is increased to **12%**.`
+            star6: `**Lunar Reflection** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Lunar Reflection** is increased to **15%**.`
         },
         // abilities: {
         //     normal: [

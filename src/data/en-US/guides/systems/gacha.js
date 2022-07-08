@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const gacha = {
     name: "Gacha",
     type: "systems",
@@ -10,7 +12,9 @@ export const gacha = {
                 <h3>Weapon Caches</h3>
                 <p>Weapons can be obtained with Gold Nuclei, Black Nuclei, and Red Nuclei (Limited Cache).<br/>
                 Gold and Black Nuclei can be obtained from exploration, and various events or shops.<br/>
-                Red Nuclei can occasionally be acquired from events and exploration milestones. </p>
+                Red Nuclei can occasionally be acquired from events and exploration milestones.<br/>
+                <strong className="yellow">Weapons come with their associated <Link to="/guides/simulacra">Simulacra</Link>.</strong>
+                </p>
 
                 <h3>Matrix Caches</h3>
                 <p>Matrices can be obtained with Proof of Puchase, and Special Vouchers (Limited Cache).<br/>

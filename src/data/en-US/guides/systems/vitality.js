@@ -1,13 +1,19 @@
 export const vitality = {
     name: "Vitality",
     type: "systems",
-    author: ["Unconsidered#1568"],
+    author: ["Unconsidered#1568", "Zakum#3080"],
     text:
         <>
             <section>
-                <p>Vitality is consumed when claiming rewards for certain dungeons. You can <em>store up to 180 VIT</em>, and it recovers at a rate of 1 VIT/8 minutes (24 hours to recover from 0 to 180).</p>
+                <p>
+                    Vitality is consumed when claiming rewards for certain dungeons. You can <em>store up to 180 VIT</em>, and it recovers at a rate of 1 VIT/8 minutes (24 hours to recover from 0 to 180). <br/>
+                    <abbr title="China Exclusive" /> Max VIT is now 360, and it recovers at the same rate.
+                </p>
 
                 <h2>Vitality Dungeons</h2>
+                <p>All dungeons consume <strong className="yellow">30 VIT per run</strong>, while Joint Operation consumes <strong className="yellow">30 VIT <i>per chest</i></strong> (3 chests + free bonus chest).</p>
+                <p>All Vitality dungeons will give you Blue/Purple/Gold Energy Dust that you can use to purchase useful things.</p>
+
                 <table>
                     <thead>
                         <tr>
@@ -49,9 +55,6 @@ export const vitality = {
                     </tbody>
                 </table>
 
-                <p>All dungeons consume <strong className="yellow">30 VIT per run</strong>, while Joint Operation consumes <strong className="yellow">20 VIT <i>per chest</i></strong> (3 chests + free bonus chest).</p>
-                <p>All Vitality dungeons will give you Blue/Purple/Gold Energy Dust that you can use to purchase useful things.</p>
-                
                 <h2>Joint Operation Schedule</h2>
                 <img src={require('../../../images/guides/JOINTOP.jpg')} alt="Joint Operation Schedule" />
             </section>

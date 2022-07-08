@@ -7,7 +7,7 @@ import Relics from '../routes/relics';
 import Food from '../routes/food';
 import { Outlet, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { Modal } from './Modal';
-import { getItemNameWithSpaces } from '../utils/stringHelper';
+import { getItemNameWithSpaces, getItemByName } from '../utils/stringHelper';
 import Page from './Page';
 import { useEffect } from 'react';
 import { removeSpace } from '../utils/stringHelper';
@@ -15,10 +15,19 @@ import { CHARACTERS } from '../data/en-US/characters/characterList';
 import { RELICS } from '../data/en-US/relics/relicList';
 import Mounts from '../routes/mounts';
 import { MOUNTS } from '../data/en-US/mounts/mountList';
-import Guides from '../routes/guides';
+import Guides, { GuideArticle } from '../routes/guides';
 import { MATRICES } from '../data/en-US/matrices/matrixList';
 import BannerSchedule from '../routes/banners';
+import { GUIDES } from '../data/en-US/guides/guideList';
 
+
+function ScrollToTopOnMount() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
+    return null;
+  }
 
 export default function Main() {
     const pageTitle = useLocation().pathname.split("/").pop();
@@ -59,6 +68,7 @@ export default function Main() {
                         path="simulacra/:itemName"
                         element={
                             <Page title={getItemNameWithSpaces(pageTitle, CHARACTERS)} description={`${getItemNameWithSpaces(pageTitle, CHARACTERS)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
+                                <ScrollToTopOnMount/>
                                 <Modal type="simulacra" />
                             </Page>
                         }
@@ -76,6 +86,7 @@ export default function Main() {
                         path="matrices/:itemName"
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, MATRICES)} Matrix`} description={`${getItemNameWithSpaces(pageTitle, MATRICES)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
+                                <ScrollToTopOnMount/>
                                 <Modal type="matrices" />
                             </Page>
                         }
@@ -93,6 +104,7 @@ export default function Main() {
                         path="relics/:itemName"
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, RELICS)}`} description={`${getItemNameWithSpaces(pageTitle, RELICS)} effects and advancements in Tower of Fantasy Global and Chinese versions.`}>
+                                <ScrollToTopOnMount/>
                                 <Modal type="relics" />
                             </Page>
                         }
@@ -117,6 +129,7 @@ export default function Main() {
                         path="mounts/:itemName"
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, MOUNTS)}`} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
+                                <ScrollToTopOnMount/>
                                 <Modal type="mounts" />
                             </Page>
                         }
@@ -126,6 +139,15 @@ export default function Main() {
                         element={
                             <Page title="Guides" description="Guides for Tower of Fantasy Global and Chinese versions.">
                                 <Guides />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="guides/:itemName"
+                        element={
+                            <Page title={`${getItemNameWithSpaces(pageTitle, GUIDES)}`} description={`${getItemNameWithSpaces(pageTitle, GUIDES)} - a guide for Tower of Fantasy Global and Chinese versions.`} >
+                                <ScrollToTopOnMount/>
+                                <GuideArticle guide={getItemByName(pageTitle, GUIDES)} />
                             </Page>
                         }
                     />
