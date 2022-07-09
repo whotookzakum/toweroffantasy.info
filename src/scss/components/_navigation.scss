@@ -17,6 +17,7 @@
     background-color: clr(container);
     transition: transform 0.3s ease;
     box-shadow: $shadow;
+    scrollbar-width: none;
 }
 
 @media (max-width: 1249px) {

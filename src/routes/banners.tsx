@@ -43,7 +43,7 @@ function BannerSchedule() {
             <h1>Limited Banner Schedule</h1>
             <p>Click any character's name to go straight to their Simulacrum page.</p>
             <div className="banners-wrapper">
-                <div className={isExpanded.global ? "expanded banners" : "banners"}>
+                <div className={isExpanded.global ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
                     <h2>Global 
                         <button 
                             className="btn-expand" 
@@ -64,7 +64,7 @@ function BannerSchedule() {
                         <BannerList data={Banners} />
                     </table>
                 </div>
-                <div className={isExpanded.china ? "expanded banners" : "banners"}>
+                <div className={isExpanded.china ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
                     <h2>China
                         <button 
                             className="btn-expand" 

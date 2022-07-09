@@ -13,7 +13,7 @@ function Navigation() {
                 <i className="toggler-lines"></i>
             </label>
             <div className="nav-backdrop" onClick={() => setTogglerState(!togglerState)}></div>
-            <div className="nav-body">
+            <div className="nav-body hide-scrollbar">
                 <div className="navbar-brand">
                     <Link to="/" onClick={() => setTogglerState(!togglerState)}>
                         <img src={logo} alt="Logo" /><br />
@@ -46,7 +46,7 @@ function Navigation() {
                     <li>
                         <a href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon/></a>
                     </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
+                    <li onClick={() => setTogglerState(!togglerState)} style={{display: "none"}}>
                         <NavLink to="/damagecalculator">Damage Calculator</NavLink>
                     </li>
                 </ul>

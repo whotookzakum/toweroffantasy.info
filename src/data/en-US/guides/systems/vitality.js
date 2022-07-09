@@ -7,7 +7,7 @@ export const vitality = {
             <section>
                 <p>
                     Vitality is consumed when claiming rewards for certain dungeons. You can <em>store up to 180 VIT</em>, and it recovers at a rate of 1 VIT/8 minutes (24 hours to recover from 0 to 180). <br/>
-                    <abbr title="China Exclusive" /> Max VIT is now 360, and it recovers at the same rate.
+                    <abbr title="China Exclusive" /> Max VIT is now 360, and it recovers at the same rate (48 hours from 0 to 360).
                 </p>
 
                 <h2>Vitality Dungeons</h2>

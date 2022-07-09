@@ -48,8 +48,8 @@ function Home() {
                     <li>tiny</li>
                     <li>Gateoo</li>
                 </ul>
-
-                <i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i>
+                
+                <p><i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i></p>
             </div>
         </>
     );

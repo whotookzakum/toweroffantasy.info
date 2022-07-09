@@ -8,38 +8,14 @@ import { housing } from "./systems/housing";
 import { cnRegistration } from "./technical/cnRegistration";
 import { pvpStrategy } from "./strategy/pvpStrategy";
 import { gear } from "./systems/gear";
-
-const guideEnhancingGear = { 
-    name: "Gear", 
-    type: "system",
-    author: ["Zakum#3080"]
-};
-
-const beginnerWeaponAndMatrices = { 
-    name: "Weapons & Matrices for Beginners", 
-    type: "general",
-    author: ["Stitch#8913"] 
-};
-
-const dpsWeaponLoadouts = { 
-    name: "DPS Weapon Loadouts", 
-    type: "strategy",
-    author: ["Cytus#4151"] 
-};
-
-
-
-const darkCrystalSources = { 
-    name: "Dark Crystal Sources", 
-    type: "reference",
-    author: ["Unconsidered#1568"] 
-};
-
+import { darkCrystals } from "./referential/darkCrystals";
+import { dpsLoadouts } from "./strategy/dpsLoadouts";
+import { beginnerWeapons } from "./general/beginnerWeaponsMatrices";
 
 export const GUIDES = [
     // GENERAL
     thingsYouMustKnow,
-    //beginnerWeaponAndMatrices,
+    beginnerWeapons,
     // story lore
     
     // GAME SYSTEMS
@@ -56,7 +32,7 @@ export const GUIDES = [
     // time gate
 
     // STRATEGY
-    //dpsWeaponLoadouts,
+    dpsLoadouts,
     //chipProgression,
     //pvpStrategy,
     // any dungeon specific guides go here
@@ -66,6 +42,6 @@ export const GUIDES = [
     cnTopUp,
 
     // REFERENTIAL
-    //darkCrystalSources
+    darkCrystals
     // currencies
 ]

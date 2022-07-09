@@ -12,9 +12,6 @@ function Guides() {
                     Here you can learn about the game's systems, find helpful resources, and reference data that has been gathered.<br />
                     Information might apply to only to a specific version.
                 </p>
-                <blockquote>
-                    Opinions expressed in these guides belong solely to the author(s) and may not reflect those of the site curators.
-                </blockquote>
             </header>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">General</h2>
@@ -39,7 +36,7 @@ function Guides() {
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">Referential</h2>
                 <p>Data that is mainly meant for reference purposes.</p>
-                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "referential")} />
+                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "reference")} />
             </section>
         </>
     );
