@@ -6,7 +6,7 @@ function Simulacra() {
 
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/art/${removeSpace(CHARACTERS[0].name)}.png`)} alt={CHARACTERS[0].name + " Artwork"} />
+            <img className="bg-img" src={`/images/art/${removeSpace(CHARACTERS[0].name)}.png`} alt={CHARACTERS[0].name + " Artwork"} />
             <header>
                 <h1>Simulacra</h1>
                 <p>

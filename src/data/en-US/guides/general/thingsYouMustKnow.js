@@ -109,7 +109,7 @@ export const thingsYouMustKnow = {
 
             <section>
                 <h2>11. Passcode Terminals</h2>
-                    <img src={require('../../../images/guides/passcode_terminals.png')} alt="Map of Passcode Terminals" />
+                    <img src="/images/guides/passcode_terminals.png" alt="Map of Passcode Terminals" />
                     <span>Correct passcodes for all passcode terminals</span>
             </section>
 

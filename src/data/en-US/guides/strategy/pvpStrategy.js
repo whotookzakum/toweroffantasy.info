@@ -96,7 +96,7 @@ export const pvpStrategy = {
                     <tbody>
                         <tr>
                             <th>
-                                <img src={require('../../../images/wep/huma.png')} alt="Huma's Weapon" />
+                                <img src="/images/wep/huma.png" alt="Huma's Weapon" />
                                 <Link to="/simulacra/huma">Huma</Link>
                             </th>
                             <td colSpan={3}>
@@ -133,7 +133,7 @@ export const pvpStrategy = {
                         </tr>
                         <tr>
                             <th>
-                                <img src={require('../../../images/wep/huma.png')} alt="Huma's Weapon" />
+                                <img src="/images/wep/huma.png" alt="Huma's Weapon" />
                                 <Link to="/simulacra/huma">Huma</Link>
                             </th>
                             <td>

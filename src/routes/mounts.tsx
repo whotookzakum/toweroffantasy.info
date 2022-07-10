@@ -1,12 +1,11 @@
-import { ModalMenu, Modal } from "../components/Modal";
+import { ModalMenu } from "../components/Modal";
 import { MOUNTS } from "../data/en-US/mounts/mountList";
-import { removeSpace, getItemByName } from "../utils/stringHelper";
 
 
 function Mounts() {
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/bg-2.png`)} alt="Background Image" />
+            <img className="bg-img" src="/images/bg-2.png" alt="Background Image" />
             <header>
                 <h1>Mounts</h1>
                 <p>

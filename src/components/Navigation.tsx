@@ -1,4 +1,3 @@
-import logo from "../data/images/avatar/tata.png";
 import { NavLink, Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 
@@ -16,7 +15,7 @@ function Navigation() {
             <div className="nav-body hide-scrollbar">
                 <div className="navbar-brand">
                     <Link to="/" onClick={() => setTogglerState(!togglerState)}>
-                        <img src={logo} alt="Logo" /><br />
+                        <img src="images/avatar/tata.png" alt="Logo" /><br />
                         Tower of Fantasy Index
                     </Link>
                 </div>

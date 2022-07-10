@@ -7,7 +7,7 @@ function Relics() {
     const bgImg = "Alternate Destiny";
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/relics/${removeSpace(bgImg)}.png`)} alt={bgImg} />
+            <img className="bg-img" src={`/images/relics/${removeSpace(bgImg)}.png`} alt={bgImg} />
             <header>
                 <h1>Relics</h1>
                 <p>

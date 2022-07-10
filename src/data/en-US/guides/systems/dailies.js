@@ -29,7 +29,7 @@ export const dailies = {
                         </tr>
                         <tr>
                             <th>Ability Training</th>
-                            <td>4 minigames that award Ability Points⁠—used to purchase matrix EXP chips and simulacrum gifts.</td>
+                            <td>2 minigames that award Ability Points—used to purchase matrix EXP chips and simulacrum gifts.</td>
                         </tr>
                     </tbody>
                 </table>

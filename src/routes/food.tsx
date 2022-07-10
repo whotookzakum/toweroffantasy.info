@@ -7,7 +7,7 @@ function Food() {
         const recipe = dish.ingredients.map(ingredient =>
             <li className="ingredient">
                 <div className={`item-frame rarity-${ingredient.item.rarity}`}>
-                    <img src={require(`../data/images/food/ingredients/${removeSpace(ingredient.item.name)}.png`)} alt={ingredient.item.name} />
+                    <img src={`/images/food/ingredients/${removeSpace(ingredient.item.name)}.png`} alt={ingredient.item.name} />
                 </div>
                 {ingredient.item.name}
             </li>
@@ -18,7 +18,7 @@ function Food() {
                 <th className="col-dish">
                     <div className={`item-frame rarity-${dish.rarity}`}>
                         {dish.chinaOnly && <abbr title="China Exclusive" />}
-                        <img src={require(`../data/images/food/dishes/${removeSpace(dish.name)}.png`)} alt={dish.name} />
+                        <img src={`/images/food/dishes/${removeSpace(dish.name)}.png`} alt={dish.name} />
                     </div>
                     <span>{dish.name}</span>
                 </th>
@@ -30,7 +30,7 @@ function Food() {
 
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/food/huodong_meishi_guo.png`)} alt="Dancing Air Fryer" />
+            <img className="bg-img" src="/images/food/huodong_meishi_guo.png" alt="Dancing Air Fryer" />
             <header>
                 <h1>Food</h1>
                 <p>
@@ -56,36 +56,36 @@ function Food() {
                         <div className="flex">
                             <input type="checkbox" id="atk_flame" name="atk_flame" />
                             <label htmlFor="atk_flame">
-                                <img src={require("../data/images/buff/ATK_flame.png")} alt="Flame Attack" />
+                                <img src="/images/buff/ATK_flame.png" alt="Flame Attack" />
                             </label>
                             <input type="checkbox" id="atk_ice" name="atk_ice" />
                             <label htmlFor="atk_ice">
-                                <img src={require("../data/images/buff/ATK_ice.png")} alt="Ice Attack" />
+                                <img src="/images/buff/ATK_ice.png" alt="Ice Attack" />
                             </label>
                             <input type="checkbox" id="atk_volt" name="atk_volt" />
                             <label htmlFor="atk_volt">
-                                <img src={require("../data/images/buff/ATK_volt.png")} alt="Volt Attack" />
+                                <img src="/images/buff/ATK_volt.png" alt="Volt Attack" />
                             </label>
                             <input type="checkbox" id="atk_physical" name="atk_physical" />
                             <label htmlFor="atk_physical">
-                                <img src={require("../data/images/buff/ATK_physical.png")} alt="Physical Attack" />
+                                <img src="/images/buff/ATK_physical.png" alt="Physical Attack" />
                             </label>
                         </div>
                     </li>
                     <li>
                         <h4>Defensive</h4>
                         <div className="flex">
-                            <img src={require("../data/images/buff/DEF_flame.png")} alt="Flame Defense" />
-                            <img src={require("../data/images/buff/DEF_ice.png")} alt="Ice Defense" />
-                            <img src={require("../data/images/buff/DEF_volt.png")} alt="Volt Defense" />
-                            <img src={require("../data/images/buff/DEF_physical.png")} alt="Physical Defense" />
+                            <img src="/images/buff/DEF_flame.png" alt="Flame Defense" />
+                            <img src="/images/buff/DEF_ice.png" alt="Ice Defense" />
+                            <img src="/images/buff/DEF_volt.png" alt="Volt Defense" />
+                            <img src="/images/buff/DEF_physical.png" alt="Physical Defense" />
                         </div>
                     </li>
                     <li>
                         <h4>Recovery</h4>
                         <div className="flex">
-                            <img src={require("../data/images/buff/HP.png")} alt="HP Recovery" />
-                            <img src={require("../data/images/buff/stamina.png")} alt="Stamina Recovery" />
+                            <img src="/images/buff/HP.png" alt="HP Recovery" />
+                            <img src="/images/buff/stamina.png" alt="Stamina Recovery" />
                         </div>
                     </li>
 

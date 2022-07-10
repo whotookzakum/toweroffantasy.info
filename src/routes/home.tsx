@@ -9,7 +9,7 @@ function Home() {
         
     return (
         <>
-            <img className="bg-img" src={require("../data/images/bg-1.png")} />
+            <img className="bg-img" src="/images/bg-1.png" />
             <h1>Welcome to the Tower of Fantasy Index.</h1>
             <p>
                 This site will mainly follow the <strong className="yellow">Global version</strong> of Tower of Fantasy.<br />

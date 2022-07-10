@@ -9,9 +9,6 @@ import { MOUNTS } from "../data/en-US/mounts/mountList";
 import CNTag from "./CNTag";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
-import { GuideArticle } from "../routes/guides";
-import { useEffect } from "react";
-import { ReactDOM } from "react";
 
 export function ModalMenu({ listContent, type }) {
     let path = (type === "simulacra") ? "avatar" : type;
@@ -23,7 +20,7 @@ export function ModalMenu({ listContent, type }) {
                         {item.chinaOnly && <abbr title="China Exclusive" />}
                         {type !== "guides" &&
                             <div className="flex">
-                                <img src={require(`../data/images/${path}/${removeSpace(item.name)}.png`)}
+                                <img src={`/images/${path}/${removeSpace(item.name)}.png`}
                                     alt={item.name} />
                             </div>
                         }
@@ -42,8 +39,8 @@ export function ModalMenu({ listContent, type }) {
                         }
                         {type === "simulacra" &&
                             <div className="flex" style={{ gap: "0.3rem" }}>
-                                <img src={require(`../data/images/${item.weapon.type}.png`)} alt={item.weapon.type} />
-                                <img src={require(`../data/images/${item.weapon.element}.png`)} alt={item.weapon.element} />
+                                <img src={`/images/${item.weapon.type}.png`} alt={item.weapon.type} />
+                                <img src={`/images/${item.weapon.element}.png`} alt={item.weapon.element} />
                             </div>
                         }
                     </Link>
@@ -70,7 +67,7 @@ export function Modal({ type }) {
     (type === "mounts") ? path = "bg-2.png" : path += `/${removeSpace(item.name)}.png`;
     return (
         <article className="modal">
-            {hasArtwork && <img className="bg-img" src={require(`../data/images/${path}`)} alt={item.name + " Artwork"} />}
+            {hasArtwork && <img className="bg-img" src={`/images/${path}`} alt={item.name + " Artwork"} />}
             <div className="modal-backdrop"></div>
             {type === "simulacra" && <SimulacraModal item={item} />}
             {type === "matrices" && <MatrixModal item={item} />}
@@ -124,7 +121,7 @@ function SimulacraModal({ item }) {
             }
             result.push(
                 <li className={`item-frame rarity-${rarity}`}>
-                    <img src={require(`../data/images/mat/${materialUri}.png`)} alt={materialUri} />
+                    <img src={`/images/mat/${materialUri}.png`} alt={materialUri} />
                 </li>
             );
         }
@@ -150,7 +147,7 @@ function SimulacraModal({ item }) {
             return (index === 0) ? <></> :
                 <li className="gift">
                     <div className={`item-frame rarity-${rarity}`}>
-                        <img src={require(`../data/images/awakening/${gift}.png`)} alt={gift} />
+                        <img src={`/images/awakening/${gift}.png`} alt={gift} />
                     </div>
                     <h4>+{group[0]}</h4>
                 </li>
@@ -188,14 +185,14 @@ function SimulacraModal({ item }) {
     })
     const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
         return (matricesList.map(matrix =>
-            <li><img src={require(`../data/images/matrices/${matrix}.png`)} alt={matrix + " Matrix"} /></li>))
+            <li><img src={`/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
     });
 
     return (
         <>
             <header>
                 <div className="header-img-wrapper simulacra">
-                    <img src={require(`../data/images/avatar/${removeSpace(item.name)}.png`)} alt="" />
+                    <img src={`/images/avatar/${removeSpace(item.name)}.png`} alt="" />
                 </div>
                 <div>
                     <h1>{item.name}</h1>
@@ -208,19 +205,19 @@ function SimulacraModal({ item }) {
 
                 <h2>Weapon</h2>
                 <div className="weapon-header" style={{ borderColor: elementColor }}>
-                    <img className="weapon-image" src={require(`../data/images/wep/${removeSpace(item.name)}.png`)} alt={weapon.name} />
+                    <img className="weapon-image" src={`/images/wep/${removeSpace(item.name)}.png`} alt={weapon.name} />
                     <div className="weapon-info">
                         <h3>{weapon.name}</h3>
                         <div className="weapon-stat-grid">
                             <div className="weapon-stat">
-                                <img src={require(`../data/images/${weapon.type}.png`)} alt={weapon.type} />
+                                <img src={`/images/${weapon.type}.png`} alt={weapon.type} />
                                 <div>
                                     <h5>Resonance</h5>
                                     <h4>{weapon.type}</h4>
                                 </div>
                             </div>
                             <div className="weapon-stat">
-                                <img src={require(`../data/images/${weapon.element}.png`)} alt={weapon.element} />
+                                <img src={`/images/${weapon.element}.png`} alt={weapon.element} />
                                 <div>
                                     <h5>Element</h5>
                                     <h4>{weapon.element}</h4>
@@ -340,7 +337,7 @@ function SimulacraModal({ item }) {
                                 <h4>{item.bio.birthday}</h4>
                             </li>
                         </ul>
-                        <img src={require(`../data/images/charts/${removeSpace(item.name)}.png`)} alt="" />
+                        <img src={`/images/charts/${removeSpace(item.name)}.png`} alt="" />
                     </div>
                 </section>
                 <section className="voice-actors w-75ch">
@@ -419,7 +416,7 @@ function MatrixModal({ item }) {
         <>
             <header>
                 <div className="header-img-wrapper matrices">
-                    <img src={require(`../data/images/matrices/${removeSpace(item.name)}.png`)} alt="" />
+                    <img src={`/images/matrices/${removeSpace(item.name)}.png`} alt="" />
                 </div>
                 <div>
                     <h1>{item.name}</h1>
@@ -452,7 +449,7 @@ function RelicModal({ item }) {
         <>
             <header>
                 <div className="header-img-wrapper relics">
-                    <img src={require(`../data/images/relics/${removeSpace(item.name)}.png`)} alt="" />
+                    <img src={`/images/relics/${removeSpace(item.name)}.png`} alt="" />
                 </div>
                 <div>
                     <h1>{item.name}</h1>
@@ -493,13 +490,13 @@ function MountModal({ item }) {
         return (
             <div className="spotlight mount-part">
                 <div className="flex">
-                    <img className="mount-part-img" src={require(`../data/images/mounts/${removeSpace(item.name)}-${partNum}.png`)} alt={`${item.name} Part ${partNum}`} />
+                    <img className="mount-part-img" src={`/images/mounts/${removeSpace(item.name)}-${partNum}.png`} alt={`${item.name} Part ${partNum}`} />
                     <div className="mount-part-text" >
                         <ReactMarkdown>{value.source}</ReactMarkdown>
                         {value.map &&
                             <details>
                                 <summary>Map</summary>
-                                <img src={require(`../data/images/mounts/${value.map}`)} alt="Map of Elites" />
+                                <img src={`/images/mounts/${value.map}`} alt="Map of Elites" />
                             </details>
                         }
                         {value.video &&
@@ -520,7 +517,7 @@ function MountModal({ item }) {
         <>
             <header>
                 <div className="header-img-wrapper mounts">
-                    <img src={require(`../data/images/mounts/${removeSpace(item.name)}.png`)} alt="" />
+                    <img src={`/images/mounts/${removeSpace(item.name)}.png`} alt="" />
                 </div>
                 <div>
                     <h1>{item.name}</h1>

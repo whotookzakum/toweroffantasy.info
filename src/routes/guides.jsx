@@ -5,7 +5,7 @@ import { GUIDES } from "../data/en-US/guides/guideList";
 function Guides() {
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/bg-1.png`)} alt="Background Image" />
+            <img className="bg-img" src='/images/bg-1.png' alt="Background Image" />
             <header>
                 <h1>Guides</h1>
                 <p>

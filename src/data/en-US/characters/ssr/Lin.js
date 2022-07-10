@@ -78,8 +78,8 @@ const lin = {
         // },
         abilities: [],
         recommendedMatrix: {
-            set2: [],
-            set4: [],
+            set2: ["lin", "samir"],
+            set4: ["lin"],
             set3: []
         }
     },

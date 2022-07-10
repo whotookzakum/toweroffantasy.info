@@ -13,7 +13,7 @@ const omniumbeastvii = {
         },
         part3: {
             source: "Rare drop from ***Behemoths***.",
-            map: "omniumbeastelites.jpg"
+            map: "omniumbeastviielites.jpg"
         }
     }
 }

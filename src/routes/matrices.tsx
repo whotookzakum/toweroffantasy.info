@@ -8,7 +8,7 @@ function Matrices() {
 
     return (
         <>
-            <img className="bg-img" src={require(`../data/images/art/${removeSpace(MATRICES[0].name)}.png`)} alt={MATRICES[0].name + " Artwork"} />
+            <img className="bg-img" src={`/images/art/${removeSpace(MATRICES[0].name)}.png`} alt={MATRICES[0].name + " Artwork"} />
             <header>
                 <h1>Matrices</h1>
                 <p>
