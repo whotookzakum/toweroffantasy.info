@@ -5,7 +5,7 @@ import { MOUNTS } from "../data/en-US/mounts/mountList";
 function Mounts() {
     return (
         <>
-            <img className="bg-img" src="/images/bg-2.png" alt="Background Image" />
+            <img className="bg-img" src="/images/bg-2.png" role="presentation" alt="" />
             <header>
                 <h1>Mounts</h1>
                 <p>

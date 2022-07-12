@@ -1,11 +1,11 @@
 import { ModalMenu } from "../components/Modal/Modal";
 import { GUIDES } from "../data/en-US/guides/guideList";
-
+import { Helmet } from "react-helmet";
 
 function Guides() {
     return (
         <>
-            <img className="bg-img" src='/images/bg-1.png' alt="Background Image" />
+            <img className="bg-img" src='/images/bg-1.png' role="presentation" alt="" />
             <header>
                 <h1>Guides</h1>
                 <p>
@@ -47,6 +47,13 @@ export function GuideArticle({ guide }) {
         return (index === guide.author.length - 1) ? <em>{author}</em> : <><em>{author}</em>, </>
     })
     return (
+			<>
+				<Helmet>
+					<title>{guide.name + ' | Tower of Fantasy Index'}</title>
+					<meta property="og:title" content={guide.name} />
+					{guide.author.map((author, i) => (<meta property="author" content={author} key={'author' + i} />))}
+					<meta property="og:locale" content="en_US" />
+				</Helmet>
         <article className="guide">
             <header>
                 <h1>{guide.name}</h1>
@@ -54,6 +61,7 @@ export function GuideArticle({ guide }) {
             </header>
             {guide.text}
         </article>
+			</>
     )
 }
 

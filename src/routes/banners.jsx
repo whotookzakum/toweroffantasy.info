@@ -27,7 +27,7 @@ function BannerSchedule() {
 
     return (
         <>
-            <img className="bg-img" src={`/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
+            <img className="bg-img" src={`/images/art/${CHARACTERS[0].imgSrc}`} role="presentation" alt="" />
             <h1>Limited Banner Schedule</h1>
             <p>Click any character's name to go straight to their Simulacrum page.</p>
             <div className="banners-wrapper">

@@ -1,4 +1,4 @@
-import { CNBanners, Banners } from "../data/en-US/bannerSchedule";
+import { CNBanners } from "../data/en-US/bannerSchedule";
 import { Link } from "react-router-dom";
 import { removeSpace } from "../utils/stringHelper";
 import { CHANGELOG } from "../data/en-US/changelog";
@@ -9,7 +9,7 @@ function Home() {
         
     return (
         <>
-            <img className="bg-img" src="/images/bg-1.png" />
+            <img className="bg-img" src="/images/bg-1.png" role="presentation" alt="" />
             <h1>Welcome to the Tower of Fantasy Index.</h1>
             
             <p>

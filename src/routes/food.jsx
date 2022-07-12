@@ -33,7 +33,7 @@ function Food() {
 
     return (
         <>
-            <img className="bg-img" src="/images/food/huodong_meishi_guo.png" alt="Dancing Air Fryer" />
+            <img className="bg-img" src="/images/food/huodong_meishi_guo.png" role="presentation" alt="" />
             <header>
                 <h1>Food</h1>
                 <p>

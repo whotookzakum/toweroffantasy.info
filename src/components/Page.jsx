@@ -8,6 +8,7 @@ import Mounts from "../routes/mounts";
 import Relics from "../routes/relics";
 import Simulacra from "../routes/simulacra";
 
+// eslint-disable-next-line
 const ROUTES = [
     {
         title: 'Home',
@@ -85,6 +86,10 @@ function Page(props) {
             <Helmet>
                 <title>{props.title ? props.title + " | Tower of Fantasy Index" : "404 Not Found"}</title>
                 <meta name="description" content={props.description} />
+								<meta property="og:locale" content="en_US" />
+								<meta property="og:title" content={props.title} key="title" />
+								<meta property="og:site_name" content="Tower of Fantasy Index" key="site_name" />
+								<meta property="og:description" content={props.description} key="description" />
             </Helmet>
             <main>{props.children}</main>
         </>

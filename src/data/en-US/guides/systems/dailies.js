@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 export const dailies = {
     name: "Dailies & Weeklies",
     uri: "dailies-and-weeklies",
