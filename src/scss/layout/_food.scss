@@ -136,12 +136,24 @@
 
     .ingredient {
         gap: 0.5rem; 
-
+        
         .item-frame {
             width: 43px;
             min-width: 43px;
             box-shadow: $shadow;
+            position: relative;
+
+            h3 {
+                position: absolute;
+                z-index: 30;
+                align-self: flex-start;
+                right: 3px;
+                top: -1px;
+                color: white;
+                text-shadow: $shadow;
+            }
         }
+        
         img {
             width: 52px;
             min-width: 52px;

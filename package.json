@@ -25,7 +25,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -b live-site -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && cpy index.html ./ --rename='404.html' --cwd=build",
     "test": "react-scripts test",

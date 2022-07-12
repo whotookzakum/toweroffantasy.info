@@ -4,7 +4,7 @@ const lin = {
     chinaOnly: true,
     weapon: {
         name: "Shadow Weaver",
-        element: "supernatural",
+        element: "aberration",
         type: "dps",
         baseStats: ["attack", "health", "crit"],
         shatter: ["S", "11.50"],
@@ -97,7 +97,11 @@ const lin = {
 
         giftCategories: ['metalware', 'decorations', 'vera'],
 
-        gifts: [],
+        gifts: [
+            [60, "princeTataFigure", "linyeFigure"],
+            [30, "bunnyDoll", "strangeFragment"],
+            [15, "strangePlant"]
+        ]
     },
 
     bio: {

@@ -18,6 +18,7 @@ import Guides, { GuideArticle } from '../routes/guides';
 import { MATRICES } from '../data/en-US/matrices/matrixList';
 import BannerSchedule from '../routes/banners';
 import { GUIDES } from '../data/en-US/guides/guideList';
+import { CHANGELOG } from '../data/en-US/changelog';
 
 
 function ScrollToTopOnMount() {
@@ -30,6 +31,8 @@ function ScrollToTopOnMount() {
 
 export default function Main() {
     const pageTitle = useLocation().pathname.split("/").pop();
+    const changelogContent = CHANGELOG.map(update => <tr><th>{update.date}</th><td>{update.text}</td></tr>);
+
     return (
         <div className="wrapper">
             <Navigation />
@@ -42,6 +45,23 @@ export default function Main() {
                         element={
                             <Page title="Home" description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
                                 <Home />
+                            </Page>
+                        }
+                    />
+                    <Route
+                        path="/changelog"
+                        element={
+                            <Page title="Home" description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
+                                <h1>Changelog</h1>
+                                <table className="changelog w-75ch">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Changes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>{changelogContent}</tbody>
+                                </table>
                             </Page>
                         }
                     />

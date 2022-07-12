@@ -3,7 +3,7 @@ const nemesis = {
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
-        name: "Enlightenment",
+        name: "Venus",
         element: "volt",
         type: "support",
         baseStats: ["attack", "health", "crit"],

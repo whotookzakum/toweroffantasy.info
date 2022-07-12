@@ -3,7 +3,7 @@ const marc = {
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
-        name: "Breaking Dawn",
+        name: "Dawn",
         element: "physical",
         type: "defense",
         baseStats: ["attack", "defense", "health"],

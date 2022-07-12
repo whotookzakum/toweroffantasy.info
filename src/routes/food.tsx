@@ -8,6 +8,7 @@ function Food() {
             <li className="ingredient">
                 <div className={`item-frame rarity-${ingredient.item.rarity}`}>
                     <img src={`/images/food/ingredients/${removeSpace(ingredient.item.name)}.png`} alt={ingredient.item.name} />
+                    <h3>{ingredient.amount}</h3>
                 </div>
                 {ingredient.item.name}
             </li>

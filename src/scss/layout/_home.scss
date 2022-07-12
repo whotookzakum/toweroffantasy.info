@@ -84,14 +84,28 @@
 
 
 .changelog {
-    color: rgb(128, 128, 128);
-
-    span {
-        background: #222;
+    color: clr(text, gray);
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: left;
+    
+    thead tr {
+        border-bottom: 3px solid clr(text, dark);
     }
 
-    li {
-        margin-bottom: 0.75rem;
+    tr:not(:last-of-type) {
+        border-bottom: 1px solid clr(text, dark);
+    }
+    
+    tbody {
+        th, td {
+            padding: 1.5rem 0.5rem;
+        }
+    }
+
+    tbody th {
+        min-width: 13ch;
+        color: clr(text, turquoise);
     }
 }
 

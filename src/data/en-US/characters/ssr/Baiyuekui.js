@@ -3,7 +3,7 @@ const baiyuekui = {
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
-        name: "Eighth Consciousness", //Alaya Vijnana "Base [of] Consciousness"
+        name: "Alaya", //Alaya Vijnana "Base [of] Consciousness"
         element: "volt",
         type: "dps",
         baseStats: ["attack", "defense", "health"],

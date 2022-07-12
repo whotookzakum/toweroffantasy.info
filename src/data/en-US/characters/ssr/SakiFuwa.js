@@ -56,6 +56,7 @@ const saki = {
         gifts: [
             [60, "princeTataFigure", "linyeFigure"],
             [40, "strangeFragment"],
+            [30, "bunnyDoll"],
             [15, "strangePlant"]
         ]
     },
