@@ -1,5 +1,7 @@
 const chaser = {
     name: "Chaser",
+    uri: "chaser",
+    imgSrc: "chaser.png",
     chinaOnly: false,
     parts: {
         part1: {

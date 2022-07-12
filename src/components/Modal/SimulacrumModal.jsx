@@ -7,9 +7,6 @@ export function SimulacraModal({ item }) {
     const weapon = item.weapon;
     const awakening = item.awakening;
     const rarity = (item.rarity === "SSR") ? 1 : 0;
-    let rarityColor = { color: "var(--color-tier-s)" };
-    if (item.rarity === "SR") rarityColor = { color: "var(--color-tier-a)" };
-    else if (item.rarity === "R") rarityColor = { color: "var(--color-tier-b)" };
     const elementColor = `var(--color-${weapon.element})`;
     const advancements = Object.entries(weapon.advancement).map(([star, effect]) => {
         return (
@@ -116,16 +113,6 @@ export function SimulacraModal({ item }) {
 
     return (
         <>
-            <header>
-                <div className="header-img-wrapper simulacra">
-                    <img src={`/images/avatar/${removeSpace(item.name)}.png`} alt="" />
-                </div>
-                <div>
-                    <h1>{item.name}</h1>
-                    <h2><i style={rarityColor}>{item.rarity}</i> Simulacra</h2>
-                </div>
-            </header>
-
             <div className="modal-body">
                 {item.chinaOnly && <CNTag name={item.name} />}
 

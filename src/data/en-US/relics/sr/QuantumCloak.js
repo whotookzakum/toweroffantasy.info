@@ -1,5 +1,7 @@
 const quantumcloak = {
     name: "Quantum Cloak",
+    uri: "quantum-cloak",
+    imgSrc: "quantumcloak.png",
     rarity: "SR",
     chinaOnly: false,
     description: "Enter a quantum state for **10** seconds, during which enemies cannot detect the wearer. The wearer exits quantum state after attacking once. **120**-second cooldown.",

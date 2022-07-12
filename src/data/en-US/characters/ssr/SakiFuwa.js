@@ -1,7 +1,8 @@
 const saki = {
     // 流泉彻心
     name: "Saki Fuwa",
-    url: "sakifuwa",
+    uri: "saki-fuwa",
+    imgSrc: "sakifuwa.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
@@ -34,10 +35,10 @@ const saki = {
         },
         abilities: [],
         recommendedMatrix: {
-            set2: ["sakifuwa", "samir"],
-            set4: ["sakifuwa"],
+            set2: ["crow", "samir", ],
+            set4: ["samir"],
             set3: ["sobek"]
-        }
+        } // 2 and 4 set useful on other ice weapons in the team
     },
     
     matrix: {

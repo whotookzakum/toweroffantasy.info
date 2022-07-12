@@ -1,5 +1,7 @@
 const typevarmor = {
     name: "Type V Armor",
+    uri: "type-v-armor",
+    imgSrc: "typevarmor.png",
     rarity: "SSR",
     chinaOnly: false,
     description: 

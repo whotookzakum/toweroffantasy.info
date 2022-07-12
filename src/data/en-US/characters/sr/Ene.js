@@ -1,6 +1,7 @@
 const ene = {
     name: "Ene",
-    url: "ene",
+    uri: "ene",
+    imgSrc: "ene.png",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

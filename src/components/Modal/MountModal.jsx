@@ -33,15 +33,6 @@ export function MountModal({ item }) {
     })
     return (
         <>
-            <header>
-                <div className="header-img-wrapper mounts">
-                    <img src={`/images/mounts/${removeSpace(item.name)}.png`} alt="" />
-                </div>
-                <div>
-                    <h1>{item.name}</h1>
-                    <h2>Mount</h2>
-                </div>
-            </header>
             <div className="modal-body mounts">
                 {item.chinaOnly && <CNTag name={item.name} />}
                 <section className="w-75ch">

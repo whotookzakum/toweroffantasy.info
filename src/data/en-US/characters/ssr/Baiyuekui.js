@@ -1,6 +1,7 @@
 const baiyuekui = {
     name: "Baiyuekui",
-    url: "baiyuekui",
+    uri: "baiyuekui",
+    imgSrc: "baiyuekui.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

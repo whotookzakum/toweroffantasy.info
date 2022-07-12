@@ -2,96 +2,112 @@ const ingredients = {
     // Vera recipes (2.0) https://www.taptap.com/topic/20623166
     sandonion: {
         name: 'Sand Onion',
+        imgSrc: "sandonion.png",
         rarity: 1,
         chinaOnly: true,
         source: ""
     },
     cactusball: {
         name: 'Cactus Ball',
+        imgSrc: "cactusball.png",
         rarity: 1,
         chinaOnly: true,
         source: ""
     },
     beetroot: {
         name: 'Beetroot',
+        imgSrc: "beetroot.png",
         rarity: 2,
         chinaOnly: true,
         source: ""
     },
     soybeans: {
         name: 'Soybeans',
+        imgSrc: "soybeans.png",
         rarity: 2,
         chinaOnly: true,
         source: "Purchased at Mirror City food vendor"
     },
     corn: {
         name: 'Corn',
+        imgSrc: "corn.png",
         rarity: 2,
         chinaOnly: true,
         source: "Purchased at Mirror City food vendor"
     },
     fleshytail: {
         name: 'Fleshy Tail',
+        imgSrc: "fleshytail.png",
         rarity: 2,
         chinaOnly: true,
         source: "折跃门-绿洲峭壁附近的沙漠猎食者有几率出，还有芦荟"
     },
     pepper: {
         name: 'Pepper',
+        imgSrc: "pepper.png",
         rarity: 3,
         chinaOnly: true,
         source: ""
     },
     desertmelon: {
         name: 'Desert Melon',
+        imgSrc: "desertmelon.png",
         rarity: 3,
         chinaOnly: true,
         source: "镜都哨站附近大漠甜瓜"
     },
     pumpkin: {
         name: 'Pumpkin',
+        imgSrc: "pumpkin.png",
         rarity: 3,
         chinaOnly: true,
         source: "有流沙的地方边上都有流沙南瓜"
     },
     ribs: {
         name: 'Ribs',
+        imgSrc: "ribs.png",
         rarity: 3,
         chinaOnly: true,
         source: "折跃门-咸水绿洲附近的盾甲兽有几率出"
     },
     oyster: {
         name: 'Oyster',
+        imgSrc: "oyster.png",
         rarity: 3,
         chinaOnly: true,
         source: ""
     },
     fishleaf: {
         name: 'Fish Leaf',
+        imgSrc: "fishleaf.png",
         rarity: 3,
         chinaOnly: true,
         source: ""
     },
     aloevera: {
         name: 'Aloe Vera',
+        imgSrc: "aloevera.png",
         rarity: 4,
         chinaOnly: true,
         source: ""
     },
     rosepetals: {
         name: 'Rose Petals',
+        imgSrc: "rosepetals.png",
         rarity: 4,
         chinaOnly: true,
         source: ""
     },
     radish: {
         name: 'Radish',
+        imgSrc: "radish.png",
         rarity: 4,
         chinaOnly: true,
         source: "折跃门-咸水绿洲，舒伯特附近的都是，还有辣椒"
     },
     oilmelon: {
         name: 'Oil Melon',
+        imgSrc: "oilmelon.png",
         rarity: 4,
         chinaOnly: true,
         source: ""
@@ -99,27 +115,31 @@ const ingredients = {
     
     mushroom: {
         name: 'Mushroom',
+        imgSrc: "mushroom.png",
         rarity: 1,
         chinaOnly: false,
         source: "Found on Astra (around giant mushrooms) and in Crown"
     },
     
-    silverperch: {
+    silverbass: {
         name: 'Silver Bass',
+        imgSrc: "silverbass.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found in rivers'
     },
     
-    wheat: {
+    homigrain: {
         name: 'Homi Grain',
+        imgSrc: "homigrain.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found on Astra (meadows) and Banges (meadows)'
     },
     
-    meat: {
+    gamemeat: {
         name: 'Game Meat',
+        imgSrc: "gamemeat.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Obtained by hunting wild animals'
@@ -127,27 +147,31 @@ const ingredients = {
     
     lettuce: {
         name: 'Lettuce',
+        imgSrc: "lettuce.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found on Astra (meadows)'
     },
     
-    dressing: {
+    saladdressing: {
         name: 'Salad Dressing',
+        imgSrc: "saladdressing.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    egg: {
+    poultryegg: {
         name: 'Poultry Egg',
+        imgSrc: "poultryegg.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found in bird nests (high elevations)'
     },
     
-    seaweed: {
+    laver: {
         name: 'Laver',
+        imgSrc: "laver.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Banges (North Sea Beach)'
@@ -155,13 +179,15 @@ const ingredients = {
     
     milk: {
         name: 'Milk',
+        imgSrc: "milk.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    drumstick: {
+    poultrymeat: {
         name: 'Poultry Meat',
+        imgSrc: "poultrymeat.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Obtained by hunting birds'
@@ -169,20 +195,23 @@ const ingredients = {
     
     rice: {
         name: 'Rice',
+        imgSrc: "rice.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    tomato: {
+    thornmato: {
         name: 'Thornmato',
+        imgSrc: "thornmato.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (around alpine shrubs) and in Navia (around trees)'
     },
     
-    hornedconch: {
+    conch: {
         name: 'Conch',
+        imgSrc: "conch.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Bangis (South Sea Beach) and Navia (beach)'
@@ -190,13 +219,15 @@ const ingredients = {
     
     potato: {
         name: 'Potato',
+        imgSrc: "potato.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Banges (around bushes)'
     },
     
-    fruitdrop: {
+    fallenfruit: {
         name: 'Fallen Fruit',
+        imgSrc: "fallenfruit.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (around trees) and in Banges (around trees)'
@@ -204,6 +235,7 @@ const ingredients = {
     
     honey: {
         name: 'Honey',
+        imgSrc: "honey.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Obtained from hives and bees'
@@ -211,6 +243,7 @@ const ingredients = {
     
     ghostmushroom: {
         name: 'Ghost Mushroom',
+        imgSrc: "ghostmushroom.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (Keel, Graveyard)'
@@ -218,34 +251,39 @@ const ingredients = {
     
     broccoli: {
         name: 'Broccoli',
+        imgSrc: "broccoli.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (meadows)'
     },
     
-    dandelion: {
+    dandelionseed: {
         name: 'Dandelion Seed',
+        imgSrc: "dandelionseed.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Obtained from dandelion pom-poms'
     },
     
-    sturgeon: {
+    darbyssturgeon: {
         name: "Darby's Sturgeon",
+        imgSrc: "darbyssturgeon.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in rivers of Astra, Navia, and Warren'
     },
     
-    redwheat: {
+    brownrice: {
         name: 'Brown Rice',
+        imgSrc: "brownrice.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Navia (meadows)'
     },
     
-    fireear: {
+    firecap: {
         name: 'Firecap',
+        imgSrc: "firecap.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Crown'
@@ -253,6 +291,7 @@ const ingredients = {
     
     blackmoss: {
         name: 'Black Moss',
+        imgSrc: "blackmoss.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Crown'
@@ -260,20 +299,23 @@ const ingredients = {
     
     seaconch: {
         name: 'Scallop',
+        imgSrc: "scallop.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Banges (South Sea Beach)'
     },
     
-    hindleg: {
+    rearhock: {
         name: 'Rear Hock',
+        imgSrc: "rearhock.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Obtained by hunting rabbits, mountain hares, boars, bears, wolves, and honey badgers'
     },
     
-    shuttlecrab: {
+    portunid: {
         name: 'Portunid',
+        imgSrc: "portunid.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found on the beaches of Astra, Banges, and Crown'
@@ -281,20 +323,23 @@ const ingredients = {
     
     strawberry: {
         name: 'Strawberry',
+        imgSrc: "strawberry.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Navia (around bushes)'
     },
     
-    blueberry: {
+    smallblueberryjar: {
         name: 'Small Blueberry Jar',
+        imgSrc: "smallblueberryjar.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Obtained from defeating the Sons of Aida (robotic enemies)'
     },
     
-    sparklingwater: {
+    carbonatedwater: {
         name: 'Carbonated Water',
+        imgSrc: "carbonatedwater.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
@@ -302,13 +347,15 @@ const ingredients = {
     
     seaurchin: {
         name: 'Sea Urchin',
+        imgSrc: "seaurchin.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Banges (North Sea Beach) and Crown (beach)'
     },
     
-    spinach: {
+    fiddlehead: {
         name: 'Fiddlehead',
+        imgSrc: "fiddlehead.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found near the Banges factory'
@@ -316,6 +363,7 @@ const ingredients = {
     
     cocoabeans: {
         name: 'Cocoa Beans',
+        imgSrc: "cocoabeans.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Navia (Minyu Island)'
@@ -323,13 +371,15 @@ const ingredients = {
     
     balloonfruit: {
         name: 'Balloon Fruit',
+        imgSrc: "balloonfruit.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found on Astra and in Navia'
     },
     
-    thundereel: {
+    electriceel: {
         name: 'Electric Eel',
+        imgSrc: "electriceel.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in the rivers of Banges, Navia, and Warren'
@@ -337,20 +387,23 @@ const ingredients = {
     
     hermitcrab: {
         name: 'Hermit Crab',
+        imgSrc: "hermitcrab.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found on the beaches of Banges, Navia, and Crown'
     },
     
-    pomegranate: {
+    phosphogranate: {
         name: 'Phosphogranate',
+        imgSrc: "phosphogranate.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Navia (around rocks)'
     },
     
-    dragonfruit: {
+    firedragonfruit: {
         name: 'Firedragon Fruit',
+        imgSrc: "firedragonfruit.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found near rivers in Navia and Crown'
@@ -358,6 +411,7 @@ const ingredients = {
     
     barnacle: {
         name: 'Barnacle',
+        imgSrc: "barnacle.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found near the sea in Warren'
@@ -365,13 +419,15 @@ const ingredients = {
     
     onion: {
         name: 'Onion',
+        imgSrc: "onion.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    snowblossom: {
+    snowazalea: {
         name: 'Snow Azalea',
+        imgSrc: "snowazalea.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Warren'
@@ -379,6 +435,7 @@ const ingredients = {
     
     pinecone: {
         name: 'Pinecone',
+        imgSrc: "pinecone.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Warren (around pine trees)'
@@ -386,20 +443,23 @@ const ingredients = {
     
     caviar: {
         name: 'Caviar',
+        imgSrc: "caviar.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Obtained from raider camp enemies'
     },
     
-    nut: {
+    hazelnut: {
         name: 'Hazelnut',
+        imgSrc: "hazelnut.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Navia'
     },
     
-    birdpotato: {
+    purpleyam: {
         name: "Purple Yam",
+        imgSrc: "purpleyam.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
@@ -407,6 +467,7 @@ const ingredients = {
     
     snowlotus: {
         name: 'Snow Lotus',
+        imgSrc: "snowlotus.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
@@ -414,41 +475,47 @@ const ingredients = {
     
     blacktruffle: {
         name: 'Black Truffle',
+        imgSrc: "blacktruffle.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
-    cordyceps: {
+    caterpillarfungus: {
         name: 'Caterpillar Fungus',
+        imgSrc: "caterpillarfungus.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
-    firmmeat: {
+    primecut: {
         name: 'Prime Cut',
+        imgSrc: "primecut.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Obtained by hunting wild animals'
     },
     
-    fattymeat: {
+    fattycut: {
         name: 'Fatty Cut',
+        imgSrc: "fattycut.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Obtained by hunting wild animals'
     },
     
-    salmon: {
+    lakebass: {
         name: 'Lake Bass',
+        imgSrc: "lakebass.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in rivers in Crown and Warren'
     },
     
-    snail: {
+    carrionsnail: {
         name: 'Carrion Snail',
+        imgSrc: "carrionsnail.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Navia (beach)'

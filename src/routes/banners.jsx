@@ -1,23 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CNBanners, Banners } from "../data/en-US/bannerSchedule";
+import { CHARACTERS } from '../data/en-US/characters/characterList';
 import { removeSpace } from "../utils/stringHelper";
 
-type Banner = {
-    name: string;
-    element: string;
-    subtext: string;
-    start: string;
-    end: string;
-    duration: string;
-    week: string;
-};
-
-type BannerListProps = {
-    data: Banner[];
-};
-
-function BannerList({ data }: BannerListProps) {
+function BannerList({ data }) {
     const listItems = data.map(banner =>
         <tr style={{ color: `var(--color-${banner.element})` }}>
             <th>
@@ -40,6 +27,7 @@ function BannerSchedule() {
 
     return (
         <>
+            <img className="bg-img" src={`/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
             <h1>Limited Banner Schedule</h1>
             <p>Click any character's name to go straight to their Simulacrum page.</p>
             <div className="banners-wrapper">

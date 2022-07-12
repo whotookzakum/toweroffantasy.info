@@ -1,5 +1,7 @@
 const spacetimerift = {
     name: "Spacetime Rift",
+    uri: "spacetime-rift",
+    imgSrc: "spacetimerift.png",
     rarity: "SSR",
     chinaOnly: false,
     description: "Launch a proton bomb at the target location, creating a collapse in time-space that sucks targets in for **10** seconds. After 1.5 seconds, the center of the collapse deals damage equal to **39.6** of ATK to targets caught in the area every 0.5 seconds. Cooldown: **100** seconds.",

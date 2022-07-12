@@ -1,6 +1,7 @@
 const lin = {
     name: "Lin",
-    url: "lin",
+    uri: "lin",
+    imgSrc: "lin.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
@@ -100,7 +101,8 @@ const lin = {
 
         gifts: [
             [60, "princeTataFigure", "linyeFigure"],
-            [30, "bunnyDoll", "strangeFragment"],
+            [40, "strangeFragment"],
+            [30, "bunnyDoll"],
             [15, "strangePlant"]
         ]
     },

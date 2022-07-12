@@ -164,8 +164,6 @@
         h2, h1 {
             margin: 0;
             line-height: 1.1;
-        }
-        h1 {
             text-shadow: 3px 3px 0 clr(text, dark);
         }
         h2 {
@@ -185,21 +183,39 @@
             img {
                 filter: drop-shadow($shadow);
             }
+        }
 
-            &.matrices img {
+        &.simulacra {
+            h2::after {
+                content: ' Simulacrum';
+            }
+        }
+
+        &.matrices {
+            h2::after {
+                content: ' Matrix';
+            }
+            img {
                 max-width: 192px;
             }
+        }
 
-            &.relics img {
+        &.relics {
+            h2::after {
+                content: ' Relic';
+            }
+            img {
                 max-width: 128px;
             }
-
-            &.mounts {
-                max-width: unset;
+        }
+        
+        &.mounts {
+            h2::after {
+                content: 'Mount';
+            }
+            img {
                 max-height: unset;
-                img {
-                    max-width: 192px;
-                }
+                max-width: 192px;
             }
         }
     }

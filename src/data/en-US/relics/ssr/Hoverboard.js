@@ -1,5 +1,7 @@
 const hoverboard = {
     name: "Hoverboard",
+    uri: "hoverboard",
+    imgSrc: "hoverboard.png",
     rarity: "SSR",
     chinaOnly: true,
     description: "Use the hoverboard to quickly move on land and quicksand, consuming stamina over time. Cooldown 90 seconds.",

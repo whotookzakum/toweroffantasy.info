@@ -1,6 +1,7 @@
 const samir = {
     name: "Samir",
-    url: "samir",
+    uri: "samir",
+    imgSrc: "samir.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

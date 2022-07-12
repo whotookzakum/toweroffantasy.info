@@ -22,7 +22,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            { item: i.silverperch, amount: 1 }
+            { item: i.silverbass, amount: 1 }
         ]
     },
     {
@@ -33,7 +33,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            { item: i.wheat, amount: 2 }
+            { item: i.homigrain, amount: 2 }
         ]
     },
     {
@@ -44,7 +44,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **10** satiety',
         ingredients: [
-            { item: i.meat, amount: 2 }
+            { item: i.gamemeat, amount: 2 }
         ]
     },
     {
@@ -58,7 +58,7 @@ const recipes = [
             Recovers **10% + 1,500** HP`,
         ingredients: [
             { item: i.lettuce, amount: 2 },
-            { item: i.dressing, amount: 1 }
+            { item: i.saladdressing, amount: 1 }
         ]
     },
     {
@@ -71,7 +71,7 @@ const recipes = [
             `Recovers **5** satiety  
             Recovers **10% + 1,500** HP`,
         ingredients: [
-            { item: i.egg, amount: 2 }
+            { item: i.poultryegg, amount: 2 }
         ]
     },
     {
@@ -108,8 +108,8 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.seaweed, amount: 2 },
-            { item: i.egg, amount: 1 }
+            { item: i.laver, amount: 2 },
+            { item: i.poultryegg, amount: 1 }
         ]
     },
     {
@@ -120,7 +120,7 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            { item: i.wheat, amount: 2 },
+            { item: i.homigrain, amount: 2 },
             { item: i.milk, amount: 1 }
         ]
     },
@@ -134,8 +134,8 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.wheat, amount: 1 },
-            { item: i.drumstick, amount: 1 },
+            { item: i.homigrain, amount: 1 },
+            { item: i.poultrymeat, amount: 1 },
             { item: i.lettuce, amount: 1 }
         ]
     },
@@ -148,7 +148,7 @@ const recipes = [
         effect: 'Recovers **14** satiety',
         ingredients: [
             { item: i.rice, amount: 2 },
-            { item: i.egg, amount: 1 }
+            { item: i.poultryegg, amount: 1 }
         ]
     },
     {
@@ -161,8 +161,8 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.tomato, amount: 2 },
-            { item: i.egg, amount: 2 }
+            { item: i.thornmato, amount: 2 },
+            { item: i.poultryegg, amount: 2 }
         ]
     },
     {
@@ -189,7 +189,7 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.hornedconch, amount: 2 },
+            { item: i.conch, amount: 2 },
             { item: i.lettuce, amount: 1 }
         ]
     },
@@ -202,7 +202,7 @@ const recipes = [
         effect: 'Recovers **14** satiety',
         ingredients: [
             { item: i.potato, amount: 1 },
-            { item: i.meat, amount: 1 }
+            { item: i.gamemeat, amount: 1 }
         ]
     },
     {
@@ -214,7 +214,7 @@ const recipes = [
         effect: 'Recovers **14** satiety',
         ingredients: [
             { item: i.potato, amount: 1 },
-            { item: i.dressing, amount: 1 }
+            { item: i.saladdressing, amount: 1 }
         ]
     },
     {
@@ -227,10 +227,10 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.fruitdrop, amount: 1 },
-            { item: i.tomato, amount: 1 },
+            { item: i.fallenfruit, amount: 1 },
+            { item: i.thornmato, amount: 1 },
             { item: i.lettuce, amount: 1 },
-            { item: i.dressing, amount: 1 }
+            { item: i.saladdressing, amount: 1 }
         ]
     },
     {
@@ -243,8 +243,8 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.drumstick, amount: 2 },
-            { item: i.wheat, amount: 1 }
+            { item: i.poultrymeat, amount: 2 },
+            { item: i.homigrain, amount: 1 }
         ]
     },
     {
@@ -257,9 +257,9 @@ const recipes = [
             `Recovers **300** stamina  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.fruitdrop, amount: 2 },
+            { item: i.fallenfruit, amount: 2 },
             { item: i.honey, amount: 1 },
-            { item: i.sparklingwater, amount: 1 }
+            { item: i.carbonatedwater, amount: 1 }
         ]
     },
     {
@@ -274,7 +274,7 @@ const recipes = [
         ingredients: [
             { item: i.ghostmushroom, amount: 2 },
             { item: i.milk, amount: 1 },
-            { item: i.sparklingwater, amount: 1 }
+            { item: i.carbonatedwater, amount: 1 }
         ]
     },
     {
@@ -296,8 +296,8 @@ const recipes = [
         stars: 1,
         effect: 'Recovers **14** satiety',
         ingredients: [
-            { item: i.wheat, amount: 2 },
-            { item: i.meat, amount: 1 }
+            { item: i.homigrain, amount: 2 },
+            { item: i.gamemeat, amount: 1 }
         ]
     },
     {
@@ -311,7 +311,7 @@ const recipes = [
             Recovers **12% + 3,300** HP`,
         ingredients: [
             { item: i.mushroom, amount: 2 },
-            { item: i.silverperch, amount: 1 }
+            { item: i.silverbass, amount: 1 }
         ]
     },
     {
@@ -324,7 +324,7 @@ const recipes = [
             `Recovers **7** satiety  
             Recovers **12% + 3,300** HP`,
         ingredients: [
-            { item: i.dandelion, amount: 1 },
+            { item: i.dandelionseed, amount: 1 },
             { item: i.mushroom, amount: 2 }
         ]
     },
@@ -338,8 +338,8 @@ const recipes = [
             `Recovers **8** satiety  
             Recovers **13% + 10,000** HP`,
         ingredients: [
-            { item: i.sturgeon, amount: 1 },
-            { item: i.egg, amount: 2 }
+            { item: i.darbyssturgeon, amount: 1 },
+            { item: i.poultryegg, amount: 2 }
         ]
     },
     {
@@ -350,7 +350,7 @@ const recipes = [
         stars: 2,
         effect: 'Recovers **16** satiety',
         ingredients: [
-            { item: i.redwheat, amount: 2 }
+            { item: i.brownrice, amount: 2 }
         ]
     },
     {
@@ -363,7 +363,7 @@ const recipes = [
             `Recovers **400** stamina  
             Recovers **13% + 10,000** HP`,
         ingredients: [
-            { item: i.fireear, amount: 2 },
+            { item: i.firecap, amount: 2 },
             { item: i.lettuce, amount: 2 }
         ]
     },
@@ -456,8 +456,8 @@ const recipes = [
             Ice Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.hornedconch, amount: 3 },
-            { item: i.seaconch, amount: 2 },
+            { item: i.conch, amount: 3 },
+            { item: i.scallop, amount: 2 },
             { item: i.lettuce, amount: 1 }
         ]
     },
@@ -473,8 +473,8 @@ const recipes = [
             Physical Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.wheat, amount: 3 },
-            { item: i.hindleg, amount: 2 },
+            { item: i.homigrain, amount: 3 },
+            { item: i.rearhock, amount: 2 },
             { item: i.lettuce, amount: 1 }
         ]
     },
@@ -488,7 +488,7 @@ const recipes = [
             `Recovers **10** satiety  
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            { item: i.shuttlecrab, amount: 2 },
+            { item: i.portunid, amount: 2 },
             { item: i.lettuce, amount: 2 }
         ]
     },
@@ -506,7 +506,7 @@ const recipes = [
         ingredients: [
             { item: i.strawberry, amount: 2 },
             { item: i.honey, amount: 2 },
-            { item: i.sparklingwater, amount: 1 }
+            { item: i.carbonatedwater, amount: 1 }
         ]
     },
     {
@@ -521,9 +521,9 @@ const recipes = [
             Volt Resistance +170**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.blueberry, amount: 1 },
+            { item: i.smallblueberryjar, amount: 1 },
             { item: i.honey, amount: 2 },
-            { item: i.sparklingwater, amount: 1 }
+            { item: i.carbonatedwater, amount: 1 }
         ]
     },
     {
@@ -539,10 +539,10 @@ const recipes = [
             Duration **900** sec`,
         ingredients: [
             { item: i.broccoli, amount: 1 },
-            { item: i.tomato, amount: 1 },
+            { item: i.thornmato, amount: 1 },
             { item: i.lettuce, amount: 1 },
-            { item: i.egg, amount: 1 },
-            { item: i.dressing, amount: 1 }
+            { item: i.poultryegg, amount: 1 },
+            { item: i.saladdressing, amount: 1 }
         ]
     },
     {
@@ -556,7 +556,7 @@ const recipes = [
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.seaurchin, amount: 2 },
-            { item: i.egg, amount: 2 }
+            { item: i.poultryegg, amount: 2 }
         ]
     },
     {
@@ -571,9 +571,9 @@ const recipes = [
             Volt Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.blueberry, amount: 1 },
+            { item: i.smallblueberryjar, amount: 1 },
             { item: i.strawberry, amount: 1 },
-            { item: i.wheat, amount: 3 }
+            { item: i.homigrain, amount: 3 }
         ]
     },
     {
@@ -588,9 +588,9 @@ const recipes = [
             Flame Attack +45**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.tomato, amount: 4 },
-            { item: i.wheat, amount: 3 },
-            { item: i.egg, amount: 1 }
+            { item: i.thornmato, amount: 4 },
+            { item: i.homigrain, amount: 3 },
+            { item: i.poultryegg, amount: 1 }
         ]
     },
     {
@@ -604,9 +604,9 @@ const recipes = [
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.strawberry, amount: 2 },
-            { item: i.wheat, amount: 1 },
-            { item: i.fruitdrop, amount: 1 },
-            { item: i.egg, amount: 1 }
+            { item: i.homigrain, amount: 1 },
+            { item: i.fallenfruit, amount: 1 },
+            { item: i.poultryegg, amount: 1 }
         ]
     },
     {
@@ -619,7 +619,7 @@ const recipes = [
             `Recovers **10** satiety  
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            { item: i.seaconch, amount: 2 },
+            { item: i.scallop, amount: 2 },
             { item: i.lettuce, amount: 3 }
         ]
     },
@@ -633,7 +633,7 @@ const recipes = [
             `Recovers **500** stamina  
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            { item: i.hindleg, amount: 2 }
+            { item: i.rearhock, amount: 2 }
         ]
     },
     {
@@ -646,8 +646,8 @@ const recipes = [
             `Recovers **10** satiety  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            { item: i.spinach, amount: 2 },
-            { item: i.redwheat, amount: 2 }
+            { item: i.fiddlehead, amount: 2 },
+            { item: i.brownrice, amount: 2 }
         ]
     },
     {
@@ -661,7 +661,7 @@ const recipes = [
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
-            { item: i.redwheat, amount: 2 }
+            { item: i.brownrice, amount: 2 }
         ]
     },
     {
@@ -675,8 +675,8 @@ const recipes = [
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.balloonfruit, amount: 2 },
-            { item: i.tomato, amount: 2 },
-            { item: i.dressing, amount: 1 }
+            { item: i.thornmato, amount: 2 },
+            { item: i.saladdressing, amount: 1 }
         ]
     },
     {
@@ -689,7 +689,7 @@ const recipes = [
             `Recovers **10** satiety  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            { item: i.spinach, amount: 2 },
+            { item: i.fiddlehead, amount: 2 },
             { item: i.lettuce, amount: 4 }
         ]
     },
@@ -705,7 +705,7 @@ const recipes = [
             Volt Resistance +290**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.thundereel, amount: 1 }
+            { item: i.electriceel, amount: 1 }
         ]
     },
     {
@@ -720,8 +720,8 @@ const recipes = [
             Volt Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.thundereel, amount: 1 },
-            { item: i.fireear, amount: 2 }
+            { item: i.electriceel, amount: 1 },
+            { item: i.firecap, amount: 2 }
         ]
     },
     {
@@ -752,7 +752,7 @@ const recipes = [
         ingredients: [
             { item: i.pomegranate, amount: 2 },
             { item: i.honey, amount: 2 },
-            { item: i.sparklingwater, amount: 1 }
+            { item: i.carbonatedwater, amount: 1 }
         ]
     },
     {
@@ -784,7 +784,7 @@ const recipes = [
             Flame Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.dragonfruit, amount: 2 },
+            { item: i.firedragonfruit, amount: 2 },
             { item: i.honey, amount: 2 }
         ]
     },
@@ -815,7 +815,7 @@ const recipes = [
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.barnacle, amount: 1 },
-            { item: i.redwheat, amount: 2 },
+            { item: i.brownrice, amount: 2 },
             { item: i.onion, amount: 1 }
         ]
     },
@@ -831,7 +831,7 @@ const recipes = [
             Ice Attack +80**  
             Duration **900** sec`,
         ingredients: [
-            { item: i.snowblossom, amount: 1 },
+            { item: i.snowazalea, amount: 1 },
             { item: i.milk, amount: 1 },
             { item: i.honey, amount: 2 }
         ]
@@ -863,7 +863,7 @@ const recipes = [
         ingredients: [
             { item: i.caviar, amount: 1 },
             { item: i.rice, amount: 2 },
-            { item: i.seaweed, amount: 2 }
+            { item: i.laver, amount: 2 }
         ]
     },
     {
@@ -911,7 +911,7 @@ const recipes = [
             Duration **900** sec`,
         ingredients: [
             { item: i.desertmelon, amount: 2 },
-            { item: i.dressing, amount: 2 }
+            { item: i.saladdressing, amount: 2 }
         ]
     },
     {
@@ -967,7 +967,7 @@ const recipes = [
             `Recovers **10** satiety 
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            { item: i.spinach, amount: 2 },
+            { item: i.fiddlehead, amount: 2 },
             { item: i.beetroot, amount: 2 }
         ]
     },
@@ -985,7 +985,7 @@ const recipes = [
         ingredients: [
             { item: i.desertmelon, amount: 2 },
             { item: i.honey, amount: 1 },
-            { item: i.wheat, amount: 2 }
+            { item: i.homigrain, amount: 2 }
         ]
     },
     {
@@ -1013,9 +1013,9 @@ const recipes = [
             `Recovers **10** satiety 
             Recovers **15% + 20,000** HP`,
         ingredients: [
-            { item: i.seaconch, amount: 2 },
+            { item: i.scallop, amount: 2 },
             { item: i.corn, amount: 1 },
-            { item: i.wheat, amount: 2 }
+            { item: i.homigrain, amount: 2 }
         ]
     },
     {
@@ -1029,7 +1029,7 @@ const recipes = [
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
-            { item: i.wheat, amount: 3 }
+            { item: i.homigrain, amount: 3 }
         ]
     },
     {
@@ -1046,7 +1046,7 @@ const recipes = [
         ingredients: [
             { item: i.pepper, amount: 1 },
             { item: i.fleshytail, amount: 1 },
-            { item: i.egg, amount: 1 },
+            { item: i.poultryegg, amount: 1 },
             { item: i.rice, amount: 2 }
         ]
     },
@@ -1101,7 +1101,7 @@ const recipes = [
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.fishleaf, amount: 2 },
-            { item: i.egg, amount: 3 }
+            { item: i.poultryegg, amount: 3 }
         ]
     },
     {
@@ -1114,7 +1114,7 @@ const recipes = [
             `Recovers **20** satiety  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            { item: i.nut, amount: 1 },
+            { item: i.hazelnut, amount: 1 },
             { item: i.pinecone, amount: 2 },
             { item: i.honey, amount: 2 }
         ]
@@ -1131,8 +1131,8 @@ const recipes = [
             Volt Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.birdpotato, amount: 1 },
-            { item: i.redwheat, amount: 3 }
+            { item: i.purpleyam, amount: 1 },
+            { item: i.brownrice, amount: 3 }
         ]
     },
     {
@@ -1168,7 +1168,7 @@ const recipes = [
     },
     {
         id: 59,
-        name: 'Catepillar Fungus Noodles',
+        name: 'Caterpillar Fungus Noodles',
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1176,8 +1176,8 @@ const recipes = [
             `Recovers **20** satiety  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            { item: i.cordyceps, amount: 1 },
-            { item: i.redwheat, amount: 3 }
+            { item: i.caterpillarfungus, amount: 1 },
+            { item: i.brownrice, amount: 3 }
         ]
     },
     {
@@ -1192,7 +1192,7 @@ const recipes = [
             Volt Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.firmmeat, amount: 1 }
+            { item: i.primecut, amount: 1 }
         ]
     },
     {
@@ -1207,8 +1207,8 @@ const recipes = [
             Flame Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.firmmeat, amount: 1 },
-            { item: i.fireear, amount: 3 }
+            { item: i.primecut, amount: 1 },
+            { item: i.firecap, amount: 3 }
         ]
     },
     {
@@ -1223,7 +1223,7 @@ const recipes = [
             Ice Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.fattymeat, amount: 1 }
+            { item: i.fattycut, amount: 1 }
         ]
     },
     {
@@ -1238,9 +1238,9 @@ const recipes = [
             Flame Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.fattymeat, amount: 1 },
-            { item: i.redwheat, amount: 2 },
-            { item: i.egg, amount: 2 }
+            { item: i.fattycut, amount: 1 },
+            { item: i.brownrice, amount: 2 },
+            { item: i.poultryegg, amount: 2 }
         ]
     },
     {
@@ -1255,7 +1255,7 @@ const recipes = [
             Ice Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.salmon, amount: 1 }
+            { item: i.lakebass, amount: 1 }
         ]
     },
     {
@@ -1270,7 +1270,7 @@ const recipes = [
             Physical Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.snail, amount: 1 },
+            { item: i.carrionsnail, amount: 1 },
             { item: i.rice, amount: 2 }
         ]
     },
@@ -1329,7 +1329,7 @@ const recipes = [
             Duration **1200** sec`,
         ingredients: [
             { item: i.rosepetals, amount: 1 },
-            { item: i.redwheat, amount: 2 }
+            { item: i.brownrice, amount: 2 }
         ]
     },
     {
@@ -1345,8 +1345,8 @@ const recipes = [
             Duration **1200** sec`,
         ingredients: [
             { item: i.radish, amount: 1 },
-            { item: i.drumstick, amount: 1 },
-            { item: i.wheat, amount: 2 }
+            { item: i.poultrymeat, amount: 1 },
+            { item: i.homigrain, amount: 2 }
         ]
     },
     {
@@ -1361,9 +1361,9 @@ const recipes = [
             **Flame Attack +150**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.fattymeat, amount: 1 },
+            { item: i.fattycut, amount: 1 },
             { item: i.pepper, amount: 1 },
-            { item: i.wheat, amount: 2 }
+            { item: i.homigrain, amount: 2 }
         ]
     },
     {
@@ -1378,7 +1378,7 @@ const recipes = [
             **Flame Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
-            { item: i.firmmeat, amount: 1 },
+            { item: i.primecut, amount: 1 },
             { item: i.pepper, amount: 1 },
             { item: i.fleshytail, amount: 1 }
         ]

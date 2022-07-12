@@ -1,12 +1,8 @@
 import ReactMarkdown from "react-markdown";
-import { removeSpace } from "../../utils/stringHelper";
 import CNTag from "../CNTag";
 
 export function MatrixModal({ item }) {
     const matrix = item.matrix;
-    let rarityColor = { color: "var(--color-tier-s)" };
-    if (item.rarity === "SR") rarityColor = { color: "var(--color-tier-a)" };
-    else if (item.rarity === "R") rarityColor = { color: "var(--color-tier-b)" };
 
     const setEffects = Object.entries(matrix).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
@@ -48,16 +44,6 @@ export function MatrixModal({ item }) {
 
     return (
         <>
-            <header>
-                <div className="header-img-wrapper matrices">
-                    <img src={`/images/matrices/${removeSpace(item.name)}.png`} alt="" />
-                </div>
-                <div>
-                    <h1>{item.name}</h1>
-                    <h2><i style={rarityColor}>{item.rarity}</i> Matrix</h2>
-                </div>
-            </header>
-
             <div className="modal-body">
                 {item.chinaOnly && <CNTag name={item.name} />}
                 {setEffects}

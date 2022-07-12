@@ -1,5 +1,7 @@
 const frostbot = {
     name:"Frost Bot",
+    uri: "frost-bot",
+    imgSrc: "frostbot.png",
     rarity:"SR",
     chinaOnly: false,
     matrix: {

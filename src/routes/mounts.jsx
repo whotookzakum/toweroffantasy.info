@@ -15,7 +15,7 @@ function Mounts() {
             
             <section>
                 <h2>Mount List</h2>
-                <ModalMenu type="mounts" listContent={MOUNTS} />
+                <ModalMenu list={MOUNTS} />
             </section>
 
         </>

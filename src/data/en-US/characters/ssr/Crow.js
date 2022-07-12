@@ -1,6 +1,7 @@
 const crow = {
     name: "Crow",
-    url: "crow",
+    uri: "crow",
+    imgSrc: "crow.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

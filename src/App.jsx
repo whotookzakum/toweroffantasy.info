@@ -88,7 +88,7 @@ export default function Main() {
                         element={
                             <Page title={getItemNameWithSpaces(pageTitle, CHARACTERS)} description={`${getItemNameWithSpaces(pageTitle, CHARACTERS)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="simulacra" />
+                                <Modal list={CHARACTERS} />
                             </Page>
                         }
                     />
@@ -106,7 +106,7 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, MATRICES)} Matrix`} description={`${getItemNameWithSpaces(pageTitle, MATRICES)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="matrices" />
+                                <Modal list={MATRICES} />
                             </Page>
                         }
                     />
@@ -124,7 +124,7 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, RELICS)}`} description={`${getItemNameWithSpaces(pageTitle, RELICS)} effects and advancements in Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="relics" />
+                                <Modal list={RELICS} />
                             </Page>
                         }
                     />
@@ -149,10 +149,11 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, MOUNTS)}`} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="mounts" />
+                                <Modal list={MOUNTS} />
                             </Page>
                         }
                     />
+                    
                     <Route
                         path="/guides"
                         element={

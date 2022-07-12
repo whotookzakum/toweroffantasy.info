@@ -1,6 +1,7 @@
 const king = {
     name: "KING",
-    url: "king",
+    uri: "king",
+    imgSrc: "king.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
