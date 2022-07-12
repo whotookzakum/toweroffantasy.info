@@ -1,5 +1,6 @@
 const shiro = {
     name: "Shiro",
+    url: "shiro",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

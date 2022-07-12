@@ -1,5 +1,6 @@
 const baiyuekui = {
     name: "Baiyuekui",
+    url: "baiyuekui",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

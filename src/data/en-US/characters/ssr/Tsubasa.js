@@ -1,5 +1,6 @@
 const tsubasa = {
     name: "Tsubasa",
+    url: "tsubasa",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

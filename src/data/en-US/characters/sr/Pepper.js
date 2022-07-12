@@ -1,5 +1,6 @@
 const pepper = {
     name: "Pepper",
+    url: "pepper",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

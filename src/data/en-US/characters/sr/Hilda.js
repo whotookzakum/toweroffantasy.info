@@ -1,5 +1,6 @@
 const hilda = {
     name: "Hilda",
+    url: "hilda",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

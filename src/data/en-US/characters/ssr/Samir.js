@@ -1,5 +1,6 @@
 const samir = {
     name: "Samir",
+    url: "samir",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

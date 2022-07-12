@@ -1,4 +1,4 @@
-import { ModalMenu } from "../components/Modal";
+import { ModalMenu } from "../components/Modal/Modal";
 import { MOUNTS } from "../data/en-US/mounts/mountList";
 
 

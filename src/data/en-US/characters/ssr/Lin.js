@@ -1,5 +1,6 @@
 const lin = {
     name: "Lin",
+    url: "lin",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

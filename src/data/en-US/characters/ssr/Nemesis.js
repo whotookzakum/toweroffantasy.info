@@ -1,5 +1,6 @@
 const nemesis = {
     name: "Nemesis",
+    url: "nemesis",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

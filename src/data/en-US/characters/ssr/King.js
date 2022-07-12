@@ -1,5 +1,6 @@
 const king = {
     name: "KING",
+    url: "king",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

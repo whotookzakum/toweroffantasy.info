@@ -1,5 +1,6 @@
 const ene = {
     name: "Ene",
+    url: "ene",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

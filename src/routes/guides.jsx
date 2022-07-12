@@ -1,4 +1,4 @@
-import { ModalMenu } from "../components/Modal";
+import { ModalMenu } from "../components/Modal/Modal";
 import { GUIDES } from "../data/en-US/guides/guideList";
 
 

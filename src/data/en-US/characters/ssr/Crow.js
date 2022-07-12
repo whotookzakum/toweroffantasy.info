@@ -1,5 +1,6 @@
 const crow = {
     name: "Crow",
+    url: "crow",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

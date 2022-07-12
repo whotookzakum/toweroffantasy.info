@@ -1,5 +1,6 @@
 const echo = {
     name: "Echo",
+    url: "echo",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

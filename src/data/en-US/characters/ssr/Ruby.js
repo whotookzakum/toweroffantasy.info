@@ -1,5 +1,6 @@
 const ruby = {
     name: "Ruby",
+    url: "ruby",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

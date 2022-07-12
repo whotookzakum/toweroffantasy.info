@@ -1,6 +1,7 @@
 const saki = {
     // 流泉彻心
     name: "Saki Fuwa",
+    url: "sakifuwa",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

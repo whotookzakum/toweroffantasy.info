@@ -1,5 +1,6 @@
 const frigg = {
     name: "Frigg",
+    url: "frigg",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

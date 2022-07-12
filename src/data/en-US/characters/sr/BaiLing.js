@@ -1,5 +1,6 @@
 const bailing = {
     name: "Bai Ling",
+    url: "bailing",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

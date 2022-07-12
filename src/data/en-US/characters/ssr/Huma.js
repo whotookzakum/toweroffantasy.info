@@ -1,5 +1,6 @@
 const huma = {
     name: "Huma",
+    url: "huma",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

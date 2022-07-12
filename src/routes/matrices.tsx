@@ -1,4 +1,4 @@
-import { ModalMenu, Modal } from "../components/Modal";
+import { ModalMenu } from "../components/Modal/Modal";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { removeSpace } from "../utils/stringHelper";
 

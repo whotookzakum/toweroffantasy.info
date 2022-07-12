@@ -1,5 +1,6 @@
 const zero = {
     name: "Zero",
+    url: "zero",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

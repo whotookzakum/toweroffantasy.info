@@ -1,5 +1,6 @@
 const cobalt = {
     name: "Cobalt-B",
+    url: "cobalt-b",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

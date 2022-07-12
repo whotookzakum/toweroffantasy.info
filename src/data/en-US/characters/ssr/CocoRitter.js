@@ -1,5 +1,6 @@
 const coco = {
     name: "Coco Ritter",
+    url: "cocoritter",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
