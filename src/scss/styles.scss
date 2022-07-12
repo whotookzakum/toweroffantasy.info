@@ -1,0 +1,491 @@
+@use "./base";
+@use "./components";
+@use "./layout";
+
+
+.tooltip {
+    font-size: 1.6rem;
+}
+
+.popover {
+    font-size: 1.6rem;
+    z-index: 70000;
+    filter: drop-shadow(var(--shadow-0-0-4));
+    max-width: fit-content;
+    background-color: #282633;
+    border-radius: 0.75rem;
+}
+
+.popover-arrow::after {
+    border-bottom-color: #282633 !important;
+}
+
+.fa-star,
+.fa-1,
+.fa-2,
+.fa-3,
+.fa-4,
+.fa-5,
+.fa-6 {
+    color: gold;
+}
+
+.modal-section-header {
+    font-weight: bold;
+    color: gold;
+    font-size: 3.5rem;
+    font-family: "Chakra Petch", sans-serif;
+    filter: drop-shadow(var(--shadow-0-0-4));
+    margin: 0;
+}
+
+.page-header {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.page-info strong {
+    color: deepskyblue;
+
+}
+
+.tooltip {
+    position: fixed;
+    z-index: 90000;
+}
+
+.tooltip-inner {
+    background-color: #282633;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #282633;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #282633;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #282633;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #282633;
+}
+
+/* NAV RELATED
+=============================================== */
+
+
+
+
+
+
+/* MIMIC PAGE
+=============================================== */
+
+/* Mimic list UI */
+
+
+#modal-menu {
+    transition: opacity 0.5s ease;
+}
+
+#modal-menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+    row-gap: 1rem;
+}
+
+.modal-menu-item h3 {
+    font-size: 1.7rem;
+}
+
+.modal-menu-item:hover {
+    cursor: pointer;
+}
+
+.mimic-button {
+    position: relative;
+    display: inline-block;
+    transition: color 125ms ease-in-out;
+    text-align: center;
+    filter: drop-shadow(var(--shadow-0-0-4));
+}
+
+.mimic-button h3 {
+    margin-top: 0.5rem;
+}
+
+.mimic-button .cn-flag,
+.chip-button .cn-flag,
+.gadget-button .cn-flag {
+    position: absolute;
+    left: 0;
+}
+
+.mount-wrapper .cn-flag {
+    vertical-align: middle;
+}
+
+
+
+.mimic-button::after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px var(--color-turquoise);
+    transform: scaleX(0);
+    transition: transform 125ms ease-in-out;
+}
+
+.mimic-button:hover {
+    color: var(--color-turquoise);
+}
+
+.mimic-button:hover:after {
+    transform: scaleX(1);
+}
+
+.modal-menu-category {
+    width: fit-content;
+    padding: 0 1.5rem;
+    margin: 1rem 2rem;
+    box-shadow: 0 2px 2px var(--color-shadows);
+}
+
+/* Mimic Modal contents */
+.weapon-info-wrapper .fa-solid {
+    font-size: 2rem;
+}
+
+.traits span {
+    margin-bottom: 3px;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    display: block;
+    width: fit-content;
+}
+
+.traits {
+    width: 626px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.traits-img {
+    width: 500px;
+}
+
+#wep-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.wep-basic-info * {
+    color: var(--color-text);
+}
+
+.wep-basic-info h3 {
+    font-weight: 500;
+}
+
+.tier {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+    background-color: #3b3e45;
+    text-transform: uppercase;
+    transform: skew(-9deg, 0deg);
+    vertical-align: middle;
+}
+
+.tier-c {
+    color: var(--color-tier-c);
+}
+
+.tier-b {
+    color: var(--color-tier-b);
+}
+
+.tier-a {
+    color: var(--color-tier-a);
+}
+
+.tier-s,
+.tier-ss {
+    color: var(--color-tier-s);
+}
+
+#energy-charge,
+#shield-break {
+    font-weight: bold;
+}
+
+#energy-charge-tier,
+#shield-break-tier {
+    width: 36px;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+.star-list .nav-item i {
+    color: gray;
+}
+
+.star-list .nav-item .active i,
+.star-list .nav-item:hover .active i {
+    color: gold;
+}
+
+.star-list .nav-item:hover i {
+    color: var(--color-text);
+}
+
+#star-all i {
+    font-size: inherit;
+}
+
+.btn-minimal {
+    color: gray;
+    font-weight: bold;
+    margin-bottom: -2px;
+}
+
+.btn-minimal:hover {
+    color: var(--color-text);
+}
+
+.btn-minimal:after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px var(--color-text);
+    transform: scaleX(0);
+    transition: transform 125ms ease-in-out;
+}
+
+.btn-minimal:hover:after {
+    transform: scaleX(1);
+}
+
+#breakthrough-mats .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*
+    background-color: #282633;
+    padding: 10px 0px;
+    border-radius: 0.75rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    box-shadow: var(--shadow-0-0-4);
+*/
+}
+
+#breakthrough-mats .item-wrapper-with-bg {
+    margin: 0 0.4rem;
+    filter: none;
+    box-shadow: 0 0 4px 2px var(--color-shadows);
+}
+
+#breakthrough-mats img {
+    width: 64px;
+}
+
+#chip-img,
+.chip-img {
+    width: 128px;
+    height: 128px;
+    object-fit: none;
+}
+
+.chip-recommended {
+    position: relative;
+    width: 140px;
+    height: 128px;
+    margin: 0 4px;
+}
+
+.badge {
+    position: absolute;
+    color: white;
+    font-family: "Chakra Petch";
+    padding: 0;
+}
+
+.chip-recommended .badge {
+    font-size: 2.8rem;
+    right: 0;
+    bottom: 0.3rem;
+}
+
+#combat-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+#combat-text ul li {
+    margin: 15px 0;
+}
+
+#combat-text b {
+    color: var(--color-lightred);
+}
+
+.submitted-by {
+    text-align: right;
+    color: gray;
+    font-style: italic;
+}
+
+#gifts-wrapper .item-wrapper-with-bg {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+#gifts-wrapper img {
+    width: 64px;
+}
+
+#gifts-wrapper .badge {
+    z-index: 4;
+    font-size: 2rem;
+    line-height: 20px;
+    right: 2px;
+    bottom: 2px;
+    text-shadow: var(--shadow-0-0-4);
+}
+
+.gift-category {
+    text-transform: capitalize;
+    background-color: pink;
+    padding: 0.65rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-0-0-4);
+}
+
+
+
+
+
+/* COLORS
+=============================================== */
+
+.bg-rarity-1 {
+    background: radial-gradient(#a7bacb, 30%, #9caec6);
+}
+
+.bg-rarity-2 {
+    background: radial-gradient(#68c5b2, 30%, #5aae9c);
+}
+
+.bg-rarity-3 {
+    background: radial-gradient(#70b3e7, 30%, #65a0cd);
+}
+
+.bg-rarity-4 {
+    background: radial-gradient(#d3c0de, 30%, #c2abd0);
+}
+
+.bg-rarity-5 {
+    background: radial-gradient(#efdbad, 30%, #e9d197);
+}
+
+.item-wrapper,
+.item-wrapper-with-bg {
+    position: relative;
+    width: fit-content;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow-0-0-4);
+}
+
+.item-wrapper-with-bg::before {
+    content: "";
+    // background: url(/images/itembg.svg) no-repeat center;
+    background-size: contain;
+    opacity: 0.25;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-wrapper img,
+.item-wrapper-with-bg img {
+    position: relative;
+    z-index: 3;
+}
+
+.text-green {
+    color: var(--color-green) !important;
+}
+
+.text-orange {
+    color: var(--color-orange) !important;
+}
+
+
+
+.modal-content strong {
+    color: var(--color-blue);
+}
+
+.modal-content article {
+    margin-bottom: 3rem;
+}
+
+article section {
+    padding: 1.5rem 0;
+}
+
+.affinity-wrapper strong {
+    color: var(--color-green);
+}
+
+#food-wrapper strong {
+    color: var(--color-rarity-2-text);
+}
+
+
+
+
+.tag {
+    text-transform: uppercase;
+    background-color: gold;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.1em 0.3em;
+    font-weight: bold;
+    border-radius: 0.2em;
+}
+
+.tag-new {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+}
+
+.chip-button .tag-new {
+    top: 65%;
+}
+
+.tag-recommended {
+    color: white;
+    background-color: purple;
+}
+
+.tag-cn {
+    position: absolute;
+    background-color: #de2910;
+    color: #ffde02;
+}

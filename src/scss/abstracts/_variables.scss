@@ -1,0 +1,6 @@
+@use "./colors" as *;
+
+$sidenav-width: 250px;
+$container-width: 1000px;
+$spacing: clamp(1rem, calc(3vw + 0.5rem), 3rem);
+$shadow: 0 0 4px clr(shadow);

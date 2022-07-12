@@ -1,0 +1,162 @@
+@use "../abstracts" as *;
+
+.filters {
+    background-color: clr(container, light);
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: $shadow;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    li {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            margin: 0;
+            font-weight: normal;
+            color: clr(text, gray);
+        }
+    }
+
+    .flex {
+        align-items: center;
+        gap: 0.25rem;
+        height: 32px;
+    }
+
+    .rarity-1,
+    .rarity-2,
+    .rarity-3,
+    .rarity-4,
+    .rarity-5,
+    img {
+        width: 16px;
+        aspect-ratio: 1/1;
+        border-radius: 3px;
+        box-shadow: $shadow;
+        padding: 0.2rem;
+    }
+    img {
+        width: 32px;
+        box-shadow: none;
+    }
+    input {
+        display: none;
+        &:checked + label {
+            filter: brightness(1);
+            background-color: clr(text, dark);
+        }
+    }
+    label {
+        filter: brightness(0.6);
+        transition: filter 0.2s ease, background-color 0.2s ease;
+        cursor: pointer;
+        
+        &:hover {
+            filter: brightness(1);
+            background-color: clr(text, dark);
+        }
+    }
+}
+
+
+.food-list {
+    text-align: left;
+    box-shadow: $shadow;
+
+    strong {
+        color: clr(text, green);
+    }
+
+    thead { 
+        background-color: clr(container, dark);
+        border-bottom: 2px solid clr(text, dark);
+        color: clr(tier, s);
+        h5 {
+            margin: 0.5rem;
+        }
+    }
+    
+    tbody tr {
+        padding: 1rem; 
+        background-color: clr(container, light);
+    }
+    tbody tr:nth-child(even) { 
+        background-color: clr(container, dark);
+    }
+    
+    tr {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        & > td, & > th {
+            width: 100%;
+            flex: 1;
+            min-width: 220px;
+        }
+    }
+
+    .col-dish,
+    .ingredient {
+        display: flex;
+        align-items: center;
+    }
+
+    .col-dish {
+        gap: 1rem;
+        text-transform: none;
+        
+        .item-frame {
+            min-width: 80px;
+            box-shadow: $shadow;
+        }
+        .item-frame::before {
+            background: none;
+        }
+        img {
+            min-width: 91px;
+        }
+        abbr {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+    }
+
+    .ingredient-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+        gap: 0.5rem;
+    }
+
+    .ingredient {
+        gap: 0.5rem; 
+        
+        .item-frame {
+            width: 43px;
+            min-width: 43px;
+            box-shadow: $shadow;
+            position: relative;
+
+            h3 {
+                position: absolute;
+                z-index: 30;
+                align-self: flex-start;
+                right: 3px;
+                top: -1px;
+                color: white;
+                text-shadow: $shadow;
+            }
+        }
+        
+        img {
+            width: 52px;
+            min-width: 52px;
+        }
+    }
+}

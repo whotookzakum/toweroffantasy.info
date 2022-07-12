@@ -1,0 +1,156 @@
+@use "../abstracts" as *;
+
+body {
+    background-color: clr(bg);
+    color: clr(text);
+    font-family: "Poppins", "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+code {
+    color: clr(text, pink);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    text-align: center;
+
+    th,
+    td {
+        padding: .625em;
+    }
+
+    th {
+        text-transform: uppercase;
+    }
+}
+
+// @media screen and (max-width: 600px) {
+//     table {
+//         border: 0;
+//     }
+
+//     table caption {
+//         font-size: 1.3em;
+//     }
+
+//     table thead {
+//         border: none;
+//         clip: rect(0 0 0 0);
+//         height: 1px;
+//         margin: -1px;
+//         overflow: hidden;
+//         padding: 0;
+//         position: absolute;
+//         width: 1px;
+//     }
+
+//     table tr {
+//         display: block;
+//         margin-bottom: .625em;
+//     }
+
+//     table td {
+//         border-bottom: 1px solid #ddd;
+//         display: block;
+//         font-size: .8em;
+//         text-align: right;
+//     }
+
+//     table td::before {
+//         /*
+//       * aria-label has no advantage, it won't be read inside a table
+//       content: attr(aria-label);
+//       */
+//         content: attr(data-label);
+//         float: left;
+//         font-weight: bold;
+//         text-transform: uppercase;
+//     }
+
+//     table td:last-child {
+//         border-bottom: 0;
+//     }
+// }
+
+kbd {
+    --key-color: rgb(49, 49, 70);
+    --key-size: 2em;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--key-size);
+    height: var(--key-size);
+    padding: 0 0.6em 0.12em 0.6em;
+    background-color: var(--key-color);
+    background-image: radial-gradient(var(--key-color), transparent), linear-gradient(180deg, rgba(0, 0, 0, .2), transparent);
+    border: .1em solid #13141e;
+    border-radius: .26em;
+    box-shadow: var(--tw-shadow), inset 0 .1em 0 var(--key-color), inset 0 -.12em .08em .1em rgba(0, 0, 0, .3);
+    font-family: inherit;
+    font-weight: 800;
+    line-height: 1;
+    color: #48adbd;
+    text-shadow: $shadow;
+}
+
+details {
+    box-shadow: $shadow;
+
+    summary {
+        background-color: clr(container, blue);
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(1.2);
+        }
+
+        h4 {
+            display: inline-block;
+            text-transform: capitalize;
+        }
+    }
+
+    .details-content {
+        background-color: clr(container, light);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+iframe {
+    display: block;
+    border: 0;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+blockquote {
+    color: clr(text, gray);
+    font-style: italic;
+    margin: 0.5rem 0;
+    border-left: 3px solid clr(text, turquoise);
+    padding: 1rem;
+    background-color: clr(container, lighter);
+    box-shadow: $shadow;
+}
