@@ -1,25 +1,27 @@
 import ReactMarkdown from "react-markdown";
 import dishes from "../data/en-US/food/dishes";
-import { removeSpace } from "../utils/stringHelper";
 
 function Food() {
-    const foodList = dishes.map(dish => {
-        const recipe = dish.ingredients.map(ingredient =>
+    const getRecipe = (dish) => {
+        return dish.ingredients.map(ingredient =>
             <li className="ingredient">
                 <div className={`item-frame rarity-${ingredient.item.rarity}`}>
-                    <img src={`/images/food/ingredients/${removeSpace(ingredient.item.name)}.png`} alt={ingredient.item.name} />
+                    <img src={`/images/food/ingredients/${ingredient.item.imgSrc}`} alt={ingredient.item.name} />
                     <h3>{ingredient.amount}</h3>
                 </div>
                 {ingredient.item.name}
             </li>
         );
+    }
 
+    const foodList = dishes.map(dish => {
+        const recipe = getRecipe(dish);
         return (
             <tr>
                 <th className="col-dish">
                     <div className={`item-frame rarity-${dish.rarity}`}>
                         {dish.chinaOnly && <abbr title="China Exclusive" />}
-                        <img src={`/images/food/dishes/${removeSpace(dish.name)}.png`} alt={dish.name} />
+                        <img src={`/images/food/dishes/${dish.imgSrc}`} alt={dish.name} />
                     </div>
                     <span>{dish.name}</span>
                 </th>
@@ -41,7 +43,7 @@ function Food() {
                 </p>
             </header>
             <section>
-                <menu className="filters" style={{display: 'none'}}>
+                <menu className="filters" style={{ display: 'none' }}>
                     <li>
                         <h4>Rarity</h4>
                         <div className="flex">

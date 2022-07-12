@@ -1,5 +1,7 @@
 const bailing = {
     name: "Bai Ling",
+    uri: "bai-ling",
+    imgSrc: "bailing.png",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

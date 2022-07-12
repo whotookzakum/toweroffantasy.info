@@ -1,5 +1,6 @@
 export const simulacra = {
     name: "Simulacra",
+    uri: "simulacra",
     type: "systems",
     author: ["Zakum#3080"],
     text:

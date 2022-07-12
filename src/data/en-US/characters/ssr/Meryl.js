@@ -1,5 +1,7 @@
 const meryl = {
     name: "Meryl",
+    uri: "meryl",
+    imgSrc: "meryl.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

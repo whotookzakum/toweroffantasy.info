@@ -1,5 +1,7 @@
 const tsubasa = {
     name: "Tsubasa",
+    uri: "tsubasa",
+    imgSrc: "tsubasa.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
@@ -79,6 +81,7 @@ const tsubasa = {
             ]
         },
         recommendedMatrix: {
+            set4: ["sakifuwa"],
             set2: ["samir", "claudia", "crow"],
             set3: ["sobek", "pepper"]
         }

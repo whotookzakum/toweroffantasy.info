@@ -1,5 +1,7 @@
 const nemesis = {
     name: "Nemesis",
+    uri: "nemesis",
+    imgSrc: "nemesis.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

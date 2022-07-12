@@ -1,5 +1,7 @@
 const zero = {
     name: "Zero",
+    uri: "zero",
+    imgSrc: "zero.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

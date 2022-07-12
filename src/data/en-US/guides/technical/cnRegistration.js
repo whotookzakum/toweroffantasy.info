@@ -1,5 +1,6 @@
 export const cnRegistration = {
     name: "Registration Guide",
+    uri: "cn-registration",
     chinaOnly: true,
     type: "technical",
     author: ["Pyrosu#6969", "Zakum#3080", "👑킹젖가슴드래곤👑#5969"],

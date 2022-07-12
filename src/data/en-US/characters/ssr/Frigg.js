@@ -1,5 +1,7 @@
 const frigg = {
     name: "Frigg",
+    uri: "frigg",
+    imgSrc: "frigg.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {
@@ -32,7 +34,7 @@ const frigg = {
         abilities: [],
         recommendedMatrix: {
             set2: ["samir", "crow"],
-            set4: ["samir", "frigg"],
+            set4: ["samir", "frigg", "sakifuwa"],
             set3: ["sobek"]
         }
     },

@@ -1,5 +1,6 @@
 export const cnTopUp = { 
     name: "Top-Up Guide",
+    uri: "top-up-guide",
     chinaOnly: true, 
     type: "technical",
     author: ["Pyrosu#6969"],

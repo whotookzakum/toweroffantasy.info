@@ -1,5 +1,7 @@
 const omniumhandcannon = {
     name: "Omnium Handcannon",
+    uri: "omnium-handcannon",
+    imgSrc: "omniumhandcannon.png",
     rarity: "SR",
     chinaOnly: false,
     description: "Launch **1** Omnium bomb at target location and create a scalable energy pillar upon striking the ground or water surface for up to **20** seconds. Cooldown: **50** seconds. Maximum **2** charges.",

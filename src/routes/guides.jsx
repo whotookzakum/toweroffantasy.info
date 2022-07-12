@@ -1,4 +1,4 @@
-import { ModalMenu } from "../components/Modal";
+import { ModalMenu } from "../components/Modal/Modal";
 import { GUIDES } from "../data/en-US/guides/guideList";
 
 
@@ -16,27 +16,27 @@ function Guides() {
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">General</h2>
                 <p>Guides that provide general information about the game.</p>
-                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "general")} />
+                <ModalMenu list={GUIDES} filter="type" target="general" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">Game Systems</h2>
                 <p>These guides explain core game mechanics.</p>
-                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "systems")} />
+                <ModalMenu list={GUIDES} filter="type" target="systems" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">Strategy</h2>
                 <p>Contains information for minmaxing and optimizations on a specific topic. </p>
-                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "strategy")} />
+                <ModalMenu list={GUIDES} filter="type" target="strategy" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">Technical</h2>
                 <p>For information outside of gameplay.</p>
-                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "technical")} />
+                <ModalMenu list={GUIDES} filter="type" target="technical" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">Referential</h2>
                 <p>Data that is mainly meant for reference purposes.</p>
-                <ModalMenu type="guides" listContent={GUIDES.filter(guide => guide.type === "reference")} />
+                <ModalMenu list={GUIDES} filter="type" target="reference" />
             </section>
         </>
     );

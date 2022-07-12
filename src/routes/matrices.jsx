@@ -1,4 +1,4 @@
-import { ModalMenu, Modal } from "../components/Modal";
+import { ModalMenu } from "../components/Modal/Modal";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { removeSpace } from "../utils/stringHelper";
 
@@ -20,17 +20,17 @@ function Matrices() {
             
             <section>
                 <h2><span style={{color: "var(--color-tier-s)"}}>SSR</span> Matrices</h2>
-                <ModalMenu type="matrices" listContent={MATRICES.filter(character => character.rarity === "SSR")} />
+                <ModalMenu list={MATRICES} filter="rarity" target="SSR" />
             </section>
 
             <section>
                 <h2><span style={{color: "var(--color-tier-a)"}}>SR</span> Matrices</h2>
-                <ModalMenu type="matrices" listContent={MATRICES.filter(character => character.rarity === "SR")} />
+                <ModalMenu list={MATRICES} filter="rarity" target="SR" />
             </section>
 
             <section>
                 <h2><span style={{color: "var(--color-tier-b)"}}>R</span> Matrices</h2>
-                <ModalMenu type="matrices" listContent={MATRICES.filter(character => character.rarity === "R")} />
+                <ModalMenu list={MATRICES} filter="rarity" target="R" />
             </section>
 
         </>

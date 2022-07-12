@@ -1,5 +1,7 @@
 const marc = {
     name: "Marc",
+    uri: "marc",
+    imgSrc: "marc.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

@@ -1,5 +1,7 @@
 const voyager = {
     name: "Voyager",
+    uri: "voyager",
+    imgSrc: "voyager.png",
     chinaOnly: false,
     parts: {
         part1: {

@@ -1,5 +1,7 @@
 const ruby = {
     name: "Ruby",
+    uri: "ruby",
+    imgSrc: "ruby.png",
     rarity: "SSR",
     chinaOnly: true,
     weapon: {

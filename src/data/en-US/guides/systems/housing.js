@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const housing = {
     name: "Housing",
+    uri: "housing",
     type: "systems",
     author: ["Pyrosu#6969"],
     text:

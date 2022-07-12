@@ -1,5 +1,6 @@
 export const darkCrystals = {
     name: "Dark Crystal Sources",
+    uri: "dark-crystal-sources",
     type: "reference",
     author: ["Unconsidered#1568"],
     text:

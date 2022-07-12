@@ -1,7 +1,8 @@
-export const CNBanners = [
+import { CHARACTERS } from "./characters/characterList"
+
+const CNBanners = [
     {
         name: "Lin",
-        element: "supernatural",
         subtext: "Limited Banner only",
         start: "9 Jul 2022",
         end: "29 Jul 2022",
@@ -10,7 +11,6 @@ export const CNBanners = [
     },
     {
         name: "Frigg",
-        element: "ice",
         subtext: "Standard afterwards",
         start: "23 Jun 2022",
         end: "9 Jul 2022",
@@ -19,7 +19,6 @@ export const CNBanners = [
     },
     {
         name: "Nemesis",
-        element: "volt",
         subtext: "Standard afterwards",
         start: "23 Jun 2022",
         end: "9 Jul 2022",
@@ -28,7 +27,6 @@ export const CNBanners = [
     },
     {
         name: "Saki Fuwa",
-        element: "ice",
         subtext: "",
         start: "03 Jun 2022",
         end: "23 Jun 2022",
@@ -37,7 +35,6 @@ export const CNBanners = [
     },
     {
         name: "Marc",
-        element: "physical",
         subtext: "Collaboration Event",
         start: "24 May 2022",
         end: "3 Jun 2022",
@@ -46,7 +43,6 @@ export const CNBanners = [
     },
     {
         name: "Baiyuekui",
-        element: "volt",
         subtext: "Collaboration Event",
         start: "13 May 2022",
         end: "23 May 2022",
@@ -55,7 +51,6 @@ export const CNBanners = [
     },
     {
         name: "Ruby",
-        element: "flame",
         subtext: "",
         start: "25 Apr 2022",
         end: "13 May 2022",
@@ -64,7 +59,6 @@ export const CNBanners = [
     },
     {
         name: "Cobalt-B",
-        element: "flame",
         subtext: "Standard afterwards",
         start: "13 Apr 2022",
         end: "27 Apr 2022",
@@ -73,7 +67,6 @@ export const CNBanners = [
     },
     {
         name: "Frigg",
-        element: "ice",
         subtext: "",
         start: "25 Mar 2022",
         end: "12 Apr 2022",
@@ -82,7 +75,6 @@ export const CNBanners = [
     },
     {
         name: "Claudia",
-        element: "physical",
         subtext: "Standard afterwards",
         start: "19 Mar 2022",
         end: "21 Mar 2022",
@@ -91,7 +83,6 @@ export const CNBanners = [
     },
     {
         name: "Nemesis",
-        element: "volt",
         subtext: "",
         start: "05 Mar 2022",
         end: "24 Mar 2022",
@@ -100,7 +91,6 @@ export const CNBanners = [
     },
     {
         name: "Marc",
-        element: "physical",
         subtext: "Collaboration Event",
         start: "14 Feb 2022",
         end: "4 Mar 2022",
@@ -109,7 +99,6 @@ export const CNBanners = [
     },
     {
         name: "Baiyuekui",
-        element: "volt",
         subtext: "Collaboration Event",
         start: "26 Jan 2022",
         end: "13 Feb 2022",
@@ -118,7 +107,6 @@ export const CNBanners = [
     },
     {
         name: "Cobalt-B",
-        element: "flame",
         subtext: "",
         start: "8 Jan 2022",
         end: "26 Jan 2022",
@@ -127,7 +115,6 @@ export const CNBanners = [
     },
     {
         name: "Claudia",
-        element: "physical",
         subtext: "",
         start: "22 Dec 2021",
         end: "5 Jan 2022",
@@ -136,14 +123,21 @@ export const CNBanners = [
     }
 ]
 
-export const Banners = [
-    // {
-    //     name: "Test",
-    //     element: "volt",
-    //     subtext: "Test purposes",
-    //     start: "31 Feb 1978",
-    //     end: "63 Dec 2009",
-    //     duration: "8438d",
-    //     week: "30~33"
-    // }
+const Banners = [
+    {
+        name: "",
+        subtext: "",
+        start: "",
+        end: "",
+        duration: "",
+        week: ""
+    }
 ]
+
+CNBanners.forEach(banner => {
+    const thisCharacter = CHARACTERS.find(character => character.name === banner.name);
+    banner.element = thisCharacter.weapon.element;
+})
+
+export { CNBanners };
+export { Banners };

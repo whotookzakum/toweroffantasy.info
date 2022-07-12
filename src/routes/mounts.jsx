@@ -1,4 +1,4 @@
-import { ModalMenu } from "../components/Modal";
+import { ModalMenu } from "../components/Modal/Modal";
 import { MOUNTS } from "../data/en-US/mounts/mountList";
 
 
@@ -15,7 +15,7 @@ function Mounts() {
             
             <section>
                 <h2>Mount List</h2>
-                <ModalMenu type="mounts" listContent={MOUNTS} />
+                <ModalMenu list={MOUNTS} />
             </section>
 
         </>

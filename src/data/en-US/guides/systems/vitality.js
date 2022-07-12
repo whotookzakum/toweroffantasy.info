@@ -1,5 +1,6 @@
 export const vitality = {
     name: "Vitality",
+    uri: "vitality",
     type: "systems",
     author: ["Unconsidered#1568", "Zakum#3080"],
     text:

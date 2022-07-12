@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 
 export const beginnerWeapons = {
     name: "Beginner Weapon Guide",
+    uri: "beginner-weapon-guide",
     type: "general",
     author: ["Stitch#8913"],
     text:

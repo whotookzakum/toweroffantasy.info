@@ -1,5 +1,7 @@
 const echo = {
     name: "Echo",
+    uri: "echo",
+    imgSrc: "echo.png",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

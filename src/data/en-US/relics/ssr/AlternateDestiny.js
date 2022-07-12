@@ -1,5 +1,7 @@
 const alternatedestiny = {
     name: "Alternate Destiny",
+    uri: "alternate-destiny",
+    imgSrc: "alternatedestiny.png",
     rarity: "SSR",
     chinaOnly: false,
     description: "Generate a pocket dimension for **8** seconds. Allies gain immunity to hitstun effects in the dimension, and HP will not drop below **20%** from enemy attacks. Cooldown: **90** seconds. Leaving the dimension removes all buffs. Once you have spent **8** seconds in the dimension, you cannot be buffed by it for **45** seconds.",

@@ -1,5 +1,7 @@
 const couant2 = {
     name: "Couant 2",
+    uri: "couant-2",
+    imgSrc: "couant2.png",
     rarity: "SSR",
     chinaOnly: true,
     description: "Gain a shield that lasts for **5** seconds. After 1 attack it disappears, knocking surrounding enemies and deal damage equal to **100%** + **50** of ATK. When the shield is broken within 1 second of generating, it stuns the enemy for **2** seconds and you will receive a damage boost by a percentage of your current life for **10** seconds (up to **60%**). Cooldown **30** seconds, shared cooldown with Couant.",

@@ -1,5 +1,7 @@
 const barbarossa = {
     name:"Barbarossa",
+    uri: "barbarossa",
+    imgSrc: "barbarossa.png",
     rarity:"SR",
     chinaOnly: false,
     matrix: {

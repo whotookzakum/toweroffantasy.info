@@ -1,5 +1,7 @@
 const cobalt = {
     name: "Cobalt-B",
+    uri: "cobalt-b",
+    imgSrc: "cobalt-b.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

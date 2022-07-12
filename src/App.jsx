@@ -1,24 +1,24 @@
-import '../scss/styles.scss';
-import Navigation from './Navigation';
-import Home from "../routes/home";
-import Simulacra from '../routes/simulacra';
-import Matrices from '../routes/matrices';
-import Relics from '../routes/relics';
-import Food from '../routes/food';
+import './scss/styles.scss';
+import Navigation from './components/Navigation';
+import Home from "./routes/home";
+import Simulacra from './routes/simulacra';
+import Matrices from './routes/matrices';
+import Relics from './routes/relics';
+import Food from './routes/food';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { Modal } from './Modal';
-import { getItemNameWithSpaces, getItemByName } from '../utils/stringHelper';
-import Page from './Page';
+import { Modal } from './components/Modal/Modal';
+import { getItemNameWithSpaces, getItemByName } from './utils/stringHelper';
+import Page from './components/Page';
 import { useEffect } from 'react';
-import { CHARACTERS } from '../data/en-US/characters/characterList';
-import { RELICS } from '../data/en-US/relics/relicList';
-import Mounts from '../routes/mounts';
-import { MOUNTS } from '../data/en-US/mounts/mountList';
-import Guides, { GuideArticle } from '../routes/guides';
-import { MATRICES } from '../data/en-US/matrices/matrixList';
-import BannerSchedule from '../routes/banners';
-import { GUIDES } from '../data/en-US/guides/guideList';
-import { CHANGELOG } from '../data/en-US/changelog';
+import { CHARACTERS } from './data/en-US/characters/characterList';
+import { RELICS } from './data/en-US/relics/relicList';
+import Mounts from './routes/mounts';
+import { MOUNTS } from './data/en-US/mounts/mountList';
+import Guides, { GuideArticle } from './routes/guides';
+import { MATRICES } from './data/en-US/matrices/matrixList';
+import BannerSchedule from './routes/banners';
+import { GUIDES } from './data/en-US/guides/guideList';
+import { CHANGELOG } from './data/en-US/changelog';
 
 
 function ScrollToTopOnMount() {
@@ -27,7 +27,7 @@ function ScrollToTopOnMount() {
     }, []);
   
     return null;
-  }
+}
 
 export default function Main() {
     const pageTitle = useLocation().pathname.split("/").pop();
@@ -88,7 +88,7 @@ export default function Main() {
                         element={
                             <Page title={getItemNameWithSpaces(pageTitle, CHARACTERS)} description={`${getItemNameWithSpaces(pageTitle, CHARACTERS)}'s character and weapon info from Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="simulacra" />
+                                <Modal list={CHARACTERS} />
                             </Page>
                         }
                     />
@@ -106,7 +106,7 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, MATRICES)} Matrix`} description={`${getItemNameWithSpaces(pageTitle, MATRICES)}'s Matrix set info from Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="matrices" />
+                                <Modal list={MATRICES} />
                             </Page>
                         }
                     />
@@ -124,7 +124,7 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, RELICS)}`} description={`${getItemNameWithSpaces(pageTitle, RELICS)} effects and advancements in Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="relics" />
+                                <Modal list={RELICS} />
                             </Page>
                         }
                     />
@@ -147,12 +147,13 @@ export default function Main() {
                     <Route
                         path="/mounts/:itemName"
                         element={
-                            <Page title={`${getItemNameWithSpaces(pageTitle, MOUNTS)}`} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
+                            <Page title={pageTitle} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
-                                <Modal type="mounts" />
+                                <Modal list={MOUNTS} />
                             </Page>
                         }
                     />
+                    
                     <Route
                         path="/guides"
                         element={
@@ -166,7 +167,7 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, GUIDES)}`} description={`${getItemNameWithSpaces(pageTitle, GUIDES)} - a guide for Tower of Fantasy Global and Chinese versions.`} >
                                 <ScrollToTopOnMount/>
-                                <GuideArticle guide={getItemByName(pageTitle, GUIDES)} />
+                                <GuideArticle guide={GUIDES.find(guide => guide.uri === pageTitle)} />
                             </Page>
                         }
                     />

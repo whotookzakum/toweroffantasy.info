@@ -1,5 +1,7 @@
 const offensivelogic = {
     name:"Offensive Logic",
+    uri: "offensive-logic",
+    imgSrc: "offensivelogic.png",
     rarity:"R",
     chinaOnly: true,
     matrix: { 
