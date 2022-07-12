@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const thingsYouMustKnow = {
     name: "15 Things You MUST Know",
+    uri: "15-things-you-must-know",
     type: "general",
     author: ["Zakum#3080"],
     text:

@@ -52,7 +52,7 @@ export function ModalMenu({ list, filter, target }) {
 
         return (
             <li key={item.uri}>
-                <Link to={`/${item.uri}`}>
+                <Link to={`/${options.menuClass}/${item.uri}`}>
                     {item.chinaOnly && <abbr title="China Exclusive" />}
                     {options.imgPath &&
                         <div className="flex">

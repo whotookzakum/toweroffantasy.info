@@ -167,7 +167,7 @@ export default function Main() {
                         element={
                             <Page title={`${getItemNameWithSpaces(pageTitle, GUIDES)}`} description={`${getItemNameWithSpaces(pageTitle, GUIDES)} - a guide for Tower of Fantasy Global and Chinese versions.`} >
                                 <ScrollToTopOnMount/>
-                                <GuideArticle guide={getItemByName(pageTitle, GUIDES)} />
+                                <GuideArticle guide={GUIDES.find(guide => guide.uri === pageTitle)} />
                             </Page>
                         }
                     />

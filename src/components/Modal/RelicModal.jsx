@@ -17,16 +17,6 @@ export function RelicModal({ item }) {
 
     return (
         <>
-            <header>
-                <div className="header-img-wrapper relics">
-                    <img src={`/images/relics/${removeSpace(item.name)}.png`} alt="" />
-                </div>
-                <div>
-                    <h1>{item.name}</h1>
-                    <h2><i style={rarityColor}>{item.rarity}</i> Relic</h2>
-                </div>
-            </header>
-
             <div className="modal-body">
                 {item.chinaOnly && <CNTag name={item.name} />}
 

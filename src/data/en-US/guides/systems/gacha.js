@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export const gacha = {
     name: "Gacha",
+    uri: "gacha",
     type: "systems",
     author: ["Zakum#3080"],
     text:

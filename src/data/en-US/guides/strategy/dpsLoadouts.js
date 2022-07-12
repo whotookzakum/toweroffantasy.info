@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const dpsLoadouts = {
     name: "DPS Weapon Loadouts",
+    uri: "dps-weapon-loadouts",
     type: "strategy",
     author: ["Cytus#4151"],
     text:

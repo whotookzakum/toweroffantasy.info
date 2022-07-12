@@ -297,7 +297,7 @@ const ingredients = {
         source: 'Found in Crown'
     },
     
-    seaconch: {
+    scallop: {
         name: 'Scallop',
         imgSrc: "scallop.png",
         rarity: 3,

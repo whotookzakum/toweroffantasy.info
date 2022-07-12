@@ -21,9 +21,12 @@ function Home() {
             
             <blockquote className="banner-count">
                 Global has had&nbsp;
-                <strong>{Banners.length}</strong> Banners,&nbsp;
+                {/* <strong>{Banners.length}</strong> Banners,&nbsp;
                 <strong>{getUniqueCount(Banners)}</strong> Unique, with&nbsp;
-                <strong>{getStandardAdditions(Banners)}</strong> additions to the Standard Banner.<br/>
+                <strong>{getStandardAdditions(Banners)}</strong> additions to the Standard Banner.<br/> */}
+                <strong>0</strong> Banners,&nbsp;
+                <strong>0</strong> Unique, with&nbsp;
+                <strong>0</strong> additions to the Standard Banner.<br/>
                 The newest character is nobody :(
             </blockquote>
 

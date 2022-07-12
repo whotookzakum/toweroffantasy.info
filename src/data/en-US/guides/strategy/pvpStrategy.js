@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 export const pvpStrategy = {
     name: "PvP Strategy Guide",
+    uri: "pvp-strategy-guide",
     type: "strategy",
     author: ["Keita#0795", "Goldenmonkey#2798", "theLaw#5678"],
     text:

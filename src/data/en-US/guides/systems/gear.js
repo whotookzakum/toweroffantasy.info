@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export const gear = {
     name: "Gear", 
+    uri: "gear",
     type: "systems",
     author: ["Zakum#3080"],
     text:
