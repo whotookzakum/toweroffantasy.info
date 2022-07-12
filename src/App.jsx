@@ -27,7 +27,7 @@ function ScrollToTopOnMount() {
     }, []);
   
     return null;
-  }
+}
 
 export default function Main() {
     const pageTitle = useLocation().pathname.split("/").pop();
@@ -147,7 +147,7 @@ export default function Main() {
                     <Route
                         path="/mounts/:itemName"
                         element={
-                            <Page title={`${getItemNameWithSpaces(pageTitle, MOUNTS)}`} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
+                            <Page title={pageTitle} description={`How to obtain the mount ${getItemNameWithSpaces(pageTitle, MOUNTS)} in Tower of Fantasy Global and Chinese versions.`}>
                                 <ScrollToTopOnMount/>
                                 <Modal list={MOUNTS} />
                             </Page>
