@@ -1,6 +1,6 @@
-import { ModalMenu } from "../components/Modal/Modal";
-import { RELICS } from "../data/en-US/relics/relicList";
-import { removeSpace } from "../utils/stringHelper";
+import { ModalMenu } from "components/Modal/Modal";
+import { RELICS } from "data/en-US/relics/relicList";
+import { removeSpace } from "utils/stringHelper";
 
 
 function Relics() {

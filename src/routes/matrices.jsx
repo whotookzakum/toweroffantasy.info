@@ -1,6 +1,6 @@
-import { ModalMenu } from "../components/Modal/Modal";
-import { MATRICES } from "../data/en-US/matrices/matrixList";
-import { removeSpace } from "../utils/stringHelper";
+import { ModalMenu } from "components/Modal/Modal";
+import { MATRICES } from "data/en-US/matrices/matrixList";
+import { removeSpace } from "utils/stringHelper";
 
 // Import list of non-character matrices and merge them
 

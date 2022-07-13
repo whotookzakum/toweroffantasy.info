@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
-import { removeSpace } from "../../utils/stringHelper";
-import CNTag from "../CNTag";
+import Meta from "components/Meta";
+import CNTag from "components/CNTag";
 
 export function RelicModal({ item }) {
     let rarityColor = { color: "var(--color-tier-s)" };
@@ -17,6 +17,13 @@ export function RelicModal({ item }) {
 
     return (
         <>
+					<Meta
+						title={item.name}
+						description={`${item.name} effects and advancements in Tower of Fantasy Global and Chinese versions.`}
+					>
+						<meta property="og:image" content={`https://toweroffantasy.info/images/relics/${item.imgSrc}`} />
+						<meta name="twitter:card" content="summary_large_image" />
+					</Meta>
             <div className="modal-body">
                 {item.chinaOnly && <CNTag name={item.name} />}
 

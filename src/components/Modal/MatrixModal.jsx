@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
-import CNTag from "../CNTag";
+import Meta from "components/Meta";
+import CNTag from "components/CNTag";
 
 export function MatrixModal({ item }) {
     const matrix = item.matrix;
@@ -44,6 +45,13 @@ export function MatrixModal({ item }) {
 
     return (
         <>
+					<Meta
+						title={item.name}
+						description={`${item.name}’s Matrix set info from Tower of Fantasy Global and Chinese versions.`}
+					>
+						<meta property="og:image" content={`https://toweroffantasy.info/images/art/${item.imgSrc}`} />
+						<meta name="twitter:card" content="summary_large_image" />
+					</Meta>
             <div className="modal-body">
                 {item.chinaOnly && <CNTag name={item.name} />}
                 {setEffects}

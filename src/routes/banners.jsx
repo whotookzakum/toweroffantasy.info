@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CNBanners, Banners } from "../data/en-US/bannerSchedule";
-import { CHARACTERS } from '../data/en-US/characters/characterList';
-import { removeSpace } from "../utils/stringHelper";
+import { CNBanners, Banners } from "data/en-US/bannerSchedule";
+import { CHARACTERS } from 'data/en-US/characters/characterList';
+import { removeSpace } from "utils/stringHelper";
 
 function BannerList({ data }) {
     const listItems = data.map(banner =>

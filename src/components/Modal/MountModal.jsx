@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
-import { removeSpace } from "../../utils/stringHelper";
-import CNTag from "../CNTag";
+import { removeSpace } from "utils/stringHelper";
+import Meta from "components/Meta";
+import CNTag from "components/CNTag";
 
 export function MountModal({ item }) {
     const parts = Object.entries(item.parts).map(([key, value]) => {
@@ -33,6 +34,13 @@ export function MountModal({ item }) {
     })
     return (
         <>
+					<Meta
+						title={item.name}
+						description={`How to obtain the mount ${item.name} in Tower of Fantasy Global and Chinese versions.`}
+					>
+						<meta property="og:image" content={`https://toweroffantasy.info/images/mounts/${item.imgSrc}`} />
+						<meta name="twitter:card" content="summary_large_image" />
+					</Meta>
             <div className="modal-body mounts">
                 {item.chinaOnly && <CNTag name={item.name} />}
                 <section className="w-75ch">

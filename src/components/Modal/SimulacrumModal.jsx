@@ -1,7 +1,8 @@
+import Meta from "components/Meta";
 import ReactMarkdown from "react-markdown";
-import { removeSpace, hyphenToSpace } from "../../utils/stringHelper";
-import CNTag from "../CNTag";
-import elementalEffects from "../../data/en-US/elementalEffects";
+import { removeSpace, hyphenToSpace } from "utils/stringHelper";
+import CNTag from "components/CNTag";
+import elementalEffects from "data/en-US/elementalEffects";
 
 export function SimulacraModal({ item }) {
     const weapon = item.weapon;
@@ -113,6 +114,13 @@ export function SimulacraModal({ item }) {
 
     return (
         <>
+					<Meta
+						title={item.name}
+						description={`${item.name}’s character and weapon info from Tower of Fantasy Global and Chinese versions.`}
+					>
+						<meta property="og:image" content={`https://toweroffantasy.info/images/art/${item.imgSrc}`} />
+						<meta name="twitter:card" content="summary_large_image" />
+					</Meta>
             <div className="modal-body">
                 {item.chinaOnly && <CNTag name={item.name} />}
 

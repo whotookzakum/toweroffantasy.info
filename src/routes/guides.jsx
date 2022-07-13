@@ -1,6 +1,7 @@
-import { ModalMenu } from "../components/Modal/Modal";
-import { GUIDES } from "../data/en-US/guides/guideList";
-import { Helmet } from "react-helmet";
+import Meta from "components/Meta";
+import { ModalMenu } from "components/Modal/Modal";
+import NotFoundPage from "routes/NotFoundPage";
+import { GUIDES } from "data/en-US/guides/guideList";
 
 function Guides() {
     return (
@@ -43,26 +44,31 @@ function Guides() {
 }
 
 export function GuideArticle({ guide }) {
-    const author = guide.author.map((author, index) => {
-        return (index === guide.author.length - 1) ? <em>{author}</em> : <><em>{author}</em>, </>
-    })
-    return (
-			<>
-				<Helmet>
-					<title>{guide.name + ' | Tower of Fantasy Index'}</title>
-					<meta property="og:title" content={guide.name} />
-					{guide.author.map((author, i) => (<meta property="author" content={author} key={'author' + i} />))}
-					<meta property="og:locale" content="en_US" />
-				</Helmet>
-        <article className="guide">
-            <header>
-                <h1>{guide.name}</h1>
-                <div className="authors">By {author}</div>
-            </header>
-            {guide.text}
-        </article>
-			</>
-    )
+	if (!guide) {
+		return (<NotFoundPage page="Guide" />);
+	}
+	
+	const author = guide.author.map((author, index) => {
+			return (index === guide.author.length - 1) ? <em>{author}</em> : <><em>{author}</em>, </>
+	});
+
+	return (
+		<>
+			<Meta
+				title={guide.name}
+				description={guide.name + " - a guide for Tower of Fantasy Global and Chinese versions.}"}
+			>
+				{guide.author.map((author, i) => (<meta property="author" content={author} key={"author" + i} />))}
+			</Meta>
+			<article className="guide">
+					<header>
+							<h1>{guide.name}</h1>
+							<div className="authors">By {author}</div>
+					</header>
+					{guide.text}
+			</article>
+		</>
+	);
 }
 
 export default Guides;

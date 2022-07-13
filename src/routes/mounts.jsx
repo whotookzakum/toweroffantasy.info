@@ -1,5 +1,5 @@
-import { ModalMenu } from "../components/Modal/Modal";
-import { MOUNTS } from "../data/en-US/mounts/mountList";
+import { ModalMenu } from "components/Modal/Modal";
+import { MOUNTS } from "data/en-US/mounts/mountList";
 
 
 function Mounts() {

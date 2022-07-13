@@ -1,24 +1,25 @@
-import './scss/styles.scss';
-import Navigation from './components/Navigation';
-import Home from "./routes/home";
-import Simulacra from './routes/simulacra';
-import Matrices from './routes/matrices';
-import Relics from './routes/relics';
-import Food from './routes/food';
+import 'scss/styles.scss';
+import Navigation from 'components/Navigation';
+import Home from "routes/home";
+import Simulacra from 'routes/simulacra';
+import Matrices from 'routes/matrices';
+import Relics from 'routes/relics';
+import Food from 'routes/food';
+import NotFoundPage from 'routes/NotFoundPage';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { Modal } from './components/Modal/Modal';
-import { getItemNameWithSpaces, getItemByName } from './utils/stringHelper';
-import Page from './components/Page';
+import { Modal } from 'components/Modal/Modal';
 import { useEffect } from 'react';
-import { CHARACTERS } from './data/en-US/characters/characterList';
-import { RELICS } from './data/en-US/relics/relicList';
-import Mounts from './routes/mounts';
-import { MOUNTS } from './data/en-US/mounts/mountList';
-import Guides, { GuideArticle } from './routes/guides';
-import { MATRICES } from './data/en-US/matrices/matrixList';
-import BannerSchedule from './routes/banners';
-import { GUIDES } from './data/en-US/guides/guideList';
-import { CHANGELOG } from './data/en-US/changelog';
+import { getItemNameWithSpaces } from 'utils/stringHelper';
+import Page from 'components/Page';
+import { CHARACTERS } from 'data/en-US/characters/characterList';
+import { RELICS } from 'data/en-US/relics/relicList';
+import Mounts from 'routes/mounts';
+import { MOUNTS } from 'data/en-US/mounts/mountList';
+import Guides, { GuideArticle } from 'routes/guides';
+import { MATRICES } from 'data/en-US/matrices/matrixList';
+import BannerSchedule from 'routes/banners';
+import { GUIDES } from 'data/en-US/guides/guideList';
+import { CHANGELOG } from 'data/en-US/changelog';
 
 
 function ScrollToTopOnMount() {
@@ -51,7 +52,7 @@ export default function Main() {
                     <Route
                         path="/changelog"
                         element={
-                            <Page title="Home" description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
+                            <Page title="Changelog" description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
                                 <h1>Changelog</h1>
                                 <table className="changelog w-75ch">
                                     <thead>
@@ -165,7 +166,7 @@ export default function Main() {
                     <Route
                         path="/guides/:itemName"
                         element={
-                            <Page title={`${getItemNameWithSpaces(pageTitle, GUIDES)}`} description={`${getItemNameWithSpaces(pageTitle, GUIDES)} - a guide for Tower of Fantasy Global and Chinese versions.`} >
+                            <Page title={getItemNameWithSpaces(pageTitle, GUIDES)} description={getItemNameWithSpaces(pageTitle, GUIDES) + " - a guide for Tower of Fantasy Global and Chinese versions.}"}>
                                 <ScrollToTopOnMount/>
                                 <GuideArticle guide={GUIDES.find(guide => guide.uri === pageTitle)} />
                             </Page>
@@ -175,12 +176,7 @@ export default function Main() {
                         path="*" 
                         element={
                             <Page>
-                                <h1>Error 404: Page not found.</h1>
-                                <p>
-                                    The page you are looking for could not be found. It may have moved to a different URL due to localization changes.<br/>
-                                    Check to make sure the URL is correct or try going back. 
-                                </p>
-                                <img src="/images/404.png" alt="Error 404" style={{display: "block", margin: "auto"}} />
+                              <NotFoundPage />
                             </Page>
                         } 
                     />

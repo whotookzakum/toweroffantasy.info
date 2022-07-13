@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import dishes from "../data/en-US/food/dishes";
+import dishes from "data/en-US/food/dishes";
 
 function Food() {
     const getRecipe = (dish) => {
