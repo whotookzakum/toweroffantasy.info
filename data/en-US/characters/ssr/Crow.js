@@ -95,10 +95,10 @@ const crow = {
 
     matrix: {
         set2: `Increase crit damage to targets with less than **60%** HP by **24%/30%/36%/42%**.  
-            <abbr title='China Exclusive' /> Increase crit damage to targets with less than **60%** HP by **33%/42%/50%/58%**.`,
+            <abbr title='China Exclusive'></abbr> Increase crit damage to targets with less than **60%** HP by **33%/42%/50%/58%**.`,
 
         set4: `Crits deal additional damage over time equal to **18%/22%/26%/30%** of ATK every second for **5** seconds. Does not stack.  
-            <abbr title='China Exclusive' /> Crits deal additional damage over time equal to **12%/15%/18%/21%** of ATK every second for **5** seconds. Does not stack.`
+            <abbr title='China Exclusive'></abbr> Crits deal additional damage over time equal to **12%/15%/18%/21%** of ATK every second for **5** seconds. Does not stack.`
     },
 
     awakening: {

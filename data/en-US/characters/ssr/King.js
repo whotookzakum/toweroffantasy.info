@@ -99,10 +99,10 @@ const king = {
 
     matrix: {
         set2: `When a target is shattered, grant **8%/10%/12%/14%** damage boost for **25** seconds. Only the highest level is applied when the effect is obtained repeatedly.  
-            <abbr title='China Exclusive' /> For every 10% of shield broken, gain a **4%/5%/6%/7%** damage buff, up to **3** stacks, lasting **25** seconds.`,
+            <abbr title='China Exclusive'></abbr> For every 10% of shield broken, gain a **4%/5%/6%/7%** damage buff, up to **3** stacks, lasting **25** seconds.`,
 
         set4: `When there are more than 2 enemies around, hits restore HP equal to **10%/12%/13%/14%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **30%/33%/34.5%/36%** of ATK.  
-            <abbr title='China Exclusive' /> When there are more than 2 enemies around, hits restore HP equal to **14%/18%/22%/26%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **36%/42%/48%/54%** of ATK.`
+            <abbr title='China Exclusive'></abbr> When there are more than 2 enemies around, hits restore HP equal to **14%/18%/22%/26%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **36%/42%/48%/54%** of ATK.`
     },
 
     awakening: {

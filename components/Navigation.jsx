@@ -15,7 +15,7 @@ function Navigation() {
             <div className="nav-body hide-scrollbar">
                 <div className="navbar-brand">
                     <Link href="/" onClick={() => setTogglerState(!togglerState)}>
-                        <a><img src="images/avatar/tata.png" alt="Logo" /><br />
+                        <a><img src="/images/avatar/tata.png" alt="Logo" /><br />
                         Tower of Fantasy Index</a>
                     </Link>
                 </div>

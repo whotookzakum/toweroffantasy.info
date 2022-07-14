@@ -1,15 +1,17 @@
 import Layout, { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
-import { CNBanners, Banners } from "../data/en-US/bannerSchedule";
 import Head from "next/head";
+import { getBannerCharacters, getAllBanners } from "./banners";
+import { CHARACTERS } from "../data/en-US/characters/characterList";
 
-const getUniqueCount = (banners) => new Set(banners.map((item) => item.name)).size;
-const getStandardAdditions = (banners) => banners.filter((banner) => banner.subtext.includes("Standard afterwards")).length;
 
+function getStandardAdditions(version) {
+    return getAllBanners(version).filter(({banner}) => 
+        banner.subtext && banner.subtext.includes("Standard afterwards")).length;
+}
 
 export default function Index() {
-    console.log(CNBanners[0]);
     return(
         <Layout>
             <Head>
@@ -29,9 +31,6 @@ export default function Index() {
             
             <blockquote className="banner-count">
                 Global has had&nbsp;
-                {/* <strong>{Banners.length}</strong> Banners,&nbsp;
-                <strong>{getUniqueCount(Banners)}</strong> Unique, with&nbsp;
-                <strong>{getStandardAdditions(Banners)}</strong> additions to the Standard Banner.<br/> */}
                 <strong>0</strong> Banners,&nbsp;
                 <strong>0</strong> Unique, with&nbsp;
                 <strong>0</strong> additions to the Standard Banner.<br/>
@@ -40,10 +39,10 @@ export default function Index() {
 
             <blockquote className="banner-count" style={{ borderColor: "#e72e37"}}>
                 China has had&nbsp;
-                <strong>{CNBanners.length}</strong> Banners,&nbsp;
-                <strong>{getUniqueCount(CNBanners)}</strong> Unique, with&nbsp;
-                <strong>{getStandardAdditions(CNBanners)}</strong> additions to the Standard Banner.<br/>
-                The newest character is <Link href={`/simulacra/${CNBanners[0].uri}`}><a>{CNBanners[0].name}</a></Link>.
+                <strong>{getAllBanners("cn").length}</strong> Banners,&nbsp;
+                <strong>{getBannerCharacters("cn").length}</strong> Unique, with&nbsp;
+                <strong>{getStandardAdditions("cn")}</strong> additions to the Standard Banner.<br/>
+                The newest character is <Link href={`/simulacra/${CHARACTERS[0].uri}`}><a>{CHARACTERS[0].name}</a></Link>.
             </blockquote>
 
             <p>

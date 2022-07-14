@@ -89,10 +89,10 @@ const tsubasa = {
 
     matrix: {
         set2: `Increase damage dealt by **10%/12.5%/15%/17.5%** when there are no enemies within 4 meters.  
-            <abbr title='China Exclusive' /> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
+            <abbr title='China Exclusive'></abbr> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
 
         set4: `Upon a headshot, increase ATK by **12%/15%/18%/21%** for 8 seconds.  
-            <abbr title='China Exclusive' /> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by **15%/18%/21%/25%** for 8 seconds.`
+            <abbr title='China Exclusive'></abbr> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by **15%/18%/21%/25%** for 8 seconds.`
     },
 
     awakening: {

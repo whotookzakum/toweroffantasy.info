@@ -23,7 +23,7 @@ function BannerList({ data }) {
 }
 
 
-function getBannerCharacters(version) {
+export function getBannerCharacters(version) {
     return (
         CHARACTERS.filter(character => {
             if (character.banners && character.banners[version]) {
@@ -33,7 +33,7 @@ function getBannerCharacters(version) {
     );
 }
 
-function getAllBanners(version) {
+export function getAllBanners(version) {
     const bannerCharacters = getBannerCharacters(version);
     const allBanners = bannerCharacters.flatMap(({ name, weapon, uri, banners }) => {
         const element = weapon.element;

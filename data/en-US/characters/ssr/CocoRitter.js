@@ -98,10 +98,10 @@ const coco = {
 
     matrix: {
         set2: `Increase healing capability and healing received by **8%/10%/12%/14%**.  
-            <abbr title='China Exclusive' /> Increase healing capability and healing received by **10%/12%/14%/16%**.`,
+            <abbr title='China Exclusive'></abbr> Increase healing capability and healing received by **10%/12%/14%/16%**.`,
 
         set4: `When you or your teammates are healed, increase ATK by **10%/12.5%/15%/17.5%** for **2** seconds.  
-            <abbr title='China Exclusive' /> When you or your teammates are healed, increase ATK by **12.5%/15%/17.5%/20%** for **6** seconds.`
+            <abbr title='China Exclusive'></abbr> When you or your teammates are healed, increase ATK by **12.5%/15%/17.5%/20%** for **6** seconds.`
     },
 
     awakening: {
