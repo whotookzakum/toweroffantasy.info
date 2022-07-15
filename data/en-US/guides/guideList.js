@@ -17,11 +17,15 @@ export const GUIDES = [
     thingsYouMustKnow,
     beginnerWeapons,
     // story lore
+    // Obtaining newest armor pieces
     
     // GAME SYSTEMS
     gacha,
-    // combat
-    // exploration
+    // combat: include discharge, elements, resonance
+    // exploration (Aesperia)
+        // outer artificial islands unlock, map of artificial island
+    // exploration (Vera)
+        // quicksand whirlpool, gray zone, dark zone, map of mirror city
     vitality,
     gear,
     simulacra,
@@ -33,9 +37,11 @@ export const GUIDES = [
 
     // STRATEGY
     dpsLoadouts,
-    //chipProgression,
-    //pvpStrategy,
-    // any dungeon specific guides go here
+    // chipProgression,
+    // pvpStrategy,
+    // wormhole
+    // frontier clash
+    // void rifts
     
     // TECHNICAL
     cnRegistration,

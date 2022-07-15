@@ -1,7 +1,11 @@
 export const CHANGELOG = [
     {
+        date: "July 14",
+        text: "Fixed subdomain redirect"
+    },
+    {
         date: "July 11",
-        text: "Fixed subdomain redirect, Lin's recommended matrix image, Food: recipes displaying req. number of ingredients; added changelog back"
+        text: "Fixed Lin's recommended matrix image, Food: recipes displaying req. number of ingredients; added changelog back"
     },
     {
         date: "July 9",

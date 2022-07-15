@@ -18,15 +18,19 @@ export const cnRegistration = {
                 </blockquote>
 
                 <p>
-                    <strong>Android versions can be played on PC</strong> with a 64-bit emulator, such as LDPlayer and MuMu Player.
-                    Below you can view the various registration methods for each client, with their requirements and supported devices.
+                    <strong>Android versions can be played on PC</strong> with a 64-bit emulator, such as <a href="https://www.ldplayer.net/versions" target="_blank" rel="noreferrer noopener">LD player</a> and <a href="https://www.mumuglobal.com/pre-registration/mumu-player-11-beta.html" target="_blank" rel="noreferrer noopener">MuMu Player</a>.
+                    Below you can view the various registration methods for each client, with their requirements and supported devices. &amp; 
                 </p>
 
                 <h5 style={{ fontWeight: "normal" }}>
                     Note: We don't provide guides for registering <em className="yellow">through QQ, WeChat, or Weibo</em> as they specifically require a <em className="yellow">Chinese</em> phone number. These services act as login authentication layers, just like how you can sign up for things using your Google and Facebook accounts.
                 </h5>
 
-                <em>You may consider using textPlus to generate a phone number if you do not wish to use your own.</em>
+                <em>You may consider using <a href="https://textplus.com/" target="_blank" rel="noopener noreferrer">textPlus</a> to generate a phone number if you do not wish to use your own.</em>
+            </section>
+
+            <section>
+                <h2>Any and all downloads shall be performed at your own risk. While we haven't heard of any problems so far, the site authors do not take responsibility for any malicious programs installed on your device.</h2>
             </section>
 
             <section>
@@ -125,8 +129,8 @@ export const cnRegistration = {
                 </blockquote>
 
                 <p>
-                    This guide works for any Android 9+ users and PC users by using emulator.<br />
-                    (For emulator users: Only LD player 64 bit &amp; newest version of MuMu works)
+                    This guide works for any Android 9+ users, and on PC using an emulator.<br />
+                    (For emulator users: Only <a href="https://www.ldplayer.net/versions" target="_blank" rel="noreferrer noopener">LD player 64-bit</a> &amp; <a href="https://www.mumuglobal.com/pre-registration/mumu-player-11-beta.html" target="_blank" rel="noreferrer noopener">newest version of MuMu</a> work).
                 </p>
 
 

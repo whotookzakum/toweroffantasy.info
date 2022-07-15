@@ -7,7 +7,7 @@ export const simulacra = {
         <>
             <section>
                 <p>
-                    The simulacra system allows you to <strong>change your appearance to mimic the characters</strong> found throughout the game. When you unlock a weapon for the first time, you will gain access to their simulacrum. For SSR weapons (minus Marc) you will unlock an <i>additional</i> skin upon reaching 3★ on that weapon.
+                    The simulacra system allows you to <strong className="yellow">change your appearance to mimic the characters</strong> found throughout the game. When you unlock a weapon for the first time, you will gain access to their simulacrum. For SSR weapons (minus Marc) you will unlock an <i>additional</i> skin upon reaching 3★ on that weapon.
                 </p>
                 
                 <h2>Awakening</h2>

@@ -63,7 +63,7 @@ export const thingsYouMustKnow = {
 
                 <iframe src="https://www.youtube.com/embed/CWBbNM2SHyw" allow="fullscreen" modestbranding={1} />
 
-                <p>The free SSR relic <Link href="/relics/colossusarms"><a>Colossus Arms</a></Link> can be obtained on Day 1 from the Navia Ecological Park hidden quest line. You can also obtain the <Link href="/mounts/omniumbeastvii"><a>Omnium Beast VII</a></Link> and <Link href="/mounts/voyager"><a>Voyager</a></Link> mounts.</p>
+                <p>The free SSR relic <Link href="/relics/colossus-arms"><a>Colossus Arms</a></Link> can be obtained on Day 1 from the Navia Ecological Park hidden quest line. You can also obtain the <Link href="/mounts/omnium-beast-vii"><a>Omnium Beast VII</a></Link> and <Link href="/mounts/voyager"><a>Voyager</a></Link> mounts.</p>
             </section>
 
             <section>
@@ -76,9 +76,11 @@ export const thingsYouMustKnow = {
 
                 <p>
                     You can create 3 relic sets that you can swap with the <kbd>G</kbd> key (on PC).
-                    <blockquote>
-                        You can't swap sets <em>during combat</em>, but who says you can't swap <em>before combat</em>?
-                    </blockquote>
+                </p>
+                <blockquote>
+                    You can't swap sets <em>during combat</em>, but who says you can't swap <em>before combat</em>?
+                </blockquote>
+                <p>
                     Relics like Spacetime Rift, Drone, Couant, Magnetic Storm, Hovering Cannon, Type V Armor (for the explosion after ejecting), and Missile Barrage can be useful even when activated just before an enemy spawns, such as in Bygone Phantasm or Frontier Clash. Make use of this to maximize your DPS.
                 </p>
 

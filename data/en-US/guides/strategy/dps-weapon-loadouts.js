@@ -10,10 +10,10 @@ export const dpsLoadouts = {
             <section>
                 There are 3 main roles for DPS weapons: <strong className="yellow">Shield Breaker, Main DPS, and Support DPS</strong>.
                 <blockquote style={{ borderColor: "#e72e37" }}>
-                    Note: This guide has not been updated for <Link to="/banners">characters after Frigg</Link>.
+                    Note: This guide has not been updated for <Link href="/banners">characters after Frigg</Link>.
                 </blockquote>
             </section>
-            {/* <section className="dps-loadouts">
+            <section className="dps-loadouts">
                 <h2>Shield Breaker</h2>
                 <p>
                     Deal the highest damage to shields. Necessary as most bosses and minibosses have shields that significantly reduce damage taken. Bosses will also use powerful attacks if their shield is not broken in time. These weapons tend to unlock a crucial shield break effect at 1★ or 3★.
@@ -30,9 +30,11 @@ export const dpsLoadouts = {
                         <tbody>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/baiyuekui">
-                                        <img src="/images/wep/baiyuekui.png" alt="Baiyuekui's Weapon" />
-                                        <h4>Baiyuekui</h4>
+                                    <Link href="/simulacra/baiyuekui">
+                                        <a>
+                                            <img src="/images/wep/baiyuekui.png" alt="Baiyuekui's Weapon" />
+                                            <h4>Baiyuekui</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -43,9 +45,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/ruby">
-                                        <img src="/images/wep/ruby.png" alt="Ruby's Weapon" />
-                                        <h4>Ruby</h4>
+                                    <Link href="/simulacra/ruby">
+                                        <a>
+                                            <img src="/images/wep/ruby.png" alt="Ruby's Weapon" />
+                                            <h4>Ruby</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -57,9 +61,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/king">
-                                        <img src="/images/wep/king.png" alt="KING's Weapon" />
-                                        <h4>KING</h4>
+                                    <Link href="/simulacra/king">
+                                        <a>
+                                            <img src="/images/wep/king.png" alt="KING's Weapon" />
+                                            <h4>KING</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -70,9 +76,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/meryl">
-                                        <img src="/images/wep/meryl.png" alt="Meryl's Weapon" />
-                                        <h4>Meryl</h4>
+                                    <Link href="/simulacra/meryl">
+                                        <a>
+                                            <img src="/images/wep/meryl.png" alt="Meryl's Weapon" />
+                                            <h4>Meryl</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -84,9 +92,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/shiro">
-                                        <img src="/images/wep/shiro.png" alt="Shiro's Weapon" />
-                                        <h4>Shiro</h4>
+                                    <Link href="/simulacra/shiro">
+                                        <a>
+                                            <img src="/images/wep/shiro.png" alt="Shiro's Weapon" />
+                                            <h4>Shiro</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -98,9 +108,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/huma">
-                                        <img src="/images/wep/huma.png" alt="Huma's Weapon" />
-                                        <h4>Huma</h4>
+                                    <Link href="/simulacra/huma">
+                                        <a>
+                                            <img src="/images/wep/huma.png" alt="Huma's Weapon" />
+                                            <h4>Huma</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -131,9 +143,11 @@ export const dpsLoadouts = {
                         <tbody>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/cobalt-b">
-                                        <img src="/images/wep/cobalt-b.png" alt="Cobalt-B's Weapon" />
-                                        <h4>Cobalt-B</h4>
+                                    <Link href="/simulacra/cobalt-b">
+                                        <a>
+                                            <img src="/images/wep/cobalt-b.png" alt="Cobalt-B's Weapon" />
+                                            <h4>Cobalt-B</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -145,9 +159,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/samir">
-                                        <img src="/images/wep/samir.png" alt="Samir's Weapon" />
-                                        <h4>Samir</h4>
+                                    <Link href="/simulacra/samir">
+                                        <a>
+                                            <img src="/images/wep/samir.png" alt="Samir's Weapon" />
+                                            <h4>Samir</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -159,9 +175,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/crow">
-                                        <img src="/images/wep/crow.png" alt="Crow's Weapon" />
-                                        <h4>Crow</h4>
+                                    <Link href="/simulacra/crow">
+                                        <a>
+                                            <img src="/images/wep/crow.png" alt="Crow's Weapon" />
+                                            <h4>Crow</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -173,9 +191,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/frigg">
-                                        <img src="/images/wep/frigg.png" alt="Frigg's Weapon" />
-                                        <h4>Frigg</h4>
+                                    <Link href="/simulacra/frigg">
+                                        <a>
+                                            <img src="/images/wep/frigg.png" alt="Frigg's Weapon" />
+                                            <h4>Frigg</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -187,9 +207,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/tsubasa">
-                                        <img src="/images/wep/tsubasa.png" alt="Tsubasa's Weapon" />
-                                        <h4>Tsubasa</h4>
+                                    <Link href="/simulacra/tsubasa">
+                                        <a>
+                                            <img src="/images/wep/tsubasa.png" alt="Tsubasa's Weapon" />
+                                            <h4>Tsubasa</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -200,9 +222,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/ene">
-                                        <img src="/images/wep/ene.png" alt="Ene's Weapon" />
-                                        <h4>Ene</h4>
+                                    <Link href="/simulacra/ene">
+                                        <a>
+                                            <img src="/images/wep/ene.png" alt="Ene's Weapon" />
+                                            <h4>Ene</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -234,9 +258,11 @@ export const dpsLoadouts = {
                         <tbody>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/marc">
-                                        <img src="/images/wep/marc.png" alt="Marc's Weapon" />
-                                        <h4>Marc</h4>
+                                    <Link href="/simulacra/marc">
+                                        <a>
+                                            <img src="/images/wep/marc.png" alt="Marc's Weapon" />
+                                            <h4>Marc</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -247,9 +273,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/nemesis">
-                                        <img src="/images/wep/nemesis.png" alt="Nemesis's Weapon" />
-                                        <h4>Nemesis</h4>
+                                    <Link href="/simulacra/nemesis">
+                                        <a>
+                                            <img src="/images/wep/nemesis.png" alt="Nemesis's Weapon" />
+                                            <h4>Nemesis</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -260,9 +288,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/tsubasa">
-                                        <img src="/images/wep/tsubasa.png" alt="Tsubasa's Weapon" />
-                                        <h4>Tsubasa</h4>
+                                    <Link href="/simulacra/tsubasa">
+                                        <a>
+                                            <img src="/images/wep/tsubasa.png" alt="Tsubasa's Weapon" />
+                                            <h4>Tsubasa</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -273,9 +303,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/claudia">
-                                        <img src="/images/wep/claudia.png" alt="Claudia's Weapon" />
-                                        <h4>Claudia</h4>
+                                    <Link href="/simulacra/claudia">
+                                        <a>
+                                            <img src="/images/wep/claudia.png" alt="Claudia's Weapon" />
+                                            <h4>Claudia</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -287,9 +319,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/shiro">
-                                        <img src="/images/wep/shiro.png" alt="Shiro's Weapon" />
-                                        <h4>Shiro</h4>
+                                    <Link href="/simulacra/shiro">
+                                        <a>
+                                            <img src="/images/wep/shiro.png" alt="Shiro's Weapon" />
+                                            <h4>Shiro</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -300,9 +334,11 @@ export const dpsLoadouts = {
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/bailing">
-                                        <img src="/images/wep/bailing.png" alt="Bai Ling's Weapon" />
-                                        <h4>Bai Ling</h4>
+                                    <Link href="/simulacra/bai-ling">
+                                        <a>
+                                            <img src="/images/wep/bailing.png" alt="Bai Ling's Weapon" />
+                                            <h4>Bai Ling</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>
@@ -321,47 +357,65 @@ export const dpsLoadouts = {
                     <summary>With 6★ and maxed matrices</summary>
                     <div className="details-content">
                         <div className="flex">
-                            <Link to="/simulacra/baiyuekui">
-                                <img src="/images/wep/baiyuekui.png" alt="Baiyuekui's Weapon" />
-                                <h4>Baiyuekui</h4>
+                            <Link href="/simulacra/baiyuekui">
+                                <a>
+                                    <img src="/images/wep/baiyuekui.png" alt="Baiyuekui's Weapon" />
+                                    <h4>Baiyuekui</h4>
+                                </a>
                             </Link>
-                            <Link to="/simulacra/marc">
-                                <img src="/images/wep/marc.png" alt="Marc's Weapon" />
-                                <h4>Marc</h4>
+                            <Link href="/simulacra/marc">
+                                <a>
+                                    <img src="/images/wep/marc.png" alt="Marc's Weapon" />
+                                    <h4>Marc</h4>
+                                </a>
                             </Link>
-                            <Link to="/simulacra/nemesis">
-                                <img src="/images/wep/nemesis.png" alt="Nemesis's Weapon" />
-                                <h4>Nemesis</h4>
-                            </Link>
-                        </div>
-
-                        <div className="flex">
-                            <Link to="/simulacra/baiyuekui">
-                                <img src="/images/wep/baiyuekui.png" alt="Baiyuekui's Weapon" />
-                                <h4>Baiyuekui</h4>
-                            </Link>
-                            <Link to="/simulacra/claudia">
-                                <img src="/images/wep/claudia.png" alt="Claudia's Weapon" />
-                                <h4>Claudia</h4>
-                            </Link>
-                            <Link to="/simulacra/nemesis">
-                                <img src="/images/wep/nemesis.png" alt="Nemesis's Weapon" />
-                                <h4>Nemesis</h4>
+                            <Link href="/simulacra/nemesis">
+                                <a>
+                                    <img src="/images/wep/nemesis.png" alt="Nemesis's Weapon" />
+                                    <h4>Nemesis</h4>
+                                </a>
                             </Link>
                         </div>
 
                         <div className="flex">
-                            <Link to="/simulacra/ruby">
-                                <img src="/images/wep/ruby.png" alt="Ruby's Weapon" />
-                                <h4>Ruby</h4>
+                            <Link href="/simulacra/baiyuekui">
+                                <a>
+                                    <img src="/images/wep/baiyuekui.png" alt="Baiyuekui's Weapon" />
+                                    <h4>Baiyuekui</h4>
+                                </a>
                             </Link>
-                            <Link to="/simulacra/cobalt-b">
-                                <img src="/images/wep/cobalt-b.png" alt="Cobalt-B's Weapon" />
-                                <h4>Cobalt-B</h4>
+                            <Link href="/simulacra/claudia">
+                                <a>
+                                    <img src="/images/wep/claudia.png" alt="Claudia's Weapon" />
+                                    <h4>Claudia</h4>
+                                </a>
                             </Link>
-                            <Link to="/simulacra/marc">
-                                <img src="/images/wep/marc.png" alt="Marc's Weapon" />
-                                <h4>Marc</h4>
+                            <Link href="/simulacra/nemesis">
+                                <a>
+                                    <img src="/images/wep/nemesis.png" alt="Nemesis's Weapon" />
+                                    <h4>Nemesis</h4>
+                                </a>
+                            </Link>
+                        </div>
+
+                        <div className="flex">
+                            <Link href="/simulacra/ruby">
+                                <a>
+                                    <img src="/images/wep/ruby.png" alt="Ruby's Weapon" />
+                                    <h4>Ruby</h4>
+                                </a>
+                            </Link>
+                            <Link href="/simulacra/cobalt-b">
+                                <a>
+                                    <img src="/images/wep/cobalt-b.png" alt="Cobalt-B's Weapon" />
+                                    <h4>Cobalt-B</h4>
+                                </a>
+                            </Link>
+                            <Link href="/simulacra/marc">
+                                <a>
+                                    <img src="/images/wep/marc.png" alt="Marc's Weapon" />
+                                    <h4>Marc</h4>
+                                </a>
                             </Link>
                         </div>
 
@@ -372,22 +426,28 @@ export const dpsLoadouts = {
                     <summary>Without Limited Weapons</summary>
                     <div className="details-content">
                         <div className="flex">
-                            <Link to="/simulacra/king">
-                                <img src="/images/wep/king.png" alt="KING's Weapon" />
-                                <h4>KING</h4>
+                            <Link href="/simulacra/king">
+                                <a>
+                                    <img src="/images/wep/king.png" alt="KING's Weapon" />
+                                    <h4>KING</h4>
+                                </a>
                             </Link>
-                            <Link to="/simulacra/samir">
-                                <img src="/images/wep/samir.png" alt="Samir's Weapon" />
-                                <h4>Samir</h4>
+                            <Link href="/simulacra/samir">
+                                <a>
+                                    <img src="/images/wep/samir.png" alt="Samir's Weapon" />
+                                    <h4>Samir</h4>
+                                </a>
                             </Link>
-                            <Link to="/simulacra/tsubasa">
-                                <img src="/images/wep/tsubasa.png" alt="Tsubasa's Weapon" />
-                                <h4>Tsubasa</h4>
+                            <Link href="/simulacra/tsubasa">
+                                <a>
+                                    <img src="/images/wep/tsubasa.png" alt="Tsubasa's Weapon" />
+                                    <h4>Tsubasa</h4>
+                                </a>
                             </Link>
                         </div>
                     </div>
                 </details>
 
-            </section> */}
+            </section>
         </>
 };

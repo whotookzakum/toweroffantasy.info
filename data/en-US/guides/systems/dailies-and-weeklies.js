@@ -8,7 +8,7 @@ export const dailies = {
     text:
         <>
             <section>
-                <h2>Daily</h2>
+                <h2 className="yellow">Daily</h2>
                 <table>
                     <thead>
                         <tr>
@@ -38,7 +38,7 @@ export const dailies = {
             </section>
 
             <section>
-                <h2>Semi-Daily</h2>
+                <h2 className="yellow">Semi-Daily</h2>
                 <table>
                     <thead>
                         <tr>
@@ -66,7 +66,7 @@ export const dailies = {
             </section>
 
             <section>
-                <h2>Weekly</h2>
+                <h2 className="yellow">Weekly</h2>
                 <table>
                     <thead>
                         <tr>
@@ -95,7 +95,7 @@ export const dailies = {
             </section>
 
             <section>
-                <h2>Seasonal</h2>
+                <h2 className="yellow">Seasonal</h2>
                 <table>
                     <thead>
                         <tr>

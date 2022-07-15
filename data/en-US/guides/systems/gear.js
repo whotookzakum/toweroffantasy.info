@@ -22,10 +22,10 @@ export const gear = {
 
                 <h3>Leveling Weapons</h3>
                 <p>
-                    To level up a weapon, you will need <strong>Weapon EXP batteries</strong> which are obtained through <Link href="/guides/gacha"><a>gacha</a></Link>, shops, password boxes, and more. Each level boosts the base stats of that weapon.
+                    To level up a weapon, you will need <strong>Weapon EXP batteries</strong> which are obtained through <Link href="/guides/systems/gacha"><a>gacha</a></Link>, shops, password boxes, and more. Each level boosts the base stats of that weapon.
                 </p>
                 <p>
-                    Every 10 levels, you will need <strong>Weapon Upgrade Materials</strong> to raise the level cap another 10 levels. They are obtained through <Link href="/guides/vitality"><a>dungeons</a></Link>, shops, battle pass, events, and more.<br/>
+                    Every 10 levels, you will need <strong>Weapon Upgrade Materials</strong> to raise the level cap another 10 levels. They are obtained through <Link href="/guides/systems/vitality"><a>dungeons</a></Link>, shops, battle pass, events, and more.<br/>
                 </p>
                 <p>
                     The maximum weapon level is 2x your character level (raises every 5 character levels).
@@ -48,7 +48,7 @@ export const gear = {
                     Each set of Matrices has a unique 3-piece set effect, or 2-piece and 4-piece set effects.
                 </p>
                 <p>
-                    Obtained through gacha banners, <Link href="/guides/vitality"><a>Joint Operation</a></Link>, world bosses, <Link href="/guides/housing"><a>housing</a></Link>, and <Link href="/guides/dailiesweeklies"><a>Void Rifts</a></Link>.<br/>
+                    Obtained through gacha banners, <Link href="/guides/systems/vitality"><a>Joint Operation</a></Link>, world bosses, <Link href="/guides/systems/housing"><a>housing</a></Link>, and <Link href="/guides/systems/dailies-and-weeklies"><a>Void Rifts</a></Link>.<br/>
                     Like weapons, they can be upgraded through <strong className="yellow">levels</strong> and <strong className="yellow">advancements</strong>.
                 </p>
 
@@ -74,7 +74,7 @@ export const gear = {
             <section>
                 <h2>Armor</h2>
                 <p>
-                    Armor provides passive stat increases, and can be obtained through shops, <Link href="/guides/vitality"><a>dungeons</a></Link>.<br/>
+                    Armor provides passive stat increases, and can be obtained through shops, <Link href="/guides/systems/vitality"><a>dungeons</a></Link>.<br/>
                     Each piece of armor has a set of <strong className="yellow">fixed stats</strong>, and a section for <strong className="yellow">random bonus stats</strong>. 
                     They can be upgraded through <strong className="yellow">fusion</strong> and <strong className="yellow">enhancement</strong>.
                 </p>
@@ -95,7 +95,7 @@ export const gear = {
 
                 <h3>Enhancement</h3>
                 <p>
-                    Enhancing armor requires gold and Enhancement Modules, which are obtained through shops and <Link href="/guides/dailiesweeklies"><a>Bygone Phantasm</a></Link>. It will add a +1 to your armor, <strong className="yellow">boosting the fixed stats</strong> of that piece.
+                    Enhancing armor requires gold and Enhancement Modules, which are obtained through shops and <Link href="/guides/systems/dailies-and-weeklies"><a>Bygone Phantasm</a></Link>. It will add a +1 to your armor, <strong className="yellow">boosting the fixed stats</strong> of that piece.
                 </p>
                 <p>
                     Every 5th level you will need an increased amount of gold, and Superior Modules as well. When all of your armor reaches an increment of 5 (+5, +10, +15..) then you will receive an additional stat boost.

@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 
 export const beginnerWeapons = {
     name: "Beginner Weapon Guide",
@@ -7,9 +7,9 @@ export const beginnerWeapons = {
     author: ["Stitch#8913"],
     text:
         <>
-            {/* <section className="stitch-wep-guide">
+            <section className="stitch-wep-guide">
                 <blockquote style={{ borderColor: "#e72e37" }}>
-                    Note: This guide has not been updated for <Link to="/banners">characters after Nemesis</Link>.
+                    Note: This guide has not been updated for <Link href="/banners">characters after Nemesis</Link>.
                 </blockquote>
                 <div>
                     <iframe src="https://www.youtube.com/embed/cmlWNfVmmYg" allow="fullscreen" modestbranding />
@@ -127,117 +127,143 @@ export const beginnerWeapons = {
                         <tbody>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/baiyuekui">
-                                        <img src="/images/avatar/baiyuekui.png" alt="Baiyuekui" />
-                                        <h4>Baiyuekui</h4>
+                                    <Link href="/simulacra/baiyuekui">
+                                        <a>
+                                            <img src="/images/avatar/baiyuekui.png" alt="Baiyuekui" />
+                                            <h4>Baiyuekui</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is a lightning element Tang Dao, her roles would be shield break and dps. This is good to have in your build so u can break shields, and interrupt boss skills, as well as having iframes for safety. I would at minimum use her at 1★ for the dmg boost, preferably at least 3★ for the shield break dmg. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/marc">
-                                        <img src="/images/avatar/marc.png" alt="Marc" />
-                                        <h4>Marc</h4>
+                                    <Link href="/simulacra/marc">
+                                        <a>
+                                            <img src="/images/avatar/marc.png" alt="Marc" />
+                                            <h4>Marc</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>His weapon is a physical Mech suit with a swap skill to enter his robot. He has defensive shields, offensive buffs, and great energy recharge. This helps to cast more switch skills while drastically increasing survivability and boosting offensive capabilities. At minimum I would use him at 1★ for the survivability, however 3★ optimally for the 35% dmg boost. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/zero">
+                                    <Link href="/simulacra/zero">
+                                        <a>
                                         <img src="/images/avatar/zero.png" alt="Zero" />
                                         <h4>Zero</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>His weapon is a fire cube. He provides heals, offensive buffs, and shields, as well as a decent recharge rate. This helps increase survivability while also boosting offensive capabilities. He is also the only non macro option for afk farming <s>gotta afk farm those mount parts and honey for foods</s>. I would at minimum use him at 1★ for the heals. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/king">
+                                    <Link href="/simulacra/king">
+                                        <a>
                                         <img src="/images/avatar/king.png" alt="KING" />
                                         <h4>KING</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>His weapon is a fire scythe. His roles are shield break. While he may primarily only do one thing, its quite important. At 1★ when breaking he provides a strong dot(damage over time) effect. This enables you to break shields easily, get the DoT, and swap to a stronger dps weapon. I would at minimum use him at 1★ for the break DoT. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/shiro">
+                                    <Link href="/simulacra/shiro">
+                                        <a>
                                         <img src="/images/avatar/shiro.png" alt="Shiro" />
                                         <h4>Shiro</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapons are physical chakrams. She also fills the shield break role. At 3★ she provides a full skill cd reset. This enables crazy combos and has great utility but decent investment as well. I would at minimum use her at 3★ for the free skill cd reset. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/cocoritter">
+                                    <Link href="/simulacra/coco-ritter">
+                                        <a>
                                         <img src="/images/avatar/cocoritter.png" alt="Coco Ritter" />
                                         <h4>Coco Ritter</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is an ice staff. Her role is healing, buff support, and recharge. This helps increase survivability as well as boost offensive capabilities. As a wise man once said, dead dps is no dps. At minimum I would use her at 1★ for the hp and energy regen over time. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/meryl">
+                                    <Link href="/simulacra/meryl">
+                                        <a>
                                         <img src="/images/avatar/meryl.png" alt="Meryl" />
                                         <h4>Meryl</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is an ice claymore. Her role is shield break, cc immune, shields. This enables her to quickly take down shields, as well as keep you alive without being thd-flexn around. I would at minimum use her at 1★ for the increased shield break power, as well as the self sustain. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/crow">
+                                    <Link href="/simulacra/crow">
+                                        <a>
                                         <img src="/images/avatar/crow.png" alt="Crow" />
                                         <h4>Crow</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>His weapon is lightning dual blades. His role is dps, offensive buff, cc immune. This enables him to provide high crit rate as well as boost lightning dmg without being thrown around while also doing significant dmg himself. At minimum I would use him at 3★ for the significant dmg boost it provides(30% when target below 60% hp). </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/cobalt-b">
+                                    <Link href="/simulacra/cobalt-b">
+                                        <a>
                                         <img src="/images/avatar/cobalt-b.png" alt="Cobalt-B" />
                                         <h4>Cobalt-B</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is a fire shotgun. Her role is dps. This enables her to shred down bosses and handle the fight before things get messy. I would at minimum use her at 6★ because without it, her skill cd is far too long to be worth using. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/claudia">
+                                    <Link href="/simulacra/claudia">
+                                        <a>
                                         <img src="/images/avatar/claudia.png" alt="Claudia" />
                                         <h4>Claudia</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is physical sword(katana). Her role is aerial dps and offensive buffs. This enables her to buff other weapons, and increase skill dmg at 5★ while doing decent dmg herself. I would at minimum use her at 1★ for the 24% dmg buff. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/samir">
+                                    <Link href="/simulacra/samir">
+                                        <a>
                                         <img src="/images/avatar/samir.png" alt="Samir" />
                                         <h4>Samir</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is electric dual guns. Her role is aerial dps, decent recharge. She is special in that she attacks in the air but above enemies keeping you relatively safe, while doing massive dmg. At minimum I would use her at 0★, not that her stars aren't good, but she is simply that good at base. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/huma">
+                                    <Link href="/simulacra/huma">
+                                        <a>
                                         <img src="/images/avatar/huma.png" alt="Huma" />
                                         <h4>Huma</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is fire shield. Her role is debuff, stun, dmg reduction. This enables her to neutralize enemies effectively, while providing decent recharge. At minimum I would use her at 0★ because her dupes while useful, aren't really game breaking in regards to her role. </td>
                             </tr>
                             <tr>
                                 <th>
-                                    <Link to="/simulacra/nemesis">
+                                    <Link href="/simulacra/nemesis">
+                                        <a>
                                         <img src="/images/avatar/nemesis.png" alt="Nemesis" />
                                         <h4>Nemesis</h4>
+                                        </a>
                                     </Link>
                                 </th>
                                 <td>Her weapon is lightning railguns. Her role is lightning support, dot, heals. This enables her to boost lightning dmg significantly, whole also healing and dealing lightning dmg while using another weapon. I would use her at 1★ minimum for the heals, and extra sustain. 3★ however adds DoT. </td>
@@ -311,6 +337,6 @@ export const beginnerWeapons = {
                     Meryl has the strongest breaking power while Shiro active skill boosts shield break efficiency and damage for party. She also has a skill cd reset when she breaks enemies shields from 3★.
                 </p>
                 <a href="https://www.bilibili.com/video/BV1Dr4y1D7jk">Support Showcase</a>
-            </section> */}
+            </section>
         </>
 }

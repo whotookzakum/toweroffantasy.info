@@ -14,7 +14,7 @@ export const gacha = {
                 <p>Weapons can be obtained with Gold Nuclei, Black Nuclei, and Red Nuclei (Limited Cache).<br/>
                 Gold and Black Nuclei can be obtained from exploration, and various events or shops.<br/>
                 Red Nuclei can occasionally be acquired from events and exploration milestones.<br/>
-                <strong className="yellow">Weapons come with their associated <Link href="/guides/simulacra"><a>Simulacra</a></Link>.</strong>
+                <strong className="yellow">Weapons come with their associated <Link href="/guides/systems/simulacra"><a>Simulacra</a></Link>.</strong>
                 </p>
 
                 <h3>Matrix Caches</h3>

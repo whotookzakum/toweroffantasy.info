@@ -40,7 +40,7 @@ export function ModalMenu({ list, filter, target }) {
                 break;
             case GUIDES:
                 options.menuClass = "guides";
-                options.linkPath = `guides/${item.uri}`;
+                options.linkPath = `guides/${item.type}/${item.uri}`;
                 const authors =
                     item.author.map((author, index) => {
                         return (index === item.author.length - 1) ?

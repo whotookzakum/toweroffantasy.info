@@ -35,11 +35,16 @@
         display: block;
         max-width: 100%;
     }
+    
+    section, 
+    header {
+        margin: 3rem auto;
+        padding: 0;
+        max-width: 75ch;
+    }
 
-    section,
     header {
         margin: 0 auto;
-        max-width: 75ch;
     }
 
     h1,
