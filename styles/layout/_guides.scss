@@ -1,0 +1,175 @@
+@use "../abstracts" as *;
+
+.pro,
+.con {
+    margin-left: 30px;
+}
+
+.pro::before,
+.con::before {
+    --color: #{clr(text, green)};
+    content: '+';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 17px;
+    height: 17px;
+    border: 2px solid var(--color);
+    font-size: 15.3px;
+    font-weight: 600;
+    color: var(--color);
+    border-radius: 50%;
+    filter: drop-shadow($shadow);
+    margin-right: 0.5rem;
+    margin-left: -30px;
+}
+
+.con::before {
+    --color: #{clr(text, red)};
+    content: '-';
+}
+
+.guide {
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    section, 
+    header {
+        margin: 3rem auto;
+        padding: 0;
+        max-width: 75ch;
+    }
+
+    header {
+        margin: 0 auto;
+    }
+
+    h1,
+    h4 {
+        margin-bottom: 0;
+    }
+
+    em {
+        font-style: normal;
+        color: clr(text, turquoise);
+    }
+
+
+    table {
+        text-align: left;
+        box-shadow: $shadow;
+
+        tbody th {
+            text-transform: none;
+        }
+
+        thead tr {
+            background-color: clr(container, dark);
+            border-bottom: 2px solid clr(text, gray);
+        }
+
+        tr {
+            background-color: clr(container, light);
+        }
+
+        tr:nth-child(even) {
+            background-color: clr(container, dark);
+        }
+    }
+
+    .table-housing-mats {
+        tbody th {
+            display: flex;
+
+            img {
+                max-width: 64px;
+            }
+        }
+    }
+
+    .devices {
+        margin: 1rem 0;
+        display: flex;
+        gap: 1rem;
+
+        li {
+            background-color: clr(container, light);
+            padding: 0.5rem 1rem;
+            text-transform: capitalize;
+            border-bottom: 2px solid clr(gift, base);
+            box-shadow: $shadow;
+            list-style: none;
+            width: fit-content;
+        }
+    }
+
+    .email-template {
+        padding: clamp(1rem, 5vw, 2rem);
+        background-color: clr(container, blue);
+        box-shadow: $shadow;
+        border-top: 4px solid clr(tier, s);
+
+        div {
+            background-color: clr(container, dark);
+            padding: clamp(1rem, 5vw, 2rem);
+        }
+    }
+}
+
+.pvp-strategy {
+    tbody th {
+        text-align: center;
+    }
+
+    li {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.dps-loadouts {
+    tbody th {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    .details-content .flex {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.stitch-wep-guide {
+    h4 {
+        margin: 0;
+    }
+
+    .wep-types {
+        h4 {
+
+            text-transform: uppercase;
+            color: clr(text, gray);
+        }
+    }
+
+    .wep-descriptions {
+        th, td {
+            padding: 1.5rem;
+        }
+
+        th {
+            text-align: center;
+        }
+    }
+}
