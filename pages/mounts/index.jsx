@@ -1,4 +1,4 @@
-import { ModalMenu } from "../../components/Modal/Modal";
+import { ModalMenu } from "../../components/Modal";
 import { MOUNTS } from "../../data/en-US/mounts/mountList";
 import Layout, { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';

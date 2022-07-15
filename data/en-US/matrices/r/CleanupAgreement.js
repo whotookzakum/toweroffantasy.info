@@ -5,7 +5,7 @@ const cleanupagreement = {
     rarity:"R",
     chinaOnly: true,
     matrix: {
-        set3: "Damage taken reduced by 6%"
+        set3: "Damage taken reduced by **6%**"
     }
 }
 

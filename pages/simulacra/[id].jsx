@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { hyphenToSpace, removeSpace } from "../../utils/stringHelper";
 import CNTag from "../../components/CNTag";
 import elementalEffects from "../../data/en-US/elementalEffects";
-import { Modal } from "../../components/Modal/Modal";
+import { Modal } from "../../components/Modal";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);

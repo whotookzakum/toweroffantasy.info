@@ -5,7 +5,7 @@ const offensivelogic = {
     rarity:"R",
     chinaOnly: true,
     matrix: { 
-        set3: "Shatter increased by 18%" 
+        set3: "Shatter increased by **18%**" 
     }
 }
 

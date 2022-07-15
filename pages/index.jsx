@@ -8,7 +8,7 @@ import { CHARACTERS } from "../data/en-US/characters/characterList";
 
 function getStandardAdditions(version) {
     return getAllBanners(version).filter(({banner}) => 
-        banner.subtext && banner.subtext.includes("Standard afterwards")).length;
+        banner.subtext && banner.subtext.includes("Standard")).length;
 }
 
 export default function Index() {
@@ -69,6 +69,7 @@ export default function Index() {
                     <li>Abyss</li>
                     <li>tiny</li>
                     <li>Gateoo</li>
+                    <li>Sky</li>
                 </ul>
                 
                 <p><i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i></p>

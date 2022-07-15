@@ -11,20 +11,20 @@ export const thingsYouMustKnow = {
                 <h2>1. Infinite Climb</h2>
 
                 <iframe src="https://www.youtube.com/embed/xcYGj-Ucu28" allow="fullscreen" modestbranding={1} />
- 
-                <details style={{margin: "1rem 0"}}>
+
+                <details style={{ margin: "1rem 0" }}>
                     <summary><strong className="yellow">Climb walls while consuming nearly 0 endurance.</strong></summary>
-                    <blockquote style={{margin: "0", boxShadow: "none"}}>
-                        <h3 style={{margin: "0"}}>Let Go + Double Jump + Grab On</h3>
+                    <blockquote style={{ margin: "0", boxShadow: "none" }}>
+                        <h3 style={{ margin: "0" }}>Let Go + Double Jump + Grab On</h3>
                         <h4>On PC</h4>
                         <kbd>CTRL</kbd> + <kbd>Space</kbd> + <kbd>Space</kbd> + <kbd>W</kbd>
                     </blockquote>
                 </details>
 
-                <details style={{margin: "1rem 0"}}>
+                <details style={{ margin: "1rem 0" }}>
                     <summary><strong className="yellow">Climb past ledges that block you from climbing vertically.</strong></summary>
-                    <blockquote style={{margin: "0", boxShadow: "none"}}>
-                        <h3 style={{margin: "0"}}>Backward Dash + Jump + Forward Dash</h3>
+                    <blockquote style={{ margin: "0", boxShadow: "none" }}>
+                        <h3 style={{ margin: "0" }}>Backward Dash + Jump + Forward Dash</h3>
                         <h4>On PC</h4>
                         <kbd>Right Click</kbd> + <kbd>Space</kbd> + <kbd>Right Click</kbd>
                     </blockquote>
@@ -60,9 +60,9 @@ export const thingsYouMustKnow = {
 
             <section>
                 <h2>4. Free Colossus Arms (SSR Relic)</h2>
-                
+
                 <iframe src="https://www.youtube.com/embed/CWBbNM2SHyw" allow="fullscreen" modestbranding={1} />
-                
+
                 <p>The free SSR relic <Link href="/relics/colossusarms"><a>Colossus Arms</a></Link> can be obtained on Day 1 from the Navia Ecological Park hidden quest line. You can also obtain the <Link href="/mounts/omniumbeastvii"><a>Omnium Beast VII</a></Link> and <Link href="/mounts/voyager"><a>Voyager</a></Link> mounts.</p>
             </section>
 
@@ -110,8 +110,8 @@ export const thingsYouMustKnow = {
 
             <section>
                 <h2>11. Passcode Terminals</h2>
-                    <img src="/images/guides/passcode_terminals.png" alt="Map of Passcode Terminals" />
-                    <span>Correct passcodes for all passcode terminals</span>
+                <img src="/images/guides/passcode_terminals.png" alt="Map of Passcode Terminals" />
+                <span>Correct passcodes for all passcode terminals</span>
             </section>
 
             <section>
@@ -144,63 +144,3 @@ export const thingsYouMustKnow = {
             </section>
         </>
 }
-
-const as = {
-    name: "15 Things You MUST Know",
-    author: ["Zakum#3080"],
-    section1: {
-        header: "1. Infinite Climb"
-    },
-    section2: {
-        header: "2. Jetpack Dash"
-    },
-    section3: {
-        header: "3. Party Teleport"
-    },
-    section4: {
-        header: "4. Free Colossus Arms (SSR Relic)"
-    },
-    section5: {
-        header: "5. Hidden Soft Pity"
-    },
-    section6: {
-        header: "6. Relic and Weapon Sets"
-    },
-    section7: {
-        header: "7. Exploring with the full world map"
-    },
-    section8: {
-        header: "8. Dungeons for weekly activity"
-    },
-    section9: {
-        header: "9. Aerial Attacks do more damage"
-    },
-    section10: {
-        header: "10. Aerial Discharge Skill"
-    },
-    section11: {
-        header: "11. Passcode Terminals"
-    },
-    section12: {
-        header: "12. BREAK THE GOD DAMN SHIELD",
-        text: ""
-    },
-    section13: {
-        header: "13. Tap Revive",
-        text: ""
-    },
-    section14: {
-        header: "14. Sending coordinates",
-        text: ""
-    },
-    section15: {
-        header: "15. Daily Simulacra Gifts",
-        text:
-            ``
-    },
-    section16: {
-        header: "Bonus: Unstuck Button",
-        text:
-            ` `
-    }
-};

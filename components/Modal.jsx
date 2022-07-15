@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { CHARACTERS } from "../../data/en-US/characters/characterList";
-import { RELICS } from "../../data/en-US/relics/relicList";
-import { MOUNTS } from "../../data/en-US/mounts/mountList";
-import { MATRICES } from "../../data/en-US/matrices/matrixList";
-import { GUIDES } from "../../data/en-US/guides/guideList";
+import { CHARACTERS } from "../data/en-US/characters/characterList";
+import { RELICS } from "../data/en-US/relics/relicList";
+import { MOUNTS } from "../data/en-US/mounts/mountList";
+import { MATRICES } from "../data/en-US/matrices/matrixList";
+import { GUIDES } from "../data/en-US/guides/guideList";
 import { useRouter } from "next/router";
 
 export function ModalMenu({ list, filter, target }) {
@@ -15,6 +15,7 @@ export function ModalMenu({ list, filter, target }) {
         switch (list) {
             case CHARACTERS:
                 options.menuClass = "simulacra";
+                options.linkPath = `simulacra/${item.uri}`;
                 options.imgPath = `avatar/${item.imgSrc}`;
                 options.conditionalContent =
                     <div className="flex" style={{ gap: "0.3rem" }}>
@@ -24,18 +25,22 @@ export function ModalMenu({ list, filter, target }) {
                 break;
             case MATRICES:
                 options.menuClass = "matrices";
+                options.linkPath = `matrices/${item.uri}`;
                 options.imgPath = `matrices/${item.imgSrc}`;
                 break;
             case RELICS:
                 options.menuClass = "relics";
+                options.linkPath = `relics/${item.uri}`;
                 options.imgPath = `relics/${item.imgSrc}`;
                 break;
             case MOUNTS:
                 options.menuClass = "mounts";
+                options.linkPath = `mounts/${item.uri}`;
                 options.imgPath = `mounts/${item.imgSrc}`;
                 break;
             case GUIDES:
                 options.menuClass = "guides";
+                options.linkPath = `guides/${item.uri}`;
                 const authors =
                     item.author.map((author, index) => {
                         return (index === item.author.length - 1) ?
@@ -49,7 +54,7 @@ export function ModalMenu({ list, filter, target }) {
 
         return (
             <li key={item.uri}>
-                <Link href={`/${options.menuClass}/${item.uri}`}>
+                <Link href={`/${options.linkPath}`}>
                     <a>
                         {item.chinaOnly && <abbr title="China Exclusive" />}
                         {options.imgPath &&
@@ -74,27 +79,26 @@ export function ModalMenu({ list, filter, target }) {
 
 export function Modal({ item, children }) {
     const router = useRouter()
-    const path = router.pathname;
+    const path = router.pathname.substring(1).split("/[id]")[0];
+
     const options = new Object();
-    if (path.includes("simulacra")) {
-        options.headerClass = 'simulacra';
-        options.headerImgPath = `avatar/${item.imgSrc}`;
-        options.bgImgPath = `art/${item.imgSrc}`;
-    }
-    else if (path.includes("matrices")) {
-        options.headerClass = 'matrices';
-        options.headerImgPath = `matrices/${item.imgSrc}`;
-        options.bgImgPath = `art/${item.imgSrc}`;
-    }
-    else if (path.includes("relics")) {
-        options.headerClass = 'relics';
-        options.headerImgPath = `relics/${item.imgSrc}`;
-        options.bgImgPath = `relics/${item.imgSrc}`;
-    }
-    else if (path.includes("mounts")) {
-        options.headerClass = 'mounts';
-        options.headerImgPath = `mounts/${item.imgSrc}`;
-        options.bgImgPath = `bg-2.png`;
+    options.headerClass = path;
+    options.headerImgPath = path + "/" + item.imgSrc;
+    options.bgImgPath = path + "/" + item.imgSrc;
+
+    switch (path) {
+        case "simulacra":
+            options.headerImgPath = `avatar/${item.imgSrc}`;
+            options.bgImgPath = `art/${item.imgSrc}`;
+            break;
+        case "matrices": 
+            options.bgImgPath = `art/${item.imgSrc}`;
+            break;
+        case "mounts":
+            options.bgImgPath = `bg-2.png`;
+            break;
+        default:
+            break;
     }
 
     return (
@@ -108,9 +112,13 @@ export function Modal({ item, children }) {
 }
 
 function ModalHeader({ item, options }) {
-    const color = item.rarity === 'SSR' ?
-        { color: "var(--color-tier-s)" } :
-        { color: "var(--color-tier-a)" }
+    let color = { color: "var(--color-tier-s)" };
+    if (item.rarity === 'SR') {
+        color = { color: "var(--color-tier-a)" };
+    }
+    else if (item.rarity === 'R') {
+        color = { color: "var(--color-tier-b)" };
+    }
     
     return (
         <header className={options.headerClass} >

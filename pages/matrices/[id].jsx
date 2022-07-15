@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { getMatrixData, getAllMatrixIds } from "../../lib/matrices";
 import ReactMarkdown from 'react-markdown';
 import CNTag from "../../components/CNTag";
-import { Modal } from "../../components/Modal/Modal";
+import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
 
 export async function getStaticProps({ params }) {

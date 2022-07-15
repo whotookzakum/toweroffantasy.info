@@ -1,4 +1,4 @@
-import { ModalMenu } from "../../components/Modal/Modal";
+import { ModalMenu } from "../../components/Modal";
 import { RELICS } from "../../data/en-US/relics/relicList";
 import { removeSpace } from "../../utils/stringHelper";
 import Layout, { setPageTitle } from "../../components/Layout";

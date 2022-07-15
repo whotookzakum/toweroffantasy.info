@@ -1,9 +1,9 @@
-import { ModalMenu } from "../../components/Modal/Modal";
+import { ModalMenu } from "../../components/Modal";
 import { GUIDES } from "../../data/en-US/guides/guideList";
 import Layout, { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
-function Guides() {
+export default function Guides() {
     return (
         <Layout>
             <Head>
@@ -42,25 +42,8 @@ function Guides() {
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
                 <h2 className="yellow">Referential</h2>
                 <p>Data that is mainly meant for reference purposes.</p>
-                <ModalMenu list={GUIDES} filter="type" target="reference" />
+                <ModalMenu list={GUIDES} filter="type" target="referential" />
             </section>
         </Layout>
     );
 }
-
-export function GuideArticle({ guide }) {
-    const author = guide.author.map((author, index) => {
-        return (index === guide.author.length - 1) ? <em>{author}</em> : <><em>{author}</em>, </>
-    })
-    return (
-        <article className="guide">
-            <header>
-                <h1>{guide.name}</h1>
-                <div className="authors">By {author}</div>
-            </header>
-            {guide.text}
-        </article>
-    )
-}
-
-export default Guides;

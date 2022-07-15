@@ -15,7 +15,7 @@ const nemesis = {
             },
             {
                 bannerNo: 13,
-                subtext: "Standard afterwards",
+                subtext: "Standard in September",
                 start: "23 Jun 2022",
                 end: "9 Jul 2022",
                 duration: "16d",

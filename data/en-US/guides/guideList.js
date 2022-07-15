@@ -1,16 +1,16 @@
-import { dailies } from "./systems/dailies";
-import { cnTopUp } from "./technical/cnTopUp";
+import { dailies } from "./systems/dailies-and-weeklies";
+import { cnTopUp } from "./technical/cn-top-up";
 import { simulacra } from "./systems/simulacra";
 import { gacha } from "./systems/gacha";
-import { thingsYouMustKnow } from "./general/thingsYouMustKnow";
+import { thingsYouMustKnow } from "./general/15-things-you-must-know.js";
 import { vitality } from "./systems/vitality";
 import { housing } from "./systems/housing";
-import { cnRegistration } from "./technical/cnRegistration";
-import { pvpStrategy } from "./strategy/pvpStrategy";
+import { cnRegistration } from "./technical/cn-registration";
+import { pvpStrategy } from "./strategy/pvp-strategy-guide";
 import { gear } from "./systems/gear";
-import { darkCrystals } from "./referential/darkCrystals";
-import { dpsLoadouts } from "./strategy/dpsLoadouts";
-import { beginnerWeapons } from "./general/beginnerWeaponsMatrices";
+import { darkCrystals } from "./referential/dark-crystal-sources";
+import { dpsLoadouts } from "./strategy/dps-weapon-loadouts";
+import { beginnerWeapons } from "./general/beginner-weapon-guide";
 
 export const GUIDES = [
     // GENERAL
