@@ -1,12 +1,12 @@
 import { ModalMenu } from "../../components/Modal";
 import { MATRICES } from "../../data/en-US/matrices/matrixList";
 import { removeSpace } from "../../utils/stringHelper";
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
 function Matrices() {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle('Matrices')}</title>
                 <meta name="description" content="Information about all the Matrix set effects in Tower of Fantasy Global and Chinese versions." />
@@ -38,7 +38,7 @@ function Matrices() {
                 <ModalMenu list={MATRICES} filter="rarity" target="R" />
             </section>
 
-        </Layout>
+        </>
     );
 }
 

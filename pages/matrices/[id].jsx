@@ -1,4 +1,4 @@
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { getMatrixData, getAllMatrixIds } from "../../lib/matrices";
 import ReactMarkdown from 'react-markdown';
@@ -64,7 +64,7 @@ export default function MatrixPage({ matrix }) {
         )
     });
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle(matrix.name + " Matrix")}</title>
             </Head>
@@ -74,6 +74,6 @@ export default function MatrixPage({ matrix }) {
                     {setEffects}
                 </div>
             </Modal>
-        </Layout>
+        </>
     )
 }

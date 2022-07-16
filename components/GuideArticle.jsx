@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Layout, { setPageTitle } from "./Layout"
+import { setPageTitle } from "./Layout"
 import { useEffect, useState } from "react";
 
 export function GuideArticle({ guide }) {
@@ -18,7 +18,7 @@ export function GuideArticle({ guide }) {
     }
 
     return (
-        <Layout>
+        <>
             <article className="guide">
                 <Head>
                     <title>{setPageTitle(guide.name)}</title>
@@ -31,6 +31,6 @@ export function GuideArticle({ guide }) {
                 </header>
                 {guide.text}
             </article>
-        </Layout>
+        </>
     )
 }

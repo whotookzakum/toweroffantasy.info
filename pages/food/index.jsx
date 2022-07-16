@@ -1,7 +1,8 @@
 // import ReactMarkdown from "react-markdown";
 import dishes from "../../data/en-US/food/dishes";
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
+import ReactMarkdown from "react-markdown";
 
 function Food() {
     const getRecipe = (dish) => {
@@ -27,14 +28,14 @@ function Food() {
                     </div>
                     <span>{dish.name}</span>
                 </th>
-                {/* <td className="col-effect"><ReactMarkdown>{dish.effect}</ReactMarkdown></td> */}
+                <td className="col-effect"><ReactMarkdown>{dish.effect}</ReactMarkdown></td>
                 <td className="col-recipe"><ul className="ingredient-list">{recipe}</ul></td>
             </tr>
         )
     });
 
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle('Food')}</title>
                 <meta name="description" content="Recipes for craftable food in Tower of Fantasy Global and Chinese versions." />
@@ -115,7 +116,7 @@ function Food() {
                     </tbody>
                 </table>
             </section>
-        </Layout>
+        </>
     );
 }
 

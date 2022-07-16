@@ -1,4 +1,4 @@
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { getSimulacrumData, getAllSimulacrumIds } from "../../lib/simulacra";
 import ReactMarkdown from 'react-markdown';
@@ -132,7 +132,7 @@ export default function SimulacrumPage({ simulacrum }) {
             <li><img src={`/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
     });
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle(simulacrum.name)}</title>
             </Head>
@@ -302,6 +302,6 @@ export default function SimulacrumPage({ simulacrum }) {
                     </section>
                 </div>
             </Modal>
-        </Layout>
+        </>
     )
 }

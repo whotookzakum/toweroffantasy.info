@@ -128,6 +128,28 @@
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
     }
+    
+    .weapons-table {
+        tbody img {
+            min-width: 128px;
+        }
+        details {
+            box-shadow: none;
+            margin-bottom: 1rem;
+            summary {
+                box-shadow: $shadow;
+            }
+            .details-content {
+                display: block;
+                background: none;
+            }
+
+            hr {
+                margin: 1.5rem 0;
+                color: clr(text, dark);
+            }
+        }
+    }
 }
 
 .dps-loadouts {
@@ -170,6 +192,65 @@
 
         th {
             text-align: center;
+        }
+    }
+}
+
+
+.tier-list {
+    display: flex;
+    flex-direction: column;
+
+    .tier-list-row {
+        display: flex;
+        align-items: center;
+    }
+
+    .tier-title {
+        height: 121px;
+        min-width: 96px;
+        margin: 0;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: clr(container);
+    }
+    .tier-s {
+        background: #ff7f7f;
+    }
+    .tier-a {
+        background: #ffbf7f;
+    }
+    .tier-b {
+        background: #ffdf7f;
+    }
+    .tier-c {
+        background: #ffff7f;
+    }
+    .tier-d {
+        background: #bfff7f;
+    }
+
+    .tier-list-item-wrapper {
+        display: flex;
+    }
+
+    .tier-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 96px;
+
+        h4 {
+            font-weight: normal;
+            margin: 0;
+        }
+
+        &:hover {
+            color: clr(text, turquoise);
         }
     }
 }

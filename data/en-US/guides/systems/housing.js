@@ -15,9 +15,8 @@ export const housing = {
                 </p>
                 <img src="/images/guides/developerlogs.jpg" alt="Developer Logs Map" />
                 <blockquote>
-                    To build on your Home Island, you will need 1170 Exploration Points on Artificial Island (inner region only).
+                    To build on your Home Island, you will need 50% completion on Artificial Island (inner region only).
                 </blockquote>
-                <p></p>
             </section>
 
             <section>

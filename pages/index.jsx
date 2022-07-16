@@ -1,4 +1,4 @@
-import Layout, { setPageTitle } from "../components/Layout";
+import { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
 import Head from "next/head";
@@ -13,7 +13,7 @@ function getStandardAdditions(version) {
 
 export default function Index() {
     return(
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle('Home')}</title>
                 <meta name="description" content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!" />
@@ -74,6 +74,6 @@ export default function Index() {
                 
                 <p><i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i></p>
             </div>
-        </Layout>
+        </>
     )
 }

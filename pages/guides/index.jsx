@@ -1,11 +1,11 @@
 import { ModalMenu } from "../../components/Modal";
 import { GUIDES } from "../../data/en-US/guides/guideList";
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
 export default function Guides() {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle('Guides')}</title>
                 <meta name="description" content="Guides for Tower of Fantasy Global and Chinese versions." />
@@ -44,6 +44,6 @@ export default function Guides() {
                 <p>Data that is mainly meant for reference purposes.</p>
                 <ModalMenu list={GUIDES} filter="type" target="referential" />
             </section>
-        </Layout>
+        </>
     );
 }

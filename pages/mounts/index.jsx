@@ -1,11 +1,11 @@
 import { ModalMenu } from "../../components/Modal";
 import { MOUNTS } from "../../data/en-US/mounts/mountList";
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
 function Mounts() {
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle('Mounts')}</title>
                 <meta name="description" content="How to obtain all the mounts in Tower of Fantasy Global and Chinese versions." />
@@ -23,7 +23,7 @@ function Mounts() {
                 <h2>Mount List</h2>
                 <ModalMenu list={MOUNTS} />
             </section>
-        </Layout>
+        </>
     );
 }
 
