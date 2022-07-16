@@ -6,11 +6,12 @@ import { thingsYouMustKnow } from "./general/15-things-you-must-know.js";
 import { vitality } from "./systems/vitality";
 import { housing } from "./systems/housing";
 import { cnRegistration } from "./technical/cn-registration";
-import { pvpStrategy } from "./strategy/pvp-strategy-guide";
+import { apexLeague } from "./strategy/apex-league";
 import { gear } from "./systems/gear";
 import { darkCrystals } from "./referential/dark-crystal-sources";
 import { dpsLoadouts } from "./strategy/dps-weapon-loadouts";
 import { beginnerWeapons } from "./general/beginner-weapon-guide";
+import { pvp } from "./systems/pvp";
 
 export const GUIDES = [
     // GENERAL
@@ -28,6 +29,7 @@ export const GUIDES = [
         // quicksand whirlpool, gray zone, dark zone, map of mirror city
     vitality,
     gear,
+    pvp,
     simulacra,
     dailies,
     // pvp
@@ -38,7 +40,7 @@ export const GUIDES = [
     // STRATEGY
     dpsLoadouts,
     // chipProgression,
-    // pvpStrategy,
+    // apexLeague,
     // wormhole
     // frontier clash
     // void rifts

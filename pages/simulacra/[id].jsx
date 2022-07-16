@@ -1,4 +1,4 @@
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { getSimulacrumData, getAllSimulacrumIds } from "../../lib/simulacra";
 import ReactMarkdown from 'react-markdown';
@@ -31,7 +31,7 @@ export default function SimulacrumPage({ simulacrum }) {
     const elementColor = `var(--color-${weapon.element})`;
     const advancements = Object.entries(weapon.advancement).map(([star, effect]) => {
         return (
-            <tr>
+            <tr key={star}>
                 <th>{star.split("star").pop()} ★</th>
                 <td><ReactMarkdown>{effect}</ReactMarkdown></td>
             </tr>
@@ -41,7 +41,7 @@ export default function SimulacrumPage({ simulacrum }) {
         return (
             Object.entries(bonusEffects).map(([key, effect]) => {
                 return (
-                    <div>
+                    <div key={key}>
                         <h4>{effect.title}</h4>
                         <ReactMarkdown>{effect.description}</ReactMarkdown>
                     </div>
@@ -72,13 +72,13 @@ export default function SimulacrumPage({ simulacrum }) {
         return result;
     });
     let veraGiftDisclaimer = false;
-    const giftCategories = awakening.giftCategories.map(gift => {
-        if (gift === "vera") veraGiftDisclaimer = true;
+    const giftCategories = awakening.giftCategories.map(giftCategory => {
+        if (giftCategory === "vera") veraGiftDisclaimer = true;
         const style = {
-            color: `var(--color-${gift})`,
-            borderColor: `var(--color-${gift})`
+            color: `var(--color-${giftCategory})`,
+            borderColor: `var(--color-${giftCategory})`
         };
-        return <li style={style}>{hyphenToSpace(gift)}</li>;
+        return <li key={giftCategory} style={style}>{hyphenToSpace(giftCategory)}</li>;
     })
     const gifts = awakening.gifts.map(group => {
         let rarity = 2;
@@ -104,13 +104,13 @@ export default function SimulacrumPage({ simulacrum }) {
         })
     }
     function getBreakdown(breakdown) {
-        return breakdown.map(step => <li><ReactMarkdown>{step}</ReactMarkdown></li>)
+        return breakdown.map(step => <li key={step}><ReactMarkdown>{step}</ReactMarkdown></li>)
     }
     const abilitiesArray = Object.entries(weapon.abilities);
     const abilities = abilitiesArray.map(([category, abilityList]) => {
         const abilitiesInThisCategory = abilityList.map(ability => {
             return (
-                <div className="weapon-ability">
+                <div key={ability} className="weapon-ability">
                     <h3>{ability.name}</h3>
                     {ability.input &&
                         <div className="ability-inputs">{getInputs(ability.input)}</div>}
@@ -121,7 +121,7 @@ export default function SimulacrumPage({ simulacrum }) {
             )
         });
         return (
-            <details>
+            <details key={category}>
                 <summary><h4>{category}</h4></summary>
                 <div className="details-content">{abilitiesInThisCategory}</div>
             </details>
@@ -129,10 +129,10 @@ export default function SimulacrumPage({ simulacrum }) {
     })
     const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
         return (matricesList.map(matrix =>
-            <li><img src={`/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
+            <li key={matrix}><img src={`/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
     });
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle(simulacrum.name)}</title>
             </Head>
@@ -302,6 +302,6 @@ export default function SimulacrumPage({ simulacrum }) {
                     </section>
                 </div>
             </Modal>
-        </Layout>
+        </>
     )
 }

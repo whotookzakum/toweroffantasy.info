@@ -9,7 +9,7 @@ export const gear = {
         <>
             <section>
                 <p>
-                    There are 3 main types of gear in Tower of Fantasy: <strong className="yellow">Weapons, Matrices, and Armor</strong>.<br/>
+                    There are 4 main types of gear in Tower of Fantasy: <strong className="yellow">Weapons, Matrices, Armor, and Relics</strong>.<br/>
                     They all increase your stats and gear score (GS).
                 </p>
             </section>
@@ -18,6 +18,9 @@ export const gear = {
                 <p>
                     Obtained through the various gacha banners in the game and world bosses.<br/>
                     They can be upgraded through <strong className="yellow">levels</strong> and <strong className="yellow">advancements</strong>.
+                </p>
+                <p>
+                    Each weapon has 3 base stats, which differ between ATK/HP/CRIT and ATK/HP/RESISTANCE for each weapon. They also have a <Link href="/guides/general/beginner-weapon-guide">Type (resonance)</Link> and Element.
                 </p>
 
                 <h3>Leveling Weapons</h3>
@@ -119,6 +122,19 @@ export const gear = {
                 </p>
                 <p>
                     Additionally, these items are separated by element, so there is one for each element. A Flame Arc Core's fixed stats will only consist of Flame ATK.
+                </p>
+            </section>
+            <section>
+                <h2>Relics</h2>
+                <p>
+                    Relics are active tools that you can use in combat or for exploration. They can be upgraded through <strong className="yellow">advancements</strong>, similar to weapons.
+                </p>
+                <h3>Advancements</h3>
+                <p>
+                    Advancements improve the effects of Relics such as increasing their damage, lowering their cooldown, or even adding new abilities.
+                </p>
+                <p>
+                    Each relic can be advanced up to 5 times by using Relic Fragments. Fragments can be obtained through various shops, events, battle pass, and more. At 4★ they will provide a passive stat such as elemental attack or reduced elemental damage taken.
                 </p>
             </section>
         </>

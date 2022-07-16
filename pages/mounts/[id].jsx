@@ -1,4 +1,4 @@
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { getMountData, getAllMountIds } from "../../lib/mounts";
 import ReactMarkdown from 'react-markdown';
@@ -27,7 +27,7 @@ export default function MountModal({ mount }) {
     const parts = Object.entries(mount.parts).map(([key, value]) => {
         const partNum = key.split("part").pop();
         return (
-            <div className="spotlight mount-part">
+            <div key={key} className="spotlight mount-part">
                 <div className="flex">
                     <img className="mount-part-img" src={`/images/mounts/${removeSpace(mount.name)}-${partNum}.png`} alt={`${mount.name} Part ${partNum}`} />
                     <div className="mount-part-text" >
@@ -53,7 +53,7 @@ export default function MountModal({ mount }) {
         )
     })
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle(mount.name)}</title>
             </Head>
@@ -67,6 +67,6 @@ export default function MountModal({ mount }) {
                     </section>
                 </div>
             </Modal>
-        </Layout>
+        </>
     )
 }

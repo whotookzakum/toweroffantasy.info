@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
-// import { CNBanners, Banners } from "../data/en-US/bannerSchedule";
 import { CHARACTERS } from '../data/en-US/characters/characterList';
-import { removeSpace } from "../utils/stringHelper";
-import Layout, { setPageTitle } from '../components/Layout';
+import { setPageTitle } from '../components/Layout';
 import Head from 'next/head';
 
 function BannerList({ data }) {
     const listItems = data.map(({name, element, uri, banner}) =>
-        <tr style={{ color: `var(--color-${element})` }}>
+        <tr key={name} style={{ color: `var(--color-${element})` }}>
             <th>
                 <Link href={`/simulacra/${uri}`}><a>{name}</a></Link>
                 <br />
@@ -52,7 +50,7 @@ function BannerSchedule() {
     const [isExpanded, setHeight] = useState({ china: false, global: false });
 
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle('Banner Schedule')}</title>
                 <meta name="description" content="Limited Banner start and end dates for Tower of Fantasy Global and Chinese versions." />
@@ -105,7 +103,7 @@ function BannerSchedule() {
                     </table>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
 

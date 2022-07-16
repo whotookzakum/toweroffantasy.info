@@ -1,4 +1,4 @@
-import Layout, { setPageTitle } from "../../components/Layout";
+import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { getRelicData, getAllRelicIds } from "../../lib/relics";
 import ReactMarkdown from 'react-markdown';
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 export default function RelicPage({ relic }) {
     const advancements = Object.entries(relic.advancement).map(([star, effect]) => {
         return (
-            <tr>
+            <tr key={star}>
                 <th>{star.split("star").pop()} ★</th>
                 <td><ReactMarkdown rehypePlugins={[rehypeRaw]}>{effect}</ReactMarkdown></td>
             </tr>
@@ -34,7 +34,7 @@ export default function RelicPage({ relic }) {
     });
 
     return (
-        <Layout>
+        <>
             <Head>
                 <title>{setPageTitle(relic.name)}</title>
             </Head>
@@ -64,6 +64,6 @@ export default function RelicPage({ relic }) {
                     </section>
                 </div>
             </Modal>
-        </Layout>
+        </>
     )
 }
