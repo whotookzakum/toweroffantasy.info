@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 function Food() {
     const getRecipe = (dish) => {
         return dish.ingredients.map(ingredient =>
-            <li className="ingredient">
+            <li key={ingredient.item.name} className="ingredient">
                 <div className={`item-frame rarity-${ingredient.item.rarity}`}>
                     <img src={`/images/food/ingredients/${ingredient.item.imgSrc}`} alt={ingredient.item.name} />
                     <h3>{ingredient.amount}</h3>
@@ -20,7 +20,7 @@ function Food() {
     const foodList = dishes.map(dish => {
         const recipe = getRecipe(dish);
         return (
-            <tr>
+            <tr key={dish.name}>
                 <th className="col-dish">
                     <div className={`item-frame rarity-${dish.rarity}`}>
                         {dish.chinaOnly && <abbr title="China Exclusive" />}

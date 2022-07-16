@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 export default function RelicPage({ relic }) {
     const advancements = Object.entries(relic.advancement).map(([star, effect]) => {
         return (
-            <tr>
+            <tr key={star}>
                 <th>{star.split("star").pop()} ★</th>
                 <td><ReactMarkdown rehypePlugins={[rehypeRaw]}>{effect}</ReactMarkdown></td>
             </tr>

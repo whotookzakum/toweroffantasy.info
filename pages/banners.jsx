@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 function BannerList({ data }) {
     const listItems = data.map(({name, element, uri, banner}) =>
-        <tr style={{ color: `var(--color-${element})` }}>
+        <tr key={name} style={{ color: `var(--color-${element})` }}>
             <th>
                 <Link href={`/simulacra/${uri}`}><a>{name}</a></Link>
                 <br />

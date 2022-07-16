@@ -1,6 +1,6 @@
 import { CHANGELOG } from "../data/en-US/changelog";
 
-const changelogContent = CHANGELOG.map(update => <tr><th>{update.date}</th><td>{update.text}</td></tr>);
+const changelogContent = CHANGELOG.map(update => <tr key={update.date}><th>{update.date}</th><td>{update.text}</td></tr>);
 
 export default function Changelog() {
     return (

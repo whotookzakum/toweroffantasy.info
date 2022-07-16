@@ -27,7 +27,7 @@ export default function MountModal({ mount }) {
     const parts = Object.entries(mount.parts).map(([key, value]) => {
         const partNum = key.split("part").pop();
         return (
-            <div className="spotlight mount-part">
+            <div key={key} className="spotlight mount-part">
                 <div className="flex">
                     <img className="mount-part-img" src={`/images/mounts/${removeSpace(mount.name)}-${partNum}.png`} alt={`${mount.name} Part ${partNum}`} />
                     <div className="mount-part-text" >

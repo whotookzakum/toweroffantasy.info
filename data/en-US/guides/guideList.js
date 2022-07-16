@@ -40,7 +40,7 @@ export const GUIDES = [
     // STRATEGY
     dpsLoadouts,
     // chipProgression,
-    apexLeague,
+    // apexLeague,
     // wormhole
     // frontier clash
     // void rifts

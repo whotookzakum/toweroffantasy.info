@@ -29,7 +29,7 @@ export default function MatrixPage({ matrix }) {
     const setEffects = Object.entries(matrixSet).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
         return (
-            <section className="matrix-set w-75ch">
+            <section key={key} className="matrix-set w-75ch">
                 <h3>{reqPieces}-piece Set</h3>
                 <ReactMarkdown rehypePlugins={[rehypeRaw]}>{matrixSet[key]}</ReactMarkdown>
                 <details style={{ display: 'none' }}>
