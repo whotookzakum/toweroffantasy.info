@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: '/toweroffantsy.info',
+  assetPrefix: './'
 }
 
 module.exports = nextConfig
