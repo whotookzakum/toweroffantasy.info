@@ -1,7 +1,28 @@
 const cobalt = {
     name: "Кобальт-С",
+    uri: "cobalt-b",
+    imgSrc: "cobalt-b.png",
     rarity: "SSR",
     chinaOnly: false,
+    banners: {
+        cn: [
+            {
+                bannerNo: 2,
+                start: "8 Янв 2022",
+                end: "26 Янв 2022",
+                duration: "18д",
+                week: "4~7"
+            },
+            {
+                bannerNo: 8,
+                subtext: "Затем уходит в стандарт",
+                start: "13 Апр 2022",
+                end: "27 Апр 2022",
+                duration: "14д",
+                week: "18~20"
+            }
+        ]
+    },
     weapon: {
         name: "Пылающий револьвер",
         element: "flame",
@@ -23,7 +44,7 @@ const cobalt = {
             
             star6: "Активный навык оружия поджигает цель на **15** секунд. Время перезарядки активного навыка уменьшается на **4** секунды, когда атака в уклонении любого оружия попадает в цель (время перезарядки можно уменьшить раз в **1,5** секунды). Периодический урон от атак в уклонении также может активировать этот эффект."
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["samir", "crow"],
             set4: ["cobalt-b", "samir"],
@@ -57,7 +78,7 @@ const cobalt = {
         height: '157 см',
         birthplace: 'Крон',
         horoscope: 'Рак',
-        birthday: '26 Июня',
+        birthday: '26 Июн',
         voiceActors: {
             jp: "川澄綾子 (Аяко Кавасуми)",
             en: "Stephanie Kerbis (Стефани Кербис)",
