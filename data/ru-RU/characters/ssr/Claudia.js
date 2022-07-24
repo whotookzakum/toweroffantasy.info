@@ -1,7 +1,28 @@
 const claudia = {
     name: "Клаудия",
+    uri: "claudia",
+    imgSrc: "claudia.png",
     rarity: "SSR",
     chinaOnly: false,
+    banners: {
+        cn: [
+            {
+                bannerNo: 1,
+                start: "22 Дек 2021",
+                end: "5 Янв 2022",
+                duration: "14д",
+                week: "2~4"
+            },
+            {
+                bannerNo: 6,
+                subtext: "Затем уходит в стандарт",
+                start: "19 Мар 2022",
+                end: "21 Мар 2022",
+                duration: "2д",
+                week: "14/15"
+            }
+        ]
+    },
     weapon: {
         name: "Клинок Гурэн",
         element: "physical",
@@ -23,62 +44,66 @@ const claudia = {
 
             star6: `Урон активного навыка больше не уменьшается при попадании по одной и той же цели. Применение активного навыка или навыка высвобождения накладывает **1** эффект Боевых ран на всех врагов в радиусе 8 метров.`
         },
-        skills: [
-            {
-                name: "Quick Slash",
-                type: "normal",
-                desc: `While on the ground, swing the blade to attack 5 times in a row.  
-                        First Attack: Deal damage equal to **39%** of ATK + **2** and knock the target back a short distance.  
-                        Second Attack: Deal damage equal to **54.6%** of ATK + **3** and knock the target back a short distance.  
-                        Third Attack: Deal damage equal to **49.4%** of ATK + **3** and knock the target back a short distance.  
-                        Fourth Attack: Deal damage equal to **87%** of ATK + **5** and knock the target back a short distance.  
-                        Fifth Attack: Deal damage equal to **148.1%** of ATK + **8** and **launch** the target.`,
-            },
-            {
-                name: "Jumping Strike",
-                type: "normal",
-                desc: `While airborne, tap normal attack to attack 4 times in a row.  
-                        First Attack: Deal damage equal to **23.2%** of ATK + **1**.  
-                        Second Attack: Deal damage equal to **40.3%** of ATK + **2**.  
-                        Third Attack: Deal damage equal to **95.4%** of ATK + **5**.  
-                        Fourth Attack: Deal damage equal to **115.8%** of ATK + **6** and deliver a **knockdown**.`,
-            },
-            {
-                name: "Cyclone",
-                type: "normal",
-                desc: `Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal **39.8%** of ATK + **2** to a single target.`,
-            },
-            {
-                name: "Diving Edge",
-                type: "normal",
-                desc: `Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to **10%** of ATK + **1** each hit. Upon landing, deal damage equal to **63.6%** of ATK + **3** and knock the target back. The higher you are when cast, the higher the damage dealt, up to **600%** of ATK.`,
-            },
-            {
-                name: "Sneak Attack",
-                type: "normal",
-                desc: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
-            },
-            {
-                name: "Dodge",
-                type: "dodge",
-                desc: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
-            },
-            {
-                name: "Leap Attack",
-                type: "dodge",
-                desc: `Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to **31.6%** of ATK + **2**, **knocking the target into the air** and becoming airborne, then deal additional damage equal to **47.3%** of ATK + **2**.`,
-            },
-            {
-                name: "Roam",
-                type: "skill",
-                desc: `Dance through targets while swinging the blade, dealing damage equal to **348.5%** of ATK + **18** in total to up to **5** targets (attacks on the same target deal **20%** less damage). At the end of the ability, slash the space in front, dealing damage equal to **264%** of ATK + **14** to targets and knocking them into the air. Immune to crowd-control effects while ability is in use. Cooldown: **15** seconds.`,
-            },
-            {
-                name: "Unbridled Flurry",
-                type: "discharge",
-                desc: `When a <b>weapon is fully charged</b> or triggers <b>Phantasia</b>, switching to this weapon from another weapon **removes all debuffs from the wielder**, who charges and **airbornes** a target to deal **436.2%** x ATK + **23** damage, leaving behind a bladestorm that deals **174.4%** x ATK + **9** damage to the target, while immunizing self to grievous/freeze/burn/electrify effects for **5** seconds.`,
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Быстрый выпад",
+                    description: `Находясь на земле, нажимайте кнопку удара, чтобы совершить серию до 5 атак.`,
+                    breakdown: [
+                        'Наносит урон, равный **39%** от АТК + **2**, и несильно отбрасывает цель.',
+                        'Наносит урон, равный **54,6%** of ATK + **3**, и несильно отбрасывает цель.',
+                        'Наносит урон, равный **49,4%** of ATK + **3**, и несильно отбрасывает цель.',
+                        'Наносит урон, равный **87%** of ATK + **5**, и несильно отбрасывает цель.',
+                        'Наносит урон, равный **148,1%** of ATK + **8**, и **подбрасывает** цель.'
+                    ]
+                },
+                {
+                    name: "Удар в прыжке",
+                    description: `Находясь в воздухе, нажимайте кнопку удара, чтобы совершить серию до 4 атак.`,
+                    breakdown: [
+                        'Наносит урон, равный **23,2%** от АТК + **1**.',
+                        'Наносит урон, равный **40,3%** от АТК + **2**.',
+                        'Наносит урон, равный **95,4%** от АТК + **5**.',
+                        'Наносит урон, равный **115,8%** от АТК + **6** и **сбивает** цель.'
+                    ]
+                },
+                {
+                    name: "Циклон",
+                    description: `Нажмите и удерживайте кнопку удара после совершённой базовой атаки, чтобы подбросить цель, подвешивая её в воздухе и нанося урон по одиночной цели, равный **39,8%** от АТК + **2**
+                    .`,
+                },
+                {
+                    name: "Пикирующий клинок",
+                    description: `Находясь в воздухе, нажмите и удерживайте кнопку удара или просто нажмите её во время карабкания, прыжка назад или планирования на Джетпаке, чтобы применить атаку в падении, каждым ударом нанося **10%** от АТК + **1** урона. По приземлении наносит урон, равный **63,6%** от АТК + **3** и отбрасывает цели. Чем выше персонаж при применении атаки в падении, тем выше будет наносимый урон, вплоть до максимального в **600%** от АТК.`,
+                },
+                {
+                    name: "Скрытная атака",
+                    description: `Пригнувшись, подойдите к противнику сзади и нажмите кнопку удара, чтобы нанести **570%** от АТК + **30** урона.`,
+                }
+            ],
+            dodge: [
+                {
+                    name: "Уклонение",
+                    description: `Уклонение прямо перед получением удара создаёт зону Фантазии, которая уменьшает скорость врагов. Перезарядка: **15** секунд. При уклонении персонаж получает неуязвимость к эффектам оглушения в течение **0,5** секунд.`,
+                },
+                {
+                    name: "Атака в подскоке",
+                    description: `Нажмите кнопку удара в течение короткого периода после уклонения, чтобы нанести **31,6%** от АТК + **2** урона и **подбросить цель вместе с собой в воздух**, затем дополнительно нанося **47,3%** от АТК + **2** урона.`,
+                }
+            ],
+            skill: [
+                {
+                    name: "Скитание",
+                    description: `Танцует сквозь цели с клинком в руках, нанося **348,5%** от АТК + **18** суммарного урона до **5** целям (атаки по одной и той же цели наносят на **20%** меньше урона). В конце разрубает пространство перед собой, нанося **264%** от АТК + **14** урона целям и подбрасывая их в воздух. Во время применения навыка персонаж неуязвим к эффектам контроля. Перезарядка: **15** секунд.`,
+                }
+            ],
+            discharge: [
+                {
+                    name: "Безудержный шквал",
+                    description: `Когда ***оружие полностью заряжено***, при смене оружия на это **сбрасывает все негативные эффекты с персонажа**, который совершает рывок и **подбрасывает** цель, нанося **436,2%** x АТК + **23** урона и оставляя позади себя бурю клинков, наносящую **174,4%** x ATK + **9** урона по цели. Применение навыка даёт персонажу иммунитет к эффектам Тяжёлых ран/Заморозки/Горения/Электризации в течение **5** секунд.`,
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["claudia", "samir", "crow"],
             set4: ["claudia"],
