@@ -1,7 +1,29 @@
 const baiyuekui = {
     name: "Бай Юэкуй",
+    uri: "baiyuekui",
+    imgSrc: "baiyuekui.png",
     rarity: "SSR",
     chinaOnly: true,
+    banners: {
+        cn: [
+            {
+                bannerNo: 3,
+                subtext: "Коллаборация",
+                start: "26 Янв 2022",
+                end: "13 Фев 2022",
+                duration: "18д",
+                week: "7~9"
+            },
+            {
+                bannerNo: 10,
+                subtext: "Коллаборация",
+                start: "13 Мая 2022",
+                end: "23 Мая 2022",
+                duration: "10д",
+                week: "22~24"
+            }
+        ]
+    },
     weapon: {
         name: "Ала́я",
         element: "volt",
