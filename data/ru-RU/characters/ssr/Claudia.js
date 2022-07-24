@@ -137,7 +137,7 @@ const claudia = {
         height: '170 см',
         birthplace: 'Хайкрос',
         horoscope: 'Козерог',
-        birthday: '16 Января',
+        birthday: '16 Янв',
         voiceActors: {
             jp: "小松未可子 (Микако Комацу)",
             en: "",
