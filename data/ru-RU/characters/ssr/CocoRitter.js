@@ -123,7 +123,7 @@ const coco = {
         height: '147 см',
         birthplace: 'Хайкрос',
         horoscope: 'Близнецы',
-        birthday: '1 Июня',
+        birthday: '1 Июн',
         voiceActors: {
             jp: "鬼頭明里 (Акари Кито)",
             en: "Lexi Fontaine (Лекси Фонтэйн)",
