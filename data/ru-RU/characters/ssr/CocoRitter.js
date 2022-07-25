@@ -58,34 +58,34 @@ const coco = {
                     ]
                 },
                 {
-                    name: "Moonfall",
-                    description: `Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every **0,2** seconds, for a total of **95.2%** of ATK + **5** damage.`,
+                    name: "Падение Луны",
+                    description: `Находясь в воздухе, нажмите и удерживайте кнопку удара, чтобы применить атаку в падении, каждые **0,2** секунды наносящую по приземлении **95,2%** от АТК + **5** суммарного урона.`,
                 }
             ],
             dodge: [
                 {
-                    name: "Dodge",
-                    description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
+                    name: "Уклонение",
+                    description: `Уклонение прямо перед получением удара создаёт зону Фантазии, которая уменьшает скорость врагов. Перезарядка: **15** секунд. При уклонении персонаж получает неуязвимость к эффектам оглушения в течение **0,5** секунд.`,
                 },
                 {
-                    name: "Surge",
-                    description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to **35.3%** of ATK + **2** to targets. Grant **75** weapon charge points upon use.`,
+                    name: "Всплеск",
+                    description: `Нажмите кнопку удара в течение короткого периода после уклонения в сторону, чтобы создать волны энергии, каждая из которых наносит **35,3%** от ATK + **2** урона целям. При использовании даёт **75** единиц заряда оружия.`,
                 },
                 {
-                    name: "Tesseract",
-                    description: `Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to **51.1%** of ATK + **3** to targets in its path every **0.3** seconds (up to 5 times). Grant **75** weapon charge points upon use.`,
+                    name: "Тессеракт",
+                    description: `Нажмите кнопку удара в течение короткого периода после уклонения, чтобы запустить вперёд энергетический куб, нанося **51,1%**от АТК + **3** урона целям на его пути каждые **0,3** секунды (до 5 ударов). При использовании даёт **75** единиц заряда оружия.`,
                 }
             ],
             skill: [
                 {
-                    name: "Sanctuary",
-                    description: `Create a healing zone that moves with the Wanderer and heals nearby allies for **95%** of ATK + **5** once every **0.5** seconds for **6** seconds. **60**-second cooldown.`,
+                    name: "Святилище",
+                    description: `Создаёт область исцеления, которая двигается вместе со Странником и лечит ближайших союзников на **95%** от АТК + **5** каждые **0,5** секунд в течение **6** секунд. Перезарядка: **60** секунд.`,
                 }
             ],
             discharge: [
                 {
-                    name: "Swift Deliverance",
-                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder**, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for **118.8%** x ATK + **6** HP for **7** seconds.`,
+                    name: "Быстрое спасение",
+                    description: `Когда ***оружие полностью заряжено***, при смене оружия на это **сбрасывает все негативные эффекты с персонажа**, в течение **7** секунд продолжая сбрасывать негативные эффекты со Странника и его союзников, также исцеляя Странника и союзников на **118,8%** x ATK + **6**.`,
                 }
             ]
         },
