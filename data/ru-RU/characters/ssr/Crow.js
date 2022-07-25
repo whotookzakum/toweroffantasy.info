@@ -1,5 +1,7 @@
 const crow = {
     name: "Ворон",
+    uri: "crow",
+    imgSrc: "crow.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
@@ -23,62 +25,67 @@ const crow = {
             
             star6: `При попадании в цель активным навыком оружия Урон Молнией по этой цели увеличивается на **20%** в течение **20** секунд.`
         },
-        skills: [
-            {
-                name: "Twin Blades",
-                type: "normal",
-                desc: `While on the ground, swing the blades to attack 5 times in a row.  
-                        First Attack: Deal damage equal to **42.9%** of ATK + **2** and knock the target back a short distance.  
-                        Second Attack: Deal damage equal to **52.2%** of ATK + **3** and knock the target back a short distance.  
-                        Third Attack: Deal damage equal to **64.8%** of ATK + **3** and knock the target back a short distance.  
-                        Fourth Attack: Deal damage equal to **69.2%** of ATK + **4** and knock the target back a short distance.  
-                        Fifth Attack: Deal damage equal to **144.3%** of ATK + **8** and knock the target back a short distance.`,
-            },
-            {
-                name: "Sky Flurry",
-                type: "normal",
-                desc: `While airborne or after jumping once, tap normal attack to attack 4 times in a row.  
-                        First Attack: Deal damage equal to **46.8%** of ATK + **2**.  
-                        Second Attack: Deal damage equal to **27.5%** of ATK + **1**.  
-                        Third Attack: Deal damage equal to **65.8%** of ATK + **3**.  
-                        Fourth Attack: Deal damage equal to **98.5%** of ATK + **5**.`,
-            },
-            {
-                name: "Rapid Lunge",
-                type: "normal",
-                desc: `After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them **into the air**, dealing total damage equal to **83.4%** of ATK + **4**.`,
-            },
-            {
-                name: "Spiral Drive",
-                type: "normal",
-                desc: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Spiral Drive. While falling, deal damage equal to **42%** of ATK + **2** each hit.`,
-            },
-            {
-                name: "Sneak Attack",
-                type: "normal",
-                desc: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
-            },
-            {
-                name: "Flying Blades",
-                type: "dodge",
-                desc: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target **5** times, each dealing damage equal to **18.8%** of ATK + **1**. Grant immunity to control effects while phasing.`,
-            },
-            {
-                name: "Dodge",
-                type: "dodge",
-                desc: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the red area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
-            },
-            {
-                name: "Returning Blades",
-                type: "skill",
-                desc: `Fires 6 returning blades, each dealing damage equal to **20.7%** of ATK + **1**. Gains **hyperbody** for up to **8** seconds, and the effect is removed when the blades return. **45**-second cooldown.`,
-            },
-            {
-                name: "Orbiting Blades",
-                type: "discharge",
-                desc: `When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder** and blink to the target location upon switching to this weapon and attack, dealing damage equal to **62.1%** of ATK + **3** and electrocuting the target (after **5** seconds, deals volt damage equal to **15%** of damage dealt, up to **350%** of the Wanderer's ATK. This is an abnormal status that can be dispelled). Also spawn 3 blades that orbit around the Wanderer, dealing damage equal to **46.5%** of ATK + **2** to those that touch them.`,
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Парные клинки",
+                    type: "normal",
+                    description: `Находясь на земле, нажимайте кнопку атаки, чтобы провести серию до 5 атак.`,
+                    breakdown: [
+                        'Наносит **42,9%** от АТК + **2** урона и несильно отбрасывает цель.',
+                        'Наносит **52,2%** от АТК + **3** урона и несильно отбрасывает цель.',
+                        'Наносит **64,8%** от АТК + **3** урона и несильно отбрасывает цель.',
+                        'Наносит **69,2%** от АТК + **4** урона и несильно отбрасывает цель.',
+                        'Наносит **144,3%** от АТК + **8** урона и несильно отбрасывает цель.'
+                    ]
+                },
+                {
+                    name: "Небесный шквал",
+                    type: "normal",
+                    description: `Находясь в воздухе или после прыжка, нажимайте кнопку атаки, чтобы совершить серию до 4 атак.`,
+                    breakdown: [
+                        'Наносит **46,8%** от АТК + **2** урона.',
+                        'Наносит **27,5%** от АТК + **1** урона.',
+                        'Наносит **65,8%** от АТК + **3** урона.',
+                        'Наносит **98,5%** от АТК + **5** урона.'
+                    ]
+                },
+                {
+                    name: "Стремительный рывок",
+                    description: `Нажмите и удерживайте кнопку удара после третьей совершённой базовой атаки, чтобы атаковать цель и **подбросить её в воздух**, нанося **83,4%** от АТК + **4** суммарного урона.`,
+                },
+                {
+                    name: "Спиральный удар",
+                    description: `Находясь в воздухе, нажмите и удерживайте кнопку удара (или просто нажмите, когда выбрана цель, во время карабкания, прыжка назад или планирования на Джетпаке), чтобы применить атаку в падении. Каждым ударом наносит **42%** от АТК + **2** урона.`,
+                },
+                {
+                    name: "Скрытная атака",
+                    description: `Пригнувшись, подойдите к противнику сзади и нажмите кнопку удара, чтобы нанести **570%** от АТК + **30** урона.`,
+                }
+            ],
+            dodge: [
+                {
+                    name: "Летающие клинки",
+                    description: `Нажмите кнопку удара в течение короткого периода после уклонения в сторону, чтобы разрезать цель **5** раз, каждым попаданием нанося **18,8%** от АТК + **1** урона. Во время применения навыка получает иммунитет к эффектам контроля.`,
+                },
+                {
+                    name: "Dodge",
+                    description: `Уклонение прямо перед получением удара создаёт зону Фантазии, которая уменьшает скорость врагов. Перезарядка: **15** секунд. При уклонении персонаж получает неуязвимость к эффектам оглушения в течение **0,5** секунд.`,
+                }
+            ],
+            skill: [
+                {
+                    name: "Возвращающиеся клинки",
+                    description: `Запускает 6 вращающихся клинков, каждый из которых наносит **20,7%** от АТК + **1** урона. Персонаж получает эффект **Гипертела** на **8** секунд. Этот эффект пропадает, когда клинки возвращаются к персонажу. Перезарядка: **45** секунд.`,
+                }
+            ],
+            discharge: [
+                {
+                    name: "Орбитальные клинки",
+                    description: `Когда ***оружие полностью заряжено***, при смене оружия на это **сбрасывает все негативные эффекты с персонажа** и перемещается к своей цели, нанося **62,1%** от ATK + **3** урона и поражая её электрическим током (через **5** секунд наносит Урон Напряжением, равный **15%** нанесённого персонажем за это время урона. Итоговый урон поражения не может превышать **350%** от АТК Странника. Этот эффект считается негативным, и он не может быть сброшен). Также создаёт 3 клинка, которые вращаются вокруг Странника и наносят **46,5%** от ATK + **2** урона при касании.`,
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set4: ["samir"],
@@ -114,7 +121,7 @@ const crow = {
         height: '162 см',
         birthplace: 'Астра',
         horoscope: 'Стрелец',
-        birthday: '17 Декабря',
+        birthday: '17 Дек',
         voiceActors: {
             jp: "岡本信彦 (Нобухико Окамото)",
             en: "Casey Mongillo (Кейси Монгилло)",
