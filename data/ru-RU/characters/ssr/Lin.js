@@ -26,22 +26,22 @@ const lin = {
         materials: ["red", "green", "black", "blue"],
         bonusEffect: {
             effect1: {
-                title: `Weapon Mastery`,
-                description: `Activate **Weapon Mastery** when used with other weapons. Nightblooms will randomly appear around the target and explode within **1-3** seconds, dealing **60%** AoE damage.`
+                title: `Мастерство`,
+                description: `Активируется при использовании с другим оружием, создавая Цветки Эпифиллума в случайных местах возле цели, которые взрываются спустя **1-3** секунды и наносят **60%** урона по площади.`
             }
         },
         advancement: {
-            star1: `Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**). **Lunar Reflection** reduces the spawn time of Nightblooms to **0.5** seconds.`,
+            star1: `Базовые атаки наносят урон по площади. Когда Цветок Эпифиллума взрывается в радиусе поражения другого Цветка, урон последующих взрывов увеличивается на **10%**, вплоть до максимального увеличения в **50%**. **Лунное отражение** уменьшает время между появлением Цветков до **0,5** секунд.`,
 
-            star2: `Increase the current weapon's base ATK growth by **16%**.`,
+            star2: `Базовый прирост АТК оружия увеличивается на **16%**.`,
 
-            star3: `**Lunar Reflection** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Lunar Reflection** is increased to **20** seconds.`,
+            star3: `**Лунное отражение** уменьшает время между появлением Цветков Эпифиллума до **0,3** секунд. Теперь Цветки будут прикрепляться  к врагам. Время действия **Лунного отражения** увеличивается до **20** секунд.`,
 
-            star4: `Increase the current weapon's base ATK growth by **32%**.`,
+            star4: `Базовый прирост АТК оружия увеличивается на **32%**.`,
 
-            star5: `While inside **Lunar Reflection**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.`,
+            star5: `В радиусе действия **Лунного отражения** персонаж получает **30** очков заряда оружия в секунду и увеличение урона навыков высвобождения на **15%**.`,
 
-            star6: `**Lunar Reflection** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Lunar Reflection** is increased to **15%**.`
+            star6: `**Лунное отражение** получает **2-ой** заряд. **Первый** заряд даётся за перезарядку навыка, а **второй** заряд даётся при применении **3** навыков высвобождения (работает пассивно). Увеличение урона от нахождения в радиусе **Лунного отражения** увеличивается до **15%**.`
         },
         abilities: [],
         recommendedMatrix: {
@@ -52,15 +52,15 @@ const lin = {
     },
 
     matrix: {
-        set2: `Aerial attacks increase your attack power by **3%/3.7%/4.3%/5%** for **18** seconds. This effect can stack up to **5** times.`,
+        set2: `Попадания атаками в воздухе увеличивают АТК на **3%/3,7%/4,3%/5%** в течение **18** секунд. Эффект складывается до **5** раз.`,
 
         set4: `Traveling **5** meters within Gravity Field will grant **1** stack of [Wind's Wish], increasing your total damage by **7.5%/9%/10.5%/12%** for 15 seconds. This effect can stack up to **3** times. Effect is active in the background.`
     },
 
     awakening: {
-        trait1200: `Nightbloom's explosion damage increased by **15%**`,
+        trait1200: `Урон от взрыва Цветка Эпифиллума увеличивается на **15%**`,
 
-        trait4000: `Nightbloom's explosion damage increased by **20%**. Nightbloom explosions reduce all elemental resistances of the affected targets by **7%** for **7** seconds. This effect cannot stack.`,
+        trait4000: `Урон от взрыва Цветка Эпифиллума увеличивается на **20%**. Взрыв Цветка Эпифиллума уменьшает все элементальные сопротивления поражённой цели на **7%** в течение **7** секунд. Эффект не складывается.`,
 
         giftCategories: ['metalware', 'decorations', 'vera'],
 
