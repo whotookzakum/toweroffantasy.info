@@ -1,7 +1,20 @@
 const ruby = {
     name: "Руби",
+    uri: "ruby",
+    imgSrc: "ruby.png",
     rarity: "SSR",
     chinaOnly: true,
+    banners: {
+        cn: [
+            {
+                bannerNo: 9,
+                start: "25 Апр 2022",
+                end: "13 Мая 2022",
+                duration: "18д",
+                week: "20~22"
+            }
+        ]
+    },
     weapon: {
         name: "Искорка",
         element: "flame",
@@ -29,7 +42,7 @@ const ruby = {
            
             star6: `Метка [Жар] теперь увеличивает урон базовых атак Искорки на **240%** и **удваивает** эффективность [Тепла]. Время перезарядки активного навыка оружия уменьшено до **16** секунд.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["ruby", "samir", "tsubasa", "crow"],
             set4: ["ruby"],
@@ -64,11 +77,11 @@ const ruby = {
         height: '140 см',
         birthplace: '???',
         horoscope: 'Рак',
-        birthday: '15 Июля',
+        birthday: '15 Июл',
         voiceActors: {
             jp: "",
             en: "",
-            cn: "赵爽"
+            cn: "赵爽 (Чжао Шуан)"
         }
     }
 }
