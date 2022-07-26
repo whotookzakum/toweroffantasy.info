@@ -1,7 +1,29 @@
 const marc = {
     name: "Марк",
+    uri: "marc",
+    imgSrc: "marc.png",
     rarity: "SSR",
     chinaOnly: true,
+    banners: {
+        cn: [
+            {
+                bannerNo: 4,
+                subtext: "Коллаборация",
+                start: "14 Фев 2022",
+                end: "4 Мар 2022",
+                duration: "18д",
+                week: "10~12"
+            },
+            {
+                bannerNo: 11,
+                subtext: "Коллаборация",
+                start: "24 Мая 2022",
+                end: "3 Июн 2022",
+                duration: "10д",
+                week: "24~25"
+            }
+        ]
+    },
     weapon: {
         name: "Рассвет",
         element: "physical",
@@ -42,7 +64,7 @@ const marc = {
 
             star6: `Когда [Пространственный щит] активен, Физическое Сопротивление **удваивается**, и персонаж также получает эффект Гипертела. [Пространственный щит] может быть получен, когда активный навык или навык высвобождения другого оружия попадает в цель при активном щите.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
             set2: ["marc", "king", "shiro"],
             set4: ["marc"],
@@ -79,7 +101,7 @@ const marc = {
         voiceActors: {
             jp: "",
             en: "",
-            cn: "赵铭"
+            cn: "赵铭 (Чжао Мин)"
         }
     }
 }
