@@ -1,5 +1,7 @@
 const bailing = {
     name: "Бай Линг",
+    uri: "bai-ling",
+    imgSrc: "bailing.png",
     rarity: "SR",
     chinaOnly: false,
     weapon: {
@@ -11,7 +13,7 @@ const bailing = {
         charge: ["A", "10.00"],
         materials: ["physical", "green", "blue"],
         advancement: {
-            star1: "Восстанавливает 1 уклонение за каждые пять базовые атаки или после применения <strong class='text-green'>Пронзающего выстрела</strong>.",
+            star1: "Восстанавливает 1 уклонение за каждые пять базовые атаки или после применения *Пронзающего выстрела*.",
 
             star2: "Базовый прирост АТК оружия увеличивается на **10%**.",
 
@@ -23,57 +25,61 @@ const bailing = {
 
             star6: "Крит. шанс и крит. урон увеличиваются на **30** и **50%** соответственно против целей с эффектом Тяжёлых ран."
         },
-        skills: [
-            {
-                name: "Quickdraw",
-                type: "normal",
-                desc: `While on the ground, draw the bow repeatedly to attack 5 times.  
-                            First Attack: Deal damage equal to **33.7%** of ATK + **2**.  
-                            Second Attack: Deal damage equal to **30.2%** of ATK + **2**.  
-                            Third Attack: Deal damage equal to strong>54.3%** of ATK + **3**.  
-                            Fourth Attack: Deal damage equal to **83.5%** of ATK + **4**.  
-                            Fifth Attack: Deal damage equal to **77.7%** of ATK + **4** and knock the target back a short distance.`,
-            },
-            {
-                name: "Charged Arrow",
-                type: "normal",
-                desc: `Tap and hold normal attack to charge the weapon. Deal basic damage equal to **60.5%** of ATK + **3**, and **50%** more for each **1** second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers).`,
-            },
-            {
-                name: "Arrow Rain",
-                type: "normal",
-                desc: `After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **198.7%** of ATK + **10** area damage to targets.`,
-            },
-            {
-                name: "Air Volley",
-                type: "normal",
-                desc: `While airborne, tap normal attack to attack 4 times in a row in the air.  
-                            First Attack: Deal damage equal to **38.8%** of ATK + **2**.  
-                            Second Attack: Deal damage equal to **51%** of ATK + **3**.  
-                            Third Attack: Deal damage equal to **77.7%** of ATK + **4**.  
-                            Fourth Attack: Deal damage equal to **117%** of ATK + **6**.`,
-            },
-            {
-                name: "Dodge",
-                type: "dodge",
-                desc: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
-            },
-            {
-                name: "Loaded Arrow",
-                type: "dodge",
-                desc: `Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to **85.5%** of ATK + **5**.`,
-            },
-            {
-                name: "Piecing Shot",
-                type: "skill",
-                desc: `Backflips and fires **1** piercing arrow forward, dealing damage equal to **154.8%** of ATK + **8** and knocking the target back. **12**-second cooldown.`,
-            },
-            {
-                name: "Explosive Barrage",
-                type: "discharge",
-                desc: `When <b>weapon charge</b> is full or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder**, and unleashes Explosive Barrage on the target upon switching to this weapon, dealing damage equal to **486.6%** of ATK + **26**.`,
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Зарисовка",
+                    description: `Находясь на земле, нажимайте кнопку атаки, чтобы совершить серию до 5 атак.`,
+                    breakdown: [
+                        'Наносит **33,7%** от АТК + **2** урона.',
+                        'Наносит **30,2%** от АТК + **2** урона.',
+                        'Наносит **54,3%** от АТК + **3** урона.',
+                        'Наносит **83,5%** от АТК + **4** урона.',
+                        'Наносит **77,7%** от АТК + **4** урона и несильно отталкивает цель.'
+                    ]
+                },
+                {
+                    name: "Заряженная стрела",
+                    description: `Нажмите и удерживайте кнопку удара, чтобы перейти в режим прицеливания. Наносит **60,5%** от АТК + **3** урона и на **50%** больше за каждую секунду в режиме прицеливания, но не больше **3** секунд. Наносит двойной урон при попадании в голову или в слабые места, сбивая цель с ног (попадания в голову не увеличивают урон против других Странников).`,
+                },
+                {
+                    name: "Дождь из стрел",
+                    description: `После любой базовой атаки удерживайте кнопку удара, чтобы выпустить Дождь из стрел, наносящий до **198,7%** от АТК + **10** урона по площади.`,
+                },
+                {
+                    name: "Воздушный залп",
+                    description: `Находясь в воздухе, нажимайте кнопку атаки, чтобы совершить серию до 4 атак.`,
+                    breakdown: [
+                        'Наносит **38,8%** от АТК + **2** урона.',
+                        'Наносит **51%** от АТК + **3** урона.',
+                        'Наносит **77,7%** от АТК + **4** урона.',
+                        'Наносит **117%** от АТК + **6** урона.'
+                    ]
+                }
+            ],
+            dodge: [
+                {
+                    name: "Уклонение",
+                    description: `Уклонение прямо перед получением удара создаёт зону ***Фантазии***, которая уменьшает скорость врагов. Перезарядка: **15** секунд. При уклонении персонаж получает неуязвимость к эффектам оглушения в течение **0,5** секунд.`,
+                },
+                {
+                    name: "Перегруженная стрела",
+                    description: `Нажмите кнопку удара после уклонения, чтобы запустить Перегруженную стрелу, которая **отталкивает** цель и наносит урон, равный **85,5%** от АТК + **5** урона.`,
+                }
+            ],
+            skill: [
+                {
+                    name: "Пронзающая стрела",
+                    description: `Персонаж совершает сальто назад и запускает **1** Пронзающую стрелу, наносящую **154,8%** от АТК + **8** урона и отталкивающую цель. Перезарядка: **12** секунд.`,
+                }
+            ],
+            discharge: [
+                {
+                    name: "Взрывной залп",
+                    description: `Когда ***оружие полностью заряжено***, при смене оружия на это **сбрасывает все негативные эффекты с персонажа** и создаёт Ливень из стрел на месте текущей цели, нанося **486,6%** от АТК + **26** урона.`,
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set3: ["pepper", "sobek"]
