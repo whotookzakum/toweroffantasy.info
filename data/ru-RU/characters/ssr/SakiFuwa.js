@@ -1,8 +1,21 @@
 const saki = {
     // 流泉彻心
     name: "Саки Фува",
+    uri: "saki-fuwa",
+    imgSrc: "sakifuwa.png",
     rarity: "SSR",
     chinaOnly: true,
+    banners: {
+        cn: [
+            {
+                bannerNo: 12,
+                start: "03 Июн 2022",
+                end: "23 Июн 2022",
+                duration: "20д",
+                week: "25~28"
+            }
+        ]
+    },
     weapon: {
         name: "Рюсен Тосин",
         element: "ice",
@@ -31,10 +44,10 @@ const saki = {
            
             star6: `Попадая [Всплеском], Тень увеличивает Урон Холодом персонажа на **20%** на **15** секунд. При активации блока Тени Урон Холодом врагов поблизости уменьшается на **25%** на **12** секунд.`
         },
-        skills: [],
+        abilities: [],
         recommendedMatrix: {
-            set2: ["sakifuwa", "samir"],
-            set4: ["sakifuwa"],
+            set2: ["crow", "samir",],
+            set4: ["samir"],
             set3: ["sobek"]
         }
     },
@@ -65,11 +78,11 @@ const saki = {
         height: '157 см',
         birthplace: 'Миррория',
         horoscope: 'Весы',
-        birthday: '11 Октября',
+        birthday: '11 Окт',
         voiceActors: {
             jp: "",
             en: "",
-            cn: "唐小喜"
+            cn: "唐小喜 (Тан Сяоси)"
         }
     }
 }
