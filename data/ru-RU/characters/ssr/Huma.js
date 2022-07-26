@@ -1,9 +1,11 @@
 const huma = {
     name: "Хума",
+    uri: "huma",
+    imgSrc: "huma.png",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
-        name: "Литой щит V2",
+        name: "Плавильный щит V2",
         element: "flame",
         type: "defense",
         baseStats: ["attack", "defense", "health"],
@@ -25,68 +27,82 @@ const huma = {
                 Форма щита: Увеличивает наносимый навыком урон на **60%** и радиус зоны пламени на **30%**.  
                 Форма топора: В течение **5** секунд после применения этого навыка весь получаемый урон превращается в лечение для персонажа (до **15%** от максимального здоровья).`
         },
-        skills: [
-            {
-                name: "Обычная атака",
-                type: "normal",
-                desc: `While on the ground, swing the shield axe to attack 4 times in a row.  
-                        First Attack in Shield Form: Deal damage equal to **70.6%** of ATK + **4** and knock the target back a short distance.  
-                        Second Attack: Deal damage equal to **51.7%** of ATK + **3** and knock the target back a short distance.  
-                        Third Attack: Deal damage equal to **57.1%** of ATK + **3** and knock the target back a short distance.  
-                        Fourth Attack: Deal damage equal to **167.3%** of ATK + **9** and launch the target into the air.  
-                        First Attack in Axe Form: Deal damage equal to **122.9%** of ATK + **6** and knock the target back a short distance.  
-                        Second Attack: Deal damage equal to **72.2%** of ATK + **4** and knock the target back a short distance.  
-                        Third Attack: Deal damage equal to **109%** of ATK + **6** and knock the target back a short distance.  
-                        Fourth Attack: Deal damage equal to **201.1%** of ATK + **11** and knock the target back.`,
-            },
-            {
-                name: "Воздушный удар",
-                type: "normal",
-                desc: `While airborne or after jumping once, attack 3 times in a row.  
-                        First Attack in Shield Form: Deal damage equal to **69%** of ATK + **4**.  
-                        Second Attack: Deal damage equal to **72.9%** of ATK + **4**.  
-                        Third Attack: Deal damage equal to **93.7%** of ATK + **5**.  
-                        First Attack in Axe Form: Deal damage equal to **107.8%** of ATK + **6**.  
-                        Second Attack: Deal damage equal to **82.8%** of ATK + **4**.  
-                        Third Attack: Deal damage equal to **252.7%** of ATK + **13**.`,
-            },
-            {
-                name: "Предвкушение",
-                type: "normal",
-                desc: `Shield Form: While on the ground, tap and hold normal attack to enter shield form (release to exit) for **3** seconds, during which the Wanderer is unable to move, and all damage taken is reduced by **50%**. While in shield form, releasing the normal attack button after taking damage or after holding the button for **3** seconds, unleash fire crash, dealing damage equal to **152.1%** of ATK + **8** and inflicting a **1**-second **stun** effect on the target.  
-                Axe Form: Smash the target, dealing damage equal to **111.1%** of ATK + **6** and knocking the target into the air.`,
-            },
-            {
-                name: "Доблесть",
-                type: "normal",
-                desc: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Air Branch attacks.  
-                        Shield Form: While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **81.1%** of ATK + **4** and knock the target into the air.  
-                        Axe Form: While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **116.6%** of ATK + **6** and knock the target into the air. The higher the location is when triggered, the higher the damage dealt, up to **600%** of ATK.`,
-            },
-            {
-                name: "Извержение",
-                type: "dodge",
-                desc: `Tap normal attack during the short period after dodging to trigger a Dodge Attack.  
-                        Shield Form: Unleash a flaming shield, dealing damage equal to **50.7%** of ATK + **3** and knocking back targets. In addition, trigger an explosion that deals damage equal to **50.7%** of ATK + **3**, stun targets for **0.5** seconds, and reduce incoming healing effects on targets by **30%** for **10** seconds.  
-                        Axe Form: Swing an axe to deal damage equal to **205.8%** of ATK + **11**, and reduce incoming healing effects on targets by **30%** for **10** seconds.`,
-            },
-            {
-                name: "Уклонение",
-                type: "dodge",
-                desc: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
-            },
-            {
-                name: "Расщепление",
-                type: "skill",
-                desc: `Shield Conversion: Switch from shield form to axe form and smash the ground, dealing damage equal to **339.9%** of ATK + **18** and knocking the target **into the air**. Leave a flame zone for **5** seconds that burns the target, dealing continuous damage equal to **212.4%** of ATK + **11**.  
-                Axe Conversion: Switch from axe form to shield form and slam it to the ground, dealing damage equal to **281.4%** of ATK + **15** to the target and knocking them back. Prevent the target from switching weapons for **5** seconds. **45**-second cooldown, Shield Conversion and Axe Conversion share a cooldown.`,
-            },
-            {
-                name: "Бурлящая ярость",
-                type: "discharge",
-                desc: `When <b>weapon charge</b> is full or when <b>Phantasia</b> is triggered, **remove all debuffs from the wielder** and unleash a flame shockwave upon switching to this weapon, dealing damage equal to **320%** of ATK + **17**. Taunt enemies for **5** seconds, during which gain **15%** damage reduction. Scatter shield-shaped objects based on the number of targets taunted. Objects last **20** seconds and provide **10** seconds of **5%** damage reduction (stackable), restoring dodge by 1.`,
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Базовая атака",
+                    description: `Находясь на земле, нажимайте кнопку удара, чтобы совершить серию до 4 атак.`,
+                    breakdown: [
+                        `Форма щита: Наносит **70,6%** от АТК + **4** урона и несильно отбрасывает цель.  
+                        Форма топора: Наносит **122,9%** от АТК + **6** урона и несильно отбрасывает цель.`,
+                        `Форма щита: Наносит **51,7%** от АТК + **3** урона и несильно отбрасывает цель.  
+                        Форма топора: Наносит **72,2%** от АТК + **4** урона и несильно отбрасывает цель.`,
+                        `Форма щита: Наносит **57,1%** от АТК + **3** урона и несильно отбрасывает цель.  
+                        Форма топора: Наносит **109%** от АТК + **6** урона и несильно отбрасывает цель.`,
+                        `Форма щита: Наносит **167,3%** от АТК + **9** урона и несильно отбрасывает цель.  
+                        Форма топора: Наносит **201,1%** от АТК + **11** урона и несильно отбрасывает цель.`
+                    ]
+                },
+                {
+                    name: "Воздушная атака",
+                    description: `Находясь в воздухе, нажимайте кнопку удара, чтобы совершить серию до 3 атак.`,
+                    breakdown: [
+                        `Форма щита: Наносит **69%** от АТК + **4** урона. 
+                        Форма топора: Наносит **107,8%** от АТК + **6** урона.`,
+                        `Форма щита: Наносит **72,9%** от АТК + **4** урона.  
+                        Форма топора: Наносит **82,8%** от АТК + **4** урона.`,
+                        `Форма щита: Наносит **93,7%** от АТК + **5** урона.  
+                        Форма топора: Наносит **252,7%** от АТК + **13** урона.`
+                    ]
+                },
+                {
+                    name: "Предвкушение",
+                    description: 
+                        `Форма щита: Находясь на земле, нажмите и удерживайте кнопку удара, чтобы войти в защитную стойку (отпустите кнопку для выхода из стойки) на **3** секунды, в течение которых Странник не может передвигаться, а весь получаемый им урон уменьшается на **50%**. В защитной стойке: При нажатии кнопки удара после получения урона или удерживании кнопки в течение **3** секунд выпускает волну огня, нанося **152,1%** от АТК + **8** урона и **оглушая** цель на **1** секунду.  
+                        &nbsp;  
+                        Форма топора: Сокрушает цель, нанося **111,1%** от АТК + **6** урона и **подбрасывая её в воздух**.`,
+                },
+                {
+                    name: "Доблесть",
+                    description: 
+                        `Находясь в воздухе, нажмите и удерживайте кнопку удара или просто нажмите её во время карабкания, прыжка назад или планирования на Джетпаке, чтобы применить воздушные атаки ответвления.  
+                        &nbsp;  
+                        Форма щита: В падении каждым ударом наносит **12,5%** от АТК + **1** урона. По приземлении наносит **81,1%** от АТК + **4** урона и **подбрасывает цели в воздух**.  
+                        &nbsp;  
+                        Форма топора: В падении каждым ударом наносит **12,5%** от АТК + **1** урона. По приземлении наносит **111,6%** от АТК + **6** урона и **подбрасывает цели в воздух**. Чем выше персонаж при применении атаки в падении, тем выше будет наносимый урон, вплоть до максимального в **600%** от АТК.`,
+                }
+            ],
+            dodge: [
+                {
+                    name: "Извержение",
+                    description: 
+                        `Нажмите кнопку удара в течение короткого периода после уклонения, чтобы совершить атаку в уклонении.  
+                        &nbsp;  
+                        Форма щита: Выпускает пламенный щит, нанося **50,7%** от АТК + **3** урона и отбрасывая цель. Также активирует взрыв, наносящий **50,7%** от АТК + **3** урона и **оглушающий** цели на **0,5** секунд, уменьшая получаемое ими лечение на **30%** в течение **10** секунд.  
+                        &nbsp;  
+                        Форма топора: Проводит круговую атаку, суммарно нанося **205,8%** от АТК + **11** урона и уменьшая получаемое поражёнными целями лечение на **30%** в течение **10** секунд.`,
+                },
+                {
+                    name: "Уклонение",
+                    description: `Уклонение прямо перед получением удара создаёт зону **Фантазии**, которая уменьшает скорость врагов. Перезарядка: **15** секунд. При уклонении персонаж получает неуязвимость к эффектам оглушения в течение **0,5** секунд.`,
+                }
+            ],
+            skill: [
+                {
+                    name: "Расщепление",
+                    description: 
+                        `Преобразование щита: Меняет форму щита на форму топора, проводя удар по земле и нанося **339,9%** от АТК + **18** урона, также **подбрасывая цель в воздух**. Оставляет область пламени на **5** секунд, которая поджигает противников и суммарно наносит **212,4%** от АТК + **11** урона.  
+                        &nbsp;  
+                        Преобразование топора: Меняет форму топора на форму щита, проводя удар по землле и нанося **281,4%** от АТК + **15** урона, также отбрасывая цель. Поражённые цели не смогут сменить своё оружие в течение **5** секунд. Перезарядка: **45** секунд. Преобразование щита разделяет время перезарядки с Преобразованием топора.`,
+                }
+            ],
+            discharge: [
+                {
+                    name: "Бурлящая ярость",
+                    description: `Когда ***оружие полностью заряжено***, при смене оружия на это **сбрасывает все негативные эффекты с персонажа** и создаёт волну пламени, наносящую **320%** от АТК + **17** урона. Провоцирует врагов в течение **5** секунд, в то же время получая сопротивление к урону на **15%**. Разбрасывает объекты в форме щита в количестве, равном количеству провоцируемых целей. Объекты существуют **20** секунд и на **10** секунд дают сопротивление к урону в **5%** (эффект складывается), также восстанавливая **1** уклонение.`,
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["king", "shiro"],
             set4: ["huma"],
@@ -120,11 +136,11 @@ const huma = {
         height: '167 см',
         birthplace: '???',
         horoscope: 'Козерог',
-        birthday: '12 Января',
+        birthday: '12 Янв',
         voiceActors: {
             jp: "高橋李依 (Риэ Такахаси)",
             en: "",
-            cn: "唐雅菁"
+            cn: "唐雅菁 (Тан Яцзин)"
         }
     }
 }
