@@ -1,7 +1,28 @@
 const nemesis = {
     name: "Немезида",
+    uri: "nemesis",
+    imgSrc: "nemesis.png",
     rarity: "SSR",
     chinaOnly: true,
+    banners: {
+        cn: [
+            {
+                bannerNo: 5,
+                start: "05 Мар 2022",
+                end: "24 Мар 2022",
+                duration: "19д",
+                week: "12~15"
+            },
+            {
+                bannerNo: 13,
+                subtext: "В сентябре уйдёт в стандарт",
+                start: "23 Июн 2022",
+                end: "9 Июл 2022",
+                duration: "16д",
+                week: "28~30"
+            }
+        ]
+    },
     weapon: {
         name: "Венера",
         element: "volt",
@@ -29,7 +50,7 @@ const nemesis = {
 
             star6: `Теперь можно создать до **2** Электродов. Третий созданный Электрод заменяет собой самый дальний от персонажа Электрод.`
         },
-        skills: [],
+        advancement: {
         recommendedMatrix: {
             set2: ["nemesis", "cocoritter"],
             set4: ["nemesis", "cocoritter"],
@@ -65,9 +86,9 @@ const nemesis = {
         horoscope: 'Близнецы',
         birthday: '25 Мая',
         voiceActors: {
-            jp: "",
+            jp: "戸松遥 (Харука Томацу)",
             en: "",
-            cn: "宋媛媛"
+            cn: "宋媛媛 (Сун Юаньюань)"
         }
     }
 }
