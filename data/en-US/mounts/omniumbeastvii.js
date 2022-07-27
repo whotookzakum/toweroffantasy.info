@@ -17,7 +17,8 @@ const omniumbeastvii = {
             source: "Rare drop from ***Behemoths***.",
             map: "omniumbeastviielites.jpg"
         }
-    }
+    },
+    videoSrc: "https://www.youtube.com/embed/RMyk7Hz-HP4"
 }
 
 export default omniumbeastvii;

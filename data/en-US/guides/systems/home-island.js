@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export const housing = {
-    name: "Housing",
-    uri: "housing",
+export const homeIsland = {
+    name: "Home Island",
+    uri: "home-island",
     type: "systems",
     author: ["Pyrosu#6969"],
     text:
@@ -13,7 +13,7 @@ export const housing = {
                     Accept the quest by clicking the Present icon in the top right.<br />
                     <strong className="yellow">Collect 10 Developer Logs</strong>. This will unlock the Home Island option in the menu.
                 </p>
-                <img src="/images/guides/developerlogs.jpg" alt="Developer Logs Map" />
+                <img src="/static/images/guides/developerlogs.jpg" alt="Developer Logs Map" />
                 <blockquote>
                     To build on your Home Island, you will need 50% completion on Artificial Island (inner region only).
                 </blockquote>
@@ -41,7 +41,7 @@ export const housing = {
                 </blockquote>
 
                 <h3>Recommended Route</h3>
-                <img src="/images/guides/housing-map.jpg" alt="Recommended route for farming mobs" />
+                <img src="/static/images/guides/housing-map.jpg" alt="Recommended route for farming mobs" />
                 <br />
 
                 <h3>Total Resources</h3>

@@ -64,6 +64,12 @@ export default function MountModal({ mount }) {
                     <section className="w-75ch">
                         <h2>Parts</h2>
                         {parts}
+                        {mount.videoSrc &&
+                            <>
+                                <h2>Preview</h2>
+                                <iframe src={mount.videoSrc} allow="fullscreen" modestbranding={1} />
+                            </>
+                        }
                     </section>
                 </div>
             </Modal>

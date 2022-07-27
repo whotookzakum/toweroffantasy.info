@@ -29,6 +29,7 @@ const shiro = {
             normal: [
                 {
                     name: "Rapid Throw",
+                    input: ["Attack x5"],
                     description: `While on the ground, swing the chakram to unleash 5 spinning attacks.`,
                     breakdown: [
                         'Deal damage equal to **23.6%** of ATK + **1**.',
@@ -40,6 +41,7 @@ const shiro = {
                 },
                 {
                     name: "Aerial Discharge",
+                    input: ["Jump","Attack x3"],
                     description: `While airborne or after jumping once, tap normal attack to unleash 3 spinning attacks in a row.`,
                     breakdown: [
                         'Deal damage equal to **20.1%** of ATK + **1**.',
@@ -49,20 +51,24 @@ const shiro = {
                 },
                 {
                     name: "Scatter",
+                    input: ["Attack x2","hold:Attack"],
                     description: `After the second normal attack, hold attack button to activate Scatter. Fire five penetrating chakrams forward, each hit dealing **33.5%** x ATK + **2** damage, with minor knockback.`
                 },
                 {
                     name: "Air Spin",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne to trigger Air Spin. Unleash a powerful strike, dealing damage equal to **147.3%** of ATK + **8** to the target and nearby enemies, and knocking them into the air.`
                 },
                 {
                     name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
                     description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **427.5%** of ATK + **23**.`
                 }
             ],
             dodge: [
                 {
                     name: "Waning Moon",
+                    input: ["Dodge","Attack"],
                     description: `Tap normal attack during the short period after dodging to trigger Waning Moon. Toss a spinning chakram forward, dealing damage equal to **102.2%** of ATK + **5** to the target and inflicting a **stun** effect for **0.5** seconds. The chakram then splits into **3** and keeps traveling, dealing damage equal to **14.6%** of ATK + **1** to targets along their path. ***Split chakrams will bounce during Full Bloom***.`
                 },
                 {

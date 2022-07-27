@@ -29,6 +29,7 @@ const ene = {
             normal: [
                 {
                     name: "Normal Attack",
+                    input: ["Attack x4"],
                     description: `While on the ground, swing the hammer to attack 4 times in a row.`,
                     breakdown: [
                         `Deal damage equal to **76.3%** of ATK + **4** and knock the target back a short distance.  
@@ -43,11 +44,13 @@ const ene = {
                 },
                 {
                     name: "Pummel",
+                    input: ["Jump","Attack"],
                     description: `While airborne or after jumping once, tap normal attack to trigger Jumping Blast. Deal damage equal to **121.7%** of ATK + **6** and knock the target into the air.  
                             While Outburst is active, deal damage equal to **133.9%** of ATK + **7** and knock the target **into the air**. Deal greater damage depending on the user's altitude when the ability is triggered, up to **600%** of ATK.`,
                 },
                 {
                     name: "Shockwave",
+                    input: ["Jump","Attack","hold:Attack"],
                     description: 
                         `Tapping and holding while airborne, Double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. Knock the target **into the air 4** times, dealing damage equal to **34.8%** of ATK + **2** each time. Cost **250** endurance.  
                         &nbsp;  
@@ -55,10 +58,12 @@ const ene = {
                 },
                 {
                     name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
                     description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **427.5%** of ATK + **23**.`,
                 },
                 {
                     name: "Focus Smash",
+                    input: ["hold:Attack"],
                     description: 
                         `Tap and hold normal attack to trigger Focus Smash (can be charged up to 3 stacks). Grant immunity to all control effects and hyperbody while charging.  
                         &nbsp;  
@@ -73,10 +78,12 @@ const ene = {
             dodge: [
                 {
                     name: "Jumping Smash",
+                    input: ["Arrow keys","Dodge","Attack"],
                     description: `Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that knocks the enemy into the air **4** times, dealing damage equal to **161.6%** of ATK + **9**.`,
                 },
                 {
                     name: "Worldsplitter",
+                    input: ["Dodge","Attack"],
                     description: 
                         `Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing **3** shockwaves forward, each dealing damage equal to **52.4%** of ATK + **3**, and knocking enemies into the air.  
                         &nbsp;  

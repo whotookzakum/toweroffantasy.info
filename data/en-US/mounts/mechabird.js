@@ -16,7 +16,8 @@ const mechabird = {
         part4: {
             source: "Reward for server progress reaching 100% during event period.",
         },
-    }
+    },
+    videoSrc: "https://www.youtube.com/embed/-JJNBnwHjcM"
 }
 
 export default mechabird;

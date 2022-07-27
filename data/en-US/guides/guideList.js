@@ -4,7 +4,7 @@ import { simulacra } from "./systems/simulacra";
 import { gacha } from "./systems/gacha";
 import { thingsYouMustKnow } from "./general/15-things-you-must-know.js";
 import { vitality } from "./systems/vitality";
-import { housing } from "./systems/housing";
+import { homeIsland } from "./systems/home-island";
 import { cnRegistration } from "./technical/cn-registration";
 import { apexLeague } from "./strategy/apex-league";
 import { gear } from "./systems/gear";
@@ -12,11 +12,13 @@ import { darkCrystals } from "./referential/dark-crystal-sources";
 import { dpsLoadouts } from "./strategy/dps-weapon-loadouts";
 import { beginnerWeapons } from "./general/beginner-weapon-guide";
 import { pvp } from "./systems/pvp";
+import { shortestRerollPath } from "./general/shortest-reroll-path";
 
 export const GUIDES = [
     // GENERAL
     thingsYouMustKnow,
     beginnerWeapons,
+    shortestRerollPath,
     // story lore
     // Obtaining newest armor pieces
     
@@ -34,7 +36,7 @@ export const GUIDES = [
     dailies,
     // pvp
     // battle royale
-    housing,
+    homeIsland,
     // time gate
 
     // STRATEGY

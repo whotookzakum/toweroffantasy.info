@@ -48,6 +48,7 @@ const claudia = {
             normal: [
                 {
                     name: "Quick Slash",
+                    input: ["Attack x5"],
                     description: `While on the ground, swing the blade to attack 5 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **39%** of ATK + **2** and knock the target back a short distance.',
@@ -59,6 +60,7 @@ const claudia = {
                 },
                 {
                     name: "Jumping Strike",
+                    input: ["Jump","Attack x4"],
                     description: `While airborne, tap normal attack to attack 4 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **23.2%** of ATK + **1**.',
@@ -69,14 +71,17 @@ const claudia = {
                 },
                 {
                     name: "Cyclone",
+                    input: ["Attack","hold:Attack"],
                     description: `Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal **39.8%** of ATK + **2** to a single target.`,
                 },
                 {
                     name: "Diving Edge",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to **10%** of ATK + **1** each hit. Upon landing, deal damage equal to **63.6%** of ATK + **3** and knock the target back. The higher you are when cast, the higher the damage dealt, up to **600%** of ATK.`,
                 },
                 {
                     name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
                     description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
                 }
             ],
@@ -87,6 +92,7 @@ const claudia = {
                 },
                 {
                     name: "Leap Attack",
+                    input: ["Dodge","Attack"],
                     description: `Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to **31.6%** of ATK + **2**, **knocking the target into the air** and becoming airborne, then deal additional damage equal to **47.3%** of ATK + **2**.`,
                 }
             ],

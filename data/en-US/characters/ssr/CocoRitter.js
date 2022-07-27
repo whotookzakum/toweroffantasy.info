@@ -29,6 +29,7 @@ const coco = {
             normal: [
                 {
                     name: "Normal Attack",
+                    input: ["Attack x5"],
                     description: `While on the ground, swing the staff to attack 5 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **41.9%** of ATK + **2**.',
@@ -40,6 +41,7 @@ const coco = {
                 },
                 {
                     name: "Focused Assault",
+                    input: ["Attack x3","hold:Attack"],
                     description: `After the third normal attack, hold the normal attack button to trigger branch attacks, consuming **300** points of endurance.`,
                     breakdown: [
                         'Pull in enemies in front of the user, knocking them **into the air** and dealing damage equal to **26.8%** of ATK + **1** every **0.3** seconds (up to **4** times).',
@@ -48,6 +50,7 @@ const coco = {
                 },
                 {
                     name: "Soaring Barrage",
+                    input: ["Jump","Attack x5"],
                     description: `While airborne or after jumping once, tap normal attack to attack 5 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **54.2%** of ATK + **3**.',
@@ -59,6 +62,7 @@ const coco = {
                 },
                 {
                     name: "Moonfall",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every **0.2** seconds, for a total of **95.2%** of ATK + **5** damage.`,
                 }
             ],
@@ -69,10 +73,12 @@ const coco = {
                 },
                 {
                     name: "Surge",
+                    input: ["Arrow keys","Dodge","Attack"],
                     description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to **35.3%** of ATK + **2** to targets. Grant **75** weapon charge points upon use.`,
                 },
                 {
                     name: "Tesseract",
+                    input: ["Dodge","Attack"],
                     description: `Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to **51.1%** of ATK + **3** to targets in its path every **0.3** seconds (up to 5 times). Grant **75** weapon charge points upon use.`,
                 }
             ],
