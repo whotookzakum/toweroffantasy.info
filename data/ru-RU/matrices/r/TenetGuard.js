@@ -1,5 +1,7 @@
 const tenetguard = {
     name:"Принципиальный страж",
+    uri: "tenet-guard",
+    imgSrc: "tenetguard.png",
     rarity:"R",
     chinaOnly: false,
     matrix: { 
