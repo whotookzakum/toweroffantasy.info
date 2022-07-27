@@ -29,6 +29,7 @@ const king = {
             normal: [
                 {
                     name: "Normal Attack",
+                    input: ["Attack x5"],
                     type: "normal",
                     description: `While on the ground, swing the scythe to launch 5 consecutive attacks.`,
                     breakdown: [
@@ -41,6 +42,7 @@ const king = {
                 },
                 {
                     name: "Rising Scythe",
+                    input: ["Jump","Attack x5"],
                     type: "normal",
                     description: `While airborne or after jumping once, attack 5 times in a row.`,
                     breakdown: [
@@ -53,24 +55,29 @@ const king = {
                 },
                 {
                     name: "Asunder",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Asunder. While falling, deal damage equal to **12.5%** of ATK + **1** each hit. Upon landing, deal damage equal to **65.4%** of ATK + **3** and deliver a **knockdown**. The higher the location is when triggered, the higher the damage dealt, up to **600%** of ATK.`
                 },
                 {
                     name: "Returning Chainblade",
+                    input: ["Attack x4","hold:Attack"],
                     description: `After the fourth normal attack, hold the normal attack button to trigger Returning Chainblade. Transform into a chainblade, dealing damage equal to **124.9%** of ATK + **7** to nearby targets and pulling them in.`
                 },
                 {
                     name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
                     description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`
                 }
             ],
             dodge: [
                 {
                     name: "Returning Chainblade",
+                    input: ["Arrow keys","Dodge","Attack"],
                     description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Rapid Lunge. Deal up to **115.5%** of ATK + **6** damage and pull in nearby enemies.`
                 },
                 {
                     name: "Domain of the Bat",
+                    input: ["Dodge"],
                     description: `When dodging, summon a group of bats that pulls the target into the center. Tap normal attack during the short period after dodging to swing the scythe, dealing up to **103.8%** of ATK + **5** damage to the target.`
                 },
                 {

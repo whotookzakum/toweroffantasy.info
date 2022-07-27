@@ -20,7 +20,8 @@ const monocross = {
             source: "Rare drop from ***Devotees***.",
             map: "monocrosselites.jpg"
         }
-    }
+    },
+    videoSrc: "https://www.youtube.com/embed/ECHjL8xhTY4"
 }
 
 export default monocross;

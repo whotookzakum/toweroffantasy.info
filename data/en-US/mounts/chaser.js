@@ -11,7 +11,8 @@ const chaser = {
             source: "Rare drop from ***The Vermin Brothers.***", 
             map: "chaserelites.jpg"
         }
-    }
+    },
+    videoSrc: "https://www.youtube.com/embed/GXXJ0bO8tTE"
 }
 
 export default chaser;

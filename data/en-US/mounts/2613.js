@@ -7,7 +7,8 @@ const cube = {
         part1: {
             source: "Pre-registration reward.",
         }
-    }
+    },
+    videoSrc: "https://www.youtube.com/embed/Kp5KIn58KJE"
 }
 
 export default cube;

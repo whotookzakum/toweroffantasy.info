@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "July 27",
+        text: "Added attack inputs for available weapons; Added video previews for available mounts; Guides: added Shortest Reroll Path, renamed Housing to Home Island;"
+    },
+    {
         date: "July 26",
         text: "Fixed endpoints; updated Housing guide and Gear guide; Interactive Map link changed to English version; New Mount: Future Chariot"
     },

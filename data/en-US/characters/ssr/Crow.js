@@ -29,6 +29,7 @@ const crow = {
             normal: [
                 {
                     name: "Twin Blades",
+                    input: ["Attack x5"],
                     type: "normal",
                     description: `While on the ground, swing the blades to attack 5 times in a row.`,
                     breakdown: [
@@ -41,6 +42,7 @@ const crow = {
                 },
                 {
                     name: "Sky Flurry",
+                    input: ["Jump","Attack x4"],
                     type: "normal",
                     description: `While airborne or after jumping once, tap normal attack to attack 4 times in a row.`,
                     breakdown: [
@@ -52,20 +54,24 @@ const crow = {
                 },
                 {
                     name: "Rapid Lunge",
+                    input: ["Attack x3","hold:Attack"],
                     description: `After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them **into the air**, dealing total damage equal to **83.4%** of ATK + **4**.`,
                 },
                 {
                     name: "Spiral Drive",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Spiral Drive. While falling, deal damage equal to **42%** of ATK + **2** each hit.`,
                 },
                 {
                     name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
                     description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
                 }
             ],
             dodge: [
                 {
                     name: "Flying Blades",
+                    input: ["Arrow keys","Dodge","Attack"],
                     description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target **5** times, each dealing damage equal to **18.8%** of ATK + **1**. Grant immunity to control effects while phasing.`,
                 },
                 {

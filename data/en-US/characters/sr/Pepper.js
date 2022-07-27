@@ -29,6 +29,7 @@ const pepper = {
             normal: [
                 {
                     name: "Normal Attack",
+                    input: ["Attack x5"],
                     description: `While on the ground, swing the staff to attack 5 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **25.1%** of ATK + **1**.',
@@ -40,6 +41,7 @@ const pepper = {
                 },
                 {
                     name: "Soaring Barrage",
+                    input: ["Jump","Attack x5"],
                     description: `While airborne or after jumping once, tap normal attack to attack 5 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **32.5%** of ATK + **2**.',
@@ -51,10 +53,12 @@ const pepper = {
                 },
                 {
                     name: "Moonfall",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every **0.2** seconds, for a total of **57.2%** of ATK + **3** damage.`
                 },
                 {
                     name: "Focused Assault",
+                    input: ["Attack x3","hold:Attack"],
                     description: `After the third normal attack, hold the normal attack button to trigger branch attacks, consuming **300** points of endurance.`,
                     breakdown: [
                         'Pull in enemies in front of the user, knocking them **into the air** and dealing damage equal to **16.1%** of ATK + **1** every **0.3** seconds (up to **4** times).',
@@ -69,10 +73,12 @@ const pepper = {
                 },
                 {
                     name: "Surge",
+                    input: ["Arrow keys","Dodge","Attack"],
                     description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to **22.6%** of ATK + **1** to targets. Grant **75** weapon charge points upon use.`
                 },
                 {
                     name: "Tesseract",
+                    input: ["Dodge","Attack"],
                     description: `Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to **32.1%** of ATK + **2** to targets in its path every **0.3** seconds (up to 5 times). Grant **75** weapon charge points upon use.`
                 }
             ],

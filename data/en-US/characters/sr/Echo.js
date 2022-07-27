@@ -30,6 +30,7 @@ const echo = {
             normal: [
                 {
                     name: "Thrust",
+                    input: ["Attack x5"],
                     description: `While on the ground, swing the spear to attack 5 times in a row.`,
                     breakdown: [
                         'Deal damage equal to **24.7%** of ATK + **1** and knock the target back a short distance.',
@@ -41,6 +42,7 @@ const echo = {
                 },
                 {
                     name: "Jumping Strike",
+                    input: ["Jump","Attack x4"],
                     description: `While airborne, tap normal attack to attack 4 times in a row in the air.`,
                     breakdown: [
                         'Deal damage equal to **27.4%** of ATK + **1**.',
@@ -51,24 +53,29 @@ const echo = {
                 },
                 {
                     name: "Crashing Drive",
+                    input: ["Jump","hold:Attack"],
                     description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Crashing Drive. While falling, deal damage equal to **8%** of ATK + **1** each hit. Upon landing, deal damage equal to **48.5%** of ATK + **3** and knock the target down. The higher the location is when triggered, the higher the damage dealt, up to **600%** of ATK.`,
                 },
                 {
                     name: "Spear Flurry",
+                    input: ["Attack x3","hold:Attack"],
                     description: `After the third normal attack, hold the normal attack button to trigger Spear Flurry. Strike the target and knock them **into the air**, dealing damage equal to **49.2%** of ATK + **3**. Tap again to continue attacking the airborne target, dealing up to **98%** of ATK + **5** damage to a single target.`,
                 },
                 {
                     name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
                     description: `Thrust the spear forward, dealing damage equal to **570%** of ATK + **30**.`,
                 }
             ],
             dodge: [
                 {
                     name: "Flying Kick",
+                    input: ["Arrow keys","Dodge","Attack"],
                     description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Kick. Once hit the target, deal damage equal to **72%** of ATK + **4**, knock the target back significantly, and stun them for **1** second (non-Wanderer targets) or **0.5** seconds (Wanderers).`,
                 },
                 {
                     name: "Lunging Smash",
+                    input: ["Dodge","Attack"],
                     description: `Tap normal attack during the short period after dodging to trigger Lunging Smash. Slam the long spear into the ground, dealing damage equal to **52.8%** of ATK + **3** and knocking targets **into the air**.`,
                 },
                 {

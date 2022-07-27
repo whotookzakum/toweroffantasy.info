@@ -31,6 +31,7 @@ const huma = {
             normal: [
                 {
                     name: "Normal Attack",
+                    input: ["Attack x4"],
                     description: `While on the ground, swing the shield axe to attack 4 times in a row.`,
                     breakdown: [
                         `Shield Form: Deal damage equal to **70.6%** of ATK + **4** and knock the target back a short distance.  
@@ -45,6 +46,7 @@ const huma = {
                 },
                 {
                     name: "Aerial Strike",
+                    input: ["Jump","Attack x3"],
                     description: `While airborne or after jumping once, attack 3 times in a row.`,
                     breakdown: [
                         `Shield Form: Deal damage equal to **69%** of ATK + **4**  
@@ -57,6 +59,7 @@ const huma = {
                 },
                 {
                     name: "Anticipation",
+                    input:["hold:Attack"],
                     description: 
                         `Shield Form: While on the ground, tap and hold normal attack to enter shield form (release to exit) for **3** seconds, during which the Wanderer is unable to move, and all damage taken is reduced by **50%**. While in shield form, releasing the normal attack button after taking damage or after holding the button for **3** seconds, unleash fire crash, dealing damage equal to **152.1%** of ATK + **8** and inflicting a **1**-second **stun** effect on the target.  
                         &nbsp;  
@@ -64,6 +67,7 @@ const huma = {
                 },
                 {
                     name: "Valor",
+                    input: ["Jump","hold:Attack"],
                     description: 
                         `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Air Branch attacks.  
                         &nbsp;  
@@ -75,6 +79,7 @@ const huma = {
             dodge: [
                 {
                     name: "Erupt",
+                    input: ["Dodge","Attack"],
                     description: 
                         `Tap normal attack during the short period after dodging to trigger a Dodge Attack.  
                         &nbsp;  

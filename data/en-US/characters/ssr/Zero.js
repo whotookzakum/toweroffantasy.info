@@ -31,6 +31,7 @@ const zero = {
             normal: [
                 {
                     name: "Normal Attack",
+                    input: ["Attack x5"],
                     description: `While on the ground, manipulate the cube to attack 5 times in a row.  
                                 **Passive: If normal attacks hit targets 6 times, gain 1 cube. Up to 5 cubes can be stored**.`,
                     breakdown: [
@@ -43,15 +44,18 @@ const zero = {
                 },
                 {
                     name: "Omnium Missile",
+                    input: ["Jump","hold:Attack"],
                     description: `While airborne, tap normal attack to activate the energy within the cube, firing up to **5** missiles and dealing total damage equal to **45.6%** of ATK + **2**. Consume up to **250** endurance.  
                     **Passive: If the Wanderer has any stored cubes, consume all cubes to fire Omnium Missiles at targets to deal damage**.`
                 },
                 {
                     name: "Energy Overflow",
+                    input: ["Jump","Attack"],
                     description: `While airborne or after jumping once, tap normal attack to trigger Energy Overflow. Upon landing, fire a shockwave that travels forward, dealing up to **18%** of ATK + **1** damage to targets in its path.`
                 },
                 {
                     name: "Omnium Shock",
+                    input: ["Attack x3","hold:Attack"],
                     description: `On the third normal attack, hold the normal attack button to trigger Omnium Shock. A pillar of energy launches nearby targets into the air, dealing damage equal to **52.8%** of ATK + **3**. The pillar lasts 5 seconds and deals damage equal to **22%** of ATK + **1** to nearby targets every second.`
                 },
                 {

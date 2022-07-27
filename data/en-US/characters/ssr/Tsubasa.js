@@ -29,6 +29,7 @@ const tsubasa = {
             normal: [
                 {
                     name: "Quickdraw",
+                    input: ["Attack x5"],
                     description: `While on the ground, draw the bow repeatedly to attack 5 times.`,
                     breakdown: [
                         'Deal damage equal to **48.8%** of ATK + **3**.',
@@ -40,14 +41,17 @@ const tsubasa = {
                 },
                 {
                     name: "Charged Arrow",
+                    input: ["hold:Attack"],
                     description: `Tap and hold normal attack to charge the weapon. Deal basic damage equal to **87.8%** of ATK + **5**, and **50%** more for each 1 second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers).`
                 },
                 {
                     name: "Arrow Rain",
+                    input: ["Attack","hold:Attack"],
                     description: `After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **287.2%** of ATK + **15** area damage to targets.`
                 },
                 {
                     name: "Air Volley",
+                    input: ["Jump","Attack x4"],
                     description: `While airborne, tap normal attack to attack 4 times in a row in the air.`,
                     breakdown: [
                         'Deal damage equal to **56.3%** of ATK + **3**.',
@@ -64,6 +68,7 @@ const tsubasa = {
                 },
                 {
                     name: "Loaded Arrow",
+                    input: ["Dodge","Attack"],
                     description: `Tap attack after dodging to trigger a Loaded Arrow, which **knocking the target back** and dealing damage equal to **124%** of ATK + **7**.`
                 }
             ],
