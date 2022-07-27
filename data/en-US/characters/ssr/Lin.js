@@ -112,7 +112,8 @@ const lin = {
         giftCategories: ['metalware', 'decorations', 'vera'],
 
         gifts: [
-            [60, "princeTataFigure", "linyeFigure"],
+            [80, "princeTataFigure"],
+            [60, "linyeFigure"],
             [40, "strangeFragment"],
             [30, "bunnyDoll"],
             [15, "strangePlant"]

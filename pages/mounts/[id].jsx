@@ -29,13 +29,13 @@ export default function MountModal({ mount }) {
         return (
             <div key={key} className="spotlight mount-part">
                 <div className="flex">
-                    <img className="mount-part-img" src={`/images/mounts/${removeSpace(mount.name)}-${partNum}.png`} alt={`${mount.name} Part ${partNum}`} />
+                    <img className="mount-part-img" src={`/static/images/mounts/${removeSpace(mount.name)}-${partNum}.png`} alt={`${mount.name} Part ${partNum}`} />
                     <div className="mount-part-text" >
                         <ReactMarkdown>{value.source}</ReactMarkdown>
                         {value.map &&
                             <details>
                                 <summary>Map</summary>
-                                <img src={`/images/mounts/${value.map}`} alt="Map of Elites" />
+                                <img src={`/static/images/mounts/${value.map}`} alt="Map of Elites" />
                             </details>
                         }
                         {value.video &&

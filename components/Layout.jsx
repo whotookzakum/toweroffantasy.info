@@ -1,4 +1,3 @@
-
 import Navigation from './Navigation';
 
 export function setPageTitle(title) { return title + ' | Tower of Fantasy Index' };

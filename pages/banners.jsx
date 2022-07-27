@@ -56,7 +56,7 @@ function BannerSchedule() {
                 <meta name="description" content="Limited Banner start and end dates for Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src={`/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
+            <img className="bg-img" src={`/static/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
             <h1>Limited Banner Schedule</h1>
             <p>Click any character's name to go straight to their Simulacrum page.</p>
             <div className="banners-wrapper">

@@ -1,6 +1,5 @@
 import { ModalMenu } from "../../components/Modal";
 import { MATRICES } from "../../data/en-US/matrices/matrixList";
-import { removeSpace } from "../../utils/stringHelper";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
@@ -12,7 +11,7 @@ function Matrices() {
                 <meta name="description" content="Information about all the Matrix set effects in Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src={`/images/art/${removeSpace(MATRICES[0].name)}.png`} alt={MATRICES[0].name + " Artwork"} />
+            <img className="bg-img" src={`/static/images/art/${MATRICES[0].imgSrc}`} alt={MATRICES[0].name + " Artwork"} />
             <header>
                 <h1>Matrices</h1>
                 <p>

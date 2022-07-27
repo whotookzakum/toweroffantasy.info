@@ -19,12 +19,12 @@ export function GuideArticle({ guide }) {
 
     return (
         <>
+            <Head>
+                <title>{setPageTitle(guide.name)}</title>
+                <meta name="description" content={guide.description} />
+            </Head>
+            <img className="bg-img" src="/static/images/bg-1.png" alt="Background Image" />F
             <article className="guide">
-                <Head>
-                    <title>{setPageTitle(guide.name)}</title>
-                    <meta name="description" content={guide.description} />
-                </Head>
-
                 <header>
                     <h1>{guide.name}</h1>
                     <div className="authors">By {author}</div>
