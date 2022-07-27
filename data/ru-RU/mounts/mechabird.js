@@ -1,20 +1,20 @@
 const mechabird = {
-    name: "Mechabird",
+    name: "Меха-птица",
     uri: "mechabird",
     imgSrc: "mechabird.png",
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Purchasable from event shop during event period.",
+            source: "Можно приобрести в магазине во время события.",
         },
         part2: {
-            source: "Purchasable from event shop during event period.",
+            source: "Можно приобрести в магазине во время события.",
         },
         part3: {
-            source: "Purchasable from event shop during event period.",
+            source: "Можно приобрести в магазине во время события.",
         },
         part4: {
-            source: "Reward for server progress reaching 100% during event period.",
+            source: "Награда за достижение 100% в серверном прогрессе события.",
         },
     }
 }
