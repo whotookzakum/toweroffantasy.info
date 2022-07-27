@@ -1,5 +1,7 @@
 const sobek = {
     name:"Собек",
+    uri: "sobek",
+    imgSrc: "sobek.png",
     rarity:"SR",
     chinaOnly: false,
     matrix: {
