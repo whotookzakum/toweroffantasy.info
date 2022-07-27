@@ -1,5 +1,5 @@
 const couant = {
-    name: "Couant",
+    name: "Коэнт I",
     uri: "couant",
     imgSrc: "couant.png",
     rarity: "SR",
