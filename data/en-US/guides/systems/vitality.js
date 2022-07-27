@@ -57,7 +57,7 @@ export const vitality = {
                 </table>
 
                 <h2>Joint Operation Schedule</h2>
-                <img src="/images/guides/JOINTOP.jpg" alt="Joint Operation Schedule" />
+                <img src="/static/images/guides/JOINTOP.jpg" alt="Joint Operation Schedule" />
             </section>
 
         </>

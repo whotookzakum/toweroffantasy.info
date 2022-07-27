@@ -302,7 +302,7 @@ const recipes = [
     },
     {
         name: 'Sliced Fish with Mushroom',
-        imgSrc: "slicedfishwithmushrooms.png",
+        imgSrc: "slicedfishwithmushroom.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,

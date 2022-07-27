@@ -2,7 +2,7 @@ import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { getSimulacrumData, getAllSimulacrumIds } from "../../lib/simulacra";
 import ReactMarkdown from 'react-markdown';
-import { hyphenToSpace, removeSpace } from "../../utils/stringHelper";
+import { hyphenToSpace } from "../../utils/stringHelper";
 import CNTag from "../../components/CNTag";
 import elementalEffects from "../../data/en-US/elementalEffects";
 import { Modal } from "../../components/Modal";
@@ -65,7 +65,7 @@ export default function SimulacrumPage({ simulacrum }) {
             }
             result.push(
                 <li className={`item-frame rarity-${rarity}`}>
-                    <img src={`/images/mat/${materialUri}.png`} alt={materialUri} />
+                    <img src={`/static/images/mat/${materialUri}.png`} alt={materialUri} />
                 </li>
             );
         }
@@ -91,7 +91,7 @@ export default function SimulacrumPage({ simulacrum }) {
             return (index === 0) ? <></> :
                 <li className="gift">
                     <div className={`item-frame rarity-${rarity}`}>
-                        <img src={`/images/awakening/${gift}.png`} alt={gift} />
+                        <img src={`/static/images/awakening/${gift}.png`} alt={gift} />
                     </div>
                     <h4>+{group[0]}</h4>
                 </li>
@@ -129,7 +129,7 @@ export default function SimulacrumPage({ simulacrum }) {
     })
     const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
         return (matricesList.map(matrix =>
-            <li key={matrix}><img src={`/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
+            <li key={matrix}><img src={`/static/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
     });
     return (
         <>
@@ -142,33 +142,33 @@ export default function SimulacrumPage({ simulacrum }) {
 
                     <h2>Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
-                        <img className="weapon-image" src={`/images/wep/${removeSpace(simulacrum.name)}.png`} alt={weapon.name} />
+                        <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
                         <div className="weapon-info">
                             <h3>{weapon.name}</h3>
                             <div className="weapon-stat-grid">
                                 <div className="weapon-stat">
-                                    <img src={`/images/${weapon.type}.png`} alt={weapon.type} />
+                                    <img src={`/static/images/${weapon.type}.png`} alt={weapon.type} />
                                     <div>
                                         <h5>Resonance</h5>
                                         <h4>{weapon.type}</h4>
                                     </div>
                                 </div>
                                 <div className="weapon-stat">
-                                    <img src={`/images/${weapon.element}.png`} alt={weapon.element} />
+                                    <img src={`/static/images/${weapon.element}.png`} alt={weapon.element} />
                                     <div>
                                         <h5>Element</h5>
                                         <h4>{weapon.element}</h4>
                                     </div>
                                 </div>
                                 <div className="weapon-stat">
-                                    <i style={{ color: `var(--color-tier-${removeSpace(weapon.shatter[0])})` }}>{weapon.shatter[0]}</i>
+                                    <i style={{ color: `var(--color-tier-${weapon.shatter[0].toLowerCase()})` }}>{weapon.shatter[0]}</i>
                                     <div>
                                         <h5>Shatter</h5>
                                         <h4>{weapon.shatter[1]}</h4>
                                     </div>
                                 </div>
                                 <div className="weapon-stat">
-                                    <i style={{ color: `var(--color-tier-${removeSpace(weapon.charge[0])})` }}>{weapon.charge[0]}</i>
+                                    <i style={{ color: `var(--color-tier-${weapon.charge[0].toLowerCase()})` }}>{weapon.charge[0]}</i>
                                     <div>
                                         <h5>Charge</h5>
                                         <h4>{weapon.charge[1]}</h4>
@@ -274,7 +274,7 @@ export default function SimulacrumPage({ simulacrum }) {
                                     <h4>{simulacrum.bio.birthday}</h4>
                                 </li>
                             </ul>
-                            <img src={`/images/charts/${removeSpace(simulacrum.name)}.png`} alt="" />
+                            <img src={`/static/images/charts/${simulacrum.imgSrc}`} alt="" />
                         </div>
                     </section>
                     <section className="voice-actors w-75ch">

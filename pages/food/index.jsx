@@ -9,7 +9,7 @@ function Food() {
         return dish.ingredients.map(ingredient =>
             <li key={ingredient.item.name} className="ingredient">
                 <div className={`item-frame rarity-${ingredient.item.rarity}`}>
-                    <img src={`/images/food/ingredients/${ingredient.item.imgSrc}`} alt={ingredient.item.name} />
+                    <img src={`/static/images/food/ingredients/${ingredient.item.imgSrc}`} alt={ingredient.item.name} />
                     <h3>{ingredient.amount}</h3>
                 </div>
                 {ingredient.item.name}
@@ -24,7 +24,7 @@ function Food() {
                 <th className="col-dish">
                     <div className={`item-frame rarity-${dish.rarity}`}>
                         {dish.chinaOnly && <abbr title="China Exclusive" />}
-                        <img src={`/images/food/dishes/${dish.imgSrc}`} alt={dish.name} />
+                        <img src={`/static/images/food/dishes/${dish.imgSrc}`} alt={dish.name} />
                     </div>
                     <span>{dish.name}</span>
                 </th>
@@ -41,7 +41,7 @@ function Food() {
                 <meta name="description" content="Recipes for craftable food in Tower of Fantasy Global and Chinese versions." />
             </Head>
             
-            <img className="bg-img" src="/images/food/huodong_meishi_guo.png" alt="Dancing Air Fryer" />
+            <img className="bg-img" src="/static/images/food/huodong_meishi_guo.png" alt="Dancing Air Fryer" />
             <header>
                 <h1>Food</h1>
                 <p>
@@ -67,36 +67,36 @@ function Food() {
                         <div className="flex">
                             <input type="checkbox" id="atk_flame" name="atk_flame" />
                             <label htmlFor="atk_flame">
-                                <img src="/images/buff/ATK_flame.png" alt="Flame Attack" />
+                                <img src="/static/images/buff/ATK_flame.png" alt="Flame Attack" />
                             </label>
                             <input type="checkbox" id="atk_ice" name="atk_ice" />
                             <label htmlFor="atk_ice">
-                                <img src="/images/buff/ATK_ice.png" alt="Ice Attack" />
+                                <img src="/static/images/buff/ATK_ice.png" alt="Ice Attack" />
                             </label>
                             <input type="checkbox" id="atk_volt" name="atk_volt" />
                             <label htmlFor="atk_volt">
-                                <img src="/images/buff/ATK_volt.png" alt="Volt Attack" />
+                                <img src="/static/images/buff/ATK_volt.png" alt="Volt Attack" />
                             </label>
                             <input type="checkbox" id="atk_physical" name="atk_physical" />
                             <label htmlFor="atk_physical">
-                                <img src="/images/buff/ATK_physical.png" alt="Physical Attack" />
+                                <img src="/static/images/buff/ATK_physical.png" alt="Physical Attack" />
                             </label>
                         </div>
                     </li>
                     <li>
                         <h4>Defensive</h4>
                         <div className="flex">
-                            <img src="/images/buff/DEF_flame.png" alt="Flame Defense" />
-                            <img src="/images/buff/DEF_ice.png" alt="Ice Defense" />
-                            <img src="/images/buff/DEF_volt.png" alt="Volt Defense" />
-                            <img src="/images/buff/DEF_physical.png" alt="Physical Defense" />
+                            <img src="/static/images/buff/DEF_flame.png" alt="Flame Defense" />
+                            <img src="/static/images/buff/DEF_ice.png" alt="Ice Defense" />
+                            <img src="/static/images/buff/DEF_volt.png" alt="Volt Defense" />
+                            <img src="/static/images/buff/DEF_physical.png" alt="Physical Defense" />
                         </div>
                     </li>
                     <li>
                         <h4>Recovery</h4>
                         <div className="flex">
-                            <img src="/images/buff/HP.png" alt="HP Recovery" />
-                            <img src="/images/buff/stamina.png" alt="Stamina Recovery" />
+                            <img src="/static/images/buff/HP.png" alt="HP Recovery" />
+                            <img src="/static/images/buff/stamina.png" alt="Stamina Recovery" />
                         </div>
                     </li>
 
