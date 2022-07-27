@@ -1,5 +1,6 @@
 import { ModalMenu } from "../../components/Modal";
 import { CHARACTERS } from "../../data/en-US/characters/characterList";
+import { removeSpace } from "../../utils/stringHelper";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
@@ -12,7 +13,7 @@ function Simulacra() {
                 <meta name="description" content="Information about all the characters and their weapons in Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src={`/static/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
+            <img className="bg-img" src={`/images/art/${removeSpace(CHARACTERS[0].name)}.png`} alt={CHARACTERS[0].name + " Artwork"} />
             <header>
                 <h1>Simulacra</h1>
                 <p>

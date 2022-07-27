@@ -19,8 +19,8 @@ export function ModalMenu({ list, filter, target }) {
                 options.imgPath = `avatar/${item.imgSrc}`;
                 options.conditionalContent =
                     <div className="flex" style={{ gap: "0.3rem" }}>
-                        <img src={`/static/images/${item.weapon.type}.png`} alt={item.weapon.type} />
-                        <img src={`/static/images/${item.weapon.element}.png`} alt={item.weapon.element} />
+                        <img src={`/images/${item.weapon.type}.png`} alt={item.weapon.type} />
+                        <img src={`/images/${item.weapon.element}.png`} alt={item.weapon.element} />
                     </div>
                 break;
             case MATRICES:
@@ -59,7 +59,7 @@ export function ModalMenu({ list, filter, target }) {
                         {item.chinaOnly && <abbr title="China Exclusive" />}
                         {options.imgPath &&
                             <div className="flex">
-                                <img src={`/static/images/${options.imgPath}`} alt={item.name} />
+                                <img src={`/images/${options.imgPath}`} alt={item.name} />
                             </div>
                         }
                         <h3>{item.name}</h3>
@@ -104,7 +104,7 @@ export function Modal({ item, children }) {
     return (
         <article className="modal">
             <div className="modal-backdrop" />
-            <img className="bg-img" src={`/static/images/${options.bgImgPath}`} alt="Page Background" />
+            <img className="bg-img" src={`/images/${options.bgImgPath}`} alt="Page Background" />
             <ModalHeader item={item} options={options} />
             {children}
         </article>
@@ -124,7 +124,7 @@ function ModalHeader({ item, options }) {
         <header className={options.headerClass} >
             <div className="header-img-wrapper">
                 
-                <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />;
+                <img src={`/images/${options.headerImgPath}`} alt={item.name} />;
             </div>
             <div>
                 <h1>{item.name}</h1>

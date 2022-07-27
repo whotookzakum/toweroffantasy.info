@@ -11,7 +11,7 @@ export default function Guides() {
                 <meta name="description" content="Guides for Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src="/static/images/bg-1.png" alt="Background Image" />
+            <img className="bg-img" src='/images/bg-1.png' alt="Background Image" />
             <header>
                 <h1>Guides</h1>
                 <p>

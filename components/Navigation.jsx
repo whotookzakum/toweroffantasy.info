@@ -16,7 +16,7 @@ function Navigation() {
                 <div className="navbar-brand">
                     <Link href="/">
                         <a onClick={() => setTogglerState(!togglerState)}>
-                            <img src="/static/images/avatar/tata.png" alt="Logo" /><br />
+                            <img src="/images/avatar/tata.png" alt="Logo" /><br />
                             Tower of Fantasy Index
                         </a>
                     </Link>
@@ -45,7 +45,7 @@ function Navigation() {
                         <Link href="/guides"><a>Guides</a></Link>
                     </li>
                     <li>
-                        <a href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon/></a>
+                        <a href="https://static-web.ghzs.com/cspage_pro/huantaMap.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon/></a>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)} style={{display: "none"}}>
                         <Link href="/damagecalculator"><a>Damage Calculator</a></Link>
