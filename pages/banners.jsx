@@ -20,7 +20,6 @@ function BannerList({ data }) {
     return <tbody>{listItems}</tbody>
 }
 
-
 export function getBannerCharacters(version) {
     return (
         CHARACTERS.filter(character => {
@@ -31,19 +30,18 @@ export function getBannerCharacters(version) {
     );
 }
 
-export function getAllBanners(version) {
+export function getTotalBanners(version) {
     const bannerCharacters = getBannerCharacters(version);
-    const allBanners = bannerCharacters.flatMap(({ name, weapon, uri, banners }) => {
+    const totalBanners = bannerCharacters.flatMap(({ name, weapon, uri, banners }) => {
         const element = weapon.element;
         const result = banners[version].map(banner => {
             return { name, element, uri, banner }
         });
         return result;
     });
-    allBanners.sort((a, b) => -(a.banner.bannerNo - b.banner.bannerNo));
-    return allBanners;
+    totalBanners.sort((a, b) => -(a.banner.bannerNo - b.banner.bannerNo));
+    return totalBanners;
 }
-
 
 function BannerSchedule() {
 
@@ -78,7 +76,7 @@ function BannerSchedule() {
                                 <th>Week #</th>
                             </tr>
                         </thead>
-                        <BannerList data={getAllBanners("glob")} />
+                        <BannerList data={getTotalBanners("glob")} />
                     </table>
                 </div>
                 <div className={isExpanded.china ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
@@ -99,7 +97,7 @@ function BannerSchedule() {
                                 <th>Week #</th>
                             </tr>
                         </thead>
-                        <BannerList data={getAllBanners("cn")} />
+                        <BannerList data={getTotalBanners("cn")} />
                     </table>
                 </div>
             </div>

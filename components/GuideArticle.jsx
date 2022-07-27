@@ -23,7 +23,7 @@ export function GuideArticle({ guide }) {
                 <title>{setPageTitle(guide.name)}</title>
                 <meta name="description" content={guide.description} />
             </Head>
-            <img className="bg-img" src="/static/images/bg-1.png" alt="Background Image" />F
+            <img className="bg-img" src="/static/images/bg-1.png" alt="Background Image" />
             <article className="guide">
                 <header>
                     <h1>{guide.name}</h1>

@@ -15,15 +15,15 @@ const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
 
     const weaponsInTier = weapons.map(weapon => {
         const character = CHARACTERS.find(character => character.name === weapon);
-        return(
+        return (
             <li className="tier-list-item">
                 <img src={`/static/images/wep/${character.imgSrc}`} alt={`${character.name}'s Weapon`} />
                 <h4>{character.name}</h4>
             </li>
         )
     })
-    
-    return(
+
+    return (
         <div className="tier-list-row">
             <h2 className={`tier-title tier-${tier}`}>{tier.toUpperCase()}</h2>
             <ul className="tier-list-item-wrapper">{weaponsInTier}</ul>
@@ -311,7 +311,7 @@ export const apexLeague = {
     name: "Apex League",
     uri: "apex-league",
     type: "strategy",
-    author: ["Keita#0795", "Goldenmonkey#2798", "theLaw#5678"],
+    author: ["Keita#0795", "Goldenmonkey#2798", "Riala"],
     text:
         <>
             <section>
@@ -370,7 +370,7 @@ export const apexLeague = {
                 </table>
             </section>
 
-            <section className="pvp-strategy" style={{display: "none"}}>
+            <section className="pvp-strategy" style={{ display: "none" }}>
                 <h2>Weapons</h2>
                 <p>
                     Here we'll take a look at each weapon and scenarios that they're viable in and some weaknesses they can be exploited when fighting against.
@@ -395,6 +395,26 @@ export const apexLeague = {
                 <div className="tier-list">
                     {weaponTierList}
                 </div>
+            </section>
+
+            <section>
+                <h2>Created By</h2>
+                Keita - https://www.twitch.tv/Keita_Kyu
+                Asuwuna | Goldenmonkeee - https://www.twitch.tv/goldenmonkeee
+                Riala - https://www.twitch.tv/riala_w
+
+                <h2>Special Thanks</h2>
+                Pandora - https://www.youtube.com/c/pandoraxp
+                Gateoo - https://www.twitch.tv/gateoo - https://www.youtube.com/user/gateoo
+                An - Azn#9328
+                Linye/深水yl - https://space.bilibili.com/6532786
+                ChickenJoy | Katsuyori https://www.twitch.tv/thechickenjoy
+
+                <h2>Join the PvP Discord!</h2>
+                https://discord.gg/6aK78dA79W
+
+                <h2>Original Reference</h2>
+                https://docs.google.com/document/d/1eZVlm-Y9Uosyx9Fqy9m8N8IfY31XF6YdQjFxCwiFcfk/edit
             </section>
         </>
 }

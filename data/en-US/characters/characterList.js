@@ -1,3 +1,4 @@
+import Lyra from './ssr/Lyra';
 import Lin from './ssr/Lin';
 import SakiFuwa from './ssr/SakiFuwa';
 import Ruby from './ssr/Ruby';
@@ -24,6 +25,7 @@ import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
 
 export const CHARACTERS = [
+    // Lyra,
     Lin,
     SakiFuwa,
     Ruby,

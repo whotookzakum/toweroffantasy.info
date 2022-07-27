@@ -99,9 +99,9 @@ const lin = {
     },
 
     matrix: {
-        set2: `Successful attacks increase your attack power by **3%/3.7%/4.3%/5%** for **18** seconds. This effect can stack up to **5** times. If multiple sets are used, only the highest star set will take effect.`,
+        set2: `Successful attacks increase your attack power by **3%/3.7%/4.3%/5%** for 18 seconds, stacking up to 5 times. If multiple sets are used, only the highest star set will take effect.`,
 
-        set4: `Traveling **5** meters within Lunar Reflection will grant **1** stack of [Moon's Reflection], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds. This effect can stack up to **3** times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect.`
+        set4: `Traveling 5 meters within Lunar Reflection will grant 1 stack of [Moon's Reflection], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect.`
     },
 
     awakening: {

@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "July 26",
-        text: "Fixed subdomain redirect; updated Housing guide and Gear guide; Interactive Map link changed to English version"
+        text: "Fixed endpoints; updated Housing guide and Gear guide; Interactive Map link changed to English version; New Mount: Future Chariot"
     },
     {
         date: "July 11",
