@@ -1,5 +1,7 @@
 const bullseye = {
     name:"Тягач",
+    uri: "bullseye",
+    imgSrc: "bullseye.png",
     rarity:"R",
     chinaOnly: false,
     matrix: {
