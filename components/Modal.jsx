@@ -123,7 +123,6 @@ function ModalHeader({ item, options }) {
     return (
         <header className={options.headerClass} >
             <div className="header-img-wrapper">
-                
                 <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />;
             </div>
             <div>
