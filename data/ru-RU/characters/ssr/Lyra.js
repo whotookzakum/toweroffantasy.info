@@ -1,5 +1,5 @@
 const lyra = {
-    name: "Lyra",
+    name: "Лира",
     uri: "lyra",
     imgSrc: "lyra.png",
     rarity: "SSR",
@@ -8,15 +8,15 @@ const lyra = {
         cn: [
             {
                 bannerNo: 16,
-                start: "29 Jul 2022",
-                end: "Aug 2022",
-                duration: "18d",
+                start: "29 Июл 2022",
+                end: "17 Авг 2022",
+                duration: "18д",
                 week: "33~"
             }
         ]
     },
     weapon: {
-        name: "Vespers",
+        name: "Вечерня",
         element: "physical",
         type: "support",
         baseStats: ["attack", "defense", "health"],
@@ -25,24 +25,24 @@ const lyra = {
         materials: ["physical", "black", "red"],
         bonusEffect: {
             effect1: {
-                title: `Physical Resonance`,
-                description: `When equipped with **2** or more Physical weapons, increase Physical ATK by **20%** and Physical Resistance by **40%**, taking effect in the background.`
+                title: `Физический резонанс`,
+                description: `Срабатывает при ношении **2** или более физических оружий, постоянно увеличивая Физическое АТК на **20%** и Физическое Сопротивление на **40%**.`
             }
         },
         advancement: {
-            star1: `When using any weapon skill or discharge skill, if your personal Guardian count is maxed, your Guardians' durations will be refreshed, and deal damage equal to the number of guardians on the field * **100%** of Physical ATK, (maximum 8 guardians for supports and 6 for non-supports).`,
+            star1: `Применение любого активного навыка или навыка высвобождения, если количество Стражей на вас максимально, обновляет их время действия и наносит урон, равный Кол-ву Стражей на поле * **100%** от Физического АТК (до 8 Стражей, если активен ***Резонанс благословения***. Иначе до 6 Стражей).`,
 
-            star2: `Increase the current weapon's base ATK growth by **16%**.`,
+            star2: `Базовый прирост АТК оружия увеличивается на **16%**.`,
 
-            star3: `Increases Guardian damage by **20%**. Using any weapon skill or discharge skill while you have the Blessing Resonance will increase Guardian final damage by **15%** for 10 seconds.`,
+            star3: `Урон Стражей увеличивается на **20%**. Применение любого активного навыка или навыка высвобождения, если активен ***Резонанс благословения***, увеличивает финальный урон Стражей на **15%** в течение 10 секунд.`,
 
-            star4: `Increase the current weapon's base ATK growth by **32%**.`,
+            star4: `Базовый прирост АТК оружия увеличивается на **32%**.`,
 
             star5: 
-                `Triggering Guardian of Forgiveness 5 times protects you and your guarded target from fatal damage **1** time. Afterwards, the Guardian of Forgiveness will be consumed and restore **15%** HP (does not take effect in Apex League).
-                Triggering Guardian of Repentance 5 times protects you from fatal damage **2** times. Can protect up to **5** maximum times, after which one usage will be consumed to restore **15%** HP (does not take effect in Apex League).`,
+                `Активация Стража прощения 5 раз защитит вас и охраняемую Стражем цель от смертельного урона **1** раз. Затем Страж прощения исчезнет, исцеляя **15%** здоровья (не работает в Высшей лиге).
+                Активация Стража раскаяния 5 раз защитит вас от смертельного урона **2** раза. Может защитить максимум до **5** раз, после которых один такой эффект исчезнет, исцеляя **15%** здоровья (не работает в Высшей лиге).`,
 
-            star6: `Using any weapon skill or discharge skill will increase your final damage and healing equivalent to the number of Guardians. Each Guardian will increase final damage and healing by **3%** for a maximum of **15%** for 25 seconds.`
+            star6: `Применение любого активного навыка или навыка высвобождения увеличивает финальный урон и лечение в зависимости от количества Стражей на поле. Каждый активный Страж увеличивает финальный урон и лечения на **3%** в течение 25 секунд, вплоть до максимального бонуса в **15%**.`
         },
         abilities: [],
         recommendedMatrix: {
@@ -52,15 +52,15 @@ const lyra = {
     },
 
     matrix: {
-        set2: `Using this weapon grants a **20%/25%/30%/35% all ATK buff, and healing received is increased by up to 100% based on missing health.`,
+        set2: `При использовании этого оружия все виды АТК увеличиваются на **20%/25%/30%/35%, а также получаемое лечение увеличивается до **100%** в зависимости от процента потерянного здоровья.`,
 
-        set4: `Dealing Physical damage grants a 5% Physical damage buff with a cooldown of 0.1 seconds, stacking up to 5 times. When fully stacked, gain an additional **6%/10%/14%/18%** Physical damage buff for 5 seconds. Dodging grants up to 3 stacks of Block for 10 seconds, blocking up to 60% of current health and at least 20% of max health.`
+        set4: `При нанесении Физического урона персонаж не чаще, чем раз в 0,1 секунду получает бафф, увеличивающий Физический урон на **5%**. Эффект складывается до **5** раз. При максимальном количестве таких эффектов Физический урон дополнительно увеличивается на **6%/10%/14%/18%** в течение 5 секунд. Совершённое уклонение даёт до **3** эффектов Блока на 10 секунд, который поглощает урон до 60% от текущего здоровья, но не меньше 20% от максимального здоровья.`
     },
 
     awakening: {
-        trait1200: `While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack.`,
+        trait1200: `При активном ***Резонансе благословения*** увеличивает здоровье всех членов команды на **12,5%**. Эффект не складывается.`,
 
-        trait4000: `While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack. Increase your own HP an additional 12.5%.Each time you successfully release a skill while having Hyperbody, or your health is greater than 50%, provide 12 seconds of Hyperbody to all allies.`,
+        trait4000: `При активном ***Резонансе благословения*** увеличивает здоровье всех членов команды на **12,5%**. Эффект не складывается. Дополнительно увеличивает здоровье самой Лиры на **12,5%**. Применение активного навыка под эффектом Гипертела или при здоровье выше **50%** накладывает на союзников эффект Гипертела на 12 секунд.`,
 
         giftCategories: ['everyday-items', 'vera'],
 
@@ -72,15 +72,15 @@ const lyra = {
     },
 
     bio: {
-        gender: 'Female',
-        height: '174 cm',
+        gender: 'Женский',
+        height: '174 см',
         birthplace: '???',
-        horoscope: 'Cancer',
-        birthday: '23 Jun',
+        horoscope: 'Рак',
+        birthday: '23 Июн',
         voiceActors: {
             jp: "",
             en: "",
-            cn: "常佳梦"
+            cn: "常佳梦 (Чан Цзямэн)"
         }
     }
 }
