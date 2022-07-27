@@ -4,6 +4,7 @@ import chaser from "./chaser";
 import crimsonmeteor from "./crimsonmeteor";
 import desertrower from "./desertrower";
 import dustwheeler from "./dustwheeler";
+import futurechariot from "./futurechariot";
 import heavybike from "./heavybike";
 import jerboa from "./jerboa";
 import jerboapaincar from "./jerboapaincar";
@@ -13,6 +14,7 @@ import omniumbeastvii from "./omniumbeastvii";
 import voyager from "./voyager";
 
 export const MOUNTS = [
+    futurechariot,
     jerboapaincar,
     desertrower,
     jerboa,
