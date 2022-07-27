@@ -1,14 +1,14 @@
 const chaser = {
-    name: "Chaser",
+    name: "Преследователь",
     uri: "chaser",
     imgSrc: "chaser.png",
     chinaOnly: false,
     parts: {
         part1: {
-            source: "Supply pod at Rusty Belt in northern Astra (-829, 473).",
+            source: "Капсула снабжения в Ржавом поясе на севере Астры (-829, 473).",
         },
         part2: {
-            source: "Rare drop from ***The Vermin Brothers.***", 
+            source: "Редкий дроп с ***Братьев-вредителей***.", 
             map: "chaserelites.jpg"
         }
     }
