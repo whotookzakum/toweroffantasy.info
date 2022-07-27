@@ -1,5 +1,7 @@
 const hologramprojector = {
     name: "Голографический проэктор",
+    uri: "hologram-projector",
+    imgSrc: "hologramprojector.png",
     rarity: "SSR",
     chinaOnly: false,
     description: "Проэцирует голограмму персонажа, которая повторяет за ним его атаки, нанося **50%** урона Странника. Длится **15** секунд. Перезарядка: **180** секунд.",
