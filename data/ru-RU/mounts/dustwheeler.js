@@ -1,11 +1,11 @@
 const dustwheeler = {
-    name: "Dust Wheeler",
+    name: "Пыльное колесо",
     uri: "dust-wheeler",
     imgSrc: "dustwheeler.png",
     chinaOnly: false,
     parts: {
         part1: {
-            source: "Rewarded at the end of the season for achieving the Grand Marshal rank in PvP.",
+            source: "Награда за конец сезона Высшей лиги при достижении ранга Великого маршала.",
         }
     }
 }
