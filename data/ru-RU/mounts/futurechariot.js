@@ -1,11 +1,11 @@
 const futurechariot = {
-    name: "Future Chariot",
+    name: "Колесница будущего",
     uri: "futurechariot",
     imgSrc: "futurechariot.png",
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Purchased from the shop for Blue Crystals during the sale."
+            source: "Можно приобрести в магазине за Синие кристаллы."
         }
     }
 }
