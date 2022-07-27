@@ -1,7 +1,7 @@
 const missilebarrage = {
     name: "Ракетный обстрел",
-    uri: "omnium-handcannon",
-    imgSrc: "omniumhandcannon.png",
+    uri: "missile-barrage",
+    imgSrc: "missilebarrage.png",
     rarity: "SR",
     chinaOnly: false,
     description: "Сзади персонажа на **8** секунд появляется ракетная установка, которая запускает множество ракет в ближайших противников, каждым попаданием нанося урон, равный **34,8%** от АТК. Перезарядка: **60** секунд.",
