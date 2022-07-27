@@ -1,18 +1,20 @@
 const alternatedestiny = {
-    name: "Alternate Destiny",
+    name: "Альтернативная судьба",
+    uri: "alternate-destiny",
+    imgSrc: "alternatedestiny.png",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Generate a pocket dimension for **8** seconds. Allies gain immunity to hitstun effects in the dimension, and HP will not drop below **20%** from enemy attacks. Cooldown: **90** seconds. Leaving the dimension removes all buffs. Once you have spent **8** seconds in the dimension, you cannot be buffed by it for **45** seconds.",
+    description: "Создаёт карманное измерение на **8** секунд. Внутри измерения союзники получают иммунитет к оглушению, и их здоровье не сможет опуститься ниже **20%** от вражеских атак. Перезарядка: **90** секунд. При покидании измерения все эффекты пропадают. Проведя **8** секунд в измерении, Странник не сможет получить от него новые эффекты в течение **45** секунд.",
     advancement: {
-            star1: "Allied Wanderers in the dimension recovers **15%** HP **8** seconds later.",
+            star1: "Находясь в измерении **8** секунд, дружественные Странники восстанавливают **15%** здоровья.",
             
-            star2: "Friendly units in the dimension gain **25%** lifesteal.",
+            star2: "Находясь в измерении, союзники получают способность похищения здоровья в **25%** от нанесённого урона.",
             
-            star3: "Allied Wanderers in the dimension gain immunity to all mind control.",
+            star3: "Находясь в измерении, дружественные Странники получают иммунитет к эффектам контроля.",
             
-            star4: "Increase frost damage by **2%**, even if not deployed. Unavailable in Apex League.",
+            star4: "Увеличивает Урон Холодом на **2%**, даже если реликт не выставлен. Недоступно в Высшей лиге.",
             
-            star5: "Until the Relic disappears, allied Wanderers in the dimension double all lifesteal effects when HP drops to **40%** or below."
+            star5: "Находясь в измерении, дружественные Странники **удваивают** эффективность всех эффектов похищения здоровья, когда здоровье ниже **40%**."
         }
 }
 
