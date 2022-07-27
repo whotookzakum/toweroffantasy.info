@@ -1,24 +1,24 @@
 const voyager = {
-    name: "Voyager",
+    name: "Путешественник",
     uri: "voyager",
     imgSrc: "voyager.png",
     chinaOnly: false,
     parts: {
         part1: {
-            source: "Obtained during the Navia Ecological Park hidden quest line.",
+            source: "Можно получить при прохождении скрытого задания в Навиа.",
             video: "https://www.youtube.com/embed/CWBbNM2SHyw?start=225"
         },
         part2: {
-            source: "Rare drop from the ***Four Powers***.",
+            source: "Редкий дроп с ***Четырёх сил***.",
             map: "voyagerelites.jpg"
         },
         part3: {
             source: 
-                `Inside the locked bunker at Seaforth Dock in southern Crown (511, 767).  
-                Passcode is *3594*.`,
+                `Внутри закрытого бункера на Морской пристани, на юге Шахт Крона (511, 767).  
+                Пароль от бункера: *3594*.`,
         },
         part4: {
-            source: "Obtained during the Navia Ecological Park hidden quest line.",
+            source: "Можно получить при прохождении скрытого задания в Навиа.",
             video: "https://www.youtube.com/embed/CWBbNM2SHyw?start=379"
         }
     }
