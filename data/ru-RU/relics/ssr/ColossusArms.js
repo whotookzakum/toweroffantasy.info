@@ -1,18 +1,20 @@
 const colossusarms = {
-    name: "Colossus Arms",
+    name: "Руки колосса",
+    uri: "colossus-arms",
+    imgSrc: "colossusarms.png",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Summon a colossus arm that is immune to hitstun to fight for you for the next 20 seconds. Tap again to cancel. **300** seconds. Normal attacks deal damage up to **1,387.7%** of ATK and **launch** enemies. Skills deal damage equal to **453.5%** of ATK and knock enemies **into the air</strong. Cooldown: **10** seconds.",
+    description: "Призывает руки колосса на **20** секунд, защищая персонажа от эффектов оглушения. Нажмите снова, чтобы отменить. Перезарядка: **300** секунд. Обычные атаки наносят суммарный урон, равный **1387,7%** от АТК и **подбрасывают** врагов. Навыки наносят урон, равный **453,5%** от АТК и **подбрасывают врагов в воздух**. Перезарядка навыка: **10** секунд.",
     advancement: {
-            star1: "Fire **2** missiles with each attack, delaing damage to the target. Each missile deals damage equal to **34.8%** of ATK.",
+            star1: "Запускает **2** ракеты при каждой атаке. Каждая ракета наносит урон, равный **34,8%** от АТК.",
             
-            star2: "Reduce cooldown to **200** seconds.",
+            star2: "Время перезарядки уменьшается до **200** секунд.",
             
-            star3: "Fire 4 missiles with each attack, dealing damage to the target. Each missile deals damage equal to **34.8%** of ATK.",
+            star3: "Запускает **4** ракеты при каждой атаке. Каждая ракета наносит урон, равный **34,8%** от АТК.",
             
-            star4: "Reduce physical damage received by **2%**, even if not deployed. Unavailable in Apex League.",
+            star4: "Уменьшает получаемый Физический урон на **2%**, даже если реликт не выставлен. Недоступно в Высшей лиге.",
             
-            star5: "Colossus Arm lasts for **30** seconds All damage taken for this duration is reduced by **20%**."
+            star5: "Продлевает время существования рук колосса до **30** секунд. Во время их действия весь получаемый урон уменьшается на **20%**."
         }
 }
 
