@@ -46,10 +46,10 @@ const saki = {
         },
         abilities: [],
         recommendedMatrix: {
-            set2: ["crow", "samir",],
+            set2: ["crow", "samir"],
             set4: ["samir"],
             set3: ["sobek"]
-        } // 2 and 4 set useful on other ice weapons in the team
+        } // Saki's 2 and 4 set useful on other ice weapons in the team
     },
 
     matrix: {

@@ -2,12 +2,12 @@ import { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
 import Head from "next/head";
-import { getBannerCharacters, getAllBanners } from "./banners";
+import { getBannerCharacters, getTotalBanners } from "./banners";
 import { CHARACTERS } from "../data/en-US/characters/characterList";
 
 
 function getStandardAdditions(version) {
-    return getAllBanners(version).filter(({banner}) => 
+    return getTotalBanners(version).filter(({banner}) => 
         banner.subtext && banner.subtext.includes("Standard")).length;
 }
 
@@ -27,7 +27,7 @@ export default function Index() {
                 Content that is exclusive to the Chinese version will be indicated with <abbr title="China Exclusive" />
             </p>
 
-            <h3>Last update was on {CHANGELOG[0].date}. <Link href="/changelog"><a>See all changes</a></Link>.</h3>
+            <h3>Last update was on {CHANGELOG[0].date}. <Link href="/changelog"><a>See what's new</a></Link>.</h3>
             
             <blockquote className="banner-count">
                 Global has had&nbsp;
@@ -39,7 +39,7 @@ export default function Index() {
 
             <blockquote className="banner-count" style={{ borderColor: "#e72e37"}}>
                 China has had&nbsp;
-                <strong>{getAllBanners("cn").length}</strong> Banners,&nbsp;
+                <strong>{getTotalBanners("cn").length}</strong> Banners,&nbsp;
                 <strong>{getBannerCharacters("cn").length}</strong> Unique, with&nbsp;
                 <strong>{getStandardAdditions("cn")}</strong> additions to the Standard Banner.<br/>
                 The newest character is <Link href={`/simulacra/${CHARACTERS[0].uri}`}><a>{CHARACTERS[0].name}</a></Link>.
