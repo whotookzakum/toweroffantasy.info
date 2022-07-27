@@ -1,13 +1,13 @@
 const crimsonmeteor = {
-    name: "Crimson Meteor",
+    name: "Багровый метеор",
     uri: "crimson-meteor",
     imgSrc: "crimsonmeteor.png",
     chinaOnly: true,
     parts: {
         part1: {
             source: 
-                `Standard skin is purchasable from your Home Island shop.  
-                Reskins can be obtained at a small chance from gachapon boxes sold during the event period.`,
+                `Стандартный облик можно приобрести в магазине на Личном острове.  
+                Альтернативные облики можно было с маленьким шансом получить в гачапоне во время события.`,
         }
     }
 }
