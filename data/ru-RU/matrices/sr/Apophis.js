@@ -1,5 +1,7 @@
 const apophis = {
     name:"Апофис",
+    uri: "apophis",
+    imgSrc: "apophis.png",
     rarity:"SR",
     chinaOnly: false,
     matrix: {
