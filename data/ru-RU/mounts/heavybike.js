@@ -1,11 +1,11 @@
 const heavybike = {
-    name: "Heavy Bike",
+    name: "Массивный байк",
     uri: "heavy-bike",
     imgSrc: "heavybike.png",
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Reward for advancing Marc's weapon to 3 ★.",
+            source: "Награда за возвышение оружия Марка до 3 ★.",
         }
     }
 }
