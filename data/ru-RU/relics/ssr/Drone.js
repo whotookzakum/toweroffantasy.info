@@ -1,5 +1,7 @@
 const drone = {
     name: "Дрон",
+    uri: "drone",
+    imgSrc: "drone.png",
     rarity: "SSR",
     chinaOnly: false,
     description: "Призывает дрона на **15** секунд, каждые **5** секунд увеличивающий сопротивление к урону на **5%**. Перезарядка: **120** секунд.",
