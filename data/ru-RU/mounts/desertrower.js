@@ -1,11 +1,11 @@
 const desertrower = {
-    name: "Desert Rower",
+    name: "Пустынный гребец",
     uri: "desert-rower",
     imgSrc: "desertrower.png",
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Obtained from gachapon during the event period.",
+            source: "Можно получить в гачапоне во время события.",
         }
     }
 }
