@@ -1,7 +1,7 @@
 const explosivecore = {
     name:"Взрывоопасное ядро",
-    uri: "cleanup-agreement",
-    imgSrc: "cleanupagreement.png",
+    uri: "explosive-core",
+    imgSrc: "explosivecore.png",
     rarity:"R",
     chinaOnly: false,
     matrix: {
