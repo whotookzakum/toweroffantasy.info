@@ -1,20 +1,20 @@
 const omniumbeastvii = {
-    name: "Omnium Beast VII",
+    name: "Омниумовый зверь VII",
     uri: "omnium-beast-vii",
     imgSrc: "omniumbeastvii.png",
     chinaOnly: false,
     parts: {
         part1: {
-            source: "Obtained during the Navia Ecological Park hidden quest line.",
+            source: "Можно получить в ходе прохождения скрытого задания в Навиа.",
             video: "https://www.youtube.com/embed/CWBbNM2SHyw?start=146"
         },
         part2: {
             source: 
-                `Inside the locked bunker at HT201 Shelter in southeast Banges (88, 966).  
-                Passcode is *1647*.`,
+                `Внутри закрытого бункера в Убежище HT201, на юго-востоке Бангиса (88, 966).  
+                Пароль от бункера: *1647*.`,
         },
         part3: {
-            source: "Rare drop from ***Behemoths***.",
+            source: "Редкий дроп с ***Чудовищ***.",
             map: "omniumbeastviielites.jpg"
         }
     }
