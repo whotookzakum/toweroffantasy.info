@@ -5,7 +5,7 @@ const cube = {
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Pre-registration reward.",
+            source: "Награда за предрегистрацию.",
         }
     }
 }
