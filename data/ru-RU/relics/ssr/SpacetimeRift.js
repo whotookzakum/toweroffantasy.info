@@ -1,5 +1,7 @@
 const spacetimerift = {
     name: "Пространственный разлом",
+    uri: "type-v-armor",
+    imgSrc: "typevarmor.png",
     uri: "spacetime-rift",
     imgSrc: "spacetimerift.png",
     rarity: "SSR",
