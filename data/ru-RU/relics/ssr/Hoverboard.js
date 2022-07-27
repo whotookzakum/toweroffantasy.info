@@ -1,5 +1,7 @@
 const hoverboard = {
     name: "Ховерборд",
+    uri: "hoverboard",
+    imgSrc: "hoverboard.png",
     rarity: "SSR",
     chinaOnly: true,
     description: "Используйте Ховерборд для быстрого передвижения по земле или зыбучему песку. Тратит выносливость. Перезарядка: **90** секунд.",
