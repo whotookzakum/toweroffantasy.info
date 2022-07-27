@@ -17,7 +17,7 @@ const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
         const character = CHARACTERS.find(character => character.name === weapon);
         return(
             <li className="tier-list-item">
-                <img src={`/images/wep/${character.imgSrc}`} alt={`${character.name}'s Weapon`} />
+                <img src={`/static/images/wep/${character.imgSrc}`} alt={`${character.name}'s Weapon`} />
                 <h4>{character.name}</h4>
             </li>
         )
@@ -289,7 +289,7 @@ const weaponList = weaponListData.map(weapon => {
     return (
         <tr>
             <th>
-                <img src={`/images/wep/${character.imgSrc}`} alt={`${weapon.name}'s Weapon`} />
+                <img src={`/static/images/wep/${character.imgSrc}`} alt={`${weapon.name}'s Weapon`} />
                 <Link href={`/simulacra/${character.uri}`}><a>{weapon.name}</a></Link>
             </th>
             <td>
