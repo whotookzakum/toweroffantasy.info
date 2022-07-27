@@ -1,11 +1,11 @@
 const jerboapaincar = {
-    name: "Jerboa - Pain Car",
+    name: "Тушканчик - Боль",
     uri: "jerboa-pain-car",
     imgSrc: "jerboa-paincar.png",
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Obtained from gachapon during the event period.",
+            source: "Можно получить в гачапоне во время события.",
         }
     }
 }
