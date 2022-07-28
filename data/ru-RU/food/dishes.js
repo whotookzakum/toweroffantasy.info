@@ -2,137 +2,137 @@ import i from "./ingredients";
 
 const recipes = [
     {
-        name: 'Fried Mushrooms',
+        name: 'Жареные грибы',
         imgSrc: "friedmushrooms.png",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 
-            `Recovers **5** satiety  
-            Recovers **10% + 1,500** HP`,
+            `Восстанавливает **5** сытости  
+            Восстанавливает **10% + 1500** здоровья`,
         ingredients: [
             { item: i.mushroom, amount: 2 }
         ]
     },
     {
-        name: 'Crispy Grilled Fish',
+        name: 'Рыба на гриле',
         imgSrc: "crispygrilledfish.png",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **10** satiety',
+        effect: 'Восстанавливает **10** сытости',
         ingredients: [
             { item: i.silverbass, amount: 1 }
         ]
     },
     {
-        name: 'Wholegrain Bread',
+        name: 'Цельнозерновой хлеб',
         imgSrc: "wholegrainbread.png",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **10** satiety',
+        effect: 'Восстанавливает **10** сытости',
         ingredients: [
             { item: i.homigrain, amount: 2 }
         ]
     },
     {
-        name: 'Sizzling Meat',
+        name: 'Обжигающее мясо',
         imgSrc: "sizzlingmeat.png",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **10** satiety',
+        effect: 'Восстанавливает **10** сытости',
         ingredients: [
             { item: i.gamemeat, amount: 2 }
         ]
     },
     {
-        name: 'Lettuce Salad',
+        name: 'Салат',
         imgSrc: "lettucesalad.png",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 
-            `Recovers **5** satiety  
-            Recovers **10% + 1,500** HP`,
+            `Восстанавливает **5** сытости  
+            Восстанавливает **10% + 1500** здоровья`,
         ingredients: [
             { item: i.lettuce, amount: 2 },
             { item: i.saladdressing, amount: 1 }
         ]
     },
     {
-        name: 'Fried Egg',
+        name: 'Яичница',
         imgSrc: "friedegg.png",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
         effect: 
-            `Recovers **5** satiety  
-            Recovers **10% + 1,500** HP`,
+            `Восстанавливает **5** сытости  
+            Восстанавливает **10% + 1500** здоровья`,
         ingredients: [
             { item: i.poultryegg, amount: 2 }
         ]
     },
     {
-        name: 'Grilled Sand Onion',
+        name: 'Запечённый песчаный лук',
         imgSrc: "grilledsandonion.png",
         chinaOnly: true,
         rarity: 1,
         stars: 1,
-        effect: 'Recovers **10** satiety',
+        effect: 'Восстанавливает **10** сытости',
         ingredients: [
             { item: i.sandonion, amount: 2 }
         ]
     },
     {
-        name: 'Special Cactus Drink',
+        name: 'Особый кактусовый коктейл',
         imgSrc: "specialcactusdrink.png",
         chinaOnly: true,
         rarity: 1,
         stars: 1,
         effect: 
-            `Recovers **5** satiety  
-            Recovers **10% + 1,500** HP`,
+            `Восстанавливает **5** сытости
+            Восстанавливает **10% + 1500** здоровья`,
         ingredients: [
             { item: i.cactusball, amount: 2 }
         ]
     },
     {
-        name: 'Seaweed and Egg Soup',
+        name: 'Суп из водорослей и яиц',
         imgSrc: "seaweedandeggsoup.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.laver, amount: 2 },
             { item: i.poultryegg, amount: 1 }
         ]
     },
     {
-        name: 'Breakfast Cereal',
+        name: 'Сухой завтрак',
         imgSrc: "breakfastcereal.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.homigrain, amount: 2 },
             { item: i.milk, amount: 1 }
         ]
     },
     {
-        name: 'Crispy Chicken Burger',
+        name: 'Хрустящий куриный бургер',
         imgSrc: "crispychickenburger.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.homigrain, amount: 1 },
             { item: i.poultrymeat, amount: 1 },
@@ -140,92 +140,92 @@ const recipes = [
         ]
     },
     {
-        name: 'Egg Fried Rice',
+        name: 'Рис с жареным яйцом',
         imgSrc: "eggfriedrice.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.rice, amount: 2 },
             { item: i.poultryegg, amount: 1 }
         ]
     },
     {
-        name: 'Golden Egg and Tomato',
+        name: 'Томаты с яичным желтком',
         imgSrc: "goldeneggandtomato.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.thornmato, amount: 2 },
             { item: i.poultryegg, amount: 2 }
         ]
     },
     {
-        name: 'Mushroom Soup',
+        name: 'Грибной суп',
         imgSrc: "mushroomsoup.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.mushroom, amount: 2 },
             { item: i.lettuce, amount: 2 }
         ]
     },
     {
-        name: 'Steamed Conch',
+        name: 'Раковина на пару',
         imgSrc: "steamedconch.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.conch, amount: 2 },
             { item: i.lettuce, amount: 1 }
         ]
     },
     {
-        name: 'Meat and Potato Stew',
+        name: 'Рагу',
         imgSrc: "meatandpotatostew.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.potato, amount: 1 },
             { item: i.gamemeat, amount: 1 }
         ]
     },
     {
-        name: 'Fries',
+        name: 'Картофель фри',
         imgSrc: "fries.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.potato, amount: 1 },
             { item: i.saladdressing, amount: 1 }
         ]
     },
     {
-        name: 'Vegetable Salad',
+        name: 'Овощной салат',
         imgSrc: "vegetablesalad.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.fallenfruit, amount: 1 },
             { item: i.thornmato, amount: 1 },
@@ -234,28 +234,28 @@ const recipes = [
         ]
     },
     {
-        name: 'Fried Chicken',
+        name: 'Жареная курочка',
         imgSrc: "friedchicken.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.poultrymeat, amount: 2 },
             { item: i.homigrain, amount: 1 }
         ]
     },
     {
-        name: 'Honeyed Fruit Juice',
+        name: 'Медово-фруктовый сок',
         imgSrc: "honeyedfruitjuice.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **300** stamina  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **300** выносливости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.fallenfruit, amount: 2 },
             { item: i.honey, amount: 1 },
@@ -263,14 +263,14 @@ const recipes = [
         ]
     },
     {
-        name: 'Iced Orchid Surprise',
+        name: 'Ледяная орхидея',
         imgSrc: "icedorchidsurprise.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **300** stamina  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **300** выносливости  
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.ghostmushroom, amount: 2 },
             { item: i.milk, amount: 1 },
@@ -278,23 +278,23 @@ const recipes = [
         ]
     },
     {
-        name: 'Stir-Fried Broccoli',
+        name: 'Жареная брокколи',
         imgSrc: "stir-friedbroccoli.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.broccoli, amount: 2 }
         ]
     },
     {
-        name: 'Meat Bun',
+        name: 'Пирожки с мясом',
         imgSrc: "meatbun.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.homigrain, amount: 2 },
             { item: i.gamemeat, amount: 1 }
@@ -307,8 +307,8 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3,300** HP`,
         ingredients: [
             { item: i.mushroom, amount: 2 },
             { item: i.silverbass, amount: 1 }
@@ -321,8 +321,8 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3,300** HP`,
         ingredients: [
             { item: i.dandelionseed, amount: 1 },
             { item: i.mushroom, amount: 2 }
@@ -335,8 +335,8 @@ const recipes = [
         rarity: 2,
         stars: 2,
         effect: 
-            `Recovers **8** satiety  
-            Recovers **13% + 10,000** HP`,
+            `Восстанавливает **8** сытости  
+            Восстанавливает **13% + 10,000** HP`,
         ingredients: [
             { item: i.darbyssturgeon, amount: 1 },
             { item: i.poultryegg, amount: 2 }
@@ -348,7 +348,7 @@ const recipes = [
         chinaOnly: false,
         rarity: 2,
         stars: 2,
-        effect: 'Recovers **16** satiety',
+        effect: 'Восстанавливает **16** сытости',
         ingredients: [
             { item: i.brownrice, amount: 2 }
         ]
@@ -360,8 +360,8 @@ const recipes = [
         rarity: 2,
         stars: 2,
         effect: 
-            `Recovers **400** stamina  
-            Recovers **13% + 10,000** HP`,
+            `Восстанавливает **400** выносливости  
+            Восстанавливает **13% + 10,000** HP`,
         ingredients: [
             { item: i.firecap, amount: 2 },
             { item: i.lettuce, amount: 2 }
@@ -374,8 +374,8 @@ const recipes = [
         rarity: 2,
         stars: 2,
         effect: 
-            `Recovers **8** satiety  
-            Recovers **13% + 10,000** HP`,
+            `Восстанавливает **8** сытости  
+            Восстанавливает **13% + 10,000** HP`,
         ingredients: [
             { item: i.blackmoss, amount: 2 },
             { item: i.lettuce, amount: 2 }
@@ -388,8 +388,8 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3,300** HP`,
         ingredients: [
             { item: i.beetroot, amount: 2 }
         ]
@@ -400,7 +400,7 @@ const recipes = [
         chinaOnly: true,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.soybeans, amount: 2 }
         ]
@@ -411,7 +411,7 @@ const recipes = [
         chinaOnly: true,
         rarity: 2,
         stars: 1,
-        effect: 'Recovers **14** satiety',
+        effect: 'Восстанавливает **14** сытости',
         ingredients: [
             { item: i.corn, amount: 2 }
         ]
@@ -423,8 +423,8 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3,300** HP`,
         ingredients: [
             { item: i.fleshytail, amount: 2 }
         ]
@@ -436,8 +436,8 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **7** satiety  
-            Recovers **12% + 3,300** HP`,
+            `Восстанавливает **7** сытости  
+            Восстанавливает **12% + 3,300** HP`,
         ingredients: [
             { item: i.corn, amount: 2 },
             { item: i.milk, amount: 1 },
@@ -451,7 +451,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Ice Attack +1%  
             Ice Attack +45**  
             Duration **900** sec`,
@@ -468,7 +468,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Physical Attack +1%  
             Physical Attack +45**  
             Duration **900** sec`,
@@ -485,7 +485,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.portunid, amount: 2 },
@@ -499,7 +499,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Flame Resistance +10%  
             Flame Resistance +170**  
             Duration **900** sec`,
@@ -516,7 +516,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Volt Resistance +10%  
             Volt Resistance +170**  
             Duration **900** sec`,
@@ -533,7 +533,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Physical Resistance +10%  
             Physical Resistance +170**  
             Duration **900** sec`,
@@ -552,7 +552,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.seaurchin, amount: 2 },
@@ -566,7 +566,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Volt Attack +1%  
             Volt Attack +45**  
             Duration **900** sec`,
@@ -583,7 +583,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Flame Attack +1%  
             Flame Attack +45**  
             Duration **900** sec`,
@@ -600,8 +600,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.strawberry, amount: 2 },
             { item: i.homigrain, amount: 1 },
@@ -616,8 +616,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.scallop, amount: 2 },
             { item: i.lettuce, amount: 3 }
@@ -630,8 +630,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **500** stamina  
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **500** выносливости  
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.rearhock, amount: 2 }
         ]
@@ -643,8 +643,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.brownrice, amount: 2 }
@@ -657,8 +657,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.brownrice, amount: 2 }
@@ -671,8 +671,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.balloonfruit, amount: 2 },
             { item: i.thornmato, amount: 2 },
@@ -686,8 +686,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.lettuce, amount: 4 }
@@ -700,7 +700,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Volt Resistance +10%  
             Volt Resistance +290**  
             Duration **900** sec`,
@@ -715,7 +715,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Volt Attack +1%  
             Volt Attack +80**  
             Duration **900** sec`,
@@ -731,7 +731,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Flame Resistance +10%  
             Flame Resistance +290**  
             Duration **900** sec`,
@@ -747,8 +747,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **600** stamina  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **600** выносливости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.phosphogranate, amount: 2 },
             { item: i.honey, amount: 2 },
@@ -762,7 +762,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Ice Resistance +10%  
             Ice Resistance +290**  
             Duration **900** sec`,
@@ -779,7 +779,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Flame Attack +1%  
             Flame Attack +80**  
             Duration **900** sec`,
@@ -795,7 +795,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Physical Resistance +10%  
             Physical Resistance +290**  
             Duration **900** sec`,
@@ -811,8 +811,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.barnacle, amount: 1 },
             { item: i.brownrice, amount: 2 },
@@ -826,7 +826,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Ice Attack +1%  
             Ice Attack +80**  
             Duration **900** sec`,
@@ -843,8 +843,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.pinecone, amount: 1 },
             { item: i.cocoabeans, amount: 1 },
@@ -858,8 +858,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.caviar, amount: 1 },
             { item: i.rice, amount: 2 },
@@ -873,7 +873,7 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Physical Attack +1%  
             Physical Attack +80**  
             Duration **900** sec`,
@@ -889,7 +889,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Ice Resistance +10%  
             Ice Resistance 170**  
             Duration **900** sec`,
@@ -905,7 +905,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Flame Resistance +10%  
             Flame Resistance 170**  
             Duration **900** sec`,
@@ -921,8 +921,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.rice, amount: 3 }
@@ -935,8 +935,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.ribs, amount: 1 },
             { item: i.honey, amount: 2 }
@@ -949,8 +949,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **500** stamina  
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **500** выносливости  
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.soybeans, amount: 1 },
@@ -964,8 +964,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety 
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости 
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.beetroot, amount: 2 }
@@ -978,7 +978,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Ice Attack +1%  
             Ice Attack 45**  
             Duration **900** sec`,
@@ -995,8 +995,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **500** stamina 
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **500** выносливости 
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.corn, amount: 1 },
@@ -1010,8 +1010,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety 
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости 
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.scallop, amount: 2 },
             { item: i.corn, amount: 1 },
@@ -1025,8 +1025,8 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety 
-            Recovers **15% + 20,000** HP`,
+            `Восстанавливает **10** сытости 
+            Восстанавливает **15% + 20,000** HP`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.homigrain, amount: 3 }
@@ -1039,7 +1039,7 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **10** satiety  
+            `Восстанавливает **10** сытости  
             **Flame Attack +1%  
             Flame Attack 45**  
             Duration **900** sec`,
@@ -1057,8 +1057,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.oyster, amount: 2 }
         ]
@@ -1070,8 +1070,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **10** satiety  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **10** сытости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.fishleaf, amount: 2 }
         ]
@@ -1083,8 +1083,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **600** stamina  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **600** выносливости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.oyster, amount: 2 },
             { item: i.soybeans, amount: 2 }
@@ -1097,8 +1097,8 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **600** stamina  
-            Recovers **16% + 34,000** HP`,
+            `Восстанавливает **600** выносливости  
+            Восстанавливает **16% + 34,000** HP`,
         ingredients: [
             { item: i.fishleaf, amount: 2 },
             { item: i.poultryegg, amount: 3 }
@@ -1111,8 +1111,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **20** сытости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.hazelnut, amount: 1 },
             { item: i.pinecone, amount: 2 },
@@ -1126,7 +1126,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Volt Attack +2%  
             Volt Attack +150**  
             Duration **1200** sec`,
@@ -1142,8 +1142,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **800** выносливости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.snowlotus, amount: 1 },
             { item: i.honey, amount: 2 }
@@ -1156,7 +1156,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Physical Attack +2%  
             Physical Attack +150**  
             Duration **1200** sec`,
@@ -1173,8 +1173,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **20** сытости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.caterpillarfungus, amount: 1 },
             { item: i.brownrice, amount: 3 }
@@ -1187,7 +1187,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Volt Resistance +15%  
             Volt Resistance +675**  
             Duration **1200** sec`,
@@ -1202,7 +1202,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Flame Attack +2%  
             Flame Attack +150**  
             Duration **1200** sec`,
@@ -1218,7 +1218,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Ice Resistance +15%  
             Ice Resistance +675**  
             Duration **1200** sec`,
@@ -1233,7 +1233,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Flame Resistance +15%  
             Flame Resistance +675**  
             Duration **1200** sec`,
@@ -1250,7 +1250,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Ice Attack +2%  
             Ice Attack +150**  
             Duration **1200** sec`,
@@ -1265,7 +1265,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Physical Resistance +15%  
             Physical Resistance +675**  
             Duration **1200** sec`,
@@ -1281,8 +1281,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **20** сытости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.aloevera, amount: 1 },
             { item: i.honey, amount: 1 },
@@ -1296,8 +1296,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **800** выносливости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.rosepetals, amount: 1 },
             { item: i.honey, amount: 2 }
@@ -1310,8 +1310,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **800** выносливости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.radish, amount: 1 }
         ]
@@ -1323,7 +1323,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Volt Resistance +15%**  
             **Volt Resistance +675**  
             Duration **1200** sec`,
@@ -1339,7 +1339,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Physical Attack +2%**  
             **Physical Attack +150**  
             Duration **1200** sec`,
@@ -1356,7 +1356,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Flame Attack +2%**  
             **Flame Attack +150**  
             Duration **1200** sec`,
@@ -1373,7 +1373,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Flame Resistance +15%**  
             **Flame Resistance +675**  
             Duration **1200** sec`,
@@ -1390,7 +1390,7 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
+            `Восстанавливает **20** сытости  
             **Physical Resistance +15%**  
             **Physical Resistance +675**  
             Duration **1200** sec`,
@@ -1406,8 +1406,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **20** satiety  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **20** сытости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.oilmelon, amount: 1 }
         ]
@@ -1419,8 +1419,8 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
-            Recovers **20% + 60,000** HP`,
+            `Восстанавливает **800** выносливости  
+            Восстанавливает **20% + 60,000** HP`,
         ingredients: [
             { item: i.oilmelon, amount: 1 },
             { item: i.pepper, amount: 2 }
