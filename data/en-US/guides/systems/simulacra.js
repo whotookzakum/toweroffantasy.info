@@ -1,6 +1,7 @@
 export const simulacra = {
     name: "Simulacra",
     uri: "simulacra",
+    date: "6 July 2022",
     type: "systems",
     author: ["Zakum#3080"],
     text:

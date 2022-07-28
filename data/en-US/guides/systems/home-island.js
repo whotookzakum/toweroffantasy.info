@@ -3,6 +3,7 @@ import Link from "next/link";
 export const homeIsland = {
     name: "Home Island",
     uri: "home-island",
+    date: "27 July 2022",
     type: "systems",
     author: ["Pyrosu#6969"],
     text:

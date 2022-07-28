@@ -3,6 +3,7 @@ import Link from 'next/link';
 export const dpsLoadouts = {
     name: "DPS Weapon Loadouts",
     uri: "dps-weapon-loadouts",
+    date: "5 May 2022",
     type: "strategy",
     author: ["Cytus#4151"],
     text:

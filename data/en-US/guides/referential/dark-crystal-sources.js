@@ -1,6 +1,7 @@
 export const darkCrystals = {
     name: "Dark Crystal Sources",
     uri: "dark-crystal-sources",
+    date: "8 July 2022",
     type: "referential",
     author: ["Unconsidered#1568"],
     text:

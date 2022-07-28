@@ -3,6 +3,7 @@ import Link from "next/link"
 export const beginnerWeapons = {
     name: "Beginner Weapon Guide",
     uri: "beginner-weapon-guide",
+    date: "8 July 2022",
     type: "general",
     author: ["Stitch#8913"],
     text:

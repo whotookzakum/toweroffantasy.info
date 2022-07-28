@@ -41,13 +41,14 @@ export function ModalMenu({ list, filter, target }) {
             case GUIDES:
                 options.menuClass = "guides";
                 options.linkPath = `guides/${item.type}/${item.uri}`;
-                const authors =
-                    item.author.map((author, index) => {
-                        return (index === item.author.length - 1) ?
-                            <em>{author}</em> :
-                            <><em>{author}</em>, </>
-                    });
-                options.conditionalContent = <div className="authors">By {authors}</div>;
+                options.conditionalContent = <div className="guide-date">{item.date}</div>
+                // const authors =
+                //     item.author.map((author, index) => {
+                //         return (index === item.author.length - 1) ?
+                //             <em>{author}</em> :
+                //             <><em>{author}</em>, </>
+                //     });
+                // options.conditionalContent = <div className="authors">By {authors}</div>;
             default:
                 break;
         }
@@ -56,13 +57,16 @@ export function ModalMenu({ list, filter, target }) {
             <li key={item.uri}>
                 <Link href={`/${options.linkPath}`}>
                     <a>
-                        {item.chinaOnly && <abbr title="China Exclusive" />}
+                        {item.chinaOnly && options.menuClass !== "guides" && <abbr title="China Exclusive" />}
                         {options.imgPath &&
                             <div className="flex">
                                 <img src={`/static/images/${options.imgPath}`} alt={item.name} />
                             </div>
                         }
-                        <h3>{item.name}</h3>
+                        <h3>
+                            {item.chinaOnly && options.menuClass === "guides" && <abbr title="China Exclusive" />}
+                            {item.name}
+                        </h3>
                         {options.conditionalContent}
                     </a>
                 </Link>

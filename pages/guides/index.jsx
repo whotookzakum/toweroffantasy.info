@@ -20,28 +20,28 @@ export default function Guides() {
                 </p>
             </header>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
-                <h2 className="yellow">General</h2>
-                <p>Guides that provide general information about the game.</p>
+                <h2 className="guides-section-title">General</h2>
+                {/* <p>Guides that provide general information about the game.</p> */}
                 <ModalMenu list={GUIDES} filter="type" target="general" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
-                <h2 className="yellow">Game Systems</h2>
-                <p>These guides explain core game mechanics.</p>
+                <h2 className="guides-section-title">Game Systems</h2>
+                {/* <p>These guides explain core game mechanics.</p> */}
                 <ModalMenu list={GUIDES} filter="type" target="systems" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
-                <h2 className="yellow">Strategy</h2>
-                <p>Contains information for minmaxing and optimizations on a specific topic. </p>
+                <h2 className="guides-section-title">Strategy</h2>
+                {/* <p>Contains information for minmaxing and optimizations on a specific topic. </p> */}
                 <ModalMenu list={GUIDES} filter="type" target="strategy" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
-                <h2 className="yellow">Technical</h2>
-                <p>For information outside of gameplay.</p>
+                <h2 className="guides-section-title">Technical</h2>
+                {/* <p>For information outside of gameplay.</p> */}
                 <ModalMenu list={GUIDES} filter="type" target="technical" />
             </section>
             <section className="w-75ch mx-auto" style={{padding: "1.5rem 0"}}>
-                <h2 className="yellow">Referential</h2>
-                <p>Data that is mainly meant for reference purposes.</p>
+                <h2 className="guides-section-title">Referential</h2>
+                {/* <p>Data that is mainly meant for reference purposes.</p> */}
                 <ModalMenu list={GUIDES} filter="type" target="referential" />
             </section>
         </>

@@ -39,30 +39,6 @@
             max-width: 192px;
         }
     }
-
-    &.guides {
-        gap: 1.5rem;
-        grid-template-columns: 1fr;
-        max-width: 75ch;
-        margin: 0 auto;
-
-        a {
-            padding: 1.5rem;
-        }
-
-        h3 {
-            font-size: 1.5em;
-        }
-        h3, div {
-            margin: 0;
-            text-align: left;
-        }
-        em {
-            font-style: normal;
-            color: clr(text, turquoise);
-        }
-    }
-
     li {
         position: relative;
         text-align: center;
@@ -93,6 +69,43 @@
 
         h3 {
             margin: 0.5rem;
+        }
+    }
+    &.guides {
+        gap: 0;
+        grid-template-columns: 1fr;
+
+        li {
+            background: none;
+            box-shadow: none;
+            height: fit-content;
+            border-bottom: 1px solid clr(text, dark);
+        }
+        a {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: space-between;
+        }
+        abbr {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-right: 0.3rem;
+        }
+        h3 {
+            margin: 0;
+            font-weight: normal;
+            color: clr(text, turquoise);
+
+            abbr {
+                font-size: 1rem;
+                color: clr(text);
+            }
+        }
+        .guide-date {
+            color: clr(text, gray);
         }
     }
 }
