@@ -57,9 +57,9 @@ const ruby = {
     },
 
     awakening: {
-        trait1200: `Within **5** meters of Dolly, monsters receive **8%** more fire damage, not stackable`,
+        trait1200: `Enemies within **5** meters of Dolly receive **8%** more Flame damage, does not stack.`,
 
-        trait4000: `Within **5** meters of Dolly, monsters receive **8%** more fire damage, not stackable; after throwing Dolly, increase fire ATK by **12%** increases for **10** seconds, not stackable`,
+        trait4000: `Enemies within **5** meters of Dolly receive **8%** more Flame damage, does not stack. After throwing Dolly, increase Flame ATK by **12%** for **10** seconds, does not stack.`,
 
         giftCategories: ['games', 'toys', 'vera'],
 

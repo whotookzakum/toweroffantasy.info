@@ -65,9 +65,9 @@ const frigg = {
     },
 
     awakening: {
-        trait1200: `When entering combat, gain **1.5%** ice ATK every **3** seconds, stack up to **10** times for **5** seconds.`,
+        trait1200: `When entering combat, Frigg gains **1.5%** Ice ATK every **3** seconds, stacking up to **10** times and lasting **5** seconds.`,
 
-        trait4000: `When entering battle gain **2.4%** ice ATK every **3** seconds up to **10** stacks, lasts for **5** seconds. Immune to CC effects in the ice domain.`,
+        trait4000: `When entering combat, Frigg gains **2.4%** Ice ATK every **3** seconds, stacking up to **10** times and lasting **5** seconds. Frigg is immune to CC effects while in the Frozen Domain.`,
 
         giftCategories: ['metalware', 'everyday-items'],
 

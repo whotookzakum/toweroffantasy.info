@@ -67,9 +67,9 @@ const baiyuekui = {
     },
 
     awakening: {
-        trait1200: `When Bai Yuekui enters combat, the electric attack power is increased by **21%**, the effect decays over time and lasts for **120** seconds. The effect can be reset after **5** seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by **50%**.`,
+        trait1200: `When Baiyuekui enters combat, increase Volt ATK by **21%**, decreasing over a period of **120** seconds. The effect can be reset after **5** seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by **50%**.`,
 
-        trait4000: `When Bai Yuekui enters combat, the electric attack power is increased by **33%**, the effect decays over time and lasts for **120** seconds. The effect can be reset after **5** seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by **50%**.`,
+        trait4000: `When Baiyuekui enters combat, increase Volt ATK by **33%**, decreasing over a period of **120** seconds. The effect can be reset after **5** seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by **50%**.`,
 
         giftCategories: ['collectibles', 'limited-edition', 'decorations'],
 

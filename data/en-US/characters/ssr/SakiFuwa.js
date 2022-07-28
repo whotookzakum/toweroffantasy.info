@@ -61,8 +61,8 @@ const saki = {
     awakening: {
         trait1200: `When health is below **70%**, gain **40%** all-element resistance.`,
 
-        trait4000: `When health is below **70%**, gain **40%** all-element resistance and an additional **60%** ice resistance.  
-            When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself). Lasting **10** seconds, the block amount will not exceed **15%** of the teammate's maximum health.`,
+        trait4000: `When health is below **70%**, gain **40%** all-element resistance and an additional **60%** Ice resistance.  
+            When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself) for **10** seconds. The block amount will not exceed **15%** of the teammate's maximum health.`,
 
         giftCategories: ['metalware', 'everyday-items', 'vera'],
 
