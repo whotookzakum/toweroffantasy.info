@@ -1,454 +1,521 @@
 const ingredients = {
     // Vera recipes (2.0) https://www.taptap.com/topic/20623166
     sandonion: {
-        name: 'Sand Onion',
+        name: 'Песчаная луковица',
+        imgSrc: "sandonion.png",
         rarity: 1,
         chinaOnly: true,
         source: ""
     },
     cactusball: {
-        name: 'Cactus Ball',
+        name: 'Кактусовый шар',
+        imgSrc: "cactusball.png",
         rarity: 1,
         chinaOnly: true,
         source: ""
     },
     beetroot: {
-        name: 'Beetroot',
+        name: 'Свёкла',
+        imgSrc: "beetroot.png",
         rarity: 2,
         chinaOnly: true,
         source: ""
     },
     soybeans: {
-        name: 'Soybeans',
+        name: 'Соевые бобы',
+        imgSrc: "soybeans.png",
         rarity: 2,
         chinaOnly: true,
-        source: "Purchased at Mirror City food vendor"
+        source: "Можно приобрести в Миррории"
     },
     corn: {
-        name: 'Corn',
+        name: 'Кукуруза',
+        imgSrc: "corn.png",
         rarity: 2,
         chinaOnly: true,
-        source: "Purchased at Mirror City food vendor"
+        source: "Можно приобрести в Миррории"
     },
     fleshytail: {
-        name: 'Fleshy Tail',
+        name: 'Мясистый хвост',
+        imgSrc: "fleshytail.png",
         rarity: 2,
         chinaOnly: true,
         source: "折跃门-绿洲峭壁附近的沙漠猎食者有几率出，还有芦荟"
     },
     pepper: {
-        name: 'Pepper',
+        name: 'Перец',
+        imgSrc: "pepper.png",
         rarity: 3,
         chinaOnly: true,
         source: ""
     },
     desertmelon: {
-        name: 'Desert Melon',
+        name: 'Пустынный арбуз',
+        imgSrc: "desertmelon.png",
         rarity: 3,
         chinaOnly: true,
         source: "镜都哨站附近大漠甜瓜"
     },
     pumpkin: {
-        name: 'Pumpkin',
+        name: 'Тыква',
+        imgSrc: "pumpkin.png",
         rarity: 3,
         chinaOnly: true,
         source: "有流沙的地方边上都有流沙南瓜"
     },
     ribs: {
-        name: 'Ribs',
+        name: 'Рёбра',
+        imgSrc: "ribs.png",
         rarity: 3,
         chinaOnly: true,
         source: "折跃门-咸水绿洲附近的盾甲兽有几率出"
     },
     oyster: {
-        name: 'Oyster',
+        name: 'Устрица',
+        imgSrc: "oyster.png",
         rarity: 3,
         chinaOnly: true,
         source: ""
     },
     fishleaf: {
-        name: 'Fish Leaf',
+        name: 'Рыбные палочки',
+        imgSrc: "fishleaf.png",
         rarity: 3,
         chinaOnly: true,
         source: ""
     },
     aloevera: {
-        name: 'Aloe Vera',
+        name: 'Алоэ вера',
+        imgSrc: "aloevera.png",
         rarity: 4,
         chinaOnly: true,
         source: ""
     },
     rosepetals: {
-        name: 'Rose Petals',
+        name: 'Лепестки роз',
+        imgSrc: "rosepetals.png",
         rarity: 4,
         chinaOnly: true,
         source: ""
     },
     radish: {
-        name: 'Radish',
+        name: 'Редис',
+        imgSrc: "radish.png",
         rarity: 4,
         chinaOnly: true,
         source: "折跃门-咸水绿洲，舒伯特附近的都是，还有辣椒"
     },
     oilmelon: {
-        name: 'Oil Melon',
+        name: 'Масляная дыня',
+        imgSrc: "oilmelon.png",
         rarity: 4,
         chinaOnly: true,
         source: ""
     },
     
     mushroom: {
-        name: 'Mushroom',
+        name: 'Гриб',
+        imgSrc: "mushroom.png",
         rarity: 1,
         chinaOnly: false,
         source: "Found on Astra (around giant mushrooms) and in Crown"
     },
     
-    silverperch: {
-        name: 'Silver Bass',
+    silverbass: {
+        name: 'Серебристый окунь',
+        imgSrc: "silverbass.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found in rivers'
     },
     
-    wheat: {
-        name: 'Homi Grain',
+    homigrain: {
+        name: 'Пшеница',
+        imgSrc: "homigrain.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found on Astra (meadows) and Banges (meadows)'
     },
     
-    meat: {
-        name: 'Game Meat',
+    gamemeat: {
+        name: 'Мясо',
+        imgSrc: "gamemeat.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Obtained by hunting wild animals'
     },
     
     lettuce: {
-        name: 'Lettuce',
+        name: 'Латук',
+        imgSrc: "lettuce.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found on Astra (meadows)'
     },
     
-    dressing: {
-        name: 'Salad Dressing',
+    saladdressing: {
+        name: 'Салатная заправка',
+        imgSrc: "saladdressing.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    egg: {
-        name: 'Poultry Egg',
+    poultryegg: {
+        name: 'Птичье яйцо',
+        imgSrc: "poultryegg.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Found in bird nests (high elevations)'
     },
     
-    seaweed: {
-        name: 'Laver',
+    laver: {
+        name: 'Водоросли',
+        imgSrc: "laver.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Banges (North Sea Beach)'
     },
     
     milk: {
-        name: 'Milk',
+        name: 'Молоко',
+        imgSrc: "milk.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    drumstick: {
-        name: 'Poultry Meat',
+    poultrymeat: {
+        name: 'Мясо птицы',
+        imgSrc: "poultrymeat.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Obtained by hunting birds'
     },
     
     rice: {
-        name: 'Rice',
+        name: 'Рис',
+        imgSrc: "rice.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    tomato: {
-        name: 'Thornmato',
+    thornmato: {
+        name: 'Иглотомат',
+        imgSrc: "thornmato.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (around alpine shrubs) and in Navia (around trees)'
     },
     
-    hornedconch: {
-        name: 'Conch',
+    conch: {
+        name: 'Ракушка',
+        imgSrc: "conch.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Bangis (South Sea Beach) and Navia (beach)'
     },
     
     potato: {
-        name: 'Potato',
+        name: 'Томат',
+        imgSrc: "potato.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Banges (around bushes)'
     },
     
-    fruitdrop: {
-        name: 'Fallen Fruit',
+    fallenfruit: {
+        name: 'Упавший фрукт',
+        imgSrc: "fallenfruit.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (around trees) and in Banges (around trees)'
     },
     
     honey: {
-        name: 'Honey',
+        name: 'Мёд',
+        imgSrc: "honey.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Obtained from hives and bees'
     },
     
     ghostmushroom: {
-        name: 'Ghost Mushroom',
+        name: 'Призрачный гриб',
+        imgSrc: "ghostmushroom.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (Keel, Graveyard)'
     },
     
     broccoli: {
-        name: 'Broccoli',
+        name: 'Брокколи',
+        imgSrc: "broccoli.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found on Astra (meadows)'
     },
     
-    dandelion: {
-        name: 'Dandelion Seed',
+    dandelionseed: {
+        name: 'Семена одуванчика',
+        imgSrc: "dandelionseed.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Obtained from dandelion pom-poms'
     },
     
-    sturgeon: {
-        name: "Darby's Sturgeon",
+    darbyssturgeon: {
+        name: "Осётр Дарби",
+        imgSrc: "darbyssturgeon.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in rivers of Astra, Navia, and Warren'
     },
     
-    redwheat: {
-        name: 'Brown Rice',
+    brownrice: {
+        name: 'Коричневый рис',
+        imgSrc: "brownrice.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Navia (meadows)'
     },
     
-    fireear: {
-        name: 'Firecap',
+    firecap: {
+        name: 'Огнегриб',
+        imgSrc: "firecap.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Crown'
     },
     
     blackmoss: {
-        name: 'Black Moss',
+        name: 'Чёрный мох',
+        imgSrc: "blackmoss.png",
         rarity: 2,
         chinaOnly: false,
         source: 'Found in Crown'
     },
     
-    seaconch: {
-        name: 'Scallop',
+    scallop: {
+        name: 'Гребешок',
+        imgSrc: "scallop.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Banges (South Sea Beach)'
     },
     
-    hindleg: {
-        name: 'Rear Hock',
+    rearhock: {
+        name: 'Задняя нога',
+        imgSrc: "rearhock.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Obtained by hunting rabbits, mountain hares, boars, bears, wolves, and honey badgers'
     },
     
-    shuttlecrab: {
-        name: 'Portunid',
+    portunid: {
+        name: 'Портунид',
+        imgSrc: "portunid.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found on the beaches of Astra, Banges, and Crown'
     },
     
     strawberry: {
-        name: 'Strawberry',
+        name: 'Клубника',
+        imgSrc: "strawberry.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Navia (around bushes)'
     },
     
-    blueberry: {
-        name: 'Small Blueberry Jar',
+    smallblueberryjar: {
+        name: 'Баночка черники',
+        imgSrc: "smallblueberryjar.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Obtained from defeating the Sons of Aida (robotic enemies)'
     },
     
-    sparklingwater: {
-        name: 'Carbonated Water',
+    carbonatedwater: {
+        name: 'Газированная вода',
+        imgSrc: "carbonatedwater.png",
         rarity: 1,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
     seaurchin: {
-        name: 'Sea Urchin',
+        name: 'Морской ёж',
+        imgSrc: "seaurchin.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Banges (North Sea Beach) and Crown (beach)'
     },
     
-    spinach: {
-        name: 'Fiddlehead',
+    fiddlehead: {
+        name: 'Рахис',
+        imgSrc: "fiddlehead.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found near the Banges factory'
     },
     
     cocoabeans: {
-        name: 'Cocoa Beans',
+        name: 'Какао бобы',
+        imgSrc: "cocoabeans.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Navia (Minyu Island)'
     },
     
     balloonfruit: {
-        name: 'Balloon Fruit',
+        name: 'Шарообразный фрукт',
+        imgSrc: "balloonfruit.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found on Astra and in Navia'
     },
     
-    thundereel: {
-        name: 'Electric Eel',
+    electriceel: {
+        name: 'Электрический угорь',
+        imgSrc: "electriceel.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in the rivers of Banges, Navia, and Warren'
     },
     
     hermitcrab: {
-        name: 'Hermit Crab',
+        name: 'Рак-отшельник',
+        imgSrc: "hermitcrab.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found on the beaches of Banges, Navia, and Crown'
     },
     
-    pomegranate: {
-        name: 'Phosphogranate',
+    phosphogranate: {
+        name: 'Фосфогранат',
+        imgSrc: "phosphogranate.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Navia (around rocks)'
     },
     
-    dragonfruit: {
-        name: 'Firedragon Fruit',
+    firedragonfruit: {
+        name: 'Питахайя',
+        imgSrc: "firedragonfruit.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found near rivers in Navia and Crown'
     },
     
     barnacle: {
-        name: 'Barnacle',
+        name: 'Моллюск',
+        imgSrc: "barnacle.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found near the sea in Warren'
     },
     
     onion: {
-        name: 'Onion',
+        name: 'Лук',
+        imgSrc: "onion.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
     
-    snowblossom: {
-        name: 'Snow Azalea',
+    snowazalea: {
+        name: 'Снежная Азалия',
+        imgSrc: "snowazalea.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
     pinecone: {
-        name: 'Pinecone',
+        name: 'Сосновая шишка',
+        imgSrc: "pinecone.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Found in Warren (around pine trees)'
     },
     
     caviar: {
-        name: 'Caviar',
+        name: 'Икра',
+        imgSrc: "caviar.png",
         rarity: 3,
         chinaOnly: false,
         source: 'Obtained from raider camp enemies'
     },
     
-    nut: {
-        name: 'Hazelnut',
+    hazelnut: {
+        name: 'Фундук',
+        imgSrc: "hazelnut.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Navia'
     },
     
-    birdpotato: {
-        name: "Purple Yam",
+    purpleyam: {
+        name: "Фиолетовый ямс",
+        imgSrc: "purpleyam.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
     snowlotus: {
-        name: 'Snow Lotus',
+        name: 'Снежный лотос',
+        imgSrc: "snowlotus.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
     blacktruffle: {
-        name: 'Black Truffle',
+        name: 'Чёрный трюфель',
+        imgSrc: "blacktruffle.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
-    cordyceps: {
-        name: 'Caterpillar Fungus',
+    caterpillarfungus: {
+        name: 'Гусеничный гриб',
+        imgSrc: "caterpillarfungus.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Warren'
     },
     
-    firmmeat: {
-        name: 'Prime Cut',
+    primecut: {
+        name: 'Премиальная вырезка',
+        imgSrc: "primecut.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Obtained by hunting wild animals'
     },
     
-    fattymeat: {
-        name: 'Fatty Cut',
+    fattycut: {
+        name: 'Жировая вырезка',
+        imgSrc: "fattycut.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Obtained by hunting wild animals'
     },
     
-    salmon: {
-        name: 'Lake Bass',
+    lakebass: {
+        name: 'Озёрный лосось',
+        imgSrc: "lakebass.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in rivers in Crown and Warren'
     },
     
-    snail: {
-        name: 'Carrion Snail',
+    carrionsnail: {
+        name: 'Улитка-каррион',
+        imgSrc: "carrionsnail.png",
         rarity: 4,
         chinaOnly: false,
         source: 'Found in Navia (beach)'
