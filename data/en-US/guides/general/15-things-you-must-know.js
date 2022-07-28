@@ -3,6 +3,7 @@ import Link from "next/link";
 export const thingsYouMustKnow = {
     name: "15 Things You MUST Know",
     uri: "15-things-you-must-know",
+    date: "27 July 2022",
     type: "general",
     author: ["Zakum#3080"],
     text:
@@ -68,7 +69,7 @@ export const thingsYouMustKnow = {
 
             <section>
                 <h2>5. Hidden Free Pity</h2>
-                <p>Your <strong className="yellow">30th gold nucleus</strong>  pull will guarantee an SSR weapon. If you wish to reroll until you get the perfect first pull, aim for this number. </p>
+                <p>Your <strong className="yellow">30th gold nucleus</strong>  pull will guarantee an SSR weapon. If you wish to <Link href="/guides/strategy/shortest-reroll-path">reroll until you get the perfect first pull</Link>, aim for this number. </p>
             </section>
 
             <section>

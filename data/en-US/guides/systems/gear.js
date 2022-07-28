@@ -3,6 +3,7 @@ import Link from 'next/link';
 export const gear = {
     name: "Gear", 
     uri: "gear",
+    date: "26 July 2022",
     type: "systems",
     author: ["Zakum#3080"],
     text:

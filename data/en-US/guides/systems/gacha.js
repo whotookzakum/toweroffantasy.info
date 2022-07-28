@@ -3,6 +3,7 @@ import Link from "next/link";
 export const gacha = {
     name: "Gacha",
     uri: "gacha",
+    date: "6 July 2022",
     type: "systems",
     author: ["Zakum#3080"],
     text:

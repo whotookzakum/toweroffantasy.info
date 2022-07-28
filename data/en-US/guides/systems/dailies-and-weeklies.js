@@ -3,6 +3,7 @@ import Link from "next/link";
 export const dailies = {
     name: "Dailies & Weeklies",
     uri: "dailies-and-weeklies",
+    date: "6 July 2022",
     type: "systems",
     author: ["Unconsidered#1568", "Zakum#3080"],
     text:

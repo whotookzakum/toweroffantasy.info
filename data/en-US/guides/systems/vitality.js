@@ -1,6 +1,7 @@
 export const vitality = {
     name: "Vitality",
     uri: "vitality",
+    date: "8 July 2022",
     type: "systems",
     author: ["Unconsidered#1568", "Zakum#3080"],
     text:

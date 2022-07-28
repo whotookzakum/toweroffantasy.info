@@ -3,7 +3,8 @@ import Link from "next/link";
 export const shortestRerollPath = {
     name: "Shortest Reroll Path",
     uri: "shortest-reroll-path",
-    type: "general",
+    date: "27 July 2022",
+    type: "strategy",
     author: ["Zakum#3080"],
     text:
         <>
@@ -17,10 +18,6 @@ export const shortestRerollPath = {
                 <p>
                     <strong className="yellow">All Gold Nuclei on the map below are available day 1</strong>, without doing the story quest beyond getting the fire bow. However, you need to level up to claim the pre-registration rewards, and the story is the fastest way to level up.
                 </p>
-                <p>
-                    
-                </p>
-                    
             </section>
             <img src="/static/images/guides/reroll-path.png" alt="" />
             <section>

@@ -310,6 +310,7 @@ const weaponList = weaponListData.map(weapon => {
 export const apexLeague = {
     name: "Apex League",
     uri: "apex-league",
+    date: "12 July 2022",
     type: "strategy",
     author: ["Keita#0795", "Goldenmonkey#2798", "Riala"],
     text:

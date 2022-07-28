@@ -12,13 +12,12 @@ import { darkCrystals } from "./referential/dark-crystal-sources";
 import { dpsLoadouts } from "./strategy/dps-weapon-loadouts";
 import { beginnerWeapons } from "./general/beginner-weapon-guide";
 import { pvp } from "./systems/pvp";
-import { shortestRerollPath } from "./general/shortest-reroll-path";
+import { shortestRerollPath } from "./strategy/shortest-reroll-path";
 
 export const GUIDES = [
     // GENERAL
     thingsYouMustKnow,
     beginnerWeapons,
-    shortestRerollPath,
     // story lore
     // Obtaining newest armor pieces
     
@@ -41,6 +40,7 @@ export const GUIDES = [
 
     // STRATEGY
     dpsLoadouts,
+    shortestRerollPath,
     // chipProgression,
     // apexLeague,
     // wormhole

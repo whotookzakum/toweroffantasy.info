@@ -1,6 +1,7 @@
 export const cnTopUp = { 
     name: "Top-Up Guide",
     uri: "cn-top-up",
+    date: "11 June 2022",
     chinaOnly: true, 
     type: "technical",
     author: ["Pyrosu#6969"],
