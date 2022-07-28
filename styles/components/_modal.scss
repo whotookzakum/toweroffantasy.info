@@ -98,6 +98,11 @@
             margin: 0;
             font-weight: normal;
             color: clr(text, turquoise);
+
+            abbr {
+                font-size: 1rem;
+                color: clr(text);
+            }
         }
         .guide-date {
             color: clr(text, gray);

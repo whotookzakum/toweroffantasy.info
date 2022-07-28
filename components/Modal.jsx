@@ -57,13 +57,16 @@ export function ModalMenu({ list, filter, target }) {
             <li key={item.uri}>
                 <Link href={`/${options.linkPath}`}>
                     <a>
-                        {item.chinaOnly && <abbr title="China Exclusive" />}
+                        {item.chinaOnly && options.menuClass !== "guides" && <abbr title="China Exclusive" />}
                         {options.imgPath &&
                             <div className="flex">
                                 <img src={`/static/images/${options.imgPath}`} alt={item.name} />
                             </div>
                         }
-                        <h3>{item.name}</h3>
+                        <h3>
+                            {item.chinaOnly && options.menuClass === "guides" && <abbr title="China Exclusive" />}
+                            {item.name}
+                        </h3>
                         {options.conditionalContent}
                     </a>
                 </Link>
