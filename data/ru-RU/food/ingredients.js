@@ -426,7 +426,7 @@ const ingredients = {
     },
     
     snowazalea: {
-        name: 'Снежная Азалия',
+        name: 'Снежная азалия',
         imgSrc: "snowazalea.png",
         rarity: 3,
         chinaOnly: false,
