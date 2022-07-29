@@ -99,7 +99,7 @@ const ingredients = {
         source: ""
     },
     radish: {
-        name: 'Редис',
+        name: 'Редька',
         imgSrc: "radish.png",
         rarity: 4,
         chinaOnly: true,
