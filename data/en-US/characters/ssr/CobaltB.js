@@ -32,7 +32,7 @@ const cobalt = {
         charge: ["A", "10.00"],
         materials: ["flame", "red", "black"],
         advancement: {
-            star1: "Each hit of the skill returns **2%** of damage dealt as health, up to **200%** of ATK.",
+            star1: "When using the weapon skill, add **2%** of the enemy's max HP as bonus damage, up to **200%** of ATK.",
 
             star2: "Increase the current weapon's base ATK growth by **16%**.",
 
