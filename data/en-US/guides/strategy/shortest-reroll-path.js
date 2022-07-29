@@ -37,6 +37,7 @@ export const shortestRerollPath = {
                 <p>
                     The time gate on exploration points are based on <em>account age</em>, therefore if you created an account on a day 1 and waited until day 3+ to reroll, you could do it much faster.
                 </p>
+                <p>The methods in this guide do not consume dark crystals.</p>
             </section>
         </>
 };

@@ -65,9 +65,9 @@ const nemesis = {
     },
 
     awakening: {
-        trait1200: `When an electrode is summoned, all enemies within **30** metres of the electrode take **60%** electric damage and all allies (including yourself) are healed for **120%** of their attack power.`,
+        trait1200: `When an electrode is summoned, all enemies within **30** metres of the electrode take damage equal to **60%** of Volt ATK and all allies (including yourself) are healed for **120%** of their ATK.`,
 
-        trait4000: `When an electrode is summoned, all enemies within **30** metres of the electrode take **100%** electric damage and all allies (including yourself) are healed for **200%** of their attack power.`,
+        trait4000: `When an electrode is summoned, all enemies within **30** metres of the electrode take damage equal to **100%** of Volt ATK and all allies (including yourself) are healed for **200%** of their ATK.`,
 
         giftCategories: ['toys', 'everyday-items', 'decorations'],
 

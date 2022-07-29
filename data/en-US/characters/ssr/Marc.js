@@ -79,9 +79,9 @@ const marc = {
     },
 
     awakening: {
-        trait1200: `When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'revived' and taunts the surrounding enemies for **5** seconds. While 'revived', you do not take damage, but you cannot perform actions, while recovering **1%** of his maximum life every second and healing received is increased by **20%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**.`,
+        trait1200: `When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **1%** HP every second, and healing received is increased by **20%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**.`,
 
-        trait4000: `When Marc takes lethal damage from an enemy, he does not die and obtains a buff: 'Nirvana' and taunts the surrounding enemies for **5** seconds. While in 'Nirvana', you do not take damage, but you cannot perform actions, while recovering **2%** of his maximum life every second and healing received is increased by **50%**. This effect has a cooldown of **5** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**.`,
+        trait4000: `When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **2%** HP every second, and healing received is increased by **50%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**.`,
 
         giftCategories: ['metalware'],
 
