@@ -21,7 +21,7 @@ const lyra = {
         type: "support",
         baseStats: ["attack", "defense", "health"],
         shatter: ["S", "12.00"],
-        charge: ["A", "11.00"],
+        charge: ["A", "10.00"],
         materials: ["physical", "black", "red"],
         bonusEffect: {
             effect1: {
