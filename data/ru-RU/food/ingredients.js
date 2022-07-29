@@ -50,7 +50,7 @@ const ingredients = {
         source: ""
     },
     desertmelon: {
-        name: 'Пустынный арбуз',
+        name: 'Пустынная дыня',
         imgSrc: "desertmelon.png",
         rarity: 3,
         chinaOnly: true,
@@ -106,7 +106,7 @@ const ingredients = {
         source: "折跃门-咸水绿洲，舒伯特附近的都是，还有辣椒"
     },
     oilmelon: {
-        name: 'Масляная дыня',
+        name: 'Масляный арбуз',
         imgSrc: "oilmelon.png",
         rarity: 4,
         chinaOnly: true,
