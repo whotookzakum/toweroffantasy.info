@@ -1,5 +1,7 @@
 const hilda = {
     name: "Хильда",
+    uri: "hilda",
+    imgSrc: "hilda.png",
     rarity: "SR",
     chinaOnly: false,
     weapon: {
@@ -11,40 +13,45 @@ const hilda = {
         charge: ["A", "10.00"],
         materials: ["ice", "red", "blue"],
         advancement: {
-            star1: "Каждая успешная базовая атака увеличивает урон на **1%** в течение **2** секунд. Эффект складывается до **15** раз. Увеличивает количество патрон до **60**.",
+            star1: "Каждая успешная базовая атака увеличивает урон на **1%** в течение 2 секунд. Эффект складывается до **15** раз. Увеличивает количество патрон до **60**.",
 
             star2: "Базовый прирост АТК оружия увеличивается на **10%**.",
 
-            star3: "В течение **10** секунд после смены на это оружие увеличивает урон базовых атак и эффективность пробивания на **30%**. Перезарядка: **25** секунд. Увеличивает количество патрон до **80**.",
+            star3: "В течение 10 секунд после смены на это оружие увеличивает урон базовых атак и эффективность пробивания на **30%**. Перезарядка: **25** секунд. Увеличивает количество патрон до **80**.",
 
             star4: "Базовый прирост АТК оружия увеличивается на **20%**.",
 
             star5: "Уменьшает время перезарядки между выстрелами в режиме турели до **2** секунд.",
 
-            star6: "В течение **10** секунд после смены на это оружие увеличивает урон базовых атак и эффективность пробивания на **60%**. Перезарядка: **25** секунд."
+            star6: "В течение 10 секунд после смены на это оружие увеличивает урон базовых атак и эффективность пробивания на **60%**. Перезарядка: **25** секунд."
         },
-        skills: [
-            {
-                name: "Normal Attack",
-                type: "normal",
-                desc: `Tap normal attack to enter aiming mode. Hold normal attack to fire continuously, up to **40** rounds. Each shot deals damage equal to **11.4%** of ATK + **1**. Deal double damage when scoring a headshot or hitting the enemy's weakness, knocking them down (headshots are ineffective against Wanderers).`,
-            },
-            {
-                name: "Dodge",
-                type: "dodge",
-                desc: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
-            },
-            {
-                name: "Turret",
-                type: "skill",
-                desc: `Enable turret mode and fire large energy orbs, each dealing damage equal to **213.3%** of ATK + **11** and launching the target into the air. Become immune to hitstun and control effects while setting up the turret. **3.5**-second cooldown.`,
-            },
-            {
-                name: "Arctic Beam",
-                type: "discharge",
-                desc: `When <b>weapon charge is full</b> or <b>Phantasia</b> is triggered, **remove all debuffs from the wielder** and fire an arctic beam upon switching to this weapon, dealing damage equal to **329.2%** of ATK + **17** and inflict a **3**-second **freeze** effect. Also reduce the target's frost resistance by **50%** for **10** seconds.`,
-            }
-        ],
+        abilities: {
+            normal: [
+                {
+                    name: "Обычная атака",
+                    input: ["Атака/Удерживание"],
+                    description: `Нажмите кнопку удара, чтобы войти в режим прицеливания. Удерживайте кнопку удара, чтобы выстрелить до **40** патрон, каждым выстрелом нанося **11,4%** от АТК + **1** урона. Наносит удвоенный урон при попадании в голову или слабое место противника, сбивая его с ног (попадания в голову не действуют против других Странников).`,
+                }
+            ],
+            dodge: [
+                {
+                    name: "Уклонение",
+                    description: `Уклонение прямо перед получением удара создаёт зону ***Фантазии***, которая уменьшает скорость врагов. Перезарядка: **15** секунд. При уклонении персонаж получает неуязвимость к эффектам оглушения в течение **0,5** секунд.`,
+                }
+            ],
+            skill: [
+                {
+                    name: "Турель",
+                    description: `Входит в режим турели, запуская большие энергетические шары, наносящие **213,3%** от АТК + **11** урона и **подбрасывающие цель в воздух**. В режиме турели персонаж получает иммунитет к оглушению и эффектам контроля. Перезарядка между выстрелами: **3,5** секунды.`,
+                }
+            ],
+            discharge: [
+                {
+                    name: "Арктический луч",
+                    description: `Когда ***оружие полностью заряжено***, при смене оружия на это **сбрасывает все негативные эффекты с персонажа** и запускает луч, нанося **329,2%** от АТК + **17** урона и **замораживая** цель на 3 секунды. Также уменьшает Сопротивление Холоду цели на **50%** в течение **10** секунд.`,
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["samir", "king", "shiro"],
             set3: ["pepper", "offensivelogic", "sobek"]
@@ -52,7 +59,7 @@ const hilda = {
     },
 
     matrix: {
-        set3: "Increase ATK by **15%/19%/22.5%** when there are no enemies within 6 meters."
+        set3: "Увеличивает АТК на **15%/19%/22,5%**, когда в радиусе 6 метров от персонажа нет врагов."
     },
 
     awakening: {
