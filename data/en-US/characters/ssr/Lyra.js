@@ -9,9 +9,9 @@ const lyra = {
             {
                 bannerNo: 16,
                 start: "29 Jul 2022",
-                end: "Aug 2022",
-                duration: "18d",
-                week: "33~"
+                end: "17 Aug 2022",
+                duration: "19d",
+                week: "33~36"
             }
         ]
     },
@@ -52,9 +52,9 @@ const lyra = {
     },
 
     matrix: {
-        set2: `Using this weapon grants a **20%/25%/30%/35% all ATK buff, and healing received is increased by up to 100% based on missing health.`,
+        set2: `Using this weapon grants a **20%/25%/30%/35%** ATK buff. The lower your health, the higher your healing received, up to 100%.`,
 
-        set4: `Dealing Physical damage grants a 5% Physical damage buff with a cooldown of 0.1 seconds, stacking up to 5 times. When fully stacked, gain an additional **6%/10%/14%/18%** Physical damage buff for 5 seconds. Dodging grants up to 3 stacks of Block for 10 seconds, blocking up to 60% of current health and at least 20% of max health.`
+        set4: `Dealing Physical damage grants a 5% Physical damage buff with a cooldown of 0.1 seconds, stacking up to 5 times. When fully stacked, gain an additional **6%/10%/14%/18%** Physical damage buff for 5 seconds. Dodging grants up to 3 stacks of Block for 10 seconds, blocking up to 60% of current health and at least 20% of max health. When using multiple sets, only the highest star set will take effect.`
     },
 
     awakening: {

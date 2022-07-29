@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "July 28",
+        text: "Added new character Lyra"
+    },
+    {
         date: "July 27",
         text: "Added attack inputs for available weapons; Added video previews for available mounts; Guides: updated layout, added Shortest Reroll Path, renamed Housing to Home Island; Proofread CN simulacrum traits"
     },

@@ -25,7 +25,7 @@ import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
 
 export const CHARACTERS = [
-    // Lyra,
+    Lyra,
     Lin,
     SakiFuwa,
     Ruby,
