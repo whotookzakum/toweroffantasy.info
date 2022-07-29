@@ -1,5 +1,5 @@
 const lin = {
-    name: "Линь",
+    name: "Лин",
     uri: "lin",
     imgSrc: "lin.png",
     rarity: "SSR",
