@@ -308,42 +308,42 @@ const recipes = [
         stars: 1,
         effect: 
             `Восстанавливает **7** сытости  
-            Восстанавливает **12% + 3,300** HP`,
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.mushroom, amount: 2 },
             { item: i.silverbass, amount: 1 }
         ]
     },
     {
-        name: 'Dandelion Mushroom Soup',
+        name: 'Грибной суп с одуванчиками',
         imgSrc: "dandelionmushroomsoup.png",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
         effect: 
             `Восстанавливает **7** сытости  
-            Восстанавливает **12% + 3,300** HP`,
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.dandelionseed, amount: 1 },
             { item: i.mushroom, amount: 2 }
         ]
     },
     {
-        name: 'Surf and Turf',
+        name: 'Прибой и дёрн',
         imgSrc: "surfandturf.png",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 
             `Восстанавливает **8** сытости  
-            Восстанавливает **13% + 10,000** HP`,
+            Восстанавливает **13% + 10000** здоровья`,
         ingredients: [
             { item: i.darbyssturgeon, amount: 1 },
             { item: i.poultryegg, amount: 2 }
         ]
     },
     {
-        name: 'Red Wheat Bread',
+        name: 'Хлеб из красной пшеницы',
         imgSrc: "redwheatbread.png",
         chinaOnly: false,
         rarity: 2,
@@ -354,48 +354,48 @@ const recipes = [
         ]
     },
     {
-        name: 'Firecap Mushroom Soup',
+        name: 'Суп из огнегрибов',
         imgSrc: "firecapmushroomsoup.png",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 
             `Восстанавливает **400** выносливости  
-            Восстанавливает **13% + 10,000** HP`,
+            Восстанавливает **13% + 10000** здоровья`,
         ingredients: [
             { item: i.firecap, amount: 2 },
             { item: i.lettuce, amount: 2 }
         ]
     },
     {
-        name: 'Black Moss Soup',
+        name: 'Суп из чёрного мха',
         imgSrc: "blackmosssoup.png",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
         effect: 
             `Восстанавливает **8** сытости  
-            Восстанавливает **13% + 10,000** HP`,
+            Восстанавливает **13% + 10000** здоровья`,
         ingredients: [
             { item: i.blackmoss, amount: 2 },
             { item: i.lettuce, amount: 2 }
         ]
     },
     {
-        name: 'Beetroot Soup',
+        name: 'Борщ',
         imgSrc: "beetrootsoup.png",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
         effect: 
             `Восстанавливает **7** сытости  
-            Восстанавливает **12% + 3,300** HP`,
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.beetroot, amount: 2 }
         ]
     },
     {
-        name: 'Deep-fried Tofu',
+        name: 'Жареный тофу',
         imgSrc: "deep-friedtofu.png",
         chinaOnly: true,
         rarity: 2,
@@ -406,7 +406,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Salted Corn',
+        name: 'Солёная кукуруза',
         imgSrc: "saltedcorn.png",
         chinaOnly: true,
         rarity: 2,
@@ -417,27 +417,27 @@ const recipes = [
         ]
     },
     {
-        name: 'Grilled Lizard Tail',
+        name: 'Жареный хвост ящерицы',
         imgSrc: "grilledlizardtail.png",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
         effect: 
             `Восстанавливает **7** сытости  
-            Восстанавливает **12% + 3,300** HP`,
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.fleshytail, amount: 2 }
         ]
     },
     {
-        name: 'Creamy Corn Soup',
+        name: 'Кремовый суп из кукурузы',
         imgSrc: "creamycornsoup.png",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
         effect: 
             `Восстанавливает **7** сытости  
-            Восстанавливает **12% + 3,300** HP`,
+            Восстанавливает **12% + 3300** здоровья`,
         ingredients: [
             { item: i.corn, amount: 2 },
             { item: i.milk, amount: 1 },
@@ -445,16 +445,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Seafood Soup',
+        name: 'Суп из морепродуктов',
         imgSrc: "seafoodsoup.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Ice Attack +1%  
-            Ice Attack +45**  
-            Duration **900** sec`,
+            **АТК Холодом +1%  
+            АТК Холодом +45**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.conch, amount: 3 },
             { item: i.scallop, amount: 2 },
@@ -462,16 +462,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Spicy Burger',
+        name: 'Пряный бургер',
         imgSrc: "spicyburger.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Physical Attack +1%  
-            Physical Attack +45**  
-            Duration **900** sec`,
+            **Физическое АТК +1%  
+            Физическое АТК +45**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.homigrain, amount: 3 },
             { item: i.rearhock, amount: 2 },
@@ -479,30 +479,30 @@ const recipes = [
         ]
     },
     {
-        name: 'Steamed Crab',
+        name: 'Краб на пару',
         imgSrc: "steamedcrab.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            Recovers **15% + 20,000** HP`,
+            Recovers **15% + 20000** здоровья`,
         ingredients: [
             { item: i.portunid, amount: 2 },
             { item: i.lettuce, amount: 2 }
         ]
     },
     {
-        name: 'Iced Strawberry Soda',
+        name: 'Клубничная содовая со льдом',
         imgSrc: "icedstrawberrysoda.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Flame Resistance +10%  
-            Flame Resistance +170**  
-            Duration **900** sec`,
+            **Сопротивление Огню +10%  
+            Сопротивление Огню +170**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.strawberry, amount: 2 },
             { item: i.honey, amount: 2 },
@@ -510,16 +510,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Thundercloud Blueberry Soda',
+        name: 'Содовая «Грозовая туча»',
         imgSrc: "thundercloudblueberrysoda.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Volt Resistance +10%  
-            Volt Resistance +170**  
-            Duration **900** sec`,
+            **Сопротивление Напряжению +10%  
+            Сопротивление Напряжению +170**  
+            Длится **900** sec`,
         ingredients: [
             { item: i.smallblueberryjar, amount: 1 },
             { item: i.honey, amount: 2 },
@@ -527,16 +527,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Simple Power Salad',
+        name: 'Энергетический салат',
         imgSrc: "simplepowersalad.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Physical Resistance +10%  
-            Physical Resistance +170**  
-            Duration **900** sec`,
+            **Физическое сопротивление +10%  
+            Физическое сопротивление +170**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.broccoli, amount: 1 },
             { item: i.thornmato, amount: 1 },
@@ -546,30 +546,30 @@ const recipes = [
         ]
     },
     {
-        name: 'Steamed Egg with Sea Urchin',
+        name: 'Морской ёж с яйцом на пару',
         imgSrc: "steamedeggwithseaurchin.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            Recovers **15% + 20,000** HP`,
+            Recovers **15% + 20000** здоровья`,
         ingredients: [
             { item: i.seaurchin, amount: 2 },
             { item: i.poultryegg, amount: 2 }
         ]
     },
     {
-        name: 'Jam on Toast',
+        name: 'Тост с джемом',
         imgSrc: "jamontoast.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Volt Attack +1%  
-            Volt Attack +45**  
-            Duration **900** sec`,
+            **Урон Напряжением +1%  
+            Урон Напряжением +45**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.smallblueberryjar, amount: 1 },
             { item: i.strawberry, amount: 1 },
@@ -577,16 +577,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Tomato and Fried Egg Pasta',
+        name: 'Паста с яйцом и томатами',
         imgSrc: "tomatoandfriedeggpasta.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Flame Attack +1%  
-            Flame Attack +45**  
-            Duration **900** sec`,
+            **АТК Огнём +1%  
+            АТК Огнём +45**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.thornmato, amount: 4 },
             { item: i.homigrain, amount: 3 },
@@ -594,14 +594,14 @@ const recipes = [
         ]
     },
     {
-        name: 'Fruit Cake',
+        name: 'Фруктовый торт',
         imgSrc: "fruitcake.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.strawberry, amount: 2 },
             { item: i.homigrain, amount: 1 },
@@ -610,69 +610,69 @@ const recipes = [
         ]
     },
     {
-        name: 'Boiled Scallops',
+        name: 'Вареные гребешки',
         imgSrc: "boiledscallops.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** Здоровья`,
         ingredients: [
             { item: i.scallop, amount: 2 },
             { item: i.lettuce, amount: 3 }
         ]
     },
     {
-        name: 'Roast Rump',
+        name: 'Жареная ножка',
         imgSrc: "roastrump.png",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **500** выносливости  
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.rearhock, amount: 2 }
         ]
     },
     {
-        name: 'Fiddlehead Pie',
+        name: 'Рахисовый пирог',
         imgSrc: "fiddleheadpie.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.brownrice, amount: 2 }
         ]
     },
     {
-        name: 'Chocolate Bread',
+        name: 'Шоколадный хлеб',
         imgSrc: "chocolatebread.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.brownrice, amount: 2 }
         ]
     },
     {
-        name: 'Balloon Fruit Salad',
+        name: 'Салат из шарообразных фруктов',
         imgSrc: "balloonfruitsalad.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.balloonfruit, amount: 2 },
             { item: i.thornmato, amount: 2 },
@@ -680,75 +680,75 @@ const recipes = [
         ]
     },
     {
-        name: 'Fiddlehead Soup',
+        name: 'Рахисовый суп',
         imgSrc: "fiddleheadsoup.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.lettuce, amount: 4 }
         ]
     },
     {
-        name: 'Spicy Eel',
+        name: 'Пряный угорь',
         imgSrc: "spicyeel.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Volt Resistance +10%  
-            Volt Resistance +290**  
-            Duration **900** sec`,
+            **Сопротивление Напряжению +10%  
+            Сопротивление Напряжению +290**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.electriceel, amount: 1 }
         ]
     },
     {
-        name: 'Eel and Mushroom Soup',
+        name: 'Грибной суп с угрём',
         imgSrc: "eelandmushroomsoup.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Volt Attack +1%  
-            Volt Attack +80**  
-            Duration **900** sec`,
+            **АТК Напряжением +1%  
+            АТК Напряжением +80**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.electriceel, amount: 1 },
             { item: i.firecap, amount: 2 }
         ]
     },
     {
-        name: 'Sea Crab Soup',
+        name: 'Крабовый суп',
         imgSrc: "seacrabsoup.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Flame Resistance +10%  
-            Flame Resistance +290**  
-            Duration **900** sec`,
+            **Сопротивление Огню +10%  
+            Сопротивление Огню +290**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.hermitcrab, amount: 2 },
             { item: i.mushroom, amount: 4 }
         ]
     },
     {
-        name: 'Sweet Pomegranate Juice',
+        name: 'Сладкий гранатовый сок',
         imgSrc: "sweetpomegranatejuice.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **600** выносливости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.phosphogranate, amount: 2 },
             { item: i.honey, amount: 2 },
@@ -756,16 +756,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Cocoa Milk',
+        name: 'Шоколадное молоко',
         imgSrc: "cocoamilk.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Ice Resistance +10%  
-            Ice Resistance +290**  
-            Duration **900** sec`,
+            **Сопротивление Холоду +10%  
+            Сопротивление Холоду +290**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.honey, amount: 2 },
@@ -773,46 +773,46 @@ const recipes = [
         ]
     },
     {
-        name: 'Firedragon Fruit Tea',
+        name: 'Чай из питахайи',
         imgSrc: "firedragonfruittea.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Flame Attack +1%  
-            Flame Attack +80**  
-            Duration **900** sec`,
+            **АТК Огнём +1%  
+            АТК Огнём +80**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.firedragonfruit, amount: 2 },
             { item: i.honey, amount: 2 }
         ]
     },
     {
-        name: 'Barnacle Stew',
+        name: 'Рагу из моллюсков',
         imgSrc: "barnaclestew.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Physical Resistance +10%  
-            Physical Resistance +290**  
-            Duration **900** sec`,
+            **Физическое Сопротивление +10%  
+            Физическое Сопротивление +290**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.barnacle, amount: 2 },
             { item: i.lettuce, amount: 4 }
         ]
     },
     {
-        name: 'Barnacle Seafood Pizza',
+        name: 'Пицца с морепродуктами',
         imgSrc: "barnacleseafoodpizza.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.barnacle, amount: 1 },
             { item: i.brownrice, amount: 2 },
@@ -820,16 +820,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Snow Azalea Tea',
+        name: 'Чай из снежной азалии',
         imgSrc: "snowazaleatea.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Ice Attack +1%  
-            Ice Attack +80**  
-            Duration **900** sec`,
+            **АТК Холодом +1%  
+            АТК Холодом +80**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.snowazalea, amount: 1 },
             { item: i.milk, amount: 1 },
@@ -837,14 +837,14 @@ const recipes = [
         ]
     },
     {
-        name: 'Pine Cocoa',
+        name: 'Сосновое какао',
         imgSrc: "pinecocoa.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.pinecone, amount: 1 },
             { item: i.cocoabeans, amount: 1 },
@@ -852,14 +852,14 @@ const recipes = [
         ]
     },
     {
-        name: 'Caviar Sushi',
+        name: 'Суши с икрой',
         imgSrc: "caviarsushi.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.caviar, amount: 1 },
             { item: i.rice, amount: 2 },
@@ -867,90 +867,90 @@ const recipes = [
         ]
     },
     {
-        name: 'Caviar Potato Balls',
+        name: 'Картофельные шарики с икрой',
         imgSrc: "caviarpotatoballs.png",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            **Physical Attack +1%  
-            Physical Attack +80**  
-            Duration **900** sec`,
+            **Физическое АТК +1%  
+            Физическое АТК +80**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.caviar, amount: 1 },
             { item: i.potato, amount: 2 }
         ]
     },
     {
-        name: 'Stir-fried Peppers',
+        name: 'Жареные перцы',
         imgSrc: "stir-friedpeppers.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Ice Resistance +10%  
-            Ice Resistance 170**  
-            Duration **900** sec`,
+            **Сопротивление Холоду +10%  
+            Сопротивление Холоду 170**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.pepper, amount: 2 },
             { item: i.onion, amount: 2 }
         ]
     },
     {
-        name: 'Melon Salad',
+        name: 'Салат из дыни',
         imgSrc: "melonsalad.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Flame Resistance +10%  
-            Flame Resistance 170**  
-            Duration **900** sec`,
+            **Сопротивление Огню +10%  
+            Сопротивление Огню 170**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.desertmelon, amount: 2 },
             { item: i.saladdressing, amount: 2 }
         ]
     },
     {
-        name: 'Pumpkin Porridge',
+        name: 'Тыквенная каша',
         imgSrc: "pumpkinporridge.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.rice, amount: 3 }
         ]
     },
     {
-        name: 'Grilled Ribs',
+        name: 'Рёбрышки на гриле',
         imgSrc: "grilledribs.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.ribs, amount: 1 },
             { item: i.honey, amount: 2 }
         ]
     },
     {
-        name: 'Chocolate Soymilk',
+        name: 'Шоколадное соевое молоко',
         imgSrc: "chocolatesoymilk.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **500** выносливости  
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.soybeans, amount: 1 },
@@ -958,30 +958,30 @@ const recipes = [
         ]
     },
     {
-        name: 'Beetroot Fern',
+        name: 'Свекольный папоротник',
         imgSrc: "beetrootfern.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости 
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.beetroot, amount: 2 }
         ]
     },
     {
-        name: 'Honeydew Melon Bread',
+        name: 'Медовый хлеб с дыней',
         imgSrc: "honeydewmelonbread.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Ice Attack +1%  
-            Ice Attack 45**  
-            Duration **900** sec`,
+            **АТК Холодом +1%  
+            АТК Холодом 45**  
+            Длится **900** секунд`,
         ingredients: [
             { item: i.desertmelon, amount: 2 },
             { item: i.honey, amount: 1 },
@@ -989,14 +989,14 @@ const recipes = [
         ]
     },
     {
-        name: 'Mixed Grain Porridge',
+        name: 'Каша из разных злаков',
         imgSrc: "mixedgrainporridge.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **500** выносливости 
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.corn, amount: 1 },
@@ -1004,14 +1004,14 @@ const recipes = [
         ]
     },
     {
-        name: 'Corn and Seafood Pie',
+        name: 'Пирожки с морепродуктами и кукурузой',
         imgSrc: "cornandseafoodpie.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости 
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.scallop, amount: 2 },
             { item: i.corn, amount: 1 },
@@ -1019,30 +1019,30 @@ const recipes = [
         ]
     },
     {
-        name: 'Steamed Pumpkin',
+        name: 'Тыква на пару',
         imgSrc: "steamedpumpkin.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости 
-            Восстанавливает **15% + 20,000** HP`,
+            Восстанавливает **15% + 20000** здоровья`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.homigrain, amount: 3 }
         ]
     },
     {
-        name: 'Spicy Fried Rice',
+        name: 'Острый жареный рис',
         imgSrc: "spicyfriedrice.png",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
         effect: 
             `Восстанавливает **10** сытости  
-            **Flame Attack +1%  
-            Flame Attack 45**  
-            Duration **900** sec`,
+            **АТК Огнём +1%  
+            АТК Огнём 45**  
+            Длится **900** секунл`,
         ingredients: [
             { item: i.pepper, amount: 1 },
             { item: i.fleshytail, amount: 1 },
@@ -1051,68 +1051,68 @@ const recipes = [
         ]
     },
     {
-        name: 'Grilled Oysters',
+        name: 'Жареные устрицы',
         imgSrc: "grilledoysters.png",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.oyster, amount: 2 }
         ]
     },
     {
-        name: 'Cold Fish Leaf',
+        name: 'Холодные рыбные палочки',
         imgSrc: "coldfishleaf.png",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **10** сытости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.fishleaf, amount: 2 }
         ]
     },
     {
-        name: 'Oyster Tofu Soup',
+        name: 'Устричный суп с тофу',
         imgSrc: "oystertofusoup.png",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **600** выносливости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.oyster, amount: 2 },
             { item: i.soybeans, amount: 2 }
         ]
     },
     {
-        name: 'Fishleaf Scrambled Eggs',
+        name: 'Яичница-болтунья с рыбными палочками',
         imgSrc: "fishleafscrambledeggs.png",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
         effect: 
             `Восстанавливает **600** выносливости  
-            Восстанавливает **16% + 34,000** HP`,
+            Восстанавливает **16% + 34000** здоровья`,
         ingredients: [
             { item: i.fishleaf, amount: 2 },
             { item: i.poultryegg, amount: 3 }
         ]
     },
     {
-        name: 'Nut Tea',
+        name: 'Ореховый чай',
         imgSrc: "nuttea.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.hazelnut, amount: 1 },
             { item: i.pinecone, amount: 2 },
@@ -1120,46 +1120,46 @@ const recipes = [
         ]
     },
     {
-        name: "Purple Yam Pie",
+        name: "Пирожки с фиолетовым ямсом",
         imgSrc: "purpleyampie.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Volt Attack +2%  
-            Volt Attack +150**  
-            Duration **1200** sec`,
+            **АТК Напряжением +2%  
+            АТК Напряжением +150**  
+            Длится **1200** секунл`,
         ingredients: [
             { item: i.purpleyam, amount: 1 },
             { item: i.brownrice, amount: 3 }
         ]
     },
     {
-        name: 'Snow Lotus Soup',
+        name: 'Суп из снежного лотуса',
         imgSrc: "snowlotussoup.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **800** выносливости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.snowlotus, amount: 1 },
             { item: i.honey, amount: 2 }
         ]
     },
     {
-        name: 'Truffle Fried Rice',
+        name: 'Жареный рис с трюфелем',
         imgSrc: "trufflefriedrice.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Physical Attack +2%  
-            Physical Attack +150**  
-            Duration **1200** sec`,
+            **Физическое АТК +2%  
+            Физическое АТК +150**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.blacktruffle, amount: 1 },
             { item: i.onion, amount: 1 },
@@ -1167,76 +1167,76 @@ const recipes = [
         ]
     },
     {
-        name: 'Caterpillar Fungus Noodles',
+        name: 'Лапша с гусеничным грибом',
         imgSrc: "caterpillarfungusnoodles.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.caterpillarfungus, amount: 1 },
             { item: i.brownrice, amount: 3 }
         ]
     },
     {
-        name: 'Grilled Steak',
+        name: 'Стейк на гриле',
         imgSrc: "grilledsteak.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Volt Resistance +15%  
-            Volt Resistance +675**  
-            Duration **1200** sec`,
+            **Сопротивление Напряжению +15%  
+            Сопротивление Напряжению +675**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.primecut, amount: 1 }
         ]
     },
     {
-        name: 'Steak with Sauce',
+        name: 'Стейк с соусом',
         imgSrc: "steakwithsauce.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Flame Attack +2%  
-            Flame Attack +150**  
-            Duration **1200** sec`,
+            **Урон Огнём +2%  
+            Урон Огнём +150**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.primecut, amount: 1 },
             { item: i.firecap, amount: 3 }
         ]
     },
     {
-        name: 'Braised Meat',
+        name: 'Тушёное мясо',
         imgSrc: "braisedmeat.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Ice Resistance +15%  
-            Ice Resistance +675**  
-            Duration **1200** sec`,
+            **Сопротивление Холоду +15%  
+            Сопротивление Холоду +675**  
+            Длится **1200** sec`,
         ingredients: [
             { item: i.fattycut, amount: 1 }
         ]
     },
     {
-        name: 'Juicy BLT',
+        name: 'Сочный бутерброд',
         imgSrc: "juicyblt.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Flame Resistance +15%  
-            Flame Resistance +675**  
-            Duration **1200** sec`,
+            **Сопротивление Огню +15%  
+            Сопротивление Огню +675**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.fattycut, amount: 1 },
             { item: i.brownrice, amount: 2 },
@@ -1244,16 +1244,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Salmon Sashimi',
+        name: 'Сашими из лосося',
         imgSrc: "salmonsashimi.png",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Ice Attack +2%  
-            Ice Attack +150**  
-            Duration **1200** sec`,
+            **АТК Холодом +2%  
+            АТК Холодом +150**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.lakebass, amount: 1 }
         ]
@@ -1266,23 +1266,23 @@ const recipes = [
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Physical Resistance +15%  
-            Physical Resistance +675**  
-            Duration **1200** sec`,
+            **Физическое Сопротивление +15%  
+            Физическое Сопротивление +675**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.carrionsnail, amount: 1 },
             { item: i.rice, amount: 2 }
         ]
     },
     {
-        name: 'Aloe Vera Yogurt',
+        name: 'Йогурт из алоэ вера',
         imgSrc: "aloeverayogurt.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.aloevera, amount: 1 },
             { item: i.honey, amount: 1 },
@@ -1290,59 +1290,59 @@ const recipes = [
         ]
     },
     {
-        name: 'Rose Tea',
+        name: 'Чай из роз',
         imgSrc: "rosetea.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **800** выносливости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.rosepetals, amount: 1 },
             { item: i.honey, amount: 2 }
         ]
     },
     {
-        name: 'Radish Soup',
+        name: 'Суп из редьки',
         imgSrc: "radishsoup.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **800** выносливости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.radish, amount: 1 }
         ]
     },
     {
-        name: 'Rose Bread',
+        name: 'Хлеб из роз',
         imgSrc: "rosebread.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Volt Resistance +15%**  
-            **Volt Resistance +675**  
-            Duration **1200** sec`,
+            **Сопротивление Напряжению +15%**  
+            **Сопротивление Напряжению +675**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.rosepetals, amount: 1 },
             { item: i.brownrice, amount: 2 }
         ]
     },
     {
-        name: 'Chicken Noodle Soup',
+        name: 'Куриный суп с лапшой',
         imgSrc: "chickennoodlesoup.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Physical Attack +2%**  
-            **Physical Attack +150**  
-            Duration **1200** sec`,
+            **Физическое АТК +2%**  
+            **Физическое АТК +150**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.radish, amount: 1 },
             { item: i.poultrymeat, amount: 1 },
@@ -1350,16 +1350,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Spicy Pork Noodles',
+        name: 'Острая лапша со свининой',
         imgSrc: "spicyporknoodles.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Flame Attack +2%**  
-            **Flame Attack +150**  
-            Duration **1200** sec`,
+            **АТК Огнём +2%**  
+            **АТК Огнём +150**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.fattycut, amount: 1 },
             { item: i.pepper, amount: 1 },
@@ -1367,16 +1367,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Barbecue Platter',
+        name: 'Тарелка барбекю',
         imgSrc: "barbecueplatter.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Flame Resistance +15%**  
-            **Flame Resistance +675**  
-            Duration **1200** sec`,
+            **Сопротивление Огню +15%**  
+            **Сопротивление Огню +675**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.primecut, amount: 1 },
             { item: i.pepper, amount: 1 },
@@ -1384,43 +1384,43 @@ const recipes = [
         ]
     },
     {
-        name: 'Radish Rib Soup',
+        name: 'Суп из редьки с рёбрышками',
         imgSrc: "radishribsoup.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            **Physical Resistance +15%**  
-            **Physical Resistance +675**  
-            Duration **1200** sec`,
+            **Физическое Сопротивление +15%**  
+            **Физическое Сопротивление +675**  
+            Длится **1200** секунд`,
         ingredients: [
             { item: i.radish, amount: 1 },
             { item: i.ribs, amount: 1 }
         ]
     },
     {
-        name: 'Crispy Oil Melon',
+        name: 'Хрустящий масляный арбуз',
         imgSrc: "crispyoilmelon.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **20** сытости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.oilmelon, amount: 1 }
         ]
     },
     {
-        name: 'Spicy Oil Melon Sticks',
+        name: 'Острые палочки из масляного арбуза',
         imgSrc: "spicyoilmelonsticks.png",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
         effect: 
             `Восстанавливает **800** выносливости  
-            Восстанавливает **20% + 60,000** HP`,
+            Восстанавливает **20% + 60000** здоровья`,
         ingredients: [
             { item: i.oilmelon, amount: 1 },
             { item: i.pepper, amount: 2 }
