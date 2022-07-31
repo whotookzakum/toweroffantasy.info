@@ -31,7 +31,6 @@
             position: sticky;
             top: 0;
             background: clr(container, dark);
-            backdrop-filter: blur(15px);
         }
 
         tbody tr:nth-child(odd) {

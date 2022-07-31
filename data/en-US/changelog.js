@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "July 30",
+        text: "Removed background blur from navigation list & button for performance; Fixed some CN tags that were not displaying correctly; Updated Frigg's avatar image"
+    },
+    {
         date: "July 28",
         text: "Added new character Lyra"
     },
