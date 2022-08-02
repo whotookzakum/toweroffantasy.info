@@ -12,9 +12,8 @@
     width: calc($sidenav-width - 4rem);
     max-width: $sidenav-width;
     height: 100%;
-    backdrop-filter: blur(15px);
     overflow-y: scroll;
-    background-color: clr(container);
+    background-color: clr(container, base-opaque);
     transition: transform 0.3s ease;
     box-shadow: $shadow;
     scrollbar-width: none;
@@ -153,10 +152,9 @@
         top: 0;
         cursor: pointer;
         transition: transform 0.3s ease;
-        background: clr(container, light);
+        background-color: clr(container, base-opaque);
         display: flex;
         color: clr(tier, s);
-        backdrop-filter: blur(5px);
         box-shadow: $shadow;
     }
 }
@@ -168,7 +166,6 @@
         transform: translateX(190px);
         background: none;
         box-shadow: none;
-        backdrop-filter: none;
     }
 
     &~.nav-body {

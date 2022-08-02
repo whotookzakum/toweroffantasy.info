@@ -6,6 +6,7 @@ import { hyphenToSpace } from "../../utils/stringHelper";
 import CNTag from "../../components/CNTag";
 import elementalEffects from "../../data/en-US/elementalEffects";
 import { Modal } from "../../components/Modal";
+import rehypeRaw from "rehype-raw";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -33,7 +34,7 @@ export default function SimulacrumPage({ simulacrum }) {
         return (
             <tr key={star}>
                 <th>{star.split("star").pop()} ★</th>
-                <td><ReactMarkdown>{effect}</ReactMarkdown></td>
+                <td><ReactMarkdown rehypePlugins={[rehypeRaw]}>{effect}</ReactMarkdown></td>
             </tr>
         )
     })
@@ -230,11 +231,11 @@ export default function SimulacrumPage({ simulacrum }) {
                             <tbody>
                                 <tr>
                                     <th>1200</th>
-                                    <td><ReactMarkdown>{awakening.trait1200}</ReactMarkdown></td>
+                                    <td><ReactMarkdown rehypePlugins={[rehypeRaw]}>{awakening.trait1200}</ReactMarkdown></td>
                                 </tr>
                                 <tr>
                                     <th>4000</th>
-                                    <td><ReactMarkdown>{awakening.trait4000}</ReactMarkdown></td>
+                                    <td><ReactMarkdown rehypePlugins={[rehypeRaw]}>{awakening.trait4000}</ReactMarkdown></td>
                                 </tr>
                             </tbody>
                         </table>

@@ -8,11 +8,11 @@ const couant = {
     advancement: {
             star1: 
                 `When the shield is broken, reduce the speed of the attacker by **35%** for **6** seconds.  
-                relic<abbr title='China Exclusive'></abbr> When the shield is broken, reduce the speed of the attacker and nearby enemies by **35%** for **6** seconds.`,
+                <abbr title='China Exclusive'></abbr> When the shield is broken, reduce the speed of the attacker and nearby enemies by **35%** for **6** seconds.`,
             
             star2: 
                 `After shield breaks, increase final damage by **20%** for **10** seconds.  
-                relic<abbr title='China Exclusive'></abbr> After shield breaks, increase final damage equal to the percentage of HP lost with a minimum of **30%**, for **10** seconds.`,
+                <abbr title='China Exclusive'></abbr> After shield breaks, increase final damage equal to the percentage of HP lost with a minimum of **30%**, for **10** seconds.`,
             
             star3: "After the shield ends (shattered), it increases your movement speed by 30% for 5 seconds.",
             

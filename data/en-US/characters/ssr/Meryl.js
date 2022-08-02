@@ -121,7 +121,7 @@ const meryl = {
 
         trait4000: 
             `Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**.  
-            <abbr title='China Exclusive'></abbr> Meryl takes 25% less ice damage, is immune to frostbite, and is frozen for 50% less time. Meryl's surroundings will freeze.`,
+            <abbr title='China Exclusive'></abbr> Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**. Meryl's surroundings will freeze.`,
 
         giftCategories: ['metalware', 'rare-items'],
 
