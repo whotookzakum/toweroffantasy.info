@@ -203,8 +203,12 @@ export default function SimulacrumPage({ simulacrum }) {
                     {Object.keys(weapon.abilities).length > 0 &&
                         <section className="weapon-abilities w-75ch">
                             <h3>Weapon Abilities</h3>
+                            {weapon.abilitiesVideoSrc && 
+                                <iframe src={weapon.abilitiesVideoSrc} allow="fullscreen" modestbranding={1} />
+                            }
                             Data reflects unleveled weapons.
                             {abilities}
+                            
                         </section>
                     }
                     <section className="weapon-materials w-75ch" >

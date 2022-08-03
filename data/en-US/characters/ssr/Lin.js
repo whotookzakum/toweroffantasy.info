@@ -63,10 +63,7 @@ const lin = {
         //             name: "",
         //             description: `Launch an attack on the target while dodging midair. The hit generates **1-3 Nightblooms**, and at the same time forms a field that lasts for **5** seconds. When an enemy moves against the direction in the field, their movement speed is reduced by **50%**. Passive: can be released both on the ground and in the air; when under control effects, immediately break out and release the wind field (automatically use a dodge attack without consuming dodge count), cooldown **20** seconds.`
         //         },
-        //         {
-        //             name: "Dodge",
-        //             description: `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
-        //         },
+                
         //     ],
         //     skill: [
         //         {
@@ -90,7 +87,40 @@ const lin = {
         //         }
         //     ]
         // },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Normal Attack",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Air Strike",
+                    input: ["Jump", "Attack x5"],
+                },
+                {
+                    name: "Mud Scatter",
+                    input: ["Attack", "hold:Attack"],
+                },
+                {
+                    name: "Short-lived",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Falling Shadow",
+                    input: ["Jump", "hold:Attack"],
+                }
+            ],
+            dodge: [
+                {
+                    name: "Dodge",
+                    description: `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
+                },
+                {
+                    name: "Left in vain",
+                    input: ["Dodge", "Attack"],
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["lin", "samir"],
             set4: ["lin"],

@@ -29,7 +29,7 @@ const samir = {
             normal: [
                 {
                     name: "Dual Fire",
-                    input: ["Attack ×5"],
+                    input: ["Attack x5"],
                     description: 'While on the ground, tap normal attack to attack 5 times in a row.',
                     breakdown: [
                         'Deal total damage equal to **47.1%** of ATK + **2**.',
@@ -79,6 +79,7 @@ const samir = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/rnbvRYldzak?start=8",
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set4: ["samir"],

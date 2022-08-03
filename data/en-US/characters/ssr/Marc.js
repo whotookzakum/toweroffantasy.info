@@ -64,7 +64,38 @@ const marc = {
 
             star6: `While [Omni Shield] is active, Physical Resistance is **doubled** and provides Dominance effect. [Omni Shield] can be obtained when another Weapon Skill or Discharge Skill hits the target while the shield is active.`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Wasteland Hunters Attack",
+                    input: ["Attack x4"],
+                },
+                {
+                    name: "Wasteland Hunters Heavy Punch",
+                    input: ["Jump", "Attack"],
+                },
+                {
+                    name: "Wasteland Hunters Shot",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Heavy Stereo Punch",
+                    input: ["Attack x4"],
+                },
+                {
+                    name: "Impact Slash",
+                    input: ["Attack", "hold:Attack"],
+                },
+                {
+                    name: "Shoulder Cannon Launch",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Double Slam",
+                    input: ["Jump", "Attack"],
+                },
+            ]
+        },
         recommendedMatrix: {
             set2: ["marc", "king", "shiro"],
             set4: ["marc"],

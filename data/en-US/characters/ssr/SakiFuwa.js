@@ -44,7 +44,38 @@ const saki = {
 
             star6: `Sword Shadow's [Surge] increases your ice damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' ice damage by **25%** for **12** seconds.`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Flowing Springs",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Heavenbreak Waterfall",
+                    input: ["Jump", "Attack x5"],
+                },
+                {
+                    name: "Frostfall",
+                    input: ["Jump", "hold:Attack"],
+                },
+                {
+                    name: "Surging Heart Flow",
+                    input: ["hold:Attack"],
+                    description: "while target is airborne"
+                },
+                {
+                    name: "Calm Style Flow",
+                    input: ["hold:Attack"],
+                    description: "while target is on the ground"
+                }
+            ],
+            dodge: [
+                {
+                    name: "Frigid Tide",
+                    input: ["Arrow keys", "Dodge", "Attack"],
+                },
+            ]
+        },
         recommendedMatrix: {
             set2: ["crow", "samir"],
             set4: ["samir"],

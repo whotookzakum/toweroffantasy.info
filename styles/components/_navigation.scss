@@ -121,6 +121,7 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 2rem;
+    width: calc($sidenav-width - 4rem);
 }
 
 .nav-backdrop {

@@ -42,7 +42,36 @@ const ruby = {
 
             star6: `[Scorching Heat] Increases Sparky's basic attack damage to **240%** and doubles the effectiveness of [Heat]. Weapon Skill cooldown reduced to **16** seconds.`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Normal Attack",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Aerial Attack",
+                    input: ["Jump", "Attack x5"],
+                },
+                {
+                    name: "Forbidden Realm",
+                    input: ["Attack x2", "hold:Attack"],
+                },
+                {
+                    name: "Gotcha!",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Domain Guard",
+                    input: ["Jump", "hold:Attack"],
+                }
+            ],
+            dodge: [
+                {
+                    name: "Dory Out",
+                    input: ["Dodge", "Attack"],
+                },
+            ]
+        },
         recommendedMatrix: {
             set2: ["ruby", "samir", "tsubasa", "crow"],
             set4: ["ruby"],

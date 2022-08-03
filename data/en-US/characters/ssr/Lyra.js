@@ -44,7 +44,36 @@ const lyra = {
 
             star6: `Using any weapon skill or discharge skill will increase your final damage and healing equivalent to the number of Guardians. Each Guardian will increase final damage and healing by **3%** for a maximum of **15%** for 25 seconds.`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Normal Attack",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Despair",
+                    input: ["Jump", "Attack"],
+                },
+                {
+                    name: "Flash",
+                    input: ["Attack", "hold:Attack"],
+                },
+                {
+                    name: "Accumulate",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Bash",
+                    input: ["Jump", "hold: Attack"],
+                }
+            ],
+            dodge: [
+                {
+                    name: "Consciousness Capture",
+                    input: ["Dodge", "Attack"],
+                }
+            ]
+        },
         recommendedMatrix: {
             set4: ["lyra"],
             set2: ["lyra", "samir", "crow"]

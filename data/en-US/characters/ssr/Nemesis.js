@@ -50,7 +50,32 @@ const nemesis = {
 
             star6: `Up to **2** Electrodes can be created. When a new electrode appears, it replaces the one furthest from you.`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Normal Attack",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Aerial Attack",
+                    input: ["Jump", "Attack x5"],
+                },
+                {
+                    name: "Charge Pulse",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Forward Pursuit",
+                    input: ["Attack", "hold:Attack"],
+                }
+            ],
+            dodge: [
+                {
+                    name: "Dodge Attack",
+                    input: ["Arrow keys", "Dodge", "Attack"],
+                },
+            ]
+        },
         recommendedMatrix: {
             set2: ["nemesis", "cocoritter"],
             set4: ["nemesis", "cocoritter"],
