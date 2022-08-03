@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 3",
+        text: "Added available Weapon Abilities videos; Added weapon inputs for CN simulacra (text for the abilities coming soon); Fixed navigation footer width displaying improperly"
+    },
+    {
         date: "August 2",
         text: "Removed background blur from navigation list & button for performance; Fixed some CN tags that were not displaying correctly; Updated Frigg's avatar image"
     },

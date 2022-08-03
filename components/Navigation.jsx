@@ -24,32 +24,35 @@ function Navigation() {
                 <hr />
                 <ul>
                     <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/banners"><a>Banner Schedule</a></Link>
+                        <Link href="/banners">Banner Schedule</Link>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/simulacra"><a>Simulacra</a></Link>
+                        <Link href="/simulacra">Simulacra</Link>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/matrices"><a>Matrices</a></Link>
+                        <Link href="/matrices">Matrices</Link>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/relics"><a>Relics</a></Link>
+                        <Link href="/relics">Relics</Link>
+                    </li>
+                    {/* <li onClick={() => setTogglerState(!togglerState)}>
+                        <Link href="/exploration">Exploration</Link>
+                    </li> */}
+                    <li onClick={() => setTogglerState(!togglerState)}>
+                        <Link href="/food">Food</Link>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/food"><a>Food</a></Link>
+                        <Link href="/mounts">Mounts</Link>
                     </li>
                     <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/mounts"><a>Mounts</a></Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/guides"><a>Guides</a></Link>
+                        <Link href="/guides">Guides</Link>
                     </li>
                     <li>
                         <a href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon/></a>
                     </li>
-                    <li onClick={() => setTogglerState(!togglerState)} style={{display: "none"}}>
-                        <Link href="/damagecalculator"><a>Damage Calculator</a></Link>
-                    </li>
+                    {/* <li onClick={() => setTogglerState(!togglerState)}>
+                        <Link href="/combat-analysis">Combat Analysis</Link>
+                    </li> */}
                 </ul>
                 <hr />
                 <ul className="nav-socials">
@@ -63,6 +66,9 @@ function Navigation() {
                         <a href="https://twitter.com/_Aida_Cafe" target="_blank" rel="noreferrer noopener"><TwitterIcon /></a>
                     </li>
                 </ul>
+                {/* <div>
+                    Language Selector
+                </div> */}
                 <span className="nav-footer">&copy; Tower of Fantasy Index.<br /> All rights reserved.</span>
             </div>
         </nav>

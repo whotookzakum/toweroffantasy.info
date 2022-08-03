@@ -53,7 +53,38 @@ const baiyuekui = {
 
             star6: `While inside the area of the **Discharge Skill** or **Phantasia**, trigger War Intent for **7** seconds, increasing your final damage by **40%** and halting cellular aging (switching weapons causes the effect to disappear).`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Normal Attack",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Aerial Attack",
+                    input: ["Jump", "Attack x4"],
+                },
+                {
+                    name: "Whip Kick",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Leg Splitter",
+                    input: ["Jump", "hold:Attack"],
+                    description: "while target is airborne"
+                },
+                {
+                    name: "Earthshaker",
+                    input: ["Jump", "hold:Attack"],
+                    description: "while target is on the ground"
+                },
+            ],
+            dodge: [
+                {
+                    name: "Unsheathe",
+                    input: ["Arrow keys", "Dodge", "Attack"],
+                }
+            ]
+        },
         recommendedMatrix: {
             set2: ["king", "shiro", "samir", "crow"],
             set3: ["sobek"]

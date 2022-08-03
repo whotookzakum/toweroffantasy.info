@@ -108,6 +108,7 @@ const huma = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/w_QDW56ZL20?start=10",
         recommendedMatrix: {
             set2: ["king", "shiro"],
             set4: ["huma"],

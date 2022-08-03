@@ -86,6 +86,7 @@ const zero = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/1tk5CdG8O58?start=11",
         recommendedMatrix: {
             set2: ["cocoritter"],
             set4: ["cocoritter"], // 4samir removed because global description is changed; won't proc cubes

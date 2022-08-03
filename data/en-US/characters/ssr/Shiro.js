@@ -89,6 +89,7 @@ const shiro = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/z4qOq5g5lT8?start=10",
         recommendedMatrix: {
             set2: ["king", "shiro", "samir"],
             set3: ["sobek", "offensivelogic"]

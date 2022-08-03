@@ -109,6 +109,7 @@ const claudia = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/lna3oINWXLs?start=6",
         recommendedMatrix: {
             set2: ["claudia", "samir", "crow"],
             set4: ["claudia"],

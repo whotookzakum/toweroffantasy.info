@@ -50,7 +50,32 @@ const frigg = {
 
             star6: `Reaching **15** Frost points while inside the ice field will grant the additional effect Frozen Domain II: when using Ice weapons, increase Ice ATK by **25%**.`
         },
-        abilities: [],
+        abilities: {
+            normal: [
+                {
+                    name: "Normal Attack",
+                    input: ["Attack x5"],
+                },
+                {
+                    name: "Aerial Attack",
+                    input: ["Jump", "Attack x5"],
+                },
+                {
+                    name: "Volley",
+                    input: ["hold:Attack"],
+                },
+                {
+                    name: "Spiral Cut",
+                    input: ["Jump", "hold:Attack"],
+                }
+            ],
+            dodge: [
+                {
+                    name: "Multi Slash",
+                    input: ["Dodge", "Attack"],
+                },
+            ]
+        },
         recommendedMatrix: {
             set2: ["samir", "crow"],
             set4: ["samir", "frigg", "sakifuwa"],

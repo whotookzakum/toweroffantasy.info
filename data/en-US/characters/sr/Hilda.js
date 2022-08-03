@@ -52,6 +52,7 @@ const hilda = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/Od8ovn6qwAs?start=6",
         recommendedMatrix: {
             set2: ["samir", "king", "shiro"],
             set3: ["pepper", "offensivelogic", "sobek"]

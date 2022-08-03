@@ -85,6 +85,7 @@ const bailing = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/oy-TfilSPBM?start=5",
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set3: ["pepper", "sobek"]

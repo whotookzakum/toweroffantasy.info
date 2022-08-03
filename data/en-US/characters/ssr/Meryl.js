@@ -99,6 +99,7 @@ const meryl = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/53QNsZxM5kg?start=11",
         recommendedMatrix: {
             set2: ["king", "shiro"],
             set3: ["sobek", "offensivelogic"]
