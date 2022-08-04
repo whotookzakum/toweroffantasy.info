@@ -111,7 +111,7 @@ const nemesis = {
         horoscope: 'Gemini',
         birthday: '25 May',
         voiceActors: {
-            jp: "",
+            jp: "戸松遥",
             en: "",
             cn: "宋媛媛"
         }
