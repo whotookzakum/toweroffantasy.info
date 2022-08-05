@@ -1,8 +1,9 @@
 import { ModalMenu } from "../../components/Modal";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
+import { EXPLORATION } from "../../data/en-US/exploration/exploration";
 
-function Mounts() {
+function Exploration() {
     return (
         <>
             <Head>
@@ -16,9 +17,10 @@ function Mounts() {
                 <p>
                     Coming soon.
                 </p>
+                <ModalMenu list={EXPLORATION}  />
             </header>
         </>
     );
 }
 
-export default Mounts;
+export default Exploration;

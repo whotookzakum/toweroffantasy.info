@@ -1,4 +1,4 @@
-const exploration = [
+export const EXPLORATION = [
     // Aesperia
     // ruins
     // training facility
@@ -75,17 +75,17 @@ const exploration = [
         videoSrc: ""
     },
     {
-        name: "Primordial Pillar Induction Stone Plate",
-        uri: "",
-        imgSrc: "",
+        name: "Pillar Induction Stone Plate",
+        uri: "pillar-induction-stone-plate",
+        imgSrc: "inductionplate.png",
         type: "relic",
         solution: "Use the relic Omnium Handcannon on the induction plate.",
         videoSrc: ""
     },
     {
         name: "Force Sensing Stone Plate",
-        uri: "",
-        imgSrc: "",
+        uri: "force-sensing-stone-plate",
+        imgSrc: "forceplate.png",
         type: "basic",
         solution: "Perform an aerial down smash attack on the plate with any weapon.",
         videoSrc: ""
@@ -273,26 +273,150 @@ const exploration = [
         solution: "",
         videoSrc: ""
     },
+
+    // Mirror City
     {
-        name: "",
+        name: "Amustment Simulation",
         chinaOnly: true,
-        uri: "",
-        imgSrc: "",
-        type: "",
-        solution: "",
+        uri: "amusement-simulation",
+        imgSrc: "amusementsimulation.png",
+        type: "basic",
+        solution: "Participate in the minigame. Rules will be explained by interacting with the machine.",
+        videoSrc: ""
+    },
+    {
+        name: "Gossip",
+        chinaOnly: true,
+        uri: "gossip",
+        imgSrc: "gossip.png",
+        type: "basic",
+        solution: "Speak to NPC that's willing to share gossip with you.",
+        videoSrc: ""
+    },
+    {
+        name: "Lost Item",
+        chinaOnly: true,
+        uri: "lost-item",
+        imgSrc: "lostitem.png",
+        type: "basic",
+        solution: "Interact to pick up someone's lost item. Finders keepers!",
         videoSrc: ""
     },
 
-    // Mirroria
-    // daily minigames
-    // gossip
-
-    // Dark & Gray Zones
-    // dark zone puzzles
-    // gray zone enemy portals that give exploration %
+    // Dark Zone
+    {
+        name: "Rechargable Box",
+        chinaOnly: true,
+        uri: "rechargable-box",
+        imgSrc: "rechargablebox.png",
+        type: "basic",
+        solution: "Illuminate with Green energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Invisible Box",
+        chinaOnly: true,
+        uri: "invisible-box",
+        imgSrc: "invisiblebox.png",
+        type: "basic",
+        solution: "Illuminate with Purple energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Camoflauged Box",
+        chinaOnly: true,
+        uri: "camoflauged-box",
+        imgSrc: "camoflaugedbox.png",
+        type: "basic",
+        solution: "Illuminate with Purple energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Large Secret Box",
+        chinaOnly: true,
+        uri: "large-secret-box",
+        imgSrc: "largesecretbox.png",
+        type: "basic",
+        solution: "Charge all the nearby energy supply devices with Green energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Guarded Secret Box",
+        chinaOnly: true,
+        uri: "guarded-secret-box",
+        imgSrc: "guardedsecretbox.png",
+        type: "basic",
+        solution: "Defeat the nearby Elite Monster to unlock the box.",
+        videoSrc: ""
+    },
+    {
+        name: "Energy Supply",
+        chinaOnly: true,
+        uri: "energy-supply",
+        imgSrc: "energysupply.png",
+        type: "basic",
+        solution: "Illuminate with Green energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Camoflauged Energy Supply",
+        chinaOnly: true,
+        uri: "camoflauged-energy-supply",
+        imgSrc: "camoflaugedenergysupply.png",
+        type: "basic",
+        solution: "Illuminate with Purple energy from Mi-a to reveal.",
+        videoSrc: ""
+    },
+    {
+        name: "Alarm Power Supply",
+        chinaOnly: true,
+        uri: "alarm-power-supply",
+        imgSrc: "alarmpowersupply.png",
+        type: "basic",
+        solution: "Defeat the nearby monsters with Yellow energy from Mi-a to charge.",
+        videoSrc: ""
+    },
+    {
+        name: "Crystal Storage Device",
+        chinaOnly: true,
+        uri: "crystal-storage-device",
+        imgSrc: "crystalstoragedevice.png",
+        type: "basic",
+        solution: "Interact to open.",
+        videoSrc: ""
+    },
+    {
+        name: "Camoflauged Storage Device",
+        chinaOnly: true,
+        uri: "camoflauged-storage-device",
+        imgSrc: "camoflaugedstoragedevice.png",
+        type: "basic",
+        solution: "Illuminate with Purple energy from Mi-a to reveal.",
+        videoSrc: ""
+    },
+    {
+        name: "Invisible Storage Device",
+        chinaOnly: true,
+        uri: "invisible-storage-device",
+        imgSrc: "invisiblestoragedevice.png",
+        type: "basic",
+        solution: "Illuminate with Purple energy from Mi-a to reveal.",
+        videoSrc: ""
+    },
+    
+    // Gray zone
+    // enemy portals
 
     // Disorderly Abyss
-    // ore collection
+    {
+        name: "Ore Collection",
+        chinaOnly: true,
+        uri: "ore-collection",
+        imgSrc: "orecollection.png",
+        type: "basic",
+        solution: "After activating the energy device, attack the ore veins with weapons of the corresponding element.",
+        videoSrc: ""
+    },
     {
         name: "Energy Repeater",
         chinaOnly: true,

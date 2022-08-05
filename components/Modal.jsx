@@ -4,6 +4,7 @@ import { RELICS } from "../data/en-US/relics/relicList";
 import { MOUNTS } from "../data/en-US/mounts/mountList";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
+import { EXPLORATION } from "../data/en-US/exploration/exploration";
 import { useRouter } from "next/router";
 
 export function ModalMenu({ list, filter, target }) {
@@ -49,6 +50,10 @@ export function ModalMenu({ list, filter, target }) {
                 //             <><em>{author}</em>, </>
                 //     });
                 // options.conditionalContent = <div className="authors">By {authors}</div>;
+            case EXPLORATION:
+                options.menuClass = "exploration";
+                options.linkPath = `exploration/${item.uri}`;
+                options.imgPath = `exploration/${item.imgSrc}`;
             default:
                 break;
         }

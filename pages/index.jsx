@@ -70,6 +70,9 @@ export default function Index() {
                     <li>tiny</li>
                     <li>Gateoo</li>
                     <li>Sky</li>
+                    <li>ChickenJoy</li>
+                    <li>Riala</li>
+                    <li>👑킹젖가슴드래곤👑</li>
                 </ul>
                 
                 <p><i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i></p>

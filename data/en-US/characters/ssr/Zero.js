@@ -22,8 +22,8 @@ const zero = {
             
             star4: `Increase the current weapon's base HP growth by **32%**.`,
             
-            star5: `Deal damage and produce a damage orb, which lsts for **20** seconds and increases ATK of any teammate who picks it up by **1.5%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.  
-            <abbr title='China Exclusive'></abbr> Deal damage and produce a damage orb, which lsts for **20** seconds and increases ATK of any teammate who picks it up by **2%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.`,
+            star5: `Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **1.5%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.  
+            <abbr title='China Exclusive'></abbr> Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.`,
             
             star6: `Using an ability grants allies healing orbs and damage orbs equal to the number of Omnium Cubes.`
         },
