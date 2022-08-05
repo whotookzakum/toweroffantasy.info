@@ -101,7 +101,7 @@ const king = {
         abilitiesVideoSrc: "https://www.youtube.com/embed/GGT4yoDCb4I?start=10",
         recommendedMatrix: {
             set2: ["king", "shiro"],
-            set3: ["sobek", "offensivelogic"]
+            set3: ["sobek"]
         }
     },
 

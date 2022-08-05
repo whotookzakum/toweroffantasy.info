@@ -84,9 +84,9 @@ const saki = {
     },
 
     matrix: {
-        set2: `While Ice Resonance is active: Every **3** seconds, deal **60%/100%/150%/220%** * Ice ATK to enemies within 10 meters of the surrounding area and apply [Frost] effect: 5% slowing effect for **3.5** seconds, after 3 stacks Freeze the target for **3** seconds (excluding bosses) and increase the target's Ice Damage by **12%** (lasts **18** seconds). These matrices work in the background, and for multiple sets the highest star set will be used.`,
+        set2: `While Ice Resonance is active: Every **3** seconds, deal **60%/100%/150%/220%** of Ice ATK to enemies within 10 meters and apply one stack of Frost: 5% slowing effect for **3.5** seconds. After 3 stacks, Freeze the target for **3** seconds (excluding bosses) and the target will take **12%** more Ice damage for **18** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `Attack the target **10** times and add a 12-second [Frozen] mark: Attack the marked target to increase the ice element damage by **25%/28%/31%/34%**. These matrices work in the background, and for multiple sets the highest star set will be used.`
+        set4: `Attack the target **10** times to add a 12-second Frozen mark, increasing your Ice damage against the target by **25%/28%/31%/34%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
     },
 
     awakening: {

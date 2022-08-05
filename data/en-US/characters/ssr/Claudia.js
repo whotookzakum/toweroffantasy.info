@@ -113,12 +113,12 @@ const claudia = {
         recommendedMatrix: {
             set2: ["claudia", "samir", "crow"],
             set4: ["claudia"],
-            set3: ["pepper", "sobek"]
+            set3: ["sobek"]
         }
     },
 
     matrix: {
-        set2: `Increase damage by **13%/17%/20%/23%** when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target in mid-air.`,
+        set2: `Increase damage by **13%/17%/20%/23%** when hitting a target in mid-air or initiating an aerial attack. Reset double jump upon hitting the target while airborne.`,
 
         set4: `Hitting an enemy with a skill reduces the cooldowns of all weapon skills by **1.5/2/2.5/3** seconds and increases the damage of discharge skills by **36%/45%/54%/63%** for **15** seconds.`,
     },

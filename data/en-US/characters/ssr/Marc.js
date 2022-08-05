@@ -104,9 +104,9 @@ const marc = {
     },
 
     matrix: {
-        set2: `Adds a life shield of **15%** of your current HP to all teammates after attacking an enemy for **15** seconds, resetting **10** seconds after you leave the battle. If other life shields are present, all shield values are combined. Damage is reduced by **11%/13%/15%/17%** for **15** seconds and is not stackable. This effect is also active in the background, and is effective for multiple sets up to the maximum star level.`,
+        set2: `Attacking an enemy adds a shield to all teammates for **15%** of your current HP, lasting **15** seconds and resetting after leaving combat for **10** seconds. This shield combines with other shields. When the shield is activated, damage received is reduced by **11%/13%/15%/17%** for **15** seconds (not stackable). This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `Increases attack power by **6%/7.5%/9%/11.5%** and teammates attack power by **3%/3.5%/4.5%/5.75%** for **15** seconds when life shield is granted, stacks up to **3** levels. This will effect is also active in the background, with multiple sets of equipment taking effect up to the maximum star level.`
+        set4: `When shields are obtained, increase your ATK by **6%/7.5%/9%/11.5%** and teammates' ATK by **3%/3.5%/4.5%/5.75%** for **15** seconds, up to **3** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
     },
 
     awakening: {

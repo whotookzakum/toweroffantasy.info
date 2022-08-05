@@ -78,15 +78,15 @@ const frigg = {
         },
         recommendedMatrix: {
             set2: ["samir", "crow"],
-            set4: ["samir", "frigg", "sakifuwa"],
+            set4: ["frigg", "saki-fuwa"],
             set3: ["sobek"]
         }
     },
 
     matrix: {
-        set2: `When switching from ice weapon to ice weapon, the ice attack power is increased by **15%/18%/21%/25%** for **10** seconds. This set also works in the background (when not using the weapon where this set is equipped on), but only the set with the highest star rating will work when  multiple sets are equipped.`,
+        set2: `When switching from ice weapon to ice weapon, Ice ATK is increased by **15%/18%/21%/25%** for **10** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `When the ice field is released by the weapon Balmung, the enemy targets within the ice field take **60%/75%/90%/105%** ice damage per second.`
+        set4: `When using Frozen Domain, enemies within the domain take **60%/75%/90%/105%** of Ice ATK as Ice damage every second.`
     },
 
     awakening: {
