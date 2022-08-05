@@ -99,7 +99,7 @@ const echo = {
         abilitiesVideoSrc: "https://www.youtube.com/embed/a-SWBWfrFDA?start=5",
         recommendedMatrix: {
             set2: ["samir", "king", "shiro"],
-            set3: ["sobek", "offensivelogic"]
+            set3: ["sobek"]
         }
     },
     
