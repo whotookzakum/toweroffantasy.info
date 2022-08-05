@@ -132,24 +132,22 @@ export default function SimulacrumPage({ simulacrum }) {
     })
     const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
         return (matricesList.map(matrix => {
-            if (matrix) {
-                // Get the data by matching the matrix to the uri
-                const matrixData = MATRICES.find(mat => mat.uri === matrix);
-                const setNum = set.split("set").pop();
-                return (
-                    <li key={setNum + matrix}>
-                        <Link href={`/matrices/${matrixData.uri}`}>
-                            <a>
-                                <div>
-                                    <img src={`/static/images/matrices/${matrixData.imgSrc}`} alt={matrixData.name + " Matrix"} />
-                                    <i className="tag">x{setNum}</i>
-                                </div>
-                                {matrixData.name}
-                            </a>
-                        </Link>
-                    </li>
-                )
-            }
+            // Get the data by matching the matrix to the uri
+            const matrixData = MATRICES.find(mat => mat.uri === matrix);
+            const setNum = set.split("set").pop();
+            return (
+                <li key={setNum + matrix}>
+                    <Link href={`/matrices/${matrixData.uri}`}>
+                        <a>
+                            <div>
+                                <img src={`/static/images/matrices/${matrixData.imgSrc}`} alt={matrixData.name + " Matrix"} />
+                                <i className="tag">x{setNum}</i>
+                            </div>
+                            {matrixData.name}
+                        </a>
+                    </Link>
+                </li>
+            )
         }))
     });
     return (

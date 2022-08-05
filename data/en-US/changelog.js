@@ -3,7 +3,7 @@ export const CHANGELOG = [
         date: "August 4",
         text: 
             `Recommended Matrices now properly display the set numbers and link to appropriate matrix pages. Recommended matrices still need some work to be adjusted for both Global and CN; Global banner info updated; finished proofreading CN matrices text; Nemesis JP VA added;
-            Recommended matrices updated.. Ruby: removed 2tsubasa; Frigg: removed 4samir; Claudia: removed 3pepper; Huma: removed 3offensive-logic; Crow: removed 3pepper 4samir; King: removed 3offensive-logic; Meryl: removed 3offensive-logic; Samir: removed 3pepper; Shiro: removed 3offensive-logic; Tsubasa: removed 3pepper`
+            Recommended matrices updated.. Ruby: removed 2tsubasa; Frigg: removed 4samir; Claudia: removed 3pepper; Huma: removed 3offensive-logic; Crow: removed 3pepper 4samir; King: removed 3offensive-logic; Meryl: removed 3offensive-logic; Samir: removed 3pepper; Shiro: removed 3offensive-logic; Tsubasa: removed 3pepper; Hilda: removed 3offensive-logic; Ene: removed 3offensive-logic; Echo: removed 3offensive-logic; BaiLing: removed 2claudia, added 2huma`
     },
     {
         date: "August 3",
