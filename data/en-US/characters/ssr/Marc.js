@@ -104,9 +104,9 @@ const marc = {
     },
 
     matrix: {
-        set2: `Attacking an enemy adds a shield to all teammates for **15%** of your current HP, lasting **15** seconds and resetting after leaving combat for **10** seconds. This shield combines with other shields. When the shield is activated, damage received is reduced by **11%/13%/15%/17%** for **15** seconds (not stackable). This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
+        set2: `Attacking an enemy adds a life shield to all teammates for **15%** of your current HP, lasting **15** seconds and resetting after leaving combat for **10** seconds. This shield combines with other shields. When the shield is activated, damage received is reduced by **11%/13%/15%/17%** for **15** seconds (not stackable). This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `When shields are obtained, increase your ATK by **6%/7.5%/9%/11.5%** and teammates' ATK by **3%/3.5%/4.5%/5.75%** for **15** seconds, up to **3** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
+        set4: `When life shields are obtained from any source, increase your ATK by **6%/7.5%/9%/11.5%** and teammates' ATK by **3%/3.5%/4.5%/5.75%** for **15** seconds, up to **3** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.` // Effect can activate from shields granted from other players
     },
 
     awakening: {
