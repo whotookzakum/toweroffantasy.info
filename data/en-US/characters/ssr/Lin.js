@@ -123,8 +123,7 @@ const lin = {
         },
         recommendedMatrix: {
             set2: ["lin", "samir"],
-            set4: ["lin"],
-            set3: []
+            set4: ["lin"]
         }
     },
 
