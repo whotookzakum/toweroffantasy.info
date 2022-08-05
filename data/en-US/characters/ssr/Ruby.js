@@ -73,16 +73,16 @@ const ruby = {
             ]
         },
         recommendedMatrix: {
-            set2: ["ruby", "samir", "tsubasa", "crow"],
+            set2: ["ruby", "samir", "crow"],
             set4: ["ruby"],
             set3: ["sobek"]
         }
     },
 
     matrix: {
-        set2: `After releasing weapon skill, fire attack is increased by **15%/18%/21%/25%** for **25** seconds, the effect is triggered by different star levels, the effect is not stackable.`,
+        set2: `After using the weapon skill, Flame ATK is increased by **15%/18%/21%/25%** for **25** seconds. The effect works in the background, and if multiple sets are used, the highest star set will take effect (does not stack).`,
 
-        set4: `After releasing the weapon skill, gain (mastery) for **15** seconds, cooldown **15** seconds (different of levels (mastery) shares the cooldown), (mastery) cannot be stacked. Each time the basic attack hits the target, the fire damage is increased by **4%/5%/6%/7%** which lasts until the end of (mastery), stacks up to **6** levels, adding up to **1** level every **0.2** seconds, after **6** levels are added, you get a shield to resist **1** damage.`
+        set4: `After releasing the weapon skill, gain Mastery for **15** seconds, cooldown **15** seconds. While Mastery is active, successful basic attacks increase Flame damage by **4%/5%/6%/7%**, up to **6** stacks, with a cooldown of **0.2** seconds between stacks. At **6** stacks, gain a shield to resist damage **1** time. Mastery cannot be stacked, and different levels of mastery share cooldown.`
     },
 
     awakening: {

@@ -83,7 +83,7 @@ const samir = {
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set4: ["samir"],
-            set3: ["sobek", "pepper"]
+            set3: ["sobek"]
         },
     },
 

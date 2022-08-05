@@ -87,9 +87,9 @@ const tsubasa = {
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/GralXQC8G-E?start=10",
         recommendedMatrix: {
-            set4: ["sakifuwa"],
+            set4: ["saki-fuwa"],
             set2: ["samir", "claudia", "crow"],
-            set3: ["sobek", "pepper"]
+            set3: ["sobek"]
         }
     },
 

@@ -92,9 +92,9 @@ const baiyuekui = {
     },
 
     matrix: {
-        set2: `If you have **200~999** charge when switching to this weapon, use **200** points to gain a **15%/18%/21%/25%** attack boost for **15** seconds, cooldown **5** seconds, does not stack.`,
+        set2: `If you have **200~999** charge when switching to this weapon, use **200** charge to gain a **15%/18%/21%/25%** attack boost for **15** seconds, cooldown **5** seconds, does not stack.`,
 
-        set4: `For every **0.6** seconds that a combo is released, the **next** combo will hit the **first** enemy for **106%/122%/140%/160%** ranged damage (5m radius), up to **530%/610%/700%/800%**; shatter increases by **7%/14%/21%/28%** for **4** seconds, does not stack. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
+        set4: `When you delay using a discharge skill, the next discharge skill will deal AoE damage to enemies within 5m. The AoE will increase by **106%/122%/140%/160%** every **0.6** seconds, up to **530%/610%/700%/800%**. The discharge will also increase Shatter by **7%/14%/21%/28%** for **4** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
     },
 
     awakening: {

@@ -112,7 +112,7 @@ const huma = {
         recommendedMatrix: {
             set2: ["king", "shiro"],
             set4: ["huma"],
-            set3: ["sobek", "offensivelogic"]
+            set3: ["sobek"]
         }
     },
     

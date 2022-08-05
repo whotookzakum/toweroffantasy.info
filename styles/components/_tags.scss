@@ -35,3 +35,17 @@ section.china-exclusive, .china-exclusive {
 .china-exclusive {
     padding: 1rem;
 }
+
+.tag {
+    filter: drop-shadow(0px 2px 1px clr(shadow));
+    display: inline-block;
+    line-height: 1;
+    background-image: linear-gradient(-45deg, transparent 15%, #2e9de7 0);
+    border-radius: 2px;
+    cursor: default;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding: 0.2em 0.42em 0.2em 0.36em;
+    text-decoration: none;
+    text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
+}

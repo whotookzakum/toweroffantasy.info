@@ -7,6 +7,8 @@ import CNTag from "../../components/CNTag";
 import elementalEffects from "../../data/en-US/elementalEffects";
 import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
+import Link from "next/link";
+import { MATRICES } from "../../data/en-US/matrices/matrixList";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -129,8 +131,24 @@ export default function SimulacrumPage({ simulacrum }) {
         )
     })
     const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
-        return (matricesList.map(matrix =>
-            <li key={matrix}><img src={`/static/images/matrices/${matrix}.png`} alt={matrix + " Matrix"} /></li>))
+        return (matricesList.map(matrix => {
+            // Get the data by matching the matrix to the uri
+            const matrixData = MATRICES.find(mat => mat.uri === matrix);
+            const setNum = set.split("set").pop();
+            return (
+                <li key={setNum + matrix}>
+                    <Link href={`/matrices/${matrixData.uri}`}>
+                        <a>
+                            <div>
+                                <img src={`/static/images/matrices/${matrixData.imgSrc}`} alt={matrixData.name + " Matrix"} />
+                                <i className="tag">x{setNum}</i>
+                            </div>
+                            {matrixData.name}
+                        </a>
+                    </Link>
+                </li>
+            )
+        }))
     });
     return (
         <>
@@ -203,12 +221,12 @@ export default function SimulacrumPage({ simulacrum }) {
                     {Object.keys(weapon.abilities).length > 0 &&
                         <section className="weapon-abilities w-75ch">
                             <h3>Weapon Abilities</h3>
-                            {weapon.abilitiesVideoSrc && 
+                            {weapon.abilitiesVideoSrc &&
                                 <iframe src={weapon.abilitiesVideoSrc} allow="fullscreen" modestbranding={1} />
                             }
                             Data reflects unleveled weapons.
                             {abilities}
-                            
+
                         </section>
                     }
                     <section className="weapon-materials w-75ch" >

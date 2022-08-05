@@ -20,9 +20,11 @@
         img {
             max-width: 128px;
         }
+
         h3 {
             margin: 0 0.5rem;
         }
+
         a {
             height: calc(100% - 2rem);
         }
@@ -34,11 +36,12 @@
         }
     }
 
-    &.mounts { 
+    &.mounts {
         img {
             max-width: 192px;
         }
     }
+
     li {
         position: relative;
         text-align: center;
@@ -71,6 +74,7 @@
             margin: 0.5rem;
         }
     }
+
     &.guides {
         gap: 0;
         grid-template-columns: 1fr;
@@ -81,6 +85,7 @@
             height: fit-content;
             border-bottom: 1px solid clr(text, dark);
         }
+
         a {
             padding: 0.5rem 0;
             display: flex;
@@ -88,12 +93,14 @@
             height: 100%;
             justify-content: space-between;
         }
+
         abbr {
             position: relative;
             top: 0;
             left: 0;
             margin-right: 0.3rem;
         }
+
         h3 {
             margin: 0;
             font-weight: normal;
@@ -104,6 +111,7 @@
                 color: clr(text);
             }
         }
+
         .guide-date {
             color: clr(text, gray);
         }
@@ -174,11 +182,13 @@
         align-items: center;
         gap: 1rem;
 
-        h2, h1 {
+        h2,
+        h1 {
             margin: 0;
             line-height: 1.1;
             text-shadow: 3px 3px 0 clr(text, dark);
         }
+
         h2 {
             font-size: 1.6rem;
             color: clr(text, disabled);
@@ -208,6 +218,7 @@
             h2::after {
                 content: ' Matrix';
             }
+
             img {
                 max-width: 192px;
             }
@@ -217,15 +228,17 @@
             h2::after {
                 content: ' Relic';
             }
+
             img {
                 max-width: 128px;
             }
         }
-        
+
         &.mounts {
             h2::after {
                 content: 'Mount';
             }
+
             img {
                 max-height: unset;
                 max-width: 192px;
@@ -241,7 +254,7 @@
         height: 100%;
         width: 100%;
     }
-    
+
     .modal-table {
         text-align: left;
 
@@ -300,7 +313,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
-    
+
 
     .weapon-stat {
         display: flex;
@@ -352,7 +365,7 @@
 .awakening-gifts,
 .character-bio,
 .character-bio .bio-container,
-.voice-actors, 
+.voice-actors,
 .weapon-materials,
 .weapon-rec-matrices,
 .weapon-abilities {
@@ -374,7 +387,7 @@
 }
 
 .weapon-materials {
-    
+
     ul {
         padding: 1rem;
         background-color: clr(container, light);
@@ -386,7 +399,7 @@
         li {
             justify-self: center;
             box-shadow: $shadow;
-            
+
             img {
                 width: 90px;
             }
@@ -398,6 +411,7 @@
     flex: 1;
 
     ul {
+        text-align: center;
         box-shadow: $shadow;
         background-color: clr(container, light);
         padding: 1rem;
@@ -407,6 +421,19 @@
         img {
             width: 128px;
             object-fit: none;
+        }
+
+        li div {
+            position: relative;
+        }
+
+        .tag {
+            font-style: normal;
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem;
+            font-size: 1.2rem;
+            color: clr(text);
         }
     }
 
@@ -418,12 +445,13 @@
         background-color: clr(container);
         padding: 1.5rem;
     }
+
     .ability-inputs {
         margin: 0.5rem 0;
         color: #48adbd;
         text-shadow: $shadow;
     }
-    
+
 }
 
 .awakening-traits {
@@ -493,7 +521,8 @@
     }
 }
 
-.character-bio, .voice-actors {
+.character-bio,
+.voice-actors {
 
     .bio-container {
         padding: $spacing;
@@ -548,21 +577,23 @@
 }
 
 .matrix-set {
-    & > p {
+    &>p {
         margin: 1rem 0;
     }
 
     details {
         box-shadow: none;
+
         summary {
             box-shadow: $shadow;
         }
     }
+
     .details-content {
         padding: 0;
         background: none;
     }
-    
+
 }
 
 .modal-body.mounts {

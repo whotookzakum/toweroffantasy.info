@@ -97,8 +97,8 @@ const coco = {
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/tiH-5dFUW1E?start=11",
         recommendedMatrix: {
-            set2: ["cocoritter", "meryl"],
-            set4: ["cocoritter", "zero"],
+            set2: ["coco-ritter", "meryl"],
+            set4: ["coco-ritter", "zero"],
             set3: ["pepper"]
         }
     },

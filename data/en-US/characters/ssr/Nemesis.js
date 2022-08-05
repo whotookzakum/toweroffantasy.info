@@ -21,6 +21,15 @@ const nemesis = {
                 duration: "16d",
                 week: "28~30"
             }
+        ],
+        glob: [
+            {
+                bannerNo: 1,
+                start: "10 August 2022",
+                end: "31 August 2022",
+                duration: "21d",
+                week: "1~3"
+            }
         ]
     },
     weapon: {
@@ -77,8 +86,8 @@ const nemesis = {
             ]
         },
         recommendedMatrix: {
-            set2: ["nemesis", "cocoritter"],
-            set4: ["nemesis", "cocoritter"],
+            set2: ["nemesis", "coco-ritter"],
+            set4: ["nemesis", "coco-ritter"],
             set3: ["sobek"]
         }
     },
@@ -86,7 +95,7 @@ const nemesis = {
     matrix: {
         set2: `When healing a target, the healed target's Volt ATK is increased by **15%/18%/21%/25%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
 
-        set4: `When healing yourself or your own electrodes, the healed target gains a chance to Lightning Strike; the next attack within **30** seconds deals **300%/375%/450%/525%** of Volt ATK (half for electrodes) as Volt damage to the first target hit. Can only be triggered again after **10** seconds. Lightning Strike is not stackable, and only the highest level will take effect when using multiple sets.`
+        set4: `When healing yourself or your own electrodes, the healed target gains a chance to Lightning Strike; the next attack within **30** seconds deals **300%/375%/450%/525%** of Volt ATK (half for electrodes). Can only be triggered again after **10** seconds. Lightning Strike is not stackable, and only the highest level set will take effect when using multiple sets.`
     },
 
     awakening: {

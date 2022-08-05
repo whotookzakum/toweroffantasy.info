@@ -36,7 +36,7 @@ const cobalt = {
 
             star2: "Increase the current weapon's base ATK growth by **16%**.",
 
-            star3: 'The skill Blast Grenade and dodge attack Melee Break will apply *Ionic Burn* to targets, dealing **90%** of ATK every second for **10** seconds.',
+            star3: 'Using the skill or dodge attack on burning targets will additionally apply *Ionic Burn*, dealing **90%** of ATK as Flame damage every second for **10** seconds.',
 
             star4: "Increase the current weapon's base ATK growth by **32%**.",
 
