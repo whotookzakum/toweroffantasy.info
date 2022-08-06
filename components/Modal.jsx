@@ -4,6 +4,7 @@ import { RELICS } from "../data/en-US/relics/relicList";
 import { MOUNTS } from "../data/en-US/mounts/mountList";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
+import { EXPLORATION } from "../data/en-US/exploration/exploration";
 import { useRouter } from "next/router";
 
 export function ModalMenu({ list, filter, target }) {
@@ -42,13 +43,12 @@ export function ModalMenu({ list, filter, target }) {
                 options.menuClass = "guides";
                 options.linkPath = `guides/${item.type}/${item.uri}`;
                 options.conditionalContent = <div className="guide-date">{item.date}</div>
-                // const authors =
-                //     item.author.map((author, index) => {
-                //         return (index === item.author.length - 1) ?
-                //             <em>{author}</em> :
-                //             <><em>{author}</em>, </>
-                //     });
-                // options.conditionalContent = <div className="authors">By {authors}</div>;
+                break;
+            case EXPLORATION:
+                options.menuClass = "exploration";
+                options.linkPath = `exploration/${item.uri}`;
+                options.imgPath = `exploration/${item.imgSrc}`;
+                break;
             default:
                 break;
         }
@@ -59,7 +59,7 @@ export function ModalMenu({ list, filter, target }) {
                     <a>
                         {item.chinaOnly && options.menuClass !== "guides" && <abbr title="China Exclusive" />}
                         {options.imgPath &&
-                            <div className="flex">
+                            <div className={options.menuClass === "exploration" ? "" : "flex"}>
                                 <img src={`/static/images/${options.imgPath}`} alt={item.name} />
                             </div>
                         }
@@ -99,6 +99,9 @@ export function Modal({ item, children }) {
             options.bgImgPath = `art/${item.imgSrc}`;
             break;
         case "mounts":
+            options.bgImgPath = `bg-2.png`;
+            break;
+        case "exploration":
             options.bgImgPath = `bg-2.png`;
             break;
         default:

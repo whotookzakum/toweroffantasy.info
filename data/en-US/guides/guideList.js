@@ -4,7 +4,7 @@ import { simulacra } from "./systems/simulacra";
 import { gacha } from "./systems/gacha";
 import { thingsYouMustKnow } from "./general/15-things-you-must-know.js";
 import { vitality } from "./systems/vitality";
-import { homeIsland } from "./systems/home-island";
+import { artificialIslandConstruction } from "./systems/artificial-island-construction";
 import { cnRegistration } from "./technical/cn-registration";
 import { apexLeague } from "./strategy/apex-league";
 import { gear } from "./systems/gear";
@@ -24,18 +24,16 @@ export const GUIDES = [
     // GAME SYSTEMS
     gacha,
     // combat: include discharge, elements, resonance
-    // exploration (Aesperia)
-        // outer artificial islands unlock, map of artificial island
-    // exploration (Vera)
-        // quicksand whirlpool, gray zone, dark zone, map of mirror city
+    // unlock artificial island; map of artificial island
+    // unlock outer artificial islands,
+    // vera exploration notes: quicksand whirlpool, gray zone & dark zone explanations, map of mirror city
     vitality,
     gear,
     pvp,
     simulacra,
     dailies,
-    // pvp
     // battle royale
-    homeIsland,
+    artificialIslandConstruction,
     // time gate
 
     // STRATEGY

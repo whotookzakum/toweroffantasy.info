@@ -1,12 +1,39 @@
-const exploration = [
+export const EXPLORATION = [
     // Aesperia
-    // ruins
-    // training facility
+    // scenic points
+    {
+        name: "Supply Pod",
+        uri: "supply-pod",
+        imgSrc: "supplypod.png",
+        type: "basic",
+        location: "aesperia",
+        solution: "Interact to open. Some supply pods may be guarded by an Elite Monster or locked by a time gate. Supply pods are often found in conjunction with other puzzles.",
+        videoSrc: ""
+    },
+    {
+        name: "Ruins",
+        uri: "ruins",
+        imgSrc: "ruins.png",
+        type: "basic",
+        location: "aesperia",
+        solution: "Clear the solo dungeon. Ruins can only be cleared one time, but have 3 difficulties unlocked by leveling up.",
+        videoSrc: ""
+    },
+    {
+        name: "Training Facility",
+        uri: "training-facility",
+        imgSrc: "trainingfacility.png",
+        type: "basic",
+        location: "aesperia",
+        solution: "Complete the Ability Training minigame. Different training facilities reward different amounts of Training Points.",
+        videoSrc: ""
+    },
     {
         name: "Dandelion",
         uri: "dandelion",
         imgSrc: "dandelion.png",
         type: "basic",
+        location: "aesperia",
         solution: "Use any weapon to hit the dandelion and then hit the seed that has the black nucleus in it.",
         videoSrc: ""
     },
@@ -15,6 +42,7 @@ const exploration = [
         uri: "tar-pit",
         imgSrc: "tarpit.png",
         type: "elemental",
+        location: "aesperia",
         solution: "Attack with a Flame-element weapon.",
         videoSrc: ""
     },
@@ -23,6 +51,7 @@ const exploration = [
         uri: "kerosenia",
         imgSrc: "kerosenia.png",
         type: "elemenal",
+        location: "aesperia",
         solution: "Attack with a Flame-element weapon.",
         videoSrc: ""
     },
@@ -31,6 +60,7 @@ const exploration = [
         uri: "chowchow",
         imgSrc: "chowchow.png",
         type: "basic",
+        location: "aesperia",
         solution: "Throw an Ice-Shell Ball into the Chowchow. Ice-Shell Balls are usually found near the Chowchow, though some may be hidden.",
         videoSrc: ""
     },
@@ -39,6 +69,7 @@ const exploration = [
         uri: "thornvine",
         imgSrc: "thornvine.png",
         type: "elemental",
+        location: "aesperia",
         solution: "Attack with a Flame-element weapon.",
         videoSrc: ""
     },
@@ -47,6 +78,7 @@ const exploration = [
         uri: "glowshroom",
         imgSrc: "glowshroom.png",
         type: "basic",
+        location: "aesperia",
         solution: "Jump on the glowshroom caps in the correct order. If you jumped on the correct one, there will be subtle visual and audio feedback.",
         videoSrc: ""
     },
@@ -55,6 +87,7 @@ const exploration = [
         uri: "ring-of-echoes",
         imgSrc: "ringofechoes.png",
         type: "basic",
+        location: "aesperia",
         solution: "Face the puzzle from the circular pad with a square in the middle, and to the right is a pad between 2 Cactus Plants. Jump on that pad and once you do another Music Pad will light up and just follow the order that the pads glow in.",
         videoSrc: ""
     },
@@ -63,6 +96,7 @@ const exploration = [
         uri: "destroyable-rock",
         imgSrc: "destroyablerock.png",
         type: "relic",
+        location: "aesperia",
         solution: "Use the relic Missile Barrage to break the wall.",
         videoSrc: ""
     },
@@ -71,22 +105,25 @@ const exploration = [
         uri: "singularity-rock",
         imgSrc: "singularityrock.png",
         type: "relic",
+        location: "aesperia",
         solution: "Use the relic Strange Cube to push the ball off the statue.",
         videoSrc: ""
     },
     {
-        name: "Primordial Pillar Induction Stone Plate",
-        uri: "",
-        imgSrc: "",
+        name: "Pillar Induction Stone Plate",
+        uri: "pillar-induction-stone-plate",
+        imgSrc: "inductionplate.png",
         type: "relic",
-        solution: "Use the relic Omnium Handcannon on the induction plate.",
+        location: "aesperia",
+        solution: `Use the relic <a href='/relics/omnium-handcannon'>Omnium Handcannon</a> on the induction plate.`,
         videoSrc: ""
     },
     {
         name: "Force Sensing Stone Plate",
-        uri: "",
-        imgSrc: "",
+        uri: "force-sensing-stone-plate",
+        imgSrc: "forceplate.png",
         type: "basic",
+        location: "aesperia",
         solution: "Perform an aerial down smash attack on the plate with any weapon.",
         videoSrc: ""
     },
@@ -95,6 +132,7 @@ const exploration = [
         uri: "mushroom-man",
         imgSrc: "mushroomman.png",
         type: "basic",
+        location: "aesperia",
         solution: "Speak with the Mushroom Man to participate in a minigame. Complete the game within the time limit.",
         videoSrc: ""
     },
@@ -103,6 +141,7 @@ const exploration = [
         uri: "ai-servant",
         imgSrc: "aiservant.png",
         type: "basic",
+        location: "aesperia",
         solution: "Follow the AI Servant and it will lead you to an NPC.",
         videoSrc: ""
     },
@@ -111,6 +150,7 @@ const exploration = [
         uri: "energy-screen",
         imgSrc: "energyscreen.png",
         type: "basic",
+        location: "aesperia",
         solution: "Enter the correct passcode into the terminal to remove the barrier.",
         videoSrc: ""
     },
@@ -119,6 +159,7 @@ const exploration = [
         uri: "lava-pit",
         imgSrc: "lavapit.png",
         type: "elemental",
+        location: "aesperia",
         solution: "Attack with an Ice-element weapon.",
         videoSrc: ""
     },
@@ -127,6 +168,7 @@ const exploration = [
         uri: "telescope",
         imgSrc: "telescope.png",
         type: "basic",
+        location: "aesperia",
         solution: "Connect the stars in the shape of the constellation. Correct connections will persist even after pressing reset, so you can continuously attempt all lines and reset until it's solved.",
         videoSrc: ""
     },
@@ -135,6 +177,7 @@ const exploration = [
         uri: "abandoned-truck",
         imgSrc: "abandonedtruck.png",
         type: "basic",
+        location: "aesperia",
         solution: "Enter the correct passcode into the terminal to unlock the truck.",
         videoSrc: ""
     },
@@ -143,6 +186,7 @@ const exploration = [
         uri: "concentration-ray",
         imgSrc: "concentrationray.png",
         type: "basic",
+        location: "aesperia",
         solution: "Interact with the concentration rays in order to transmit energy between them. Each concentration ray faces the next ray, so after finding one you can trace them back to the start. There are two of these puzzles in Crown.",
         videoSrc: ""
     },
@@ -151,6 +195,7 @@ const exploration = [
         uri: "spliced-metal-box",
         imgSrc: "splicedmetalbox.png",
         type: "basic",
+        location: "aesperia",
         solution: "Push the the box pieces together to connect the pattern on them.",
         videoSrc: ""
     },
@@ -159,6 +204,7 @@ const exploration = [
         uri: "earthphyte",
         imgSrc: "earthphyte.png",
         type: "basic",
+        location: "aesperia",
         solution: "Throw the matching color flower bud into the Earthphyte.",
         videoSrc: ""
     },
@@ -167,6 +213,7 @@ const exploration = [
         uri: "nucleus-drone",
         imgSrc: "nucleusdrone.png",
         type: "basic",
+        location: "aesperia",
         solution: "Destroy the drone with any weapon. Ranged weapon recommended.",
         videoSrc: ""
     },
@@ -175,21 +222,23 @@ const exploration = [
         uri: "silvercap-tree",
         imgSrc: "silvercaptree.png",
         type: "basic",
+        location: "aesperia",
         solution: "Interact with the tree to begin a minigame. Drop the crystal into the hole at the bottom, moving it left and right to avoid obstacles along the way.",
         videoSrc: ""
     },
 
     // Artificial Island
     // how to unlock outer islands..
-    // {
-    //     name: "Space Leap",
-    //     chinaOnly: true,
-    //     uri: "space-leap",
-    //     imgSrc: "spaceleap.png",
-    //     type: "basic",
-    //     solution: "Enter one of the portals to teleport to the corresponding endpoint.",
-    //     videoSrc: ""
-    // },
+    {
+        name: "Space Leap",
+        chinaOnly: true,
+        uri: "space-leap",
+        imgSrc: "spaceleap.png",
+        type: "basic",
+        location: "artificial island",
+        solution: "Enter one of the portals to teleport to the corresponding endpoint.",
+        videoSrc: ""
+    },
 
     // Vera Desert
     {
@@ -198,6 +247,7 @@ const exploration = [
         uri: "hungry-critter",
         imgSrc: "hungrycritter.png",
         type: "basic",
+        location: "vera",
         solution: "Give the critter the food that it wants.",
         videoSrc: ""
     },
@@ -207,6 +257,7 @@ const exploration = [
         uri: "friendly-critter",
         imgSrc: "friendlycritter.png",
         type: "basic",
+        location: "vera",
         solution: "Perform the correct action to the critter. Actions can be performed from opening the chat and clicking the emotes button near the Send button. The dancing critter wants your applause and the waving critter wants you to wave!",
         videoSrc: ""
     },
@@ -216,6 +267,7 @@ const exploration = [
         uri: "elemental-supply-pod",
         imgSrc: "elementalsupplypod.png",
         type: "elemental",
+        location: "vera",
         solution: "Attack 4 nearby floating orbs with the correct element to unseal the supply pod.",
         videoSrc: ""
     },
@@ -225,6 +277,7 @@ const exploration = [
         uri: "trace-stone",
         imgSrc: "tracestone.png",
         type: "basic",
+        location: "vera",
         solution: "Stand in an area where the two split stones line up and the sigil glows yellow. Shift your camera to get the exact position that the stones line up.",
         videoSrc: ""
     },
@@ -234,6 +287,7 @@ const exploration = [
         uri: "lost-gerbil",
         imgSrc: "lostgerbil.png",
         type: "basic",
+        location: "vera",
         solution: "Guide the gerbil back to its burrow. Follow the route of small desert plants buried in the sand.",
         videoSrc: ""
     },
@@ -243,6 +297,7 @@ const exploration = [
         uri: "gerbil-nest",
         imgSrc: "gerbilnest.png",
         type: "basic",
+        location: "vera",
         solution: "Interact with the glittering gerbil to play a game. The 3 gerbils will swap burrows repeatedly. Find the glittering gerbil once they have finished swapping.",
         videoSrc: ""
     },
@@ -252,6 +307,7 @@ const exploration = [
         uri: "watcher",
         imgSrc: "watcher.png",
         type: "basic",
+        location: "vera",
         solution: "Interact with the watcher before it closes its shell. Watchers will close their shell when you approach them. You can dash and rush straight at them, use the Quantum Cloak, or approach from above with the Jetpack.",
         videoSrc: ""
     },
@@ -261,6 +317,7 @@ const exploration = [
         uri: "cactus-fruit",
         imgSrc: "cactusfruit.png",
         type: "basic",
+        location: "vera",
         solution: "Attack the cactus with any weapon, then attack the bud that rises up afterwards.",
         videoSrc: ""
     },
@@ -270,35 +327,221 @@ const exploration = [
         uri: "cave-mushroom",
         imgSrc: "cavemushroom.png",
         type: "",
-        solution: "",
+        location: "vera",
+        solution: "Find the spiky mineral and bring genetic stuff to the mushroom 3 times to grow it.",
+        videoSrc: ""
+    },
+
+    // Mirror City
+    {
+        name: "Amustment Simulation",
+        chinaOnly: true,
+        uri: "amusement-simulation",
+        imgSrc: "amusementsimulation.png",
+        type: "basic",
+        location: "mirroria",
+        solution: "Participate in the minigame. Rules will be explained by interacting with the machine.",
         videoSrc: ""
     },
     {
-        name: "",
+        name: "Gossip",
         chinaOnly: true,
-        uri: "",
-        imgSrc: "",
-        type: "",
-        solution: "",
+        uri: "gossip",
+        imgSrc: "gossip.png",
+        type: "basic",
+        location: "mirroria",
+        solution: "Speak to NPC that's willing to share gossip with you.",
+        videoSrc: ""
+    },
+    {
+        name: "Lost Item",
+        chinaOnly: true,
+        uri: "lost-item",
+        imgSrc: "lostitem.png",
+        type: "basic",
+        location: "mirroria",
+        solution: "Interact to pick up someone's lost item. Finders keepers!",
         videoSrc: ""
     },
 
-    // Mirroria
-    // daily minigames
-    // gossip
-
-    // Dark & Gray Zones
-    // dark zone puzzles
-    // gray zone enemy portals that give exploration %
+    // Dark Zone
+    {
+        name: "Energy Crystal",
+        chinaOnly: true,
+        uri: "energy-crystal",
+        imgSrc: "energycrystal.png",
+        type: "basic",
+        location: "dark zone",
+        solution: 
+            `Interact to recharge Mi-a's light source. Depending on the color of the crystal, you will receive different effects.  
+            Yellow: mobs are killable  
+            Green: regenerate HP, light up energy supplies  
+            Purple: increased speed and jump height, materialize invisible objects and enemies  
+            Red: increased ATK  
+            White: brightest light`,
+        videoSrc: ""
+    },
+    {
+        name: "Rechargable Box",
+        chinaOnly: true,
+        uri: "rechargable-box",
+        imgSrc: "rechargablebox.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Green energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Invisible Box",
+        chinaOnly: true,
+        uri: "invisible-box",
+        imgSrc: "invisiblebox.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Purple energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Camoflauged Box",
+        chinaOnly: true,
+        uri: "camoflauged-box",
+        imgSrc: "camoflaugedbox.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Purple energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Large Secret Box",
+        chinaOnly: true,
+        uri: "large-secret-box",
+        imgSrc: "largesecretbox.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Charge all the nearby energy supply devices with Green energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Guarded Secret Box",
+        chinaOnly: true,
+        uri: "guarded-secret-box",
+        imgSrc: "guardedsecretbox.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Defeat the nearby Elite Monster to unlock the box.",
+        videoSrc: ""
+    },
+    {
+        name: "Energy Supply",
+        chinaOnly: true,
+        uri: "energy-supply",
+        imgSrc: "energysupply.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Green energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Camoflauged Energy Supply",
+        chinaOnly: true,
+        uri: "camoflauged-energy-supply",
+        imgSrc: "camoflaugedenergysupply.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Purple energy from Mi-a to reveal.",
+        videoSrc: ""
+    },
+    {
+        name: "Alarm Power Supply",
+        chinaOnly: true,
+        uri: "alarm-power-supply",
+        imgSrc: "alarmpowersupply.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Defeat the nearby monsters with Yellow energy from Mi-a to charge.",
+        videoSrc: ""
+    },
+    {
+        name: "Crystal Storage Device",
+        chinaOnly: true,
+        uri: "crystal-storage-device",
+        imgSrc: "crystalstoragedevice.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Interact to open.",
+        videoSrc: ""
+    },
+    {
+        name: "Camoflauged Storage Device",
+        chinaOnly: true,
+        uri: "camoflauged-storage-device",
+        imgSrc: "camoflaugedstoragedevice.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Purple energy from Mi-a to reveal.",
+        videoSrc: ""
+    },
+    {
+        name: "Invisible Storage Device",
+        chinaOnly: true,
+        uri: "invisible-storage-device",
+        imgSrc: "invisiblestoragedevice.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Illuminate with Purple energy from Mi-a to reveal.",
+        videoSrc: ""
+    },
+    {
+        name: "Alarm Box",
+        chinaOnly: true,
+        uri: "alarm-box",
+        imgSrc: "alarmbox.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Defeat the enemies guarding the box while using Yellow energy from Mi-a. If the enemies are invisible, use Purple energy from Mi-a.",
+        videoSrc: ""
+    },
+    {
+        name: "Collapsing Fissure",
+        chinaOnly: true,
+        uri: "collapsing-fissure",
+        imgSrc: "collapsingfissure.png",
+        type: "basic",
+        location: "dark zone",
+        solution: "Found between 4 purple crystal storage devices, this object does slight damage to you while you are opening the storage devices.",
+        videoSrc: ""
+    },
+    
+    // Gray zone
+    {
+        name: "Spatial Rift",
+        chinaOnly: true,
+        uri: "spatial-rift",
+        imgSrc: "spatialrift.png",
+        type: "basic",
+        location: "gray zone",
+        solution: "Defeat the enemies guarding the rift.",
+        videoSrc: ""
+    },
 
     // Disorderly Abyss
-    // ore collection
+    {
+        name: "Ore Collection",
+        chinaOnly: true,
+        uri: "ore-collection",
+        imgSrc: "orecollection.png",
+        type: "elemental",
+        location: "disorderly abyss",
+        solution: "After activating the energy device, attack the ore veins with weapons of the corresponding element.",
+        videoSrc: ""
+    },
     {
         name: "Energy Repeater",
         chinaOnly: true,
         uri: "energy-repeater",
         imgSrc: "energyrepeater.png",
         type: "basic",
+        location: "disorderly abyss",
         solution: "Collect energy from the small pillar with an upside down pyramid (energy will appear as a glowing aura around your character's wrist). Find and strike the energy-sealed box before the aura runs out.",
         videoSrc: ""
     },
@@ -308,6 +551,7 @@ const exploration = [
         uri: "sequence-monitor",
         imgSrc: "sequencemonitor.png",
         type: "basic",
+        location: "disorderly abyss",
         solution: "Interact with the monitor to view its camera. Go to the exact spot indicated by the camera.",
         videoSrc: ""
     },
@@ -317,6 +561,7 @@ const exploration = [
         uri: "chaos-cube",
         imgSrc: "chaoscube.png",
         type: "basic",
+        location: "disorderly abyss",
         solution: "Attack the cube until it breaks.",
         videoSrc: ""
     },
@@ -326,6 +571,7 @@ const exploration = [
         uri: "simulation-engine",
         imgSrc: "simulationengine.png",
         type: "basic",
+        location: "disorderly abyss",
         solution: "Interact to begin a simulated battle. Defeat all enemies before the simulation ends.",
         videoSrc: ""
     },
@@ -335,6 +581,7 @@ const exploration = [
         uri: "energy-recovery",
         imgSrc: "energyrecovery.png",
         type: "basic",
+        location: "disorderly abyss",
         solution: "Interact to scatter 2~4 energy crystals nearby. Collect them all within the time limit.",
         videoSrc: ""
     },
@@ -344,6 +591,7 @@ const exploration = [
         uri: "hidden-passage",
         imgSrc: "hiddenpassage.png",
         type: "basic",
+        location: "disorderly abyss",
         solution: "Interact to generate platforms for an alternative path.",
         videoSrc: ""
     },

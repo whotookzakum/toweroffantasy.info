@@ -35,9 +35,9 @@ function Navigation() {
                     <li onClick={() => setTogglerState(!togglerState)}>
                         <Link href="/relics">Relics</Link>
                     </li>
-                    {/* <li onClick={() => setTogglerState(!togglerState)}>
+                    <li onClick={() => setTogglerState(!togglerState)}>
                         <Link href="/exploration">Exploration</Link>
-                    </li> */}
+                    </li>
                     <li onClick={() => setTogglerState(!togglerState)}>
                         <Link href="/food">Food</Link>
                     </li>

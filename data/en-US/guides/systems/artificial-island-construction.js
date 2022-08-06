@@ -1,22 +1,17 @@
 import Link from "next/link";
 
-export const homeIsland = {
-    name: "Home Island",
-    uri: "home-island",
-    date: "27 July 2022",
+export const artificialIslandConstruction = {
+    name: "Artificial Island Construction",
+    uri: "artificial-island-construction",
+    date: "5 August 2022",
     type: "systems",
-    author: ["Pyrosu#6969"],
+    author: ["Pyrosu#6969", "Zakum#3080"],
     text:
         <>
             <section>
                 <h2>Getting Started</h2>
-                <p>
-                    Accept the quest by clicking the Present icon in the top right.<br />
-                    <strong className="yellow">Collect 10 Developer Logs</strong>. This will unlock the Home Island option in the menu.
-                </p>
-                <img src="/static/images/guides/developerlogs.jpg" alt="Developer Logs Map" />
                 <blockquote>
-                    To build on your Home Island, you will need 50% completion on Artificial Island (inner region only).
+                    To build on the Artificial Island, you will need to be level 60 OR have 50% map completion on Artificial Island (inner region only).
                 </blockquote>
             </section>
 
