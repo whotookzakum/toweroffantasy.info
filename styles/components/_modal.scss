@@ -116,6 +116,19 @@
             color: clr(text, gray);
         }
     }
+
+    &.exploration {
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+        img {
+            width: 100%;
+        }
+        a {
+            padding-top: 0;
+        }
+    }
 }
 
 .modal {

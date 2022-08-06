@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 5",
+        text: "Renamed Guide 'Home Island' to 'Artificial Island Construction' for accuracy, so URLs have changed, sorry!"
+    },
+    {
         date: "August 4",
         text: 
             `Recommended Matrices now properly display the set numbers and link to appropriate matrix pages. Recommended matrices still need some work to be adjusted for both Global and CN; Global banner info updated; finished proofreading CN matrices text; Nemesis JP VA added;
