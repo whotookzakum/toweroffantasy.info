@@ -5,6 +5,12 @@
     position: fixed;
     z-index: 1000;
     width: 0;
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: gray;
+    }
 }
 
 .nav-body {
@@ -111,6 +117,16 @@
     }
 }
 
+// LANG SELECTOR
+// =================================================================
+#lang-selector {
+    display: block;
+    margin: 0 auto;
+    background: clr(container, light);
+    padding: 0.5rem;
+    border: none;
+    color: clr(text, gray);
+}
 
 // MISCELLANEOUS
 // =================================================================
@@ -120,6 +136,8 @@
     font-size: 0.9rem;
     position: absolute;
     bottom: 0;
+    left: 0;
+    padding: 0 2rem;
     margin-bottom: 2rem;
     width: calc($sidenav-width - 4rem);
 }

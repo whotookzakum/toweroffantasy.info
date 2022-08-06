@@ -24,7 +24,7 @@ import Ene from './sr/Ene';
 import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
 
-export const CHARACTERS = [
+const characterList = [
     Lyra,
     Lin,
     SakiFuwa,
@@ -50,3 +50,12 @@ export const CHARACTERS = [
     Hilda,
     Pepper
 ]
+
+const varrr = "name";
+const {testChar} = {
+    name: "testaroo!"
+}
+
+export const CHARACTERS = characterList.map(item => {
+    return ({...item, [varrr]: "hey"});
+});

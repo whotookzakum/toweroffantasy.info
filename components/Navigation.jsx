@@ -4,10 +4,11 @@ import { useState } from "react";
 function Navigation() {
 
     const [togglerState, setTogglerState] = useState(false);
+    const [currentLang, setLang] = useState("lang-en");
 
     return (
         <nav className="sidenav">
-            <input type="checkbox" id="nav-toggler" checked={togglerState} onChange={()=>{}} />
+            <input type="checkbox" id="nav-toggler" checked={togglerState} onChange={() => { }} />
             <label htmlFor="nav-toggler" onClick={() => setTogglerState(!togglerState)}>
                 <i className="toggler-lines"></i>
             </label>
@@ -48,7 +49,7 @@ function Navigation() {
                         <Link href="/guides">Guides</Link>
                     </li>
                     <li>
-                        <a href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon/></a>
+                        <a href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon /></a>
                     </li>
                     {/* <li onClick={() => setTogglerState(!togglerState)}>
                         <Link href="/combat-analysis">Combat Analysis</Link>
@@ -66,9 +67,10 @@ function Navigation() {
                         <a href="https://twitter.com/_Aida_Cafe" target="_blank" rel="noreferrer noopener"><TwitterIcon /></a>
                     </li>
                 </ul>
-                {/* <div>
-                    Language Selector
-                </div> */}
+                <select name="lang-selector" id="lang-selector" onChange={(e) => setLang(e.target.value)}>
+                    <option value="lang-en">English (US)</option>
+                    <option value="lang-ru">Русский</option>
+                </select>
                 <span className="nav-footer">&copy; Tower of Fantasy Index.<br /> All rights reserved.</span>
             </div>
         </nav>
