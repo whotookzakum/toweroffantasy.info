@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "August 5",
-        text: "Renamed Guide 'Home Island' to 'Artificial Island Construction' for accuracy, so URLs have changed, sorry!"
+        text: "Added Exploration page; Renamed Guide 'Home Island' to 'Artificial Island Construction' for accuracy, so URLs have changed, sorry!"
     },
     {
         date: "August 4",
