@@ -81,13 +81,19 @@ export const dailies = {
                             <td>Up to 900 weekly activity from doing content. Rewards Gold lockbox keys, battle pass EXP, and Dark Crystals.</td>
                         </tr>
                         <tr>
+                            <th>Raids</th>
+                            <td>
+                                8-player dungeons that involve defeating one or multiple bosses. The currently implemented raids are: Apophis, Valkyrie/Frigg, Nemesis Twins, and Rudolph (deer world boss). They all have two difficulties--Normal and Hero. Raid rewards can be claimed 3 times a week.
+                            </td>
+                        </tr>
+                        <tr>
                             <th>Dream Machines</th>
                             <td>Up to 7 minigames that pop up when defeating enemies or opening boxes. Rewards include Gold/Black Nuclei, Armor Modules, Relic Fragments, and more.</td>
                         </tr>
                         <tr>
                             <th>Bygone Phantasm</th>
                             <td>
-                                600+ floors of progressively stronger enemies, with rewards such as Energy Dust, Armor Modules, and Dark Crystals. <br />
+                                600+ floors of progressively stronger enemies, with rewards such as Energy Dust, Armor Modules, and Dark Crystals. Rewards can be claimed every weekly reset based on your ranking within your bracket.<br />
                                 <strong>Resets on Monday</strong>.
                             </td>
                         </tr>
