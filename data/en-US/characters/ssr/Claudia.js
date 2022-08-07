@@ -31,8 +31,15 @@ const claudia = {
         shatter: ["A", "7.50"],
         charge: ["S", "12.00"],
         materials: ["physical", "red", "blue"],
+        bonusEffect: {
+            effect1: {
+                title: "Physical Resonance (Global)",
+                description: 
+                    `Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set's effects do not work with others.`
+            }
+        },
         advancement: {
-            star1: `After hitting a target with a skill or discharge skill, grant a stack of damage boost, which increases damage dealt by **8%** for **25** seconds (stacks up to **3** times; each successful skill or discharge use can only grant a single stack).`,
+            star1: `Each time when a skill or discharge skill hits a target, a stack of damage boost is granted, which increases damage dealt but **8%** for **25** seconds (stacks up to **3** times; each successful skill or discharge use can only grant one stack).`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
@@ -40,9 +47,9 @@ const claudia = {
 
             star4: `Increase the current weapon's base HP growth by **32%**.`,
 
-            star5: `Hitting targets with discharge skills grants skill damage boost, which increases all weapon skill damage by **20%** for **15** seconds (cannot stack).`,
+            star5: `Hitting targets with a skill or a discharge skill grants skill damage boost, which increases all weapon skill damage by **20%** for **25** seconds (cannot stack).`,
 
-            star6: `Hitting the same target no longer reduces the damage dealt. After using Guren Blade or a discharge skill, applies **1** stack of War Wounds to all targets within 8 meters.`
+            star6: `Hitting the same target no longer reduces the damage dealt. After using Guren Blade or a discharge skill, applies **1** stack of War Wounds to all targets within 8 meters and gain another **1** stack of War Wounds.`
         },
         abilities: {
             normal: [
@@ -124,9 +131,9 @@ const claudia = {
     },
 
     awakening: {
-        trait1200: `Hide for **1** seconds upon dodging.`,
+        trait1200: `Go invisible for **1** seconds upon dodging.`,
 
-        trait4000: `Hide for **1.5** seconds upon dodging.`,
+        trait4000: `Go invisible for **1.5** seconds upon dodging.`,
 
         giftCategories: ['everyday-items', 'rare-items', 'decorations'],
 

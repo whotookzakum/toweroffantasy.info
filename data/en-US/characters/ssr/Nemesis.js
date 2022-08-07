@@ -153,7 +153,7 @@ const nemesis = {
             set3: ["sobek"]
         }
     },
-
+ 
     matrix: {
         set2: 
             `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.

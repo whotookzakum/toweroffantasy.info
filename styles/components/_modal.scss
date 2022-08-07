@@ -463,6 +463,12 @@
         margin: 0.5rem 0;
         color: #48adbd;
         text-shadow: $shadow;
+        display: inline-flex;
+
+        li:not(:last-child)::after {
+            content: "+";
+            margin: 0.25rem;
+        }
     }
 
 }

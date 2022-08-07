@@ -9,6 +9,9 @@ import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
 import Link from "next/link";
 import { MATRICES } from "../../data/en-US/matrices/matrixList";
+import _ from 'lodash';
+import { VersionToggler } from "../../components/VersionToggler";
+import { useEffect } from "react";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -27,9 +30,12 @@ export async function getStaticPaths() {
     };
 }
 
-export default function SimulacrumPage({ simulacrum }) {
-    const weapon = simulacrum.weapon;
-    const awakening = simulacrum.awakening;
+export default function SimulacrumPage({ simulacrum, version, setVersion }) {
+    const cnData = _.cloneDeep(simulacrum);
+    const chinaData = _.merge(cnData, cnData.cnData);
+    const dataVersion = (version === "global") ? simulacrum : chinaData;
+    const weapon = dataVersion.weapon;
+    const awakening = dataVersion.awakening;
     const rarity = (simulacrum.rarity === "SSR") ? 1 : 0;
     const elementColor = `var(--color-${weapon.element})`;
     const advancements = Object.entries(weapon.advancement).map(([star, effect]) => {
@@ -43,9 +49,7 @@ export default function SimulacrumPage({ simulacrum }) {
     const getBonusEffects = () => Object.entries(weapon.bonusEffect).map(([key, effect]) => {
         return (
             <div key={key}>
-                <h4>{effect.chinaOnly && 
-                    <abbr title='China Exclusive' style={{color: "#dedede"}}/>} {effect.title}
-                </h4>
+                <h4>{effect.title}</h4>
                 <ReactMarkdown rehypePlugins={[rehypeRaw]}>{effect.description}</ReactMarkdown>
             </div>
         )
@@ -65,7 +69,7 @@ export default function SimulacrumPage({ simulacrum }) {
                 if (i < 2) rarity = i + 4;
             }
             result.push(
-                <li className={`item-frame rarity-${rarity}`}>
+                <li key={materialUri} className={`item-frame rarity-${rarity}`}>
                     <img src={`/static/images/mat/${materialUri}.png`} alt={materialUri} />
                 </li>
             );
@@ -89,20 +93,20 @@ export default function SimulacrumPage({ simulacrum }) {
             rarity = 3;
         return (group.map((gift, index) => {
             // Skip first index because it holds the points gained from the gifts in the same array i.e. [50, "gift1", "gift2"]
-            return (index === 0) ? <></> :
-                <li className="gift">
-                    <div className={`item-frame rarity-${rarity}`}>
-                        <img src={`/static/images/awakening/${gift}.png`} alt={gift} />
-                    </div>
-                    <h4>+{group[0]}</h4>
-                </li>
+            if (index > 0) {
+                return (
+                    <li key={gift} className="gift">
+                        <div className={`item-frame rarity-${rarity}`}>
+                            <img src={`/static/images/awakening/${gift}.png`} alt={gift} />
+                        </div>
+                        <h4>+{group[0]}</h4>
+                    </li>
+                )
+            }
         }))
     })
     function getInputs(inputs) {
-        return inputs.map((input, index) => {
-            const keystroke = <kbd>{input}</kbd>;
-            return (index === inputs.length - 1) ? keystroke : <>{keystroke} + </>;
-        })
+        return inputs.map((input, index) => <li key={input}><kbd>{input}</kbd></li>)
     }
     function getBreakdown(breakdown) {
         return breakdown.map(step => <li key={step}><ReactMarkdown>{step}</ReactMarkdown></li>)
@@ -111,13 +115,18 @@ export default function SimulacrumPage({ simulacrum }) {
     const abilities = abilitiesArray.map(([category, abilityList]) => {
         const abilitiesInThisCategory = abilityList.map(ability => {
             return (
-                <div key={ability} className="weapon-ability">
+                <div key={ability.name} className="weapon-ability">
                     <h3>{ability.name}</h3>
                     {ability.input &&
-                        <div className="ability-inputs">{getInputs(ability.input)}</div>}
+                        <ul key={ability.name} className="ability-inputs">
+                            {getInputs(ability.input)}
+                        </ul>
+                    }
                     <ReactMarkdown>{ability.description}</ReactMarkdown>
                     {ability.breakdown &&
-                        <ol>{getBreakdown(ability.breakdown)}</ol>}
+                        <ol>
+                            {getBreakdown(ability.breakdown)}
+                        </ol>}
                 </div>
             )
         });
@@ -195,7 +204,10 @@ export default function SimulacrumPage({ simulacrum }) {
                         </div>
                     </div>
                     <section className="weapon-effects w-75ch">
-                        <h3>Weapon Effects</h3>
+                        <div className="flex" style={{ alignItems: "center", justifyContent: "space-between" }}>
+                            <h3>Weapon Effects</h3>
+                            <VersionToggler section="weapon-effects" version={version} setVersion={setVersion} />
+                        </div>
                         <div>
                             <h4 style={{ color: elementColor }}>{elementalEffects[weapon.element].title}</h4>
                             <ReactMarkdown>{elementalEffects[weapon.element].description(rarity)}</ReactMarkdown>
@@ -204,6 +216,7 @@ export default function SimulacrumPage({ simulacrum }) {
                     </section>
                     <section className="advancements w-75ch">
                         <h3>Advancements</h3>
+                        <VersionToggler section="weapon-advancements" version={version} setVersion={setVersion} />
                         <table className="modal-table">
                             <thead style={{ borderColor: elementColor }}>
                                 <tr>
@@ -224,7 +237,6 @@ export default function SimulacrumPage({ simulacrum }) {
                             }
                             Data reflects unleveled weapons.
                             {abilities}
-
                         </section>
                     }
                     <section className="weapon-materials w-75ch" >

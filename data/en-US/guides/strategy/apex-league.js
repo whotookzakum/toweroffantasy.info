@@ -16,7 +16,7 @@ const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
     const weaponsInTier = weapons.map(weapon => {
         const character = CHARACTERS.find(character => character.uri === weapon);
         return (
-            <li className="tier-list-item">
+            <li key={weapon} className="tier-list-item">
                 <img src={`/static/images/wep/${character.imgSrc}`} alt={`${character.name}'s Weapon`} />
                 <h4>{character.name}</h4>
             </li>
@@ -24,7 +24,7 @@ const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
     })
 
     return (
-        <div className="tier-list-row">
+        <div key={tier} className="tier-list-row">
             <h2 className={`tier-title tier-${tier}`}>{tier.toUpperCase()}</h2>
             <ul className="tier-list-item-wrapper">{weaponsInTier}</ul>
         </div>
@@ -287,7 +287,7 @@ const weaponListData = [
 const weaponList = weaponListData.map(weapon => {
     const character = CHARACTERS.find(character => character.uri === weapon.uri);
     return (
-        <tr>
+        <tr key={weapon.uri} >
             <th>
                 <img src={`/static/images/wep/${character.imgSrc}`} alt={`${weapon.name}'s Weapon`} />
                 <Link href={`/simulacra/${character.uri}`}><a>{weapon.name}</a></Link>
@@ -297,9 +297,9 @@ const weaponList = weaponListData.map(weapon => {
                 <details>
                     <summary>Strengths and Weaknesses</summary>
                     <div className="details-content">
-                        <ul>{weapon.pros.map(pro => <li className="pro">{pro}</li>)}</ul>
+                        <ul>{weapon.pros.map(pro => <li key={pro} className="pro">{pro}</li>)}</ul>
                         <hr />
-                        <ul>{weapon.cons.map(con => <li className="con">{con}</li>)}</ul>
+                        <ul>{weapon.cons.map(con => <li key={con} className="con">{con}</li>)}</ul>
                     </div>
                 </details>
             </td>

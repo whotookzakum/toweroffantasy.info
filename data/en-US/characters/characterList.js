@@ -51,17 +51,14 @@ const characterList = [
     Pepper
 ]
 
-const varrr = "name";
+
 const newCharData = {
     name: "test!"
 }
 
 // export const CHARACTERS = characterList.map(item => {
-//     return ({...item, {newCharData} });
+//     return ({ ...item, ...newCharData });
 // });
 
-// export const CHARACTERS = characterList.map(item => {
-//     return ({...item, [varrr]: "hey"});
-// });
 
 export const CHARACTERS = characterList;
