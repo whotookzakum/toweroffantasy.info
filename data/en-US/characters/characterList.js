@@ -52,10 +52,16 @@ const characterList = [
 ]
 
 const varrr = "name";
-const {testChar} = {
-    name: "testaroo!"
+const newCharData = {
+    name: "test!"
 }
 
-export const CHARACTERS = characterList.map(item => {
-    return ({...item, [varrr]: "hey"});
-});
+// export const CHARACTERS = characterList.map(item => {
+//     return ({...item, {newCharData} });
+// });
+
+// export const CHARACTERS = characterList.map(item => {
+//     return ({...item, [varrr]: "hey"});
+// });
+
+export const CHARACTERS = characterList;

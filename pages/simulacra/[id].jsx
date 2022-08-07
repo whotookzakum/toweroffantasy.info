@@ -40,18 +40,16 @@ export default function SimulacrumPage({ simulacrum }) {
             </tr>
         )
     })
-    function getBonusEffects(bonusEffects) {
+    const getBonusEffects = () => Object.entries(weapon.bonusEffect).map(([key, effect]) => {
         return (
-            Object.entries(bonusEffects).map(([key, effect]) => {
-                return (
-                    <div key={key}>
-                        <h4>{effect.title}</h4>
-                        <ReactMarkdown>{effect.description}</ReactMarkdown>
-                    </div>
-                )
-            })
+            <div key={key}>
+                <h4>{effect.chinaOnly && 
+                    <abbr title='China Exclusive' style={{color: "#dedede"}}/>} {effect.title}
+                </h4>
+                <ReactMarkdown rehypePlugins={[rehypeRaw]}>{effect.description}</ReactMarkdown>
+            </div>
         )
-    }
+    })
     const weaponMaterials = weapon.materials.map(material => {
         let result = [];
         for (let i = 0; i < 3; i++) {
@@ -202,7 +200,7 @@ export default function SimulacrumPage({ simulacrum }) {
                             <h4 style={{ color: elementColor }}>{elementalEffects[weapon.element].title}</h4>
                             <ReactMarkdown>{elementalEffects[weapon.element].description(rarity)}</ReactMarkdown>
                         </div>
-                        {weapon.bonusEffect && <>{getBonusEffects(weapon.bonusEffect)}</>}
+                        {weapon.bonusEffect && getBonusEffects()}
                     </section>
                     <section className="advancements w-75ch">
                         <h3>Advancements</h3>

@@ -43,46 +43,108 @@ const nemesis = {
         bonusEffect: {
             effect1: {
                 title: "Volt Resonance",
-                description: "When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background."
+                description: 
+                    `Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others.  
+                    <abbr title='China Exclusive'></abbr> When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background.`
             }
         },
         advancement: {
-            star1: `Activating the **Weapon Skill** or **Discharge Skill** creates **1** Electrode, immediately grants **5** levels of Chain Heal Enhancement, and releases a healing chain that heals nearby friendly units for **135%** of ATK.`,
+            star1: 
+                `After using **Pulse Lock** or **Particle Beam Burst**, creates **1** Electrode that immediately grants the user **5** stacks of healing chain enhance. In addition, unleash a healing chain that heals nearby allies by **135%** of the Wanderer's ATK.`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `Electrodes release an **electric current** every **6** seconds, dealing up to **389%** of ATK within its range.`,
+            star3: 
+                `Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **205%** of ATK in a target area.  
+                <abbr title='China Exclusive'></abbr> Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
-            star5: `After using the **Weapon Skill**, increase Volt ATK by ( **10** + Your Electrode Count &times; **10** ) % for **25** seconds.`,
+            star5: 
+                `After using the **Weapon Skill**, increase Volt ATK by ( **5** + Your Electrode Count &times; **5** ) % for **25** seconds.  
+                <abbr title='China Exclusive'></abbr> After using the **Weapon Skill**, increase Volt ATK by ( **10** + Your Electrode Count &times; **10** ) % for **25** seconds.`,
 
-            star6: `Up to **2** Electrodes can be created. When a new electrode appears, it replaces the one furthest from you.`
+            star6: 
+                `Up to **2** Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user.`
         },
         abilities: {
             normal: [
                 {
                     name: "Normal Attack",
                     input: ["Attack x5"],
+                    description: "While on the ground, use Venus to attack 5 times in a row.",
+                    breakdown: [
+                        'Deal damage equal to **50.8%** of ATK + **3**.',
+                        'Deal damage equal to **36.3%** of ATK + **2**.',
+                        'Deal damage equal to **98.3%** of ATK + **5**.',
+                        'Deal damage equal to **67.3%** of ATK + **4**.',
+                        'Deal damage equal to **148.3%** of ATK + **8**.',
+                    ]
                 },
                 {
-                    name: "Aerial Attack",
+                    name: "Aerial Discharge",
                     input: ["Jump", "Attack x5"],
-                },
-                {
-                    name: "Charge Pulse",
-                    input: ["hold:Attack"],
+                    description: "While airborne, tap normal attack to attack 5 times in a row.",
+                    breakdown: [
+                        'Deal damage equal to **62.5%** of ATK + **3**.',
+                        'Deal damage equal to **62.5%** of ATK + **3**.',
+                        'Deal damage equal to **120%** of ATK + **6**.',
+                        'Deal damage equal to **71.2%** of ATK + **4**.',
+                        'Deal damage equal to **126%** of ATK + **7**.',
+                    ]
                 },
                 {
                     name: "Forward Pursuit",
                     input: ["Attack", "hold:Attack"],
+                    description: 
+                        `After the second normal attack, hold the normal attack to trigger Forward Pursuit.  
+                        Shoot a laser-guided missle at the target, dealing damage up to **107.5%** of ATK + **6**.`
+                },
+                {
+                    name: "Dual Focus",
+                    input: ["hold:Attack"],
+                    description: 
+                        `Hold normal attack to charge a shot and release an electrified ball that explodes on hit, dealing damage equal to **118.4%** of ATK + **6** to nearby enemies.`
                 }
             ],
             dodge: [
                 {
-                    name: "Dodge Attack",
-                    input: ["Arrow keys", "Dodge", "Attack"],
+                    name: "Dodge",
+                    description: 
+                        `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.  
+                        Dodging will trigger a healing chain that heals nearby allies by **67.7%** of the Wanderer's ATK; for the next **10** seconds, a small healing chain will trigger every **2** seconds, which heals nearby allies by **22.5%** of the Wanderer's ATK. Dodging grants 1 stack of healing chain enhance, which increases the effects of healing chains by **25%** (stacks up to **5** times) and lasts for **30** seconds. Switching weapons will cancel this effect.`
                 },
+                {
+                    name: "Twin Spinning Focus",
+                    input: ["Dodge", "Attack"],
+                    description:
+                        `Tap normal attack during the short perfect attack window to trigger a slowing magnetic field.  
+                        Venus fires a charged orb that travels forward a set distance and explodes in contact with targets. Deal damage equal to **171%** of ATK + **9**, and generate a slowing magnetic field for **3** seconds, which reduces the movement speed and attack speed of all enemies caught within it by **35%**.`
+                },
+                {
+                    name: "Parallel Beams",
+                    input: ["Arrow keys", "Dodge", "Attack"],
+                    description: 
+                        `Tap normal attack during the short perfect dodge window (tap a directional key while dodging) to trigger Parallel Beams.  
+                        Venus fires a pair of parallel energy beams, dealing piercing damage equal to **171.6%** of ATK + **9**.`
+                }
+            ],
+            skill: [
+                {
+                    name: "Pulse Lock",
+                    description: 
+                        `Venus fires a guided missile that explodes on contact with enemy targets, dealing damage equal to **233.2%** of ATK + **12** and knocking down targets. **25**-second cooldown.`
+                }
+            ],
+            discharge: [
+                {
+                    name: "Particle Beam Burst",
+                    description: 
+                        `When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon will **clear all debuffs from the user** and command Venus to fire a cross-shaped ray at the ground, creating an unstable area and reducing targets' movement speed by **70%** for **5** seconds. After a brief delay, unleash an electromagnetic burst that deals damage equal to **393.9%** of ATK + **21**.  
+                        Using a discharge attack will spawn **1** electrode near the enemy's position that attack once every **1.5** seconds, dealing damage equal to **39.9%** of ATK + **2**.  
+                        The electrode gains **100%** of the Wanderer's stats, can be attacked or healed, and loses **3%** of its max HP every second.  
+                        Only **1** Electrode can exist at any given time, and summoning a new Electrode will replace the previous one.`
+                }
             ]
         },
         recommendedMatrix: {
@@ -93,15 +155,19 @@ const nemesis = {
     },
 
     matrix: {
-        set2: `When healing a target, the healed target's Volt ATK is increased by **15%/18%/21%/25%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
+        set2: 
+            `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.
+            <abbr title='China Exclusive'></abbr> When a target is being healed, their volt ATK is increased by **15%/18%/21%/25%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
 
-        set4: `When healing yourself or your own electrodes, the healed target gains a chance to Lightning Strike; the next attack within **30** seconds deals **300%/375%/450%/525%** of Volt ATK (half for electrodes). Can only be triggered again after **10** seconds. Lightning Strike is not stackable, and only the highest level set will take effect when using multiple sets.`
+        set4: 
+            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **240%/300%/360%/420%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.
+            <abbr title='China Exclusive'></abbr> When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **300%/375%/450%/525%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.`
     },
 
     awakening: {
-        trait1200: `When an electrode is summoned, all enemies within **30** metres of the electrode take damage equal to **60%** of Volt ATK and all allies (including yourself) are healed for **120%** of their ATK.`,
+        trait1200: `After summoning an Electrode, deal volt damage equal to **60%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **120%** of ATK.`,
 
-        trait4000: `When an electrode is summoned, all enemies within **30** metres of the electrode take damage equal to **100%** of Volt ATK and all allies (including yourself) are healed for **200%** of their ATK.`,
+        trait4000: `After summoning an Electrode, deal volt damage equal to **100%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **200%** of ATK.`,
 
         giftCategories: ['toys', 'everyday-items', 'decorations'],
 
