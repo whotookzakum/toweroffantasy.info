@@ -33,7 +33,7 @@ const cobalt = {
         materials: ["flame", "red", "black"],
         bonusEffect: {
             effect1: {
-                title: "Flame Resonance (Global)",
+                title: "Flame Resonance",
                 description: 
                     `Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect cannot be stacked.`
             }
@@ -90,6 +90,17 @@ const cobalt = {
             jp: "川澄綾子 (Ayako Kawasumi)",
             en: "Stephanie Kerbis",
             cn: "陈睿婕"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            bonusEffect: {
+                effect1: {
+                    title: "",
+                    description: ``
+                }
+            }
         }
     }
 }

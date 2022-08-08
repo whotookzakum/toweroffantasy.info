@@ -17,13 +17,13 @@ const coco = {
 
             star2: `Increase the current weapon's base HP growth by **16%**.`,
 
-            star3: `Use ***Sanctuary*** or discharge skills to remove debuffs from targets, can be used while being affect by control effects. Increase shatter and damage dealt for all teammates within range by **20%**, and grant them immunity to control effects and shatter.`,
+            star3: `Use ***Sanctuary*** or discharge skills to remove debuffs from targets, can be used while being affected by control effects. Increase shatter and damage dealt for all teammates within range by **20%**, and grant them immunity to control effects and shatter.`,
 
             star4: `Increase the current weapon's base HP growth by **32%**.`,
 
             star5: `Increase healing effect by **15%**, plus an additional **20%** when healing targets with less than **60%** HP.`,
 
-            star6: `Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **6** meters of the healing bee also gain **10%** damage boost (cannot stack).`
+            star6: `Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** all damage and healing (cannot stack).`
         },
         abilities: {
             normal: [
@@ -143,6 +143,9 @@ const coco = {
             set4: `<abbr title='China Exclusive'></abbr> When you or your teammates are healed, increase ATK by **12.5%/15%/17.5%/20%** for **6** seconds.`
         },
         weapon: {
+            advancement: {
+                star6: `<abbr title='China Exclusive'></abbr> Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** ATK (cannot stack).`
+            },
             abilities: {},
         },
         

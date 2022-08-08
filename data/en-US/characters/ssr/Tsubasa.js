@@ -13,7 +13,7 @@ const tsubasa = {
         charge: ["S", "11.50"],
         materials: ["ice", "red", "blue"],
         advancement: {
-            star1: `Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **8%** for **15** seconds. Stack up to **3**.`,
+            star1: `Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **5%** for **15** seconds. Stack up to **3** times.`,
             
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
             
@@ -129,6 +129,11 @@ const tsubasa = {
 
     cnData: {
         name: "Tsubasa (Hane)",
+        weapon: {
+            advancement: {
+                star1: `<abbr title='China Exclusive'></abbr> Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **8%** for **15** seconds. Stack up to **3** times.`
+            }
+        },
         matrix: {
             set2: `<abbr title='China Exclusive'></abbr> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
     

@@ -121,7 +121,7 @@ main {
 }
 
 .yellow {
-    color: clr(tier, s);
+    color: clr(tier, s) !important;
 }
 
 .turquoise {

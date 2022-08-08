@@ -33,7 +33,7 @@ const claudia = {
         materials: ["physical", "red", "blue"],
         bonusEffect: {
             effect1: {
-                title: "Physical Resonance (Global)",
+                title: "Physical Resonance",
                 description: 
                     `Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set's effects do not work with others.`
             }
@@ -155,6 +155,17 @@ const claudia = {
             jp: "小松未可子 (Mikako Komatsu)",
             en: "Elizabeth Simmons",
             cn: "文小"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            bonusEffect: {
+                effect1: {
+                    title: "",
+                    description: ``
+                }
+            }
         }
     }
 }

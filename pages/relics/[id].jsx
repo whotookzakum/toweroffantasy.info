@@ -72,6 +72,15 @@ export default function RelicPage({ relic, version, setVersion }) {
                                 {advancements}
                             </tbody>
                         </table>
+                        {dataVersion.videoSrc &&
+                            <>
+                                <h2>Preview</h2>
+                                <iframe src={dataVersion.videoSrc} allow="fullscreen" modestbranding={1} />
+                                <p>
+                                    The relic shown in the video is <strong className="yellow">{dataVersion.starsInVideo}★</strong>.
+                                </p>
+                            </>
+                        }
                     </section>
                 </div>
             </Modal>

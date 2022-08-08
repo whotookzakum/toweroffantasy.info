@@ -16,6 +16,8 @@ const couant = {
 
         star5: "if the shield breaks, gain a **5**-second damage reflection effect, reflecting **0.6**x damage taken back at the attacker."
     },
+    videoSrc: "https://www.youtube.com/embed/PTXuEnUd8kY",
+    starsInVideo: "4",
 
     cnData: {
         advancement: {

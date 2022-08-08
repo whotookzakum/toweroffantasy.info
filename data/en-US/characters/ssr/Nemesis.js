@@ -3,7 +3,7 @@ const nemesis = {
     uri: "nemesis",
     imgSrc: "nemesis.webp",
     rarity: "SSR",
-    chinaOnly: true,
+    chinaOnly: false,
     banners: {
         cn: [
             {
@@ -59,7 +59,7 @@ const nemesis = {
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
             star5: 
-                `After using the **Weapon Skill**, increase Volt ATK by ( **5** + Your Electrode Count &times; **5** ) % for **25** seconds.`,
+                `After using **Pulse Lock**, increase the Wanderer's ATK by (**5** + Number of Electrodes &times; **5** ) % for **25** seconds.`,
 
             star6: 
                 `Up to **2** Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user.`
@@ -199,7 +199,7 @@ const nemesis = {
             advancement: {
                 star3: `<abbr title='China Exclusive'></abbr> Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
 
-                star5: `<abbr title='China Exclusive'></abbr> After using the **Weapon Skill**, increase Volt ATK by ( **10** + Your Electrode Count &times; **10** ) % for **25** seconds.`
+                star5: `<abbr title='China Exclusive'></abbr> After using **Pulse Lock**, increase Volt ATK by ( **10** + Number of Electrodes &times; **10** ) % for **25** seconds.`
             }
         },
         matrix: {
