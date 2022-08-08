@@ -3,20 +3,20 @@ import { CHARACTERS } from '../../characters/characterList';
 
 
 const weaponTierListData = {
-    s: ['Coco Ritter', 'Meryl', 'Huma'],
-    a: ['Claudia', 'Zero'],
-    b: ['Ene', 'Cobalt-B', 'Shiro', 'Crow', 'Echo'],
-    c: ['Pepper', 'Samir', 'KING', 'Tsubasa'],
-    d: ['Bai Ling', 'Hilda']
+    s: ['coco-ritter', 'meryl', 'huma'],
+    a: ['claudia', 'zero'],
+    b: ['ene', 'cobalt-b', 'shiro', 'crow', 'echo'],
+    c: ['pepper', 'samir', 'king', 'tsubasa'],
+    d: ['bai-ling', 'hilda']
 }
 
 const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
     const weapons = weaponTierListData[tier];
 
     const weaponsInTier = weapons.map(weapon => {
-        const character = CHARACTERS.find(character => character.name === weapon);
+        const character = CHARACTERS.find(character => character.uri === weapon);
         return (
-            <li className="tier-list-item">
+            <li key={weapon} className="tier-list-item">
                 <img src={`/static/images/wep/${character.imgSrc}`} alt={`${character.name}'s Weapon`} />
                 <h4>{character.name}</h4>
             </li>
@@ -24,7 +24,7 @@ const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
     })
 
     return (
-        <div className="tier-list-row">
+        <div key={tier} className="tier-list-row">
             <h2 className={`tier-title tier-${tier}`}>{tier.toUpperCase()}</h2>
             <ul className="tier-list-item-wrapper">{weaponsInTier}</ul>
         </div>
@@ -34,7 +34,7 @@ const weaponTierList = Object.keys(weaponTierListData).map((tier) => {
 const weaponListData = [
     // Huma
     {
-        name: 'Huma',
+        uri: 'huma',
         summary: 'Huma is a well rounded weapon choice that offers decent mobility, high CC potential, damage, and shield break. Her close range nature makes her susceptible to long range kiting, but she is very strong overall.',
         pros: [
             'High burst damage potential',
@@ -52,7 +52,7 @@ const weaponListData = [
     },
     // Coco Ritter
     {
-        name: 'Coco Ritter',
+        uri: 'coco-ritter',
         summary: 'Coco Ritter is an amazing tool that offers energy recharge, healing/sustain, and CC. Being an ice weapon, it is also capable of freezing opponents when your energy bar is full, setting up a window for follow up attacks.',
         pros: [
             'Viable at all ranges',
@@ -70,7 +70,7 @@ const weaponListData = [
     },
     // Meryl
     {
-        name: 'Meryl',
+        uri: 'meryl',
         summary: 'Meryl is a well rounded weapon that offers amazing shield break, anti cc, and absorption.',
         pros: [
             'High shield break through discharge',
@@ -88,7 +88,7 @@ const weaponListData = [
     },
     // Claudia
     {
-        name: 'Claudia',
+        uri: 'claudia',
         summary: 'Claudia is a versatile weapon that provides a gap close option, good damage, and interrupts.',
         pros: [
             'Offers bursts of damage with every skill activation',
@@ -103,7 +103,7 @@ const weaponListData = [
     },
     // Cobalt-B
     {
-        name: 'Cobalt-B',
+        uri: 'cobalt-b',
         summary: 'Cobalt-B is a good zoning option that has long range poke damage, as well as close range shred on her skill.',
         pros: [
             'High zone from long range using aerial AOE attacks',
@@ -118,7 +118,7 @@ const weaponListData = [
     },
     // Zero
     {
-        name: 'Zero',
+        uri: 'zero',
         summary: 'Can be used as a sustain/charge weapon, both the discharge and the skill are good ways to end opponent combos. His skill provides a large absorption shield provided he has enough cubes',
         pros: [
             'Extremely long range poke option if done correctly',
@@ -133,7 +133,7 @@ const weaponListData = [
     },
     // Samir
     {
-        name: 'Samir',
+        uri: 'samir',
         summary: 'Samir is a decent weapon choice that is good for staggering enemies, and provides range and high energy charge, however, she has mediocre damage and bad shield break capabilities',
         pros: [
             'Good at juggling opponents',
@@ -150,7 +150,7 @@ const weaponListData = [
     },
     // Ene
     {
-        name: 'Ene',
+        uri: 'ene',
         summary: 'Ene offers a surprising amount of utility. Her high CC capability and low mobility makes her best suited to close range duels.',
         pros: [
             'Provides plenty of knockup/stunlock moves such as dash attack, air slam attack, and charged hits',
@@ -166,7 +166,7 @@ const weaponListData = [
     },
     // Echo
     {
-        name: 'Echo',
+        uri: 'echo',
         summary: 'Echo is a decent shield break and energy charge weapon, she can be easily used to start and extend combos.',
         pros: [
             'Discharge skill is hard to dodge and applies paralysis and has a high shield break.',
@@ -181,7 +181,7 @@ const weaponListData = [
     },
     // KING
     {
-        name: 'KING',
+        uri: 'king',
         summary: 'KING offers high shield break and damage but has low mobility and excels mainly used in conjunction with other CC heavy weapons.',
         pros: [
             'Good damage from skill and discharge',
@@ -197,7 +197,7 @@ const weaponListData = [
     },
     // Crow
     {
-        name: 'Crow',
+        uri: 'crow',
         summary: 'High plunge attack dps and unshielded damage. Great for finishing off opponents once the shield is broken. Provides gap close and anti-cc.',
         pros: [
             'Provides hyperbody with weapon skill',
@@ -212,7 +212,7 @@ const weaponListData = [
     },
     // Shiro
     {
-        name: 'Shiro',
+        uri: 'shiro',
         summary: 'Shiro provides high shield break, circumstantial damage, and large area coverage in the arena. She can be used as an effective zoning tool in all situations (close range or long range)',
         pros: [
             'Can easily stun/interrupt enemies with a dash attack',
@@ -227,7 +227,7 @@ const weaponListData = [
     },
     // Tsubasa
     {
-        name: 'Tsubasa',
+        uri: 'tsubasa',
         summary: 'Tsubasa is a decent long range option that provides decent damage and utility when used properly, though her kit is lacking in some aspects.',
         pros: [
             'Dash attack/skill attack covers a wide area and interrupts when hit',
@@ -243,7 +243,7 @@ const weaponListData = [
     },
     // Pepper
     {
-        name: 'Pepper',
+        uri: 'pepper',
         summary: 'Staff of Scars does everything Cocoritter can do in a mechanical sense, but lacks the same utility.',
         pros: [
             'Similar knock up juggle combo as Cocoritter',
@@ -258,7 +258,7 @@ const weaponListData = [
     },
     // Hilda
     {
-        name: 'Hilda',
+        uri: 'hilda',
         summary: "Hilda as a weapon isn't really meant for PvP, the skill offers knockback and some juggle capability.",
         pros: [
             'Can juggle well if you can hit your cannon shots (your skill)'
@@ -270,7 +270,7 @@ const weaponListData = [
     },
     // Bai Ling
     {
-        name: 'Bai Ling',
+        uri: 'bai-ling',
         summary: 'Not a great choice for pvp, physical weapons do not offer as much utility as ice/volt weapons. But she offers some range and can be used in niche comps.',
         pros: [
             'Dodge attacks stagger and can interrupt combos',
@@ -285,9 +285,9 @@ const weaponListData = [
 ]
 
 const weaponList = weaponListData.map(weapon => {
-    const character = CHARACTERS.find(character => character.name === weapon.name);
+    const character = CHARACTERS.find(character => character.uri === weapon.uri);
     return (
-        <tr>
+        <tr key={weapon.uri} >
             <th>
                 <img src={`/static/images/wep/${character.imgSrc}`} alt={`${weapon.name}'s Weapon`} />
                 <Link href={`/simulacra/${character.uri}`}><a>{weapon.name}</a></Link>
@@ -297,9 +297,9 @@ const weaponList = weaponListData.map(weapon => {
                 <details>
                     <summary>Strengths and Weaknesses</summary>
                     <div className="details-content">
-                        <ul>{weapon.pros.map(pro => <li className="pro">{pro}</li>)}</ul>
+                        <ul>{weapon.pros.map(pro => <li key={pro} className="pro">{pro}</li>)}</ul>
                         <hr />
-                        <ul>{weapon.cons.map(con => <li className="con">{con}</li>)}</ul>
+                        <ul>{weapon.cons.map(con => <li key={con} className="con">{con}</li>)}</ul>
                     </div>
                 </details>
             </td>

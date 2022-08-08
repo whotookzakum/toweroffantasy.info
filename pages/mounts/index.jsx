@@ -11,7 +11,7 @@ function Mounts() {
                 <meta name="description" content="How to obtain all the mounts in Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src="/static/images/bg-2.png" alt="Background Image" />
+            <img className="bg-img" src="/static/images/bg-2.webp" alt="Background Image" />
             <header>
                 <h1>Mounts</h1>
                 <p>

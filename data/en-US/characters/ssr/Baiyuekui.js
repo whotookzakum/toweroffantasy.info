@@ -1,7 +1,7 @@
 const baiyuekui = {
     name: "Baiyuekui",
     uri: "baiyuekui",
-    imgSrc: "baiyuekui.png",
+    imgSrc: "baiyuekui.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

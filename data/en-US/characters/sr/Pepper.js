@@ -1,7 +1,7 @@
 const pepper = {
     name: "Pepper",
     uri: "pepper",
-    imgSrc: "pepper.png",
+    imgSrc: "pepper.webp",
     rarity: "SR",
     chinaOnly: false,
     weapon: {
@@ -132,6 +132,10 @@ const pepper = {
             en: "Kayli Mills",
             cn: ""
         }
+    },
+
+    cnData: {
+        name: "Pepper (Peppa)"
     }
 }
 

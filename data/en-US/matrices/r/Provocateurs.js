@@ -1,7 +1,7 @@
 const provocateurs = {
     name:"Provocateurs",
     uri: "provocateurs",
-    imgSrc: "provocateurs.png",
+    imgSrc: "provocateurs.webp",
     rarity:"R",
     chinaOnly: false,
     matrix: { 

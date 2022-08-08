@@ -1,7 +1,7 @@
 const ene = {
     name: "Ene",
     uri: "ene",
-    imgSrc: "ene.png",
+    imgSrc: "ene.webp",
     rarity: "SR",
     chinaOnly: false,
     weapon: {
@@ -144,6 +144,10 @@ const ene = {
             en: "Melissa Fahn",
             cn: ""
         }
+    },
+
+    cnData: {
+        name: "Ene (Xi)"
     }
 }
 

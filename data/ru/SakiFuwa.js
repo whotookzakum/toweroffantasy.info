@@ -1,16 +1,8 @@
 const saki = {
     // 流泉彻心
     name: "Саки Фува",
-    rarity: "SSR",
-    chinaOnly: true,
     weapon: {
         name: "Рюсен Тосин",
-        element: "ice",
-        type: "defense",
-        baseStats: ["attack", "defense", "health"],
-        shatter: ["S", "13.90"],
-        charge: ["A", "8.00"],
-        materials: ["ice", "red", "black"],
         bonusEffect: {
             effect1: {
                 title: `Ледяной резонанс`,
@@ -31,12 +23,6 @@ const saki = {
            
             star6: `Попадая [Всплеском], Тень увеличивает Урон Холодом персонажа на **20%** на **15** секунд. При активации блока Тени Урон Холодом врагов поблизости уменьшается на **25%** на **12** секунд.`
         },
-        skills: [],
-        recommendedMatrix: {
-            set2: ["sakifuwa", "samir"],
-            set4: ["sakifuwa"],
-            set3: ["sobek"]
-        }
     },
     
     matrix: {
@@ -50,14 +36,6 @@ const saki = {
 
         trait4000: `При здоровье меньше **70%** Сопротивление ко всем элементам увеличивается на **40%**, а Сопротивление Холоду ещё на **60%** дополнительно.  
             При поглощении урона блоком Тени союзник с самым низким уровнем здоровья (кроме самого персонажа) получит **3** блока на **10** секунд, каждый из которых может заблокировать урон до **15%** от максимального здоровья.`,
-
-        giftCategories: ['metalware', 'everyday-items', 'vera'],
-
-        gifts: [
-            [60, "princeTataFigure", "linyeFigure"],
-            [40, "strangeFragment"],
-            [15, "strangePlant"]
-        ]
     },
 
     bio: {

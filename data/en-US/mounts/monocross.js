@@ -1,7 +1,7 @@
 const monocross = {
     name: "Monocross",
     uri: "monocross",
-    imgSrc: "monocross.png",
+    imgSrc: "monocross.webp",
     chinaOnly: false,
     parts: {
         part1: {
@@ -18,7 +18,7 @@ const monocross = {
         },
         part4: {
             source: "Rare drop from ***Devotees***.",
-            map: "monocrosselites.jpg"
+            map: "monocrosselites.webp"
         }
     },
     videoSrc: "https://www.youtube.com/embed/ECHjL8xhTY4"

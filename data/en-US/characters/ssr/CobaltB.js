@@ -1,7 +1,7 @@
 const cobalt = {
     name: "Cobalt-B",
     uri: "cobalt-b",
-    imgSrc: "cobalt-b.png",
+    imgSrc: "cobalt-b.webp",
     rarity: "SSR",
     chinaOnly: false,
     banners: {
@@ -31,6 +31,13 @@ const cobalt = {
         shatter: ["B", "6.50"],
         charge: ["A", "10.00"],
         materials: ["flame", "red", "black"],
+        bonusEffect: {
+            effect1: {
+                title: "Flame Resonance",
+                description: 
+                    `Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect cannot be stacked.`
+            }
+        },
         advancement: {
             star1: "When using the weapon skill, add **2%** of the enemy's max HP as bonus damage, up to **200%** of ATK.",
 
@@ -83,6 +90,17 @@ const cobalt = {
             jp: "川澄綾子 (Ayako Kawasumi)",
             en: "Stephanie Kerbis",
             cn: "陈睿婕"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            bonusEffect: {
+                effect1: {
+                    title: "",
+                    description: ``
+                }
+            }
         }
     }
 }

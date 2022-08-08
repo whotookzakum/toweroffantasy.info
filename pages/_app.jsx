@@ -1,8 +1,10 @@
 import Layout from '../components/Layout';
 import Script from 'next/script';
+import { useState } from 'react';
 import '../styles/styles.scss';
 
 export default function App({ Component, pageProps }) {
+  const [versionState, setVersionState] = useState("global");
   return (
     <>
       {/* <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
@@ -31,7 +33,7 @@ export default function App({ Component, pageProps }) {
         `}
       </Script>
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} version={versionState} setVersion={setVersionState} />
       </Layout>
     </>
   );

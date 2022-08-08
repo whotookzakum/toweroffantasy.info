@@ -12,3 +12,9 @@ Thank you to everyone that has contributed guides, advice, game data, localizati
 - SCSS
 - Netlify (Deployment)
 - GitHub Pages (Deployment, former)
+
+## Milestones
+March 25, 2022: Site goes live 
+May 7, 2022: 1k users
+August 2, 2022: 10k users
+August 6, 2022: 20k users

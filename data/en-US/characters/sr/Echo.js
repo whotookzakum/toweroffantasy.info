@@ -1,7 +1,7 @@
 const echo = {
     name: "Echo",
     uri: "echo",
-    imgSrc: "echo.png",
+    imgSrc: "echo.webp",
     rarity: "SR",
     chinaOnly: false,
     weapon: {
@@ -21,8 +21,7 @@ const echo = {
 
             star4: `Increase the current weapon's base ATK growth by **20%**.`,
 
-            star5: `Double stun duration from dodge skills.  
-                <abbr title='China Exclusive'/> Double stun duration from forward dodge skills.`,
+            star5: `Double stun duration from dodge skills.`,
 
             star6: `Discharge deals more damage the further it travels, up to **100%** more damage.`
         },
@@ -132,6 +131,15 @@ const echo = {
             jp: "大久保瑠美 (Rumi Okubo)",
             en: "Jeannie Tirado",
             cn: ""
+        }
+    },
+
+    cnData: {
+        name: "Echo (Manaka)",
+        weapon: {
+            advancement: {
+                star5: `<abbr title='China Exclusive'></abbr> Double stun duration from forward dodge skills.`
+            }
         }
     }
 }

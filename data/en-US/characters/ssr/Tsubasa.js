@@ -1,7 +1,7 @@
 const tsubasa = {
     name: "Tsubasa",
     uri: "tsubasa",
-    imgSrc: "tsubasa.png",
+    imgSrc: "tsubasa.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
@@ -13,7 +13,7 @@ const tsubasa = {
         charge: ["S", "11.50"],
         materials: ["ice", "red", "blue"],
         advancement: {
-            star1: `Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **8%** for **15** seconds. Stack up to **3**.`,
+            star1: `Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **5%** for **15** seconds. Stack up to **3** times.`,
             
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
             
@@ -94,11 +94,9 @@ const tsubasa = {
     },
 
     matrix: {
-        set2: `Increase damage dealt by **10%/12.5%/15%/17.5%** when there are no enemies within 4 meters.  
-            <abbr title='China Exclusive'></abbr> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
+        set2: `Increase damage dealt by **10%/12.5%/15%/17.5%** when there are no enemies within 4 meters.`,
 
-        set4: `Upon a headshot, increase ATK by **12%/15%/18%/21%** for 8 seconds.  
-            <abbr title='China Exclusive'></abbr> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by **15%/18%/21%/25%** for 8 seconds.`
+        set4: `Upon a headshot, increase ATK by **12%/15%/18%/21%** for 8 seconds.`
     },
 
     awakening: {
@@ -127,6 +125,20 @@ const tsubasa = {
             en: "Amber Lee Connors",
             cn: "徐徐"
         }
+    },
+
+    cnData: {
+        name: "Tsubasa (Hane)",
+        weapon: {
+            advancement: {
+                star1: `<abbr title='China Exclusive'></abbr> Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **8%** for **15** seconds. Stack up to **3** times.`
+            }
+        },
+        matrix: {
+            set2: `<abbr title='China Exclusive'></abbr> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`,
+    
+            set4: `<abbr title='China Exclusive'></abbr> Upon a headshot or Icewind Arrow Skill - Piercing Arrow hitting a target, increase ATK by **15%/18%/21%/25%** for 8 seconds.`
+        },
     }
 }
 

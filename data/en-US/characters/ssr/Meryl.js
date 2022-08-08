@@ -1,7 +1,7 @@
 const meryl = {
     name: "Meryl",
     uri: "meryl",
-    imgSrc: "meryl.png",
+    imgSrc: "meryl.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
@@ -108,12 +108,10 @@ const meryl = {
 
     matrix: {
         set2: 
-            `If HP is less than **30%** after being attacked, gain a shield equal to **15%/19%/22.5%/26%** of Max HP for **10** seconds. Cooldown: **120** seconds.  
-            <abbr title='China Exclusive'></abbr> If HP is less than **30%** after being attacked, gain a shield equal to **20%/26%/32%/40%** of Max HP for **10** seconds. Cooldown: **90** seconds.`,
+            `If HP is less than **30%** after being attacked, gain a shield equal to **15%/19%/22.5%/26%** of Max HP for **10** seconds. Cooldown: **120** seconds.`,
 
         set4: 
-            `Increase Whirlwind's damage by **36%/45%/54%/63%** and restore HP equal to **30%/38%/44%/50%** of the damage dealt while Whirlwind is active. The maximum HP restored every **0.5** seconds cannot exceed **60%/72%/81%/90%** of ATK.  
-            <abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealth during shield to health, restores no more than **105%/127.5%/150%/172.5%** of attack power every 0.5 seconds`,
+            `Increase Whirlwind's damage by **36%/45%/54%/63%** and restore HP equal to **30%/38%/44%/50%** of the damage dealt while Whirlwind is active. The maximum HP restored every **0.5** seconds cannot exceed **60%/72%/81%/90%** of ATK.`,
     },
 
     awakening: {
@@ -144,6 +142,14 @@ const meryl = {
             jp: "石川由依 (Yui Ishikawa)",
             en: "Kira Buckland",
             cn: "秦紫翼"
+        }
+    },
+
+    cnData: {
+        matrix: {
+            set2: `<abbr title='China Exclusive'></abbr> If HP is less than **30%** after being attacked, gain a shield equal to **20%/26%/32%/40%** of Max HP for **10** seconds. Cooldown: **90** seconds.`,
+
+            set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealth during shield to health, restores no more than **105%/127.5%/150%/172.5%** of attack power every 0.5 seconds.`
         }
     }
 }

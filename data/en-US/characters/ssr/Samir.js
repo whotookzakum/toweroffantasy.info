@@ -1,7 +1,7 @@
 const samir = {
     name: "Samir",
     uri: "samir",
-    imgSrc: "samir.png",
+    imgSrc: "samir.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
@@ -88,11 +88,9 @@ const samir = {
     },
 
     matrix: {
-        set2: `Increase damage progressively by **1%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **1.5** seconds.  
-            <abbr title='China Exclusive'></abbr> Increase damage progressively by **1.5%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **2** seconds.`,
+        set2: `Increase damage progressively by **1%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **1.5** seconds.`,
 
-        set4: `Increase Dual EM Stars' electrical explosion damage by **16%/22%/30%/40%** of ATK.  
-            <abbr title='China Exclusive'></abbr> Adds an extra hit to the locked on target for every attack for **10%/12.5%/15%/17.5%** damage (can not crit).`
+        set4: `Increase Dual EM Stars' electrical explosion damage by **16%/22%/30%/40%** of ATK.`
     },
 
     awakening: {
@@ -120,6 +118,14 @@ const samir = {
             en: "Brittany Cox",
             cn: "唐雅菁"
         }
+    },
+
+    cnData: {
+        matrix: {
+            set2: `<abbr title='China Exclusive'></abbr> Increase damage progressively by **1.5%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **2** seconds.`,
+    
+            set4: `<abbr title='China Exclusive'></abbr> Adds an extra hit to the locked on target for every attack for **10%/12.5%/15%/17.5%** damage (can not crit).`
+        },
     }
 }
 

@@ -1,7 +1,7 @@
 const lin = {
     name: "Lin",
     uri: "lin",
-    imgSrc: "lin.png",
+    imgSrc: "lin.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

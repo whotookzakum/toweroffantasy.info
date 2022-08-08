@@ -1,7 +1,7 @@
 const tenetguard = {
     name:"Tenet Guard",
     uri: "tenet-guard",
-    imgSrc: "tenetguard.png",
+    imgSrc: "tenetguard.webp",
     rarity:"R",
     chinaOnly: false,
     matrix: { 

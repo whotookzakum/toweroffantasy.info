@@ -2,7 +2,7 @@ const saki = {
     // 流泉彻心
     name: "Saki Fuwa",
     uri: "saki-fuwa",
-    imgSrc: "sakifuwa.png",
+    imgSrc: "sakifuwa.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

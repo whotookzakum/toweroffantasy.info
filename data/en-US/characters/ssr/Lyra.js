@@ -1,7 +1,7 @@
 const lyra = {
     name: "Lyra",
     uri: "lyra",
-    imgSrc: "lyra.png",
+    imgSrc: "lyra.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

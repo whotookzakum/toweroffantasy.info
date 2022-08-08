@@ -1,7 +1,7 @@
 const marc = {
     name: "Marc",
     uri: "marc",
-    imgSrc: "marc.png",
+    imgSrc: "marc.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {
@@ -36,7 +36,7 @@ const marc = {
         bonusEffect: {
             effect1: {
                 title: `Guardian`,
-                description: `**[GROUP PLAY]** When using Re-entry, Form Switch, or Full Shot, inflict **40%** damage to the lowest HP ally for **10** seconds, afterwards restoring **10%** of lost HP, only triggered while using Perseverance Resonance, the effect will not be removed and cannot be triggered again until the end of time.`
+                description: `**[GROUP PLAY]** When using Re-entry, Form Switch, or Full Shot, take **40%** damage for your lowest HP ally and recover 10% of it back after **10** seconds. Only activates while using Perseverance Resonance and the effect cannot be removed early or reactivated until it ends.`
             },
             effect2: {
                 title: `Amplify`,

@@ -5,6 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import CNTag from "../../components/CNTag";
 import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
+import _ from "lodash";
+import { VersionToggler } from "../../components/VersionToggler";
 
 export async function getStaticProps({ params }) {
     const relic = await getRelicData(params.id);
@@ -23,8 +25,12 @@ export async function getStaticPaths() {
     };
 }
 
-export default function RelicPage({ relic }) {
-    const advancements = Object.entries(relic.advancement).map(([star, effect]) => {
+export default function RelicPage({ relic, version, setVersion }) {
+    const cnData = _.cloneDeep(relic);
+    const chinaData = _.merge(cnData, cnData.cnData);
+    const dataVersion = (version === "global") ? relic : chinaData;
+
+    const advancements = Object.entries(dataVersion.advancement).map(([star, effect]) => {
         return (
             <tr key={star}>
                 <th>{star.split("star").pop()} ★</th>
@@ -36,20 +42,25 @@ export default function RelicPage({ relic }) {
     return (
         <>
             <Head>
-                <title>{setPageTitle(relic.name)}</title>
+                <title>{setPageTitle(dataVersion.name)}</title>
+                <meta name="description" content={`Information about the relic ${relic.name} in Tower of Fantasy.`} />
             </Head>
 
             <Modal item={relic}>
                 <div className="modal-body">
-                    {relic.chinaOnly && <CNTag name={relic.name} />}
+                    {dataVersion.chinaOnly && <CNTag name={dataVersion.name} />}
 
                     <section className="relic-effects w-75ch">
                         <h3>Relic Effect</h3>
-                        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{relic.description}</ReactMarkdown>
+                        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{dataVersion.description}</ReactMarkdown>
                     </section>
 
                     <section className="advancements w-75ch">
-                        <h3>Advancements</h3>
+                        <div className="modal-section-header">
+                            <h3>Advancements</h3>
+                            {!dataVersion.chinaOnly &&
+                                <VersionToggler section="relic-advancements" version={version} setVersion={setVersion} />}
+                        </div>
                         <table className="modal-table">
                             <thead>
                                 <tr>
@@ -61,6 +72,15 @@ export default function RelicPage({ relic }) {
                                 {advancements}
                             </tbody>
                         </table>
+                        {dataVersion.videoSrc &&
+                            <>
+                                <h2>Preview</h2>
+                                <iframe src={dataVersion.videoSrc} allow="fullscreen" modestbranding={1} />
+                                <p>
+                                    The relic shown in the video is <strong className="yellow">{dataVersion.starsInVideo}★</strong>.
+                                </p>
+                            </>
+                        }
                     </section>
                 </div>
             </Modal>

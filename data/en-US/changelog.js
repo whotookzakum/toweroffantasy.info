@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 8",
+        text: "Version toggler added to applicable pages--you can now quickly see between CN and global versions without cluttering the page; Converted pngs to webp (images load faster now!); Relic videos added"
+    },
+    {
         date: "August 5",
         text: "Added Exploration page; Renamed Guide 'Home Island' to 'Artificial Island Construction' for accuracy, so URLs have changed, sorry!"
     },

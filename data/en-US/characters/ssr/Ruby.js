@@ -1,7 +1,7 @@
 const ruby = {
     name: "Ruby",
     uri: "ruby",
-    imgSrc: "ruby.png",
+    imgSrc: "ruby.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

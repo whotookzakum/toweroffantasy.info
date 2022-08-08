@@ -1,7 +1,7 @@
 const cube = {
     name: "2613",
     uri: "2613",
-    imgSrc: "2613.png",
+    imgSrc: "2613.webp",
     chinaOnly: true,
     parts: {
         part1: {

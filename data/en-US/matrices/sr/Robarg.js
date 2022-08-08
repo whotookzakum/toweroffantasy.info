@@ -1,7 +1,7 @@
 const robarg = {
     name:"Robarg",
     uri: "robarg",
-    imgSrc: "robarg.png",
+    imgSrc: "robarg.webp",
     rarity:"SR",
     chinaOnly: false,
     matrix: {

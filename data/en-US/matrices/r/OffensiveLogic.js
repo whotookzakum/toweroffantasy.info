@@ -1,7 +1,7 @@
 const offensivelogic = {
     name:"Offensive Logic",
     uri: "offensive-logic",
-    imgSrc: "offensivelogic.png",
+    imgSrc: "offensivelogic.webp",
     rarity:"R",
     chinaOnly: true,
     matrix: { 

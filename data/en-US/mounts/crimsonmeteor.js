@@ -1,7 +1,7 @@
 const crimsonmeteor = {
     name: "Crimson Meteor",
     uri: "crimson-meteor",
-    imgSrc: "crimsonmeteor.png",
+    imgSrc: "crimsonmeteor.webp",
     chinaOnly: true,
     parts: {
         part1: {

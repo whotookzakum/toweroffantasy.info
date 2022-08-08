@@ -1,7 +1,7 @@
 const desertrower = {
     name: "Desert Rower",
     uri: "desert-rower",
-    imgSrc: "desertrower.png",
+    imgSrc: "desertrower.webp",
     chinaOnly: true,
     parts: {
         part1: {

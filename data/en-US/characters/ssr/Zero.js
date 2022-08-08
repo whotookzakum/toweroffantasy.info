@@ -1,7 +1,7 @@
 const zero = {
     name: "Zero",
     uri: "zero",
-    imgSrc: "zero.png",
+    imgSrc: "zero.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {
@@ -18,14 +18,13 @@ const zero = {
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
             
-            star3: `Reduce skill cooldown from **90** seconds to **45** seconds. Restore HP equal to **30%** of ATK every second while the shield is active.`,
+            star3: `Reduce skill cooldown from **60** seconds to **30** seconds. Restore HP equal to **30%** of ATK every second while the shield is active.`,
             
             star4: `Increase the current weapon's base HP growth by **32%**.`,
             
-            star5: `Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **1.5%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.  
-            <abbr title='China Exclusive'></abbr> Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.`,
+            star5: `Damaging a target also produces a damage orb, which lasts for **20** seconds and increases all damage and healing of any teammate who picks it up by **2%** for **30** seconds. Stack up to **10** times. Skill cooldown is **2.5** seconds.`,
             
-            star6: `Using an ability grants allies healing orbs and damage orbs equal to the number of Omnium Cubes.`
+            star6: `Using a Skill grants allies healing orbs and damage orbs equal to the number of Omnium Cubes.`
         },
         abilities: {
             normal: [
@@ -76,7 +75,7 @@ const zero = {
             skill: [
                 {
                     name: "Omnium Shield",
-                    description: `Create shielding for self and nearby allies to block up to **800%** x ATK in damage for **10** seconds, and deal **109.9%** x ATK + **6** damage to nearby targets and **launch** them. Each cube in possession when this skill is used adds **160%** of ATK to max shielding and exhaust the cube. Cooldown: **90** seconds.`
+                    description: `Create shielding for self and nearby allies to block up to **800%** x ATK in damage for **10** seconds, and deal **109.9%** x ATK + **6** damage to nearby targets and **launch** them. Each cube in possession when this skill is used adds **160%** of ATK to max shielding and exhaust the cube. Cooldown: **60** seconds.`
                 }
             ],
             discharge: [
@@ -95,8 +94,7 @@ const zero = {
     },
 
     matrix: {
-        set2: `Upon using a discharge skill to switch to the current weapon, gain a shield equal to **120%/150%/180%/210%** of ATK for **4** seconds.  
-            <abbr title='China Exclusive'></abbr> Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds.`,
+        set2: `Upon using a discharge skill to switch to the current weapon, gain a shield equal to **120%/150%/180%/210%** of ATK for **4** seconds.`,
 
         set4: `While the shield is active, you and your teammates deal **16%/20%/24%/28%** more damage.`
     },
@@ -126,6 +124,17 @@ const zero = {
             jp: "村瀬歩 (Ayumu Murase)",
             en: "",
             cn: "幽幽"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            advancement: {
+                star5: `<abbr title='China Exclusive'></abbr> Damaging a target also produces a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%** for **45** seconds. Stack up to **10** times. Skill cooldown is **2.5** seconds.`
+            }
+        },
+        matrix: {
+            set2: `<abbr title='China Exclusive'></abbr> Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds.`
         }
     }
 }

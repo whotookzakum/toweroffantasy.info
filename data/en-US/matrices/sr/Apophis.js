@@ -1,7 +1,7 @@
 const apophis = {
     name:"Apophis",
     uri: "apophis",
-    imgSrc: "apophis.png",
+    imgSrc: "apophis.webp",
     rarity:"SR",
     chinaOnly: false,
     matrix: {

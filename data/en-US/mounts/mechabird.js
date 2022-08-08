@@ -1,7 +1,7 @@
 const mechabird = {
     name: "Mechabird",
     uri: "mechabird",
-    imgSrc: "mechabird.png",
+    imgSrc: "mechabird.webp",
     chinaOnly: true,
     parts: {
         part1: {
