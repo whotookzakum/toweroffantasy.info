@@ -132,6 +132,10 @@ const pepper = {
             en: "Kayli Mills",
             cn: ""
         }
+    },
+
+    cnData: {
+        name: "Pepper (Peppa)"
     }
 }
 

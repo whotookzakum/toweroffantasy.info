@@ -11,7 +11,6 @@ import Link from "next/link";
 import { MATRICES } from "../../data/en-US/matrices/matrixList";
 import _ from 'lodash';
 import { VersionToggler } from "../../components/VersionToggler";
-import { useEffect } from "react";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -162,7 +161,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Head>
                 <title>{setPageTitle(simulacrum.name)}</title>
             </Head>
-            <Modal item={simulacrum} >
+            <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
 
@@ -204,9 +203,10 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </div>
                     </div>
                     <section className="weapon-effects w-75ch">
-                        <div className="flex" style={{ alignItems: "center", justifyContent: "space-between" }}>
+                        <div className="modal-section-header">
                             <h3>Weapon Effects</h3>
-                            <VersionToggler section="weapon-effects" version={version} setVersion={setVersion} />
+                            { !simulacrum.chinaOnly && 
+                                <VersionToggler section="weapon-effects" version={version} setVersion={setVersion} /> }
                         </div>
                         <div>
                             <h4 style={{ color: elementColor }}>{elementalEffects[weapon.element].title}</h4>
@@ -215,8 +215,11 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         {weapon.bonusEffect && getBonusEffects()}
                     </section>
                     <section className="advancements w-75ch">
-                        <h3>Advancements</h3>
-                        <VersionToggler section="weapon-advancements" version={version} setVersion={setVersion} />
+                        <div className="modal-section-header">
+                            <h3>Advancements</h3>
+                            { !simulacrum.chinaOnly && 
+                                <VersionToggler section="weapon-advancements" version={version} setVersion={setVersion} /> }
+                        </div>
                         <table className="modal-table">
                             <thead style={{ borderColor: elementColor }}>
                                 <tr>
@@ -231,7 +234,12 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     </section>
                     {Object.keys(weapon.abilities).length > 0 &&
                         <section className="weapon-abilities w-75ch">
-                            <h3>Weapon Abilities</h3>
+                            <div className="modal-section-header">
+                                <h3>Weapon Abilities</h3>
+                                { !simulacrum.chinaOnly && 
+                                    <VersionToggler section="weapon-abilities" version={version} setVersion={setVersion} /> }
+                            </div>
+                            
                             {weapon.abilitiesVideoSrc &&
                                 <iframe src={weapon.abilitiesVideoSrc} allow="fullscreen" modestbranding={1} />
                             }
@@ -244,7 +252,11 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         <ul>{weaponMaterials}</ul>
                     </section>
                     <section className="weapon-rec-matrices w-75ch">
-                        <h3>Recommended Matrices</h3>
+                        <div className="modal-section-header">
+                            <h3>Recommended Matrices</h3>
+                            { !simulacrum.chinaOnly && 
+                                <VersionToggler section="recommended-matrices" version={version} setVersion={setVersion} /> }
+                        </div>
                         <ul>{recMatrix}</ul>
                     </section>
 
@@ -252,7 +264,11 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
 
                     <h2>Awakening</h2>
                     <section className="awakening-traits w-75ch">
-                        <h3>Simulacrum Traits</h3>
+                        <div className="modal-section-header">
+                            <h3>Simulacrum Traits</h3>
+                            { !simulacrum.chinaOnly && 
+                                <VersionToggler section="simulacrum-traits" version={version} setVersion={setVersion} /> }
+                        </div>
                         <table className="modal-table">
                             <thead style={{ borderColor: elementColor }}>
                                 <tr>

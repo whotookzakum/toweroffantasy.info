@@ -44,8 +44,7 @@ const nemesis = {
             effect1: {
                 title: "Volt Resonance",
                 description: 
-                    `Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others.  
-                    <abbr title='China Exclusive'></abbr> When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background.`
+                    `Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others.`
             }
         },
         advancement: {
@@ -55,14 +54,12 @@ const nemesis = {
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
             star3: 
-                `Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **205%** of ATK in a target area.  
-                <abbr title='China Exclusive'></abbr> Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
+                `Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **205%** of ATK in a target area.`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
             star5: 
-                `After using the **Weapon Skill**, increase Volt ATK by ( **5** + Your Electrode Count &times; **5** ) % for **25** seconds.  
-                <abbr title='China Exclusive'></abbr> After using the **Weapon Skill**, increase Volt ATK by ( **10** + Your Electrode Count &times; **10** ) % for **25** seconds.`,
+                `After using the **Weapon Skill**, increase Volt ATK by ( **5** + Your Electrode Count &times; **5** ) % for **25** seconds.`,
 
             star6: 
                 `Up to **2** Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user.`
@@ -156,12 +153,10 @@ const nemesis = {
  
     matrix: {
         set2: 
-            `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.
-            <abbr title='China Exclusive'></abbr> When a target is being healed, their volt ATK is increased by **15%/18%/21%/25%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
+            `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
 
         set4: 
-            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **240%/300%/360%/420%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.
-            <abbr title='China Exclusive'></abbr> When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **300%/375%/450%/525%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.`
+            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **240%/300%/360%/420%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.`
     },
 
     awakening: {
@@ -189,6 +184,28 @@ const nemesis = {
             jp: "戸松遥",
             en: "",
             cn: "宋媛媛"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            bonusEffect: {
+                effect1: {
+                    title: "Volt Resonance",
+                    description: 
+                        `<abbr title='China Exclusive'></abbr> When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background.`
+                }
+            },
+            advancement: {
+                star3: `<abbr title='China Exclusive'></abbr> Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
+
+                star5: `<abbr title='China Exclusive'></abbr> After using the **Weapon Skill**, increase Volt ATK by ( **10** + Your Electrode Count &times; **10** ) % for **25** seconds.`
+            }
+        },
+        matrix: {
+            set2: `<abbr title='China Exclusive'></abbr> When a target is being healed, their volt ATK is increased by **15%/18%/21%/25%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
+
+            set4: `<abbr title='China Exclusive'></abbr> When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **300%/375%/450%/525%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.`
         }
     }
 }

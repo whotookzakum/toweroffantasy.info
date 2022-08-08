@@ -22,8 +22,7 @@ const zero = {
             
             star4: `Increase the current weapon's base HP growth by **32%**.`,
             
-            star5: `Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **1.5%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.  
-            <abbr title='China Exclusive'></abbr> Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.`,
+            star5: `Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **1.5%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.`,
             
             star6: `Using an ability grants allies healing orbs and damage orbs equal to the number of Omnium Cubes.`
         },
@@ -95,8 +94,7 @@ const zero = {
     },
 
     matrix: {
-        set2: `Upon using a discharge skill to switch to the current weapon, gain a shield equal to **120%/150%/180%/210%** of ATK for **4** seconds.  
-            <abbr title='China Exclusive'></abbr> Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds.`,
+        set2: `Upon using a discharge skill to switch to the current weapon, gain a shield equal to **120%/150%/180%/210%** of ATK for **4** seconds.`,
 
         set4: `While the shield is active, you and your teammates deal **16%/20%/24%/28%** more damage.`
     },
@@ -126,6 +124,17 @@ const zero = {
             jp: "村瀬歩 (Ayumu Murase)",
             en: "",
             cn: "幽幽"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            advancement: {
+                star5: `<abbr title='China Exclusive'></abbr> Deal damage and produce a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%**. Stacks up to **10** times and lasts for **45** seconds. **2.5**-second cooldown.`
+            }
+        },
+        matrix: {
+            set2: `<abbr title='China Exclusive'></abbr> Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds.`
         }
     }
 }

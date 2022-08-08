@@ -153,7 +153,7 @@ const claudia = {
         birthday: '16 Jan',
         voiceActors: {
             jp: "小松未可子 (Mikako Komatsu)",
-            en: "",
+            en: "Elizabeth Simmons",
             cn: "文小"
         }
     }

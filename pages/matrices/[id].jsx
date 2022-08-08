@@ -5,6 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import CNTag from "../../components/CNTag";
 import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
+import { VersionToggler } from "../../components/VersionToggler";
+import _ from "lodash";
 
 export async function getStaticProps({ params }) {
     const matrix = await getMatrixData(params.id);
@@ -23,14 +25,20 @@ export async function getStaticPaths() {
     };
 }
 
-export default function MatrixPage({ matrix }) {
-    const matrixSet = matrix.matrix;
+export default function MatrixPage({ matrix, version, setVersion }) {
+    const cnData = _.cloneDeep(matrix);
+    const chinaData = _.merge(cnData, cnData.cnData);
+    const matrixSet = (version === "global") ? matrix.matrix : chinaData.matrix;
 
     const setEffects = Object.entries(matrixSet).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
         return (
             <section key={key} className="matrix-set w-75ch">
-                <h3>{reqPieces}-piece Set</h3>
+                <div className="modal-section-header">
+                    <h3>{reqPieces}-piece Set</h3>
+                    { !matrix.chinaOnly && 
+                        <VersionToggler section={`matrices-${reqPieces}-set`} version={version} setVersion={setVersion} /> }
+                </div>
                 <ReactMarkdown rehypePlugins={[rehypeRaw]}>{matrixSet[key]}</ReactMarkdown>
                 <details style={{ display: 'none' }}>
                     <summary>Advancements</summary>

@@ -144,6 +144,10 @@ const ene = {
             en: "Melissa Fahn",
             cn: ""
         }
+    },
+
+    cnData: {
+        name: "Ene (Xi)"
     }
 }
 

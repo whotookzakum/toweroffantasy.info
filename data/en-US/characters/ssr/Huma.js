@@ -145,7 +145,7 @@ const huma = {
         birthday: '12 Jan',
         voiceActors: {
             jp: "高橋李依 (Rie Takahashi)",
-            en: "",
+            en: "Colleen O'Shaughnessey",
             cn: "唐雅菁"
         }
     }
