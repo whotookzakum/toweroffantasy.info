@@ -67,10 +67,10 @@ function Navigation() {
                         <a href="https://twitter.com/_Aida_Cafe" target="_blank" rel="noreferrer noopener"><TwitterIcon /></a>
                     </li>
                 </ul>
-                <select name="lang-selector" id="lang-selector" onChange={(e) => setLang(e.target.value)}>
+                {/* <select name="lang-selector" id="lang-selector" onChange={(e) => setLang(e.target.value)}>
                     <option value="lang-en">English (US)</option>
                     <option value="lang-ru">Русский</option>
-                </select>
+                </select> */}
                 <span className="nav-footer">&copy; Tower of Fantasy Index.<br /> All rights reserved.</span>
             </div>
         </nav>
