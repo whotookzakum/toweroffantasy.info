@@ -1,7 +1,7 @@
 const claudia = {
     name: "Claudia",
     uri: "claudia",
-    imgSrc: "claudia.png",
+    imgSrc: "claudia.webp",
     rarity: "SSR",
     chinaOnly: false,
     banners: {

@@ -11,7 +11,7 @@ function Relics() {
                 <meta name="description" content="Information about all the Relics in Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src={`/static/images/relics/alternatedestiny.png`} alt="Alternate Destiny" />
+            <img className="bg-img" src={`/static/images/relics/alternatedestiny.webp`} alt="Alternate Destiny" />
             <header>
                 <h1>Relics</h1>
                 <p>

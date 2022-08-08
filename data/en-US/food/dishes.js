@@ -3,7 +3,7 @@ import i from "./ingredients";
 const recipes = [
     {
         name: 'Fried Mushrooms',
-        imgSrc: "friedmushrooms.png",
+        imgSrc: "friedmushrooms.webp",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
@@ -16,7 +16,7 @@ const recipes = [
     },
     {
         name: 'Crispy Grilled Fish',
-        imgSrc: "crispygrilledfish.png",
+        imgSrc: "crispygrilledfish.webp",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
@@ -27,7 +27,7 @@ const recipes = [
     },
     {
         name: 'Wholegrain Bread',
-        imgSrc: "wholegrainbread.png",
+        imgSrc: "wholegrainbread.webp",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
@@ -38,7 +38,7 @@ const recipes = [
     },
     {
         name: 'Sizzling Meat',
-        imgSrc: "sizzlingmeat.png",
+        imgSrc: "sizzlingmeat.webp",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
@@ -49,7 +49,7 @@ const recipes = [
     },
     {
         name: 'Lettuce Salad',
-        imgSrc: "lettucesalad.png",
+        imgSrc: "lettucesalad.webp",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
@@ -63,7 +63,7 @@ const recipes = [
     },
     {
         name: 'Fried Egg',
-        imgSrc: "friedegg.png",
+        imgSrc: "friedegg.webp",
         chinaOnly: false,
         rarity: 1,
         stars: 1,
@@ -76,7 +76,7 @@ const recipes = [
     },
     {
         name: 'Grilled Sand Onion',
-        imgSrc: "grilledsandonion.png",
+        imgSrc: "grilledsandonion.webp",
         chinaOnly: true,
         rarity: 1,
         stars: 1,
@@ -87,7 +87,7 @@ const recipes = [
     },
     {
         name: 'Special Cactus Drink',
-        imgSrc: "specialcactusdrink.png",
+        imgSrc: "specialcactusdrink.webp",
         chinaOnly: true,
         rarity: 1,
         stars: 1,
@@ -100,7 +100,7 @@ const recipes = [
     },
     {
         name: 'Seaweed and Egg Soup',
-        imgSrc: "seaweedandeggsoup.png",
+        imgSrc: "seaweedandeggsoup.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -114,7 +114,7 @@ const recipes = [
     },
     {
         name: 'Breakfast Cereal',
-        imgSrc: "breakfastcereal.png",
+        imgSrc: "breakfastcereal.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -126,7 +126,7 @@ const recipes = [
     },
     {
         name: 'Crispy Chicken Burger',
-        imgSrc: "crispychickenburger.png",
+        imgSrc: "crispychickenburger.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -141,7 +141,7 @@ const recipes = [
     },
     {
         name: 'Egg Fried Rice',
-        imgSrc: "eggfriedrice.png",
+        imgSrc: "eggfriedrice.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -153,7 +153,7 @@ const recipes = [
     },
     {
         name: 'Golden Egg and Tomato',
-        imgSrc: "goldeneggandtomato.png",
+        imgSrc: "goldeneggandtomato.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -167,7 +167,7 @@ const recipes = [
     },
     {
         name: 'Mushroom Soup',
-        imgSrc: "mushroomsoup.png",
+        imgSrc: "mushroomsoup.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -181,7 +181,7 @@ const recipes = [
     },
     {
         name: 'Steamed Conch',
-        imgSrc: "steamedconch.png",
+        imgSrc: "steamedconch.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -195,7 +195,7 @@ const recipes = [
     },
     {
         name: 'Meat and Potato Stew',
-        imgSrc: "meatandpotatostew.png",
+        imgSrc: "meatandpotatostew.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -207,7 +207,7 @@ const recipes = [
     },
     {
         name: 'Fries',
-        imgSrc: "fries.png",
+        imgSrc: "fries.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -219,7 +219,7 @@ const recipes = [
     },
     {
         name: 'Vegetable Salad',
-        imgSrc: "vegetablesalad.png",
+        imgSrc: "vegetablesalad.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -235,7 +235,7 @@ const recipes = [
     },
     {
         name: 'Fried Chicken',
-        imgSrc: "friedchicken.png",
+        imgSrc: "friedchicken.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -249,7 +249,7 @@ const recipes = [
     },
     {
         name: 'Honeyed Fruit Juice',
-        imgSrc: "honeyedfruitjuice.png",
+        imgSrc: "honeyedfruitjuice.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -264,7 +264,7 @@ const recipes = [
     },
     {
         name: 'Iced Orchid Surprise',
-        imgSrc: "icedorchidsurprise.png",
+        imgSrc: "icedorchidsurprise.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -279,7 +279,7 @@ const recipes = [
     },
     {
         name: 'Stir-Fried Broccoli',
-        imgSrc: "stir-friedbroccoli.png",
+        imgSrc: "stir-friedbroccoli.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -290,7 +290,7 @@ const recipes = [
     },
     {
         name: 'Meat Bun',
-        imgSrc: "meatbun.png",
+        imgSrc: "meatbun.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -302,7 +302,7 @@ const recipes = [
     },
     {
         name: 'Sliced Fish with Mushroom',
-        imgSrc: "slicedfishwithmushroom.png",
+        imgSrc: "slicedfishwithmushroom.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -316,7 +316,7 @@ const recipes = [
     },
     {
         name: 'Dandelion Mushroom Soup',
-        imgSrc: "dandelionmushroomsoup.png",
+        imgSrc: "dandelionmushroomsoup.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 1,
@@ -330,7 +330,7 @@ const recipes = [
     },
     {
         name: 'Surf and Turf',
-        imgSrc: "surfandturf.png",
+        imgSrc: "surfandturf.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
@@ -344,7 +344,7 @@ const recipes = [
     },
     {
         name: 'Red Wheat Bread',
-        imgSrc: "redwheatbread.png",
+        imgSrc: "redwheatbread.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
@@ -355,7 +355,7 @@ const recipes = [
     },
     {
         name: 'Firecap Mushroom Soup',
-        imgSrc: "firecapmushroomsoup.png",
+        imgSrc: "firecapmushroomsoup.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
@@ -369,7 +369,7 @@ const recipes = [
     },
     {
         name: 'Black Moss Soup',
-        imgSrc: "blackmosssoup.png",
+        imgSrc: "blackmosssoup.webp",
         chinaOnly: false,
         rarity: 2,
         stars: 2,
@@ -383,7 +383,7 @@ const recipes = [
     },
     {
         name: 'Beetroot Soup',
-        imgSrc: "beetrootsoup.png",
+        imgSrc: "beetrootsoup.webp",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
@@ -396,7 +396,7 @@ const recipes = [
     },
     {
         name: 'Deep-fried Tofu',
-        imgSrc: "deep-friedtofu.png",
+        imgSrc: "deep-friedtofu.webp",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
@@ -407,7 +407,7 @@ const recipes = [
     },
     {
         name: 'Salted Corn',
-        imgSrc: "saltedcorn.png",
+        imgSrc: "saltedcorn.webp",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
@@ -418,7 +418,7 @@ const recipes = [
     },
     {
         name: 'Grilled Lizard Tail',
-        imgSrc: "grilledlizardtail.png",
+        imgSrc: "grilledlizardtail.webp",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
@@ -431,7 +431,7 @@ const recipes = [
     },
     {
         name: 'Creamy Corn Soup',
-        imgSrc: "creamycornsoup.png",
+        imgSrc: "creamycornsoup.webp",
         chinaOnly: true,
         rarity: 2,
         stars: 1,
@@ -446,7 +446,7 @@ const recipes = [
     },
     {
         name: 'Seafood Soup',
-        imgSrc: "seafoodsoup.png",
+        imgSrc: "seafoodsoup.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -463,7 +463,7 @@ const recipes = [
     },
     {
         name: 'Spicy Burger',
-        imgSrc: "spicyburger.png",
+        imgSrc: "spicyburger.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -480,7 +480,7 @@ const recipes = [
     },
     {
         name: 'Steamed Crab',
-        imgSrc: "steamedcrab.png",
+        imgSrc: "steamedcrab.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -494,7 +494,7 @@ const recipes = [
     },
     {
         name: 'Iced Strawberry Soda',
-        imgSrc: "icedstrawberrysoda.png",
+        imgSrc: "icedstrawberrysoda.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -511,7 +511,7 @@ const recipes = [
     },
     {
         name: 'Thundercloud Blueberry Soda',
-        imgSrc: "thundercloudblueberrysoda.png",
+        imgSrc: "thundercloudblueberrysoda.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -528,7 +528,7 @@ const recipes = [
     },
     {
         name: 'Simple Power Salad',
-        imgSrc: "simplepowersalad.png",
+        imgSrc: "simplepowersalad.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -547,7 +547,7 @@ const recipes = [
     },
     {
         name: 'Steamed Egg with Sea Urchin',
-        imgSrc: "steamedeggwithseaurchin.png",
+        imgSrc: "steamedeggwithseaurchin.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -561,7 +561,7 @@ const recipes = [
     },
     {
         name: 'Jam on Toast',
-        imgSrc: "jamontoast.png",
+        imgSrc: "jamontoast.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -578,7 +578,7 @@ const recipes = [
     },
     {
         name: 'Tomato and Fried Egg Pasta',
-        imgSrc: "tomatoandfriedeggpasta.png",
+        imgSrc: "tomatoandfriedeggpasta.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -595,7 +595,7 @@ const recipes = [
     },
     {
         name: 'Fruit Cake',
-        imgSrc: "fruitcake.png",
+        imgSrc: "fruitcake.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -611,7 +611,7 @@ const recipes = [
     },
     {
         name: 'Boiled Scallops',
-        imgSrc: "boiledscallops.png",
+        imgSrc: "boiledscallops.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -625,7 +625,7 @@ const recipes = [
     },
     {
         name: 'Roast Rump',
-        imgSrc: "roastrump.png",
+        imgSrc: "roastrump.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 1,
@@ -638,7 +638,7 @@ const recipes = [
     },
     {
         name: 'Fiddlehead Pie',
-        imgSrc: "fiddleheadpie.png",
+        imgSrc: "fiddleheadpie.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -652,7 +652,7 @@ const recipes = [
     },
     {
         name: 'Chocolate Bread',
-        imgSrc: "chocolatebread.png",
+        imgSrc: "chocolatebread.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -666,7 +666,7 @@ const recipes = [
     },
     {
         name: 'Balloon Fruit Salad',
-        imgSrc: "balloonfruitsalad.png",
+        imgSrc: "balloonfruitsalad.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -681,7 +681,7 @@ const recipes = [
     },
     {
         name: 'Fiddlehead Soup',
-        imgSrc: "fiddleheadsoup.png",
+        imgSrc: "fiddleheadsoup.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -695,7 +695,7 @@ const recipes = [
     },
     {
         name: 'Spicy Eel',
-        imgSrc: "spicyeel.png",
+        imgSrc: "spicyeel.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -710,7 +710,7 @@ const recipes = [
     },
     {
         name: 'Eel and Mushroom Soup',
-        imgSrc: "eelandmushroomsoup.png",
+        imgSrc: "eelandmushroomsoup.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -726,7 +726,7 @@ const recipes = [
     },
     {
         name: 'Sea Crab Soup',
-        imgSrc: "seacrabsoup.png",
+        imgSrc: "seacrabsoup.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -742,7 +742,7 @@ const recipes = [
     },
     {
         name: 'Sweet Pomegranate Juice',
-        imgSrc: "sweetpomegranatejuice.png",
+        imgSrc: "sweetpomegranatejuice.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -757,7 +757,7 @@ const recipes = [
     },
     {
         name: 'Cocoa Milk',
-        imgSrc: "cocoamilk.png",
+        imgSrc: "cocoamilk.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -774,7 +774,7 @@ const recipes = [
     },
     {
         name: 'Firedragon Fruit Tea',
-        imgSrc: "firedragonfruittea.png",
+        imgSrc: "firedragonfruittea.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -790,7 +790,7 @@ const recipes = [
     },
     {
         name: 'Barnacle Stew',
-        imgSrc: "barnaclestew.png",
+        imgSrc: "barnaclestew.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -806,7 +806,7 @@ const recipes = [
     },
     {
         name: 'Barnacle Seafood Pizza',
-        imgSrc: "barnacleseafoodpizza.png",
+        imgSrc: "barnacleseafoodpizza.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -821,7 +821,7 @@ const recipes = [
     },
     {
         name: 'Snow Azalea Tea',
-        imgSrc: "snowazaleatea.png",
+        imgSrc: "snowazaleatea.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -838,7 +838,7 @@ const recipes = [
     },
     {
         name: 'Pine Cocoa',
-        imgSrc: "pinecocoa.png",
+        imgSrc: "pinecocoa.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -853,7 +853,7 @@ const recipes = [
     },
     {
         name: 'Caviar Sushi',
-        imgSrc: "caviarsushi.png",
+        imgSrc: "caviarsushi.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -868,7 +868,7 @@ const recipes = [
     },
     {
         name: 'Caviar Potato Balls',
-        imgSrc: "caviarpotatoballs.png",
+        imgSrc: "caviarpotatoballs.webp",
         chinaOnly: false,
         rarity: 3,
         stars: 2,
@@ -884,7 +884,7 @@ const recipes = [
     },
     {
         name: 'Stir-fried Peppers',
-        imgSrc: "stir-friedpeppers.png",
+        imgSrc: "stir-friedpeppers.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -900,7 +900,7 @@ const recipes = [
     },
     {
         name: 'Melon Salad',
-        imgSrc: "melonsalad.png",
+        imgSrc: "melonsalad.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -916,7 +916,7 @@ const recipes = [
     },
     {
         name: 'Pumpkin Porridge',
-        imgSrc: "pumpkinporridge.png",
+        imgSrc: "pumpkinporridge.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -930,7 +930,7 @@ const recipes = [
     },
     {
         name: 'Grilled Ribs',
-        imgSrc: "grilledribs.png",
+        imgSrc: "grilledribs.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -944,7 +944,7 @@ const recipes = [
     },
     {
         name: 'Chocolate Soymilk',
-        imgSrc: "chocolatesoymilk.png",
+        imgSrc: "chocolatesoymilk.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -959,7 +959,7 @@ const recipes = [
     },
     {
         name: 'Beetroot Fern',
-        imgSrc: "beetrootfern.png",
+        imgSrc: "beetrootfern.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -973,7 +973,7 @@ const recipes = [
     },
     {
         name: 'Honeydew Melon Bread',
-        imgSrc: "honeydewmelonbread.png",
+        imgSrc: "honeydewmelonbread.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -990,7 +990,7 @@ const recipes = [
     },
     {
         name: 'Mixed Grain Porridge',
-        imgSrc: "mixedgrainporridge.png",
+        imgSrc: "mixedgrainporridge.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -1005,7 +1005,7 @@ const recipes = [
     },
     {
         name: 'Corn and Seafood Pie',
-        imgSrc: "cornandseafoodpie.png",
+        imgSrc: "cornandseafoodpie.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -1020,7 +1020,7 @@ const recipes = [
     },
     {
         name: 'Steamed Pumpkin',
-        imgSrc: "steamedpumpkin.png",
+        imgSrc: "steamedpumpkin.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -1034,7 +1034,7 @@ const recipes = [
     },
     {
         name: 'Spicy Fried Rice',
-        imgSrc: "spicyfriedrice.png",
+        imgSrc: "spicyfriedrice.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 1,
@@ -1052,7 +1052,7 @@ const recipes = [
     },
     {
         name: 'Grilled Oysters',
-        imgSrc: "grilledoysters.png",
+        imgSrc: "grilledoysters.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
@@ -1065,7 +1065,7 @@ const recipes = [
     },
     {
         name: 'Cold Fish Leaf',
-        imgSrc: "coldfishleaf.png",
+        imgSrc: "coldfishleaf.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
@@ -1078,7 +1078,7 @@ const recipes = [
     },
     {
         name: 'Oyster Tofu Soup',
-        imgSrc: "oystertofusoup.png",
+        imgSrc: "oystertofusoup.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
@@ -1092,7 +1092,7 @@ const recipes = [
     },
     {
         name: 'Fishleaf Scrambled Eggs',
-        imgSrc: "fishleafscrambledeggs.png",
+        imgSrc: "fishleafscrambledeggs.webp",
         chinaOnly: true,
         rarity: 3,
         stars: 2,
@@ -1106,7 +1106,7 @@ const recipes = [
     },
     {
         name: 'Nut Tea',
-        imgSrc: "nuttea.png",
+        imgSrc: "nuttea.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1121,7 +1121,7 @@ const recipes = [
     },
     {
         name: "Purple Yam Pie",
-        imgSrc: "purpleyampie.png",
+        imgSrc: "purpleyampie.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1137,7 +1137,7 @@ const recipes = [
     },
     {
         name: 'Snow Lotus Soup',
-        imgSrc: "snowlotussoup.png",
+        imgSrc: "snowlotussoup.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1151,7 +1151,7 @@ const recipes = [
     },
     {
         name: 'Truffle Fried Rice',
-        imgSrc: "trufflefriedrice.png",
+        imgSrc: "trufflefriedrice.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1168,7 +1168,7 @@ const recipes = [
     },
     {
         name: 'Caterpillar Fungus Noodles',
-        imgSrc: "caterpillarfungusnoodles.png",
+        imgSrc: "caterpillarfungusnoodles.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1182,7 +1182,7 @@ const recipes = [
     },
     {
         name: 'Grilled Steak',
-        imgSrc: "grilledsteak.png",
+        imgSrc: "grilledsteak.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1197,7 +1197,7 @@ const recipes = [
     },
     {
         name: 'Steak with Sauce',
-        imgSrc: "steakwithsauce.png",
+        imgSrc: "steakwithsauce.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1213,7 +1213,7 @@ const recipes = [
     },
     {
         name: 'Braised Meat',
-        imgSrc: "braisedmeat.png",
+        imgSrc: "braisedmeat.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1228,7 +1228,7 @@ const recipes = [
     },
     {
         name: 'Juicy BLT',
-        imgSrc: "juicyblt.png",
+        imgSrc: "juicyblt.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1245,7 +1245,7 @@ const recipes = [
     },
     {
         name: 'Salmon Sashimi',
-        imgSrc: "salmonsashimi.png",
+        imgSrc: "salmonsashimi.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1260,7 +1260,7 @@ const recipes = [
     },
     {
         name: 'Snail Baked Rice',
-        imgSrc: "snailbakedrice.png",
+        imgSrc: "snailbakedrice.webp",
         chinaOnly: false,
         rarity: 4,
         stars: 2,
@@ -1276,7 +1276,7 @@ const recipes = [
     },
     {
         name: 'Aloe Vera Yogurt',
-        imgSrc: "aloeverayogurt.png",
+        imgSrc: "aloeverayogurt.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1291,7 +1291,7 @@ const recipes = [
     },
     {
         name: 'Rose Tea',
-        imgSrc: "rosetea.png",
+        imgSrc: "rosetea.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1305,7 +1305,7 @@ const recipes = [
     },
     {
         name: 'Radish Soup',
-        imgSrc: "radishsoup.png",
+        imgSrc: "radishsoup.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1318,7 +1318,7 @@ const recipes = [
     },
     {
         name: 'Rose Bread',
-        imgSrc: "rosebread.png",
+        imgSrc: "rosebread.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1334,7 +1334,7 @@ const recipes = [
     },
     {
         name: 'Chicken Noodle Soup',
-        imgSrc: "chickennoodlesoup.png",
+        imgSrc: "chickennoodlesoup.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1351,7 +1351,7 @@ const recipes = [
     },
     {
         name: 'Spicy Pork Noodles',
-        imgSrc: "spicyporknoodles.png",
+        imgSrc: "spicyporknoodles.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1368,7 +1368,7 @@ const recipes = [
     },
     {
         name: 'Barbecue Platter',
-        imgSrc: "barbecueplatter.png",
+        imgSrc: "barbecueplatter.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1385,7 +1385,7 @@ const recipes = [
     },
     {
         name: 'Radish Rib Soup',
-        imgSrc: "radishribsoup.png",
+        imgSrc: "radishribsoup.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1401,7 +1401,7 @@ const recipes = [
     },
     {
         name: 'Crispy Oil Melon',
-        imgSrc: "crispyoilmelon.png",
+        imgSrc: "crispyoilmelon.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1414,7 +1414,7 @@ const recipes = [
     },
     {
         name: 'Spicy Oil Melon Sticks',
-        imgSrc: "spicyoilmelonsticks.png",
+        imgSrc: "spicyoilmelonsticks.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,

@@ -1,7 +1,7 @@
 const explosivecore = {
     name:"Explosive Core",
     uri: "explosive-core",
-    imgSrc: "explosivecore.png",
+    imgSrc: "explosivecore.webp",
     rarity:"R",
     chinaOnly: false,
     matrix: {

@@ -1,7 +1,7 @@
 const omniumshield = {
     name: "Omnium Shield",
     uri: "omnium-shield",
-    imgSrc: "omniumshield.png",
+    imgSrc: "omniumshield.webp",
     rarity: "SSR",
     chinaOnly: false,
     description: "Generate an Omnium shield that stops projectiles for **10** seconds, with starting energy equal to **200%** of the Wanderer's max HP and **90**-second cooldown.",

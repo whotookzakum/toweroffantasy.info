@@ -1,7 +1,7 @@
 const cobalt = {
     name: "Cobalt-B",
     uri: "cobalt-b",
-    imgSrc: "cobalt-b.png",
+    imgSrc: "cobalt-b.webp",
     rarity: "SSR",
     chinaOnly: false,
     banners: {

@@ -1,7 +1,7 @@
 const couant = {
     name: "Couant",
     uri: "couant",
-    imgSrc: "couant.png",
+    imgSrc: "couant.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Summon a droid and generate a shield for **5** seconds. The shield disappears after **5** seconds or after being struck once. When it disappears, it knocks back nearby enemies, dealing damage equal to **100%** of ATK + **50**. If broken within **1** second of being created, the shield will stun enemies for **2** seconds. Cooldown: **30** seconds. Shares cooldown with Couant II.",

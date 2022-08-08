@@ -1,7 +1,7 @@
 const cyberneticarm = {
     name: "Cybernetic Arm",
     uri: "cybernetic-arm",
-    imgSrc: "cyberneticarm.png",
+    imgSrc: "cyberneticarm.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Launch a Cybernetic Arm to pull selected target to you, or you to the target. Deal **100%** damage on hit, and **strongly suspend** the target, then launch the target into the air (or idle the target if unable). Also regenerate weapon charge by **300**. Can be used to access hard-to-reach areas, and hold up to **2** charges at a time. Regain **1** charge every **30** seconds.",

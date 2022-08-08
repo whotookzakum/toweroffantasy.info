@@ -1,7 +1,7 @@
 const magneticstorm = {
     name: "Magnetic Storm",
     uri: "magnetic-storm",
-    imgSrc: "magneticstorm.png",
+    imgSrc: "magneticstorm.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Warp the magnetic field to unleash **1** electric tornado that travels through the battlefield at random for **10** seconds, throwing nearby enemies into the air and dealing damage equal to **186.3%** of ATK every second. Cooldown: **100** seconds.",

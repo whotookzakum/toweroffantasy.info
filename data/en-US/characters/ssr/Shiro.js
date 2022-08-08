@@ -1,7 +1,7 @@
 const shiro = {
     name: "Shiro",
     uri: "shiro",
-    imgSrc: "shiro.png",
+    imgSrc: "shiro.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

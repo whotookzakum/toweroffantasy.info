@@ -20,9 +20,9 @@ export const beginnerWeapons = {
                     There are 3 different weapon types in ToF: <strong className="yellow">DPS</strong>, <strong className="yellow">Defense</strong>, and <strong className="yellow">Support</strong>.
                 </p>
                 <div className="flex" style={{ gap: "0.5rem" }} >
-                    <img src="/static/images/dps.png" alt="DPS type" />
-                    <img src="/static/images/defense.png" alt="Defense type" />
-                    <img src="/static/images/support.png" alt="Support type" />
+                    <img src="/static/images/dps.webp" alt="DPS type" />
+                    <img src="/static/images/defense.webp" alt="Defense type" />
+                    <img src="/static/images/support.webp" alt="Support type" />
                 </div>
                 <p>
                     You can equip 3 weapons at a time, and based on the combination of your weapon types, you will receive a <strong className="yellow">Resonance</strong>.
@@ -40,9 +40,9 @@ export const beginnerWeapons = {
                             <th className="yellow">Balanced</th>
                             <td>
                                 <div className="flex" style={{ gap: "0.5rem" }} >
-                                    <img src="/static/images/dps.png" alt="DPS type" />
-                                    <img src="/static/images/defense.png" alt="Defense type" />
-                                    <img src="/static/images/support.png" alt="Support type" />
+                                    <img src="/static/images/dps.webp" alt="DPS type" />
+                                    <img src="/static/images/defense.webp" alt="Defense type" />
+                                    <img src="/static/images/support.webp" alt="Support type" />
                                 </div>
                             </td>
                             <td>
@@ -60,8 +60,8 @@ export const beginnerWeapons = {
                             <th className="yellow">Brute Force</th>
                             <td>
                                 <div className="flex" style={{ gap: "0.5rem" }} >
-                                    <img src="/static/images/dps.png" alt="DPS type" />
-                                    <img src="/static/images/dps.png" alt="DPS type" />
+                                    <img src="/static/images/dps.webp" alt="DPS type" />
+                                    <img src="/static/images/dps.webp" alt="DPS type" />
                                 </div>
                             </td>
                             <td>
@@ -79,8 +79,8 @@ export const beginnerWeapons = {
                             <th className="yellow">Perseverance</th>
                             <td>
                                 <div className="flex" style={{ gap: "0.5rem" }} >
-                                    <img src="/static/images/defense.png" alt="Defense type" />
-                                    <img src="/static/images/defense.png" alt="Defense type" />
+                                    <img src="/static/images/defense.webp" alt="Defense type" />
+                                    <img src="/static/images/defense.webp" alt="Defense type" />
                                 </div>
                             </td>
                             <td>
@@ -98,8 +98,8 @@ export const beginnerWeapons = {
                             <th className="yellow">Blessing</th>
                             <td>
                                 <div className="flex" style={{ gap: "0.5rem" }} >
-                                    <img src="/static/images/support.png" alt="Support type" />
-                                    <img src="/static/images/support.png" alt="Support type" />
+                                    <img src="/static/images/support.webp" alt="Support type" />
+                                    <img src="/static/images/support.webp" alt="Support type" />
                                 </div>
                             </td>
                             <td>
@@ -130,7 +130,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/baiyuekui">
                                         <a>
-                                            <img src="/static/images/avatar/baiyuekui.png" alt="Baiyuekui" />
+                                            <img src="/static/images/avatar/baiyuekui.webp" alt="Baiyuekui" />
                                             <h4>Baiyuekui</h4>
                                         </a>
                                     </Link>
@@ -141,7 +141,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/marc">
                                         <a>
-                                            <img src="/static/images/avatar/marc.png" alt="Marc" />
+                                            <img src="/static/images/avatar/marc.webp" alt="Marc" />
                                             <h4>Marc</h4>
                                         </a>
                                     </Link>
@@ -152,7 +152,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/zero">
                                         <a>
-                                        <img src="/static/images/avatar/zero.png" alt="Zero" />
+                                        <img src="/static/images/avatar/zero.webp" alt="Zero" />
                                         <h4>Zero</h4>
                                         </a>
                                     </Link>
@@ -163,7 +163,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/king">
                                         <a>
-                                        <img src="/static/images/avatar/king.png" alt="KING" />
+                                        <img src="/static/images/avatar/king.webp" alt="KING" />
                                         <h4>KING</h4>
                                         </a>
                                     </Link>
@@ -174,7 +174,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/shiro">
                                         <a>
-                                        <img src="/static/images/avatar/shiro.png" alt="Shiro" />
+                                        <img src="/static/images/avatar/shiro.webp" alt="Shiro" />
                                         <h4>Shiro</h4>
                                         </a>
                                     </Link>
@@ -185,7 +185,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/coco-ritter">
                                         <a>
-                                        <img src="/static/images/avatar/cocoritter.png" alt="Coco Ritter" />
+                                        <img src="/static/images/avatar/cocoritter.webp" alt="Coco Ritter" />
                                         <h4>Coco Ritter</h4>
                                         </a>
                                     </Link>
@@ -196,7 +196,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/meryl">
                                         <a>
-                                        <img src="/static/images/avatar/meryl.png" alt="Meryl" />
+                                        <img src="/static/images/avatar/meryl.webp" alt="Meryl" />
                                         <h4>Meryl</h4>
                                         </a>
                                     </Link>
@@ -207,7 +207,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/crow">
                                         <a>
-                                        <img src="/static/images/avatar/crow.png" alt="Crow" />
+                                        <img src="/static/images/avatar/crow.webp" alt="Crow" />
                                         <h4>Crow</h4>
                                         </a>
                                     </Link>
@@ -218,7 +218,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/cobalt-b">
                                         <a>
-                                        <img src="/static/images/avatar/cobalt-b.png" alt="Cobalt-B" />
+                                        <img src="/static/images/avatar/cobalt-b.webp" alt="Cobalt-B" />
                                         <h4>Cobalt-B</h4>
                                         </a>
                                     </Link>
@@ -229,7 +229,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/claudia">
                                         <a>
-                                        <img src="/static/images/avatar/claudia.png" alt="Claudia" />
+                                        <img src="/static/images/avatar/claudia.webp" alt="Claudia" />
                                         <h4>Claudia</h4>
                                         </a>
                                     </Link>
@@ -240,7 +240,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/samir">
                                         <a>
-                                        <img src="/static/images/avatar/samir.png" alt="Samir" />
+                                        <img src="/static/images/avatar/samir.webp" alt="Samir" />
                                         <h4>Samir</h4>
                                         </a>
                                     </Link>
@@ -251,7 +251,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/huma">
                                         <a>
-                                        <img src="/static/images/avatar/huma.png" alt="Huma" />
+                                        <img src="/static/images/avatar/huma.webp" alt="Huma" />
                                         <h4>Huma</h4>
                                         </a>
                                     </Link>
@@ -262,7 +262,7 @@ export const beginnerWeapons = {
                                 <th>
                                     <Link href="/simulacra/nemesis">
                                         <a>
-                                        <img src="/static/images/avatar/nemesis.png" alt="Nemesis" />
+                                        <img src="/static/images/avatar/nemesis.webp" alt="Nemesis" />
                                         <h4>Nemesis</h4>
                                         </a>
                                     </Link>

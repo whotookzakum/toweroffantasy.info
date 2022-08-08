@@ -70,7 +70,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             }
             result.push(
                 <li key={materialUri} className={`item-frame rarity-${rarity}`}>
-                    <img src={`/static/images/mat/${materialUri}.png`} alt={materialUri} />
+                    <img src={`/static/images/mat/${materialUri}.webp`} alt={materialUri} />
                 </li>
             );
         }
@@ -97,7 +97,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                 return (
                     <li key={gift} className="gift">
                         <div className={`item-frame rarity-${rarity}`}>
-                            <img src={`/static/images/awakening/${gift}.png`} alt={gift} />
+                            <img src={`/static/images/awakening/${gift}.webp`} alt={gift} />
                         </div>
                         <h4>+{group[0]}</h4>
                     </li>
@@ -173,14 +173,14 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             <h3>{weapon.name}</h3>
                             <div className="weapon-stat-grid">
                                 <div className="weapon-stat">
-                                    <img src={`/static/images/${weapon.type}.png`} alt={weapon.type} />
+                                    <img src={`/static/images/${weapon.type}.webp`} alt={weapon.type} />
                                     <div>
                                         <h5>Resonance</h5>
                                         <h4>{weapon.type}</h4>
                                     </div>
                                 </div>
                                 <div className="weapon-stat">
-                                    <img src={`/static/images/${weapon.element}.png`} alt={weapon.element} />
+                                    <img src={`/static/images/${weapon.element}.webp`} alt={weapon.element} />
                                     <div>
                                         <h5>Element</h5>
                                         <h4>{weapon.element}</h4>

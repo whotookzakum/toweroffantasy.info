@@ -1,7 +1,7 @@
 const strangecube = {
     name: "Strange Cube",
     uri: "strange-cube",
-    imgSrc: "strangecube.png",
+    imgSrc: "strangecube.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Use the cube to alter the surrounding gravity, dealing damage equal to **100%** of ATK to enemies and suspending them in midair. Afterwards, dealing damage equal to **120%** of ATK. Cooldown: **30** seconds.",

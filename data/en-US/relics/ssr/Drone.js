@@ -1,7 +1,7 @@
 const drone = {
     name: "Drone",
     uri: "drone",
-    imgSrc: "drone.png",
+    imgSrc: "drone.webp",
     rarity: "SSR",
     chinaOnly: false,
     description: "Summon a drone for **15** seconds, increase damage reduction by **5%** every **5** seconds. Cooldown: **120** seconds.",

@@ -1,7 +1,7 @@
 const nemesis = {
     name: "Nemesis",
     uri: "nemesis",
-    imgSrc: "nemesis.png",
+    imgSrc: "nemesis.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

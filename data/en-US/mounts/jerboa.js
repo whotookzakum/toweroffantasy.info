@@ -1,7 +1,7 @@
 const jerboa = {
     name: "Jerboa",
     uri: "jerboa",
-    imgSrc: "jerboa.png",
+    imgSrc: "jerboa.webp",
     chinaOnly: true,
     parts: {
         part1: {

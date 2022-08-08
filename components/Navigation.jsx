@@ -17,7 +17,7 @@ function Navigation() {
                 <div className="navbar-brand">
                     <Link href="/">
                         <a onClick={() => setTogglerState(!togglerState)}>
-                            <img src="/static/images/avatar/tata.png" alt="Logo" /><br />
+                            <img src="/static/images/avatar/tata.webp" alt="Logo" /><br />
                             Tower of Fantasy Index
                         </a>
                     </Link>

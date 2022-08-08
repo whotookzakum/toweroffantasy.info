@@ -1,7 +1,7 @@
 const frigg = {
     name: "Frigg",
     uri: "frigg",
-    imgSrc: "frigg.png",
+    imgSrc: "frigg.webp",
     rarity: "SSR",
     chinaOnly: true,
     banners: {

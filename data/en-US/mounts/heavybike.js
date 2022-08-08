@@ -1,7 +1,7 @@
 const heavybike = {
     name: "Heavy Bike",
     uri: "heavy-bike",
-    imgSrc: "heavybike.png",
+    imgSrc: "heavybike.webp",
     chinaOnly: true,
     parts: {
         part1: {

@@ -1,7 +1,7 @@
 const magneticpulse = {
     name: "Magnetic Pulse",
     uri: "magnetic-pulse",
-    imgSrc: "magneticpulse.png",
+    imgSrc: "magneticpulse.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Detonate a Magnetic Bomb, dealing volt damage equal to **38.8%** of ATK and **launching** targets. Grant the user immunity to hitstun for **5** seconds, Cooldown: **35** seconds.",

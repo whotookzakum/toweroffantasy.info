@@ -1,7 +1,7 @@
 const missilebarrage = {
     name: "Missile Barrage",
     uri: "missile-barrage",
-    imgSrc: "missilebarrage.png",
+    imgSrc: "missilebarrage.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Place a missile launcher behind the user for **8** seconds. Fire multiple missiles at nearby enemies, dealing damage equal to **34.8%** of ATK with each strike. Cooldown: **60** seconds.",

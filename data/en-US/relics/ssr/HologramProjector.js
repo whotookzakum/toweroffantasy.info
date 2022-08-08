@@ -1,7 +1,7 @@
 const hologramprojector = {
     name: "Hologram Projector",
     uri: "hologram-projector",
-    imgSrc: "hologramprojector.png",
+    imgSrc: "hologramprojector.webp",
     rarity: "SSR",
     chinaOnly: false,
     description: "Project a hologram of the user that recreates their weapon attacks, dealing **50%** of the user's damage. Lasts for **15** seconds. Cooldown: **180** seconds.",

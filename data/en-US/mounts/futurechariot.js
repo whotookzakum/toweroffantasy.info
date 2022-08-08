@@ -1,7 +1,7 @@
 const futurechariot = {
     name: "Future Chariot",
     uri: "futurechariot",
-    imgSrc: "futurechariot.png",
+    imgSrc: "futurechariot.webp",
     chinaOnly: true,
     parts: {
         part1: {

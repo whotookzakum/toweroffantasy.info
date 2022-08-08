@@ -1,7 +1,7 @@
 const jetboard = {
     name: "Jetboard",
     uri: "jetboard",
-    imgSrc: "jetboard.png",
+    imgSrc: "jetboard.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Dash forward a set distance before gradually slowing down to a halt, dealing damage equal to **380%** of ATK to targets along the way and **launching** them. Can be used **while swimming**. Cooldown: **90** seconds.",

@@ -1,7 +1,7 @@
 const tsubasa = {
     name: "Tsubasa",
     uri: "tsubasa",
-    imgSrc: "tsubasa.png",
+    imgSrc: "tsubasa.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

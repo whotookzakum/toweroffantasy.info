@@ -53,7 +53,7 @@ export const artificialIslandConstruction = {
                     <tbody>
                         <tr>
                             <th>
-                                <img src="/images/guides/HomeShell.png" alt="Material Shell" />
+                                <img src="/images/guides/HomeShell.webp" alt="Material Shell" />
                             </th>
                             <td>7~10 each</td>
                             <td></td>
@@ -61,8 +61,8 @@ export const artificialIslandConstruction = {
                         </tr>
                         <tr>
                             <th>
-                                <img src="/images/guides/HomePumpkin.png" alt="Material Pumpkin" />
-                                <img src="/images/guides/HomeOre.png" alt="Material Ore" />
+                                <img src="/images/guides/HomePumpkin.webp" alt="Material Pumpkin" />
+                                <img src="/images/guides/HomeOre.webp" alt="Material Ore" />
                             </th>
                             <td></td>
                             <td>1638~1744</td>
@@ -70,8 +70,8 @@ export const artificialIslandConstruction = {
                         </tr>
                         <tr>
                             <th>
-                                <img src="/images/guides/HomeFishBones.png" alt="Material Fish Bones" />
-                                <img src="/images/guides/HomeMeat.png" alt="Material Meat" />
+                                <img src="/images/guides/HomeFishBones.webp" alt="Material Fish Bones" />
+                                <img src="/images/guides/HomeMeat.webp" alt="Material Meat" />
                             </th>
                             <td></td>
                             <td>1606~1674</td>
@@ -79,8 +79,8 @@ export const artificialIslandConstruction = {
                         </tr>
                         <tr>
                             <th>
-                                <img src="/images/guides/HomeRattan.png" alt="Material Rattan" />
-                                <img src="/images/guides/HomeTwigs.png" alt="Material Twigs" />
+                                <img src="/images/guides/HomeRattan.webp" alt="Material Rattan" />
+                                <img src="/images/guides/HomeTwigs.webp" alt="Material Twigs" />
                             </th>
                             <td></td>
                             <td></td>

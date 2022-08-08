@@ -1,7 +1,7 @@
 const monocross = {
     name: "Monocross",
     uri: "monocross",
-    imgSrc: "monocross.png",
+    imgSrc: "monocross.webp",
     chinaOnly: false,
     parts: {
         part1: {

@@ -1,7 +1,7 @@
 const coco = {
     name: "Coco Ritter",
     uri: "coco-ritter",
-    imgSrc: "cocoritter.png",
+    imgSrc: "cocoritter.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

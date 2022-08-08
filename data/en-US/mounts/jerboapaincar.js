@@ -1,7 +1,7 @@
 const jerboapaincar = {
     name: "Jerboa - Pain Car",
     uri: "jerboa-pain-car",
-    imgSrc: "jerboa-paincar.png",
+    imgSrc: "jerboa-paincar.webp",
     chinaOnly: true,
     parts: {
         part1: {

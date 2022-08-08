@@ -1,7 +1,7 @@
 const dustwheeler = {
     name: "Dust Wheeler",
     uri: "dust-wheeler",
-    imgSrc: "dustwheeler.png",
+    imgSrc: "dustwheeler.webp",
     chinaOnly: false,
     parts: {
         part1: {

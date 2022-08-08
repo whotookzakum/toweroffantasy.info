@@ -1,7 +1,7 @@
 const meryl = {
     name: "Meryl",
     uri: "meryl",
-    imgSrc: "meryl.png",
+    imgSrc: "meryl.webp",
     rarity: "SSR",
     chinaOnly: false,
     weapon: {

@@ -1,7 +1,7 @@
 const pepper = {
     name: "Pepper",
     uri: "pepper",
-    imgSrc: "pepper.png",
+    imgSrc: "pepper.webp",
     rarity: "SR",
     chinaOnly: false,
     weapon: {

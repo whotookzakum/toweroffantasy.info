@@ -1,7 +1,7 @@
 const jetpack = {
     name: "Jetpack",
     uri: "jetpack",
-    imgSrc: "jetpack.png",
+    imgSrc: "jetpack.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Tap and hold to dash in the direction of the arrow for a short distance before becoming airborne and gliding. Reduce endurance by **10** every second. Cooldown: **120** seconds (gliding is not affected by the cooldown timer). Jetpack can hold up to **2** charges.",

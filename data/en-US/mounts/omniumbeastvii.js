@@ -1,7 +1,7 @@
 const omniumbeastvii = {
     name: "Omnium Beast VII",
     uri: "omnium-beast-vii",
-    imgSrc: "omniumbeastvii.png",
+    imgSrc: "omniumbeastvii.webp",
     chinaOnly: false,
     parts: {
         part1: {

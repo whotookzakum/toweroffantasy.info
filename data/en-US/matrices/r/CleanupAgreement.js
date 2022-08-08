@@ -1,7 +1,7 @@
 const cleanupagreement = {
     name:"Cleanup Agreement",
     uri: "cleanup-agreement",
-    imgSrc: "cleanupagreement.png",
+    imgSrc: "cleanupagreement.webp",
     rarity:"R",
     chinaOnly: true,
     matrix: {

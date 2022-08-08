@@ -1,7 +1,7 @@
 const typevarmor = {
     name: "Type V Armor",
     uri: "type-v-armor",
-    imgSrc: "typevarmor.png",
+    imgSrc: "typevarmor.webp",
     rarity: "SSR",
     chinaOnly: false,
     description: 

@@ -20,8 +20,8 @@ export function ModalMenu({ list, filter, target }) {
                 options.imgPath = `avatar/${item.imgSrc}`;
                 options.conditionalContent =
                     <div className="flex" style={{ gap: "0.3rem" }}>
-                        <img src={`/static/images/${item.weapon.type}.png`} alt={item.weapon.type} />
-                        <img src={`/static/images/${item.weapon.element}.png`} alt={item.weapon.element} />
+                        <img src={`/static/images/${item.weapon.type}.webp`} alt={item.weapon.type} />
+                        <img src={`/static/images/${item.weapon.element}.webp`} alt={item.weapon.element} />
                     </div>
                 break;
             case MATRICES:
@@ -99,13 +99,17 @@ export function Modal({ item, children }) {
             options.bgImgPath = `art/${item.imgSrc}`;
             break;
         case "mounts":
-            options.bgImgPath = `bg-2.png`;
+            options.bgImgPath = `bg-2.webp`;
             break;
         case "exploration":
-            options.bgImgPath = `bg-2.png`;
+            options.bgImgPath = `bg-2.webp`;
             break;
         default:
             break;
+    }
+    const pagesWithNoBg = ["robarg", "apophis", "frost-bot", "sobek", "barbarossa", "offensive-logic", "cleanup-agreement", "explosive-core", "bullseye", "tenet-guard", "provocateurs"];
+    if (pagesWithNoBg.includes(item.uri)) {
+        options.bgImgPath = `bg-1.webp`;
     }
 
     return (

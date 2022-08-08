@@ -1,7 +1,7 @@
 const hoveringcannon = {
     name: "Hovering Cannon",
     uri: "hovering-cannon",
-    imgSrc: "hoveringcannon.png",
+    imgSrc: "hoveringcannon.webp",
     rarity: "SR",
     chinaOnly: false,
     description: "Summon a Hovering Cannon for **20** seconds. **240**-second cooldown. The Hovering Cannon has the skill: Laser Beam, which deals **5.6%** ATK damage to the target each time.",

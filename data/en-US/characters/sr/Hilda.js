@@ -1,7 +1,7 @@
 const hilda = {
     name: "Hilda",
     uri: "hilda",
-    imgSrc: "hilda.png",
+    imgSrc: "hilda.webp",
     rarity: "SR",
     chinaOnly: false,
     weapon: {
