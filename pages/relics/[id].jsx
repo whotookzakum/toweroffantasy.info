@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 export default function RelicPage({ relic, version, setVersion }) {
     const cnData = _.cloneDeep(relic);
     const chinaData = _.merge(cnData, cnData.cnData);
-    const dataVersion = (version === "global") ? relic : chinaData;
+    const dataVersion = (version === "global" && !relic.chinaOnly) ? relic : chinaData;
 
     const advancements = Object.entries(dataVersion.advancement).map(([star, effect]) => {
         return (
