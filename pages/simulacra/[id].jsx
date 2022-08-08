@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 export default function SimulacrumPage({ simulacrum, version, setVersion }) {
     const cnData = _.cloneDeep(simulacrum);
     const chinaData = _.merge(cnData, cnData.cnData);
-    const dataVersion = (version === "global") ? simulacrum : chinaData;
+    const dataVersion = (version === "global" && !simulacrum.chinaOnly) ? simulacrum : chinaData;
     const weapon = dataVersion.weapon;
     const awakening = dataVersion.awakening;
     const rarity = (simulacrum.rarity === "SSR") ? 1 : 0;

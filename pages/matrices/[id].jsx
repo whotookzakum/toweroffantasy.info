@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 export default function MatrixPage({ matrix, version, setVersion }) {
     const cnData = _.cloneDeep(matrix);
     const chinaData = _.merge(cnData, cnData.cnData);
-    const matrixSet = (version === "global") ? matrix.matrix : chinaData.matrix;
+    const matrixSet = (version === "global" && !matrix.chinaOnly) ? matrix.matrix : chinaData.matrix;
 
     const setEffects = Object.entries(matrixSet).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
