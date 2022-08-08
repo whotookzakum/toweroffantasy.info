@@ -75,6 +75,7 @@ export default function MatrixPage({ matrix, version, setVersion }) {
         <>
             <Head>
                 <title>{setPageTitle(matrix.name + " Matrix")}</title>
+                <meta name="description" content={`Information about ${matrix.name}'s Matrices in Tower of Fantasy.`} />
             </Head>
             <Modal item={matrix}>
                 <div className="modal-body">

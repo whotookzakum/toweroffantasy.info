@@ -9,7 +9,7 @@ const chaser = {
         },
         part2: {
             source: "Rare drop from ***The Vermin Brothers.***", 
-            map: "chaserelites.jpg"
+            map: "chaserelites.webp"
         }
     },
     videoSrc: "https://www.youtube.com/embed/GXXJ0bO8tTE"

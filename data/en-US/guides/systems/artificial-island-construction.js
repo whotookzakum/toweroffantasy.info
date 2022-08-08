@@ -37,7 +37,7 @@ export const artificialIslandConstruction = {
                 </blockquote>
 
                 <h3>Recommended Route</h3>
-                <img src="/static/images/guides/housing-map.jpg" alt="Recommended route for farming mobs" />
+                <img src="/static/images/guides/housing-map.webp" alt="Recommended route for farming mobs" />
                 <br />
 
                 <h3>Total Resources</h3>

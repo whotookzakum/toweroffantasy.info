@@ -10,7 +10,7 @@ const voyager = {
         },
         part2: {
             source: "Rare drop from the ***Four Powers***.",
-            map: "voyagerelites.jpg"
+            map: "voyagerelites.webp"
         },
         part3: {
             source: 

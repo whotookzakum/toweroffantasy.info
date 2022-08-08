@@ -56,6 +56,7 @@ export default function MountModal({ mount }) {
         <>
             <Head>
                 <title>{setPageTitle(mount.name)}</title>
+                <meta name="description" content={`Information about the mount ${mount.name} in Tower of Fantasy.`} />
             </Head>
 
             <Modal item={mount}>

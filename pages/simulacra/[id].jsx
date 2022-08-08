@@ -160,6 +160,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         <>
             <Head>
                 <title>{setPageTitle(simulacrum.name)}</title>
+                <meta name="description" content={`Information about the simulacrum ${simulacrum.name} in Tower of Fantasy.`} />
             </Head>
             <Modal item={dataVersion} >
                 <div className="modal-body">
@@ -205,7 +206,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     <section className="weapon-effects w-75ch">
                         <div className="modal-section-header">
                             <h3>Weapon Effects</h3>
-                            { !simulacrum.chinaOnly && 
+                            { !simulacrum.chinaOnly &&
                                 <VersionToggler section="weapon-effects" version={version} setVersion={setVersion} /> }
                         </div>
                         <div>
