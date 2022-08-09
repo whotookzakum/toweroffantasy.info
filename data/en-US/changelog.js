@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "August 9",
-        text: "Added anchor links (you can link to a particular section of a page); Updated simulacrum radar charts (except claudia); Navigation fixes; Added back button to applicable pages;"
+        text: "Added anchor links (you can link to a particular section of a page); Updated simulacrum radar charts (except claudia); Navigation fixes; Added back button to applicable pages; Navbar will now indicate the current page;"
     },
     {
         date: "August 8",

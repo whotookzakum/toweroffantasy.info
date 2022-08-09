@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 function Navigation() {
+
+    const router = useRouter();
 
     const [togglerState, setTogglerState] = useState(false);
     const [currentLang, setLang] = useState("lang-en");
@@ -30,42 +33,50 @@ function Navigation() {
 
                 <div className="nav-links">
                     <Link href="/banners">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("banners") ? "active" : ""}>
                             Banner Schedule
                         </a>
                     </Link>
                     <Link href="/simulacra">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("simulacra") ? "active" : ""}>
                             Simulacra
                         </a>
                     </Link>
                     <Link href="/matrices">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("matrices") ? "active" : ""}>
                             Matrices
                         </a>
                     </Link>
                     <Link href="/relics">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("relics") ? "active" : ""}>
                             Relics
                         </a>
                     </Link>
                     <Link href="/exploration">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("exploration") ? "active" : ""}>
                             Exploration
                         </a>
                     </Link>
                     <Link href="/food">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("food") ? "active" : ""}>
                             Food
                         </a>
                     </Link>
                     <Link href="/mounts">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("mounts") ? "active" : ""}>
                             Mounts
                         </a>
                     </Link>
                     <Link href="/guides">
-                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("guides") ? "active" : ""}>
                             Guides
                         </a>
                     </Link>
