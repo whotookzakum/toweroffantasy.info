@@ -4,6 +4,7 @@ export const pvp = {
     name: "PvP",
     uri: "pvp",
     date: "12 July 2022",
+    description: "An overview of the Player versus Player game modes in Tower of Fantasy.",
     type: "systems",
     author: ["Keita#0795", "Goldenmonkey#2798", "theLaw#5678", "Zakum#3080"],
     text:

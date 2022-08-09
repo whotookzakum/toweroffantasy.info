@@ -2,6 +2,7 @@ export const vitality = {
     name: "Vitality",
     uri: "vitality",
     date: "8 July 2022",
+    description: "An explanation of the Vitality system in Tower of Fantasy. Vitality is consumed in exchange for claiming rewards for some daily content.",
     type: "systems",
     author: ["Unconsidered#1568", "Zakum#3080"],
     text:

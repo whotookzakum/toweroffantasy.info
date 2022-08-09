@@ -4,6 +4,7 @@ export const gear = {
     name: "Gear", 
     uri: "gear",
     date: "26 July 2022",
+    description: "An overview of how gear works in Tower of Fantasy. Weapons, Armor, Matrices, and Relics make up the four main components.",
     type: "systems",
     author: ["Zakum#3080"],
     text:

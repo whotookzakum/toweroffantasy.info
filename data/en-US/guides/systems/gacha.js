@@ -4,6 +4,7 @@ export const gacha = {
     name: "Gacha",
     uri: "gacha",
     date: "6 July 2022",
+    description: "In-depth explanation of the Gacha system in Tower of Fantasy.",
     type: "systems",
     author: ["Zakum#3080"],
     text:

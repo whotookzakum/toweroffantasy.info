@@ -2,6 +2,7 @@ export const cnRegistration = {
     name: "Registration Guide",
     uri: "cn-registration",
     date: "30 May 2022",
+    description: "How to register for the Chinese version of Tower of Fantasy.",
     chinaOnly: true,
     type: "technical",
     author: ["Pyrosu#6969", "Zakum#3080", "👑킹젖가슴드래곤👑#5969"],

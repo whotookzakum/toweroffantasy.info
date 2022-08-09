@@ -4,6 +4,7 @@ export const shortestRerollPath = {
     name: "Shortest Reroll Path",
     uri: "shortest-reroll-path",
     date: "27 July 2022",
+    description: "Quickest path to reroll in Tower of Fantasy, along with some notes. May change based on available pre-registration rewards.",
     type: "strategy",
     author: ["Zakum#3080"],
     text:

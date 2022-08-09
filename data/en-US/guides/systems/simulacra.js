@@ -1,14 +1,15 @@
 export const simulacra = {
-    name: "Simulacra",
-    uri: "simulacra",
+    name: "Simulacrum",
+    uri: "simulacrum",
     date: "6 July 2022",
+    description: "An overview of the Simulacrum system in Tower of Fantasy.",
     type: "systems",
     author: ["Zakum#3080"],
     text:
         <>
             <section>
                 <p>
-                    The simulacra system allows you to <strong className="yellow">change your appearance to mimic the characters</strong> found throughout the game. When you unlock a weapon for the first time, you will gain access to their simulacrum. For SSR weapons (minus Marc) you will unlock an <i>additional</i> skin upon reaching 3★ on that weapon.
+                    The simulacrum system allows you to <strong className="yellow">change your appearance to mimic the characters</strong> found throughout the game. When you unlock a weapon for the first time, you will gain access to their simulacrum. For SSR weapons (minus Marc) you will unlock an <i>additional</i> skin upon reaching 3★ on that weapon.
                 </p>
                 
                 <h2>Awakening</h2>

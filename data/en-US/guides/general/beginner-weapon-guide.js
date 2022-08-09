@@ -4,6 +4,7 @@ export const beginnerWeapons = {
     name: "Beginner Weapon Guide",
     uri: "beginner-weapon-guide",
     date: "8 July 2022",
+    description: "An introduction to the weapon system and some example team compositions.",
     type: "general",
     author: ["Stitch#8913"],
     text:

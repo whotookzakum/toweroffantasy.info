@@ -33,9 +33,9 @@ export const GUIDES = [
     gear,
     pvp,
     simulacra,
-    dailies,
+    dailies, // include gray zone dark zone?
     // battle royale
-    artificialIslandConstruction,
+    artificialIslandConstruction, // elaborate on rewards, maybe a table for required materials to level up buildings..
     // time gate
 
     // STRATEGY

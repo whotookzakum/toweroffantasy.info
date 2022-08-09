@@ -4,6 +4,7 @@ export const artificialIslandConstruction = {
     name: "Artificial Island Construction",
     uri: "artificial-island-construction",
     date: "5 August 2022",
+    description: "All about the Construction system on Artificial Island.",
     type: "systems",
     author: ["Pyrosu#6969", "Zakum#3080"],
     text:

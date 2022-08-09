@@ -30,6 +30,7 @@ export default function MountModal({ exploration }) {
         <>
             <Head>
                 <title>{setPageTitle(exploration.name)}</title>
+                <meta name="description" content={`How to solve the ${exploration.name} exploration puzzle in Tower of Fantasy.`} />
             </Head>
 
             <Modal item={exploration}>
