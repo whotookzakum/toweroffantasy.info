@@ -311,6 +311,7 @@ export const apexLeague = {
     name: "Apex League",
     uri: "apex-league",
     date: "12 July 2022",
+    description: "An in-depth strategy guide on Apex League (PvP) including recommended weapons, relics, team comps, and playstyle.",
     type: "strategy",
     author: ["Keita#0795", "Goldenmonkey#2798", "Riala"],
     text:

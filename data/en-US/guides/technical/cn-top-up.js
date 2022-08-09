@@ -2,6 +2,7 @@ export const cnTopUp = {
     name: "Top-Up Guide",
     uri: "cn-top-up",
     date: "11 June 2022",
+    description: "How to charge real money in the Chinese version of Tower of Fantasy.",
     chinaOnly: true, 
     type: "technical",
     author: ["Pyrosu#6969"],

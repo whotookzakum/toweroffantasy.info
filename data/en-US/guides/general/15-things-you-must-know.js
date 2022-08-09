@@ -4,6 +4,7 @@ export const thingsYouMustKnow = {
     name: "15 Things You MUST Know",
     uri: "15-things-you-must-know",
     date: "27 July 2022",
+    description: "15 major points that will greatly benefit you and those around you while playing Tower of Fantasy. Become the gigachad carry of your friend group.",
     type: "general",
     author: ["Zakum#3080"],
     text:

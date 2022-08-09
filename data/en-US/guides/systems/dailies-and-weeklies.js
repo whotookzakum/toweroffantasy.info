@@ -4,6 +4,7 @@ export const dailies = {
     name: "Dailies & Weeklies",
     uri: "dailies-and-weeklies",
     date: "6 July 2022",
+    description: "A non-exhaustive list of repeatable daily and weekly content in Tower of Fantasy.",
     type: "systems",
     author: ["Unconsidered#1568", "Zakum#3080"],
     text:

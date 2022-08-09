@@ -4,6 +4,7 @@ export const dpsLoadouts = {
     name: "DPS Weapon Loadouts",
     uri: "dps-weapon-loadouts",
     date: "5 May 2022",
+    description: "List of recommended weapon loadouts. DPS loadouts are typically comprised of one shield breaker, one main DPS, and one support DPS.",
     type: "strategy",
     author: ["Cytus#4151"],
     text:
