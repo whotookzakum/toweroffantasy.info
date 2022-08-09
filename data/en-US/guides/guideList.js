@@ -24,6 +24,8 @@ export const GUIDES = [
     // GAME SYSTEMS
     gacha,
     // combat: include discharge, elements, resonance
+    // research missions
+    // exploration; world bosses
     // unlock artificial island; map of artificial island
     // unlock outer artificial islands,
     // vera exploration notes: quicksand whirlpool, gray zone & dark zone explanations, map of mirror city
