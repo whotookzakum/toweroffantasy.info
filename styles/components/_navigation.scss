@@ -5,24 +5,25 @@
     position: fixed;
     z-index: 1000;
     width: 0;
-
-    hr {
-        border: none;
-        height: 1px;
-        background-color: gray;
-    }
 }
 
 .nav-body {
-    padding: 0 2rem;
+    padding: 2rem;
     width: calc($sidenav-width - 4rem);
     max-width: $sidenav-width;
-    height: 100%;
+    height: calc(100vh - 4rem);
     overflow-y: scroll;
     background-color: clr(container, base-opaque);
     transition: transform 0.3s ease;
     box-shadow: $shadow;
     scrollbar-width: none;
+    display: flex;
+	flex-flow: column nowrap;
+
+    a {
+        color: clr(text, gray);
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 1249px) {
@@ -34,25 +35,35 @@
 // LINKS RELATED 
 // =================================================================
 
-.nav-body ul:not(.nav-socials) {
-    padding: 0;
+.nav-links {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
 
-    li {
+    a {
         position: relative;
         overflow: hidden;
-        width: 100%;
-
-        padding: 0 0 0 0;
-
-        &:hover {
-            background-color: #282633;
-
-            a {
-                padding-left: 10px;
-                color: clr(text);
-            }
+        padding: 10px 0;
+        display: block;
+        
+        transition:
+            background-color 125ms ease,
+            padding 125ms ease,
+            color 125ms ease;
+    
+        &.active {
+            color: clr(tier, s) !important;
+            font-weight: bold;
         }
-
+    
+        &:hover,
+        &:focus {
+            background-color: #282633;
+            padding-left: 10px;
+            color: clr(text);
+        }
+    
         &::before {
             background-color: rgba(255, 255, 255, 0.02);
             content: '';
@@ -64,51 +75,29 @@
             right: 0;
             transform: translateX(-100%);
         }
+    
         // show load bar only while hovering, and play animation on click
         &:active::before {
             transform: translateX(0);
             transition: transform 0.75s ease-in-out;
-            // animation: 0.5s ease-in 1 both running navLoading;
         }
-    }
-}
-
-// @keyframes navLoading {
-//     to { transform: translateX(0); }
-// }
-
-.nav-body a {
-    padding: 10px 0;
-    display: block;
-    color: clr(text, gray);
-    text-decoration: none;
-    transition:
-        background-color 125ms ease,
-        padding 125ms ease,
-        color 125ms ease;
-
-    &.active {
-        color: clr(tier, s) !important;
-        font-weight: bold;
     }
 }
 
 .navbar-brand {
     color: clr(text) !important;
     text-align: center;
-    width: 100%;
-    padding-top: 2rem;
 
-    a:hover {
+    a:hover,
+    a:focus {
         color: clr(text, turquoise) !important;
     }
 }
 
 .nav-socials {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 1rem;
 
     a {
@@ -134,11 +123,7 @@
 .nav-footer {
     color: clr(text, darkgray) !important;
     font-size: 0.9rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
+    margin-top: auto;
     width: calc($sidenav-width - 4rem);
 }
 
@@ -163,7 +148,7 @@
     height: 50px;
     display: none;
 
-    & + label {
+    &+label {
         padding: 1rem;
         position: fixed;
         height: 28px;
@@ -198,6 +183,7 @@
 }
 
 @media (min-width: 1250px) {
+
     #nav-toggler+label,
     .nav-backdrop {
         display: none;

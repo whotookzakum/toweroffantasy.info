@@ -51,13 +51,13 @@ export default function RelicPage({ relic, version, setVersion }) {
                     {dataVersion.chinaOnly && <CNTag name={dataVersion.name} />}
 
                     <section className="relic-effects w-75ch">
-                        <h3>Relic Effect</h3>
+                        <h3 className="anchor">Relic Effect</h3>
                         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{dataVersion.description}</ReactMarkdown>
                     </section>
 
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
-                            <h3>Advancements</h3>
+                            <h3 className="anchor">Advancements</h3>
                             {!dataVersion.chinaOnly &&
                                 <VersionToggler section="relic-advancements" version={version} setVersion={setVersion} />}
                         </div>
@@ -72,16 +72,16 @@ export default function RelicPage({ relic, version, setVersion }) {
                                 {advancements}
                             </tbody>
                         </table>
-                        {dataVersion.videoSrc &&
-                            <>
-                                <h2>Preview</h2>
-                                <iframe src={dataVersion.videoSrc} allow="fullscreen" modestbranding={1} />
-                                <p>
-                                    The relic shown in the video is <strong className="yellow">{dataVersion.starsInVideo}★</strong>.
-                                </p>
-                            </>
-                        }
                     </section>
+                    {dataVersion.videoSrc &&
+                        <section className="advancements w-75ch">
+                            <h3 className="anchor">Preview</h3>
+                            <iframe src={dataVersion.videoSrc} allow="fullscreen" modestbranding={1} />
+                            <p>
+                                The relic shown in the video is <strong className="yellow">{dataVersion.starsInVideo}★</strong>.
+                            </p>
+                        </section>
+                    }
                 </div>
             </Modal>
         </>

@@ -35,7 +35,7 @@ export default function MatrixPage({ matrix, version, setVersion }) {
         return (
             <section key={key} className="matrix-set w-75ch">
                 <div className="modal-section-header">
-                    <h3>{reqPieces}-piece Set</h3>
+                    <h3 className="anchor">{reqPieces}-piece Set</h3>
                     { !matrix.chinaOnly && 
                         <VersionToggler section={`matrices-${reqPieces}-set`} version={version} setVersion={setVersion} /> }
                 </div>

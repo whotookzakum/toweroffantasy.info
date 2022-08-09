@@ -6,6 +6,9 @@ import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
 import { EXPLORATION } from "../data/en-US/exploration/exploration";
 import { useRouter } from "next/router";
+import AnchorJS from "anchor-js";
+import { useEffect } from "react";
+import BackButton from "./BackButton";
 
 export function ModalMenu({ list, filter, target }) {
     let options = new Object();
@@ -82,6 +85,12 @@ export function ModalMenu({ list, filter, target }) {
 }
 
 export function Modal({ item, children }) {
+
+    useEffect(() => {
+        const anchors = new AnchorJS();
+        anchors.add('.anchor');
+    })
+
     const router = useRouter()
     const path = router.pathname.substring(1).split("/[id]")[0];
 
@@ -95,7 +104,7 @@ export function Modal({ item, children }) {
             options.headerImgPath = `avatar/${item.imgSrc}`;
             options.bgImgPath = `art/${item.imgSrc}`;
             break;
-        case "matrices": 
+        case "matrices":
             options.bgImgPath = `art/${item.imgSrc}`;
             break;
         case "mounts":
@@ -116,13 +125,14 @@ export function Modal({ item, children }) {
         <article className="modal">
             <div className="modal-backdrop" />
             <img className="bg-img" src={`/static/images/${options.bgImgPath}`} alt="Page Background" />
-            <ModalHeader item={item} options={options} />
+            <ModalHeader item={item} options={options} path={path} />
             {children}
         </article>
     );
 }
 
 function ModalHeader({ item, options }) {
+
     let color = { color: "var(--color-tier-s)" };
     if (item.rarity === 'SR') {
         color = { color: "var(--color-tier-a)" };
@@ -130,18 +140,22 @@ function ModalHeader({ item, options }) {
     else if (item.rarity === 'R') {
         color = { color: "var(--color-tier-b)" };
     }
-    
+
     return (
-        <header className={options.headerClass} >
-            <div className="header-img-wrapper">
-                <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />;
-            </div>
-            <div>
-                <h1>{item.name}</h1>
-                <h2>
-                    <i style={color}>{item.rarity}</i>
-                </h2>
-            </div>
-        </header>
+        <>
+            <BackButton/>
+            <header className={options.headerClass} >
+                <div className="header-img-wrapper">
+                    <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />;
+                </div>
+                <div>
+                    <h1>{item.name}</h1>
+                    <h2>
+                        <i style={color}>{item.rarity}</i>
+                    </h2>
+                </div>
+            </header>
+        </>
     )
 }
+

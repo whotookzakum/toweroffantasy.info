@@ -63,15 +63,15 @@ export default function MountModal({ mount }) {
                 <div className="modal-body mounts">
                     {mount.chinaOnly && <CNTag name={mount.name} />}
                     <section className="w-75ch">
-                        <h2>Parts</h2>
+                        <h3 className="anchor">Parts</h3>
                         {parts}
-                        {mount.videoSrc &&
-                            <>
-                                <h2>Preview</h2>
-                                <iframe src={mount.videoSrc} allow="fullscreen" modestbranding={1} />
-                            </>
-                        }
                     </section>
+                    {mount.videoSrc &&
+                        <section className="w-75ch">
+                            <h3 className="anchor">Preview</h3>
+                            <iframe src={mount.videoSrc} allow="fullscreen" modestbranding={1} />
+                        </section>
+                    }
                 </div>
             </Modal>
         </>

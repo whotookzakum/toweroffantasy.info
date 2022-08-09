@@ -1,6 +1,8 @@
 import Head from "next/head"
 import { setPageTitle } from "./Layout"
 import { useEffect, useState } from "react";
+import BackButton from "./BackButton";
+import AnchorJS from "anchor-js";
 
 export function GuideArticle({ guide }) {
     const author = guide.author.map((author, index) => {
@@ -11,6 +13,9 @@ export function GuideArticle({ guide }) {
     const [hasMounted, setHasMounted] = useState(false);
     useEffect(() => {
         setHasMounted(true);
+        const anchors = new AnchorJS();
+        anchors.add('h2');
+        anchors.add('h3');
     })
 
     if (!hasMounted) {
@@ -25,9 +30,11 @@ export function GuideArticle({ guide }) {
             </Head>
             <img className="bg-img" src="/static/images/bg-1.webp" alt="Background Image" />
             <article className="guide">
+                <BackButton/>
                 <header>
                     <h1>{guide.name}</h1>
                     <div className="authors">By {author}</div>
+                    <div style={{color: "gray"}}>Last updated {guide.date}</div>
                 </header>
                 {guide.text}
             </article>
