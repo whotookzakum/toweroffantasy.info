@@ -31,7 +31,7 @@ export const cnRegistration = {
             </section>
 
             <section>
-                <h2>Any and all downloads shall be performed at your own risk. While we haven't heard of any problems so far, the site authors do not take responsibility for any malicious programs installed on your device.</h2>
+                <p style={{fontWeight: "bold", fontSize: "1.5em"}}>Any and all downloads shall be performed at your own risk. While we haven't heard of any problems so far, the site authors do not take responsibility for any malicious programs installed on your device.</p>
             </section>
 
             <section>

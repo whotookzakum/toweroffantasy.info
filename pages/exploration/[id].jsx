@@ -36,7 +36,7 @@ export default function MountModal({ exploration }) {
                 <div className="modal-body exploration">
                     {exploration.chinaOnly && <CNTag name={exploration.name} />}
                     <section className="w-75ch">
-                        <h2>How to solve</h2>
+                        <h3 className="anchor">How to solve</h3>
                         <ReactMarkdown rehypePlugins={[rehypeRaw]}>
                             {exploration.solution}
                         </ReactMarkdown>

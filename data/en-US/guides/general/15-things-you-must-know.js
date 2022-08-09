@@ -16,8 +16,8 @@ export const thingsYouMustKnow = {
                 <details style={{ margin: "1rem 0" }}>
                     <summary><strong className="yellow">Climb walls while consuming nearly 0 endurance.</strong></summary>
                     <blockquote style={{ margin: "0", boxShadow: "none" }}>
-                        <h3 style={{ margin: "0" }}>Let Go + Double Jump + Grab On</h3>
-                        <h4>On PC</h4>
+                        <p style={{ margin: "0" }}>Let Go + Double Jump + Grab On</p>
+                        <p>On PC</p>
                         <kbd>CTRL</kbd> + <kbd>Space</kbd> + <kbd>Space</kbd> + <kbd>W</kbd>
                     </blockquote>
                 </details>
@@ -25,8 +25,8 @@ export const thingsYouMustKnow = {
                 <details style={{ margin: "1rem 0" }}>
                     <summary><strong className="yellow">Climb past ledges that block you from climbing vertically.</strong></summary>
                     <blockquote style={{ margin: "0", boxShadow: "none" }}>
-                        <h3 style={{ margin: "0" }}>Backward Dash + Jump + Forward Dash</h3>
-                        <h4>On PC</h4>
+                        <p style={{ margin: "0" }}>Backward Dash + Jump + Forward Dash</p>
+                        <p>On PC</p>
                         <kbd>Right Click</kbd> + <kbd>Space</kbd> + <kbd>Right Click</kbd>
                     </blockquote>
                 </details>

@@ -166,7 +166,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
 
-                    <h2>Weapon</h2>
+                    <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
                         <div className="weapon-info">
@@ -205,7 +205,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     </div>
                     <section className="weapon-effects w-75ch">
                         <div className="modal-section-header">
-                            <h3>Weapon Effects</h3>
+                            <h3 className="anchor">Weapon Effects</h3>
                             {!simulacrum.chinaOnly &&
                                 <VersionToggler section="weapon-effects" version={version} setVersion={setVersion} />}
                         </div>
@@ -217,7 +217,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     </section>
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
-                            <h3>Advancements</h3>
+                            <h3 className="anchor">Advancements</h3>
                             {!simulacrum.chinaOnly &&
                                 <VersionToggler section="weapon-advancements" version={version} setVersion={setVersion} />}
                         </div>
@@ -236,7 +236,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     {Object.keys(weapon.abilities).length > 0 &&
                         <section className="weapon-abilities w-75ch">
                             <div className="modal-section-header">
-                                <h3>Weapon Abilities</h3>
+                                <h3 className="anchor">Weapon Abilities</h3>
                                 {!simulacrum.chinaOnly &&
                                     <VersionToggler section="weapon-abilities" version={version} setVersion={setVersion} />}
                             </div>
@@ -250,12 +250,12 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </section>
                     }
                     <section className="weapon-materials w-75ch" >
-                        <h3>Upgrade Materials</h3>
+                        <h3 className="anchor">Upgrade Materials</h3>
                         <ul>{weaponMaterials}</ul>
                     </section>
                     <section className="weapon-rec-matrices w-75ch">
                         <div className="modal-section-header">
-                            <h3>Recommended Matrices</h3>
+                            <h3 className="anchor">Recommended Matrices</h3>
                             {!simulacrum.chinaOnly &&
                                 <VersionToggler section="recommended-matrices" version={version} setVersion={setVersion} />}
                         </div>
@@ -264,10 +264,10 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
 
                     <hr />
 
-                    <h2>Awakening</h2>
+                    <h2 className="anchor">Awakening</h2>
                     <section className="awakening-traits w-75ch">
                         <div className="modal-section-header">
-                            <h3>Simulacrum Traits</h3>
+                            <h3 className="anchor">Simulacrum Traits</h3>
                             {!simulacrum.chinaOnly &&
                                 <VersionToggler section="simulacrum-traits" version={version} setVersion={setVersion} />}
                         </div>
@@ -291,7 +291,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </table>
                     </section>
                     <section className="awakening-gifts w-75ch">
-                        <h3>Favorite Gifts</h3>
+                        <h3 className="anchor">Favorite Gifts</h3>
                         <ul className="gift-categories-grid">{giftCategories}</ul>
                         <ul className="gifts-grid">{gifts}</ul>
                         {veraGiftDisclaimer && <i>Vera characters will receive reduced Awakening Points from Non-Vera gifts.</i>}
@@ -299,9 +299,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
 
                     <hr />
 
-                    <h2>Other Info</h2>
+                    <h2 className="anchor">Other Info</h2>
                     <section className="character-bio w-75ch">
-                        <h3>Character Profile</h3>
+                        <h3 className="anchor">Character Profile</h3>
                         <div className="bio-container">
                             <ul>
                                 <li>
@@ -329,7 +329,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </div>
                     </section>
                     <section className="voice-actors w-75ch">
-                        <h3>Voice Actors</h3>
+                        <h3 className="anchor">Voice Actors</h3>
                         <ul>
                             {simulacrum.bio.voiceActors.en.length > 0 &&
                                 <li>

@@ -131,7 +131,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/baiyuekui">
                                         <a>
                                             <img src="/static/images/avatar/baiyuekui.webp" alt="Baiyuekui" />
-                                            <h4>Baiyuekui</h4>
+                                            Baiyuekui
                                         </a>
                                     </Link>
                                 </th>
@@ -142,7 +142,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/marc">
                                         <a>
                                             <img src="/static/images/avatar/marc.webp" alt="Marc" />
-                                            <h4>Marc</h4>
+                                            Marc
                                         </a>
                                     </Link>
                                 </th>
@@ -153,7 +153,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/zero">
                                         <a>
                                         <img src="/static/images/avatar/zero.webp" alt="Zero" />
-                                        <h4>Zero</h4>
+                                        Zero
                                         </a>
                                     </Link>
                                 </th>
@@ -164,7 +164,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/king">
                                         <a>
                                         <img src="/static/images/avatar/king.webp" alt="KING" />
-                                        <h4>KING</h4>
+                                        KING
                                         </a>
                                     </Link>
                                 </th>
@@ -175,7 +175,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/shiro">
                                         <a>
                                         <img src="/static/images/avatar/shiro.webp" alt="Shiro" />
-                                        <h4>Shiro</h4>
+                                        Shiro
                                         </a>
                                     </Link>
                                 </th>
@@ -186,7 +186,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/coco-ritter">
                                         <a>
                                         <img src="/static/images/avatar/cocoritter.webp" alt="Coco Ritter" />
-                                        <h4>Coco Ritter</h4>
+                                        Coco Ritter
                                         </a>
                                     </Link>
                                 </th>
@@ -197,7 +197,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/meryl">
                                         <a>
                                         <img src="/static/images/avatar/meryl.webp" alt="Meryl" />
-                                        <h4>Meryl</h4>
+                                        Meryl
                                         </a>
                                     </Link>
                                 </th>
@@ -208,7 +208,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/crow">
                                         <a>
                                         <img src="/static/images/avatar/crow.webp" alt="Crow" />
-                                        <h4>Crow</h4>
+                                        Crow
                                         </a>
                                     </Link>
                                 </th>
@@ -219,7 +219,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/cobalt-b">
                                         <a>
                                         <img src="/static/images/avatar/cobalt-b.webp" alt="Cobalt-B" />
-                                        <h4>Cobalt-B</h4>
+                                        Cobalt-B
                                         </a>
                                     </Link>
                                 </th>
@@ -230,7 +230,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/claudia">
                                         <a>
                                         <img src="/static/images/avatar/claudia.webp" alt="Claudia" />
-                                        <h4>Claudia</h4>
+                                        Claudia
                                         </a>
                                     </Link>
                                 </th>
@@ -241,7 +241,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/samir">
                                         <a>
                                         <img src="/static/images/avatar/samir.webp" alt="Samir" />
-                                        <h4>Samir</h4>
+                                        Samir
                                         </a>
                                     </Link>
                                 </th>
@@ -252,7 +252,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/huma">
                                         <a>
                                         <img src="/static/images/avatar/huma.webp" alt="Huma" />
-                                        <h4>Huma</h4>
+                                        Huma
                                         </a>
                                     </Link>
                                 </th>
@@ -263,7 +263,7 @@ export const beginnerWeapons = {
                                     <Link href="/simulacra/nemesis">
                                         <a>
                                         <img src="/static/images/avatar/nemesis.webp" alt="Nemesis" />
-                                        <h4>Nemesis</h4>
+                                        Nemesis
                                         </a>
                                     </Link>
                                 </th>
