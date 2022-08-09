@@ -6,6 +6,11 @@ function Navigation() {
     const [togglerState, setTogglerState] = useState(false);
     const [currentLang, setLang] = useState("lang-en");
 
+    function handleClick(e) {
+        setTogglerState(!togglerState);
+        e.target.blur();
+    }
+
     return (
         <nav className="sidenav">
             <input type="checkbox" id="nav-toggler" checked={togglerState} onChange={() => { }} />
@@ -16,62 +21,77 @@ function Navigation() {
             <div className="nav-body hide-scrollbar">
                 <div className="navbar-brand">
                     <Link href="/">
-                        <a onClick={() => setTogglerState(!togglerState)}>
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
                             <img src="/static/images/avatar/tata.webp" alt="Logo" /><br />
                             Tower of Fantasy Index
                         </a>
                     </Link>
                 </div>
-                <hr />
-                <ul>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/banners">Banner Schedule</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/simulacra">Simulacra</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/matrices">Matrices</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/relics">Relics</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/exploration">Exploration</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/food">Food</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/mounts">Mounts</Link>
-                    </li>
-                    <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/guides">Guides</Link>
-                    </li>
-                    <li>
-                        <a href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">Interactive Map <LinkIcon /></a>
-                    </li>
-                    {/* <li onClick={() => setTogglerState(!togglerState)}>
-                        <Link href="/combat-analysis">Combat Analysis</Link>
-                    </li> */}
-                </ul>
-                <hr />
-                <ul className="nav-socials">
-                    <li>
-                        <a href="https://discord.gg/aidacafe" target="_blank" rel="noreferrer noopener"><DiscordIcon /></a>
-                    </li>
-                    <li>
-                        <a href="https://www.reddit.com/r/TowerofFantasy/" target="_blank" rel="noreferrer noopener"><RedditIcon /></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/_Aida_Cafe" target="_blank" rel="noreferrer noopener"><TwitterIcon /></a>
-                    </li>
-                </ul>
+
+                <div className="nav-links">
+                    <Link href="/banners">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Banner Schedule
+                        </a>
+                    </Link>
+                    <Link href="/simulacra">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Simulacra
+                        </a>
+                    </Link>
+                    <Link href="/matrices">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Matrices
+                        </a>
+                    </Link>
+                    <Link href="/relics">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Relics
+                        </a>
+                    </Link>
+                    <Link href="/exploration">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Exploration
+                        </a>
+                    </Link>
+                    <Link href="/food">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Food
+                        </a>
+                    </Link>
+                    <Link href="/mounts">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Mounts
+                        </a>
+                    </Link>
+                    <Link href="/guides">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}>
+                            Guides
+                        </a>
+                    </Link>
+                    <a tabIndex={0} href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">
+                        Interactive Map <LinkIcon />
+                    </a>
+                </div>
+
+                <div className="nav-socials">
+                    <a tabIndex={0} href="https://discord.gg/aidacafe" target="_blank" rel="noreferrer noopener">
+                        <DiscordIcon />
+                    </a>
+                    <a tabIndex={0} href="https://www.reddit.com/r/TowerofFantasy/" target="_blank" rel="noreferrer noopener">
+                        <RedditIcon />
+                    </a>
+                    <a tabIndex={0} href="https://twitter.com/_Aida_Cafe" target="_blank" rel="noreferrer noopener">
+                        <TwitterIcon />
+                    </a>
+                </div>
                 {/* <select name="lang-selector" id="lang-selector" onChange={(e) => setLang(e.target.value)}>
                     <option value="lang-en">English (US)</option>
                     <option value="lang-ru">Русский</option>
                 </select> */}
-                <span className="nav-footer">&copy; Tower of Fantasy Index.<br /> All rights reserved.</span>
+                <footer className="nav-footer">
+                    &copy; Tower of Fantasy Index.<br /> All rights reserved.
+                </footer>
             </div>
         </nav>
     );

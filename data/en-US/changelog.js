@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 9",
+        text: "Updated simulacrum radar charts (except claudia);"
+    },
+    {
         date: "August 8",
         text: "Version toggler added to applicable pages--you can now quickly see between CN and global versions without cluttering the page; Converted pngs to webp (images load faster now!); Relic videos added"
     },

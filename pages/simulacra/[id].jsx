@@ -233,22 +233,20 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </tbody>
                         </table>
                     </section>
-                    {Object.keys(weapon.abilities).length > 0 && !simulacrum.chinaOnly && 
+                    {Object.keys(weapon.abilities).length > 0 &&
                         <section className="weapon-abilities w-75ch">
                             <div className="modal-section-header">
                                 <h3>Weapon Abilities</h3>
-                                <VersionToggler section="weapon-abilities" version={version} setVersion={setVersion} />
+                                {!simulacrum.chinaOnly &&
+                                    <VersionToggler section="weapon-abilities" version={version} setVersion={setVersion} />}
                             </div>
-
                             {weapon.abilitiesVideoSrc &&
                                 <iframe src={weapon.abilitiesVideoSrc} allow="fullscreen" modestbranding={1} />
                             }
-                            {version !== "china" &&
-                                <>
-                                    Data reflects unleveled weapons.
-                                    {abilities}
-                                </>
-                            }
+                            <>
+                                Data reflects unleveled weapons.
+                                {abilities}
+                            </>
                         </section>
                     }
                     <section className="weapon-materials w-75ch" >
