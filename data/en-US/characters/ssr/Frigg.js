@@ -167,21 +167,22 @@ const frigg = {
         }
     },
 
+    // Add CN Tags back once she's released in global
     cnData: {
         weapon: {
             bonusEffect: {
                 effect1: {
                     title: "Frozen Domain",
                     description:
-                        `<abbr title='China Exclusive'></abbr> After using the Weapon Skill **Fimbulwinter**, a large ice field will be placed at your position, lasting  **25** seconds. Inside the ice field, dodges will not be consumed while using Frigg's weapon, and gain the effect Frozen Domain I: when using Ice weapons, increase Ice ATK by **15%** and Shatter by **25%**.`
+                        `After using the Weapon Skill **Fimbulwinter**, a large ice field will be placed at your position, lasting  **25** seconds. Inside the ice field, dodges will not be consumed while using Frigg's weapon, and gain the effect Frozen Domain I: when using Ice weapons, increase Ice ATK by **15%** and Shatter by **25%**.`
                 }
             },
             advancement: {
                 star3:
-                    `<abbr title='China Exclusive'></abbr> Increase frostiness limit to **15**. When using discharge skills of frost weapons in the frost domain, deal damage equal to **25%** of frost ATK &times; (current frostiness +5) to all targets in the frost domain.`,
+                    `Increase frostiness limit to **15**. When using discharge skills of frost weapons in the frost domain, deal damage equal to **25%** of frost ATK &times; (current frostiness +5) to all targets in the frost domain.`,
 
                 star6: 
-                    `<abbr title='China Exclusive'></abbr> Reaching **15** Frost points while inside the ice field will grant the additional effect Frozen Domain II: when using Ice weapons, increase Ice ATK by **25%**.`
+                    `Reaching **15** Frost points while inside the ice field will grant the additional effect Frozen Domain II: when using Ice weapons, increase Ice ATK by **25%**.`
             }
         }
     }

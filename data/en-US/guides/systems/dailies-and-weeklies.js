@@ -24,7 +24,7 @@ export const dailies = {
                         </tr>
                         <tr>
                             <th>Vitality</th>
-                            <td>See <Link href="/guides/vitality"><a>Vitality</a></Link>.</td>
+                            <td>See <Link href="/guides/systems/vitality"><a>Vitality</a></Link>.</td>
                         </tr>
                         <tr>
                             <th>Crew Donation</th>
