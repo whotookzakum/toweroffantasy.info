@@ -30,11 +30,11 @@ export default function Index() {
             <h3>Last update was on {CHANGELOG[0].date}. <Link href="/changelog"><a>See what's new</a></Link>.</h3>
             
             <blockquote className="banner-count">
-                Global will be live on August 10th at 5 PM PDT. The first banner will be <Link href={`/simulacra/${getBannerCharacters("glob")[0].uri}`}><a>{getBannerCharacters("glob")[0].name}</a></Link>.
-                {/* <strong>{getTotalBanners("glob").length}</strong> Banners,&nbsp;
+                Global has had&nbsp;
+                <strong>{getTotalBanners("glob").length}</strong> Banners,&nbsp;
                 <strong>{getBannerCharacters("glob").length}</strong> Unique, with&nbsp;
                 <strong>{getStandardAdditions("glob")}</strong> additions to the Standard Banner.<br/>
-                The newest character is <Link href={`/simulacra/${getBannerCharacters("glob")[0].uri}`}><a>{getBannerCharacters("glob")[0].name}</a></Link>. */}
+                The newest character is <Link href={`/simulacra/${getBannerCharacters("glob")[0].uri}`}><a>{getBannerCharacters("glob")[0].name}</a></Link>.
             </blockquote>
 
             <blockquote className="banner-count" style={{ borderColor: "#e72e37"}}>
