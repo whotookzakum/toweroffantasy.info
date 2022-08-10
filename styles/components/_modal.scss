@@ -78,6 +78,7 @@
     &.guides {
         gap: 0;
         grid-template-columns: 1fr;
+        
 
         li {
             background: none;
@@ -102,6 +103,7 @@
         }
 
         h3 {
+            text-align: left;
             margin: 0;
             font-weight: normal;
             color: clr(text, turquoise);
@@ -114,6 +116,7 @@
 
         .guide-date {
             color: clr(text, gray);
+            text-align: right;
         }
     }
 
@@ -484,6 +487,8 @@
 .awakening-gifts {
     ul {
         gap: 1rem 1.5rem;
+        white-space: nowrap;
+        flex-wrap: wrap;
 
         &.gifts-grid {
             display: grid;

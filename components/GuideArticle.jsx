@@ -37,6 +37,7 @@ export function GuideArticle({ guide }) {
                     <div style={{color: "gray"}}>Last updated {guide.date}</div>
                 </header>
                 {guide.text}
+                <BackButton/>
             </article>
         </>
     )
