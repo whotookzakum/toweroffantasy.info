@@ -136,7 +136,7 @@ export const thingsYouMustKnow = {
             <section>
                 <h2>15. Daily Free Simulacrum Gifts</h2>
 
-                <p>On Cetus island go straight past the tent in the middle and there will be an arcade machine near Slayer. You can play the claw machine 3 times a day and earn gifts that raise simulacra affinity/friendship. The prizes you can get are fixed, but the purple fox is a purple tier gift. I'm not sure if the black robot cat (another purple tier) is even grabbable as it always slips out of the claw.</p>
+                <p>On Cetus island go straight past the tent in the middle and there will be an arcade machine near Slayer. You can play the claw machine 3 times a day and earn gifts that can be used to awaken your simulacra. The purple fox is the easiest purple-tier gift you can grab.</p>
 
                 <p>Another opportunity for free gifts is at the NPC Hopkins, found at the Black Market (near the world boss Apophis). Speak to him and you will be presented with a choice between two mystery boxes. There is a chance of getting purple tier gifts from this daily.</p>
                 <em>Submitted by Sazz#2223</em>
