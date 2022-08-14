@@ -1,25 +1,15 @@
 const pepper = {
     name: "Пеппер",
-    uri: "pepper",
-    imgSrc: "pepper.png",
-    rarity: "SR",
-    chinaOnly: false,
     weapon: {
         name: "Посох со стигматами",
-        element: "volt",
-        type: "support",
-        baseStats: ["attack", "defense", "health"],
-        shatter: ["B", "4.00"],
-        charge: ["A", "10.00"],
-        materials: ["volt", "red", "black"],
         advancement: {
-            star1: "При применении навыка уклонения лечит всех союзников в радиусе 10 метров на **100%** от АТК.",
+            star1: "При применении навыка уклонения лечит всех союзников в радиусе **10** метров на **100%** от АТК.",
             
-            star2: "Базовый прирост к здоровью от оружия увеличивается на **10%**.",
+            star2: "Базовый прирост здоровья увеличивается на **10%**.",
             
             star3: "Обычные атаки запускают два снаряда, каждый из которых при попадании восстанавливает **5** очков заряда и наносит урон, равный **5%** от АТК.",
             
-            star4: "Базовый прирост к здоровью от оружия увеличивается на **20%**.",
+            star4: "Базовый прирост здоровья увеличивается на **20%**.",
             
             star5: "Скорость получения заряда оружия увеличивается на **20%** (эффект не распространяется на выпущенные снаряды).",
             
@@ -95,11 +85,6 @@ const pepper = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["cocoritter"],
-            set4: ["cocoritter"],
-            set3: ["pepper"]
-        }
     },
     
     matrix: {
@@ -110,15 +95,6 @@ const pepper = {
         trait1200: "Когда Пеппер использует еду для восстановления здоровья, увеличивает получаемое от неё лечение на **100%**.",
 
         trait4000: "Когда Пеппер использует еду для восстановления здоровья, увеличивает получаемое от неё лечение на **200%**.",
-
-        giftCategories: ['everyday-items', 'decorations', 'collectibles'],
-
-        gifts: [
-            [80, "peppaFigure"],
-            [60, "seal", "tataCards", "foxFigure", "catFigure", "goldCoin", "snowglobe", "kitchenware", "princeTataFigure", "linyeFigure"],
-            [30, "suit", "juicePouch", "necklace", "perfume", "spiderFigure", "elfFigure"],
-            [15, "photoAlbum", "flowers", "plant", "scarf", "strangePlant"]
-        ]
     },
 
     bio: {
@@ -132,6 +108,10 @@ const pepper = {
             en: "Kayli Mills (Кейли Миллс)",
             cn: ""
         }
+    },
+
+    cnData: {
+        name: "Пеппер (Пеппа)"
     }
 }
 
