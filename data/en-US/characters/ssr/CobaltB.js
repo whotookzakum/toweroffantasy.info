@@ -3,7 +3,7 @@ const cobalt = {
     uri: "cobalt-b",
     imgSrc: "cobalt-b.webp",
     rarity: "SSR",
-    chinaOnly: false,
+    chinaOnly: true,
     banners: {
         cn: [
             {

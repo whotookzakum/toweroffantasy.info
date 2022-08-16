@@ -13,7 +13,7 @@ const crow = {
         charge: ["A", "8.00"],
         materials: ["volt", "red", "blue"],
         advancement: {
-            star1: `Attacking targets from behind increases crit rate of all dual blades attacks by **40%**. Attacking an electrified target from behind increases crit rate by **100%** and crit damage by **30%**.`,
+            star1: `Attacking targets from behind increases crit rate of all dual blades attacks by **40%**. Backstabbing an electrified target increases crit rate by **100%** and crit damage by **30%**.`,
            
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
            

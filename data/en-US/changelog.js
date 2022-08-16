@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 15",
+        text: "Claudia and Cobalt-B are temporarily reverted to CN-only to avoid misinformation until they are added to global; Small text fixes"
+    },
+    {
         date: "August 9",
         text: "Added anchor links (you can link to a particular section of a page); Updated simulacrum radar charts (except claudia); Navigation fixes; Added back button to applicable pages; Navbar will now indicate the current page; Shiro's skill cooldown fixed (45s, previously 60s)"
     },

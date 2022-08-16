@@ -3,7 +3,7 @@ const claudia = {
     uri: "claudia",
     imgSrc: "claudia.webp",
     rarity: "SSR",
-    chinaOnly: false,
+    chinaOnly: true,
     banners: {
         cn: [
             {

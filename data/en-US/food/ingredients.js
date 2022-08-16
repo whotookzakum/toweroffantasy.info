@@ -420,7 +420,7 @@ const ingredients = {
     onion: {
         name: 'Onion',
         imgSrc: "onion.webp",
-        rarity: 3,
+        rarity: 2,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },
