@@ -94,7 +94,7 @@ const zero = {
     },
 
     matrix: {
-        set2: `Upon using a discharge skill to switch to the current weapon, gain a shield equal to **120%/150%/180%/210%** of ATK for **4** seconds.`,
+        set2: `Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds.`,
 
         set4: `While the shield is active, you and your teammates deal **16%/20%/24%/28%** more damage.`
     },
@@ -132,9 +132,6 @@ const zero = {
             advancement: {
                 star5: `<abbr title='China Exclusive'></abbr> Damaging a target also produces a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%** for **45** seconds. Stack up to **10** times. Skill cooldown is **2.5** seconds.`
             }
-        },
-        matrix: {
-            set2: `<abbr title='China Exclusive'></abbr> Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds.`
         }
     }
 }
