@@ -1,10 +1,10 @@
-const colossusarms = {
-    name: "Colossus Arms",
-    uri: "colossus-arms",
-    imgSrc: "colossusarms.webp",
+const colossusarm = {
+    name: "Colossus Arm",
+    uri: "colossus-arm",
+    imgSrc: "colossusarm.webp",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Summon a colossus arm that is immune to hitstun to fight for you for the next 20 seconds. Tap again to cancel. **300** seconds. Normal attacks deal damage up to **1,387.7%** of ATK and **launch** enemies. Skills deal damage equal to **453.5%** of ATK and knock enemies **into the air**. Cooldown: **10** seconds.",
+    description: "Summon a colossus arm to battle for 20 seconds. Cooldown: **300** seconds. Gain hitstun immunity for the next 20 seconds. Tap the Relic again again to cancel. Normal attacks deal damage up to **1,387.7%** of ATK and **strongly launch** enemies. Skills deal damage equal to **453.5%** of ATK and **strongly suspends** enemies. Cooldown: **10** seconds.",
     advancement: {
         star1: "Fire **2** missiles with each attack, delaing damage to the target. Each missile deals damage equal to **34.8%** of ATK.",
 
@@ -20,4 +20,4 @@ const colossusarms = {
     starsInVideo: "2"
 }
 
-export default colossusarms;
+export default colossusarm;

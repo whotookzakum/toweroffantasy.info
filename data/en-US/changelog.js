@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "August 15",
-        text: "All characters have been updated to global values (except for weapon abilities and recommended matrices); Claudia and Cobalt-B are temporarily reverted to CN-only until they are added to global; Small text fixes"
+        text: "All relic and characters text has been updated to global values (except for weapon abilities and recommended matrices); Colossus Arms renamed to Colossus Arm; Claudia and Cobalt-B are temporarily reverted to CN-only until they are added to global; Added New Star mount; Small text fixes"
     },
     {
         date: "August 9",

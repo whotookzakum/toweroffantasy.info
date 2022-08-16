@@ -10,10 +10,12 @@ import jerboa from "./jerboa";
 import jerboapaincar from "./jerboapaincar";
 import mechabird from "./mechabird";
 import monocross from "./monocross";
+import newstar from "./newstar";
 import omniumbeastvii from "./omniumbeastvii";
 import voyager from "./voyager";
 
 export const MOUNTS = [
+    newstar,
     futurechariot,
     jerboapaincar,
     desertrower,

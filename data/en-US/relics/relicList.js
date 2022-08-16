@@ -12,7 +12,7 @@ import omniumhandcannon from "./sr/OmniumHandCannon"
 import quantumcloak from "./sr/QuantumCloak"
 import strangecube from "./sr/StrangeCube"
 import alternatedestiny from "./ssr/AlternateDestiny"
-import colossusarms from "./ssr/ColossusArms"
+import colossusarm from "./ssr/ColossusArm"
 import confinement from "./ssr/Confinement"
 import couant2 from "./ssr/Couant2"
 import drone from "./ssr/Drone"
@@ -26,7 +26,7 @@ import typevarmor from "./ssr/TypeVArmor"
 export const RELICS = [
     hoverboard,
     couant2,
-    colossusarms,
+    colossusarm,
     omniumshield,
     typevarmor,
     spacetimerift,

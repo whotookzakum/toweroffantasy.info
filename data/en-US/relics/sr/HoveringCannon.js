@@ -8,7 +8,7 @@ const hoveringcannon = {
     advancement: {
         star1: "Hovering Cannon lasts for **24** seconds.",
 
-        star2: "Grant the ***Laser Array*** skill: Freeze targets after dealing damage to them **4** times in a row. Deal up to **93.2%** ATK damage to the target.",
+        star2: "Grant the ***Laser Array*** skill: Freeze targets after dealing damage to them **4** times in a row and deal damage equal to a maximum of **93.2%** of ATK.",
 
         star3: "Reduce cooldown to **150** seconds.",
 

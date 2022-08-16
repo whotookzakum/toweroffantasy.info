@@ -10,11 +10,11 @@ const couant = {
 
         star2: `After shield breaks, increase final damage by **20%** for **10** seconds.`,
 
-        star3: "After the shield ends (shattered), it increases your movement speed by 30% for 5 seconds.",
+        star3: "After shield breaks, increase speed by **30%** for **6** seconds.",
 
-        star4: "Reduce flame damage by **1.5%**, even if not deployed. Unavailable in Apex League.",
+        star4: "Reduce flame damage received by **1.5%**, even if not deployed. Unavailable in Apex League.",
 
-        star5: "if the shield breaks, gain a **5**-second damage reflection effect, reflecting **0.6**x damage taken back at the attacker."
+        star5: "If the shield breaks, gain a **5**-second damage reflection effect, reflecting **0.6** &times; damage taken back at the attacker."
     },
     videoSrc: "https://www.youtube.com/embed/PTXuEnUd8kY",
     starsInVideo: "4",

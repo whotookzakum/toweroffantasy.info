@@ -8,7 +8,7 @@ const jetpack = {
     advancement: {
         star1: "Replenish 1 charge every **100** seconds. Gliding no longer expends endurance.",
 
-        star2: "Gliding for longer than 3 seconds empowers the user's next gliding attack to stun the target for 2 seconds.",
+        star2: "Gliding for longer than 3 seconds empowers the user's next pummel attack to stun the target for 2 seconds.",
 
         star3: "Replenish **1** charge every 60 seconds.",
 
