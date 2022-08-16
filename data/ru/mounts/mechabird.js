@@ -1,8 +1,5 @@
 const mechabird = {
     name: "Меха-птица",
-    uri: "mechabird",
-    imgSrc: "mechabird.png",
-    chinaOnly: true,
     parts: {
         part1: {
             source: "Можно приобрести в магазине во время события.",
