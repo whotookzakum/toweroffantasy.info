@@ -23,7 +23,7 @@ const bailing = {
 
             star5: "Dodge skills inflict grievous on targets for **7** seconds.",
 
-            star6: "Increase crit rate by **30%** and crit damage by **50%** against grievous targets."
+            star6: "Increase crit rate to grievous targets by **30%** and crit damage by **50%**."
         },
         abilities: {
             normal: [

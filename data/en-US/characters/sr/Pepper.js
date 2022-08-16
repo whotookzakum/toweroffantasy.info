@@ -23,7 +23,7 @@ const pepper = {
             
             star5: "Increase speed of obtaining weapon charge by **20%** (not applicable to missile attacks).",
             
-            star6: "Grant all teammates within range of the skill **60%** damage reduction and immunity to crowd control effects."
+            star6: "Grant all teammates within range of the skill **60%** damage reduction whenever a skill dispels control effects from the target."
         },
         abilities: {
             normal: [

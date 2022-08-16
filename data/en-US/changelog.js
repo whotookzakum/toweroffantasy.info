@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "August 15",
-        text: "Claudia and Cobalt-B are temporarily reverted to CN-only to avoid misinformation until they are added to global; Small text fixes"
+        text: "All characters have been updated to global values (except for weapon abilities and recommended matrices); Claudia and Cobalt-B are temporarily reverted to CN-only until they are added to global; Small text fixes"
     },
     {
         date: "August 9",
