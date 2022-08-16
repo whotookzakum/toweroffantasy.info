@@ -17,13 +17,13 @@ const meryl = {
 
             star2: "Increase the current weapon's base HP growth by **16%**.",
 
-            star3: "Obtain Health Ice Shield with **10%** maximum health value when the weapon is switched; cooldown takes **20** seconds; Ice Shield lasts up to **10** seconds.",
+            star3: "Upon switching to the weapon, gain an Ice Shield equal to **10%** of Max HP. Cooldown **20** seconds. The Ice Shield lasts up to **10** seconds.",
 
             star4: "Increase the current weapon's base HP growth by **32%**.",
 
             star5: "Increase damage and shatter by **50%** while the shield is active.",
 
-            star6: "Health Ice Shield with a health value of up to **20%** is obtained when switched to the weapon. The shield provides immunity to control effects; cooldown takes **20** seconds; Ice Shield lasts up to **10** seconds."
+            star6: "Upon switching to the weapon, gain an Ice Shield equal to **20%** of Max HP and immmune to controls when shield is active. Cooldown: **20** seconds. The Ice Shield lasts up to **10** seconds."
         },
         abilities: {
             normal: [
@@ -108,7 +108,7 @@ const meryl = {
 
     matrix: {
         set2: 
-            `If HP is less than **30%** after being attacked, gain a shield equal to **15%/19%/22.5%/26%** of Max HP for **10** seconds. Cooldown: **120** seconds.`,
+            `If HP is less than **30%** after being attacked, gain a shield equal to **20%/26%/32%/40%** of Max HP for **10** seconds. Cooldown: **90** seconds.`,
 
         set4: 
             `Increase Whirlwind's damage by **36%/45%/54%/63%** and restore HP equal to **30%/38%/44%/50%** of the damage dealt while Whirlwind is active. The maximum HP restored every **0.5** seconds cannot exceed **60%/72%/81%/90%** of ATK.`,
@@ -146,9 +146,7 @@ const meryl = {
 
     cnData: {
         matrix: {
-            set2: `<abbr title='China Exclusive'></abbr> If HP is less than **30%** after being attacked, gain a shield equal to **20%/26%/32%/40%** of Max HP for **10** seconds. Cooldown: **90** seconds.`,
-
-            set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealth during shield to health, restores no more than **105%/127.5%/150%/172.5%** of attack power every 0.5 seconds.`
+            set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealt during shield to health, restores no more than **105%/127.5%/150%/172.5%** of ATK every 0.5 seconds.`
         },
         awakening: {
             trait4000: `<abbr title='China Exclusive'></abbr> Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**. Meryl's surroundings will freeze.`
