@@ -13,17 +13,17 @@ const king = {
         charge: ["B", "5.00"],
         materials: ["flame", "green", "blue"],
         advancement: {
-            star1: `Increase shatter by **15%**. After shattering the target's shield, deal damage equal to **120%** of ATK to the target every second for **15** seconds.`,
+            star1: `Increase shatter by **15%**. After shattering the target's shield, deal burn damage equal to **120%** of ATK to the target every second for **15** seconds.`,
 
             star2: `Increase the current weapon's base HP growth by **16%**.`,
 
-            star3: `Increase damage dealt by **6%** for each enemy within **6** meters, up to a maximum of **30%**.`,
+            star3: `Increase damage dealt by **10%** for each enemy within **6** meters, up to a maximum of **30%**.`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
             star5: `Increase damage dealt against HP shields or shielded enemies by **100%**.`,
 
-            star6: `Increase damage dealt by **10%** for each enemy slain for **30** seconds (stack up to **3** times).`
+            star6: `Increase damage dealt by **10%** for each enemy slain for **30** seconds. Stack up to **3** times.`
         },
         abilities: {
             normal: [
@@ -108,7 +108,7 @@ const king = {
     matrix: {
         set2: `When a target is shattered, grant **8%/10%/12%/14%** damage boost for **25** seconds. Only the highest level is applied when the effect is obtained repeatedly.`,
 
-        set4: `When there are more than 2 enemies around, hits restore HP equal to **10%/12%/13%/14%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **30%/33%/34.5%/36%** of ATK.`
+        set4: `When there are more than 2 enemies around, hits restore HP equal to **14%/18%/22%/26%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **36%/42%/48%/54%** of ATK.`
     },
 
     awakening: {
@@ -141,9 +141,7 @@ const king = {
 
     cnData: {
         matrix: {
-            set2: `<abbr title='China Exclusive'></abbr> For every 10% of shield broken, gain a **4%/5%/6%/7%** damage buff, up to **3** stacks, lasting **25** seconds.`,
-
-            set4: `<abbr title='China Exclusive'></abbr> When there are more than 2 enemies around, hits restore HP equal to **14%/18%/22%/26%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **36%/42%/48%/54%** of ATK.`
+            set2: `<abbr title='China Exclusive'></abbr> For every 10% of shield broken, gain a **4%/5%/6%/7%** damage buff, up to **3** stacks, lasting **25** seconds.`
         }
     }
 }
