@@ -59,7 +59,7 @@ const nemesis = {
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
             star5: 
-                `After using **Pulse Lock**, increase the Wanderer's ATK by (**5** + Number of Electrodes &times; **5** ) % for **25** seconds.`,
+                `After using **Pulse Lock**, increase the Wanderer's ATK by (**5** + (Number of Electrodes &times; **5**)) % for **25** seconds.`,
 
             star6: 
                 `Up to **2** Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user.`
@@ -153,10 +153,10 @@ const nemesis = {
  
     matrix: {
         set2: 
-            `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level will take effect when using multiple sets.`,
+            `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level's effect is applied when obtained repeatedly.`,
 
         set4: 
-            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds is imbued with "Lightning", dealing volt damage equal to **240%/300%/360%/420%** of volt ATK (reduced by 50% for electrodes). Cannot be triggered more than once every **10** seconds. "Lightning" charges do not stack, and only the highest level will take effect when using multiple sets.`
+            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds will cast lightning upon the target, dealing volt damage equal to **240%/300%/360%/420%** of volt ATK, and damaeg caused by electrodes is reduced by 50%. Cannot be triggered more than once in **10** seconds. "Lightning" charges do not stack. Only the highest level's effect is applied when obtained repeatedly.`
     },
 
     awakening: {
