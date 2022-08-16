@@ -106,9 +106,9 @@ const crow = {
     },
 
     awakening: {
-        trait1200: `When Crow is not in team play, increase damage dealt by **6%** and reduce damage received by **4%**.`,
+        trait1200: `When Crow is not in a team, increase damage dealt by **6%** and reduce damage received by **4%**.`,
 
-        trait4000: `When Crow is not in team play, increase damage dealt by **10%** and reduce damage received by **6%** When Crow enters combat, increase damage dealt by **12%** for **12** seconds.`,
+        trait4000: `When Crow is not in a team, increase damage dealt by **10%** and reduce damage received by **6%** When Crow enters combat, increase damage dealt by **12%** for **12** seconds.`,
 
         giftCategories: ['everyday-items', 'figurines', 'limited-edition'],
 
