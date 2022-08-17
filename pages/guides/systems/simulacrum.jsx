@@ -1,6 +1,6 @@
 import { GuideArticle } from "../../../components/GuideArticle";
-import { simulacra } from "../../../data/en-US/guides/systems/simulacra";
+import { simulacrum } from "../../../data/en-US/guides/systems/simulacrum";
 
 export default function Guide() {
-    return <GuideArticle guide={simulacra}/>;
+    return <GuideArticle guide={simulacrum}/>;
 }

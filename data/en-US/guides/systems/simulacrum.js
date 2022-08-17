@@ -1,4 +1,4 @@
-export const simulacra = {
+export const simulacrum = {
     name: "Simulacrum",
     uri: "simulacrum",
     date: "6 July 2022",
