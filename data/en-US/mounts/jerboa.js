@@ -5,10 +5,10 @@ const jerboa = {
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Obtained from the Gachapon Capsule Machines found in Mirror City - District A.",
+            source: "Obtained from the Gachapon Capsule Machines found in Mirroria - District A.",
         },
         part2: {
-            source: "Obtained from the Gachapon Capsule Machines found in Mirror City - District A.",
+            source: "Obtained from the Gachapon Capsule Machines found in Mirroria - District A.",
         }
     }
 }

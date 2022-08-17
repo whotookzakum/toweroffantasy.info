@@ -152,7 +152,7 @@ const lin = {
     bio: {
         gender: 'Female',
         height: '175 cm',
-        birthplace: 'Mirror City',
+        birthplace: 'Mirroria',
         horoscope: 'Virgo',
         birthday: '3 Sep',
         voiceActors: {

@@ -8,7 +8,7 @@ import { CHARACTERS } from "../data/en-US/characters/characterList";
 
 function getStandardAdditions(version) {
     return getTotalBanners(version).filter(({banner}) => 
-        banner.subtext && banner.subtext.includes("Standard")).length;
+        banner.standardAfterwards).length;
 }
 
 export default function Index() {

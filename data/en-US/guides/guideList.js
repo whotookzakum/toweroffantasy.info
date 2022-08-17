@@ -28,7 +28,7 @@ export const GUIDES = [
     // exploration; world bosses
     // unlock artificial island; map of artificial island
     // unlock outer artificial islands,
-    // vera exploration notes: quicksand whirlpool, gray zone & dark zone explanations, map of mirror city
+    // vera exploration notes: quicksand whirlpool, gray zone & dark zone explanations, map of Mirroria
     vitality,
     gear,
     pvp,

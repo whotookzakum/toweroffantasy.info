@@ -108,7 +108,7 @@ const saki = {
     bio: {
         gender: 'Female',
         height: '157 cm',
-        birthplace: 'Mirror City',
+        birthplace: 'Mirroria',
         horoscope: 'Libra',
         birthday: '11 October',
         voiceActors: {

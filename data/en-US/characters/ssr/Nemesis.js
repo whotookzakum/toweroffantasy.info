@@ -20,6 +20,14 @@ const nemesis = {
                 end: "9 Jul 2022",
                 duration: "16d",
                 week: "28~30"
+            },
+            {
+                bannerNo: 17,
+                subtext: "Standard in September",
+                start: "11 Aug 2022",
+                end: "21 Aug 2022",
+                duration: "10d",
+                week: "35~37"
             }
         ],
         glob: [

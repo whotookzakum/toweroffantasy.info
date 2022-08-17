@@ -19,7 +19,8 @@ const claudia = {
                 start: "19 Mar 2022",
                 end: "21 Mar 2022",
                 duration: "2d",
-                week: "14/15"
+                week: "14/15",
+                standardAfterwards: true
             }
         ]
     },
