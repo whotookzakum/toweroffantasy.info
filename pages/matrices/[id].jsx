@@ -1,6 +1,8 @@
+import React, { useState, useEffect } from 'react';
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
-import { getMatrixData, getAllMatrixIds } from "../../lib/matrices";
+import Link from "next/link";
+import { getMatrixData, getAllMatrixIds, getRecommendedWeapons } from "../../lib/matrices";
 import ReactMarkdown from 'react-markdown';
 import CNTag from "../../components/CNTag";
 import { Modal } from "../../components/Modal";
@@ -30,8 +32,18 @@ export default function MatrixPage({ matrix, version, setVersion }) {
     const chinaData = _.merge(cnData, cnData.cnData);
     const matrixSet = (version === "global" && !matrix.chinaOnly) ? matrix.matrix : chinaData.matrix;
 
+    const [detailsProps, setDetailsProps] = useState({});
+
+    useEffect(() => {
+        if (window !== undefined && "matchMedia" in window && window.matchMedia("(min-width: 700px)").matches) {
+            setDetailsProps({ open: true });
+        }
+    }, []);
+
     const setEffects = Object.entries(matrixSet).map(([key, value]) => {
         const reqPieces = key.split("set").pop();
+        const recommendedWeapons = getRecommendedWeapons(matrix.uri, reqPieces);
+
         return (
             <section key={key} className="matrix-set w-75ch">
                 <div className="modal-section-header">
@@ -43,7 +55,6 @@ export default function MatrixPage({ matrix, version, setVersion }) {
                 <details style={{ display: 'none' }}>
                     <summary>Advancements</summary>
                     <div className="details-content">
-
                         <table className="modal-table">
                             <thead>
                                 <tr>
@@ -68,6 +79,32 @@ export default function MatrixPage({ matrix, version, setVersion }) {
                         </table>
                     </div>
                 </details>
+                {recommendedWeapons?.length > 0 &&
+                    <details {...detailsProps}>
+                        <summary>Recommended Weapons</summary>
+                        <div className="weapon-rec-matrices">
+                            <ul>
+                                {recommendedWeapons.map((item, index) => {
+                                    return (
+                                        <li key={index}>
+                                            <Link href={`/simulacra/${item.uri}#weapon`}>
+                                                <a>
+                                                    <img
+                                                        src={`/static/images/wep/${item.imgSrc}`}
+                                                        alt={`${item.name}’s weapon`}
+                                                        width="128"
+                                                        height="128"
+                                                    />
+                                                    {item.weapon.name}
+                                                </a>
+                                            </Link>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </div>
+                    </details>
+                }
             </section>
         )
     });
