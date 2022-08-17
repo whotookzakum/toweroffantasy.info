@@ -23,7 +23,7 @@ const coco = {
 
             star5: `Increase healing effect by **15%**, plus an additional **20%** when healing targets with less than **60%** HP.`,
 
-            star6: `Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** all damage and healing (cannot stack).`
+            star6: `Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** all damage and healing boost (cannot stack).`
         },
         abilities: {
             normal: [
@@ -104,15 +104,15 @@ const coco = {
     },
 
     matrix: {
-        set2: `Increase healing capability and healing received by **8%/10%/12%/14%**.`,
+        set2: `Increase healing capability and healing received by **10%/12%/14%/16%**.`,
 
-        set4: `When you or your teammates are healed, increase ATK by **10%/12.5%/15%/17.5%** for **2** seconds.`
+        set4: `When you or your teammates are healed, increase ATK by **12.5%/15%/17.5%/20%** for **6** seconds. Only the highest level's effect is applied when obtained repeatedly.`
     },
 
     awakening: {
         trait1200: `When Cocoritter uses a support weapon, increase healing effects she inflicts on others and receives by **20%**.`,
 
-        trait4000: `When Cocoritter uses a support type weapon, the effects of healing and receiving healing are increased by **20%**, and when the discharge skills or weapon skills of the support-type weapon are used, the ATK of the friendly armies around you will increase by **15%** and lasts for **5** seconds.`,
+        trait4000: `When Cocoritter uses a support weapon, increase healing and healing received by **20%**. And when Cocoritter uses a support-type weapon's discharge skill or weapon skill, increase nearby allies' ATK by **15%** for **5**.`,
 
         giftCategories: ['toys', 'decorations', 'rare-items'],
 
@@ -137,11 +137,6 @@ const coco = {
     },
 
     cnData: {
-        matrix: {
-            set2: `<abbr title='China Exclusive'></abbr> Increase healing capability and healing received by **10%/12%/14%/16%**.`,
-
-            set4: `<abbr title='China Exclusive'></abbr> When you or your teammates are healed, increase ATK by **12.5%/15%/17.5%/20%** for **6** seconds.`
-        },
         weapon: {
             advancement: {
                 star6: `<abbr title='China Exclusive'></abbr> Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** ATK (cannot stack).`

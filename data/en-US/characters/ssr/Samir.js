@@ -13,7 +13,7 @@ const samir = {
         charge: ["S", "10.70"],
         materials: ["volt", "red", "black"],
         advancement: {
-            star1: `Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to **30%** of ATK to the target and nearby enemies. Cooldown: **0.5** seconds.`,
+            star1: `Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to **30%** of ATK to the target and nearby enemies. Cooldown: **0.2** seconds.`,
             
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
             
