@@ -4,7 +4,7 @@ const omniumshield = {
     imgSrc: "omniumshield.webp",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Generate an Omnium shield that stops projectiles for **10** seconds, with starting energy equal to **200%** of the Wanderer's max HP and **90**-second cooldown.",
+    description: "Generate an Omnium shield that stops projectiles for **10** seconds, with starting energy equal to **200%** of the Wanderer's max HP and a **90**-second cooldown.",
     advancement: {
         star1: "Slow enemies that pass through the shield by **50%** for **2** seconds.",
 

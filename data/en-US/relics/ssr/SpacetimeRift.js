@@ -4,7 +4,7 @@ const spacetimerift = {
     imgSrc: "spacetimerift.webp",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Launch a proton bomb at the target location, creating a collapse in time-space that sucks targets in for **10** seconds. After 1.5 seconds, the center of the collapse deals damage equal to **39.6** of ATK to targets caught in the area every 0.5 seconds. Cooldown: **100** seconds.",
+    description: "Launch a proton bomb at the target location, creating a collapse in time-space that sucks targets in for **10** seconds. After 1.5 seconds, the center of the collapse deals damage equal to **39.6%** of ATK to targets caught in the area every 0.5 seconds. Cooldown: **100** seconds.",
     advancement: {
         star1: "Enemies caught within the rift who are close to the ground are unable to dodge, and the vacuum duration is increased to **15** seconds.",
 

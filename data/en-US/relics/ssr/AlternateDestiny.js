@@ -4,7 +4,7 @@ const alternatedestiny = {
     imgSrc: "alternatedestiny.webp",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Generate a pocket dimension for **8** seconds. Allies gain immunity to hitstun effects in the dimension, and HP will not drop below **20%** from enemy attacks. Cooldown: **90** seconds. Leaving the dimension removes all buffs. Once you have spent **8** seconds in the dimension, you cannot be buffed by it for **45** seconds.",
+    description: "Generate a Pocket Dimension for **8** seconds. Allies gain immunity to hitstun effects in the dimension, and HP will not drop below **20%** from enemy attacks. Cooldown: **90** seconds. Leaving the dimension removes all buffs. Once you have spent **8** seconds in the dimension, you cannot be buffed by it for **45** seconds.",
     advancement: {
         star1: "Allied Wanderers in the dimension recovers **15%** HP **8** seconds later.",
 
