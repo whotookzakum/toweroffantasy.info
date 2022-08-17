@@ -23,7 +23,7 @@ const bailing = {
 
             star5: "Dodge skills inflict grievous on targets for **7** seconds.",
 
-            star6: "Increase crit rate by **30%** and crit damage by **50%** against grievous targets."
+            star6: "Increase crit rate to grievous targets by **30%** and crit damage by **50%**."
         },
         abilities: {
             normal: [
@@ -34,7 +34,7 @@ const bailing = {
                     breakdown: [
                         'Deal damage equal to **33.7%** of ATK + **2**.',
                         'Deal damage equal to **30.2%** of ATK + **2**.',
-                        'Deal damage equal to strong>54.3%** of ATK + **3**.',
+                        'Deal damage equal to **54.3%** of ATK + **3**.',
                         'Deal damage equal to **83.5%** of ATK + **4**.',
                         'Deal damage equal to **77.7%** of ATK + **4** and knock the target back a short distance.'
                     ]

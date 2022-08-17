@@ -30,7 +30,7 @@ function Exploration() {
             <h2>Vera Desert</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="vera" />
 
-            <h2>Mirror City</h2>
+            <h2>Mirroria</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="mirroria" />
 
             <h2>Vera Desert Dark Zone</h2>

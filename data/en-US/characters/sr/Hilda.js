@@ -13,7 +13,7 @@ const hilda = {
         charge: ["A", "10.00"],
         materials: ["ice", "red", "blue"],
         advancement: {
-            star1: "Every successful normal attack increases damage by **1%** for **2** seconds (stack up to **15** times). Increase ammo count to **60**.",
+            star1: "Every successful normal attack increases damage by **1%** for **2** seconds. Stack up to **15** times. Increase ammo count to **60**.",
 
             star2: "Increase the current weapon's base ATK growth by **10%**.",
 
@@ -21,7 +21,7 @@ const hilda = {
 
             star4: "Increase the current weapon's base ATK growth by **20%**.",
 
-            star5: "Reduce cooldown of normal attacks while in turret mode to **2** seconds.",
+            star5: "Reduce cooldown of normal attacks while in turret mode by **2** seconds.",
 
             star6: "Within **10** seconds upon switching to the weapon, increase damage of normal attacks and shatter by **60%**. Cooldown: **25** seconds."
         },

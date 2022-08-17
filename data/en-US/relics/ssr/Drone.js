@@ -4,7 +4,7 @@ const drone = {
     imgSrc: "drone.webp",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Summon a drone for **15** seconds, increase damage reduction by **5%** every **5** seconds. Cooldown: **120** seconds.",
+    description: "Summon a drone for **15** seconds, increase final damage reduction by **5%** every **5** seconds. Cooldown: **120** seconds.",
     advancement: {
         star1: "Grant immunity to control effects for the next **5** seconds.",
 

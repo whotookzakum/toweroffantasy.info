@@ -79,7 +79,7 @@ const shiro = {
             skill: [
                 {
                     name: "Full Bloom",
-                    description: `Create a Chakram Domain with the Wanderer at the center for **8** seconds. For **8** seconds after unleashing, pull in targets and reduce their speed by **30%**. Also fire **5** chakrams that bounce between enemies, dealing damage equal to **14.3%** of ATK + **1** to targets on their paths, bouncing up to **5** times. ***The split chakrams triggered by Waning Moon also bounce up to 5 times***. **60**-second cooldown.`
+                    description: `Create a Chakram Domain with the Wanderer at the center for **8** seconds. For **8** seconds after unleashing, pull in targets and reduce their speed by **30%**. Also fire **5** chakrams that bounce between enemies, dealing damage equal to **14.3%** of ATK + **1** to targets on their paths, bouncing up to **5** times. ***The split chakrams triggered by Waning Moon also bounce up to 5 times***. **45**-second cooldown.`
                 }
             ],
             discharge: [
@@ -100,7 +100,7 @@ const shiro = {
     matrix: {
         set2: `Increase both damage and shatter to targets with more than **50%** HP by **15%/19%/22.5%/26%**.`,
 
-        set4: `Upon entering battle, gain a **20%/25%/30%/35%** damage boost for **20** seconds. Reset **5** seconds after exiting battle.`
+        set4: `Upon entering battle, gain a **20%/25%/30%/35%** damage boost for **35** seconds. Reset **5** seconds after exiting battle.`
     },
 
     awakening: {
@@ -129,12 +129,6 @@ const shiro = {
             en: "Kristen McGuire",
             cn: "小耗"
         }
-    },
-
-    cnData: {
-        matrix: {
-            set4: `<abbr title='China Exclusive'></abbr> Upon entering battle, gain a **20%/25%/30%/35%** damage boost for **35** seconds. Reset **5** seconds after exiting battle.`
-        },
     }
 }
 

@@ -1,3 +1,4 @@
+import Tianlang from './ssr/Tianlang';
 import Lyra from './ssr/Lyra';
 import Lin from './ssr/Lin';
 import SakiFuwa from './ssr/SakiFuwa';
@@ -25,6 +26,7 @@ import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
 
 const characterList = [
+    Tianlang,
     Lyra,
     Lin,
     SakiFuwa,

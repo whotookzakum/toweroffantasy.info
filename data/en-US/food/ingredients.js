@@ -26,14 +26,14 @@ const ingredients = {
         imgSrc: "soybeans.webp",
         rarity: 2,
         chinaOnly: true,
-        source: "Purchased at Mirror City food vendor"
+        source: "Purchased at Mirroria food vendor"
     },
     corn: {
         name: 'Corn',
         imgSrc: "corn.webp",
         rarity: 2,
         chinaOnly: true,
-        source: "Purchased at Mirror City food vendor"
+        source: "Purchased at Mirroria food vendor"
     },
     fleshytail: {
         name: 'Fleshy Tail',
@@ -420,7 +420,7 @@ const ingredients = {
     onion: {
         name: 'Onion',
         imgSrc: "onion.webp",
-        rarity: 3,
+        rarity: 2,
         chinaOnly: false,
         source: 'Purchased at food vendor'
     },

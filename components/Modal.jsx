@@ -122,12 +122,15 @@ export function Modal({ item, children }) {
     }
 
     return (
-        <article className="modal">
-            <div className="modal-backdrop" />
-            <img className="bg-img" src={`/static/images/${options.bgImgPath}`} alt="Page Background" />
-            <ModalHeader item={item} options={options} path={path} />
-            {children}
-        </article>
+        <>
+            <article className="modal">
+                <div className="modal-backdrop" />
+                <img className="bg-img" src={`/static/images/${options.bgImgPath}`} alt="Page Background" />
+                <ModalHeader item={item} options={options} path={path} />
+                {children}
+            </article>
+            <BackButton />
+        </>
     );
 }
 
@@ -143,7 +146,7 @@ function ModalHeader({ item, options }) {
 
     return (
         <>
-            <BackButton/>
+            <BackButton />
             <header className={options.headerClass} >
                 <div className="header-img-wrapper">
                     <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />;

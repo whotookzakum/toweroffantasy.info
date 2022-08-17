@@ -6,7 +6,7 @@ const lavabomb = {
     chinaOnly: false,
     description: "Toss a Lava Bomb at a target location, dealing damage equal to **567%** of ATK and launching the target **into the air**. Cooldown: **45** seconds.",
     advancement: {
-        star1: "**Stun** targets for **2** seconds on hit, and ignite them.",
+        star1: "**Stun** targets for **2** seconds on hit, and burn them.",
 
         star2: "Increase blast radius by **50%**.",
 

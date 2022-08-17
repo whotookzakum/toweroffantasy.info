@@ -4,20 +4,30 @@ const hologramprojector = {
     imgSrc: "hologramprojector.webp",
     rarity: "SSR",
     chinaOnly: false,
-    description: "Project a hologram of the user that recreates their weapon attacks, dealing **50%** of the user's damage. Lasts for **15** seconds. Cooldown: **180** seconds.",
+    description: "Project a hologram of the user that synchronously replays the Wanderer's weapon attacks, dealing **35%** of the user's damage. Lasts for **15** seconds. **180**-second cooldown.",
     advancement: {
         star1: "Extend duration to **20** seconds.",
 
-        star2: "Increase damage dealt by holograms to **75%** of the Wanderer's damage.",
+        star2: "Reduce skill cooldown to **120** seconds.",
 
         star3: "Tap again to transpose to the hologram's position.",
 
-        star4: "Increase volt damage by 2%, even if you are not in combat, but not in the peak league (PvP)",
+        star4: "Increase volt damage by 2%, even if not deployed. Unavailable in Apex League.",
 
-        star5: "Increase damage dealt by the holograms to **100%** of the Wanderer's damage. Transposing removes control effects."
+        star5: "Increase damage dealt by the holograms to **50%** of the Wanderer's damage. Transposing removes control effects."
     },
     videoSrc: "https://www.youtube.com/embed/rmsj02iH2rs",
-    starsInVideo: "2"
+    starsInVideo: "2",
+
+    cnData: {
+        description: "<abbr title='China Exclusive'></abbr> Project a hologram of the user that synchronously replays the Wanderer's weapon attacks, dealing **50%** of the user's damage. Lasts for **15** seconds. **180**-second cooldown.",
+
+        advancement: {
+            star2: "<abbr title='China Exclusive'></abbr> Increase damage dealt by holograms to **75%** of the Wanderer's damage.",
+
+            star5: "<abbr title='China Exclusive'></abbr> Increase damage dealt by the holograms to **100%** of the Wanderer's damage. Transposing removes control effects."
+        }
+    }
 }
 
 export default hologramprojector;

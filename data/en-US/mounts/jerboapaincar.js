@@ -8,7 +8,7 @@ const jerboapaincar = {
             source: "Obtained from gachapon during the event period.",
         },
         part2: {
-            source: "Obtained from the Gachapon Capsule Machines found in Mirror City - District A."
+            source: "Obtained from the Gachapon Capsule Machines found in Mirroria - District A."
         }
     }
 }

@@ -1,7 +1,11 @@
 export const CHANGELOG = [
     {
+        date: "August 17",
+        text: "Tianlang info added; All relic and characters text has been updated to global values (except for weapon abilities and recommended matrices); Changed standard banner additions so they will only be counted after they are added to standard; Colossus Arms renamed to Colossus Arm; Claudia and Cobalt-B are temporarily reverted to CN-only until they are added to global; Added New Star mount; Small text fixes"
+    },
+    {
         date: "August 9",
-        text: "Added anchor links (you can link to a particular section of a page); Updated simulacrum radar charts (except claudia); Navigation fixes; Added back button to applicable pages; Navbar will now indicate the current page;"
+        text: "Added anchor links (you can link to a particular section of a page); Updated simulacrum radar charts (except claudia); Navigation fixes; Added back button to applicable pages; Navbar will now indicate the current page; Shiro's skill cooldown fixed (45s, previously 60s)"
     },
     {
         date: "August 8",

@@ -10,7 +10,7 @@ const missilebarrage = {
 
         star2: "Increase Missile Barrage damage by **20%**.",
 
-        star3: "Missile Barrage last for **12** seconds.",
+        star3: "Missile Barrage lasts for **12** seconds.",
 
         star4: "Increase physical damage by **1.5%**, even if not deployed. Unavailable in Apex League.",
 

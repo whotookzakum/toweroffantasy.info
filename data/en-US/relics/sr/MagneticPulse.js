@@ -10,9 +10,9 @@ const magneticpulse = {
 
         star2: "Grant immunity to control effects for the next **5** seconds.",
 
-        star3: "Hitting the target and planting a **7**-second Magnetic Bomb detonates if the target uses normal attacks/dodges/skills, causing **40%** slowdown for **5** seconds, and disappears after detonation.",
+        star3: "Upon hitting the target, plant a **7**-second Magnetic Bomb that detonates if the target uses normal attacks/dodges/skills, causing **40%** Slow for **5** seconds, and disappears after detonation.",
 
-        star4: "Reduce volt damage by **1.5%**, even if not deployed. Unavailable in Apex League.",
+        star4: "Reduce volt damage received by **1.5%**, even if not deployed. Unavailable in Apex League.",
 
         star5: "Detonating the Magnetic Bomb removes all current buffs from the target."
     },

@@ -14,7 +14,7 @@ const confinement = {
 
         star4: "Increase physical damage by **2%**, even if not deployed. Unavailable in Apex League.",
 
-        star5: "Trigger an earthquake every **3** seconds, **launching targets into the air**. The waves can be dodged by jumping."
+        star5: "Trigger an earthquake every **3** seconds, **suspending targets**. The waves can be dodged by jumping."
     },
     videoSrc: "https://www.youtube.com/embed/u_R3SUSnALI",
     starsInVideo: "1"

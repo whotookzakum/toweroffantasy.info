@@ -1,6 +1,6 @@
 import { dailies } from "./systems/dailies-and-weeklies";
 import { cnTopUp } from "./technical/cn-top-up";
-import { simulacra } from "./systems/simulacra";
+import { simulacrum } from "./systems/simulacrum";
 import { gacha } from "./systems/gacha";
 import { thingsYouMustKnow } from "./general/15-things-you-must-know.js";
 import { vitality } from "./systems/vitality";
@@ -28,11 +28,11 @@ export const GUIDES = [
     // exploration; world bosses
     // unlock artificial island; map of artificial island
     // unlock outer artificial islands,
-    // vera exploration notes: quicksand whirlpool, gray zone & dark zone explanations, map of mirror city
+    // vera exploration notes: quicksand whirlpool, gray zone & dark zone explanations, map of Mirroria
     vitality,
     gear,
     pvp,
-    simulacra,
+    simulacrum,
     dailies, // include gray zone dark zone?
     // battle royale
     artificialIslandConstruction, // elaborate on rewards, maybe a table for required materials to level up buildings..

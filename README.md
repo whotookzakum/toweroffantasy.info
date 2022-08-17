@@ -18,4 +18,7 @@ March 25, 2022: Site goes live
 May 7, 2022: 1k users  
 August 2, 2022: 10k users  
 August 6, 2022: 20k users  
-August 8, 2022: 30k users
+August 8, 2022: 30k users  
+August 9, 2022: 40k users  
+August 10, 2022: 50k users  
+August 12, 2022: 100k users  

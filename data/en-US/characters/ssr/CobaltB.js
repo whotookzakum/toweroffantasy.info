@@ -3,7 +3,7 @@ const cobalt = {
     uri: "cobalt-b",
     imgSrc: "cobalt-b.webp",
     rarity: "SSR",
-    chinaOnly: false,
+    chinaOnly: true,
     banners: {
         cn: [
             {
@@ -19,7 +19,8 @@ const cobalt = {
                 start: "13 Apr 2022",
                 end: "27 Apr 2022",
                 duration: "14d",
-                week: "18~20"
+                week: "18~20",
+                standardAfterwards: true
             }
         ]
     },
