@@ -382,7 +382,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Beetroot Soup',
+        name: 'Beet Soup',
         imgSrc: "beetrootsoup.webp",
         chinaOnly: true,
         rarity: 2,
@@ -1227,7 +1227,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Juicy BLT',
+        name: 'Juicy Meat Sandwich',
         imgSrc: "juicyblt.webp",
         chinaOnly: false,
         rarity: 4,
