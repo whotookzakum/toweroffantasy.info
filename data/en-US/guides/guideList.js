@@ -13,12 +13,14 @@ import { dpsLoadouts } from "./strategy/dps-weapon-loadouts";
 import { beginnerWeapons } from "./general/beginner-weapon-guide";
 import { pvp } from "./systems/pvp";
 import { shortestRerollPath } from "./strategy/shortest-reroll-path";
+import { worldBossDrops } from "./referential/world-boss-drops";
+import { gameLore } from "./general/game-lore";
 
 export const GUIDES = [
     // GENERAL
     thingsYouMustKnow,
     beginnerWeapons,
-    // story lore
+    gameLore,
     // Obtaining newest armor pieces
     
     // GAME SYSTEMS
@@ -42,7 +44,7 @@ export const GUIDES = [
     dpsLoadouts,
     shortestRerollPath,
     // chipProgression,
-    // apexLeague,
+    apexLeague,
     // wormhole
     // frontier clash
     // void rifts
@@ -52,6 +54,7 @@ export const GUIDES = [
     cnTopUp,
 
     // REFERENTIAL
+    worldBossDrops,
     darkCrystals
     // currencies
 ]

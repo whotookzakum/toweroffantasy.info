@@ -1,7 +1,7 @@
-const bullseye = {
-    name:"Bullseye",
-    uri: "bullseye",
-    imgSrc: "bullseye.webp",
+const cyberrhino = {
+    name:"Cyberrhino",
+    uri: "cyberrhino",
+    imgSrc: "cyberrhino.webp",
     rarity:"R",
     chinaOnly: false,
     matrix: {
@@ -9,4 +9,4 @@ const bullseye = {
     }
 }
 
-export default bullseye;
+export default cyberrhino;

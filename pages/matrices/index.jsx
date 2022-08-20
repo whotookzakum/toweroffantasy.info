@@ -37,6 +37,11 @@ function Matrices() {
                 <ModalMenu list={MATRICES} filter="rarity" target="R" />
             </section>
 
+            <section>
+                <h2><span style={{color: "var(--color-tier-c)"}}>N</span> Matrices</h2>
+                <ModalMenu list={MATRICES} filter="rarity" target="N" />
+            </section>
+
         </>
     );
 }

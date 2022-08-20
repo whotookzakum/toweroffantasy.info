@@ -207,6 +207,10 @@
     .tier-list-row {
         display: flex;
         align-items: center;
+
+        b {
+            font-size: 1.8rem;
+        }
     }
 
     .tier-title {
@@ -256,4 +260,29 @@
             color: clr(text, turquoise);
         }
     }
+}
+
+.pvp-table {
+    tbody td:first-child {
+        min-width: 128px;
+    }
+}
+
+.table-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+        margin-bottom: -0.5rem;
+    }
+}
+
+.row-light {
+    background: clr(container, light) !important;
+}
+
+.row-dark {
+    background: clr(container, dark) !important;
 }
