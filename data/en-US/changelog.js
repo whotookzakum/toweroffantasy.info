@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "August 20",
-        text: "PvP guide updated (apex league rewards table added); Story lore guide added; Apex league guide added; R matrix names updated and N matrix added;"
+        text: "PvP guide updated (apex league rewards table added); Story lore guide added; World boss drops guide added; Apex league guide added; R matrix names updated and N matrix added; Item border colors updated;"
     },
     {
         date: "August 17",

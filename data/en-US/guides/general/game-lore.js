@@ -27,13 +27,13 @@ export const gameLore = {
                     <p>The first colonists established settlements, and the government adopted a federal system. At that time, the city was booming with high-rise buildings.</p>
 
                     {/* Comet Mara */}
-                    <p>In 2653, the Aida authorities discovered the comet “Mara” and verified that a new energy source, "Omnium", could be obtained from this comet. The Old Federation launched the "Sky Slayer/Prism" project to build a Tower of Fantasy to solve the energy crisis.</p>
+                    <p>In 2653, the Old Federation discovered the comet “Mara” and their researchers noticed it contained a new energy source, “Omnium”, far beyond the current level of understanding. For further study, the Old Federation decided to capture Mara to harvest Omnium by launching “Project Prism” to solve the energy crisis, which consisted of building a “Tower of Fantasy”.</p>
 
                     {/* Mirror Capitol */}
                     <p>In 2657, the Tower of Fantasy #7 and the Mirror Capitol were successfully constructed.</p>
 
                     {/* Tower of Fantasy */}
-                    <p>In 2659 the Tower of Fantasy was built, and a directional force field was generated to capture the comet Mara, making it a satellite of planet Aida, and humans began to use the Omnium.</p>
+                    <p>In 2659, humans finished building a series of huge tower-shaped energy channeling devices to capture Mara and fix it to the orbit of Aida. Such a huge device is called a Tower of Fantasy. It is the only way humans harness stable Omnium from Mara.</p>
 
                     {/* The Storage Cistern IV */}
                     <p>In 2661, the Storage Cistern IV for Omnium was produced, which can be used to stabilize the Omnium.</p>
@@ -41,8 +41,8 @@ export const gameLore = {
                     {/* Primordial Radiation */}
                     <p>The leakage of the Omnium has caused the local ecology to mutate.</p>
 
-                    {/* Calamity */}
-                    <p>Five years later, at 4:47 pm on January 19th 2664, the Omnium reactor in the middle of the Tower of Fantasy exploded, and a large amount of Omnium was thrown into the atmosphere, spreading its radiation to the world and causing a global ecological disaster.</p>
+                    {/* The Cataclysm */}
+                    <p>Five years later, at 4:47 pm on January 19th 2664, the central Omnium reactor in the Tower of Fantasy exploded, releasing a massive amount of radioactive material into the atmosphere and subsequently spreading to the world through the air, triggering a global disaster, wiping out roughly 80% of the planet’s population. Aidans used to describe the Cataclysm as the Omnium Plague.</p>
 
                     {/* Tower of Fantasy #7 Destroyed */}
                     <p>In the decades after the Great Cataclysm, the Tower of Fantasy #7 was rebuilt and expanded many times. The repair work continued until 2678, and its function has not been restored so far. There are preset residential areas, scientific research areas, industrial areas and storage areas.</p>
@@ -67,13 +67,13 @@ export const gameLore = {
                     <p>In 2666, Vulkan was born. Aberration tests were carried out with a live cat, named Apophis , but ultimately failed.</p>
 
                     {/* Suppressor First Draft */}
-                    <p>In 2667, Dr. Vasika and Dr. Chereh, after two failures, jointly developed the “Suppressor scheme version 3” against Omnium radiation using living organisms. The experimental group used a living person named Julliard to inject G-67 virus to test whether the suppressor was effective and finally succeeded, creating Aberrant Seraphim.</p>
+                    <p>In 2667, Dr. Vasika and Dr. Chereh, after two failures, jointly developed the “Suppressor scheme version 3” against Omnium radiation using living organisms as test subjects. The experimental group used a living person named Julliard to inject G-67 virus to test whether the suppressor was effective and finally succeeded, creating Aberrant Seraphim.</p>
 
                     {/* Finished Product */}
                     <p>In 2668, the "suppressor" was successfully developed. By wearing this micro-device, Aida humans gained the ability to radiate antigen energy.</p>
 
-                    {/* Back in Time */}
-                    <p>Under the leadership of Dr. Claire, Hykros repeatedly tried time-travel more than 3,000 times, and it continues to this day.</p>
+                    {/* Time Retracement */}
+                    <p>Under the leadership of Dr. Claire, Hykros attempted to use Omnium’s time-affecting properties to conduct a large-scale time retracement. Specifically, returning the whole spacetime continuum back to a “certain point. They repeatedly tried time-travel more than 3,000 times, and it continues to this day.</p>
 
                     {/* Mirror Capital */}
                     <p>In 2670, the first SP-77 suit passed the test and set foot on Vera again.</p>
@@ -91,11 +91,11 @@ export const gameLore = {
                     <p>In 2698, Wei Na stepped down as executive officer due to health reasons, and was handed over to Qingxin to succeed.</p>
 
                     {/* Heirs of Aida Established */}
-                    <p>In 2671, "Heirs of Aida" was established by Sage and Zeke's father. This organization believes Hykros uses the suppressors to control people and it has the objective to expose their greed.</p>
+                    <p>In 2671, "Heirs of Aida" was established by Sage and Zeke's father. This organization believes Hykros uses the suppressors to control people and it has the objective to expose their greed. To them, Omnium is the root of all problems, and the only way to solve it is to sever Omnium entirely from humanity.</p>
 
                     <h3>Half a year ago</h3>
 
-                    {/* Polluted Area */}
+                    {/* Polluted Zone */}
                     <p>In 2712, two Hykros Executors were ambushed by Sage while on a mission and one of them was hunted down by the Aberrant hound "Barbarossa". During their escape, the suppressor was damaged and they fell into a coma, allowing Frigg to capture them with her team and take them to Sage, who implanted a virus in their suppressors.</p>
 
                     <a href="https://wiki-biligame-com.translate.goog/ht/%E5%BC%82%E9%97%BB%E5%BD%95?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" rel="noreferrer noopener nofollow">Prologue Reference</a>
