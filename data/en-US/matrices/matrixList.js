@@ -1,15 +1,16 @@
 import { CHARACTERS } from "../characters/characterList";
-import bullseye from "./r/Bullseye";
-import cleanupagreement from "./r/CleanupAgreement";
-import explosivecore from "./r/ExplosiveCore";
-import offensivelogic from "./r/OffensiveLogic";
-import provocateurs from "./r/Provocateurs";
-import tenetguard from "./r/TenetGuard";
+import cyberrhino from "./r/Cyberrhino";
+import sweeper from "./r/Sweeper";
+import watcher from "./r/Watcher";
+import windblade from "./r/Windblade";
+import ravager from "./r/Ravager";
+import omniumguard from "./r/OmniumGuard";
 import apophis from "./sr/Apophis";
 import barbarossa from "./sr/Barbarossa";
 import frostbot from "./sr/FrostBot";
 import robarg from "./sr/Robarg";
 import sobek from "./sr/Sobek";
+import aberrantcanine from "./n/AberrantCanine";
 
 const matrixList = [
     robarg,
@@ -17,12 +18,13 @@ const matrixList = [
     frostbot, 
     sobek, 
     barbarossa,
-    offensivelogic,
-    cleanupagreement,
-    explosivecore,
-    bullseye, 
-    tenetguard,
-    provocateurs
+    windblade,
+    sweeper,
+    watcher,
+    cyberrhino, 
+    omniumguard,
+    ravager,
+    aberrantcanine
 ]
 
 export const MATRICES = CHARACTERS.concat(matrixList);

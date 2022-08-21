@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 20",
+        text: "PvP guide updated (apex league rewards table added); Story lore guide added; World boss drops guide added; Apex league guide added; R matrix names updated and N matrix added; Item border colors updated;"
+    },
+    {
         date: "August 17",
         text: "Tianlang info added; All relic and characters text has been updated to global values (except for weapon abilities and recommended matrices); Changed standard banner additions so they will only be counted after they are added to standard; Colossus Arms renamed to Colossus Arm; Claudia and Cobalt-B are temporarily reverted to CN-only until they are added to global; Added New Star mount; Small text fixes"
     },
