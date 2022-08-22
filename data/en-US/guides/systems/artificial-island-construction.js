@@ -11,6 +11,7 @@ export const artificialIslandConstruction = {
         <>
             <section>
                 <h2>Getting Started</h2>
+                <p>Unlock Artificial Island by reaching level 50 and accepting the quest at Banges Port.</p>
                 <blockquote>
                     To build on the Artificial Island, you will need to be level 60 OR have 50% map completion on Artificial Island (inner region only).
                 </blockquote>
