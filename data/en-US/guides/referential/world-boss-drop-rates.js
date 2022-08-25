@@ -1,7 +1,7 @@
 import Link from "next/link"
 export const worldBossDrops = {
-    name: "World Boss Drops",
-    uri: "world-boss-drops",
+    name: "World Boss Drop Rates",
+    uri: "world-boss-drop-rates",
     date: "19 August 2022",
     description: "Drop rates for world bosses found throughout Tower of Fantasy.",
     type: "referential",
@@ -678,7 +678,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Gold Spacetime Crystal (?)</td>
+                            <td>Gold Spacetime Crystal (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -690,7 +690,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Purple Spacetime Crystal (?)</td>
+                            <td>Purple Spacetime Crystal (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -718,7 +718,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Gold Spacetime Crystal (?)</td>
+                            <td>Gold Spacetime Crystal (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -730,7 +730,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Purple Spacetime Crystal (?)</td>
+                            <td>Purple Spacetime Crystal (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -758,7 +758,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Aberrant SSR Engine fragments (?)</td>
+                            <td>Aberrant SSR Engine fragments (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -770,7 +770,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>Aberrant SR Engine fragments (?)</td>
+                            <td>Aberrant SR Engine fragments (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -798,7 +798,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>SSR Engine selection fragments (?)</td>
+                            <td>SSR Engine selection fragments (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>
@@ -810,7 +810,7 @@ export const worldBossDrops = {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>SR Engine selection fragments (?)</td>
+                            <td>SR Engine selection fragments (x?)</td>
                             <td>Any</td>
                             <td>100%</td>
                             <td>-</td>

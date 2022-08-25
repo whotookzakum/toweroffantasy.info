@@ -21,7 +21,16 @@ const frigg = {
                 duration: "16d",
                 week: "28~30"
             }
-        ]
+        ],
+        // glob: [
+        //     {
+        //         bannerNo: 2,
+        //         start: "1 September 2022",
+        //         end: "",
+        //         duration: "",
+        //         week: "3~"
+        //     }
+        // ]
     },
     weapon: {
         name: "Balmung",

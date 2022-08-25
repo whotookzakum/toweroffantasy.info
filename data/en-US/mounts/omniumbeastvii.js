@@ -15,6 +15,7 @@ const omniumbeastvii = {
         },
         part3: {
             source: "Rare drop from ***Behemoths***.",
+            dropRateKnown: true,
             map: "omniumbeastviielites.webp"
         }
     },

@@ -13,11 +13,16 @@ import { dpsLoadouts } from "./strategy/dps-weapon-loadouts";
 import { beginnerWeapons } from "./general/beginner-weapon-guide";
 import { pvp } from "./systems/pvp";
 import { shortestRerollPath } from "./strategy/shortest-reroll-path";
-import { worldBossDrops } from "./referential/world-boss-drops";
+import { worldBossDrops } from "./referential/world-boss-drop-rates";
 import { gameLore } from "./general/game-lore";
+import { maxLevelTimegates } from "./referential/max-level-timegates";
+import { planningAhead } from "./general/planning-ahead";
+import { bygoneRewards } from "./referential/bygone-phantasm-rewards";
+import { mountDropRates } from "./referential/mount-piece-drop-rates";
 
 export const GUIDES = [
     // GENERAL
+    planningAhead,
     thingsYouMustKnow,
     beginnerWeapons,
     gameLore,
@@ -55,6 +60,9 @@ export const GUIDES = [
 
     // REFERENTIAL
     worldBossDrops,
-    darkCrystals
+    mountDropRates,
+    darkCrystals,
+    maxLevelTimegates,
+    bygoneRewards
     // currencies
 ]

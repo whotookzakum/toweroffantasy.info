@@ -18,6 +18,7 @@ const monocross = {
         },
         part4: {
             source: "Rare drop from ***Devotees***.",
+            dropRateKnown: true,
             map: "monocrosselites.webp"
         }
     },

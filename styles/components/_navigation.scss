@@ -157,7 +157,7 @@
         cursor: pointer;
         transition: transform 0.3s ease;
         background-color: clr(container, base-opaque);
-        display: flex;
+        
         color: clr(tier, s);
         box-shadow: $shadow;
     }

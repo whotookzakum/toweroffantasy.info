@@ -1,353 +1,169 @@
-/* Chrome, Safari, Edge, Opera */
+@use "../abstracts" as *;
+
+/* Remove number input incrementer */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-/* Firefox */
 input[type="number"] {
     -moz-appearance: textfield;
 }
 
-input[type="number"]:focus {
+input[type="number"]:focus, input[type="number"]:focus-within {
     outline-width: 0;
 }
 
-.input-number-wrapper {
-    width: 46px;
-    font-size: 20px;
+.input-wrapper {
     display: flex;
-    position: relative;
-    color: var(--color-text);
-    width: fit-content;
-    padding: 0.5rem;
-    border-radius: 0.75rem;
-    background-color: #282633;
-    box-shadow: var(--shadow-0-0-4);
-    border: 2px solid transparent;
-    transition: border 0.1s linear;
+    flex-direction: column;
+    max-width: fit-content;
+
+    label {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: clr(text, gray);
+    }
+
+    input, select {
+        border: none;
+        padding: 0.5rem;
+        background: clr(container, lighter);
+        color: clr(text);
+        font: inherit;
+    }
+
+    optgroup {
+        font: inherit !important;
+    }
 }
 
-.input-number-wrapper:focus-within {
-    border-color: deepskyblue;
+.input-wrapper.number {
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &::after {
+            content: "%";
+        }
+    }
+
+    input {
+        max-width: 7ch;
+        text-align: right;
+    }
 }
 
-.input-number-wrapper input {
-    width: 3em;
-    color: var(--color-text);
-    text-align: right;
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.input-number-wrapper span {
-    align-self: center;
-    margin-right: 3px;
-}
-
-input[type="range"] {
+.input-wrapper input[type="checkbox"] {
+    max-width: unset;
+    width: 70px;
     -webkit-appearance: none;
-    margin: 18px 0;
-    width: auto;
+    appearance: none;
+    margin: 0;
+    background-color: clr(container, lighter);
+    transition: background-color 0.25s;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 25px;
+        width: 25px;
+        background: clr(text, gray);
+        transition: background-color 0.25s, transform 0.15s ease-in-out;
+    }
+
+    &:checked {
+        background: #524535;
+
+        &::before {
+            background: #e7be7d;
+            transform: translateX(calc(100% + 4px));
+        }
+    }
+}
+
+.input-wrapper input[type="range"] {
+    -webkit-appearance: none;
     background: transparent;
-}
-
-input[type="range"]:focus {
-    outline: none;
-}
-
-input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 8px;
     cursor: pointer;
-    background: #282633;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-0-0-4);
-    transition: background 0.1s linear;
+    margin: 0;
+    max-width: unset;
+    width: 250px;
+    --track-height: 12px;
+    --track-bg: #{clr(container, lighter)};
+    --thumb-border: none;
+    --thumb-height: 20px;
+    --thumb-width: 20px;
+    --thumb-border-radius: 0;
+    --thumb-bg: #e7be7d;
+    --thumb-transform: rotate(-45deg);
+
+    // Track
+    &::-webkit-slider-runnable-track {
+        height: var(--track-height);
+        background: var(--track-bg);
+    }
+    &::-moz-range-track {
+        height: var(--track-height);
+        background: var(--track-bg);
+    }
+
+    // Slider
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: var(--thumb-border);
+        height: var(--thumb-height);
+        width: var(--thumb-width);
+        border-radius: var(--thumb-border-radius);
+        background: var(--thumb-bg);
+        transform: var(--thumb-transform);
+        margin-top: -4px;
+    }
+    &::-moz-range-thumb {
+        border: var(--thumb-border);
+        height: var(--thumb-height);
+        width: var(--thumb-width);
+        border-radius: var(--thumb-border-radius);
+        background: var(--thumb-bg);
+        transform: var(--thumb-transform);
+    }
+
+    &::-moz-range-progress {
+        background: #524535;
+        height: 12px;
+    }
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    box-shadow: var(--shadow-0-0-4);
-    border: 1px solid #000000;
-    height: 16px;
-    width: 16px;
-    transform: rotate(-45deg);
-    border-radius: 0.3rem;
-    background: var(--color-tier-a);
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -4px;
-}
-
-#enemyEleWeakness::-webkit-slider-thumb {
-    background: var(--color-tier-s);
-}
-
-input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: deepskyblue;
-}
-
-input[type="range"]::-moz-range-track {
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-    background: #282633;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-0-0-4);
-}
-
-input[type="range"]::-moz-range-thumb {
-    box-shadow: var(--shadow-0-0-4);
-    border: 1px solid #000000;
-    height: 16px;
-    width: 16px;
-    transform: rotate(-45deg);
-    border-radius: 0.3rem;
-    background: var(--color-tier-a);
-    cursor: pointer;
-    margin-top: -4px;
-}
-
-input[type="range"]::-ms-track {
-    width: 100%;
-    height: 8px;
-    cursor: pointer;
-    background: #282633;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-0-0-4);
-    color: transparent;
-}
-
-input[type="range"]::-ms-fill-lower {
-    background: #282633;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-0-0-4);
-}
-
-input[type="range"]::-ms-fill-upper {
-    background: #282633;
-    border-radius: 1rem;
-    box-shadow: var(--shadow-0-0-4);
-}
-
-input[type="range"]::-ms-thumb {
-    box-shadow: var(--shadow-0-0-4);
-    border: 1px solid #000000;
-    height: 16px;
-    width: 16px;
-    transform: rotate(-45deg);
-    border-radius: 0.3rem;
-    background: var(--color-tier-a);
-    cursor: pointer;
-    margin-top: -4px;
-}
-
-input[type="range"]:focus::-ms-fill-lower {
-    background: deepskyblue;
-}
-
-input[type="range"]:focus::-ms-fill-upper {
-    background: deepskyblue;
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -8px;
 }
 
 .tick-marks {
-    width: 135px;
+    width: 250px;
     display: flex;
-    margin-top: -13px;
-    font-size: 1.4rem;
+    justify-content: space-between;
+
+    span {
+        width: 3ch;
+    }
 }
 
-select {
-    font-size: 2rem;
-    background-color: #282633;
-    color: var(--color-text);
-    border: 2px solid transparent;
-    outline: none;
-    padding: 0.5rem;
-    border-radius: 0.75rem;
-    box-shadow: var(--shadow-0-0-4);
-    border: 2px solid transparent;
-    transition: border 0.1s linear;
-}
-
-select:focus,
-select:focus-within {
-    border-color: deepskyblue;
-    transition: border 0.1s linear;
-}
-
-.input-section-wrapper {
-    display: flex;
-}
-
-.input-section-wrapper div {
-    width: fit-content;
-    font-size: 2rem;
-    position: relative;
-    align-items: center;
-    padding: 0.5rem 10px;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    box-shadow: var(--shadow-0-0-4);
-}
-
-label i {
-    color: gold;
-    align-self: center;
-}
-
-.input-section-wrapper input[type="checkbox"],
-.input-section-wrapper input[type="radio"] {
+.input-wrapper input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
     place-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width: 7ch;
+    height: 25px;
+    padding: 0.5rem;
     z-index: 40;
     transition: background 0.25s;
-    background-color: #282633;
+    background-color: clr(container, lighter);
     cursor: pointer;
     border: 0;
-    /* to offset the padding */
-    margin-left: -10px;
-    margin-top: -0.5rem;
-}
-
-input + label {
-    position: relative;
-    z-index: 50;
-    font-size: 2rem;
-}
-
-.input-section-wrapper div *:hover {
-    cursor: pointer;
-}
-
-input:checked {
-    background-color: #4f496e;
-}
-
-input:disabled,
-select:disabled {
-    background: #373738;
-}
-
-input:disabled + label,
-input:disabled + label i,
-select:disabled {
-    color: gray;
-}
-
-select {
-    transition: background 0.25s;
-}
-
-.checkbox-wrapper {
-    width: 34px;
-    height: 34px;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    box-shadow: var(--shadow-0-0-4);
-    background-color: #282633;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    transition: border 0.1s linear;
-}
-
-.checkbox-wrapper:focus-within {
-    border-color: deepskyblue;
-}
-
-.checkbox-wrapper:hover .checkbox-knob {
-    background: var(--color-tier-s);
-    display: block;
-    position: relative;
-    width: 40%;
-    height: 40%;
-    border-radius: 0.3rem;
-    transition: width 0.1s linear, height 0.1s linear;
-}
-
-.checkbox-knob {
-    border-radius: 0.3rem;
-    transition: width 0.1s linear, height 0.1s linear;
-    background: var(--color-tier-s);
-    position: relative;
-    z-index: 50;
-    width: 0%;
-    height: 0%;
-    opacity: 1;
-    animation: pop 0.3s linear 1;
-}
-
-#heavilyWounded {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
-    background: none;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-}
-
-#heavilyWounded:checked + .checkbox-knob {
-    width: 60%;
-    height: 60%;
-}
-
-@keyframes pop {
-    0% {
-        transform: scale(0);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-}
-
-.calculator-result {
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 2rem;
-}
-
-#totalDmgOutput {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: indianred;
-}
-
-#footnote-warning {
-    color: red;
-    font-weight: bold;
-}
-
-#reset-button {
-    position: absolute;
-    right: 0;
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    font-size: 2rem;
-    background-color: #282633;
-    border-radius: 0.75rem;
-    filter: drop-shadow(var(--shadow-0-0-4));
-    border: none;
-    box-shadow: inset 0 0 0 0 #373738;
-    color: indianred;
-    transition: box-shadow 0.2s ease;
-}
-
-#reset-button:hover {
-    box-shadow: inset 0 0 50px 20px #373738;
-}
-
-#reset-button:active {
-    filter: drop-shadow(var(--shadow-0-0-4)) brightness(0.85);
 }
