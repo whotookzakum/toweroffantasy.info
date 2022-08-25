@@ -251,16 +251,16 @@ export default function CombatPage() {
 
                 </div>
                 <input id="matrixBuff1Star0" type="radio" value="0" name="matrixBuff1Stars" onChange={(e) => handleChange(e)} defaultChecked />
-                <label for="matrixBuff1Star0">0★</label>
+                <label htmlFor="matrixBuff1Star0">0★</label>
 
                 <input id="matrixBuff1Star1" type="radio" value="1" name="matrixBuff1Stars" onChange={(e) => handleChange(e)} />
-                <label for="matrixBuff1Star1">1★</label>
+                <label htmlFor="matrixBuff1Star1">1★</label>
 
                 <input id="matrixBuff1Star2" type="radio" value="2" name="matrixBuff1Stars" onChange={(e) => handleChange(e)} />
-                <label for="matrixBuff1Star2">2★</label>
+                <label htmlFor="matrixBuff1Star2">2★</label>
 
                 <input id="matrixBuff1Star3" type="radio" value="3" name="matrixBuff1Stars" onChange={(e) => handleChange(e)} />
-                <label for="matrixBuff1Star3">3★</label>
+                <label htmlFor="matrixBuff1Star3">3★</label>
 
                 <div className="input-wrapper">
                     <label htmlFor="matrixBuff2">Matrix Set 2</label>
