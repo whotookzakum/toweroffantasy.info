@@ -1,18 +1,16 @@
 @use "../abstracts" as *;
 
-/* Chrome, Safari, Edge, Opera */
+/* Remove number input incrementer */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-/* Firefox */
 input[type="number"] {
     -moz-appearance: textfield;
 }
 
-input[type="number"]:focus {
+input[type="number"]:focus, input[type="number"]:focus-within {
     outline-width: 0;
 }
 
@@ -168,51 +166,4 @@ input[type="number"]:focus {
     background-color: clr(container, lighter);
     cursor: pointer;
     border: 0;
-}
-
-
-
-.input-section-wrapper div *:hover {
-    cursor: pointer;
-}
-
-
-
-.calculator-result {
-    font-family: "Chakra Petch", sans-serif;
-    font-size: 2rem;
-}
-
-#totalDmgOutput {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: indianred;
-}
-
-#footnote-warning {
-    color: red;
-    font-weight: bold;
-}
-
-#reset-button {
-    position: absolute;
-    right: 0;
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    font-size: 2rem;
-    background-color: #282633;
-    border-radius: 0.75rem;
-    filter: drop-shadow(var(--shadow-0-0-4));
-    border: none;
-    box-shadow: inset 0 0 0 0 #373738;
-    color: indianred;
-    transition: box-shadow 0.2s ease;
-}
-
-#reset-button:hover {
-    box-shadow: inset 0 0 50px 20px #373738;
-}
-
-#reset-button:active {
-    filter: drop-shadow(var(--shadow-0-0-4)) brightness(0.85);
 }

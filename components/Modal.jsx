@@ -149,7 +149,7 @@ function ModalHeader({ item, options }) {
             <BackButton />
             <header className={options.headerClass} >
                 <div className="header-img-wrapper">
-                    <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />;
+                    <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />
                 </div>
                 <div>
                     <h1>{item.name}</h1>

@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 24",
+        text: "Fixed small typo in Nemesis matrix text; Added New Star mount preview video; Added nemesis weapon abilities preview video; New Guides: Planning Ahead, Level cap timegate schedule, World Boss drop rates, Bygone phantasm rewards, Mount piece drop rates; "
+    },
+    {
         date: "August 20",
         text: "PvP guide updated (apex league rewards table added); Story lore guide added; World boss drops guide added; Apex league guide added; R matrix names updated and N matrix added; Item border colors updated;"
     },

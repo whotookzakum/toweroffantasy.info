@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const chaser = {
     name: "Chaser",
     uri: "chaser",
@@ -8,7 +10,8 @@ const chaser = {
             source: "Supply pod at Rusty Belt in northern Astra (-829, 473).",
         },
         part2: {
-            source: "Rare drop from ***The Vermin Brothers.***", 
+            source: "Rare drop from ***The Vermin Brothers.***",
+            dropRateKnown: true,
             map: "chaserelites.webp"
         }
     },

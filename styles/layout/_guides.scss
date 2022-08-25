@@ -286,3 +286,25 @@
 .row-dark {
     background: clr(container, dark) !important;
 }
+
+.bygone-rewards-table {
+    .flex {
+        align-items: center;
+    }
+
+    img {
+        max-width: 50px;
+        margin: -0.5rem;
+    }
+}
+
+.mount-drops-table {
+    // div {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    img {
+        max-width: 96px;
+    }
+}

@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import CNTag from "../../components/CNTag";
 import { Modal } from "../../components/Modal";
 import { removeSpace } from '../../utils/stringHelper';
+import Link from "next/link";
 
 export async function getStaticProps({ params }) {
     const mount = await getMountData(params.id);
@@ -31,7 +32,10 @@ export default function MountModal({ mount }) {
                 <div className="flex">
                     <img className="mount-part-img" src={`/static/images/mounts/${removeSpace(mount.name)}-${partNum}.webp`} alt={`${mount.name} Part ${partNum}`} />
                     <div className="mount-part-text" >
-                        <ReactMarkdown>{value.source}</ReactMarkdown>
+                        <div className="flex">
+                            <ReactMarkdown>{value.source}</ReactMarkdown>&nbsp;
+                            {value.dropRateKnown ? <Link href="/guides/referential/mount-piece-drop-rates"><a>View drop rate</a></Link> : null}
+                        </div>
                         {value.map &&
                             <details>
                                 <summary>Map</summary>

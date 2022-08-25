@@ -152,6 +152,7 @@ const nemesis = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/hQQTTuBKm0c?start=9",
         recommendedMatrix: {
             set2: ["nemesis", "coco-ritter"],
             set4: ["nemesis", "coco-ritter"],
@@ -164,7 +165,7 @@ const nemesis = {
             `When a target is being healed, their volt ATK is increased by **8%/10%/12%/15%** for **20** seconds. The effect does not stack, and only the highest level's effect is applied when obtained repeatedly.`,
 
         set4: 
-            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds will cast lightning upon the target, dealing volt damage equal to **240%/300%/360%/420%** of volt ATK, and damaeg caused by electrodes is reduced by 50%. Cannot be triggered more than once in **10** seconds. "Lightning" charges do not stack. Only the highest level's effect is applied when obtained repeatedly.`
+            `When healing yourself or your Electrode, the healed target gains a charge of "Lightning". The next attack within **30** seconds will cast lightning upon the target, dealing volt damage equal to **240%/300%/360%/420%** of volt ATK, and damage caused by electrodes is reduced by 50%. Cannot be triggered more than once in **10** seconds. "Lightning" charges do not stack. Only the highest level's effect is applied when obtained repeatedly.`
     },
 
     awakening: {

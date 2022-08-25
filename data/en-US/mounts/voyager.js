@@ -10,6 +10,7 @@ const voyager = {
         },
         part2: {
             source: "Rare drop from the ***Four Powers***.",
+            dropRateKnown: true,
             map: "voyagerelites.webp"
         },
         part3: {
