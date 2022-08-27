@@ -191,7 +191,7 @@ const nemesis = {
         birthday: '25 May',
         voiceActors: {
             jp: "戸松遥",
-            en: "",
+            en: "Suzie Yeung",
             cn: "宋媛媛"
         }
     },
@@ -206,7 +206,7 @@ const nemesis = {
                 }
             },
             advancement: {
-                star3: `<abbr title='China Exclusive'></abbr> Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
+                star3: `<abbr title='China Exclusive'></abbr> Every **4.5** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
 
                 star5: `<abbr title='China Exclusive'></abbr> After using **Pulse Lock**, increase Volt ATK by ( **10** + Number of Electrodes &times; **10** ) % for **25** seconds.`
             }

@@ -11,7 +11,7 @@ const coco = {
         baseStats: ["attack", "defense", "health"],
         shatter: ["B", "4.00"],
         charge: ["S", "12.50"],
-        materials: ["ice", "green", "blue"],
+        materials: ["ice", "green", "black"],
         advancement: {
             star1: `After dodging, summon a healing bee that follows the user and heals the ally with the lowest percentage of HP within **15** meters. Heal for **25%** of ATK and restore **50** weapon charge points each time and last for **25** seconds. Cooldown: **25** seconds.`,
 

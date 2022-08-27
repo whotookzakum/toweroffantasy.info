@@ -69,31 +69,90 @@ const marc = {
                 {
                     name: "Wasteland Hunters Attack",
                     input: ["Attack x4"],
+                    description: `While on the ground, perform 4 basic attacks in a row.`,
+                    breakdown: [
+                        `Deal damage equal to **56.4%** of ATK + **3**`,
+                        `Deal damage equal to **30.2%** of ATK + **2**`,
+                        `Deal damage equal to **120.7%** of ATK + **6**`,
+                        `Deal damage equal to **139.8%** of ATK + **7**`
+                    ]
                 },
                 {
                     name: "Wasteland Hunters Heavy Punch",
                     input: ["Jump", "Attack"],
-                },
-                {
-                    name: "Wasteland Hunters Shot",
-                    input: ["hold:Attack"],
+                    description: `Use a normal attack while in the air, which can trigger a heavy attack and cause damage to the target hit. Dealing **108.4%** of ATK + **6** damage and knocks the target back.`
                 },
                 {
                     name: "Heavy Stereo Punch",
-                    input: ["Attack x4"],
-                },
-                {
-                    name: "Impact Slash",
-                    input: ["Attack", "hold:Attack"],
-                },
-                {
-                    name: "Shoulder Cannon Launch",
-                    input: ["hold:Attack"],
+                    input: ["Attack x5"],
+                    description:
+                        `When in the Mech form, perform basic attack five times in a row, hitting the same target 4 times adds a weakness lasting for 20 seconds, not stackable.  
+                        After switching back to the original form, perform 5 basic attacks in a row, adding a weakness status to the targets, dealing increased damage of 10%. The effect lasts for 20 second.`,
+                    breakdown: [
+                        `Mech form: Deal damage equal to **70.7%** of ATK + **4** and knock the target back a short distance.
+                        Original form: Deal damage equal to **87.6%** of ATK + **5** and knock the target back a short distance.`,
+
+                        `Mech form: Deal damage equal to *38.7%** of ATK + **2** and knock the target back a short distance.
+                        Original form: Deal damage equal to **48.2%** of ATK + **3** and knock the target back a short distance.`,
+
+                        `Mech form: Deal damage equal to *109.4%** of ATK + **6** and knock the target back a short distance.
+                        Original form: Deal damage equal to **185.5%** of ATK + **10** and knock the target back a short distance.`,
+
+                        `Mech form: Deal damage equal to *129.6%** of ATK + **7** and knock the target back a short distance.
+                        Original form: Deal damage equal to **151.9%** of ATK + **8** and knock the target back a short distance.`,
+
+                        `Mech form: Deal damage equal to *188.5%** of ATK + **10** and **launch** the target.
+                        Original form: Deal damage equal to **365.3%** of ATK + **19** and **launch** the target.`,
+                    ]
                 },
                 {
                     name: "Double Slam",
                     input: ["Jump", "Attack"],
+                    description: `Hold Attack while jumping or when in the air to trigger a Mech Heavy Strike. When landing, causes damage to nearby targets equal to **135.4%** of ATK + **7** damage and controls the **floating** target. The higher the distance from the ground when triggered, the higher the damage, up to **600%** damage.`
                 },
+                {
+                    name: "Shoulder Cannon Launch",
+                    input: ["hold:Attack"],
+                    description: `The mech suit launches 3 missiles, hitting a target causes **17.8%** of ATK + **1** damage, and the explosion deals **26.7%** of ATK + **1** damage.`
+                },
+                {
+                    name: "Impact Slash",
+                    input: ["Attack", "hold:Attack"],
+                    description: `Press and hold the attack to trigger the branch attack during the general attack. When in Mech form, leap up and hit the ground, dealing **250.3%** of ATK + **13** damage to nearby targets and force control the floating targets; When in original form, sprint forward, dealing **254.5%** of ATK + **13** damage to targets along the way and forcibly controlling flying targets.`
+                },
+                {
+                    name: "Wasteland Hunters Shot",
+                    input: ["hold:Attack"],
+                    description: `Use the pistol to aim at the target and shoot, dealing **23.9%** of ATK + **1** damage to the target.`
+                }
+            ],
+            dodge: [
+                {
+                    name: "Dodge",
+                    description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
+                },
+                {
+                    name: "Mecha Collision",
+                    description: `Deals **149.1%** of ATK + **8** damage to the target along the way, and knocks the target back slightly.`,
+                },
+            ],
+            skill: [
+                {
+                    name: "Mecha Entry",
+                    description: `Heavy Stereo jumps down, causing **395.3%** of ATK + **21** damage to surrounding targets, and strong control to knock the target up, with a **20**-second cooldown.  
+                    Passive: In the Mech form, become immune to the rigidity effect, and other sources other than the uncontrolled source cannot be used.`
+                },
+                {
+                    name: "Dismount",
+                    description: `Heavy Stereo leaps down, dealing **395.3%** of ATK + **21** damage and strongly **knocking back** surrounding targets and switching forms. Cooldown **20** seconds.`
+                }
+            ],
+            discharge: [
+                {
+                    name: "",
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and releases a large number of missiles, dealing **513.3%** of ATK + **27** damage to the target.  
+                    Passive: In the Mech form, it is immune to the rigidity effect, and other sources other than the uncontrolled source cannot be used.`
+                }
             ]
         },
         recommendedMatrix: {

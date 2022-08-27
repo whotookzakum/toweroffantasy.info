@@ -3,7 +3,7 @@ const frigg = {
     uri: "frigg",
     imgSrc: "frigg.webp",
     rarity: "SSR",
-    chinaOnly: true,
+    chinaOnly: false,
     banners: {
         cn: [
             {
@@ -44,12 +44,12 @@ const frigg = {
             effect1: {
                 title: "Frost Resonance",
                 description:
-                    `Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set's effect also works with weapons in the off-hand slot. Effect cannot be stacked.`
+                    `Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set's effect also works with weapons in the off-hand slot. This effect does not stack.`
             }
         },
         advancement: {
             star1:
-                `Gain **1** frostiness point every time you receive **550%** &times; Frost ATK of damage in the Frost Domain. Up to **10** frost points can be accumulated.  
+                `Gain **1** frostiness point every time you receive **550%** &times; Frost ATK of damage in the Frost Domain. Up to **10** points can be accumulated.  
                 When Frost Domain ends, frostiness points &times; Frost ATK &times; **95%** of blast damage will be dealt to all enemies in the Frost Domain. After leaving the Frost Domain lose **1** frostiness point every **3** seconds.`,
 
             star2: `Increase the current weapon's base HP growth by **16%**.`,
@@ -63,7 +63,7 @@ const frigg = {
                 `Shattering shields using frost weapons in the Frost Domain will freeze the target for **2** seconds and cause frostiness points &times; Frost ATK &times; **35%** of additional damage (if the target cannot be frozen, double the additional damage dealt).`,
 
             star6:
-                `Reaching **15** Frost points while inside the ice field will grant the additional effect Frozen Domain II: when using Ice weapons, increase Ice ATK by **12%**.`
+                `When frostiness reaches **15** points and you are in the Frost Domain, you will get an additional "Domain of Frost II" that increases Frost ATK by **12%** when frost weapons are used.`
         },
         abilities: {
             normal: [
@@ -144,15 +144,15 @@ const frigg = {
     },
 
     matrix: {
-        set2: `When switching from ice weapon to ice weapon, Ice ATK is increased by **15%/18%/21%/25%** for **10** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
+        set2: `Increase frost ATK by **8%/10%/12%/15%** for **10** seconds when switching between frost weapons. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `When using Frozen Domain, enemies within the domain take **60%/75%/90%/105%** of Ice ATK as Ice damage every second.`
+        set4: `When unleashing a frost domain with the weapon "Balmung", enemies within the frost domain receive frost damage equal to **55%/65%/75%/85%** of frost ATK every second.`
     },
 
     awakening: {
         trait1200: `Increase frost ATK by **1.5%** every **3** seconds upon entering battle. Stack up to **10** times. Lasts for **5** seconds.`,
 
-        trait4000: `Increase frost ATK by **2.4%** every **3** seconds upon entering battle. Stack up to **10** times. Lasts for **5** seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain.`,
+        trait4000: `Frost ATK is boosted by **2.4%** every **3** seconds upon entering combat. Stack up to **10** times. Lasts for **5** seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain.`,
 
         giftCategories: ['metalware', 'everyday-items'],
 
@@ -171,7 +171,7 @@ const frigg = {
         birthday: '1 Feb',
         voiceActors: {
             jp: "伊藤静 (Shizuka Ito)",
-            en: "",
+            en: "Antonia Flynn",
             cn: "杨梦露"
         }
     },
@@ -192,7 +192,28 @@ const frigg = {
 
                 star6: 
                     `Reaching **15** Frost points while inside the ice field will grant the additional effect Frozen Domain II: when using Ice weapons, increase Ice ATK by **25%**.`
+            },
+            abilities: {
+                dodge: [
+                    {
+                        name: "Dodge",
+                        description:
+                            `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
+                    },
+                    {
+                        name: "Multislash",
+                        input: ["Dodge", "Attack"],
+                        description:
+                            `Tap normal attack during the short perfect attack window to trigger Multislash.  
+                            Unleash multiple slashes at a set distance in front of the user, dealing total damage equal to **257.1%** of ATK + **14**.`
+                    }
+                ],
             }
+        },
+        matrix: {
+            set2: `Increase frost ATK by **15%/18%/21%/25%** for **10** seconds when switching between frost weapons. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
+            
+            set4: `When unleashing a frost domain with the weapon "Balmung", enemies within the frost domain receive frost damage equal to **60%/75%/90%/105%** of frost ATK every second.`
         }
     }
 }
