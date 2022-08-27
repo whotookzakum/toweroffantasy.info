@@ -5,7 +5,7 @@ const aidaknight = {
     chinaOnly: true,
     parts: {
         part1: {
-            source: "Rewarded for purchasing the 4th Premium Battle Pass.",
+            source: "Rewarded for purchasing the 4th Collector's Edition Pass.",
         }
     },
     videoSrc: "https://www.youtube.com/embed/xmcxrn_DoNQ"
