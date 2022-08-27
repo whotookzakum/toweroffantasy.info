@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "August 25",
+        text: "Meryl's simulacrum trait (4000) DOES in fact freeze surroundings in global;"
+    },
+    {
         date: "August 24",
         text: "Fixed small typo in Nemesis matrix text; Added New Star mount preview video; Added nemesis weapon abilities preview video; New Guides: Planning Ahead, Level cap timegate schedule, World Boss drop rates, Bygone phantasm rewards, Mount piece drop rates; "
     },

@@ -119,7 +119,7 @@ const meryl = {
             `Reduce frost damage received by Meryl by **20%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**.`,
 
         trait4000: 
-            `Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**.`,
+            `Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**. Meryl's surroundings will freeze.`,
 
         giftCategories: ['metalware', 'rare-items'],
 
@@ -147,9 +147,6 @@ const meryl = {
     cnData: {
         matrix: {
             set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealt during shield to health, restores no more than **105%/127.5%/150%/172.5%** of ATK every 0.5 seconds.`
-        },
-        awakening: {
-            trait4000: `<abbr title='China Exclusive'></abbr> Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**. Meryl's surroundings will freeze.`
         }
     }
 }
