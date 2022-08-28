@@ -32,11 +32,11 @@ const shiro = {
                     input: ["Attack x5"],
                     description: `While on the ground, swing the chakram to unleash 5 spinning attacks.`,
                     breakdown: [
-                        'Deal damage equal to **23.6%** of ATK + **1**.',
-                        'Deal damage equal to **18.3%** of ATK + **1**.',
-                        'Deal damage equal to **26.2%** of ATK + **1**.',
-                        'Deal damage equal to **23.6%** of ATK + **1**.',
-                        'Deal damage equal to **41.4%** of ATK + **2** and knock the target back a short distance.'
+                        'Deal damage equal to **30.7%** of ATK + **2**.',
+                        'Deal damage equal to **23.8%** of ATK + **1**.',
+                        'Deal damage equal to **34%** of ATK + **2**.',
+                        'Deal damage equal to **30.7%** of ATK + **2**.',
+                        'Deal damage equal to **53.8%** of ATK + **3** and knock the target back a short distance.'
                     ]
                 },
                 {
@@ -52,7 +52,7 @@ const shiro = {
                 {
                     name: "Scatter",
                     input: ["Attack x2","hold:Attack"],
-                    description: `After the second normal attack, hold attack button to activate Scatter. Fire five penetrating chakrams forward, each hit dealing **33.5%** x ATK + **2** damage, with minor knockback.`
+                    description: `After the second normal attack, hold attack button to activate Scatter. Fire five penetrating chakrams forward, each hit dealing **43.5%** x ATK + **2** damage, with minor knockback.`
                 },
                 {
                     name: "Air Spin",

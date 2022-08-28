@@ -5,12 +5,13 @@ import { MOUNTS } from "../data/en-US/mounts/mountList";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
 import { EXPLORATION } from "../data/en-US/exploration/exploration";
+import { OUTFITS, MIA_OUTFITS } from "../data/en-US/cosmetics/cosmetics";
 import { useRouter } from "next/router";
 import AnchorJS from "anchor-js";
 import { useEffect } from "react";
 import BackButton from "./BackButton";
 
-export function ModalMenu({ list, filter, target }) {
+export function ModalMenu({ list, filter, target, gender }) {
     let options = new Object();
 
     const filteredList = list.filter(item => item[filter] === target);
@@ -51,6 +52,16 @@ export function ModalMenu({ list, filter, target }) {
                 options.menuClass = "exploration";
                 options.linkPath = `exploration/${item.uri}`;
                 options.imgPath = `exploration/${item.imgSrc}`;
+                break;
+            case OUTFITS: 
+                options.menuClass = "cosmetics";
+                options.linkPath = `cosmetics/outfits/${item.uri}`;
+                options.imgPath = `cosmetics/outfits/${gender}_${item.imgSrc}`;
+                break;
+            case MIA_OUTFITS: 
+                options.menuClass = "cosmetics";
+                options.linkPath = `cosmetics/mia/${item.uri}`;
+                options.imgPath = `cosmetics/mia/${item.imgSrc}`;
                 break;
             default:
                 break;

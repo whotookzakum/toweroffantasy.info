@@ -32,10 +32,10 @@ const meryl = {
                     input: ["Attack x4"],
                     description: `While on the ground, swing a greatsword to attack 4 times in a row.`,
                     breakdown: [
-                        'Deal damage equal to **60.7%** of ATK + **3** and knock the target back a short distance.',
-                        'Deal damage equal to **50.1%** of ATK + **3** and knock the target back a short distance.',
-                        'Deal damage equal to **87.9%** of ATK + **5** and knock the target back a short distance.',
-                        'Deal damage equal to **130.3%** of ATK + **7**, knock the target **into the air**, then launch them upon landing.'
+                        'Deal damage equal to **72.9%** of ATK + **4** and knock the target back a short distance.',
+                        'Deal damage equal to **60.1%** of ATK + **3** and knock the target back a short distance.',
+                        'Deal damage equal to **105.4%** of ATK + **6** and knock the target back a short distance.',
+                        'Deal damage equal to **156.3%** of ATK + **8**, **strongly suspend** the target, then launch them upon landing.'
                     ]
                 },
                 {

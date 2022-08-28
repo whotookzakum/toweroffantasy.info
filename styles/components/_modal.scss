@@ -133,6 +133,12 @@
             padding-top: 0;
         }
     }
+
+    &.cosmetics {
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .modal {
