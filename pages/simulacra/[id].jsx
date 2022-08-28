@@ -121,7 +121,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             {getInputs(ability.input)}
                         </ul>
                     }
-                    <ReactMarkdown>{ability.description}</ReactMarkdown>
+                    <ReactMarkdown rehypePlugins={[rehypeRaw]}>{ability.description}</ReactMarkdown>
                     {ability.breakdown &&
                         <ol>
                             {getBreakdown(ability.breakdown)}

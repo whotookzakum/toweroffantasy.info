@@ -38,6 +38,12 @@ function Navigation() {
                             Banner Schedule
                         </a>
                     </Link>
+                    <Link href="/events">
+                        <a tabIndex={0} onClick={(e) => handleClick(e)}
+                            className={router.pathname.includes("events") ? "active" : ""}>
+                            Events
+                        </a>
+                    </Link>
                     <Link href="/simulacra">
                         <a tabIndex={0} onClick={(e) => handleClick(e)}
                             className={router.pathname.includes("simulacra") ? "active" : ""}>

@@ -202,7 +202,21 @@ export const OUTFITS = [
 ]
 
 export const ACCESSORIES = [
+    {
+        name: "",
+        uri: "",
+        imgSrc: ".webp",
+        source: ""
+    },
+]
 
+export const HEADWEAR = [
+    {
+        name: "",
+        uri: "",
+        imgSrc: ".webp",
+        source: ""
+    },
 ]
 
 export const MIA_OUTFITS = [

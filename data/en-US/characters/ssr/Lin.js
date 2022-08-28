@@ -43,81 +43,100 @@ const lin = {
 
             star6: `**Lunar Reflection** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Lunar Reflection** is increased to **15%**.`
         },
-        // abilities: {
-        //     normal: [
-        //         {
-        //             name: "",
-        //             description: `An air burst is formed at the target position, a range diffusion wave is formed on the ground, and the target is knocked down. Passive: Continue clicking basic attack after releasing the branch attack to immediately release a max [Hold] attack.`
-        //         },
-        //         {
-        //             name: "",
-        //             description: `Sends a large spiral sphere (which can be charged and increases with the charging time), inflicting multiple hits on impact.`
-        //         },
-        //         {
-        //             name: "",
-        //             description: `Falling quickly from the air, causes AoE damage after landing and knocks down targets.`
-        //         },
-        //     ],
-        //     dodge: [
-        //         {
-        //             name: "",
-        //             description: `Launch an attack on the target while dodging midair. The hit generates **1-3 Nightblooms**, and at the same time forms a field that lasts for **5** seconds. When an enemy moves against the direction in the field, their movement speed is reduced by **50%**. Passive: can be released both on the ground and in the air; when under control effects, immediately break out and release the wind field (automatically use a dodge attack without consuming dodge count), cooldown **20** seconds.`
-        //         },
-                
-        //     ],
-        //     skill: [
-        //         {
-        //             name: "Gravity Field",
-        //             description: `A gravity field is formed around yourself for **15** seconds. In the gravity field, you gain a **15%** damage bonus, and can double jump multiple times and has **20%%** increased jumping ability and reducing stamina consumption by **50%**. Aerial falling speed is also reduced. When using **Shadow Weaver** in the gravity field, gain the **Cold Air** state: using a joystick and jumping in the air will create a gust and release an attack at the target, which will generate **Nightblooms**.  
-        //             Passive: In the gravity field, a **Nightbloom** will be generated near the target every **1.5** seconds.  
-        //             Passive: When **Nightblooms** detonate in the gravity field, they instantly kill targets with less than **10%** of their HP.  
-        //             Passive: When in the gravity field, flash away from the target when you are about to take damage, cooldown **10** seconds.  
-        //             Passive: Weapons Master:
-        //             When paired with two **Flame weapons**, the wind field is transformed into a flame wind field. When the burning BUFF is added in the wind field, the duration is increased by **5** seconds, and the player's own fire damage to the shielded target in the wind field is increased by **50%**.
-        //             When paired with two **Volt weapons**, the wind field is transformed into a lightning wind field. Dodges have a **65%** chance of not being consumed while in the wind field. Each dodge will add **300%** AoE damage to the next Discharge skill, stacking up to **3** times for **900%** damage.
-        //             When paired with two **Ice weapons**, the wind field is transformed into an ice wind field. When enemies in the field receive ice damage **10** times, they enter a state of frostbite for **15** seconds, receiving **20%** more ice damage. The number of hits to activate frostbite does not accumulate during the effect.
-        //             When paired with two **Physical weapons**, the wind field is transformed into a physical wind field. Every time the target loses **1%** of its max HP in the wind field, you gain the corresponding health in shields within **3** seconds, can be stacked.
-        //             When paired with two **weapons of different elements**, the wind field is not transformed. Gain **15%** attack for all elements while in the wind field.`
-        //         },
-        //     ],
-        //     discharge: [
-        //         {
-        //             name: "",
-        //             description: `When switching to this weapon will full charge or when Phantasia is triggered, clear all debuffs and converges to form a spiral energy sphere with strong suction (all movable targets can be sucked), and explodes after a short time (1-2 seconds. Formation of a range of wind pressure diffusion wave.`
-        //         }
-        //     ]
-        // },
         abilities: {
             normal: [
                 {
                     name: "Normal Attack",
                     input: ["Attack x5"],
+                    description: `While on the ground, use Shadow Weaver to perform 5 attacks.`,
+                    breakdown: [
+                        `Deal damage equal to **59.9%** of ATK + **3**.`,
+                        `Deal damage equal to **57.1%** of ATK + **3**.`,
+                        `Deal damage equal to **49.5%** of ATK + **3**.`,
+                        `Deal damage equal to **114.2%** of ATK + **6**.`,
+                        `Deal damage equal to **152.2%** of ATK + **8**.`
+                    ]
                 },
                 {
                     name: "Air Strike",
                     input: ["Jump", "Attack x5"],
+                    description: `While airborne, tap basic attack 5 times to perform consecutive attacks in the air.`,
+                    breakdown: [
+                        `Deal damage equal to **30.6%** of ATK + **2**.`,
+                        `Deal damage equal to **55.6%** of ATK + **3**.`,
+                        `Deal damage equal to **48.2%** of ATK + **3**.`,
+                        `Deal damage equal to **111.2%** of ATK + **6**.`,
+                        `Deal damage equal to **148.3%** of ATK + **8**.`
+                    ]
                 },
                 {
                     name: "Mud Scatter",
                     input: ["Attack", "hold:Attack"],
+                    description: 
+                        `After the second basic attack on the ground or in the air, hold the basic attack to trigger the zero fall into mud.  
+
+                        Launch an attack at the target location, dealing **83.2%** of ATK + **4** damage and knocking the target down.  
+                        Passive: Quickly click the basic attack after the ground is released into mud, and it can be released immediately (the third layer) for a short-lived.`
                 },
                 {
                     name: "Short-lived",
                     input: ["hold:Attack"],
+                    description: 
+                        `Hold the basic attack to release a flash in the pan, up to three layers of power can be charged, and the overlord and control-free effects can be activated during the charging period.  
+
+                        The first layer, causing **73.9%** ATK + **4** damage to the target; the second layer, causing **146.2%** of ATK + **8** damage to the target; the third layer, causing **246.2%** of ATK + **13** points of damage to the target.`
                 },
                 {
                     name: "Falling Shadow",
                     input: ["Jump", "hold:Attack"],
-                }
+                    description: `Falling quickly from the air, deal damage equal to **160%** of ATK + **8** and knocking down targets.`
+                },
             ],
             dodge: [
                 {
                     name: "Dodge",
-                    description: `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
+                    description:
+                        `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
                 },
                 {
-                    name: "Left in vain",
+                    name: "Just Leave Greenery",
                     input: ["Dodge", "Attack"],
+                    description: 
+                        `Launch an attack on the target while dodging midair, dealing damage equal to **70%** of ATK + **4**. The hit generates **1-3 Nightblooms** and forms a field that lasts for **5** seconds that reduces enemy movement speed by **50%**.  
+
+                        Passive: can be used on the ground or in the air.
+                        
+                        Passive: When under control effects, immediately break out and cast the field (automatically use a dodge attack without consuming dodge count), cooldown **20** seconds.`,
+                }
+            ],
+            skill: [
+                {
+                    name: "Lunar Reflection",
+                    description: `A reflection of the moon is formed around yourself for **15** seconds. In the reflection, gain a **10%** damage bonus, you can double jump multiple times, gain **20%** increased jumping ability, and reduce stamina consumption by **50%** (cooldown **30** seconds).  
+                    &nbsp;                      
+                    When using Shadow Weaver inside Lunar Reflection, enter the state of "Cold Air", where your falling speed is greatly reduced. Jumping while moving in a direction will allow you to perform a shuttle and launch an attack dealing **66%** of ATK + **3** and spawn **1-3** Nightblooms.  
+                    &nbsp;  
+                    Passive: Inside Lunar Reflection, a **Nightbloom** will be generated near a target every **0.8** seconds.  
+                    &nbsp;  
+                    Passive: When using Shadow Weaver inside Lunar Reflection, increase damage by **50%** against targets with less than **20%** HP.  
+                    &nbsp;  
+                    Passive: When using Shadow Weaver inside Lunar Reflection, teleport away from the target when you are about to take damage, cooldown **10** seconds.  
+                    &nbsp;  
+                    When paired with two **Flame weapons**, Lunar Reflection is transformed into a Flame Lunar Reflection. While inside the reflection, any burn effects applied will have their duration extended by **4** seconds, and increase flame damage to shielded targets by **15%**.  
+                    &nbsp;  
+                    When paired with two **Volt weapons**, Lunar Reflection is transformed into a Thunder Lunar Reflection. In the reflection, increase Volt damage by **30%**, dodges have a **65%** chance of not being consumed, and each dodge attacks deal **35%** more damage.  
+                    &nbsp;  
+                    When paired with two **Frost weapons**, Lunar Reflection is transformed into an Ice Lunar Reflection. When enemies in the reflection receive frost damage **10** times, they enter a state of frostbite for **15** seconds, receiving **22%** more frost damage. The number of hits to activate frostbite does not accumulate while the enemy is in the frostbite state.  
+                    &nbsp;  
+                    When paired with two **Physical weapons**, Lunar Reflection is transformed into a Physical Lunar Reflection. When there is an active life shield in the reflection, deal damage equal to **150%** of ATK + **8** every second.  
+                    &nbsp;  
+                    When paired with two **weapons of different elements**, gain **15%** attack for all elements while inside the reflection (considered as activating elemental resonances for flame, volt, frost, and physical).`
+                },
+            ],
+            discharge: [
+                {
+                    name: "Gravity Weave",
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and release a gravity field with a strong pull, dealing damage equal to **542%** of ATK + **29**. After **5** seconds, the explosion forms a diffuse wave, dealing **271%** of ATK + **14** damage. During the skill, become immune to damage for **2.6** seconds (does not take effect in Apex League).`
                 }
             ]
         },

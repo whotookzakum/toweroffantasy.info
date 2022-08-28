@@ -86,12 +86,12 @@ const baiyuekui = {
                         `After the second basic attack, hold the basic attack to trigger the whip leg.  
                         The high kick will force the target to float in the air, and after a short charge, use the whip leg to force the target to fly, causing a total of **281.9%** of ATK + **15** damage.`
                 },
-                {
-                    name: "Leg Splitter",
-                    input: ["Jump", "hold:Attack"],
-                    description: 
-                        `(while target is airborne) no description provided`
-                },
+                // {
+                //     name: "Leg Splitter",
+                //     input: ["Jump", "hold:Attack"],
+                //     description: 
+                //         `(while target is airborne) no description provided`
+                // },
                 {
                     name: "Earthshaker",
                     input: ["Jump", "hold:Attack"],
@@ -105,6 +105,11 @@ const baiyuekui = {
                 }
             ],
             dodge: [
+                {
+                    name: "Dodge",
+                    description:
+                        `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
+                },
                 {
                     name: "Unsheathe",
                     input: ["Arrow keys", "Dodge", "Attack"],

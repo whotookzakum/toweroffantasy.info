@@ -49,31 +49,88 @@ const saki = {
                 {
                     name: "Flowing Springs",
                     input: ["Attack x5"],
+                    description: `While on the ground, use the Flowing Spring to perform 5 attacks.`,
+                    breakdown: [
+                        `Deal damage equal to **42.5%** of ATK + **2** and knock the target back a short distance`,
+                        `Deal damage equal to **29.5%** of ATK + **2** and knock the target back a short distance`,
+                        `Deal damage equal to **45%** of ATK + **2** and knock the target back a short distance`,
+                        `Deal damage equal to **70.6%** of ATK + **4** and knock the target back a short distance`,
+                        `Deal damage equal to **102.6%** of ATK + **5** and **suspend** the target.`,
+                    ]
                 },
                 {
                     name: "Heavenbreak Waterfall",
                     input: ["Jump", "Attack x5"],
+                    description: `When in the air or after using a jump, click the basic attack to make five consecutive attacks in the air.`,
+                    breakdown: [
+                        `Deal damage equal to **47.2%** of ATK + **2**.`,
+                        `Deal damage equal to **43.7%** of ATK + **2**.`,
+                        `Deal damage equal to **54.2%** of ATK + **3**.`,
+                        `Deal damage equal to **76.9%** of ATK + **4**.`,
+                        `Deal damage equal to **170.2%** of ATK + **9**.`,
+                    ]
                 },
                 {
                     name: "Frostfall",
                     input: ["Jump", "hold:Attack"],
+                    description: 
+                        `Triggered by holding basic attack, climbing, reverse jumping attack or using a jetpack to attack while in the air.  
+
+                        In the process of falling, each time you hit a target deal damage equal to **30.4%** of ATK + **2** damage to the target; when landing, it will cause **76%** of ATK + **4** damage to surrounding targets.`
                 },
                 {
-                    name: "Surging Heart Flow",
+                    name: "Surging Heart Vortex", // "while target is airborne"
                     input: ["hold:Attack"],
-                    description: "while target is airborne"
+                    description: 
+                        `During normal attacks, hold the normal attack to trigger.  
+                        Dash forward and spin to perform multi-stage attacks, dealing damage up to **199.5%** of ATK + **11** damage to the target.`
                 },
                 {
-                    name: "Calm Style Flow",
+                    name: "Calm Style Broken Spring", // "while target is on the ground"
                     input: ["hold:Attack"],
-                    description: "while target is on the ground"
+                    description: 
+                        `In Calm Style, the normal attack can be triggered by holding the normal attack or immediately.  
+                        Long press the attack button to keep the momentum, release the attack button to deal up to **127.3%** of ATK + **7** of damage to the target. If you are attacked while the skill is casting, block damage equal to **20%** of your maximum HP.`
                 }
             ],
             dodge: [
                 {
+                    name: "Dodge",
+                    description:
+                        `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
+                },
+                {
                     name: "Frigid Tide",
                     input: ["Arrow keys", "Dodge", "Attack"],
+                    description: 
+                        `After dodging forward, tap Basic Attack.  
+                        Dash and turn around to attack the target, dealing a total of **277%** of ATK + **15** damage.`
                 },
+            ],
+            skill: [
+                {
+                    name: "Surging Heart Style - Glimpse of Ningsen",
+                    description: `Dash in the target direction and briefly immobilize the enemy on the path, delaying dealing up to **927.7%** of ATK + **49** damage to the enemy on the path, cooldown for **30** seconds.`
+                },
+                {
+                    name: "Calm Style - Gathering Springs",
+                    description: 
+                        `Release the skill of Calm Style Flow to enter the charging state, continuously taunting surrounding targets, charging for up to **3** seconds, absorbing damage during charging (up to **60%** of Max HP), and dealing damage after charging ends. Damage dealt is equal to **850%** &times; Frost Attack + **50%** &times; amount of damage absored as Frost damage. **20%** of the value that is not consumed is converted into health regeneration, and cool down for **30** seconds.  
+
+                        When using Perserverance Resonance, switch to Calm Style, and use the Calm Style weapon skill. When using another resonance, switch to Surging Heart Style.  
+
+                        Release the Unbreakable skill to obtain the sword shadow that follows you, and release the Unbreakable branch skill or link. During the skill, the sword shadow will release [Surge], causing **450%** of Ice Attack range damage to the target, [Surge] cools down for **10** seconds.  
+
+                        **Surging Heart Style**: When the player uses any weapon to cause damage, the sword shadow releases [flow], causing **125%** of ice attack damage to the first outside hit target and recovering **57%** of the damage value of health, the maximum recovery amount each time does not exceed aggressive **100%**, cooldown **0.8** seconds.  
+
+                        **Calm Style**: After the sword shadow releases [Surge], the player will get **3** blocks for **10** seconds. The maximum block amount does not exceed **15%** of Max HP. Each successful block will deal damage equal to **450%** of Frost ATK, [Surge]'s shield-breaking ability increased by **100%** and added taunting effect.`
+                }
+            ],
+            discharge: [
+                {
+                    name: "Heart of Lotus",
+                    description: "When ***weapon charge*** is full or ***Phantasia*** is triggered, **clear all debuffs from the user** and sprint towards the target and launch a set of combos, dealing a total of **864.5%** of ATK + **46** damage."
+                }
             ]
         },
         recommendedMatrix: {
