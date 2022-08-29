@@ -78,7 +78,7 @@
     &.guides {
         gap: 0;
         grid-template-columns: 1fr;
-        
+
 
         li {
             background: none;
@@ -391,7 +391,7 @@
 .character-bio .bio-container,
 .voice-actors,
 .weapon-materials,
-.weapon-rec-matrices,
+.weapon-rec-matrices, 
 .weapon-abilities {
     display: flex;
     flex-direction: column;
@@ -432,35 +432,49 @@
 }
 
 .weapon-rec-matrices {
-    flex: 1;
+    abbr {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    table {
+        text-align: left;
+    }
 
-    ul {
+    td:first-child {
         text-align: center;
-        box-shadow: $shadow;
-        background-color: clr(container, light);
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    }
+
+    a {
+        position: relative;
+        
+    }
+    i {
+        color: clr(text, gray);
+    }
+
+    .img-wrapper {
+        position: relative;
+        width: 96px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
             width: 128px;
-            object-fit: none;
-        }
-
-        li div {
-            position: relative;
-        }
-
-        .tag {
-            font-style: normal;
-            position: absolute;
-            bottom: 0.5rem;
-            right: 0.5rem;
-            font-size: 1.2rem;
-            color: clr(text);
         }
     }
 
+    .tag {
+        font-style: normal;
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        font-size: 1rem;
+        color: clr(text);
+    }
 }
 
 .weapon-abilities {
@@ -671,7 +685,7 @@
     color: clr(text, turquoise);
     width: fit-content;
     font-size: 1.3rem;
-    border-bottom: 3px solid transparent;   
+    border-bottom: 3px solid transparent;
 
     &:hover {
         border-bottom: 3px solid clr(text, turquoise);

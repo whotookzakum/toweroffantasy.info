@@ -96,11 +96,7 @@ const pepper = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/VMC9pJ83Y0U?start=4",
-        recommendedMatrix: {
-            set2: ["coco-ritter"],
-            set4: ["coco-ritter"],
-            set3: ["pepper"]
-        }
+        recommendedMatrices: []
     },
     matrix: {
         set3: "Increase speed of obtaining weapon charge by **10%/12.5%/15%**."

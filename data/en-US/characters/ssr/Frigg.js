@@ -140,7 +140,29 @@ const frigg = {
             set2: ["samir", "crow"],
             set4: ["frigg", "saki-fuwa"],
             set3: ["sobek"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Overall shatter and damage increase."
+            },
+            {
+                name: "Frigg",
+                pieces: 2,
+                description: "This is set works in the background so it is best used on other weapons, however it's still a decent option for Balmung."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {
@@ -204,7 +226,34 @@ const frigg = {
                             Unleash multiple slashes at a set distance in front of the user, dealing total damage equal to **257.1%** of ATK + **14**.`
                     }
                 ],
-            }
+            },
+            recommendedMatrices: [
+                {
+                    name: "Saki Fuwa",
+                    pieces: 4,
+                    description: "Excellent set effects for damage boosting Frost teams."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix set when you have high crit rate."
+                },
+                {
+                    name: "Shiro",
+                    pieces: 2,
+                    description: "Overall shatter and damage increase."
+                },
+                {
+                    name: "Frigg",
+                    pieces: 2,
+                    description: "This is set works in the background so it is best used on other weapons, however it's still a decent option for Balmung."
+                },
+                {
+                    name: "Sobek",
+                    pieces: 3,
+                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                }
+            ]
         },
         matrix: {
             set2: `Increase frost ATK by **15%/18%/21%/25%** for **10** seconds when switching between frost weapons. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,

@@ -138,10 +138,28 @@ const baiyuekui = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["king", "shiro", "samir", "crow"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Excellent choice for shatter and damage."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "Alaya can struggle at maintaining buff stacks, but it is doable when the discharge attack is active or when spamming dash attacks."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

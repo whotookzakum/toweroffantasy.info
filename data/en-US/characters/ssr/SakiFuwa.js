@@ -26,23 +26,23 @@ const saki = {
         materials: ["ice", "red", "black"],
         bonusEffect: {
             effect1: {
-                title: `Ice Resonance`,
-                description: `When equipped with **2** or more Ice weapons, increase Ice ATK by **20%** and Ice Resistance by **40%**, taking effect in the background.`
+                title: `Frost Resonance`,
+                description: `When equipped with **2** or more Frost weapons, increase Frost ATK by **20%** and Frost Resistance by **40%**, taking effect in the background.`
             }
         },
         advancement: {
-            star1: `When Ice Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.`,
+            star1: `When Frost Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `Flowing Heart: Sword Shadow [Surge] damage increased to **900%** of Ice ATK.  
+            star3: `Flowing Heart: Sword Shadow [Surge] damage increased to **900%** of Frost ATK.  
                 Silent Flow: Sword Shadow [Surge] cooldown reduced to **5** seconds.`,
 
             star4: `Increase the current weapon's base HP growth by **32%**.`,
 
             star5: `Sword Shadow's [Surge] triggers Phantasia upon hitting a target, shares cooldown with Phantasia trigged by dodging.`,
 
-            star6: `Sword Shadow's [Surge] increases your ice damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' ice damage by **25%** for **12** seconds.`
+            star6: `Sword Shadow's [Surge] increases your Frost damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' Frost damage by **25%** for **12** seconds.`
         },
         abilities: {
             normal: [
@@ -119,9 +119,9 @@ const saki = {
 
                         When using Perserverance Resonance, switch to Calm Style, and use the Calm Style weapon skill. When using another resonance, switch to Surging Heart Style.  
 
-                        Release the Unbreakable skill to obtain the sword shadow that follows you, and release the Unbreakable branch skill or link. During the skill, the sword shadow will release [Surge], causing **450%** of Ice Attack range damage to the target, [Surge] cools down for **10** seconds.  
+                        Release the Unbreakable skill to obtain the sword shadow that follows you, and release the Unbreakable branch skill or link. During the skill, the sword shadow will release [Surge], causing **450%** of Frost Attack range damage to the target, [Surge] cools down for **10** seconds.  
 
-                        **Surging Heart Style**: When the player uses any weapon to cause damage, the sword shadow releases [flow], causing **125%** of ice attack damage to the first outside hit target and recovering **57%** of the damage value of health, the maximum recovery amount each time does not exceed aggressive **100%**, cooldown **0.8** seconds.  
+                        **Surging Heart Style**: When the player uses any weapon to cause damage, the sword shadow releases [flow], causing **125%** of Frost attack damage to the first outside hit target and recovering **57%** of the damage value of health, the maximum recovery amount each time does not exceed aggressive **100%**, cooldown **0.8** seconds.  
 
                         **Calm Style**: After the sword shadow releases [Surge], the player will get **3** blocks for **10** seconds. The maximum block amount does not exceed **15%** of Max HP. Each successful block will deal damage equal to **450%** of Frost ATK, [Surge]'s shield-breaking ability increased by **100%** and added taunting effect.`
                 }
@@ -137,19 +137,41 @@ const saki = {
             set2: ["crow", "samir"],
             set4: ["samir"],
             set3: ["sobek"]
-        } // Saki's 2 and 4 set useful on other ice weapons in the team
+        },
+        recommendedMatrices: [
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "High damage buff that can be maintained with Ryusen Toshin's quick hits."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Decent option that boosts Ryusen Toshin's overall damage and shatter."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {
-        set2: `While Ice Resonance is active: Every **3** seconds, deal **60%/100%/150%/220%** of Ice ATK to enemies within 10 meters and apply one stack of Frost: 5% slowing effect for **3.5** seconds. After 3 stacks, Freeze the target for **3** seconds (excluding bosses) and the target will take **12%** more Ice damage for **18** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
+        set2: `While Frost Resonance is active: Every **3** seconds, deal **60%/100%/150%/220%** of Frost ATK to enemies within 10 meters and apply one stack of Frost: 5% slowing effect for **3.5** seconds. After 3 stacks, Freeze the target for **3** seconds (excluding bosses) and the target will take **12%** more Frost damage for **18** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `Attack the target **10** times to add a 12-second Frozen mark, increasing your Ice damage against the target by **25%/28%/31%/34%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
+        set4: `Attack the target **10** times to add a 12-second Frozen mark, increasing your Frost damage against the target by **25%/28%/31%/34%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
     },
 
     awakening: {
         trait1200: `When health is below **70%**, gain **40%** all-element resistance.`,
 
-        trait4000: `When health is below **70%**, gain **40%** all-element resistance and an additional **60%** Ice resistance.  
+        trait4000: `When health is below **70%**, gain **40%** all-element resistance and an additional **60%** Frost resistance.  
             When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself) for **10** seconds. The block amount will not exceed **15%** of the teammate's maximum health.`,
 
         giftCategories: ['metalware', 'everyday-items', 'vera'],

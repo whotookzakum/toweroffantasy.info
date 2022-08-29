@@ -44,9 +44,9 @@ const shiro = {
                     input: ["Jump","Attack x3"],
                     description: `While airborne or after jumping once, tap normal attack to unleash 3 spinning attacks in a row.`,
                     breakdown: [
-                        'Deal damage equal to **20.1%** of ATK + **1**.',
-                        'Deal damage equal to **22.5%** of ATK + **1**.',
-                        'Deal damage equal to **28.6%** of ATK + **2**.'
+                        'Deal damage equal to **26.2%** of ATK + **1**.',
+                        'Deal damage equal to **29.2%** of ATK + **1**.',
+                        'Deal damage equal to **37.2%** of ATK + **2**.'
                     ]
                 },
                 {
@@ -57,7 +57,7 @@ const shiro = {
                 {
                     name: "Air Spin",
                     input: ["Jump","hold:Attack"],
-                    description: `Tap and hold normal attack while airborne to trigger Air Spin. Unleash a powerful strike, dealing damage equal to **147.3%** of ATK + **8** to the target and nearby enemies, and knocking them into the air.`
+                    description: `Tap and hold normal attack while airborne to trigger Air Spin. Unleash a powerful strike, dealing damage equal to **191.5%** of ATK + **10** to the target and nearby enemies, and knocking them into the air.`
                 },
                 {
                     name: "Sneak Attack",
@@ -69,7 +69,7 @@ const shiro = {
                 {
                     name: "Waning Moon",
                     input: ["Dodge","Attack"],
-                    description: `Tap normal attack during the short period after dodging to trigger Waning Moon. Toss a spinning chakram forward, dealing damage equal to **102.2%** of ATK + **5** to the target and inflicting a **stun** effect for **0.5** seconds. The chakram then splits into **3** and keeps traveling, dealing damage equal to **14.6%** of ATK + **1** to targets along their path. ***Split chakrams will bounce during Full Bloom***.`
+                    description: `Tap normal attack during the short period after dodging to trigger Waning Moon. Toss a spinning chakram forward, dealing damage equal to **132.9%** of ATK + **7** to the target and inflicting a **stun** effect for **0.5** seconds. The chakram then splits into **3** and keeps traveling, dealing damage equal to **24.2%** of ATK + **1** to targets along their path. ***Split chakrams will bounce during Full Bloom***.`
                 },
                 {
                     name: "Dodge",
@@ -79,21 +79,39 @@ const shiro = {
             skill: [
                 {
                     name: "Full Bloom",
-                    description: `Create a Chakram Domain with the Wanderer at the center for **8** seconds. For **8** seconds after unleashing, pull in targets and reduce their speed by **30%**. Also fire **5** chakrams that bounce between enemies, dealing damage equal to **14.3%** of ATK + **1** to targets on their paths, bouncing up to **5** times. ***The split chakrams triggered by Waning Moon also bounce up to 5 times***. **45**-second cooldown.`
+                    description: `Create a Chakram Domain with the Wanderer at the center for **8** seconds. For **8** seconds after unleashing, pull in targets and reduce their speed by **30%**. Also fire **5** chakrams that bounce between enemies, dealing damage equal to **24.2%** of ATK + **1** to targets on their paths, bouncing up to **5** times. ***The split chakrams triggered by Waning Moon also bounce up to 5 times***. Cooldown: **45** seconds.`
                 }
             ],
             discharge: [
                 {
                     name: "Spirit of the Air",
-                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes Chakram of the Seas at a target. Struck target causes AOE **stun** for **1** second, plus **1** attack each against up to **3** units every second (each attack has **10%** chance of **stunning** the target for **1.5** seconds), dealing **31.8%** x ATK + **2** damage for **10** seconds.`
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes Chakram of the Seas at a target. Struck target causes AOE **stun** for **1** second, plus **1** attack each against up to **3** units every second (each attack has **10%** chance of **stunning** the target for **1.5** seconds), dealing **41.4%** x ATK + **2** damage for **10** seconds.`
                 }
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/z4qOq5g5lT8?start=10",
-        recommendedMatrix: {
-            set2: ["king", "shiro", "samir"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Great set for both damage and shatter."
+            },
+            {
+                name: "KING",
+                pieces: 2,
+                description: "Decent option if you only use Chakram of the Seas for shield breaking."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
     
 
@@ -128,6 +146,33 @@ const shiro = {
             jp: "小澤亜李 (Ari Ozawa)",
             en: "Kristen McGuire",
             cn: "小耗"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Shiro",
+                    pieces: 2,
+                    description: "Great set for both damage and shatter."
+                },
+                {
+                    name: "KING",
+                    pieces: 2,
+                    description: "High stacking buff for when you can break 30% of a shield by yourself. The effect stacks with other KING 2-piece sets, which may be useful in Bygone Phantasm."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix set when you have high crit rate."
+                },
+                {
+                    name: "Sobek",
+                    pieces: 3,
+                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                }
+            ]
         }
     }
 }

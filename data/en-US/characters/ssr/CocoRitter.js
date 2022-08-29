@@ -100,7 +100,29 @@ const coco = {
             set2: ["coco-ritter", "meryl"],
             set4: ["coco-ritter", "zero"],
             set3: ["pepper"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Coco Ritter",
+                pieces: 4,
+                description: "Great choice for Absolute Zero that will increase healing and provide an attack buff to allies."
+            },
+            {
+                name: "Zero",
+                pieces: 4,
+                description: "Decent option that shields and buffs allies when using discharge skills."
+            },
+            {
+                name: "Meryl",
+                pieces: 2,
+                description: "Niche option, may potentially be useful to protect you from lethal damage."
+            },
+            {
+                name: "Pepper",
+                pieces: 3,
+                description: "Decent option to build weapon charge while using Absolute Zero."
+            }
+        ]
     },
 
     matrix: {

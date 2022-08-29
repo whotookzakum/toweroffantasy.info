@@ -149,7 +149,7 @@ const marc = {
             ],
             discharge: [
                 {
-                    name: "",
+                    name: "Full Bomb Launch",
                     description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and releases a large number of missiles, dealing **513.3%** of ATK + **27** damage to the target.  
                     Passive: In the Mech form, it is immune to the rigidity effect, and other sources other than the uncontrolled source cannot be used.`
                 }
@@ -159,7 +159,29 @@ const marc = {
             set2: ["marc", "king", "shiro"],
             set4: ["marc"],
             set3: ["sobek"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Marc",
+                pieces: 4,
+                description: "Excellent utility effects that apply to team members as well. Use 4 pieces for the damage buff, or 2 pieces for just the life shield."
+            },
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Increases Dawn's overall damage and shatter."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

@@ -136,25 +136,30 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             </details>
         )
     })
-    const recMatrix = Object.entries(weapon.recommendedMatrix).map(([set, matricesList]) => {
-        return (matricesList.map(matrix => {
-            // Get the data by matching the matrix to the uri
-            const matrixData = MATRICES.find(mat => mat.uri === matrix);
-            const setNum = set.split("set").pop();
-            return (
-                <li key={setNum + matrix}>
+    const recommendedMatrices = weapon.recommendedMatrices.map(recMatrix => {
+        const matrixData = MATRICES.find(mat => mat.name === recMatrix.name);
+
+        return (
+            <tr key={recMatrix.name + recMatrix.pieces}>
+                <td>
                     <Link href={`/matrices/${matrixData.uri}`}>
                         <a>
-                            <div>
+                            <div className="img-wrapper">
                                 <img src={`/static/images/matrices/${matrixData.imgSrc}`} alt={matrixData.name + " Matrix"} />
-                                <i className="tag">x{setNum}</i>
+                                <i className="tag">x{recMatrix.pieces}</i>
+                                {matrixData.chinaOnly && !simulacrum.chinaOnly && <abbr title="China Exclusive" />}
                             </div>
-                            {matrixData.name}
+                            <div className="matrix-name">
+                                {matrixData.name}
+                            </div>
                         </a>
                     </Link>
-                </li>
-            )
-        }))
+                </td>
+                <td>
+                    {recMatrix.description}
+                </td>
+            </tr>
+        )
     });
     return (
         <>
@@ -249,18 +254,33 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </>
                         </section>
                     }
+                    
                     <section className="weapon-materials w-75ch" >
                         <h3 className="anchor">Upgrade Materials</h3>
                         <ul>{weaponMaterials}</ul>
                     </section>
-                    <section className="weapon-rec-matrices w-75ch">
-                        <div className="modal-section-header">
-                            <h3 className="anchor">Recommended Matrices</h3>
-                            {!simulacrum.chinaOnly &&
-                                <VersionToggler section="recommended-matrices" version={version} setVersion={setVersion} />}
-                        </div>
-                        <ul>{recMatrix}</ul>
-                    </section>
+
+                    {simulacrum.rarity === "SSR" &&
+                        <section className="weapon-rec-matrices w-75ch">
+                            <div className="modal-section-header">
+                                <h3 className="anchor">Recommended Matrices</h3>
+                                {!simulacrum.chinaOnly &&
+                                    <VersionToggler section="recommended-matrices" version={version} setVersion={setVersion} />}
+                            </div>
+                            <table className="modal-table">
+                                <thead style={{ borderColor: elementColor }}>
+                                    <tr>
+                                        <th>Matrix Set</th>
+                                        <th>Explanation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {recommendedMatrices}
+                                </tbody>
+                            </table>
+                            <i>The list above may change when new matrices are added. Check the Chinese version's list as well to see if there are better options in the future.</i>
+                        </section>
+                    }
 
                     <hr />
 

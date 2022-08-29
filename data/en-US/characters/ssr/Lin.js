@@ -140,10 +140,28 @@ const lin = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["lin", "samir"],
-            set4: ["lin"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Lin",
+                pieces: 4,
+                description: "Extremely powerful damage and attack buffs that are easy to upkeep."
+            },
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "Recommended only if you're using Shadow Weaver as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. Shadow Weaver deals many hits, easily maintaining uptime of the damage buff."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "Recommended only if you're using Shadow Weaver as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

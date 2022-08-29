@@ -100,10 +100,28 @@ const meryl = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/53QNsZxM5kg?start=11",
-        recommendedMatrix: {
-            set2: ["king", "shiro"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Great set for both damage and shatter."
+            },
+            {
+                name: "KING",
+                pieces: 2,
+                description: "Decent option if you only use Rosy Edge for shield breaking."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix when you have high crit rate."
+            },
+            {
+                name: "Windblade",
+                pieces: 3,
+                description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
+            }
+        ]
     },
 
     matrix: {
@@ -145,6 +163,30 @@ const meryl = {
     },
 
     cnData: {
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Shiro",
+                    pieces: 2,
+                    description: "Great set for both damage and shatter."
+                },
+                {
+                    name: "KING",
+                    pieces: 2,
+                    description: "High stacking buff for when you can break 30% of a shield by yourself. The effect stacks with other KING 2-piece sets, which may be useful in Bygone Phantasm."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix when you have high crit rate."
+                },
+                {
+                    name: "Windblade",
+                    pieces: 3,
+                    description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
+                }
+            ]
+        },
         matrix: {
             set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealt during shield to health, restores no more than **105%/127.5%/150%/172.5%** of ATK every 0.5 seconds.`
         }

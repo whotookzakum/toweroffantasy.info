@@ -185,7 +185,29 @@ const claudia = {
             set2: ["claudia", "samir", "crow"],
             set4: ["claudia"],
             set3: ["sobek"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Good option for boosting damage and shatter (Guren Blade does a fair amount of shatter with the skill and discharge)."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "Good option for boosting damage when at high crit rate."
+            },
+            {
+                name: "Claudia",
+                pieces: 4,
+                description: "Slightly decent option that increases damage of other weapons and increases aerial attack damage."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

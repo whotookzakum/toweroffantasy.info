@@ -146,7 +146,29 @@ const lyra = {
         recommendedMatrix: {
             set4: ["lyra"],
             set2: ["lyra", "samir", "crow"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Lyra",
+                pieces: 4,
+                description: "Very powerful damage buffing set effect specifically for fast-hitting physical weapons. Alternatively, Lyra's 2-piece matrix set is also very good."
+            },
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "Vespers will have no problem maintaining the damage buff with its fast attacks."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate. Otherwise, opt for Shiro 2-piece matrices."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

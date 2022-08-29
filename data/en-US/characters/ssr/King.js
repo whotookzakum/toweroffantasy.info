@@ -99,10 +99,28 @@ const king = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/GGT4yoDCb4I?start=10",
-        recommendedMatrix: {
-            set2: ["king", "shiro"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Great set for both damage and shatter."
+            },
+            {
+                name: "KING",
+                pieces: 2,
+                description: "Decent option if you only use Scythe of the Crow for shield breaking."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix when you have high crit rate."
+            },
+            {
+                name: "Windblade",
+                pieces: 3,
+                description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
+            }
+        ]
     },
 
     matrix: {
@@ -140,6 +158,30 @@ const king = {
     },
 
     cnData: {
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Shiro",
+                    pieces: 2,
+                    description: "Great set for both damage and shatter."
+                },
+                {
+                    name: "KING",
+                    pieces: 2,
+                    description: "High stacking buff for when you can break 30% of a shield by yourself. The effect stacks with other KING 2-piece sets, which may be useful in Bygone Phantasm."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix when you have high crit rate."
+                },
+                {
+                    name: "Windblade",
+                    pieces: 3,
+                    description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
+                }
+            ]
+        },
         matrix: {
             set2: `<abbr title='China Exclusive'></abbr> For every 10% of shield broken, gain a **4%/5%/6%/7%** damage buff, up to **3** stacks, lasting **25** seconds.`
         }

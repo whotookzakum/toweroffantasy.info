@@ -111,11 +111,33 @@ const cobalt = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["samir", "crow"],
-            set4: ["cobalt-b", "samir"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Ruby",
+                pieces: 4,
+                description: "Great set for boosting Flame ATK and damage, and providing a shield for added utility. Alternatively, the 2-piece set of Ruby matrices perform well too."
+            },
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "High damage buffing set useful for main DPS weapons."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            // {
+            //     name: "Shiro",
+            //     pieces: 2,
+            //     description: "Decent option for increased damage (and shatter)."
+            // },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

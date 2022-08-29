@@ -86,11 +86,18 @@ const zero = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/1tk5CdG8O58?start=11",
-        recommendedMatrix: {
-            set2: ["coco-ritter"],
-            set4: ["coco-ritter"], // 4samir removed because global description is changed; won't proc cubes
-            set3: ["pepper", "sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Coco Ritter",
+                pieces: 4,
+                description: "A decent choice to apply additional damage buffs to teammates while also increasing healing."
+            },
+            {
+                name: "Pepper",
+                pieces: 3,
+                description: "Decent option to build weapon charge while using Negating Cube."
+            }
+        ]
     },
 
     matrix: {
@@ -131,7 +138,24 @@ const zero = {
         weapon: {
             advancement: {
                 star5: `<abbr title='China Exclusive'></abbr> Damaging a target also produces a damage orb, which lasts for **20** seconds and increases ATK of any teammate who picks it up by **2%** for **45** seconds. Stack up to **10** times. Skill cooldown is **2.5** seconds.`
-            }
+            },
+            recommendedMatrices: [
+                {
+                    name: "Samir",
+                    pieces: 4,
+                    description: "The extra hit can activate Negating Cube's 1★ and 5★, effectively doubling the drop rate on healing/damage boost orbs."
+                },
+                {
+                    name: "Coco Ritter",
+                    pieces: 4,
+                    description: "A decent choice to apply additional damage buffs to teammates while also increasing healing."
+                },
+                {
+                    name: "Pepper",
+                    pieces: 3,
+                    description: "Decent option to build weapon charge while using Negating Cube."
+                }
+            ]
         }
     }
 }

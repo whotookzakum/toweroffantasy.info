@@ -112,11 +112,28 @@ const ruby = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["ruby", "samir", "crow"],
-            set4: ["ruby"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Ruby",
+                pieces: 4,
+                description: "Excellent set for buffing Flame damage and providing utility through a shield. Alternatively, Ruby's 2-piece set is also very good."
+            },
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Good option for increasing Sparky's shatter (and damage)."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

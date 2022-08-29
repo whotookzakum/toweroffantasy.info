@@ -108,10 +108,7 @@ const ene = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/NyD8wfeK0vM?start=4",
-        recommendedMatrix: {
-            set2: ["king", "shiro"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: []
     },
     
     matrix: {

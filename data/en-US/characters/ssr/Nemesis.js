@@ -153,11 +153,23 @@ const nemesis = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/hQQTTuBKm0c?start=9",
-        recommendedMatrix: {
-            set2: ["nemesis", "coco-ritter"],
-            set4: ["nemesis", "coco-ritter"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Coco Ritter",
+                pieces: 4,
+                description: "Excellent choice for Venus that will buff teammates with up to 100% uptime."
+            },
+            {
+                name: "Nemesis",
+                pieces: 2,
+                description: "Niche option, not recommended unless you and your team are mainly using Volt weapons."
+            },
+            {
+                name: "Pepper",
+                pieces: 3,
+                description: "Decent option to build weapon charge while using Venus."
+            }
+        ]
     },
  
     matrix: {

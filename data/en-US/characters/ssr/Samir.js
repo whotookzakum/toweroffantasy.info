@@ -42,7 +42,7 @@ const samir = {
                 {
                     name: "Bullet Rain",
                     input: ['Jump', 'Attack'],
-                    description: 'While airborne, tap normal attack to fire continuously at the ground, dealing damage equal to ??% of ATK + ?? each hit. Consumes 150 Endurance.'
+                    description: 'While airborne, tap normal attack to fire continuously at the ground, dealing damage equal to **50.6%** of ATK + **3** each hit. Consumes **220** Endurance.'
                 },
                 {
                     name: "Energy Burst",
@@ -69,7 +69,7 @@ const samir = {
             skill: [
                 {
                     name: "Electro Field",
-                    description: 'Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to **269.8%** of ATK + **14**, and the last hit launches targets **into the air**. **45**-second cooldown.'
+                    description: 'Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to **269.8%** of ATK + **14**, and the last hit **strongly suspends** targets. Cooldown: **45** seconds.'
                 }
             ],
             discharge: [
@@ -80,11 +80,28 @@ const samir = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/rnbvRYldzak?start=8",
-        recommendedMatrix: {
-            set2: ["samir", "claudia", "crow"],
-            set4: ["samir"],
-            set3: ["sobek"]
-        },
+        recommendedMatrices: [
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "With its high rate of fire, Dual EM stars can easily maintain 100% uptime on the buff."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
+            },
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Not ideal, but can be used for the damage increase until you get one of the more recommended sets."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {
@@ -121,6 +138,30 @@ const samir = {
     },
 
     cnData: {
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Samir", // Samir 4-set also usable in CN, but the extra hit does not crit
+                    pieces: 2,
+                    description: "With its high rate of fire, Dual EM stars can easily maintain 100% uptime on the buff."
+                },
+                {
+                    name: "Claudia",
+                    pieces: 2,
+                    description: "Dual EM Stars' main damage is the aerial attack, and Claudia's 2 set is more effective than Crow's until very high crit rate."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "At high crit rate, Crow's 2 set is the second best choice for damage."
+                },
+                {
+                    name: "Sobek",
+                    pieces: 3,
+                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                }
+            ]
+        }, 
         matrix: {
             set2: `<abbr title='China Exclusive'></abbr> Increase damage progressively by **1.5%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **2** seconds.`,
     

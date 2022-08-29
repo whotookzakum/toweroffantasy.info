@@ -130,10 +130,23 @@ const tianlang = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["tian-lang"],
-            set4: ["tian-lang"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Tian Lang",
+                pieces: 4,
+                description: "Not ideal as Tian Lang's matrices work in the background and should be used on a less-used weapon, however still viable. Alternatively, Tian Lang's 2-piece set is also viable on their own."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
  
     matrix: {
