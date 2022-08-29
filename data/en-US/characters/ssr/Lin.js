@@ -31,17 +31,17 @@ const lin = {
             }
         },
         advancement: {
-            star1: `Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**). **Lunar Reflection** reduces the spawn time of Nightblooms to **0.5** seconds.`,
+            star1: `Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**). **Moonlight Realm** reduces the spawn time of Nightblooms to **0.5** seconds.`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `**Lunar Reflection** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Lunar Reflection** is increased to **20** seconds.`,
+            star3: `**Moonlight Realm** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Moonlight Realm** is increased to **20** seconds.`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
-            star5: `While inside **Lunar Reflection**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.`,
+            star5: `While inside **Moonlight Realm**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.`,
 
-            star6: `**Lunar Reflection** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Lunar Reflection** is increased to **15%**.`
+            star6: `**Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Moonlight Realm** is increased to **15%**.`
         },
         abilities: {
             normal: [
@@ -111,26 +111,26 @@ const lin = {
             ],
             skill: [
                 {
-                    name: "Lunar Reflection",
-                    description: `A reflection of the moon is formed around yourself for **15** seconds. In the reflection, gain a **10%** damage bonus, you can double jump multiple times, gain **20%** increased jumping ability, and reduce stamina consumption by **50%** (cooldown **30** seconds).  
+                    name: "Moonlight Realm",
+                    description: `A Moonlight Realm of the moon is formed around yourself for **15** seconds. In the Realm, gain a **10%** damage bonus, you can double jump multiple times, gain **20%** increased jumping ability, and reduce stamina consumption by **50%** (cooldown **30** seconds).  
                     &nbsp;                      
-                    When using Shadow Weaver inside Lunar Reflection, enter the state of "Cold Air", where your falling speed is greatly reduced. Jumping while moving in a direction will allow you to perform a shuttle and launch an attack dealing **66%** of ATK + **3** and spawn **1-3** Nightblooms.  
+                    When using Shadow Weaver inside Moonlight Realm, enter the state of "Cold Air", where your falling speed is greatly reduced. Jumping while moving in a direction will allow you to perform a shuttle and launch an attack dealing **66%** of ATK + **3** and spawn **1-3** Nightblooms.  
                     &nbsp;  
-                    Passive: Inside Lunar Reflection, a **Nightbloom** will be generated near a target every **0.8** seconds.  
+                    Passive: Inside Moonlight Realm, a **Nightbloom** will be generated near a target every **0.8** seconds.  
                     &nbsp;  
-                    Passive: When using Shadow Weaver inside Lunar Reflection, increase damage by **50%** against targets with less than **20%** HP.  
+                    Passive: When using Shadow Weaver inside Moonlight Realm, increase damage by **50%** against targets with less than **20%** HP.  
                     &nbsp;  
-                    Passive: When using Shadow Weaver inside Lunar Reflection, teleport away from the target when you are about to take damage, cooldown **10** seconds.  
+                    Passive: When using Shadow Weaver inside Moonlight Realm, teleport away from the target when you are about to take damage, cooldown **10** seconds.  
                     &nbsp;  
-                    When paired with two **Flame weapons**, Lunar Reflection is transformed into a Flame Lunar Reflection. While inside the reflection, any burn effects applied will have their duration extended by **4** seconds, and increase flame damage to shielded targets by **15%**.  
+                    When paired with two **Flame weapons**, Moonlight Realm is transformed into a Flame Moonlight Realm. While inside the Realm, any burn effects applied will have their duration extended by **4** seconds, and increase flame damage to shielded targets by **15%**.  
                     &nbsp;  
-                    When paired with two **Volt weapons**, Lunar Reflection is transformed into a Thunder Lunar Reflection. In the reflection, increase Volt damage by **30%**, dodges have a **65%** chance of not being consumed, and each dodge attacks deal **35%** more damage.  
+                    When paired with two **Volt weapons**, Moonlight Realm is transformed into a Thunder Moonlight Realm. In the Realm, increase Volt damage by **30%**, dodges have a **65%** chance of not being consumed, and each dodge attacks deal **35%** more damage.  
                     &nbsp;  
-                    When paired with two **Frost weapons**, Lunar Reflection is transformed into an Ice Lunar Reflection. When enemies in the reflection receive frost damage **10** times, they enter a state of frostbite for **15** seconds, receiving **22%** more frost damage. The number of hits to activate frostbite does not accumulate while the enemy is in the frostbite state.  
+                    When paired with two **Frost weapons**, Moonlight Realm is transformed into an Ice Moonlight Realm. When enemies in the Realm receive frost damage **10** times, they enter a state of frostbite for **15** seconds, receiving **22%** more frost damage. The number of hits to activate frostbite does not accumulate while the enemy is in the frostbite state.  
                     &nbsp;  
-                    When paired with two **Physical weapons**, Lunar Reflection is transformed into a Physical Lunar Reflection. When there is an active life shield in the reflection, deal damage equal to **150%** of ATK + **8** every second.  
+                    When paired with two **Physical weapons**, Moonlight Realm is transformed into a Physical Moonlight Realm. When there is an active life shield in the Realm, deal damage equal to **150%** of ATK + **8** every second.  
                     &nbsp;  
-                    When paired with two **weapons of different elements**, gain **15%** attack for all elements while inside the reflection (considered as activating elemental resonances for flame, volt, frost, and physical).`
+                    When paired with two **weapons of different elements**, gain **15%** attack for all elements while inside the Realm (considered as activating elemental resonances for flame, volt, frost, and physical).`
                 },
             ],
             discharge: [
@@ -149,7 +149,7 @@ const lin = {
     matrix: {
         set2: `Successful attacks increase your attack power by **3%/3.7%/4.3%/5%** for 18 seconds, stacking up to 5 times. If multiple sets are used, only the highest star set will take effect.`,
 
-        set4: `Traveling 5 meters within Lunar Reflection will grant 1 stack of [Moon's Reflection], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect.`
+        set4: `Traveling 5 meters within Moonlight Realm will grant 1 stack of [Moon's Realm], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect.`
     },
 
     awakening: {
