@@ -143,19 +143,19 @@ const frigg = {
         },
         recommendedMatrices: [
             {
-                name: "Crow",
+                name: "Samir",
                 pieces: 2,
-                description: "High damage matrix set when you have high crit rate."
+                description: "Best damage buff that can be maintained by spamming dash attacks, recommended if Balmung is your main DPS."
             },
             {
-                name: "Shiro",
+                name: "Crow",
                 pieces: 2,
-                description: "Overall shatter and damage increase."
+                description: "High damage matrix set when you have high crit rate, recommended if Balmung is your main DPS."
             },
             {
                 name: "Frigg",
                 pieces: 2,
-                description: "This is set works in the background so it is best used on other weapons, however it's still a decent option for Balmung."
+                description: "This set works in the background so it is best used on a weapon that isn't your main DPS."
             },
             {
                 name: "Sobek",
@@ -231,22 +231,22 @@ const frigg = {
                 {
                     name: "Saki Fuwa",
                     pieces: 4,
-                    description: "Excellent set effects for damage boosting Frost teams."
+                    description: "Excellent set effects for damage boosting Frost teams, best used on a weapon that isn't your main DPS."
+                },
+                {
+                    name: "Samir",
+                    pieces: 2,
+                    description: "Best damage buff that can be maintained by spamming dash attacks, recommended if Balmung is your main DPS."
                 },
                 {
                     name: "Crow",
                     pieces: 2,
-                    description: "High damage matrix set when you have high crit rate."
-                },
-                {
-                    name: "Shiro",
-                    pieces: 2,
-                    description: "Overall shatter and damage increase."
+                    description: "High damage matrix set when you have high crit rate, recommended if Balmung is your main DPS."
                 },
                 {
                     name: "Frigg",
                     pieces: 2,
-                    description: "This is set works in the background so it is best used on other weapons, however it's still a decent option for Balmung."
+                    description: "This set works in the background so it is best used on a weapon that isn't your main DPS."
                 },
                 {
                     name: "Sobek",

@@ -3,7 +3,7 @@ import Link from "next/link";
 export const shortestRerollPath = {
     name: "Shortest Reroll Path",
     uri: "shortest-reroll-path",
-    date: "27 July 2022",
+    date: "30 August 2022",
     description: "Quickest path to reroll in Tower of Fantasy, along with some notes. May change based on available pre-registration rewards.",
     type: "strategy",
     author: ["Zakum#3080"],
@@ -19,6 +19,9 @@ export const shortestRerollPath = {
                 <p>
                     <strong className="yellow">All Gold Nuclei on the map below are available day 1</strong>, without doing the story quest beyond getting the fire bow. However, you need to level up to claim the pre-registration rewards, and the story is the fastest way to level up.
                 </p>
+                <blockquote>
+                    Note that if you claim the pre-registration rewards (after getting the free gold nucleus), you can reroll very quickly, in about 15-30 minutes. These rewards are available for 180 days from the release date (August 10, 2022).
+                </blockquote>
             </section>
             <img src="/static/images/guides/reroll-path.webp" alt="" />
             <section>

@@ -12,6 +12,14 @@ const ruby = {
                 end: "13 May 2022",
                 duration: "18d",
                 week: "20~22"
+            },
+            {
+                bannerNo: 19,
+                subtext: "",
+                start: "30 Aug 2022",
+                end: "18 Sep 2022",
+                duration: "19d",
+                week: "39~42"
             }
         ]
     },
@@ -117,6 +125,11 @@ const ruby = {
                 name: "Ruby",
                 pieces: 4,
                 description: "Excellent set for buffing Flame damage and providing utility through a shield. Alternatively, Ruby's 2-piece set is also very good."
+            },
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "High damage buff that can be maintained with Sparky's multiple attacks."
             },
             {
                 name: "Shiro",

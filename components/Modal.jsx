@@ -95,7 +95,7 @@ export function ModalMenu({ list, filter, target, gender }) {
     );
 }
 
-export function Modal({ item, children }) {
+export function Modal({ item, children, gender }) {
 
     useEffect(() => {
         const anchors = new AnchorJS();
@@ -124,6 +124,13 @@ export function Modal({ item, children }) {
         case "exploration":
             options.bgImgPath = `bg-2.webp`;
             break;
+        case "cosmetics/mia":
+        case "cosmetics/accessories":
+        case "cosmetics/outfits":
+            options.headerClass = "cosmetics";
+            options.bgImgPath = `bg-1.webp`;
+            options.headerImgPath = `${path}/${gender}_${item.imgSrc}`;
+            break;
         default:
             break;
     }
@@ -146,7 +153,7 @@ export function Modal({ item, children }) {
 }
 
 function ModalHeader({ item, options }) {
-
+    
     let color = { color: "var(--color-tier-s)" };
     if (item.rarity === 'SR') {
         color = { color: "var(--color-tier-a)" };
@@ -155,12 +162,14 @@ function ModalHeader({ item, options }) {
         color = { color: "var(--color-tier-b)" };
     }
 
+    let imgSrc = `/static/images/${options.headerImgPath}`;
+
     return (
         <>
             <BackButton />
             <header className={options.headerClass} >
                 <div className="header-img-wrapper">
-                    <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />
+                    <img src={imgSrc} alt={item.name} />
                 </div>
                 <div>
                     <h1>{item.name}</h1>

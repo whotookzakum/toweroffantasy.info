@@ -132,6 +132,11 @@ const tianlang = {
         },
         recommendedMatrices: [
             {
+                name: "Samir",
+                pieces: 2,
+                description: "Highest damage set buff that can be maintained with Powerbreak's multiple hits and fast attacks."
+            },
+            {
                 name: "Crow",
                 pieces: 2,
                 description: "High damage matrix set when you have high crit rate."

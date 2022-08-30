@@ -118,6 +118,11 @@ const cobalt = {
                 description: "Great set for boosting Flame ATK and damage, and providing a shield for added utility. Alternatively, the 2-piece set of Ruby matrices perform well too."
             },
             {
+                name: "Cobalt-B",
+                pieces: 2,
+                description: "Useful for constantly reapplying the Ionic Burn debuff on enemies."
+            },
+            {
                 name: "Samir",
                 pieces: 2,
                 description: "High damage buffing set useful for main DPS weapons."
@@ -127,11 +132,6 @@ const cobalt = {
                 pieces: 2,
                 description: "High damage matrix set when you have high crit rate."
             },
-            // {
-            //     name: "Shiro",
-            //     pieces: 2,
-            //     description: "Decent option for increased damage (and shatter)."
-            // },
             {
                 name: "Sobek",
                 pieces: 3,

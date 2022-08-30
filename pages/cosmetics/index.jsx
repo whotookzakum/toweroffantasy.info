@@ -3,14 +3,18 @@ import { OUTFITS, MIA_OUTFITS } from "../../data/en-US/cosmetics/cosmetics";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { useState } from "react";
+import { GenderToggler } from "../../components/GenderToggler";
+import { useEffect } from "react";
 
-function Mounts() {
+function Cosmetics() {
+    
+    const initialState = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("outfitGender")) : "F";
+    const [gender, setGender] = useState(initialState);
+    useEffect(() => {
+        localStorage.setItem("outfitGender", JSON.stringify(gender));
+    });
 
-    const [gender, setGender] = useState("F");
-
-    function handleChange(e) {
-        e.target.checked ? setGender("M") : setGender("F");
-    }
+    
 
     return (
         <>
@@ -23,13 +27,15 @@ function Mounts() {
             <header>
                 <h1>Cosmetics</h1>
                 <p>
-                    List of all cosmetics outfits and accessories and how to obtain them.
+                    List of all cosmetic outfits, accessories, and Mi-a outfits and how to obtain them. Most outfits require purchase or spending dark crystals on gachapon.
                 </p>
             </header>
-            
+
             <section>
-                <h2>Outfits</h2>
-                <input type="checkbox" onChange={(e) => handleChange(e)} />
+                <div className="modal-section-header">
+                    <h2>Outfits</h2>
+                    <GenderToggler section="outfits-gender" gender={gender} setGender={setGender} />
+                </div>
                 <ModalMenu list={OUTFITS} gender={gender} />
             </section>
 
@@ -41,4 +47,4 @@ function Mounts() {
     );
 }
 
-export default Mounts;
+export default Cosmetics;

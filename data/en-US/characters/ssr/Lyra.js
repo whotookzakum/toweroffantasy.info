@@ -151,7 +151,7 @@ const lyra = {
             {
                 name: "Lyra",
                 pieces: 4,
-                description: "Very powerful damage buffing set effect specifically for fast-hitting physical weapons. Alternatively, Lyra's 2-piece matrix set is also very good."
+                description: "Very powerful damage buffing set effect specifically for fast-hitting physical weapons, as well as boosts survivability. Alternatively, Lyra's 2-piece matrix set is also very good."
             },
             {
                 name: "Samir",

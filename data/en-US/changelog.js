@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
-        date: "August 27",
-        text: "Meryl's simulacrum trait (4000) DOES in fact freeze surroundings in global; Corrected Frigg's personality chart; Fixed Coco Ritter's upgrade materials; Fixed CN Nemesis 3 star; "
+        date: "August 30",
+        text: "Recommended Matrices for weapons updated with context; Meryl's simulacrum trait (4000) DOES in fact freeze surroundings in global; Corrected Frigg's personality chart; Fixed Coco Ritter's upgrade materials; Fixed CN Nemesis 3 star; Fixed Tsubasa's discharge description (no damage buff in global); CN Ruby banner added (no mention of being added to standard);"
     },
     {
         date: "August 24",

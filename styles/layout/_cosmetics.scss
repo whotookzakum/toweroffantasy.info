@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.gender-toggler {
+    display: flex;
+    input {
+        display: none;
+    }
+    label {
+        color: clr(text, gray);
+        background-color: clr(container, darker);
+        box-shadow: inset $shadow;
+        padding: 0.25rem 0.5rem;
+        cursor: pointer;
+        min-width: 6ch;
+        text-align: center;
+    }
+    input:checked+label {
+        color: clr(text);
+        box-shadow: $shadow;
+    }
+    .F:checked+label {
+        background-color: clr(text, lightred);
+    }
+    .M:checked+label {
+        background-color: clr(text, turquoise);
+    }
+}
