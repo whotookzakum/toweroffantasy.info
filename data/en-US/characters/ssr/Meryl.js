@@ -43,21 +43,21 @@ const meryl = {
                     input: ["Jump","Attack x4"],
                     description: `While airborne or after jumping once, tap normal attack to attack 4 times in a row.`,
                     breakdown: [
-                        'Deal damage equal to **88.7%** of ATK + **5**.',
-                        'Deal damage equal to **72.9%** of ATK + **4**.',
-                        'Deal damage equal to **130%** of ATK + **7**.',
-                        'Deal damage equal to **117.1%** of ATK + **6** and deliver a **knockdown**, launch the target upon landing.'
+                        'Deal damage equal to **106.5%** of ATK + **6**.',
+                        'Deal damage equal to **87.5%** of ATK + **5**.',
+                        'Deal damage equal to **156%** of ATK + **8**.',
+                        'Deal damage equal to **140.5%** of ATK + **7** and deliver a **knockdown**, launch the target upon landing.'
                     ]
                 },
                 {
                     name: "Rising Slash",
                     input: ["Attack x3","hold:Attack"],
-                    description: `After the third normal attack, hold normal attack to trigger Rising Slash. Knock the target **into the air** and go airborne, dealing damage equal to **53.6%** of ATK + **3**.`,
+                    description: `After the third normal attack, hold normal attack to trigger Rising Slash. Upon hit, **strongly suspend** the target and go airborne, dealing damage equal to **64.3%** of ATK + **3**.`,
                 },
                 {
                     name: "Moonset Slash",
                     input: ["Jump","hold:Attack"],
-                    description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Moonset Slash. While falling, each hit deals damage equal to **12.5%** of ATK + **1**. Upon landing, deal damage equal to **117.1%** of ATK + **6** and launch targets. Deal greater damage depending on the user's altitude when Moonset Slash triggered, up to **600%** of ATK.`,
+                    description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Moonset Slash. While falling, each hit deals damage equal to **12.5%** of ATK + **1**. Upon landing, deal damage equal to **140.5%** of ATK + **7** and launch targets. The higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** damage.`,
                 },
                 {
                     name: "Sneak Attack",
@@ -67,7 +67,7 @@ const meryl = {
                 {
                     name: "Whirlwind",
                     input: ["hold:Attack"],
-                    description: `While standing still or moving, tap and hold normal attack to trigger Whirlwind, dealing damage equal to **82%** of ATK + **4** every **0.5** seconds to the target. Grant hitstun immunity while in use.`,
+                    description: `While standing still or moving, tap and hold normal attack to trigger Whirlwind, dealing damage equal to **132.8%** of ATK + **7** every **0.5** seconds to the target. Grant hitstun immunity while in use.`,
                 }
             ],
             dodge: [
@@ -78,24 +78,24 @@ const meryl = {
                 {
                     name: "Devastate",
                     input: ["Arrow keys","Dodge","Attack"],
-                    description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Devastate. Deal damage equal to **55%** of ATK + **3** each hit and **launch** targets.`,
+                    description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Devastate. Deal damage equal to **65.9%** of ATK + **3** each hit and **launch** targets.`,
                 },
                 {
                     name: "Crescent Slash",
                     input: ["Dodge","Attack"],
-                    description: `Tap normal attack during the short period after dodging to trigger Crescent Slash. Swing the blade to unleash sword auras forward, each dealing damage equal to **41.3%** of ATK + **2**.`,
+                    description: `Tap normal attack during the short period after dodging to trigger Crescent Slash. Swing the blade to unleash sword auras forward, each dealing damage equal to **49.6%** of ATK + **3**.`,
                 }
             ],
             skill: [
                 {
                     name: "Blizzard",
-                    description: `Swing the blade to launch sword auras forward, each dealing damage equal to **90.8%** of ATK + **5** and increasing damage dealt by **5%** with each hit. While active, immune to control effects. **45**-second cooldown.`,
+                    description: `Swing the blade to launch sword auras forward, each dealing damage equal to **141.7%** of ATK + **7** and increasing damage dealt by **5%** with each hit. While active, immune to control effects. Cooldown: **45** seconds.`,
                 }
             ],
             discharge: [
                 {
                     name: "Frost Barrier",
-                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and smash the ground to form a barrier upon switching to this weapon, dealing damage equal to **419.3%** of ATK + **22** to nearby enemies, knocking enemies into the air. This reduces their speed by **50%** and stops them from dodge or jump. The barrier lasts **5** seconds and blocks projectiles.`,
+                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the wielder**, and smash the ground to form a barrier, dealing damage equal to **503.2%** of ATK + **26** to nearby enemies, knocking enemies into the air. This reduces their speed by **50%** and stops them from dodge or jump. The barrier lasts **5** seconds and blocks projectiles.`,
                 }
             ]
         },

@@ -36,7 +36,7 @@ const nemesis = {
                 start: "10 August 2022",
                 end: "31 August 2022",
                 duration: "21d",
-                week: "1~3"
+                week: "1~4"
             }
         ]
     },
@@ -124,7 +124,7 @@ const nemesis = {
                     input: ["Dodge", "Attack"],
                     description:
                         `Tap normal attack during the short perfect attack window to trigger a slowing magnetic field.  
-                        Venus fires a charged orb that travels forward a set distance and explodes in contact with targets. Deal damage equal to **171%** of ATK + **9**, and generate a slowing magnetic field for **3** seconds, which reduces the movement speed and attack speed of all enemies caught within it by **35%**.`
+                        Venus fires a charged orb that travels forward a set distance and explodes in contact with targets. Deal damage equal to **171.6%** of ATK + **9**, and generate a slowing magnetic field for **3** seconds, which reduces the movement speed and attack speed of all enemies caught within it by **35%**.`
                 },
                 {
                     name: "Parallel Beams",

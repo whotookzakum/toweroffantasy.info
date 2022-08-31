@@ -33,11 +33,11 @@ const crow = {
                     type: "normal",
                     description: `While on the ground, swing the blades to attack 5 times in a row.`,
                     breakdown: [
-                        'Deal damage equal to **42.9%** of ATK + **2** and knock the target back a short distance.',
-                        'Deal damage equal to **52.2%** of ATK + **3** and knock the target back a short distance.',
-                        'Deal damage equal to **64.8%** of ATK + **3** and knock the target back a short distance.',
-                        'Deal damage equal to **69.2%** of ATK + **4** and knock the target back a short distance.',
-                        'Deal damage equal to **144.3%** of ATK + **8** and knock the target back a short distance.'
+                        'Deal damage equal to **60.1%** of ATK + **3** and knock the target back a short distance.',
+                        'Deal damage equal to **73%** of ATK + **4** and knock the target back a short distance.',
+                        'Deal damage equal to **90.9%** of ATK + **5** and knock the target back a short distance.',
+                        'Deal damage equal to **96.8%** of ATK + **5** and knock the target back a short distance.',
+                        'Deal damage equal to **202.2%** of ATK + **11** and knock the target back a short distance.'
                     ]
                 },
                 {
@@ -46,16 +46,16 @@ const crow = {
                     type: "normal",
                     description: `While airborne or after jumping once, tap normal attack to attack 4 times in a row.`,
                     breakdown: [
-                        'Deal damage equal to **46.8%** of ATK + **2**.',
-                        'Deal damage equal to **27.5%** of ATK + **1**.',
-                        'Deal damage equal to **65.8%** of ATK + **3**.',
-                        'Deal damage equal to **98.5%** of ATK + **5**.'
+                        'Deal damage equal to **65.6%** of ATK + **3**.',
+                        'Deal damage equal to **38.4%** of ATK + **2**.',
+                        'Deal damage equal to **92%** of ATK + **5**.',
+                        'Deal damage equal to **138%** of ATK + **7**.'
                     ]
                 },
                 {
                     name: "Rapid Lunge",
                     input: ["Attack x3","hold:Attack"],
-                    description: `After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them **into the air**, dealing total damage equal to **83.4%** of ATK + **4**.`,
+                    description: `After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them **into the air**, dealing total damage equal to **116.8%** of ATK + **6**.`,
                 },
                 {
                     name: "Spiral Drive",
@@ -72,7 +72,7 @@ const crow = {
                 {
                     name: "Flying Blades",
                     input: ["Arrow keys","Dodge","Attack"],
-                    description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target **5** times, each dealing damage equal to **18.8%** of ATK + **1**. Grant immunity to control effects while phasing.`,
+                    description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target **5** times, each dealing damage equal to **26.4%** of ATK + **1**. Grant immunity to control effects while phasing.`,
                 },
                 {
                     name: "Dodge",
@@ -82,13 +82,13 @@ const crow = {
             skill: [
                 {
                     name: "Returning Blades",
-                    description: `Fires 6 returning blades, each dealing damage equal to **20.7%** of ATK + **1**. Gains **hyperbody** for up to **8** seconds, and the effect is removed when the blades return. **45**-second cooldown.`,
+                    description: `Fires 6 returning blades, each dealing damage equal to **52.8%** of ATK + **3**. Gains **hyperbody** for up to **8** seconds, and the effect is removed when the blades return. **45**-second cooldown.`,
                 }
             ],
             discharge: [
                 {
                     name: "Orbiting Blades",
-                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and blink to the target location upon switching to this weapon and attack, dealing damage equal to **62.1%** of ATK + **3** and electrocuting the target (after **5** seconds, deals volt damage equal to **15%** of damage dealt, up to **350%** of the Wanderer's ATK. This is an abnormal status that can be dispelled). Also spawn 3 blades that orbit around the Wanderer, dealing damage equal to **46.5%** of ATK + **2** to those that touch them.`,
+                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and blink to the target location upon switching to this weapon and attack, dealing damage equal to **86.9%** of ATK + **5** and electrocuting the target (after **5** seconds, deals volt damage equal to **15%** of damage dealt, up to **350%** of the Wanderer's ATK. This is an abnormal status that can be dispelled). Also spawn 3 blades that orbit around the Wanderer, dealing damage equal to **65.2%** of ATK + **3** to those that touch them.`,
                 }
             ]
         },
