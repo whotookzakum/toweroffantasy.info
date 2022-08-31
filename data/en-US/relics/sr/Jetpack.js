@@ -10,7 +10,7 @@ const jetpack = {
 
         star2: "Gliding for longer than 3 seconds empowers the user's next pummel attack to stun the target for 2 seconds.",
 
-        star3: "Replenish **1** charge every 60 seconds.",
+        star3: "Replenish **1** charge every **60** seconds.",
 
         star4: "Reduces physical damage received by **1.5%**, even if not deployed. Unavailable in Apex League.",
 
