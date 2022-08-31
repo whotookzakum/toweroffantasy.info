@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "August 31",
-        text: "Frigg banner dates added; Updated all global weapon ability text"
+        text: "Frigg banner dates added; Updated all global weapon ability text; Fixed the names for R and N matrices"
     },
     {
         date: "August 30",
