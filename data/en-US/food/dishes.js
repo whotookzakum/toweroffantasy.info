@@ -12,6 +12,9 @@ const recipes = [
             Recovers **10% + 1,500** HP`,
         ingredients: [
             { item: i.mushroom, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -59,6 +62,9 @@ const recipes = [
         ingredients: [
             { item: i.lettuce, amount: 2 },
             { item: i.saladdressing, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -72,10 +78,13 @@ const recipes = [
             Recovers **10% + 1,500** HP`,
         ingredients: [
             { item: i.poultryegg, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
-        name: 'Grilled Sand Onion',
+        name: 'Charcoal Grilled Sand Onion',
         imgSrc: "grilledsandonion.webp",
         chinaOnly: true,
         rarity: 1,
@@ -96,6 +105,9 @@ const recipes = [
             Recovers **10% + 1,500** HP`,
         ingredients: [
             { item: i.cactusball, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -110,6 +122,9 @@ const recipes = [
         ingredients: [
             { item: i.laver, amount: 2 },
             { item: i.poultryegg, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -137,6 +152,9 @@ const recipes = [
             { item: i.homigrain, amount: 1 },
             { item: i.poultrymeat, amount: 1 },
             { item: i.lettuce, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -163,6 +181,9 @@ const recipes = [
         ingredients: [
             { item: i.thornmato, amount: 2 },
             { item: i.poultryegg, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -177,6 +198,9 @@ const recipes = [
         ingredients: [
             { item: i.mushroom, amount: 2 },
             { item: i.lettuce, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -191,6 +215,9 @@ const recipes = [
         ingredients: [
             { item: i.conch, amount: 2 },
             { item: i.lettuce, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -231,6 +258,9 @@ const recipes = [
             { item: i.thornmato, amount: 1 },
             { item: i.lettuce, amount: 1 },
             { item: i.saladdressing, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -245,6 +275,9 @@ const recipes = [
         ingredients: [
             { item: i.poultrymeat, amount: 2 },
             { item: i.homigrain, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -254,12 +287,16 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **300** stamina  
+            `Recovers **300** endurance  
             Recovers **12% + 3,300** HP`,
         ingredients: [
             { item: i.fallenfruit, amount: 2 },
             { item: i.honey, amount: 1 },
             { item: i.carbonatedwater, amount: 1 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -269,12 +306,16 @@ const recipes = [
         rarity: 2,
         stars: 1,
         effect: 
-            `Recovers **300** stamina  
+            `Recovers **300** endurance  
             Recovers **12% + 3,300** HP`,
         ingredients: [
             { item: i.ghostmushroom, amount: 2 },
             { item: i.milk, amount: 1 },
             { item: i.carbonatedwater, amount: 1 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -312,6 +353,9 @@ const recipes = [
         ingredients: [
             { item: i.mushroom, amount: 2 },
             { item: i.silverbass, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -326,6 +370,9 @@ const recipes = [
         ingredients: [
             { item: i.dandelionseed, amount: 1 },
             { item: i.mushroom, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -340,6 +387,9 @@ const recipes = [
         ingredients: [
             { item: i.darbyssturgeon, amount: 1 },
             { item: i.poultryegg, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -360,11 +410,15 @@ const recipes = [
         rarity: 2,
         stars: 2,
         effect: 
-            `Recovers **400** stamina  
+            `Recovers **400** endurance  
             Recovers **13% + 10,000** HP`,
         ingredients: [
             { item: i.firecap, amount: 2 },
             { item: i.lettuce, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -379,6 +433,9 @@ const recipes = [
         ingredients: [
             { item: i.blackmoss, amount: 2 },
             { item: i.lettuce, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -392,6 +449,9 @@ const recipes = [
             Recovers **12% + 3,300** HP`,
         ingredients: [
             { item: i.beetroot, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -427,6 +487,9 @@ const recipes = [
             Recovers **12% + 3,300** HP`,
         ingredients: [
             { item: i.fleshytail, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -442,6 +505,9 @@ const recipes = [
             { item: i.corn, amount: 2 },
             { item: i.milk, amount: 1 },
             { item: i.mushroom, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -452,13 +518,16 @@ const recipes = [
         stars: 1,
         effect: 
             `Recovers **10** satiety  
-            **Ice Attack +1%  
-            Ice Attack +45**  
+            **Frost Attack +1%  
+            Frost Attack +45**  
             Duration **900** sec`,
         ingredients: [
             { item: i.conch, amount: 3 },
             { item: i.scallop, amount: 2 },
             { item: i.lettuce, amount: 1 }
+        ],
+        icons: [
+            "iceATK"
         ]
     },
     {
@@ -476,6 +545,9 @@ const recipes = [
             { item: i.homigrain, amount: 3 },
             { item: i.rearhock, amount: 2 },
             { item: i.lettuce, amount: 1 }
+        ],
+        icons: [
+            "physATK"
         ]
     },
     {
@@ -490,6 +562,9 @@ const recipes = [
         ingredients: [
             { item: i.portunid, amount: 2 },
             { item: i.lettuce, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -507,6 +582,9 @@ const recipes = [
             { item: i.strawberry, amount: 2 },
             { item: i.honey, amount: 2 },
             { item: i.carbonatedwater, amount: 1 }
+        ],
+        icons: [
+            "fireDEF"
         ]
     },
     {
@@ -524,6 +602,9 @@ const recipes = [
             { item: i.smallblueberryjar, amount: 1 },
             { item: i.honey, amount: 2 },
             { item: i.carbonatedwater, amount: 1 }
+        ],
+        icons: [
+            "voltDEF"
         ]
     },
     {
@@ -543,6 +624,9 @@ const recipes = [
             { item: i.lettuce, amount: 1 },
             { item: i.poultryegg, amount: 1 },
             { item: i.saladdressing, amount: 1 }
+        ],
+        icons: [
+            "physDEF"
         ]
     },
     {
@@ -557,6 +641,9 @@ const recipes = [
         ingredients: [
             { item: i.seaurchin, amount: 2 },
             { item: i.poultryegg, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -574,6 +661,9 @@ const recipes = [
             { item: i.smallblueberryjar, amount: 1 },
             { item: i.strawberry, amount: 1 },
             { item: i.homigrain, amount: 3 }
+        ],
+        icons: [
+            "voltATK"
         ]
     },
     {
@@ -591,6 +681,9 @@ const recipes = [
             { item: i.thornmato, amount: 4 },
             { item: i.homigrain, amount: 3 },
             { item: i.poultryegg, amount: 1 }
+        ],
+        icons: [
+            "fireATK"
         ]
     },
     {
@@ -607,6 +700,9 @@ const recipes = [
             { item: i.homigrain, amount: 1 },
             { item: i.fallenfruit, amount: 1 },
             { item: i.poultryegg, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -621,6 +717,9 @@ const recipes = [
         ingredients: [
             { item: i.scallop, amount: 2 },
             { item: i.lettuce, amount: 3 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -630,10 +729,14 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **500** stamina  
+            `Recovers **500** endurance  
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.rearhock, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -648,6 +751,9 @@ const recipes = [
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.brownrice, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -662,6 +768,9 @@ const recipes = [
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.brownrice, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -677,6 +786,9 @@ const recipes = [
             { item: i.balloonfruit, amount: 2 },
             { item: i.thornmato, amount: 2 },
             { item: i.saladdressing, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -691,6 +803,9 @@ const recipes = [
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.lettuce, amount: 4 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -706,6 +821,9 @@ const recipes = [
             Duration **900** sec`,
         ingredients: [
             { item: i.electriceel, amount: 1 }
+        ],
+        icons: [
+            "voltDEF"
         ]
     },
     {
@@ -722,6 +840,9 @@ const recipes = [
         ingredients: [
             { item: i.electriceel, amount: 1 },
             { item: i.firecap, amount: 2 }
+        ],
+        icons: [
+            "voltATK"
         ]
     },
     {
@@ -738,6 +859,9 @@ const recipes = [
         ingredients: [
             { item: i.hermitcrab, amount: 2 },
             { item: i.mushroom, amount: 4 }
+        ],
+        icons: [
+            "fireDEF"
         ]
     },
     {
@@ -747,12 +871,16 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **600** stamina  
+            `Recovers **600** endurance  
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.phosphogranate, amount: 2 },
             { item: i.honey, amount: 2 },
             { item: i.carbonatedwater, amount: 1 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -763,13 +891,16 @@ const recipes = [
         stars: 2,
         effect: 
             `Recovers **10** satiety  
-            **Ice Resistance +10%  
-            Ice Resistance +290**  
+            **Frost Resistance +10%  
+            Frost Resistance +290**  
             Duration **900** sec`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.honey, amount: 2 },
             { item: i.milk, amount: 1 }
+        ],
+        icons: [
+            "iceDEF"
         ]
     },
     {
@@ -786,6 +917,9 @@ const recipes = [
         ingredients: [
             { item: i.firedragonfruit, amount: 2 },
             { item: i.honey, amount: 2 }
+        ],
+        icons: [
+            "fireATK"
         ]
     },
     {
@@ -802,6 +936,9 @@ const recipes = [
         ingredients: [
             { item: i.barnacle, amount: 2 },
             { item: i.lettuce, amount: 4 }
+        ],
+        icons: [
+            "physDEF"
         ]
     },
     {
@@ -817,6 +954,9 @@ const recipes = [
             { item: i.barnacle, amount: 1 },
             { item: i.brownrice, amount: 2 },
             { item: i.onion, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -827,13 +967,16 @@ const recipes = [
         stars: 2,
         effect: 
             `Recovers **10** satiety  
-            **Ice Attack +1%  
-            Ice Attack +80**  
+            **Frost Attack +1%  
+            Frost Attack +80**  
             Duration **900** sec`,
         ingredients: [
             { item: i.snowazalea, amount: 1 },
             { item: i.milk, amount: 1 },
             { item: i.honey, amount: 2 }
+        ],
+        icons: [
+            "iceATK"
         ]
     },
     {
@@ -849,6 +992,9 @@ const recipes = [
             { item: i.pinecone, amount: 1 },
             { item: i.cocoabeans, amount: 1 },
             { item: i.milk, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -864,6 +1010,9 @@ const recipes = [
             { item: i.caviar, amount: 1 },
             { item: i.rice, amount: 2 },
             { item: i.laver, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -880,6 +1029,9 @@ const recipes = [
         ingredients: [
             { item: i.caviar, amount: 1 },
             { item: i.potato, amount: 2 }
+        ],
+        icons: [
+            "physATK"
         ]
     },
     {
@@ -890,12 +1042,15 @@ const recipes = [
         stars: 1,
         effect: 
             `Recovers **10** satiety  
-            **Ice Resistance +10%  
-            Ice Resistance 170**  
+            **Frost Resistance +10%  
+            Frost Resistance 170**  
             Duration **900** sec`,
         ingredients: [
             { item: i.pepper, amount: 2 },
             { item: i.onion, amount: 2 }
+        ],
+        icons: [
+            "iceDEF"
         ]
     },
     {
@@ -912,6 +1067,9 @@ const recipes = [
         ingredients: [
             { item: i.desertmelon, amount: 2 },
             { item: i.saladdressing, amount: 2 }
+        ],
+        icons: [
+            "fireDEF"
         ]
     },
     {
@@ -926,6 +1084,9 @@ const recipes = [
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.rice, amount: 3 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -940,6 +1101,9 @@ const recipes = [
         ingredients: [
             { item: i.ribs, amount: 1 },
             { item: i.honey, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -949,12 +1113,16 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **500** stamina  
+            `Recovers **500** endurance  
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.cocoabeans, amount: 2 },
             { item: i.soybeans, amount: 1 },
             { item: i.honey, amount: 1 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -969,6 +1137,9 @@ const recipes = [
         ingredients: [
             { item: i.fiddlehead, amount: 2 },
             { item: i.beetroot, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -979,13 +1150,16 @@ const recipes = [
         stars: 1,
         effect: 
             `Recovers **10** satiety  
-            **Ice Attack +1%  
-            Ice Attack 45**  
+            **Frost Attack +1%  
+            Frost Attack 45**  
             Duration **900** sec`,
         ingredients: [
             { item: i.desertmelon, amount: 2 },
             { item: i.honey, amount: 1 },
             { item: i.homigrain, amount: 2 }
+        ],
+        icons: [
+            "iceATK"
         ]
     },
     {
@@ -995,12 +1169,16 @@ const recipes = [
         rarity: 3,
         stars: 1,
         effect: 
-            `Recovers **500** stamina 
+            `Recovers **500** endurance 
             Recovers **15% + 20,000** HP`,
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.corn, amount: 1 },
             { item: i.rice, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -1016,6 +1194,9 @@ const recipes = [
             { item: i.scallop, amount: 2 },
             { item: i.corn, amount: 1 },
             { item: i.homigrain, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1030,6 +1211,9 @@ const recipes = [
         ingredients: [
             { item: i.pumpkin, amount: 2 },
             { item: i.homigrain, amount: 3 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1048,6 +1232,9 @@ const recipes = [
             { item: i.fleshytail, amount: 1 },
             { item: i.poultryegg, amount: 1 },
             { item: i.rice, amount: 2 }
+        ],
+        icons: [
+            "fireATK"
         ]
     },
     {
@@ -1061,6 +1248,9 @@ const recipes = [
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.oyster, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1074,6 +1264,9 @@ const recipes = [
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.fishleaf, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1083,11 +1276,15 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **600** stamina  
+            `Recovers **600** endurance  
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.oyster, amount: 2 },
             { item: i.soybeans, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -1097,11 +1294,15 @@ const recipes = [
         rarity: 3,
         stars: 2,
         effect: 
-            `Recovers **600** stamina  
+            `Recovers **600** endurance  
             Recovers **16% + 34,000** HP`,
         ingredients: [
             { item: i.fishleaf, amount: 2 },
             { item: i.poultryegg, amount: 3 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -1117,6 +1318,9 @@ const recipes = [
             { item: i.hazelnut, amount: 1 },
             { item: i.pinecone, amount: 2 },
             { item: i.honey, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1133,6 +1337,9 @@ const recipes = [
         ingredients: [
             { item: i.purpleyam, amount: 1 },
             { item: i.brownrice, amount: 3 }
+        ],
+        icons: [
+            "voltATK"
         ]
     },
     {
@@ -1142,11 +1349,15 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
+            `Recovers **800** endurance  
             Recovers **20% + 60,000** HP`,
         ingredients: [
             { item: i.snowlotus, amount: 1 },
             { item: i.honey, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -1164,6 +1375,9 @@ const recipes = [
             { item: i.blacktruffle, amount: 1 },
             { item: i.onion, amount: 1 },
             { item: i.rice, amount: 2 }
+        ],
+        icons: [
+            "physATK"
         ]
     },
     {
@@ -1178,6 +1392,9 @@ const recipes = [
         ingredients: [
             { item: i.caterpillarfungus, amount: 1 },
             { item: i.brownrice, amount: 3 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1193,6 +1410,9 @@ const recipes = [
             Duration **1200** sec`,
         ingredients: [
             { item: i.primecut, amount: 1 }
+        ],
+        icons: [
+            "voltDEF"
         ]
     },
     {
@@ -1209,6 +1429,9 @@ const recipes = [
         ingredients: [
             { item: i.primecut, amount: 1 },
             { item: i.firecap, amount: 3 }
+        ],
+        icons: [
+            "fireATK"
         ]
     },
     {
@@ -1219,11 +1442,14 @@ const recipes = [
         stars: 2,
         effect: 
             `Recovers **20** satiety  
-            **Ice Resistance +15%  
-            Ice Resistance +675**  
+            **Frost Resistance +15%  
+            Frost Resistance +675**  
             Duration **1200** sec`,
         ingredients: [
             { item: i.fattycut, amount: 1 }
+        ],
+        icons: [
+            "iceDEF"
         ]
     },
     {
@@ -1241,6 +1467,9 @@ const recipes = [
             { item: i.fattycut, amount: 1 },
             { item: i.brownrice, amount: 2 },
             { item: i.poultryegg, amount: 2 }
+        ],
+        icons: [
+            "fireDEF"
         ]
     },
     {
@@ -1251,11 +1480,14 @@ const recipes = [
         stars: 2,
         effect: 
             `Recovers **20** satiety  
-            **Ice Attack +2%  
-            Ice Attack +150**  
+            **Frost Attack +2%  
+            Frost Attack +150**  
             Duration **1200** sec`,
         ingredients: [
             { item: i.lakebass, amount: 1 }
+        ],
+        icons: [
+            "iceATK"
         ]
     },
     {
@@ -1272,6 +1504,9 @@ const recipes = [
         ingredients: [
             { item: i.carrionsnail, amount: 1 },
             { item: i.rice, amount: 2 }
+        ],
+        icons: [
+            "physDEF"
         ]
     },
     {
@@ -1287,6 +1522,9 @@ const recipes = [
             { item: i.aloevera, amount: 1 },
             { item: i.honey, amount: 1 },
             { item: i.milk, amount: 2 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1296,11 +1534,15 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
+            `Recovers **800** endurance  
             Recovers **20% + 60,000** HP`,
         ingredients: [
             { item: i.rosepetals, amount: 1 },
             { item: i.honey, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -1310,10 +1552,14 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
+            `Recovers **800** endurance  
             Recovers **20% + 60,000** HP`,
         ingredients: [
             { item: i.radish, amount: 1 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
     {
@@ -1330,6 +1576,9 @@ const recipes = [
         ingredients: [
             { item: i.rosepetals, amount: 1 },
             { item: i.brownrice, amount: 2 }
+        ],
+        icons: [
+            "voltDEF"
         ]
     },
     {
@@ -1347,6 +1596,9 @@ const recipes = [
             { item: i.radish, amount: 1 },
             { item: i.poultrymeat, amount: 1 },
             { item: i.homigrain, amount: 2 }
+        ],
+        icons: [
+            "physATK"
         ]
     },
     {
@@ -1364,6 +1616,9 @@ const recipes = [
             { item: i.fattycut, amount: 1 },
             { item: i.pepper, amount: 1 },
             { item: i.homigrain, amount: 2 }
+        ],
+        icons: [
+            "fireATK"
         ]
     },
     {
@@ -1381,6 +1636,9 @@ const recipes = [
             { item: i.primecut, amount: 1 },
             { item: i.pepper, amount: 1 },
             { item: i.fleshytail, amount: 1 }
+        ],
+        icons: [
+            "fireDEF"
         ]
     },
     {
@@ -1397,6 +1655,9 @@ const recipes = [
         ingredients: [
             { item: i.radish, amount: 1 },
             { item: i.ribs, amount: 1 }
+        ],
+        icons: [
+            "physDEF"
         ]
     },
     {
@@ -1410,6 +1671,9 @@ const recipes = [
             Recovers **20% + 60,000** HP`,
         ingredients: [
             { item: i.oilmelon, amount: 1 }
+        ],
+        icons: [
+            "health"
         ]
     },
     {
@@ -1419,11 +1683,15 @@ const recipes = [
         rarity: 4,
         stars: 2,
         effect: 
-            `Recovers **800** stamina  
+            `Recovers **800** endurance  
             Recovers **20% + 60,000** HP`,
         ingredients: [
             { item: i.oilmelon, amount: 1 },
             { item: i.pepper, amount: 2 }
+        ],
+        icons: [
+            "health",
+            "endurance"
         ]
     },
 ]
