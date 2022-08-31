@@ -36,7 +36,7 @@ const nemesis = {
                 start: "10 August 2022",
                 end: "31 August 2022",
                 duration: "21d",
-                week: "1~3"
+                week: "1~4"
             }
         ]
     },
