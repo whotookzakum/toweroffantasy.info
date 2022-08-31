@@ -58,37 +58,108 @@ const baiyuekui = {
                 {
                     name: "Normal Attack",
                     input: ["Attack x5"],
+                    description: `While on the ground, perform five attacks.`,
+                    breakdown: [
+                        `Deal damage equal to **44.8%** of ATK + **2** and knock the target back a short distance.`,
+                        `Deal damage equal to **63.4%** of ATK + **3** and knock the target back a short distance.`,
+                        `Deal damage equal to **118%** of ATK + **6** and knock the target back a short distance.`,
+                        `Deal damage equal to **39%** of ATK + **2** and **launch** the target into the air.`,
+                        `Deal damage equal to **133.3%** of ATK + **7** and knock the target back.`,
+                    ]
                 },
                 {
                     name: "Aerial Attack",
-                    input: ["Jump", "Attack x4"],
+                    input: ["Jump", "Attack x5"],
+                    description: ``,
+                    breakdown: [
+                        `Deal damage equal to **65.7%** of ATK + **3**.`,
+                        `Deal damage equal to **65.7%** of ATK + **3**.`,
+                        `Deal damage equal to **56.1%** of ATK + **3**.`,
+                        `Deal damage equal to **136.6%** of ATK + **7**.`,
+                        `Deal damage equal to **197.7%** of ATK + **10**.`,
+                    ]
                 },
                 {
                     name: "Whip Kick",
                     input: ["hold:Attack"],
+                    description: 
+                        `After the second basic attack, hold the basic attack to trigger the whip leg.  
+                        The high kick will force the target to float in the air, and after a short charge, use the whip leg to force the target to fly, causing a total of **281.9%** of ATK + **15** damage.`
                 },
-                {
-                    name: "Leg Splitter",
-                    input: ["Jump", "hold:Attack"],
-                    description: "while target is airborne"
-                },
+                // {
+                //     name: "Leg Splitter",
+                //     input: ["Jump", "hold:Attack"],
+                //     description: 
+                //         `(while target is airborne) no description provided`
+                // },
                 {
                     name: "Earthshaker",
                     input: ["Jump", "hold:Attack"],
-                    description: "while target is on the ground"
+                    description: `While target is on the ground, hold basic attack while in the air, climbing, reverse jump attacking or gliding with the jetpack to trigger Earthshaker.  
+                    Quickly move to the sky above the target, insert the knife downward, and cause **112.2%** of ATK + **6** damage to surrounding targets and launching them. The higher the distance from the ground when triggered, the higher the damage, up to **600%** damage.`
                 },
+                {
+                    name: "Sneak Attack",
+                    input: ["Crouch","Attack"],
+                    description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
+                }
             ],
             dodge: [
                 {
+                    name: "Dodge",
+                    description:
+                        `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
+                },
+                {
                     name: "Unsheathe",
                     input: ["Arrow keys", "Dodge", "Attack"],
+                    description: 
+                        `Quickly after dodging, use a basic attack to trigger the sword draw.Unleashes a slash, dealing **219.9%** of ATK + **12** points of damage, with a knockdown effect.
+                        **Passive: Hit the target with Draw Slash to instantly detonate the cupping can on its body.**`
+                }
+            ],
+            skill: [
+                {
+                    name: "Dragonstyle",
+                    description: 
+                        `Move forward quickly, grapple the target, cool down for **25** seconds.  
+                        **The target can be grabbed**: grab the target (**strong control**) and smash the target to the ground, causing a maximum of **544.5%** of ATK + **29** damage, with a floating effect, and adding a **cupping** effect to all targets within the range.  
+                        **The target cannot be grabbed**: Use acupoints to imprison the target, causing a maximum of **544.5%** of ATK + **29** damage, with a knockback effect, and adding a **cupping** effect to all targets within the range.  
+                        During the skill animation, gain immunity to crowd control, damage, and any debuffs.  
+                        **Cupping Can**: Explode after **5** seconds, causing **361.5%** of ATK + **19** damage, with **a strong control knockdown effect**, and the damage against the target is increased by **10%** for **5** seconds.  
+                        **Passive: If the skill misses the target, you can use it again within 5 seconds, and then enter a longer cooldown (30 seconds cooldown).**
+                        `
+                }
+            ],
+            discharge: [
+                {
+                    name: "Force Field",
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and forms a large-area force field at the target location, dealing **406.6%** of ATK + **21** damage, imprison the target in the range for **5** seconds (immovable targets only), dealing a maximum of **454.4%** of ATK + **24** damage over time.`
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["king", "shiro", "samir", "crow"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Excellent choice for shatter and damage."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "Alaya can struggle at maintaining buff stacks, but it is doable when the discharge attack is active or when spamming dash attacks."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {

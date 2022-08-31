@@ -75,22 +75,34 @@ const tsubasa = {
             skill: [
                 {
                     name: "Piercing Arrow",
-                    description: `Perform a backflip and fire **3** piercing arrows, with the main arrow deals damage equal to **224.6%** of ATK + **12**, and the other two arrows deal 60% damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds.`
+                    description: `Perform a backflip and fire **3** piercing arrows, with the main arrow deals damage equal to **258.3%** of ATK + **14**, and the other two arrows deal 60% damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds.`
                 }
             ],
             discharge: [
                 {
                     name: "Explosive Barrage",
-                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, increasing damage dealt by **15%**, and speed by **45%** for **7** seconds.`
+                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, and increase speed by **45%** for **7** seconds.`
                 }
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/GralXQC8G-E?start=10",
-        recommendedMatrix: {
-            set4: ["saki-fuwa"],
-            set2: ["samir", "claudia", "crow"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Frigg",
+                pieces: 2,
+                description: "A good choice for Frost teams as it adds another buff for Icewind Vector to apply."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix set when you have high crit rate."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {
@@ -132,7 +144,37 @@ const tsubasa = {
         weapon: {
             advancement: {
                 star1: `<abbr title='China Exclusive'></abbr> Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **8%** for **15** seconds. Stack up to **3** times.`
-            }
+            },
+            abilities: {
+                discharge: [
+                    {
+                        name: "Explosive Barrage",
+                        description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, increasing damage dealt by **15%**, and speed by **45%** for **7** seconds.`
+                    }
+                ]
+            },
+            recommendedMatrices: [
+                {
+                    name: "Saki Fuwa",
+                    pieces: 4,
+                    description: "Best possible matrices for a supporting weapon on Frost teams. High damage boost on both set effects."
+                },
+                {
+                    name: "Frigg",
+                    pieces: 2,
+                    description: "A good choice for Frost teams as it adds another buff for Icewind Vector to apply."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix set when you have high crit rate. Otherwise, opt for Shiro 2-piece matrices."
+                },
+                {
+                    name: "Sobek",
+                    pieces: 3,
+                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                }
+            ]
         },
         matrix: {
             set2: `<abbr title='China Exclusive'></abbr> Increase damage dealt by **12.5%/15%/17.5%/20%** when there are no enemies within 4 meters.`

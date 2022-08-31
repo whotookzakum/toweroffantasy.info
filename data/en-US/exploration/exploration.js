@@ -218,12 +218,30 @@ export const EXPLORATION = [
         videoSrc: ""
     },
     {
+        name: "Deconstruction Device",
+        uri: "deconstruction-device",
+        imgSrc: "deconstructiondevice.webp",
+        type: "basic",
+        location: "aesperia",
+        solution: "Input the correct passcode to unlock.",
+        videoSrc: ""
+    },
+    {
         name: "Silvercap Tree",
         uri: "silvercap-tree",
         imgSrc: "silvercaptree.webp",
         type: "basic",
         location: "aesperia",
         solution: "Interact with the tree to begin a minigame. Drop the crystal into the hole at the bottom, moving it left and right to avoid obstacles along the way.",
+        videoSrc: ""
+    },
+    {
+        name: "Sound-Tracing Device",
+        uri: "sound-tracing-device",
+        imgSrc: "soundtracingdevice.webp",
+        type: "basic",
+        location: "aesperia",
+        solution: "Interact with the sound tracing device to begin. Find Acoustic Module 01, which is Northwest from the device at the base of the light colored tree that splits at the base. Interact with the device again and find Acoustic Module 02, which is in the bush by the tent found to the South of the device. Interact with the device again and find Acoustic Module 03, which is South of the device, in the crevice under the cliff. The Acoustic Modules look like small iPads.",
         videoSrc: ""
     },
 

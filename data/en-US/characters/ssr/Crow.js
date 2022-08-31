@@ -96,7 +96,29 @@ const crow = {
         recommendedMatrix: {
             set2: ["samir", "claudia", "crow"],
             set3: ["sobek"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Samir",
+                pieces: 2,
+                description: "Thunderblades are capable of keeping up the damage buff when used correctly."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
+            },
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Not ideal, but can be used for the damage increase until you get one of the more recommended sets."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
 
     matrix: {
@@ -135,6 +157,30 @@ const crow = {
 
     cnData: {
         name: "Crow (Karasuma)",
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Samir",
+                    pieces: 2,
+                    description: "Thunderblades are capable of keeping up the damage buff when used correctly."
+                },
+                {
+                    name: "Claudia",
+                    pieces: 2,
+                    description: "The most optimal DPS with Thunderblades is the Jetpack + Aerial attack spamming, thus making  Claudia's 2 set more effective than Crow's until very high crit rate."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "At high crit rate, Crow's 2 set is the second best choice for damage."
+                },
+                {
+                    name: "Sobek",
+                    pieces: 3,
+                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                }
+            ]
+        },
         matrix: {
             set2: `<abbr title='China Exclusive'></abbr> Increase crit damage to targets with less than **60%** HP by **33%/42%/50%/58%**.`,
 

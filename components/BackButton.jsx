@@ -4,7 +4,14 @@ import Link from "next/link";
 export default function BackButton() {
     const router = useRouter();
     const isGuideArticle = router.pathname.includes("guides");
-    const path = (isGuideArticle) ? "guides" : router.pathname.substring(1).split("/[id]")[0];
+    const isCosmeticItem = router.pathname.includes("cosmetics");
+    let path = router.pathname.substring(1).split("/[id]")[0];
+    if (isGuideArticle) {
+        path = "guides";
+    } 
+    else if (isCosmeticItem) {
+        path = "cosmetics";
+    }
     return (
         <Link href={`/${path}`}>
             <a tabIndex={0} className="modal-back-button">

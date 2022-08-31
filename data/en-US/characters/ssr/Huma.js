@@ -116,7 +116,29 @@ const huma = {
             set2: ["king", "shiro"],
             set4: ["huma"],
             set3: ["sobek"]
-        }
+        },
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Great set for both damage and shatter."
+            },
+            {
+                name: "KING",
+                pieces: 2,
+                description: "Decent option if you only use Chakram of the Seas for shield breaking."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix when you have high crit rate."
+            },
+            {
+                name: "Sobek",
+                pieces: 3,
+                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+            }
+        ]
     },
     
     matrix: {
@@ -150,6 +172,33 @@ const huma = {
             jp: "高橋李依 (Rie Takahashi)",
             en: "Colleen O'Shaughnessey",
             cn: "唐雅菁"
+        }
+    },
+
+    cnData: {
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Shiro",
+                    pieces: 2,
+                    description: "Great set for both damage and shatter."
+                },
+                {
+                    name: "KING",
+                    pieces: 2,
+                    description: "High stacking buff for when you can break 30% of a shield by yourself. The effect stacks with other KING 2-piece sets, which may be useful in Bygone Phantasm."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix when you have high crit rate."
+                },
+                {
+                    name: "Sobek",
+                    pieces: 3,
+                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                }
+            ]
         }
     }
 }

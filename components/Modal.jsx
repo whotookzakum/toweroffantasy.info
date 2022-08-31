@@ -5,12 +5,13 @@ import { MOUNTS } from "../data/en-US/mounts/mountList";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
 import { EXPLORATION } from "../data/en-US/exploration/exploration";
+import { OUTFITS, MIA_OUTFITS } from "../data/en-US/cosmetics/cosmetics";
 import { useRouter } from "next/router";
 import AnchorJS from "anchor-js";
 import { useEffect } from "react";
 import BackButton from "./BackButton";
 
-export function ModalMenu({ list, filter, target }) {
+export function ModalMenu({ list, filter, target, gender }) {
     let options = new Object();
 
     const filteredList = list.filter(item => item[filter] === target);
@@ -52,6 +53,16 @@ export function ModalMenu({ list, filter, target }) {
                 options.linkPath = `exploration/${item.uri}`;
                 options.imgPath = `exploration/${item.imgSrc}`;
                 break;
+            case OUTFITS: 
+                options.menuClass = "cosmetics";
+                options.linkPath = `cosmetics/outfits/${item.uri}`;
+                options.imgPath = `cosmetics/outfits/${gender}_${item.imgSrc}`;
+                break;
+            case MIA_OUTFITS: 
+                options.menuClass = "cosmetics";
+                options.linkPath = `cosmetics/mia/${item.uri}`;
+                options.imgPath = `cosmetics/mia/${item.imgSrc}`;
+                break;
             default:
                 break;
         }
@@ -84,7 +95,7 @@ export function ModalMenu({ list, filter, target }) {
     );
 }
 
-export function Modal({ item, children }) {
+export function Modal({ item, children, gender }) {
 
     useEffect(() => {
         const anchors = new AnchorJS();
@@ -113,6 +124,13 @@ export function Modal({ item, children }) {
         case "exploration":
             options.bgImgPath = `bg-2.webp`;
             break;
+        case "cosmetics/mia":
+        case "cosmetics/accessories":
+        case "cosmetics/outfits":
+            options.headerClass = "cosmetics";
+            options.bgImgPath = `bg-1.webp`;
+            options.headerImgPath = `${path}/${gender}_${item.imgSrc}`;
+            break;
         default:
             break;
     }
@@ -135,7 +153,7 @@ export function Modal({ item, children }) {
 }
 
 function ModalHeader({ item, options }) {
-
+    
     let color = { color: "var(--color-tier-s)" };
     if (item.rarity === 'SR') {
         color = { color: "var(--color-tier-a)" };
@@ -144,12 +162,14 @@ function ModalHeader({ item, options }) {
         color = { color: "var(--color-tier-b)" };
     }
 
+    let imgSrc = `/static/images/${options.headerImgPath}`;
+
     return (
         <>
             <BackButton />
             <header className={options.headerClass} >
                 <div className="header-img-wrapper">
-                    <img src={`/static/images/${options.headerImgPath}`} alt={item.name} />
+                    <img src={imgSrc} alt={item.name} />
                 </div>
                 <div>
                     <h1>{item.name}</h1>

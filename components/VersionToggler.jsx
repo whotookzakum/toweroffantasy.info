@@ -1,5 +1,3 @@
-
-
 export function VersionToggler({section, version, setVersion}) {
 
     function handleChange(e) {

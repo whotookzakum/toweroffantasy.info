@@ -153,11 +153,23 @@ const nemesis = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/hQQTTuBKm0c?start=9",
-        recommendedMatrix: {
-            set2: ["nemesis", "coco-ritter"],
-            set4: ["nemesis", "coco-ritter"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Coco Ritter",
+                pieces: 4,
+                description: "Excellent choice for Venus that will buff teammates with up to 100% uptime."
+            },
+            {
+                name: "Nemesis",
+                pieces: 2,
+                description: "Niche option, not recommended unless you and your team are mainly using Volt weapons."
+            },
+            {
+                name: "Pepper",
+                pieces: 3,
+                description: "Decent option to build weapon charge while using Venus."
+            }
+        ]
     },
  
     matrix: {
@@ -191,7 +203,7 @@ const nemesis = {
         birthday: '25 May',
         voiceActors: {
             jp: "戸松遥",
-            en: "",
+            en: "Suzie Yeung",
             cn: "宋媛媛"
         }
     },
@@ -206,7 +218,7 @@ const nemesis = {
                 }
             },
             advancement: {
-                star3: `<abbr title='China Exclusive'></abbr> Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
+                star3: `<abbr title='China Exclusive'></abbr> Every **4.5** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **389%** of ATK in a target area.`,
 
                 star5: `<abbr title='China Exclusive'></abbr> After using **Pulse Lock**, increase Volt ATK by ( **10** + Number of Electrodes &times; **10** ) % for **25** seconds.`
             }

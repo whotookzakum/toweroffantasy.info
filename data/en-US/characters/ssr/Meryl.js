@@ -32,10 +32,10 @@ const meryl = {
                     input: ["Attack x4"],
                     description: `While on the ground, swing a greatsword to attack 4 times in a row.`,
                     breakdown: [
-                        'Deal damage equal to **60.7%** of ATK + **3** and knock the target back a short distance.',
-                        'Deal damage equal to **50.1%** of ATK + **3** and knock the target back a short distance.',
-                        'Deal damage equal to **87.9%** of ATK + **5** and knock the target back a short distance.',
-                        'Deal damage equal to **130.3%** of ATK + **7**, knock the target **into the air**, then launch them upon landing.'
+                        'Deal damage equal to **72.9%** of ATK + **4** and knock the target back a short distance.',
+                        'Deal damage equal to **60.1%** of ATK + **3** and knock the target back a short distance.',
+                        'Deal damage equal to **105.4%** of ATK + **6** and knock the target back a short distance.',
+                        'Deal damage equal to **156.3%** of ATK + **8**, **strongly suspend** the target, then launch them upon landing.'
                     ]
                 },
                 {
@@ -100,10 +100,28 @@ const meryl = {
             ]
         },
         abilitiesVideoSrc: "https://www.youtube.com/embed/53QNsZxM5kg?start=11",
-        recommendedMatrix: {
-            set2: ["king", "shiro"],
-            set3: ["sobek"]
-        }
+        recommendedMatrices: [
+            {
+                name: "Shiro",
+                pieces: 2,
+                description: "Great set for both damage and shatter."
+            },
+            {
+                name: "KING",
+                pieces: 2,
+                description: "Decent option if you only use Rosy Edge for shield breaking."
+            },
+            {
+                name: "Crow",
+                pieces: 2,
+                description: "High damage matrix when you have high crit rate."
+            },
+            {
+                name: "Windblade",
+                pieces: 3,
+                description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
+            }
+        ]
     },
 
     matrix: {
@@ -119,7 +137,7 @@ const meryl = {
             `Reduce frost damage received by Meryl by **20%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**.`,
 
         trait4000: 
-            `Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**.`,
+            `Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**. Meryl's surroundings will freeze.`,
 
         giftCategories: ['metalware', 'rare-items'],
 
@@ -145,11 +163,32 @@ const meryl = {
     },
 
     cnData: {
+        weapon: {
+            recommendedMatrices: [
+                {
+                    name: "Shiro",
+                    pieces: 2,
+                    description: "Great set for both damage and shatter."
+                },
+                {
+                    name: "KING",
+                    pieces: 2,
+                    description: "High stacking buff for when you can break 30% of a shield by yourself. The effect stacks with other KING 2-piece sets, which may be useful in Bygone Phantasm."
+                },
+                {
+                    name: "Crow",
+                    pieces: 2,
+                    description: "High damage matrix when you have high crit rate."
+                },
+                {
+                    name: "Windblade",
+                    pieces: 3,
+                    description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
+                }
+            ]
+        },
         matrix: {
             set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealt during shield to health, restores no more than **105%/127.5%/150%/172.5%** of ATK every 0.5 seconds.`
-        },
-        awakening: {
-            trait4000: `<abbr title='China Exclusive'></abbr> Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**. Meryl's surroundings will freeze.`
         }
     }
 }
