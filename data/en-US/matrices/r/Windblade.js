@@ -1,6 +1,6 @@
-const windblade = {
-    name:"Windblade",
-    uri: "windblade",
+const windBlade = {
+    name:"Wind Blade",
+    uri: "wind-blade",
     imgSrc: "windblade.webp",
     rarity:"R",
     chinaOnly: false,
@@ -9,4 +9,4 @@ const windblade = {
     }
 }
 
-export default windblade;
+export default windBlade;

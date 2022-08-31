@@ -1,7 +1,7 @@
-const ravager = {
-    name:"Ravager",
-    uri: "ravager",
-    imgSrc: "ravager.webp",
+const plunder = {
+    name:"Plunder",
+    uri: "plunder",
+    imgSrc: "plunder.webp",
     rarity:"R",
     chinaOnly: false,
     matrix: { 
@@ -9,4 +9,4 @@ const ravager = {
     }
 }
 
-export default ravager;
+export default plunder;
