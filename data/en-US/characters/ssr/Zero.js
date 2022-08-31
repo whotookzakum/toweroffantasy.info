@@ -34,36 +34,36 @@ const zero = {
                     description: `While on the ground, manipulate the cube to attack 5 times in a row.  
                                 **Passive: If normal attacks hit targets 6 times, gain 1 cube. Up to 5 cubes can be stored**.`,
                     breakdown: [
-                        'First Attack: Deal damage equal to **35.9%** of ATK + **2**.',
-                        'Second Attack: Deal damage equal to **29.4%** of ATK + **2**.',
-                        'Third Attack: Deal damage equal to **91.5%** of ATK + **5**.',
-                        'Fourth Attack: Deal damage equal to **61.2%** of ATK + **3**.',
-                        'Fifth Attack: Deal damage equal to **62.3%** of ATK + **3** up to 3 times and **launch** the target.'
+                        'First Attack: Deal damage equal to **46.7%** of ATK + **2**.',
+                        'Second Attack: Deal damage equal to **38.2%** of ATK + **2**.',
+                        'Third Attack: Deal damage equal to **118.5%** of ATK + **8**.',
+                        'Fourth Attack: Deal damage equal to **79.6%** of ATK + **4**.',
+                        'Fifth Attack: Deal damage equal to **80.9%** of ATK + **4** up to 3 times and **launch** the target.'
                     ]
                 },
                 {
                     name: "Omnium Missile",
                     input: ["Jump","hold:Attack"],
-                    description: `While airborne, tap normal attack to activate the energy within the cube, firing up to **5** missiles and dealing total damage equal to **45.6%** of ATK + **2**. Consume up to **250** endurance.  
+                    description: `While airborne, tap normal attack to activate the energy within the cube, firing up to **5** missiles and dealing total damage equal to **59.3%** of ATK + **3**. Consume up to **250** endurance.  
                     **Passive: If the Wanderer has any stored cubes, consume all cubes to fire Omnium Missiles at targets to deal damage**.`
                 },
                 {
                     name: "Energy Overflow",
                     input: ["Jump","Attack"],
-                    description: `While airborne or after jumping once, tap normal attack to trigger Energy Overflow. Upon landing, fire a shockwave that travels forward, dealing up to **18%** of ATK + **1** damage to targets in its path.`
+                    description: `While airborne or after jumping once, tap normal attack to trigger Energy Overflow. Upon landing, fire a shockwave that travels forward, dealing up to **23.4%** of ATK + **1** damage to targets in its path.`
                 },
                 {
                     name: "Omnium Shock",
                     input: ["Attack x3","hold:Attack"],
-                    description: `On the third normal attack, hold the normal attack button to trigger Omnium Shock. A pillar of energy launches nearby targets into the air, dealing damage equal to **52.8%** of ATK + **3**. The pillar lasts 5 seconds and deals damage equal to **22%** of ATK + **1** to nearby targets every second.`
+                    description: `On the third normal attack, hold the normal attack button to trigger Omnium Shock. A pillar of energy launches nearby targets into the air, dealing damage equal to **68.4%** of ATK + **4**. The pillar lasts 5 seconds and deals damage equal to **28.5%** of ATK + **2** to nearby targets every second.`
                 },
                 {
                     name: "Energy Sentinel",
-                    description: `Cubes orbiting the Wanderer deal damage equal to **7.5%** of ATK + **1** to enemies.`
+                    description: `Cubes orbiting the Wanderer deal damage equal to **9.7%** of ATK + **1** to enemies.`
                 },
                 {
                     name: "Energy Missile",
-                    description: `When the Wanderer casts Omnium Missiles and Energy Overflow, their orbiting cubes are fired as well, dealing damage equal to **37.3%** of ATK + **2** to the target.`
+                    description: `When the Wanderer casts Omnium Missiles and Energy Overflow, their orbiting cubes are fired as well, dealing damage equal to **48.5%** of ATK + **2** to the target.`
                 }
             ],
             dodge: [
@@ -75,13 +75,13 @@ const zero = {
             skill: [
                 {
                     name: "Omnium Shield",
-                    description: `Create shielding for self and nearby allies to block up to **800%** x ATK in damage for **10** seconds, and deal **109.9%** x ATK + **6** damage to nearby targets and **launch** them. Each cube in possession when this skill is used adds **160%** of ATK to max shielding and exhaust the cube. Cooldown: **60** seconds.`
+                    description: `Create shielding for self and nearby allies to block up to **800%** x ATK in damage for **10** seconds, and deal **142.9%** x ATK + **8** damage to nearby targets and **launch** them. Each cube in possession when this skill is used adds **160%** of ATK to max shielding and exhaust the cube. Cooldown: **60** seconds.`
                 }
             ],
             discharge: [
                 {
                     name: "Omnium Wave",
-                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and gain 5 cubes upon switching to this weapon, then unleash the **5** cubes along with a Shockwave. This Shockwave deals damage equal to **131.5%** of ATK + **7** to nearby targets, and **launches** them into the air. Each cube also deals damage equal to **37.3%** of ATK + **2**. If allies are in the vicinity, they gain damage immunity for **3** seconds.`
+                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and gain **5** cubes upon switching to this weapon, then unleash the **5** cubes along with a Shockwave. This Shockwave deals damage equal to **171%** of ATK + **9** to nearby targets, and **launches** them into the air. Each cube also deals damage equal to **48.5%** of ATK + **3**. If allies are in the vicinity, they gain damage immunity for **3** seconds.`
                 }
             ]
         },
