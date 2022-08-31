@@ -5,6 +5,10 @@ const nextConfig = {
   i18n: {
     locales: ["en-US"],
     defaultLocale: "en-US"
+  },
+  webpack: (config) => {
+    config.cache = false;
+    return config;
   }
 }
 
