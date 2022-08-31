@@ -162,8 +162,7 @@ const coco = {
         weapon: {
             advancement: {
                 star6: `<abbr title='China Exclusive'></abbr> Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** ATK (cannot stack).`
-            },
-            abilities: {},
+            }
         },
         
     }
