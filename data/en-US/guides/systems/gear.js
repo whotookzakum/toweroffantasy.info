@@ -81,12 +81,12 @@ export const gear = {
                 <p>
                     Armor provides passive stat increases, and can be obtained through shops, <Link href="/guides/systems/vitality"><a>dungeons</a></Link>.<br/>
                     Each piece of armor has a set of <strong className="yellow">fixed stats</strong>, and a section for <strong className="yellow">random bonus stats</strong>. 
-                    They can be upgraded through <strong className="yellow">fusion</strong> and <strong className="yellow">enhancement</strong>.
+                    They can be upgraded through <strong className="yellow">Advancements</strong> and <strong className="yellow">Enhancements</strong>.
                 </p>
 
-                <h3>Fusion</h3>
+                <h3>Advancements</h3>
                 <p>
-                    Fusion is similar to leveling up your armor. You feed an EXP crystal or armor piece into another armor piece (must be the same type). When the EXP meter is filled, that piece will receive one star, <strong className="yellow">randomly boosting one of the bonus stats by a random amount</strong> (within a range).
+                    Advancements are where you feed an EXP crystal or armor piece into another armor piece (must be the same type). When the EXP meter is filled, that piece will receive one star, <strong className="yellow">randomly boosting one of the bonus stats by a random amount</strong> (within a range).
                 </p>
                 <p>
                     The maximum number of stars depends on the tier of the armor: blue can have 3 stars; purple can have 4; gold can have 5.
@@ -95,10 +95,10 @@ export const gear = {
                     While any armor piece can have attack lines on it, only shoes and gloves can roll crit lines. There is currently no method to change the bonus stat lines on a piece.
                 </blockquote>
                 <p>
-                    Feeding a starred piece of armor into a new one will result in reduced EXP. You can also dismantle a piece into crystals, which is useful if you have spare helmets but need to level up your shoulder piece.
+                    Feeding a starred piece of armor into a new one will result in reduced EXP (retaining about 80%). You can also dismantle a piece into crystals, which is useful if you have spare helmets but need to level up your shoulder piece.
                 </p>
 
-                <h3>Enhancement</h3>
+                <h3>Enhancements</h3>
                 <p>
                     Enhancing armor requires gold and Enhancement Modules, which are obtained through shops and <Link href="/guides/systems/dailies-and-weeklies"><a>Bygone Phantasm</a></Link>. It will add a +1 to your armor, <strong className="yellow">boosting the fixed stats</strong> of that piece.
                 </p>
