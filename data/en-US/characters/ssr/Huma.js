@@ -43,7 +43,7 @@ const huma = {
                         Axe Form: Deal damage equal to **79.4%** of ATK + **4** and knock the target back a short distance.`,
                         `Shield Form: Deal damage equal to **62.8%** of ATK + **3** and knock the target back a short distance.  
                         Axe Form: Deal damage equal to **119.9%** of ATK + **6** and knock the target back a short distance.`,
-                        `Shield Form: Deal damage equal to **184%** of ATK + **9** and launch the target into the air.  
+                        `Shield Form: Deal damage equal to **184%** of ATK + **9** and **launch the target into the air**.  
                         Axe Form: Deal damage equal to **221.3%** of ATK + **12** and knock the target back.`
                     ]
                 },
