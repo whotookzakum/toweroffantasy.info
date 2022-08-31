@@ -80,12 +80,12 @@ function Navigation() {
                             Mounts
                         </a>
                     </Link>
-                    <Link href="/cosmetics">
+                    {/* <Link href="/cosmetics">
                         <a tabIndex={0} onClick={(e) => handleClick(e)}
                             className={router.pathname.includes("cosmetics") ? "active" : ""}>
                             Cosmetics
                         </a>
-                    </Link>
+                    </Link> */}
                     <Link href="/guides">
                         <a tabIndex={0} onClick={(e) => handleClick(e)}
                             className={router.pathname.includes("guides") ? "active" : ""}>

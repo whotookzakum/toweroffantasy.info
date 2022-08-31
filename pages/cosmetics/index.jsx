@@ -7,9 +7,9 @@ import { GenderToggler } from "../../components/GenderToggler";
 import { useEffect } from "react";
 
 function Cosmetics() {
-    
     const initialState = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("outfitGender")) : "F";
     const [gender, setGender] = useState(initialState);
+
     useEffect(() => {
         localStorage.setItem("outfitGender", JSON.stringify(gender));
     });
