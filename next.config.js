@@ -7,7 +7,7 @@ const nextConfig = {
     defaultLocale: "en-US"
   },
   webpack: (config) => {
-    config.cache = false;
+    config.cache = true;
     return config;
   }
 }
