@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 1",
+        text: "Added Dust Wheeler mount preview video; Added Joint Operation drop rates guide"
+    },
+    {
         date: "August 31",
         text: "Frigg banner dates added; Updated all global weapon ability text; Fixed the names for R and N matrices"
     },

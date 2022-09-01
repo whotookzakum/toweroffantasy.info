@@ -75,7 +75,7 @@ const saki = {
                     input: ["Jump", "hold:Attack"],
                     description: 
                         `Triggered by holding basic attack, climbing, reverse jumping attack or using a jetpack to attack while in the air.  
-
+                        &nbsp;  
                         In the process of falling, each time you hit a target deal damage equal to **30.4%** of ATK + **2** damage to the target; when landing, it will cause **76%** of ATK + **4** damage to surrounding targets.`
                 },
                 {

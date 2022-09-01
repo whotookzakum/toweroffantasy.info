@@ -7,7 +7,8 @@ const dustwheeler = {
         part1: {
             source: "Rewarded at the end of the season for achieving the Grand Marshal rank in PvP.",
         }
-    }
+    },
+    videoSrc: "https://youtube.com/embed/doHVyee6UvE"
 }
 
 export default dustwheeler;

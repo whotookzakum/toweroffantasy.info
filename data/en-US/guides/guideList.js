@@ -19,6 +19,7 @@ import { maxLevelTimegates } from "./referential/max-level-timegates";
 import { planningAhead } from "./general/planning-ahead";
 import { bygoneRewards } from "./referential/bygone-phantasm-rewards";
 import { mountDropRates } from "./referential/mount-piece-drop-rates";
+import { jointopDropRates } from "./referential/joint-operation-drop-rates";
 
 export const GUIDES = [
     // GENERAL
@@ -59,6 +60,7 @@ export const GUIDES = [
     cnTopUp,
 
     // REFERENTIAL
+    jointopDropRates,
     worldBossDrops,
     mountDropRates,
     darkCrystals,
