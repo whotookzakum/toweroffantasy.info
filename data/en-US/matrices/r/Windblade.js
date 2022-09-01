@@ -5,7 +5,7 @@ const windBlade = {
     rarity:"R",
     chinaOnly: false,
     matrix: { 
-        set3: "Increase shatter capability by **18%**" 
+        set3: "Increase shatter capability by **18%**."
     }
 }
 
