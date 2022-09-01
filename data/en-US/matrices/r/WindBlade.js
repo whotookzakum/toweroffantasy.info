@@ -1,4 +1,4 @@
-const windBlade = {
+export const windBlade = {
     name:"Wind Blade",
     uri: "wind-blade",
     imgSrc: "windblade.webp",
@@ -8,5 +8,3 @@ const windBlade = {
         set3: "Increase shatter capability by **18%**."
     }
 }
-
-export default windBlade;

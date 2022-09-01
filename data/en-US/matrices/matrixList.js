@@ -11,6 +11,7 @@ import frostbot from "./sr/FrostBot";
 import robarg from "./sr/Robarg";
 import sobek from "./sr/Sobek";
 import wanderingAberrant from "./n/WanderingAberrant";
+import { windBlade } from "./r/WindBlade";
 
 const matrixList = [
     robarg,
@@ -18,7 +19,7 @@ const matrixList = [
     frostbot, 
     sobek, 
     barbarossa,
-    // windBlade,
+    windBlade,
     obstacleRemoval,
     selfExplosive,
     functionalDash, 
