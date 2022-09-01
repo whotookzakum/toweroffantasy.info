@@ -159,7 +159,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     {recMatrix.description}
                 </td>
             </tr>
-        )
+        ) 
     });
     return (
         <>
