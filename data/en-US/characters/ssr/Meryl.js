@@ -116,11 +116,11 @@ const meryl = {
                 pieces: 2,
                 description: "High damage matrix when you have high crit rate."
             },
-            // {
-            //     name: "Wind Blade",
-            //     pieces: 3,
-            //     description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
-            // }
+            {
+                name: "Wind Blade",
+                pieces: 3,
+                description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
+            }
         ]
     },
 
@@ -180,11 +180,11 @@ const meryl = {
                     pieces: 2,
                     description: "High damage matrix when you have high crit rate."
                 },
-                // {
-                //     name: "Wind Blade",
-                //     pieces: 3,
-                //     description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
-                // }
+                {
+                    name: "Wind Blade",
+                    pieces: 3,
+                    description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
+                }
             ]
         },
         matrix: {
