@@ -49,7 +49,7 @@ const frigg = {
         },
         advancement: {
             star1:
-                `Gain **1** frostiness point every time you receive **550%** &times; Frost ATK of damage in the Frost Domain. Up to **10** points can be accumulated.  
+                `Gain **1** frostiness point every time you deal **550%** &times; Frost ATK of damage in the Frost Domain. Up to **10** points can be accumulated.  
                 When Frost Domain ends, frostiness points &times; Frost ATK &times; **95%** of blast damage will be dealt to all enemies in the Frost Domain. After leaving the Frost Domain lose **1** frostiness point every **3** seconds.`,
 
             star2: `Increase the current weapon's base HP growth by **16%**.`,
