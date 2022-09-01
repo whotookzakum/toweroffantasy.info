@@ -117,15 +117,10 @@ const meryl = {
                 description: "High damage matrix when you have high crit rate."
             },
             {
-                name: "Sobek",
+                name: "Wind Blade",
                 pieces: 3,
-                description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
-            },
-            // {
-            //     name: "Wind Blade",
-            //     pieces: 3,
-            //     description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
-            // }
+                description: "Useful in the meantime to increase shatter. Currently only obtainable from Joint Operation chests. Alternatively, use Sobek 3-piece matrices."
+            }
         ]
     },
 
@@ -186,15 +181,10 @@ const meryl = {
                     description: "High damage matrix when you have high crit rate."
                 },
                 {
-                    name: "Sobek",
+                    name: "Wind Blade",
                     pieces: 3,
-                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+                    description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
                 }
-                // {
-                //     name: "Wind Blade",
-                //     pieces: 3,
-                //     description: "Useful in the meantime to increase shatter. Alternatively, use Sobek 3-piece matrices."
-                // }
             ]
         },
         matrix: {

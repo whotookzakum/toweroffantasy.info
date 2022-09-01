@@ -134,7 +134,7 @@ export function Modal({ item, children, gender }) {
         default:
             break;
     }
-    const pagesWithNoBg = ["robarg", "apophis", "frost-bot", "sobek", "barbarossa", "offensive-logic", "cleanup-agreement", "explosive-core", "bullseye", "tenet-guard", "provocateurs"];
+    const pagesWithNoBg = ["robarg", "apophis", "frost-bot", "sobek", "barbarossa", "wind-blade", "obstacle-removal", "self-explosive", "functional-dash", "standard-operation", "plunder"];
     if (pagesWithNoBg.includes(item.uri)) {
         options.bgImgPath = `bg-1.webp`;
     }
