@@ -2,7 +2,7 @@ import { CHARACTERS } from "../characters/characterList";
 import functionalDash from "./r/FunctionalDash";
 import obstacleRemoval from "./r/ObstacleRemoval";
 import selfExplosive from "./r/SelfExplosive";
-import windBlade from "./r/WindBlade";
+// import windBlade from "./r/WindBlade";
 import plunder from "./r/Plunder";
 import standardOperation from "./r/StandardOperation";
 import apophis from "./sr/Apophis";
@@ -18,7 +18,7 @@ const matrixList = [
     frostbot, 
     sobek, 
     barbarossa,
-    windBlade,
+    // windBlade,
     obstacleRemoval,
     selfExplosive,
     functionalDash, 
