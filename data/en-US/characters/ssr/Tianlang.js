@@ -51,13 +51,13 @@ const tianlang = {
         abilities: {
             normal: [
                 {
-                    name: "Wuqu",
+                    name: "Stabbystabs",
                     input: ["Attack x6"],
                     description: 
                         `While on the ground, use Powerbreak to perform 6 attacks.  
                         &nbsp;  
                         **Basic Attack Passive**:  
-                        Use Powerbreak basic attack combo **4** times to recharge Powerbreak, accumulating up to **5** charges. After charging, using any lightning element weapon dodge will discharge additional lightning strikes, dealing **5%** of missing HP (minimum **100%** of Volt ATK,maximum **1000%** of Volt ATK), and activate its own electro-sensitive body, the electro-sensitive body deals AoE volt damage equal to **2%** of missing HP (minimum **40%** of Volt ATK, maximum **400%** of Volt ATK).`,
+                        Basic attack with Powerbreak **4** times to gain a battery charge, stacking up to **5** times. When battery charged, using any volt weapon's dodge attack adds thunderstrike, dealing damage equal to **5%** of missing HP (between **100%** to **1000%** of Volt ATK), and activate inductors, dealing AoE damage equal to **2%** of missing HP (between **40%** to **400%** of Volt ATK).`,
                     breakdown: [
                         `Deal damage equal to **90.5%** of ATK + **5** and knock the target back.`,
                         `Deal damage equal to **67.9%** of ATK + **4** and knock the target back.`,
@@ -91,9 +91,9 @@ const tianlang = {
                     name: "Giant Gate",
                     input: ["Jump", "hold:Attack"],
                     description:
-                        `It can be triggered by holding basic attack, climbing, reverse jumping attack or using a jetpack to attack while in the air.  
+                        `Triggered by holding basic attack, climbing, reverse jumping attack or using a jetpack to attack while in the air.  
                         &nbsp;  
-                        In the process of falling, each time you hit a target, it will cause **38%** of ATK + **2** damage to the target; when landing, it will cause **285%** of ATK + **15** damage to surrounding targets.`
+                        In the process of falling, each time you hit a target, deal damage equal to **38%** of ATK + **2** to the target. When landing, deal damage equal to **285%** of ATK + **15** to surrounding targets.`
                 }
             ],
             dodge: [
@@ -105,7 +105,7 @@ const tianlang = {
                 {
                     name: "Lian Zhen",
                     description:
-                        `For a short time after dodging, click Basic Attack.  
+                        `In the short window after dodging, click basic attack.  
                         &nbsp;  
                         Dash to attack the target, causing a total of **172.6%** of ATK + **9** damage.`
                 }
@@ -114,19 +114,19 @@ const tianlang = {
                 {
                     name: "Greedy Wolf",
                     description:
-                        `Launch a multi-stage continuous attack, causing up to **936.9%** of ATK + **49** damage to the enemy within the range, and make the enemy units within a certain range become electro-sensitive bodies, there are up to 3 electro-sensitive bodies, and the cooldown is **30** second.
-
-                        After the Greedy Wolf is cast, it gains **lightning induction**: When the skill is released, it senses the lightning weapons in the other two equipped weapons, and gains **15%** lightning damage for each other lightning weapon sensed for **25** seconds.
-                        
-                        Electromagnetic body: When releasing any thunder weapon linking skill, the electrolytic body releases a range of **5%** of own lost health (minimum **100%** of Volt ATK, maximum **1000%** of Volt ATK), of ranged lightning damage.
-                        
-                        When carrying Break Jun, when releasing any lightning weapon skill or linking skill, it consumes **30%** of current life value to deal an additional **50%** of consumed value of lightning damage to the target (value not less than **480%** of lightning attack, not more than **3000%** of lightning attack), and obtain a short period of invincibility, after **8** seconds or when life is below **10%**, obtain **5%** of lost life per second for **8** seconds (not affected by healing effects and healed (not affected by the healing effect and the healed effect), the recovery effect does not stack.`
+                        `Launch multiple attacks, dealing up to **936.9%** of ATK + **49** damage to enemies within the range, and turn enemies within range into inductors (up to 3 at a time), cooldown **30** seconds.  
+                        &nbsp;  
+                        After casting Greedy Wolf, gain **lightning induction**: for every volt weapon equipped gain **15%** volt damage for **25** seconds.  
+                        &nbsp;  
+                        Inductor: When using a volt weapon's discharge skill, inductors deal AoE damage equal to **5%** of missing HP (between **100%** to **1000%** of Volt ATK).  
+                        &nbsp;  
+                        When one of your weapons is Powerbreak, using any volt weapon's skill or discharge skill consumes **30%** of current HP to deal additional volt damage equal to **50%** of the HP consumed (between **480%** to **3000%** of Volt ATK), and obtain a short period of invincibility. After **8** seconds or when HP is below **10%**, recover **5%** of missing HP for **8** seconds (not affected by healing effects; this recovery effect does not stack).`
                 }
             ],
             discharge: [
                 {
-                    name: "Breaking The Military",
-                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and use Powerbreak to generate large-scale lightning damage, causing a total of **844.6%** of ATK + **44** damage, and cause enemies within a certain range to be damaged. A unit or its own summons become electro-sensitive bodies, and there are up to 3 electro-sensitive bodies.`
+                    name: "Army Annihilator",
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and use Powerbreak to generate large-scale volt damage, dealing a total of **844.6%** of ATK + **44**, and electrify nearby enemies. Enemies within range become inductors (up to 3).`
                 }
             ]
         },

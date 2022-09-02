@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 2",
+        text: "Reworded some CN weapon abilities"
+    },
+    {
         date: "September 1",
         text: "Added Dust Wheeler mount preview video; Added Joint Operation drop rates guide"
     },

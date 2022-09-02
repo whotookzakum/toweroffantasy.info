@@ -83,8 +83,7 @@ const baiyuekui = {
                     name: "Whip Kick",
                     input: ["hold:Attack"],
                     description: 
-                        `After the second basic attack, hold the basic attack to trigger the whip leg.  
-                        The high kick will force the target to float in the air, and after a short charge, use the whip leg to force the target to fly, causing a total of **281.9%** of ATK + **15** damage.`
+                        `After the second basic attack, hold the basic attack to trigger the whip leg, performing a high kick that will **suspend targets**, and the second kick will **launch targets back**, dealing a total of **281.9%** of ATK + **15** damage.`
                 },
                 // {
                 //     name: "Leg Splitter",
@@ -114,8 +113,10 @@ const baiyuekui = {
                     name: "Unsheathe",
                     input: ["Arrow keys", "Dodge", "Attack"],
                     description: 
-                        `Quickly after dodging, use a basic attack to trigger the sword draw.Unleashes a slash, dealing **219.9%** of ATK + **12** points of damage, with a knockdown effect.
-                        **Passive: Hit the target with Draw Slash to instantly detonate the cupping can on its body.**`
+                        `In the short window after dodging, use a basic attack to draw Alaya.  
+                        &nbsp;  
+                        Unleashes a slash, dealing **219.9%** of ATK + **12** points of damage, with a knockdown effect.  
+                        **Passive: Hit the target with Unsheathe to instantly detonate the cupping can on its body.**`
                 }
             ],
             skill: [
@@ -123,10 +124,14 @@ const baiyuekui = {
                     name: "Dragonstyle",
                     description: 
                         `Move forward quickly, grapple the target, cool down for **25** seconds.  
-                        **The target can be grabbed**: grab the target (**strong control**) and smash the target to the ground, causing a maximum of **544.5%** of ATK + **29** damage, with a floating effect, and adding a **cupping** effect to all targets within the range.  
-                        **The target cannot be grabbed**: Use acupoints to imprison the target, causing a maximum of **544.5%** of ATK + **29** damage, with a knockback effect, and adding a **cupping** effect to all targets within the range.  
+                        &nbsp;  
+                        **Grabbable targets**: grab the target (**strong control**) and smash the target to the ground, causing a maximum of **544.5%** of ATK + **29** damage, with a floating effect, and adding a **cupping** effect to all targets within the range.  
+                        &nbsp;  
+                        **Ungrabbable targets**: Use acupoints to imprison the target, causing a maximum of **544.5%** of ATK + **29** damage, with a knockback effect, and adding a **cupping** effect to all targets within the range.  
                         During the skill animation, gain immunity to crowd control, damage, and any debuffs.  
+                        nbsp;  
                         **Cupping Can**: Explode after **5** seconds, causing **361.5%** of ATK + **19** damage, with **a strong control knockdown effect**, and the damage against the target is increased by **10%** for **5** seconds.  
+                        &nbsp;  
                         **Passive: If the skill misses the target, you can use it again within 5 seconds, and then enter a longer cooldown (30 seconds cooldown).**
                         `
                 }
