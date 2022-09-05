@@ -153,7 +153,7 @@ const marc = {
                 {
                     name: "Full Bomb Launch",
                     description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and releases a large number of missiles, dealing **513.3%** of ATK + **27** damage to the target.  
-                    Passive: In the Mech form, it is immune to control effects, and other sources other than the uncontrolled source cannot be used.`
+                    Passive: In the Mech form, become immune to control effects, but cannot use any relic other than those that free you from control effects.`
                 }
             ]
         },

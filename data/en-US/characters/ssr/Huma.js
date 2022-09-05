@@ -126,7 +126,7 @@ const huma = {
             {
                 name: "KING",
                 pieces: 2,
-                description: "Decent option if you only use Chakram of the Seas for shield breaking."
+                description: "Decent option if you only use Molten Shield V2 for shield breaking."
             },
             {
                 name: "Crow",

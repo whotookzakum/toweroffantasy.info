@@ -116,13 +116,13 @@ const saki = {
                     name: "Calm Style - Gathering Springs",
                     description: 
                         `Release the skill of Calm Style Flow to enter the charging state, continuously taunting surrounding targets, charging for up to **3** seconds, absorbing damage during charging (up to **60%** of Max HP), and dealing damage after charging ends. Damage dealt is equal to **850%** &times; Frost Attack + **50%** &times; amount of damage absored as Frost damage. **20%** of the value that is not consumed is converted into health regeneration, and cool down for **30** seconds.  
-
+                        &nbsp;  
                         When using Perserverance Resonance, switch to Calm Style, and use the Calm Style weapon skill. When using another resonance, switch to Surging Heart Style.  
-
+                        &nbsp;  
                         Release the Unbreakable skill to obtain the sword shadow that follows you, and release the Unbreakable branch skill or link. During the skill, the sword shadow will release [Surge], causing **450%** of Frost Attack range damage to the target, [Surge] cools down for **10** seconds.  
-
+                        &nbsp;  
                         **Surging Heart Style**: When the player uses any weapon to cause damage, the sword shadow releases [flow], causing **125%** of Frost attack damage to the first outside hit target and recovering **57%** of the damage value of health, the maximum recovery amount each time does not exceed aggressive **100%**, cooldown **0.8** seconds.  
-
+                        &nbsp;  
                         **Calm Style**: After the sword shadow releases [Surge], the player will get **3** blocks for **10** seconds. The maximum block amount does not exceed **15%** of Max HP. Each successful block will deal damage equal to **450%** of Frost ATK, [Surge]'s shield-breaking ability increased by **100%** and added taunting effect.`
                 }
             ],

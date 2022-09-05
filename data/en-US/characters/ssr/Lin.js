@@ -139,7 +139,7 @@ const lin = {
             discharge: [
                 {
                     name: "Gravity Weave",
-                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and release a gravity field with a strong pull, dealing damage equal to **542%** of ATK + **29**. After **5** seconds, the gravity field explodes in a wide diffusion wave, dealing **271%** of ATK + **14** damage. During the skill, become immune to damage for **2.6** seconds (does not take effect in Apex League).`
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and release a gravity field with a strong pull, dealing damage equal to **542%** of ATK + **29**. After **5** seconds, the gravity field explodes in a wide diffusion wave, dealing **271%** of ATK + **14** damage. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League).`
                 }
             ]
         },

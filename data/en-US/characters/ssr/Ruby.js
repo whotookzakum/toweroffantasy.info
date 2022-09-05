@@ -109,7 +109,7 @@ const ruby = {
                 {
                     name: "Sparky Crash",
                     description:
-                        `Sparky shoots a [**spark**] forward for **15** seconds, bouncing between the target and the player and slowing the target's movement speed for **4** seconds, cooldown **15** seconds.  
+                        `Sparky shoots a [**spark**] forward for **15** seconds, bouncing between the target and the player and slowing the target's movement and attack speed for **4** seconds, cooldown **15** seconds.  
                         &nbsp;  
                         The farther the distance, the higher the damage, up to **700%** of ATK + **37** damage. Applies the [**Hot**] mark for **25** seconds, and release 4 bullets, each dealing **50%** of ATK + **3** damage to the target.  
                         &nbsp;  
@@ -121,7 +121,7 @@ const ruby = {
             discharge: [
                 {
                     name: "Supernova Explosion",
-                    description: "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user**. Sparky turns on the charging form, continuously shoots a large-area flame beam forward, and explodes at the end, dealing **750%** of ATK + **39** points of damage; if the target is affected by a burn inflicted by you, trigger a burning or ignition when it hits Additional damage equal to **100%** of the remaining total damage (combined for multiple burns or ignitions), and during the **6**-second cooldown period, the skill is immune to damage for **2.6** seconds (does not apply in Apex League)."
+                    description: "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user**. Sparky turns on the charging form, continuously shoots a large-area flame beam forward, and explodes at the end, dealing **750%** of ATK + **39** points of damage; if the target is affected by a burn inflicted by you, ignite the burn, dealing damage equal to **100%** of the remaining total damage (combined for multiple burns or ignitions). During the **6**-second cooldown period, the skill is immune to damage for **2.6** seconds (does not apply in Apex League)." // unclear description
                 }
             ]
         },
