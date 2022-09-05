@@ -24,7 +24,7 @@ export const artificialIslandConstruction = {
                 </p>
                 <ol>
                     <li>Upgrading buildings to generate more materials*</li>
-                    <li>Currency in the housing shop (Limited Matrix pulls, Avatars, <Link href="/mounts/crimsonmeteor"><a>Crimson Meteor</a></Link>..)</li>
+                    <li>Currency in the housing shop (Limited Matrix pulls, Avatars, <Link href="/mounts/crimson-meteor"><a>Crimson Meteor</a></Link>..)</li>
                     <li>Crafting Matrices</li>
                 </ol>
                 <i>*The Development Center must be upgraded to raise the max level of other buildings.</i>
