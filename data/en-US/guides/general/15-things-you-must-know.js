@@ -65,7 +65,7 @@ export const thingsYouMustKnow = {
 
                 <iframe src="https://www.youtube.com/embed/CWBbNM2SHyw" allow="fullscreen" modestbranding={1} />
 
-                <p>The free SSR relic <Link href="/relics/colossus-arms"><a>Colossus Arms</a></Link> can be obtained on Day 1 from the Navia Ecological Park hidden quest line. You can also obtain the <Link href="/mounts/omnium-beast-vii"><a>Omnium Beast VII</a></Link> and <Link href="/mounts/voyager"><a>Voyager</a></Link> mounts.</p>
+                <p>The free SSR relic <Link href="/relics/colossus-arm"><a>Colossus Arms</a></Link> can be obtained on Day 1 from the Navia Ecological Park hidden quest line. You can also obtain the <Link href="/mounts/omnium-beast-vii"><a>Omnium Beast VII</a></Link> and <Link href="/mounts/voyager"><a>Voyager</a></Link> mounts.</p>
             </section>
 
             <section>
