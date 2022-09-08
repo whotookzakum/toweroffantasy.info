@@ -145,7 +145,7 @@ export default function PrivacyPolicyPage() {
                         </li>
                         <li>Blocking all cookies will have a negative impact upon the usability of many websites.</li>
                         <li>If you block cookies, you may not be able to use all the features on our website.</li>
-                        <li>You can manage your cookies here: <a class="nn-cmp-show" href="#">Manage Cookie Settings</a>.</li>
+                        <li>You can manage your cookies here: <a className="nn-cmp-show" href="#">Manage Cookie Settings</a>.</li>
                     </ol>
                 </li>
             </ol>

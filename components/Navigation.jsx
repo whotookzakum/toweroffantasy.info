@@ -114,7 +114,7 @@ function Navigation() {
                 </select> */}
                 <footer className="nav-footer">
                     <div>
-                        <a class="nn-cmp-show" href="#">Manage Cookies</a>
+                        <a className="nn-cmp-show" href="#">Manage Cookies</a>
                     </div>
                     <div>
                         <Link href="/privacy-policy"><a>Privacy Policy</a></Link>
