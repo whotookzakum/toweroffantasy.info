@@ -98,7 +98,7 @@ export default function CombatPage() {
                     values = [0, 0.5, 0.65];
                 }
                 else if (id === "enemyEleWeakness") {
-                    values = [0, 0.3, 0.5, 0.75];
+                    values = [0, 0.3, 0.5, 0.75, 1.2];
                 }
                 result = values[e.target.value];
                 break;
@@ -301,7 +301,7 @@ export default function CombatPage() {
                 <div className="input-wrapper">
                     <label htmlFor="enemyEleWeakness">Enemy's Elemental Weakness</label>
                     <div className="slider-wrapper">
-                        <input id="enemyEleWeakness" type="range" min="0" max="3" step="1" defaultValue="0" onChange={(e) => handleChange(e)} />
+                        <input id="enemyEleWeakness" type="range" min="0" max="4" step="1" defaultValue="0" onChange={(e) => handleChange(e)} />
                         <div className="tick-marks">
                             <span>0%</span>
                             <span>30%</span>

@@ -21,6 +21,7 @@ import { bygoneRewards } from "./referential/bygone-phantasm-rewards";
 import { mountDropRates } from "./referential/mount-piece-drop-rates";
 import { jointopDropRates } from "./referential/joint-operation-drop-rates";
 import { movementTech } from "./general/movement-tech";
+import { armorStatRanges } from "./referential/armor-rng-stat-ranges";
 
 export const GUIDES = [
     // GENERAL
@@ -65,6 +66,7 @@ export const GUIDES = [
     jointopDropRates,
     worldBossDrops,
     mountDropRates,
+    armorStatRanges,
     darkCrystals,
     maxLevelTimegates,
     bygoneRewards

@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 8",
+        text: "New SSR Simulacra Annabella added; New guides: Armor RNG upgrade ranges, Movement tech (videos coming soon); Wind blade matrices removed from Meryl and KING's recommended matrices since they are too rare to actively get;"
+    },
+    {
         date: "September 2",
         text: "Reworded some CN weapon abilities"
     },

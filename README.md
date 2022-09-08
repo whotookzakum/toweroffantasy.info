@@ -11,6 +11,7 @@ Thank you to everyone that has contributed guides, advice, game data, localizati
 - Next.js (Routing and pre-rendering)
 - SCSS
 - Netlify (Deployment)
+- CloudFlare (DNS & CDN)
 - GitHub Pages (Deployment, former)
 
 ## Milestones

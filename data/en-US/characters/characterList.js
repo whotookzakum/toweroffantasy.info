@@ -24,8 +24,10 @@ import Echo from './sr/Echo';
 import Ene from './sr/Ene';
 import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
+import Annabella from './ssr/Annabella';
 
 const characterList = [
+    Annabella,
     Tianlang,
     Lyra,
     Lin,
