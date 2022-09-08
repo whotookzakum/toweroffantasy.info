@@ -73,18 +73,21 @@ const lin = {
                     name: "Mud Scatter",
                     input: ["Attack", "hold:Attack"],
                     description: 
-                        `After the second basic attack on the ground or in the air, hold the basic attack to trigger the zero fall into mud.  
-
-                        Launch an attack at the target location, dealing **83.2%** of ATK + **4** damage and knocking the target down.  
-                        Passive: Quickly click the basic attack after the ground is released into mud, and it can be released immediately (the third layer) for a short-lived.`
+                        `After the second basic attack on the ground or in the air, hold the basic attack to trigger mud scatter.  
+                        &nbsp;  
+                        Launch an attack at the target location, dealing damage equal to **83.2%** of ATK + **4** and knocking the target down.  
+                        &nbsp;  
+                        Passive: Quickly click the basic attack after mud scatter to perform a fully charged Short-lived.`
                 },
                 {
                     name: "Short-lived",
                     input: ["hold:Attack"],
                     description: 
-                        `Hold the basic attack to release a flash in the pan, up to three layers of power can be charged, and the overlord and control-free effects can be activated during the charging period.  
-
-                        The first layer, causing **73.9%** ATK + **4** damage to the target; the second layer, causing **146.2%** of ATK + **8** damage to the target; the third layer, causing **246.2%** of ATK + **13** points of damage to the target.`
+                        `Hold the basic attack to release a Short-lived, can be charged up to three stages, gaining immunity to control effects while charging.  
+                        &nbsp;  
+                        The first stage deals damage equal to **73.9%** ATK + **4**.  
+                        The second stage deals damage equal to **146.2%** of ATK + **8**.  
+                        The third stage deals damage equal to **246.2%** of ATK + **13**.`
                 },
                 {
                     name: "Falling Shadow",
@@ -103,9 +106,9 @@ const lin = {
                     input: ["Dodge", "Attack"],
                     description: 
                         `Launch an attack on the target while dodging midair, dealing damage equal to **70%** of ATK + **4**. The hit generates **1-3 Nightblooms** and forms a field that lasts for **5** seconds that reduces enemy movement speed by **50%**.  
-
-                        Passive: can be used on the ground or in the air.
-                        
+                        &nbsp;  
+                        Passive: can be used on the ground or in the air.  
+                        &nbsp;  
                         Passive: When under control effects, immediately break out and cast the field (automatically use a dodge attack without consuming dodge count), cooldown **20** seconds.`,
                 }
             ],
@@ -136,7 +139,7 @@ const lin = {
             discharge: [
                 {
                     name: "Gravity Weave",
-                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and release a gravity field with a strong pull, dealing damage equal to **542%** of ATK + **29**. After **5** seconds, the explosion forms a diffuse wave, dealing **271%** of ATK + **14** damage. During the skill, become immune to damage for **2.6** seconds (does not take effect in Apex League).`
+                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and release a gravity field with a strong pull, dealing damage equal to **542%** of ATK + **29**. After **5** seconds, the gravity field explodes in a wide diffusion wave, dealing **271%** of ATK + **14** damage. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League).`
                 }
             ]
         },

@@ -8,7 +8,7 @@ const echo = {
         name: "Thunderous Halberd",
         element: "volt",
         type: "dps",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["S", "11.00"],
         charge: ["B", "7.00"],
         materials: ["volt", "red", "black"],

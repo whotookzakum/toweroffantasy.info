@@ -28,7 +28,7 @@ const marc = {
         name: "Dawn",
         element: "physical",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "9.00"],
         charge: ["S", "12.00"],
         materials: ["physical", "red", "black"],
@@ -67,7 +67,7 @@ const marc = {
         abilities: {
             normal: [
                 {
-                    name: "Wasteland Hunters Attack",
+                    name: "Hunter Attack",
                     input: ["Attack x4"],
                     description: `While on the ground, perform 4 basic attacks in a row.`,
                     breakdown: [
@@ -78,12 +78,12 @@ const marc = {
                     ]
                 },
                 {
-                    name: "Wasteland Hunters Heavy Punch",
+                    name: "Wild Hunter Punch",
                     input: ["Jump", "Attack"],
                     description: `Use a normal attack while in the air, which can trigger a heavy attack and cause damage to the target hit. Dealing **108.4%** of ATK + **6** damage and knocks the target back.`
                 },
                 {
-                    name: "Heavy Stereo Punch",
+                    name: "Heavy Punch",
                     input: ["Attack x5"],
                     description:
                         `When in the Mech form, perform basic attack five times in a row, hitting the same target 4 times adds a weakness lasting for 20 seconds, not stackable.  
@@ -106,22 +106,24 @@ const marc = {
                     ]
                 },
                 {
-                    name: "Double Slam",
+                    name: "Double Smash",
                     input: ["Jump", "Attack"],
                     description: `Hold Attack while jumping or when in the air to trigger a Mech Heavy Strike. When landing, causes damage to nearby targets equal to **135.4%** of ATK + **7** damage and controls the **floating** target. The higher the distance from the ground when triggered, the higher the damage, up to **600%** damage.`
                 },
                 {
-                    name: "Shoulder Cannon Launch",
+                    name: "Shoulder-gun Fire",
                     input: ["hold:Attack"],
-                    description: `The mech suit launches 3 missiles, hitting a target causes **17.8%** of ATK + **1** damage, and the explosion deals **26.7%** of ATK + **1** damage.`
+                    description: `Hold attack while in Mech form to launch 3 missiles. Hitting a target deals **17.8%** of ATK + **1** damage, the explosion deals **26.7%** of ATK + **1** damage.`
                 },
                 {
                     name: "Impact Slash",
                     input: ["Attack", "hold:Attack"],
-                    description: `Press and hold the attack to trigger the branch attack during the general attack. When in Mech form, leap up and hit the ground, dealing **250.3%** of ATK + **13** damage to nearby targets and force control the floating targets; When in original form, sprint forward, dealing **254.5%** of ATK + **13** damage to targets along the way and forcibly controlling flying targets.`
+                    description: `Press and hold the attack to trigger the branch attack during the general attack.  
+                    When in Mech form, leap up and hit the ground, dealing **250.3%** of ATK + **13** damage to nearby targets and force control the floating targets.  
+                    When in original form, sprint forward, dealing **254.5%** of ATK + **13** damage to targets along the way and forcibly controlling flying targets.`
                 },
                 {
-                    name: "Wasteland Hunters Shot",
+                    name: "Wild Hunter Shot",
                     input: ["hold:Attack"],
                     description: `Use the pistol to aim at the target and shoot, dealing **23.9%** of ATK + **1** damage to the target.`
                 }
@@ -133,25 +135,25 @@ const marc = {
                 },
                 {
                     name: "Mecha Collision",
-                    description: `Deals **149.1%** of ATK + **8** damage to the target along the way, and knocks the target back slightly.`,
+                    description: `In the short window after dodging, tap the basic attack to trigger Mecha Collision. Deals **149.1%** of ATK + **8** damage to the target along the way, and knocks the target back slightly.`,
                 },
             ],
             skill: [
                 {
                     name: "Mecha Entry",
-                    description: `Heavy Stereo jumps down, causing **395.3%** of ATK + **21** damage to surrounding targets, and strong control to knock the target up, with a **20**-second cooldown.  
+                    description: `The Mecha will jump down, dealing **395.3%** of ATK + **21** damage to surrounding targets, and **strongly suspends** targets, with a **20**-second cooldown.  
                     Passive: In the Mech form, become immune to the rigidity effect, and other sources other than the uncontrolled source cannot be used.`
                 },
                 {
-                    name: "Dismount",
-                    description: `Heavy Stereo leaps down, dealing **395.3%** of ATK + **21** damage and strongly **knocking back** surrounding targets and switching forms. Cooldown **20** seconds.`
+                    name: "Form Switch",
+                    description: `The Mecha leaps down, dealing **395.3%** of ATK + **21** damage and  **strongly suspending** surrounding targets before switching forms. Cooldown **20** seconds.`
                 }
             ],
             discharge: [
                 {
                     name: "Full Bomb Launch",
                     description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and releases a large number of missiles, dealing **513.3%** of ATK + **27** damage to the target.  
-                    Passive: In the Mech form, it is immune to the rigidity effect, and other sources other than the uncontrolled source cannot be used.`
+                    Passive: In the Mech form, become immune to control effects, but cannot use any relic other than those that free you from control effects.`
                 }
             ]
         },

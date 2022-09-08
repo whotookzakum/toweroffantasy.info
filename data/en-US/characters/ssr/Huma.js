@@ -8,7 +8,7 @@ const huma = {
         name: "Molten Shield V2",
         element: "flame",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "10.00"],
         charge: ["A", "10.00"],
         materials: ["flame", "green", "blue"],
@@ -126,7 +126,7 @@ const huma = {
             {
                 name: "KING",
                 pieces: 2,
-                description: "Decent option if you only use Chakram of the Seas for shield breaking."
+                description: "Decent option if you only use Molten Shield V2 for shield breaking."
             },
             {
                 name: "Crow",

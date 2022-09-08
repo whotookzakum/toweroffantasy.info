@@ -8,7 +8,7 @@ const zero = {
         name: "Negating Cube",
         element: "flame",
         type: "support",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["B", "5.00"],
         charge: ["S", "13.00"],
         materials: ["flame", "green", "blue"],

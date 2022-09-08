@@ -28,7 +28,7 @@ const claudia = {
         name: "Guren Blade",
         element: "physical",
         type: "dps",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "7.50"],
         charge: ["S", "12.00"],
         materials: ["physical", "red", "blue"],

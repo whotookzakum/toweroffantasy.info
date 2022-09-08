@@ -67,7 +67,7 @@ const ruby = {
                 {
                     name: "Aerial Attack",
                     input: ["Jump", "Attack x5"],
-                    description: `When you are in the air, click on the basic attack, and you can control Spark to attack 4 times in a row.`,
+                    description: `While airborne, tap basic attack to attack with Sparky 4 times in a row.`,
                     breakdown: [
                         `Deal damage equal to **97.1%** of ATK + **5** to each target.`,
                         `Deal damage equal to **106.8%** of ATK + **6** to each target.`,
@@ -78,16 +78,17 @@ const ruby = {
                 {
                     name: "Gotcha!",
                     input: ["hold:Attack"],
-                    description: `Hold normal attack, or Hold normal attack after triggering **Forbidden Realm to continuously shoot out a flame beam, dealing damage equal to 40%** of ATK + **2** to targets in your direction, while consuming stamina.`
+                    description: `Hold normal attack, or Hold normal attack after triggering **Imprisonment Cage to continuously shoot out a flame beam, dealing damage equal to 40%** of ATK + **2** to targets in your direction, while consuming stamina.`
                 },
                 {
-                    name: "Flame Fall",
+                    name: "Falling Flames",
                     input: ["Jump", "hold:Attack"],
-                    description: `Hold basic attack while in the air to trigger the flame fall. Wrapped in an energy body, it quickly falls to the ground, dealing **172.1%** of ATK + **9** damage to surrounding targets.
-                    `
+                    description: `Hold basic attack while in the air to trigger **Falling Flames**.  
+                    &nbsp;  
+                    Wrapped in an energy body, it quickly falls to the ground, dealing **172.1%** of ATK + **9** damage to surrounding targets.`
                 },
                 {
-                    name: "Forbidden Realm",
+                    name: "Imprisonment Cage",
                     input: ["Attack x2", "hold:Attack"],
                     description: `Press and hold attack after the second basic attack, dealing damage equal to **40%** of ATK + **2** to the target, and locking the target (not strong control) and burning for **3** seconds, dealing damage equal to **26.2%** of ATK + **1** per second (does not apply to bosses).`
                 }
@@ -108,15 +109,19 @@ const ruby = {
                 {
                     name: "Sparky Crash",
                     description:
-                        `Sparky shoots a [**spark**] forward for **15** seconds, bounces between the target and the player, after hitting the first time, slowing the target's action rate for **4**seconds, cooling down for **15** seconds, the farther the distance, the higher the damage, hitting the enemy can cause up to **700%** of ATK + **37** damage and apply the [**Hot**] mark for **25** seconds, and release 4 bullets at the same time, each bullet deals **50%** of ATK + **3** damage to the target; Sparky's basic attack damage to the target marked by [**Hot**] increases to **110%**. If the target has a self-inflicted burn, when [**Spark**] hits, trigger a burn or ignite an additional damage of **100%** of the remaining total damage (multiple burns or burns are combined), the cooldown is **6** seconds, and the skill cooldown is **30** seconds.  
-
-                        **Passive**: During the existence of [**Spark**], every time Sparky's basic attack deals 1 damage, the player will accumulate **1** point of [**Heat Energy**] to cool down for **0.9** seconds, up to a maximum of **8** points. When the [**Heat Energy**] reaches the upper limit, the player will get the effect of [**Ultimate Heat Energy**]. Fire attack increased by **25%** for **25** seconds.`
+                        `Sparky shoots a [**spark**] forward for **15** seconds, bouncing between the target and the player and slowing the target's movement and attack speed for **4** seconds, cooldown **15** seconds.  
+                        &nbsp;  
+                        The farther the distance, the higher the damage, up to **700%** of ATK + **37** damage. Applies the [**Hot**] mark for **25** seconds, and release 4 bullets, each dealing **50%** of ATK + **3** damage to the target.  
+                        &nbsp;  
+                        Sparky's basic attack damage to the target marked by [**Hot**] increases to **110%**. If the target is affected by a burn inflicted by you, when [**Spark**] hits, trigger a burn or ignite an additional damage of **100%** of the remaining total damage (multiple burns or burns are combined), the cooldown is **6** seconds, and the skill cooldown is **30** seconds.  
+                        &nbsp;  
+                        **Passive**: During the existence of [**Spark**], every time Sparky's basic attack deals 1 damage, gain **1** stack of [**Heat Energy**], up to one every **0.9** seconds, up to a maximum of **8** stacks. At max stacks, gain [**Ultimate Heat Energy**], increasing Flame ATK by **25%** for **25** seconds.`
                 }
             ],
             discharge: [
                 {
                     name: "Supernova Explosion",
-                    description: "When ***weapon charge*** is full or ***Phantasia*** is triggered, **clear all debuffs from the user**. Sparky turns on the charging form, continuously shoots a large-area flame beam forward, and explodes at the end, causing **750%** of ATK + **39** points of damage; if the target has self-inflicted burning, it will trigger a burning or ignition when it hits Additional damage equal to **100%** of the remaining total damage (combined for multiple burns or ignitions), and during the **6**-second cooldown period, the skill is immune to damage for **2.6** seconds (does not apply in Apex League)."
+                    description: "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user**. Sparky turns on the charging form, continuously shoots a large-area flame beam forward, and explodes at the end, dealing **750%** of ATK + **39** points of damage; if the target is affected by a burn inflicted by you, ignite the burn, dealing damage equal to **100%** of the remaining total damage (combined for multiple burns or ignitions). During the **6**-second cooldown period, the skill is immune to damage for **2.6** seconds (does not apply in Apex League)." // unclear description
                 }
             ]
         },

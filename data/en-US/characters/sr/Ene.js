@@ -8,7 +8,7 @@ const ene = {
         name: "Pummeler",
         element: "ice",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "10.00"],
         charge: ["B", "6.00"],
         materials: ["ice", "green", "black"],

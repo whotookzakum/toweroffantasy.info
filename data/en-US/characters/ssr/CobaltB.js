@@ -93,7 +93,7 @@ const cobalt = {
                     description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
                 },
                 {
-                    name: "Leap Attack",
+                    name: "Melee Break",
                     input: ["Dodge","Attack"],
                     description: `Use a basic attack immediately after dodging to trigger a melee break attack. Inflicts damage to targets in the skill range with **163.9%** of ATK + **8** damage.`,
                 }
