@@ -1,5 +1,5 @@
 [[headers]]
-  for = "/*"
+  for = "*.html"
   [headers.values]
   cache-control = '''
   public,
