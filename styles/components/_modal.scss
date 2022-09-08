@@ -339,49 +339,67 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
+    row-gap: 1rem;
+}
 
+.weapon-stat {
+    display: flex;
+    align-items: center;
+    gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
 
-    .weapon-stat {
-        display: flex;
-        align-items: center;
-        gap: clamp(.5rem, calc(.47rem + .14vw), .63rem);
-
-        h5,
-        h4 {
-            line-height: 1;
-        }
-
-        h5 {
-            color: clr(text, gray);
-            font-weight: normal;
-        }
-
-        h4 {
-            text-transform: uppercase;
-        }
-
-        img,
-        i {
-            display: inline-block;
-            width: 34px;
-            height: 31px;
-            filter: drop-shadow(0 2px 2px rgba(23, 23, 23, 1));
-        }
-
-        i {
-            background-color: clr(tier, base);
-            color: clr(tier, a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            transform: skew(-9deg, 0deg);
-        }
+    h5,
+    h4 {
+        line-height: 1;
     }
 
+    h5 {
+        color: clr(text, gray);
+        font-weight: normal;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+
+    img,
+    i {
+        display: inline-block;
+        width: 34px;
+        height: 31px;
+        filter: drop-shadow(0 2px 2px rgba(23, 23, 23, 1));
+    }
+
+    i {
+        background-color: clr(tier, base);
+        color: clr(tier, a);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        transform: skew(-9deg, 0deg);
+    }
+}
+
+.base-stats {
+    display: flex;
+    --ratio: 0.8;
+    font-size: calc(1rem * var(--ratio));
+
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 0.25rem;
+    }
+
+    img {
+        filter: invert(1) brightness(1.3) drop-shadow($shadow);
+        width: calc(34px * var(--ratio));
+        object-fit: scale-down;
+    }
 }
 
 .weapon-effects,

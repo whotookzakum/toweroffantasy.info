@@ -8,7 +8,7 @@ const hilda = {
         name: "The Terminator",
         element: "ice",
         type: "dps",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "10.00"],
         charge: ["A", "10.00"],
         materials: ["ice", "red", "blue"],

@@ -8,7 +8,7 @@ const king = {
         name: "Scythe of the Crow",
         element: "flame",
         type: "dps",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["S", "12.50"],
         charge: ["B", "5.00"],
         materials: ["flame", "green", "blue"],

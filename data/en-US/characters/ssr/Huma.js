@@ -8,7 +8,7 @@ const huma = {
         name: "Molten Shield V2",
         element: "flame",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "10.00"],
         charge: ["A", "10.00"],
         materials: ["flame", "green", "blue"],

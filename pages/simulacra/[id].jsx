@@ -159,7 +159,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     {recMatrix.description}
                 </td>
             </tr>
-        ) 
+        )
     });
     return (
         <>
@@ -205,7 +205,32 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                                         <h4>{weapon.charge[1]}</h4>
                                     </div>
                                 </div>
+                                <div className="weapon-stat">
+                                    <div className="base-stats">
+                                        <div>
+                                            <h4>{weapon.baseStats[0]}</h4>
+                                            <img src={`/static/images/stats/${weapon.baseStats[0]}.webp`} alt={weapon.baseStats[0]} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="weapon-stat">
+                                    <div className="base-stats">
+                                        <div>
+                                            <h4>{weapon.baseStats[1]}</h4>
+                                            <img src={`/static/images/stats/${weapon.baseStats[1]}.webp`} alt={weapon.baseStats[1]} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="weapon-stat">
+                                    <div className="base-stats">
+                                        <div>
+                                            <h4>{weapon.baseStats[2]}</h4>
+                                            <img src={`/static/images/stats/${weapon.baseStats[2]}.webp`} alt={weapon.baseStats[2]} />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                     <section className="weapon-effects w-75ch">
@@ -254,7 +279,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </>
                         </section>
                     }
-                    
+
                     <section className="weapon-materials w-75ch" >
                         <h3 className="anchor">Upgrade Materials</h3>
                         <ul>{weaponMaterials}</ul>

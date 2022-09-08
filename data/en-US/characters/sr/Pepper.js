@@ -8,7 +8,7 @@ const pepper = {
         name: "Staff of Scars",
         element: "volt",
         type: "support",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["B", "4.00"],
         charge: ["A", "10.00"],
         materials: ["volt", "red", "black"],

@@ -8,7 +8,7 @@ const coco = {
         name: "Absolute Zero",
         element: "ice",
         type: "support",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["B", "4.00"],
         charge: ["S", "12.50"],
         materials: ["ice", "green", "black"],

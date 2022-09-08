@@ -8,7 +8,7 @@ const meryl = {
         name: "Rosy Edge",
         element: "ice",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["S", "12.00"],
         charge: ["B", "4.00"],
         materials: ["ice", "red", "black"],

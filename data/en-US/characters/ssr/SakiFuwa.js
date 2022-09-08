@@ -20,7 +20,7 @@ const saki = {
         name: "Ryusen Toshin",
         element: "ice",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["S", "13.90"],
         charge: ["A", "8.00"],
         materials: ["ice", "red", "black"],

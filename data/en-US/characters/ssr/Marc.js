@@ -28,7 +28,7 @@ const marc = {
         name: "Dawn",
         element: "physical",
         type: "defense",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["A", "9.00"],
         charge: ["S", "12.00"],
         materials: ["physical", "red", "black"],
