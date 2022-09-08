@@ -125,6 +125,12 @@
     font-size: 0.9rem;
     margin-top: auto;
     width: calc($sidenav-width - 4rem);
+
+    a {
+        color: inherit;
+        font-size: inherit;
+        text-decoration: underline;
+    }
 }
 
 .nav-backdrop {

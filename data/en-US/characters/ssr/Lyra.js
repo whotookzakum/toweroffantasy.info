@@ -19,7 +19,7 @@ const lyra = {
         name: "Vespers",
         element: "physical",
         type: "support",
-        baseStats: ["attack", "defense", "health"],
+        baseStats: ["attack", "resistance", "health"],
         shatter: ["S", "12.00"],
         charge: ["A", "10.00"],
         materials: ["physical", "black", "red"],

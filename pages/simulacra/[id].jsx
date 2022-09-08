@@ -170,7 +170,14 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
-
+<div id="nn_lb1"></div>
+<div id="nn_lb3"></div>
+<div id="nn_mobile_mpu1"></div>
+<div id="nn_mobile_lb1"></div>
+<div id="nn_mobile_lb2"></div>
+<div id="nn_lb2"></div>
+<div id="nn_mobile_mpu2"></div>
+<div id="nn_player"></div>
                     <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
@@ -230,7 +237,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                     <section className="weapon-effects w-75ch">
