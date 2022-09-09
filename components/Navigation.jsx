@@ -113,12 +113,12 @@ function Navigation() {
                     <option value="lang-ru">Русский</option>
                 </select> */}
                 <footer className="nav-footer">
-                    <div>
+                    {/* <div>
                         <a className="nn-cmp-show" href="#">Manage Cookies</a>
                     </div>
                     <div>
                         <Link href="/privacy-policy"><a>Privacy Policy</a></Link>
-                    </div>
+                    </div> */}
                     <div>
                         &copy; Tower of Fantasy Index.
                     </div>
