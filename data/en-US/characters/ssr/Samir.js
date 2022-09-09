@@ -160,7 +160,61 @@ const samir = {
                     pieces: 3,
                     description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
                 }
-            ]
+            ],
+            abilities: {
+                normal: [
+                    {
+                        name: "Dual Fire",
+                        input: ["Attack x5"],
+                        description: 'While on the ground, tap normal attack to attack 5 times in a row.',
+                        breakdown: [
+                            'Deal total damage equal to **51.9%** of ATK + **3**.',
+                            'Deal total damage equal to **39.4%** of ATK + **2**.',
+                            'Deal total damage equal to **131.6%** of ATK + **7**.',
+                            'Deal total damage equal to **124.4%** of ATK + **7**.',
+                            'Deal total damage equal to **169.4%** of ATK + **9** and **launch** the target.'
+                        ]
+                    },
+                    {
+                        name: "Bullet Rain",
+                        input: ['Jump', 'Attack'],
+                        description: 'While airborne, tap normal attack to fire continuously at the ground, dealing damage equal to **55.6%** of ATK + **3** each hit. Consumes **150** Endurance.'
+                    },
+                    {
+                        name: "Energy Burst",
+                        input: ['hold:Attack'],
+                        description: 'Hold attack button to maintain constant fire, each hit dealing **25.3%** x ATK + **1** base damage.'
+                    },
+                    {
+                        name: "Phantom Kick",
+                        input: ['Jump', 'hold:Attack'],
+                        description: 'While airborne, tap and hold normal attack to trigger Phantom Kick. Knock the target down and deal damage equal to **77.5%** of ATK + **4**. Upon landing, deal damage equal to **108.5%** of ATK + **6** to nearby targets and **launch** them.'
+                    }
+                ],
+                dodge: [
+                    {
+                        name: "Dodge",
+                        description: 'Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.'
+                    },
+                    {
+                        name: "Rising Lightning Kick",
+                        input: ['Dodge', 'Attack'],
+                        description: 'Tap normal attack after dodging to **knock targets into the air** and deal damage equal to **134.8%** of ATK + **7**.'
+                    }
+                ],
+                skill: [
+                    {
+                        name: "Electro Field",
+                        description: 'Fire an energy field at the target location, reflecting beams within the barrier. Deal damage equal to **296.8%** of ATK + **16**, and the last hit **strongly suspends** targets. Cooldown: **45** seconds.'
+                    }
+                ],
+                discharge: [
+                    {
+                        name: "Domain of Thunder",
+                        description: 'When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a Domain of Thunder at the target location upon switching to this weapon, dealing a total of **262.2%** of ATK + **14** damage over 3 attacks to enemies **within the area** and dispelling their buffs. The domain lasts for **3.5** seconds and deals damage equal to **46.6%** of ATK + **2** to a target every **0.5** seconds.'
+                    }
+                ]
+            },
         }, 
         matrix: {
             set2: `<abbr title='China Exclusive'></abbr> Increase damage progressively by **1.5%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **2** seconds.`,

@@ -136,11 +136,6 @@ const frigg = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["samir", "crow"],
-            set4: ["frigg", "saki-fuwa"],
-            set3: ["sobek"]
-        },
         recommendedMatrices: [
             {
                 name: "Samir",

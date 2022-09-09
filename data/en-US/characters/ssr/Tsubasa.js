@@ -146,10 +146,62 @@ const tsubasa = {
                 star1: `<abbr title='China Exclusive'></abbr> Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **8%** for **15** seconds. Stack up to **3** times.`
             },
             abilities: {
+                normal: [
+                    {
+                        name: "Quickdraw",
+                        input: ["Attack x5"],
+                        description: `While on the ground, draw the bow repeatedly to attack 5 times.`,
+                        breakdown: [
+                            'Deal damage equal to **51.3%** of ATK + **3**.',
+                            'Deal damage equal to **45.8%** of ATK + **2**.',
+                            'Deal damage equal to **82.4%** of ATK + **4**.',
+                            'Deal damage equal to **127.2%** of ATK + **7**.',
+                            'Deal damage equal to **118.2%** of ATK + **6** and knock the target back a short distance.'
+                        ]   
+                    },
+                    {
+                        name: "Charged Arrow",
+                        input: ["hold:Attack"],
+                        description: `Tap and hold normal attack to charge the weapon. Deal basic damage equal to **92.2%** of ATK + **5**, and **50%** more for each 1 second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers).`
+                    },
+                    {
+                        name: "Arrow Rain",
+                        input: ["Attack","hold:Attack"],
+                        description: `After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **301.6%** of ATK + **16** area damage to targets.`
+                    },
+                    {
+                        name: "Air Volley",
+                        input: ["Jump","Attack x4"],
+                        description: `While airborne, tap normal attack to attack 4 times in a row in the air.`,
+                        breakdown: [
+                            'Deal damage equal to **59.1%** of ATK + **3**.',
+                            'Deal damage equal to **77.8%** of ATK + **4**.',
+                            'Deal damage equal to **118.3%** of ATK + **6**.',
+                            'Deal damage equal to **178.5%** of ATK + **9**.'
+                        ]    
+                    }
+                ],
+                dodge: [
+                    {
+                        name: "Dodge",
+                        description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`
+                    },
+                    {
+                        name: "Loaded Arrow",
+                        input: ["Dodge","Attack"],
+                        description: `Tap attack after dodging to trigger a Loaded Arrow, which **knocking the target back** and dealing damage equal to **130.2%** of ATK + **7**.`
+                    }
+                ],
+                skill: [
+                    {
+                        name: "Piercing Arrow",
+                        description: `Perform a backflip and fire **3** piercing arrows, with the main arrow deals damage equal to **271.2%** of ATK + **14**, and the other two arrows deal 60% damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds.`
+                    }
+                ],
                 discharge: [
                     {
                         name: "Explosive Barrage",
-                        description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, increasing damage dealt by **15%**, and speed by **45%** for **7** seconds.`
+                        description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **598%** of ATK + **31**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, increasing damage dealt by **15%**, and speed by **45%** for **7** seconds.`
                     }
                 ]
             },
