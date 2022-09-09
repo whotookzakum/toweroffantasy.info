@@ -4,13 +4,10 @@ import Script from 'next/script'
 export default function Document() {
     return (
         <Html>
-            <Head>
-                <script async  />
-            </Head>
             <body>
                 <Main />
                 <NextScript />
-                <Script async src="https://kumo.network-n.com/dist/app.js" site="toweroffantasyinfo" strategy="beforeInteractive" />
+                {/* <Script async src="https://kumo.network-n.com/dist/app.js" site="toweroffantasyinfo" strategy="beforeInteractive" /> */}
             </body>
         </Html>
     )

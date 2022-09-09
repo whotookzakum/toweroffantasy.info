@@ -101,7 +101,7 @@ const cobalt = {
             skill: [
                 {
                     name: "Barrage",
-                    description: `Continuously fires at targets within the skill range, causing a total of 700% of ATK + 35 damage, cooldown 60 second.`,
+                    description: `Continuously fires at targets within the skill range, causing a total of **700%** of ATK + **35** damage, cooldown **60** seconds.`,
                 }
             ],
             discharge: [
