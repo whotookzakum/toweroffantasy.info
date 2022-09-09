@@ -161,6 +161,192 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             </tr>
         )
     });
+    const weaponUpgrades = [
+        {
+            isAugment: false,
+            weaponLevel: "0 to 10",
+            goldCost: "400"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 20,
+            goldCost: "400",
+            materialCount: [2],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "10 to 20",
+            goldCost: "600"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 30,
+            goldCost: "800",
+            materialCount: [2],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "20 to 30",
+            goldCost: "900"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 40,
+            goldCost: "1200",
+            materialCount: [3, 3],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "30 to 40",
+            goldCost: "1200"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 50,
+            goldCost: "1600",
+            materialCount: [3, 3, 3],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "40 to 50",
+            goldCost: "1700"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 60,
+            goldCost: "2000",
+            materialCount: [4, 4, 4],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "50 to 60",
+            goldCost: "2200"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 70,
+            goldCost: "2400",
+            materialCount: [6, 6, 6],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "60 to 70",
+            goldCost: "2900"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 80,
+            goldCost: "2800",
+            materialCount: [8, 8, 8],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "70 to 80",
+            goldCost: "3900"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 90,
+            goldCost: "3200",
+            materialCount: [11, 11, 11],
+            materialTier: 1
+        },
+        {
+            isAugment: false,
+            weaponLevel: "80 to 90",
+            goldCost: "5000"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 100,
+            goldCost: "3600",
+            materialCount: [5, 5, 5],
+            materialTier: 2
+        },
+        {
+            isAugment: false,
+            weaponLevel: "90 to 100",
+            goldCost: "5800"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 110,
+            goldCost: "4000",
+            materialCount: [6, 6, 6],
+            materialTier: 2
+        },
+        {
+            isAugment: false,
+            weaponLevel: "100 to 110",
+            goldCost: "6400"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 120,
+            goldCost: "4400",
+            materialCount: [8, 8, 8],
+            materialTier: 2
+        },
+        {
+            isAugment: false,
+            weaponLevel: "110 to 120",
+            goldCost: "7100"
+        },
+        {
+            isAugment: true,
+            weaponLevel: 130,
+            goldCost: "4800",
+            materialCount: [11, 11, 11],
+            materialTier: 2
+        },
+    ]
+    const weaponUpgradeTable = weaponUpgrades.map(data => {
+
+        let materialCount = null;
+        if (data.materialCount) {
+            materialCount = data.materialCount.map((value, index) => {
+                const thisMat = weapon.materials[index];
+                const tier = data.materialTier;
+                const matImg = <img src={`/static/images/mat/${thisMat + tier}.webp`} alt="Upgrade Material" />
+                let rarity = 5;
+                if (["flame", "ice", "volt", "physical"].includes(thisMat) && tier < 5) {
+                    rarity = tier + 1;
+                }
+                else if (["red", "green"].includes(thisMat) && tier < 4) {
+                    rarity = tier + 2;
+                }
+                else if (["black", "blue"].includes(thisMat) && tier < 3) {
+                    rarity = tier + 3;
+                }
+                return (
+                    <div key={thisMat + tier} className="upgrade-material">
+                        <div className={`item-frame rarity-${rarity}`}>
+                            {matImg}
+                        </div>
+                        <h3>x{value}</h3>
+                    </div>
+                )
+            })
+        }
+
+        const goldAndExpCost = `${data.goldCost}g, ${data.goldCost} EXP`;
+        const materialCost = <>{data.goldCost}g {materialCount}</>
+
+        return (
+            <tr key={data.weaponLevel}>
+                <td>{data.isAugment && data.weaponLevel / 2}</td>
+                <td>{data.isAugment ? `augment to ${data.weaponLevel}` : data.weaponLevel}</td>
+                <td>{data.isAugment ? materialCost : goldAndExpCost}</td>
+            </tr>
+        )
+    })
     return (
         <>
             <Head>
@@ -170,14 +356,14 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
-<div id="nn_lb1"></div>
-<div id="nn_lb3"></div>
-<div id="nn_mobile_mpu1"></div>
-<div id="nn_mobile_lb1"></div>
-<div id="nn_mobile_lb2"></div>
-<div id="nn_lb2"></div>
-<div id="nn_mobile_mpu2"></div>
-<div id="nn_player"></div>
+                    <div id="nn_lb1"></div>
+                    <div id="nn_lb3"></div>
+                    <div id="nn_mobile_mpu1"></div>
+                    <div id="nn_mobile_lb1"></div>
+                    <div id="nn_mobile_lb2"></div>
+                    <div id="nn_lb2"></div>
+                    <div id="nn_mobile_mpu2"></div>
+                    <div id="nn_player"></div>
                     <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
@@ -289,6 +475,205 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                     <section className="weapon-materials w-75ch" >
                         <h3 className="anchor">Upgrade Materials</h3>
                         <ul>{weaponMaterials}</ul>
+                    </section>
+
+                    <section className="weapon-materials w-75ch">
+                        <h3 className="anchor">Upgrade Materials</h3>
+                        <table className="modal-table">
+                            {/* <thead>
+                                <tr>
+                                    <th>Req. Wanderer Lv.</th>
+                                    <th>Weapon Level</th>
+                                    <th>Gold (and EXP)</th>
+                                    <th>Materials</th>
+                                    
+                                </tr>
+                            </thead> */}
+                            <thead style={{ borderColor: elementColor }}>
+                                <tr>
+                                    <th><h6>Req. Wanderer Lv.</h6></th>
+                                    <th><h6>Weapon Level</h6></th>
+                                    <th><h6>Materials</h6></th>
+                                </tr>
+                            </thead>
+                            {/* <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>0 to 10</td>
+                                    <td>400g, 400 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>augment to 20</td>
+                                    <td>400g, x2</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>10 to 20</td>
+                                    <td>600g, 600 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>augment to 30</td>
+                                    <td>800g, x2</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>20 to 30</td>
+                                    <td>900g, 900 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>augment to 40</td>
+                                    <td>1200g, x3 x3</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>30 to 40</td>
+                                    <td>1200g, 1200 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>augment to 50</td>
+                                    <td>1600g, x3 x3 x3</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>40 to 50</td>
+                                    <td>1700g, 1700 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>augment to 60</td>
+                                    <td>2000g, x4 x4 x4</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>50 to 60</td>
+                                    <td>2200g, 2200 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>35</td>
+                                    <td>augment to 70</td>
+                                    <td>2400g, x6 x6 x6</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>60 to 70</td>
+                                    <td>2900g, 2900 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>augment to 80</td>
+                                    <td>2800g, x8 x8 x8</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>70 to 80</td>
+                                    <td>3900g, 3900 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>augment to 90</td>
+                                    <td>3200g, x11 x11 x11</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>80 to 90</td>
+                                    <td>5000g, 5000 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>augment to 100</td>
+                                    <td>3600g, x5 x5 x5</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>90 to 100</td>
+                                    <td>5800g, 5800 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>55</td>
+                                    <td>augment to 110</td>
+                                    <td>4000g, x6 x6 x6</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>100 to 110</td>
+                                    <td>6400g, 6400 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>augment to 120</td>
+                                    <td>4400g, x8 x8 x8</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>110 to 120</td>
+                                    <td>7100g, 7100 EXP</td>
+                                </tr>
+                                <tr>
+                                    <td>65</td>
+                                    <td>augment to 130</td>
+                                    <td>4800g, x11 x11 x11</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>70</td>
+                                    <td>augment to 140</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>75</td>
+                                    <td>augment to 150</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>80</td>
+                                    <td>augment to 160</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>85</td>
+                                    <td>augment to 170</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>90</td>
+                                    <td>augment to 180</td>
+                                    <td></td>
+                                </tr>
+                            </tbody> */}
+                            <tbody>
+                                {weaponUpgradeTable}
+                            </tbody>
+                        </table>
+                        <span>Augmenting is the process of raising the level cap of a weapon. By augmenting a weapon to level 60, weapon abilities will be raised to Lv. 6 and the flat number in their descriptions (after the damage %) will be increased.</span>
+                        <span>Enhancement costs (EXP and Gold) are 1:1. EXP can overflow so the cost may be lower than what is shown on the table.</span>
                     </section>
 
                     {simulacrum.rarity === "SSR" &&

@@ -449,6 +449,34 @@
             }
         }
     }
+
+    .modal-table th:first-of-type {
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    td:last-child {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .upgrade-material {
+        position: relative;
+        
+        img {
+            width: 90px;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: -1px;
+            text-shadow: $shadow;
+            right: 3px;
+            z-index: 10;
+        }
+    }
 }
 
 .weapon-rec-matrices {
