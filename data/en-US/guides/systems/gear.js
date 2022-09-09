@@ -30,7 +30,10 @@ export const gear = {
                     To level up a weapon, you will need <strong>Weapon EXP batteries</strong> which are obtained through <Link href="/guides/systems/gacha"><a>gacha</a></Link>, shops, password boxes, and more. Each level boosts the base stats of that weapon.
                 </p>
                 <p>
-                    Every 10 levels, you will need <strong>Weapon Upgrade Materials</strong> to raise the level cap another 10 levels. They are obtained through <Link href="/guides/systems/vitality"><a>dungeons</a></Link>, shops, battle pass, events, and more.<br/>
+                    Every 10 levels, you will need <strong>Augmentation Materials</strong> to raise the level cap another 10 levels. They are obtained through <Link href="/guides/systems/vitality"><a>dungeons</a></Link>, shops, battle pass, events, and more.<br/>
+                </p>
+                <p>
+                    By augmenting a weapon to level 60, weapon abilities will be raised to Lv. 6 and the flat number in their descriptions (after the damage %) will be increased.
                 </p>
                 <p>
                     The maximum weapon level is 2x your character level (raises every 5 character levels).

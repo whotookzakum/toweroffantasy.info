@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "September 9",
-        text: "Updated Frigg skill description; Clarified Annabella's 1 star advancement and added weapon abilities and recommended matrices; Tianlang's Volt Resonance corrected to Volt Reaction"
+        text: "Weapon upgrade materials are now more detailed; Updated Frigg skill description; Clarified Annabella's 1 star advancement and added weapon abilities and recommended matrices; Tianlang's Volt Resonance corrected to Volt Reaction; Fixed Lin's skill (added volt resonance damage boost)"
     },
     {
         date: "September 8",
