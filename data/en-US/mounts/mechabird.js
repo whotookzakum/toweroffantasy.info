@@ -2,7 +2,7 @@ const mechabird = {
     name: "Mechabird",
     uri: "mechabird",
     imgSrc: "mechabird.webp",
-    chinaOnly: true,
+    chinaOnly: false,
     parts: {
         part1: {
             source: "Purchasable from event shop during event period.",
@@ -14,7 +14,9 @@ const mechabird = {
             source: "Purchasable from event shop during event period.",
         },
         part4: {
-            source: "Reward for server progress reaching 100% during event period.",
+            source: 
+                `Purchasable from event shop during event period.  
+                <abbr title="China Exclusive"></abbr> Reward for server progress reaching 100% during event period.`,
         },
     },
     videoSrc: "https://www.youtube.com/embed/-JJNBnwHjcM"

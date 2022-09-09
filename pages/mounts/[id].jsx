@@ -6,6 +6,7 @@ import CNTag from "../../components/CNTag";
 import { Modal } from "../../components/Modal";
 import { removeSpace } from '../../utils/stringHelper';
 import Link from "next/link";
+import rehypeRaw from "rehype-raw";
 
 export async function getStaticProps({ params }) {
     const mount = await getMountData(params.id);
@@ -33,7 +34,7 @@ export default function MountModal({ mount }) {
                     <img className="mount-part-img" src={`/static/images/mounts/${removeSpace(mount.name)}-${partNum}.webp`} alt={`${mount.name} Part ${partNum}`} />
                     <div className="mount-part-text" >
                         <div className="flex">
-                            <ReactMarkdown>{value.source}</ReactMarkdown>&nbsp;
+                            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{value.source}</ReactMarkdown>&nbsp;
                             {value.dropRateKnown ? <Link href="/guides/referential/mount-piece-drop-rates"><a>View drop rate</a></Link> : null}
                         </div>
                         {value.map &&
