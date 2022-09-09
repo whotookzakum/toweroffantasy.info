@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 9",
+        text: "Updated Frigg skill description; Clarified Annabella's 1 star advancement and added weapon abilities and recommended matrices; Tianlang's Volt Resonance corrected to Volt Reaction"
+    },
+    {
         date: "September 8",
         text: "New SSR Simulacra Annabella added; New guides: Armor RNG upgrade ranges, Movement tech (videos coming soon); Wind blade matrices removed from Meryl and KING's recommended matrices since they are too rare to actively get; Added base stats for weapons"
     },
