@@ -26,9 +26,9 @@ const tianlang = {
         materials: ["volt", "green", "blue"],
         bonusEffect: {
             effect1: {
-                title: "Volt Resonance",
+                title: "Volt Reaction",
                 description: 
-                    `Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others.`
+                    `Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Volt Resonance.`
             }
         },
         advancement: {

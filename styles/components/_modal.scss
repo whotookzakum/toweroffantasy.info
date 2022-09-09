@@ -430,23 +430,55 @@
     }
 }
 
+.awakening-traits i {
+    color: clr(text, gray);
+}
+
 .weapon-materials {
 
-    ul {
-        padding: 1rem;
-        background-color: clr(container, light);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    .modal-table th:first-of-type {
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    .upgrade-materials {
+        position: relative;
+        display: flex;
+        align-items: center;
         gap: 1rem;
-        box-shadow: $shadow;
+    }
 
-        li {
-            justify-self: center;
-            box-shadow: $shadow;
+    p, i {
+        color: clr(text, gray);
+    }
 
-            img {
-                width: 90px;
-            }
+    strong {
+        color: clr(text, clay);
+    }
+
+    .item-frame {
+        width: 60px;
+    }
+
+    .upgrade-material {
+        position: relative;
+        
+        img {
+            width: 76px;
+        }
+
+        h3, h4 {
+            position: absolute;
+            bottom: -1px;
+            text-shadow: $shadow;
+            right: 3px;
+            font-size: 1.2rem;
+            z-index: 10;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            
         }
     }
 }

@@ -113,8 +113,17 @@ function Navigation() {
                     <option value="lang-ru">Русский</option>
                 </select> */}
                 <footer className="nav-footer">
-                    &copy; Tower of Fantasy Index.<br /> All rights reserved.
+                    {/* <div>
+                        <a className="nn-cmp-show" href="#">Manage Cookies</a>
+                    </div>
+                    <div>
+                        <Link href="/privacy-policy"><a>Privacy Policy</a></Link>
+                    </div> */}
+                    <div>
+                        &copy; Tower of Fantasy Index.
+                    </div>
                 </footer>
+
             </div>
         </nav>
     );

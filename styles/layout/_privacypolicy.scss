@@ -1,0 +1,34 @@
+.privacy-policy {
+
+
+    ol {
+        list-style-type: none;
+        counter-reset: item;
+        padding-left: 20px;
+
+        li {
+            display: table;
+            counter-increment: item;
+            margin: 0.6em 0;
+        }
+
+        li:before {
+            content: counters(item, ".") ". ";
+            display: table-cell;
+            padding-right: 0.6em;
+        }
+    }
+
+    li ol>li:before {
+        content: counters(item, ".") " ";
+    }
+
+    .letter-list {
+        counter-reset: item;
+
+        li::before {
+            content: counter(item, lower-alpha) ". ";
+            counter-increment: letter;
+        }
+    }
+}

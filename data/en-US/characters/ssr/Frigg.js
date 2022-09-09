@@ -55,7 +55,7 @@ const frigg = {
             star2: `Increase the current weapon's base HP growth by **16%**.`,
 
             star3:
-                `Increase frostiness limit to **15**. When using discharge skills of frost weapons in the frost domain, deal damage equal to **20%** of frost ATK &times; (current frostiness +5) to all targets in the frost domain.`,
+                `The maximum frostiness is increased to **15** points. Unleashing discharge skills with frost weapons in the Frost Domain will deal **25%** &times; Frost ATK of damage to all targets in the Frost Domain (Gain +5 frostiness points).`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
@@ -63,7 +63,7 @@ const frigg = {
                 `Shattering shields using frost weapons in the Frost Domain will freeze the target for **2** seconds and cause frostiness points &times; Frost ATK &times; **35%** of additional damage (if the target cannot be frozen, double the additional damage dealt).`,
 
             star6:
-                `When frostiness reaches **15** points and you are in the Frost Domain, you will get an additional "Domain of Frost II" that increases Frost ATK by **12%** when frost weapons are used.`
+                `When frostiness reaches **15** points and you are in the Frost Domain, you will get an additional "Domain of Frost II" that increases Frost ATK by **25%** when frost weapons are used.`
         },
         abilities: {
             normal: [
@@ -126,7 +126,7 @@ const frigg = {
                     description:
                         `Slash the space around the Wanderer, dealing total damage equal to **577.5%** of ATK + **30**. Can suspend and launch targets, and grant damage immunity while this skill is being used. **30**-second cooldown.  
                         After unleashing **"Fimbulwinter"** a large frost domain will be formed around you for **25** seconds. The number of dodges you can perform will not be deducted when you perform the Balmung dodge within the frost domain.  
-                        Grant "Domain of Frost I" when you are in the frost domain, and increase shatter by **25%** when using a frost weapon.`
+                        Grant "Domain of Frost I" when you are in the frost domain, increase frost ATK by **15%**, and shatter by **25%** when using a frost weapon.`
                 },
             ],
             discharge: [

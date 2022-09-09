@@ -135,6 +135,7 @@ const marc = {
                 },
                 {
                     name: "Mecha Collision",
+                    input: ["Dodge", "Attack"],
                     description: `In the short window after dodging, tap the basic attack to trigger Mecha Collision. Deals **149.1%** of ATK + **8** damage to the target along the way, and knocks the target back slightly.`,
                 },
             ],

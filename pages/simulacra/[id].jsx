@@ -11,6 +11,7 @@ import Link from "next/link";
 import { MATRICES } from "../../data/en-US/matrices/matrixList";
 import _ from 'lodash';
 import { VersionToggler } from "../../components/VersionToggler";
+import { weaponUpgrades } from "../../data/en-US/characters/weaponUpgrades";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -53,28 +54,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             </div>
         )
     })
-    const weaponMaterials = weapon.materials.map(material => {
-        let result = [];
-        for (let i = 0; i < 3; i++) {
-            const materialUri = material + (i + 1);
-            let rarity = 5;
-            if (["flame", "ice", "volt", "physical"].includes(material)) {
-                rarity = i + 2;
-            }
-            else if (["red", "green"].includes(material)) {
-                rarity = i + 3;
-            }
-            else if (["black", "blue"].includes(material)) {
-                if (i < 2) rarity = i + 4;
-            }
-            result.push(
-                <li key={materialUri} className={`item-frame rarity-${rarity}`}>
-                    <img src={`/static/images/mat/${materialUri}.webp`} alt={materialUri} />
-                </li>
-            );
-        }
-        return result;
-    });
     let veraGiftDisclaimer = false;
     const giftCategories = awakening.giftCategories.map(giftCategory => {
         if (giftCategory === "vera") veraGiftDisclaimer = true;
@@ -161,6 +140,70 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             </tr>
         )
     });
+
+
+
+    let wepUpgradesData = weaponUpgrades[version];
+    if (simulacrum.chinaOnly) {
+        wepUpgradesData = weaponUpgrades.china;
+    }
+    if (simulacrum.name === "Lin") {
+        wepUpgradesData = weaponUpgrades.lin;
+    }
+    const weaponUpgradeTable = wepUpgradesData.map((data, index) => {
+
+        const augmentMats = data.augmentMatCount.map((value, index) => {
+            const thisMat = weapon.materials[index];
+            const tier = data.materialTier;
+            const matImg = <img src={`/static/images/mat/${thisMat + tier}.webp`} alt="Upgrade Material" />;
+            let rarity = 5;
+            if (["flame", "ice", "volt", "physical"].includes(thisMat) && tier < 5) {
+                rarity = tier + 1;
+            }
+            else if (["red", "green"].includes(thisMat) && tier < 4) {
+                rarity = tier + 2;
+            }
+            else if (["black", "blue"].includes(thisMat) && tier < 3) {
+                rarity = tier + 3;
+            }
+            return (
+                <div key={thisMat + tier} className="upgrade-material">
+                    <div className={`item-frame rarity-${rarity}`}>
+                        {matImg}
+                    </div>
+                    <h3>x{value}</h3>
+                </div>
+            )
+        })
+
+        const nextLevelCap = wepUpgradesData[index].wepLevelMax + 10;
+        const augmentHint = `Req. Wanderer level **${nextLevelCap / 2}**.`;
+        // Augmenting a weapon to level 110 requires Wanderer level 55.
+
+        return (
+            <tr key="" >
+                <td>{data.wepLevelMin} to {data.wepLevelMax}</td>
+                <td>{data.goldAndExpCost}</td>
+                <td>
+                    {data.wepLevelMax < 200 &&
+                        <div className="upgrade-materials">
+                            <div className="upgrade-material">
+                                <div className="item-frame rarity-3">
+                                    <img src={`/static/images/coin/gold.webp`} alt="Gold" />
+                                </div>
+                                <h4>{data.augmentGoldCost}</h4>
+                            </div>
+                            {augmentMats}
+                        </div>
+                    }
+
+                    {data.wepLevelMax > 10 && data.wepLevelMax < 200 &&
+                        <ReactMarkdown>{augmentHint}</ReactMarkdown>
+                    }
+                </td>
+            </tr>
+        )
+    })
     return (
         <>
             <Head>
@@ -170,7 +213,14 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
-
+                    {/* <div id="nn_lb1"></div>
+                    <div id="nn_lb3"></div>
+                    <div id="nn_mobile_mpu1"></div>
+                    <div id="nn_mobile_lb1"></div>
+                    <div id="nn_mobile_lb2"></div>
+                    <div id="nn_lb2"></div>
+                    <div id="nn_mobile_mpu2"></div>
+                    <div id="nn_player"></div> */}
                     <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
@@ -230,7 +280,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                     <section className="weapon-effects w-75ch">
@@ -280,11 +329,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </section>
                     }
 
-                    <section className="weapon-materials w-75ch" >
-                        <h3 className="anchor">Upgrade Materials</h3>
-                        <ul>{weaponMaterials}</ul>
-                    </section>
-
                     {simulacrum.rarity === "SSR" &&
                         <section className="weapon-rec-matrices w-75ch">
                             <div className="modal-section-header">
@@ -295,8 +339,8 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             <table className="modal-table">
                                 <thead style={{ borderColor: elementColor }}>
                                     <tr>
-                                        <th>Matrix Set</th>
-                                        <th>Explanation</th>
+                                        <th><h6>Matrix Set</h6></th>
+                                        <th><h6>Explanation</h6></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -306,6 +350,27 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             <i>The list above may change when new matrices are added. Check the Chinese version's list as well to see if there are better options in the future.</i>
                         </section>
                     }
+
+                    <section className="weapon-materials w-75ch">
+                        <div className="modal-section-header">
+                            <h3 className="anchor">Upgrade Materials</h3>
+                            {!simulacrum.chinaOnly &&
+                                <VersionToggler section="weapon-materials" version={version} setVersion={setVersion} />}
+                        </div>
+                        <table className="modal-table">
+                            <thead style={{ borderColor: elementColor }}>
+                                <tr>
+                                    <th><h6>Weapon Level</h6></th>
+                                    <th><h6>Req. Gold &amp; EXP</h6></th>
+                                    <th><h6>Augmentation Materials</h6></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {weaponUpgradeTable}
+                            </tbody>
+                        </table>
+                        <i>EXP can overflow so the cost may be lower than what is shown on the table. Learn more about upgrading weapons <Link href="/guides/systems/gear"><a>here</a></Link>.</i>
+                    </section>
 
                     <hr />
 
@@ -334,6 +399,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                                 </tr>
                             </tbody>
                         </table>
+                        <i>Learn more about the simulacrum system <Link href="/guides/systems/simulacrum"><a>here</a></Link>.</i>
                     </section>
                     <section className="awakening-gifts w-75ch">
                         <h3 className="anchor">Favorite Gifts</h3>
