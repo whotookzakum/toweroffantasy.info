@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 10",
+        text: "Updated some recipes"
+    },
+    {
         date: "September 9",
         text: "Weapon upgrade materials are now more detailed; Updated Frigg skill description; Clarified Annabella's 1 star advancement and added weapon abilities and recommended matrices; Tianlang's Volt Resonance corrected to Volt Reaction; Fixed Lin's skill (added volt resonance damage boost); Updated CN standard weapon abilities values (Coco, Crow, Meryl, Samir, Shiro, Tsubasa, Zero); Elites that drop mount parts now have their Chinese titles added; Mechabird no longer CN-only"
     },
