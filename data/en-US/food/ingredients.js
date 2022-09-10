@@ -74,8 +74,8 @@ const ingredients = {
         name: 'Oyster',
         imgSrc: "oyster.webp",
         rarity: 3,
-        chinaOnly: true,
-        source: ""
+        chinaOnly: false,
+        source: "Astra: Beach"
     },
     fishmint: {
         name: 'Fish Mint',

@@ -1240,7 +1240,7 @@ const recipes = [
     {
         name: 'Grilled Oysters',
         imgSrc: "grilledoysters.webp",
-        chinaOnly: true,
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
