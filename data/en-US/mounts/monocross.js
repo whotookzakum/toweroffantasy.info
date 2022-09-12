@@ -17,7 +17,7 @@ const monocross = {
             source: "Supply pod in central Warren (938, -403).",
         },
         part4: {
-            source: "Rare drop from ***Devotees***.",
+            source: "Rare drop from ***Devotees*** (祭祀).",
             dropRateKnown: true,
             map: "monocrosselites.webp"
         }

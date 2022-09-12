@@ -9,7 +9,7 @@ const voyager = {
             video: "https://www.youtube.com/embed/CWBbNM2SHyw?start=225"
         },
         part2: {
-            source: "Rare drop from the ***Four Powers***.",
+            source: "Rare drop from the ***Four Powers*** (四雄).",
             dropRateKnown: true,
             map: "voyagerelites.webp"
         },

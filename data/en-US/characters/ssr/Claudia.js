@@ -44,7 +44,7 @@ const claudia = {
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `Hitting a target with a skill or discharge skill applies a stack of War Wounds to the target, increasing incoming physical damage and shatter effects from physical and elemental weapons taken by the target by **10%** for **15** seconds. Stack up to **1** time.`,
+            star3: `Hitting a target with a skill or discharge skill applies a stack of War Wounds to the target, increasing incoming physical damage and shatter effects from physical elemental weapons taken by the target by **10%** for **15** seconds. Stack up to **1** time.`,
 
             star4: `Increase the current weapon's base HP growth by **32%**.`,
 

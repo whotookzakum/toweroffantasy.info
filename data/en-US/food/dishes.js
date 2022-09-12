@@ -95,8 +95,8 @@ const recipes = [
         ]
     },
     {
-        name: 'Special Cactus Drink',
-        imgSrc: "specialcactusdrink.webp",
+        name: 'Cactus Special',
+        imgSrc: "cactusspecial.webp",
         chinaOnly: true,
         rarity: 1,
         stars: 1,
@@ -104,7 +104,7 @@ const recipes = [
             `Recovers **5** satiety  
             Recovers **10% + 1,500** HP`,
         ingredients: [
-            { item: i.cactusball, amount: 2 }
+            { item: i.ballcactus, amount: 2 }
         ],
         icons: [
             "health"
@@ -1240,7 +1240,7 @@ const recipes = [
     {
         name: 'Grilled Oysters',
         imgSrc: "grilledoysters.webp",
-        chinaOnly: true,
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
@@ -1254,16 +1254,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Cold Fish Leaf',
-        imgSrc: "coldfishleaf.webp",
-        chinaOnly: true,
+        name: 'Cold Fish Mint',
+        imgSrc: "coldfishmint.webp",
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Recovers **10** satiety  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            { item: i.fishleaf, amount: 2 }
+            { item: i.fishmint, amount: 2 }
         ],
         icons: [
             "health"
@@ -1288,16 +1288,16 @@ const recipes = [
         ]
     },
     {
-        name: 'Fishleaf Scrambled Eggs',
-        imgSrc: "fishleafscrambledeggs.webp",
-        chinaOnly: true,
+        name: 'Scramble Egg with Fish Mint',
+        imgSrc: "scrambleeggwithfishmint.webp",
+        chinaOnly: false,
         rarity: 3,
         stars: 2,
         effect: 
             `Recovers **600** endurance  
             Recovers **16% + 34,000** HP`,
         ingredients: [
-            { item: i.fishleaf, amount: 2 },
+            { item: i.fishmint, amount: 2 },
             { item: i.poultryegg, amount: 3 }
         ],
         icons: [
@@ -1661,24 +1661,24 @@ const recipes = [
         ]
     },
     {
-        name: 'Crispy Oil Melon',
-        imgSrc: "crispyoilmelon.webp",
-        chinaOnly: true,
+        name: 'Crispy Lard Gourd',
+        imgSrc: "crispylardgourd.webp",
+        chinaOnly: false,
         rarity: 4,
         stars: 2,
         effect: 
             `Recovers **20** satiety  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            { item: i.oilmelon, amount: 1 }
+            { item: i.lardgourd, amount: 1 }
         ],
         icons: [
             "health"
         ]
     },
     {
-        name: 'Spicy Oil Melon Sticks',
-        imgSrc: "spicyoilmelonsticks.webp",
+        name: 'Spicy Lard Gourd Sticks',
+        imgSrc: "spicylardgourdsticks.webp",
         chinaOnly: true,
         rarity: 4,
         stars: 2,
@@ -1686,7 +1686,7 @@ const recipes = [
             `Recovers **800** endurance  
             Recovers **20% + 60,000** HP`,
         ingredients: [
-            { item: i.oilmelon, amount: 1 },
+            { item: i.lardgourd, amount: 1 },
             { item: i.pepper, amount: 2 }
         ],
         icons: [

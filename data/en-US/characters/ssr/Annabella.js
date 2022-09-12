@@ -163,7 +163,7 @@ const annabella = {
     matrix: {
         set2: `Hitting a target with a Flame weapon increases final damage by **6%/7%/8%/9%** and final crit rate by **2.5%/2.5%/3%/3%** for **30** seconds, up to **2** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
 
-        set4: `Equip 2 or more Flame weapons to activate the "Flowing Flames" effect; increase final damage by **13%/15%/17%/19%**, and after a critical hit increase crit damage by **21%/24%/27%/30%** for **10** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
+        set4: `Equip 2 or more Flame weapons to activate the "Flowing Flames" effect; increase final damage by **13%/15%/17%/19%**, and after a critical hit increase crit damage by **21%/24%/27%/30%** for **10** seconds. When the charged attack hits an enemy **3** times, recover **1** dodge, cooldown **2** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
     },
 
     awakening: {

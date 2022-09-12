@@ -139,6 +139,7 @@ const coco = {
         giftCategories: ['toys', 'decorations', 'rare-items'],
 
         gifts: [
+            [80, "snowGlobe"],
             [60, "foxFigure", "catFigure", "present", "ufo", "miaFigure", "seal"],
             [30, "tataPlush", "spiderFigure", "vial", "elfFigure", "bunnyDoll", "catPlush", "robotFigure"],
             [15, "photoAlbum", "photo", "plant", "harmonica", "pinwheel"]
@@ -162,7 +163,65 @@ const coco = {
         weapon: {
             advancement: {
                 star6: `<abbr title='China Exclusive'></abbr> Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** ATK (cannot stack).`
-            }
+            },
+            abilities: {
+                normal: [
+                    {
+                        name: "Normal Attack",
+                        input: ["Attack x5"],
+                        description: `While on the ground, swing the staff to attack 5 times in a row.`,
+                        breakdown: [
+                            'Deal damage equal to **48.2%** of ATK + **3**.',
+                            'Deal damage equal to **36.1%** of ATK + **2**.',
+                            'Deal damage equal to **58%** of ATK + **3**. ',
+                            'Deal damage equal to **79.5%** of ATK + **4**.',
+                            'Deal damage equal to **140%** of ATK + **7**.'
+                        ]
+                    },
+                    {
+                        name: "Soaring Barrage",
+                        input: ["Jump","Attack x5"],
+                        description: `While airborne or after jumping once, tap normal attack to attack 5 times in a row.`,
+                        breakdown: [
+                            'Deal damage equal to **62.3%** of ATK + **3**.',
+                            'Deal damage equal to **45%** of ATK + **2**.',
+                            'Deal damage equal to **48.8%** of ATK + **3**.',
+                            'Deal damage equal to **87.6%** of ATK + **5**.',
+                            'Deal damage equal to **91.3%** of ATK + **5**.'
+                        ]
+                    },
+                    {
+                        name: "Moonfall",
+                        input: ["Jump","hold:Attack"],
+                        description: `Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every **0.2** seconds, for a total of **109.6%** of ATK + **6** damage.`,
+                    },
+                    {
+                        name: "Focused Assault",
+                        input: ["Attack x3","hold:Attack"],
+                        description: `After the third normal attack, hold the normal attack button to trigger branch attacks, consuming **300** points of endurance.`,
+                        breakdown: [
+                            'Pull in enemies in front of the user, **suspending them** and dealing damage equal to **30.8%** of ATK + **2** every **0.3** seconds (up to **4** times).',
+                            'Deal damage equal to **35.7%** of ATK + **2** at the target location and to nearby enemies every **0.3** seconds.'
+                        ]
+                    }
+                ],
+                dodge: [
+                    {
+                        name: "Dodge",
+                        description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
+                    },
+                    {
+                        name: "Surge",
+                        input: ["Arrow keys","Dodge","Attack"],
+                        description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Surge. Each wave of energy deals damage equal to **40.6%** of ATK + **2** to targets. Grant **75** weapon charge points upon use.`,
+                    },
+                    {
+                        name: "Tesseract",
+                        input: ["Dodge","Attack"],
+                        description: `Tap normal attack during the short period after dodging to trigger Evasive Blast. Fire an energy orb forward, dealing damage equal to **58.7%** of ATK + **3** to targets in its path every **0.3** seconds (up to 5 times). Grant **75** weapon charge points upon use.`,
+                    }
+                ]
+            },
         },
         
     }

@@ -14,7 +14,7 @@ const omniumbeastvii = {
                 Passcode is *1647*.`,
         },
         part3: {
-            source: "Rare drop from ***Behemoths***.",
+            source: "Rare drop from ***Behemoths*** (巨兽).",
             dropRateKnown: true,
             map: "omniumbeastviielites.webp"
         }

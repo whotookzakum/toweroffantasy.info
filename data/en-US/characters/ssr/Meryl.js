@@ -185,7 +185,81 @@ const meryl = {
                     pieces: 3,
                     description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
                 }
-            ]
+            ],
+            abilities: {
+                normal: [
+                    {
+                        name: "Heavy Cleave",
+                        input: ["Attack x4"],
+                        description: `While on the ground, swing a greatsword to attack 4 times in a row.`,
+                        breakdown: [
+                            'Deal damage equal to **66.8%** of ATK + **4** and knock the target back a short distance.',
+                            'Deal damage equal to **55.1%** of ATK + **3** and knock the target back a short distance.',
+                            'Deal damage equal to **96.7%** of ATK + **5** and knock the target back a short distance.',
+                            'Deal damage equal to **143.3%** of ATK + **8**, **strongly suspend** the target, then launch them upon landing.'
+                        ]
+                    },
+                    {
+                        name: "Aerial Strike",
+                        input: ["Jump","Attack x4"],
+                        description: `While airborne or after jumping once, tap normal attack to attack 4 times in a row.`,
+                        breakdown: [
+                            'Deal damage equal to **97.6%** of ATK + **5**.',
+                            'Deal damage equal to **80.2%** of ATK + **4**.',
+                            'Deal damage equal to **143.2%** of ATK + **8**.',
+                            'Deal damage equal to **128.8%** of ATK + **7** and deliver a **knockdown**, launch the target upon landing.'
+                        ]
+                    },
+                    {
+                        name: "Rising Slash",
+                        input: ["Attack x3","hold:Attack"],
+                        description: `After the third normal attack, hold normal attack to trigger Rising Slash. Upon hit, **strongly suspend** the target and go airborne, dealing damage equal to **58.9%** of ATK + **3**.`,
+                    },
+                    {
+                        name: "Moonset Slash",
+                        input: ["Jump","hold:Attack"],
+                        description: `Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Moonset Slash. While falling, each hit deals damage equal to **12.5%** of ATK + **1**. Upon landing, deal damage equal to **128.8%** of ATK + **7** and launch targets. The higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** damage.`,
+                    },
+                    {
+                        name: "Sneak Attack",
+                        input: ["Crouch","Attack"],
+                        description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
+                    },
+                    {
+                        name: "Whirlwind",
+                        input: ["hold:Attack"],
+                        description: `While standing still or moving, tap and hold normal attack to trigger Whirlwind, dealing damage equal to **121.7%** of ATK + **6** every **0.5** seconds to the target. Grant hitstun immunity while in use.`,
+                    }
+                ],
+                dodge: [
+                    {
+                        name: "Dodge",
+                        description: `Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds.`,
+                    },
+                    {
+                        name: "Devastate",
+                        input: ["Arrow keys","Dodge","Attack"],
+                        description: `Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Devastate. Deal damage equal to **60.5%** of ATK + **3** each hit and **launch** targets.`,
+                    },
+                    {
+                        name: "Crescent Slash",
+                        input: ["Dodge","Attack"],
+                        description: `Tap normal attack during the short period after dodging to trigger Crescent Slash. Swing the blade to unleash sword auras forward, each dealing damage equal to **45.5%** of ATK + **2**.`,
+                    }
+                ],
+                skill: [
+                    {
+                        name: "Blizzard",
+                        description: `Swing the blade to launch sword auras forward, each dealing damage equal to **129.9%** of ATK + **7** and increasing damage dealt by **5%** with each hit. While active, immune to control effects. Cooldown: **45** seconds.`,
+                    }
+                ],
+                discharge: [
+                    {
+                        name: "Frost Barrier",
+                        description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the wielder**, and smash the ground to form a barrier, dealing damage equal to **461.3%** of ATK + **24** to nearby enemies, knocking enemies into the air. This reduces their speed by **50%** and stops them from dodge or jump. The barrier lasts **5** seconds and blocks projectiles.`,
+                    }
+                ]
+            },
         },
         matrix: {
             set4: `<abbr title='China Exclusive'></abbr> Converts **60%/75%/90%/105%** of damage dealt during shield to health, restores no more than **105%/127.5%/150%/172.5%** of ATK every 0.5 seconds.`

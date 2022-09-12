@@ -7,9 +7,9 @@ const ingredients = {
         chinaOnly: true,
         source: ""
     },
-    cactusball: {
-        name: 'Cactus Ball',
-        imgSrc: "cactusball.webp",
+    ballcactus: {
+        name: 'Ball Cactus',
+        imgSrc: "ballcactus.webp",
         rarity: 1,
         chinaOnly: true,
         source: ""
@@ -74,15 +74,15 @@ const ingredients = {
         name: 'Oyster',
         imgSrc: "oyster.webp",
         rarity: 3,
-        chinaOnly: true,
-        source: ""
+        chinaOnly: false,
+        source: "Astra: Beach"
     },
-    fishleaf: {
-        name: 'Fish Leaf',
-        imgSrc: "fishleaf.webp",
+    fishmint: {
+        name: 'Fish Mint',
+        imgSrc: "fishmint.webp",
         rarity: 3,
-        chinaOnly: true,
-        source: ""
+        chinaOnly: false,
+        source: "Banges: Near rivers"
     },
     aloevera: {
         name: 'Aloe Vera',
@@ -105,12 +105,12 @@ const ingredients = {
         chinaOnly: true,
         source: "折跃门-咸水绿洲，舒伯特附近的都是，还有辣椒"
     },
-    oilmelon: {
-        name: 'Oil Melon',
-        imgSrc: "oilmelon.webp",
+    lardgourd: {
+        name: 'Lard Gourd',
+        imgSrc: "lardgourd.webp",
         rarity: 4,
-        chinaOnly: true,
-        source: ""
+        chinaOnly: false,
+        source: "Found in Crown and Warren"
     },
     
     mushroom: {
