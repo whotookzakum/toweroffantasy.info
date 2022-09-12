@@ -53,7 +53,7 @@ const lyra = {
                         `While on the ground, use Vespers to attack five times in a row.  
                         &nbsp;  
                         **Passives**  
-                        *Repentance*: When Vespers basic attack hits a target marked with "Repentance" while not using Blessing Resonance, **deal additional damage**. The damage does not trigger additional attack effects and is regarded as linking skill damage and weapon skill damage; Vespers basic attack hits a target **marked with "Repentance"** dealing additional damage equal to: Number of Guardians (self and teammates') x **4.6%** of ATK (Max **36.8%** of ATK), this damage does not trigger additional attack effects and is regarded as combo skill damage and weapon skill damage.  
+                        *Repentance*: When Vespers basic attack hits a target marked with "Repentance" while not using Blessing Resonance, **deal additional damage**. The damage does not trigger additional attack effects and is regarded as linking skill damage and weapon skill damage; Vespers basic attack hits a target **marked with "Repentance"** dealing additional damage equal to: Number of Guardians (self and teammates') x **4.6%** of ATK (Max **36.8%** of ATK), this damage does not trigger additional attack effects and is regarded as discharge skill damage and weapon skill damage.  
                         &nbsp;  
                         *Radiance*: All basic attacks of Vespers that hits the target will restore **15%** of ATK into HP.  
                         &nbsp;  

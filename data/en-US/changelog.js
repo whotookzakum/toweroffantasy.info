@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
-        date: "September 10",
-        text: "Updated some recipes"
+        date: "September 12",
+        text: "Updated some recipes; Coco's favorite gifts updated; fixed typo's in Claudia's 3 star and Lyra's normal attack"
     },
     {
         date: "September 9",

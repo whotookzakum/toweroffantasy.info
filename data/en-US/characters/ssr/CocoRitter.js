@@ -139,6 +139,7 @@ const coco = {
         giftCategories: ['toys', 'decorations', 'rare-items'],
 
         gifts: [
+            [80, "snowGlobe"],
             [60, "foxFigure", "catFigure", "present", "ufo", "miaFigure", "seal"],
             [30, "tataPlush", "spiderFigure", "vial", "elfFigure", "bunnyDoll", "catPlush", "robotFigure"],
             [15, "photoAlbum", "photo", "plant", "harmonica", "pinwheel"]
