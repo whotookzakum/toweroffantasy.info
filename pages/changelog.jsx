@@ -1,5 +1,6 @@
 import { CHANGELOG } from "../data/en-US/changelog";
 import Head from "next/head";
+import { setPageTitle } from "../components/Layout";
 
 const changelogContent = CHANGELOG.map(update => <tr key={update.date}><th>{update.date}</th><td>{update.text}</td></tr>);
 
