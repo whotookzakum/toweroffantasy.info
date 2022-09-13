@@ -12,6 +12,7 @@ import { MATRICES } from "../../data/en-US/matrices/matrixList";
 import _ from 'lodash';
 import { VersionToggler } from "../../components/VersionToggler";
 import { weaponUpgrades } from "../../data/en-US/characters/weaponUpgrades";
+import Ads from "../../components/Ads";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -142,10 +143,10 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
     });
 
 
-
-    let wepUpgradesData = weaponUpgrades[version];
+    const weaponGameVersion = weaponUpgrades[version];
+    let wepUpgradesData = weaponGameVersion[simulacrum.rarity];
     if (simulacrum.chinaOnly) {
-        wepUpgradesData = weaponUpgrades.china;
+        wepUpgradesData = weaponUpgrades.china[simulacrum.rarity];
     }
     if (simulacrum.name === "Lin") {
         wepUpgradesData = weaponUpgrades.lin;
@@ -213,14 +214,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
-                    {/* <div id="nn_lb1"></div>
-                    <div id="nn_lb3"></div>
-                    <div id="nn_mobile_mpu1"></div>
-                    <div id="nn_mobile_lb1"></div>
-                    <div id="nn_mobile_lb2"></div>
-                    <div id="nn_lb2"></div>
-                    <div id="nn_mobile_mpu2"></div>
-                    <div id="nn_player"></div> */}
+                    <Ads/>
                     <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
