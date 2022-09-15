@@ -2,8 +2,11 @@ import { ModalMenu } from "../../components/Modal";
 import { CHARACTERS } from "../../data/en-US/characters/characterList";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
+import { WEAPON_SAMIR } from "../../locale/en-US/weapons/Samir";
 
 function Simulacra() {
+    console.log(WEAPON_SAMIR);
+
     return (
         <>
             <Head>

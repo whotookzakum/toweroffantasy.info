@@ -1,28 +1,20 @@
-import { useEffect, useState } from "react"
-
-export default function Ads() {
-
-    const [adUnits, setAdUnits] = useState(null);
-
-    useEffect(() => {
-        setAdUnits(
-            <>
-                <div id="nn_lb1"></div>
-                <div id="nn_lb3"></div>
-                <div id="nn_lb2"></div>
-                <div id="nn_player"></div>
-
-                <div id="nn_mobile_mpu1"></div>
-                <div id="nn_mobile_lb1"></div>
-                <div id="nn_mobile_lb2"></div>
-                <div id="nn_mobile_mpu2"></div>
-            </>
-        )
-    })
-
+export default function Ads({ unit }) {
     return (
         <>
-            {adUnits}
+            {
+                (unit === "lb1" || 
+                unit === "lb2" || 
+                unit === "lb3" ||
+                unit === "player") && 
+                <div id={`nn_${unit}`} />
+            }
+            {
+                (unit === "lb1" || 
+                unit === "lb2" ||
+                unit === "mpu1" ||
+                unit === "mpu2") && 
+                <div id={`nn_mobile_${unit}`} />
+            }
         </>
     )
 }

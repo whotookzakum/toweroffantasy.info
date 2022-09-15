@@ -13,6 +13,7 @@ import _ from 'lodash';
 import { VersionToggler } from "../../components/VersionToggler";
 import { weaponUpgrades } from "../../data/en-US/characters/weaponUpgrades";
 import Ads from "../../components/Ads";
+import { useEffect } from "react";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -205,6 +206,13 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             </tr>
         )
     })
+
+    useEffect(() => {
+        if (window !== undefined) {
+            window.reloadAdSlots();
+        }
+    })
+
     return (
         <>
             <Head>
@@ -214,7 +222,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
-                    <Ads/>
                     <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
@@ -276,6 +283,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </div>
                         </div>
                     </div>
+                    
+                    
+
                     <section className="weapon-effects w-75ch">
                         <div className="modal-section-header">
                             <h3 className="anchor">Weapon Effects</h3>
@@ -288,6 +298,11 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </div>
                         {weapon.bonusEffect && getBonusEffects()}
                     </section>
+
+                    <section>
+                        <Ads unit="lb1" />
+                    </section>
+
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
                             <h3 className="anchor">Advancements</h3>
