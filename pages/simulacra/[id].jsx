@@ -178,30 +178,45 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             )
         })
 
-        const nextLevelCap = wepUpgradesData[index].wepLevelMax + 10;
+        const nextLevelCap = wepUpgradesData[index].wepLevelMax;
         const augmentHint = `Req. Wanderer level **${nextLevelCap / 2}**.`;
         // Augmenting a weapon to level 110 requires Wanderer level 55.
+        const augmentGoldCost =
+            <div className="upgrade-material">
+                <div className="item-frame rarity-3">
+                    <img src={`/static/images/coin/gold.webp`} alt="Gold" />
+                </div>
+                <h4>{data.augmentGoldCost}</h4>
+            </div>;
 
         return (
-            <tr key="" >
+            <tr key={data.wepLevelMin} >
                 <td>{data.wepLevelMin} to {data.wepLevelMax}</td>
-                <td>{data.goldAndExpCost}</td>
                 <td>
-                    {data.wepLevelMax < 200 &&
-                        <div className="upgrade-materials">
-                            <div className="upgrade-material">
-                                <div className="item-frame rarity-3">
-                                    <img src={`/static/images/coin/gold.webp`} alt="Gold" />
-                                </div>
-                                <h4>{data.augmentGoldCost}</h4>
-                            </div>
-                            {augmentMats}
-                        </div>
-                    }
+                    <div className="upgrade-materials">
+                        {data.wepLevelMin > 0 && augmentGoldCost}
+                        {augmentMats}
+                    </div>
 
-                    {data.wepLevelMax > 10 && data.wepLevelMax < 200 &&
+                    {data.wepLevelMax > 10 &&
                         <ReactMarkdown>{augmentHint}</ReactMarkdown>
                     }
+                </td>
+                <td>
+                    <div className="upgrade-materials">
+                        <div className="upgrade-material">
+                            <div className="item-frame rarity-3">
+                                <img src={`/static/images/coin/gold.webp`} alt="Gold" />
+                            </div>
+                            <h4>{data.goldAndExpCost}</h4>
+                        </div>
+                        <div className="upgrade-material">
+                            <div className="item-frame rarity-1">
+                                <img src={`/static/images/mat/wep_exp1.webp`} alt="Gold" />
+                            </div>
+                            <h4>{data.goldAndExpCost}</h4>
+                        </div>
+                    </div>
                 </td>
             </tr>
         )
@@ -283,8 +298,8 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </div>
                         </div>
                     </div>
-                    
-                    
+
+
 
                     <section className="weapon-effects w-75ch">
                         <div className="modal-section-header">
@@ -370,8 +385,8 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             <thead style={{ borderColor: elementColor }}>
                                 <tr>
                                     <th><h6>Weapon Level</h6></th>
-                                    <th><h6>Req. Gold &amp; EXP</h6></th>
                                     <th><h6>Augmentation Materials</h6></th>
+                                    <th><h6>Gold &amp; EXP</h6></th>
                                 </tr>
                             </thead>
                             <tbody>

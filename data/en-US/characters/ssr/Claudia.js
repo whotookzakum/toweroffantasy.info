@@ -124,7 +124,7 @@ const claudia = {
             discharge: [
                 {
                     name: "Unbridled Flurry",
-                    description: `When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the Wanderer**, who then rushes to and **strongly suspends** a target, dealing **523.3%** of ATK + **28** damage, leaving behind a Bladestorm that deals **209.6%** x ATK + **11** damage, while gaining immunity to to grievous/freeze/burn/electrify effects for **5** seconds.`,
+                    description: `When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the Wanderer**, who then rushes to and **strongly suspends** a target, dealing **523.3%** of ATK + **28** damage, leaving behind a Bladestorm that deals **209.6%** of ATK + **11** damage, while gaining immunity to to grievous/freeze/burn/electrify effects for **5** seconds.`,
                 }
             ]
         },
@@ -143,7 +143,7 @@ const claudia = {
             {
                 name: "Claudia",
                 pieces: 4,
-                description: "Slightly decent option that increases damage of other weapons and increases aerial attack damage."
+                description: "Somewhat decent option that increases damage of other weapons and increases aerial attack damage."
             },
             {
                 name: "Sobek",
@@ -206,34 +206,35 @@ const claudia = {
                             'Deal damage equal to **60%** of ATK + **3** and knock the target back a short distance.',
                             'Deal damage equal to **54.4%** of ATK + **3** and knock the target back a short distance.',
                             'Deal damage equal to **95.7%** of ATK + **5** and knock the target back a short distance.',
-                            'Deal damage equal to **163%** of ATK + **8** and **launch** the target.'
+                            'Deal damage equal to **163%** of ATK + **9** and **launch** the target.'
                         ]
                     },
                     {
                         name: "Jumping Strike",
                         input: ["Jump","Attack x4"],
-                        description: `While airborne, tap normal attack to attack 4 times in a row.`,
+                        description: `While airborne, use normal attack to attack 4 times in a row.`,
                         breakdown: [
                             'Deal damage equal to **25.5%** of ATK + **1**.',
                             'Deal damage equal to **44.4%** of ATK + **2**.',
-                            'Deal damage equal to **105%** of ATK + **5**.',
-                            'Deal damage equal to **127.4%** of ATK + **6** and deliver a **knockdown**.'
+                            'Deal damage equal to **105%** of ATK + **6**.',
+                            'Deal damage equal to **127.4%** of ATK + **7** and deliver a **knockdown**.'
                         ]
                     },
                     {
                         name: "Cyclone",
                         input: ["Attack","hold:Attack"],
-                        description: `Hold the normal attack button after normal attacks to trigger Cyclone. Knock the target, suspending them in mid-air and deal **43.8%** of ATK + **2** to a single target.`,
+                        description: `Hold the normal attack button after normal attacks to trigger Cyclone. Upon hit, suspend the target. Cyclone can deal **43.88%** of ATK + **2** to a single target.`,
                     },
                     {
                         name: "Diving Edge",
                         input: ["Jump","hold:Attack"],
-                        description: `Tap and hold normal attack while airborne, or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to **10%** of ATK + **1** each hit. Upon landing, deal damage equal to **70%** of ATK + **3** and knock the target back. The higher you are when cast, the higher the damage dealt, up to **600%** of ATK.`,
+                        description: `Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to **10%** of ATK + **1** each hit. Upon landing, deal damage equal to **70%** of ATK + **4** and knock the target back.  
+                        The higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** of ATK.`,
                     },
                     {
                         name: "Sneak Attack",
                         input: ["Crouch","Attack"],
-                        description: `Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
+                        description: `Approach the enemy from behind while crouching, then use normal attack to trigger Sneak Attack, dealing damage equal to **570%** of ATK + **30**.`,
                     }
                 ],
                 dodge: [
@@ -244,19 +245,20 @@ const claudia = {
                     {
                         name: "Leap Attack",
                         input: ["Dodge","Attack"],
-                        description: `Tap normal attack during the short period after dodging to trigger Leap Attack. The Wanderer swings their blade and deals damage equal to **34.7%** of ATK + **2**, **knocking the target into the air** and becoming airborne, then deal additional damage equal to **52.1%** of ATK + **2**.`,
+                        description: `Tap normal attack during the short period after dodging to trigger Leap Attack.  
+                        The Wanderer swings their blade and deals damage equal to **34.7%** of ATK + **2**, **strongly suspending** them while going airborne. Then, deal additional damage equal to **52.1%** of ATK + **3**.`,
                     }
                 ],
                 skill: [
                     {
                         name: "Roam",
-                        description: `Dance through targets while swinging the blade, dealing damage equal to **383%** of ATK + **18** in total to up to **5** targets (attacks on the same target deal **20%** less damage). At the end of the ability, slash the space in front, dealing damage equal to **290.4%** of ATK + **14** to targets and knocking them into the air. Immune to crowd-control effects and gain a damage reduction of **50%** while ability is in use. Cooldown: **15** seconds.`,
+                        description: `Dance through targets while swinging the blade, dealing damage equal to **383%** of ATK + **20** to up to **5** targets (consecutive hits on the same target deal **20%** less damage). At Roam has concluded, slash the space in front, dealing damage equal to **290.4%** of ATK + **15** to surrounding targets and suspend them. Immune to control effects while skill is in use, and all damage taken is reduced by **50%**. Cooldown: **15** seconds.`,
                     }
                 ],
                 discharge: [
                     {
                         name: "Unbridled Flurry",
-                        description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder**, who charges and **airbornes** a target to deal **479.8%** x ATK + **23** damage, leaving behind a bladestorm that deals **192%** x ATK + **9** damage to the target, while immunizing self to grievous/freeze/burn/electrify effects for **5** seconds.`,
+                        description: `When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the Wanderer**, who then rushes to and **strongly suspends** a target, dealing **479.8%** of ATK + **25** damage, leaving behind a Bladestorm that deals **192%** of ATK + **10** damage, while gaining immunity to to grievous/freeze/burn/electrify effects for **5** seconds.`,
                     }
                 ]
             },

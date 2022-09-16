@@ -436,6 +436,14 @@
 
 .weapon-materials {
 
+    .modal-table td {
+        padding: 0.625em;
+
+        &:last-of-type {
+            vertical-align: top;
+        }
+    }
+
     .modal-table th:first-of-type {
         width: fit-content;
         white-space: nowrap;
@@ -445,7 +453,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     p, i {

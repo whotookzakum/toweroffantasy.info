@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 16",
+        text: "Updated Claudia (Global); Reformated upgrade materials table; Updated recommended matrices for Crow and Samir"
+    },
+    {
         date: "September 14",
         text: "Fixed Lyra's Despair percentages;"
     },
