@@ -435,6 +435,7 @@
 }
 
 .weapon-materials {
+    overflow-x: scroll;
 
     .modal-table td {
         padding: 0.625em;
@@ -487,6 +488,20 @@
         h4 {
             font-size: 1.1rem;
             
+        }
+    }
+
+    .exp {
+        .item-frame::after {
+            content: "EXP";
+            font-weight: bold;
+            text-shadow: $shadow;
+            position: absolute;
+            align-self: center;
+            z-index: 999;
+        }
+        img {
+            filter: brightness(0.7) contrast(0.7);
         }
     }
 }

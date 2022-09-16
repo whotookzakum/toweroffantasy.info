@@ -210,7 +210,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </div>
                             <h4>{data.goldAndExpCost}</h4>
                         </div>
-                        <div className="upgrade-material">
+                        <div className="upgrade-material exp">
                             <div className="item-frame rarity-1">
                                 <img src={`/static/images/mat/wep_exp1.webp`} alt="Gold" />
                             </div>
