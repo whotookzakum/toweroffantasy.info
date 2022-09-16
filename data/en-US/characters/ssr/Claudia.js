@@ -3,7 +3,7 @@ const claudia = {
     uri: "claudia",
     imgSrc: "claudia.webp",
     rarity: "SSR",
-    chinaOnly: true,
+    chinaOnly: false,
     banners: {
         cn: [
             {
@@ -21,6 +21,15 @@ const claudia = {
                 duration: "2d",
                 week: "14/15",
                 standardAfterwards: true
+            }
+        ],
+        glob: [
+            {
+                bannerNo: 3,
+                start: "15 Sep 2022",
+                end: "5 Oct 2022",
+                duration: "20d",
+                week: "6~9"
             }
         ]
     },

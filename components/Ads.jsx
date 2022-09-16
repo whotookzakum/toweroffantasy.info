@@ -1,4 +1,10 @@
 export default function Ads({ unit }) {
+    // lb1, mobile lb1
+    // lb2, mobile lb2
+    // lb3
+    // player
+    // mpu1
+    // mpu2
     return (
         <>
             {

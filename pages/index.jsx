@@ -2,16 +2,14 @@ import { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
 import Head from "next/head";
-import { getBannerCharacters, getTotalBanners } from "./banners";
-import { CHARACTERS } from "../data/en-US/characters/characterList";
+import { getBannerCharacters, getSortedBanners, getStandardAdditions } from "./banners";
 
-
-function getStandardAdditions(version) {
-    return getTotalBanners(version).filter(({banner}) => 
-        banner.standardAfterwards).length;
-}
 
 export default function Index() {
+
+    const globalBanners = getSortedBanners("glob");
+    const chinaBanners = getSortedBanners("cn");
+
     return(
         <>
             <Head>
@@ -31,18 +29,18 @@ export default function Index() {
             
             <blockquote className="banner-count">
                 Global has had&nbsp;
-                <strong>{getTotalBanners("glob").length}</strong> Banners,&nbsp;
+                <strong>{getSortedBanners("glob").length}</strong> Banners,&nbsp;
                 <strong>{getBannerCharacters("glob").length}</strong> Unique, with&nbsp;
                 <strong>{getStandardAdditions("glob")}</strong> additions to the Standard Banner.<br/>
-                The newest character is <Link href={`/simulacra/${getBannerCharacters("glob")[0].uri}`}><a>{getBannerCharacters("glob")[0].name}</a></Link>.
+                The newest character is <Link href={`/simulacra/${globalBanners[0].uri}`}><a>{globalBanners[0].name}</a></Link>.
             </blockquote>
 
             <blockquote className="banner-count" style={{ borderColor: "#e72e37"}}>
                 China has had&nbsp;
-                <strong>{getTotalBanners("cn").length}</strong> Banners,&nbsp;
+                <strong>{getSortedBanners("cn").length}</strong> Banners,&nbsp;
                 <strong>{getBannerCharacters("cn").length}</strong> Unique, with&nbsp;
                 <strong>{getStandardAdditions("cn")}</strong> additions to the Standard Banner.<br/>
-                The newest character is <Link href={`/simulacra/${CHARACTERS[0].uri}`}><a>{CHARACTERS[0].name}</a></Link>.
+                The newest character is <Link href={`/simulacra/${chinaBanners[0].uri}`}><a>{chinaBanners[0].name}</a></Link>.
             </blockquote>
 
             <p>
