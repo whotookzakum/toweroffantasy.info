@@ -222,11 +222,11 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         )
     })
 
-    // useEffect(() => {
-    //     if (window !== undefined) {
-    //         window.reloadAdSlots();
-    //     }
-    // })
+    useEffect(() => {
+        if (window !== undefined) {
+            window.reloadAdSlots();
+        }
+    })
 
     return (
         <>
@@ -314,9 +314,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         {weapon.bonusEffect && getBonusEffects()}
                     </section>
 
-                    {/* <section>
+                    <section>
                         <Ads unit="lb1" />
-                    </section> */}
+                    </section>
 
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
