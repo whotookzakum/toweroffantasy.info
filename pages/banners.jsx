@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 function BannerList({ data }) {
     const listItems = data.map(({name, element, uri, banner}) =>
-        <tr key={name} style={{ color: `var(--color-${element})` }}>
+        <tr key={name + banner.week} style={{ color: `var(--color-${element})` }}>
             <th>
                 <Link href={`/simulacra/${uri}`}><a>{name}</a></Link>
                 <br />
@@ -20,6 +20,7 @@ function BannerList({ data }) {
     return <tbody>{listItems}</tbody>
 }
 
+// Return all characters that are in a banner
 export function getBannerCharacters(version) {
     return (
         CHARACTERS.filter(character => {
@@ -30,6 +31,7 @@ export function getBannerCharacters(version) {
     );
 }
 
+// Return all banners for a game version
 export function getTotalBanners(version) {
     const bannerCharacters = getBannerCharacters(version);
     const totalBanners = bannerCharacters.flatMap(({ name, weapon, uri, banners }) => {
@@ -39,8 +41,20 @@ export function getTotalBanners(version) {
         });
         return result;
     });
-    totalBanners.sort((a, b) => -(a.banner.bannerNo - b.banner.bannerNo));
     return totalBanners;
+}
+
+// Return all banners for a game version sorted by banner number
+export function getSortedBanners(version) {
+    const bannerList = getTotalBanners(version);
+    const sortedList = bannerList.sort((a, b) => -(a.banner.bannerNo - b.banner.bannerNo));
+    return sortedList;
+}
+
+// Return number of characters added to standard banner
+export function getStandardAdditions(version) {
+    return getSortedBanners(version).filter(({banner}) => 
+        banner.standardAfterwards).length;
 }
 
 function BannerSchedule() {
@@ -76,7 +90,7 @@ function BannerSchedule() {
                                 <th>Week #</th>
                             </tr>
                         </thead>
-                        <BannerList data={getTotalBanners("glob")} />
+                        <BannerList data={getSortedBanners("glob")} />
                     </table>
                 </div>
                 <div className={isExpanded.china ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
@@ -97,7 +111,7 @@ function BannerSchedule() {
                                 <th>Week #</th>
                             </tr>
                         </thead>
-                        <BannerList data={getTotalBanners("cn")} />
+                        <BannerList data={getSortedBanners("cn")} />
                     </table>
                 </div>
             </div>

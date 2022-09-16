@@ -89,12 +89,12 @@ const samir = {
             {
                 name: "Crow",
                 pieces: 2,
-                description: "At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
+                description: "At high crit rate, Crow's 2 set is the second best choice for damage."
             },
             {
-                name: "Shiro",
+                name: "Claudia",
                 pieces: 2,
-                description: "Not ideal, but can be used for the damage increase until you get one of the more recommended sets."
+                description: "Dual EM Stars' main damage is the aerial attack, and Claudia's 2 set is more effective than Crow's until very high crit rate. Opt for 2-set Shiro if unavailable."
             },
             {
                 name: "Sobek",
@@ -139,28 +139,7 @@ const samir = {
 
     cnData: {
         weapon: {
-            recommendedMatrices: [
-                {
-                    name: "Samir", // Samir 4-set also usable in CN, but the extra hit does not crit
-                    pieces: 2,
-                    description: "With its high rate of fire, Dual EM stars can easily maintain 100% uptime on the buff."
-                },
-                {
-                    name: "Claudia",
-                    pieces: 2,
-                    description: "Dual EM Stars' main damage is the aerial attack, and Claudia's 2 set is more effective than Crow's until very high crit rate."
-                },
-                {
-                    name: "Crow",
-                    pieces: 2,
-                    description: "At high crit rate, Crow's 2 set is the second best choice for damage."
-                },
-                {
-                    name: "Sobek",
-                    pieces: 3,
-                    description: "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
-                }
-            ],
+            // Samir 4-set also usable in CN, but the extra hit does not crit
             abilities: {
                 normal: [
                     {

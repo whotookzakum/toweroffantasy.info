@@ -12,6 +12,8 @@ import { MATRICES } from "../../data/en-US/matrices/matrixList";
 import _ from 'lodash';
 import { VersionToggler } from "../../components/VersionToggler";
 import { weaponUpgrades } from "../../data/en-US/characters/weaponUpgrades";
+import Ads from "../../components/Ads";
+import { useEffect } from "react";
 
 export async function getStaticProps({ params }) {
     const simulacrum = await getSimulacrumData(params.id);
@@ -142,10 +144,10 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
     });
 
 
-
-    let wepUpgradesData = weaponUpgrades[version];
+    const weaponGameVersion = weaponUpgrades[version];
+    let wepUpgradesData = weaponGameVersion[simulacrum.rarity];
     if (simulacrum.chinaOnly) {
-        wepUpgradesData = weaponUpgrades.china;
+        wepUpgradesData = weaponUpgrades.china[simulacrum.rarity];
     }
     if (simulacrum.name === "Lin") {
         wepUpgradesData = weaponUpgrades.lin;
@@ -176,34 +178,56 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             )
         })
 
-        const nextLevelCap = wepUpgradesData[index].wepLevelMax + 10;
+        const nextLevelCap = wepUpgradesData[index].wepLevelMax;
         const augmentHint = `Req. Wanderer level **${nextLevelCap / 2}**.`;
         // Augmenting a weapon to level 110 requires Wanderer level 55.
+        const augmentGoldCost =
+            <div className="upgrade-material">
+                <div className="item-frame rarity-3">
+                    <img src={`/static/images/coin/gold.webp`} alt="Gold" />
+                </div>
+                <h4>{data.augmentGoldCost}</h4>
+            </div>;
 
         return (
-            <tr key="" >
+            <tr key={data.wepLevelMin} >
                 <td>{data.wepLevelMin} to {data.wepLevelMax}</td>
-                <td>{data.goldAndExpCost}</td>
                 <td>
-                    {data.wepLevelMax < 200 &&
-                        <div className="upgrade-materials">
-                            <div className="upgrade-material">
-                                <div className="item-frame rarity-3">
-                                    <img src={`/static/images/coin/gold.webp`} alt="Gold" />
-                                </div>
-                                <h4>{data.augmentGoldCost}</h4>
-                            </div>
-                            {augmentMats}
-                        </div>
-                    }
+                    <div className="upgrade-materials">
+                        {data.wepLevelMin > 0 && augmentGoldCost}
+                        {augmentMats}
+                    </div>
 
-                    {data.wepLevelMax > 10 && data.wepLevelMax < 200 &&
+                    {data.wepLevelMax > 10 &&
                         <ReactMarkdown>{augmentHint}</ReactMarkdown>
                     }
+                </td>
+                <td>
+                    <div className="upgrade-materials">
+                        <div className="upgrade-material">
+                            <div className="item-frame rarity-3">
+                                <img src={`/static/images/coin/gold.webp`} alt="Gold" />
+                            </div>
+                            <h4>{data.goldAndExpCost}</h4>
+                        </div>
+                        <div className="upgrade-material exp">
+                            <div className="item-frame rarity-1">
+                                <img src={`/static/images/mat/wep_exp1.webp`} alt="Gold" />
+                            </div>
+                            <h4>{data.goldAndExpCost}</h4>
+                        </div>
+                    </div>
                 </td>
             </tr>
         )
     })
+
+    // useEffect(() => {
+    //     if (window !== undefined) {
+    //         window.reloadAdSlots();
+    //     }
+    // })
+
     return (
         <>
             <Head>
@@ -213,14 +237,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
             <Modal item={dataVersion} >
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
-                    {/* <div id="nn_lb1"></div>
-                    <div id="nn_lb3"></div>
-                    <div id="nn_mobile_mpu1"></div>
-                    <div id="nn_mobile_lb1"></div>
-                    <div id="nn_mobile_lb2"></div>
-                    <div id="nn_lb2"></div>
-                    <div id="nn_mobile_mpu2"></div>
-                    <div id="nn_player"></div> */}
                     <h2 className="anchor">Weapon</h2>
                     <div className="weapon-header" style={{ borderColor: elementColor }}>
                         <img className="weapon-image" src={`/static/images/wep/${simulacrum.imgSrc}`} alt={weapon.name} />
@@ -282,6 +298,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </div>
                         </div>
                     </div>
+
+
+
                     <section className="weapon-effects w-75ch">
                         <div className="modal-section-header">
                             <h3 className="anchor">Weapon Effects</h3>
@@ -294,6 +313,11 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </div>
                         {weapon.bonusEffect && getBonusEffects()}
                     </section>
+
+                    {/* <section>
+                        <Ads unit="lb1" />
+                    </section> */}
+
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
                             <h3 className="anchor">Advancements</h3>
@@ -361,8 +385,8 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             <thead style={{ borderColor: elementColor }}>
                                 <tr>
                                     <th><h6>Weapon Level</h6></th>
-                                    <th><h6>Req. Gold &amp; EXP</h6></th>
                                     <th><h6>Augmentation Materials</h6></th>
+                                    <th><h6>Gold &amp; EXP</h6></th>
                                 </tr>
                             </thead>
                             <tbody>

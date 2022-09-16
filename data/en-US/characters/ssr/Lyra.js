@@ -73,7 +73,8 @@ const lyra = {
                 {
                     name: "Despair",
                     input: ["Jump", "Attack"],
-                    description: `When in the air, click on the basic attack to release Despair. Each punch will cause **47.4%** of ATK + **2** damage to the target, and consume 10 points of stamina, and the last blow will cause **4%** of ATK + **5** damage and knocks the target into the air. During the release of Shattering, if the target can be grabbed, grab the target and throw it to the ground, causing a total of **2%** of ATK + **3** damage.`
+                    description: `When in the air, click on the basic attack to release Despair. Each punch will cause **47.4%** of ATK + **2** damage to the target, and consume 10 points of stamina, and the last blow will cause **177.8%** of ATK + **9** damage and knocks the target into the air.  
+                    During the release of Shattering, if the target can be grabbed, grab the target and throw it to the ground, causing a total of **795.1%** of ATK + **42** damage.`
                 },
                 {
                     name: "Accumulate",

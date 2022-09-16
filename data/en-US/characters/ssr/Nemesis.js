@@ -33,8 +33,8 @@ const nemesis = {
         glob: [
             {
                 bannerNo: 1,
-                start: "10 August 2022",
-                end: "31 August 2022",
+                start: "10 Aug 2022",
+                end: "31 Aug 2022",
                 duration: "21d",
                 week: "1~4"
             }

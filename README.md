@@ -21,3 +21,4 @@ August 2, 2022: 10k users
 August 10, 2022: 50k users  
 August 12, 2022: 100k users  
 August 16, 2022: 200k users  
+September 12, 2022: 500k users

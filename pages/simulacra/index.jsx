@@ -4,6 +4,7 @@ import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 
 function Simulacra() {
+
     return (
         <>
             <Head>

@@ -25,8 +25,8 @@ const frigg = {
         glob: [
             {
                 bannerNo: 2,
-                start: "31 August 2022",
-                end: "20 September 2022",
+                start: "31 Aug 2022",
+                end: "20 Sep 2022",
                 duration: "20d",
                 week: "4~7"
             }
