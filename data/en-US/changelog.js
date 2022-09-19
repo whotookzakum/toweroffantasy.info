@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 18",
+        text: "Fixed Lin's weapon skill description (30% damage only while using volt resonance)."
+    },
+    {
         date: "September 16",
         text: "Updated Claudia (Global); Reformated upgrade materials table; Updated recommended matrices for Crow and Samir"
     },

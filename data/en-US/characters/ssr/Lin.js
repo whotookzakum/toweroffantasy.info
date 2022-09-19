@@ -127,7 +127,7 @@ const lin = {
                     &nbsp;  
                     When paired with two **Flame weapons**, Moonlight Realm is transformed into a Flame Moonlight Realm. While inside the Realm, any burn effects applied will have their duration extended by **4** seconds, and increase flame damage to shielded targets by **15%**.  
                     &nbsp;  
-                    When paired with two **Volt weapons**, Moonlight Realm is transformed into a Thunder Moonlight Realm. In the Realm, increase Volt damage by **30%**, dodges have a **65%** chance of not being consumed, and each dodge attacks deal **35%** more damage. When using Volt Resonance, increase Volt damage by **30%**.  
+                    When paired with two **Volt weapons**, Moonlight Realm is transformed into a Thunder Moonlight Realm. In the Realm, dodges have a **65%** chance of not being consumed and dodge attacks deal **35%** more damage. When using Volt Resonance, increase Volt damage by **30%**.  
                     &nbsp;  
                     When paired with two **Frost weapons**, Moonlight Realm is transformed into an Ice Moonlight Realm. When enemies in the Realm receive frost damage **10** times, they enter a state of frostbite for **15** seconds, receiving **22%** more frost damage. The number of hits to activate frostbite does not accumulate while the enemy is in the frostbite state.  
                     &nbsp;  
