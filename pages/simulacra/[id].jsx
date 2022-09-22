@@ -222,11 +222,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         )
     })
 
-    // useEffect(() => {
-    //     if (window !== undefined) {
-    //         window.reloadAdSlots();
-    //     }
-    // })
+    
 
     return (
         <>
@@ -235,6 +231,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                 <meta name="description" content={`Information about the simulacrum ${simulacrum.name} in Tower of Fantasy.`} />
             </Head>
             <Modal item={dataVersion} >
+
+                <Ads unit="mpu1" />
+
                 <div className="modal-body">
                     {simulacrum.chinaOnly && <CNTag name={simulacrum.name} />}
                     <h2 className="anchor">Weapon</h2>
@@ -299,8 +298,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         </div>
                     </div>
 
-
-
                     <section className="weapon-effects w-75ch">
                         <div className="modal-section-header">
                             <h3 className="anchor">Weapon Effects</h3>
@@ -314,10 +311,8 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                         {weapon.bonusEffect && getBonusEffects()}
                     </section>
 
-                    {/* <section>
-                        <Ads unit="lb1" />
-                    </section> */}
-
+                    <Ads unit="lb1" />
+                    
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
                             <h3 className="anchor">Advancements</h3>
@@ -352,6 +347,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
                             </>
                         </section>
                     }
+
+                    <Ads unit="lb3" />
+                    <Ads unit="mpu2" />
 
                     {simulacrum.rarity === "SSR" &&
                         <section className="weapon-rec-matrices w-75ch">

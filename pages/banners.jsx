@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { CHARACTERS } from '../data/en-US/characters/characterList';
 import { setPageTitle } from '../components/Layout';
 import Head from 'next/head';
+import Ads from '../components/Ads';
 
 function BannerList({ data }) {
     const listItems = data.map(({name, element, uri, banner}) =>
@@ -71,6 +72,9 @@ function BannerSchedule() {
             <img className="bg-img" src={`/static/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
             <h1>Limited Banner Schedule</h1>
             <p>Click any character's name to go straight to their Simulacrum page.</p>
+
+            <Ads unit="lb1" />
+
             <div className="banners-wrapper">
                 <div className={isExpanded.global ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
                     <h2>Global 
@@ -93,6 +97,10 @@ function BannerSchedule() {
                         <BannerList data={getSortedBanners("glob")} />
                     </table>
                 </div>
+
+                <Ads unit="lb3" />
+                <Ads unit="mpu1" />
+
                 <div className={isExpanded.china ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
                     <h2>China
                         <button 
@@ -115,6 +123,8 @@ function BannerSchedule() {
                     </table>
                 </div>
             </div>
+
+            <Ads unit="mpu2" />
         </>
     )
 }

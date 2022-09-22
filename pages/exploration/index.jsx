@@ -3,6 +3,7 @@ import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import { EXPLORATION } from "../../data/en-US/exploration/exploration";
 import Link from "next/link";
+import Ads from "../../components/Ads";
 
 function Exploration() {
     return (
@@ -24,17 +25,24 @@ function Exploration() {
                 </p>
             </header>
 
+            <Ads unit="lb1" />
+
             <h2>Aesperia</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="aesperia" />
 
             <h2>Vera Desert</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="vera" />
 
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
+
             <h2>Mirroria</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="mirroria" />
 
             <h2>Vera Desert Dark Zone</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="dark zone" />
+
+            <Ads unit="mpu2" />
 
             <h2>Vera Desert Gray Zone</h2>
             <ModalMenu list={EXPLORATION} filter="location" target="gray zone" />

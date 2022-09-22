@@ -7,6 +7,7 @@ import { Modal } from "../../components/Modal";
 import { removeSpace } from '../../utils/stringHelper';
 import Link from "next/link";
 import rehypeRaw from "rehype-raw";
+import Ads from "../../components/Ads";
 
 export async function getStaticProps({ params }) {
     const mount = await getMountData(params.id);
@@ -67,16 +68,25 @@ export default function MountModal({ mount }) {
             <Modal item={mount}>
                 <div className="modal-body mounts">
                     {mount.chinaOnly && <CNTag name={mount.name} />}
+
+                    <Ads unit="lb1" />
+
                     <section className="w-75ch">
                         <h3 className="anchor">Parts</h3>
                         {parts}
                     </section>
+
+                    <Ads unit="lb3" />
+                    <Ads unit="mpu1" />
+
                     {mount.videoSrc &&
                         <section className="w-75ch">
                             <h3 className="anchor">Preview</h3>
                             <iframe src={mount.videoSrc} allow="fullscreen" modestbranding={1} />
                         </section>
                     }
+
+                    <Ads unit="mpu2" />
                 </div>
             </Modal>
         </>

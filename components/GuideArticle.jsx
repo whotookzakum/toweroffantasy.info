@@ -3,6 +3,7 @@ import { setPageTitle } from "./Layout"
 import { useEffect, useState } from "react";
 import BackButton from "./BackButton";
 import AnchorJS from "anchor-js";
+import Ads from "./Ads";
 
 export function GuideArticle({ guide }) {
     const author = guide.author.map((author, index) => {
@@ -36,7 +37,15 @@ export function GuideArticle({ guide }) {
                     <div className="authors">By {author}</div>
                     <div style={{color: "gray"}}>Last updated {guide.date}</div>
                 </header>
+
+                <Ads unit="lb3" />
+                <Ads unit="mpu1" />
+                
                 {guide.text}
+                
+                <Ads unit="lb1" />
+                <Ads unit="mpu2" />
+
                 <BackButton/>
             </article>
         </>

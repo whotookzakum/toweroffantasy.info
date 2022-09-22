@@ -1,4 +1,4 @@
-#  Updated: 2022-09-14 11:57:24
+#  Updated: 2022-09-20 12:35:04
 #  Website: TowerofFantasy.info (https://toweroffantasy.info/)
 # _____________________________________________________
 #
@@ -26,6 +26,7 @@
 # -----------------------------------------------------
 
 33across.com, 0010b00002CpYhEAAV, RESELLER, bbea06d9c4d2853c
+33across.com, 0010b00002EdWnZAAV, RESELLER, bbea06d9c4d2853c
 33across.com, 0013300001kQj2HAAS, RESELLER, bbea06d9c4d2853c
 33across.com, 0014000001PCseWAAT, RESELLER, bbea06d9c4d2853c
 33across.com, 0015a00002oUk4aAAC, RESELLER, bbea06d9c4d2853c
@@ -64,6 +65,7 @@ aol.com, 58905, RESELLER, e1a5b5b6e3255540
 appnexus.com, 1001, RESELLER, f5ab79cb980f11d1
 appnexus.com, 10239, RESELLER, f5ab79cb980f11d1
 appnexus.com, 11440, DIRECT, f5ab79cb980f11d1
+appnexus.com, 11664, RESELLER
 appnexus.com, 11924, RESELLER, f5ab79cb980f11d1
 appnexus.com, 12290, RESELLER, f5ab79cb980f11d1
 appnexus.com, 12564, RESELLER, f5ab79cb980f11d1
@@ -114,6 +116,7 @@ contextweb.com, 560606, RESELLER, 89ff185a4c4e857c
 contextweb.com, 561118, RESELLER, 89ff185a4c4e857c
 contextweb.com, 561913, RESELLER, 89ff185a4c4e857c
 contextweb.com, 561998, RESELLER, 89ff185a4c4e857c
+contextweb.com, 562258, RESELLER, 89ff185a4c4e857c
 contextweb.com, 562350, RESELLER, 89ff185a4c4e857c
 contextweb.com, 562377, DIRECT, 89ff185a4c4e857c
 conversantmedia.com, 100141, RESELLER
@@ -139,6 +142,7 @@ emxdgt.com, 1798, RESELLER, 1e1d41537f7cad7f
 emxdgt.com, 1803, DIRECT, 1e1d41537f7cad7f
 emxdgt.com, 1918, RESELLER, 1e1d41537f7cad7f
 emxdgt.com, 2009, RESELLER, 1e1d41537f7cad7f
+emxdgt.com, 273, RESELLER, 1e1d41537f7cad7f
 engagebdr.com, 10181, RESELLER
 engagebdr.com, 16, RESELLER
 eskimi.com, eas-2020000005, RESELLER
@@ -172,8 +176,10 @@ improvedigital.com, 2016, RESELLER
 improvedigital.com, 2021, DIRECT
 improvedigital.com, 2050, RESELLER
 improvedigital.com, 335, RESELLER
+indexexchange.com, 183875, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 183920, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 184270, RESELLER, 50b1c356f2c5c8fc
+indexexchange.com, 184349, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 184775, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 186046, RESELLER
 indexexchange.com, 190906, RESELLER, 50b1c356f2c5c8fc
@@ -187,6 +193,8 @@ indexexchange.com, 194003, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 194341, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 194520, RESELLER, 50b1c356f2c5c8fc
 indexexchange.com, 194558, RESELLER
+indexexchange.com, 195924, RESELLER
+indexexchange.com, 196845, RESELLER, 50b1c356f2c5c8fc
 infolinks.com, 3355573, DIRECT
 inmobi.com, 17865bac25f44f51b8fd08b12e92072c, DIRECT, 83e75a7ae333ca9d
 inmobi.com, 55049d2e109d4ac1820ca1432dda4e13, RESELLER, 83e75a7ae333ca9d
@@ -221,6 +229,8 @@ onetag.com, 5d4e109247a89f6, RESELLER
 onetag.com, 5f8e06c2cbd2faa, DIRECT
 onetag.com, 664e107d9f2b748, RESELLER
 onetag.com, 6b859b96c564fbe, RESELLER
+onetag.com, 74d276d460678b8, DIRECT
+onetag.com, 74d276d460678b8-OB, DIRECT
 onetag.com, 75804861b76a852, DIRECT
 onetag.com, 770a440e65869c2, RESELLER
 openx.com, 537120563, RESELLER, 6a698e2ec38604c6
@@ -245,17 +255,22 @@ openx.com, 540679900, RESELLER, 6a698e2ec38604c6
 openx.com, 540866936, DIRECT, 6a698e2ec38604c6
 openx.com, 540886248, DIRECT, 6a698e2ec38604c6
 openx.com, 543174347, RESELLER, 6a698e2ec38604c6
+openx.com, 544096208, RESELLER, 6a698e2ec38604c6
 openx.com, 556543003, DIRECT, 6a698e2ec38604c6
 openx.com, 83499, RESELLER, 6a698e2ec38604c6
 pokkt.com, 5886, RESELLER, c45702d9311e25fd
 primis.tech, 28588, DIRECT, b6b21d256ef43532
 pubmatic.com, 137711, RESELLER, 5d62403b186f2ace
 pubmatic.com, 154037, RESELLER, 5d62403b186f2ace
+pubmatic.com, 155967, RESELLER, 5d62403b186f2ace
 pubmatic.com, 155975, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156077, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156078, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156084, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156177, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156313, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156325, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156389, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156423, RESELLER, 5d62403b186f2ace
 pubmatic.com, 156424, RESELLER, 5d62403b186f2ace
@@ -293,6 +308,7 @@ pubmatic.com, 160887, DIRECT, 5d62403b186f2ace
 pubmatic.com, 161527, RESELLER, 5d62403b186f2ace
 pubmatic.com, 161593, RESELLER, 5d62403b186f2ace
 pubmatic.com, 161691, DIRECT, 5d62403b186f2ace
+pubmatic.com, 162186, DIRECT, 5d62403b186f2ace
 pubmatic.com, 60809, RESELLER, 5d62403b186f2ace
 pubmatic.com, 81564, RESELLER, 5d62403b186f2ace
 pubnative.net, 1004796, RESELLER, d641df8625486a7b
@@ -393,6 +409,7 @@ sovrn.com, 251666, DIRECT, fafdf38b16bf6b2b
 sovrn.com, 260380, RESELLER, fafdf38b16bf6b2b
 sovrn.com, 268479, RESELLER, fafdf38b16bf6b2b
 sovrn.com, 328150, DIRECT, fafdf38b16bf6b2b
+sovrn.com, 378732, RESELLER, fafdf38b16bf6b2b
 spotx.tv, 212457, RESELLER
 spotx.tv, 268145, DIRECT, 7842df1d2fe2db34
 spotx.tv, 268145, RESELLER, 7842df1d2fe2db34
@@ -439,6 +456,8 @@ xandr.com, 8738, RESELLER, f5ab79cb980f11d1
 yahoo.com, 49648, RESELLER
 yahoo.com, 55029, RESELLER, e1a5b5b6e3255540
 yahoo.com, 55771, RESELLER, e1a5b5b6e3255540
+yahoo.com, 56371, DIRECT, e1a5b5b6e3255540
+yahoo.com, 56374, DIRECT, e1a5b5b6e3255540
 yahoo.com, 57289, RESELLER, e1a5b5b6e3255540
 yahoo.com, 58723, RESELLER
 yahoo.com, 58905, RESELLER, e1a5b5b6e3255540

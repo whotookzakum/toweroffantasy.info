@@ -1,6 +1,6 @@
 export default function Ads({ unit }) {
     // lb1, mobile lb1
-    // lb2, mobile lb2
+    // lb2, mobile lb2 (lb2 IS THE STICKY BOTTOM ONE)
     // lb3
     // player
     // mpu1

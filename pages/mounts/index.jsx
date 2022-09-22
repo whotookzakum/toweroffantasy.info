@@ -2,6 +2,7 @@ import { ModalMenu } from "../../components/Modal";
 import { MOUNTS } from "../../data/en-US/mounts/mountList";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
+import Ads from "../../components/Ads";
 
 function Mounts() {
     return (
@@ -18,11 +19,16 @@ function Mounts() {
                     All mounts move at the same speed. Multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels.
                 </p>
             </header>
+
+            <Ads unit="lb1" />
             
             <section>
                 <h2>Mount List</h2>
                 <ModalMenu list={MOUNTS} />
             </section>
+
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
         </>
     );
 }

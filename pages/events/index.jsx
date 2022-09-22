@@ -1,7 +1,7 @@
 import { ModalMenu } from "../../components/Modal";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
-
+import Ads from "../../components/Ads";
 
 function Cosmetics() {
     return (
@@ -19,6 +19,8 @@ function Cosmetics() {
                 </p>
             </header>
 
+            <Ads unit="lb1" />
+
             <section>
                 <h2>Ongoing Events</h2>
                 <details>
@@ -28,6 +30,9 @@ function Cosmetics() {
                     </div>
                 </details>
             </section>
+
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
 
         </>
     );
