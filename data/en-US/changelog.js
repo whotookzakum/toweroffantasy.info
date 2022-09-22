@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 22",
+        text: "Updated Global mounts"
+    },
+    {
         date: "September 18",
         text: "Fixed Lin's weapon skill description (30% damage only while using volt resonance)."
     },
