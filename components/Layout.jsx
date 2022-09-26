@@ -15,11 +15,11 @@ export default function Layout({ children }) {
     return (
         <div className="wrapper">
             <Navigation />
-            <div className="left-gutter"/>
+            <div className="left-gutter" />
             <div className="middle">
                 <main>{children}</main>
             </div>
-            <div className="right-gutter"/>
+            <div className="right-gutter" />
             <Ads unit="player" />
             <Ads unit="lb2" />
         </div>
