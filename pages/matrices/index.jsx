@@ -2,6 +2,7 @@ import { ModalMenu } from "../../components/Modal";
 import { MATRICES } from "../../data/en-US/matrices/matrixList";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
+import Ads from "../../components/Ads";
 
 function Matrices() {
     return (
@@ -21,16 +22,23 @@ function Matrices() {
                     Matrices can be strengthened similar to weapons, with each star unlocking higher values for the set effect.
                 </p>
             </header>
+
+            <Ads unit="lb1" />
             
             <section>
                 <h2><span style={{color: "var(--color-tier-s)"}}>SSR</span> Matrices</h2>
                 <ModalMenu list={MATRICES} filter="rarity" target="SSR" />
             </section>
 
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
+
             <section>
                 <h2><span style={{color: "var(--color-tier-a)"}}>SR</span> Matrices</h2>
                 <ModalMenu list={MATRICES} filter="rarity" target="SR" />
             </section>
+
+            <Ads unit="mpu2" />
 
             <section>
                 <h2><span style={{color: "var(--color-tier-b)"}}>R</span> Matrices</h2>

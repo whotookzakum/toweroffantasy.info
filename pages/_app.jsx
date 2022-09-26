@@ -19,6 +19,13 @@ export default function App({ Component, pageProps }) {
         });
       `}
       </Script> */}
+      <Script id="nn-ad-script" strategy='beforeInteractive'>
+        {`
+          window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']};
+        `}
+      </Script>
+      <Script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" strategy='beforeInteractive' />
+      <Script async src="https://kumo.network-n.com/dist/app.js" site="toweroffantasyinfo" strategy='beforeInteractive' />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"
         strategy="afterInteractive"

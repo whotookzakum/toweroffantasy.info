@@ -7,6 +7,7 @@ import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
 import _ from "lodash";
 import { VersionToggler } from "../../components/VersionToggler";
+import Ads from "../../components/Ads";
 
 export async function getStaticProps({ params }) {
     const relic = await getRelicData(params.id);
@@ -50,10 +51,15 @@ export default function RelicPage({ relic, version, setVersion }) {
                 <div className="modal-body">
                     {dataVersion.chinaOnly && <CNTag name={dataVersion.name} />}
 
+                    <Ads unit="lb1" />
+
                     <section className="relic-effects w-75ch">
                         <h3 className="anchor">Relic Effect</h3>
                         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{dataVersion.description}</ReactMarkdown>
                     </section>
+
+                    <Ads unit="lb3" />
+                    <Ads unit="mpu1" />
 
                     <section className="advancements w-75ch">
                         <div className="modal-section-header">
@@ -73,6 +79,9 @@ export default function RelicPage({ relic, version, setVersion }) {
                             </tbody>
                         </table>
                     </section>
+
+                    <Ads unit="mpu2" />
+
                     {dataVersion.videoSrc &&
                         <section className="advancements w-75ch">
                             <h3 className="anchor">Preview</h3>

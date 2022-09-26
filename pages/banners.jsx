@@ -3,10 +3,12 @@ import Link from 'next/link';
 import { CHARACTERS } from '../data/en-US/characters/characterList';
 import { setPageTitle } from '../components/Layout';
 import Head from 'next/head';
+import Ads from '../components/Ads';
 import _ from 'lodash';
 
+
 function BannerList({ data }) {
-    const listItems = data.map(({name, element, uri, banner}) =>
+    const listItems = data.map(({ name, element, uri, banner }) =>
         <tr key={name + banner.week} style={{ color: `var(--color-${element})` }}>
             <th>
                 <Link href={`/simulacra/${uri}`}><a>{name}</a></Link>
@@ -55,7 +57,7 @@ export function getSortedBanners(version) {
 // Return number of characters added to standard banner
 export function getStandardAdditions(version) {
     return getSortedBanners(version)
-        .filter(({banner}) => banner.standardAfterwards)
+        .filter(({ banner }) => banner.standardAfterwards)
         .length;
 }
 
@@ -84,50 +86,57 @@ function BannerSchedule() {
             <img className="bg-img" src={`/static/images/art/${CHARACTERS[0].imgSrc}`} alt={CHARACTERS[0].name + " Artwork"} />
             <h1>Limited Banner Schedule</h1>
             <p>Click any character's name to go straight to their Simulacrum page.</p>
-            <div className="banners-wrapper">
-                <div className={isExpanded.global ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
-                    <h2>Global 
-                        <button 
-                            className="btn-expand" 
-                            onClick={() => 
-                                setHeight({ ...isExpanded, global: !isExpanded.global })}>
-                            Expand
-                        </button>
-                    </h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Banner</th>
-                                <th>Duration </th>
-                                <th>Days</th>
-                                <th>Week #</th>
-                            </tr>
-                        </thead>
-                        <BannerList data={getSortedBanners("glob")} />
-                    </table>
-                </div>
-                <div className={isExpanded.china ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
-                    <h2>China
-                        <button 
-                            className="btn-expand" 
-                            onClick={() => 
-                                setHeight({ ...isExpanded, china: !isExpanded.china })}>
-                            Expand
-                        </button>
-                    </h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><abbr title="China Exclusive" /> Banner</th>
-                                <th>Duration </th>
-                                <th>Days</th>
-                                <th>Week #</th>
-                            </tr>
-                        </thead>
-                        <BannerList data={getSortedBanners("cn")} />
-                    </table>
-                </div>
+
+            <Ads unit="lb1" />
+
+            <div className={isExpanded.global ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
+                <h2>Global
+                    <button
+                        className="btn-expand"
+                        onClick={() =>
+                            setHeight({ ...isExpanded, global: !isExpanded.global })}>
+                        Expand
+                    </button>
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Banner</th>
+                            <th>Duration </th>
+                            <th>Days</th>
+                            <th>Week #</th>
+                        </tr>
+                    </thead>
+                    <BannerList data={getSortedBanners("glob")} />
+                </table>
             </div>
+
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
+
+            <div className={isExpanded.china ? "expanded banners hide-scrollbar" : "banners hide-scrollbar"}>
+                <h2>China
+                    <button
+                        className="btn-expand"
+                        onClick={() =>
+                            setHeight({ ...isExpanded, china: !isExpanded.china })}>
+                        Expand
+                    </button>
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><abbr title="China Exclusive" /> Banner</th>
+                            <th>Duration </th>
+                            <th>Days</th>
+                            <th>Week #</th>
+                        </tr>
+                    </thead>
+                    <BannerList data={getSortedBanners("cn")} />
+                </table>
+            </div>
+
+            <Ads unit="mpu2" />
         </>
     )
 }

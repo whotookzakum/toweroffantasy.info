@@ -2,8 +2,8 @@ import { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
 import Head from "next/head";
+import Ads from "../components/Ads";
 import { getBannerCharacters, getSortedBanners, getStandardAdditions, getNewestCharacter } from "./banners";
-
 
 export default function Index() {
 
@@ -24,6 +24,8 @@ export default function Index() {
                 This site will mainly follow the <strong className="yellow">Global version</strong> of Tower of Fantasy.<br />
                 Content that is exclusive to the Chinese version will be indicated with <abbr title="China Exclusive" />
             </p>
+
+            <Ads unit="lb1" />
 
             <h3>Last update was on {CHANGELOG[0].date}. <Link href="/changelog"><a>See what's new</a></Link>.</h3>
             
@@ -46,6 +48,9 @@ export default function Index() {
             <p>
                 For corrections, suggestions, and bug reports, use <strong className="turquoise">#guide-makers-hub</strong> on <a href="https://discord.gg/aidacafe" title="Join Aida Cafe!">Discord</a>, or contact <strong className="turquoise">Zakum#3080</strong> directly.
             </p>
+
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
 
             <hr />
 
@@ -76,6 +81,8 @@ export default function Index() {
                 
                 <p><i>Tower of Fantasy is a trademark of Hotta Studios and Perfect World Games.</i></p>
             </div>
+
+            <Ads unit="mpu2" />
         </>
     )
 }

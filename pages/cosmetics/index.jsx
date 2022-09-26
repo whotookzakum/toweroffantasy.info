@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useState } from "react";
 import { GenderToggler } from "../../components/GenderToggler";
 import { useEffect } from "react";
+import Ads from "../../components/Ads";
 
 function Cosmetics() {
     const initialState = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("outfitGender")) : "F";
@@ -31,6 +32,8 @@ function Cosmetics() {
                 </p>
             </header>
 
+            <Ads unit="lb1" />
+
             <section>
                 <div className="modal-section-header">
                     <h2>Outfits</h2>
@@ -39,10 +42,15 @@ function Cosmetics() {
                 <ModalMenu list={OUTFITS} gender={gender} />
             </section>
 
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
+
             <section>
                 <h2>Mi-a Outfits</h2>
                 <ModalMenu list={MIA_OUTFITS} />
             </section>
+
+            <Ads unit="mpu2" />
         </>
     );
 }

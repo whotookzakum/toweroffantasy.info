@@ -4,6 +4,7 @@ import { getOutfitData, getAllOutfitIds } from "../../../lib/cosmetics";
 import CNTag from "../../../components/CNTag";
 import { Modal } from "../../../components/Modal";
 import { useState, useEffect } from "react";
+import Ads from "../../../components/Ads";
 
 export async function getStaticProps({ params }) {
     const outfit = await getOutfitData(params.id);
@@ -41,10 +42,17 @@ export default function OutfitModal({ outfit }) {
             <Modal item={outfit} gender={gender}>
                 <div className="modal-body outfits">
                     {outfit.chinaOnly && <CNTag name={outfit.name} />}
+
+                    <Ads unit="lb1" />
+
                     <section className="w-75ch">
                         <h3 className="anchor">How to get {outfit.name}</h3>
                         {outfit.source}
                     </section>
+
+                    <Ads unit="lb3" />
+                    <Ads unit="mpu1" />
+
                 </div>
             </Modal>
         </>

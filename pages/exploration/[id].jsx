@@ -6,6 +6,7 @@ import CNTag from "../../components/CNTag";
 import { Modal } from "../../components/Modal";
 import rehypeRaw from 'rehype-raw';
 import Link from "next/link";
+import Ads from "../../components/Ads";
 
 
 export async function getStaticProps({ params }) {
@@ -36,6 +37,9 @@ export default function MountModal({ exploration }) {
             <Modal item={exploration}>
                 <div className="modal-body exploration">
                     {exploration.chinaOnly && <CNTag name={exploration.name} />}
+
+                    <Ads unit="lb1" />
+
                     <section className="w-75ch">
                         <h3 className="anchor">How to solve</h3>
                         <ReactMarkdown rehypePlugins={[rehypeRaw]}>
@@ -45,6 +49,10 @@ export default function MountModal({ exploration }) {
                             <iframe src={exploration.videoSrc} allow="fullscreen" modestbranding={1} />
                         }
                     </section>
+
+                    <Ads unit="lb3" />
+                    <Ads unit="mpu1" />
+
                 </div>
             </Modal>
         </>

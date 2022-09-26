@@ -3,6 +3,7 @@ import dishes from "../../data/en-US/food/dishes";
 import { setPageTitle } from "../../components/Layout";
 import Head from 'next/head';
 import ReactMarkdown from "react-markdown";
+import Ads from "../../components/Ads";
 
 function Food() {
     const getRecipe = (dish) => {
@@ -50,6 +51,9 @@ function Food() {
                     When learning a new recipe, adding extra of the required ingredients will boost the chance of permanently unlocking the recipe.
                 </p>
             </header>
+
+            <Ads unit="lb1" />
+
             <section>
                 <menu className="filters" style={{ display: 'none' }}>
                     <li>
@@ -103,6 +107,7 @@ function Food() {
 
 
                 </menu>
+
                 <table className="food-list">
                     <thead>
                         <tr>
@@ -116,6 +121,9 @@ function Food() {
                     </tbody>
                 </table>
             </section>
+
+            <Ads unit="lb3" />
+            <Ads unit="mpu1" />
         </>
     );
 }

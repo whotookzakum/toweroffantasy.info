@@ -7,6 +7,7 @@ import { Modal } from "../../components/Modal";
 import rehypeRaw from "rehype-raw";
 import { VersionToggler } from "../../components/VersionToggler";
 import _ from "lodash";
+import Ads from "../../components/Ads";
 
 export async function getStaticProps({ params }) {
     const matrix = await getMatrixData(params.id);
@@ -80,7 +81,13 @@ export default function MatrixPage({ matrix, version, setVersion }) {
             <Modal item={matrix}>
                 <div className="modal-body">
                     {matrix.chinaOnly && <CNTag name={matrix.name} />}
+
+                    <Ads unit="lb1" />
+
                     {setEffects}
+
+                    <Ads unit="lb3" />
+                    <Ads unit="mpu1" />
                 </div>
             </Modal>
         </>
