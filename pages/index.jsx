@@ -2,7 +2,6 @@ import { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
 import Head from "next/head";
-import { getBannerCharacters, getSortedBanners, getStandardAdditions } from "./banners";
 import Ads from "../components/Ads";
 import { getBannerCharacters, getSortedBanners, getStandardAdditions, getNewestCharacter } from "./banners";
 
