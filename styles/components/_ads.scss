@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 #nn_lb1,
 #nn_lb3,
 #nn_mobile_lb1,
@@ -6,6 +8,20 @@
 #nn_mobile_mpu2 {
     display: none;
     margin: 1rem auto;
+    position: relative;
+
+    &::before {
+        content: 'Ads help support the site!';
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: clr(container, light);
+        padding: 1rem;
+        box-shadow: 0 0 2px clr(shadow);
+    }
 }
 
 // LB2 is the sticky one

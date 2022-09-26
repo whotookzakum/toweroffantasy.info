@@ -1,18 +1,5 @@
 @use "../abstracts" as *;
 
-.banners-wrapper {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    display: flex;
-    flex-wrap: wrap;
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-}
-
-
 .banners {
     height: 325px;
     overflow-y: scroll;
@@ -46,6 +33,11 @@
         font-weight: normal;
         text-transform: initial;
         color: gray;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 
     &.expanded {
