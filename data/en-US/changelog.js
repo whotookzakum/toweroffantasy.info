@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
-        date: "September 25",
-        text: "Updated Global mounts"
+        date: "September 26",
+        text: "Mount: Thunder added; Relic: Chosen Dice added; Updated Global mount acquisition methods; Updated Artificial Island Construction guide with mob respawns and building costs;"
     },
     {
         date: "September 18",

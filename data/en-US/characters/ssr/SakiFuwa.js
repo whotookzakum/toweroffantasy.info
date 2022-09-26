@@ -13,7 +13,14 @@ const saki = {
                 end: "23 Jun 2022",
                 duration: "20d",
                 week: "25~28"
-            }
+            },
+            // {
+            //     bannerNo: 22,
+            //     start: "28 Sep 2022",
+            //     end: "15 Oct 2022",
+            //     duration: "17d",
+            //     week: "43~45"
+            // }
         ]
     },
     weapon: {

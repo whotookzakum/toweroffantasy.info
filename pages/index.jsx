@@ -2,13 +2,13 @@ import { setPageTitle } from "../components/Layout";
 import Link from 'next/link';
 import { CHANGELOG } from '../data/en-US/changelog';
 import Head from "next/head";
-import { getBannerCharacters, getSortedBanners, getStandardAdditions } from "./banners";
+import { getBannerCharacters, getSortedBanners, getStandardAdditions, getNewestCharacter } from "./banners";
 
 
 export default function Index() {
 
-    const globalBanners = getSortedBanners("glob");
-    const chinaBanners = getSortedBanners("cn");
+    const globalLatestBanner = getNewestCharacter("glob");
+    const cnLatestBanner = getNewestCharacter("cn");
 
     return(
         <>
@@ -32,7 +32,7 @@ export default function Index() {
                 <strong>{getSortedBanners("glob").length}</strong> Banners,&nbsp;
                 <strong>{getBannerCharacters("glob").length}</strong> Unique, with&nbsp;
                 <strong>{getStandardAdditions("glob")}</strong> additions to the Standard Banner.<br/>
-                The newest character is <Link href={`/simulacra/${globalBanners[0].uri}`}><a>{globalBanners[0].name}</a></Link>.
+                The newest character is <Link href={`/simulacra/${globalLatestBanner.uri}`}><a>{globalLatestBanner.name}</a></Link>.
             </blockquote>
 
             <blockquote className="banner-count" style={{ borderColor: "#e72e37"}}>
@@ -40,7 +40,7 @@ export default function Index() {
                 <strong>{getSortedBanners("cn").length}</strong> Banners,&nbsp;
                 <strong>{getBannerCharacters("cn").length}</strong> Unique, with&nbsp;
                 <strong>{getStandardAdditions("cn")}</strong> additions to the Standard Banner.<br/>
-                The newest character is <Link href={`/simulacra/${chinaBanners[0].uri}`}><a>{chinaBanners[0].name}</a></Link>.
+                The newest character is <Link href={`/simulacra/${cnLatestBanner.uri}`}><a>{cnLatestBanner.name}</a></Link>.
             </blockquote>
 
             <p>
