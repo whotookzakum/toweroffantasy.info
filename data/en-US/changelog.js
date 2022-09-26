@@ -1,6 +1,6 @@
 export const CHANGELOG = [
     {
-        date: "September 22",
+        date: "September 25",
         text: "Updated Global mounts"
     },
     {
