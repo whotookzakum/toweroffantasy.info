@@ -9,10 +9,13 @@
     display: none;
     margin: 1rem auto;
     position: relative;
+    z-index: 10;
 
     &::before {
         content: 'Ads help support the site!';
         position: absolute;
+        z-index: -1;
+        box-sizing: border-box;
         width: 100%;
         text-align: center;
         top: 50%;
