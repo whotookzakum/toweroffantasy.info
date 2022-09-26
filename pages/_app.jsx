@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
         });
       `}
       </Script> */}
-      <Script strategy='beforeInteractive'>
+      <Script id="nn-ad-script" strategy='beforeInteractive'>
         {`
           window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']};
         `}
