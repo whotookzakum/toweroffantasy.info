@@ -39,6 +39,11 @@
     height: 50px;
 }
 
+#nn_player {
+    position: fixed;
+    z-index: 99999;
+}
+
 @media (min-width: 991px) {
 
     #nn_lb1,
