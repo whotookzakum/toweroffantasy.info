@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "September 26",
+        text: "Mount: Thunder added; Relic: Chosen Dice added; Updated Global mount acquisition methods; Updated Artificial Island Construction guide with mob respawns and building costs;"
+    },
+    {
         date: "September 18",
         text: "Fixed Lin's weapon skill description (30% damage only while using volt resonance)."
     },

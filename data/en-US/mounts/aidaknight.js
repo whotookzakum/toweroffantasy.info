@@ -1,11 +1,13 @@
 const aidaknight = {
-    name: "Aida Knight",
-    uri: "aida-knight",
+    name: "Aidan Knight",
+    uri: "aidan-knight",
     imgSrc: "aidaknight.webp",
-    chinaOnly: true,
+    chinaOnly: false,
     parts: {
         part1: {
-            source: "Rewarded for purchasing the 4th Collector's Edition Pass.",
+            source: 
+                `Obtained by purchasing the 2nd Collector's Edition Pass.  
+                <abbr title="China Exclusive"></abbr> Obtained by purchasing the 4th Collector's Edition Pass.`,
         }
     },
     videoSrc: "https://www.youtube.com/embed/xmcxrn_DoNQ"

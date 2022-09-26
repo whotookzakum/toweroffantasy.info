@@ -13,8 +13,10 @@ import monocross from "./monocross";
 import newstar from "./newstar";
 import omniumbeastvii from "./omniumbeastvii";
 import voyager from "./voyager";
+import thunder from './thunder';
 
 export const MOUNTS = [
+    thunder,
     newstar,
     futurechariot,
     jerboapaincar,

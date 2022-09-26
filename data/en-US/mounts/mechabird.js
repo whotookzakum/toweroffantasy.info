@@ -1,6 +1,6 @@
 const mechabird = {
-    name: "Mechabird",
-    uri: "mechabird",
+    name: "Mechbird",
+    uri: "mechbird",
     imgSrc: "mechabird.webp",
     chinaOnly: false,
     parts: {
@@ -16,7 +16,7 @@ const mechabird = {
         part4: {
             source: 
                 `Purchasable from event shop during event period.  
-                <abbr title="China Exclusive"></abbr> Reward for server progress reaching 100% during event period.`,
+                <abbr title="China Exclusive"></abbr> Rewarded for server progress reaching 100% during event period.`,
         },
     },
     videoSrc: "https://www.youtube.com/embed/-JJNBnwHjcM"

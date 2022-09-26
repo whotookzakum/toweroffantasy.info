@@ -28,6 +28,15 @@ const nemesis = {
                 end: "21 Aug 2022",
                 duration: "10d",
                 week: "35~37"
+            },
+            {
+                bannerNo: 21,
+                subtext: "Standard afterwards",
+                start: "18 Sep 2022",
+                end: "28 Sep 2022",
+                duration: "10d",
+                week: "42~43",
+                standardAfterwards: false
             }
         ],
         glob: [
