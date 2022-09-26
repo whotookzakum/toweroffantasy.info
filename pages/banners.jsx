@@ -4,6 +4,8 @@ import { CHARACTERS } from '../data/en-US/characters/characterList';
 import { setPageTitle } from '../components/Layout';
 import Head from 'next/head';
 import Ads from '../components/Ads';
+import _ from 'lodash';
+
 
 function BannerList({ data }) {
     const listItems = data.map(({name, element, uri, banner}) =>
@@ -54,8 +56,20 @@ export function getSortedBanners(version) {
 
 // Return number of characters added to standard banner
 export function getStandardAdditions(version) {
-    return getSortedBanners(version).filter(({banner}) => 
-        banner.standardAfterwards).length;
+    return getSortedBanners(version)
+        .filter(({banner}) => banner.standardAfterwards)
+        .length;
+}
+
+// Return the data of the newest unique character (not a rerun)
+export function getNewestCharacter(version) {
+    // Can't use getSortedBanners because lodash will remove subsequent iterations of names. Reruns will appear at the top of the list.
+    // Assumes that CHARACTERS will always have newest character at index 0.
+    const bannerList = getTotalBanners(version);
+    const uniqueBanners = _.uniqBy(bannerList, 'name');
+    // Sort here
+    const sorted = uniqueBanners.sort((a, b) => -(a.banner.bannerNo - b.banner.bannerNo))
+    return sorted[0];
 }
 
 function BannerSchedule() {
