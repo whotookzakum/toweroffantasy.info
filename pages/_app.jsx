@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }) {
         `}
       </Script> */}
       <Script
+        id="nn-ad-window"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: 
