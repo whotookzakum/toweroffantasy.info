@@ -7,38 +7,27 @@ export default function App({ Component, pageProps }) {
   const [versionState, setVersionState] = useState("global");
   return (
     <>
-      {/* <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
-
-      <Script strategy="lazyOnload" id="g-analytics">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-        page_path: window.location.pathname,
-        });
-      `}
-      </Script> */}
-      {/* <Script id="nn-ad-script" strategy='beforeInteractive'>
-        {`
-          window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']};
-        `}
-      </Script> */}
+      <Script
+        src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+        strategy='lazyOnload'
+      />
+      <Script
+        src="https://kumo.network-n.com/dist/app.js"
+        site="toweroffantasyinfo" strategy='lazyOnload'
+      />
       <Script
         id="nn-ad-window"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
-          __html: 
-          `window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']};`
+          __html:
+            `window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`
         }}
       />
-      <Script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" strategy='afterInteractive' />
-      <Script async src="https://kumo.network-n.com/dist/app.js" site="toweroffantasyinfo" strategy='afterInteractive' />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"
-        strategy="afterInteractive"
+        crossOrigin='anonymous'
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}

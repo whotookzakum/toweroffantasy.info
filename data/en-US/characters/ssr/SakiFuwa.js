@@ -14,13 +14,13 @@ const saki = {
                 duration: "20d",
                 week: "25~28"
             },
-            // {
-            //     bannerNo: 22,
-            //     start: "28 Sep 2022",
-            //     end: "15 Oct 2022",
-            //     duration: "17d",
-            //     week: "43~45"
-            // }
+            {
+                bannerNo: 22,
+                start: "28 Sep 2022",
+                end: "17 Oct 2022",
+                duration: "19d",
+                week: "43~46"
+            }
         ]
     },
     weapon: {
@@ -86,14 +86,14 @@ const saki = {
                         In the process of falling, each time you hit a target deal damage equal to **30.4%** of ATK + **2** damage to the target; when landing, it will cause **76%** of ATK + **4** damage to surrounding targets.`
                 },
                 {
-                    name: "Surging Heart Vortex", // "while target is airborne"
+                    name: "Surging Heart Style - Vortex", // "while target is airborne"
                     input: ["hold:Attack"],
                     description: 
                         `During normal attacks, hold the normal attack to trigger.  
                         Dash forward and spin to perform multi-stage attacks, dealing damage up to **199.5%** of ATK + **11** damage to the target.`
                 },
                 {
-                    name: "Calm Style Broken Spring", // "while target is on the ground"
+                    name: "Calm Style - Broken Spring", // "while target is on the ground"
                     input: ["hold:Attack"],
                     description: 
                         `In Calm Style, the normal attack can be triggered by holding the normal attack or immediately.  
@@ -116,21 +116,24 @@ const saki = {
             ],
             skill: [
                 {
-                    name: "Surging Heart Style - Glimpse of Ningsen",
-                    description: `Dash in the target direction and briefly immobilize the enemy on the path, delaying dealing up to **927.7%** of ATK + **49** damage to the enemy on the path, cooldown for **30** seconds.`
+                    name: "Surging Heart Style - Glimpse of Ning Quan",
+                    description: `Dash in the target direction and briefly immobilize enemies in your way, dealing delayed damage up to **927.7%** of ATK + **49**, cooldown for **30** seconds.`
                 },
                 {
                     name: "Calm Style - Gathering Springs",
                     description: 
-                        `Release the skill of Calm Style Flow to enter the charging state, continuously taunting surrounding targets, charging for up to **3** seconds, absorbing damage during charging (up to **60%** of Max HP), and dealing damage after charging ends. Damage dealt is equal to **850%** &times; Frost Attack + **50%** &times; amount of damage absored as Frost damage. **20%** of the value that is not consumed is converted into health regeneration, and cool down for **30** seconds.  
+                        `Enter a charging state for up to **3** seconds. While charging, continuously taunt surrounding targets and absorb damage (up to **60%** of Max HP). When charging ends, deal Frost damage based on damage absored, equal to **850%** &times; Frost Attack + **50%** &times; amount of damage absored. **20%** of the amount that is not used is converted into health. Cooldown **30** seconds.`
+                },
+                {
+                    name: "Passive",
+                    description: 
+                        `When using Fortitude Resonance, switch to Calm Style, otherwise switch to Surging Heart Style.  
                         &nbsp;  
-                        When using Perserverance Resonance, switch to Calm Style, and use the Calm Style weapon skill. When using another resonance, switch to Surging Heart Style.  
+                        Cast the skill to summon a Shadow Sword that follows you. When using Ryusen Toshin's hold attack or discharge skill, Shadow Sword unleashes [Surge], dealing **450%** of Frost ATK as AoE damage to the target. [Surge] has a cooldown of **10** seconds.  
                         &nbsp;  
-                        Release the Unbreakable skill to obtain the sword shadow that follows you, and release the Unbreakable branch skill or link. During the skill, the sword shadow will release [Surge], causing **450%** of Frost Attack range damage to the target, [Surge] cools down for **10** seconds.  
+                        **Surging Heart Style**: When the player uses any weapon to deal damage, the Shadow Sword releases [Flow], dealing **125%** of Frost ATK as damage to another target and recovering **57%** of the damage as health (each recovery is capped at **100%** of ATK), cooldown **0.8** seconds.  
                         &nbsp;  
-                        **Surging Heart Style**: When the player uses any weapon to cause damage, the sword shadow releases [flow], causing **125%** of Frost attack damage to the first outside hit target and recovering **57%** of the damage value of health, the maximum recovery amount each time does not exceed aggressive **100%**, cooldown **0.8** seconds.  
-                        &nbsp;  
-                        **Calm Style**: After the sword shadow releases [Surge], the player will get **3** blocks for **10** seconds. The maximum block amount does not exceed **15%** of Max HP. Each successful block will deal damage equal to **450%** of Frost ATK, [Surge]'s shield-breaking ability increased by **100%** and added taunting effect.`
+                        **Calm Style**: After the Shadow Sword unleashes [Surge], gain **3** block charges that last for **10** seconds and blocking up to **15%** of Max HP. Each successful block deals [Counterattack] damage equal to **450%** of Frost ATK. Increase [Surge]'s shatter by **100%** and grant it a taunting effect.`
                 }
             ],
             discharge: [
@@ -140,12 +143,12 @@ const saki = {
                 }
             ]
         },
-        recommendedMatrix: {
-            set2: ["crow", "samir"],
-            set4: ["samir"],
-            set3: ["sobek"]
-        },
         recommendedMatrices: [
+            {
+                name: "Saki Fuwa",
+                pieces: 4,
+                description: "Very high damage buff set that is best used on other weapons. However, if you're using Alyss, Saki, and Lin weapons together, it's best used on Saki's weapon as the other two need their matrices to be used on their weapons specifically. Since you'll be switching weapons a lot, this set is better than the options below."
+            },
             {
                 name: "Samir",
                 pieces: 2,

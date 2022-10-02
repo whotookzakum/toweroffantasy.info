@@ -23,6 +23,8 @@ const chosendice = {
 
         star5: "The **Overclock** effect can be obtained if the sum of the **3** dice is **14** or higher."
     },
+    videoSrc: "https://www.youtube.com/embed/ETwAWjkz7qM",
+    starsInVideo: "0"
 }
 
 export default chosendice;

@@ -36,7 +36,7 @@ const marc = {
         bonusEffect: {
             effect1: {
                 title: `Guardian`,
-                description: `**[GROUP PLAY]** When using Re-entry, Form Switch, or Full Shot, take **40%** damage for your lowest HP ally and recover 10% of it back after **10** seconds. Only activates while using Perseverance Resonance and the effect cannot be removed early or reactivated until it ends.`
+                description: `**[GROUP PLAY]** When using Re-entry, Form Switch, or Full Shot, take **40%** damage for your lowest HP ally and recover 10% of it back after **10** seconds. Only activates while using Fortitude Resonance and the effect cannot be removed early or reactivated until it ends.`
             },
             effect2: {
                 title: `Amplify`,
