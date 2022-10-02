@@ -25,8 +25,10 @@ import Ene from './sr/Ene';
 import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
 import Annabella from './ssr/Annabella';
+import Alyss from './ssr/Alyss';
 
 const characterList = [
+    Alyss,
     Annabella,
     Tianlang,
     Lyra,

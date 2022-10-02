@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "October 2",
+        text: "New Simulacra: Alyss added; Saki Fuwa skill description reworded; Perseverance resonance fixed to Fortitude to match global name;"
+    },
+    {
         date: "September 26",
         text: "Mount: Thunder added; Relic: Chosen Dice added; Updated Global mount acquisition methods; Updated Artificial Island Construction guide with mob respawns and building costs;"
     },

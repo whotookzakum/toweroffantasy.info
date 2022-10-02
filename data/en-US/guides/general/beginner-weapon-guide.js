@@ -77,7 +77,7 @@ export const beginnerWeapons = {
                             </td>
                         </tr>
                         <tr>
-                            <th className="yellow">Perseverance</th>
+                            <th className="yellow">Fortitude</th>
                             <td>
                                 <div className="flex" style={{ gap: "0.5rem" }} >
                                     <img src="/static/images/defense.webp" alt="Defense type" />
