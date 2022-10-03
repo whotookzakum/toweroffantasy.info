@@ -8,10 +8,7 @@ export default function App({ Component, pageProps }) {
   const [versionState, setVersionState] = useState("global");
   return (
     <>
-    <Head>
-    <script async src="https://kumo.network-n.com/dist/app.js" site="toweroffantasyinfo"></script>
-    </Head>
-      {/* <Head>
+      <Head>
         <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossOrigin />
         <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossOrigin />
       </Head>
@@ -19,12 +16,14 @@ export default function App({ Component, pageProps }) {
         {`window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`}
       </Script>
       <Script
+        async
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
       />
       <Script
+        async
         src="https://kumo.network-n.com/dist/app.js"
         site="toweroffantasyinfo"
-      /> */}
+      />
       {/* <Script
         id="nn-ad-window"
         dangerouslySetInnerHTML={{
