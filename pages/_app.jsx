@@ -12,6 +12,9 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossOrigin />
         <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossOrigin />
       </Head>
+      <Script id="nn-ad-window">
+        {`window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`}
+      </Script>
       <Script
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
       />
@@ -26,9 +29,6 @@ export default function App({ Component, pageProps }) {
             `window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`
         }}
       /> */}
-      <Script id="nn-ad-window">
-        {`window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`}
-      </Script>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"
         crossOrigin='anonymous'
