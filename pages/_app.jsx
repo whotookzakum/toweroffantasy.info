@@ -2,27 +2,33 @@ import Layout from '../components/Layout';
 import Script from 'next/script';
 import { useState } from 'react';
 import '../styles/styles.scss';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
   const [versionState, setVersionState] = useState("global");
   return (
     <>
+      <Head>
+        <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossOrigin />
+        <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossOrigin />
+      </Head>
       <Script
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-        strategy='lazyOnload'
       />
       <Script
         src="https://kumo.network-n.com/dist/app.js"
-        site="toweroffantasyinfo" strategy='lazyOnload'
+        site="toweroffantasyinfo"
       />
-      <Script
+      {/* <Script
         id="nn-ad-window"
-        strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html:
             `window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`
         }}
-      />
+      /> */}
+      <Script id="nn-ad-window">
+        {`window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`}
+      </Script>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"
         crossOrigin='anonymous'
