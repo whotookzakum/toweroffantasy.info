@@ -17,12 +17,11 @@ export default function App({ Component, pageProps }) {
       </Script>
       <Script
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-      /> */}
+      />
       <Script
-        async
         src="https://kumo.network-n.com/dist/app.js"
         site="toweroffantasyinfo"
-      />
+      /> */}
       {/* <Script
         id="nn-ad-window"
         dangerouslySetInnerHTML={{
