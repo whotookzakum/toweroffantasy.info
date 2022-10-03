@@ -8,6 +8,9 @@ export default function App({ Component, pageProps }) {
   const [versionState, setVersionState] = useState("global");
   return (
     <>
+    <Head>
+    <script async src="https://kumo.network-n.com/dist/app.js" site="toweroffantasyinfo"></script>
+    </Head>
       {/* <Head>
         <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossOrigin />
         <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossOrigin />
