@@ -22,22 +22,28 @@ export const movementTech = {
 
             <section>
                 <h2>Plunge Drill (Crow Attack Tech)</h2>
-                <p>
-                    A method of performing high damage using Thunderblades. <strong className="yellow">Jump, jetpack, then attack</strong> (when there is a valid target). The aerial downward/plunge attack with the Thunderblades can hit multiple times and deal massive damage. Repeating this combo quickly on maps where the jetpack can be used can make Thunderblades one of the highest DPS weapons in the game.
-                </p>
-                <p>
-                    Note that this tech is dependent on latency, FPS, and most importantly, <strong className="yellow">target size</strong>. For smaller mobs I personally do one jump and quickly perform the combo to hit 2 times each plunge. For large mobs, you should experiment with double jumping, and also jumping away from the enemy to increase number of hits. However, when using Crow's simulacra you should go for high jumps to maximize hits (read below).
-                </p>
-                <p>
-                    In late August 2022 (Global), <strong className="yellow">this attack was nerfed to consume endurance</strong>. Nevertheless, it can still be used for a long while as you level up and increase your endurance. It can actually still be performed with zero stamina to a lesser degree (the attack will end early but you can still start the plunge and get in a hit or two).
-                </p>
-                <h3>Crow Simulacra Bug</h3>
-                <p>
-                    This tech is currently bugged and <strong className="yellow">using Crow's simulacrum appearance</strong> (not his traits) increases number of hits considerably. Using his appearance also slightly modifies how he performs when out of endurance, though overall it is a damage increase until this is fixed.
-                </p>
-                <p>
-                    In the settings, <strong className="yellow">disable Hit Frame</strong>. Hit Frame adds a delay when attacking mobs; when it is disabled, you will attack quicker and more smoothly with Thunderblades.
-                </p>
+                <blockquote>
+                    The following tech was nerfed/patched and remains only for reference purposes.
+                </blockquote>
+                <details>
+                    <summary>Show</summary>
+                    <p>
+                        A method of performing high damage using Thunderblades. <strong className="yellow">Jump, jetpack, then attack</strong> (when there is a valid target). The aerial downward/plunge attack with the Thunderblades can hit multiple times and deal massive damage. Repeating this combo quickly on maps where the jetpack can be used can make Thunderblades one of the highest DPS weapons in the game.
+                    </p>
+                    <p>
+                        Note that this tech is dependent on latency, FPS, and most importantly, <strong className="yellow">target size</strong>. For smaller mobs I personally do one jump and quickly perform the combo to hit 2 times each plunge. For large mobs, you should experiment with double jumping, and also jumping away from the enemy to increase number of hits. However, when using Crow's simulacra you should go for high jumps to maximize hits (read below).
+                    </p>
+                    <p>
+                        In late August 2022 (Global), <strong className="yellow">this attack was nerfed to consume endurance</strong>. Nevertheless, it can still be used for a long while as you level up and increase your endurance. It can actually still be performed with zero stamina to a lesser degree (the attack will end early but you can still start the plunge and get in a hit or two).
+                    </p>
+                    <h3>Crow Simulacra Bug</h3>
+                    <p>
+                        This tech is currently bugged and <strong className="yellow">using Crow's simulacrum appearance</strong> (not his traits) increases number of hits considerably. Using his appearance also slightly modifies how he performs when out of endurance, though overall it is a damage increase until this is fixed.
+                    </p>
+                    <p>
+                        In the settings, <strong className="yellow">disable Hit Frame</strong>. Hit Frame adds a delay when attacking mobs; when it is disabled, you will attack quicker and more smoothly with Thunderblades.
+                    </p>
+                </details>
             </section>
 
             <section>

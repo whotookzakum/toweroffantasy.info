@@ -109,7 +109,7 @@ export const weaponUpgrades = {
             {
                 wepLevelMin: 130,
                 wepLevelMax: 140,
-                goldAndExpCost: "?",
+                goldAndExpCost: "8000",
                 augmentMatCount: [15, 15, 15],
                 augmentGoldCost: "5200",
                 materialTier: 2
@@ -118,7 +118,7 @@ export const weaponUpgrades = {
                 wepLevelMin: 140,
                 wepLevelMax: 150,
                 goldAndExpCost: "?",
-                augmentMatCount: ["?", "?", "?"],
+                augmentMatCount: [20, 20, 20],
                 augmentGoldCost: "5600",
                 materialTier: 2
             },
