@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "October 10",
+        text: "Updated Cobalt-B info; Movement tech guide removed Crow Plunge tech"
+    },
+    {
         date: "October 2",
         text: "New Simulacra: Alyss added; Banners updated; Saki Fuwa skill description reworded; Perseverance resonance fixed to Fortitude to match global name;"
     },
