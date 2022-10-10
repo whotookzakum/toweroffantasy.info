@@ -8,13 +8,13 @@ export default function App({ Component, pageProps }) {
   const [versionState, setVersionState] = useState("global");
   return (
     <>
-      {/* <Head>
-        <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossOrigin />
-        <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossOrigin />
+      <Head>
+        <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossOrigin="true" />
+        <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossOrigin="true" />
       </Head>
-      <Script id="nn-ad-window">
+      {/* <Script id="nn-ad-window">
         {`window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`}
-      </Script>
+      </Script> */}
       <Script
         async
         src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
@@ -23,14 +23,14 @@ export default function App({ Component, pageProps }) {
         async
         src="https://kumo.network-n.com/dist/app.js"
         site="toweroffantasyinfo"
-      /> */}
-      {/* <Script
+      />
+      <Script
         id="nn-ad-window"
         dangerouslySetInnerHTML={{
           __html:
             `window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']}`
         }}
-      /> */}
+      />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-N68SWH7ZJB"
         crossOrigin='anonymous'
