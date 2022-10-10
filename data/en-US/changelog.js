@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "October 10",
-        text: "Updated Cobalt-B info; Movement tech guide removed Crow Plunge tech"
+        text: "Updated Cobalt-B info; Movement tech guide removed Crow Plunge tech; Global weapon upgrade mats updated up to lv 150"
     },
     {
         date: "October 2",
