@@ -223,48 +223,56 @@ export const MIA_OUTFITS = [
     {
         name: "Swimsuit Mi-a",
         uri: "swimsuit-mia",
+        chinaOnly: true,
         imgSrc: "swimsuitmia.webp",
         source: "Purchasable for 980 Tanium."
     },
     {
         name: "Bag Mi-a",
         uri: "bag-mia",
+        chinaOnly: true,
         imgSrc: "bagmia.webp",
         source: "Purchasable for 1280 Tanium."
     },
     {
         name: "Panda Mi-a",
         uri: "panda-mia",
+        chinaOnly: true,
         imgSrc: "pandamia.webp",
         source: "Purchasable for 1280 Tanium."
     },
     {
         name: "Koi Mi-a",
         uri: "koi-mia",
+        chinaOnly: true,
         imgSrc: "koimia.webp",
         source: "Purchasable for 1280 Tanium."
     },
     {
         name: "Explorer Mi-a",
         uri: "explorer-mia",
+        chinaOnly: true,
         imgSrc: "explorermia.webp",
         source: "Obtained by reaching 100% exploration on all 3 Dark Zones in Vera Desert."
     },
     {
         name: "Maid Mi-a",
         uri: "maid-mia",
+        chinaOnly: true,
         imgSrc: "maidmia.webp",
         source: "Available by default."
     },
     {
         name: "Dress Mi-a",
         uri: "dress-mia",
+        chinaOnly: true,
         imgSrc: "dressmia.webp",
         source: "Available by default."
     },
     {
         name: "Mi-a",
         uri: "mia",
+        chinaOnly: true,
         imgSrc: "mia.webp",
         source: "Available by default."
     }

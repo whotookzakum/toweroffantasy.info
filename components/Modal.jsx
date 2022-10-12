@@ -129,7 +129,9 @@ export function Modal({ item, children, gender }) {
         case "cosmetics/outfits":
             options.headerClass = "cosmetics";
             options.bgImgPath = `bg-1.webp`;
-            options.headerImgPath = `${path}/${gender}_${item.imgSrc}`;
+            if (gender) {
+                options.headerImgPath = `${path}/${gender}_${item.imgSrc}`;
+            }
             break;
         default:
             break;
