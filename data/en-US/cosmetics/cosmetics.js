@@ -217,14 +217,141 @@ export const OUTFITS = [
     // }
 ]
 
-// export const ACCESSORIES = [
-//     {
-//         name: "",
-//         uri: "",
-//         imgSrc: ".webp",
-//         source: ""
-//     },
-// ]
+export const ACCESSORIES = [
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+    {
+        name: "",
+        uri: "",
+        chinaOnly: false,
+        imgSrc: ".webp",
+        source: ""
+    },
+]
 
 
 // export const HEADWEAR = [
@@ -465,6 +592,20 @@ export const AVATARS = [
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
+        name: "Mi-a Celebration (?)",
+        uri: "mia-celebration",
+        chinaOnly: true,
+        imgSrc: "mia-celebration.webp",
+        source: "Obtained from gachapon during the Lunar New Year event." // i think
+    },
+    {
+        name: "Mi-a Student (?)",
+        uri: "mia-student",
+        chinaOnly: true,
+        imgSrc: "mia-student.webp",
+        source: "Obtained from gachapon during the Lunar New Year event." // i think
+    },
+    {
         name: "Frigg",
         uri: "frigg",
         imgSrc: "frigg.webp",
@@ -475,6 +616,18 @@ export const AVATARS = [
         uri: "shirli",
         imgSrc: "shirli.webp",
         source: "Obtained by purchasing the 1st Collector's Edition Pass."
+    },
+    {
+        name: "Nemesis: Awakening",
+        uri: "nemesis-awakening",
+        imgSrc: "nemesis-awakening.webp",
+        source: "Obtained by logging in for the first time on iOS during the official launch event period."
+    },
+    {
+        name: "Shirli: Awakening",
+        uri: "shirli-awakening",
+        imgSrc: "shirli-awakening.webp",
+        source: "Obtained by logging in for the first time on Android during the official launch event period."
     },
     {
         name: "Zeke: Awakening",
@@ -775,13 +928,25 @@ export const AVATAR_FRAMES = [
         name: "Hanging Amusement Park",
         uri: "hanging-amusement-park",
         imgSrc: "hanging-amusement-park.webp",
-        source: "Purchasable from Hana on Cetus Island."
+        source: "Purchasable from Enfi on Cetus Island."
     },
     {
         name: "Shining Star",
         uri: "shining-star",
         imgSrc: "shining-star.webp",
         source: "Obtained by purchasing the 1st Collector's Edition Pass."
+    },
+    {
+        name: "Illusory Link",
+        uri: "illusory-link",
+        imgSrc: "illusory-link.webp",
+        source: "Obtained as a Twitch drop during the global launch event."
+    },
+    {
+        name: "Leader of Astra",
+        uri: "leader-of-astra",
+        imgSrc: "leader-of-astra.webp",
+        source: "Unknown."
     },
     {
         name: "Sci-Fi World",
@@ -1065,7 +1230,7 @@ export const CHAT_BUBBLES = [
         name: "Hanging Amusement Park",
         uri: "hanging-amusement-park",
         imgSrc: "hanging-amusement-park.webp",
-        source: "Purchasable from Hana on Cetus Island."
+        source: "Purchasable from Enfi on Cetus Island."
     },
     {
         name: "Special Permission",

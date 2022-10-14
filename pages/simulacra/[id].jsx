@@ -222,8 +222,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         )
     })
 
-    
-
     return (
         <>
             <Head>
