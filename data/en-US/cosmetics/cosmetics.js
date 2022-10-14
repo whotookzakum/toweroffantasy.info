@@ -206,162 +206,456 @@ export const OUTFITS = [
     // {
     //     name: "Absolute Order",
     //     imgSrc: "absoluteorder.webp",
-    //     chinaOnly: false,
+    //     chinaOnly: true,
     //     source: ""
     // },
     // {
     //     name: "Rising Gale",
     //     imgSrc: "risinggale.webp",
-    //     chinaOnly: false,
+    //     chinaOnly: true,
     //     source: ""
     // }
 ]
 
 export const ACCESSORIES = [
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Red Heart Eye Mask",
+        uri: "red-heart-eye-mask",
+        imgSrc: "red-heart-eye-mask.webp",
+        source: "Unknown."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Charming Glasses",
+        uri: "charming-glasses",
+        imgSrc: "charming-glasses.webp",
+        source: "Unknown."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Pink Glasses",
+        uri: "pink-glasses",
+        imgSrc: "pink-glasses.webp",
+        source: "Unknown."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Disguise Sunglasses",
+        uri: "disguise-sunglasses",
+        imgSrc: "disguise-sunglasses.webp",
+        source: "Obtained by reaching 85% exploration on  Artificial Island - Outer Islands."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Particle Lens",
+        uri: "particle-lens",
+        imgSrc: "particle-lens.webp",
+        source: "Rewarded at the end of the Apex League season for reaching the Battle Lord rank."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Black Eye Band",
+        uri: "black-eye-band",
+        imgSrc: "black-eye-band.webp",
+        source: "Rewarded at the end of the Apex League season for reaching the Star General rank."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Hellamander Mask",
+        uri: "hellamander-mask",
+        chinaOnly: true,
+        imgSrc: "hellamander-mask.webp",
+        source: "From events."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Orange Eyepiece",
+        uri: "orange-eyepiece",
+        chinaOnly: true,
+        imgSrc: "orange-eyepiece.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Party Horn",
+        uri: "party-horn",
+        chinaOnly: true,
+        imgSrc: "party-horn.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Whistle",
+        uri: "whistle",
+        chinaOnly: true,
+        imgSrc: "whistle.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Feast",
+        uri: "feast",
+        imgSrc: "feast.webp",
+        source: "Obtained by reaching 85% exploration on  Artificial Island."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Bubble Gum",
+        uri: "bubble-gum",
+        chinaOnly: true,
+        imgSrc: "bubble-gum.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Doodle",
+        uri: "doodle",
+        chinaOnly: true,
+        imgSrc: "doodle.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Nothing Happened",
+        uri: "nothing-happened",
+        chinaOnly: true,
+        imgSrc: "nothing-happened.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Pacifier",
+        uri: "pacifier",
+        chinaOnly: true,
+        imgSrc: "pacifier.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Overlap",
+        uri: "overlap",
+        chinaOnly: true,
+        imgSrc: "overlap.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Seal",
+        uri: "seal",
+        chinaOnly: true,
+        imgSrc: "seal.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Structure",
+        uri: "structure",
+        chinaOnly: true,
+        imgSrc: "structure.webp",
+        source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "",
-        uri: "",
-        chinaOnly: false,
-        imgSrc: ".webp",
-        source: ""
+        name: "Stealth",
+        uri: "stealth",
+        chinaOnly: true,
+        imgSrc: "stealth.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Silence",
+        uri: "silence",
+        chinaOnly: true,
+        imgSrc: "silence.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Monocle of Truth",
+        uri: "monocle-of-truth",
+        imgSrc: "monocle-of-truth.webp",
+        source: "Obtained from gachapon during the event." // Wheel of Fantasy
+    },
+    {
+        name: "Electric Wave Mask",
+        uri: "electric-wave-mask",
+        imgSrc: "electric-wave-mask.webp",
+        source: "From events."
+    },
+    {
+        name: "Star Glasses",
+        uri: "star-glasses",
+        chinaOnly: true,
+        imgSrc: "star-glasses.webp",
+        source: "Obtained from gachapon during the event." // i think it was with lin swimsuit gacha?
+    },
+    {
+        name: "Dazzling Glasses",
+        uri: "dazzling-glasses",
+        chinaOnly: true,
+        imgSrc: "dazzling-glasses.webp",
+        source: "From events."
+    },
+    {
+        name: "Glittering Star Glasses",
+        uri: "glittering-star-glasses",
+        chinaOnly: true,
+        imgSrc: "glittering-star-glasses.webp",
+        source: "From events."
+    },
+    {
+        name: "Single Eye Glass",
+        uri: "single-eye-glass",
+        chinaOnly: true,
+        imgSrc: "single-eye-glass.webp",
+        source: "From events."
+    },
+    {
+        name: "Sunlight Pacifier",
+        uri: "sunlight-pacifier",
+        chinaOnly: true,
+        imgSrc: "sunlight-pacifier.webp",
+        source: "From events."
+    },
+    {
+        name: "Grape Bubble Gum",
+        uri: "grape-bubble-gum",
+        chinaOnly: true,
+        imgSrc: "grape-bubble-gum.webp",
+        source: "From events."
+    },
+    {
+        name: "Amplification Goggles",
+        uri: "amplification-goggles",
+        imgSrc: "amplification-goggles.webp",
+        source: 
+            `Obtained from the Pioneer's Gift event during the global launch.  
+            <abbr title="China Exclusive"></abbr> From events.`
+    },
+    {
+        name: "Black Goat Horns",
+        uri: "black-goat-horns",
+        chinaOnly: true,
+        imgSrc: "black-goat-horns.webp",
+        source: "Obtained from gachapon during the event." // Warm sun gift box
+    },
+    {
+        name: "White Gauze Mask",
+        uri: "white-gauze-mask",
+        imgSrc: "white-gauze-mask.webp",
+        source: "Obtainable by redeeming the code in your Discord Gift Inventory by November 9, 2022."
+    },
+    {
+        name: "Windchaser Hairband",
+        uri: "windchaser-hairband",
+        imgSrc: "windchaser-hairband.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Pirate Eye Mask",
+        uri: "pirate-eye-mask",
+        imgSrc: "pirate-eye-mask.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Goggles",
+        uri: "goggles",
+        imgSrc: "goggles.webp",
+        source: "Available by default."
     },
 ]
 
-
-// export const HEADWEAR = [
-//     {
-//         name: "",
-//         uri: "",
-//         imgSrc: ".webp",
-//         source: ""
-//     },
-// ]
+export const HEADWEAR = [
+    {
+        name: "Horned Headphones (?)",
+        uri: "horned-headphones",
+        chinaOnly: true,
+        imgSrc: "horned-headphones.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Batwing Hairband (?)",
+        uri: "batwing-hairband",
+        chinaOnly: true,
+        imgSrc: "batwing-hairband.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Maid Bonnet (?)",
+        uri: "maid-bonnet",
+        chinaOnly: true,
+        imgSrc: "maid-bonnet.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Mechanical Horns (?)",
+        uri: "mechanical-horns",
+        chinaOnly: true,
+        imgSrc: "mechanical-horns.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Demonic Horns (?)",
+        uri: "demonic-horns",
+        chinaOnly: true,
+        imgSrc: "demonic-horns.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Frigg Hairpin (?)",
+        uri: "frigg-hairpin",
+        chinaOnly: true,
+        imgSrc: "frigg-hairpin.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Tsubasa Hairpin (?)",
+        uri: "tsubasa-hairpin",
+        chinaOnly: true,
+        imgSrc: "tsubasa-hairpin.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Heart to Heart",
+        uri: "heart-to-heart",
+        chinaOnly: true,
+        imgSrc: "heart-to-heart.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Small Bean",
+        uri: "small-bean",
+        chinaOnly: true,
+        imgSrc: "small-bean.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Mi-a Antennae",
+        uri: "mia-antennae",
+        chinaOnly: true,
+        imgSrc: "mia-antennae.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Ice Crown",
+        uri: "ice-crown",
+        chinaOnly: true,
+        imgSrc: "ice-crown.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Donut",
+        uri: "donut",
+        chinaOnly: true,
+        imgSrc: "donut.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Shirli Hairpin",
+        uri: "shirli-hairpin",
+        chinaOnly: true,
+        imgSrc: "shirli-hairpin.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Salted Fish",
+        uri: "salted-fish",
+        chinaOnly: true,
+        imgSrc: "salted-fish.webp",
+        source: "Obtained from Mirroria gachapon machines."
+    },
+    {
+        name: "Android Headpiece (?)",
+        uri: "android-headpiece",
+        chinaOnly: true,
+        imgSrc: "android-headpiece.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Night Butterfly Hairpin",
+        uri: "night-butterfly-hairpin",
+        imgSrc: "night-butterfly-hairpin.webp",
+        source: "Obtained from gachapon during the event." // Wheel of Fantasy
+    },
+    {
+        name: "Metal Antlers (?)",
+        uri: "metal-antlers",
+        chinaOnly: true,
+        imgSrc: "metal-antlers.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Resting Hen (?)",
+        uri: "resting-hen",
+        chinaOnly: true,
+        imgSrc: "resting-hen.webp",
+        source: "Obtained from gachapon during the event." // Pure white wheel
+    },
+    {
+        name: "Demonic Mecha Ears (?)",
+        uri: "demonic-mecha-ears",
+        chinaOnly: true,
+        imgSrc: "demonic-mecha-ears.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Animal Hairpin",
+        uri: "animal-hairpin",
+        imgSrc: "animal-hairpin.webp",
+        source: "Obtained from gachapon during the Summer Seabreeze event."
+    },
+    {
+        name: "Illusory Crown (?)",
+        uri: "illusory-crown",
+        chinaOnly: true,
+        imgSrc: "illusory-crown.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Fox Mask",
+        uri: "fox-mask",
+        chinaOnly: true,
+        imgSrc: "fox-mask.webp",
+        source: "Obtained from gachapon during the event."
+    },
+    {
+        name: "Black Bunny Ears (?)",
+        uri: "black-bunny-ears",
+        chinaOnly: true,
+        imgSrc: "black-bunny-ears.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Fire Crown (?)",
+        uri: "fire-crown",
+        chinaOnly: true,
+        imgSrc: "fire-crown.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Workers Goggles",
+        uri: "workers-goggles",
+        imgSrc: "workers-goggles.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Green Hairband (?)",
+        uri: "green-hairband",
+        imgSrc: "green-hairband.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Fluffy Ears (?)",
+        uri: "fluffy-ears",
+        imgSrc: "fluffy-ears.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Neon Cat Ears (?)",
+        uri: "neon-cat-ears",
+        imgSrc: "neon-cat-ears.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Bunny Ears (?)",
+        uri: "bunny-ears",
+        imgSrc: "bunny-ears.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Headphones (?)",
+        uri: "headphones",
+        imgSrc: "headphones.webp",
+        source: "Available by default."
+    },
+    {
+        name: "Goggle Hairband (?)",
+        uri: "goggle-hairband",
+        imgSrc: "goggle-hairband.webp",
+        source: "Available by default."
+    },
+]
 
 export const MIA_OUTFITS = [
     {
@@ -524,7 +818,7 @@ export const AVATARS = [
         name: "Strawberry Afternoon",
         uri: "strawberry-afternoon",
         imgSrc: "strawberry-afternoon.webp",
-        source: "Obtained from gachapon during the event."
+        source: "Obtained from gachapon during the event." // Wheel of fantasy
     },
     {
         name: "Mi-a Dream",
@@ -785,7 +1079,7 @@ export const AVATAR_FRAMES = [
         name: "Cordate Jellybean",
         uri: "cordate-jellybean",
         imgSrc: "cordate-jellybean.webp",
-        source: "Obtained from gachapon during the event."
+        source: "Obtained from gachapon during the event." // Wheel of Fantasy
     },
     {
         name: "Nursery Rhyme",
