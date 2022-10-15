@@ -50,11 +50,10 @@ export const OUTFITS = [
         source: "Obtained by collecting two fragments from Mirroria gachapon machines (after the machines that give Jerboa mount parts)."
     },
     {
-        name: "Illusory Dream",
-        uri: "illusory-dream",
-        imgSrc: "illusorydream.webp",
-        chinaOnly: true,
-        source: "Obtained from gachapon during the event."
+        name: "Fantasy",
+        uri: "fantasy",
+        imgSrc: "fantasy.webp",
+        source: "Obtained from gachapon during the event." // Wheel of Fantasy
     },
     {
         name: "Starlight",
@@ -573,10 +572,10 @@ export const HEADWEAR = [
         source: "Obtained from gachapon during the event." // Pure white wheel
     },
     {
-        name: "Demonic Mecha Ears (?)",
-        uri: "demonic-mecha-ears",
+        name: "Robot Cat Ears (?)",
+        uri: "robot-cat-ears",
         chinaOnly: true,
-        imgSrc: "demonic-mecha-ears.webp",
+        imgSrc: "robot-cat-ears.webp",
         source: "Unknown."
     },
     {
@@ -945,14 +944,14 @@ export const AVATARS = [
     {
         name: "Initial Avatar: Female",
         uri: "female",
-        imgSrc: "female",
-        source: "female.webp"
+        imgSrc: "female.webp",
+        source: "Available by default for female characters."
     },
     {
         name: "Initial Avatar: Male",
         uri: "male",
-        imgSrc: "male",
-        source: "male.webp"
+        imgSrc: "male.webp",
+        source: "Available by default for male characters."
     },
 ]
 
@@ -1181,9 +1180,9 @@ export const AVATAR_FRAMES = [
     },
     {
         name: "Echo Wreckage",
-        uri: "echo-wreakage",
+        uri: "echo-wreckage",
         chinaOnly: true,
-        imgSrc: "echo-wreakage.webp",
+        imgSrc: "echo-wreckage.webp",
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
@@ -1508,9 +1507,9 @@ export const CHAT_BUBBLES = [
     },
     {
         name: "Dusk",
-        uri: "moon-photograph",
+        uri: "dusk",
         chinaOnly: true,
-        imgSrc: "moon-photograph.webp",
+        imgSrc: "dusk.webp",
         source: "Obtainable during the 'Dangerous Invasion' event."
     },
     {
