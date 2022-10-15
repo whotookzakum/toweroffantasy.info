@@ -191,17 +191,13 @@ const cobalt = {
                 }
             },
             advancement: {
-                star1: "Each round of Barrage deals additional damage equal to **2%** of the target's current HP (cannot exceed **200%** of ATK).",
+                star1: "<abbr title='China Exclusive'></abbr> Each round of Barrage deals additional damage equal to **2%** of the target's current HP (cannot exceed **200%** of ATK).",
 
-                star2: "Increase the current weapon's base ATK growth by **16%**.",
+                star3: "<abbr title='China Exclusive'></abbr> Heavy Bombardment branch skill and Close Quarters dodge attack inflict *Ion Scorch* on targets that are already burned, dealing flame damage equal to **90%** of ATK every second for **10** seconds.",
 
-                star3: 'Heavy Bombardment branch skill and Close Quarters dodge attack inflict *Ion Scorch* on targets that are already burned, dealing flame damage equal to **90%** of ATK every second for **10** seconds.',
+                star5: "<abbr title='China Exclusive'></abbr> The damage from *Ion Scorch* increases to **140%** of ATK. Successful attacks with any weapon's dodge skill will refresh the duration of *Ion Scorch*.",
 
-                star4: "Increase the current weapon's base ATK growth by **32%**.",
-
-                star5: "The damage from *Ion Scorch* increases to **140%** of ATK. Successful attacks with any weapon's dodge skill will refresh the duration of *Ion Scorch*.",
-
-                star6: "*Barrage* inflicts burn for **15** seconds. Successful attacks with any weapon's dodge skills reduce cooldown of *Barrage* by **4** seconds. This effect has a **1.5**-second cooldown. Continuous damage from dodge skills can also trigger cooldown reduction."
+                star6: "<abbr title='China Exclusive'></abbr> *Barrage* inflicts burn for **15** seconds. Successful attacks with any weapon's dodge skills reduce cooldown of *Barrage* by **4** seconds. This effect has a **1.5**-second cooldown. Continuous damage from dodge skills can also trigger cooldown reduction."
             },
             abilities: {
                 normal: [
@@ -299,9 +295,9 @@ const cobalt = {
         },
 
         matrix: {
-            set2: `Restore **1** dodge attempt every **4** dodges. Dodge attacks add burn to the target, dealing **13%/17%/21%/25%** attack damage per second for **10** seconds.`,
+            set2: `<abbr title='China Exclusive'></abbr> Restore **1** dodge attempt every **4** dodges. Dodge attacks add burn to the target, dealing **13%/17%/21%/25%** attack damage per second for **10** seconds.`,
 
-            set4: `Increase damage against debuffed targets by **13%/17%/21%/25%**.`,
+            set4: `<abbr title='China Exclusive'></abbr> Increase damage against debuffed targets by **13%/17%/21%/25%**.`,
         }
     }
 }

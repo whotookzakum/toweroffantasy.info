@@ -5,7 +5,8 @@ import { MOUNTS } from "../data/en-US/mounts/mountList";
 import { MATRICES } from "../data/en-US/matrices/matrixList";
 import { GUIDES } from "../data/en-US/guides/guideList";
 import { EXPLORATION } from "../data/en-US/exploration/exploration";
-import { OUTFITS, MIA_OUTFITS } from "../data/en-US/cosmetics/cosmetics";
+import { OUTFITS, MIA_OUTFITS, ACCESSORIES, HEADWEAR, AVATARS, AVATAR_FRAMES, CHAT_BUBBLES } from "../data/en-US/cosmetics/cosmetics";
+import { COSMETICS } from "../pages/cosmetics";
 import { useRouter } from "next/router";
 import AnchorJS from "anchor-js";
 import { useEffect } from "react";
@@ -53,15 +54,45 @@ export function ModalMenu({ list, filter, target, gender }) {
                 options.linkPath = `exploration/${item.uri}`;
                 options.imgPath = `exploration/${item.imgSrc}`;
                 break;
-            case OUTFITS: 
-                options.menuClass = "cosmetics";
+            case OUTFITS:
+                options.menuClass = "outfits";
                 options.linkPath = `cosmetics/outfits/${item.uri}`;
                 options.imgPath = `cosmetics/outfits/${gender}_${item.imgSrc}`;
                 break;
-            case MIA_OUTFITS: 
-                options.menuClass = "cosmetics";
+            case ACCESSORIES:
+                options.menuClass = "accessories";
+                options.linkPath = `cosmetics/accessories/${item.uri}`;
+                options.imgPath = `cosmetics/accessories/${item.imgSrc}`;
+                break;
+            case HEADWEAR:
+                options.menuClass = "headwear";
+                options.linkPath = `cosmetics/headwear/${item.uri}`;
+                options.imgPath = `cosmetics/headwear/${item.imgSrc}`;
+                break;
+            case AVATARS:
+                options.menuClass = "avatars";
+                options.linkPath = `cosmetics/avatars/${item.uri}`;
+                options.imgPath = `cosmetics/avatars/${item.imgSrc}`;
+                break;
+            case AVATAR_FRAMES:
+                options.menuClass = "avatar-frames";
+                options.linkPath = `cosmetics/avatar-frames/${item.uri}`;
+                options.imgPath = `cosmetics/avatar-frames/${item.imgSrc}`;
+                break;
+            case CHAT_BUBBLES:
+                options.menuClass = "chat-bubbles";
+                options.linkPath = `cosmetics/chat-bubbles/${item.uri}`;
+                options.imgPath = `cosmetics/chat-bubbles/${item.imgSrc}`;
+                break;
+            case MIA_OUTFITS:
+                options.menuClass = "mia-outfits";
                 options.linkPath = `cosmetics/mia/${item.uri}`;
                 options.imgPath = `cosmetics/mia/${item.imgSrc}`;
+                break;
+            case COSMETICS: 
+                options.menuClass = "cosmetics";
+                options.linkPath = `cosmetics/${item.uri}`;
+                options.imgPath = `cosmetics/${item.imgSrc}`;
                 break;
             default:
                 break;
@@ -129,13 +160,16 @@ export function Modal({ item, children, gender }) {
         case "cosmetics/outfits":
             options.headerClass = "cosmetics";
             options.bgImgPath = `bg-1.webp`;
-            options.headerImgPath = `${path}/${gender}_${item.imgSrc}`;
+            if (gender) {
+                options.headerImgPath = `${path}/${gender}_${item.imgSrc}`;
+            }
             break;
         default:
             break;
     }
+    console.log(path);
     const pagesWithNoBg = ["robarg", "apophis", "frost-bot", "sobek", "barbarossa", "wind-blade", "obstacle-removal", "self-explosive", "functional-dash", "standard-operation", "plunder"];
-    if (pagesWithNoBg.includes(item.uri)) {
+    if (pagesWithNoBg.includes(item.uri) || path.includes("cosmetics")) {
         options.bgImgPath = `bg-1.webp`;
     }
 
@@ -153,7 +187,7 @@ export function Modal({ item, children, gender }) {
 }
 
 function ModalHeader({ item, options }) {
-    
+
     let color = { color: "var(--color-tier-s)" };
     if (item.rarity === 'SR') {
         color = { color: "var(--color-tier-a)" };
