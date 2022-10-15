@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "October 15",
-        text: "Added Cosmetics page"
+        text: "Added Cosmetics page; Added Frigg rerun"
     },
     {
         date: "October 10",

@@ -20,6 +20,14 @@ const frigg = {
                 end: "9 Jul 2022",
                 duration: "16d",
                 week: "28~30"
+            },
+            {
+                bannerNo: 24,
+                subtext: "Standard in November",
+                start: "15 Oct 2022",
+                end: "28 Oct 2022",
+                duration: "13d",
+                week: "45~47"
             }
         ],
         glob: [
