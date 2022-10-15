@@ -55,37 +55,37 @@ export function ModalMenu({ list, filter, target, gender }) {
                 options.imgPath = `exploration/${item.imgSrc}`;
                 break;
             case OUTFITS:
-                options.menuClass = "cosmetics";
+                options.menuClass = "outfits";
                 options.linkPath = `cosmetics/outfits/${item.uri}`;
                 options.imgPath = `cosmetics/outfits/${gender}_${item.imgSrc}`;
                 break;
             case ACCESSORIES:
-                options.menuClass = "cosmetics";
+                options.menuClass = "accessories";
                 options.linkPath = `cosmetics/accessories/${item.uri}`;
                 options.imgPath = `cosmetics/accessories/${item.imgSrc}`;
                 break;
             case HEADWEAR:
-                options.menuClass = "cosmetics";
+                options.menuClass = "headwear";
                 options.linkPath = `cosmetics/headwear/${item.uri}`;
                 options.imgPath = `cosmetics/headwear/${item.imgSrc}`;
                 break;
             case AVATARS:
-                options.menuClass = "cosmetics";
+                options.menuClass = "avatars";
                 options.linkPath = `cosmetics/avatars/${item.uri}`;
                 options.imgPath = `cosmetics/avatars/${item.imgSrc}`;
                 break;
             case AVATAR_FRAMES:
-                options.menuClass = "cosmetics";
+                options.menuClass = "avatar-frames";
                 options.linkPath = `cosmetics/avatar-frames/${item.uri}`;
                 options.imgPath = `cosmetics/avatar-frames/${item.imgSrc}`;
                 break;
             case CHAT_BUBBLES:
-                options.menuClass = "cosmetics";
+                options.menuClass = "chat-bubbles";
                 options.linkPath = `cosmetics/chat-bubbles/${item.uri}`;
                 options.imgPath = `cosmetics/chat-bubbles/${item.imgSrc}`;
                 break;
             case MIA_OUTFITS:
-                options.menuClass = "cosmetics";
+                options.menuClass = "mia-outfits";
                 options.linkPath = `cosmetics/mia/${item.uri}`;
                 options.imgPath = `cosmetics/mia/${item.imgSrc}`;
                 break;
@@ -167,8 +167,9 @@ export function Modal({ item, children, gender }) {
         default:
             break;
     }
+    console.log(path);
     const pagesWithNoBg = ["robarg", "apophis", "frost-bot", "sobek", "barbarossa", "wind-blade", "obstacle-removal", "self-explosive", "functional-dash", "standard-operation", "plunder"];
-    if (pagesWithNoBg.includes(item.uri)) {
+    if (pagesWithNoBg.includes(item.uri) || path.includes("cosmetics")) {
         options.bgImgPath = `bg-1.webp`;
     }
 

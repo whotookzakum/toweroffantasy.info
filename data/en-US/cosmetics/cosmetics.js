@@ -447,49 +447,49 @@ export const ACCESSORIES = [
 
 export const HEADWEAR = [
     {
-        name: "Horned Headphones (?)",
+        name: "Horned Headphones", // Name unconfirmed
         uri: "horned-headphones",
         chinaOnly: true,
         imgSrc: "horned-headphones.webp",
         source: "Unknown."
     },
     {
-        name: "Batwing Hairband (?)",
+        name: "Batwing Hairband", // Name unconfirmed
         uri: "batwing-hairband",
         chinaOnly: true,
         imgSrc: "batwing-hairband.webp",
         source: "Unknown."
     },
     {
-        name: "Maid Bonnet (?)",
+        name: "Maid Bonnet", // Name unconfirmed
         uri: "maid-bonnet",
         chinaOnly: true,
         imgSrc: "maid-bonnet.webp",
         source: "Unknown."
     },
     {
-        name: "Mechanical Horns (?)",
+        name: "Mechanical Horns", // Name unconfirmed
         uri: "mechanical-horns",
         chinaOnly: true,
         imgSrc: "mechanical-horns.webp",
         source: "Unknown."
     },
     {
-        name: "Demonic Horns (?)",
+        name: "Demonic Horns", // Name unconfirmed
         uri: "demonic-horns",
         chinaOnly: true,
         imgSrc: "demonic-horns.webp",
         source: "Unknown."
     },
     {
-        name: "Frigg Hairpin (?)",
+        name: "Frigg Hairpin", // Name unconfirmed
         uri: "frigg-hairpin",
         chinaOnly: true,
         imgSrc: "frigg-hairpin.webp",
         source: "Unknown."
     },
     {
-        name: "Tsubasa Hairpin (?)",
+        name: "Tsubasa Hairpin", // Name unconfirmed
         uri: "tsubasa-hairpin",
         chinaOnly: true,
         imgSrc: "tsubasa-hairpin.webp",
@@ -545,7 +545,7 @@ export const HEADWEAR = [
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Android Headpiece (?)",
+        name: "Android Headpiece", // Name unconfirmed
         uri: "android-headpiece",
         chinaOnly: true,
         imgSrc: "android-headpiece.webp",
@@ -558,21 +558,21 @@ export const HEADWEAR = [
         source: "Obtained from gachapon during the event." // Wheel of Fantasy
     },
     {
-        name: "Metal Antlers (?)",
+        name: "Metal Antlers", // Name unconfirmed
         uri: "metal-antlers",
         chinaOnly: true,
         imgSrc: "metal-antlers.webp",
         source: "Unknown."
     },
     {
-        name: "Resting Hen (?)",
+        name: "Resting Hen", // Name unconfirmed
         uri: "resting-hen",
         chinaOnly: true,
         imgSrc: "resting-hen.webp",
         source: "Obtained from gachapon during the event." // Pure white wheel
     },
     {
-        name: "Robot Cat Ears (?)",
+        name: "Robot Cat Ears", // Name unconfirmed
         uri: "robot-cat-ears",
         chinaOnly: true,
         imgSrc: "robot-cat-ears.webp",
@@ -585,7 +585,7 @@ export const HEADWEAR = [
         source: "Obtained from gachapon during the Summer Seabreeze event."
     },
     {
-        name: "Illusory Crown (?)",
+        name: "Illusory Crown", // Name unconfirmed
         uri: "illusory-crown",
         chinaOnly: true,
         imgSrc: "illusory-crown.webp",
@@ -599,14 +599,14 @@ export const HEADWEAR = [
         source: "Obtained from gachapon during the event."
     },
     {
-        name: "Black Bunny Ears (?)",
+        name: "Black Bunny Ears", // Name unconfirmed
         uri: "black-bunny-ears",
         chinaOnly: true,
         imgSrc: "black-bunny-ears.webp",
         source: "Unknown."
     },
     {
-        name: "Fire Crown (?)",
+        name: "Fire Crown", // Name unconfirmed
         uri: "fire-crown",
         chinaOnly: true,
         imgSrc: "fire-crown.webp",
@@ -619,37 +619,37 @@ export const HEADWEAR = [
         source: "Available by default."
     },
     {
-        name: "Green Hairband (?)",
+        name: "Green Hairband", // Name unconfirmed
         uri: "green-hairband",
         imgSrc: "green-hairband.webp",
         source: "Available by default."
     },
     {
-        name: "Fluffy Ears (?)",
+        name: "Fluffy Ears", // Name unconfirmed
         uri: "fluffy-ears",
         imgSrc: "fluffy-ears.webp",
         source: "Available by default."
     },
     {
-        name: "Neon Cat Ears (?)",
+        name: "Neon Cat Ears", // Name unconfirmed
         uri: "neon-cat-ears",
         imgSrc: "neon-cat-ears.webp",
         source: "Available by default."
     },
     {
-        name: "Bunny Ears (?)",
+        name: "Bunny Ears", // Name unconfirmed
         uri: "bunny-ears",
         imgSrc: "bunny-ears.webp",
         source: "Available by default."
     },
     {
-        name: "Headphones (?)",
+        name: "Headphones", // Name unconfirmed
         uri: "headphones",
         imgSrc: "headphones.webp",
         source: "Available by default."
     },
     {
-        name: "Goggle Hairband (?)",
+        name: "Goggle Hairband", // Name unconfirmed
         uri: "goggle-hairband",
         imgSrc: "goggle-hairband.webp",
         source: "Available by default."
@@ -885,14 +885,14 @@ export const AVATARS = [
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
-        name: "Mi-a Celebration (?)",
+        name: "Mi-a Celebration", // Name unconfirmed
         uri: "mia-celebration",
         chinaOnly: true,
         imgSrc: "mia-celebration.webp",
         source: "Obtained from gachapon during the Lunar New Year event." // i think
     },
     {
-        name: "Mi-a Student (?)",
+        name: "Mi-a Student", // Name unconfirmed
         uri: "mia-student",
         chinaOnly: true,
         imgSrc: "mia-student.webp",
@@ -1186,14 +1186,14 @@ export const AVATAR_FRAMES = [
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
-        name: "Valentine (?)",
+        name: "Valentine", // Name unconfirmed
         uri: "valentine",
         chinaOnly: true,
         imgSrc: "valentine.webp",
         source: "Obtainable during the Valentine's event."
     },
     {
-        name: "Happy New Year (?)",
+        name: "Happy New Year", // Name unconfirmed
         uri: "happy-new-year",
         chinaOnly: true,
         imgSrc: "happy-new-year.webp",

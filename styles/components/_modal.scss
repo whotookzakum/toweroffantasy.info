@@ -138,6 +138,24 @@
         img {
             width: 100%;
         }
+        li:nth-child(2) img {
+            max-width: 120px;
+        }
+        li:nth-child(6) img {
+            max-width: 120px;
+        }
+    }
+
+    &.outfits, &.mia-outfits, &.avatars {
+        img {
+            width: 100%;
+        }
+    }
+
+    &.avatar-frames, &.headwear, &.accessories {
+        img {
+            max-width: 120px;
+        }
     }
 }
 
@@ -229,6 +247,7 @@
 
             img {
                 filter: drop-shadow($shadow);
+                max-width: 100%;
             }
         }
 
