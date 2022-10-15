@@ -3,6 +3,7 @@ import { AVATARS } from "../../../data/en-US/cosmetics/cosmetics";
 import { setPageTitle } from "../../../components/Layout";
 import Head from 'next/head';
 import Ads from "../../../components/Ads";
+import BackButton from "../../../components/BackButton";
 
 function Avatars() {
     return (
@@ -13,6 +14,7 @@ function Avatars() {
             </Head>
 
             <img className="bg-img" src="/static/images/bg-1.webp" alt="Background Image" />
+            <BackButton/>
             <header>
                 <h1>Avatars</h1>
                 <p>
@@ -29,6 +31,7 @@ function Avatars() {
 
             <Ads unit="lb3" />
             <Ads unit="mpu1" />
+            <BackButton/>
         </>
     );
 }

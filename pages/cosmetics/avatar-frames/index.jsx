@@ -3,6 +3,7 @@ import { AVATAR_FRAMES } from "../../../data/en-US/cosmetics/cosmetics";
 import { setPageTitle } from "../../../components/Layout";
 import Head from 'next/head';
 import Ads from "../../../components/Ads";
+import BackButton from "../../../components/BackButton";
 
 function AvatarFrames() {
     return (
@@ -13,6 +14,7 @@ function AvatarFrames() {
             </Head>
 
             <img className="bg-img" src="/static/images/bg-1.webp" alt="Background Image" />
+            <BackButton/>
             <header>
                 <h1>Avatar Frames</h1>
                 <p>
@@ -29,6 +31,7 @@ function AvatarFrames() {
 
             <Ads unit="lb3" />
             <Ads unit="mpu1" />
+            <BackButton/>
         </>
     );
 }

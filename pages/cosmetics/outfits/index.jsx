@@ -6,6 +6,7 @@ import { useState } from "react";
 import { GenderToggler } from "../../../components/GenderToggler";
 import { useEffect } from "react";
 import Ads from "../../../components/Ads";
+import BackButton from "../../../components/BackButton";
 
 function Outfits() {
     const initialState = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("outfitGender")) : "F";
@@ -23,6 +24,7 @@ function Outfits() {
             </Head>
 
             <img className="bg-img" src="/static/images/bg-1.webp" alt="Background Image" />
+            <BackButton/>
             <header>
                 <h1>Outfits</h1>
                 <p>
@@ -42,6 +44,7 @@ function Outfits() {
 
             <Ads unit="lb3" />
             <Ads unit="mpu1" />
+            <BackButton/>
         </>
     );
 }

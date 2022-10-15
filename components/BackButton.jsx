@@ -5,17 +5,20 @@ export default function BackButton() {
     const router = useRouter();
     const isGuideArticle = router.pathname.includes("guides");
     const isCosmeticItem = router.pathname.includes("cosmetics");
+    const isCosmeticsRoot = 
+        (router.pathname === "/cosmetics/outfits") || (router.pathname === "/cosmetics/accessories") || (router.pathname === "/cosmetics/headwear") || (router.pathname === "/cosmetics/mia") || (router.pathname === "/cosmetics/avatars") || (router.pathname === "/cosmetics/avatar-frames") || (router.pathname === "/cosmetics/chat-bubbles");
     let path = router.pathname.substring(1).split("/[id]")[0];
     if (isGuideArticle) {
         path = "guides";
-    } 
-    else if (isCosmeticItem) {
-        path = "cosmetics";
+    }
+    else if (isCosmeticsRoot) {
+        path = router.pathname.substring(1).split("/")[0];
     }
     return (
         <Link href={`/${path}`}>
             <a tabIndex={0} className="modal-back-button">
-                <BackArrowIcon/>&nbsp;All {path}
+                <BackArrowIcon/>&nbsp;
+                { isCosmeticItem ? "Back" : `All ${path}`}
             </a>
         </Link>
     )
