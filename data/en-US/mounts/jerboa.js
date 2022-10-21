@@ -2,7 +2,6 @@ const jerboa = {
     name: "Jerboa",
     uri: "jerboa",
     imgSrc: "jerboa.webp",
-    chinaOnly: true,
     parts: {
         part1: {
             source: "Obtained from the Gachapon Capsule Machines found in Mirroria - District A.",

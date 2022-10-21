@@ -46,7 +46,6 @@ export const OUTFITS = [
         name: "Fluffy Party",
         uri: "fluffy-party",
         imgSrc: "fluffyparty.webp",
-        chinaOnly: true,
         source: "Obtained by collecting two fragments from Mirroria gachapon machines (after the machines that give Jerboa mount parts)."
     },
     {
@@ -262,21 +261,18 @@ export const ACCESSORIES = [
     {
         name: "Orange Eyepiece",
         uri: "orange-eyepiece",
-        chinaOnly: true,
         imgSrc: "orange-eyepiece.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Party Horn",
-        uri: "party-horn",
-        chinaOnly: true,
+        name: "Rolled Whistle",
+        uri: "rolled-whistle",
         imgSrc: "party-horn.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Whistle",
         uri: "whistle",
-        chinaOnly: true,
         imgSrc: "whistle.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
@@ -287,65 +283,56 @@ export const ACCESSORIES = [
         source: "Obtained by reaching 85% exploration on  Artificial Island."
     },
     {
-        name: "Bubble Gum",
-        uri: "bubble-gum",
-        chinaOnly: true,
+        name: "Bubblegum",
+        uri: "bubblegum",
         imgSrc: "bubble-gum.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Doodle",
-        uri: "doodle",
-        chinaOnly: true,
+        name: "Toot-Toot",
+        uri: "toot-toot",
         imgSrc: "doodle.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Nothing Happened",
         uri: "nothing-happened",
-        chinaOnly: true,
         imgSrc: "nothing-happened.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Pacifier",
         uri: "pacifier",
-        chinaOnly: true,
         imgSrc: "pacifier.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Overlap",
-        uri: "overlap",
-        chinaOnly: true,
+        name: "Pile",
+        uri: "pile",
         imgSrc: "overlap.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Seal",
         uri: "seal",
-        chinaOnly: true,
         imgSrc: "seal.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Structure",
-        uri: "structure",
-        chinaOnly: true,
+        name: "Construct",
+        uri: "construct",
         imgSrc: "structure.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Stealth",
-        uri: "stealth",
-        chinaOnly: true,
+        name: "Cloak",
+        uri: "cloak",
         imgSrc: "stealth.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Silence",
-        uri: "silence",
-        chinaOnly: true,
+        name: "Hush",
+        uri: "hush",
         imgSrc: "silence.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
@@ -383,11 +370,10 @@ export const ACCESSORIES = [
         source: "From events."
     },
     {
-        name: "Single Eye Glass",
-        uri: "single-eye-glass",
-        chinaOnly: true,
+        name: "Hanging Silk",
+        uri: "hanging-silk",
         imgSrc: "single-eye-glass.webp",
-        source: "From events."
+        source: "Purchasable for $0.99 in a bundle in the shop."
     },
     {
         name: "Sunlight Pacifier",
@@ -504,49 +490,42 @@ export const HEADWEAR = [
     {
         name: "Heart to Heart",
         uri: "heart-to-heart",
-        chinaOnly: true,
         imgSrc: "heart-to-heart.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Small Bean",
-        uri: "small-bean",
-        chinaOnly: true,
+        name: "Small Round Bean",
+        uri: "small-round-bean",
         imgSrc: "small-bean.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Mi-a Antennae",
-        uri: "mia-antennae",
-        chinaOnly: true,
-        imgSrc: "mia-antennae.webp",
+        name: "Mi-a Antenna",
+        uri: "mia-antenna",
+        imgSrc: "mia-antenna.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Ice Crown",
         uri: "ice-crown",
-        chinaOnly: true,
         imgSrc: "ice-crown.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Donut",
         uri: "donut",
-        chinaOnly: true,
         imgSrc: "donut.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Shirli Hairpin",
         uri: "shirli-hairpin",
-        chinaOnly: true,
         imgSrc: "shirli-hairpin.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Salted Fish",
-        uri: "salted-fish",
-        chinaOnly: true,
+        name: "Dried Salty Fish",
+        uri: "dried-salty-fish",
         imgSrc: "salted-fish.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
