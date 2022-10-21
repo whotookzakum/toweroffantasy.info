@@ -46,7 +46,6 @@ export const OUTFITS = [
         name: "Fluffy Party",
         uri: "fluffy-party",
         imgSrc: "fluffyparty.webp",
-        chinaOnly: true,
         source: "Obtained by collecting two fragments from Mirroria gachapon machines (after the machines that give Jerboa mount parts)."
     },
     {
@@ -121,8 +120,7 @@ export const OUTFITS = [
         name: "Star Sand",
         uri: "star-sand",
         imgSrc: "starsand.webp",
-        chinaOnly: true,
-        source: "Pre-registration reward."
+        source: "Rewarded to all characters for reaching the 2.5m pre-registrations."
     },
     {
         name: "Last Stand",
@@ -263,21 +261,18 @@ export const ACCESSORIES = [
     {
         name: "Orange Eyepiece",
         uri: "orange-eyepiece",
-        chinaOnly: true,
         imgSrc: "orange-eyepiece.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Party Horn",
-        uri: "party-horn",
-        chinaOnly: true,
+        name: "Rolled Whistle",
+        uri: "rolled-whistle",
         imgSrc: "party-horn.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Whistle",
         uri: "whistle",
-        chinaOnly: true,
         imgSrc: "whistle.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
@@ -288,65 +283,56 @@ export const ACCESSORIES = [
         source: "Obtained by reaching 85% exploration on  Artificial Island."
     },
     {
-        name: "Bubble Gum",
-        uri: "bubble-gum",
-        chinaOnly: true,
+        name: "Bubblegum",
+        uri: "bubblegum",
         imgSrc: "bubble-gum.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Doodle",
-        uri: "doodle",
-        chinaOnly: true,
+        name: "Toot-Toot",
+        uri: "toot-toot",
         imgSrc: "doodle.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Nothing Happened",
         uri: "nothing-happened",
-        chinaOnly: true,
         imgSrc: "nothing-happened.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Pacifier",
         uri: "pacifier",
-        chinaOnly: true,
         imgSrc: "pacifier.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Overlap",
-        uri: "overlap",
-        chinaOnly: true,
+        name: "Pile",
+        uri: "pile",
         imgSrc: "overlap.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Seal",
         uri: "seal",
-        chinaOnly: true,
         imgSrc: "seal.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Structure",
-        uri: "structure",
-        chinaOnly: true,
+        name: "Construct",
+        uri: "construct",
         imgSrc: "structure.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Stealth",
-        uri: "stealth",
-        chinaOnly: true,
+        name: "Cloak",
+        uri: "cloak",
         imgSrc: "stealth.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Silence",
-        uri: "silence",
-        chinaOnly: true,
+        name: "Hush",
+        uri: "hush",
         imgSrc: "silence.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
@@ -384,11 +370,10 @@ export const ACCESSORIES = [
         source: "From events."
     },
     {
-        name: "Single Eye Glass",
-        uri: "single-eye-glass",
-        chinaOnly: true,
+        name: "Hanging Silk",
+        uri: "hanging-silk",
         imgSrc: "single-eye-glass.webp",
-        source: "From events."
+        source: "Purchasable for $0.99 in a bundle in the shop."
     },
     {
         name: "Sunlight Pacifier",
@@ -447,6 +432,13 @@ export const ACCESSORIES = [
 
 export const HEADWEAR = [
     {
+        name: "Wizard's Hat", // "magic hat"
+        uri: "wizards-hat",
+        chinaOnly: true,
+        imgSrc: "wizards-hat.webp",
+        source: "Obtained by purchasing the 7th Collector's Edition Pass."
+    },
+    {
         name: "Horned Headphones", // Name unconfirmed
         uri: "horned-headphones",
         chinaOnly: true,
@@ -498,49 +490,42 @@ export const HEADWEAR = [
     {
         name: "Heart to Heart",
         uri: "heart-to-heart",
-        chinaOnly: true,
         imgSrc: "heart-to-heart.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Small Bean",
-        uri: "small-bean",
-        chinaOnly: true,
+        name: "Small Round Bean",
+        uri: "small-round-bean",
         imgSrc: "small-bean.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Mi-a Antennae",
-        uri: "mia-antennae",
-        chinaOnly: true,
-        imgSrc: "mia-antennae.webp",
+        name: "Mi-a Antenna",
+        uri: "mia-antenna",
+        imgSrc: "mia-antenna.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Ice Crown",
         uri: "ice-crown",
-        chinaOnly: true,
         imgSrc: "ice-crown.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Donut",
         uri: "donut",
-        chinaOnly: true,
         imgSrc: "donut.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
         name: "Shirli Hairpin",
         uri: "shirli-hairpin",
-        chinaOnly: true,
         imgSrc: "shirli-hairpin.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
-        name: "Salted Fish",
-        uri: "salted-fish",
-        chinaOnly: true,
+        name: "Dried Salty Fish",
+        uri: "dried-salty-fish",
         imgSrc: "salted-fish.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
@@ -720,6 +705,7 @@ export const AVATARS = [
         name: "Finish Line",
         uri: "finish-line",
         chinaOnly: true,
+        category: "general",
         imgSrc: "finish-line.webp",
         source: "Obtained from an event."
     },
@@ -727,6 +713,7 @@ export const AVATARS = [
         name: "Reliable Mechanic",
         uri: "reliable-mechanic",
         chinaOnly: true,
+        category: "general",
         imgSrc: "reliable-mechanic.webp",
         source: "Obtained by purchasing the 7th Collector's Edition Pass."
     },
@@ -734,6 +721,7 @@ export const AVATARS = [
         name: "Saki's Discipline",
         uri: "sakis-discipline",
         chinaOnly: true,
+        category: "general",
         imgSrc: "sakis-discipline.webp",
         source: "Obtained from an event."
     },
@@ -741,6 +729,7 @@ export const AVATARS = [
         name: "Travel Shirli",
         uri: "travel-shirli",
         chinaOnly: true,
+        category: "general",
         imgSrc: "travel-shirli.webp",
         source: "Obtained from an event."
     },
@@ -748,6 +737,7 @@ export const AVATARS = [
         name: "Rare Holiday",
         uri: "rare-holiday",
         chinaOnly: true,
+        category: "general",
         imgSrc: "rare-holiday.webp",
         source: "Obtained from gachapon during the event."
     },
@@ -755,6 +745,7 @@ export const AVATARS = [
         name: "Fruity Midsummer",
         uri: "fruity-midsummer",
         chinaOnly: true,
+        category: "general",
         imgSrc: "fruity-midsummer.webp",
         source: "Obtained by purchasing the 6th Collector's Edition Pass."
     },
@@ -762,6 +753,7 @@ export const AVATARS = [
         name: "Pure White Core",
         uri: "pure-white-core",
         chinaOnly: true,
+        category: "general",
         imgSrc: "pure-white-core.webp",
         source: "Obtained from gachapon during the event."
     },
@@ -769,6 +761,7 @@ export const AVATARS = [
         name: "Adventure Embarkation",
         uri: "adventure-embarkation",
         chinaOnly: true,
+        category: "general",
         imgSrc: "adventure-embarkation.webp",
         source: "Obtained from gachapon during the event."
     },
@@ -776,6 +769,7 @@ export const AVATARS = [
         name: "Fledgling",
         uri: "fledgling",
         chinaOnly: true,
+        category: "general",
         imgSrc: "fledgling.webp",
         source: "Obtained from an event."
     },
@@ -783,6 +777,7 @@ export const AVATARS = [
         name: "Summer Festival Mechanic",
         uri: "summer-festival-mechanic",
         chinaOnly: true,
+        category: "general",
         imgSrc: "summer-festival-mechanic.webp",
         source: "Purchased from the event shop during the event period."
     },
@@ -790,12 +785,14 @@ export const AVATARS = [
         name: "Celebration Memories",
         uri: "celebration-memories",
         chinaOnly: true,
+        category: "general",
         imgSrc: "celebration-memories.webp",
         source: "Obtained from an event."
     },
     {
         name: "Kitty Coast",
         uri: "kitty-coast",
+        category: "general",
         imgSrc: "kitty-coast.webp",
         source: "Obtained from gachapon during the event."
     },
@@ -803,6 +800,7 @@ export const AVATARS = [
         name: "Mochi",
         uri: "mochi",
         chinaOnly: true,
+        category: "general",
         imgSrc: "mochi.webp",
         source: "Obtained from an event."
     },
@@ -810,12 +808,14 @@ export const AVATARS = [
         name: "Hana",
         uri: "hana",
         chinaOnly: true,
+        category: "general",
         imgSrc: "hana.webp",
         source: "Obtained by purchasing the 5th Collector's Edition Pass."
     },
     {
         name: "Strawberry Afternoon",
         uri: "strawberry-afternoon",
+        category: "general",
         imgSrc: "strawberry-afternoon.webp",
         source: "Obtained from gachapon during the event." // Wheel of fantasy
     },
@@ -823,6 +823,7 @@ export const AVATARS = [
         name: "Mi-a Dream",
         uri: "mia-dream",
         chinaOnly: true,
+        category: "general",
         imgSrc: "mia-dream.webp",
         source: "Obtained from an event."
     },
@@ -830,6 +831,7 @@ export const AVATARS = [
         name: "Dolly",
         uri: "dolly",
         chinaOnly: true,
+        category: "general",
         imgSrc: "dolly.webp",
         source: "Obtained by purchasing the 4th Collector's Edition Pass."
     },
@@ -837,6 +839,7 @@ export const AVATARS = [
         name: "Puppet Song",
         uri: "puppet-song",
         chinaOnly: true,
+        category: "general",
         imgSrc: "puppet-song.webp",
         source: "Obtained from gachapon during the event." // Wheel of Sand
     },
@@ -844,36 +847,42 @@ export const AVATARS = [
         name: "Hellamander",
         uri: "hellamander",
         chinaOnly: true,
+        category: "general",
         imgSrc: "hellamander.webp",
         source: "Obtained from gachapon during the event."
     },
     {
         name: "Tartarus",
         uri: "tartarus",
+        category: "general",
         imgSrc: "tartarus.webp",
         source: "Purchased in the store in Build mode."
     },
     {
         name: "Mad Dimon",
         uri: "mad-dimon",
+        category: "general",
         imgSrc: "mad-dimon.webp",
         source: "Purchased in the store in Build mode."
     },
     {
         name: "Smarty",
         uri: "smarty",
+        category: "general",
         imgSrc: "smarty.webp",
         source: "Purchased in the store in Build mode."
     },
     {
         name: "Peanut",
         uri: "peanut",
+        category: "general",
         imgSrc: "peanut.webp",
         source: "Purchased in the store in Build mode."
     },
     {
         name: "Alf",
         uri: "alf",
+        category: "general",
         imgSrc: "alf.webp",
         source: "Purchased in the store in Build mode."
     },
@@ -881,6 +890,7 @@ export const AVATARS = [
         name: "Aegis",
         uri: "aegis",
         chinaOnly: true,
+        category: "general",
         imgSrc: "aegis.webp",
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
@@ -888,6 +898,7 @@ export const AVATARS = [
         name: "Mi-a Celebration", // Name unconfirmed
         uri: "mia-celebration",
         chinaOnly: true,
+        category: "general",
         imgSrc: "mia-celebration.webp",
         source: "Obtained from gachapon during the Lunar New Year event." // i think
     },
@@ -895,42 +906,49 @@ export const AVATARS = [
         name: "Mi-a Student", // Name unconfirmed
         uri: "mia-student",
         chinaOnly: true,
+        category: "general",
         imgSrc: "mia-student.webp",
         source: "Obtained from gachapon during the Lunar New Year event." // i think
     },
     {
         name: "Frigg",
         uri: "frigg",
+        category: "general",
         imgSrc: "frigg.webp",
         source: "Obtained by purchasing the 2nd Collector's Edition Pass."
     },
     {
         name: "Shirli",
         uri: "shirli",
+        category: "general",
         imgSrc: "shirli.webp",
         source: "Obtained by purchasing the 1st Collector's Edition Pass."
     },
     {
         name: "Nemesis: Awakening",
         uri: "nemesis-awakening",
+        category: "general",
         imgSrc: "nemesis-awakening.webp",
         source: "Obtained by logging in for the first time on iOS during the official launch event period."
     },
     {
         name: "Shirli: Awakening",
         uri: "shirli-awakening",
+        category: "general",
         imgSrc: "shirli-awakening.webp",
         source: "Obtained by logging in for the first time on Android during the official launch event period."
     },
     {
         name: "Zeke: Awakening",
         uri: "zeke-awakening",
+        category: "general",
         imgSrc: "zeke-awakening.webp",
         source: "Obtained by logging in for the first time on PC during the official launch event period."
     },
     {
         name: "Tata",
         uri: "tata",
+        category: "general",
         chinaOnly: true,
         imgSrc: "tata.webp",
         source: "Rewarded for participating in the Beta test."
@@ -938,21 +956,188 @@ export const AVATARS = [
     {
         name: "Zeke",
         uri: "zeke",
+        category: "general",
         imgSrc: "zeke.webp",
         source: "Unknown."
     },
     {
         name: "Initial Avatar: Female",
         uri: "female",
+        category: "general",
         imgSrc: "female.webp",
         source: "Available by default for female characters."
     },
     {
         name: "Initial Avatar: Male",
         uri: "male",
+        category: "general",
         imgSrc: "male.webp",
         source: "Available by default for male characters."
     },
+
+    // Simulacra Avatars
+    {
+        name: "Alyss",
+        uri: "alyss",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "alyss.webp",
+        source: "Unlocked by raising Alyss's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Annabella",
+        uri: "annabella",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "annabella.webp",
+        source: "Unlocked by raising Annabella's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Tian Lang",
+        uri: "tianlang",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "tianlang.webp",
+        source: "Unlocked by raising Tian Lang's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Lyra",
+        uri: "lyra",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "lyra.webp",
+        source: "Unlocked by raising Lyra's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Lin",
+        uri: "lin",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "lin.webp",
+        source: "Unlocked by raising Lin's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Saki Fuwa",
+        uri: "saki-fuwa",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "saki-fuwa.webp",
+        source: "Unlocked by raising Saki Fuwa's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Ruby",
+        uri: "ruby",
+        category: "simulacra",
+        imgSrc: "ruby.webp",
+        source: "Unlocked by raising Ruby's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Angel Frigg",
+        uri: "angel-frigg",
+        category: "simulacra",
+        imgSrc: "angel-frigg.webp",
+        source: "Unlocked by raising Frigg's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Nemesis",
+        uri: "nemesis",
+        category: "simulacra",
+        imgSrc: "nemesis.webp",
+        source: "Unlocked by raising Nemesis's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Marc",
+        uri: "marc",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "marc.webp",
+        source: "Unlocked by raising Marc's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Baiyuekui",
+        uri: "baiyuekui",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "baiyuekui.webp",
+        source: "Unlocked by raising Baiyuekui's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Cobalt-b",
+        uri: "cobalt-b",
+        category: "simulacra",
+        imgSrc: "cobalt-b.webp",
+        source: "Unlocked by raising Cobalt-B's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Claudia",
+        uri: "claudia",
+        category: "simulacra",
+        imgSrc: "claudia.webp",
+        source: "Unlocked by raising Claudia's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Coco Ritter",
+        uri: "coco-ritter",
+        category: "simulacra",
+        imgSrc: "coco-ritter.webp",
+        source: "Unlocked by raising Coco Ritter's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Huma",
+        uri: "huma",
+        category: "simulacra",
+        imgSrc: "huma.webp",
+        source: "Unlocked by raising Huma's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Crow",
+        uri: "crow",
+        category: "simulacra",
+        imgSrc: "crow.webp",
+        source: "Unlocked by raising Crow's Awakening points (friendship) to 200."
+    },
+    {
+        name: "KING",
+        uri: "king",
+        category: "simulacra",
+        imgSrc: "king.webp",
+        source: "Unlocked by raising KING's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Meryl",
+        uri: "meryl",
+        category: "simulacra",
+        imgSrc: "meryl.webp",
+        source: "Unlocked by raising Meryl's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Samir",
+        uri: "samir",
+        category: "simulacra",
+        imgSrc: "samir.webp",
+        source: "Unlocked by raising Samir's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Shiro",
+        uri: "shiro",
+        category: "simulacra",
+        imgSrc: "shiro.webp",
+        source: "Unlocked by raising Shiro's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Tsubasa",
+        uri: "tsubasa",
+        category: "simulacra",
+        imgSrc: "tsubasa.webp",
+        source: "Unlocked by raising Tsubasa's Awakening points (friendship) to 200."
+    },
+    {
+        name: "Zero",
+        uri: "zero",
+        category: "simulacra",
+        imgSrc: "zero.webp",
+        source: "Unlocked by raising Zero's Awakening points (friendship) to 200."
+    }
 ]
 
 export const AVATAR_FRAMES = [

@@ -25,8 +25,13 @@ function Avatars() {
             <Ads unit="lb1" />
 
             <section>
-                <h2>Avatar List</h2>
-                <ModalMenu list={AVATARS} />
+                <h2>General Avatars</h2>
+                <ModalMenu list={AVATARS} filter="category" target="general" />
+            </section>
+
+            <section>
+                <h2>Simulacrum Avatars</h2>
+                <ModalMenu list={AVATARS} filter="category" target="simulacra" />
             </section>
 
             <Ads unit="lb3" />
