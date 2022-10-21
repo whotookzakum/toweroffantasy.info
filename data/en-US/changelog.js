@@ -1,7 +1,11 @@
 export const CHANGELOG = [
     {
+        date: "October 20",
+        text: "Global Ruby added and CN Ruby text updated; Added CN Frigg rerun; Cosmetics: added simulacra avatars and wizard's hat, updated star sand outfit"
+    },
+    {
         date: "October 15",
-        text: "Added Cosmetics page; Added Frigg rerun"
+        text: "Added Cosmetics page"
     },
     {
         date: "October 10",
