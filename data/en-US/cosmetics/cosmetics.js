@@ -502,7 +502,7 @@ export const HEADWEAR = [
     {
         name: "Mi-a Antenna",
         uri: "mia-antenna",
-        imgSrc: "mia-antenna.webp",
+        imgSrc: "mia-antennae.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
