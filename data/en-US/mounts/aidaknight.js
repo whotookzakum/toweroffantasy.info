@@ -1,7 +1,7 @@
 const aidaknight = {
     name: "Aidan Knight",
     uri: "aidan-knight",
-    imgSrc: "aidaknight.webp",
+    imgSrc: "aidanknight.webp",
     chinaOnly: false,
     parts: {
         part1: {

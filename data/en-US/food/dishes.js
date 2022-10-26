@@ -4,7 +4,7 @@ const recipes = [
     {
         name: 'Fried Mushrooms',
         imgSrc: "friedmushrooms.webp",
-        chinaOnly: false,
+        
         rarity: 1,
         stars: 1,
         effect: 
@@ -20,7 +20,7 @@ const recipes = [
     {
         name: 'Crispy Grilled Fish',
         imgSrc: "crispygrilledfish.webp",
-        chinaOnly: false,
+        
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -31,7 +31,7 @@ const recipes = [
     {
         name: 'Wholegrain Bread',
         imgSrc: "wholegrainbread.webp",
-        chinaOnly: false,
+        
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -42,7 +42,7 @@ const recipes = [
     {
         name: 'Sizzling Meat',
         imgSrc: "sizzlingmeat.webp",
-        chinaOnly: false,
+        
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -53,7 +53,7 @@ const recipes = [
     {
         name: 'Lettuce Salad',
         imgSrc: "lettucesalad.webp",
-        chinaOnly: false,
+        
         rarity: 1,
         stars: 1,
         effect: 
@@ -70,7 +70,7 @@ const recipes = [
     {
         name: 'Fried Egg',
         imgSrc: "friedegg.webp",
-        chinaOnly: false,
+        
         rarity: 1,
         stars: 1,
         effect: 
@@ -86,7 +86,7 @@ const recipes = [
     {
         name: 'Charcoal Grilled Sand Onion',
         imgSrc: "grilledsandonion.webp",
-        chinaOnly: true,
+        
         rarity: 1,
         stars: 1,
         effect: 'Recovers **10** satiety',
@@ -97,7 +97,7 @@ const recipes = [
     {
         name: 'Cactus Special',
         imgSrc: "cactusspecial.webp",
-        chinaOnly: true,
+        
         rarity: 1,
         stars: 1,
         effect: 
@@ -113,7 +113,7 @@ const recipes = [
     {
         name: 'Seaweed and Egg Soup',
         imgSrc: "seaweedandeggsoup.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -130,7 +130,7 @@ const recipes = [
     {
         name: 'Breakfast Cereal',
         imgSrc: "breakfastcereal.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -142,7 +142,7 @@ const recipes = [
     {
         name: 'Crispy Chicken Burger',
         imgSrc: "crispychickenburger.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -160,7 +160,7 @@ const recipes = [
     {
         name: 'Egg Fried Rice',
         imgSrc: "eggfriedrice.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -172,7 +172,7 @@ const recipes = [
     {
         name: 'Golden Egg and Tomato',
         imgSrc: "goldeneggandtomato.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -189,7 +189,7 @@ const recipes = [
     {
         name: 'Mushroom Soup',
         imgSrc: "mushroomsoup.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -206,7 +206,7 @@ const recipes = [
     {
         name: 'Steamed Conch',
         imgSrc: "steamedconch.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -223,7 +223,7 @@ const recipes = [
     {
         name: 'Meat and Potato Stew',
         imgSrc: "meatandpotatostew.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -235,7 +235,7 @@ const recipes = [
     {
         name: 'Fries',
         imgSrc: "fries.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -247,7 +247,7 @@ const recipes = [
     {
         name: 'Vegetable Salad',
         imgSrc: "vegetablesalad.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -266,7 +266,7 @@ const recipes = [
     {
         name: 'Fried Chicken',
         imgSrc: "friedchicken.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -283,7 +283,7 @@ const recipes = [
     {
         name: 'Honeyed Fruit Juice',
         imgSrc: "honeyedfruitjuice.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -302,7 +302,7 @@ const recipes = [
     {
         name: 'Iced Orchid Surprise',
         imgSrc: "icedorchidsurprise.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -321,7 +321,7 @@ const recipes = [
     {
         name: 'Stir-Fried Broccoli',
         imgSrc: "stir-friedbroccoli.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -332,7 +332,7 @@ const recipes = [
     {
         name: 'Meat Bun',
         imgSrc: "meatbun.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -344,7 +344,7 @@ const recipes = [
     {
         name: 'Sliced Fish with Mushroom',
         imgSrc: "slicedfishwithmushroom.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -361,7 +361,7 @@ const recipes = [
     {
         name: 'Dandelion Mushroom Soup',
         imgSrc: "dandelionmushroomsoup.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -378,7 +378,7 @@ const recipes = [
     {
         name: 'Surf and Turf',
         imgSrc: "surfandturf.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 2,
         effect: 
@@ -395,7 +395,7 @@ const recipes = [
     {
         name: 'Red Wheat Bread',
         imgSrc: "redwheatbread.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 2,
         effect: 'Recovers **16** satiety',
@@ -406,7 +406,7 @@ const recipes = [
     {
         name: 'Firecap Mushroom Soup',
         imgSrc: "firecapmushroomsoup.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 2,
         effect: 
@@ -424,7 +424,7 @@ const recipes = [
     {
         name: 'Black Moss Soup',
         imgSrc: "blackmosssoup.webp",
-        chinaOnly: false,
+        
         rarity: 2,
         stars: 2,
         effect: 
@@ -441,7 +441,7 @@ const recipes = [
     {
         name: 'Beet Soup',
         imgSrc: "beetrootsoup.webp",
-        chinaOnly: true,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -457,7 +457,7 @@ const recipes = [
     {
         name: 'Deep-fried Tofu',
         imgSrc: "deep-friedtofu.webp",
-        chinaOnly: true,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -468,7 +468,7 @@ const recipes = [
     {
         name: 'Salted Corn',
         imgSrc: "saltedcorn.webp",
-        chinaOnly: true,
+        
         rarity: 2,
         stars: 1,
         effect: 'Recovers **14** satiety',
@@ -479,7 +479,7 @@ const recipes = [
     {
         name: 'Grilled Lizard Tail',
         imgSrc: "grilledlizardtail.webp",
-        chinaOnly: true,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -495,7 +495,7 @@ const recipes = [
     {
         name: 'Creamy Corn Soup',
         imgSrc: "creamycornsoup.webp",
-        chinaOnly: true,
+        
         rarity: 2,
         stars: 1,
         effect: 
@@ -513,7 +513,7 @@ const recipes = [
     {
         name: 'Seafood Soup',
         imgSrc: "seafoodsoup.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -533,7 +533,7 @@ const recipes = [
     {
         name: 'Spicy Burger',
         imgSrc: "spicyburger.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -553,7 +553,7 @@ const recipes = [
     {
         name: 'Steamed Crab',
         imgSrc: "steamedcrab.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -570,7 +570,7 @@ const recipes = [
     {
         name: 'Iced Strawberry Soda',
         imgSrc: "icedstrawberrysoda.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -590,7 +590,7 @@ const recipes = [
     {
         name: 'Thundercloud Blueberry Soda',
         imgSrc: "thundercloudblueberrysoda.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -610,7 +610,7 @@ const recipes = [
     {
         name: 'Simple Power Salad',
         imgSrc: "simplepowersalad.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -632,7 +632,7 @@ const recipes = [
     {
         name: 'Steamed Egg with Sea Urchin',
         imgSrc: "steamedeggwithseaurchin.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -649,7 +649,7 @@ const recipes = [
     {
         name: 'Jam on Toast',
         imgSrc: "jamontoast.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -669,7 +669,7 @@ const recipes = [
     {
         name: 'Tomato and Fried Egg Pasta',
         imgSrc: "tomatoandfriedeggpasta.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -689,7 +689,7 @@ const recipes = [
     {
         name: 'Fruit Cake',
         imgSrc: "fruitcake.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -708,7 +708,7 @@ const recipes = [
     {
         name: 'Boiled Scallops',
         imgSrc: "boiledscallops.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -725,7 +725,7 @@ const recipes = [
     {
         name: 'Roast Rump',
         imgSrc: "roastrump.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -742,7 +742,7 @@ const recipes = [
     {
         name: 'Fiddlehead Pie',
         imgSrc: "fiddleheadpie.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -759,7 +759,7 @@ const recipes = [
     {
         name: 'Chocolate Bread',
         imgSrc: "chocolatebread.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -776,7 +776,7 @@ const recipes = [
     {
         name: 'Balloon Fruit Salad',
         imgSrc: "balloonfruitsalad.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -794,7 +794,7 @@ const recipes = [
     {
         name: 'Fiddlehead Soup',
         imgSrc: "fiddleheadsoup.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -811,7 +811,7 @@ const recipes = [
     {
         name: 'Spicy Eel',
         imgSrc: "spicyeel.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -829,7 +829,7 @@ const recipes = [
     {
         name: 'Eel and Mushroom Soup',
         imgSrc: "eelandmushroomsoup.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -848,7 +848,7 @@ const recipes = [
     {
         name: 'Sea Crab Soup',
         imgSrc: "seacrabsoup.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -867,7 +867,7 @@ const recipes = [
     {
         name: 'Sweet Pomegranate Juice',
         imgSrc: "sweetpomegranatejuice.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -886,7 +886,7 @@ const recipes = [
     {
         name: 'Cocoa Milk',
         imgSrc: "cocoamilk.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -906,7 +906,7 @@ const recipes = [
     {
         name: 'Firedragon Fruit Tea',
         imgSrc: "firedragonfruittea.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -925,7 +925,7 @@ const recipes = [
     {
         name: 'Barnacle Stew',
         imgSrc: "barnaclestew.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -944,7 +944,7 @@ const recipes = [
     {
         name: 'Barnacle Seafood Pizza',
         imgSrc: "barnacleseafoodpizza.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -962,7 +962,7 @@ const recipes = [
     {
         name: 'Snow Azalea Tea',
         imgSrc: "snowazaleatea.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -982,7 +982,7 @@ const recipes = [
     {
         name: 'Pine Cocoa',
         imgSrc: "pinecocoa.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1000,7 +1000,7 @@ const recipes = [
     {
         name: 'Caviar Sushi',
         imgSrc: "caviarsushi.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1018,7 +1018,7 @@ const recipes = [
     {
         name: 'Caviar Potato Balls',
         imgSrc: "caviarpotatoballs.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1037,7 +1037,7 @@ const recipes = [
     {
         name: 'Stir-fried Peppers',
         imgSrc: "stir-friedpeppers.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1056,7 +1056,7 @@ const recipes = [
     {
         name: 'Melon Salad',
         imgSrc: "melonsalad.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1075,7 +1075,7 @@ const recipes = [
     {
         name: 'Pumpkin Porridge',
         imgSrc: "pumpkinporridge.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1092,7 +1092,7 @@ const recipes = [
     {
         name: 'Grilled Ribs',
         imgSrc: "grilledribs.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1109,7 +1109,7 @@ const recipes = [
     {
         name: 'Chocolate Soymilk',
         imgSrc: "chocolatesoymilk.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1128,7 +1128,7 @@ const recipes = [
     {
         name: 'Beetroot Fern',
         imgSrc: "beetrootfern.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1145,7 +1145,7 @@ const recipes = [
     {
         name: 'Honeydew Melon Bread',
         imgSrc: "honeydewmelonbread.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1165,7 +1165,7 @@ const recipes = [
     {
         name: 'Mixed Grain Porridge',
         imgSrc: "mixedgrainporridge.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1184,7 +1184,7 @@ const recipes = [
     {
         name: 'Corn and Seafood Pie',
         imgSrc: "cornandseafoodpie.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1202,7 +1202,7 @@ const recipes = [
     {
         name: 'Steamed Pumpkin',
         imgSrc: "steamedpumpkin.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1219,7 +1219,7 @@ const recipes = [
     {
         name: 'Spicy Fried Rice',
         imgSrc: "spicyfriedrice.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 1,
         effect: 
@@ -1240,7 +1240,7 @@ const recipes = [
     {
         name: 'Grilled Oysters',
         imgSrc: "grilledoysters.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1256,7 +1256,7 @@ const recipes = [
     {
         name: 'Cold Fish Mint',
         imgSrc: "coldfishmint.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1272,7 +1272,7 @@ const recipes = [
     {
         name: 'Oyster Tofu Soup',
         imgSrc: "oystertofusoup.webp",
-        chinaOnly: true,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1290,7 +1290,7 @@ const recipes = [
     {
         name: 'Scramble Egg with Fish Mint',
         imgSrc: "scrambleeggwithfishmint.webp",
-        chinaOnly: false,
+        
         rarity: 3,
         stars: 2,
         effect: 
@@ -1308,7 +1308,7 @@ const recipes = [
     {
         name: 'Nut Tea',
         imgSrc: "nuttea.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1326,7 +1326,7 @@ const recipes = [
     {
         name: "Purple Yam Pie",
         imgSrc: "purpleyampie.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1345,7 +1345,7 @@ const recipes = [
     {
         name: 'Snow Lotus Soup',
         imgSrc: "snowlotussoup.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1363,7 +1363,7 @@ const recipes = [
     {
         name: 'Truffle Fried Rice',
         imgSrc: "trufflefriedrice.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1383,7 +1383,7 @@ const recipes = [
     {
         name: 'Caterpillar Fungus Noodles',
         imgSrc: "caterpillarfungusnoodles.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1400,7 +1400,7 @@ const recipes = [
     {
         name: 'Grilled Steak',
         imgSrc: "grilledsteak.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1418,7 +1418,7 @@ const recipes = [
     {
         name: 'Steak with Sauce',
         imgSrc: "steakwithsauce.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1437,7 +1437,7 @@ const recipes = [
     {
         name: 'Braised Meat',
         imgSrc: "braisedmeat.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1455,7 +1455,7 @@ const recipes = [
     {
         name: 'Juicy Meat Sandwich',
         imgSrc: "juicyblt.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1475,7 +1475,7 @@ const recipes = [
     {
         name: 'Salmon Sashimi',
         imgSrc: "salmonsashimi.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1493,7 +1493,7 @@ const recipes = [
     {
         name: 'Snail Baked Rice',
         imgSrc: "snailbakedrice.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1512,7 +1512,7 @@ const recipes = [
     {
         name: 'Aloe Vera Yogurt',
         imgSrc: "aloeverayogurt.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1530,7 +1530,7 @@ const recipes = [
     {
         name: 'Rose Tea',
         imgSrc: "rosetea.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1548,7 +1548,7 @@ const recipes = [
     {
         name: 'Radish Soup',
         imgSrc: "radishsoup.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1565,7 +1565,7 @@ const recipes = [
     {
         name: 'Rose Bread',
         imgSrc: "rosebread.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1584,7 +1584,7 @@ const recipes = [
     {
         name: 'Chicken Noodle Soup',
         imgSrc: "chickennoodlesoup.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1604,7 +1604,7 @@ const recipes = [
     {
         name: 'Spicy Pork Noodles',
         imgSrc: "spicyporknoodles.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1624,7 +1624,7 @@ const recipes = [
     {
         name: 'Barbecue Platter',
         imgSrc: "barbecueplatter.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1644,7 +1644,7 @@ const recipes = [
     {
         name: 'Radish Rib Soup',
         imgSrc: "radishribsoup.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1663,7 +1663,7 @@ const recipes = [
     {
         name: 'Crispy Lard Gourd',
         imgSrc: "crispylardgourd.webp",
-        chinaOnly: false,
+        
         rarity: 4,
         stars: 2,
         effect: 
@@ -1679,7 +1679,7 @@ const recipes = [
     {
         name: 'Spicy Lard Gourd Sticks',
         imgSrc: "spicylardgourdsticks.webp",
-        chinaOnly: true,
+        
         rarity: 4,
         stars: 2,
         effect: 
