@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "October 27",
-        text: "Lin rerun added; Fixed default gender selection for outfits; Fixed Aidan Knight mount part image; CN tag removed from 2.0 food and exploration"
+        text: "Added 2.0 global, 2.3 CN, and halloween cosmetics; CN Lin banner rerun added; Fixed default gender selection for outfits; Fixed Aidan Knight mount part image; CN tag removed from 2.0 food and exploration"
     },
     {
         date: "October 20",
