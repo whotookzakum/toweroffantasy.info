@@ -13,7 +13,15 @@ const lin = {
                 end: "29 Jul 2022",
                 duration: "20d",
                 week: "30~33"
-            }
+            },
+            {
+                bannerNo: 25,
+                subtext: "Limited Banner only",
+                start: "20 Oct 2022",
+                end: "1 Nov 2022",
+                duration: "12d",
+                week: "46~48"
+            },
         ]
     },
     weapon: {
