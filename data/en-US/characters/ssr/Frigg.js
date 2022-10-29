@@ -182,7 +182,8 @@ const frigg = {
         giftCategories: ['metalware', 'everyday-items'],
 
         gifts: [
-            [60, "present", "tataCards", "pearl", "peppaFigure", "catFigure", "kitchenware"],
+            [60, "present", "tataCards", "pearl", "peppaFigure", "kitchenware"],
+            [40, "catFigure"],
             [30, "juicePouch", "suit", "toolbox", "perfume", "strangeFragment"],
             [15, "flowers", "dumbbells", "scarf"]
         ],
