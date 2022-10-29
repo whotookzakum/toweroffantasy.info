@@ -261,7 +261,7 @@ export const EXPLORATION = [
     // Vera Desert
     {
         name: "Hungry Critter",
-        chinaOnly: true,
+        
         uri: "hungry-critter",
         imgSrc: "hungrycritter.webp",
         type: "basic",
@@ -271,7 +271,7 @@ export const EXPLORATION = [
     },
     {
         name: "Friendly Critter",
-        chinaOnly: true,
+        
         uri: "friendly-critter",
         imgSrc: "friendlycritter.webp",
         type: "basic",
@@ -281,7 +281,7 @@ export const EXPLORATION = [
     },
     {
         name: "Elemental Supply Pod",
-        chinaOnly: true,
+        
         uri: "elemental-supply-pod",
         imgSrc: "elementalsupplypod.webp",
         type: "elemental",
@@ -291,7 +291,7 @@ export const EXPLORATION = [
     },
     {
         name: "Trace Stone",
-        chinaOnly: true,
+        
         uri: "trace-stone",
         imgSrc: "tracestone.webp",
         type: "basic",
@@ -301,7 +301,7 @@ export const EXPLORATION = [
     },
     {
         name: "Lost Gerbil",
-        chinaOnly: true,
+        
         uri: "lost-gerbil",
         imgSrc: "lostgerbil.webp",
         type: "basic",
@@ -311,7 +311,7 @@ export const EXPLORATION = [
     },
     {
         name: "Gerbil Nest",
-        chinaOnly: true,
+        
         uri: "gerbil-nest",
         imgSrc: "gerbilnest.webp",
         type: "basic",
@@ -321,7 +321,7 @@ export const EXPLORATION = [
     },
     {
         name: "Watcher",
-        chinaOnly: true,
+        
         uri: "watcher",
         imgSrc: "watcher.webp",
         type: "basic",
@@ -331,7 +331,7 @@ export const EXPLORATION = [
     },
     {
         name: "Cactus Fruit",
-        chinaOnly: true,
+        
         uri: "cactus-fruit",
         imgSrc: "cactusfruit.webp",
         type: "basic",
@@ -341,7 +341,7 @@ export const EXPLORATION = [
     },
     {
         name: "Cave Mushroom",
-        chinaOnly: true,
+        
         uri: "cave-mushroom",
         imgSrc: "cavemushroom.webp",
         type: "",
@@ -352,8 +352,8 @@ export const EXPLORATION = [
 
     // Mirror City
     {
-        name: "Amustment Simulation",
-        chinaOnly: true,
+        name: "Amusement Simulation",
+        
         uri: "amusement-simulation",
         imgSrc: "amusementsimulation.webp",
         type: "basic",
@@ -363,7 +363,7 @@ export const EXPLORATION = [
     },
     {
         name: "Gossip",
-        chinaOnly: true,
+        
         uri: "gossip",
         imgSrc: "gossip.webp",
         type: "basic",
@@ -373,7 +373,7 @@ export const EXPLORATION = [
     },
     {
         name: "Lost Item",
-        chinaOnly: true,
+        
         uri: "lost-item",
         imgSrc: "lostitem.webp",
         type: "basic",
@@ -385,7 +385,7 @@ export const EXPLORATION = [
     // Dark Zone
     {
         name: "Energy Crystal",
-        chinaOnly: true,
+        
         uri: "energy-crystal",
         imgSrc: "energycrystal.webp",
         type: "basic",
@@ -401,7 +401,7 @@ export const EXPLORATION = [
     },
     {
         name: "Rechargable Box",
-        chinaOnly: true,
+        
         uri: "rechargable-box",
         imgSrc: "rechargablebox.webp",
         type: "basic",
@@ -411,7 +411,7 @@ export const EXPLORATION = [
     },
     {
         name: "Invisible Box",
-        chinaOnly: true,
+        
         uri: "invisible-box",
         imgSrc: "invisiblebox.webp",
         type: "basic",
@@ -421,7 +421,7 @@ export const EXPLORATION = [
     },
     {
         name: "Camoflauged Box",
-        chinaOnly: true,
+        
         uri: "camoflauged-box",
         imgSrc: "camoflaugedbox.webp",
         type: "basic",
@@ -431,7 +431,7 @@ export const EXPLORATION = [
     },
     {
         name: "Large Secret Box",
-        chinaOnly: true,
+        
         uri: "large-secret-box",
         imgSrc: "largesecretbox.webp",
         type: "basic",
@@ -441,7 +441,7 @@ export const EXPLORATION = [
     },
     {
         name: "Guarded Secret Box",
-        chinaOnly: true,
+        
         uri: "guarded-secret-box",
         imgSrc: "guardedsecretbox.webp",
         type: "basic",
@@ -451,7 +451,7 @@ export const EXPLORATION = [
     },
     {
         name: "Energy Supply",
-        chinaOnly: true,
+        
         uri: "energy-supply",
         imgSrc: "energysupply.webp",
         type: "basic",
@@ -461,7 +461,7 @@ export const EXPLORATION = [
     },
     {
         name: "Camoflauged Energy Supply",
-        chinaOnly: true,
+        
         uri: "camoflauged-energy-supply",
         imgSrc: "camoflaugedenergysupply.webp",
         type: "basic",
@@ -471,7 +471,7 @@ export const EXPLORATION = [
     },
     {
         name: "Alarm Power Supply",
-        chinaOnly: true,
+        
         uri: "alarm-power-supply",
         imgSrc: "alarmpowersupply.webp",
         type: "basic",
@@ -481,7 +481,7 @@ export const EXPLORATION = [
     },
     {
         name: "Crystal Storage Device",
-        chinaOnly: true,
+        
         uri: "crystal-storage-device",
         imgSrc: "crystalstoragedevice.webp",
         type: "basic",
@@ -491,7 +491,7 @@ export const EXPLORATION = [
     },
     {
         name: "Camoflauged Storage Device",
-        chinaOnly: true,
+        
         uri: "camoflauged-storage-device",
         imgSrc: "camoflaugedstoragedevice.webp",
         type: "basic",
@@ -501,7 +501,7 @@ export const EXPLORATION = [
     },
     {
         name: "Invisible Storage Device",
-        chinaOnly: true,
+        
         uri: "invisible-storage-device",
         imgSrc: "invisiblestoragedevice.webp",
         type: "basic",
@@ -511,7 +511,7 @@ export const EXPLORATION = [
     },
     {
         name: "Alarm Box",
-        chinaOnly: true,
+        
         uri: "alarm-box",
         imgSrc: "alarmbox.webp",
         type: "basic",
@@ -521,7 +521,7 @@ export const EXPLORATION = [
     },
     {
         name: "Collapsing Fissure",
-        chinaOnly: true,
+        
         uri: "collapsing-fissure",
         imgSrc: "collapsingfissure.webp",
         type: "basic",
@@ -533,7 +533,7 @@ export const EXPLORATION = [
     // Gray zone
     {
         name: "Spatial Rift",
-        chinaOnly: true,
+        
         uri: "spatial-rift",
         imgSrc: "spatialrift.webp",
         type: "basic",

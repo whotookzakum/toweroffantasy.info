@@ -24,11 +24,15 @@ export async function getStaticPaths() {
 }
 
 export default function OutfitModal({ outfit }) {
-    const [gender, setGender] = useState("F");
+    const [gender, setGender] = useState(null);
     useEffect(() => {
-        const gender = JSON.parse(localStorage.getItem("outfitGender"))
-        if (gender) {
-            setGender(gender);
+        const cachedGender = localStorage.getItem("outfitGender")
+        if (cachedGender) {
+            setGender(cachedGender)
+        }
+        else {
+            localStorage.setItem("outfitGender", "F");
+            setGender("F")
         }
     }, []);
 

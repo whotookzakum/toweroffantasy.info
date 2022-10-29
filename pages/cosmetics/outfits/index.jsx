@@ -9,12 +9,17 @@ import Ads from "../../../components/Ads";
 import BackButton from "../../../components/BackButton";
 
 function Outfits() {
-    const initialState = typeof window !== 'undefined' ? JSON.parse(localStorage.getItem("outfitGender")) : "F";
-    const [gender, setGender] = useState(initialState);
-
+    const [gender, setGender] = useState(null);
     useEffect(() => {
-        localStorage.setItem("outfitGender", JSON.stringify(gender));
-    });
+        const cachedGender = localStorage.getItem("outfitGender")
+        if (cachedGender) {
+            setGender(cachedGender)
+        }
+        else {
+            localStorage.setItem("outfitGender", "F");
+            setGender("F")
+        }
+    }, []);
 
     return (
         <>

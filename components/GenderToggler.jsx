@@ -1,6 +1,7 @@
 export function GenderToggler({section, gender, setGender}) {
 
     function handleChange(e) {
+        localStorage.setItem("outfitGender", e.target.className);
         setGender(e.target.className)
     }
 

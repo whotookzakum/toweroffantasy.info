@@ -2,6 +2,19 @@
 
 export const OUTFITS = [
     {
+        name: "Vibrant Youth",
+        uri: "vibrant-youth",
+        chinaOnly: true,
+        imgSrc: "vibrantyouth.webp",
+        source: "Obtained by purchasing the 8th Collector's Edition Pass."
+    },
+    {
+        name: "Rosy Banquet",
+        uri: "rosy-banquet",
+        imgSrc: "rosybanquet.webp",
+        source: "Obtained from gachapon during the event." // Thorned Rose
+    },
+    {
         name: "Early Dawn",
         uri: "early-dawn",
         chinaOnly: true,
@@ -215,6 +228,13 @@ export const OUTFITS = [
 ]
 
 export const ACCESSORIES = [
+    {
+        name: "Fisherman Glasses",
+        uri: "fisherman-glasses",
+        chinaOnly: true,
+        imgSrc: "fisherman-glasses.webp",
+        source: "Purchasable from the fishing shop."
+    },
     {
         name: "Red Heart Eye Mask",
         uri: "red-heart-eye-mask",
@@ -432,6 +452,33 @@ export const ACCESSORIES = [
 
 export const HEADWEAR = [
     {
+        name: "Bucket Hat",
+        uri: "bucket-hat",
+        chinaOnly: true,
+        imgSrc: "bucket-hat.webp",
+        source: "Purchasable from the fishing shop."
+    },
+    {
+        name: "Ghost", // Name unconfirmed
+        uri: "ghost",
+        chinaOnly: true,
+        imgSrc: "ghost.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Jack O' Lantern", // Name unconfirmed
+        uri: "jack-o-lantern",
+        chinaOnly: true,
+        imgSrc: "jack-o-lantern.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Rosy Letter",
+        uri: "rosy-letter",
+        imgSrc: "rosy-letter.webp",
+        source: "Obtained from gachapon during the event. Note that this hat only works with one hairstyle." // Thorned Rose
+    },
+    {
         name: "Wizard's Hat", // "magic hat"
         uri: "wizards-hat",
         chinaOnly: true,
@@ -502,7 +549,7 @@ export const HEADWEAR = [
     {
         name: "Mi-a Antenna",
         uri: "mia-antenna",
-        imgSrc: "mia-antenna.webp",
+        imgSrc: "mia-antennae.webp",
         source: "Obtained from Mirroria gachapon machines."
     },
     {
@@ -643,64 +690,127 @@ export const HEADWEAR = [
 
 export const MIA_OUTFITS = [
     {
+        name: "Halloween Mi-a",
+        uri: "halloween-mia",
+        imgSrc: "halloween-mia.webp",
+        source: "Obtained from gachapon during the event." // Thorned Rose
+    },
+    {
         name: "Swimsuit Mi-a",
         uri: "swimsuit-mia",
-        chinaOnly: true,
         imgSrc: "swimsuitmia.webp",
         source: "Purchasable for 980 Tanium."
     },
     {
         name: "Bag Mi-a",
         uri: "bag-mia",
-        chinaOnly: true,
         imgSrc: "bagmia.webp",
         source: "Purchasable for 1280 Tanium."
     },
     {
         name: "Panda Mi-a",
         uri: "panda-mia",
-        chinaOnly: true,
         imgSrc: "pandamia.webp",
         source: "Purchasable for 1280 Tanium."
     },
     {
         name: "Koi Mi-a",
         uri: "koi-mia",
-        chinaOnly: true,
         imgSrc: "koimia.webp",
         source: "Purchasable for 1280 Tanium."
     },
     {
         name: "Explorer Mi-a",
         uri: "explorer-mia",
-        chinaOnly: true,
         imgSrc: "explorermia.webp",
         source: "Obtained by reaching 100% exploration on all 3 Dark Zones in Vera Desert."
     },
     {
         name: "Maid Mi-a",
         uri: "maid-mia",
-        chinaOnly: true,
         imgSrc: "maidmia.webp",
         source: "Available by default."
     },
     {
         name: "Dress Mi-a",
         uri: "dress-mia",
-        chinaOnly: true,
         imgSrc: "dressmia.webp",
         source: "Available by default."
     },
     {
         name: "Mi-a",
         uri: "mia",
-        chinaOnly: true,
         imgSrc: "mia.webp",
         source: "Available by default."
     }
 ]
 
 export const AVATARS = [
+    {
+        name: "Little Chef Mi-a",
+        uri: "little-chef-mia",
+        chinaOnly: true,
+        category: "general",
+        imgSrc: "little-chef-mia.webp",
+        source: "Obtained by purchasing the 8th Collector's Edition Pass."
+    },
+    {
+        name: "I'm Fishing",
+        uri: "im-fishing",
+        chinaOnly: true,
+        category: "general",
+        imgSrc: "im-fishing.webp",
+        source: "Purchasable from the fishing shop."
+    },
+    {
+        name: "Pumpkin Enchantment",
+        uri: "pumpkin-enchantment",
+        category: "general",
+        imgSrc: "pumpkin-enchantment.webp",
+        source: "Obtained from gachapon during the event." // Thorned Rose
+    },
+    {
+        name: "Ruby: T Pose",
+        uri: "ruby-t-pose",
+        category: "general",
+        imgSrc: "ruby-t-pose.webp",
+        source: "Obtained when purchasing the tanium pack during the sale." 
+    },
+    {
+        name: "The Queen",
+        uri: "the-queen",
+        category: "general",
+        imgSrc: "the-queen.webp",
+        source: "Unlocked from channels and events." 
+    },
+    {
+        name: "Desert Plant",
+        uri: "desert-plant",
+        category: "general",
+        imgSrc: "desert-plant.webp",
+        source: "Unlocked from channels and events." 
+    },
+    {
+        name: "For Love",
+        uri: "for-love",
+        category: "general",
+        imgSrc: "for-love.webp",
+        source: "Unlocked from channels and events." 
+    },
+    {
+        name: "Mini Ruby",
+        uri: "mini-ruby",
+        category: "general",
+        imgSrc: "mini-ruby.webp",
+        source: "Unlocked from channels and events." 
+    },
+    {
+        name: "Welcome to Mirroria.",
+        uri: "welcome-to-mirroria",
+        category: "general",
+        imgSrc: "welcome-to-mirroria.webp",
+        source: "Unlocked from channels and events." 
+    },
     {
         name: "Finish Line",
         uri: "finish-line",
@@ -976,6 +1086,14 @@ export const AVATARS = [
     },
 
     // Simulacra Avatars
+    // {
+    //     name: "Umi",
+    //     uri: "umi",
+    //     chinaOnly: true,
+    //     category: "simulacra",
+    //     imgSrc: "umi.webp",
+    //     source: "Unlocked by raising Umi's Awakening points (friendship) to 200."
+    // },
     {
         name: "Alyss",
         uri: "alyss",
@@ -1141,6 +1259,44 @@ export const AVATARS = [
 ]
 
 export const AVATAR_FRAMES = [
+    {
+        name: "Fishing Card",
+        uri: "fishing-card",
+        chinaOnly: true,
+        imgSrc: "fishing-card.webp",
+        source: "Purchasable from the fishing shop."
+    },
+    {
+        name: "Cleaning Program",
+        uri: "cleaning-program",
+        chinaOnly: true,
+        imgSrc: "cleaning-program.webp",
+        source: "Obtained by purchasing the 8th Collector's Edition Pass."
+    },
+    {
+        name: "Countdown",
+        uri: "countdown",
+        imgSrc: "countdown.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Lovin' a Discount",
+        uri: "lovin-a-discount",
+        imgSrc: "lovin-a-discount.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Welcome to Vera",
+        uri: "welcome-to-vera",
+        imgSrc: "welcome-to-vera.webp",
+        source: "Unknown."
+    },
+    {
+        name: "Night of Fun",
+        uri: "night-of-fun",
+        imgSrc: "night-of-fun.webp",
+        source: "Obtained from gachapon during the event." // Thorned Rose
+    },
     {
         name: "Years of Prosperity",
         uri: "years-of-prosperity",
@@ -1448,6 +1604,19 @@ export const AVATAR_FRAMES = [
 ]
 
 export const CHAT_BUBBLES = [
+    {
+        name: "Majestic Fishing",
+        uri: "majestic-fishing",
+        chinaOnly: true,
+        imgSrc: "majestic-fishing.webp",
+        source: "Purchasable from the fishing shop."
+    },
+    {
+        name: "Candy Feast",
+        uri: "candy-feast",
+        imgSrc: "candy-feast.webp",
+        source: "Obtained from gachapon during the event." // Thorned Rose
+    },
     {
         name: "Fruit Guilt",
         uri: "fruit-guilt",

@@ -11,7 +11,7 @@ function Cosmetics() {
                 <meta name="description" content="List of all cosmetic outfits and accessories in Tower of Fantasy Global and Chinese versions." />
             </Head>
 
-            <img className="bg-img" src="/static/images/bg-3.webp" alt="Background Image" />
+            <img className="bg-img" src="/static/images/bg-2.webp" alt="Background Image" />
             <header>
                 <h1>Events</h1>
                 <p>
