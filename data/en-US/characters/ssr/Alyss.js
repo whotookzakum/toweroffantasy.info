@@ -114,7 +114,7 @@ const alyss = {
                     name: "Cold Field",
                     description: 
                         `Pull in nearby enemies and deal **982.5%** of ATK + **52** damage and **strongly suspend** enemies, cooldown **25** seconds. Enter a Cold Field for **30** seconds and gain immunity to control effects while casting the skill.  
-                        **Passive**: Using a Frost weapon's discharge skill in the Cold Field deals **262.1%** of ATK + **14** "Frostbite" damage and slow targets for **2** seconds (does not apply to bosses). In the field, Immortal Wings will create a Space Fracture every **12** hits, dealing **270%** of ATK + **14** damage 1 time to targets in the area every 2 seconds, for **25** seconds (will stop when the Field disappears).`
+                        **Passive**: Using a Frost weapon's discharge skill in the Cold Field deals **262.1%** of ATK + **14** "Frostbite" damage and slow targets for **2** seconds (does not apply to bosses). In the field, Immortal Wings' basic and charged attacks will create a Space Fracture every **12** hits, dealing **270%** of ATK + **14** damage 1 time to targets in the area every 2 seconds, for **25** seconds (will stop when the Field disappears).`
                 }
             ],
             discharge: [
