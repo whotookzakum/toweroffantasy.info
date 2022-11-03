@@ -781,7 +781,7 @@ export const AVATARS = [
         uri: "the-queen",
         category: "general",
         imgSrc: "the-queen.webp",
-        source: "Unlocked from channels and events." 
+        source: "Available in the support points shop." 
     },
     {
         name: "Desert Plant",
@@ -795,7 +795,7 @@ export const AVATARS = [
         uri: "for-love",
         category: "general",
         imgSrc: "for-love.webp",
-        source: "Unlocked from channels and events." 
+        source: "Available in the support points shop." 
     },
     {
         name: "Mini Ruby",
