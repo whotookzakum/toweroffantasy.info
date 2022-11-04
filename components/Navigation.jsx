@@ -92,7 +92,7 @@ function Navigation() {
                             Guides
                         </a>
                     </Link>
-                    <a tabIndex={0} href="https://static-web.ghzs.com/cspage_pro/huanta-map.html#/" target="_blank" rel="noreferrer noopener">
+                    <a tabIndex={0} href="https://www.ghzs666.com/tower-of-fantasy-map#/" target="_blank" rel="noreferrer noopener">
                         Interactive Map <LinkIcon />
                     </a>
                 </div>

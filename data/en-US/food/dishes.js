@@ -1510,7 +1510,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Aloe Vera Yogurt',
+        name: 'Aloe Yogurt',
         imgSrc: "aloeverayogurt.webp",
         
         rarity: 4,
@@ -1582,7 +1582,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Chicken Noodle Soup',
+        name: 'Chicken Soup',
         imgSrc: "chickennoodlesoup.webp",
         
         rarity: 4,
@@ -1602,7 +1602,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Spicy Pork Noodles',
+        name: 'Spicy BBQ Noodles',
         imgSrc: "spicyporknoodles.webp",
         
         rarity: 4,
@@ -1622,7 +1622,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Barbecue Platter',
+        name: 'Grilled Combo Plate',
         imgSrc: "barbecueplatter.webp",
         
         rarity: 4,
@@ -1642,7 +1642,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Radish Rib Soup',
+        name: 'Radish and Pork Chop Soup',
         imgSrc: "radishribsoup.webp",
         
         rarity: 4,
@@ -1677,7 +1677,7 @@ const recipes = [
         ]
     },
     {
-        name: 'Spicy Lard Gourd Sticks',
+        name: 'Spicy Lard Gourd Strip',
         imgSrc: "spicylardgourdsticks.webp",
         
         rarity: 4,

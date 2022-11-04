@@ -43,7 +43,7 @@ const ingredients = {
         source: "折跃门-绿洲峭壁附近的沙漠猎食者有几率出，还有芦荟"
     },
     pepper: {
-        name: 'Pepper',
+        name: 'Chili',
         imgSrc: "pepper.webp",
         rarity: 3,
         chinaOnly: true,
@@ -85,7 +85,7 @@ const ingredients = {
         source: "Banges: Near rivers"
     },
     aloevera: {
-        name: 'Aloe Vera',
+        name: 'Aloe',
         imgSrc: "aloevera.webp",
         rarity: 4,
         chinaOnly: true,
@@ -99,7 +99,7 @@ const ingredients = {
         source: ""
     },
     radish: {
-        name: 'Radish',
+        name: 'White Jade Radish',
         imgSrc: "radish.webp",
         rarity: 4,
         chinaOnly: true,

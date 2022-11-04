@@ -1,12 +1,26 @@
 export const armorStatRanges = {
     name: "Armor RNG Stat Ranges",
     uri: "armor-rng-stat-ranges",
-    date: "8 September 2022",
+    date: "4 November 2022",
     description: "The minimum and maximum stat increases you can get when advancing armor in Tower of Fantasy.",
     type: "referential",
     author: ["Afrodiy#9769", "Sova#0618"],
     text:
         <>
+            <section>
+                <blockquote>
+                    The values below only apply to the Global version.
+                </blockquote>
+                <p>The following armor pieces can have <span className="turquoise">percentage stats:</span></p>
+                <ol>
+                    <li>Combat Engine (Ele ATK, Ele DMG, HP, Ele Resist)</li>
+                    <li>Microreactor (Ele ATK, HP, Ele Resist)</li>
+                    <li>Tactics Eyepiece (Ele ATK, Crit, HP, Ele Resist)</li>
+                    <li>Exoskeleton (Ele ATK, Ele DMG, HP, Ele Resist)</li>
+                </ol>
+                <p>Percentage stats use fixed values. Values are currently not included for Rare and lower pieces.</p>
+            </section>
+
             <section>
                 <h2 style={{color: "var(--color-tier-s)"}}>Legendary</h2>
                 <table>
@@ -54,6 +68,36 @@ export const armorStatRanges = {
                             <td>215</td>
                             <td>+390</td>
                             <td>+974</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Elemental ATK (%)</td>
+                            <td>1.26%</td>
+                            <td>+1.44%</td>
+                            <td>+1.44%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Elemental DMG (%)</td>
+                            <td>0.65%</td>
+                            <td>+0.72%</td>
+                            <td>+0.72%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Crit (%)</td>
+                            <td>1.05%</td>
+                            <td>+1.19%</td>
+                            <td>+1.19%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>HP (%)</td>
+                            <td>0.94%</td>
+                            <td>+1.08%</td>
+                            <td>+1.08%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Elemental Resist (%)</td>
+                            <td>7.87%</td>
+                            <td>+9%</td>
+                            <td>+9%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -106,6 +150,36 @@ export const armorStatRanges = {
                             <td>122</td>
                             <td>+166</td>
                             <td>+415</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Elemental ATK (%)</td>
+                            <td>0.54%</td>
+                            <td>+0.61%</td>
+                            <td>+0.61%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Elemental DMG (%)</td>
+                            <td>0.28%</td>
+                            <td>+0.31%</td>
+                            <td>+0.31%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Crit (%)</td>
+                            <td>0.45%</td>
+                            <td>+0.5%</td>
+                            <td>+0.5%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>HP (%)</td>
+                            <td>0.4%</td>
+                            <td>+0.46%</td>
+                            <td>+0.46%</td>
+                        </tr>
+                        <tr className="turquoise">
+                            <td>Elemental Resist (%)</td>
+                            <td>3.35%</td>
+                            <td>+3.83%</td>
+                            <td>+3.83%</td>
                         </tr>
                     </tbody>
                 </table>
@@ -269,7 +343,7 @@ export const armorStatRanges = {
 
             <section>
                 <p>
-                    <a href="https://docs.google.com/spreadsheets/u/0/d/1lRhBgB7M7xqqBGdMCvmW2Bwnu1OAvasIN6ukLTgOoCo/htmlview#">Original Source</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1lRhBgB7M7xqqBGdMCvmW2Bwnu1OAvasIN6ukLTgOoCo/edit#gid=883187120">Original Source</a>
                 </p>
             </section>
         </>
