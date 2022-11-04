@@ -7,7 +7,7 @@ const umi = {
     banners: {
         cn: [
             {
-                bannerNo: 26,
+                bannerNo: 27,
                 start: "1 Nov 2022",
                 end: "20 Nov 2022",
                 duration: "19d",

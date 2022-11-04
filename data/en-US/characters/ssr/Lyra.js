@@ -12,6 +12,13 @@ const lyra = {
                 end: "17 Aug 2022",
                 duration: "19d",
                 week: "33~36"
+            },
+            {
+                bannerNo: 26,
+                start: "1 Nov 2022",
+                end: "14 Nov 2022",
+                duration: "13d",
+                week: "48~50"
             }
         ]
     },
