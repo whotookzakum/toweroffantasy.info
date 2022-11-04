@@ -26,8 +26,10 @@ import Hilda from './sr/Hilda';
 import Pepper from './sr/Pepper';
 import Annabella from './ssr/Annabella';
 import Alyss from './ssr/Alyss';
+import Umi from './ssr/Umi';
 
 const characterList = [
+    Umi,
     Alyss,
     Annabella,
     Tianlang,

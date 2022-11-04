@@ -1086,14 +1086,14 @@ export const AVATARS = [
     },
 
     // Simulacra Avatars
-    // {
-    //     name: "Umi",
-    //     uri: "umi",
-    //     chinaOnly: true,
-    //     category: "simulacra",
-    //     imgSrc: "umi.webp",
-    //     source: "Unlocked by raising Umi's Awakening points (friendship) to 200."
-    // },
+    {
+        name: "Umi",
+        uri: "umi",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "umi.webp",
+        source: "Unlocked by raising Umi's Awakening points (friendship) to 200."
+    },
     {
         name: "Alyss",
         uri: "alyss",

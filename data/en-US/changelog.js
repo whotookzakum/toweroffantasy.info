@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "November 4",
+        text: "CN's 26th banner, Umi added; Food dish and ingredient names updated"
+    },
+    {
         date: "October 28",
         text: "Added 2.0 global, 2.3 CN, and halloween cosmetics; CN Lin banner rerun added; Fixed default gender selection for outfits; Fixed Aidan Knight mount part image; CN tag removed from 2.0 food and exploration; Frigg gift fixed"
     },
