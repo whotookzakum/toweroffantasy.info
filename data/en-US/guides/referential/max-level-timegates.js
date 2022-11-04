@@ -1,7 +1,7 @@
 export const maxLevelTimegates = {
     name: "Max Level Timegates",
     uri: "max-level-timegates",
-    date: "24 August 2022",
+    date: "4 November 2022",
     description: "List of levels and the dates that they can be unlocked in Tower of Fantasy Global.",
     type: "referential",
     author: ["Zakum#3080"],
@@ -159,29 +159,29 @@ export const maxLevelTimegates = {
                             <td>October 4</td>
                         </tr>
                         <tr>
-                            <td>65</td>
                             <td>72</td>
-                            <td>October 13</td>
+                            <td>72</td>
+                            <td>October 20</td>
                         </tr>
                         <tr>
-                            <td>74</td>
-                            <td>74</td>
-                            <td>October 22</td>
-                        </tr>
-                        <tr>
-                            <td>83</td>
-                            <td>76</td>
-                            <td>October 31</td>
-                        </tr>
-                        <tr>
-                            <td>92</td>
-                            <td>78</td>
-                            <td>November 9</td>
-                        </tr>
-                        <tr>
-                            <td>101</td>
                             <td>80</td>
-                            <td>November 18</td>
+                            <td>74</td>
+                            <td>October 28</td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td>76</td>
+                            <td>November 5 (?)</td>
+                        </tr>
+                        <tr>
+                            <td>96</td>
+                            <td>78</td>
+                            <td>November 13 (?)</td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>80</td>
+                            <td>November 21 (?)</td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
         date: "November 4",
-        text: "CN's 26th banner, Umi added; Food dish and ingredient names updated"
+        text: "CN's 26th banner, Umi added; Food dish and ingredient names updated; Updated guides Max Level Timegates and Armor RNG Stat Ranges"
     },
     {
         date: "October 28",
