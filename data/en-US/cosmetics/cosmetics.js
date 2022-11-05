@@ -49,11 +49,12 @@ export const OUTFITS = [
         source: "Obtained from gachapon during the event."
     },
     {
-        name: "Silent Wing",
-        uri: "silent-wing",
+        name: "Silent Wings",
+        uri: "silent-wings",
         imgSrc: "silentwing.webp",
-        chinaOnly: true,
-        source: "Obtained by purchasing the 5th Collector's Edition Pass."
+        source: 
+            `Obtained by purchasing the 3rd Collector's Edition Pass.  
+            <abbr title="China Exclusive"></abbr> Obtained by purchasing the 5th Collector's Edition Pass.`
     },
     {
         name: "Fluffy Party",
@@ -999,7 +1000,6 @@ export const AVATARS = [
     {
         name: "Aegis",
         uri: "aegis",
-        chinaOnly: true,
         category: "general",
         imgSrc: "aegis.webp",
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
@@ -1492,11 +1492,10 @@ export const AVATAR_FRAMES = [
         source: "Purchased in the store in Build mode."
     },
     {
-        name: "Outer Shell",
-        uri: "outer-shell",
-        chinaOnly: true,
+        name: "Outside Body",
+        uri: "outside-body",
         imgSrc: "outer-shell.webp",
-        source: "Obtainable during the 'Ultimate Weapon' event."
+        source: `Obtainable during the 'Ultimate Weapon' event.`
     },
     {
         name: "Companion",
@@ -1520,9 +1519,8 @@ export const AVATAR_FRAMES = [
         source: "Obtained by completing the quest 'Visitor from Another World'."
     },
     {
-        name: "Echo Wreckage",
-        uri: "echo-wreckage",
-        chinaOnly: true,
+        name: "Call of the Dead",
+        uri: "call-of-the-dead",
         imgSrc: "echo-wreckage.webp",
         source: "Obtained by purchasing the 3rd Collector's Edition Pass."
     },

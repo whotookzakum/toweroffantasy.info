@@ -7,6 +7,7 @@ export const movementTech = {
     author: ["Zakum#3080"],
     text:
         <>
+            {/* Moon launch clip https://www.youtube.com/watch?v=B8ofk5yKnRk */}
             <section>
                 <h2>Weapon Dashing (Claudia/Crow Movement Tech)</h2>
                 <p>
