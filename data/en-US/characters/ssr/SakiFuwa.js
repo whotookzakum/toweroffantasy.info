@@ -221,26 +221,26 @@ const saki = {
         weapon: {
             advancement: {
                 star3: 
-                `<abbr title="China Exclusive></abbr> Excited Flow: Increase the damage of Sword Shadow: Surge to **900%** of Frost ATK.  
+                `<abbr title="China Exclusive"></abbr> Excited Flow: Increase the damage of Sword Shadow: Surge to **900%** of Frost ATK.  
                 Silent Flow: The cooldown of Sword Shadow: Surge becomes **5** seconds.`,
 
-                star6: `<abbr title="China Exclusive></abbr> Upon hitting a target with Surge, increase frost damage by **20%** for **15** seconds. Upon triggering block with Sword Shadow, reduce the frost damage dealt by enemy targets by **25%** for **12** seconds.`
+                star6: `<abbr title="China Exclusive"></abbr> Upon hitting a target with Surge, increase frost damage by **20%** for **15** seconds. Upon triggering block with Sword Shadow, reduce the frost damage dealt by enemy targets by **25%** for **12** seconds.`
             },
             abilities: {
                 skill: [
                     {
                         name: "Excited Flow: Flashing Stream",
-                        description: `<abbr title="China Exclusive></abbr> Dash toward the target and temporarily immobilize enemies along the path, dealing delayed damage up to **927.7%** of ATK + **49**. Cooldown: **30** seconds.`
+                        description: `<abbr title="China Exclusive"></abbr> Dash toward the target and temporarily immobilize enemies along the path, dealing delayed damage up to **927.7%** of ATK + **49**. Cooldown: **30** seconds.`
                     },
                     {
                         name: "Silent Flow: Concentrated Stream",
                         description: 
-                            `<abbr title="China Exclusive></abbr> Cast the Silent Flow skills to begin charging for up to **3** seconds, continuously taunting nearby targets and absorbing damage up to **60%** of Max HP. At the end of the charge, deal frost damage equal to **850%** of frost ATK + **50%** of absorbed damage to targets, and **20%** of the unconsumed value is converted to HP recovery. Cooldown: **30** seconds.`
+                            `<abbr title="China Exclusive"></abbr> Cast the Silent Flow skills to begin charging for up to **3** seconds, continuously taunting nearby targets and absorbing damage up to **60%** of Max HP. At the end of the charge, deal frost damage equal to **850%** of frost ATK + **50%** of absorbed damage to targets, and **20%** of the unconsumed value is converted to HP recovery. Cooldown: **30** seconds.`
                     },
                     {
                         name: "Passive",
                         description: 
-                            `<abbr title="China Exclusive></abbr> Enter Silent Flow when Fortitude Resonance is activated. **Excited Flow: Flashing Stream** is replaced by **Silent Flow: Concentrated Stream**. Enter Excited Flow when Fortitude Resonance is not activated.  
+                            `<abbr title="China Exclusive"></abbr> Enter Silent Flow when Fortitude Resonance is activated. **Excited Flow: Flashing Stream** is replaced by **Silent Flow: Concentrated Stream**. Enter Excited Flow when Fortitude Resonance is not activated.  
                             &nbsp;  
                             The Wanderer can gain Sword Shadow, which follows them around when using Saki Fuwa's skills. Sword Shadow will release Surge when the Wanderer uses Saki Fuwa's branch skills or discharge skills, dealing ranged damage equal to **450%** of frost ATK. Cooldown of Surge: **10** seconds.  
                             &nbsp;  
@@ -252,15 +252,15 @@ const saki = {
                 discharge: [
                     {
                         name: "Heartlotus",
-                        description: `<abbr title="China Exclusive></abbr>  When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **864.5%** of ATK + **46**.`
+                        description: `<abbr title="China Exclusive"></abbr>  When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **864.5%** of ATK + **46**.`
                     }
                 ]
             },
         },
         matrix: {
-            set2: `<abbr title="China Exclusive></abbr> When Frost Resonance gets triggered: Every **3** seconds, deal frost damage equal to **60%/100%/150%/220%** of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for **3.5** seconds, freeze targets for **3** seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by **12%** for **18** seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`,
+            set2: `<abbr title="China Exclusive"></abbr> When Frost Resonance gets triggered: Every **3** seconds, deal frost damage equal to **60%/100%/150%/220%** of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for **3.5** seconds, freeze targets for **3** seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by **12%** for **18** seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`,
     
-            set4: `<abbr title="China Exclusive></abbr> Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage edalt to the marked target by **25%/28%/31%/34%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`
+            set4: `<abbr title="China Exclusive"></abbr> Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage edalt to the marked target by **25%/28%/31%/34%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`
         },
     }
 }
