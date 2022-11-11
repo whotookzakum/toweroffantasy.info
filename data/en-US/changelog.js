@@ -1,5 +1,13 @@
 export const CHANGELOG = [
     {
+        date: "November 11",
+        text: "Global Saki Fuwa data updated."
+    },
+    {
+        date: "November 5",
+        text: "Added battle pass items to global (Hoverboard, outfit, avatar, avatar frame, chat bubble)."
+    },
+    {
         date: "November 4",
         text: "CN's 26th banner, Umi added along with Lyra rerun; Food dish and ingredient names updated; Updated guides Max Level Timegates and Armor RNG Stat Ranges"
     },

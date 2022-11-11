@@ -4,6 +4,8 @@ import { getAvatarFrameData, getAvatarFrameIds } from "../../../lib/cosmetics";
 import CNTag from "../../../components/CNTag";
 import { Modal } from "../../../components/Modal";
 import Ads from "../../../components/Ads";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export async function getStaticProps({ params }) {
     const item = await getAvatarFrameData(params.id);
@@ -39,7 +41,7 @@ export default function AvatarFrameModal({ item }) {
 
                     <section className="w-75ch">
                         <h3 className="anchor">How to get {item.name}</h3>
-                        {item.source}
+                        <ReactMarkdown rehypePlugins={[rehypeRaw]}>{item.source}</ReactMarkdown>
                     </section>
 
                     <Ads unit="lb3" />

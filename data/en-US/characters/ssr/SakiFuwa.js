@@ -4,7 +4,6 @@ const saki = {
     uri: "saki-fuwa",
     imgSrc: "sakifuwa.webp",
     rarity: "SSR",
-    chinaOnly: true,
     banners: {
         cn: [
             {
@@ -21,10 +20,19 @@ const saki = {
                 duration: "19d",
                 week: "43~46"
             }
+        ],
+        glob: [
+            {
+                bannerNo: 6,
+                start: "9 Nov 2022",
+                end: "1 Dec 2022",
+                duration: "22d",
+                week: "14~17"
+            }
         ]
     },
     weapon: {
-        name: "Ryusen Toshin",
+        name: "Heartstream",
         element: "ice",
         type: "defense",
         baseStats: ["attack", "resistance", "health"],
@@ -34,41 +42,42 @@ const saki = {
         bonusEffect: {
             effect1: {
                 title: `Frost Resonance`,
-                description: `When equipped with **2** or more Frost weapons, increase Frost ATK by **20%** and Frost Resistance by **40%**, taking effect in the background.`
+                description: `Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type.`
             }
         },
         advancement: {
-            star1: `When Frost Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.`,
+            star1: `When Frost Resonance is activated, all weapon skill cooldowns are cleared every **5** times weapon skills are used, and the damage of Flow and Counterattack is **doubled** for the next **25** seconds.`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `Flowing Heart: Sword Shadow [Surge] damage increased to **900%** of Frost ATK.  
-                Silent Flow: Sword Shadow [Surge] cooldown reduced to **5** seconds.`,
+            star3: 
+                `Excited Flow: Increase the damage of Sword Shadow: Surge to **350%** of Frost ATK.  
+                Silent Flow: The cooldown of Sword Shadow: Surge becomes **5** seconds.`,
 
             star4: `Increase the current weapon's base HP growth by **32%**.`,
 
-            star5: `Sword Shadow's [Surge] triggers Phantasia upon hitting a target, shares cooldown with Phantasia trigged by dodging.`,
+            star5: `Freeze time and trigger Phantasia upon Surge hitting the target. Share cooldown with the Phantasia triggered by dodging.`,
 
-            star6: `Sword Shadow's [Surge] increases your Frost damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' Frost damage by **25%** for **12** seconds.`
+            star6: `Upon hitting a target with Surge, increase frost damage by **11%** for **15** seconds. Upon triggering block with Sword Shadow, reduce the frost damage dealt by enemy targets by **25%** for **12** seconds.`
         },
         abilities: {
             normal: [
                 {
-                    name: "Flowing Springs",
+                    name: "Ragestream",
                     input: ["Attack x5"],
-                    description: `While on the ground, use the Flowing Spring to perform 5 attacks.`,
+                    description: `Launch 5 Heartstream attacks while on the ground.`,
                     breakdown: [
-                        `Deal damage equal to **42.5%** of ATK + **2** and knock the target back a short distance`,
-                        `Deal damage equal to **29.5%** of ATK + **2** and knock the target back a short distance`,
-                        `Deal damage equal to **45%** of ATK + **2** and knock the target back a short distance`,
-                        `Deal damage equal to **70.6%** of ATK + **4** and knock the target back a short distance`,
-                        `Deal damage equal to **102.6%** of ATK + **5** and **suspend** the target.`,
+                        `Deal **42.5%** of ATK + **2** damage to the target and slightly knocks the target back.`,
+                        `Deal **29.5%** of ATK + **2** damage to the target and slightly knocks the target back.`,
+                        `Deal **45%** of ATK + **2** damage to the target and slightly knocks the target back.`,
+                        `Deal **70.6%** of ATK + **4** damage to the target and slightly knocks the target back.`,
+                        `Deal **102.6%** of ATK + **5** damage to the target and flies the target.`,
                     ]
                 },
                 {
-                    name: "Heavenbreak Waterfall",
+                    name: "Airsplit",
                     input: ["Jump", "Attack x5"],
-                    description: `When in the air or after using a jump, click the basic attack to make five consecutive attacks in the air.`,
+                    description: `While airborne or after jumping once, use normal attack to attack 5 times in a row.`,
                     breakdown: [
                         `Deal damage equal to **47.2%** of ATK + **2**.`,
                         `Deal damage equal to **43.7%** of ATK + **2**.`,
@@ -77,27 +86,27 @@ const saki = {
                         `Deal damage equal to **170.2%** of ATK + **9**.`,
                     ]
                 },
+                
+                {
+                    name: "Excited Flow: Vortex",
+                    input: ["hold:Attack"],
+                    description: 
+                        `In the Excited Flow mode, tap and hold normal attack to trigger the skill.  
+                        Lunge forward with a swirling multiattack, dealing a maximum of **199.5%** of ATK + **11** damage.`
+                },
+                {
+                    name: "Silent Flow: Barrier",
+                    input: ["hold:Attack"],
+                    description: 
+                        `In the Silent Flow mode, tap while launching normal attacks or tap and hold the normal attack to trigger the skill.  
+                        Hold the attack button to keep the Anticipation. Release the button to deal **127.3%** of ATK + **7** damage. When received attacks during the attacking period, blocks **20%** of your max HP.`
+                },
                 {
                     name: "Frostfall",
                     input: ["Jump", "hold:Attack"],
                     description: 
-                        `Triggered by holding basic attack, climbing, reverse jumping attack or using a jetpack to attack while in the air.  
-                        &nbsp;  
-                        In the process of falling, each time you hit a target deal damage equal to **30.4%** of ATK + **2** damage to the target; when landing, it will cause **76%** of ATK + **4** damage to surrounding targets.`
-                },
-                {
-                    name: "Surging Heart Style - Vortex", // "while target is airborne"
-                    input: ["hold:Attack"],
-                    description: 
-                        `During normal attacks, hold the normal attack to trigger.  
-                        Dash forward and spin to perform multi-stage attacks, dealing damage up to **199.5%** of ATK + **11** damage to the target.`
-                },
-                {
-                    name: "Calm Style - Broken Spring", // "while target is on the ground"
-                    input: ["hold:Attack"],
-                    description: 
-                        `In Calm Style, the normal attack can be triggered by holding the normal attack or immediately.  
-                        Long press the attack button to keep the momentum, release the attack button to deal up to **127.3%** of ATK + **7** of damage to the target. If you are attacked while the skill is casting, block damage equal to **20%** of your maximum HP.`
+                        `Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack with normal attack to trigger.  
+                        While falling, deal damage equal to **30.4%** of ATK + **2** each hit. Upon landing, deal damage equal to **76%** of ATK + **4** to nearby targets.`
                 }
             ],
             dodge: [
@@ -107,39 +116,39 @@ const saki = {
                         `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
                 },
                 {
-                    name: "Frigid Tide",
+                    name: "Polar Front",
                     input: ["Arrow keys", "Dodge", "Attack"],
                     description: 
-                        `After dodging forward, tap Basic Attack.  
-                        Dash and turn around to attack the target, dealing a total of **277%** of ATK + **15** damage.`
+                        `Tap normal attack during the short period after dodging forward.  
+                        Dash and turn around to attack the target, dealing damage equal to **277%** of ATK + **15**.`
                 },
             ],
             skill: [
                 {
-                    name: "Surging Heart Style - Glimpse of Ning Quan",
-                    description: `Dash in the target direction and briefly immobilize enemies in your way, dealing delayed damage up to **927.7%** of ATK + **49**, cooldown for **30** seconds.`
+                    name: "Excited Flow: Flashing Stream",
+                    description: `Dash toward the target and temporarily immobilize enemies along the path, dealing delayed damage up to **445.3%** of ATK + **23**. Cooldown: **30** seconds.`
                 },
                 {
-                    name: "Calm Style - Gathering Springs",
+                    name: "Silent Flow: Concentrated Stream",
                     description: 
-                        `Enter a charging state for up to **3** seconds. While charging, continuously taunt surrounding targets and absorb damage (up to **60%** of Max HP). When charging ends, deal Frost damage based on damage absored, equal to **850%** &times; Frost Attack + **50%** &times; amount of damage absored. **20%** of the amount that is not used is converted into health. Cooldown **30** seconds.`
+                        `Cast the Silent Flow skills to begin charging for up to **3** seconds, continuously taunting nearby targets and absorbing damage up to **60%** of Max HP. At the end of the charge, deal frost damage equal to **408%** of frost ATK + **50%** of absorbed damage to targets, and **20%** of the unconsumed value is converted to HP recovery. Cooldown: **30** seconds.`
                 },
                 {
                     name: "Passive",
                     description: 
-                        `When using Fortitude Resonance, switch to Calm Style, otherwise switch to Surging Heart Style.  
+                        `Enter Silent Flow when Fortitude Resonance is activated. **Excited Flow: Flashing Stream** is replaced by **Silent Flow: Concentrated Stream**. Enter Excited Flow when Fortitude Resonance is not activated.  
                         &nbsp;  
-                        Cast the skill to summon a Shadow Sword that follows you. When using Ryusen Toshin's hold attack or discharge skill, Shadow Sword unleashes [Surge], dealing **450%** of Frost ATK as AoE damage to the target. [Surge] has a cooldown of **10** seconds.  
+                        The Wanderer can gain Sword Shadow, which follows them around when using Saki Fuwa's skills. Sword Shadow will release Surge when the Wanderer uses Saki Fuwa's branch skills or discharge skills, dealing ranged damage equal to **175%** of frost ATK. Cooldown of Surge: **10** seconds.  
                         &nbsp;  
-                        **Surging Heart Style**: When the player uses any weapon to deal damage, the Shadow Sword releases [Flow], dealing **125%** of Frost ATK as damage to another target and recovering **57%** of the damage as health (each recovery is capped at **100%** of ATK), cooldown **0.8** seconds.  
+                        While in Excited Flow: Sword Shadow will release Flow when the Wanderer deals damage with any weapon, which inflicts damage equal to **45%** of frost ATK on the first hit target and recovers HP equal to **57%** of the damage. The maximum recovery each time cannot exceed **100%** of ATK. Cooldown: **0.8** seconds.  
                         &nbsp;  
-                        **Calm Style**: After the Shadow Sword unleashes [Surge], gain **3** block charges that last for **10** seconds and blocking up to **15%** of Max HP. Each successful block deals [Counterattack] damage equal to **450%** of Frost ATK. Increase [Surge]'s shatter by **100%** and grant it a taunting effect.`
+                        While in Silent Flow: After Sword Shadow releases Surge, the Wanderer obtains **3** blocks for **10** seconds, and the maximum block capacity cannot exceed **15%** of Max HP. Each successful block deals Counterattack damage equal to **225%** of frost ATK to the target, and the shatter of Surge increases by **100%** with an added taunt effect.`
                 }
             ],
             discharge: [
                 {
-                    name: "Heart of Lotus",
-                    description: "When ***weapon charge*** is full or ***Phantasia*** is triggered, **clear all debuffs from the user** and sprint towards the target and launch a set of combos, dealing a total of **864.5%** of ATK + **46** damage."
+                    name: "Heartlotus",
+                    description: "When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **536%** of ATK + **28**."
                 }
             ]
         },
@@ -173,16 +182,17 @@ const saki = {
     },
 
     matrix: {
-        set2: `While Frost Resonance is active: Every **3** seconds, deal **60%/100%/150%/220%** of Frost ATK to enemies within 10 meters and apply one stack of Frost: 5% slowing effect for **3.5** seconds. After 3 stacks, Freeze the target for **3** seconds (excluding bosses) and the target will take **12%** more Frost damage for **18** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`,
+        set2: `When Frost Resonance gets triggered: Every **3** seconds, deal frost damage equal to **65%/80%/95%/110%** of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for **3.5** seconds, freeze targets for **3** seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by **5%** for **18** seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`,
 
-        set4: `Attack the target **10** times to add a 12-second Frozen mark, increasing your Frost damage against the target by **25%/28%/31%/34%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.`
+        set4: `Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage edalt to the marked target by **11%/28%/31%/34%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`
     },
 
     awakening: {
-        trait1200: `When health is below **70%**, gain **40%** all-element resistance.`,
+        trait1200: `When HP is lower than **70%**, increase resistance by **40%**.`,
 
-        trait4000: `When health is below **70%**, gain **40%** all-element resistance and an additional **60%** Frost resistance.  
-            When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself) for **10** seconds. The block amount will not exceed **15%** of the teammate's maximum health.`,
+        trait4000: 
+            `When HP is lower than **70%**, increase all resistance by **40%** with an extra **60%** increased frost resistance.  
+            In the state of Silent Flow: After the sword shadow releases Surge and blocks an attack, the teammate with the lowest HP percentage will get 3 block abilities, not including yourself, lasting for **10** seconds. The maximum blocking damage does not exceed **15%** of the teammate's max HP.`,
 
         giftCategories: ['metalware', 'everyday-items', 'vera'],
 
@@ -202,9 +212,56 @@ const saki = {
         birthday: '11 October',
         voiceActors: {
             jp: "",
-            en: "",
+            en: "EmiLo",
             cn: "唐小喜"
         }
+    },
+
+    cnData: {
+        weapon: {
+            advancement: {
+                star3: 
+                `<abbr title="China Exclusive></abbr> Excited Flow: Increase the damage of Sword Shadow: Surge to **900%** of Frost ATK.  
+                Silent Flow: The cooldown of Sword Shadow: Surge becomes **5** seconds.`,
+
+                star6: `<abbr title="China Exclusive></abbr> Upon hitting a target with Surge, increase frost damage by **20%** for **15** seconds. Upon triggering block with Sword Shadow, reduce the frost damage dealt by enemy targets by **25%** for **12** seconds.`
+            },
+            abilities: {
+                skill: [
+                    {
+                        name: "Excited Flow: Flashing Stream",
+                        description: `<abbr title="China Exclusive></abbr> Dash toward the target and temporarily immobilize enemies along the path, dealing delayed damage up to **927.7%** of ATK + **49**. Cooldown: **30** seconds.`
+                    },
+                    {
+                        name: "Silent Flow: Concentrated Stream",
+                        description: 
+                            `<abbr title="China Exclusive></abbr> Cast the Silent Flow skills to begin charging for up to **3** seconds, continuously taunting nearby targets and absorbing damage up to **60%** of Max HP. At the end of the charge, deal frost damage equal to **850%** of frost ATK + **50%** of absorbed damage to targets, and **20%** of the unconsumed value is converted to HP recovery. Cooldown: **30** seconds.`
+                    },
+                    {
+                        name: "Passive",
+                        description: 
+                            `<abbr title="China Exclusive></abbr> Enter Silent Flow when Fortitude Resonance is activated. **Excited Flow: Flashing Stream** is replaced by **Silent Flow: Concentrated Stream**. Enter Excited Flow when Fortitude Resonance is not activated.  
+                            &nbsp;  
+                            The Wanderer can gain Sword Shadow, which follows them around when using Saki Fuwa's skills. Sword Shadow will release Surge when the Wanderer uses Saki Fuwa's branch skills or discharge skills, dealing ranged damage equal to **450%** of frost ATK. Cooldown of Surge: **10** seconds.  
+                            &nbsp;  
+                            While in Excited Flow: Sword Shadow will release Flow when the Wanderer deals damage with any weapon, which inflicts damage equal to **125%** of frost ATK on the first hit target and recovers HP equal to **57%** of the damage. The maximum recovery each time cannot exceed **100%** of ATK. Cooldown: **0.8** seconds.  
+                            &nbsp;  
+                            While in Silent Flow: After Sword Shadow releases Surge, the Wanderer obtains **3** blocks for **10** seconds, and the maximum block capacity cannot exceed **15%** of Max HP. Each successful block deals Counterattack damage equal to **450%** of frost ATK to the target, and the shatter of Surge increases by **100%** with an added taunt effect.`
+                    }
+                ],
+                discharge: [
+                    {
+                        name: "Heartlotus",
+                        description: `<abbr title="China Exclusive></abbr>  When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **864.5%** of ATK + **46**.`
+                    }
+                ]
+            },
+        },
+        matrix: {
+            set2: `<abbr title="China Exclusive></abbr> When Frost Resonance gets triggered: Every **3** seconds, deal frost damage equal to **60%/100%/150%/220%** of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for **3.5** seconds, freeze targets for **3** seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by **12%** for **18** seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`,
+    
+            set4: `<abbr title="China Exclusive></abbr> Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage edalt to the marked target by **25%/28%/31%/34%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`
+        },
     }
 }
 
