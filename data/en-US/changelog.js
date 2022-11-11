@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "November 11",
+        text: "Global Saki Fuwa data updated."
+    },
+    {
         date: "November 5",
         text: "Added battle pass items to global (Hoverboard, outfit, avatar, avatar frame, chat bubble)."
     },
