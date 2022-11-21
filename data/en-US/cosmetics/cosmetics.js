@@ -370,11 +370,10 @@ export const ACCESSORIES = [
         source: "From events."
     },
     {
-        name: "Star Glasses",
-        uri: "star-glasses",
-        chinaOnly: true,
+        name: "Starry Glasses",
+        uri: "starry-glasses",
         imgSrc: "star-glasses.webp",
-        source: "Obtained from gachapon during the event." // i think it was with lin swimsuit gacha?
+        source: "Obtained from the Childlike Innocence event shop." // i think it was with lin swimsuit gacha?
     },
     {
         name: "Dazzling Glasses",
@@ -1409,11 +1408,10 @@ export const AVATAR_FRAMES = [
         source: "Obtained from an event."
     },
     {
-        name: "Fun Time",
-        uri: "fun-time",
-        chinaOnly: true,
+        name: "Naughty Trails",
+        uri: "naughty-trails",
         imgSrc: "fun-time.webp",
-        source: "Obtained from an event."
+        source: "Obtained from the Childlike Innocence event shop."
     },
     {
         name: "Cordate Jellybean",
@@ -1734,11 +1732,10 @@ export const CHAT_BUBBLES = [
         source: "Obtained from gachapon during the event." // Wheel of Fragrance
     },
     {
-        name: "Floating Park",
-        uri: "floating-park",
-        chinaOnly: true,
+        name: "Floating Paradise",
+        uri: "floating-paradise",
         imgSrc: "floating-park.webp",
-        source: "Obtained from an event." // Childlike activity?
+        source: "Obtained from the Childlike Innocence event shop." // Childlike activity?
     },
     {
         name: "Affection Bubble",

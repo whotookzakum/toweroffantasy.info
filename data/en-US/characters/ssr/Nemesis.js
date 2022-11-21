@@ -36,7 +36,7 @@ const nemesis = {
                 end: "28 Sep 2022",
                 duration: "10d",
                 week: "42~43",
-                standardAfterwards: false
+                standardAfterwards: true
             }
         ],
         glob: [

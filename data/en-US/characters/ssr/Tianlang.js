@@ -13,6 +13,13 @@ const tianlang = {
                 end: "4 Sep 2022",
                 duration: "18d",
                 week: "36~39"
+            },
+            {
+                bannerNo: 29,
+                start: "20 Nov 2022",
+                end: "9 Dec 2022",
+                duration: "19d",
+                week: "51~53"
             }
         ]
     },

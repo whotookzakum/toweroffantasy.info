@@ -1,5 +1,9 @@
 export const CHANGELOG = [
     {
+        date: "November 20",
+        text: "Tianlang rerun added; Updated event cosmetics; Fixed CN Nemesis banner not being added to standard count; Fixed global saki 4pc percentages; Added Saki JP VA; Added Frigg last rerun; Updated weapon material costs"
+    },
+    {
         date: "November 11",
         text: "Global Saki Fuwa data updated."
     },
