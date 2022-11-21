@@ -65,11 +65,12 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         };
         return <li key={giftCategory} style={style}>{hyphenToSpace(giftCategory)}</li>;
     })
-    const gifts = awakening.gifts.map(group => {
+    const gifts = awakening.gifts.map((group, index) => {
+        console.log(group)
         let rarity = 2;
         if (group[0] > 40)
             rarity = 4;
-        else if (group[0] > 15)
+        else if (group[0] > 15 && group[1] !== "strangePlant")
             rarity = 3;
         return (group.map((gift, index) => {
             // Skip first index because it holds the points gained from the gifts in the same array i.e. [50, "gift1", "gift2"]

@@ -1,6 +1,14 @@
 // OUTFITS FOLDER: UI/shizhuang
+// Possible additions: face paints/tattoos, simulacrum skins
 
 export const OUTFITS = [
+    {
+        name: "Uninhibited Drum",
+        uri: "uninhibited-drum",
+        chinaOnly: true,
+        imgSrc: "uninhibiteddrum.webp",
+        source: "Obtained from gachapon during the Wild Beat event." // Wild Beat
+    },
     {
         name: "Vibrant Youth",
         uri: "vibrant-youth",
@@ -459,18 +467,18 @@ export const HEADWEAR = [
         source: "Purchasable from the fishing shop."
     },
     {
-        name: "Ghost", // Name unconfirmed
-        uri: "ghost",
+        name: "Little Ghost",
+        uri: "little-ghost",
         chinaOnly: true,
         imgSrc: "ghost.webp",
-        source: "Unknown."
+        source: "Purchasable from the event shop during the Halloween event."
     },
     {
-        name: "Jack O' Lantern", // Name unconfirmed
-        uri: "jack-o-lantern",
+        name: "Candy Pumpkin",
+        uri: "candy-pumpkin",
         chinaOnly: true,
         imgSrc: "jack-o-lantern.webp",
-        source: "Unknown."
+        source: "Purchasable from the event shop during the Halloween event."
     },
     {
         name: "Rosy Letter",
@@ -631,18 +639,18 @@ export const HEADWEAR = [
         source: "Obtained from gachapon during the event."
     },
     {
-        name: "Black Bunny Ears", // Name unconfirmed
+        name: "Black Bunny Ears",
         uri: "black-bunny-ears",
         chinaOnly: true,
         imgSrc: "black-bunny-ears.webp",
-        source: "Unknown."
+        source: "Purchasable in the support shop for Critical Abyss points."
     },
     {
-        name: "Fire Crown", // Name unconfirmed
-        uri: "fire-crown",
+        name: "Flame Crown",
+        uri: "flame-crown",
         chinaOnly: true,
         imgSrc: "fire-crown.webp",
-        source: "Unknown."
+        source: "Purchasable in the support shop for Critical Abyss points."
     },
     {
         name: "Workers Goggles",
@@ -746,6 +754,14 @@ export const MIA_OUTFITS = [
 ]
 
 export const AVATARS = [
+    {
+        name: "Puppeteer's Puppet",
+        uri: "puppeteers-puppet",
+        chinaOnly: true,
+        category: "general",
+        imgSrc: "puppeteers-puppet.webp",
+        source: "Obtained from gachapon during the event." // Halloween ish?
+    },
     {
         name: "Little Chef Mi-a",
         uri: "little-chef-mia",
@@ -1086,6 +1102,14 @@ export const AVATARS = [
 
     // Simulacra Avatars
     {
+        name: "Fenrir",
+        uri: "fenrir",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "fenrir.webp",
+        source: "Unlocked by raising Fenrir's Awakening points (friendship) to 200."
+    },
+    {
         name: "Umi",
         uri: "umi",
         chinaOnly: true,
@@ -1136,7 +1160,6 @@ export const AVATARS = [
     {
         name: "Saki Fuwa",
         uri: "saki-fuwa",
-        chinaOnly: true,
         category: "simulacra",
         imgSrc: "saki-fuwa.webp",
         source: "Unlocked by raising Saki Fuwa's Awakening points (friendship) to 200."
@@ -1258,6 +1281,20 @@ export const AVATARS = [
 ]
 
 export const AVATAR_FRAMES = [
+    {
+        name: "Wind Chaser",
+        uri: "wind-chaser",
+        chinaOnly: true,
+        imgSrc: "wind-chaser.webp",
+        source: "Obtained from gachapon during the Wild Beat event."
+    },
+    {
+        name: "Blood Moon's Favor",
+        uri: "blood-moons-favor",
+        chinaOnly: true,
+        imgSrc: "blood-moons-favor.webp",
+        source: "Obtained from gachapon during the event." // Halloween ish
+    },
     {
         name: "Fishing Card",
         uri: "fishing-card",
@@ -1600,6 +1637,20 @@ export const AVATAR_FRAMES = [
 ]
 
 export const CHAT_BUBBLES = [
+    {
+        name: "Countercurrent", // Backflow
+        uri: "countercurrent",
+        chinaOnly: true,
+        imgSrc: "countercurrent.webp",
+        source: "Obtained from gachapon during the Wild Beat event."
+    },
+    {
+        name: "Phantom of the Castle",
+        uri: "phantom-of-the-castle",
+        chinaOnly: true,
+        imgSrc: "phantom-of-the-castle.webp",
+        source: "Obtained from gachapon during the event." // Halloween ish
+    },
     {
         name: "Majestic Fishing",
         uri: "majestic-fishing",

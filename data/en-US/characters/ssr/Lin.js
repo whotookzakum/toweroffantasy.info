@@ -25,7 +25,7 @@ const lin = {
         ]
     },
     weapon: {
-        name: "Shadow Weaver",
+        name: "Shadoweave",
         element: "aberration",
         type: "dps",
         baseStats: ["attack", "health", "crit"],
@@ -56,7 +56,7 @@ const lin = {
                 {
                     name: "Normal Attack",
                     input: ["Attack x5"],
-                    description: `While on the ground, use Shadow Weaver to perform 5 attacks.`,
+                    description: `While on the ground, use Shadoweave to perform 5 attacks.`,
                     breakdown: [
                         `Deal damage equal to **59.9%** of ATK + **3**.`,
                         `Deal damage equal to **57.1%** of ATK + **3**.`,
@@ -66,7 +66,7 @@ const lin = {
                     ]
                 },
                 {
-                    name: "Air Strike",
+                    name: "Aerial Discharge",
                     input: ["Jump", "Attack x5"],
                     description: `While airborne, tap basic attack 5 times to perform consecutive attacks in the air.`,
                     breakdown: [
@@ -78,7 +78,7 @@ const lin = {
                     ]
                 },
                 {
-                    name: "Mud Scatter",
+                    name: "Scattered Soil",
                     input: ["Attack", "hold:Attack"],
                     description: 
                         `After the second basic attack on the ground or in the air, hold the basic attack to trigger mud scatter.  
@@ -88,7 +88,7 @@ const lin = {
                         Passive: Quickly click the basic attack after mud scatter to perform a fully charged Short-lived.`
                 },
                 {
-                    name: "Short-lived",
+                    name: "Brief Bloom",
                     input: ["hold:Attack"],
                     description: 
                         `Hold the basic attack to release a Short-lived, can be charged up to three stages, gaining immunity to control effects while charging.  
@@ -110,7 +110,7 @@ const lin = {
                         `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
                 },
                 {
-                    name: "Just Leave Greenery",
+                    name: "Leafy Green",
                     input: ["Dodge", "Attack"],
                     description: 
                         `Launch an attack on the target while dodging midair, dealing damage equal to **70%** of ATK + **4**. The hit generates **1-3 Nightblooms** and forms a field that lasts for **5** seconds that reduces enemy movement speed by **50%**.  
@@ -125,13 +125,13 @@ const lin = {
                     name: "Moonlight Realm",
                     description: `A Moonlight Realm of the moon is formed around yourself for **15** seconds. In the Realm, gain a **10%** damage bonus, you can double jump multiple times, gain **20%** increased jumping ability, and reduce stamina consumption by **50%** (cooldown **30** seconds).  
                     &nbsp;                      
-                    When using Shadow Weaver inside Moonlight Realm, enter the state of "Cold Air", where your falling speed is greatly reduced. Jumping while moving in a direction will allow you to perform a shuttle and launch an attack dealing **66%** of ATK + **3** and spawn **1-3** Nightblooms.  
+                    When using Shadoweave inside Moonlight Realm, enter the state of "Airbloom", where your falling speed is greatly reduced. Jumping while moving in a direction will allow you to perform a shuttle and launch an attack dealing **66%** of ATK + **3** and spawn **1-3** Nightblooms.  
                     &nbsp;  
                     Passive: Inside Moonlight Realm, a **Nightbloom** will be generated near a target every **0.8** seconds.  
                     &nbsp;  
-                    Passive: When using Shadow Weaver inside Moonlight Realm, increase damage by **50%** against targets with less than **20%** HP.  
+                    Passive: When using Shadoweave inside Moonlight Realm, increase damage by **50%** against targets with less than **20%** HP.  
                     &nbsp;  
-                    Passive: When using Shadow Weaver inside Moonlight Realm, teleport away from the target when you are about to take damage, cooldown **10** seconds.  
+                    Passive: When using Shadoweave inside Moonlight Realm, teleport away from the target when you are about to take damage, cooldown **10** seconds.  
                     &nbsp;  
                     When paired with two **Flame weapons**, Moonlight Realm is transformed into a Flame Moonlight Realm. While inside the Realm, any burn effects applied will have their duration extended by **4** seconds, and increase flame damage to shielded targets by **15%**.  
                     &nbsp;  
@@ -160,12 +160,12 @@ const lin = {
             {
                 name: "Samir",
                 pieces: 2,
-                description: "Recommended only if you're using Shadow Weaver as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. Shadow Weaver deals many hits, easily maintaining uptime of the damage buff."
+                description: "Recommended only if you're using Shadoweave as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. Shadoweave deals many hits, easily maintaining uptime of the damage buff."
             },
             {
                 name: "Crow",
                 pieces: 2,
-                description: "Recommended only if you're using Shadow Weaver as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
+                description: "Recommended only if you're using Shadoweave as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
             },
             {
                 name: "Sobek",

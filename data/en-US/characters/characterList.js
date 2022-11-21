@@ -27,8 +27,10 @@ import Pepper from './sr/Pepper';
 import Annabella from './ssr/Annabella';
 import Alyss from './ssr/Alyss';
 import Umi from './ssr/Umi';
+import Fenrir from './ssr/Fenrir';
 
 const characterList = [
+    Fenrir,
     Umi,
     Alyss,
     Annabella,
