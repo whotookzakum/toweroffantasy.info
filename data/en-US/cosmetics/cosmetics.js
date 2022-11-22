@@ -755,6 +755,20 @@ export const MIA_OUTFITS = [
 
 export const AVATARS = [
     {
+        name: "Lin: T Pose",
+        uri: "lin-t-pose",
+        category: "general",
+        imgSrc: "lin-t-pose.webp",
+        source: "Obtained when purchasing the tanium pack during the sale." 
+    },
+    {
+        name: "Saki: T Pose",
+        uri: "saki-t-pose",
+        category: "general",
+        imgSrc: "saki-t-pose.webp",
+        source: "Obtained when purchasing the tanium pack during the sale." 
+    },
+    {
         name: "Puppeteer's Puppet",
         uri: "puppeteers-puppet",
         chinaOnly: true,
@@ -1152,7 +1166,6 @@ export const AVATARS = [
     {
         name: "Lin",
         uri: "lin",
-        chinaOnly: true,
         category: "simulacra",
         imgSrc: "lin.webp",
         source: "Unlocked by raising Lin's Awakening points (friendship) to 200."
