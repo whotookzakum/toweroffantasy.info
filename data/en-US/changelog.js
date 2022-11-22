@@ -1,7 +1,7 @@
 export const CHANGELOG = [
     {
-        date: "November 21",
-        text: "Fenrir banner and Tianlang rerun added; New Mount and Outfit added; Updated Lin's ability names; Updated cosmetics; Fixed CN Nemesis banner not being added to standard count; Fixed global saki 4pc percentages; Added Saki JP VA; Added Frigg last rerun; Updated weapon material costs"
+        date: "November 22",
+        text: "Fenrir (CN) banner and Tianlang rerun added; Global Lin added; New Mount and Outfit added; Updated Lin's ability names; Updated cosmetics; Fixed CN Nemesis banner not being added to standard count; Fixed global saki 4pc percentages; Added Saki JP VA; Added Frigg last rerun; Updated weapon material costs"
     },
     {
         date: "November 11",

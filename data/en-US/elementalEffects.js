@@ -35,12 +35,12 @@ const elementalEffects = {
             )
         },
     },
-    aberration: {
-        title: "Aberration",
+    altered: {
+        title: "Altered",
         values: ["", "560.00%"], // SR and SSR
         description: function(rarity) {
             return(
-                `When the weapon is fully charged, the next attack will leave a mark on the enemy that explodes after **5** seconds. The explosion deals **25%** of the damage dealt during the marked period, up to **560%** of ATK. Only one mark can exist at a time.`
+                `When the weapon is fully charged, the next attack will mark the target, causing an explosion after **5** seconds. Additionally inflict **25%** of all damage received by the target while the mark exists, up to a total of **560%** of your ATK. Only 1 mark can be added on a target at a time.`
             )
         }
     }

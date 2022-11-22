@@ -66,7 +66,6 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         return <li key={giftCategory} style={style}>{hyphenToSpace(giftCategory)}</li>;
     })
     const gifts = awakening.gifts.map((group, index) => {
-        console.log(group)
         let rarity = 2;
         if (group[0] > 40)
             rarity = 4;
@@ -97,7 +96,9 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         const abilitiesInThisCategory = abilityList.map(ability => {
             return (
                 <div key={ability.name} className="weapon-ability">
-                    <h3>{ability.name}</h3>
+                    <h3>
+                        {ability.name}
+                    </h3>
                     {ability.input &&
                         <ul key={ability.name} className="ability-inputs">
                             {getInputs(ability.input)}
@@ -151,7 +152,7 @@ export default function SimulacrumPage({ simulacrum, version, setVersion }) {
         wepUpgradesData = weaponUpgrades.china[simulacrum.rarity];
     }
     if (simulacrum.name === "Lin") {
-        wepUpgradesData = weaponUpgrades.lin;
+        wepUpgradesData = weaponGameVersion.lin;
     }
     const weaponUpgradeTable = wepUpgradesData.map((data, index) => {
 
