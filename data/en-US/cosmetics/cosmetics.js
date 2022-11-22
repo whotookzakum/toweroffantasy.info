@@ -1,6 +1,14 @@
 // OUTFITS FOLDER: UI/shizhuang
+// Possible additions: face paints/tattoos, simulacrum skins
 
 export const OUTFITS = [
+    {
+        name: "Uninhibited Drum",
+        uri: "uninhibited-drum",
+        chinaOnly: true,
+        imgSrc: "uninhibiteddrum.webp",
+        source: "Obtained from gachapon during the Wild Beat event." // Wild Beat
+    },
     {
         name: "Vibrant Youth",
         uri: "vibrant-youth",
@@ -370,11 +378,10 @@ export const ACCESSORIES = [
         source: "From events."
     },
     {
-        name: "Star Glasses",
-        uri: "star-glasses",
-        chinaOnly: true,
+        name: "Starry Glasses",
+        uri: "starry-glasses",
         imgSrc: "star-glasses.webp",
-        source: "Obtained from gachapon during the event." // i think it was with lin swimsuit gacha?
+        source: "Obtained from the Childlike Innocence event shop." // i think it was with lin swimsuit gacha?
     },
     {
         name: "Dazzling Glasses",
@@ -460,18 +467,18 @@ export const HEADWEAR = [
         source: "Purchasable from the fishing shop."
     },
     {
-        name: "Ghost", // Name unconfirmed
-        uri: "ghost",
+        name: "Little Ghost",
+        uri: "little-ghost",
         chinaOnly: true,
         imgSrc: "ghost.webp",
-        source: "Unknown."
+        source: "Purchasable from the event shop during the Halloween event."
     },
     {
-        name: "Jack O' Lantern", // Name unconfirmed
-        uri: "jack-o-lantern",
+        name: "Candy Pumpkin",
+        uri: "candy-pumpkin",
         chinaOnly: true,
         imgSrc: "jack-o-lantern.webp",
-        source: "Unknown."
+        source: "Purchasable from the event shop during the Halloween event."
     },
     {
         name: "Rosy Letter",
@@ -632,18 +639,18 @@ export const HEADWEAR = [
         source: "Obtained from gachapon during the event."
     },
     {
-        name: "Black Bunny Ears", // Name unconfirmed
+        name: "Black Bunny Ears",
         uri: "black-bunny-ears",
         chinaOnly: true,
         imgSrc: "black-bunny-ears.webp",
-        source: "Unknown."
+        source: "Purchasable in the support shop for Critical Abyss points."
     },
     {
-        name: "Fire Crown", // Name unconfirmed
-        uri: "fire-crown",
+        name: "Flame Crown",
+        uri: "flame-crown",
         chinaOnly: true,
         imgSrc: "fire-crown.webp",
-        source: "Unknown."
+        source: "Purchasable in the support shop for Critical Abyss points."
     },
     {
         name: "Workers Goggles",
@@ -747,6 +754,28 @@ export const MIA_OUTFITS = [
 ]
 
 export const AVATARS = [
+    {
+        name: "Lin: T Pose",
+        uri: "lin-t-pose",
+        category: "general",
+        imgSrc: "lin-t-pose.webp",
+        source: "Obtained when purchasing the tanium pack during the sale." 
+    },
+    {
+        name: "Saki: T Pose",
+        uri: "saki-t-pose",
+        category: "general",
+        imgSrc: "saki-t-pose.webp",
+        source: "Obtained when purchasing the tanium pack during the sale." 
+    },
+    {
+        name: "Puppeteer's Puppet",
+        uri: "puppeteers-puppet",
+        chinaOnly: true,
+        category: "general",
+        imgSrc: "puppeteers-puppet.webp",
+        source: "Obtained from gachapon during the event." // Halloween ish?
+    },
     {
         name: "Little Chef Mi-a",
         uri: "little-chef-mia",
@@ -1087,6 +1116,14 @@ export const AVATARS = [
 
     // Simulacra Avatars
     {
+        name: "Fenrir",
+        uri: "fenrir",
+        chinaOnly: true,
+        category: "simulacra",
+        imgSrc: "fenrir.webp",
+        source: "Unlocked by raising Fenrir's Awakening points (friendship) to 200."
+    },
+    {
         name: "Umi",
         uri: "umi",
         chinaOnly: true,
@@ -1129,7 +1166,6 @@ export const AVATARS = [
     {
         name: "Lin",
         uri: "lin",
-        chinaOnly: true,
         category: "simulacra",
         imgSrc: "lin.webp",
         source: "Unlocked by raising Lin's Awakening points (friendship) to 200."
@@ -1137,7 +1173,6 @@ export const AVATARS = [
     {
         name: "Saki Fuwa",
         uri: "saki-fuwa",
-        chinaOnly: true,
         category: "simulacra",
         imgSrc: "saki-fuwa.webp",
         source: "Unlocked by raising Saki Fuwa's Awakening points (friendship) to 200."
@@ -1259,6 +1294,20 @@ export const AVATARS = [
 ]
 
 export const AVATAR_FRAMES = [
+    {
+        name: "Wind Chaser",
+        uri: "wind-chaser",
+        chinaOnly: true,
+        imgSrc: "wind-chaser.webp",
+        source: "Obtained from gachapon during the Wild Beat event."
+    },
+    {
+        name: "Blood Moon's Favor",
+        uri: "blood-moons-favor",
+        chinaOnly: true,
+        imgSrc: "blood-moons-favor.webp",
+        source: "Obtained from gachapon during the event." // Halloween ish
+    },
     {
         name: "Fishing Card",
         uri: "fishing-card",
@@ -1409,11 +1458,10 @@ export const AVATAR_FRAMES = [
         source: "Obtained from an event."
     },
     {
-        name: "Fun Time",
-        uri: "fun-time",
-        chinaOnly: true,
+        name: "Naughty Trails",
+        uri: "naughty-trails",
         imgSrc: "fun-time.webp",
-        source: "Obtained from an event."
+        source: "Obtained from the Childlike Innocence event shop."
     },
     {
         name: "Cordate Jellybean",
@@ -1603,6 +1651,20 @@ export const AVATAR_FRAMES = [
 
 export const CHAT_BUBBLES = [
     {
+        name: "Countercurrent", // Backflow
+        uri: "countercurrent",
+        chinaOnly: true,
+        imgSrc: "countercurrent.webp",
+        source: "Obtained from gachapon during the Wild Beat event."
+    },
+    {
+        name: "Phantom of the Castle",
+        uri: "phantom-of-the-castle",
+        chinaOnly: true,
+        imgSrc: "phantom-of-the-castle.webp",
+        source: "Obtained from gachapon during the event." // Halloween ish
+    },
+    {
         name: "Majestic Fishing",
         uri: "majestic-fishing",
         chinaOnly: true,
@@ -1734,11 +1796,10 @@ export const CHAT_BUBBLES = [
         source: "Obtained from gachapon during the event." // Wheel of Fragrance
     },
     {
-        name: "Floating Park",
-        uri: "floating-park",
-        chinaOnly: true,
+        name: "Floating Paradise",
+        uri: "floating-paradise",
         imgSrc: "floating-park.webp",
-        source: "Obtained from an event." // Childlike activity?
+        source: "Obtained from the Childlike Innocence event shop." // Childlike activity?
     },
     {
         name: "Affection Bubble",

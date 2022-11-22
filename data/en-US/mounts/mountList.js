@@ -14,8 +14,10 @@ import newstar from "./newstar";
 import omniumbeastvii from "./omniumbeastvii";
 import voyager from "./voyager";
 import thunder from './thunder';
+import mammoth from "./mammoth";
 
 export const MOUNTS = [
+    mammoth,
     thunder,
     newstar,
     futurechariot,

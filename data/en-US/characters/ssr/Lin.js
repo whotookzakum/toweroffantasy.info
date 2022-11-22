@@ -3,7 +3,6 @@ const lin = {
     uri: "lin",
     imgSrc: "lin.webp",
     rarity: "SSR",
-    chinaOnly: true,
     banners: {
         cn: [
             {
@@ -22,11 +21,21 @@ const lin = {
                 duration: "12d",
                 week: "46~48"
             },
+        ],
+        glob: [
+            {
+                bannerNo: 7,
+                subtext: "Limited Banner only",
+                start: "22 Nov 2022",
+                end: "21 Dec 2022",
+                duration: "29d",
+                week: "16~20"
+            },
         ]
     },
     weapon: {
-        name: "Shadow Weaver",
-        element: "aberration",
+        name: "Shadoweave",
+        element: "altered",
         type: "dps",
         baseStats: ["attack", "health", "crit"],
         shatter: ["S", "11.50"],
@@ -34,29 +43,32 @@ const lin = {
         materials: ["red", "green", "black", "blue"],
         bonusEffect: {
             effect1: {
-                title: `Weapon Mastery`,
-                description: `Activate **Weapon Mastery** when used with other weapons. Nightblooms will randomly appear around the target and explode within **1-3** seconds, dealing **60%** AoE damage.`
+                title: `Weapons Master`,
+                description: `When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created. Epiphyllum will appear around the target randomly and explode within **1-3** seconds, dealing **25%** area damage.`
             }
         },
         advancement: {
-            star1: `Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**). **Moonlight Realm** reduces the spawn time of Nightblooms to **0.5** seconds.`,
+            star1: `Normal attacks now deal area damage upon hit. When there is another epiphyllum within the epiphyllum explosion area, increase the damage of each of the subsequent epiphyllum explosions by **10%**, up to a maximum of **50%**.  
+            The epiphyllum generation interval from **Moonlight Realm** is now reduced to **0.5** seconds.`,
 
             star2: `Increase the current weapon's base ATK growth by **16%**.`,
 
-            star3: `**Moonlight Realm** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Moonlight Realm** is increased to **20** seconds.`,
+            star3: `The epiphyllum generation interval from **Moonlight Realm** is now reduced to **0.3** seconds. Epiphyllums will attach to the enemy.  
+            The duration of **Moonlight Realm** is now increased to **20** seconds.`,
 
             star4: `Increase the current weapon's base ATK growth by **32%**.`,
 
-            star5: `While inside **Moonlight Realm**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.`,
+            star5: `While under the effect of **Moonlight Realm**, gain **30** weapon charge every second and increase the damage of discharge skills by **15%**.`,
 
-            star6: `**Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Moonlight Realm** is increased to **15%**.`
+            // Global 6 star is so bad that it's unusable
+            star6: `**Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The ATK bonus while inside **Moonlight Realm** is increased to **15%**.`
         },
         abilities: {
             normal: [
                 {
                     name: "Normal Attack",
                     input: ["Attack x5"],
-                    description: `While on the ground, use Shadow Weaver to perform 5 attacks.`,
+                    description: `While on the ground, use Shadoweave to launch 5 consecutive attacks.`,
                     breakdown: [
                         `Deal damage equal to **59.9%** of ATK + **3**.`,
                         `Deal damage equal to **57.1%** of ATK + **3**.`,
@@ -66,9 +78,9 @@ const lin = {
                     ]
                 },
                 {
-                    name: "Air Strike",
+                    name: "Aerial Discharge",
                     input: ["Jump", "Attack x5"],
-                    description: `While airborne, tap basic attack 5 times to perform consecutive attacks in the air.`,
+                    description: `While airborne, use normal attack to attack 5 times in a row.`,
                     breakdown: [
                         `Deal damage equal to **30.6%** of ATK + **2**.`,
                         `Deal damage equal to **55.6%** of ATK + **3**.`,
@@ -78,29 +90,26 @@ const lin = {
                     ]
                 },
                 {
-                    name: "Mud Scatter",
+                    name: "Scattered Soil",
                     input: ["Attack", "hold:Attack"],
-                    description: 
-                        `After the second basic attack on the ground or in the air, hold the basic attack to trigger mud scatter.  
-                        &nbsp;  
-                        Launch an attack at the target location, dealing damage equal to **83.2%** of ATK + **4** and knocking the target down.  
-                        &nbsp;  
-                        Passive: Quickly click the basic attack after mud scatter to perform a fully charged Short-lived.`
+                    description:
+                        `After the second normal attack on the ground or in mid-air, hold normal attack to trigger Scattered Soil. Attack the target position, dealing damage equal to **83.2%** of ATK + **4** and knocking the target down.  
+                        Passive: After unleashing Scattered Soil on the ground, rapidly tapping normal attack will immediately unleash Brief Bloom (fully charged).`
                 },
                 {
-                    name: "Short-lived",
+                    name: "Brief Bloom",
                     input: ["hold:Attack"],
-                    description: 
-                        `Hold the basic attack to release a Short-lived, can be charged up to three stages, gaining immunity to control effects while charging.  
+                    description:
+                        `Hold normal attack to unleash Brief Bloom. Can be charged for up to 3 stacks, with hyperbody and control immunity during charging.  
                         &nbsp;  
-                        The first stage deals damage equal to **73.9%** ATK + **4**.  
-                        The second stage deals damage equal to **146.2%** of ATK + **8**.  
-                        The third stage deals damage equal to **246.2%** of ATK + **13**.`
+                        First stack: Deal damage equal to **73.9%** ATK + **4**.  
+                        Second stack: Deal damage equal to **146.2%** of ATK + **8**.  
+                        Third stack: Deal damage equal to **246.4%** of ATK + **13**.`
                 },
                 {
                     name: "Falling Shadow",
                     input: ["Jump", "hold:Attack"],
-                    description: `Falling quickly from the air, deal damage equal to **160%** of ATK + **8** and knocking down targets.`
+                    description: `Hold normal attack in mid-air to trigger Falling Shadow. Plummet from the skies, dealing damage equal to **160%** of ATK + **8** and knocking the target down.`
                 },
             ],
             dodge: [
@@ -110,44 +119,43 @@ const lin = {
                         `Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.`
                 },
                 {
-                    name: "Just Leave Greenery",
+                    name: "Leafy Green",
                     input: ["Dodge", "Attack"],
-                    description: 
-                        `Launch an attack on the target while dodging midair, dealing damage equal to **70%** of ATK + **4**. The hit generates **1-3 Nightblooms** and forms a field that lasts for **5** seconds that reduces enemy movement speed by **50%**.  
-                        &nbsp;  
-                        Passive: can be used on the ground or in the air.  
-                        &nbsp;  
-                        Passive: When under control effects, immediately break out and cast the field (automatically use a dodge attack without consuming dodge count), cooldown **20** seconds.`,
+                    description:
+                        `Unleash Leafy Green at the target while performing a backflip, dealing damage equal to **70%** of ATK + **4**, generating **1-3** epiphyllums upon hit, and forming a Green Field that lasts for **5** seconds. When enemies in the Green Field lock onto the Wanderer, their movement speed is reduced by **50%**.  
+                        Passive: Can be unleashed on the ground or mid-air.  
+                        Passive: Immediately break the control if under control effect and automatically release Leafy Green without any cost of dodge. Skill cooldown lasts for **20** seconds.`
                 }
             ],
             skill: [
                 {
                     name: "Moonlight Realm",
-                    description: `A Moonlight Realm of the moon is formed around yourself for **15** seconds. In the Realm, gain a **10%** damage bonus, you can double jump multiple times, gain **20%** increased jumping ability, and reduce stamina consumption by **50%** (cooldown **30** seconds).  
-                    &nbsp;                      
-                    When using Shadow Weaver inside Moonlight Realm, enter the state of "Cold Air", where your falling speed is greatly reduced. Jumping while moving in a direction will allow you to perform a shuttle and launch an attack dealing **66%** of ATK + **3** and spawn **1-3** Nightblooms.  
-                    &nbsp;  
-                    Passive: Inside Moonlight Realm, a **Nightbloom** will be generated near a target every **0.8** seconds.  
-                    &nbsp;  
-                    Passive: When using Shadow Weaver inside Moonlight Realm, increase damage by **50%** against targets with less than **20%** HP.  
-                    &nbsp;  
-                    Passive: When using Shadow Weaver inside Moonlight Realm, teleport away from the target when you are about to take damage, cooldown **10** seconds.  
-                    &nbsp;  
-                    When paired with two **Flame weapons**, Moonlight Realm is transformed into a Flame Moonlight Realm. While inside the Realm, any burn effects applied will have their duration extended by **4** seconds, and increase flame damage to shielded targets by **15%**.  
-                    &nbsp;  
-                    When paired with two **Volt weapons**, Moonlight Realm is transformed into a Thunder Moonlight Realm. In the Realm, dodges have a **65%** chance of not being consumed and dodge attacks deal **35%** more damage. When using Volt Resonance, increase Volt damage by **30%**.  
-                    &nbsp;  
-                    When paired with two **Frost weapons**, Moonlight Realm is transformed into an Ice Moonlight Realm. When enemies in the Realm receive frost damage **10** times, they enter a state of frostbite for **15** seconds, receiving **22%** more frost damage. The number of hits to activate frostbite does not accumulate while the enemy is in the frostbite state.  
-                    &nbsp;  
-                    When paired with two **Physical weapons**, Moonlight Realm is transformed into a Physical Moonlight Realm. When there is an active life shield in the Realm, deal damage equal to **150%** of ATK + **8** every second.  
-                    &nbsp;  
-                    When paired with two **weapons of different elements**, gain **15%** attack for all elements while inside the Realm (considered as activating elemental resonances for flame, volt, frost, and physical).`
+                    description: 
+                        `Create a Moonlight Realm around yourself for **15** seconds. Your attack in the realm is increased by **15%**, jumping ability increased by **20%**, and endurance consumption reduced by **50%**. Cooldown: **30** seconds.  
+                        Enter the special state Airbloom when using Shadoweave in the realm. Your fall speed is greatly reduced and you can perform multiple double-jumps. In this state, using the directional controls or jumping button while mid-air will perform a Roam and launch an attack on the target. Upon hit, deal damage equal to **66%** of ATK + **3** and randomly generate **1-3** epiphyllums.  
+                        &nbsp;  
+                        Passive: In the Moonlight Realm, **1** epiphyllum will be generated near 1 target every **0.8** seconds.  
+                        Passive: When you use Shadoweave in Moonlight Realm, an extra **50%** of damage is dealt to enemies with less than **20%** HP.  
+                        Passive: When you use Shadoweave in Moonlight realm, you will blink away from the target when incoming damage is detected. Cooldown: **10** seconds.`
                 },
+                {
+                    name: "Passive: Weapons Master",
+                    description: 
+                        `Flame: When Shadoweave is paired with 2 flame weapons, Moonlight Realm is converted to Flame: Moonlight Realm, which lasts for an extra **4** when burning targets seconds. Targets with shields take an extra **15%** flame damage.  
+                        &nbsp;  
+                        Volt: When Shadoweave is paired with 2 volt weapons, Moonlight Realm is converted to Volt: Moonlight Realm, with a **65%** chance of not consuming a dodge attempt when dodging, and a **5%** boost to dodge attack damage, and volt damage is boosted an extra **10%**.  
+                        &nbsp;  
+                        Frost: When Shadoweave is paired with 2 frost weapons, Moonlight Realm is converted to Frost: Moonlight Realm. While in Frost: Moonlight Realm, frost ATK is increased by **10%**.  
+                        &nbsp;  
+                        Physical: When Shadoweave is paired with 2 physical weapons, Moonlight Realm is converted to Physical: Moonlight Realm. While in Physical: Moonlight Realm, deal damage equal to **50%** of ATK + **3** to targets within attack range every second.  
+                        &nbsp;  
+                        Balance: When Shadoweave is paired with any two different elemental weapons (among flame, volt, frost, and physical weapons), the Wanderer's ATK is increased by **15%** in the realm, and counted as activating flame, volt, frost, and physical resonance without resonance effects.`
+                }
             ],
             discharge: [
                 {
                     name: "Gravity Weave",
-                    description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and release a gravity field with a strong pull, dealing damage equal to **542%** of ATK + **29**. After **5** seconds, the gravity field explodes in a wide diffusion wave, dealing **271%** of ATK + **14** damage. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League).`
+                    description: `When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes Gravity Weave with a stronger absorption force, dealing damage equal to **368.5%** of ATK + **19**. Then explode and create a ranged diffusion wave after **5** seconds, dealing damage equal to **184.3%** + **10**. Damage immunity lasts for **1.5** seconds while the skill is active (unavailable in Apex League).`
                 }
             ]
         },
@@ -160,12 +168,12 @@ const lin = {
             {
                 name: "Samir",
                 pieces: 2,
-                description: "Recommended only if you're using Shadow Weaver as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. Shadow Weaver deals many hits, easily maintaining uptime of the damage buff."
+                description: "Recommended only if you're using Shadoweave as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. Shadoweave deals many hits, easily maintaining uptime of the damage buff."
             },
             {
                 name: "Crow",
                 pieces: 2,
-                description: "Recommended only if you're using Shadow Weaver as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
+                description: "Recommended only if you're using Shadoweave as a DPS and not solely for DoT/buffs, otherwise use Lin 2-piece set. At high crit rate, Crow's 2 set is the second best choice for damage. Otherwise, opt for 2-piece Shiro matrices."
             },
             {
                 name: "Sobek",
@@ -176,15 +184,15 @@ const lin = {
     },
 
     matrix: {
-        set2: `Successful attacks increase your attack power by **3%/3.7%/4.3%/5%** for 18 seconds, stacking up to 5 times. If multiple sets are used, only the highest star set will take effect.`,
+        set2: `Increase ATK by **2.1%/2.6%/3.1%/3.6%** on hit for **18** seconds, stacking up to 5 times. Only the effect of the highest level is applied when obtained repeatedly.`,
 
-        set4: `Traveling 5 meters within Moonlight Realm will grant 1 stack of [Moon's Realm], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect.`
+        set4: `Every 5m traveled within Moonlight Realm grants 1 stack of Moonlight, increasing final damage by **4%/4.9%/5.8%/6.7%** for 15 seconds, stacking up to 3 times. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`
     },
 
     awakening: {
-        trait1200: `Nightbloom's explosion damage increased by **15%**`,
+        trait1200: `Increase epiphyllum explosion damage by **15%**.`,
 
-        trait4000: `Nightbloom's explosion damage increased by **20%**. Nightbloom explosions reduce all elemental resistances of the affected targets by **7%** for **7** seconds. This effect cannot stack.`,
+        trait4000: `Increase epiphyllum explosion damage by **20%**. Reduce all resistance by **7%** upon hit by epiphyllums for **7** seconds. This effect does not stack.`,
 
         giftCategories: ['metalware', 'decorations', 'vera'],
 
@@ -204,10 +212,63 @@ const lin = {
         horoscope: 'Virgo',
         birthday: '3 Sep',
         voiceActors: {
-            jp: "",
-            en: "",
+            jp: "南條愛乃",
+            en: "Erin Yvette",
             cn: "陈婷婷"
         }
+    },
+
+    cnData: {
+        weapon: {
+            bonusEffect: {
+                effect1: {
+                    title: `Weapons Master`,
+                    description: `<abbr title="China Exclusive"></abbr> When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created. Epiphyllum will appear around the target randomly and explode within **1-3** seconds, dealing **60%** area damage.`
+                }
+            },
+            advancement: {
+                star6: `<abbr title="China Exclusive"></abbr> **Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Moonlight Realm** is increased to **15%**.`
+            },
+            abilities: {
+                skill: [
+                    {
+                        name: "Moonlight Realm",
+                        description: 
+                            `<abbr title="China Exclusive"></abbr> Create a Moonlight Realm around yourself for **15** seconds. Your damage in the realm is increased by **10%**, jumping ability increased by **20%**, and endurance consumption reduced by **50%**. Cooldown: **30** seconds.  
+                            Enter the special state Airbloom when using Shadoweave in the realm. Your fall speed is greatly reduced and you can perform multiple double-jumps. In this state, using the directional controls or jumping button while mid-air will perform a Roam and launch an attack on the target. Upon hit, deal damage equal to **66%** of ATK + **3** and randomly generate **1-3** epiphyllums.  
+                            &nbsp;  
+                            Passive: In the Moonlight Realm, **1** epiphyllum will be generated near 1 target every **0.8** seconds.  
+                            Passive: When you use Shadoweave in Moonlight Realm, an extra **50%** of damage is dealt to enemies with less than **20%** HP.  
+                            Passive: When you use Shadoweave in Moonlight realm, you will blink away from the target when incoming damage is detected. Cooldown: **10** seconds.`
+                    },
+                    {
+                        name: `Passive: Weapons Master`,
+                        description: 
+                            `<abbr title="China Exclusive"></abbr> Flame: When Shadoweave is paired with 2 flame weapons, Moonlight Realm is converted to Flame: Moonlight Realm, and burns have their duration extended by **4** seconds. Targets with shields take an extra **15%** flame damage.  
+                            &nbsp;  
+                            <abbr title="China Exclusive"></abbr> Volt: When Shadoweave is paired with 2 volt weapons, Moonlight Realm is converted to Volt: Moonlight Realm, with a **65%** chance of not consuming a dodge attempt when dodging, and a **35%** boost to dodge attack damage. When using Volt Resonance, increase Volt damage by an extra **30%**.  
+                            &nbsp;  
+                            <abbr title="China Exclusive"></abbr> Frost: When Shadoweave is paired with 2 frost weapons, Moonlight Realm is converted to Frost: Moonlight Realm. When enemies in the Realm receive frost damage **10** times, they enter a state of frostbite for **15** seconds, receiving **22%** more frost damage. The number of hits to activate frostbite does not accumulate while the enemy is in the frostbite state.  
+                            &nbsp;  
+                            <abbr title="China Exclusive"></abbr> Physical: When Shadoweave is paired with 2 physical weapons, Moonlight Realm is converted to Physical: Moonlight Realm. When there is an active life shield in the Realm, deal damage equal to **150%** of ATK + **8** every second.  
+                            &nbsp;  
+                            Balance: When Shadoweave is paired with any two different elemental weapons (among flame, volt, frost, and physical weapons), the Wanderer's ATK is increased by **15%** in the realm, and counted as activating flame, volt, frost, and physical resonance without resonance effects.`
+                    },
+                ],
+                discharge: [
+                    {
+                        name: "Gravity Weave",
+                        description: `<abbr title="China Exclusive"></abbr> When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes Gravity Weave with a stronger absorption force, dealing damage equal to **542%** of ATK + **29**. Then explode and create a ranged diffusion wave after **5** seconds, dealing damage equal to **271%** + **14**. Damage immunity lasts for **2.6** seconds while the skill is active (unavailable in Apex League).`
+                    }
+                ]
+            }
+        },
+
+        matrix: {
+            set2: `Increase ATK by **3%/3.7%/4.3%/5%** on hit for **18** seconds, stacking up to 5 times. Only the effect of the highest level is applied when obtained repeatedly.`,
+    
+            set4: `Every 5m traveled within Moonlight Realm grants 1 stack of Moonlight, increasing final damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.`
+        },
     }
 }
 
