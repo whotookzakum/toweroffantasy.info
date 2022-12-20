@@ -149,6 +149,7 @@ const fenrir = {
                 }
             ]
         },
+        abilitiesVideoSrc: "https://www.youtube.com/embed/elx8wHwvgEU",
         recommendedMatrices: [
             {
                 name: "Fenrir",
