@@ -1,9 +1,0 @@
-Ice = Лёд
-Fire = Огонь
-Thunder = Молния
-Physical = Физический
-Aberration = Аберрация
-
-Defense = Защита
-DPS = Нападение
-Support = Поддержка
