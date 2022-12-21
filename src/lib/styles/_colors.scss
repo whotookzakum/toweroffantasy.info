@@ -1,0 +1,93 @@
+:root {
+    --bg: hsl(250, 13%, 9%);
+    --surface1: hsla(250, 14%, 11%, 0.9);
+    --surface2: hsla(250, 15%, 17%, 0.9);
+    --surface3: hsla(220, 25%, 30%, 0.4);
+    --surface-shadow: hsla(0, 0%, 7%, 1);
+
+    --text1: hsl(0, 0%, 73%);
+    --text2: hsl(0, 0%, 60%);
+    --accent: #439eac;
+
+    --element-volt: #b769be;
+    --element-ice: #49a3d1;
+    --element-flame: #bb4033;
+    --element-physical: #d88c2a;
+    --element-altered: #b0ffc3;
+
+    --tier-c: #a2e4cb;
+    --tier-b: #b5dfff;
+    --tier-a: #e1beff;
+    --tier-s: #ffdb84;
+    --tier-ss: #fdebb7;
+}
+
+$colors: (
+    bg: (
+        base: rgb(21, 20, 26)
+    ),
+    container: (
+        base: rgba(26, 25, 33, 0.9),
+        base-opaque: rgba(26, 25, 33, 1),
+        light: rgba(40, 38, 51, 0.9),
+        lighter: rgba(45, 42, 59, 0.9),
+        dark: rgba(30, 29, 38, 0.9),
+        darker: rgba(20, 20, 30, 0.85),
+        blue: rgba(57, 72, 95, 0.4),
+    ),
+    text: (
+        base: #dedede,
+        gray: #a9a9a9,
+        darkgray: #686868,
+        disabled: #6b737d,
+        dark: #39485f,
+        blue: #377dcb,
+        lightblue: #00d2ff,
+        turquoise: #439eac,
+        green: #35b400,
+        mediumgreen: #17a472,
+        teal: #2bbba8,
+        yellow: #ffcd48,
+        orange: #e07439,
+        darkteal: #065969,
+        clay: #ba4232,
+        red: #ff1b1b,
+        lightred: #f15151,
+        pink: #d63384,
+    ),
+    gift: (
+        base: #fff,
+        collectibles: #8b8bc5,
+        everyday-items: #c08f8d,
+        figurines: #da849f,
+        games: #8faecb,
+        limited-edition: #ddc392,
+        metalware: #b09cea,
+        decorations: #ababa5,
+        rare-items: #dd64a9,
+        toys: #dd9cea,
+        vera: #cba79a
+    ),
+    tier: (
+        base: #3b3e45,
+        
+    ),
+    rarity: (
+        base: #fff,
+        1: radial-gradient(#97a9c8, 30%, #93a2c6),
+        2: radial-gradient(#6bbaad, 30%, #6bb9a7),
+        3: radial-gradient(#65a7d6, 30%, #65a2d3),
+        4: radial-gradient(#b894ce, 30%, #b894ce),
+        5: radial-gradient(#e7be7d, 30%, #efc379)
+    ),
+    shadow: (
+        base: #121212
+    )
+
+);
+
+
+@function clr($base, $shade: base) {
+    $color: map-get(map-get($colors, $base), $shade);
+    @return $color;
+  }

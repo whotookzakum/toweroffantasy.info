@@ -1,0 +1,43 @@
+<script>
+    import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
+    export let links;
+</script>
+
+<div class="topnav-wrapper full-bleed">
+    <Breadcrumbs />
+    <nav class="section-navigation">
+        {#each links as link}
+            <a href={`#${link.replace(/\s+/g, '-')}`}>{link}</a>
+        {/each}
+    </nav>
+</div>
+
+<style lang="scss">
+    .topnav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: var(--text2);
+        font-weight: 900;
+        font-size: 0.75rem;
+        padding: 1rem;
+        background: var(--surface1);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0rem;
+        margin-bottom: var(--space-xl);
+        backdrop-filter: blur(10px);
+        z-index: 50;
+
+        & > nav {
+            display: flex;
+            align-items: center;
+            gap: 2ch;
+        }
+
+        a {
+            border: none;
+        }
+    }
+</style>
