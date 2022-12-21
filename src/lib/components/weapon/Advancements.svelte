@@ -13,7 +13,7 @@
         <tbody>
             {#each weapon.advancements as star, index}
                 <tr>
-                    <th>{index + 1} ★</th>
+                    <th style="color: var(--tier-s)">{index + 1} ★</th>
                     <td><SvelteMarkdown source={star} /></td>
                 </tr>
             {/each}

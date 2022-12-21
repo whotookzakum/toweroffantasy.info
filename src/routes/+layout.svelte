@@ -1,9 +1,10 @@
 <script>
     import '$lib/styles/globals.scss'
+    import Navigation from '$lib/components/Navigation.svelte';
 </script>
 
 <div class="grid">
-    <nav>Nav goes here</nav>
+    <Navigation />
     <main class="page-contents">
         <slot />
     </main>
@@ -17,14 +18,6 @@
         display: grid;
         grid-template-columns: auto 1fr;
         transition: all 0.3s ease;
-    }
-
-    nav {
-        background: rgba(255, 0, 0, 0.315);
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
     }
 
     @media (max-width: 800px) {

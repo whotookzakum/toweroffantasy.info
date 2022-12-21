@@ -1,6 +1,8 @@
 <script>
     export let weapon;
-    let level = 10;
+    import RangeSlider from "svelte-range-slider-pips";
+
+    $: values = [0, 160];
 
     const materials = {
         global: {
@@ -8,137 +10,137 @@
                 {
                     wepLevelMin: 0,
                     wepLevelMax: 10,
-                    goldAndExpCost: "400",
+                    goldAndExpCost: 400,
                     augmentMatCount: [],
-                    augmentGoldCost: "",
+                    augmentGoldCost: 0,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 10,
                     wepLevelMax: 20,
-                    goldAndExpCost: "600",
+                    goldAndExpCost: 600,
                     augmentMatCount: [2],
-                    augmentGoldCost: "400",
+                    augmentGoldCost: 400,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 20,
                     wepLevelMax: 30,
-                    goldAndExpCost: "900",
+                    goldAndExpCost: 900,
                     augmentMatCount: [2],
-                    augmentGoldCost: "800",
+                    augmentGoldCost: 800,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 30,
                     wepLevelMax: 40,
-                    goldAndExpCost: "1200",
+                    goldAndExpCost: 1200,
                     augmentMatCount: [3, 3],
-                    augmentGoldCost: "1200",
+                    augmentGoldCost: 1200,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 40,
                     wepLevelMax: 50,
-                    goldAndExpCost: "1700",
+                    goldAndExpCost: 1700,
                     augmentMatCount: [3, 3, 3],
-                    augmentGoldCost: "1600",
+                    augmentGoldCost: 1600,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 50,
                     wepLevelMax: 60,
-                    goldAndExpCost: "2200",
+                    goldAndExpCost: 2200,
                     augmentMatCount: [4, 4, 4],
-                    augmentGoldCost: "2000",
+                    augmentGoldCost: 2000,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 60,
                     wepLevelMax: 70,
-                    goldAndExpCost: "2900",
+                    goldAndExpCost: 2900,
                     augmentMatCount: [6, 6, 6],
-                    augmentGoldCost: "2400",
+                    augmentGoldCost: 2400,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 70,
                     wepLevelMax: 80,
-                    goldAndExpCost: "3900",
+                    goldAndExpCost: 3900,
                     augmentMatCount: [8, 8, 8],
-                    augmentGoldCost: "2800",
+                    augmentGoldCost: 2800,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 80,
                     wepLevelMax: 90,
-                    goldAndExpCost: "5000",
+                    goldAndExpCost: 5000,
                     augmentMatCount: [11, 11, 11],
-                    augmentGoldCost: "3200",
+                    augmentGoldCost: 3200,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 90,
                     wepLevelMax: 100,
-                    goldAndExpCost: "5800",
+                    goldAndExpCost: 5800,
                     augmentMatCount: [5, 5, 5],
-                    augmentGoldCost: "3600",
+                    augmentGoldCost: 3600,
                     materialTier: 2,
                 },
                 {
                     wepLevelMin: 100,
                     wepLevelMax: 110,
-                    goldAndExpCost: "6400",
+                    goldAndExpCost: 6400,
                     augmentMatCount: [6, 6, 6],
-                    augmentGoldCost: "4000",
+                    augmentGoldCost: 4000,
                     materialTier: 2,
                 },
                 {
                     wepLevelMin: 110,
                     wepLevelMax: 120,
-                    goldAndExpCost: "7100",
+                    goldAndExpCost: 7100,
                     augmentMatCount: [8, 8, 8],
-                    augmentGoldCost: "4400",
+                    augmentGoldCost: 4400,
                     materialTier: 2,
                 },
                 {
                     wepLevelMin: 120,
                     wepLevelMax: 130,
-                    goldAndExpCost: "7600",
+                    goldAndExpCost: 7600,
                     augmentMatCount: [11, 11, 11],
-                    augmentGoldCost: "4800",
+                    augmentGoldCost: 4800,
                     materialTier: 2,
                 },
                 {
                     wepLevelMin: 130,
                     wepLevelMax: 140,
-                    goldAndExpCost: "8000",
+                    goldAndExpCost: 8000,
                     augmentMatCount: [15, 15, 15],
-                    augmentGoldCost: "5200",
+                    augmentGoldCost: 5200,
                     materialTier: 2,
                 },
                 {
                     wepLevelMin: 140,
                     wepLevelMax: 150,
-                    goldAndExpCost: "8500",
+                    goldAndExpCost: 8500,
                     augmentMatCount: [20, 20, 20],
-                    augmentGoldCost: "5600",
+                    augmentGoldCost: 5600,
                     materialTier: 2,
                 },
                 {
                     wepLevelMin: 150,
                     wepLevelMax: 160,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 9000,
                     augmentMatCount: [5, 5, 5],
-                    augmentGoldCost: "6000",
+                    augmentGoldCost: 6000,
                     materialTier: 3,
                 },
                 {
                     wepLevelMin: 160,
                     wepLevelMax: 170,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?"],
-                    augmentGoldCost: "6400",
+                    augmentMatCount: [5, 5, 5],
+                    augmentGoldCost: 6400,
                     materialTier: 3,
                 },
                 {
@@ -146,7 +148,7 @@
                     wepLevelMax: 180,
                     goldAndExpCost: "?",
                     augmentMatCount: ["?", "?", "?"],
-                    augmentGoldCost: "6800",
+                    augmentGoldCost: 6800,
                     materialTier: 3,
                 },
                 {
@@ -154,7 +156,7 @@
                     wepLevelMax: 190,
                     goldAndExpCost: "?",
                     augmentMatCount: ["?", "?", "?"],
-                    augmentGoldCost: "7200",
+                    augmentGoldCost: 7200,
                     materialTier: 3,
                 },
                 {
@@ -162,7 +164,7 @@
                     wepLevelMax: 200,
                     goldAndExpCost: "?",
                     augmentMatCount: ["?", "?", "?"],
-                    augmentGoldCost: "7600",
+                    augmentGoldCost: 7600,
                     materialTier: 3,
                 },
             ],
@@ -659,63 +661,113 @@
         },
     };
 
-    $: thisLevelMats = materials.global.SSR.find(
-        (item) => item.wepLevelMax === level
+    $: matsInRange = materials.global.SSR.filter(
+        (item) => item.wepLevelMin >= values[0] && item.wepLevelMax <= values[1]
+    );
+    $: totalGoldAndExpCost = matsInRange.reduce(
+        (total, current) => total + current.goldAndExpCost,
+        0
+    );
+    $: totalAugmentGoldCost = matsInRange.reduce(
+        (total, current) => total + current.augmentGoldCost,
+        0
+    );
+
+    $: sumOfMatsForTier = (tier) => {
+        return matsInRange
+            .filter((item) => item.materialTier === tier)
+            .reduce((acc, cur) => {
+                for (let i = 0; i < cur.augmentMatCount.length; i++) {
+                    acc[i] ??= 0;
+                    if (cur.augmentMatCount[i].toString().includes("?")) {
+                        acc[i] = "???";
+                    } else {
+                        acc[i] += cur.augmentMatCount[i];
+                    }
+                }
+                return acc;
+            }, []);
+    };
+
+    // Based on length of mats, since lin has 4
+    $: totalMatsInRange = weapon.materials.map((mat, index) =>
+        sumOfMatsForTier(index + 1)
     );
 
     function getMaterialImg(material, tier) {
         switch (material) {
             case "red":
-                return `zujian/gem_p1_FireAtkAdded_${tier}`
-            case "green": 
-                return `zujian/gem_p4_PhyAtkAdded_${tier}`
+                return `zujian/gem_p1_FireAtkAdded_${tier}`;
+            case "green":
+                return `zujian/gem_p4_PhyAtkAdded_${tier}`;
             case "black":
-                return `zujian/gem_p3_IceDefAdded_${tier}`
+                return `zujian/gem_p3_IceDefAdded_${tier}`;
             case "blue":
-                return `zujian/Item_breakthrough_D${tier}`
+                return `zujian/Item_breakthrough_D${tier}`;
             case "volt":
-                if (tier === 1) return "item/Item_Mine_thunderpatch003"
-                else if (tier === 2) return "item/Item_Mine_thunder"
-                return `item/Item_Mine_thunder_0${tier}`
+                if (tier === 1) return "item/Item_Mine_thunderpatch003";
+                else if (tier === 2) return "item/Item_Mine_thunder";
+                return `item/Item_Mine_thunder_0${tier}`;
             case "flame":
-                if (tier === 1) return "item/Item_Mine_firepatch001"
-                else if (tier === 2) return "item/Item_Mine_fire"
-                return `item/Item_Mine_fire_0${tier}`
+                if (tier === 1) return "item/Item_Mine_firepatch001";
+                else if (tier === 2) return "item/Item_Mine_fire";
+                return `item/Item_Mine_fire_0${tier}`;
             case "ice":
-                if (tier === 1) return "item/Item_Mine_icepatch002"
-                else if (tier === 2) return `item/Item_Mine_ice`
-                return `item/Item_Mine_ice_2`
+                if (tier === 1) return "item/Item_Mine_icepatch002";
+                else if (tier === 2) return `item/Item_Mine_ice`;
+                return `item/Item_Mine_ice_2`;
             case "physical":
-                if (tier === 1) return "item/Item_mine_physic"
-                return `item/Item_mine_physic_0${tier}`
+                if (tier === 1) return "item/Item_mine_physic";
+                return `item/Item_mine_physic_0${tier}`;
         }
     }
 </script>
 
 <h4 id="upgrade-materials">Upgrade Materials</h4>
 
-<input
-    type="range"
-    name=""
-    id=""
-    min={10}
+<RangeSlider
+    bind:values
+    min={0}
     max={200}
-    step="10"
-    bind:value={level}
+    step={10}
+    range
+    float
+    pips
+    first="label"
+    last="label"
+    rest
 />
-<span>{level - 10} to {level}</span>
-{#if level > 10}
-    <span>Req. Wanderer level <strong>{level / 2}</strong></span>
+<div>Weapon level {values[0]} to {values[1]}</div>
+
+<!-- Level and Mats to increase level cap -->
+{#if values[1] >= 20}
+    <div>Req. Wanderer Level <strong>{values[1] / 2}</strong></div>
 {/if}
-<div>
-    {#each weapon.materials as material, index}
-        {#if thisLevelMats.augmentMatCount[index]}
-            <img
-                src={`/images/Icon/${getMaterialImg(material, thisLevelMats.materialTier)}.png`}
-                alt=""
-            />
-            <div>{material} {thisLevelMats.augmentMatCount[index]}</div>
-        {/if}
+
+<div style="display: flex; flex-wrap: wrap">
+    {#each totalMatsInRange as valuesInTier, tier}
+        {#each totalMatsInRange[tier] as matCount, index}
+            <div>
+                <img
+                    src={`/images/Icon/${getMaterialImg(
+                        weapon.materials[index],
+                        tier + 1
+                    )}.png`}
+                    alt={`${weapon.materials[index]} augment material`}
+                />
+                {matCount}
+            </div>
+        {/each}
     {/each}
-    <div>gold and exp: {thisLevelMats.goldAndExpCost}</div>
+</div>
+
+{#if totalAugmentGoldCost > 0}
+    <div>Augmentation Gold Cost: {totalAugmentGoldCost}</div>
+{/if}
+
+<!-- Gold and EXP to raise level -->
+<div>
+    Gold and exp: {totalGoldAndExpCost.toString().includes("?")
+        ? "???"
+        : totalGoldAndExpCost}
 </div>

@@ -30,6 +30,10 @@ aside {
     line-height: 1.75;
 }
 
+strong { 
+    color: var(--text-highlight);
+}
+
 aside i {
     font-weight: bolder;
 }
@@ -55,18 +59,27 @@ abbr[title*="China"] {
 
 table {
     background: var(--surface2);
-    padding: 1rem;
     box-shadow: 0 0 px var(--surface-shadow);
     margin: 1rem 0;
     line-height: 1.75;
+    font-size: 1rem;
 
     th {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
-        color: #377dcb;
         font-weight: bold;
-        text-align: left;
-        padding-bottom: 0.25rem;
+    }
+
+    th, td {
+        padding: var(--space-3xs-2xs);
+    }
+
+    thead {
+        color: var(--text2)
+    }
+
+    p {
+        margin: 0;
     }
 }
 
