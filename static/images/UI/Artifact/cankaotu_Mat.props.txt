@@ -1,0 +1,74 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask050.T_Mask050'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/UI/Loading/T_UI_Loading_02.T_UI_Loading_02'
+    ReferencedTextures[2] = Texture2D'/Game/Resources/UI/Artifact/cankaotu.cankaotu'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Desaturation }
+                    ParameterInfos[1] = { Name=Opacity }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=UI_TEX }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[2] = { 1, 1 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/Artifact/cankaotu.cankaotu'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/Artifact/cankaotu.cankaotu'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask050.T_Mask050'
+        ReferencedTextures[2] = Texture2D'/Game/Resources/Effect/Textures/UI/Loading/T_UI_Loading_02.T_UI_Loading_02'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/Artifact/cankaotu.cankaotu'
+        Name = UI_TEX
+        Group = None
+    }
+}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Desaturation, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=Opacity, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,57 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[4] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_blue.xinbiao_blue'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_green.xinbiao_green'
+    ReferencedTextures[2] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_purple.xinbiao_purple'
+    ReferencedTextures[3] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_yellow.xinbiao_yellow'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Speed }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 2 }
+        VectorValues[0] = {}
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[4] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_purple.xinbiao_purple'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_green.xinbiao_green'
+        ReferencedTextures[2] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_blue.xinbiao_blue'
+        ReferencedTextures[3] = Texture2D'/Game/Resources/UI/TreasureMap/xinbiao_yellow.xinbiao_yellow'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=2, Name=Speed, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

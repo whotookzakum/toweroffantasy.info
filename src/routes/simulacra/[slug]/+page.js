@@ -2,6 +2,8 @@ import { error } from '@sveltejs/kit';
 
 const data = {
     name: "Fenrir",
+    id: 32,
+    cnName: "fenlier",
     uri: "fenrir",
     imgSrc: "fenrir",
     rarity: "SSR",
@@ -157,6 +159,7 @@ const data = {
                 description: `When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and rushes you to the the target to deal **1203.3%** of ATK + **63** damage to targets in range and add **3** notes. Immune to damage for **2.6** seconds during the skill animation (does not take effect in Apex League).`,
             },
         ],
+        abilitiesVideoSrc: "https://www.youtube.com/embed/GGT4yoDCb4I?start=10",
         recommendedMatrices: [
             {
                 name: "Fenrir",

@@ -1,0 +1,104 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong.mahjong'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong_Mask.mahjong_Mask'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=Direction }
+                    ParameterInfos[1] = { Name=DirectionBase_stength }
+                    ParameterInfos[2] = { Name=DirectionEmissive_stength }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Color }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Tex_base }
+                    ParameterInfos[1] = { Name=Tex_mask }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[3] = { 0, 1, 5 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=1, G=1, B=1, A=1 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong.mahjong'
+            TextureValues[1] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong_Mask.mahjong_Mask'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong.mahjong'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong_Mask.mahjong_Mask'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong.mahjong'
+        Name = Tex_base
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/CardGame/Mahjong/mahjong_Mask.mahjong_Mask'
+        Name = Tex_mask
+        Group = None
+    }
+}
+CollectedScalarParameters[3] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Direction, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=DirectionBase_stength, Group=None }
+    CollectedScalarParameters[2] =
+    {
+        Value = 5
+        Name = DirectionEmissive_stength
+        Group = None
+    }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=1, G=1, B=1, A=1 }
+        Name = Color
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

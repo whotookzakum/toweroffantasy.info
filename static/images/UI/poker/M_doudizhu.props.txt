@@ -1,0 +1,86 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Energy/T_EnergyA002.T_EnergyA002'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/UI/poker/T_zhadan002.T_zhadan002'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[5] =
+                {
+                    ParameterInfos[0] = { Name=Brightness }
+                    ParameterInfos[1] = { Name=Dissolve }
+                    ParameterInfos[2] = { Name=Mask_V }
+                    ParameterInfos[3] = { Name=Mask_U }
+                    ParameterInfos[4] = { Name=Expansion }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Mask }
+                    ParameterInfos[1] = { Name=Param }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[5] = { 1, 0.5, 1, 1, 0.5 }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/Effect/Textures/Energy/T_EnergyA002.T_EnergyA002'
+            TextureValues[1] = Texture2D'/Game/Resources/UI/poker/T_zhadan002.T_zhadan002'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/poker/T_zhadan002.T_zhadan002'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Energy/T_EnergyA002.T_EnergyA002'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/Effect/Textures/Energy/T_EnergyA002.T_EnergyA002'
+        Name = Mask
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/poker/T_zhadan002.T_zhadan002'
+        Name = Param
+        Group = None
+    }
+}
+CollectedScalarParameters[5] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Brightness, Group=None }
+    CollectedScalarParameters[1] = { Value=0.5, Name=Dissolve, Group=None }
+    CollectedScalarParameters[2] = { Value=1, Name=Mask_V, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Mask_U, Group=None }
+    CollectedScalarParameters[4] = { Value=0.5, Name=Expansion, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

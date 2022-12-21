@@ -9,6 +9,9 @@
     </main>
 </div>
 
+<img class="bg-img" src={`/images/UI/huanxing/lihui/fenlier.png`} alt="Background">
+
+
 <style lang="scss">
     .grid {
         display: grid;

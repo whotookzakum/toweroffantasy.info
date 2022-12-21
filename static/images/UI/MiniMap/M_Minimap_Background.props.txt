@@ -1,0 +1,113 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/UI/MiniMap/map_1.map_1'
+    ReferencedTextures[1] = Texture2D'/Hotta/Plugins/MinimapPlugin/Content/Textures/Icons/T_Icon_Placeholder.T_Icon_Placeholder'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=MaskRatio }
+                    ParameterInfos[1] = { Name=IsOutdoorMinimap }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=MaskOffset }
+                    ParameterInfos[1] = { Name=UVDir }
+                    ParameterInfos[2] = { Name=UVOrigin }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=Texture }
+                    ParameterInfos[1] = { Name=OutdoorMinimapMask }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[2] = { 0.5, 0 }
+        VectorValues[3] =
+        {
+            VectorValues[0] = { R=0, G=0.5, B=0, A=0 }
+            VectorValues[1] = { R=1, G=0, B=0, A=1 }
+            VectorValues[2] = { R=-0.3, G=-0.3, B=0, A=0 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/MiniMap/map_1.map_1'
+            TextureValues[1] = Texture2D'/Hotta/Plugins/MinimapPlugin/Content/Textures/Icons/T_Icon_Placeholder.T_Icon_Placeholder'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/MiniMap/map_1.map_1'
+        ReferencedTextures[1] = Texture2D'/Hotta/Plugins/MinimapPlugin/Content/Textures/Icons/T_Icon_Placeholder.T_Icon_Placeholder'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/MiniMap/map_1.map_1'
+        Name = Texture
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Hotta/Plugins/MinimapPlugin/Content/Textures/Icons/T_Icon_Placeholder.T_Icon_Placeholder'
+        Name = OutdoorMinimapMask
+        Group = None
+    }
+}
+CollectedScalarParameters[2] =
+{
+    CollectedScalarParameters[0] = { Value=0.5, Name=MaskRatio, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=IsOutdoorMinimap, Group=None }
+}
+CollectedVectorParameters[3] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0.5, B=0, A=0 }
+        Name = MaskOffset
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=0, B=0, A=1 }
+        Name = UVDir
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=-0.3, G=-0.3, B=0, A=0 }
+        Name = UVOrigin
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,93 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[1] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/Wan/Wan_9.Wan_9'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=PointOffsetX }
+                    ParameterInfos[1] = { Name=PointOffsetY }
+                    ParameterInfos[2] = { Name=PointScaleX }
+                    ParameterInfos[3] = { Name=PointScaleY }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Color }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=FrontTex }
+                    ParameterInfos[1] = { Name=FaceTex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[4] = { 0, 0, 0.77, 0.75 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=0.9, G=0.9, B=0.9, A=0.05 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[1] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/Wan/Wan_9.Wan_9'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[1] = Texture2D'/Game/Resources/UI/CardGame/Mahjong/Wan/Wan_9.Wan_9'
+    }
+}
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] = { Texture=None, Name=FrontTex, Group=None }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/CardGame/Mahjong/Wan/Wan_9.Wan_9'
+        Name = FaceTex
+        Group = None
+    }
+}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=PointOffsetX, Group=None }
+    CollectedScalarParameters[1] = { Value=0, Name=PointOffsetY, Group=None }
+    CollectedScalarParameters[2] = { Value=0.77, Name=PointScaleX, Group=None }
+    CollectedScalarParameters[3] = { Value=0.75, Name=PointScaleY, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0.9, G=0.9, B=0.9, A=0.05 }
+        Name = Color
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

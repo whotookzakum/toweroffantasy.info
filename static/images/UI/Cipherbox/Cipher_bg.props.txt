@@ -1,0 +1,80 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Flares/T_FlareWide_04.T_FlareWide_04'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001.T_Tech_001'
+    ReferencedTextures[2] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001m.T_Tech_001m'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[5] =
+                {
+                    ParameterInfos[0] = { Name=Speed_V }
+                    ParameterInfos[1] = { Name=Rotator }
+                    ParameterInfos[2] = { Name=VTiling }
+                    ParameterInfos[3] = { Name=UTiling }
+                    ParameterInfos[4] = { Name=Sweep Wide }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=UI_TEX }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[5] = { 1, -1, 5, 8, 0.9 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001.T_Tech_001'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001.T_Tech_001'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Flares/T_FlareWide_04.T_FlareWide_04'
+        ReferencedTextures[2] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001m.T_Tech_001m'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001.T_Tech_001'
+        Name = UI_TEX
+        Group = None
+    }
+}
+CollectedScalarParameters[5] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Speed_V, Group=None }
+    CollectedScalarParameters[1] = { Value=-1, Name=Rotator, Group=None }
+    CollectedScalarParameters[2] = { Value=5, Name=VTiling, Group=None }
+    CollectedScalarParameters[3] = { Value=8, Name=UTiling, Group=None }
+    CollectedScalarParameters[4] = { Value=0.9, Name=Sweep Wide, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

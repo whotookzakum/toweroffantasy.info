@@ -1,0 +1,88 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/UI/Common/T_UI_Common_018b.T_UI_Common_018b'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_401.common_tab_left_401'
+    ReferencedTextures[2] = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_402.common_tab_left_402'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=process }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=unchecked }
+                    ParameterInfos[1] = { Name=checked }
+                    ParameterInfos[2] = { Name=Am_Mask_Tex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[1] = { 1 }
+        VectorValues[0] = {}
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_401.common_tab_left_401'
+            TextureValues[1] = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_402.common_tab_left_402'
+            TextureValues[2] = Texture2D'/Game/Resources/Effect/Textures/UI/Common/T_UI_Common_018b.T_UI_Common_018b'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_402.common_tab_left_402'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_401.common_tab_left_401'
+        ReferencedTextures[2] = Texture2D'/Game/Resources/Effect/Textures/UI/Common/T_UI_Common_018b.T_UI_Common_018b'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_401.common_tab_left_401'
+        Name = unchecked
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/common/tab/common_tab_left_402.common_tab_left_402'
+        Name = checked
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/Resources/Effect/Textures/UI/Common/T_UI_Common_018b.T_UI_Common_018b'
+        Name = Am_Mask_Tex
+        Group = None
+    }
+}
+CollectedScalarParameters[1] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=process, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

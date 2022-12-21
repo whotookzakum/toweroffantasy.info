@@ -1,0 +1,137 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/UI/shouchong/Mask.Mask'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/UI/shouchong/shoucong_bg_04.shoucong_bg_04'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[6] =
+                {
+                    ParameterInfos[0] = { Name=Alpha }
+                    ParameterInfos[1] = { Name=Square_Power }
+                    ParameterInfos[2] = { Name=Noise_Intencity_U }
+                    ParameterInfos[3] = { Name=Square_Intencity }
+                    ParameterInfos[4] = { Name=Noise_Intencity_V }
+                    ParameterInfos[5] = { Name=Speed }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=Square_UV }
+                    ParameterInfos[1] = { Name=Square_Noise_UV }
+                    ParameterInfos[2] = { Name=Noise_V }
+                    ParameterInfos[3] = { Name=Noise_U }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[3] =
+                {
+                    ParameterInfos[0] = { Name=SquareTexture }
+                    ParameterInfos[1] = { Name=NoiseTexture }
+                    ParameterInfos[2] = { Name=MainTexture }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[6] = { 1, 2, 0, 1, 0, 1 }
+        VectorValues[4] =
+        {
+            VectorValues[0] = { R=1, G=1, B=0, A=0 }
+            VectorValues[1] = { R=1, G=1, B=0, A=0 }
+            VectorValues[2] = { R=1, G=1, B=0, A=0 }
+            VectorValues[3] = { R=1, G=1, B=0, A=0 }
+        }
+        TextureValues[3] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/shouchong/Mask.Mask'
+            TextureValues[1] = Texture2D'/Game/Resources/UI/shouchong/Mask.Mask'
+            TextureValues[2] = Texture2D'/Game/Resources/UI/shouchong/shoucong_bg_04.shoucong_bg_04'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/shouchong/shoucong_bg_04.shoucong_bg_04'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/UI/shouchong/Mask.Mask'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[3] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/shouchong/Mask.Mask'
+        Name = SquareTexture
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/shouchong/Mask.Mask'
+        Name = NoiseTexture
+        Group = None
+    }
+    CollectedTextureParameters[2] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/shouchong/shoucong_bg_04.shoucong_bg_04'
+        Name = MainTexture
+        Group = None
+    }
+}
+CollectedScalarParameters[6] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Alpha, Group=None }
+    CollectedScalarParameters[1] = { Value=2, Name=Square_Power, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Noise_Intencity_U, Group=None }
+    CollectedScalarParameters[3] = { Value=1, Name=Square_Intencity, Group=None }
+    CollectedScalarParameters[4] = { Value=0, Name=Noise_Intencity_V, Group=None }
+    CollectedScalarParameters[5] = { Value=1, Name=Speed, Group=None }
+}
+CollectedVectorParameters[4] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=1, G=1, B=0, A=0 }
+        Name = Square_UV
+        Group = None
+    }
+    CollectedVectorParameters[1] =
+    {
+        Value = { R=1, G=1, B=0, A=0 }
+        Name = Square_Noise_UV
+        Group = None
+    }
+    CollectedVectorParameters[2] =
+    {
+        Value = { R=1, G=1, B=0, A=0 }
+        Name = Noise_V
+        Group = None
+    }
+    CollectedVectorParameters[3] =
+    {
+        Value = { R=1, G=1, B=0, A=0 }
+        Name = Noise_U
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

@@ -1,0 +1,125 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[7] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+    ReferencedTextures[1] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip'
+    ReferencedTextures[2] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod'
+    ReferencedTextures[3] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'
+    ReferencedTextures[4] = Texture2D'/Game/Resources/Effect/Textures/Electricity/T_Electric_Light_000.T_Electric_Light_000'
+    ReferencedTextures[5] = Texture2D'/Game/Resources/Effect/Textures/Flares/T_Glow002.T_Glow002'
+    ReferencedTextures[6] = Texture2D'/Game/Resources/UI/Loadinganimation/loading.loading'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[11] =
+                {
+                    ParameterInfos[0] = { Name=EdgeFeather }
+                    ParameterInfos[1] = { Name=UseCustomTime }
+                    ParameterInfos[2] = { Name=Red&Blue }
+                    ParameterInfos[3] = { Name=CustomTime }
+                    ParameterInfos[4] = { Name=MaskTexPower }
+                    ParameterInfos[5] = { Name=Red&BlueFrequency }
+                    ParameterInfos[6] = { Name=U }
+                    ParameterInfos[7] = { Name=EdgeFeatherPower }
+                    ParameterInfos[8] = { Name=Red&BluePower }
+                    ParameterInfos[9] = { Name=Speed }
+                    ParameterInfos[10] = { Name=V }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=color }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=UiTex }
+                    ParameterInfos[1] = { Name=MaskTex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[11] = { 0, 0.2, 0, 0.5, 1, 0.5, 5, 1, 1, 0.4, 6 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=0, G=0, B=0, A=1 }
+        }
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/Loadinganimation/loading.loading'
+            TextureValues[1] = Texture2D'/Game/Resources/Effect/Textures/Electricity/T_Electric_Light_000.T_Electric_Light_000'
+        }
+    }
+    ReferencedTextures[8] =
+    {
+        ReferencedTextures[1] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+        ReferencedTextures[2] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip'
+        ReferencedTextures[3] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod'
+        ReferencedTextures[4] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'
+        ReferencedTextures[5] = Texture2D'/Game/Resources/Effect/Textures/Electricity/T_Electric_Light_000.T_Electric_Light_000'
+        ReferencedTextures[6] = Texture2D'/Game/Resources/UI/Loadinganimation/loading.loading'
+        ReferencedTextures[7] = Texture2D'/Game/Resources/Effect/Textures/Flares/T_Glow002.T_Glow002'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/Loadinganimation/loading.loading'
+        Name = UiTex
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/Effect/Textures/Electricity/T_Electric_Light_000.T_Electric_Light_000'
+        Name = MaskTex
+        Group = None
+    }
+}
+CollectedScalarParameters[11] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=EdgeFeather, Group=None }
+    CollectedScalarParameters[1] = { Value=0.2, Name=UseCustomTime, Group=None }
+    CollectedScalarParameters[2] = { Value=0, Name=Red&Blue, Group=None }
+    CollectedScalarParameters[3] = { Value=0.5, Name=CustomTime, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=MaskTexPower, Group=None }
+    CollectedScalarParameters[5] = { Value=0.5, Name=Red&BlueFrequency, Group=None }
+    CollectedScalarParameters[6] = { Value=5, Name=U, Group=None }
+    CollectedScalarParameters[7] = { Value=1, Name=EdgeFeatherPower, Group=None }
+    CollectedScalarParameters[8] = { Value=1, Name=Red&BluePower, Group=None }
+    CollectedScalarParameters[9] = { Value=0.4, Name=Speed, Group=None }
+    CollectedScalarParameters[10] = { Value=6, Name=V, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=0, B=0, A=1 }
+        Name = color
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

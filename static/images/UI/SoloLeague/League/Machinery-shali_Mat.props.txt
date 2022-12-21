@@ -1,0 +1,71 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Tiles/T_Tiles027.T_Tiles027'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali.Machinery-shali'
+    ReferencedTextures[2] = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali_toufa.Machinery-shali_toufa'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] = { ParameterInfos[0]={} }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=UI_TEX_MSAK }
+                    ParameterInfos[1] = { Name=UI_TEX }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[0] = {}
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali_toufa.Machinery-shali_toufa'
+            TextureValues[1] = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali.Machinery-shali'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Tiles/T_Tiles027.T_Tiles027'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali.Machinery-shali'
+        ReferencedTextures[2] = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali_toufa.Machinery-shali_toufa'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali_toufa.Machinery-shali_toufa'
+        Name = UI_TEX_MSAK
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/SoloLeague/League/Machinery-shali.Machinery-shali'
+        Name = UI_TEX
+        Group = None
+    }
+}
+CollectedScalarParameters[0] = {}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

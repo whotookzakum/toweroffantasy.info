@@ -1,0 +1,103 @@
+TwoSided = true
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[5] =
+{
+    ReferencedTextures[0] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+    ReferencedTextures[1] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip'
+    ReferencedTextures[2] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod'
+    ReferencedTextures[3] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'
+    ReferencedTextures[4] = Texture2D'/Game/Resources/UI/minigame/MultiplayFootball/icon_good01.icon_good01'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[6] =
+                {
+                    ParameterInfos[0] = { Name=Number_Sub }
+                    ParameterInfos[1] = { Name=Malposition_Random }
+                    ParameterInfos[2] = { Name=Red&Blue }
+                    ParameterInfos[3] = { Name=Random_Speed }
+                    ParameterInfos[4] = { Name=Malposition }
+                    ParameterInfos[5] = { Name=Sub_Tex }
+                }
+            }
+            Entries[1] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=Stroke_Color }
+                }
+            }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=TEXT_TEX }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[6] = { 2, 0.1, 0.01, 0.1, 0.02, 0 }
+        VectorValues[1] =
+        {
+            VectorValues[0] = { R=0, G=1.52648, B=5, A=1 }
+        }
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/minigame/MultiplayFootball/icon_good01.icon_good01'
+        }
+    }
+    ReferencedTextures[6] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/minigame/MultiplayFootball/icon_good01.icon_good01'
+        ReferencedTextures[2] = Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'
+        ReferencedTextures[3] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/DebugNumberStrip.DebugNumberStrip'
+        ReferencedTextures[4] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.DebugNumberPeriod'
+        ReferencedTextures[5] = Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'
+    }
+}
+BlendMode = BLEND_Additive (3)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/minigame/MultiplayFootball/icon_good01.icon_good01'
+        Name = TEXT_TEX
+        Group = None
+    }
+}
+CollectedScalarParameters[6] =
+{
+    CollectedScalarParameters[0] = { Value=2, Name=Number_Sub, Group=None }
+    CollectedScalarParameters[1] = { Value=0.1, Name=Malposition_Random, Group=None }
+    CollectedScalarParameters[2] = { Value=0.01, Name=Red&Blue, Group=None }
+    CollectedScalarParameters[3] = { Value=0.1, Name=Random_Speed, Group=None }
+    CollectedScalarParameters[4] = { Value=0.02, Name=Malposition, Group=None }
+    CollectedScalarParameters[5] = { Value=0, Name=Sub_Tex, Group=None }
+}
+CollectedVectorParameters[1] =
+{
+    CollectedVectorParameters[0] =
+    {
+        Value = { R=0, G=1.52648, B=5, A=1 }
+        Name = Stroke_Color
+        Group = None
+    }
+}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

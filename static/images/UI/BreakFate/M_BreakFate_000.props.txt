@@ -1,0 +1,86 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[2] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask015UI.T_Mask015UI'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask025.T_Mask025'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[5] =
+                {
+                    ParameterInfos[0] = { Name=Height }
+                    ParameterInfos[1] = { Name=U_01 }
+                    ParameterInfos[2] = { Name=Intensity }
+                    ParameterInfos[3] = { Name=V_01 }
+                    ParameterInfos[4] = { Name=Time }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[2] =
+                {
+                    ParameterInfos[0] = { Name=MaskTex02 }
+                    ParameterInfos[1] = { Name=MaskTex01 }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[5] = { 0.25, 1, 0.25, 16, 1 }
+        VectorValues[0] = {}
+        TextureValues[2] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask025.T_Mask025'
+            TextureValues[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask015UI.T_Mask015UI'
+        }
+    }
+    ReferencedTextures[2] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask015UI.T_Mask015UI'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask025.T_Mask025'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[2] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask025.T_Mask025'
+        Name = MaskTex02
+        Group = None
+    }
+    CollectedTextureParameters[1] =
+    {
+        Texture = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Mask015UI.T_Mask015UI'
+        Name = MaskTex01
+        Group = None
+    }
+}
+CollectedScalarParameters[5] =
+{
+    CollectedScalarParameters[0] = { Value=0.25, Name=Height, Group=None }
+    CollectedScalarParameters[1] = { Value=1, Name=U_01, Group=None }
+    CollectedScalarParameters[2] = { Value=0.25, Name=Intensity, Group=None }
+    CollectedScalarParameters[3] = { Value=16, Name=V_01, Group=None }
+    CollectedScalarParameters[4] = { Value=1, Name=Time, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

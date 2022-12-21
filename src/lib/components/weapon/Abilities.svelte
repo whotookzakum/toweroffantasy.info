@@ -1,9 +1,13 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
+    import Youtube from "$lib/components/Youtube.svelte";
     export let weapon;
 </script>
 
 <h4 id="skills">Skills</h4>
+{#if weapon.abilitiesVideoSrc}
+    <Youtube source={weapon.abilitiesVideoSrc} />
+{/if}
 <ul class="abilities-list">
     {#each weapon.abilities as ability}
         <li>

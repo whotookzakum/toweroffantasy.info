@@ -1,0 +1,78 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001.T_Tech_001'
+    ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001m.T_Tech_001m'
+    ReferencedTextures[2] = Texture2D'/Game/Resources/UI/shenge/yizhiqi_zjm/3_weijiesuo.3_weijiesuo'
+}
+Expressions[0] = {}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] =
+            {
+                ParameterInfos[4] =
+                {
+                    ParameterInfos[0] = { Name=Respiratory_Frequency }
+                    ParameterInfos[1] = { Name=UV_Scale }
+                    ParameterInfos[2] = { Name=U }
+                    ParameterInfos[3] = { Name=V }
+                }
+            }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] =
+            {
+                ParameterInfos[1] =
+                {
+                    ParameterInfos[0] = { Name=UI_tex }
+                }
+            }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[4] = { 1, 0.7, 5.14, 2.8 }
+        VectorValues[0] = {}
+        TextureValues[1] =
+        {
+            TextureValues[0] = Texture2D'/Game/Resources/UI/shenge/yizhiqi_zjm/3_weijiesuo.3_weijiesuo'
+        }
+    }
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/Resources/UI/shenge/yizhiqi_zjm/3_weijiesuo.3_weijiesuo'
+        ReferencedTextures[1] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001m.T_Tech_001m'
+        ReferencedTextures[2] = Texture2D'/Game/Resources/Effect/Textures/Masks/T_Tech_001.T_Tech_001'
+    }
+}
+BlendMode = BLEND_Translucent (2)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[1] =
+{
+    CollectedTextureParameters[0] =
+    {
+        Texture = Texture2D'/Game/Resources/UI/shenge/yizhiqi_zjm/3_weijiesuo.3_weijiesuo'
+        Name = UI_tex
+        Group = None
+    }
+}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=1, Name=Respiratory_Frequency, Group=None }
+    CollectedScalarParameters[1] = { Value=0.7, Name=UV_Scale, Group=None }
+    CollectedScalarParameters[2] = { Value=5.14, Name=U, Group=None }
+    CollectedScalarParameters[3] = { Value=2.8, Name=V, Group=None }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}
