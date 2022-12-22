@@ -26,7 +26,6 @@
         align-items: center;
         position: sticky;
         top: 0rem;
-        margin-bottom: var(--space-xl);
         backdrop-filter: blur(10px);
         z-index: 50;
 

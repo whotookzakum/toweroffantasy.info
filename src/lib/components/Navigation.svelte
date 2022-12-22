@@ -4,10 +4,6 @@
 
     const links = [
         {
-            text: "Banner Schedule",
-            href: "/banners",
-        },
-        {
             text: "Simulacra",
             href: "/simulacra",
         },
@@ -42,6 +38,10 @@
         {
             text: "Interactive Map",
             href: "https://www.ghzs666.com/tower-of-fantasy-map#/",
+        },
+        {
+            text: "Shop",
+            href: "https://pyrosu-shop.fourthwall.com"
         },
     ];
 
@@ -109,7 +109,7 @@
     </div>
     <footer>
         <a href="">Cookies</a>
-        <a href="">Privacy</a>
+        <a href="/privacy">Privacy</a>
         © Tower of Fantasy Index.
     </footer>
 </nav>
@@ -189,7 +189,7 @@
         gap: 0.35rem;
 
         a {
-            width: fit-content
+            width: fit-content;
         }
     }
 
