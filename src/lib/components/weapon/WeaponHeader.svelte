@@ -216,7 +216,7 @@
             font-style: normal;
             font-weight: 900;
             font-size: var(--step-2);
-            background: rgb(51, 51, 51);
+            background: #3b3e45;
             padding: 0.25rem 0.5rem;
             transform: skewX(-9deg);
 

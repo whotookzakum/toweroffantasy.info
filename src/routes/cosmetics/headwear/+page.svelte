@@ -5,7 +5,7 @@
 
 <h1>Headwear</h1>
 <figure>
-    <table>
+    <table class="bg-alternate">
         <thead>
             <th>Item</th>
             <th>Source</th>
@@ -13,14 +13,16 @@
         <tbody>
             {#each hats as hat}
                 <tr>
-                    <td class="img-and-name">
-                        <img
-                            src={`/images/UI/shizhuang/Fashion_icon/${hat.imgSrc}.png`}
-                            alt={hat.name}
-                            width="128"
-                            height="128"
-                        />
-                        <h2>{hat.name}</h2>
+                    <td>
+                        <div class="img-and-name">
+                            <img
+                                src={`/images/UI/shizhuang/Fashion_icon/${hat.imgSrc}.png`}
+                                alt={hat.name}
+                                width="128"
+                                height="128"
+                            />
+                            <h2>{hat.name}</h2>
+                        </div>
                     </td>
                     <td>
                         <SvelteMarkdown source={hat.source} />

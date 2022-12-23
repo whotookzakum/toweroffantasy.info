@@ -69,3 +69,25 @@ figure {
 h2 > .anchorjs-link {
     font-size: 1.5em !important;
 }
+
+h3 > .anchorjs-link {
+    font-size: 1.35em !important;
+}
+
+.img-and-name {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    h2, h3 {
+        grid-column: span 2;
+        margin: 0;
+        font-size: var(--step-0);
+        text-transform: unset;
+        text-align: center;
+    }
+
+    h3 {
+        line-height: 1.4;
+    }
+}

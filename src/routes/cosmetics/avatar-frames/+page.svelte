@@ -5,7 +5,7 @@
 
 <h1>Avatar Frames</h1>
 <figure>
-    <table>
+    <table class="bg-alternate">
         <thead>
             <th>Item</th>
             <th>Source</th>
@@ -13,14 +13,16 @@
         <tbody>
             {#each frames as frame}
                 <tr>
-                    <td class="img-and-name">
-                        <img
-                            src={`/images/Icon/AvatarFrame/${frame.imgSrc}.png`}
-                            alt={frame.name}
-                            width="128"
-                            height="128"
-                        />
-                        <h2>{frame.name}</h2>
+                    <td>
+                        <div class="img-and-name">
+                            <img
+                                src={`/images/Icon/AvatarFrame/${frame.imgSrc}.png`}
+                                alt={frame.name}
+                                width="128"
+                                height="128"
+                            />
+                            <h2>{frame.name}</h2>
+                        </div>
                     </td>
                     <td>
                         <SvelteMarkdown source={frame.source} />

@@ -127,9 +127,12 @@
 </script>
 
 <h1>Avatars</h1>
-<p>Avatars shown on the <a href="/simulacra">Simulacra</a> page can be obtained by raising the respective simulacrum's Awakening points (friendship) to 200.</p>
+<p>
+    Avatars shown on the <a href="/simulacra">Simulacra</a> page can be obtained
+    by raising the respective simulacrum's Awakening points (friendship) to 200.
+</p>
 <figure>
-    <table>
+    <table class="bg-alternate">
         <thead>
             <th>Item</th>
             <th>Source</th>
@@ -137,14 +140,16 @@
         <tbody>
             {#each avatars as avatar}
                 <tr>
-                    <td class="img-and-name">
-                        <img
-                            src={`/images/Icon/Avatar/${avatar.imgSrc}.png`}
-                            alt={avatar.name}
-                            width="128"
-                            height="128"
-                        />
-                        <h2>{avatar.name}</h2>
+                    <td>
+                        <div class="img-and-name">
+                            <img
+                                src={`/images/Icon/Avatar/${avatar.imgSrc}.png`}
+                                alt={avatar.name}
+                                width="128"
+                                height="128"
+                            />
+                            <h2>{avatar.name}</h2>
+                        </div>
                     </td>
                     <td>
                         <SvelteMarkdown source={avatar.source} />

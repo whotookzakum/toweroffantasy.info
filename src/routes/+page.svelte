@@ -62,8 +62,14 @@
 <h1>Tower of Fantasy Index</h1>
 <p>
     We prioritize data from the Global version of Tower of Fantasy. Content
-    exclusive to the Chinese version is marked with <abbr title="China Exclusive"/>.
-    Issues can be reported on <a href="https://discord.com/channels/670617630717116426/1021126011158536272" target="_blank" rel="noopener noreferrer nofollow">Discord</a>.
+    exclusive to the Chinese version is marked with <abbr
+        title="China Exclusive"
+    />. Issues can be reported on
+    <a
+        href="https://discord.com/channels/670617630717116426/1021126011158536272"
+        target="_blank"
+        rel="noopener noreferrer nofollow">Discord</a
+    >.
 </p>
 <p>
     Last updated <a href="/changelog">November 22</a>.
@@ -71,7 +77,7 @@
 
 <h2 id="banners">Banners</h2>
 <figure>
-    <table class="outer-table full-bleed" rules="none">
+    <table class="outer-table bg-alternate">
         <thead>
             <th>Version</th>
             <th>Current</th>
@@ -79,13 +85,16 @@
             <th>Unique</th>
             <th>Newest</th>
             <!-- Moved to standard -->
-            <th>To standard</th> 
+            <th>To standard</th>
         </thead>
         <tbody>
             <tr
                 class="outer-tr"
                 on:click={() => (showGlobalBanners = !showGlobalBanners)}
-                on:keydown={(e) => e.key === "Enter" ? (showGlobalBanners = !showGlobalBanners) : null}
+                on:keydown={(e) =>
+                    e.key === "Enter"
+                        ? (showGlobalBanners = !showGlobalBanners)
+                        : null}
                 tabindex={0}
             >
                 <th>Global</th>
@@ -103,7 +112,10 @@
             <tr
                 class="outer-tr"
                 on:click={() => (showChinaBanners = !showChinaBanners)}
-                on:keydown={(e) => e.key === "Enter" ? (showChinaBanners = !showChinaBanners) : null}
+                on:keydown={(e) =>
+                    e.key === "Enter"
+                        ? (showChinaBanners = !showChinaBanners)
+                        : null}
                 tabindex={0}
             >
                 <th>China</th>
@@ -147,6 +159,10 @@
         background-color: var(--surface3);
         text-align: left;
         table-layout: fixed;
+
+        thead th {
+            color: var(--text2);
+        }
     }
 
     .outer-tr:hover {
@@ -155,11 +171,6 @@
     }
 
     .collapse {
-        background: var(--surface2);
-        box-shadow: 
-            inset 0 7px 9px -7px var(--surface-shadow), 
-            inset 0 -7px 9px -7px var(--surface-shadow);
-
         &:not(.expand) {
             display: none;
         }

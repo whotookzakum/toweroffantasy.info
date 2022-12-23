@@ -5,7 +5,7 @@
 
 <h1>Chat Bubbles</h1>
 <figure>
-    <table>
+    <table class="bg-alternate">
         <thead>
             <th>Item</th>
             <th>Source</th>
@@ -13,14 +13,16 @@
         <tbody>
             {#each chatBubbles as bubble}
                 <tr>
-                    <td class="img-and-name">
-                        <img
-                            src={`/images/Icon/chat/qipao/${bubble.imgSrc}.png`}
-                            alt={bubble.name}
-                            width="198"
-                            height="112"
-                        />
-                        <h2>{bubble.name}</h2>
+                    <td>
+                        <div class="img-and-name">
+                            <img
+                                src={`/images/Icon/chat/qipao/${bubble.imgSrc}.png`}
+                                alt={bubble.name}
+                                width="198"
+                                height="112"
+                            />
+                            <h2>{bubble.name}</h2>
+                        </div>
                     </td>
                     <td>
                         <SvelteMarkdown source={bubble.source} />

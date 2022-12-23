@@ -2,7 +2,7 @@
     export let banners;
 </script>
 
-<table class="banner-table" rules="none">
+<table class="banner-table">
     <thead>
         <th>Simulacrum</th>
         <th>Event Dates</th>
@@ -25,11 +25,8 @@
 
 <style lang="scss">
     .banner-table {
-        background: none;
-        width: 100%;
-
-        thead {
-            color: var(--accent);
-        }
+        margin: 0;
+        box-shadow: inset 0 7px 9px -7px var(--surface-shadow),
+            inset 0 -7px 9px -7px var(--surface-shadow);
     }
 </style>

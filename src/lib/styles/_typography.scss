@@ -34,6 +34,10 @@ strong {
     color: var(--text-highlight);
 }
 
+.dishes-table strong {
+    color: var(--text-green);
+}
+
 aside i {
     font-weight: bolder;
 }
@@ -65,13 +69,12 @@ table {
     font-size: 1rem;
     overflow-x: scroll;
     width: 100%;
-    // border-collapse:
-    // border-spacing:
+    border-collapse: collapse;
 
     th {
         font-size: 0.8rem;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     th, td {
@@ -84,6 +87,21 @@ table {
 
     p {
         margin: 0;
+    }
+
+    &.bg-alternate {
+        thead {
+            background: rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #39485f;
+    
+            th {
+                color: var(--tier-s);
+            }
+        }
+    
+        tr:nth-child(2n) {
+            background: rgba(0, 0, 0, 0.2);
+        }
     }
 }
 

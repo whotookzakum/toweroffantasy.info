@@ -5,7 +5,7 @@
 
 <h4 id="advancements">Advancements</h4>
 <figure>
-    <table rules="none">
+    <table class="bg-alternate">
         <thead style={`border-color: var(--element-${weapon.element})`}>
             <th>Stars</th>
             <th>Effect</th>
@@ -20,9 +20,3 @@
         </tbody>
     </table>
 </figure>
-
-<style lang="scss">
-    thead {
-        border-bottom: 3px solid transparent;
-    }
-</style>

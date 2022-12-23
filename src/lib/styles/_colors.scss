@@ -9,6 +9,7 @@
     --text2: hsl(0, 0%, 60%);
     --accent: #439eac;
     --text-highlight: #377dcb;
+    --text-green: #35b400;
 
     --element-volt: #b769be;
     --element-ice: #49a3d1;
@@ -42,10 +43,8 @@ $colors: (
         darkgray: #686868,
         disabled: #6b737d,
         dark: #39485f,
-        blue: #377dcb,
         lightblue: #00d2ff,
         turquoise: #439eac,
-        green: #35b400,
         mediumgreen: #17a472,
         teal: #2bbba8,
         yellow: #ffcd48,
@@ -68,27 +67,5 @@ $colors: (
         rare-items: #dd64a9,
         toys: #dd9cea,
         vera: #cba79a
-    ),
-    tier: (
-        base: #3b3e45,
-        
-    ),
-    rarity: (
-        base: #fff,
-        1: radial-gradient(#97a9c8, 30%, #93a2c6),
-        2: radial-gradient(#6bbaad, 30%, #6bb9a7),
-        3: radial-gradient(#65a7d6, 30%, #65a2d3),
-        4: radial-gradient(#b894ce, 30%, #b894ce),
-        5: radial-gradient(#e7be7d, 30%, #efc379)
-    ),
-    shadow: (
-        base: #121212
     )
-
 );
-
-
-@function clr($base, $shade: base) {
-    $color: map-get(map-get($colors, $base), $shade);
-    @return $color;
-  }

@@ -1,0 +1,150 @@
+<script>
+    import SvelteMarkdown from "svelte-markdown";
+    import ingredients from "$lib/data/food/ingredients.json";
+    import dishes from "$lib/data/food/dishes.json";
+    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
+    import { onMount } from "svelte";
+    import AnchorJS from "anchor-js";
+    import Item from "$lib/components/Item.svelte";
+    onMount(() => {
+        const anchors = new AnchorJS();
+        anchors.add("h3");
+    });
+
+    function getIngredientData(input) {
+        return ingredients.find((i) => i.name === input);
+    }
+</script>
+
+<SectionNavigation links={["dishes", "ingredients"]} />
+<h1>Food</h1>
+
+<p>
+    Food can provide buffs and recover HP, satiety, and stamina. Satiety level
+    determines how much HP you will passively recover while out of combat.
+</p>
+<p>
+    To permanently unlock a recipe, you will have to successfully cook the dish
+    once. Add extra amounts of the correct ingredients to boost your success
+    rate!
+</p>
+
+<h2 id="dishes">Dishes</h2>
+<figure>
+    <table class="dishes-table bg-alternate">
+        <thead>
+            <th>Item</th>
+            <th>Effect</th>
+            <th>Recipe</th>
+        </thead>
+        <tbody>
+            {#each dishes as dish}
+                <tr>
+                    <td>
+                        <div class="img-and-name">
+                            <Item rarity={dish.rarity}>
+                                <img
+                                    src={`/images/Icon/caiyao/${dish.imgSrc}.png`}
+                                    alt={dish.name}
+                                    width="96"
+                                    height="96"
+                                />
+                            </Item>
+                            <h3>{dish.name}</h3>
+                        </div>
+                    </td>
+                    <td class="dish-effects">
+                        <SvelteMarkdown source={dish.effect} />
+                    </td>
+                    <td>
+                        <ul class="recipe">
+                            {#each dish.ingredients as ingredient}
+                                <li>
+                                    <Item
+                                        rarity={getIngredientData(
+                                            ingredient.item
+                                        ).rarity}
+                                        amount={ingredient.amount}
+                                    >
+                                        <img
+                                            src={`/images/Icon/shicai/${
+                                                getIngredientData(
+                                                    ingredient.item
+                                                ).imgSrc
+                                            }.png`}
+                                            alt={ingredient.item}
+                                            width="48"
+                                            height="48"
+                                        />
+                                    </Item>
+                                    <a
+                                        href={`#${ingredient.item
+                                            .toLowerCase()
+                                            .replace(/\s+/g, "-")}`}
+                                    >
+                                        {ingredient.item}
+                                    </a>
+                                </li>
+                            {/each}
+                        </ul>
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</figure>
+
+<h2 id="ingredients">Ingredients</h2>
+<figure>
+    <table class="bg-alternate">
+        <thead>
+            <th>Item</th>
+            <th>Source</th>
+        </thead>
+        <tbody>
+            {#each ingredients as ingredient}
+                <tr>
+                    <td class="img-and-name">
+                        <img
+                            src={`/images/Icon/shicai/${ingredient.imgSrc}.png`}
+                            alt={ingredient.name}
+                            width="64"
+                            height="64"
+                        />
+                        <h3>{ingredient.name}</h3>
+                    </td>
+                    <td>
+                        <SvelteMarkdown source={ingredient.source} />
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</figure>
+
+<style lang="scss">
+    .img-and-name {
+        row-gap: 0.5rem;
+    }
+
+    .dishes-table {
+        table-layout: fixed;
+    }
+
+    ul.recipe {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            a {
+                font-size: 1rem;
+                line-height: 1.2;
+            }
+        }
+    }
+</style>
