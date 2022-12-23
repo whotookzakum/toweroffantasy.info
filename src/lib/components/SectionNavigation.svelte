@@ -5,11 +5,13 @@
 
 <div class="topnav-wrapper full-bleed">
     <Breadcrumbs />
-    <nav class="section-navigation">
-        {#each links as link}
-            <a href={`#${link.replace(/\s+/g, '-')}`}>{link}</a>
-        {/each}
-    </nav>
+    {#if links}
+        <nav class="section-navigation">
+            {#each links as link}
+                <a href={`#${link.replace(/\s+/g, "-")}`}>{link}</a>
+            {/each}
+        </nav>
+    {/if}
 </div>
 
 <style lang="scss">

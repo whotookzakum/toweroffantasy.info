@@ -60,3 +60,12 @@ figure {
         bottom: 0;
     }
 }
+
+.anchorjs-link {
+    border: none;
+    position: absolute;
+}
+
+h2 > .anchorjs-link {
+    font-size: 1.5em !important;
+}
