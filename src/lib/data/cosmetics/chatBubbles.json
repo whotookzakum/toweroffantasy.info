@@ -1,310 +1,233 @@
 [
     {
-        "name": "Countercurrent", // Backflow
-        uri: "countercurrent",
-        chinaOnly: true,
-        "imgSrc": "countercurrent.webp",
-        "source": "Obtained from gachapon during the Wild Beat event."
+        "name": "Countercurrent",
+        "imgSrc": "qipao_59",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
     },
     {
         "name": "Phantom of the Castle",
-        uri: "phantom-of-the-castle",
-        chinaOnly: true,
-        "imgSrc": "phantom-of-the-castle.webp",
-        "source": "Obtained from gachapon during the event." // Halloween ish
+        "imgSrc": "qipao_58",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event (Halloween?)."
     },
     {
         "name": "Majestic Fishing",
-        uri: "majestic-fishing",
-        chinaOnly: true,
-        "imgSrc": "majestic-fishing.webp",
-        "source": "Purchasable from the fishing shop."
+        "imgSrc": "qipao_56",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
     },
     {
         "name": "Candy Feast",
-        uri: "candy-feast",
-        "imgSrc": "candy-feast.webp",
-        "source": "Obtained from gachapon during the event." // Thorned Rose
+        "imgSrc": "qipao_55",
+        "source": "Obtained from gachapon during the Thorned Rose event."
     },
     {
         "name": "Fruit Guilt",
-        uri: "fruit-guilt",
-        chinaOnly: true,
-        "imgSrc": "fruit-guilt.webp",
-        "source": "Unknown."
+        "imgSrc": "qipao_54",
+        "source": ""
     },
     {
         "name": "Time Pin",
-        uri: "time-pin",
-        chinaOnly: true,
-        "imgSrc": "time-pin.webp",
-        "source": "Obtained from gachapon during the event." // Fantastic Movement
+        "imgSrc": "qipao_53",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Fantastic Movement event."
     },
     {
         "name": "Glimpse",
-        uri: "glimpse",
-        chinaOnly: true,
-        "imgSrc": "glimpse.webp",
-        "source": "Obtained from gachapon during the event." // Fast Wind Gacha
+        "imgSrc": "qipao_52",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Fast Wind Gacha event."
     },
     {
         "name": "Full Moon",
-        uri: "full-moon",
-        chinaOnly: true,
-        "imgSrc": "full-moon.webp",
-        "source": "Obtained from an event." // Shiyuezhai
+        "imgSrc": "qipao_51",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from the Shiyuezhai event."
     },
     {
         "name": "Curiosity Comes First",
-        uri: "curiosity-comes-first",
-        chinaOnly: true,
-        "imgSrc": "curiosity-comes-first.webp",
-        "source": "Obtained by purchasing the 7th Collector's Edition Pass."
+        "imgSrc": "qipao_50",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 7th Collector's Edition Pass."
     },
     {
         "name": "Disciplinary Action",
-        uri: "disciplinary-action",
-        chinaOnly: true,
-        "imgSrc": "disciplinary-action.webp",
-        "source": "Obtained from gachapon during the event." // Fleeting Wheel Gacha
+        "imgSrc": "qipao_49",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Fleeting Wheel Gacha event."
     },
     {
         "name": "Innocence",
-        uri: "innocence",
-        chinaOnly: true,
-        "imgSrc": "innocence.webp",
-        "source": "Unknown."
+        "imgSrc": "qipao_44",
+        "source": ""
     },
     {
         "name": "Cool Swim",
-        uri: "cool-swim",
-        chinaOnly: true,
-        "imgSrc": "cool-swim.webp",
-        "source": "Obtained from gachapon during the event." // Slender Summer Shadow
+        "imgSrc": "qipao_48",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Slender Summer Shadow event."
     },
     {
         "name": "Sweet and Colorful",
-        uri: "sweet-and-colorful",
-        chinaOnly: true,
-        "imgSrc": "sweet-and-colorful.webp",
-        "source": "Obtained by purchasing the 6th Collector's Edition Pass."
+        "imgSrc": "qipao_47",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 6th Collector's Edition Pass."
     },
     {
         "name": "Crimson Question",
-        uri: "crimson-question",
-        chinaOnly: true,
-        "imgSrc": "crimson-question.webp",
-        "source": "Obtainable from gachapon during the event." // Crimson Wheel
+        "imgSrc": "qipao_46",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
     },
     {
         "name": "Firecracker",
-        uri: "firecracker",
-        chinaOnly: true,
-        "imgSrc": "firecracker.webp",
-        "source": "Obtainable during the 'Heatwave and Rally' event."
+        "imgSrc": "qipao_43",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the 'Heatwave and Rally' event."
     },
     {
         "name": "Fantasy Park",
-        uri: "fantasy-park",
-        chinaOnly: true,
-        "imgSrc": "fantasy-park.webp",
-        "source": "Obtained through participation in the 'Stay Community' event."
+        "imgSrc": "qipao_45",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained through participation in the 'Stay Community' event."
     },
     {
         "name": "Midsummer Celebration",
-        uri: "midsummer-celebration",
-        chinaOnly: true,
-        "imgSrc": "midsummer-celebration.webp",
-        "source": "Obtainable during the 'Heatwave and Rally' event." // Heatwa
+        "imgSrc": "qipao_42",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the 'Heatwave and Rally' event."
     },
     {
         "name": "Summer Stream",
-        uri: "summer-stream",
-        "imgSrc": "summer-stream.webp",
-        "source": "Obtained from gachapon during the event." // Wheel of Wind
+        "imgSrc": "qipao_41",
+        "source": "Obtained from gachapon during the Wheel of Wind event."
     },
     {
         "name": "Doctor's Helper",
-        uri: "doctors-helper",
-        chinaOnly: true,
-        "imgSrc": "doctors-helper.webp",
-        "source": "Obtained by purchasing the 5th Collector's Edition Pass."
+        "imgSrc": "qipao_40",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 5th Collector's Edition Pass."
     },
     {
         "name": "Pure White Vibes",
-        uri: "pure-white-vibes",
-        chinaOnly: true,
-        "imgSrc": "pure-white-vibes.webp",
-        "source": "Obtained from gachapon during the event." // Pure White Wheel
+        "imgSrc": "qipao_39",
+        "source": "Obtained from gachapon during the Pure White Wheel event."
     },
     {
         "name": "Du Duanyang",
-        uri: "du-duanyang",
-        chinaOnly: true,
-        "imgSrc": "du-duanyang.webp",
-        "source": "Obtained from gachapon during the event." // Wheel of Fragrance
+        "imgSrc": "qipao_38",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Fragrance event."
     },
     {
         "name": "Floating Paradise",
-        uri: "floating-paradise",
-        "imgSrc": "floating-park.webp",
-        "source": "Obtained from the Childlike Innocence event shop." // Childlike activity?
+        "imgSrc": "qipao_37",
+        "source": "Obtained from the Childlike Innocence event shop."
     },
     {
         "name": "Affection Bubble",
-        uri: "affection-bubble",
-        "imgSrc": "affection-bubble.webp",
-        "source": "Obtained from gachapon during the event." // Wheel of Fantasy
+        "imgSrc": "qipao_36",
+        "source": "Obtained from gachapon during the Wheel of Fantasy event."
     },
     {
         "name": "Tongue Twister",
-        uri: "tongue-twister",
-        chinaOnly: true,
-        "imgSrc": "tongue-twister.webp",
-        "source": "Obtained from gachapon during the event." // Wheel of Stars
+        "imgSrc": "qipao_35",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event."
     },
     {
         "name": "Peek-a-boo Winner",
-        uri: "peekaboo-winner",
-        chinaOnly: true,
-        "imgSrc": "peekaboo-winner.webp",
-        "source": "Obtained by purchasing the 4th Collector's Edition Pass."
+        "imgSrc": "qipao_34",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 4th Collector's Edition Pass."
     },
     {
         "name": "Phantom Key",
-        uri: "phantom-key",
-        chinaOnly: true,
-        "imgSrc": "phantom-key.webp",
-        "source": "Obtained from gachapon during the event." // Wheel of Sands
+        "imgSrc": "qipao_33",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Sands event."
     },
     {
         "name": "Struggle Notes",
-        uri: "struggle-notes",
-        chinaOnly: true,
-        "imgSrc": "struggle-notes.webp",
-        "source": "Obtained from gachapon during the event."
+        "imgSrc": "qipao_32",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
     },
     {
         "name": "Set Off Again",
-        uri: "set-off-again",
-        "imgSrc": "set-off-again.webp",
-        "source": "Purchased from the event shop during the Vera Orienteering event period."
+        "imgSrc": "qipao_31",
+        "source": "<abbr title='China Exclusive'></abbr> Purchased from the event shop during the Vera Orienteering event period."
     },
     {
         "name": "Under the Thumb",
-        uri: "under-the-thumb",
-        "imgSrc": "under-the-thumb.webp",
+        "imgSrc": "qipao_012",
         "source": "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
         "name": "Vanity of Life",
-        uri: "vanity-of-life",
-        "imgSrc": "vanity-of-life.webp",
+        "imgSrc": "qipao_030",
         "source": "Purchased in the store in Build mode."
     },
     {
         "name": "Pumpkin Party",
-        uri: "pumpkin-party",
-        "imgSrc": "pumpkin-party.webp",
+        "imgSrc": "qipao_029",
         "source": "Purchased in the store in Build mode."
     },
     {
         "name": "Midnight Logic",
-        uri: "midnight-logic",
-        "imgSrc": "midnight-logic.webp",
+        "imgSrc": "qipao_028",
         "source": "Purchased in the store in Build mode."
     },
     {
         "name": "Pawpaw Dreamscape",
-        uri: "pawpaw-dreamscape",
-        "imgSrc": "pawpaw-dreamscape.webp",
+        "imgSrc": "qipao_027",
         "source": "Purchased in the store in Build mode."
     },
     {
         "name": "Past Days",
-        uri: "past-days",
-        "imgSrc": "past-days.webp",
+        "imgSrc": "qipao_026",
         "source": "Purchased in the store in Build mode."
     },
     {
         "name": "TYPE-2",
-        uri: "type-2",
-        chinaOnly: true,
-        "imgSrc": "type-2.webp",
-        "source": "Obtainable during the 'Ultimate Weapon' event."
+        "imgSrc": "qipao_25",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the 'Ultimate Weapon' event."
     },
     {
         "name": "TYPE-5",
-        uri: "type-5",
-        chinaOnly: true,
-        "imgSrc": "type-5.webp",
-        "source": "Obtained from gachapon during the event." // Banges Exhibition
+        "imgSrc": "qipao_24",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges Exhibition event."
     },
     {
         "name": "Love",
-        uri: "love",
-        chinaOnly: true,
-        "imgSrc": "love.webp",
-        "source": "Obtained during the 'Sweet Workshop' event."
+        "imgSrc": "qipao_23",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained during the 'Sweet Workshop' event."
     },
     {
         "name": "New Year's Eve",
-        uri: "new-years-eve",
-        chinaOnly: true,
-        "imgSrc": "new-years-eve.webp",
-        "source": "Obtained from gachapon during the event." // Warm sun gift box
+        "imgSrc": "qipao_22",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
         "name": "Dawn",
-        uri: "dawn",
-        chinaOnly: true,
-        "imgSrc": "dawn.webp",
-        "source": "Obtainable during the 'Dangerous Invasion' event."
+        "imgSrc": "qipao_021",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the 'Dangerous Invasion' event."
     },
     {
         "name": "Proud Blade",
-        uri: "proud-blade",
-        "imgSrc": "proud-blade.webp",
+        "imgSrc": "qipao_013",
         "source": "Obtained by purchasing the 2nd Collector's Edition Pass."
     },
     {
         "name": "Dusk",
-        uri: "dusk",
-        chinaOnly: true,
-        "imgSrc": "dusk.webp",
-        "source": "Obtainable during the 'Dangerous Invasion' event."
+        "imgSrc": "qipao_019",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the 'Dangerous Invasion' event."
     },
     {
         "name": "Champion Shopkeeper",
-        uri: "champion-shopkeeper",
-        "imgSrc": "champion-shopkeeper.webp",
+        "imgSrc": "qipao_018",
         "source": "Obtained by reaching a satisfactory score in the Aida Cafe event."
     },
     
     {
         "name": "Hanging Amusement Park",
-        uri: "hanging-amusement-park",
-        "imgSrc": "hanging-amusement-park.webp",
+        "imgSrc": "qipao_016",
         "source": "Purchasable from Enfi on Cetus Island."
     },
     {
         "name": "Special Permission",
-        uri: "special-permission",
-        chinaOnly: true,
-        "imgSrc": "special-permission.webp",
-        "source": "Obtained from level rewards for 'Ultimate Test'."
+        "imgSrc": "qipao_014",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from level rewards for 'Ultimate Test'."
     },
     {
         "name": "Holiday Fun",
-        uri: "holiday-fun",
-        "imgSrc": "holiday-fun.webp",
+        "imgSrc": "qipao_005",
         "source": "Purchasable in the Support Points store."
     },
     {
         "name": "Together Time",
-        uri: "together-time",
-        "imgSrc": "together-time.webp",
+        "imgSrc": "qipao_004",
         "source": "Obtained by purchasing the 1st Collector's Edition Pass."
-    },
-
+    }
 ]

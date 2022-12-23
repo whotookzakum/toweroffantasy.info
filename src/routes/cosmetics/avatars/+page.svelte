@@ -1,14 +1,6 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import avatars from "$lib/data/cosmetics/avatars.json";
-    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
-    import AnchorJS from "anchor-js";
-    import { onMount } from "svelte";
-
-    onMount(() => {
-        const anchors = new AnchorJS();
-        anchors.add("h2");
-    });
 
     // [
     //     {
@@ -134,7 +126,6 @@
     // ]
 </script>
 
-<SectionNavigation />
 <h1>Avatars</h1>
 <p>Avatars shown on the <a href="/simulacra">Simulacra</a> page can be obtained by raising the respective simulacrum's Awakening points (friendship) to 200.</p>
 <figure>
@@ -150,8 +141,8 @@
                         <img
                             src={`/images/Icon/Avatar/${avatar.imgSrc}.png`}
                             alt={avatar.name}
-                            width="256"
-                            height="256"
+                            width="128"
+                            height="128"
                         />
                         <h2>{avatar.name}</h2>
                     </td>
@@ -163,28 +154,3 @@
         </tbody>
     </table>
 </figure>
-
-<style lang="scss">
-    .img-and-name {
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-
-        img {
-            width: 128px;
-            height: auto;
-        }
-
-        h2 {
-            grid-column: span 2;
-            margin: 0;
-            font-size: var(--step-0);
-            text-transform: unset;
-            text-align: center;
-        }
-    }
-
-    :global(html) {
-        scroll-padding: 200px;
-    }
-</style>

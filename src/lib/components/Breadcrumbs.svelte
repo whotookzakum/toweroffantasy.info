@@ -1,20 +1,20 @@
 <script>
     import { page } from "$app/stores";
-    const pathChunks = $page.url.pathname.split("/");
+    const fullRoute = $page.url.pathname.split("/");
 </script>
 
 <nav class="breadcrumbs">
-    <div class="link">
+    <div class="route">
         <a href="/">Home</a>
     </div>
-    {#each pathChunks as path, index}
-        {#if path}
-            {#if index < pathChunks.length - 1}
-                <div class="link">
-                    <a href={`/${path}`}>{path}</a>
+    {#each fullRoute as route, index}
+        {#if route}
+            {#if index < fullRoute.length - 1}
+                <div class="route">
+                    <a href={`/${route}`}>{route.replace(/-/g, " ")}</a>
                 </div>
             {:else}
-                <div class="link">{path}</div>
+                <div class="route">{route.replace(/-/g, " ")}</div>
             {/if}
         {/if}
     {/each}
@@ -25,12 +25,12 @@
         display: flex;
         align-items: center;
 
-        .link {
+        .route {
             display: flex;
             align-items: center;
         }
 
-        .link + .link::before {
+        .route + .route::before {
             content: "/";
             margin: 1ch;
         }
