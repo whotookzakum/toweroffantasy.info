@@ -16,7 +16,7 @@
                     <div class="skill-title-wrapper">
                         <img
                             src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
-                            alt="Ability"
+                            alt={ability.name}
                             width="82"
                             height="82"
                         />

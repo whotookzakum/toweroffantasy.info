@@ -1,0 +1,65 @@
+{
+    "name": "Fenrir",
+    "id": 32,
+    "chinaOnly": true,
+    "cnName": "fenlier",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 30,
+                "start": "20 Nov 2022",
+                "end": "15 Dec 2022",
+                "duration": "25d",
+                "week": "51~54"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When equipping **2** weapons of different elements, increase final damage by **13%**. When equipping **3** weapons of different elements, increase final damage by **18%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When equipping **2** weapons of different elements, increase final damage by **18%**. When equipping **3** weapons of different elements, increase final damage by **25%**."
+        }
+    ],
+    "giftTypes": [
+        "collectibles",
+        "toys",
+        "vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "id": 44
+        },
+        {
+            "points": 80,
+            "id": 46
+        },
+        {
+            "points": 40,
+            "id": 45
+        },
+        {
+            "points": 30,
+            "id": 43
+        },
+        {
+            "points": 20,
+            "id": 42
+        }
+    ],
+    "gender": "Female",
+    "height": "160 cm",
+    "birthplace": "???",
+    "horoscope": "Aquarius",
+    "birthday": "13 Feb",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "孙艳琦"
+    }
+}

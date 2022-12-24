@@ -1,0 +1,28 @@
+{
+    "name": "Samir",
+    "id": 5,
+    "cnName": "saimier",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Grant **1** stack of Concentration for every **4** seconds when Samir receives no damage. Each stack increases damage dealt by **3%**, and can stack up to **4** times. After being hit, Samir loses **1** stack of Concentration, up to **1** stack per **1** second."
+        },
+        {
+            "affinity": 4000,
+            "description": "Grant **1** stack of Concentration for every **4** seconds when Samir receives no damage. Each stack increases damage dealt by **4%**, and can stack up to **5** times. After being hit, Samir loses **1** stack of Concentration, up to **1** stack per **2** second."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "171 cm",
+    "birthplace": "???",
+    "horoscope": "Taurus",
+    "birthday": "20 May",
+    "voiceActors": {
+        "jp": "水樹奈々 (Nana Mizuki)",
+        "en": "Brittany Cox",
+        "cn": "唐雅菁"
+    }
+}

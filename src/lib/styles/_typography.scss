@@ -59,6 +59,13 @@ abbr[title*="China"] {
     &::before {
         content: "CN";
     }
+
+    &.absolute {
+        position: absolute;
+        margin: 0.5rem;
+        top: 0;
+        left: 0;
+    }
 }
 
 table {

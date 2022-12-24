@@ -1,0 +1,57 @@
+{
+    "name": "Claudia",
+    "id": 12,
+    "cnName": "kelaodiya",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 1,
+                "start": "22 Dec 2021",
+                "end": "5 Jan 2022",
+                "duration": "14d",
+                "week": "2~4"
+            },
+            {
+                "bannerNo": 6,
+                "subtext": "Standard afterwards",
+                "start": "19 Mar 2022",
+                "end": "21 Mar 2022",
+                "duration": "2d",
+                "week": "14~15",
+                "standardAfterwards": true
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 3,
+                "start": "15 Sep 2022",
+                "end": "5 Oct 2022",
+                "duration": "20d",
+                "week": "6~9"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Go invisible for **1** seconds upon dodging."
+        },
+        {
+            "affinity": 4000,
+            "description": "Go invisible for **1.5** seconds upon dodging."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "170 cm",
+    "birthplace": "Hagarge",
+    "horoscope": "Capricorn",
+    "birthday": "16 Jan",
+    "voiceActors": {
+        "jp": "小松未可子 (Mikako Komatsu)",
+        "en": "Elizabeth Simmons",
+        "cn": "文小"
+    }
+}

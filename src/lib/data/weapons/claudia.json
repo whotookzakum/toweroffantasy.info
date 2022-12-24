@@ -1,0 +1,147 @@
+{
+    "name": "Guren Blade",
+    "imgSrc": "item_Weapon_SR_Sword_Fire01",
+    "element": "physical",
+    "type": "dps",
+    "shatter": {
+        "tier": "A",
+        "value": "7.50"
+    },
+    "charge": {
+        "tier": "S",
+        "value": "12.00"
+    },
+    "baseStats": [
+        "attack",
+        "resistance",
+        "health"
+    ],
+    "materials": [
+        "physical",
+        "red",
+        "blue"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Physical Resonance",
+            "description": "Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical-damage weapons. This set also works with weapons in the off-hand slot. This effect does not stack repeatedly."
+        }
+    ],
+    "advancements": [
+        "After hitting a target with a skill or discharge skill, grant 1 stack of the following buff: Increase damage dealt by **8%** for **25** seconds, stacking up to **3** times for a maximum of 1 stack per skill use.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "When hitting a target with a skill or discharge skill, apply 1 stack of War Wounds to the target: Increase incoming physical damage and shatter from physical weapons by **10%** for **15** seconds. Stack up to **1** time.",
+        "Increase the current weapon's base HP growth by **32%**.",
+        "Hitting targets with skills or discharge skills grants Skill Damage Boost, which increases all weapon skill damage by **20%** for **25** seconds. This effect cannot be stacked.",
+        "Skills hitting the same target no longer have reduced damage. After using Guren Blade's skills or discharge skill, all targets with War Wounds within 8 meters gain another **1** stack of War Wounds."
+    ],
+    "abilities": [
+        {
+            "name": "Quick Slash",
+            "type": "normal",
+            "imgSrc": "skill_sword_melee",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "While on the ground, swing the blade to attack 5 times in a row.",
+            "breakdown": [
+                "**59.2%** of ATK + **2** and small knockback.",
+                "**82.9%** of ATK + **3** and small knockback.",
+                "**75%** of ATK + **3** and small knockback.",
+                "**131.7%** of ATK + **7** and small knockback.",
+                "**225%** of ATK + **11** and **launch** the target."
+            ]
+        },
+        {
+            "name": "Jumping Strike",
+            "type": "normal",
+            "imgSrc": "skill_sword_air",
+            "input": [
+                "Jump",
+                "Attack x4"
+            ],
+            "description": "While airborne, use normal attack to attack 4 times in a row.",
+            "breakdown": [
+                "**35.3%** of ATK + **1**.",
+                "**61.3%** of ATK + **3**.",
+                "**145%** of ATK + **8**.",
+                "**175.9%** of ATK + **9** and **knockdown**."
+            ]
+        },
+        {
+            "name": "Cyclone",
+            "type": "normal",
+            "imgSrc": "skill_sword_branch",
+            "input": [
+                "Attack",
+                "hold:Attack"
+            ],
+            "description": "Hold the normal attack button after normal attacks to trigger Cyclone. Upon hit, suspend the target. Cyclone can deal **47.8%** of ATK + **3** to a single target."
+        },
+        {
+            "name": "Diving Edge",
+            "type": "normal",
+            "imgSrc": "skill_sword_jump",
+            "input": ["Jump","hold:Attack"],
+            "description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge. While falling, deal damage equal to **10%** of ATK + **1** each hit. Upon landing, deal damage equal to **76.4%** of ATK + **4** and knock the target back.\n\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** of ATK."
+        },
+        {
+            "name": "Soundtrack",
+            "type": "normal",
+            "imgSrc": "common_sneak",
+            "input": ["Crouch","Attack"],
+            "description": "Approach the enemy from behind while crouching, then use normal attack to trigger Sneak Attack, dealing damage equal to **570%** of ATK + **30**."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
+        },
+        {
+            "name": "Leap Attack",
+            "type": "dodge",
+            "imgSrc": "skill_sword_backattck",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Tap normal attack during the short period after dodging to trigger Leap Attack.\n\nThe Wanderer swings their blade and deals damage equal to **37.9%** of ATK + **2**, **strongly suspending** them while going airborne. Then, deal additional damage equal to **56.8%** of ATK + **3**."
+        },
+        {
+            "name": "Roam",
+            "type": "skill",
+            "imgSrc": "../sword_skill1",
+            "description": "Dance through targets while swinging the blade, dealing damage equal to **418%** of ATK + **22** to up to **5** targets (consecutive hits on the same target deal **20%** less damage). At Roam has concluded, slash the space in front, dealing damage equal to **264%** of ATK + **14** to surrounding targets and suspend them. Immune to control effects while skill is in use, and all damage taken is reduced by **50%**. Cooldown: **15** seconds."
+        },
+        {
+            "name": "Unbridled Flurry",
+            "type": "discharge",
+            "imgSrc": "skill_sword_changeskill",
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the Wanderer**, who then rushes to and **strongly suspends** a target, dealing **523.3%** of ATK + **28** damage, leaving behind a Bladestorm that deals **209.6%** of ATK + **11** damage, while gaining immunity to to grievous/freeze/burn/electrify effects for **5** seconds."
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/lna3oINWXLs?start=6",
+    "recommendedMatrices": [
+        {
+            "name": "Shiro",
+            "pieces": 2,
+            "description": "Good option for boosting damage and shatter (Guren Blade does a fair amount of shatter with the skill and discharge)."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "Good option for boosting damage when at high crit rate."
+        },
+        {
+            "name": "Claudia",
+            "pieces": 4,
+            "description": "Somewhat decent option that increases damage of other weapons and increases aerial attack damage."
+        },
+        {
+            "name": "Pepper",
+            "pieces": 3,
+            "description": "A good substitute for SSR matrices, and will help you build charge more quickly. If you use this weapon as a main DPS, use Sobek 3-piece instead."
+        }
+    ]
+}

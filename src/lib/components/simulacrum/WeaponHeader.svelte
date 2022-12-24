@@ -1,61 +1,12 @@
 <script>
+    import { getCNTranslation } from "$lib/utils";
     export let weapon;
-
-    let elementImgSrc, typeImgSrc;
-    let baseStatImgSrcs = [];
-
-    switch (weapon.element) {
-        case "flame":
-            elementImgSrc = "huo";
-            break;
-        case "frost":
-            elementImgSrc = "bing";
-            break;
-        case "volt":
-            elementImgSrc = "lei";
-            break;
-        case "physical":
-            elementImgSrc = "wu";
-            break;
-        case "altered":
-            elementImgSrc = "powers";
-            break;
-    }
-
-    switch (weapon.type) {
-        case "dps":
-            typeImgSrc = "qianggong";
-            break;
-        case "defense":
-            typeImgSrc = "fangyu";
-            break;
-        case "support":
-            typeImgSrc = "zengyi";
-            break;
-    }
-
-    weapon.baseStats.forEach((stat) => {
-        switch (stat) {
-            case "attack":
-                baseStatImgSrcs.push("atk");
-                break;
-            case "health":
-                baseStatImgSrcs.push("hp");
-                break;
-            case "crit":
-                baseStatImgSrcs.push("baoji");
-                break;
-            case "resistance":
-                baseStatImgSrcs.push("resist_all");
-                break;
-        }
-    });
 </script>
 
 <header class="full-bleed" style={`border-color: var(--element-${weapon.element})`}>
     <img
-        src="/images/Icon/weapon/Icon/item_Weapon_SSR_Fenrir_Thunder01.png"
-        alt=""
+        src={`/images/Icon/weapon/Icon/${weapon.imgSrc}.png`}
+        alt={weapon.name}
         width="128"
         height="128"
     />
@@ -63,19 +14,21 @@
         <div class="weapon-info-top">
             <h3>{weapon.name}</h3>
             <div class="base-stats-wrapper">
-                {#each baseStatImgSrcs as stat}
+                {#each weapon.baseStats as stat}
                     <div class="stat">
                         <img
-                            src={`/images/UI/AttributeIcon/icon_${stat}.png`}
-                            alt="Base stat"
+                            src={`/images/UI/AttributeIcon/icon_${getCNTranslation(stat)}.png`}
+                            alt={stat}
                             width="42"
                             height="42"
                         />
-                        {stat === "baoji"
-                            ? "crit"
-                            : stat === "resist_all"
+                        {stat === "health"
+                            ? "hp"
+                            : stat === "resistance"
                             ? "resist"
-                            : stat}
+                            : stat === "attack" 
+                            ? "atk"
+                            : "crit" }
                     </div>
                 {/each}
             </div>
@@ -83,7 +36,7 @@
         <div class="stats-wrapper">
             <div class="stat">
                 <img
-                    src={`/images/UI/wuqi/icon_${typeImgSrc}.png`}
+                    src={`/images/UI/wuqi/icon_${getCNTranslation(weapon.type)}.png`}
                     alt="Type"
                     width="60"
                     height="54"
@@ -95,7 +48,7 @@
             </div>
             <div class="stat">
                 <img
-                    src={`/images/UI/wuqi/icon_element_${elementImgSrc}.png`}
+                    src={`/images/UI/wuqi/icon_element_${getCNTranslation(weapon.element)}.png`}
                     alt="Element"
                     width="60"
                     height="54"

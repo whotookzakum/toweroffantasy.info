@@ -1,11 +1,12 @@
 <script>
-    import Abilities from "$lib/components/weapon/Abilities.svelte";
-    import Advancements from "$lib/components/weapon/Advancements.svelte";
-    import UpgradeMaterials from "$lib/components/weapon/UpgradeMaterials.svelte";
-    import WeaponEffects from "$lib/components/weapon/WeaponEffects.svelte";
-    import WeaponHeader from "$lib/components/weapon/WeaponHeader.svelte";
-    import RecommendedMatrices from "$lib/components/weapon/RecommendedMatrices.svelte";
+    import Abilities from "$lib/components/simulacrum/Abilities.svelte";
+    import Advancements from "$lib/components/simulacrum/Advancements.svelte";
+    import UpgradeMaterials from "$lib/components/simulacrum/UpgradeMaterials.svelte";
+    import WeaponEffects from "$lib/components/simulacrum/WeaponEffects.svelte";
+    import WeaponHeader from "$lib/components/simulacrum/WeaponHeader.svelte";
+    import RecommendedMatrices from "$lib/components/simulacrum/RecommendedMatrices.svelte";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
+    import OtherInfo from "$lib/components/simulacrum/OtherInfo.svelte";
 
     export let data;
 </script>
@@ -33,28 +34,4 @@
 <h2 id="awakening">Awakening</h2>
 
 <h2 id="other-info">Other Info</h2>
-<div class="bio-wrapper full-bleed">
-    <div>
-        <div>{data.bio.gender}</div>
-        <div>{data.bio.height}</div>
-        <div>{data.bio.birthplace}</div>
-        <div>{data.bio.horoscope}</div>
-        <div>{data.bio.birthday}</div>
-    </div>
-    <img class="chart" style="width: 100%" src={`/images/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${data.id}.png`} alt="" width="678" height="367">
-</div>
-
-<style lang="scss">
-    .bio-wrapper {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        padding: 2rem;
-        background-color: var(--surface2);
-        margin-top: var(--space-xs);
-
-        img {
-            max-width: 500px;
-            height: auto;
-        }
-    }
-</style>
+<OtherInfo simulacrum={data} />
