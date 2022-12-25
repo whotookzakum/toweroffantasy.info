@@ -1,6 +1,7 @@
 <script>
     export let weapon;
     import RangeSlider from "svelte-range-slider-pips";
+    import WeaponMaterial from "$lib/components/simulacrum/WeaponMaterial.svelte";
 
     $: values = [0, 160];
 
@@ -693,34 +694,6 @@
     $: totalMatsInRange = weapon.materials.map((mat, index) =>
         sumOfMatsForTier(index + 1)
     );
-
-    function getMaterialImg(material, tier) {
-        switch (material) {
-            case "red":
-                return `zujian/gem_p1_FireAtkAdded_${tier}`;
-            case "green":
-                return `zujian/gem_p4_PhyAtkAdded_${tier}`;
-            case "black":
-                return `zujian/gem_p3_IceDefAdded_${tier}`;
-            case "blue":
-                return `zujian/Item_breakthrough_D${tier}`;
-            case "volt":
-                if (tier === 1) return "item/Item_Mine_thunderpatch003";
-                else if (tier === 2) return "item/Item_Mine_thunder";
-                return `item/Item_Mine_thunder_0${tier}`;
-            case "flame":
-                if (tier === 1) return "item/Item_Mine_firepatch001";
-                else if (tier === 2) return "item/Item_Mine_fire";
-                return `item/Item_Mine_fire_0${tier}`;
-            case "ice":
-                if (tier === 1) return "item/Item_Mine_icepatch002";
-                else if (tier === 2) return `item/Item_Mine_ice`;
-                return `item/Item_Mine_ice_2`;
-            case "physical":
-                if (tier === 1) return "item/Item_mine_physic";
-                return `item/Item_mine_physic_0${tier}`;
-        }
-    }
 </script>
 
 <h4 id="upgrade-materials">Upgrade Materials</h4>
@@ -747,16 +720,11 @@
 <div style="display: flex; flex-wrap: wrap">
     {#each totalMatsInRange as valuesInTier, tier}
         {#each totalMatsInRange[tier] as matCount, index}
-            <div>
-                <img
-                    src={`/images/Icon/${getMaterialImg(
-                        weapon.materials[index],
-                        tier + 1
-                    )}.png`}
-                    alt={`${weapon.materials[index]} augment material`}
-                />
-                {matCount}
-            </div>
+            <WeaponMaterial
+                type={weapon.materials[index]}
+                tier={tier + 1}
+                amount={matCount}
+            />
         {/each}
     {/each}
 </div>

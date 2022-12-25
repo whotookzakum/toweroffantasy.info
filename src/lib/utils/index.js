@@ -21,37 +21,3 @@ export const fetchAllSimulacra = async () => {
 
     return allItems
 }
-
-export function getCNTranslation(text) {
-    switch (text) {
-        // Weapon Type
-        case "dps":
-            return "qianggong";
-        case "defense":
-            return "fangyu";
-        case "support":
-            return "zengyi";
-
-        // Weapon Element
-        case "flame":
-            return "huo";
-        case "ice":
-            return "bing";
-        case "volt":
-            return "lei";
-        case "physical":
-            return "wu";
-        case "altered":
-            return "powers";
-
-        // Weapon Base Stats
-        case "attack":
-            return "atk"
-        case "health":
-            return "hp"
-        case "crit":
-            return "baoji"
-        case "resistance":
-            return "resist_all"
-    }
-}

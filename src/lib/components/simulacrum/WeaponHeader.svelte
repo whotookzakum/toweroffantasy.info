@@ -1,5 +1,6 @@
 <script>
-    import { getCNTranslation } from "$lib/utils";
+    import BaseStat from "./BaseStat.svelte";
+    import CategoryIcon from "./CategoryIcon.svelte";
     export let weapon;
 </script>
 
@@ -16,43 +17,21 @@
             <div class="base-stats-wrapper">
                 {#each weapon.baseStats as stat}
                     <div class="stat">
-                        <img
-                            src={`/images/UI/AttributeIcon/icon_${getCNTranslation(stat)}.png`}
-                            alt={stat}
-                            width="42"
-                            height="42"
-                        />
-                        {stat === "health"
-                            ? "hp"
-                            : stat === "resistance"
-                            ? "resist"
-                            : stat === "attack" 
-                            ? "atk"
-                            : "crit" }
+                        <BaseStat {stat} />
                     </div>
                 {/each}
             </div>
         </div>
         <div class="stats-wrapper">
             <div class="stat">
-                <img
-                    src={`/images/UI/wuqi/icon_${getCNTranslation(weapon.type)}.png`}
-                    alt="Type"
-                    width="60"
-                    height="54"
-                />
+                <CategoryIcon type={weapon.type} />
                 <div class="stat-text">
                     <span class="stat-name">Type</span>
                     <b class="stat-value">{weapon.type}</b>
                 </div>
             </div>
             <div class="stat">
-                <img
-                    src={`/images/UI/wuqi/icon_element_${getCNTranslation(weapon.element)}.png`}
-                    alt="Element"
-                    width="60"
-                    height="54"
-                />
+                <CategoryIcon type={weapon.element} />
                 <div class="stat-text">
                     <span class="stat-name">Element</span>
                     <b class="stat-value">{weapon.element}</b>
@@ -119,12 +98,6 @@
         .stat {
             gap: 0.25rem;
         }
-
-        .stat img {
-            width: 24px;
-            height: 24px;
-            filter: brightness(3);
-        }
     }
 
     .stats-wrapper {
@@ -141,31 +114,24 @@
         gap: 0.5rem;
         align-items: center;
 
-        &-text {
+        & .stat-text {
             display: grid;
         }
 
-        &-name {
+        & .stat-name {
             color: var(--text2);
             font-size: 1rem;
         }
 
-        &-value {
+        & .stat-value {
             text-transform: uppercase;
         }
 
-        &-tier,
-        & img {
+        & .stat-tier {
             filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
         }
 
-        & img {
-            width: 40px;
-            height: auto;
-            aspect-ratio: 60/54;
-        }
-
-        &-tier {
+        & .stat-tier {
             font-style: normal;
             font-weight: 900;
             font-size: var(--step-2);

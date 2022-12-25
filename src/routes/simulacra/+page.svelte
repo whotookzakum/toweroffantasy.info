@@ -1,7 +1,9 @@
 <script>
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
-    import { getCNTranslation } from "$lib/utils";
+    import Avatar from "$lib/components/simulacrum/Avatar.svelte";
+    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
+    import SimulacrumFilters from "$lib/components/simulacrum/SimulacrumFilters.svelte";
 
     export let data;
     const simulacra = data.items;
@@ -16,71 +18,7 @@
     passive effect. Their associated matrices must be obtained separately.
 </p>
 
-<div>
-    <input
-        type="checkbox"
-        name="imageToggle"
-        id="show-weapon-toggle"
-        bind:checked={showWeaponIcon}
-    />
-    <label for="show-weapon-toggle">Display Weapon</label>
-</div>
-
-<div class="filters">
-    <section>
-        <img
-            src={`/images/UI/wuqi/icon_qianggong.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-        <img
-            src={`/images/UI/wuqi/icon_fangyu.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-        <img
-            src={`/images/UI/wuqi/icon_zengyi.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-    </section>
-
-    <section>
-        <img
-            src={`/images/UI/wuqi/icon_element_huo.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-        <img
-            src={`/images/UI/wuqi/icon_element_lei.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-        <img
-            src={`/images/UI/wuqi/icon_element_bing.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-        <img
-            src={`/images/UI/wuqi/icon_element_wu.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-        <img
-            src={`/images/UI/wuqi/icon_element_powers.png`}
-            alt="Type"
-            width="60"
-            height="54"
-        />
-    </section>
-</div>
+<SimulacrumFilters bind:showWeaponIcon />
 
 <h2><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
@@ -98,35 +36,12 @@
                 />
                 <span>{simulacrum.weapon.name}</span>
             {:else}
-                <img
-                    src={simulacrum.name === "Nemesis"
-                        ? `/images/Icon/Avatar/avatar_${simulacrum.cnName}.png`
-                        : simulacrum.name === "Frigg"
-                        ? `/images/Icon/Avatar/Avatar12.png`
-                        : `/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
-                    alt={simulacrum.name}
-                    width="128"
-                    height="128"
-                />
+                <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
                 <span>{simulacrum.name}</span>
             {/if}
             <div class="type-and-element">
-                <img
-                    src={`/images/UI/wuqi/icon_${getCNTranslation(
-                        simulacrum.weapon.type
-                    )}.png`}
-                    alt="Type"
-                    width="60"
-                    height="54"
-                />
-                <img
-                    src={`/images/UI/wuqi/icon_element_${getCNTranslation(
-                        simulacrum.weapon.element
-                    )}.png`}
-                    alt="Element"
-                    width="60"
-                    height="54"
-                />
+                <CategoryIcon type={simulacrum.weapon.type} width={30} />
+                <CategoryIcon type={simulacrum.weapon.element} width={30} />
             </div>
         </MenuItem>
     {/each}
@@ -148,35 +63,12 @@
                 />
                 <span>{simulacrum.weapon.name}</span>
             {:else}
-                <img
-                    src={simulacrum.name === "Pepper"
-                        ? `/images/Icon/Avatar/touxiang_susan.png`
-                        : simulacrum.name === "Hilda"
-                        ? `/images/Icon/Avatar/touxiang_hilda.png`
-                        : `/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
-                    alt={simulacrum.name}
-                    width="128"
-                    height="128"
-                />
+                <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
                 <span>{simulacrum.name}</span>
             {/if}
             <div class="type-and-element">
-                <img
-                    src={`/images/UI/wuqi/icon_${getCNTranslation(
-                        simulacrum.weapon.type
-                    )}.png`}
-                    alt="Type"
-                    width="60"
-                    height="54"
-                />
-                <img
-                    src={`/images/UI/wuqi/icon_element_${getCNTranslation(
-                        simulacrum.weapon.element
-                    )}.png`}
-                    alt="Element"
-                    width="60"
-                    height="54"
-                />
+                <CategoryIcon type={simulacrum.weapon.type} width={30} />
+                <CategoryIcon type={simulacrum.weapon.element} width={30} />
             </div>
         </MenuItem>
     {/each}
@@ -186,17 +78,5 @@
     .type-and-element {
         display: flex;
         margin-bottom: 1rem;
-
-        img {
-            width: 30px;
-            height: auto;
-        }
-    }
-
-    .filters {
-        img {
-            width: 30px;
-            height: auto;
-        }
     }
 </style>
