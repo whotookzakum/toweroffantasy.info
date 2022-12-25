@@ -1,40 +1,131 @@
 {
-    "name": "",
+    "name": "Icewind Arrow",
     "imgSrc": "item_Weapon_SSR_Bow_Ice01",
-    "element": "",
-    "type": "",
+    "element": "ice",
+    "type": "dps",
     "shatter": {
-        "tier": "",
-        "value": ""
+        "tier": "B",
+        "value": "4.00"
     },
     "charge": {
-        "tier": "",
-        "value": ""
+        "tier": "S",
+        "value": "11.50"
     },
     "baseStats": [
         "attack",
-        "",
-        ""
+        "health",
+        "crit"
     ],
     "materials": [
-        "",
-        "",
-        ""
-    ],
-    "weaponEffects": [
-        {
-            "title": "",
-            "description": ""
-        }
+        "ice",
+        "red",
+        "blue"
     ],
     "advancements": [
-        
+        "Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **5%** for **15** seconds. Stack up to **3** times.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Launching a Dodge attack fires **3** Charged Arrows.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "Double duration of Arrow Rain and slow targets by **25%**.",
+        "Sharp Arrow stacks up to **5** times. Hitting a target with Charged Arrow immediately grants **3** stacks, headshots grant **5** stacks."
     ],
     "abilities": [
-        
+        {
+            "name": "Quickdraw",
+            "type": "normal",
+            "imgSrc": "../bow_skill",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "While on the ground, draw the bow repeatedly to attack 5 times.",
+            "breakdown": [
+                "**48.8%** of ATK + **3**.",
+                "**43.7%** of ATK + **2**.",
+                "**78.6%** of ATK + **4**.",
+                "**121.2%** of ATK + **6**.",
+                "**112.5%** of ATK + **6** and small knockback."
+            ]
+        },
+        {
+            "name": "Charged Arrow",
+            "type": "normal",
+            "imgSrc": "skill_bow_power",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack to charge the weapon. Deal basic damage equal to **87.8%** of ATK + **5**, and **50%** more for each 1 second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weakness, knocking them down (headshots are ineffective against Wanderers)."
+        },
+        {
+            "name": "Arrow Rain",
+            "type": "normal",
+            "imgSrc": "skill_bow_changeskill",
+            "input": [
+                "Attack",
+                "hold:Attack"
+            ],
+            "description": "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **287.2%** of ATK + **15** area damage to targets."
+        },
+        {
+            "name": "Air Volley",
+            "type": "normal",
+            "imgSrc": "skill_bow_power",
+            "input": [
+                "Jump",
+                "Attack x4"
+            ],
+            "description": "While airborne, tap normal attack to attack 4 times in a row in the air.",
+            "breakdown": [
+                "**56.3%** of ATK + **3**.",
+                "**74%** of ATK + **4**.",
+                "**112.7%** of ATK + **6**.",
+                "**169.8%** of ATK + **9**."
+            ]
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
+        },
+        {
+            "name": "Loaded Arrow",
+            "type": "dodge",
+            "imgSrc": "skill_bow_power",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Tap attack after dodging to trigger a Loaded Arrow, which **knocking the target back** and dealing damage equal to **124%** of ATK + **7**."
+        },
+        {
+            "name": "Piercing Arrow",
+            "type": "skill",
+            "imgSrc": "../bow_skill",
+            "description": "Perform a backflip and fire **3** piercing arrows, with the main arrow deals damage equal to **258.3%** of ATK + **14**, and the other two arrows deal 60% damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds."
+        },
+        {
+            "name": "Explosive Barrage",
+            "type": "discharge",
+            "imgSrc": "../skill_artifact11_1",
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and create a hailstorm at the target location upon switching to this weapon, dealing damage equal to **570%** of ATK + **30**. The storm has a **10%** chance to inflict a **2** seconds **freeze effect**. Gain cold front, and increase speed by **45%** for **7** seconds."
+        }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/GralXQC8G-E?start=10",
     "recommendedMatrices": [
-
+        {
+            "name": "Frigg",
+            "pieces": 2,
+            "description": "A good choice for Frost teams as it adds another buff for Icewind Vector to apply."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "High damage matrix set when you have high crit rate."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
     ]
 }

@@ -33,7 +33,7 @@
         {
             "name": "Rapid Throw",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_darts_melee",
             "input": [
                 "Attack x5"
             ],
@@ -49,7 +49,7 @@
         {
             "name": "Aerial Discharge",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_darts_air",
             "input": [
                 "Jump",
                 "Attack x3"
@@ -64,7 +64,7 @@
         {
             "name": "Scatter",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_darts_branch",
             "input": [
                 "Attack x2",
                 "hold:Attack"
@@ -74,7 +74,7 @@
         {
             "name": "Air Spin",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_darts_jump",
             "input": [
                 "Jump",
                 "hold:Attack"
@@ -84,7 +84,7 @@
         {
             "name": "Sneak Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "common_sneak",
             "input": [
                 "Crouch",
                 "Attack"
@@ -94,7 +94,7 @@
         {
             "name": "Waning Moon",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_darts_backattack",
             "input": [
                 "Dodge",
                 "Attack"
@@ -104,19 +104,19 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
             "name": "Full Bloom",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../darts_skill",
             "description": "Create a Chakram Domain with the Wanderer at the center for **8** seconds. For **8** seconds after unleashing, pull in targets and reduce their speed by **30%**. Also fire **5** chakrams that bounce between enemies, dealing damage equal to **24.2%** of ATK + **1** to targets on their paths, bouncing up to **5** times. ***The split chakrams triggered by Waning Moon also bounce up to 5 times***. Cooldown: **45** seconds."
         },
         {
             "name": "Spirit of the Air",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_darts_changeskill",
             "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes Chakram of the Seas at a target. Struck target causes AOE **stun** for **1** second, plus **1** attack each against up to **3** units every second (each attack has **10%** chance of **stunning** the target for **1.5** seconds), dealing **41.4%** x ATK + **2** damage for **10** seconds."
         }
     ],

@@ -1,40 +1,140 @@
 {
-    "name": "",
+    "name": "Thunderbreaker",
     "imgSrc": "item_Weapon_SSR_Tianlang_Thunder01",
-    "element": "",
-    "type": "",
+    "element": "volt",
+    "type": "dps",
     "shatter": {
-        "tier": "",
-        "value": ""
+        "tier": "S",
+        "value": "12.50"
     },
     "charge": {
-        "tier": "",
-        "value": ""
+        "tier": "A",
+        "value": "8.00"
     },
     "baseStats": [
         "attack",
-        "",
-        ""
+        "health",
+        "crit"
     ],
     "materials": [
-        "",
-        "",
-        ""
+        "volt",
+        "green",
+        "blue"
     ],
     "weaponEffects": [
         {
-            "title": "",
-            "description": ""
+            "title": "Volt Resonance",
+            "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Volt Resonance."
         }
     ],
     "advancements": [
-        
+        "Gain 1 stack of Superconductor per charge: Increase Max HP by **7.5%** but increase damage received by **2%** (except when the current HP is lower than 50 times volt ATK and no HP Shield is equipped), stacking up to **8** times. Lose 1 stack if no Superconductor gets refreshed within **6** seconds.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Release any volt weapon skill or discharge skill to get **2** charges. Gain hyperbody at **8** Superconductor stacks.",
+        "Increase the current weapon's base HP growth by **32%**.",
+        "Each Superconductor stack increases final damage by **1%**.",
+        "Boost Dubhe's Volt Sense: For every 1 other volt weapon sensed, gain **10%** damage boost for **25** seconds."
     ],
     "abilities": [
-        
+        {
+            "name": "Mizar",
+            "type": "normal",
+            "imgSrc": "skill_tianlang_melee",
+            "input": [
+                "Attack x6"
+            ],
+            "description": "While on the ground, initiate 6 attacks in a row with Thunderbreaker.",
+            "breakdown": [
+                "**90.5%** of ATK + **5** and knockback.",
+                "**67.9%** of ATK + **4** and knockback.",
+                "**123%** of ATK + **6** and knockback.",
+                "**217.9%** of ATK + **11** and knockback.",
+                "**222%** of ATK + **12** and knockback.",
+                "**291.8%** of ATK + **15** and **suspend** the target."
+            ]
+        },
+        {
+            "name": "Megrez",
+            "type": "normal",
+            "imgSrc": "skill_tianlang_airattack",
+            "input": [
+                "Jump",
+                "Attack x5"
+            ],
+            "description": "While airborne or after jumping once, use normal attack to attack 5 times in a row in mid-air.",
+            "breakdown": [
+                "**87.4%** of ATK + **5**.",
+                "**83%** of ATK + **4**.",
+                "**126.7%** of ATK + **7**.",
+                "**229.4%** of ATK + **12**.",
+                "**256.5%** of ATK + **14**."
+            ]
+        },
+        {
+            "name": "Phecda",
+            "type": "normal",
+            "imgSrc": "skill_tianlang_branch",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "When on the ground, tap and hold normal attack to trigger. Deal damage up to **342%** of ATK + **18** to the target and gather enemies around you."
+        },
+        {
+            "name": "Merak",
+            "type": "normal",
+            "imgSrc": "skill_tianlang_jumpattack",
+            "input": [
+                "Jump",
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger.\n\nWhile falling, deal damage equal to **38%** of ATK + **2** each hit. Upon landing, deal damage equal to **285%** of ATK + **15** to nearby targets."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
+        },
+        {
+            "name": "Alioth",
+            "type": "dodge",
+            "imgSrc": "skill_tianlang_evadeattack",
+            "description": "Tap normal attack during the short period after dodging. Dash to attack the target, dealing damage equal to **172.6%** of ATK + **9**."
+        },
+        {
+            "name": "Dubhe",
+            "type": "skill",
+            "imgSrc": "skill_tianlang_skill",
+            "description": "Unleash a barrage of attacks, dealing damage equal to **936.9%** of ATK + **49** to enemies within range, and transform enemies and your summons within a certain range into Electrified Entities. Up to 3 Electrified Entities can exist at a time. Cooldown: **30** seconds.\n\nGain Volt Sense when Dubhe is used: Scan the other two equipped weapons when unleashing skills. Each additional volt weapon sensed by it increases volt ATK by **6%** for **25** seconds.\n\nElectrified Entity: When unleashing any volt weapon skill or discharge skill, Electrified Entities unleash volt area damage equal to **5%** of missing HP (no less than **100%** volt ATK, no more than **1000%** volt ATK).\n\nWhen using Thunderbreaker, unleashing any volt weapon skill or discharge consumes **30%** of current HP to deal additional volt damage equal to **45%** of the consumed HP (no less than **400%** of volt ATK and no more than **3000%** of volt ATK). After **8** seconds or when HP is lower than **10%**, recover **5%** missing HP every second for **8** seconds (not affected by healing effects). The recovery effect cannot be stacked."
+        },
+        {
+            "name": "Obliterator",
+            "type": "discharge",
+            "imgSrc": "skill_tianlang_changeskill",
+            "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder**. Thunderbreaker unleashes wide-range volt damage, dealing damage equal to **844.6%** of ATK + **44** and transforms enemies and your summons within a certain range into Electrified Entities. Up to 3 Electrified Entities can exist at a time.\n\nElectrified Entity: When unleashing any volt weapon skill or discharge skill, Electrified Entities unleash volt area damage equal to **5%** of missing HP (no less than **100%** volt ATK, no more than **1000%** volt ATK).\n\nWhen using Thunderbreaker, unleashing any volt weapon skill or discharge consumes **30%** of current HP to deal additional volt damage equal to **45%** of the consumed HP (no less than **400%** of volt ATK and no more than **3000%** of volt ATK). After **8** seconds or when HP is lower than **10%**, recover **5%** missing HP every second for **8** seconds (not affected by healing effects). The recovery effect cannot be stacked."
+        }
     ],
     "abilitiesVideoSrc": "",
     "recommendedMatrices": [
-
+        {
+            "name": "Samir",
+            "pieces": 2,
+            "description": "Highest damage set buff that can be maintained with Thunderbreaker's multiple hits and fast attacks."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "High damage matrix set when you have high crit rate."
+        },
+        {
+            "name": "Tian Lang",
+            "pieces": 4,
+            "description": "Not ideal as Tian Lang's matrices work in the background and should be used on a less-used weapon, however still viable. Alternatively, Tian Lang's 2-piece set is also viable on their own."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
     ]
 }

@@ -84,7 +84,7 @@
 
 <h2><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
-    {#each simulacra.filter(s => s.rarity === "SSR") as simulacrum}
+    {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
         <MenuItem href={simulacrum.path}>
             {#if simulacrum.chinaOnly}
                 <abbr class="absolute" title="China Exclusive" />
@@ -99,7 +99,11 @@
                 <span>{simulacrum.weapon.name}</span>
             {:else}
                 <img
-                    src={`/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
+                    src={simulacrum.name === "Nemesis"
+                        ? `/images/Icon/Avatar/avatar_${simulacrum.cnName}.png`
+                        : simulacrum.name === "Frigg"
+                        ? `/images/Icon/Avatar/Avatar12.png`
+                        : `/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
                     alt={simulacrum.name}
                     width="128"
                     height="128"
@@ -130,7 +134,7 @@
 
 <h2><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
 <Menu>
-    {#each simulacra.filter(s => s.rarity === "SR") as simulacrum}
+    {#each simulacra.filter((s) => s.rarity === "SR") as simulacrum}
         <MenuItem href={simulacrum.path}>
             {#if simulacrum.chinaOnly}
                 <abbr class="absolute" title="China Exclusive" />
@@ -145,7 +149,11 @@
                 <span>{simulacrum.weapon.name}</span>
             {:else}
                 <img
-                    src={`/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
+                    src={simulacrum.name === "Pepper"
+                        ? `/images/Icon/Avatar/touxiang_susan.png`
+                        : simulacrum.name === "Hilda"
+                        ? `/images/Icon/Avatar/touxiang_hilda.png`
+                        : `/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
                     alt={simulacrum.name}
                     width="128"
                     height="128"

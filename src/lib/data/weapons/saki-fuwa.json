@@ -1,40 +1,164 @@
 {
-    "name": "",
+    "name": "Heartstream",
     "imgSrc": "item_Weapon_SSR_dkatana_Ice01",
-    "element": "",
-    "type": "",
+    "element": "ice",
+    "type": "defense",
     "shatter": {
-        "tier": "",
-        "value": ""
+        "tier": "S",
+        "value": "13.90"
     },
     "charge": {
-        "tier": "",
-        "value": ""
+        "tier": "A",
+        "value": "8.00"
     },
     "baseStats": [
         "attack",
-        "",
-        ""
+        "resistance",
+        "health"
     ],
     "materials": [
-        "",
-        "",
-        ""
+        "ice",
+        "red",
+        "black"
     ],
     "weaponEffects": [
         {
-            "title": "",
-            "description": ""
+            "title": "Frost Resonance",
+            "description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
         }
     ],
     "advancements": [
-        
+        "When Frost Resonance is activated, all weapon skill cooldowns are cleared every **5** times weapon skills are used, and the damage of Flow and Counterattack is **doubled** for the next **25** seconds.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Excited Flow: Increase the damage of Sword Shadow: Surge to **350%** of Frost ATK.\n\nSilent Flow: The cooldown of Sword Shadow: Surge becomes **5** seconds.",
+        "Increase the current weapon's base HP growth by **32%**.",
+        "Freeze time and trigger Phantasia upon Surge hitting the target. Share cooldown with the Phantasia triggered by dodging.",
+        "Upon hitting a target with Surge, increase frost damage by **11%** for **15** seconds. Upon triggering block with Sword Shadow, reduce the frost damage dealt by enemy targets by **25%** for **12** seconds."
     ],
     "abilities": [
-        
+        {
+            "name": "Ragestream",
+            "type": "normal",
+            "imgSrc": "skill_dkatana_melee",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "Launch 5 Heartstream attacks while on the ground.",
+            "breakdown": [
+                "Deal **42.5%** of ATK + **2** damage to the target and small knockback.",
+                "Deal **29.5%** of ATK + **2** damage to the target and small knockback.",
+                "Deal **45%** of ATK + **2** damage to the target and small knockback.",
+                "Deal **70.6%** of ATK + **4** damage to the target and small knockback.",
+                "Deal **102.6%** of ATK + **5** damage to the target and flies the target."
+            ]
+        },
+        {
+            "name": "Airsplit",
+            "type": "normal",
+            "imgSrc": "skill_dkatana_airattack",
+            "input": [
+                "Jump",
+                "Attack x5"
+            ],
+            "description": "While airborne or after jumping once, use normal attack to attack 5 times in a row.",
+            "breakdown": [
+                "Deal damage equal to **47.2%** of ATK + **2**.",
+                "Deal damage equal to **43.7%** of ATK + **2**.",
+                "Deal damage equal to **54.2%** of ATK + **3**.",
+                "Deal damage equal to **76.9%** of ATK + **4**.",
+                "Deal damage equal to **170.2%** of ATK + **9**."
+            ]
+        },
+        {
+            "name": "Excited Flow: Vortex",
+            "type": "normal",
+            "imgSrc": "skill_dkatana_branch1",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "In the Excited Flow mode, tap and hold normal attack to trigger the skill.\n\nLunge forward with a swirling multiattack, dealing a maximum of **199.5%** of ATK + **11** damage."
+        },
+        {
+            "name": "Silent Flow: Barrier",
+            "type": "normal",
+            "imgSrc": "skill_dkatana_branch2",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "In the Silent Flow mode, tap while launching normal attacks or tap and hold the normal attack to trigger the skill.\n\nHold the attack button to keep the Anticipation. Release the button to deal **127.3%** of ATK + **7** damage. When received attacks during the attacking period, blocks **20%** of your max HP."
+        },
+        {
+            "name": "Frostfall",
+            "type": "normal",
+            "imgSrc": "skill_dkatana_airjumpattack",
+            "input": [
+                "Jump",
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack with normal attack to trigger.\n\nWhile falling, deal damage equal to **30.4%** of ATK + **2** each hit. Upon landing, deal damage equal to **76%** of ATK + **4** to nearby targets."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
+        },
+        {
+            "name": "Polar Front",
+            "type": "dodge",
+            "imgSrc": "skill_dkatana_forwardevadeattack",
+            "input": [
+                "Arrow keys",
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Tap normal attack during the short period after dodging forward.\n\nDash and turn around to attack the target, dealing damage equal to **277%** of ATK + **15**."
+        },
+        {
+            "name": "Excited Flow: Flashing Stream",
+            "type": "skill",
+            "imgSrc": "skill_dkatana_skill1",
+            "description": "Dash toward the target and temporarily immobilize enemies along the path, dealing delayed damage up to **445.3%** of ATK + **23**. Cooldown: **30** seconds."
+        },
+        {
+            "name": "Silent Flow: Concentrated Stream",
+            "type": "skill",
+            "imgSrc": "skill_dkatana_skill2",
+            "description": "Cast the Silent Flow skills to begin charging for up to **3** seconds, continuously taunting nearby targets and absorbing damage up to **60%** of Max HP. At the end of the charge, deal frost damage equal to **408%** of frost ATK + **50%** of absorbed damage to targets, and **20%** of the unconsumed value is converted to HP recovery. Cooldown: **30** seconds.\n\nEnter Silent Flow when Fortitude Resonance is activated. **Excited Flow: Flashing Stream** is replaced by **Silent Flow: Concentrated Stream**. Enter Excited Flow when Fortitude Resonance is not activated.\n\nThe Wanderer can gain Sword Shadow, which follows them around when using Saki Fuwa's skills. Sword Shadow will release Surge when the Wanderer uses Saki Fuwa's branch skills or discharge skills, dealing ranged damage equal to **175%** of frost ATK. Cooldown of Surge: **10** seconds.\n\nWhile in Excited Flow: Sword Shadow will release Flow when the Wanderer deals damage with any weapon, which inflicts damage equal to **45%** of frost ATK on the first hit target and recovers HP equal to **57%** of the damage. The maximum recovery each time cannot exceed **100%** of ATK. Cooldown: **0.8** seconds.\n\nWhile in Silent Flow: After Sword Shadow releases Surge, the Wanderer obtains **3** blocks for **10** seconds, and the maximum block capacity cannot exceed **15%** of Max HP. Each successful block deals Counterattack damage equal to **225%** of frost ATK to the target, and the shatter of Surge increases by **100%** with an added taunt effect."
+        },
+        {
+            "name": "Heartlotus",
+            "type": "discharge",
+            "imgSrc": "skill_dkatana_changeskill",
+            "description": "When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **536%** of ATK + **28**."
+        }
     ],
     "abilitiesVideoSrc": "",
     "recommendedMatrices": [
-
+        {
+            "name": "Saki Fuwa",
+            "pieces": 4,
+            "description": "Very high damage buff set that is best used on other weapons. However, if you're using Alyss, Saki, and Lin weapons together, it's best used on Saki's weapon as the other two need their matrices to be used on their weapons specifically. Since you'll be switching weapons a lot, this set is better than the options below."
+        },
+        {
+            "name": "Samir",
+            "pieces": 2,
+            "description": "High damage buff that can be maintained with Ryusen Toshin's quick hits."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "High damage matrix set when you have high crit rate."
+        },
+        {
+            "name": "Shiro",
+            "pieces": 2,
+            "description": "Decent option that boosts Ryusen Toshin's overall damage and shatter."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
     ]
 }
