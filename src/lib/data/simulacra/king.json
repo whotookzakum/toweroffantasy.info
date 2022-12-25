@@ -1,0 +1,28 @@
+{
+    "name": "KING",
+    "id": 9,
+    "cnName": "king",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Every **7** enemies killed by KING restores HP equal to **8%** of Max HP."
+        },
+        {
+            "affinity": 4000,
+            "description": "Every **5** enemies killed by KING restores HP equal to **10%** of Max HP."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": "190 cm",
+    "birthplace": "Crown",
+    "horoscope": "Scorpio",
+    "birthday": "3 Nov",
+    "voiceActors": {
+        "jp": "松岡禎丞 (Yoshitsugu Matsuoka)",
+        "en": "Johnny Young",
+        "cn": "子晰"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Shiro",
+    "id": 8,
+    "cnName": "xiluo",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by **10%** and physical ATK by an additional **7%** for **8** seconds. Cooldown: **16** seconds."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by **16%** and physical ATK by an additional **10%** for **8** seconds. Cooldown: **16** seconds."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "163 cm",
+    "birthplace": "Warren",
+    "horoscope": "Virgo",
+    "birthday": "22 Sep",
+    "voiceActors": {
+        "jp": "小澤亜李 (Ari Ozawa)",
+        "en": "Kristen McGuire",
+        "cn": "小耗"
+    }
+}

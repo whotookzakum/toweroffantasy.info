@@ -1,0 +1,28 @@
+{
+    "name": "Huma",
+    "id": 6,
+    "cnName": "xiuma",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Each time Huma receives damage, gain **1** Fortitude mark and gain **1** more Fortitude mark if it is flame damage, up to **1** time per **1** second and **12** stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks × **0.4%** HP for **12** seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks × **0.6%** HP."
+        },
+        {
+            "affinity": 4000,
+            "description": "Each time Huma receives damage, gain **1** Fortitude mark and gain **1** more Fortitude mark if it is flame damage, up to **1** time per **1** second and **12** stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks × **0.6%** HP for **12** seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks × **0.9%** HP."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "167 cm",
+    "birthplace": "???",
+    "horoscope": "Capricorn",
+    "birthday": "12 Jan",
+    "voiceActors": {
+        "jp": "高橋李依 (Rie Takahashi)",
+        "en": "Colleen O'Shaughnessey",
+        "cn": "唐雅菁"
+    }
+}

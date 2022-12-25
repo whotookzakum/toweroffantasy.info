@@ -1,0 +1,58 @@
+{
+    "name": "Lin",
+    "id": 23,
+    "cnName": "linye",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 15,
+                "subtext": "Limited Banner only",
+                "start": "9 Jul 2022",
+                "end": "29 Jul 2022",
+                "duration": "20d",
+                "week": "30~33"
+            },
+            {
+                "bannerNo": 25,
+                "subtext": "Limited Banner only",
+                "start": "20 Oct 2022",
+                "end": "1 Nov 2022",
+                "duration": "12d",
+                "week": "46~48"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 7,
+                "subtext": "Limited Banner only",
+                "start": "22 Nov 2022",
+                "end": "21 Dec 2022",
+                "duration": "29d",
+                "week": "16~20"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increase epiphyllum explosion damage by **15%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increase epiphyllum explosion damage by **20%**. Reduce all resistance by **7%** upon hit by epiphyllums for **7** seconds. This effect does not stack."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "175 cm",
+    "birthplace": "Mirroria",
+    "horoscope": "Virgo",
+    "birthday": "3 Sep",
+    "voiceActors": {
+        "jp": "南條愛乃",
+        "en": "Erin Yvette",
+        "cn": "陈婷婷"
+    }
+}

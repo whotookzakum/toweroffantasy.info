@@ -1,0 +1,32 @@
+{
+    "name": "Lan",
+    "id": 34,
+    "cnName": "",
+    "chinaOnly": true,
+    "rarity": "SSR",
+    "banners": {
+
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": ""
+        },
+        {
+            "affinity": 4000,
+            "description": ""
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "",
+    "height": "",
+    "birthplace": "",
+    "horoscope": "",
+    "birthday": "",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": ""
+    }
+}

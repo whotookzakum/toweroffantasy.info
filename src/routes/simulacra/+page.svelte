@@ -83,9 +83,8 @@
 </div>
 
 <h2><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
-
 <Menu>
-    {#each simulacra as simulacrum}
+    {#each simulacra.filter(s => s.rarity === "SSR") as simulacrum}
         <MenuItem href={simulacrum.path}>
             {#if simulacrum.chinaOnly}
                 <abbr class="absolute" title="China Exclusive" />
@@ -130,6 +129,50 @@
 </Menu>
 
 <h2><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
+<Menu>
+    {#each simulacra.filter(s => s.rarity === "SR") as simulacrum}
+        <MenuItem href={simulacrum.path}>
+            {#if simulacrum.chinaOnly}
+                <abbr class="absolute" title="China Exclusive" />
+            {/if}
+            {#if showWeaponIcon}
+                <img
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    alt={simulacrum.weapon.name}
+                    width="128"
+                    height="128"
+                />
+                <span>{simulacrum.weapon.name}</span>
+            {:else}
+                <img
+                    src={`/images/Icon/Avatar/touxiang_${simulacrum.cnName}.png`}
+                    alt={simulacrum.name}
+                    width="128"
+                    height="128"
+                />
+                <span>{simulacrum.name}</span>
+            {/if}
+            <div class="type-and-element">
+                <img
+                    src={`/images/UI/wuqi/icon_${getCNTranslation(
+                        simulacrum.weapon.type
+                    )}.png`}
+                    alt="Type"
+                    width="60"
+                    height="54"
+                />
+                <img
+                    src={`/images/UI/wuqi/icon_element_${getCNTranslation(
+                        simulacrum.weapon.element
+                    )}.png`}
+                    alt="Element"
+                    width="60"
+                    height="54"
+                />
+            </div>
+        </MenuItem>
+    {/each}
+</Menu>
 
 <style lang="scss">
     .type-and-element {

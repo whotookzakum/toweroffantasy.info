@@ -1,0 +1,57 @@
+{
+    "name": "Cobalt-B",
+    "id": 10,
+    "cnName": "gulan",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 2,
+                "start": "8 Jan 2022",
+                "end": "26 Jan 2022",
+                "duration": "18d",
+                "week": "4~7"
+            },
+            {
+                "bannerNo": 8,
+                "subtext": "Standard afterwards",
+                "start": "13 Apr 2022",
+                "end": "27 Apr 2022",
+                "duration": "14d",
+                "week": "18~20",
+                "standardAfterwards": true
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 4,
+                "start": "5 Oct 2022",
+                "end": "26 Oct 2022",
+                "duration": "21d",
+                "week": "9~12"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between **50** to **120** points."
+        },
+        {
+            "affinity": 4000,
+            "description": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between **90** to **180** points."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "157 cm",
+    "birthplace": "Crown",
+    "horoscope": "Cancer",
+    "birthday": "26 Jun",
+    "voiceActors": {
+        "jp": "川澄綾子 (Ayako Kawasumi)",
+        "en": "Stephanie Kerbis",
+        "cn": "陈睿婕"
+    }
+}

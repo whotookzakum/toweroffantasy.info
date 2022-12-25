@@ -1,0 +1,28 @@
+{
+    "name": "Tsubasa",
+    "id": 7,
+    "cnName": "sifengyuanyu",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Each time Tsubasa deals damage, gain **1** stack of Fierce Strike, up to **1** stack per **1** second. Each stack adds **0.5%** ATK, up to **15** stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for **30** seconds."
+        },
+        {
+            "affinity": 4000,
+            "description": "Each time Tsubasa deals damage, gain **1** stack of Fierce Strike, up to **1** stack per **1** second. Each stack adds **0.6%** ATK, up to **30** stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for **30** seconds."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "169 cm",
+    "birthplace": "Astra",
+    "horoscope": "Aries",
+    "birthday": "24 Mar",
+    "voiceActors": {
+        "jp": "小原好美 (Konomi Kohara)",
+        "en": "Amber Lee Connors",
+        "cn": "徐徐"
+    }
+}

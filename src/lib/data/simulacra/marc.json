@@ -1,0 +1,49 @@
+{
+    "name": "Marc",
+    "id": 20,
+    "cnName": "make",
+    "chinaOnly": true,
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 4,
+                "subtext": "Collaboration Event",
+                "start": "14 Feb 2022",
+                "end": "4 Mar 2022",
+                "duration": "18d",
+                "week": "10~12"
+            },
+            {
+                "bannerNo": 11,
+                "subtext": "Collaboration Event",
+                "start": "24 May 2022",
+                "end": "3 Jun 2022",
+                "duration": "10d",
+                "week": "24~25"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **1%** HP every second, and healing received is increased by **20%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **2%** HP every second, and healing received is increased by **50%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": "192 cm",
+    "birthplace": "???",
+    "horoscope": "???",
+    "birthday": "???",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "赵铭"
+    }
+}

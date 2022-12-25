@@ -1,0 +1,28 @@
+{
+    "name": "Echo",
+    "id": 4,
+    "cnName": "aige",
+    "rarity": "SR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When teamed up with Echo, allies within **10** meters around Echo gain a damage boost of **4%** (excluding Echo)."
+        },
+        {
+            "affinity": 4000,
+            "description": "When teamed up with Echo, allies within **10** meters around Echo gain a damage boost of **6%** (excluding Echo)."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "162 cm",
+    "birthplace": "Warren",
+    "horoscope": "Leo",
+    "birthday": "14 Aug",
+    "voiceActors": {
+        "jp": "大久保瑠美 (Rumi Okubo)",
+        "en": "Jeannie Tirado",
+        "cn": ""
+    }
+}

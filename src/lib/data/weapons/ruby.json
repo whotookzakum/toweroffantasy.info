@@ -1,0 +1,40 @@
+{
+    "name": "",
+    "imgSrc": "item_Weapon_SSR_funnel_Fire01",
+    "element": "",
+    "type": "",
+    "shatter": {
+        "tier": "",
+        "value": ""
+    },
+    "charge": {
+        "tier": "",
+        "value": ""
+    },
+    "baseStats": [
+        "attack",
+        "",
+        ""
+    ],
+    "materials": [
+        "",
+        "",
+        ""
+    ],
+    "weaponEffects": [
+        {
+            "title": "",
+            "description": ""
+        }
+    ],
+    "advancements": [
+        
+    ],
+    "abilities": [
+        
+    ],
+    "abilitiesVideoSrc": "",
+    "recommendedMatrices": [
+
+    ]
+}

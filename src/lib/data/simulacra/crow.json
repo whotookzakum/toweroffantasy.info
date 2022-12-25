@@ -1,0 +1,28 @@
+{
+    "name": "Crow",
+    "id": 13,
+    "cnName": "wuwan",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Crow is not in a team, increase damage dealt by **6%** and reduce damage received by **4%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Crow is not in a team, increase damage dealt by **10%** and reduce damage received by **6%** When Crow enters combat, increase damage dealt by **12%** for **12** seconds."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": "162 cm",
+    "birthplace": "Astra",
+    "horoscope": "Sagittarius",
+    "birthday": "17 Dec",
+    "voiceActors": {
+        "jp": "岡本信彦 (Nobuhiko Okamoto)",
+        "en": "Casey Mongillo",
+        "cn": "翟巍"
+    }
+}

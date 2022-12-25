@@ -1,0 +1,46 @@
+{
+    "name": "Lyra",
+    "id": 24,
+    "cnName": "xinghuan",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 16,
+                "start": "29 Jul 2022",
+                "end": "17 Aug 2022",
+                "duration": "19d",
+                "week": "33~36"
+            },
+            {
+                "bannerNo": 26,
+                "start": "1 Nov 2022",
+                "end": "14 Nov 2022",
+                "duration": "13d",
+                "week": "48~50"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Benediction Resonance: Increase Max HP by **10%** for the entire team. Unstackable."
+        },
+        {
+            "affinity": 4000,
+            "description": "Benediction Resonance: Increase Max HP by **10%** for the entire team. This effect cannot be stacked. Additionally, increase your Max HP by 10%. Each time you successfully use the skill while having hyperbody or more than **50%** HP, grant hyperbody to all allies for **8** seconds."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "174 cm",
+    "birthplace": "???",
+    "horoscope": "Cancer",
+    "birthday": "23 Jun",
+    "voiceActors": {
+        "jp": "",
+        "en": "Ryan Bartley",
+        "cn": "常佳梦"
+    }
+}

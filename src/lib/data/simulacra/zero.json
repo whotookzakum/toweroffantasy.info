@@ -1,0 +1,28 @@
+{
+    "name": "Zero",
+    "id": 1,
+    "cnName": "ling",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by **1.5** seconds. Can only activate for the same weapon **1** time every **5** seconds."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by **3** seconds. Can only activate for the same weapon **1** time every **5** seconds."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": "155 cm",
+    "birthplace": "Banges",
+    "horoscope": "Gemini",
+    "birthday": "6 Jun",
+    "voiceActors": {
+        "jp": "村瀬歩 (Ayumu Murase)",
+        "en": "",
+        "cn": "幽幽"
+    }
+}

@@ -6,7 +6,7 @@ export const fetchAllSimulacra = async () => {
         iterableItemFiles.map(async ([path, resolver]) => {
             const data = await resolver()
             const itemPath = path.slice(13, -5)
-            const simulacrumName = itemPath.split('/simulacra/').pop().replace('-', '')
+            const simulacrumName = itemPath.split('/simulacra/').pop()
             const weapon = await import(`../data/weapons/${simulacrumName}.json`)
 
             return {
@@ -20,12 +20,6 @@ export const fetchAllSimulacra = async () => {
     allItems.sort((a, b) => a.id - b.id)
 
     return allItems
-}
-
-export function getElementImgSrc(element) {
-    switch (element) {
-
-    }
 }
 
 export function getCNTranslation(text) {

@@ -1,0 +1,28 @@
+{
+    "name": "Ene",
+    "id": 2,
+    "cnName": "xi",
+    "rarity": "SR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Ene swims, climbs, or glides, reduce endurance consumption by **12%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Ene swims, climbs, or glides, reduce endurance consumption by **20%**."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "145 cm",
+    "birthplace": "Crown",
+    "horoscope": "Leo",
+    "birthday": "17 Aug",
+    "voiceActors": {
+        "jp": "小清水亜美 (Ami Koshimizu)",
+        "en": "Melissa Fahn",
+        "cn": ""
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Annabella",
+    "id": 26,
+    "chinaOnly": true,
+    "cnName": "annabeila",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 20,
+                "start": "9 Sep 2022",
+                "end": "28 Sep 2022",
+                "duration": "19d",
+                "week": "40~43"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **10%** for **20** seconds, stacks **2** times."
+        },
+        {
+            "affinity": 4000,
+            "description": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "166 cm",
+    "birthplace": "???",
+    "horoscope": "Taurus",
+    "birthday": "28 April",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "洪海天"
+    }
+}

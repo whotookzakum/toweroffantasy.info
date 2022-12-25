@@ -1,0 +1,28 @@
+{
+    "name": "Hilda",
+    "id": 15,
+    "cnName": "xierda",
+    "rarity": "SR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Hilda uses a vehicle, increase speed by **7%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Hilda uses a vehicle, increase speed by **10%**."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "165 cm",
+    "birthplace": "???",
+    "horoscope": "Aries",
+    "birthday": "11 Apr",
+    "voiceActors": {
+        "jp": "花澤香菜 (Kana Hanazawa)",
+        "en": "Kira Buckland",
+        "cn": ""
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Coco Ritter",
+    "id": 11,
+    "cnName": "kekelite",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Cocoritter uses a support weapon, increase healing effects she inflicts on others and receives by **20%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Cocoritter uses a support weapon, increase healing and healing received by **20%**. And when Cocoritter uses a support-type weapon's discharge skill or weapon skill, increase nearby allies' ATK by **15%** for **5**."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "147 cm",
+    "birthplace": "Hagarde",
+    "horoscope": "Gemini",
+    "birthday": "1 Jun",
+    "voiceActors": {
+        "jp": "鬼頭明里 (Kito Akari)",
+        "en": "Lexi Fontaine",
+        "cn": "胡婷婷"
+    }
+}

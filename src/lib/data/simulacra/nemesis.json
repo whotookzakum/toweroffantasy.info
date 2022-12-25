@@ -1,0 +1,73 @@
+{
+    "name": "Nemesis",
+    "id": 17,
+    "cnName": "naimeixisi",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 5,
+                "start": "05 Mar 2022",
+                "end": "24 Mar 2022",
+                "duration": "19d",
+                "week": "12~15"
+            },
+            {
+                "bannerNo": 13,
+                "subtext": "Standard in September",
+                "start": "23 Jun 2022",
+                "end": "9 Jul 2022",
+                "duration": "16d",
+                "week": "28~30"
+            },
+            {
+                "bannerNo": 17,
+                "subtext": "Standard in September",
+                "start": "11 Aug 2022",
+                "end": "21 Aug 2022",
+                "duration": "10d",
+                "week": "35~37"
+            },
+            {
+                "bannerNo": 21,
+                "subtext": "Standard afterwards",
+                "start": "18 Sep 2022",
+                "end": "28 Sep 2022",
+                "duration": "10d",
+                "week": "42~43",
+                "standardAfterwards": true
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 1,
+                "start": "10 Aug 2022",
+                "end": "31 Aug 2022",
+                "duration": "21d",
+                "week": "1~4"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "After summoning an Electrode, deal volt damage equal to **60%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **120%** of ATK."
+        },
+        {
+            "affinity": 4000,
+            "description": "After summoning an Electrode, deal volt damage equal to **100%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **200%** of ATK."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "165 cm",
+    "birthplace": "???",
+    "horoscope": "Gemini",
+    "birthday": "25 May",
+    "voiceActors": {
+        "jp": "戸松遥",
+        "en": "Suzie Yeung",
+        "cn": "宋媛媛"
+    }
+}

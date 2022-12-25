@@ -1,0 +1,28 @@
+{
+    "name": "Pepper",
+    "id": 14,
+    "cnName": "peipei",
+    "rarity": "SR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Pepper spends satiety to restore HP, increase restoration effect by **100%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Pepper spends satiety to restore HP, increase restoration effect by **200%**."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "160 cm",
+    "birthplace": "Banges",
+    "horoscope": "Cancer",
+    "birthday": "9 Jul",
+    "voiceActors": {
+        "jp": "能登麻美子 (Mamiko Noto)",
+        "en": "Kayli Mills",
+        "cn": ""
+    }
+}

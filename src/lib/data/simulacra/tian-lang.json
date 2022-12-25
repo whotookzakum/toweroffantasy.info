@@ -1,0 +1,46 @@
+{
+    "name": "Tian Lang",
+    "id": 29,
+    "cnName": "tianlang",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 18,
+                "start": "17 Aug 2022",
+                "end": "4 Sep 2022",
+                "duration": "18d",
+                "week": "36~39"
+            },
+            {
+                "bannerNo": 29,
+                "start": "20 Nov 2022",
+                "end": "9 Dec 2022",
+                "duration": "19d",
+                "week": "51~53"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Each use of volt weapon skill or discharge skill gains **1** free dodge attempt, up to **2** attempts. When volt weapon skill and discharge skill are used simultaneously, increase volt damage by **12%** for **8** seconds. This effect cannot be stacked."
+        },
+        {
+            "affinity": 4000,
+            "description": "Each use of volt weapon skill or discharge skill gains **1** free dodge attempt, up to **3** attempts. When volt weapon skill and discharge skill are used simultaneously, increase volt damage by **18%** for **8** seconds. This effect cannot be stacked."
+        }
+    ],
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": "185 cm",
+    "birthplace": "Mirroria",
+    "horoscope": "Aries",
+    "birthday": "23 Mar",
+    "voiceActors": {
+        "jp": "",
+        "en": "Kaiji Tang",
+        "cn": "淦子齐"
+    }
+}
