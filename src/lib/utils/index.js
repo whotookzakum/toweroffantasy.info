@@ -51,7 +51,7 @@ export const fetchAllBanners = async (version) => {
 
     const sortedBanners = []
 
-    const allSimulacraInVersion = allSimulacra.filter(simulacrum => simulacrum.banners && simulacrum.banners[version])
+    const allSimulacraInVersion = allSimulacra.filter(simulacrum => simulacrum.banners?.[version])
 
     allSimulacraInVersion.forEach(simulacrum => {
         const { banners, ...otherData } = simulacrum
