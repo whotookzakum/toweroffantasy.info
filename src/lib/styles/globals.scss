@@ -41,26 +41,6 @@ figure {
     grid-column: 1/-1 !important;
 }
 
-.bg-img {
-    position: fixed;
-    z-index: -5;
-    right: 0;
-    top: 0;
-    object-fit: none;
-    object-position: 200px;
-    transition: opacity 0.5s ease;
-
-    &[src*="weila_lihui"] {
-        object-position: 400px;
-    }
-
-    &[src*="huodong_meishi"] {
-        object-position: 0px;
-        top: unset;
-        bottom: 0;
-    }
-}
-
 .anchorjs-link {
     border: none;
     position: absolute;

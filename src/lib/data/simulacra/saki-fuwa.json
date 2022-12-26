@@ -8,25 +8,19 @@
             {
                 "bannerNo": 12,
                 "start": "03 Jun 2022",
-                "end": "23 Jun 2022",
-                "duration": "20d",
-                "week": "25~28"
+                "end": "23 Jun 2022"
             },
             {
                 "bannerNo": 22,
                 "start": "28 Sep 2022",
-                "end": "17 Oct 2022",
-                "duration": "19d",
-                "week": "43~46"
+                "end": "17 Oct 2022"
             }
         ],
         "glob": [
             {
                 "bannerNo": 6,
                 "start": "9 Nov 2022",
-                "end": "1 Dec 2022",
-                "duration": "22d",
-                "week": "14~17"
+                "end": "1 Dec 2022"
             }
         ]
     },

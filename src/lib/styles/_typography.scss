@@ -42,29 +42,59 @@ aside i {
     font-weight: bolder;
 }
 
-abbr[title*="China"] {
+
+abbr {
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
     color: rgb(228, 228, 228);
     line-height: 1;
-    background-image: linear-gradient(-45deg, transparent 15%, #e72e37 0);
     border-radius: 2px;
     letter-spacing: 0.05em;
-    padding: 0.2em 0.42em 0.2em 0.36em;
     text-decoration: none;
     text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
-
-    &::before {
-        content: "CN";
-    }
+    //
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2em 0.36em;
 
     &.absolute {
         position: absolute;
         margin: 0.5rem;
         top: 0;
         left: 0;
+    }
+}
+
+abbr[title*="China"] {
+    --bg: #e72e37;
+    padding: 0.2em 0.42em 0.2em 0.36em;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient(-45deg, transparent 15%, var(--bg) 0);
+
+    &::before {
+        content: "CN";
+    }
+}
+
+abbr[title*="Standard"] {
+    background: rgb(42, 129, 179);
+    &::before {
+        content: "Final";
+    }
+}
+
+abbr[title*="Limited Banner only"] {
+    background: rgb(179, 42, 111);
+    &::before {
+        content: "Limited";
+    }
+}
+
+abbr[title*="Collab"] {
+    background: forestgreen;
+    &::before {
+        content: "Collab";
     }
 }
 

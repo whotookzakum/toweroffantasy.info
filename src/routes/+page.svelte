@@ -1,62 +1,11 @@
 <script>
     import BannerTable from "$lib/components/BannerTable.svelte";
+    import _ from "lodash";
+
+    export let data;
 
     let showGlobalBanners,
         showChinaBanners = false;
-
-    const globalBanners = [
-        {
-            name: "Lin",
-            element: "altered",
-            start: "16 Dec 2022",
-            end: "28 Dec 2022",
-            duration: "12d",
-            week: "43~45",
-        },
-        {
-            name: "Fenrir",
-            element: "volt",
-            start: "16 Dec 2022",
-            end: "28 Dec 2022",
-            duration: "12d",
-            week: "43~45",
-        },
-        {
-            name: "Annabella",
-            element: "flame",
-            start: "16 Dec 2022",
-            end: "28 Dec 2022",
-            duration: "12d",
-            week: "43~45",
-        },
-    ];
-
-    const chinaBanners = [
-        {
-            name: "Ruby",
-            element: "flame",
-            start: "16 Dec 2022",
-            end: "28 Dec 2022",
-            duration: "12d",
-            week: "43~45",
-        },
-        {
-            name: "Saki Fuwa",
-            element: "ice",
-            start: "16 Dec 2022",
-            end: "28 Dec 2022",
-            duration: "12d",
-            week: "43~45",
-        },
-        {
-            name: "Tian Lang",
-            element: "volt",
-            start: "16 Dec 2022",
-            end: "28 Dec 2022",
-            duration: "12d",
-            week: "43~45",
-        },
-    ];
 </script>
 
 <h1>Tower of Fantasy Index</h1>
@@ -98,15 +47,18 @@
                 tabindex={0}
             >
                 <th>Global</th>
-                <td><a href="/simulacra/lin">Lin</a></td>
-                <td>7</td>
-                <td>7</td>
-                <td><a href="/simulacra/lin">Lin</a></td>
-                <td>0</td>
+                <td />
+                <td>{data.glob.length}</td>
+                <td>{_.uniqBy(data.glob, "name").length}</td>
+                <td><a href={data.glob[0].path}>{data.glob[0].name}</a></td>
+                <td
+                    >{data.glob.filter((banner) => banner.standardAfterwards)
+                        .length}</td
+                >
             </tr>
             <tr class="collapse" class:expand={showGlobalBanners}>
                 <td colspan="6">
-                    <BannerTable banners={globalBanners} />
+                    <BannerTable banners={data.glob} version="glob" />
                 </td>
             </tr>
             <tr
@@ -119,20 +71,23 @@
                 tabindex={0}
             >
                 <th>China</th>
-                <td><a href="/simulacra/fenrir">Fenrir</a></td>
-                <td>30</td>
-                <td>15</td>
-                <td><a href="/simulacra/fenrir">Fenrir</a></td>
-                <td>4</td>
+                <td />
+                <td>{data.cn.length}</td>
+                <td>{_.uniqBy(data.cn, "name").length}</td>
+                <td><a href={data.cn[0].path}>{data.cn[0].name}</a></td>
+                <td
+                    >{data.cn.filter((banner) => banner.standardAfterwards)
+                        .length}</td
+                >
             </tr>
             <tr class="collapse" class:expand={showChinaBanners}>
                 <td colspan="6">
-                    <BannerTable banners={chinaBanners} />
+                    <BannerTable banners={data.cn} version="cn" />
                 </td>
             </tr>
         </tbody>
     </table>
-    <figcaption style="color: var(--accent)">
+    <figcaption>
         Click on a table row to show all banners for that version.
     </figcaption>
 </figure>
@@ -190,5 +145,9 @@
             font-size: inherit;
             color: var(--accent);
         }
+    }
+
+    figcaption {
+        color: var(--accent);
     }
 </style>

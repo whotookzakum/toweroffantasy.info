@@ -1,25 +1,25 @@
 {
     "name": "",
-    "imgSrc": "",
-    "element": "",
-    "type": "",
+    "imgSrc": "item_Weapon_SSR_umbrella_Fire01",
+    "element": "flame",
+    "type": "defense",
     "shatter": {
-        "tier": "",
-        "value": ""
+        "tier": "SS",
+        "value": "15.80"
     },
     "charge": {
-        "tier": "",
-        "value": ""
+        "tier": "A",
+        "value": "8.00"
     },
     "baseStats": [
         "attack",
-        "",
-        ""
+        "resistance",
+        "health"
     ],
     "materials": [
-        "",
-        "",
-        ""
+        "flame",
+        "red",
+        "black"
     ],
     "weaponEffects": [
         {

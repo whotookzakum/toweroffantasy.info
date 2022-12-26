@@ -1,6 +1,7 @@
 <script>
     import '$lib/styles/globals.scss'
     import Navigation from '$lib/components/Navigation.svelte';
+    import BackgroundImage from '$lib/components/BackgroundImage.svelte';
 </script>
 
 <div class="grid">
@@ -10,8 +11,7 @@
     </main>
 </div>
 
-<img class="bg-img" src={`/images/UI/huanxing/lihui/fenlier.png`} alt="Background">
-
+<BackgroundImage />
 
 <style lang="scss">
     .grid {

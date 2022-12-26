@@ -8,17 +8,13 @@
             {
                 "bannerNo": 2,
                 "start": "8 Jan 2022",
-                "end": "26 Jan 2022",
-                "duration": "18d",
-                "week": "4~7"
+                "end": "26 Jan 2022"
             },
             {
                 "bannerNo": 8,
                 "subtext": "Standard afterwards",
                 "start": "13 Apr 2022",
                 "end": "27 Apr 2022",
-                "duration": "14d",
-                "week": "18~20",
                 "standardAfterwards": true
             }
         ],
@@ -26,9 +22,7 @@
             {
                 "bannerNo": 4,
                 "start": "5 Oct 2022",
-                "end": "26 Oct 2022",
-                "duration": "21d",
-                "week": "9~12"
+                "end": "26 Oct 2022"
             }
         ]
     },

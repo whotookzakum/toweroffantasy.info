@@ -1,23 +1,58 @@
 <script>
-    export let banners;
+    export let banners, version;
+
+    const getDurationInDays = (start, end) => {
+        return Math.ceil(
+            Math.abs(new Date(start).getTime() - new Date(end).getTime()) /
+                (1000 * 3600 * 24)
+        );
+    };
+
+    function getWeeksSinceLaunch(end) {
+        let start = version === "cn" ? "16 Dec 2021" : "10 Aug 2022";
+        return Math.round(getDurationInDays(start, end) / 7);
+    }
 </script>
 
 <table class="banner-table">
     <thead>
+        <th>#</th>
         <th>Simulacrum</th>
+        <th>Notes</th>
         <th>Event Dates</th>
         <th>Duration</th>
         <th>Week #</th>
     </thead>
     <tbody>
-        {#each banners as banner}
+        {#each banners as banner, index}
             <tr>
-                <td style={`color: var(--element-${banner.element})`} >
-                    <a href={`/simulacra/${banner.name.toLowerCase()}`}>{banner.name}</a>
+                <td>{banners.length - index}</td>
+                <td>
+                    <a
+                        href={banner.path}
+                        style={`color: var(--element-${banner.element})`}
+                    >
+                        {banner.name}
+                    </a>
+                    
                 </td>
-                <td>{banner.start}<br />{banner.end}</td>
-                <td>{banner.duration}</td>
-                <td>{banner.week}</td>
+                <td>
+                    {#if banner.subtext}
+                        <abbr title={banner.subtext} />
+                    {/if}
+                </td>
+                <td>
+                    {new Date(banner.start).toLocaleDateString()} —
+                    {new Date(banner.end).toLocaleDateString()}
+                </td>
+                <td>
+                    {getDurationInDays(banner.start, banner.end)} days
+                </td>
+                <td>
+                    {getWeeksSinceLaunch(banner.start)}~{getWeeksSinceLaunch(
+                        banner.end
+                    )}
+                </td>
             </tr>
         {/each}
     </tbody>
@@ -28,5 +63,16 @@
         margin: 0;
         box-shadow: inset 0 7px 9px -7px var(--surface-shadow),
             inset 0 -7px 9px -7px var(--surface-shadow);
+        font-size: 0.9rem;
+
+        a,
+        a:hover {
+            border: none;
+            color: unset;
+        }
+
+        td {
+            color: var(--text2);
+        }
     }
 </style>

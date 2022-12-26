@@ -10,17 +10,13 @@
                 "bannerNo": 3,
                 "subtext": "Collaboration Event",
                 "start": "26 Jan 2022",
-                "end": "13 Feb 2022",
-                "duration": "18d",
-                "week": "7~9"
+                "end": "13 Feb 2022"
             },
             {
                 "bannerNo": 10,
                 "subtext": "Collaboration Event",
                 "start": "13 May 2022",
-                "end": "23 May 2022",
-                "duration": "10d",
-                "week": "22~24"
+                "end": "23 May 2022"
             }
         ]
     },

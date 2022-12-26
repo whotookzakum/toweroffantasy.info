@@ -41,7 +41,7 @@
         },
         {
             text: "Shop",
-            href: "https://pyrosu-shop.fourthwall.com"
+            href: "https://pyrosu-shop.fourthwall.com",
         },
     ];
 
@@ -120,12 +120,19 @@
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
         width: 250px;
         height: 100vh;
+        overflow-y: scroll;
         position: sticky;
         top: 0;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         --padding: 0.75rem 1.5rem;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .home-link {

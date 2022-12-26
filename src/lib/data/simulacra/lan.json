@@ -1,32 +1,38 @@
 {
     "name": "Lan",
     "id": 34,
-    "cnName": "",
+    "cnName": "lan",
     "chinaOnly": true,
     "rarity": "SSR",
     "banners": {
-
+        "cn": [
+            {
+                "bannerNo": 5000,
+                "start": "15 Dec 2022",
+                "end": "11 Jan 2023"
+            }
+        ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": ""
+            "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **16%** to yourself and teammates inside the boundary."
         },
         {
             "affinity": 4000,
-            "description": ""
+            "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **16%** and increase final damage by **8%** to yourself and teammates inside the boundary."
         }
     ],
     "giftTypes": [],
     "bestGifts": [],
-    "gender": "",
-    "height": "",
-    "birthplace": "",
-    "horoscope": "",
-    "birthday": "",
+    "gender": "female",
+    "height": "172 cm",
+    "birthplace": "???",
+    "horoscope": "Taurus",
+    "birthday": "5 May",
     "voiceActors": {
         "jp": "",
         "en": "",
-        "cn": ""
+        "cn": "陈雨"
     }
 }

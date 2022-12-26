@@ -8,33 +8,23 @@
             {
                 "bannerNo": 5,
                 "start": "05 Mar 2022",
-                "end": "24 Mar 2022",
-                "duration": "19d",
-                "week": "12~15"
+                "end": "24 Mar 2022"
             },
             {
                 "bannerNo": 13,
-                "subtext": "Standard in September",
                 "start": "23 Jun 2022",
-                "end": "9 Jul 2022",
-                "duration": "16d",
-                "week": "28~30"
+                "end": "9 Jul 2022"
             },
             {
                 "bannerNo": 17,
-                "subtext": "Standard in September",
                 "start": "11 Aug 2022",
-                "end": "21 Aug 2022",
-                "duration": "10d",
-                "week": "35~37"
+                "end": "21 Aug 2022"
             },
             {
                 "bannerNo": 21,
                 "subtext": "Standard afterwards",
                 "start": "18 Sep 2022",
                 "end": "28 Sep 2022",
-                "duration": "10d",
-                "week": "42~43",
                 "standardAfterwards": true
             }
         ],
@@ -42,9 +32,7 @@
             {
                 "bannerNo": 1,
                 "start": "10 Aug 2022",
-                "end": "31 Aug 2022",
-                "duration": "21d",
-                "week": "1~4"
+                "end": "31 Aug 2022"
             }
         ]
     },
