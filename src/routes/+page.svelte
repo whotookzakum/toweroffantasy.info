@@ -146,8 +146,4 @@
             color: var(--accent);
         }
     }
-
-    figcaption {
-        color: var(--accent);
-    }
 </style>

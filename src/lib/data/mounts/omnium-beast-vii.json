@@ -1,0 +1,21 @@
+{
+    "name": "Omnium Beast VII",
+    "imgSrc": "zuoqi_tubiap_04",
+    "parts": [
+        {
+            "source": "Obtained during the Navia Ecological Park hidden quest line.",
+            "imgSrc": "Mount_003_a",
+            "video": "https://www.youtube.com/embed/CWBbNM2SHyw?start=146"
+        },
+        {
+            "source": "Inside the locked bunker at HT201 Shelter in southeast Banges (88, 966).\n\nPasscode is *1647*.",
+            "imgSrc": "Mount_003_b"
+        },
+        {
+            "source": "Rare drop from [***Behemoths***](/images/elitemaps/omniumbeastviielites.webp) (巨兽).",
+            "imgSrc": "Mount_003_c",
+            "dropRate": "0.15"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/RMyk7Hz-HP4"
+}

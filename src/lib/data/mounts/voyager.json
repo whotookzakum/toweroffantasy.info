@@ -1,0 +1,25 @@
+{
+    "name": "Voyager",
+    "imgSrc": "zuoqi_tubiap_11",
+    "parts": [
+        {
+            "source": "Obtained during the Navia Ecological Park hidden quest line.",
+            "imgSrc": "Mount_011_a",
+            "video": "https://www.youtube.com/embed/CWBbNM2SHyw?start=225"
+        },
+        {
+            "source": "Rare drop from the [***Four Powers***](/images/elitemaps/voyagerelites.webp) (四雄).",
+            "imgSrc": "Mount_011_b",
+            "dropRate": "0.10"
+        },
+        {
+            "source": "Inside the locked bunker at Seaforth Dock in southern Crown (511, 767).\n\nPasscode is *3594*.",
+            "imgSrc": "Mount_011_c"
+        },
+        {
+            "source": "Obtained during the Navia Ecological Park hidden quest line.",
+            "imgSrc": "Mount_011_d",
+            "video": "https://www.youtube.com/embed/CWBbNM2SHyw?start=379"
+        }
+    ]
+}

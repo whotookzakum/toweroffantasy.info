@@ -21,12 +21,18 @@ export const fetchAllSimulacra = async () => {
     // Only the characters that were in the limited banner need to be sorted
     // Standard characters were already fetched alphabetically
     allItems.sort((a, b) => {
-        const firstBannerA = a.banners ? a.banners.cn[0].bannerNo : -1
-        const firstBannerB = b.banners ? b.banners.cn[0].bannerNo : 1
+        const firstBannerA = a.banners?.cn[0].bannerNo ?? -1
+        const firstBannerB = b.banners?.cn[0].bannerNo ?? 1
         return firstBannerB - firstBannerA
     })
 
     return allItems
+}
+
+export const fetchSimulacrum = async (fileName) => {
+    const simulacrum = await import(`../data/simulacra/${fileName}.json`)
+    const weapon = await import(`../data/weapons/${fileName}.json`)
+    return { ...simulacrum, weapon }
 }
 
 export const fetchAllBanners = async (version) => {
@@ -63,4 +69,53 @@ export const fetchAllBanners = async (version) => {
     sortedBanners.sort((a, b) => b.bannerNo - a.bannerNo)
 
     return sortedBanners
+}
+
+export const fetchAllRelics = async () => {
+    const allRelicFiles = import.meta.glob('/src/lib/data/relics/*.json')
+    const iterableItemFiles = Object.entries(allRelicFiles)
+
+    const allItems = await Promise.all(
+        iterableItemFiles.map(async ([path, resolver]) => {
+            const data = await resolver()
+            const itemPath = path.slice(13, -5)
+
+            return {
+                ...data.default,
+                path: itemPath,
+            }
+        })
+    )
+
+    return allItems
+}
+
+export const fetchRelic = async (fileName) => {
+    const relic = await import(`../data/relics/${fileName}.json`)
+    return relic
+}
+
+
+export const fetchAllMounts = async () => {
+    const allRelicFiles = import.meta.glob('/src/lib/data/mounts/*.json')
+    const iterableItemFiles = Object.entries(allRelicFiles)
+
+    const allItems = await Promise.all(
+        iterableItemFiles.map(async ([path, resolver]) => {
+            const data = await resolver()
+            const itemPath = path.slice(13, -5)
+
+            return {
+                ...data.default,
+                path: itemPath,
+            }
+        })
+    )
+
+    return allItems
+}
+
+export const fetchMount = async (fileName) => {
+    const relic = await import(`../data/mounts/${fileName}.json`)
+    return relic
 }

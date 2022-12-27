@@ -1,0 +1,23 @@
+{
+    "name": "Mechbird",
+    "imgSrc": "zuoqi_tubiap_07",
+    "parts": [
+        {
+            "source": "Purchasable from event shop during event period.",
+            "imgSrc": "Mount_007_a"
+        },
+        {
+            "source": "Purchasable from event shop during event period.",
+            "imgSrc": "Mount_007_b"
+        },
+        {
+            "source": "Purchasable from event shop during event period.",
+            "imgSrc": "Mount_007_c"
+        },
+        {
+            "source": "Purchasable from event shop during event period.\n\n<abbr title='China Exclusive'></abbr> Rewarded for server progress reaching 100% during event period.",
+            "imgSrc": "Mount_007_d"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/-JJNBnwHjcM"
+}

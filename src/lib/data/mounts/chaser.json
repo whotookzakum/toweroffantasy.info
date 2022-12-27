@@ -1,0 +1,16 @@
+{
+    "name": "Chaser",
+    "imgSrc": "zuoqi_tubiap_03",
+    "parts": [
+        {
+            "source": "Supply pod at Rusty Belt in northern Astra (-829, 473).",
+            "imgSrc": "Mount_002_a"
+        },
+        {
+            "source": "Rare drop from [***The Vermin Brothers***](/images/elitemaps/chaserelites.webp) (四鼠兄弟).",
+            "imgSrc": "Mount_002_b",
+            "dropRate": "0.20"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/GXXJ0bO8tTE"
+}

@@ -18,6 +18,7 @@
         box-shadow: 0 2px 4px var(--surface-shadow);
         position: relative;
         transition: all 0.1s ease;
+        overflow: hidden;
 
         &:hover {
             background: var(--surface3);

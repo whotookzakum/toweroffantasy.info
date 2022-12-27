@@ -1,0 +1,15 @@
+{
+    "name": "Jerboa - Pain Car",
+    "imgSrc": "zuoqi_tubiap_12_1",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained from gachapon during the event period.",
+            "imgSrc": "Mount_012_1"
+        },
+        {
+            "source": "Obtained from the Gachapon Capsule Machines found in Mirroria - District A.",
+            "imgSrc": "Mount_012_2"
+        }
+    ]
+}

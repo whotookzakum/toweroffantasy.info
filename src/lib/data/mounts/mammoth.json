@@ -1,0 +1,12 @@
+{
+    "name": "Mammoth",
+    "chinaOnly": true,
+    "imgSrc": "zuoqi_Racing_tubiap_2",
+    "parts": [
+        {
+            "source": "Obtained from gachapon during the Wild Beat event.",
+            "imgSrc": "Mount_Racing_002"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/JkJK7VGbdZo?start=16"
+}

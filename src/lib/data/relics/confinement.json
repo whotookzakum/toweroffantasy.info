@@ -1,0 +1,15 @@
+{
+    "name": "Confinement",
+    "imgSrc": "artifact_ssr_006",
+    "rarity": "SSR",
+    "description": "Create an area of confinement with a radius of **7** meters for **10** seconds. Energy pulses within the area, dealing elemental damage equal to **73.4%** of ATK every second, based on the current weapon's element. Targets that touch the edge of the area are afflicted with a **2**-second **stun** effect. **240**-second cooldown.",
+    "advancements": [
+        "Now stun targets for **3** seconds and have a **180**-second cooldown.",
+        "Increase damage dealt by energy pulses by **30%**.",
+        "Reduce cooldown to **120** seconds.",
+        "Increase physical damage by **2%**, even if not deployed. Unavailable in Apex League.",
+        "Trigger an earthquake every **3** seconds, **suspending targets**. The waves can be dodged by jumping."
+    ],
+    "videoSrc": "https://www.youtube.com/embed/u_R3SUSnALI",
+    "starsInVideo": "1"
+}

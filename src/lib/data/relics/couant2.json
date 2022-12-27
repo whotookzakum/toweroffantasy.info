@@ -1,0 +1,16 @@
+{
+    "name": "Couant 2",
+    "imgSrc": "artifact_ssr_012_icon",
+    "rarity": "SSR",
+    "chinaOnly": true,
+    "description": "Gain a shield that lasts for **5** seconds. After 1 attack it disappears, knocking surrounding enemies and deal damage equal to **100%** + **50** of ATK. When the shield is broken within 1 second of generating, it stuns the enemy for **2** seconds and you will receive a damage boost by a percentage of your current life for **10** seconds (up to **60%**). Cooldown **30** seconds, shared cooldown with Couant.",
+    "advancements": [
+        "Immediately gain **100** energy charge if your HP is more than **90%**. Immediately gain **50** energy if your HP is less than **90%**. Immediately gain another **50** energy when the damage boost ends.",
+        "Damage boost duration increased to **12** seconds.",
+        "Max damage boost increased to **70%**",
+        "Increase fire damage by **2%**, even if not deployed. Unavailable in Apex League.",
+        "If your missing HP is greater than your current HP, the damage buff is based on the percentage of missing HP (up to **70%**)."
+    ],
+    "videoSrc": "https://www.youtube.com/embed/__zG3m3sL44",
+    "starsInVideo": "4"
+}
