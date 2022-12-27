@@ -1,0 +1,17 @@
+{
+    "name": "Lan",
+    "chinaOnly": true,
+    "id": 25,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR34_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": ""
+        },
+        {
+            "pieces": 4,
+            "description": ""
+        }
+    ]
+}

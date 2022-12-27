@@ -14,10 +14,7 @@
 <h2><span style="color: var(--tier-s)">SSR</span> Relics</h2>
 <Menu>
     {#each relics.filter((r) => r.rarity === "SSR") as relic}
-        <MenuItem href={relic.path}>
-            {#if relic.chinaOnly}
-                <abbr class="absolute" title="China Exclusive" />
-            {/if}
+        <MenuItem href={relic.path} chinaOnly={relic.chinaOnly}>
             <img
                 src={`/images/UI/Artifact/icon/${relic.imgSrc}.png`}
                 alt={relic.name}
@@ -32,10 +29,7 @@
 <h2><span style="color: var(--tier-a)">SR</span> Relics</h2>
 <Menu>
     {#each relics.filter((r) => r.rarity === "SR") as relic}
-        <MenuItem href={relic.path}>
-            {#if relic.chinaOnly}
-                <abbr class="absolute" title="China Exclusive" />
-            {/if}
+        <MenuItem href={relic.path} chinaOnly={relic.chinaOnly}>
             <img
                 src={`/images/UI/Artifact/icon/${relic.imgSrc}.png`}
                 alt={relic.name}

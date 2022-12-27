@@ -1,0 +1,16 @@
+{
+    "name": "Tsubasa",
+    "id": 2,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR2_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increase damage dealt by **14%/16%/18%/20%** when there are no enemies within 4 meters."
+        },
+        {
+            "pieces": 4,
+            "description": "Upon a headshot or using Icewind Arrow: Piercing Shot, increase ATK by **15%/18%/21%/25%** for 8 seconds."
+        }
+    ]
+}

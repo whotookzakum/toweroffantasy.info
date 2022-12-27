@@ -1,10 +1,17 @@
-[
-    {
-        "pieces": 2,
-        "description": "Crit damage increased by **20%/24%/28%/32%**, does not stack. This effect works in the background, and if multiple sets are used, only the highest star set will take effect."
-    },
-    {
-        "pieces": 4,
-        "description": "Dealing volt damage increases final damage by **5%** for **10** seconds, up to **5/6/7/8** stacks. This effect works in the background, and if multiple sets are used, only the highest star set will take effect."
-    }
-]
+{
+    "name": "Fenrir",
+    "chinaOnly": true,
+    "id": 24,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR24_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Crit damage increased by **20%/24%/28%/32%**, does not stack. This effect works in the background, and if multiple sets are used, only the highest star set will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "Dealing volt damage increases final damage by **5%** for **10** seconds, up to **5/6/7/8** stacks. This effect works in the background, and if multiple sets are used, only the highest star set will take effect."
+        }
+    ]
+}

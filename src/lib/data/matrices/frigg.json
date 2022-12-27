@@ -1,0 +1,16 @@
+{
+    "name": "Frigg",
+    "id": 15,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR15_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increase frost ATK by **8%/10%/12%/15%** for **10** seconds when switching between frost weapons. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "When unleashing a frost domain with the weapon Balmung, enemies within the frost domain receive frost damage equal to **55%/65%/75%/85%** of frost ATK every second."
+        }
+    ]
+}

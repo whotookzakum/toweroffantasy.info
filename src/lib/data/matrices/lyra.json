@@ -1,0 +1,16 @@
+{
+    "name": "Lyra",
+    "id": 19,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR19_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": ""
+        },
+        {
+            "pieces": 4,
+            "description": ""
+        }
+    ]
+}

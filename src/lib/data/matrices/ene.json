@@ -1,0 +1,12 @@
+{
+    "name": "Ene",
+    "id": 0,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR8_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": ""
+        }
+    ]
+}

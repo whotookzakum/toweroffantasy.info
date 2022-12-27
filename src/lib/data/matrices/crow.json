@@ -1,0 +1,16 @@
+{
+    "name": "Crow",
+    "id": 8,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR11_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increase crit damage to targets with less than **60%** HP by **24%/30%/36%/42%**."
+        },
+        {
+            "pieces": 4,
+            "description": "Crits deal additional damage over time equal to **18%/22%/26%/30%** of ATK every second for **5** seconds. Does not stack."
+        }
+    ]
+}

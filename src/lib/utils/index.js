@@ -1,3 +1,4 @@
+// https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 export const fetchAllSimulacra = async () => {
     const allSimulacrumFiles = import.meta.glob('/src/lib/data/simulacra/*.json')
     const iterableItemFiles = Object.entries(allSimulacrumFiles)
@@ -11,7 +12,7 @@ export const fetchAllSimulacra = async () => {
 
             return {
                 ...data.default,
-                weapon,
+                weapon: weapon.default,
                 path: itemPath,
             }
         })
@@ -32,7 +33,8 @@ export const fetchAllSimulacra = async () => {
 export const fetchSimulacrum = async (fileName) => {
     const simulacrum = await import(`../data/simulacra/${fileName}.json`)
     const weapon = await import(`../data/weapons/${fileName}.json`)
-    return { ...simulacrum, weapon }
+    const result = simulacrum.default
+    return { ...result, weapon: weapon.default }
 }
 
 export const fetchAllBanners = async (version) => {
@@ -118,4 +120,34 @@ export const fetchAllMounts = async () => {
 export const fetchMount = async (fileName) => {
     const relic = await import(`../data/mounts/${fileName}.json`)
     return relic
+}
+
+export const fetchAllMatrices = async () => {
+    // Globally fetch all matrices
+    const allMatricesFiles = import.meta.glob('/src/lib/data/matrices/*.json')
+    // put matrices into array
+    const iterableItemFiles = Object.entries(allMatricesFiles)
+
+    const allItems = await Promise.all(
+        iterableItemFiles.map(async ([path, resolver]) => {
+            const data = await resolver()
+            // generate path based on file name
+            const itemPath = path.slice(13, -5)
+
+            return {
+                ...data.default,
+                path: itemPath,
+            }
+        })
+    )
+
+    // Sort matrices by matrix id
+    allItems.sort((a, b) => b.id - a.id)
+
+    return allItems
+}
+
+export const fetchMatrix = async (fileName) => {
+    const matrix = await import(`../data/matrices/${fileName}.json`)
+    return matrix.default
 }

@@ -23,10 +23,7 @@
 <h2><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
-        <MenuItem href={simulacrum.path}>
-            {#if simulacrum.chinaOnly}
-                <abbr class="absolute" title="China Exclusive" />
-            {/if}
+        <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
             {#if showWeaponIcon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
@@ -50,10 +47,7 @@
 <h2><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SR") as simulacrum}
-        <MenuItem href={simulacrum.path}>
-            {#if simulacrum.chinaOnly}
-                <abbr class="absolute" title="China Exclusive" />
-            {/if}
+        <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
             {#if showWeaponIcon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}

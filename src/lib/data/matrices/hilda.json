@@ -1,0 +1,12 @@
+{
+    "name": "Hilda",
+    "id": 0,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR7_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": ""
+        }
+    ]
+}

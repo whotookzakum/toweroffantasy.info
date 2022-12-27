@@ -1,0 +1,16 @@
+{
+    "name": "Zero",
+    "id": 1,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR8_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to **150%/200%/250%/300%** of ATK for **6** seconds."
+        },
+        {
+            "pieces": 4,
+            "description": "While the shield is active, you and your teammates deal **16%/20%/24%/28%** more damage."
+        }
+    ]
+}

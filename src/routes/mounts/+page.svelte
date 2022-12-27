@@ -15,10 +15,7 @@
 
 <Menu>
     {#each mounts as mount}
-        <MenuItem href={mount.path}>
-            {#if mount.chinaOnly}
-                <abbr class="absolute" title="China Exclusive" />
-            {/if}
+        <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>
             <img
                 src={`/images/UI/Mount/${mount.imgSrc}.png`}
                 alt={mount.name}
