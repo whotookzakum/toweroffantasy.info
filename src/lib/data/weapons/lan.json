@@ -102,7 +102,7 @@
                 "Fly to the feathers in the order that they appeared and finish in your initial position. The flight trajectory will stay for **5** seconds, and nearby enemies will have their movement speed reduced by **50%**. During this period, become immune to damage (unavaiable in Apex League), cooldown **12** seconds. Every time you fly past a feather, deal **333.3%** of ATK + **18** area damage, and cause the feather to rapidly rotate for **5** seconds."
         },
         {
-            "name": "",
+            "name": "Plume",
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong2",
             "description":
@@ -123,7 +123,7 @@
                 "When using the Fortitude Resonance:\n\nSuccessfully use any weapon skill to taunt nearby enemies for **2.5** seoncds;\n\nWhen turbulent tide is used, Lingguang's defensive area will be expanded, and nearby teammates gain hyperbody and receive **40%** reduced damage.\n\nDuring heartmelter, Lingguang Realm does not consume duration."
         },
         {
-            "name": "",
+            "name": "Magnificent Phoenix Breath",
             "type": "discharge",
             "imgSrc": "skill_umbrella_changeskill",
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and deal **1,180%** of ATK + **62** damage. During the animation, gain invincibility for **2.6** seconds (unavailable in Apex League). **Passive**: upon hit, increase your flame damage by **[Plume Gathering] x 3%** for **20** seconds."
