@@ -6,6 +6,8 @@
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
     import Item from "$lib/components/Item.svelte";
+    import EffectIcon from "$lib/components/food/EffectIcon.svelte";
+    
     onMount(() => {
         const anchors = new AnchorJS();
         anchors.add("h3");
@@ -49,6 +51,11 @@
                                     width="96"
                                     height="96"
                                 />
+                                {#if dish.icons}
+                                    {#each dish.icons as effect}
+                                        <EffectIcon {effect} />
+                                    {/each}
+                                {/if}
                             </Item>
                             <h3>{dish.name}</h3>
                         </div>
