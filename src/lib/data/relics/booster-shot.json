@@ -1,0 +1,14 @@
+{
+    "name": "Booster Shot",
+    "chinaOnly": true,
+    "imgSrc": "artifact_ssr_016",
+    "rarity": "SSR",
+    "description": "Mark the current weapon for injection with **3** shots, lasting **200** seconds, and boost damage by **5%** for **200** seconds. When using the marked weapon's skill, inject one shot and apply a **20%** damage boost for **20** seconds (removed when switching weapons), with a **240** seconds cooldown on the booster shot.\n\nAll shots and effects are removed when removing this relic or switching weapon sets, and the original marked shot effect is removed when re-marking the weapon.",
+    "advancements": [
+        "Increase number of injections to **5**",
+        "Deal **20%** more damage when hitting Heavily Wounded targets with a marked weapon",
+        "Cooldown reduced to **150** seconds",
+        "Increase physical damage by **2%** even when not deployed. Unavailable in Apex League.",
+        "Fully restores HP when using Booster Shot to mark a weapon (restores **20%** HP in Apex League)."
+    ]
+}
