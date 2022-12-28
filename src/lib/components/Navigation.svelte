@@ -110,7 +110,6 @@
     <footer>
         <a href="">Cookies</a>
         <a href="/privacy">Privacy</a>
-        © Tower of Fantasy Index.
     </footer>
 </nav>
 
@@ -190,7 +189,7 @@
     footer {
         padding: 1.5rem;
         margin-top: auto;
-        font-size: 0.9rem;
+        font-size: var(--step--2);
         color: var(--text2);
         display: grid;
         gap: 0.35rem;

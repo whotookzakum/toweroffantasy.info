@@ -1,5 +1,5 @@
 <script>
-    import Advancements from "$lib/components/simulacrum/Advancements.svelte";
+    import SvelteMarkdown from 'svelte-markdown'
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
     export let data;
@@ -14,3 +14,21 @@
     {/if}
     {data.rarity} Matrices
 </span>
+
+<h4 id="sets">Sets</h4>
+<figure>
+    <table class="bg-alternate">
+        <thead>
+            <th>Pieces</th>
+            <th>Effect</th>
+        </thead>
+        <tbody>
+            {#each data.sets as set, index}
+                <tr>
+                    <th style="color: var(--tier-s)">{set.pieces}</th>
+                    <td><SvelteMarkdown source={set.description} /></td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</figure>

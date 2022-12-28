@@ -23,7 +23,7 @@
             right: 0.3ch;
             bottom: 0.3ch;
             line-height: 1;
-            font-weight: 900;
+            font-weight: 700;
             text-shadow: 0 1px 3px black;
             font-size: var(--step-1);
             color: white;

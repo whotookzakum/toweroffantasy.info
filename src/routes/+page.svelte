@@ -136,7 +136,7 @@
     }
 
     footer {
-        font-size: var(--step--1);
+        font-size: var(--step--2);
         line-height: 1.6;
         color: var(--text2);
 

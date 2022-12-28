@@ -19,7 +19,7 @@
         display: flex;
         justify-content: space-between;
         color: var(--text2);
-        font-weight: 900;
+        font-weight: bold;
         font-size: 0.75rem;
         padding: 1rem;
         background: var(--surface1);

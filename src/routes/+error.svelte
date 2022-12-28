@@ -1,6 +1,6 @@
 <div style="margin-bottom: auto">
     <h1>404</h1>
-    <strong style="color: var(--accent); font-size: 1rem;">Page not found :(</strong>
+    <strong style="color: var(--accent); font-size: var(--step--1);">Page not found :(</strong>
     <p>
         The requested page might not exist, or its URL may have changed.
     </p>

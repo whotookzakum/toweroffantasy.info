@@ -142,7 +142,7 @@
             gap: 0.5rem;
 
             a {
-                font-size: 1rem;
+                font-size: var(--step--1);
                 line-height: 1.2;
             }
         }

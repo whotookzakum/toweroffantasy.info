@@ -8,7 +8,7 @@ body {
     font-family: "Public Sans", system-ui, sans-serif;
     color: var(--text1);
     font-size: var(--step-0);
-    font-weight: 100;
+    font-weight: 300;
 }
 
 a {
@@ -38,11 +38,6 @@ strong {
     color: var(--text-green);
 }
 
-aside i {
-    font-weight: bolder;
-}
-
-
 abbr {
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
     color: rgb(228, 228, 228);
@@ -52,7 +47,7 @@ abbr {
     text-decoration: none;
     text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
     //
-    font-size: 0.8rem;
+    font-size: var(--step--3);
     font-weight: 500;
     padding: 0.2em 0.36em;
 
@@ -68,7 +63,7 @@ abbr[title*="China"] {
     --bg: #e72e37;
     padding: 0.2em 0.42em 0.2em 0.36em;
     display: inline-block;
-    font-size: 1rem;
+    font-size: var(--step--1);
     font-weight: 600;
     background-image: linear-gradient(-45deg, transparent 15%, var(--bg) 0);
 
@@ -103,13 +98,13 @@ table {
     box-shadow: 0 0 px var(--surface-shadow);
     margin: 1rem 0;
     line-height: 1.75;
-    font-size: 1rem;
+    font-size: var(--step--1);
     overflow-x: scroll;
     width: 100%;
     border-collapse: collapse;
 
     th {
-        font-size: 0.8rem;
+        font-size: var(--step--3);
         text-transform: uppercase;
         font-weight: normal;
     }
@@ -154,7 +149,7 @@ figure {
 sup,
 small,
 figcaption {
-    font-size: var(--step--1);
+    font-size: var(--step--2);
 }
 
 sup,
@@ -197,8 +192,8 @@ kbd {
     box-shadow: var(--tw-shadow), inset 0 0.1em 0 var(--key-color),
         inset 0 -0.12em 0.08em 0.1em rgba(0, 0, 0, 0.3);
     font-family: inherit;
-    font-weight: 800;
-    font-size: 0.9rem;
+    font-weight: 500;
+    font-size: var(--step--2);
     line-height: 1;
     color: #48adbd;
     text-shadow: 0 0 4px #121212;
@@ -257,23 +252,13 @@ h6 {
 // ======================================================================
 
 ol,
-ul,
-dl {
+ul {
     display: grid;
     gap: 1rem;
 }
 
-li,
-dd {
-    font-size: 1.1rem;
-}
-
-dt {
-    font-weight: bolder;
-
-    &:not(:first-of-type) {
-        margin-top: 2ch;
-    }
+li {
+    font-size: var(--step--1);
 }
 
 ::marker {

@@ -63,7 +63,7 @@
         margin: 0;
         box-shadow: inset 0 7px 9px -7px var(--surface-shadow),
             inset 0 -7px 9px -7px var(--surface-shadow);
-        font-size: 0.9rem;
+        font-size: var(--step--2);
 
         a,
         a:hover {

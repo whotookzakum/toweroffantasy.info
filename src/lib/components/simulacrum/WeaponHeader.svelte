@@ -90,7 +90,7 @@
 
     .base-stats-wrapper {
         display: flex;
-        font-size: 0.9rem;
+        font-size: var(--step--1);
         gap: 1rem;
         color: var(--text2);
         text-transform: uppercase;
@@ -120,7 +120,7 @@
 
         & .stat-name {
             color: var(--text2);
-            font-size: 1rem;
+            font-size: var(--step--2);
         }
 
         & .stat-value {
@@ -133,7 +133,7 @@
 
         & .stat-tier {
             font-style: normal;
-            font-weight: 900;
+            font-weight: 700;
             font-size: var(--step-2);
             background: #3b3e45;
             padding: 0.25rem 0.5rem;

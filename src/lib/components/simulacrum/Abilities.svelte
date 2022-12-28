@@ -63,10 +63,6 @@
 
     ol.ability-breakdown {
         margin-block: 1rem;
-
-        li {
-            font-size: 1rem;
-        }
     }
 
     details.ability {
@@ -104,7 +100,7 @@
         span {
             text-transform: capitalize;
             color: var(--text2);
-            font-size: 1rem;
+            font-size: var(--step--1);
         }
     }
 
