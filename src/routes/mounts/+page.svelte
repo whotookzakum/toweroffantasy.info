@@ -13,8 +13,24 @@
     different colors available at certain levels.
 </p>
 
+<h2>Underwater mounts</h2>
 <Menu>
-    {#each mounts as mount}
+    {#each mounts.filter(m => m.type === "Water") as mount}
+        <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>
+            <img
+                src={`/images/UI/Mount/${mount.imgSrc}.png`}
+                alt={mount.name}
+                width="308"
+                height="206"
+            />
+            <span>{mount.name}</span>
+        </MenuItem>
+    {/each}
+</Menu>
+
+<h2>Land mounts</h2>
+<Menu>
+    {#each mounts.filter(m => m.type !== "Water") as mount}
         <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>
             <img
                 src={`/images/UI/Mount/${mount.imgSrc}.png`}

@@ -114,6 +114,8 @@ export const fetchAllMounts = async () => {
         })
     )
 
+    allItems.sort((a, b) => b.id - a.id)
+
     return allItems
 }
 
