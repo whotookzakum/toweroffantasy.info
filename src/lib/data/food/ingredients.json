@@ -3,25 +3,25 @@
         "name": "Thornfruit",
         "imgSrc": "Vera_Harvest_008",
         "rarity": 3,
-        "source": ""
+        "source": "Vera: Confounding Abyss"
     },
     {
         "name": "Sand Onion",
         "imgSrc": "Vera_Harvest_002",
         "rarity": 1,
-        "source": ""
+        "source": "Vera: Near shrubbery"
     },
     {
         "name": "Ball Cactus",
         "imgSrc": "Vera_Harvest_013",
         "rarity": 1,
-        "source": ""
+        "source": "Vera: Near ball cactuses"
     },
     {
         "name": "Beetroot",
         "imgSrc": "Vera_Harvest_006",
         "rarity": 2,
-        "source": ""
+        "source": "Vera: Inside the Cave"
     },
     {
         "name": "Soybeans",
@@ -39,31 +39,31 @@
         "name": "Fleshy Tail",
         "imgSrc": "Vera_Harvest_014",
         "rarity": 2,
-        "source": "折跃门-绿洲峭壁附近的沙漠猎食者有几率出，还有芦荟"
+        "source": "Vera: Hunt Wild Beasts"
     },
     {
         "name": "Chili",
         "imgSrc": "Vera_Harvest_001",
         "rarity": 3,
-        "source": ""
+        "source": "Vera: Around Unusual Red Plants"
     },
     {
         "name": "Desert Melon",
         "imgSrc": "Vera_Harvest_007",
         "rarity": 3,
-        "source": "镜都哨站附近大漠甜瓜"
+        "source": "Vera: Quicksand Belt Oasis"
     },
     {
         "name": "Pumpkin",
         "imgSrc": "Item_Pumpkin",
         "rarity": 3,
-        "source": "有流沙的地方边上都有流沙南瓜"
+        "source": "Vera: Quicksand Belt"
     },
     {
         "name": "Ribs",
         "imgSrc": "Vera_Harvest_015",
         "rarity": 3,
-        "source": "折跃门-咸水绿洲附近的盾甲兽有几率出"
+        "source": "Vera: Hunt Wild Beasts"
     },
     {
         "name": "Oyster",
@@ -81,19 +81,19 @@
         "name": "Aloe",
         "imgSrc": "Vera_Harvest_003",
         "rarity": 4,
-        "source": ""
+        "source": "Vera: Near desert trees"
     },
     {
         "name": "Rose Petals",
         "imgSrc": "Vera_Harvest_004",
         "rarity": 4,
-        "source": ""
+        "source": "Vera: Near the Ruin Stones"
     },
     {
         "name": "White Jade Radish",
         "imgSrc": "Vera_Harvest_011",
         "rarity": 4,
-        "source": "折跃门-咸水绿洲，舒伯特附近的都是，还有辣椒"
+        "source": "Vera: Rock Pillar Gobby Oasis"
     },
     {
         "name": "Lard Gourd",
