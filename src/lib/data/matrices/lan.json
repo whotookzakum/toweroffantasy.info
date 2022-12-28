@@ -7,11 +7,11 @@
     "sets": [
         {
             "pieces": 2,
-            "description": ""
+            "description": "When using at least **1** flame weapon, increase flame attack by **12%/14%/16%/18%**, increase flame damage by **7%/8%/9%/10%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
         },
         {
             "pieces": 4,
-            "description": ""
+            "description": "Different effects are obtained according to the number of different elemental weapons equipped: for each flame/ice/physical/lightning weapon equpped, increase flame/ice/physical/lightning damage by **9%/11%/13%/15%**. For each altered weapon equipped, increase final damage by **12%/14%/17%/20%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
         }
     ]
 }

@@ -20,7 +20,7 @@
         },
         {
             "affinity": 4000,
-            "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **16%** and increase final damage by **8%** to yourself and teammates inside the boundary."
+            "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **24%** and increase final damage by **8%** to yourself and teammates inside the boundary."
         }
     ],
     "giftTypes": [],
