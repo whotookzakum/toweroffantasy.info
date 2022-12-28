@@ -77,3 +77,11 @@
         </MenuItem>
     {/each}
 </Menu>
+
+<style lang="scss">
+    img {
+        width: 110%;
+        margin: -1rem;
+        height: auto;
+    }
+</style>

@@ -1,0 +1,12 @@
+{
+    "name": "Obstacle Removal",
+    "id": 7,
+    "rarity": "R",
+    "imgSrc": "icon_matrix_R7_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Damage taken reduced by **6%**."
+        }
+    ]
+}

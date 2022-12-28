@@ -1,0 +1,12 @@
+{
+    "name": "Self Explosive",
+    "id": 1,
+    "rarity": "R",
+    "imgSrc": "icon_matrix_R1_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase damage dealt by flame weapons by **6%**."
+        }
+    ]
+}

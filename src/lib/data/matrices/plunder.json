@@ -1,0 +1,12 @@
+{
+    "name": "Plunder",
+    "id": 4,
+    "rarity": "R",
+    "imgSrc": "icon_matrix_R4_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase damage dealt by physical weapons by **6%**."
+        }
+    ]
+}

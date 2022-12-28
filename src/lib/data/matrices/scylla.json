@@ -1,0 +1,17 @@
+{
+    "name": "Scylla",
+    "chinaOnly": true,
+    "id": 25,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR26_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increases critical damage and shatter by **15%/18%/22%/27%**."
+        },
+        {
+            "pieces": 4,
+            "description": "Increases Ice, Fire, Volt, Physical, and Altered damage by **15%/17%/20%/24%** when 2 or more weapons of different elements are equipped. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+        }
+    ]
+}

@@ -8,7 +8,7 @@
 
 <h1>Mounts</h1>
 <p>
-    All mounts move at the same speed. Multiple mounts can unlock achievements,
+    All mounts move at the same speed. Owning multiple mounts can unlock achievements,
     and maintaining mounts will reward you with dark crystals. Some mounts have
     different colors available at certain levels.
 </p>
