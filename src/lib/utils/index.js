@@ -51,6 +51,7 @@ export const fetchAllBanners = async (version) => {
             return {
                 name: data.default.name,
                 element: weapon.element,
+                type: weapon.type,
                 banners: data.default.banners,
                 path: itemPath,
             }

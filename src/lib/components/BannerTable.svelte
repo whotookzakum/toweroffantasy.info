@@ -1,4 +1,5 @@
 <script>
+	import CategoryIcon from '$lib/components/simulacrum/CategoryIcon.svelte';
     export let banners, version;
 
     const getDurationInDays = (start, end) => {
@@ -18,6 +19,7 @@
     <thead>
         <th>#</th>
         <th>Simulacrum</th>
+        <th>Type</th>
         <th>Notes</th>
         <th>Event Dates</th>
         <th>Duration</th>
@@ -34,7 +36,10 @@
                     >
                         {banner.name}
                     </a>
-                    
+                </td>
+                <td class="banner-type">
+                    <CategoryIcon type={banner.type} width="30" />
+                    <CategoryIcon type={banner.element} width="30" />
                 </td>
                 <td>
                     {#if banner.subtext}
@@ -73,6 +78,13 @@
 
         td {
             color: var(--text2);
+        }
+
+        .banner-type {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
         }
     }
 </style>
