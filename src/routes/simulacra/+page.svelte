@@ -6,9 +6,9 @@
     import SimulacrumFilters from "$lib/components/simulacrum/SimulacrumFilters.svelte";
 
     export let data;
-    const simulacra = data.items;
+    let simulacra = data.items;
 
-    let showWeaponIcon = false;
+    let filters = {};
 </script>
 
 <h1>Simulacra</h1>
@@ -18,13 +18,14 @@
     passive effect. Their associated matrices must be obtained separately.
 </p>
 
-<SimulacrumFilters bind:showWeaponIcon />
+<SimulacrumFilters bind:filters />
 
 <h2><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
+
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
-            {#if showWeaponIcon}
+            {#if filters.showWeapon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
                     alt={simulacrum.weapon.name}
@@ -48,7 +49,7 @@
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SR") as simulacrum}
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
-            {#if showWeaponIcon}
+            {#if filters.showWeapon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
                     alt={simulacrum.weapon.name}
