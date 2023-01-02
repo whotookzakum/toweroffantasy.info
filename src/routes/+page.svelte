@@ -6,6 +6,37 @@
 
     let showGlobalBanners,
         showChinaBanners = false;
+
+    let currentGlobalBanners = [];
+    let currentChinaBanners = [];
+
+    const todaysDate = new Date().getTime();
+    data.cn.forEach((banner) => {
+        const end = new Date(banner.end).getTime();
+        const start = new Date(banner.start).getTime();
+        if (end >= todaysDate && todaysDate > start) {
+            currentChinaBanners.push(banner);
+        }
+    });
+    data.glob.forEach((banner) => {
+        const end = new Date(banner.end).getTime();
+        const start = new Date(banner.start).getTime();
+        if (end >= todaysDate && todaysDate > start) {
+            currentGlobalBanners.push(banner);
+        }
+    });
+
+    let newestBanners = {
+        cn: ["Lan"],
+        glob: ["Tian Lang", "Lyra"],
+    };
+    newestBanners.cn = newestBanners.cn.map(bannerName => {
+        return data.cn.find(item => item.name === bannerName)
+    })
+    newestBanners.glob = newestBanners.glob.map(bannerName => {
+        return data.glob.find(item => item.name === bannerName)
+    })
+
 </script>
 
 <h1>Tower of Fantasy Index</h1>
@@ -47,10 +78,26 @@
                 tabindex={0}
             >
                 <th>Global</th>
-                <td />
+                <td class="current-banners">
+                    {#each currentGlobalBanners as banner}
+                        <a
+                            href={banner.path}
+                            style={`color: var(--element-${banner.element})`}
+                            >{banner.name}</a
+                        >
+                    {/each}
+                </td>
                 <td>{data.glob.length}</td>
                 <td>{_.uniqBy(data.glob, "name").length}</td>
-                <td><a href={data.glob[0].path}>{data.glob[0].name}</a></td>
+                <td class="newest-banners">
+                    {#each newestBanners.glob as banner}
+                        <a
+                            href={banner.path}
+                            style={`color: var(--element-${banner.element})`}
+                            >{banner.name}</a
+                        >
+                    {/each}
+                </td>
                 <td
                     >{data.glob.filter((banner) => banner.standardAfterwards)
                         .length}</td
@@ -71,10 +118,26 @@
                 tabindex={0}
             >
                 <th>China</th>
-                <td />
+                <td class="current-banners">
+                    {#each currentChinaBanners as banner}
+                        <a
+                            href={banner.path}
+                            style={`color: var(--element-${banner.element})`}
+                            >{banner.name}</a
+                        >
+                    {/each}
+                </td>
                 <td>{data.cn.length}</td>
                 <td>{_.uniqBy(data.cn, "name").length}</td>
-                <td><a href={data.cn[0].path}>{data.cn[0].name}</a></td>
+                <td class="newest-banners">
+                    {#each newestBanners.cn as banner}
+                        <a
+                            href={banner.path}
+                            style={`color: var(--element-${banner.element})`}
+                            >{banner.name}</a
+                        >
+                    {/each}
+                </td>
                 <td
                     >{data.cn.filter((banner) => banner.standardAfterwards)
                         .length}</td
@@ -132,6 +195,14 @@
 
         & > * {
             padding: 0;
+        }
+    }
+
+    .current-banners,
+    .newest-banners {
+        a:not(:last-of-type)::after {
+            content: ", ";
+            color: var(--text1);
         }
     }
 
