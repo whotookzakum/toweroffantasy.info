@@ -14,6 +14,12 @@
                 "bannerNo": 22,
                 "start": "28 Sep 2022",
                 "end": "17 Oct 2022"
+            },
+            {
+                "bannerNo": 32,
+                "subtext": "Anniversary",
+                "start": "15 Dec 2022",
+                "end": "21 Dec 2022"
             }
         ],
         "glob": [
