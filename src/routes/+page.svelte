@@ -30,13 +30,12 @@
         cn: ["Lan"],
         glob: ["Tian Lang", "Lyra"],
     };
-    newestBanners.cn = newestBanners.cn.map(bannerName => {
-        return data.cn.find(item => item.name === bannerName)
-    })
-    newestBanners.glob = newestBanners.glob.map(bannerName => {
-        return data.glob.find(item => item.name === bannerName)
-    })
-
+    newestBanners.cn = newestBanners.cn.map((bannerName) => {
+        return data.cn.find((item) => item.name === bannerName);
+    });
+    newestBanners.glob = newestBanners.glob.map((bannerName) => {
+        return data.glob.find((item) => item.name === bannerName);
+    });
 </script>
 
 <h1>Tower of Fantasy Index</h1>
@@ -85,6 +84,7 @@
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
+                        <br />
                     {/each}
                 </td>
                 <td>{data.glob.length}</td>
@@ -96,6 +96,7 @@
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
+                        <br />
                     {/each}
                 </td>
                 <td
@@ -125,6 +126,7 @@
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
+                        <br />
                     {/each}
                 </td>
                 <td>{data.cn.length}</td>
@@ -136,6 +138,7 @@
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
+                        <br />
                     {/each}
                 </td>
                 <td
@@ -195,14 +198,6 @@
 
         & > * {
             padding: 0;
-        }
-    }
-
-    .current-banners,
-    .newest-banners {
-        a:not(:last-of-type)::after {
-            content: ", ";
-            color: var(--text1);
         }
     }
 

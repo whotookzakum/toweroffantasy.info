@@ -41,7 +41,7 @@
         },
         {
             text: "Shop",
-            href: "https://pyrosu-shop.fourthwall.com",
+            href: "https://aida-cafe.shop/",
         },
     ];
 
@@ -67,11 +67,11 @@
 <nav>
     <a class="home-link" href="/">
         <img
-            class="logo"
-            src="/images/Avatar_43.png"
-            alt=""
-            width="256"
-            height="256"
+            src="/images/mia.png"
+            style="padding: 0.5rem"
+            alt="Logo"
+            width="128"
+            height="128"
         />
         Tower of Fantasy Index
     </a>
@@ -138,11 +138,6 @@
         padding: var(--padding);
         display: grid;
         place-items: center;
-    }
-
-    .logo {
-        width: 128px;
-        height: auto;
     }
 
     hr {
