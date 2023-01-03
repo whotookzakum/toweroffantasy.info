@@ -1,5 +1,6 @@
 <script>
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
+    import SliderCheckbox from "$lib/components/SliderCheckbox.svelte";
     let typeFilters = [];
     let elementFilters = [];
     let showWeapon;
@@ -22,53 +23,56 @@
 
 <header>
     <h2 style="margin: 0; font-size: var(--step--0)">Filters</h2>
-    <button on:click={resetFilters}>Reset</button>
+    <button class="reset" on:click={resetFilters}>Reset</button>
 </header>
-<form action="" method="get" class="filters">
+<form action="" method="get" class="filters full-bleed">
     <section>
         <span class="section-header">Display</span>
-        <input
-            type="checkbox"
-            name="showWeapon"
-            id="show-weapon-toggle"
-            bind:checked={showWeapon}
-        />
-        <label class="slider" for="show-weapon-toggle">
-            <div>Avatar</div>
-            <div>Weapon</div>
-        </label>
+        <div class="filter-group">
+            <SliderCheckbox
+                bind:checked={showWeapon}
+                name="showWeapon"
+                id="show-weapon-toggle"
+                firstValue="Avatar"
+                secondValue="Weapon"
+            />
+        </div>
     </section>
 
     <section>
         <span class="section-header">Type</span>
-        {#each types as type}
-            <input
-                type="checkbox"
-                name="type"
-                id={type}
-                value={type}
-                bind:group={typeFilters}
-            />
-            <label for={type}>
-                <CategoryIcon {type} width={30} />
-            </label>
-        {/each}
+        <div class="filter-group">
+            {#each types as type}
+                <input
+                    type="checkbox"
+                    name="type"
+                    id={type}
+                    value={type}
+                    bind:group={typeFilters}
+                />
+                <label for={type}>
+                    <CategoryIcon {type} width={30} />
+                </label>
+            {/each}
+        </div>
     </section>
 
     <section>
         <span class="section-header">Element</span>
-        {#each elements as element}
-            <input
-                type="checkbox"
-                name="element"
-                id={element}
-                value={element}
-                bind:group={elementFilters}
-            />
-            <label for={element}>
-                <CategoryIcon type={element} width={30} />
-            </label>
-        {/each}
+        <div class="filter-group">
+            {#each elements as element}
+                <input
+                    type="checkbox"
+                    name="element"
+                    id={element}
+                    value={element}
+                    bind:group={elementFilters}
+                />
+                <label for={element}>
+                    <CategoryIcon type={element} width={30} />
+                </label>
+            {/each}
+        </div>
     </section>
 </form>
 
@@ -77,33 +81,20 @@
     header {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 0.5rem;
     }
-    .filters {
+
+    form.filters {
         background: var(--surface2);
-        display: grid;
-        grid-template-columns: auto auto auto;
-        row-gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        margin: 0 auto;
         padding: 1rem;
-        margin-block: var(--space-xs);
+        margin-block: var(--space-2xs);
         box-shadow: 0 2px 4px var(--surface-shadow);
     }
-
-    input {
-        appearance: none;
-        display: none;
-    }
-
-    // input:checked + label {
-    //     background: hsla(226, 100%, 74%, 0.3);
-    //     box-shadow: 0 0 3px var(--surface-shadow);
-    // }
-
-    // label {
-    //     display: grid;
-    //     padding: 0.2rem;
-    //     border-radius: 3px;
-    // }
 
     .section-header {
         text-transform: uppercase;
@@ -113,80 +104,42 @@
         margin-bottom: 0.2rem;
     }
 
-    section {
+    .filter-group {
         display: flex;
-        flex-wrap: wrap;
-        // gap: 0.2rem;
     }
 
-    button {
+    input {
+        appearance: none;
+        display: none;
+    }
+
+    label {
+        display: grid;
+        padding: 2px;
+        margin: auto 1px;
+        border: 1px solid transparent;
+    }
+
+    input:checked + label {
+        background: var(--surface3);
+        border: 1px solid var(--accent);
+        box-shadow: 0 0 3px var(--surface-shadow);
+    }
+
+    button.reset {
         background: none;
         color: var(--accent);
-        border: 2px solid var(--accent);
-        padding: 0.4rem;
+        border: 1px solid var(--accent);
+        padding-block: calc(0.5rem - 4px);
+        width: 8ch;
         font: inherit;
         font-size: var(--step--2);
         filter: drop-shadow(0 2px 2px var(--surface-shadow));
-        font-weight: 500;
+        background: var(--surface2);
 
         &:hover {
             color: inherit;
             border-color: var(--text2);
-        }
-    }
-
-    label.slider {
-        background: var(--surface1);
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        font-size: var(--step--1);
-        z-index: 0;
-        gap: 0.5rem;
-        padding: 0.5rem 0.4rem;
-        user-select: none;
-        box-shadow: inset 0 0 2px var(--surface-shadow);
-
-        // Slider thumb
-        &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            z-index: -1;
-            background: var(--surface3);
-            top: 3px;
-            left: 3px;
-            width: calc(50% - 8px);
-            height: calc(100% - 8px);
-            box-shadow: 0 1px 2px var(--surface-shadow);
-            transition: all 0.2s ease;
-            border: 1px solid var(--accent);
-        }
-
-        div {
-            text-align: center;
-            width: 8ch;
-            transition: all 0.2s ease;
-
-            &:nth-of-type(1) {
-                color: var(--accent);
-            }
-        }
-    }
-
-    input:checked + label.slider {
-
-        div {
-            &:nth-of-type(1) {
-                color: inherit;
-            }
-            &:nth-of-type(2) {
-                color: var(--accent);
-            }
-        }
-
-        &::before {
-            transform: translateX(calc(99% + 6px));
         }
     }
 </style>

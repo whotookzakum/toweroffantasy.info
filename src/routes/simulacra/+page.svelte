@@ -9,6 +9,20 @@
     let simulacra = data.items;
 
     let filters = {};
+
+    $: if (filters.typeFilters && filters.typeFilters.length > 0) {
+        simulacra = data.items.filter((sim) =>
+            filters.typeFilters.includes(sim.weapon.type)
+        );
+    } else {
+        simulacra = data.items;
+    }
+
+    $: if (filters.elementFilters && filters.elementFilters.length > 0) {
+        simulacra = simulacra.filter((sim) =>
+            filters.elementFilters.includes(sim.weapon.element)
+        );
+    }
 </script>
 
 <h1>Simulacra</h1>
