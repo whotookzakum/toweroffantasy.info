@@ -21,17 +21,17 @@
     },
     {
         "name": "Countdown",
-        "imgSrc": "AvatarFrame_TX_gift",
+        "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_gift",
         "source": ""
     },
     {
         "name": "Lovin' a Discount",
-        "imgSrc": "AvatarFrame_TX_off",
+        "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_off",
         "source": ""
     },
     {
         "name": "Welcome to Vera",
-        "imgSrc": "AvatarFrame_TX_steam",
+        "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_steam",
         "source": ""
     },
     {
@@ -248,7 +248,7 @@
     },
     {
         "name": "Illusory Link",
-        "imgSrc": "AvatarFrame_TX_Xuhuan",
+        "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_Xuhuan",
         "source": "Obtained as a Twitch drop during the global launch event."
     },
     {

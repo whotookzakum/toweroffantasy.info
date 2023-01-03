@@ -1,12 +1,12 @@
 [
     {
         "name": "Lin: T Pose",
-        "imgSrc": "Avatar_Overseas_11",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_11",
         "source": "Obtained when purchasing the tanium pack during the sale."
     },
     {
         "name": "Saki: T Pose",
-        "imgSrc": "Avatar_Overseas_9",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_9",
         "source": "Obtained when purchasing the tanium pack during the sale."
     },
     {
@@ -31,32 +31,32 @@
     },
     {
         "name": "Ruby: T Pose",
-        "imgSrc": "Avatar_Overseas_10",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_10",
         "source": "Obtained when purchasing the tanium pack during the sale."
     },
     {
         "name": "The Queen",
-        "imgSrc": "Avatar_TX_luqiya_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_luqiya_01",
         "source": "Available in the support points shop."
     },
     {
         "name": "Desert Plant",
-        "imgSrc": "Avatar_TX_xianrenzhang_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_xianrenzhang_01",
         "source": "Unlocked from channels and events."
     },
     {
         "name": "For Love",
-        "imgSrc": "Avatar_TX_GFQ_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_GFQ_01",
         "source": "Available in the support points shop."
     },
     {
         "name": "Mini Ruby",
-        "imgSrc": "Avatar_TX_leibei_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_leibei_01",
         "source": "Unlocked from channels and events."
     },
     {
         "name": "Welcome to Mirroria.",
-        "imgSrc": "Avatar_TX_vera_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_vera_01",
         "source": "Unlocked from channels and events."
     },
     {
@@ -208,17 +208,17 @@
     },
     {
         "name": "Nemesis: Awakening",
-        "imgSrc": "Avatar_TX_Naimeixisi_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_Naimeixisi_01",
         "source": "Obtained by logging in for the first time on iOS during the official launch event period."
     },
     {
         "name": "Shirli: Awakening",
-        "imgSrc": "Avatar_TX_Shali_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_Shali_01",
         "source": "Obtained by logging in for the first time on Android during the official launch event period."
     },
     {
         "name": "Zeke: Awakening",
-        "imgSrc": "Avatar_TX_Xiazuo_01",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_TX_Xiazuo_01",
         "source": "Obtained by logging in for the first time on PC during the official launch event period."
     },
     {
