@@ -13,6 +13,7 @@
     .item-wrapper {
         position: relative;
         box-shadow: 0 2px 4px var(--surface-shadow);
+        border-radius: 3px;
 
         img {
             display: block;

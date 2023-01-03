@@ -9,7 +9,7 @@
     <main class="page-contents">
         <slot />
         <footer class="page-footer">
-            &copy; 2022 Tower of Fantasy Index.
+            &copy; 2023 Tower of Fantasy Index.
         </footer>
     </main>
 </div>

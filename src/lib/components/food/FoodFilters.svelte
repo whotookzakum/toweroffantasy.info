@@ -1,23 +1,23 @@
 <script>
-    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    import SliderCheckbox from "$lib/components/SliderCheckbox.svelte";
-    let typeFilters = [];
-    let elementFilters = [];
-    let showWeapon;
+    import EffectIcon from "./EffectIcon.svelte";
+    let recoveryFilters = [];
+    let buffFilters = [];
+    let rarityFilters = [];
 
     export let filters;
     $: filters = {
-        typeFilters,
-        elementFilters,
-        showWeapon: showWeapon,
+        rarityFilters,
+        recoveryFilters,
+        buffFilters
     };
-    const types = ["dps", "defense", "support"];
-    const elements = ["flame", "volt", "ice", "physical", "altered"];
+    const rarities = [1, 2, 3, 4, 5];
+    const recoveryEffects = ["health", "endurance"];
+    const buffs = ["iceDEF", "fireDEF", "voltDEF", "physDEF", "iceATK", "fireATK", "voltATK", "physATK"];
 
     function resetFilters() {
-        typeFilters = [];
-        elementFilters = [];
-        showWeapon = false;
+        rarityFilters = [];
+        recoveryFilters = [];
+        buffFilters = [];
     }
 </script>
 
@@ -27,49 +27,54 @@
 </header>
 <form action="" method="get" class="filters full-bleed">
     <section>
-        <span class="section-header">Display</span>
+        <span class="section-header">Rarity</span>
         <div class="filter-group">
-            <SliderCheckbox
-                bind:checked={showWeapon}
-                name="showWeapon"
-                id="show-weapon-toggle"
-                firstValue="Avatar"
-                secondValue="Weapon"
-            />
-        </div>
-    </section>
-
-    <section>
-        <span class="section-header">Type</span>
-        <div class="filter-group">
-            {#each types as type}
+            {#each rarities as rarity}
                 <input
                     type="checkbox"
                     name="type"
-                    id={type}
-                    value={type}
-                    bind:group={typeFilters}
+                    id={`rarity-${rarity}`}
+                    value={rarity}
+                    bind:group={rarityFilters}
                 />
-                <label for={type}>
-                    <CategoryIcon {type} width={30} />
+                <label for={`rarity-${rarity}`}>
+                    <div class={`box rarity-${rarity}`} />
                 </label>
             {/each}
         </div>
     </section>
 
     <section>
-        <span class="section-header">Element</span>
+        <span class="section-header">Recovery</span>
         <div class="filter-group">
-            {#each elements as element}
+            {#each recoveryEffects as effect}
+                <input
+                    type="checkbox"
+                    name="type"
+                    id={effect}
+                    value={effect}
+                    bind:group={recoveryFilters}
+                />
+                <label for={effect}>
+                    <EffectIcon {effect} width="24" />
+                </label>
+            {/each}
+        </div>
+    </section>
+
+    <section>
+        <span class="section-header">Buff</span>
+        <div class="filter-group">
+            {#each buffs as buff}
                 <input
                     type="checkbox"
                     name="element"
-                    id={element}
-                    value={element}
-                    bind:group={elementFilters}
+                    id={buff}
+                    value={buff}
+                    bind:group={buffFilters}
                 />
-                <label for={element}>
-                    <CategoryIcon type={element} width={30} />
+                <label for={buff}>
+                    <EffectIcon effect={buff} width="24" />
                 </label>
             {/each}
         </div>
@@ -88,6 +93,7 @@
         background: var(--surface2);
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 1rem 1.5rem;
         margin: 0 auto;
         padding: 1rem;
@@ -140,5 +146,10 @@
             color: inherit;
             border-color: var(--text2);
         }
+    }
+    .box {
+        width: 20px; 
+        height: 20px;
+        border-radius: 3px;
     }
 </style>

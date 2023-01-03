@@ -1,5 +1,5 @@
 <script>
-    export let effect;
+    export let effect, absolute, width;
 
     function getImgSrc() {
         switch (effect) {
@@ -32,6 +32,8 @@
 
 <img
     class="effect-icon"
+    class:absolute
+    style={`width: ${width}px`}
     src={`/images/UI/AttributeIcon/${getImgSrc()}.png`}
     alt={effect}
     width="32"
@@ -39,7 +41,7 @@
 />
 
 <style lang="scss">
-    .effect-icon {
+    .absolute {
         position: absolute;
         top: 0;
         right: 0;
@@ -48,5 +50,9 @@
             right: unset;
             left: 0;
         }
+    }
+
+    .effect-icon {
+        height: auto;
     }
 </style>

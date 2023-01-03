@@ -1,12 +1,13 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
-    import ingredients from "$lib/data/food/ingredients.json";
-    import dishes from "$lib/data/food/dishes.json";
+    import ingredientsData from "$lib/data/food/ingredients.json";
+    import dishesData from "$lib/data/food/dishes.json";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
     import Item from "$lib/components/Item.svelte";
     import EffectIcon from "$lib/components/food/EffectIcon.svelte";
+    import FoodFilters from "../../lib/components/food/FoodFilters.svelte";
 
     onMount(() => {
         const anchors = new AnchorJS();
@@ -15,6 +16,32 @@
 
     function getIngredientData(input) {
         return ingredients.find((i) => i.name === input);
+    };
+
+    let dishes = dishesData;
+    let ingredients = ingredientsData;
+    let filters = {};
+
+    // Filters are AND, i.e. volt ATK && rarity 4
+    // They are not OR, i.e. volt ATK || rarity 4
+    $: if (filters.rarityFilters && filters.rarityFilters.length > 0) {
+        dishes = dishesData.filter((dish) =>
+            filters.rarityFilters.includes(dish.rarity)
+        );
+    } else {
+        dishes = dishesData;
+    }
+
+    $: if (filters.buffFilters && filters.buffFilters.length > 0) {
+        dishes = dishes.filter((dish) =>
+            dish.icons && dish.icons.some(t => filters.buffFilters.includes(t))
+        );
+    } 
+
+    $: if (filters.recoveryFilters && filters.recoveryFilters.length > 0) {
+        dishes = dishes.filter((dish) =>
+            dish.icons && dish.icons.some(t => filters.recoveryFilters.includes(t))
+        );
     }
 </script>
 
@@ -30,6 +57,8 @@
     once. Add extra amounts of the correct ingredients to boost your success
     rate!
 </p>
+
+<FoodFilters bind:filters />
 
 <h2 id="dishes">Dishes</h2>
 
@@ -54,7 +83,7 @@
                                 />
                                 {#if dish.icons}
                                     {#each dish.icons as effect}
-                                        <EffectIcon {effect} />
+                                        <EffectIcon {effect} absolute />
                                     {/each}
                                 {/if}
                             </Item>
