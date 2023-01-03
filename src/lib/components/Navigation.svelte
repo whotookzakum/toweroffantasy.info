@@ -31,10 +31,10 @@
             text: "Cosmetics",
             href: "/cosmetics",
         },
-        {
-            text: "Guides",
-            href: "/guides",
-        },
+        // {
+        //     text: "Guides",
+        //     href: "/guides",
+        // },
         {
             text: "Interactive Map",
             href: "https://www.ghzs666.com/tower-of-fantasy-map#/",

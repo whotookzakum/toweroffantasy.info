@@ -1,5 +1,6 @@
 <script>
     import BannerTable from "$lib/components/BannerTable.svelte";
+    import changelog from "$lib/data/changelog.json";
     import _ from "lodash";
 
     export let data;
@@ -51,7 +52,12 @@
     >.
 </p>
 <p>
-    Last updated <a href="/changelog">November 22</a>.
+    Last updated <a href="/changelog"
+        >{new Date(changelog[0].date).toLocaleDateString("en-US", {
+            month: "long",
+            day: "numeric",
+        })}</a
+    >.
 </p>
 
 <h2 id="banners">Banners</h2>
