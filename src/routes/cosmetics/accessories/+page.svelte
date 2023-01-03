@@ -4,7 +4,7 @@
 </script>
 
 <h1>Accessories</h1>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Item</th>
@@ -31,4 +31,4 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>

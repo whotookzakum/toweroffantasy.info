@@ -1,5 +1,5 @@
 <script>
-    export let source;
+    export let source, caption;
 </script>
 
 <figure>
@@ -10,6 +10,9 @@
         title="Preview of weapon skills"
         style=""
     />
+    {#if caption}
+        <figcaption>{caption}</figcaption>
+    {/if}
 </figure>
 
 <style>

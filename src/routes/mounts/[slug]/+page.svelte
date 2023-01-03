@@ -16,7 +16,7 @@
 </span>
 
 <h4>Parts</h4>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Part</th>
@@ -58,7 +58,7 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>
 
 {#if data.videoSrc}
     <h4 id="preview">Preview</h4>

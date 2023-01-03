@@ -8,7 +8,7 @@
     Avatars shown on the <a href="/simulacra">Simulacra</a> page can be obtained
     by raising the respective simulacrum's Awakening points (friendship) to 200.
 </p>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Item</th>
@@ -35,4 +35,4 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>

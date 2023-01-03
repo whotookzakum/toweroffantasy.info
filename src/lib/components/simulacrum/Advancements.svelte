@@ -4,7 +4,7 @@
 </script>
 
 <h4 id="advancements">Advancements</h4>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead style={`border-color: var(--element-${weapon.element})`}>
             <th>Stars</th>
@@ -19,4 +19,4 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>

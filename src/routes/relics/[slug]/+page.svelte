@@ -22,9 +22,7 @@
 <Advancements weapon={data} />
 
 <h4 id="preview">Preview</h4>
-<figure>
-    <Youtube source={data.videoSrc} />
-    <figcaption>
-        The {data.name} used in this video is {data.starsInVideo}★
-    </figcaption>
-</figure>
+<Youtube
+    source={data.videoSrc}
+    caption={`The ${data.name} used in this video is ${data.starsInVideo}★`}
+/>

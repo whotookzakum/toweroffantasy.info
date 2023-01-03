@@ -4,7 +4,7 @@
 </script>
 
 <h1>Chat Bubbles</h1>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Item</th>
@@ -31,7 +31,7 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>
 
 <style>
     img {

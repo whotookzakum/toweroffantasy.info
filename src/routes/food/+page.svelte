@@ -7,7 +7,7 @@
     import AnchorJS from "anchor-js";
     import Item from "$lib/components/Item.svelte";
     import EffectIcon from "$lib/components/food/EffectIcon.svelte";
-    
+
     onMount(() => {
         const anchors = new AnchorJS();
         anchors.add("h3");
@@ -32,7 +32,8 @@
 </p>
 
 <h2 id="dishes">Dishes</h2>
-<figure>
+
+<div class="table-wrapper">
     <table class="dishes-table bg-alternate">
         <thead>
             <th>Item</th>
@@ -99,10 +100,10 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>
 
 <h2 id="ingredients">Ingredients</h2>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Item</th>
@@ -127,7 +128,7 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>
 
 <style lang="scss">
     .img-and-name {

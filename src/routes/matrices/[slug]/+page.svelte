@@ -16,7 +16,7 @@
 </span>
 
 <h4 id="sets">Sets</h4>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Pieces</th>
@@ -31,4 +31,4 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>

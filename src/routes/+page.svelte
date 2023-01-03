@@ -55,16 +55,23 @@
 </p>
 
 <h2 id="banners">Banners</h2>
-<figure>
+
+<div class="table-wrapper">
     <table class="outer-table bg-alternate">
+        <caption>
+            Click on a table row to show all banners for that version.
+        </caption>
         <thead>
             <th>Version</th>
-            <th>Current</th>
+            <th colspan="2">Current</th>
             <th>Total</th>
             <th>Unique</th>
             <th>Newest</th>
-            <!-- Moved to standard -->
-            <th>To standard</th>
+            <th
+                >{showGlobalBanners || showChinaBanners
+                    ? "To standard"
+                    : "Added to standard"}
+            </th>
         </thead>
         <tbody>
             <tr
@@ -77,14 +84,13 @@
                 tabindex={0}
             >
                 <th>Global</th>
-                <td class="current-banners">
+                <td colspan="2" class="current-banners">
                     {#each currentGlobalBanners as banner}
                         <a
                             href={banner.path}
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
-                        <br />
                     {/each}
                 </td>
                 <td>{data.glob.length}</td>
@@ -96,7 +102,6 @@
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
-                        <br />
                     {/each}
                 </td>
                 <td
@@ -104,11 +109,13 @@
                         .length}</td
                 >
             </tr>
-            <tr class="collapse" class:expand={showGlobalBanners}>
-                <td colspan="6">
-                    <BannerTable banners={data.glob} version="glob" />
-                </td>
-            </tr>
+        </tbody>
+        <BannerTable
+            banners={data.glob}
+            version="glob"
+            expanded={showGlobalBanners}
+        />
+        <tbody>
             <tr
                 class="outer-tr"
                 on:click={() => (showChinaBanners = !showChinaBanners)}
@@ -119,14 +126,13 @@
                 tabindex={0}
             >
                 <th>China</th>
-                <td class="current-banners">
+                <td colspan="2" class="current-banners">
                     {#each currentChinaBanners as banner}
                         <a
                             href={banner.path}
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
-                        <br />
                     {/each}
                 </td>
                 <td>{data.cn.length}</td>
@@ -138,7 +144,6 @@
                             style={`color: var(--element-${banner.element})`}
                             >{banner.name}</a
                         >
-                        <br />
                     {/each}
                 </td>
                 <td
@@ -146,17 +151,14 @@
                         .length}</td
                 >
             </tr>
-            <tr class="collapse" class:expand={showChinaBanners}>
-                <td colspan="6">
-                    <BannerTable banners={data.cn} version="cn" />
-                </td>
-            </tr>
         </tbody>
+        <BannerTable
+            banners={data.cn}
+            version="cn"
+            expanded={showChinaBanners}
+        />
     </table>
-    <figcaption>
-        Click on a table row to show all banners for that version.
-    </figcaption>
-</figure>
+</div>
 
 <h3>Credits</h3>
 <footer>
@@ -175,30 +177,32 @@
 
 <style lang="scss">
     .outer-table {
-        width: 100%;
-        overflow-x: scroll;
-        background-color: var(--surface3);
         text-align: left;
-        table-layout: fixed;
 
         thead th {
             color: var(--text2);
+        }
+
+        thead,
+        tbody {
+            background-color: var(--surface3);
+        }
+    }
+
+    .newest-banners a,
+    .current-banners a {
+        font-size: var(--step--2);
+        border: none;
+
+        &:not(:last-of-type)::after {
+            content: ", ";
+            color: var(--text1);
         }
     }
 
     .outer-tr:hover {
         background: rgba(255, 255, 255, 0.05);
         color: var(--accent);
-    }
-
-    .collapse {
-        &:not(.expand) {
-            display: none;
-        }
-
-        & > * {
-            padding: 0;
-        }
     }
 
     footer {

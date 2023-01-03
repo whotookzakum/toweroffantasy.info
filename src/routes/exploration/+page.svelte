@@ -12,7 +12,7 @@
 
 <SectionNavigation />
 <h1>Exploration</h1>
-<figure>
+<div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
             <th>Puzzle</th>
@@ -39,4 +39,4 @@
             {/each}
         </tbody>
     </table>
-</figure>
+</div>

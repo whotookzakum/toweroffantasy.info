@@ -1,6 +1,6 @@
 <script>
-	import CategoryIcon from '$lib/components/simulacrum/CategoryIcon.svelte';
-    export let banners, version;
+    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
+    export let banners, version, expanded;
 
     const getDurationInDays = (start, end) => {
         return Math.ceil(
@@ -15,8 +15,9 @@
     }
 </script>
 
-<table class="banner-table">
-    <thead>
+<tbody class="banner-table collapse" class:expanded>
+    <tr />
+    <tr class="header">
         <th>#</th>
         <th>Simulacrum</th>
         <th>Type</th>
@@ -24,51 +25,49 @@
         <th>Event Dates</th>
         <th>Duration</th>
         <th>Week #</th>
-    </thead>
-    <tbody>
-        {#each banners as banner, index}
-            <tr>
-                <td>{banners.length - index}</td>
-                <td>
-                    <a
-                        href={banner.path}
-                        style={`color: var(--element-${banner.element})`}
-                    >
-                        {banner.name}
-                    </a>
-                </td>
-                <td class="banner-type">
+    </tr>
+    {#each banners as banner, index}
+        <tr>
+            <td>{banners.length - index}</td>
+            <td>
+                <a
+                    href={banner.path}
+                    style={`color: var(--element-${banner.element})`}
+                >
+                    {banner.name}
+                </a>
+            </td>
+            <td>
+                <div class="type-and-element">
                     <CategoryIcon type={banner.type} width="30" />
                     <CategoryIcon type={banner.element} width="30" />
-                </td>
-                <td>
-                    {#if banner.subtext}
-                        <abbr title={banner.subtext} />
-                    {/if}
-                </td>
-                <td>
-                    {new Date(banner.start).toLocaleDateString()} —
-                    {new Date(banner.end).toLocaleDateString()}
-                </td>
-                <td>
-                    {getDurationInDays(banner.start, banner.end)} days
-                </td>
-                <td>
-                    {getWeeksSinceLaunch(banner.start)}~{getWeeksSinceLaunch(
-                        banner.end
-                    )}
-                </td>
-            </tr>
-        {/each}
-    </tbody>
-</table>
+                </div>
+            </td>
+            <td>
+                {#if banner.subtext}
+                    <abbr title={banner.subtext} />
+                {/if}
+            </td>
+            <td>
+                {new Date(banner.start).toLocaleDateString()} —
+                {new Date(banner.end).toLocaleDateString()}
+            </td>
+            <td>
+                {getDurationInDays(banner.start, banner.end)} days
+            </td>
+            <td>
+                {getWeeksSinceLaunch(banner.start)}~{getWeeksSinceLaunch(banner.end)}
+            </td>
+        </tr>
+    {/each}
+</tbody>
 
 <style lang="scss">
     .banner-table {
-        margin: 0;
         box-shadow: inset 0 7px 9px -7px var(--surface-shadow),
             inset 0 -7px 9px -7px var(--surface-shadow);
         font-size: var(--step--2);
+        color: var(--text2);
 
         a,
         a:hover {
@@ -76,15 +75,17 @@
             color: unset;
         }
 
-        td {
-            color: var(--text2);
+        .type-and-element {
+            display: flex;
         }
 
-        .banner-type {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
+        .header {
+            color: var(--tier-s);
+            border-bottom: 2px solid #39485f;
+        }
+
+        &:not(.expanded) {
+            display: none;
         }
     }
 </style>

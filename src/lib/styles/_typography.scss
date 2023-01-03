@@ -93,14 +93,17 @@ abbr[title*="Collab"] {
     }
 }
 
+.table-wrapper {
+    overflow-x: scroll;
+    width: 100%;
+}
+
 table {
-    background: var(--surface2);
     box-shadow: 0 0 px var(--surface-shadow);
     margin: 1rem 0;
     line-height: 1.75;
     font-size: var(--step--1);
-    overflow-x: scroll;
-    width: 100%;
+    min-width: 100%;
     border-collapse: collapse;
 
     th {
@@ -113,8 +116,12 @@ table {
         padding: var(--space-3xs-2xs);
     }
 
+    thead, tbody {
+        background: var(--surface2);
+    }
+
     thead {
-        color: var(--text2)
+        color: var(--text2);
     }
 
     p {
@@ -123,32 +130,41 @@ table {
 
     &.bg-alternate {
         thead {
-            background: rgba(0, 0, 0, 0.2);
             border-bottom: 2px solid #39485f;
     
             th {
+                background: rgba(0, 0, 0, 0.2);
                 color: var(--tier-s);
             }
         }
-    
+
         tr:nth-child(2n) {
             background: rgba(0, 0, 0, 0.2);
         }
     }
 }
 
+caption {
+    caption-side: bottom;
+    padding: 1rem 0;
+}
+
 figure {
     margin: 1rem 0;
-    grid-column: 1 / -1;
 
     img {
         margin: 0 !important;
     }
 }
 
+figcaption {
+    padding: 1rem 0;
+}
+
 sup,
 small,
-figcaption {
+figcaption,
+caption {
     font-size: var(--step--2);
 }
 
@@ -157,7 +173,8 @@ small {
     color: var(--accent);
 }
 
-figcaption {
+figcaption, 
+caption {
     color: var(--accent);
     max-inline-size: calc(100% - 2rem);
     margin: auto;
