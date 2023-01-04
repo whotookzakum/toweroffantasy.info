@@ -23,13 +23,14 @@
 <style global lang="scss">
     .grid {
         display: grid;
-        grid-template-columns: auto minmax(auto, 800px) auto;
-        transition: transform 0.3s ease;
+        grid-template-columns: auto 1fr;
+        transition: all 0.3s ease;
     }
 
     @media (max-width: 800px) {
-        .page-contents {
-            grid-column: 1 / -1;
+        .grid {
+            transform: translateX(-250px);
+            grid-template-columns: auto 100%;
         }
     }
 
@@ -39,6 +40,8 @@
 
     main.page-contents {
         background: var(--surface1);
+        width: 100%;
+        max-width: 800px;
         margin: 0 auto;
         align-content: flex-start;
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
