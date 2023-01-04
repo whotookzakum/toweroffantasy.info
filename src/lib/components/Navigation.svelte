@@ -64,7 +64,7 @@
     ];
 </script>
 
-<nav>
+<nav class="nav-closed" id="nav-uid">
     <a class="home-link" href="/">
         <img
             src="/images/mia.png"
@@ -120,7 +120,8 @@
         width: 250px;
         height: 100vh;
         overflow-y: scroll;
-        position: sticky;
+        position: fixed;
+        margin-left: 0;
         top: 0;
         box-sizing: border-box;
         display: flex;
@@ -132,6 +133,17 @@
         }
         -ms-overflow-style: none;
         scrollbar-width: none;
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 800px) {
+        nav.nav-open {
+            margin-left: 0;
+        }
+
+        nav.nav-closed {  
+            margin-left: -250px;
+        }
     }
 
     .home-link {
