@@ -64,64 +64,73 @@
     ];
 </script>
 
-<nav>
-    <a class="home-link" href="/">
-        <img
-            src="/images/mia.png"
-            style="padding: 0.5rem"
-            alt="Logo"
-            width="128"
-            height="128"
-        />
-        Tower of Fantasy Index
-    </a>
-    <hr />
-    <div class="links">
-        {#each links as link}
-            {#if link.href.includes("https")}
+<div class="nav-wrapper">
+    <nav>
+        <a class="home-link" href="/">
+            <img
+                src="/images/mia.png"
+                style="padding: 0.5rem"
+                alt="Logo"
+                width="128"
+                height="128"
+            />
+            Tower of Fantasy Index
+        </a>
+        <hr />
+        <div class="links">
+            {#each links as link}
+                {#if link.href.includes("https")}
+                    <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                    >
+                        {link.text}
+                        <Icon icon="mdi:external-link" width="16" height="16" />
+                    </a>
+                {:else}
+                    <a
+                        href={link.href}
+                        class:active={$page.url.pathname.includes(link.href)}
+                        >{link.text}</a
+                    >
+                {/if}
+            {/each}
+        </div>
+        <div class="socials">
+            {#each socials as link}
                 <a
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label={link.label}
+                    ><Icon icon={link.icon} width="28" height="28" /></a
                 >
-                    {link.text}
-                    <Icon icon="mdi:external-link" width="16" height="16" />
-                </a>
-            {:else}
-                <a
-                    href={link.href}
-                    class:active={$page.url.pathname.includes(link.href)}
-                    >{link.text}</a
-                >
-            {/if}
-        {/each}
-    </div>
-    <div class="socials">
-        {#each socials as link}
-            <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                aria-label={link.label}
-                ><Icon icon={link.icon} width="28" height="28" /></a
-            >
-        {/each}
-    </div>
-    <footer>
-        <a href="">Cookies</a>
-        <a href="/privacy">Privacy</a>
-    </footer>
-</nav>
+            {/each}
+        </div>
+        <footer>
+            <a href="">Cookies</a>
+            <a href="/privacy">Privacy</a>
+        </footer>
+    </nav>
+</div>
 
 <style lang="scss">
+    .nav-wrapper {
+        max-height: 100vh;
+        max-height: 100dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding-bottom: env(safe-area-inset-bottom);
+        position: sticky;
+        top: 0;
+    }
+
     nav {
         background: var(--surface1);
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
         width: 250px;
-        height: 100vh;
-        overflow-y: scroll;
-        position: sticky;
-        top: 0;
+        height: 100%;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -132,6 +141,14 @@
         }
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+    
+    @media (max-width: 800px) {
+        nav {
+            left: -250px;
+            position: fixed;
+            top: 0;
+        }
     }
 
     .home-link {
