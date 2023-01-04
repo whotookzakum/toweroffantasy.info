@@ -42,12 +42,15 @@
         }
     }
 
+    @media (max-width: 900px) {
+        .section-navigation {
+            display: none;
+        }
+    }
+
     @media (max-width: 800px) {
         .topnav-wrapper {
             height: 44px;
-        }
-        .section-navigation {
-            display: none;
         }
     }
 </style>

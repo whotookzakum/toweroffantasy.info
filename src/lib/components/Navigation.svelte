@@ -65,16 +65,16 @@
     ];
 </script>
 
-<nav class:open={navIsOpen}>
-    <button class="nav-toggle" on:click={() => (navIsOpen = !navIsOpen)}>
-        <Icon
-            icon={navIsOpen ? "ph:x" : "mdi:menu"}
-            width="32"
-            height="32"
-            color="var(--accent)"
-        />
-    </button>
 
+<button class="nav-toggle" on:click={() => (navIsOpen = !navIsOpen)}>
+    <Icon
+        icon={navIsOpen ? "ph:x" : "mdi:menu"}
+        width="32"
+        height="32"
+        color="var(--accent)"
+    />
+</button>
+<nav class:open={navIsOpen}>
     <a class="home-link" href="/">
         <img
             src="/images/mia.png"
@@ -124,27 +124,12 @@
 </nav>
 
 <style lang="scss">
-    .nav-toggle {
-        position: fixed;
-        z-index: 9000;
-        top: 1rem;
-        right: 1rem;
-        background: var(--surface3);
-        box-shadow: 0 2px 4px var(--surface-shadow);
-        border: 1px solid var(--accent);
-        padding: 0.3rem;
-        box-sizing: border-box;
-        width: 44px;
-        height: 44px;
-        transition: all 0.3s ease;
-    }
-
     nav {
         background: var(--surface1);
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
         width: 250px;
         height: 100vh;
-        overflow-y: scroll;
+        overflow-y: auto;
         position: fixed;
         z-index: 9000;
         margin-left: 0;
@@ -162,14 +147,27 @@
         transition: all 0.3s ease;
     }
 
-    nav.open {
-        margin-left: 0;
-        // transform: translateX(0);
+    .nav-toggle {
+        display: none;
+        position: fixed;
+        z-index: 9000;
+        top: 1rem;
+        right: 1rem;
+        background: var(--surface3);
+        box-shadow: 0 2px 4px var(--surface-shadow);
+        border: 1px solid var(--accent);
+        padding: 0.3rem;
+        box-sizing: border-box;
+        width: 44px;
+        height: 44px;
     }
 
     @media (max-width: 800px) {
-        nav {
-            margin-left: -250px;
+        nav:not(.open) {
+            transform: translateX(-250px); // or margin-left
+        }
+        .nav-toggle {
+            display: unset;
         }
     }
 
