@@ -108,7 +108,7 @@
         {/each}
     </div>
     <footer>
-        <a href="">Cookies</a>
+        <a href="/">Cookies</a>
         <a href="/privacy">Privacy</a>
     </footer>
 </nav>

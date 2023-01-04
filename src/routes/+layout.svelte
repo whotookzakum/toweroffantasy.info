@@ -2,9 +2,13 @@
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
+    import NavigationToggle from "../lib/components/NavigationToggle.svelte";
+
+    let navIsOpen;
 </script>
 
-<div class="grid">
+<NavigationToggle bind:navIsOpen />
+<div class="grid" class:show-nav={navIsOpen}>
     <Navigation />
     <main class="page-contents">
         <slot />
@@ -28,6 +32,10 @@
             transform: translateX(-250px);
             grid-template-columns: auto 100%;
         }
+    }
+
+    .show-nav {
+        transform: translateX(0) !important;
     }
 
     main.page-contents {
