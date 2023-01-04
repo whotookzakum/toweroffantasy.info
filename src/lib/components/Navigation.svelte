@@ -64,8 +64,8 @@
     ];
 </script>
 
-<div class="nav-wrapper">
-    <nav>
+<nav>
+    <div class="nav-wrapper">
         <a class="home-link" href="/">
             <img
                 src="/images/mia.png"
@@ -112,20 +112,10 @@
             <a href="">Cookies</a>
             <a href="/privacy">Privacy</a>
         </footer>
-    </nav>
-</div>
+    </div>
+</nav>
 
 <style lang="scss">
-    .nav-wrapper {
-        max-height: 100vh;
-        max-height: 100dvh;
-        overflow-y: auto;
-        overscroll-behavior: contain;
-        padding-bottom: env(safe-area-inset-bottom);
-        position: sticky;
-        top: 0;
-    }
-
     nav {
         background: var(--surface1);
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
@@ -149,6 +139,16 @@
             position: fixed;
             top: 0;
         }
+    }
+    
+    .nav-wrapper {
+        max-height: 100vh;
+        max-height: 100dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding-bottom: env(safe-area-inset-bottom);
+        position: sticky;
+        top: 0;
     }
 
     .home-link {
