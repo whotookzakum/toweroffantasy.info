@@ -30,15 +30,25 @@
         top: 0rem;
         backdrop-filter: blur(10px);
         z-index: 50;
+    }
 
-        & > nav {
-            display: flex;
-            align-items: center;
-            gap: 2ch;
-        }
+    .section-navigation {
+        display: flex;
+        align-items: center;
+        gap: 2ch;
 
         a {
             border: none;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .topnav-wrapper {
+            justify-content: flex-end;
+            height: 44px;
+        }
+        .section-navigation {
+            display: none;
         }
     }
 </style>
