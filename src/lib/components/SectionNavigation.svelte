@@ -44,7 +44,6 @@
 
     @media (max-width: 800px) {
         .topnav-wrapper {
-            justify-content: flex-end;
             height: 44px;
         }
         .section-navigation {

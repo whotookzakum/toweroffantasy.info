@@ -2,19 +2,14 @@
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
-    import NavigationToggle from "../lib/components/NavigationToggle.svelte";
-
     let navIsOpen;
 </script>
 
-<NavigationToggle bind:navIsOpen />
-<Navigation navIsOpen={navIsOpen} />
-<div class="page-wrapper" class:is-open={navIsOpen}>
+<Navigation bind:navIsOpen />
+<div class="page-wrapper" class:slide={navIsOpen}>
     <main class="page-contents">
         <slot />
-        <footer class="page-footer">
-            &copy; 2023 Tower of Fantasy Index.
-        </footer>
+        <footer class="page-footer">&copy; 2023 Tower of Fantasy Index.</footer>
     </main>
 </div>
 
@@ -28,13 +23,13 @@
         margin-left: 0;
     }
 
+    .slide {
+        margin-left: 250px;
+    }
+
     @media (max-width: 800px) {
         .page-wrapper {
             padding-left: 0;
-        }
-
-        .page-wrapper.is-open {
-            margin-left: 250px;
         }
     }
 

@@ -61,7 +61,6 @@
 <FoodFilters bind:filters />
 
 <h2 id="dishes">Dishes</h2>
-
 <div class="table-wrapper">
     <table class="dishes-table bg-alternate">
         <thead>

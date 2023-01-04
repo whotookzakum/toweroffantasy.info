@@ -1,7 +1,7 @@
 <script>
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
-    export let navIsOpen = false;
+    export let navIsOpen;
 
     const links = [
         {
@@ -65,7 +65,16 @@
     ];
 </script>
 
-<nav class:nav-closed={!navIsOpen} class:nav-open={navIsOpen} >
+<nav class:open={navIsOpen}>
+    <button class="nav-toggle" on:click={() => (navIsOpen = !navIsOpen)}>
+        <Icon
+            icon={navIsOpen ? "ph:x" : "mdi:menu"}
+            width="32"
+            height="32"
+            color="var(--accent)"
+        />
+    </button>
+
     <a class="home-link" href="/">
         <img
             src="/images/mia.png"
@@ -115,6 +124,21 @@
 </nav>
 
 <style lang="scss">
+    .nav-toggle {
+        position: fixed;
+        z-index: 9000;
+        top: 1rem;
+        right: 1rem;
+        background: var(--surface3);
+        box-shadow: 0 2px 4px var(--surface-shadow);
+        border: 1px solid var(--accent);
+        padding: 0.3rem;
+        box-sizing: border-box;
+        width: 44px;
+        height: 44px;
+        transition: all 0.3s ease;
+    }
+
     nav {
         background: var(--surface1);
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
@@ -122,6 +146,7 @@
         height: 100vh;
         overflow-y: scroll;
         position: fixed;
+        z-index: 9000;
         margin-left: 0;
         top: 0;
         box-sizing: border-box;
@@ -137,12 +162,13 @@
         transition: all 0.3s ease;
     }
 
-    @media (max-width: 800px) {
-        nav.nav-open {
-            margin-left: 0;
-        }
+    nav.open {
+        margin-left: 0;
+        // transform: translateX(0);
+    }
 
-        nav.nav-closed {  
+    @media (max-width: 800px) {
+        nav {
             margin-left: -250px;
         }
     }
