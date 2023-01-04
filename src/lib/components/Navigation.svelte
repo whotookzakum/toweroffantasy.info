@@ -2,6 +2,8 @@
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
 
+    export let navIsOpen = false;
+
     const links = [
         {
             text: "Simulacra",
@@ -64,7 +66,7 @@
     ];
 </script>
 
-<nav>
+<nav class:nav-closed={!navIsOpen} class:nav-open={navIsOpen} >
     <div class="nav-wrapper">
         <a class="home-link" href="/">
             <img
@@ -125,18 +127,29 @@
         display: flex;
         flex-direction: column;
         --padding: 0.75rem 1.5rem;
+        position: fixed;
+        margin-left: 0;
 
         &::-webkit-scrollbar {
             display: none;
         }
         -ms-overflow-style: none;
         scrollbar-width: none;
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 800px) {
+        nav.nav-open {
+            margin-left: 0;
+        }
+
+        nav.nav-closed {  
+            margin-left: -250px;
+        }
     }
     
     @media (max-width: 800px) {
         nav {
-            left: -250px;
-            position: fixed;
             top: 0;
         }
     }

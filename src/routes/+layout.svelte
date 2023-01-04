@@ -8,8 +8,8 @@
 </script>
 
 <NavigationToggle bind:navIsOpen />
-<div class="grid" class:show-nav={navIsOpen}>
-    <Navigation />
+<Navigation navIsOpen={navIsOpen} />
+<div class="page-wrapper" class:is-open={navIsOpen}>
     <main class="page-contents">
         <slot />
         <footer class="page-footer">
@@ -21,15 +21,20 @@
 <BackgroundImage />
 
 <style global lang="scss">
-    .grid {
-        display: grid;
-        grid-template-columns: auto minmax(auto, 800px) auto;
-        transition: transform 0.3s ease;
+    .page-wrapper {
+        transition: all 0.3s ease;
+        overflow-x: hidden;
+        padding-left: 250px;
+        margin-left: 0;
     }
 
     @media (max-width: 800px) {
-        .page-contents {
-            grid-column: 1 / -1;
+        .page-wrapper {
+            padding-left: 0;
+        }
+
+        .page-wrapper.is-open {
+            margin-left: 250px;
         }
     }
 
@@ -39,6 +44,7 @@
 
     main.page-contents {
         background: var(--surface1);
+        width: 100vw;
         margin: 0 auto;
         align-content: flex-start;
         // box-shadow: 0 0 4px 2px var(--surface-shadow);
