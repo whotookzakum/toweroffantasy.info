@@ -3,8 +3,12 @@
 @import './colors';
 
 html {
+    overflow-x: hidden;
+    overflow-x: clip;
     scroll-behavior: smooth;
     scroll-padding: calc(60px + 1rem);
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 @media (prefers-reduced-motion) {
@@ -18,6 +22,7 @@ body {
     min-height: 100vh;
     background: var(--bg);
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 .full-bleed,
