@@ -2,10 +2,12 @@
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
+    import MobileMenu from "../lib/components/MobileMenu.svelte";
 </script>
 
-<div class="grid">
-    <Navigation />
+<MobileMenu />
+<Navigation />
+<div class="page-wrapper" id="page-uid">
     <main class="page-contents">
         <slot />
         <footer class="page-footer">
@@ -17,22 +19,22 @@
 <BackgroundImage />
 
 <style global lang="scss">
-    .grid {
-        display: grid;
-        grid-template-columns: auto 1fr;
+    .page-wrapper {
         transition: all 0.3s ease;
+        overflow-x: hidden;
+        padding-left: 250px;
+        margin-left: 0;
     }
 
     @media (max-width: 800px) {
-        .grid {
-            transform: translateX(-250px);
-            grid-template-columns: auto 100%;
+        .page-wrapper {
+            padding-left: 0;
         }
     }
 
     main.page-contents {
         background: var(--surface1);
-        width: 100%;
+        width: 100vw;
         max-width: 800px;
         margin: 0 auto;
         align-content: flex-start;
