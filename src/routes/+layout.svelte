@@ -2,12 +2,14 @@
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
-    import MobileMenu from "../lib/components/MobileMenu.svelte";
+    import NavigationToggle from "../lib/components/NavigationToggle.svelte";
+
+    let navIsOpen;
 </script>
 
-<MobileMenu />
-<Navigation />
-<div class="page-wrapper" id="page-uid">
+<NavigationToggle bind:navIsOpen />
+<Navigation navIsOpen={navIsOpen} />
+<div class="page-wrapper" class:is-open={navIsOpen}>
     <main class="page-contents">
         <slot />
         <footer class="page-footer">
@@ -29,6 +31,10 @@
     @media (max-width: 800px) {
         .page-wrapper {
             padding-left: 0;
+        }
+
+        .page-wrapper.is-open {
+            margin-left: 250px;
         }
     }
 

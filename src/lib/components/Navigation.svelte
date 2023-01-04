@@ -1,6 +1,7 @@
 <script>
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
+    export let navIsOpen = false;
 
     const links = [
         {
@@ -64,7 +65,7 @@
     ];
 </script>
 
-<nav class="nav-closed" id="nav-uid">
+<nav class:nav-closed={!navIsOpen} class:nav-open={navIsOpen} >
     <a class="home-link" href="/">
         <img
             src="/images/mia.png"
