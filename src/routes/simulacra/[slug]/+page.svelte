@@ -7,6 +7,8 @@
     import RecommendedMatrices from "$lib/components/simulacrum/RecommendedMatrices.svelte";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import OtherInfo from "$lib/components/simulacrum/OtherInfo.svelte";
+    import AwakeningGifts from "$lib/components/simulacrum/AwakeningGifts.svelte";
+    import AwakeningTraits from "$lib/components/simulacrum/AwakeningTraits.svelte";
 
     export let data;
 </script>
@@ -32,6 +34,8 @@
 <RecommendedMatrices weapon={data.weapon} />
 
 <h2 id="awakening">Awakening</h2>
+<AwakeningGifts gifts={data.bestGifts} categories={data.giftTypes} />
+<AwakeningTraits traits={data.traits} />
 
 <h2 id="other-info">Other Info</h2>
 <OtherInfo simulacrum={data} />

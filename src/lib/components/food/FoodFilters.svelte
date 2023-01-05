@@ -27,7 +27,7 @@
 </header>
 <form action="" method="get" class="filters full-bleed">
     <section>
-        <span class="section-header">Rarity</span>
+        <small class="section-header">Rarity</small>
         <div class="filter-group">
             {#each rarities as rarity}
                 <input
@@ -45,7 +45,7 @@
     </section>
 
     <section>
-        <span class="section-header">Recovery</span>
+        <small class="section-header">Recovery</small>
         <div class="filter-group">
             {#each recoveryEffects as effect}
                 <input
@@ -63,7 +63,7 @@
     </section>
 
     <section>
-        <span class="section-header">Buff</span>
+        <small class="section-header">Buff</small>
         <div class="filter-group">
             {#each buffs as buff}
                 <input
@@ -93,7 +93,6 @@
         background: var(--surface2);
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         gap: 1rem 1.5rem;
         margin: 0 auto;
         padding: 1rem;
@@ -101,16 +100,12 @@
         box-shadow: 0 2px 4px var(--surface-shadow);
     }
 
-    .section-header {
-        text-transform: uppercase;
-        font-size: var(--step--3);
-        display: block;
-        width: 100%;
-        margin-bottom: 0.2rem;
-    }
-
     .filter-group {
         display: flex;
+    }
+
+    small {
+        color: inherit;
     }
 
     input {
@@ -151,5 +146,6 @@
         width: 20px; 
         height: 20px;
         border-radius: 3px;
+        margin-block: 2px;
     }
 </style>

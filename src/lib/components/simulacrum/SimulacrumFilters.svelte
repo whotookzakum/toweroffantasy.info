@@ -27,7 +27,7 @@
 </header>
 <form action="" method="get" class="filters full-bleed">
     <section>
-        <span class="section-header">Display</span>
+        <small class="section-header">Display</small>
         <div class="filter-group">
             <SliderCheckbox
                 bind:checked={showWeapon}
@@ -40,7 +40,7 @@
     </section>
 
     <section>
-        <span class="section-header">Type</span>
+        <small class="section-header">Type</small>
         <div class="filter-group">
             {#each types as type}
                 <input
@@ -58,7 +58,7 @@
     </section>
 
     <section>
-        <span class="section-header">Element</span>
+        <small class="section-header">Element</small>
         <div class="filter-group">
             {#each elements as element}
                 <input
@@ -95,16 +95,12 @@
         box-shadow: 0 2px 4px var(--surface-shadow);
     }
 
-    .section-header {
-        text-transform: uppercase;
-        font-size: var(--step--3);
-        display: block;
-        width: 100%;
-        margin-bottom: 0.2rem;
-    }
-
     .filter-group {
         display: flex;
+    }
+
+    small {
+        color: inherit;
     }
 
     input {

@@ -264,6 +264,14 @@ h6 {
     font-size: var(--step-0);
 }
 
+.section-header {
+    text-transform: uppercase;
+    font-size: var(--step--3);
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
 // ======================================================================
 // LISTS
 // ======================================================================
