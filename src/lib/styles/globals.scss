@@ -7,6 +7,12 @@ html {
     scroll-padding: calc(60px + 1rem);
 }
 
+html, body {
+    overflow-x: hidden;
+    overflow-x: -moz-hidden-unscrollable;
+    overflow-x: clip;
+}
+
 @media (prefers-reduced-motion) {
     html {
         scroll-behavior: unset;
@@ -17,7 +23,6 @@ body {
     margin: 0;
     min-height: 100vh;
     background: var(--bg);
-    overflow-x: hidden;
 }
 
 .full-bleed,
