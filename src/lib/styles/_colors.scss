@@ -11,6 +11,9 @@
     --accent: #439eac;
     --text-highlight: #377dcb;
     --text-green: #35b400;
+    --text-clay: #ba4232;
+    --text-mint: #17a472;
+    --text-navy: #2e3b4f;
 
     --element-volt: #b769be;
     --element-ice: #49a3d1;
@@ -23,6 +26,18 @@
     --tier-a: #e1beff;
     --tier-s: #ffdb84;
     --tier-ss: #fdebb7;
+}
+
+.clay {
+    color: var(--text-clay);
+}
+
+.mint {
+    color: var(--text-mint);
+}
+
+.navy {
+    color: var(--text-navy);
 }
 
 $colors: (
@@ -46,7 +61,6 @@ $colors: (
         dark: #39485f,
         lightblue: #00d2ff,
         turquoise: #439eac,
-        mediumgreen: #17a472,
         teal: #2bbba8,
         yellow: #ffcd48,
         orange: #e07439,

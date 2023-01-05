@@ -2,8 +2,10 @@
     import Item from "../Item.svelte";
 
     export let type, tier, amount;
+    let rarity;
 
     function getImgSrc(material, tier) {
+        setRarity(material);
         switch (material) {
             case "red":
                 return `zujian/gem_p1_FireAtkAdded_${tier}`;
@@ -30,9 +32,15 @@
                 return `item/Item_mine_physic_0${tier}`;
         }
     }
+
+    function setRarity(m) {
+        if (m === "red" || m === "green") rarity = tier + 2;
+        else if (m === "blue" || m === "black") rarity = tier === 1 ? 4 : 5;
+        else rarity = tier + 1
+    }
 </script>
 
-<Item {amount}>
+<Item {amount} {rarity}>
     <img
         src={`/images/Icon/${getImgSrc(type, tier)}.png`}
         alt={`${type} augment material`}

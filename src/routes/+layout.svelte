@@ -39,7 +39,8 @@
     // content-width
     @media (max-width: 800px) {
         .layout {
-            grid-template-columns: var(--nav-width) 100vw;
+            // desktop: when width is small, 1fr works better because 100vw goes under the scrollbar, but using 1fr causes content to contract
+            grid-template-columns: var(--nav-width) 100vw; 
 
             &:not(.open) {
                 // margin instead of transform provides better framerate on firefox mobile, and allows the nav toggle button to stay fixed at the top; the stacking context gets messed up with transform with the current structure (nav-toggle inside of nav)

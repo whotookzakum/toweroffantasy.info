@@ -127,7 +127,7 @@
 <style lang="scss">
     nav {
         background: var(--surface1);
-        width: 250px;
+        max-width: var(--nav-width);
         height: 100vh;
         overflow-y: auto;
         position: sticky;

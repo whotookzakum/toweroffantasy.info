@@ -2,6 +2,7 @@
     export let weapon;
     import RangeSlider from "svelte-range-slider-pips";
     import WeaponMaterial from "$lib/components/simulacrum/WeaponMaterial.svelte";
+    import Item from "../Item.svelte";
 
     $: values = [0, 160];
 
@@ -696,7 +697,18 @@
     );
 </script>
 
-<h4 id="upgrade-materials">Upgrade Materials</h4>
+<!-- <h4 id="upgrade-materials">
+    <span>Upgrade Materials</span>
+    <span>(level <strong>{values[0]}</strong> to <strong>{values[1]})</span>
+</h4> -->
+
+<h4 id="upgrade-materials">
+    Upgrade Materials
+    <span>
+        Lv. <strong class="mint">{values[0]}</strong>
+        to <strong class="mint">{values[1]}</strong>
+    </span>
+</h4>
 
 <RangeSlider
     bind:values
@@ -710,32 +722,156 @@
     last="label"
     rest
 />
-<div>Weapon level {values[0]} to {values[1]}</div>
 
-<!-- Level and Mats to increase level cap -->
-{#if values[1] >= 20}
-    <div>Req. Wanderer Level <strong>{values[1] / 2}</strong></div>
-{/if}
+<dl class="results-wrapper">
+    <div class="column">
+        <dt>Augmentation</dt>
+        {#if values[1] >= 20}
+            <dd>
+                <details>
+                    <summary>Details</summary>
+                    Augments enhancement cap from
+                    <strong class="mint">
+                        Lv. {values[0]}
+                    </strong>
+                    to
+                    <strong class="mint">
+                        Lv. {values[1]}
+                    </strong>
+                    and raises weapon skills to
+                    <strong class="mint">Lv. {values[1] / 10}</strong>
+                </details>
+            </dd>
+        {/if}
+        <dd>
+            <div class="item-grid">
+                {#each totalMatsInRange as valuesInTier, tier}
+                    {#each totalMatsInRange[tier] as matCount, index}
+                        <WeaponMaterial
+                            type={weapon.materials[index]}
+                            tier={tier + 1}
+                            amount={matCount}
+                        />
+                    {/each}
+                {/each}
+                {#if totalAugmentGoldCost > 0}
+                    <div style="display: flex; flex-wrap: wrap">
+                        <Item rarity={3} amount={totalAugmentGoldCost}>
+                            <img
+                                src="/images/Icon/huobi/jinbi.png"
+                                alt="Gold"
+                                width="64"
+                                height="64"
+                            />
+                        </Item>
+                    </div>
+                {/if}
+            </div>
+        </dd>
+        {#if values[1] >= 20}
+            <dd>
+                Req. Wanderer Level <strong class="clay">{values[1] / 2}</strong
+                >
+            </dd>
+        {/if}
+    </div>
+    <div class="column">
+        <dt>Enhancement</dt>
+        {#if totalGoldAndExpCost}
+            <dd>
+                <details>
+                    <summary>Details</summary>
+                    Enhances weapon from
+                    <strong class="mint">Lv. {values[0]}</strong>
+                    to <strong class="mint">Lv. {values[1]}</strong>
+                </details>
+            </dd>
+            <dd>
+                <div class="item-grid">
+                    <Item
+                        rarity={3}
+                        amount={totalGoldAndExpCost.toString().includes("?")
+                            ? "???"
+                            : totalGoldAndExpCost}
+                    >
+                        <img
+                            src="/images/Icon/huobi/jinbi.png"
+                            alt="Gold"
+                            width="64"
+                            height="64"
+                        />
+                    </Item>
+                    <Item
+                        rarity={1}
+                        amount={totalGoldAndExpCost.toString().includes("?")
+                            ? "???"
+                            : totalGoldAndExpCost}
+                    >
+                        <img
+                            src="/images/Icon/huobi/jingyan.png"
+                            alt="EXP"
+                            width="64"
+                            height="64"
+                        />
+                    </Item>
+                </div>
+            </dd>
+        {/if}
+    </div>
+</dl>
 
-<div style="display: flex; flex-wrap: wrap">
-    {#each totalMatsInRange as valuesInTier, tier}
-        {#each totalMatsInRange[tier] as matCount, index}
-            <WeaponMaterial
-                type={weapon.materials[index]}
-                tier={tier + 1}
-                amount={matCount}
-            />
-        {/each}
-    {/each}
-</div>
-
-{#if totalAugmentGoldCost > 0}
-    <div>Augmentation Gold Cost: {totalAugmentGoldCost}</div>
-{/if}
-
-<!-- Gold and EXP to raise level -->
 <div>
-    Gold and exp: {totalGoldAndExpCost.toString().includes("?")
-        ? "???"
-        : totalGoldAndExpCost}
+    <section />
 </div>
+
+<style lang="scss">
+    .results-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(64px * 3 + 1rem), auto));
+        gap: var(--space-s) var(--space-xl);
+        align-items: flex-start;
+        justify-items: center;
+    }
+
+    .column {
+        max-width: calc(64px * 3 + 1rem);
+    }
+
+    .item-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 64px);
+        gap: 0.5rem;
+    }
+
+    h4#upgrade-materials {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: var(--space-2xs);
+
+        span {
+            font-size: var(--step-1);
+            font-weight: normal;
+            text-transform: none;
+        }
+    }
+
+    details summary {
+        font-size: var(--step--1);
+        user-select: none;
+    }
+
+    dl div {
+        gap: 0.5rem;
+    }
+
+    dt {
+        color: var(--accent);
+        font-size: var(--step-2);
+    }
+
+    dd {
+        margin: 0;
+    }
+</style>
