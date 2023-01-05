@@ -23,12 +23,6 @@
         transition: margin 0.3s ease;
     }
 
-    @media (prefers-reduced-motion) {
-        .layout {
-            transition: unset;
-        }
-    }
-
     // 2nav-width + content-width
     @media (max-width: 1300px) {
         .layout {

@@ -17,6 +17,9 @@ html, body {
     html {
         scroll-behavior: unset;
     }
+    * {
+        transition: unset;
+    }
 }
 
 body {
