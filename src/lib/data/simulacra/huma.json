@@ -13,8 +13,93 @@
             "description": "Each time Huma receives damage, gain **1** Fortitude mark and gain **1** more Fortitude mark if it is flame damage, up to **1** time per **1** second and **12** stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks × **0.6%** HP for **12** seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks × **0.9%** HP."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Everyday Items",
+        "Games",
+        "Decorations"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 30,
+            "gift": "chessSet"
+        },
+        {
+            "points": 30,
+            "gift": "diary"
+        },
+        {
+            "points": 30,
+            "gift": "juicePouch"
+        },
+        {
+            "points": 30,
+            "gift": "suit"
+        },
+        {
+            "points": 30,
+            "gift": "perfume"
+        },
+        {
+            "points": 30,
+            "gift": "spiderFigure"
+        },
+        {
+            "points": 30,
+            "gift": "elfFigure"
+        },
+        {
+            "points": 15,
+            "gift": "flowers"
+        },
+        {
+            "points": 15,
+            "gift": "photoAlbum"
+        },
+        {
+            "points": 15,
+            "gift": "scarf"
+        },
+        {
+            "points": 15,
+            "gift": "tradingCard"
+        },
+        {
+            "points": 15,
+            "gift": "plant"
+        }
+    ],
     "gender": "Female",
     "height": "167 cm",
     "birthplace": "???",

@@ -46,8 +46,68 @@
             "description": "Frost ATK is boosted by **2.4%** every **3** seconds upon entering combat. Stack up to **10** times. Lasts for **5** seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Metalware",
+        "Everyday Items"
+    ],
+    "bestGifts": [
+        {
+            "points": 60,
+            "gift": "present"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "kitchenware"
+        },
+        {
+            "points": 40,
+            "gift": "catFigure"
+        },
+        {
+            "points": 30,
+            "gift": "juicePouch"
+        },
+        {
+            "points": 30,
+            "gift": "suit"
+        },
+        {
+            "points": 30,
+            "gift": "toolbox"
+        },
+        {
+            "points": 30,
+            "gift": "perfume"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 15,
+            "gift": "flowers"
+        },
+        {
+            "points": 15,
+            "gift": "dumbbells"
+        },
+        {
+            "points": 15,
+            "gift": "scarf"
+        }
+    ],
     "gender": "Female",
     "height": "190 cm",
     "birthplace": "???",

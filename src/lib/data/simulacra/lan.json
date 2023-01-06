@@ -23,8 +23,42 @@
             "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **24%** and increase final damage by **8%** to yourself and teammates inside the boundary."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Rare Items",
+        "Everyday Items",
+        "Vera",
+        "Ninth Realm"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "rarePhoto"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 60,
+            "gift": "rareTradingCard"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "172 cm",
     "birthplace": "???",

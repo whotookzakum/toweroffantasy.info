@@ -36,8 +36,85 @@
             "description": "After Cobalt-B uses her discharge skill, restore a random amount of weapon charge between **90** to **180** points."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Metalware",
+        "Collectibles",
+        "Limited Edition"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "kitchenware"
+        },
+        {
+            "points": 80,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "seal"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "foxFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "bearFigure"
+        },
+        {
+            "points": 60,
+            "gift": "tataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "present"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 30,
+            "gift": "necklace"
+        },
+        {
+            "points": 30,
+            "gift": "toolbox"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 15,
+            "gift": "dumbbells"
+        },
+        {
+            "points": 15,
+            "gift": "snackBox"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "157 cm",
     "birthplace": "Crown",

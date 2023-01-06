@@ -13,8 +13,81 @@
             "description": "Each time Tsubasa deals damage, gain **1** stack of Fierce Strike, up to **1** stack per **1** second. Each stack adds **0.6%** ATK, up to **30** stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for **30** seconds."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Figurines",
+        "Limited Edition",
+        "Rare Items"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "tataPlush"
+        },
+        {
+            "points": 80,
+            "gift": "miaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "seal"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "bearFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "vial"
+        },
+        {
+            "points": 30,
+            "gift": "pumpkinFigure"
+        },
+        {
+            "points": 30,
+            "gift": "androidFigure"
+        },
+        {
+            "points": 15,
+            "gift": "photo"
+        },
+        {
+            "points": 15,
+            "gift": "snackBox"
+        },
+        {
+            "points": 15,
+            "gift": "harmonica"
+        }
+    ],
     "gender": "Female",
     "height": "169 cm",
     "birthplace": "Astra",

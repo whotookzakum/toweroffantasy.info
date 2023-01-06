@@ -43,8 +43,33 @@
             "description": "Increase epiphyllum explosion damage by **20%**. Reduce all resistance by **7%** upon hit by epiphyllums for **7** seconds. This effect does not stack."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Metalware",
+        "Decorations",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 40,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "175 cm",
     "birthplace": "Mirroria",

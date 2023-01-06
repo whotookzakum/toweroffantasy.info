@@ -29,8 +29,33 @@
             "description": "After successfully casting a weapon skill, gain **18%** final damage boost for **18** seconds. If Immortal Wings is advanced to 1 star, receive Alyss' support when using **Physical/Flame/Volt** weapon skill while inside the Cold Field. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Collectibles", 
+        "Limited Edition", 
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 20,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "177 cm",
     "birthplace": "Mirroria",

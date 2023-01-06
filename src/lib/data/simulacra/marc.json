@@ -30,8 +30,39 @@
             "description": "When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **2%** HP every second, and healing received is increased by **50%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Metalware"
+    ],
+    "bestGifts": [
+        {
+            "points": 60,
+            "gift": "kitchenware"
+        },
+        {
+            "points": 60,
+            "gift": "present"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "bearFigure"
+        },
+        {
+            "points": 30,
+            "gift": "toolbox"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 15,
+            "gift": "dumbbells"
+        }
+    ],
     "gender": "Male",
     "height": "192 cm",
     "birthplace": "???",

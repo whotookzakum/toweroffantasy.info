@@ -8,7 +8,7 @@
 {#if weapon.abilitiesVideoSrc}
     <Youtube source={weapon.abilitiesVideoSrc} />
 {/if}
-<ul class="abilities-list">
+<ul class="abilities-list full-bleed">
     {#each weapon.abilities as ability}
         <li>
             <details class="ability">
@@ -33,9 +33,9 @@
                                         ? input.split("hold:").pop()
                                         : input}
                                 </kbd>
-                                {#if index < ability.input.length - 1}
+                                <!-- {#if index < ability.input.length - 1}
                                     <span>🡲</span>
-                                {/if}
+                                {/if} -->
                             {/each}
                         {/if}
                     </div>
@@ -76,7 +76,7 @@
 
     summary {
         display: flex;
-        gap: 1rem;
+        gap: 0 1rem;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -110,6 +110,7 @@
         color: var(--text2);
         gap: 0.5rem;
         user-select: none;
+        margin-left: auto;
     }
 
     :global(.ability p) {

@@ -34,8 +34,34 @@
             "description": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Decorations",
+        "Rare Items",
+        "Games",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "166 cm",
     "birthplace": "???",

@@ -40,8 +40,32 @@
             "description": "Benediction Resonance: Increase Max HP by **10%** for the entire team. This effect cannot be stacked. Additionally, increase your Max HP by 10%. Each time you successfully use the skill while having hyperbody or more than **50%** HP, grant hyperbody to all allies for **8** seconds."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Everyday Items",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "174 cm",
     "birthplace": "???",

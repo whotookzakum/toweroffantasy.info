@@ -29,8 +29,34 @@
             "description": "Every time Umi uses **Magic Time**, increase final damage by **23%** for **30** seconds (can not be stacked)."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Toys",
+        "Vera"
+    ],
+    "bestGifts": [
+        [
+            {
+                "points": 60,
+                "gift": "princeTataFigure"
+            },
+            {
+                "points": 60,
+                "gift": "linyeFigure"
+            },
+            {
+                "points": 30,
+                "gift": "strangeFragment"
+            },
+            {
+                "points": 30,
+                "gift": "bunnyDoll"
+            },
+            {
+                "points": 15,
+                "gift": "strangePlant"
+            }
+        ]
+    ],
     "gender": "Female",
     "height": "162 cm",
     "birthplace": "Mirroria",

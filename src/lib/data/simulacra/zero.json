@@ -13,8 +13,56 @@
             "description": "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by **3** seconds. Can only activate for the same weapon **1** time every **5** seconds."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Limited Edition",
+        "Games"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "tataFigure"
+        },
+        {
+            "points": 30,
+            "gift": "chessSet"
+        },
+        {
+            "points": 30,
+            "gift": "diary"
+        },
+        {
+            "points": 15,
+            "gift": "tradingCard"
+        },
+        {
+            "points": 15,
+            "gift": "snackBox"
+        }
+    ],
     "gender": "Male",
     "height": "155 cm",
     "birthplace": "Banges",

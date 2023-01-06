@@ -13,8 +13,89 @@
             "description": "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by **16%** and physical ATK by an additional **10%** for **8** seconds. Cooldown: **16** seconds."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Metalware",
+        "Collectibles",
+        "Rare Items"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "kitchenware"
+        },
+        {
+            "points": 80,
+            "gift": "seal"
+        },
+        {
+            "points": 60,
+            "gift": "miaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "foxFigure"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "bearFigure"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 60,
+            "gift": "present"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "vial"
+        },
+        {
+            "points": 30,
+            "gift": "necklace"
+        },
+        {
+            "points": 30,
+            "gift": "toolbox"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 15,
+            "gift": "dumbbells"
+        },
+        {
+            "points": 15,
+            "gift": "harmonica"
+        },
+        {
+            "points": 15,
+            "gift": "photo"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Female",
     "height": "163 cm",
     "birthplace": "Warren",

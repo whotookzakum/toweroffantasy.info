@@ -51,8 +51,93 @@
             "description": "After summoning an Electrode, deal volt damage equal to **100%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **200%** of ATK."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Toys",
+        "Everyday Items",
+        "Decorations"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "present"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 60,
+            "gift": "foxFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 30,
+            "gift": "tataPlush"
+        },
+        {
+            "points": 30,
+            "gift": "suit"
+        },
+        {
+            "points": 30,
+            "gift": "catPlush"
+        },
+        {
+            "points": 30,
+            "gift": "perfume"
+        },
+        {
+            "points": 30,
+            "gift": "spiderFigure"
+        },
+        {
+            "points": 30,
+            "gift": "elfFigure"
+        },
+        {
+            "points": 30,
+            "gift": "robotFigure"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "flowers"
+        },
+        {
+            "points": 15,
+            "gift": "photoAlbum"
+        },
+        {
+            "points": 15,
+            "gift": "plant"
+        },
+        {
+            "points": 15,
+            "gift": "scarf"
+        },
+        {
+            "points": 15,
+            "gift": "pinwheel"
+        }
+    ],
     "gender": "Female",
     "height": "165 cm",
     "birthplace": "???",

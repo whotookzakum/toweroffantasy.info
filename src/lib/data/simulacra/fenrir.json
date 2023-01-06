@@ -30,30 +30,30 @@
         }
     ],
     "giftTypes": [
-        "collectibles",
-        "toys",
-        "vera"
+        "Collectibles",
+        "Toys",
+        "Vera"
     ],
     "bestGifts": [
         {
             "points": 80,
-            "id": 44
+            "gift": "princeTataFigure"
         },
         {
             "points": 80,
-            "id": 46
+            "gift": "linyeFigure"
         },
         {
             "points": 40,
-            "id": 45
+            "gift": "bunnyDoll"
         },
         {
             "points": 30,
-            "id": 43
+            "gift": "strangeFragment"
         },
         {
             "points": 20,
-            "id": 42
+            "gift": "strangePlant"
         }
     ],
     "gender": "Female",

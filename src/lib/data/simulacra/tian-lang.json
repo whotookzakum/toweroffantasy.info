@@ -40,8 +40,33 @@
             "description": "Each use of volt weapon skill or discharge skill gains **1** free dodge attempt, up to **3** attempts. When volt weapon skill and discharge skill are used simultaneously, increase volt damage by **18%** for **8** seconds. This effect cannot be stacked."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Collectibles",
+        "Decorations",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 80,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 20,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Male",
     "height": "185 cm",
     "birthplace": "Mirroria",

@@ -13,8 +13,85 @@
             "description": "When teamed up with Echo, allies within **10** meters around Echo gain a damage boost of **6%** (excluding Echo)."
         }
     ],
-    "giftTypes": [],
-    "bestGifts": [],
+    "giftTypes": [
+        "Everyday Items",
+        "Limited Edition",
+        "Games"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "psp"
+        },
+        {
+            "points": 80,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "tataFigure"
+        },
+        {
+            "points": 30,
+            "gift": "chessSet"
+        },
+        {
+            "points": 30,
+            "gift": "suit"
+        },
+        {
+            "points": 30,
+            "gift": "juicePouch"
+        },
+        {
+            "points": 30,
+            "gift": "diary"
+        },
+        {
+            "points": 30,
+            "gift": "perfume"
+        },
+        {
+            "points": 15,
+            "gift": "flowers"
+        },
+        {
+            "points": 15,
+            "gift": "snackBox"
+        },
+        {
+            "points": 15,
+            "gift": "tradingCard"
+        },
+        {
+            "points": 15,
+            "gift": "harmonica"
+        },
+        {
+            "points": 15,
+            "gift": "scarf"
+        }
+    ],
     "gender": "Female",
     "height": "162 cm",
     "birthplace": "Warren",
