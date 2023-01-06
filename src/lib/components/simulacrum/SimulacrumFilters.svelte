@@ -1,15 +1,17 @@
 <script>
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
     import SliderCheckbox from "$lib/components/SliderCheckbox.svelte";
+    import SliderRadio from "../SliderRadio.svelte";
+    import SliderRadioInput from "../SliderRadioInput.svelte";
     let typeFilters = [];
     let elementFilters = [];
-    let showWeapon;
+    let displayToggle = "Avatar";
 
     export let filters;
     $: filters = {
         typeFilters,
         elementFilters,
-        showWeapon: showWeapon,
+        showWeapon: displayToggle === "Weapon",
     };
     const types = ["dps", "defense", "support"];
     const elements = ["flame", "volt", "ice", "physical", "altered"];
@@ -29,13 +31,18 @@
     <section>
         <small class="section-header">Display</small>
         <div class="filter-group">
-            <SliderCheckbox
-                bind:checked={showWeapon}
-                name="showWeapon"
-                id="show-weapon-toggle"
-                firstValue="Avatar"
-                secondValue="Weapon"
-            />
+            <SliderRadio inset>
+                <SliderRadioInput
+                    name="displayToggle"
+                    value="Avatar"
+                    bind:group={displayToggle}
+                />
+                <SliderRadioInput
+                    name="displayToggle"
+                    value="Weapon"
+                    bind:group={displayToggle}
+                />
+            </SliderRadio>
         </div>
     </section>
 
@@ -105,7 +112,13 @@
 
     input {
         appearance: none;
-        display: none;
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    input:focus + label {
+        outline: 2px solid white;
     }
 
     label {

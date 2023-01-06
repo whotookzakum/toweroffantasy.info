@@ -110,7 +110,13 @@
 
     input {
         appearance: none;
-        display: none;
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    input:focus + label {
+        outline: 2px solid white;
     }
 
     label {

@@ -1,4 +1,8 @@
-<div class="slider-radio">
+<script>
+    export let inset;
+</script>
+
+<div class="slider-radio" class:inset>
     <slot />
     <div class="slider" />
 </div>
@@ -17,14 +21,16 @@
         user-select: none;
         box-shadow: 0 2px 4px var(--surface-shadow);
 
-        &:focus-within,
-        &:active {
+        &:focus-within, &:active {
             outline: 2px solid white;
         }
 
-        input[type="radio"] {
-            position: absolute;
+        input[type="radio"],
+        input[type="radio"]:checked {
             appearance: none;
+            position: fixed;
+            opacity: 0;
+            pointer-events: none;
         }
 
         label {
@@ -56,5 +62,11 @@
         input:nth-of-type(2):checked ~ .slider {
             transform: translateX(calc(99% + 6px));
         }
+    }
+
+    .inset {
+        background: var(--surface1);
+        box-shadow: inset 0 2px 4px var(--surface-shadow);
+        box-shadow: inset 0 0 2px var(--surface-shadow);
     }
 </style>
