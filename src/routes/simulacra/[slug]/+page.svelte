@@ -27,7 +27,7 @@
 
 <h2 id="weapon">Weapon</h2>
 <WeaponHeader weapon={data.weapon} />
-<WeaponEffects weapon={data.weapon} />
+<WeaponEffects weapon={data.weapon} rarity={data.rarity}/>
 <Advancements weapon={data.weapon} />
 <Abilities weapon={data.weapon} />
 <UpgradeMaterials weapon={data.weapon} />
@@ -39,28 +39,3 @@
 
 <h2 id="other-info">Other Info</h2>
 <OtherInfo simulacrum={data} />
-{#if data.banners}
-    <h3>Banners</h3>
-
-    {#if data.banners.glob}
-        <h4>Global</h4>
-        {#each data.banners.glob as banner, index}
-            <span
-                >{banner.start} - {banner.end}
-                {#if index > 0}
-                    (Rerun)
-                {/if}
-            </span>
-        {/each}
-    {/if}
-
-    <h4>China</h4>
-    {#each data.banners.cn as banner, index}
-        <span
-            >{banner.start} - {banner.end}
-            {#if index > 0}
-                (Rerun)
-            {/if}
-        </span>
-    {/each}
-{/if}

@@ -30,14 +30,14 @@
         ],
         "glob": [
             {
-                "bannerNo": 8,
-                "start": "15 Dec 2022",
-                "end": "25 Dec 2022"
-            },
-            {
                 "bannerNo": 1,
                 "start": "10 Aug 2022",
                 "end": "31 Aug 2022"
+            },
+            {
+                "bannerNo": 8,
+                "start": "15 Dec 2022",
+                "end": "25 Dec 2022"
             }
         ]
     },

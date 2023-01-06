@@ -7,8 +7,7 @@
 </script>
 
 <h3>Traits</h3>
-
-<div class="slider-wrapper">
+<div class="slider-wrapper awakening-traits">
     <small class="section-header">Affinity</small>
     <SliderRadio>
         {#each traits as trait}
@@ -19,11 +18,10 @@
             />
         {/each}
     </SliderRadio>
+    <SvelteMarkdown
+        source={traits.find((t) => t.affinity === affinity).description}
+    />
 </div>
-
-<SvelteMarkdown
-    source={traits.find((t) => t.affinity === affinity).description}
-/>
 
 <style lang="scss">
     h3 {
@@ -32,5 +30,9 @@
 
     .slider-wrapper {
         display: grid;
+    }
+
+    :global(.awakening-traits strong) {
+        color: var(--text-green) !important;
     }
 </style>
