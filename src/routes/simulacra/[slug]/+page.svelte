@@ -34,8 +34,8 @@
 <RecommendedMatrices weapon={data.weapon} />
 
 <h2 id="awakening">Awakening</h2>
-<AwakeningGifts gifts={data.bestGifts} categories={data.giftTypes} />
 <AwakeningTraits traits={data.traits} />
+<AwakeningGifts gifts={data.bestGifts} categories={data.giftTypes} />
 
 <h2 id="other-info">Other Info</h2>
 <OtherInfo simulacrum={data} />

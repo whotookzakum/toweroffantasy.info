@@ -135,16 +135,15 @@
 
     dd {
         margin: 0;
-        // font-weight: bold;
-        // text-transform: uppercase;
+    }
+
+    dl:not(.banners) dd {
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .voice-actors dt,
     .banners dt {
         color: var(--accent);
-    }
-
-    .banners dd {
-        font-weight: normal;
     }
 </style>
