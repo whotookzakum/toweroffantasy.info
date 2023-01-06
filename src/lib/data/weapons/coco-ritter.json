@@ -127,7 +127,7 @@
             "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder**, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for **118.8%** x ATK + **6** HP for **7** seconds."
         }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/tiH-5dFUW1E?start=11",
     "recommendedMatrices": [
         {
             "name": "Coco Ritter",

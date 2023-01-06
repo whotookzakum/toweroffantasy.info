@@ -135,7 +135,7 @@
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and deal **727.9%** of ATK + **38** damage and **strongly suspend** the target. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
         }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/G48ypbnDYIE?start=245",
     "recommendedMatrices": [
         {
             "name": "Alyss",

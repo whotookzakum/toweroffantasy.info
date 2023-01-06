@@ -117,7 +117,7 @@
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user**, throw a firebomb, and snipe it to detonate, dealing damage equal to **890%** of ATK + **47** to targets within range. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
         }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/Y2YTJ11HGTQ?start=60",
     "recommendedMatrices": [
         {
             "name": "Annabella",

@@ -145,7 +145,7 @@
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and leave behind a fragrance that grants you temporary invincibility (does not apply in Apex League and Critical Abyss). When the fragrance settles, deal **316.2%** of ATK + **17** damage to targets, and after a brief delay deal **737.8%** of ATK + **39** damage and **suspend** targets."
         }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/zHmMZAYxZrY?start=210",
     "recommendedMatrices": [
         {
             "name": "Umi",

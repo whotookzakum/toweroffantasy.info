@@ -129,7 +129,7 @@
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and deal **1,180%** of ATK + **62** damage. During the animation, gain invincibility for **2.6** seconds (unavailable in Apex League). **Passive**: upon hit, increase your flame damage by **[Plume Gathering] x 3%** for **20** seconds."
         }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/Qg0bwTEmX_Q?start=102",
     "recommendedMatrices": [
 
     ]
