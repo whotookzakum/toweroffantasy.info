@@ -1,8 +1,15 @@
 <script>
-    import SvelteMarkdown from 'svelte-markdown'
+    import SvelteMarkdown from "svelte-markdown";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
-
+    import Menu from "$lib/components/Menu.svelte";
+    import MenuItem from "$lib/components/MenuItem.svelte";
     export let data;
+
+    function getSet(simulacrum) {
+        return simulacrum.weapon.recommendedMatrices.find(
+            (set) => set.name === data.name
+        ).pieces;
+    }
 </script>
 
 <SectionNavigation />
@@ -15,7 +22,7 @@
     {data.rarity} Matrices
 </span>
 
-<h4 id="sets">Sets</h4>
+<h2 id="sets">Sets</h2>
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
@@ -32,3 +39,42 @@
         </tbody>
     </table>
 </div>
+
+{#if data.matchingSimulacra.length > 0}
+    <h2>Recommended Pairings</h2>
+    <Menu>
+        {#each data.matchingSimulacra as simulacrum}
+            <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
+                <img
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    alt={simulacrum.weapon.name}
+                    width="128"
+                    height="128"
+                />
+                <abbr
+                    class="matrix-set absolute"
+                    title={`${getSet(simulacrum)}-piece set of ${
+                        data.name
+                    } matrices`}>{getSet(simulacrum)}-set</abbr
+                >
+                <span>{simulacrum.weapon.name}</span>
+            </MenuItem>
+        {/each}
+    </Menu>
+{/if}
+
+<style lang="scss">
+    abbr.matrix-set {
+        left: unset;
+        right: 0;
+        background: rgb(42, 129, 179);
+        padding: 0.2em 0.42em 0.2em 0.36em;
+        display: inline-block;
+        font-size: var(--step--2);
+        font-weight: 600;
+    }
+
+    abbr[title*="4-piece"] {
+        background: rgb(179, 42, 111);
+    }
+</style>
