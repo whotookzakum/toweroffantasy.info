@@ -1,6 +1,6 @@
 <script>
     import { page } from "$app/stores";
-    const fullRoute = $page.url.pathname.split("/");
+    $: fullRoute = $page.url.pathname.split("/");
 </script>
 
 <nav class="breadcrumbs">

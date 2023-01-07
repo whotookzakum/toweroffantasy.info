@@ -29,7 +29,7 @@
         position: sticky;
         top: 0rem;
         backdrop-filter: blur(10px);
-        z-index: 50;
+        z-index: 500;
     }
 
     .section-navigation {

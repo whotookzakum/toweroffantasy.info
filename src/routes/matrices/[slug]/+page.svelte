@@ -3,6 +3,7 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import Ad from "$lib/components/Ad.svelte";
     export let data;
 
     function getSet(simulacrum) {
@@ -39,6 +40,9 @@
         </tbody>
     </table>
 </div>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
 
 {#if data.matchingSimulacra.length > 0}
     <h2>Recommended Pairings</h2>

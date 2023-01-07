@@ -1,10 +1,14 @@
 <script>
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import Ad from "$lib/components/Ad.svelte";
+    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
     export let data;
     const mounts = data.items;
 </script>
+
+<SectionNavigation links={["underwater", "land"]} />
 
 <h1>Mounts</h1>
 <p>
@@ -13,7 +17,10 @@
     different colors available at certain levels.
 </p>
 
-<h2>Underwater mounts</h2>
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
+
+<h2 id="underwater">Underwater mounts</h2>
 <Menu>
     {#each mounts.filter(m => m.type === "Water") as mount}
         <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>
@@ -28,7 +35,7 @@
     {/each}
 </Menu>
 
-<h2>Land mounts</h2>
+<h2 id="land">Land mounts</h2>
 <Menu>
     {#each mounts.filter(m => m.type !== "Water") as mount}
         <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>

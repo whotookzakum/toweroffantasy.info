@@ -119,7 +119,7 @@
         {/each}
     </div>
     <footer>
-        <a href="/">Cookies</a>
+        <a a class="nn-cmp-show" href="#">Cookies</a>
         <a href="/privacy">Privacy</a>
     </footer>
 </nav>

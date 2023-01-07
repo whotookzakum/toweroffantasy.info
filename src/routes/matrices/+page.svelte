@@ -1,10 +1,14 @@
 <script>
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import Ad from "$lib/components/Ad.svelte";
+    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
     export let data;
     const matrices = data.items;
 </script>
+
+<SectionNavigation links={["ssr", "sr", "r", "n"]} />
 
 <h1>Matrices</h1>
 <p>
@@ -18,7 +22,10 @@
     to weapons, with each star unlocking higher values for the set effect.
 </p>
 
-<h2><span style="color: var(--tier-s)">SSR</span> Matrices</h2>
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
+
+<h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Matrices</h2>
 <Menu>
     {#each matrices.filter((m) => m.rarity === "SSR") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
@@ -33,7 +40,10 @@
     {/each}
 </Menu>
 
-<h2><span style="color: var(--tier-a)">SR</span> Matrices</h2>
+<Ad unit="lb3" />
+<Ad unit="mobile_mpu2" />
+
+<h2 id="sr"><span style="color: var(--tier-a)">SR</span> Matrices</h2>
 <Menu>
     {#each matrices.filter((m) => m.rarity === "SR") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
@@ -48,7 +58,11 @@
     {/each}
 </Menu>
 
-<h2><span style="color: var(--tier-b)">R</span> Matrices</h2>
+<Ad unit="lb4" />
+<Ad unit="mobile_lb1" />
+<Ad unit="mobile_lb3" />
+
+<h2 id="r"><span style="color: var(--tier-b)">R</span> Matrices</h2>
 <Menu>
     {#each matrices.filter((m) => m.rarity === "R") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
@@ -63,7 +77,11 @@
     {/each}
 </Menu>
 
-<h2><span style="color: var(--tier-c)">N</span> Matrices</h2>
+<Ad unit="lb5" />
+<Ad unit="mobile_lb4" />
+<Ad unit="mobile_lb5" />
+
+<h2 id="n"><span style="color: var(--tier-c)">N</span> Matrices</h2>
 <Menu>
     {#each matrices.filter((m) => m.rarity === "N") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>

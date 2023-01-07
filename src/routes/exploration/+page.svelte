@@ -4,6 +4,7 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
+    import Ad from "$lib/components/Ad.svelte";
     onMount(() => {
         const anchors = new AnchorJS();
         anchors.add("h2");
@@ -12,6 +13,10 @@
 
 <SectionNavigation />
 <h1>Exploration</h1>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
+
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>

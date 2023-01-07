@@ -2,6 +2,7 @@
     import BannerTable from "$lib/components/BannerTable.svelte";
     import changelog from "$lib/data/changelog.json";
     import _ from "lodash";
+    import Ad from "../lib/components/Ad.svelte";
 
     export let data;
 
@@ -60,8 +61,10 @@
     >.
 </p>
 
-<h2 id="banners">Banners</h2>
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
 
+<h2 id="banners">Banners</h2>
 <div class="table-wrapper">
     <table class="outer-table bg-alternate">
         <caption>

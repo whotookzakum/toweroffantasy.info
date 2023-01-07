@@ -4,6 +4,8 @@
     import Avatar from "$lib/components/simulacrum/Avatar.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
     import SimulacrumFilters from "$lib/components/simulacrum/SimulacrumFilters.svelte";
+    import Ad from "$lib/components/Ad.svelte";
+    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
     export let data;
     let simulacra = data.items;
@@ -25,6 +27,8 @@
     }
 </script>
 
+<SectionNavigation links={["ssr", "sr"]} />
+
 <h1>Simulacra</h1>
 <p>
     Simulacra (aka Mimics) are the player's representation of the characters
@@ -34,8 +38,10 @@
 
 <SimulacrumFilters bind:filters />
 
-<h2><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
 
+<h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
@@ -59,7 +65,10 @@
     {/each}
 </Menu>
 
-<h2><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
+<Ad unit="lb3" />
+<Ad unit="mobile_mpu2" />
+
+<h2 id="sr"><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SR") as simulacrum}
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>

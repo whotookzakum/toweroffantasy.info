@@ -1,6 +1,7 @@
 <script>
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import Ad from "$lib/components/Ad.svelte";
 
     const links = [
         {
@@ -42,6 +43,9 @@
 </script>
 
 <h1>Cosmetics</h1>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
 
 <Menu>
     {#each links as link}

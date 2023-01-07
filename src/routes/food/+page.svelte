@@ -8,6 +8,7 @@
     import Item from "$lib/components/Item.svelte";
     import EffectIcon from "$lib/components/food/EffectIcon.svelte";
     import FoodFilters from "../../lib/components/food/FoodFilters.svelte";
+    import Ad from "$lib/components/Ad.svelte";
 
     onMount(() => {
         const anchors = new AnchorJS();
@@ -59,6 +60,9 @@
 </p>
 
 <FoodFilters bind:filters />
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
 
 <h2 id="dishes">Dishes</h2>
 <div class="table-wrapper">
@@ -129,6 +133,9 @@
         </tbody>
     </table>
 </div>
+
+<Ad unit="lb3" />
+<Ad unit="mobile_mpu2" />
 
 <h2 id="ingredients">Ingredients</h2>
 <div class="table-wrapper">

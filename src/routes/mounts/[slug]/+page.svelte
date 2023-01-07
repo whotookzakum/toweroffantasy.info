@@ -2,6 +2,7 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import SvelteMarkdown from "svelte-markdown";
     import Youtube from "$lib/components/Youtube.svelte";
+    import Ad from "$lib/components/Ad.svelte";
 
     export let data;
 </script>
@@ -59,6 +60,9 @@
         </tbody>
     </table>
 </div>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
 
 {#if data.videoSrc}
     <h4 id="preview">Preview</h4>

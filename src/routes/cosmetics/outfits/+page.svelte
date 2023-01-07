@@ -1,6 +1,7 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import outfits from "$lib/data/cosmetics/outfits.json";
+    import Ad from "$lib/components/Ad.svelte";
     // {
     //     "name": "Absolute Order",
     //     "imgSrcs": ["fashion_f18", "fashion_m"],
@@ -9,6 +10,10 @@
 </script>
 
 <h1>Outfits</h1>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
+
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>

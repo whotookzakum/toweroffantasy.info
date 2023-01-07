@@ -1,6 +1,7 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import avatars from "$lib/data/cosmetics/avatars.json";
+    import Ad from "$lib/components/Ad.svelte";
 </script>
 
 <h1>Avatars</h1>
@@ -8,6 +9,10 @@
     Avatars shown on the <a href="/simulacra">Simulacra</a> page can be obtained
     by raising the respective simulacrum's Awakening points (friendship) to 200.
 </p>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
+
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>

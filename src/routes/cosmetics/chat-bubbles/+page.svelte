@@ -1,9 +1,14 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import chatBubbles from "$lib/data/cosmetics/chatBubbles.json";
+    import Ad from "$lib/components/Ad.svelte";
 </script>
 
 <h1>Chat Bubbles</h1>
+
+<Ad unit="lb1" />
+<Ad unit="mobile_mpu1" />
+
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>

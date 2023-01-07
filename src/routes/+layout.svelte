@@ -5,6 +5,26 @@
     let navIsOpen;
 </script>
 
+<svelte:head>
+    <link
+        rel="preconnect"
+        href="https://securepubads.g.doubleclick.net/"
+        crossorigin
+    />
+    <script>
+        window.AdSlots = window.AdSlots || { cmd: [], disableScripts: ["gpt"] };
+    </script>
+    <script
+        async
+        src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+    ></script>
+    <script
+        async
+        src="https://kumo.network-n.com/dist/app.js"
+        site="toweroffantasyinfo"
+    ></script>
+</svelte:head>
+
 <div class="layout" class:open={navIsOpen}>
     <Navigation bind:navIsOpen />
     <main>
@@ -34,7 +54,7 @@
     @media (max-width: 800px) {
         .layout {
             // desktop: when width is small, 1fr works better because 100vw goes under the scrollbar, but using 1fr causes content to contract
-            grid-template-columns: var(--nav-width) 100vw; 
+            grid-template-columns: var(--nav-width) 100vw;
 
             &:not(.open) {
                 // margin instead of transform provides better framerate on firefox mobile, and allows the nav toggle button to stay fixed at the top; the stacking context gets messed up with transform with the current structure (nav-toggle inside of nav)
