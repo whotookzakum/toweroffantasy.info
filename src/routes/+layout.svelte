@@ -2,6 +2,7 @@
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
+    import Ad from "$lib/components/Ad.svelte";
     let navIsOpen;
 </script>
 
@@ -30,6 +31,9 @@
     <main>
         <slot />
         <footer class="page-footer">&copy; 2023 Tower of Fantasy Index.</footer>
+        <Ad unit="lb2" />
+        <Ad unit="mobile_lb2" />
+        <Ad unit="player" />
     </main>
 </div>
 <BackgroundImage />

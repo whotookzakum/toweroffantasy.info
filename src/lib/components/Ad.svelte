@@ -1,20 +1,21 @@
 <script>
     export let unit;
-    // Desktop
-    // lb1, lb2 (sticky) lb3, lb4, lb5
-    // Mobile
-    // mobile_lb1, mobile_lb2 (sticky) mobile_lb3, mobile_lb4, mobile_lb5
-    // mobile_mpu1, mobile_mpu2
-    // player
 </script>
 
-<div class={`container full-bleed ${unit}`} class:mobile={unit.includes("mobile")} >
-    <div id={`nn_${unit}`} class={`unit ${unit}`} />
-    <small class="background-message">
-        🥺 Please consider whitelisting us. Ads support free resources like
-        this!
-    </small>
-</div>
+{#if unit === "player" || unit.includes("lb2")}
+    <div id={`nn_${unit}`} class={unit} />
+{:else}
+    <div
+        class={`container full-bleed ${unit}`}
+        class:mobile={unit.includes("mobile")}
+    >
+        <div id={`nn_${unit}`} class={`unit ${unit}`} />
+        <small class="background-message">
+            🥺 Please consider whitelisting us. Ads support free resources like
+            this!
+        </small>
+    </div>
+{/if}
 
 <style lang="scss">
     .container {
@@ -45,10 +46,10 @@
     // VIDEO PLAYER
     // ------------------------------------
     #nn_player {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 100;
+        // position: fixed;
+        // bottom: 0;
+        // right: 0;
+        // z-index: 100;
     }
 
     // ------------------------------------
