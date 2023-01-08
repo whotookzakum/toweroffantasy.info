@@ -1,25 +1,25 @@
 <script>
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    import SliderCheckbox from "$lib/components/SliderCheckbox.svelte";
     import SliderRadio from "../SliderRadio.svelte";
     import SliderRadioInput from "../SliderRadioInput.svelte";
-    let typeFilters = [];
-    let elementFilters = [];
+    
     let displayToggle = "Avatar";
 
     export let filters;
     $: filters = {
-        typeFilters,
-        elementFilters,
+        weapon: {
+            type: [],
+            element: []
+        },
         showWeapon: displayToggle === "Weapon",
     };
-    const types = ["dps", "defense", "support"];
-    const elements = ["flame", "volt", "ice", "physical", "altered"];
+    const wepTypes = ["dps", "defense", "support"];
+    const wepElements = ["flame", "volt", "ice", "physical", "altered"];
 
     function resetFilters() {
-        typeFilters = [];
-        elementFilters = [];
-        showWeapon = false;
+        filters.weapon.type = [];
+        filters.weapon.element = [];
+        displayToggle = "Avatar";
     }
 </script>
 
@@ -49,16 +49,16 @@
     <section>
         <small class="section-header">Type</small>
         <div class="filter-group">
-            {#each types as type}
+            {#each wepTypes as wepType}
                 <input
                     type="checkbox"
                     name="type"
-                    id={type}
-                    value={type}
-                    bind:group={typeFilters}
+                    id={wepType}
+                    value={wepType}
+                    bind:group={filters.weapon.type}
                 />
-                <label for={type}>
-                    <CategoryIcon {type} width={30} />
+                <label for={wepType}>
+                    <CategoryIcon type={wepType} width={30} />
                 </label>
             {/each}
         </div>
@@ -67,16 +67,16 @@
     <section>
         <small class="section-header">Element</small>
         <div class="filter-group">
-            {#each elements as element}
+            {#each wepElements as wepElement}
                 <input
                     type="checkbox"
                     name="element"
-                    id={element}
-                    value={element}
-                    bind:group={elementFilters}
+                    id={wepElement}
+                    value={wepElement}
+                    bind:group={filters.weapon.element}
                 />
-                <label for={element}>
-                    <CategoryIcon type={element} width={30} />
+                <label for={wepElement}>
+                    <CategoryIcon type={wepElement} width={30} />
                 </label>
             {/each}
         </div>
