@@ -2,17 +2,8 @@
     import "$lib/styles/globals.scss";
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
-    import { page } from "$app/stores";
-    import { browser } from "$app/environment";
     import Ad from "$lib/components/Ad.svelte";
     let navIsOpen;
-
-    $: {
-        if (browser) {
-            window.AdSlots = window.AdSlots || { cmd: [], disableScripts: ["gpt"] };
-        }
-        console.log($page.url.pathname)
-    }
 </script>
 
 <div class="layout" class:open={navIsOpen}>
