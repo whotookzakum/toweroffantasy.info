@@ -94,6 +94,15 @@ h3 > .anchorjs-link {
     line-height: 1.4;
 }
 
+.lb2, .mobile_lb2 {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%);
+    background: red;
+}
+
 // ------------------------------------
 // DESKTOP
 // ------------------------------------
