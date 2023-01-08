@@ -12,55 +12,27 @@
 
     let filters = {};
 
-    // Alternative https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions
+    // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions
 
-    $: simulacra = data.items.filter(({ weapon }) => {
-        for (let key in filters.weapon) {
-            if (filters.weapon[key] === undefined || filters.weapon.length === 0) return false;
-            return filters.weapon[key].includes(weapon[key])
-        }
-    })
+    // AND filters
+    // If filter is unset, return true, else return whether the simulacrum passes the filter or not
+    $: simulacra = data.items
+        .filter(
+            ({ weapon }) =>
+                !(filters.weapon?.type.length > 0) ||
+                filters.weapon?.type.includes(weapon.type)
+        )
+        .filter(
+            ({ weapon }) =>
+                !(filters.weapon?.element.length > 0) ||
+                filters.weapon?.element.includes(weapon.element)
+        );
 
-    // $: simulacra = data.items.filter(({weapon}) => filters.weapon?.type.includes(weapon.type) || filters.weapon?.element.includes(weapon.element))
-
+    // OR filters
     // $: simulacra = data.items.filter(({weapon}) => {
     //     if (!(filters.weapon?.type.length > 0) && !(filters.weapon?.element.length > 0)) return true;
     //     return filters.weapon?.type.includes(weapon.type) || filters.weapon?.element.includes(weapon.element)
     // })
-
-    // $: simulacra = data.items
-    //     .filter(
-    //         ({ weapon }) =>
-    //             !(filters.weapon?.type.length > 0) ||
-    //             filters.weapon?.type.includes(weapon.type)
-    //     )
-    //     .filter(
-    //         ({ weapon }) =>
-    //             !(filters.weapon?.element.length > 0) ||
-    //             filters.weapon?.element.includes(weapon.element)
-    //     );
-
-    // $: simulacra = data.items
-    //     .filter(({ weapon }) => {
-    //         for (let key in filters.weapon) {
-    //             if (!(filters.weapon?.[key].length > 0)) return false
-    //         }
-    //         return filters.weapon?.[key].includes(weapon.element)
-    //     });
-
-    // $: if (filters.typeFilters && filters.typeFilters.length > 0) {
-    //     simulacra = data.items.filter((sim) =>
-    //         filters.typeFilters.includes(sim.weapon.type)
-    //     );
-    // } else {
-    //     simulacra = data.items;
-    // }
-
-    // $: if (filters.elementFilters && filters.elementFilters.length > 0) {
-    //     simulacra = simulacra.filter((sim) =>
-    //         filters.elementFilters.includes(sim.weapon.element)
-    //     );
-    // }
 </script>
 
 <SectionNavigation links={["ssr", "sr"]} />
