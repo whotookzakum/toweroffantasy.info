@@ -9,15 +9,15 @@
         class={`container full-bleed ${unit}`}
         class:mobile={unit.includes("mobile")}
     >
-        <div id={`nn_${unit}`} class={`unit ${unit}`} />
         <small class="background-message">
             🥺 Please consider whitelisting us. Ads support free resources like
             this!
         </small>
+        <div id={`nn_${unit}`} class={`unit ${unit}`} />
     </div>
 {/if}
 
-<style lang="scss">
+<style global lang="scss">
     .container {
         margin: var(--space-2xs) auto;
         position: relative;
