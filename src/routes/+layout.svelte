@@ -6,26 +6,6 @@
     let navIsOpen;
 </script>
 
-<svelte:head>
-    <link
-        rel="preconnect"
-        href="https://securepubads.g.doubleclick.net/"
-        crossorigin
-    />
-    <script>
-        window.AdSlots = window.AdSlots || { cmd: [], disableScripts: ["gpt"] };
-    </script>
-    <script
-        async
-        src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
-    ></script>
-    <script
-        async
-        src="https://kumo.network-n.com/dist/app.js"
-        site="toweroffantasyinfo"
-    ></script>
-</svelte:head>
-
 <div class="layout" class:open={navIsOpen}>
     <Navigation bind:navIsOpen />
     <main>
