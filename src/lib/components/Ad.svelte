@@ -6,7 +6,7 @@
     <div id={`nn_${unit}`} class={unit} />
 {:else}
     <div
-        class={`container full-bleed ${unit}`}
+        class={`unit-container full-bleed ${unit}`}
         class:mobile={unit.includes("mobile")}
     >
         <small class="background-message">
@@ -16,71 +16,3 @@
         <div id={`nn_${unit}`} class={`unit ${unit}`} />
     </div>
 {/if}
-
-<style global lang="scss">
-    .container {
-        margin: var(--space-2xs) auto;
-        position: relative;
-        z-index: 90;
-        display: grid;
-        place-items: center;
-        background: var(--surface3);
-        border: 1px solid var(--tier-s);
-        box-sizing: border-box;
-    }
-
-    .unit {
-        position: absolute;
-        z-index: 1;
-    }
-
-    .background-message {
-        position: absolute;
-        z-index: -1;
-        text-align: center;
-        font-size: var(--step--2);
-        color: var(--tier-s);
-        padding: 0 2rem;
-        line-height: 1.4;
-    }
-
-    // ------------------------------------
-    // DESKTOP
-    // ------------------------------------
-    .lb1,
-    .lb3,
-    .lb4,
-    .lb5 {
-        width: 728px;
-        height: 90px;
-    }
-
-    @media (max-width: 990px) {
-        .container:not(.mobile) {
-            display: none;
-        }
-    }
-
-    // ------------------------------------
-    // MOBILE
-    // ------------------------------------
-    .mobile_lb1,
-    .mobile_lb3,
-    .mobile_lb4,
-    .mobile_lb5 {
-        width: 320px;
-        height: 50px;
-    }
-
-    .mobile_mpu1,
-    .mobile_mpu2 {
-        width: 300px;
-        height: 250px;
-    }
-
-    @media (min-width: 991px) {
-        .container.mobile {
-            display: none;
-        }
-    }
-</style>
