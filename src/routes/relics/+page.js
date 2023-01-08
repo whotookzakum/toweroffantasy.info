@@ -1,8 +1,6 @@
-export const load = async ({ fetch }) => {
-    const response = await fetch(`/api/relics`)
-    const items = await response.json()
+import { fetchAllRelics } from '$lib/utils'
 
-    return {
-        items
-    }
+export const load = async () => {
+    const items = await fetchAllRelics()
+    return { items }
 }

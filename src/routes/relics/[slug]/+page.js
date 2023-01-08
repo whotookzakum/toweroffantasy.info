@@ -1,5 +1,4 @@
-export const load = async ({ fetch, params }) => {
-    const response = await fetch(`/api/relics/${params.slug}`)
-    const relic = await response.json()
-    return relic
+export const load = async ({ params }) => {
+    const relic = await import(`../../../lib/data/relics/${params.slug}.json`)
+    return { ...relic }
 }

@@ -1,5 +1,5 @@
-export const load = async ({ fetch, params }) => {
-    const response = await fetch(`/api/simulacra/${params.slug}`)
-    const simulacrum = await response.json()
-    return simulacrum
+export const load = async ({ params }) => {
+    const simulacrum = await import(`../../../lib/data/simulacra/${params.slug}.json`)
+    const weapon = await import(`../../../lib/data/weapons/${params.slug}.json`)
+    return { ...simulacrum, weapon }
 }

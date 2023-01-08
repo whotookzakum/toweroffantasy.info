@@ -1,8 +1,6 @@
-export const load = async ({ fetch }) => {
-    const response = await fetch(`/api/simulacra`)
-    const items = await response.json()
+import { fetchAllSimulacra } from '$lib/utils'
 
-    return {
-        items
-    }
+export const load = async () => {
+    const items = await fetchAllSimulacra()
+    return { items }
 }

@@ -1,8 +1,6 @@
-export const load = async ({ fetch }) => {
-    const response = await fetch(`/api/mounts`)
-    const items = await response.json()
+import { fetchAllMounts } from '$lib/utils'
 
-    return {
-        items
-    }
+export const load = async () => {
+    const items = await fetchAllMounts()
+    return { items }
 }

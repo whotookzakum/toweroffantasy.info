@@ -1,8 +1,6 @@
-export const load = async ({ fetch }) => {
-    const response = await fetch(`/api/matrices`)
-    const items = await response.json()
+import { fetchAllMatrices } from '$lib/utils'
 
-    return {
-        items
-    }
+export const load = async () => {
+    const items = await fetchAllMatrices()
+    return { items }
 }
