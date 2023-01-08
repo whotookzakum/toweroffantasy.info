@@ -35,6 +35,8 @@
     }
 
     .background-message {
+        position: absolute;
+        z-index: -1;
         text-align: center;
         font-size: var(--step--2);
         color: var(--tier-s);
@@ -43,20 +45,9 @@
     }
 
     // ------------------------------------
-    // VIDEO PLAYER
-    // ------------------------------------
-    #nn_player {
-        // position: fixed;
-        // bottom: 0;
-        // right: 0;
-        // z-index: 100;
-    }
-
-    // ------------------------------------
     // DESKTOP
     // ------------------------------------
     .lb1,
-    .lb2,
     .lb3,
     .lb4,
     .lb5 {
@@ -74,7 +65,6 @@
     // MOBILE
     // ------------------------------------
     .mobile_lb1,
-    .mobile_lb2,
     .mobile_lb3,
     .mobile_lb4,
     .mobile_lb5 {
