@@ -12,14 +12,7 @@ const config = {
 	],
 	extensions: ['.svelte', '.md'],
 	kit: {
-		adapter: adapter(
-			{
-				pages: 'build',
-				assets: 'build',
-				fallback: null,
-				precompress: false
-			}
-		)
+		adapter: adapter()
 	}
 };
 
