@@ -12,8 +12,14 @@ const config = {
 	],
 	extensions: ['.svelte', '.md'],
 	kit: {
-		adapter: adapter(),
-		prerender: { default: true }
+		adapter: adapter(
+			{
+				pages: 'build',
+				assets: 'build',
+				fallback: null,
+				precompress: false
+			}
+		)
 	}
 };
 
