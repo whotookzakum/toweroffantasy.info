@@ -3,9 +3,11 @@
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
     import Ad from "$lib/components/Ad.svelte";
+    import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
     let navIsOpen;
 </script>
 
+<GoogleAnalytics properties={['G-N68SWH7ZJB']} />
 <div class="layout" class:open={navIsOpen}>
     <Navigation bind:navIsOpen />
     <main>

@@ -9,6 +9,7 @@
 		"lint": "eslint ."
 	},
 	"devDependencies": {
+		"@beyonk/svelte-google-analytics": "^2.6.4",
 		"@iconify/svelte": "^3.0.1",
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/adapter-cloudflare": "^1.0.0",
