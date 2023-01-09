@@ -5,53 +5,44 @@
     import Ad from "../lib/components/Ad.svelte";
 
     export let data;
-    let showGlobalBanners,
-        showChinaBanners = false;
 
     const todaysDate = new Date().getTime();
-
-    let chinaBanners = data.cn.filter(
-        (banner) => new Date(banner.start).getTime() <= todaysDate
-    );
-    let globalBanners = data.glob.filter(
-        (banner) => new Date(banner.start).getTime() <= todaysDate
-    );
-
-    let currentGlobalBanners = []
-    let currentChinaBanners = [];
-
-    chinaBanners.forEach((banner) => {
-        if (new Date(banner.end).getTime() >= todaysDate) {
-            currentGlobalBanners.push(banner);
-        }
-    });
-    globalBanners.forEach((banner) => {
-        const end = new Date(banner.end).getTime();
-        const start = new Date(banner.start).getTime();
-        if (end >= todaysDate && todaysDate > start) {
-            currentGlobalBanners.push(banner);
-        }
-    });
-
-
-
-    // First sort in bannerNo order, so that uniqBy returns the OLDEST banner of that character and not a rerun (Nemesis ... Lin)
-    // Then sort in place to have the newest first (Lin ... Nemesis)
-    const sortedGlobalBanners = _.sortBy(globalBanners, ["bannerNo"])
-    const sortedUniqueGlobalBanners = _.uniqBy(sortedGlobalBanners, "name").sort((a, b) => b.bannerNo - a.bannerNo)
-    const sortedChinaBanners = _.sortBy(chinaBanners, ["bannerNo"])
-    const sortedUniqueChinaBanners = _.uniqBy(sortedChinaBanners, "name").sort((a, b) => b.bannerNo - a.bannerNo)
     
-    let newestBanners = { cn: [], glob: [] }
-    // Add all banners that started on the same day, using recursion to avoid looping through unneccessary indices with filter or reduce
-    const setNewestBanners = (list, key, index) => {
-        newestBanners[key].push(list[index])
-        const currentBannerStart = new Date(list[index].start).getTime()
-        const nextBannerStart = new Date(list[index+1]?.start).getTime()
-        if (currentBannerStart === nextBannerStart) setNewestBanners(list, key, index + 1)
+    let global = {
+        // Banners that started at least once
+        all: data.glob.filter((banner) => new Date(banner.start).getTime() <= todaysDate),
+        current: [],
+        newest: [],
+        expanded: false
     }
-    setNewestBanners(sortedUniqueGlobalBanners, "glob", 0)
-    setNewestBanners(sortedUniqueChinaBanners, "cn", 0)
+
+    // Banners that haven't ended yet
+    global.current = global.all.filter((banner) => new Date(banner.end).getTime() >= todaysDate);
+
+    // Sort by bannerNo, so uniqBy returns the original banner and not a rerun (Claudia #3 instead of Claudia #11)
+    const sortedGlobalBanners = _.sortBy(global.all, ["bannerNo"]);
+    // Get objects with unique names (first instance is kept) then sort in place to have the newest banners first
+    const sortedUniqueGlobalBanners = 
+        _.uniqBy(sortedGlobalBanners, "name")
+        .sort((a, b) => b.bannerNo - a.bannerNo);
+
+    // Start date strings MUST match in .jsons, otherwise use Date().getTime() to ensure conversion
+    global.newest = sortedUniqueGlobalBanners.filter((banner) => banner.start === sortedUniqueGlobalBanners[0].start);
+
+    let china = {
+        all: data.cn.filter((banner) => new Date(banner.start).getTime() <= todaysDate),
+        current: [],
+        newest: [],
+        expanded: false
+    }
+
+    china.current = china.all.filter((banner) => new Date(banner.end).getTime() >= todaysDate)
+
+    const sortedChinaBanners = _.sortBy(china.all, ["bannerNo"]);
+    const sortedUniqueChinaBanners = 
+        _.uniqBy(sortedChinaBanners, "name")
+        .sort((a, b) => b.bannerNo - a.bannerNo);
+    china.newest = sortedUniqueChinaBanners.filter((banner) => banner.start === sortedUniqueChinaBanners[0].start)
 </script>
 
 <svelte:head>
@@ -115,7 +106,7 @@
             <th>Unique</th>
             <th>Newest</th>
             <th
-                >{showGlobalBanners || showChinaBanners
+                >{global.expanded || china.expanded
                     ? "To standard"
                     : "Added to standard"}
             </th>
@@ -123,16 +114,16 @@
         <tbody>
             <tr
                 class="outer-tr"
-                on:click={() => (showGlobalBanners = !showGlobalBanners)}
+                on:click={() => (global.expanded = !global.expanded)}
                 on:keydown={(e) =>
                     e.key === "Enter"
-                        ? (showGlobalBanners = !showGlobalBanners)
+                        ? (global.expanded = !global.expanded)
                         : null}
                 tabindex={0}
             >
                 <th>Global</th>
                 <td colspan="2" class="current-banners">
-                    {#each currentGlobalBanners as banner}
+                    {#each global.current as banner}
                         <a
                             href={banner.path}
                             style={`color: var(--element-${banner.element})`}
@@ -140,10 +131,10 @@
                         >
                     {/each}
                 </td>
-                <td>{globalBanners.length}</td>
-                <td>{_.uniqBy(globalBanners, "name").length}</td>
+                <td>{global.all.length}</td>
+                <td>{sortedUniqueGlobalBanners.length}</td>
                 <td class="newest-banners">
-                    {#each newestBanners.glob as banner}
+                    {#each global.newest as banner}
                         <a
                             href={banner.path}
                             style={`color: var(--element-${banner.element})`}
@@ -152,58 +143,57 @@
                     {/each}
                 </td>
                 <td
-                    >{globalBanners.filter(
-                        (banner) => banner.standardAfterwards
-                    ).length}</td
-                >
-            </tr>
-        </tbody>
-        <BannerTable
-            banners={globalBanners}
-            version="glob"
-            expanded={showGlobalBanners}
-        />
-        <tbody>
-            <tr
-                class="outer-tr"
-                on:click={() => (showChinaBanners = !showChinaBanners)}
-                on:keydown={(e) =>
-                    e.key === "Enter"
-                        ? (showChinaBanners = !showChinaBanners)
-                        : null}
-                tabindex={0}
-            >
-                <th>China</th>
-                <td colspan="2" class="current-banners">
-                    {#each currentChinaBanners as banner}
-                        <a
-                            href={banner.path}
-                            style={`color: var(--element-${banner.element})`}
-                            >{banner.name}</a
-                        >
-                    {/each}
-                </td>
-                <td>{chinaBanners.length}</td>
-                <td>{_.uniqBy(chinaBanners, "name").length}</td>
-                <td class="newest-banners">
-                    {#each newestBanners.cn as banner}
-                        <a
-                            href={banner.path}
-                            style={`color: var(--element-${banner.element})`}
-                            >{banner.name}</a
-                        >
-                    {/each}
-                </td>
-                <td
-                    >{chinaBanners.filter((banner) => banner.standardAfterwards)
+                    >{global.all.filter((banner) => banner.standardAfterwards)
                         .length}</td
                 >
             </tr>
         </tbody>
         <BannerTable
-            banners={chinaBanners}
+            banners={global.all}
+            version="glob"
+            expanded={global.expanded}
+        />
+        <tbody>
+            <tr
+                class="outer-tr"
+                on:click={() => (china.expanded = !china.expanded)}
+                on:keydown={(e) =>
+                    e.key === "Enter"
+                        ? (china.expanded = !china.expanded)
+                        : null}
+                tabindex={0}
+            >
+                <th>China</th>
+                <td colspan="2" class="current-banners">
+                    {#each china.current as banner}
+                        <a
+                            href={banner.path}
+                            style={`color: var(--element-${banner.element})`}
+                            >{banner.name}</a
+                        >
+                    {/each}
+                </td>
+                <td>{china.all.length}</td>
+                <td>{sortedUniqueChinaBanners.length}</td>
+                <td class="newest-banners">
+                    {#each china.newest as banner}
+                        <a
+                            href={banner.path}
+                            style={`color: var(--element-${banner.element})`}
+                            >{banner.name}</a
+                        >
+                    {/each}
+                </td>
+                <td
+                    >{china.all.filter((banner) => banner.standardAfterwards)
+                        .length}</td
+                >
+            </tr>
+        </tbody>
+        <BannerTable
+            banners={china.all}
             version="cn"
-            expanded={showChinaBanners}
+            expanded={china.expanded}
         />
     </table>
 </div>
