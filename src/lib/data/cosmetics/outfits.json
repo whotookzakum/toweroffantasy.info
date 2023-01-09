@@ -68,12 +68,12 @@
     {
         "name": "Cherry Blossom",
         "imgSrcs": ["fashion_f22", "fashion_m22"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by participating in the Banges exhibition event."
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event."
     },
     {
         "name": "Midnight",
         "imgSrcs": ["fashion_f20", "fashion_m20"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by participating in the Banges exhibition event."
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event."
     },
     {
         "name": "Era",

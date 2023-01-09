@@ -41,19 +41,17 @@
         "name": "Maid Bonnet",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_25",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
-        "name": "Mechanical Horns",
-        "nameUnconfirmed": true,
+        "name": "Demon Saint",
         "imgSrc": "fashion_icon_shipin_044",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event."
     },
     {
-        "name": "Demonic Horns",
-        "nameUnconfirmed": true,
+        "name": "Demon Holiday",
         "imgSrc": "fashion_icon_shipin_043",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event."
     },
     {
         "name": "Frigg Hairpin",
@@ -125,16 +123,14 @@
         "source": ""
     },
     {
-        "name": "Resting Hen",
-        "nameUnconfirmed": true,
+        "name": "Fat Dove Hat",
         "imgSrc": "fashion_icon_shipin_081",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Pure white wheel event."
+        "source": "Obtained from gachapon during the Pure white wheel event."
     },
     {
-        "name": "Robot Cat Ears",
-        "nameUnconfirmed": true,
+        "name": "Meow Meow",
         "imgSrc": "fashion_icon_shipin_082",
-        "source": ""
+        "source": "Obtained from gachapon during the Pure white wheel event."
     },
     {
         "name": "Animal Hairpin",
@@ -142,10 +138,9 @@
         "source": "Obtained from gachapon during the Summer Seabreeze event."
     },
     {
-        "name": "Illusory Crown",
-        "nameUnconfirmed": true,
+        "name": "Birthday Crown",
         "imgSrc": "fashion_icon_shipin_087",
-        "source": ""
+        "source": "Obtainable from gachapon during the Scarlet Song event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
     },
     {
         "name": "Fox Mask",

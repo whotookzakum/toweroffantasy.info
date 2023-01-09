@@ -8,7 +8,7 @@
 {#if weapon.abilitiesVideoSrc}
     <Youtube source={weapon.abilitiesVideoSrc} />
 {/if}
-<ul class="abilities-list full-bleed">
+<ul class="abilities-list full-bleed abilities">
     {#each weapon.abilities as ability}
         <li>
             <details class="ability">
@@ -19,6 +19,7 @@
                             alt={ability.name}
                             width="82"
                             height="82"
+                            loading="lazy"
                         />
                         <div class="skill-title">
                             <span>{ability.type}</span>

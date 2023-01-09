@@ -69,6 +69,7 @@
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
+                    loading="lazy"
                 />
                 <abbr
                     class="matrix-set absolute"

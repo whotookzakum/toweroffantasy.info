@@ -5,10 +5,9 @@
 <figure>
     <iframe
         src={source}
-        class=""
         allow="fullscreen"
         title="Preview of weapon skills"
-        style=""
+        loading="lazy"
     />
     {#if caption}
         <figcaption>{caption}</figcaption>

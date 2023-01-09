@@ -46,5 +46,6 @@
         alt={`${type} augment material`}
         width="64"
         height="64"
+        loading="lazy"
     />
 </Item>

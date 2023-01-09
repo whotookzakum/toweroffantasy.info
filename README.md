@@ -6,6 +6,8 @@ The Tower of Fantasy Index is an online resource for the game Tower of Fantasy, 
 The index was originally created by Pyrosu and a few others. It was later implemented as a website by Zakum.  
 Thank you to everyone that has contributed guides, advice, game data, localizations, and their own content.
 
+Please note some banners dates might be slightly off due to inconsistent time zone usage.
+
 ## Technologies Used
 - SvelteKit (UI)
 - SCSS

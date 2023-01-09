@@ -2,48 +2,47 @@
     export let weapon;
 </script>
 
-{#if weapon.recommendedMatrices.length > 0}
-    <small class="section-header">{weapon.name}</small>
-    <h4>Recommended Matrices</h4>
-    <div class="table-wrapper">
-        <table class="bg-alternate">
-            <thead>
-                <th>Matrix Set</th>
-                <th>Explanation</th>
-            </thead>
-            <tbody>
-                {#each weapon.recommendedMatrices as matrix}
-                    <tr>
-                        <th>
-                            <a
-                                class="matrix-link"
-                                href={`/matrices/${matrix.name
-                                    .toLowerCase()
-                                    .replace(" ", "-")}`}
-                            >
-                                <img
-                                    src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
-                                    alt={`${matrix.name} matrix`}
-                                    width="128"
-                                    height="128"
-                                />
-                                <span>{matrix.name} <i>x{matrix.pieces}</i></span>
-                            </a>
-                        </th>
-                        <td>{matrix.description}</td>
-                    </tr>
-                {/each}
-            </tbody>
-        </table>
-    </div>
-{/if}
+<small class="section-header">{weapon.name}</small>
+<h4>Recommended Matrices</h4>
+<div class="table-wrapper">
+    <table class="bg-alternate">
+        <thead>
+            <th>Matrix Set</th>
+            <th>Explanation</th>
+        </thead>
+        <tbody>
+            {#each weapon.recommendedMatrices as matrix}
+                <tr>
+                    <th>
+                        <a
+                            class="matrix-link"
+                            href={`/matrices/${matrix.name
+                                .toLowerCase()
+                                .replace(" ", "-")}`}
+                        >
+                            <img
+                                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                                alt={`${matrix.name} matrix`}
+                                width="128"
+                                height="128"
+                                loading="lazy"
+                            />
+                            <span>{matrix.name} <i>x{matrix.pieces}</i></span>
+                        </a>
+                    </th>
+                    <td>{matrix.description}</td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</div>
 
 <style lang="scss">
     .matrix-link {
         border: none;
         position: relative;
         font-size: var(--step--1);
-        // 
+        //
 
         img {
             margin-block: -1.25rem;

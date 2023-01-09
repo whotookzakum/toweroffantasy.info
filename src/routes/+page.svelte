@@ -42,16 +42,16 @@
 
 <svelte:head>
     <title>Home | Tower of Fantasy Index</title>
-    <meta name="description" content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
+    <meta
+        name="description"
+        content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!"
+    />
     <meta property="og:title" content="Home" />
     <meta
         property="og:description"
         content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!"
     />
-    <meta
-        property="og:image"
-        content={`/images/mia.png`}
-    />
+    <meta property="og:image" content={`/images/mia.png`} />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
 
@@ -66,6 +66,15 @@
         target="_blank"
         rel="noopener noreferrer nofollow">Discord</a
     >.
+</p>
+<p>
+    If the site has been helpful to you and you'd like to support its
+    development, please disable adblock or consider sending a
+    <a
+        href="https://ko-fi.com/whotookzakum"
+        target="_blank"
+        rel="noopener noreferrer nofollow">Ko-Fi</a
+    >!
 </p>
 <p>
     Last updated <a href="/changelog"

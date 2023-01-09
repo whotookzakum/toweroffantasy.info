@@ -32,6 +32,7 @@
         alt={`${simulacrum.name}'s personality chart'`}
         width="678"
         height="367"
+        loading="lazy"
     />
 </div>
 

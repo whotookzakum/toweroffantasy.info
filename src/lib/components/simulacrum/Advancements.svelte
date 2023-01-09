@@ -4,7 +4,7 @@
 </script>
 
 <h4 id="advancements">Advancements</h4>
-<div class="table-wrapper">
+<div class="table-wrapper advancements">
     <table class="bg-alternate">
         <thead style={`border-color: var(--element-${weapon.element})`}>
             <th>Stars</th>

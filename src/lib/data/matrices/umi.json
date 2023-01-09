@@ -7,7 +7,7 @@
     "sets": [
         {
             "pieces": 2,
-            "description": "When dealing physical damage, final damage is increased by **8%/9%/10%/11%** and physical damage is increased by an additional **4%/4.5%/5%/5.5% for **3** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+            "description": "When dealing physical damage, final damage is increased by **8%/9%/10%/11%** and physical damage is increased by an additional **4%/4.5%/5%/5.5%** for **3** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
         },
         {
             "pieces": 4,

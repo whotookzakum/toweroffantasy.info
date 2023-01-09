@@ -74,6 +74,7 @@
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
+                    loading="lazy"
                 />
                 <span>{simulacrum.weapon.name}</span>
             {:else}
@@ -101,6 +102,7 @@
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
+                    loading="lazy"
                 />
                 <span>{simulacrum.weapon.name}</span>
             {:else}

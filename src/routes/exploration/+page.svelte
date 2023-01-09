@@ -49,6 +49,7 @@
                                 alt={puzzle.name}
                                 width="150"
                                 height="120"
+                                loading="lazy"
                             />
                             <h2>{puzzle.name}</h2>
                         </div>
@@ -82,6 +83,7 @@
                                 alt={puzzle.name}
                                 width="150"
                                 height="120"
+                                loading="lazy"
                             />
                             <h2>{puzzle.name}</h2>
                         </div>
@@ -115,6 +117,7 @@
                                 alt={puzzle.name}
                                 width="150"
                                 height="120"
+                                loading="lazy"
                             />
                             <h2>{puzzle.name}</h2>
                         </div>
@@ -147,6 +150,7 @@
                                 alt={puzzle.name}
                                 width="150"
                                 height="120"
+                                loading="lazy"
                             />
                             <h2>{puzzle.name}</h2>
                         </div>
@@ -180,6 +184,7 @@
                                 alt={puzzle.name}
                                 width="150"
                                 height="120"
+                                loading="lazy"
                             />
                             <h3>{puzzle.name}</h3>
                         </div>

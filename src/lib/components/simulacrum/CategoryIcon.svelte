@@ -32,6 +32,7 @@
      width="60"
      height="54"
      style={`width: ${width}px`}
+     loading="lazy"
 />
 
 <style lang="scss">

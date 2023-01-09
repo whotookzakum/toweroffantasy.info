@@ -21,6 +21,7 @@
     alt={stat}
     width="42"
     height="42"
+    loading="lazy"
 />
 {stat === "health"
     ? "hp"

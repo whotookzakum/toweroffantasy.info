@@ -162,5 +162,6 @@
         alt={gift}
         width="64"
         height="64"
+        loading="lazy"
     />
 </Item>

@@ -46,8 +46,10 @@
 <Ad unit="lb3" />
 <Ad unit="mobile_mpu2" />
 
-<h4 id="preview">Preview</h4>
-<Youtube
-    source={data.videoSrc}
-    caption={`The ${data.name} used in this video is ${data.starsInVideo}★`}
-/>
+{#if data.videoSrc}
+    <h4 id="preview">Preview</h4>
+    <Youtube
+        source={data.videoSrc}
+        caption={`The ${data.name} used in this video is ${data.starsInVideo}★`}
+    />
+{/if}

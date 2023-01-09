@@ -62,12 +62,21 @@
             icon: "bxl:twitter",
             label: "Aida Cafe Twitter",
         },
+        {
+            href: "https://ko-fi.com/whotookzakum",
+            icon: "simple-icons:ko-fi",
+            label: "Support me on Ko-Fi!"
+        }
     ];
+
+    function toggleNav() {
+        navIsOpen = !navIsOpen;
+    }
 </script>
 
 <nav>
     <div class="toggle-wrapper">
-        <button class="nav-toggle" on:click={() => (navIsOpen = !navIsOpen)}>
+        <button class="nav-toggle" on:click={toggleNav}>
             <Icon
                 icon={navIsOpen ? "ph:x" : "mdi:menu"}
                 width="32"
@@ -102,8 +111,10 @@
                 <a
                     href={link.href}
                     class:active={$page.url.pathname.includes(link.href)}
-                    >{link.text}</a
+                    on:click={toggleNav}
                 >
+                    {link.text}
+                </a>
             {/if}
         {/each}
     </div>

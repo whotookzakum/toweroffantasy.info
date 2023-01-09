@@ -44,6 +44,7 @@
                                 alt={avatar.name}
                                 width="128"
                                 height="128"
+                                loading="lazy"
                             />
                             <h2>{avatar.name}</h2>
                         </div>

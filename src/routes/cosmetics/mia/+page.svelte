@@ -40,6 +40,7 @@
                                 alt={outfit.name}
                                 width="128"
                                 height="128"
+                                loading="lazy"
                             />
                             <h2>{outfit.name}</h2>
                         </div>
