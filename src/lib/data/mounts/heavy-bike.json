@@ -1,0 +1,12 @@
+{
+    "name": "Heavy Bike",
+    "id": 8,
+    "imgSrc": "zuoqi_tubiap_14",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Reward for advancing Marc's weapon to 3 ★.",
+            "imgSrc": "Mount_14"
+        }
+    ]
+}

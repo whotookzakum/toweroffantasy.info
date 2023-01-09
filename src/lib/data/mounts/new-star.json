@@ -1,0 +1,21 @@
+{
+    "name": "New Star",
+    "id": 15,
+    "imgSrc": "zuoqi_tubiap_17",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained at a chance when opening a world boss chest during the event period.",
+            "imgSrc": "Mount_017_a"
+        },
+        {
+            "source": "Obtained at a chance when opening a world boss chest during the event period.",
+            "imgSrc": "Mount_017_b"
+        },
+        {
+            "source": "Obtained at a chance when opening a world boss chest during the event period.",
+            "imgSrc": "Mount_017_c"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/5p806TAmLcY"
+}

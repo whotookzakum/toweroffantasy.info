@@ -1,0 +1,130 @@
+{
+    "name": "Flaming Revolver",
+    "imgSrc": "item_Weapon_SSR_Gun_Fire01",
+    "element": "flame",
+    "type": "dps",
+    "shatter": {
+        "tier": "S",
+        "value": "12.50"
+    },
+    "charge": {
+        "tier": "A",
+        "value": "10.00"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "flame",
+        "red",
+        "black"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Flame Resonance",
+            "description": "Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. This effect does not stack repeatedly."
+        }
+    ],
+    "advancements": [
+        "Each round of Barrage deals additional damage equal to **2%** of the target's current HP (cannot exceed **180%** of ATK).",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Heavy Bombardment branch skill and Close Quarters dodge attack inflict *Ion Scorch* on targets that are already burned, dealing flame damage equal to **40%** of ATK every second for **10** seconds.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "The damage from *Ion Scorch* increases to **60%** of ATK. Successful attacks with any weapon's dodge skill will refresh the duration of *Ion Scorch*.",
+        "*Barrage* inflicts burn for **15** seconds. Successful attacks with any weapon's dodge skills reduce cooldown of *Barrage* by **4** seconds. This effect has a **1.5**-second cooldown."
+    ],
+    "abilities": [
+        
+            {
+                "name": "Normal Attack",
+                "type": "normal",
+                "imgSrc": "../Melee/pugong_gun",
+                "input": ["Attack x5"],
+                "description": "On the ground, use normal attack button to launch 5 attacks in a row.",
+                "breakdown": [
+                    "**52.3%** of ATK + **3**.",
+                    "**75.6%** of ATK + **4**.",
+                    "**94.5%** of ATK + **5**.",
+                    "**142.8%** of ATK + **8**.",
+                    "**137.8%** of ATK + **7**."
+                ]
+            },
+            {
+                "name": "Charged Shot",
+                "type": "normal",
+                "imgSrc": "skill_gun_power",
+                "input": ["hold:Attack"],
+                "description": "Tap and hold normal attack to charge a shot and release to fire rounds, dealing **95.4%** of ATK + **5** damage, plus an explosion 3 seconds later (or if the target dies), dealing **23.9%** of ATK as damage to nearby enemies. Each time the target is dealt damage before the explosion (up to **4** times), AOE is doubled and damage is increased."
+            },
+            {
+                "name": "Jumping Blast",
+                "type": "normal",
+                "imgSrc": "skill_gun_jump",
+                "input": ["Jump", "Attack"],
+                "description":
+                    "While airborne or after jumping once, use an aerial attack.\n\nToss a bomb that deals damage equal to **90.8%** of ATK + **5** to enemies in a circle ahead, knocking them back a certain distance.\n\nConsumes **250** endurance."
+            },
+            {
+                "name": "Aerial Discharge",
+                "type": "normal",
+                "imgSrc": "skill_gun_air",
+                "input": ["Jump", "Jump", "Attack"],
+                "description":
+                    "After double-jumping, use a jump attack in the air.\n\nFire an Omnium beam downward. The beam then sweeps forward, dealing damage equal to **33.8%** of ATK + **2**."
+            },
+            {
+                "name": "Heavy Bombardment",
+                "type": "normal",
+                "imgSrc": "skill_gun_branch",
+                "input": ["Attack", "hold:Attack"],
+                "description": "Hold attack button during a normal attack to unleash Suppressing Fire in front, dealing **102%** of ATK + **5** AOE damage to enemies."
+            },
+            {
+                "name": "Dodge",
+                "type": "dodge",
+                "imgSrc": "common_evade",
+                "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
+            },
+            {
+                "name": "Close Quarters",
+                "type": "dodge",
+                "imgSrc": "skill_gun_frontattack",
+                "input": ["Dodge", "Attack"],
+                "description": "Use a normal attack right after dodging to trigger Close Quarters. Deal **156.1%** of ATK + **8** to targets in a frontal cone area."
+            },
+            {
+                "name": "Barrage",
+                "type": "skill",
+                "imgSrc": "../gun_skill",
+                "description":
+                    "Constant fire in a frontal cone area to deal **666%** of ATK + **35** damage.\n\nCooldown: **60** seconds."
+            },
+            {
+                "name": "Explosive Rain",
+                "type": "discharge",
+                "imgSrc": "skill_gun_changeskill",
+                "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes **3** grenades forward, dealing **570%** of ATK + **30** AOE damage and **launching** the target."
+            }
+        
+    ],
+    "abilitiesVideoSrc": "",
+    "recommendedMatrices": [
+        {
+            "name": "Samir",
+            "pieces": 2,
+            "description": "High damage buffing set useful for main DPS weapons."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "High damage matrix set when you have high crit rate."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
+    ]
+}

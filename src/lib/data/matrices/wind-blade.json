@@ -1,0 +1,12 @@
+{
+    "name": "Wind Blade",
+    "id": 6,
+    "rarity": "R",
+    "imgSrc": "icon_matrix_R6_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase shatter capability by **18%**."
+        }
+    ]
+}

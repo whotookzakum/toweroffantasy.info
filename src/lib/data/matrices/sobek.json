@@ -1,0 +1,12 @@
+{
+    "name": "Sobek",
+    "id": 4,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR4_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase damage dealt by **6%/7.5%/9%** for each enemy nearby. Up to 3 stacks."
+        }
+    ]
+}

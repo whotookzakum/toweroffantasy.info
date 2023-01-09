@@ -1,0 +1,135 @@
+{
+    "name": "Pummeler",
+    "imgSrc": "item_Weapon_SR_Hammer_Ice01",
+    "element": "ice",
+    "type": "defense",
+    "shatter": {
+        "tier": "A",
+        "value": "10.00"
+    },
+    "charge": {
+        "tier": "B",
+        "value": "6.00"
+    },
+    "baseStats": [
+        "attack",
+        "resistance",
+        "health"
+    ],
+    "materials": [
+        "ice",
+        "green",
+        "black"
+    ],
+    "advancements": [
+        "Taunt nearby targets after switching to this weapon, preventing **1** instance of damage in the next **8** seconds and granting hyperbody for the next **8** seconds. Cooldown: **15** seconds.",
+        "Increase the current weapon's base HP growth by **10%**.",
+        "After taking damage, reduce all damage received by **50%** for the next **6** seconds. Cooldown: **20** seconds.",
+        "Increase the current weapon's base HP growth by **20%**.",
+        "Normal attacks **stun** targets for **2.5** seconds. Cooldown: **20** seconds.",
+        "Discharge skills deal an additional **10%** damage to targets and increase frost damage by an additional **10%** for **25** seconds."
+    ],
+    "abilities": [
+        {
+            "name": "Normal Attack",
+            "type": "normal",
+            "imgSrc": "../Melee/pugong_hammer",
+            "input": [
+                "Attack x4"
+            ],
+            "description": "While on the ground, swing the hammer to attack 4 times in a row.",
+            "breakdown": [
+                "**76.3%** of ATK + **4** and small knockback.\n\nDuring Outburst, **75.5%** of ATK + **4** and small knockback.",
+                "**62.1%** of ATK + **3** and small knockback.\n\nDuring Outburst, **65%** of ATK + **3** and small knockback.",
+                "**157.4%** of ATK + **8** and small knockback.\n\nDuring Outburst, **171.3%** of ATK + **9** and small knockback.",
+                "**263.8%** of ATK + **14** and launch the target.\n\nDuring Outburst, **315.3%** of ATK + **17** and knock the target **into the air**."
+            ]
+        },
+        {
+            "name": "Pummel",
+            "type": "normal",
+            "imgSrc": "skill_hammer_air",
+            "input": [
+                "Jump",
+                "Attack"
+            ],
+            "description": "While airborne or after jumping once, tap normal attack to trigger Jumping Blast. **121.7%** of ATK + **6** and knock the target into the air.\n\nDuring Outburst, **133.9%** of ATK + **7** and knock the target **into the air**.\n\nDeal greater damage depending on the user's altitude when the ability is triggered, up to **600%** of ATK."
+        },
+        {
+            "name": "Shockwave",
+            "type": "normal",
+            "imgSrc": "skill_hammer_jump",
+            "input": [
+                "Jump",
+                "Attack",
+                "hold:Attack"
+            ],
+            "description": "Tapping and holding while airborne, Double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. Knock the target **into the air 4** times, dealing damage equal to **34.8%** of ATK + **2** each time. Cost **250** endurance.\n\nDuring Outburst, Shockwave knocks the target **into the air 5** times, dealing damage equal to **38.3%** of ATK + **2** each time. Deal greater damage depending on the user's altitude when the ability is triggered, up to **600%** of ATK."
+        },
+        {
+            "name": "Sneak Attack",
+            "type": "normal",
+            "imgSrc": "common_sneak",
+            "input": [
+                "Crouch",
+                "Attack"
+            ],
+            "description": "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **427.5%** of ATK + **23**."
+        },
+        {
+            "name": "Focus Smash",
+            "type": "normal",
+            "imgSrc": "skill_hammer_jump-05",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack to trigger Focus Smash (can be charged up to 3 stacks). Grant immunity to all control effects and hyperbody while charging.\n\nDuring Outburst, tap and hold normal attack to trigger Furious Strikes, dealing damage equal to **501.6%** of ATK + **26** and knocking the target **into the air**.",
+            "breakdown": [
+                "First Stack: **110%** of ATK + **6** and knock the target into the air.",
+                "Second Stack: **276%** of ATK + **15** and knock the target **into the air**.",
+                "Third Stack: **518%** of ATK + **27** and knock the target **into the air**."
+            ]
+        },
+        {
+            "name": "Jumping Smash",
+            "type": "dodge",
+            "imgSrc": "skill_hammer_frontattack",
+            "input": [
+                "Arrow keys",
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that knocks the enemy into the air **4** times, dealing damage equal to **161.6%** of ATK + **9**."
+        },
+        {
+            "name": "Worldsplitter",
+            "type": "dodge",
+            "imgSrc": "skill_hammer_backattck",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing **3** shockwaves forward, each dealing damage equal to **52.4%** of ATK + **3**, and knocking enemies into the air.\n\nWhile in Outburst mode, fire **5** shockwaves forward, each dealing damage equal to **52.4%** of ATK + **3** and knocking the target into the air."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
+        },
+        {
+            "name": "Outburst",
+            "type": "skill",
+            "imgSrc": "../hammer_skill2",
+            "description": "Switch to activate Outburst, increasing damage dealt for **25** seconds. During Outburst, skills trigger Windfury, dealing damage equal to **219%** of ATK + **12**, knock the target **into the air**, and create an air current on the ground. While standing in the current, dodging has no cost. Cooldown: **45** seconds (Windfury's cooldown: **10** seconds)."
+        },
+        {
+            "name": "Overwhelming Maul",
+            "type": "discharge",
+            "imgSrc": "skill_hammer_changeskill",
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and knock nearby targets **into the air** upon switching to this weapon, dealing damage equal to **153.3%** of ATK + **8**. Also summon a hammer to fall on nearby targets, dealing damage equal to **153.3%** of ATK + **8**."
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/NyD8wfeK0vM?start=4",
+    "recommendedMatrices": []
+}

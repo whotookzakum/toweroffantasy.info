@@ -1,0 +1,15 @@
+{
+    "name": "Hologram Projector",
+    "imgSrc": "artifact_ssr_010",
+    "rarity": "SSR",
+    "description": "Project a hologram of the user that synchronously replays the Wanderer's weapon attacks, dealing **35%** of the user's damage. Lasts for **15** seconds. **180**-second cooldown.",
+    "advancements": [
+        "Extend duration to **20** seconds.",
+        "Reduce skill cooldown to **120** seconds.",
+        "Tap again to transpose to the hologram's position.",
+        "Increase volt damage by 2%, even if not deployed. Unavailable in Apex League.",
+        "Increase damage dealt by the holograms to **50%** of the Wanderer's damage. Transposing removes control effects."
+    ],
+    "videoSrc": "https://www.youtube.com/embed/rmsj02iH2rs",
+    "starsInVideo": "2"
+}

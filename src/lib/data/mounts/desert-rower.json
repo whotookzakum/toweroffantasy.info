@@ -1,0 +1,12 @@
+{
+    "name": "Desert Rower",
+    "id": 12,
+    "imgSrc": "zuoqi_tubiap_15",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained from gachapon during the event period.",
+            "imgSrc": "Mount_15"
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "name": "Bai Ling",
+    "id": 16,
+    "cnName": "bailing",
+    "rarity": "SR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Bai Ling puts the Glider or the Wayboard away, increase speed by **8%** for **12** seconds. Cooldown: **60** seconds."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Bai Ling puts the Glider or the Wayboard away, increase speed by **15%** for **12** seconds. Cooldown: **60** seconds."
+        }
+    ],
+    "giftTypes": [
+        "Decorations",
+        "Collectibles",
+        "Rare Items"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 80,
+            "gift": "seal"
+        },
+        {
+            "points": 60,
+            "gift": "miaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "foxFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "kitchenware"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "necklace"
+        },
+        {
+            "points": 30,
+            "gift": "vial"
+        },
+        {
+            "points": 30,
+            "gift": "spiderFigure"
+        },
+        {
+            "points": 30,
+            "gift": "elfFigure"
+        },
+        {
+            "points": 15,
+            "gift": "photoAlbum"
+        },
+        {
+            "points": 15,
+            "gift": "harmonica"
+        },
+        {
+            "points": 15,
+            "gift": "photo"
+        },
+        {
+            "points": 15,
+            "gift": "plant"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "163 cm",
+    "birthplace": "HT201 Sanctuary",
+    "horoscope": "Taurus",
+    "birthday": "8 May",
+    "voiceActors": {
+        "jp": "日高里菜 (Rina Hidaka)",
+        "en": "",
+        "cn": ""
+    }
+}

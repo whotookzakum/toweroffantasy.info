@@ -1,0 +1,16 @@
+{
+    "name": "Cobalt-B",
+    "id": 11,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR5_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increase damage against debuffed targets by **14%/16%/18%/20%**."
+        },
+        {
+            "pieces": 4,
+            "description": "Restore **1** dodge attempt every **3** dodges. Dodge skills inflict burn upon hit, dealing damage equal to **24%/30%/36%/42%** of ATK every 0.5 seconds for **4** seconds."
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Bai Ling",
+    "id": 10,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR9_256",
+    "sets": [
+    {
+        "pieces": 3,
+        "description": ""
+    }
+]
+}

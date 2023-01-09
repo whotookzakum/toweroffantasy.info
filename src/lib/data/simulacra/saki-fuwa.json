@@ -1,0 +1,80 @@
+{
+    "name": "Saki Fuwa",
+    "id": 22,
+    "cnName": "bupoxiao",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 12,
+                "start": "03 Jun 2022",
+                "end": "23 Jun 2022"
+            },
+            {
+                "bannerNo": 22,
+                "start": "28 Sep 2022",
+                "end": "17 Oct 2022"
+            },
+            {
+                "bannerNo": 32,
+                "subtext": "Anniversary",
+                "start": "15 Dec 2022",
+                "end": "21 Dec 2022"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 6,
+                "start": "9 Nov 2022",
+                "end": "1 Dec 2022"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When HP is lower than **70%**, increase resistance by **40%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When HP is lower than **70%**, increase all resistance by **40%** with an extra **60%** increased frost resistance.\n\nIn the state of Silent Flow: After the sword shadow releases Surge and blocks an attack, the teammate with the lowest HP percentage will get 3 block abilities, not including yourself, lasting for **10** seconds. The maximum blocking damage does not exceed **15%** of the teammate's max HP."
+        }
+    ],
+    "giftTypes": [
+        "Metalware",
+        "Everyday Items",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 40,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "157 cm",
+    "birthplace": "Mirroria",
+    "horoscope": "Libra",
+    "birthday": "11 October",
+    "voiceActors": {
+        "jp": "雨宮天",
+        "en": "EmiLo",
+        "cn": "唐小喜"
+    }
+}

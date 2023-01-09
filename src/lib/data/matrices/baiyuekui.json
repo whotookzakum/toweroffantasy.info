@@ -1,0 +1,16 @@
+{
+    "name": "Baiyuekui",
+    "id": 12,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR13_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "If you have **200~999** charge when switching to this weapon, use **200** charge to gain a **15%/18%/21%/25%** attack boost for **15** seconds, cooldown **5** seconds, does not stack."
+        },
+        {
+            "pieces": 4,
+            "description": "When you delay using a discharge skill, the next discharge skill will deal AoE damage to enemies within 5m. The AoE will increase by **106%/122%/140%/160%** every **0.6** seconds, up to **530%/610%/700%/800%**. The discharge will also increase Shatter by **7%/14%/21%/28%** for **4** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        }
+    ]
+}

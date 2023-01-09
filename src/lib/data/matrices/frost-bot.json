@@ -1,0 +1,12 @@
+{
+    "name": "Frost Bot",
+    "id": 3,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR3_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "When HP is below **40%**, using a discharge skill to switch to the current weapon restores HP equal to **160%/200%/240%** of ATK."
+        }
+    ]
+}

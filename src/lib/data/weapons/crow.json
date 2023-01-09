@@ -1,0 +1,148 @@
+{
+    "name": "Thunderblades",
+    "imgSrc": "item_Weapon_SSR_Ds_Thunder01",
+    "element": "volt",
+    "type": "dps",
+    "shatter": {
+        "tier": "B",
+        "value": "6.00"
+    },
+    "charge": {
+        "tier": "A",
+        "value": "8.00"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "volt",
+        "red",
+        "blue"
+    ],
+    "advancements": [
+        "Attacking targets from behind increases crit rate of all dual blades attacks by **40%**. Backstabbing an electrified target increases crit rate by **100%** and crit damage by **30%**.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Increase damage by **30%** to targets with less than **60%** HP.",
+        "Increase the current weapon's base HP growth by **32%**.",
+        "Triggering a Back Attack grants a 100% crit chance for the next **4** seconds and increases crit damage by **50%**. Cooldown: **10** seconds.",
+        "After using a skill, increase volt damage dealt to the target by **20%** for **20** seconds."
+    ],
+    "abilities": [
+        {
+            "name": "Twin Blades",
+            "type": "normal",
+            "imgSrc": "skill_ds_melee",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "While on the ground, swing the blades to attack 5 times in a row.",
+            "breakdown": [
+                "**60.1%** of ATK + **3** and small knockback.",
+                "**73%** of ATK + **4** and small knockback.",
+                "**90.9%** of ATK + **5** and small knockback.",
+                "**96.8%** of ATK + **5** and small knockback.",
+                "**202.2%** of ATK + **11** and small knockback."
+            ]
+        },
+        {
+            "name": "Sky Flurry",
+            "type": "normal",
+            "imgSrc": "skill_ds_air",
+            "input": [
+                "Jump",
+                "Attack x4"
+            ],
+            "description": "While airborne or after jumping once, tap normal attack to attack 4 times in a row.",
+            "breakdown": [
+                "**65.6%** of ATK + **3**.",
+                "**38.4%** of ATK + **2**.",
+                "**92%** of ATK + **5**.",
+                "**138%** of ATK + **7**."
+            ]
+        },
+        {
+            "name": "Rapid Lunge",
+            "type": "normal",
+            "imgSrc": "skill_ds_frontattack",
+            "input": [
+                "Attack x3",
+                "hold:Attack"
+            ],
+            "description": "After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Strike the target and knock them **into the air**, dealing total damage equal to **116.8%** of ATK + **6**."
+        },
+        {
+            "name": "Spiral Drive",
+            "type": "normal",
+            "imgSrc": "skill_ds_jump",
+            "input": [
+                "Jump",
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Spiral Drive. While falling, deal damage equal to **42%** of ATK + **2** each hit."
+        },
+        {
+            "name": "Sneak Attack",
+            "type": "normal",
+            "imgSrc": "common_sneak",
+            "input": [
+                "Crouch",
+                "Attack"
+            ],
+            "description": "Approach the enemy from behind while crouching, then tap normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK + **30**."
+        },
+        {
+            "name": "Flying Blades",
+            "type": "dodge",
+            "imgSrc": "skill_ds_branch",
+            "input": [
+                "Arrow keys",
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Flying Blades. Slash a target **5** times, each dealing damage equal to **26.4%** of ATK + **1**. Grant immunity to control effects while phasing."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the red area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
+        },
+        {
+            "name": "Returning Blades",
+            "type": "skill",
+            "imgSrc": "../skill_ds_1",
+            "description": "Fires 6 returning blades, each dealing damage equal to **52.8%** of ATK + **3**. Gains **hyperbody** for up to **8** seconds, and the effect is removed when the blades return. **45**-second cooldown."
+        },
+        {
+            "name": "Orbiting Blades",
+            "type": "discharge",
+            "imgSrc": "skill_ds_changeskill",
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and blink to the target location upon switching to this weapon and attack, dealing damage equal to **86.9%** of ATK + **5** and electrocuting the target (after **5** seconds, deals volt damage equal to **15%** of damage dealt, up to **350%** of the Wanderer's ATK. This is an abnormal status that can be dispelled). Also spawn 3 blades that orbit around the Wanderer, dealing damage equal to **65.2%** of ATK + **3** to those that touch them."
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/HYGcXjYwSJc?start=6",
+    "recommendedMatrices": [
+        {
+            "name": "Samir",
+            "pieces": 2,
+            "description": "Thunderblades are capable of keeping up the damage buff when used correctly."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "At high crit rate, Crow's 2 set is the second best choice for damage."
+        },
+        {
+            "name": "Shiro",
+            "pieces": 2,
+            "description": "Not ideal, but can be used for the damage increase until you get one of the more recommended sets."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
+    ]
+}

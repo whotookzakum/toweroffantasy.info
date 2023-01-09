@@ -1,0 +1,101 @@
+{
+    "name": "Crow",
+    "id": 13,
+    "cnName": "wuwan",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Crow is not in a team, increase damage dealt by **6%** and reduce damage received by **4%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Crow is not in a team, increase damage dealt by **10%** and reduce damage received by **6%** When Crow enters combat, increase damage dealt by **12%** for **12** seconds."
+        }
+    ],
+    "giftTypes": [
+        "Everyday Items",
+        "Figurines",
+        "Limited Edition"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "tataCards"
+        },
+        {
+            "points": 80,
+            "gift": "tataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "miaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "bearFigure"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "suit"
+        },
+        {
+            "points": 30,
+            "gift": "juicePouch"
+        },
+        {
+            "points": 30,
+            "gift": "perfume"
+        },
+        {
+            "points": 30,
+            "gift": "pumpkinFigure"
+        },
+        {
+            "points": 30,
+            "gift": "androidFigure"
+        },
+        {
+            "points": 15,
+            "gift": "flowers"
+        },
+        {
+            "points": 15,
+            "gift": "snackBox"
+        },
+        {
+            "points": 15,
+            "gift": "scarf"
+        }
+    ],
+    "gender": "Male",
+    "height": "162 cm",
+    "birthplace": "Astra",
+    "horoscope": "Sagittarius",
+    "birthday": "17 Dec",
+    "voiceActors": {
+        "jp": "岡本信彦 (Nobuhiko Okamoto)",
+        "en": "Casey Mongillo",
+        "cn": "翟巍"
+    }
+}

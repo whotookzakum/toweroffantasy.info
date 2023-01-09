@@ -1,0 +1,14 @@
+{
+    "name": "Little Pelican",
+    "chinaOnly": true,
+    "imgSrc": "artifact_ssr_015",
+    "rarity": "SSR",
+    "description": "Using Little Pelican while underwater will allow you to swim faster. Continuously consume endurance while moving, and stop moving to slowly recover endurance. Cooldown: **90** seconds. Up to **2** charges. Little Pelican will automically illuminate surroundings with its light.",
+    "advancements": [
+        "Cooldown reduced to **60** seconds.",
+        "Recover up to full endurance when using Little Pelican, does not take effect when exhausted.",
+        "Up to **3** charges.",
+        "Increase volt damage by **2%** even when not deployed. Unavailable in Apex League.",
+        "Cooldown reduced to **30** seconds, and a new skin **Flower Color** is unlocked."
+    ]
+}

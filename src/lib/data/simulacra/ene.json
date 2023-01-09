@@ -1,0 +1,117 @@
+{
+    "name": "Ene",
+    "id": 2,
+    "cnName": "xi",
+    "rarity": "SR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When Ene swims, climbs, or glides, reduce endurance consumption by **12%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "When Ene swims, climbs, or glides, reduce endurance consumption by **20%**."
+        }
+    ],
+    "giftTypes": [
+        "Games",
+        "Decorations",
+        "Toys"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "peppaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "foxFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "present"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "pearl"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 30,
+            "gift": "chessSet"
+        },
+        {
+            "points": 30,
+            "gift": "diary"
+        },
+        {
+            "points": 30,
+            "gift": "catPlush"
+        },
+        {
+            "points": 30,
+            "gift": "tataPlush"
+        },
+        {
+            "points": 30,
+            "gift": "spiderFigure"
+        },
+        {
+            "points": 30,
+            "gift": "elfFigure"
+        },
+        {
+            "points": 30,
+            "gift": "robotFigure"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "photoAlbum"
+        },
+        {
+            "points": 15,
+            "gift": "tradingCard"
+        },
+        {
+            "points": 15,
+            "gift": "pinwheel"
+        },
+        {
+            "points": 15,
+            "gift": "plant"
+        }
+    ],
+    "gender": "Female",
+    "height": "145 cm",
+    "birthplace": "Crown",
+    "horoscope": "Leo",
+    "birthday": "17 Aug",
+    "voiceActors": {
+        "jp": "小清水亜美 (Ami Koshimizu)",
+        "en": "Melissa Fahn",
+        "cn": ""
+    }
+}

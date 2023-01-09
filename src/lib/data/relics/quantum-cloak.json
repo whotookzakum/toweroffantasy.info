@@ -1,0 +1,15 @@
+{
+    "name": "Quantum Cloak",
+    "imgSrc": "artifact_sr_009",
+    "rarity": "SR",
+    "description": "Enter a quantum state for **10** seconds, during which enemies cannot detect the wearer. The wearer exits quantum state after attacking once. **120**-second cooldown.",
+    "advancements": [
+        "Quantum state lasts for **20** seconds.",
+        "Reduce cooldown to **80** seconds.",
+        "+**100%** damage in Quantum state, negated after **1** successful attack.",
+        "Increase volt damage by **1.5%**, even if not deployed. Unavailable in Apex League.",
+        "+**100%** damage for **3** successful attacks in Quantum state."
+    ],
+    "videoSrc": "https://www.youtube.com/embed/nqLUGC-Gg8k",
+    "starsInVideo": "4"
+}

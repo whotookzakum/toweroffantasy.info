@@ -1,0 +1,16 @@
+{
+    "name": "Huma",
+    "id": 7,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR10_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to **15%/19%/22.5%/26%** of ATK every second for **5** seconds."
+        },
+        {
+            "pieces": 4,
+            "description": "Reduce ATK of all targets within 8 meters that are taking damage over time by **10%/12%/13%/15%**. Only the highest level's effect is applied when obtained repeatedly."
+        }
+    ]
+}

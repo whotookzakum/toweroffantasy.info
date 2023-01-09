@@ -1,0 +1,16 @@
+{
+    "name": "KING",
+    "id": 6,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR4_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "When a target is shattered, grant **8%/10%/12%/14%** damage boost for **25** seconds. Only the highest level is applied when the effect is obtained repeatedly."
+        },
+        {
+            "pieces": 4,
+            "description": "When there are more than 2 enemies around, hits restore HP equal to **14%/18%/22%/26%** of damage dealt upon attacking. The maximum HP restored every **0.5** seconds must not exceed **36%/42%/48%/54%** of ATK."
+        }
+    ]
+}

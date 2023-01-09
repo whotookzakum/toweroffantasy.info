@@ -1,0 +1,12 @@
+{
+    "name": "Thunder",
+    "id": 16,
+    "imgSrc": "zuoqi_Racing_tubiap_1",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained from gachapon during the Fast Wind event.",
+            "imgSrc": "Mount_Racing_001"
+        }
+    ]
+}

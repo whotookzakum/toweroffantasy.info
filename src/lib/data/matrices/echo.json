@@ -1,0 +1,12 @@
+{
+    "name": "Echo",
+    "id": 9,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR12_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": ""
+        }
+    ]
+}

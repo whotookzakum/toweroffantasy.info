@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Uninhibited Drum",
+        "imgSrcs": ["fashion_f42", "fashion_m42"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
+    },
+    {
+        "name": "Vibrant Youth",
+        "imgSrcs": ["fashion_f41", "fashion_m41"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass."
+    },
+    {
+        "name": "Rosy Banquet",
+        "imgSrcs": ["fashion_f40", "fashion_m40"],
+        "source": "Obtained from gachapon during the Thorned Rose event."
+    },
+    {
+        "name": "Early Dawn",
+        "imgSrcs": ["fashion_f38", "fashion_m38"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 7th Collector's Edition Pass."
+    },
+    {
+        "name": "High Speed Wind",
+        "imgSrcs": ["fashion_f36", "fashion_m36"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from an event."
+    },
+    {
+        "name": "Academy Era",
+        "imgSrcs": ["fashion_f35", "fashion_m35"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
+    },
+    {
+        "name": "Clear Rainbow",
+        "imgSrcs": ["fashion_f34", "fashion_m34"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 6th Collector's Edition Pass."
+    },
+    {
+        "name": "Seaside Vacation",
+        "imgSrcs": ["fashion_f33", "fashion_m33"],
+        "source": "Obtained from gachapon during the event."
+    },
+    {
+        "name": "Silent Wings",
+        "imgSrcs": ["fashion_f32", "fashion_m32"],
+        "source": 
+            "Obtained by purchasing the 3rd Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 5th Collector's Edition Pass."
+    },
+    {
+        "name": "Fluffy Party",
+        "imgSrcs": ["fashion_f31", "fashion_m31"],
+        "source": "Obtained by collecting two fragments from Mirroria gachapon machines (after the machines that give Jerboa mount parts)."
+    },
+    {
+        "name": "Fantasy",
+        "imgSrcs": ["fashion_f28", "fashion_m28"],
+        "source": "Obtained from gachapon during the Wheel of Fantasy event."
+    },
+    {
+        "name": "Starlight",
+        "imgSrcs": ["fashion_f26", "fashion_m26"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
+    },
+    {
+        "name": "Desert Explorer",
+        "imgSrcs": ["fashion_f23", "fashion_m23"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
+    },
+    {
+        "name": "Cherry Blossom",
+        "imgSrcs": ["fashion_f22", "fashion_m22"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by participating in the Banges exhibition event."
+    },
+    {
+        "name": "Midnight",
+        "imgSrcs": ["fashion_f20", "fashion_m20"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by participating in the Banges exhibition event."
+    },
+    {
+        "name": "Era",
+        "imgSrcs": ["fashion_f21", "fashion_m21"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
+    },
+    {
+        "name": "Forget Me Not",
+        "imgSrcs": ["fashion_f07", "fashion_m07"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
+    },
+    {
+        "name": "Fruity Candy",
+        "imgSrcs": ["fashion_f19", "fashion_m19"],
+        "source": "Obtained from the Lucky Tarot purchase event.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
+    },
+    {
+        "name": "Wasteland",
+        "imgSrcs": ["fashion_f03", "fashion_m09"],
+        "source": "Obtained by purchasing the 1st Collector's Edition Pass."
+    },
+    {
+        "name": "Desert Aurora",
+        "imgSrcs": ["fashion_f25", "fashion_m25"],
+        "source": "Available by default."
+    },
+    {
+        "name": "Star Sand",
+        "imgSrcs": ["fashion_f12", "fashion_m17"],
+        "source": "Rewarded to all characters for reaching the 2.5m pre-registrations."
+    },
+    {
+        "name": "Last Stand",
+        "imgSrcs": ["fashion_f02", "fashion_m11"],
+        "source": "Available by default."
+    },
+    {
+        "name": "Conqueror",
+        "imgSrcs": ["fashion_f14", "fashion_m12"],
+        "source": "Obtained by reaching 1490 exploration in Astra"
+    },
+    {
+        "name": "Wastelands Wanderer",
+        "imgSrcs": ["fashion_f13", "fashion_m13"],
+        "source": "Obtained by reaching 1695 exploration in Banges."
+    },
+    {
+        "name": "Scavenger Outfit",
+        "imgSrcs": ["fashion_f15", "fashion_m14"],
+        "source": "Obtained by reaching 1620 exploration in Crown."
+    },
+    {
+        "name": "Roamer",
+        "imgSrcs": ["fashion_f16", "fashion_m15"],
+        "source": "Obtained by reaching 1400 exploration in Navia."
+    },
+    {
+        "name": "Visitor in the Snow",
+        "imgSrcs": ["fashion_f17", "fashion_m16"],
+        "source": "Obtained by reaching 1595 exploration in Warren."
+    },
+    {
+        "name": "Nightwalk",
+        "imgSrcs": ["fashion_f10", "fashion_m02"],
+        "source": "Available by default."
+    },
+    {
+        "name": "Universal Work Clothes",
+        "imgSrcs": ["fashion_f09", "fashion_m04"],
+        "source": "Available by default."
+    },
+    {
+        "name": "Sunbeam Voyager",
+        "imgSrcs": ["fashion_f01", "fashion_m01"],
+        "source": "Available by default."
+    },
+    {
+        "name": "Machine Era",
+        "imgSrcs": ["fashion_f11", "fashion_m03"],
+        "source": "Available by default."
+    },
+    {
+        "name": "Operation: Streamer",
+        "imgSrcs": ["fashion_f06", "fashion_m06"],
+        "source": "Purchasable for 1280 Tanium."
+    },
+    {
+        "name": "The Mission",
+        "imgSrcs": ["fashion_f05", "fashion_m05"],
+        "source": "Purchasable for 1280 Tanium."
+    },
+    {
+        "name": "Desperado",
+        "imgSrcs": ["fashion_f08", "fashion_m10"],
+        "source": "Purchasable for 1280 Tanium."
+    },
+    {
+        "name": "Rising Gale",
+        "imgSrcs": ["fashion_f04", "fashion_m08"],
+        "source": "Rewarded for reaching level 75."
+    }
+]

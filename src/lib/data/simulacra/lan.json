@@ -1,0 +1,72 @@
+{
+    "name": "Lan",
+    "id": 34,
+    "cnName": "lan",
+    "chinaOnly": true,
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 40,
+                "start": "15 Dec 2022",
+                "end": "11 Jan 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **16%** to yourself and teammates inside the boundary."
+        },
+        {
+            "affinity": 4000,
+            "description": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **24%** and increase final damage by **8%** to yourself and teammates inside the boundary."
+        }
+    ],
+    "giftTypes": [
+        "Rare Items",
+        "Everyday Items",
+        "Vera",
+        "Domain 9"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "rarePhoto"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 60,
+            "gift": "rareTradingCard"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "172 cm",
+    "birthplace": "???",
+    "horoscope": "Taurus",
+    "birthday": "5 May",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "陈雨"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Meryl",
+    "id": 5,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR1_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": ""
+        },
+        {
+            "pieces": 4,
+            "description": ""
+        }
+    ]
+}

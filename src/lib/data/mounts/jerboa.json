@@ -1,0 +1,15 @@
+{
+    "name": "Jerboa",
+    "id": 11,
+    "imgSrc": "zuoqi_tubiap_12",
+    "parts": [
+        {
+            "source": "Obtained from the Gachapon Capsule Machines found in Mirroria - District A.",
+            "imgSrc": "Mount_012_a"
+        },
+        {
+            "source": "Obtained from the Gachapon Capsule Machines found in Mirroria - District A.",
+            "imgSrc": "Mount_012_b"
+        }
+    ]
+}

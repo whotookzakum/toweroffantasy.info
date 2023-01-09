@@ -1,0 +1,12 @@
+{
+    "name": "Standard Operation",
+    "id": 3,
+    "rarity": "R",
+    "imgSrc": "icon_matrix_R3_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase damage dealt by volt weapons by **6%**."
+        }
+    ]
+}

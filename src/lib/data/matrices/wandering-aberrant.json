@@ -1,0 +1,12 @@
+{
+    "name": "Wandering Aberrant",
+    "id": 1,
+    "rarity": "N",
+    "imgSrc": "icon_matrix_N1_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase damage dealt by **4%**."
+        }
+    ]
+}

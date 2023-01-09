@@ -1,0 +1,410 @@
+[
+    {
+        "name": "Thornfruit",
+        "imgSrc": "Vera_Harvest_008",
+        "rarity": 3,
+        "source": "Vera: Confounding Abyss"
+    },
+    {
+        "name": "Sand Onion",
+        "imgSrc": "Vera_Harvest_002",
+        "rarity": 1,
+        "source": "Vera: Near shrubbery"
+    },
+    {
+        "name": "Ball Cactus",
+        "imgSrc": "Vera_Harvest_013",
+        "rarity": 1,
+        "source": "Vera: Near ball cactuses"
+    },
+    {
+        "name": "Beetroot",
+        "imgSrc": "Vera_Harvest_006",
+        "rarity": 2,
+        "source": "Vera: Inside the Cave"
+    },
+    {
+        "name": "Soybeans",
+        "imgSrc": "Vera_Harvest_010",
+        "rarity": 2,
+        "source": "Purchased at Mirroria food vendor"
+    },
+    {
+        "name": "Corn",
+        "imgSrc": "Vera_Harvest_012",
+        "rarity": 2,
+        "source": "Purchased at Mirroria food vendor"
+    },
+    {
+        "name": "Fleshy Tail",
+        "imgSrc": "Vera_Harvest_014",
+        "rarity": 2,
+        "source": "Vera: Hunt Wild Beasts"
+    },
+    {
+        "name": "Chili",
+        "imgSrc": "Vera_Harvest_001",
+        "rarity": 3,
+        "source": "Vera: Around Unusual Red Plants"
+    },
+    {
+        "name": "Desert Melon",
+        "imgSrc": "Vera_Harvest_007",
+        "rarity": 3,
+        "source": "Vera: Quicksand Belt Oasis"
+    },
+    {
+        "name": "Pumpkin",
+        "imgSrc": "Item_Pumpkin",
+        "rarity": 3,
+        "source": "Vera: Quicksand Belt"
+    },
+    {
+        "name": "Ribs",
+        "imgSrc": "Vera_Harvest_015",
+        "rarity": 3,
+        "source": "Vera: Hunt Wild Beasts"
+    },
+    {
+        "name": "Oyster",
+        "imgSrc": "Item_Shells_008",
+        "rarity": 3,
+        "source": "Astra: Beach"
+    },
+    {
+        "name": "Fish Mint",
+        "imgSrc": "Item_Greens_009",
+        "rarity": 3,
+        "source": "Banges: Near rivers"
+    },
+    {
+        "name": "Aloe",
+        "imgSrc": "Vera_Harvest_003",
+        "rarity": 4,
+        "source": "Vera: Near desert trees"
+    },
+    {
+        "name": "Rose Petals",
+        "imgSrc": "Vera_Harvest_004",
+        "rarity": 4,
+        "source": "Vera: Near the Ruin Stones"
+    },
+    {
+        "name": "White Jade Radish",
+        "imgSrc": "Vera_Harvest_011",
+        "rarity": 4,
+        "source": "Vera: Rock Pillar Gobby Oasis"
+    },
+    {
+        "name": "Lard Gourd",
+        "imgSrc": "Item_Fruit_008",
+        "rarity": 4,
+        "source": "Found in Crown and Warren"
+    },
+    {
+        "name": "Mushroom",
+        "imgSrc": "Item_Mushroom_001",
+        "rarity": 1,
+        "source": "Found on Astra (around giant mushrooms) and in Crown"
+    },
+    {
+        "name": "Silver Bass",
+        "imgSrc": "Item_Fishes_005",
+        "rarity": 1,
+        "source": "Found in rivers"
+    },
+    {
+        "name": "Homi Grain",
+        "imgSrc": "item_staples_001",
+        "rarity": 1,
+        "source": "Found on Astra (meadows) and Banges (meadows)"
+    },
+    {
+        "name": "Game Meat",
+        "imgSrc": "Item_Meat_001",
+        "rarity": 1,
+        "source": "Obtained by hunting wild animals"
+    },
+    {
+        "name": "Lettuce",
+        "imgSrc": "Item_Greens_001",
+        "rarity": 1,
+        "source": "Found on Astra (meadows)"
+    },
+    {
+        "name": "Salad Dressing",
+        "imgSrc": "Item_Condiment_03",
+        "rarity": 1,
+        "source": "Purchased at food vendor"
+    },
+    {
+        "name": "Poultry Egg",
+        "imgSrc": "Item_Egg_001",
+        "rarity": 1,
+        "source": "Found in bird nests (high elevations)"
+    },
+    {
+        "name": "Laver",
+        "imgSrc": "Item_Greens_007",
+        "rarity": 2,
+        "source": "Found in Banges (North Sea Beach)"
+    },
+    {
+        "name": "Milk",
+        "imgSrc": "Item_Milk_001",
+        "rarity": 1,
+        "source": "Purchased at food vendor"
+    },
+    {
+        "name": "Poultry Meat",
+        "imgSrc": "Item_Meat_002",
+        "rarity": 1,
+        "source": "Obtained by hunting birds"
+    },
+    {
+        "name": "Rice",
+        "imgSrc": "Item_Condiment_06",
+        "rarity": 1,
+        "source": "Purchased at food vendor"
+    },
+    {
+        "name": "Thornmato",
+        "imgSrc": "Item_Fruit_006",
+        "rarity": 2,
+        "source": "Found on Astra (around alpine shrubs) and in Navia (around trees)"
+    },
+    {
+        "name": "Conch",
+        "imgSrc": "Item_Shells_001",
+        "rarity": 2,
+        "source": "Found in Bangis (South Sea Beach) and Navia (beach)"
+    },
+    {
+        "name": "Potato",
+        "imgSrc": "Item_Staples_003",
+        "rarity": 2,
+        "source": "Found in Banges (around bushes)"
+    },
+    {
+        "name": "Fallen Fruit",
+        "imgSrc": "Item_Orange",
+        "rarity": 2,
+        "source": "Found on Astra (around trees) and in Banges (around trees)"
+    },
+    {
+        "name": "Honey",
+        "imgSrc": "Item_Honey_001",
+        "rarity": 2,
+        "source": "Obtained from hives and bees"
+    },
+    {
+        "name": "Ghost Mushroom",
+        "imgSrc": "Item_Mushroom_007",
+        "rarity": 2,
+        "source": "Found on Astra (Keel, Graveyard)"
+    },
+    {
+        "name": "Broccoli",
+        "imgSrc": "Item_Greens_003",
+        "rarity": 2,
+        "source": "Found on Astra (meadows)"
+    },
+    {
+        "name": "Dandelion Seed",
+        "imgSrc": "Item_Denme_zhongzi",
+        "rarity": 1,
+        "source": "Obtained from dandelion pom-poms"
+    },
+    {
+        "name": "Darby's Sturgeon",
+        "imgSrc": "Item_Fishes_006",
+        "rarity": 2,
+        "source": "Found in rivers of Astra, Navia, and Warren"
+    },
+    {
+        "name": "Brown Rice",
+        "imgSrc": "item_staples_002",
+        "rarity": 2,
+        "source": "Found in Navia (meadows)"
+    },
+    {
+        "name": "Firecap",
+        "imgSrc": "Item_Mushroom_004",
+        "rarity": 2,
+        "source": "Found in Crown"
+    },
+    {
+        "name": "Black Moss",
+        "imgSrc": "Item_Greens_011",
+        "rarity": 2,
+        "source": "Found in Crown"
+    },
+    {
+        "name": "Scallop",
+        "imgSrc": "Item_Shells_002",
+        "rarity": 3,
+        "source": "Found in Banges (South Sea Beach)"
+    },
+    {
+        "name": "Rear Hock",
+        "imgSrc": "Item_Meat_003",
+        "rarity": 3,
+        "source": "Obtained by hunting rabbits, mountain hares, boars, bears, wolves, and honey badgers"
+    },
+    {
+        "name": "Portunid",
+        "imgSrc": "Item_Shells_006",
+        "rarity": 3,
+        "source": "Found on the beaches of Astra, Banges, and Crown"
+    },
+    {
+        "name": "Strawberry",
+        "imgSrc": "Item_Fruit_002",
+        "rarity": 3,
+        "source": "Found in Navia (around bushes)"
+    },
+    {
+        "name": "Small Blueberry Jar",
+        "imgSrc": "Item_Drugs_005",
+        "rarity": 3,
+        "source": "Obtained from defeating the Sons of Aida (robotic enemies)"
+    },
+    {
+        "name": "Carbonated Water",
+        "imgSrc": "Item_Condiment_01",
+        "rarity": 1,
+        "source": "Purchased at food vendor"
+    },
+    {
+        "name": "Sea Urchin",
+        "imgSrc": "Item_Shells_007",
+        "rarity": 3,
+        "source": "Found in Banges (North Sea Beach) and Crown (beach)"
+    },
+    {
+        "name": "Fiddlehead",
+        "imgSrc": "Item_Greens_008",
+        "rarity": 3,
+        "source": "Found near the Banges factory"
+    },
+    {
+        "name": "Cocoa Beans",
+        "imgSrc": "Item_Nuts_002",
+        "rarity": 3,
+        "source": "Found in Navia (Minyu Island)"
+    },
+    {
+        "name": "Balloon Fruit",
+        "imgSrc": "Item_Fruit_007",
+        "rarity": 3,
+        "source": "Found on Astra and in Navia"
+    },
+    {
+        "name": "Electric Eel",
+        "imgSrc": "item_fishes_002",
+        "rarity": 3,
+        "source": "Found in the rivers of Banges, Navia, and Warren"
+    },
+    {
+        "name": "Hermit Crab",
+        "imgSrc": "Item_Shells_005",
+        "rarity": 3,
+        "source": "Found on the beaches of Banges, Navia, and Crown"
+    },
+    {
+        "name": "Phosphogranate",
+        "imgSrc": "Item_Fruit_003",
+        "rarity": 3,
+        "source": "Found in Navia (around rocks)"
+    },
+    {
+        "name": "Firedragon Fruit",
+        "imgSrc": "Item_Fruit_004",
+        "rarity": 3,
+        "source": "Found near rivers in Navia and Crown"
+    },
+    {
+        "name": "Barnacle",
+        "imgSrc": "Item_Shells_009",
+        "rarity": 3,
+        "source": "Found near the sea in Warren"
+    },
+    {
+        "name": "Onion",
+        "imgSrc": "Item_Greens_005",
+        "rarity": 2,
+        "source": "Purchased at food vendor"
+    },
+    {
+        "name": "Snow Azalea",
+        "imgSrc": "Item_Follows_002_sp",
+        "rarity": 3,
+        "source": "Found in Warren"
+    },
+    {
+        "name": "Pinecone",
+        "imgSrc": "Item_Nuts_003",
+        "rarity": 3,
+        "source": "Found in Warren (around pine trees)"
+    },
+    {
+        "name": "Caviar",
+        "imgSrc": "Item_Drugs_007",
+        "rarity": 3,
+        "source": "Obtained from raider camp enemies"
+    },
+    {
+        "name": "Hazelnut",
+        "imgSrc": "Item_Nuts_001",
+        "rarity": 4,
+        "source": "Found in Navia"
+    },
+    {
+        "name": "Purple Yam",
+        "imgSrc": "Item_Staples_005",
+        "rarity": 4,
+        "source": "Found in Warren"
+    },
+    {
+        "name": "Snow Lotus",
+        "imgSrc": "Item_Follows_001",
+        "rarity": 4,
+        "source": "Found in Warren"
+    },
+    {
+        "name": "Black Truffle",
+        "imgSrc": "Item_Mushroom_006",
+        "rarity": 4,
+        "source": "Found in Warren"
+    },
+    {
+        "name": "Caterpillar Fungus",
+        "imgSrc": "Item_Greens_012",
+        "rarity": 4,
+        "source": "Found in Warren"
+    },
+    {
+        "name": "Prime Cut",
+        "imgSrc": "Item_Meat_004",
+        "rarity": 4,
+        "source": "Obtained by hunting wild animals"
+    },
+    {
+        "name": "Fatty Cut",
+        "imgSrc": "Item_Meat_005",
+        "rarity": 4,
+        "source": "Obtained by hunting wild animals"
+    },
+    {
+        "name": "Lake Bass",
+        "imgSrc": "Item_Fishes_005",
+        "rarity": 4,
+        "source": "Found in rivers in Crown and Warren"
+    },
+    {
+        "name": "Carrion Snail",
+        "imgSrc": "Item_Shells_003",
+        "rarity": 4,
+        "source": "Found in Navia (beach)"
+    }
+]

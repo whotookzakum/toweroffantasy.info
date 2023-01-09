@@ -1,0 +1,21 @@
+{
+    "name": "Rhomboid",
+    "id": 1,
+    "chinaOnly": true,
+    "type": "Water",
+    "imgSrc": "zuoqi_Water_1",
+    "parts": [
+        {
+            "source": "Obtained through exploration.",
+            "imgSrc": "MountWater1_d"
+        },
+        {
+            "source": "Obtained through exploration.",
+            "imgSrc": "MountWater1_b"
+        },
+        {
+            "source": "Obtained through exploration.",
+            "imgSrc": "MountWater1_c"
+        }
+    ]
+}

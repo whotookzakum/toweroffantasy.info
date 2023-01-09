@@ -1,0 +1,26 @@
+{
+    "name": "Monocross",
+    "id": 4,
+    "imgSrc": "zuoqi_tubiap_05",
+    "parts": [
+        {
+            "source": "Crown hidden quest line.",
+            "guide": "https://docs.google.com/document/d/1bJUMjVT06XEph7TK-D1ORSg004TLwtnyflJ7IBoXfkc",
+            "imgSrc": "Mount_004_a"
+        },
+        {
+            "source": "Inside the base off the coast of northern Warren (664, -1236).\n\nPasscode is *7092*.",
+            "imgSrc": "Mount_004_b"
+        },
+        {
+            "source": "Supply pod in central Warren (938, -403).",
+            "imgSrc": "Mount_004_c"
+        },
+        {
+            "source": "Rare drop from [***Devotees***](/images/elitemaps/monocrosselites.webp) (祭祀).",
+            "imgSrc": "Mount_004_d",
+            "dropRate": "0.15"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/ECHjL8xhTY4"
+}

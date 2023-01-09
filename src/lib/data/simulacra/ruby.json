@@ -1,0 +1,81 @@
+{
+    "name": "Ruby",
+    "id": 21,
+    "cnName": "leibei",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 9,
+                "start": "25 Apr 2022",
+                "end": "13 May 2022"
+            },
+            {
+                "bannerNo": 19,
+                "subtext": "",
+                "start": "30 Aug 2022",
+                "end": "18 Sep 2022"
+            },
+            {
+                "bannerNo": 31,
+                "subtext": "Anniversary",
+                "start": "15 Dec 2022",
+                "end": "21 Dec 2022"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 5,
+                "start": "20 Oct 2022",
+                "end": "9 Nov 2022"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increases the flame damage taken by all enemies within **5** meters of Dolly by **8%**. This effect does not stack."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increases the flame damage taken by all enemies within **5** meters of Dolly by **8%**. Not stackable. Increases flame ATK after throwing Dolly for **12%** for **10** seconds. This effect does not stack."
+        }
+    ],
+    "giftTypes": [
+        "Games",
+        "Toys",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 40,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "140 cm",
+    "birthplace": "???",
+    "horoscope": "Cancer",
+    "birthday": "15 July",
+    "voiceActors": {
+        "jp": "",
+        "en": "Lizzie Freeman",
+        "cn": "赵爽"
+    }
+}

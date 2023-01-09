@@ -1,0 +1,105 @@
+{
+    "name": "KING",
+    "id": 9,
+    "cnName": "king",
+    "rarity": "SSR",
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Every **7** enemies killed by KING restores HP equal to **8%** of Max HP."
+        },
+        {
+            "affinity": 4000,
+            "description": "Every **5** enemies killed by KING restores HP equal to **10%** of Max HP."
+        }
+    ],
+    "giftTypes": [
+        "Collectibles",
+        "Rare Items",
+        "Limited Edition"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "seal"
+        },
+        {
+            "points": 80,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 60,
+            "gift": "kitchenware"
+        },
+        {
+            "points": 60,
+            "gift": "tataCards"
+        },
+        {
+            "points": 60,
+            "gift": "foxFigure"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "miaFigure"
+        },
+        {
+            "points": 60,
+            "gift": "tataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "ufo"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "necklace"
+        },
+        {
+            "points": 30,
+            "gift": "vial"
+        },
+        {
+            "points": 15,
+            "gift": "photo"
+        },
+        {
+            "points": 15,
+            "gift": "snackBox"
+        },
+        {
+            "points": 15,
+            "gift": "harmonica"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Male",
+    "height": "190 cm",
+    "birthplace": "Crown",
+    "horoscope": "Scorpio",
+    "birthday": "3 Nov",
+    "voiceActors": {
+        "jp": "松岡禎丞 (Yoshitsugu Matsuoka)",
+        "en": "Johnny Young",
+        "cn": "子晰"
+    }
+}

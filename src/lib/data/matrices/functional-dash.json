@@ -1,0 +1,12 @@
+{
+    "name": "Functional Dash",
+    "id": 2,
+    "rarity": "R",
+    "imgSrc": "icon_matrix_R2_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Increase damage dealt by frost weapons by **6%**."
+        }
+    ]
+}

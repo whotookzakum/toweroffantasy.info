@@ -1,0 +1,17 @@
+{
+    "name": "Alyss",
+    "chinaOnly": true,
+    "id": 22,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR22_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Switching to this weapon grants a **8.75%/10%/11.25%/12.5%** final damage boost, with an additional **5%** frost damage boost if it's a frost weapon, for **18** seconds. If multiple sets are used, the highest star set will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "Unleashing a discharge skill with Immortal Wings grants a **12%/13.5%/15%/17%** damage boost for **18** seconds, stacking up to **2** times. Lose **1** stack when the buff expires. This effect works in the background, and if multiple sets are used, the highest star set will take effect. Stamina consumption is reduced by **50%** during Latent Configuration."
+        }
+    ]
+}

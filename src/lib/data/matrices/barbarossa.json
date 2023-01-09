@@ -1,0 +1,12 @@
+{
+    "name": "Barbarossa",
+    "id": 5,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR5_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": "Upon switching to the weapon, gain **50%/62.5%/75%** damage reflection for **3** seconds. Cooldown: **30** seconds. Upon switching to another weapon, gain a **20%/25%/30%** damage boost for **5** seconds. Cooldown: **30** seconds."
+        }
+    ]
+}

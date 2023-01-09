@@ -1,0 +1,12 @@
+{
+    "name": "Pepper",
+    "id": 6,
+    "rarity": "SR",
+    "imgSrc": "icon_matrix_SR6_256",
+    "sets": [
+        {
+            "pieces": 3,
+            "description": ""
+        }
+    ]
+}

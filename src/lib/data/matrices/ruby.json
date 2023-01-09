@@ -1,0 +1,16 @@
+{
+    "name": "Ruby",
+    "id": 16,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR16_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increases flame ATK after casting weapon skill by **8%/10%/12%/15%** for **25** seconds. If multiple star rating effects are triggered, the one triggered last prevails. This effect does not stack."
+        },
+        {
+            "pieces": 4,
+            "description": "Grant Mastery after casting weapon skill for **15** seconds, with a cooldown of **15** seconds (Mastery shares cooldowns across levels). Mastery is not stackable. Increases flame damage by **2%/2.5%/3%/3.5%** every time the target is hit with a normal attack until the end of Mastery. Stacks up to **6** times, adding a maximum of **1** stack every **0.2** seconds. At **6** stacks, grants a shield that can block damage **1** time."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Samir",
+    "id": 4,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR9_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increase damage progressively by **1%** upon hitting a target. Stack up to **10/13/16/20** times. Lasts **1.5** seconds."
+        },
+        {
+            "pieces": 4,
+            "description": "Increase Dual EM Stars' electrical explosion damage by **16%/22%/30%/40%** of ATK."
+        }
+    ]
+}

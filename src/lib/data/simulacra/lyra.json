@@ -1,0 +1,79 @@
+{
+    "name": "Lyra",
+    "id": 24,
+    "cnName": "xinghuan",
+    "rarity": "SSR",
+    "banners": {
+        "glob": [
+            {
+                "bannerNo": 9,
+                "start": "22 Dec 2022",
+                "end": "11 Jan 2023"
+            }
+        ],
+        "cn": [
+            {
+                "bannerNo": 16,
+                "start": "29 Jul 2022",
+                "end": "17 Aug 2022"
+            },
+            {
+                "bannerNo": 26,
+                "start": "1 Nov 2022",
+                "end": "14 Nov 2022"
+            },
+            {
+                "bannerNo": 34,
+                "subtext": "Anniversary",
+                "start": "15 Dec 2022",
+                "end": "21 Dec 2022"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Benediction Resonance: Increase Max HP by **10%** for the entire team. Unstackable."
+        },
+        {
+            "affinity": 4000,
+            "description": "Benediction Resonance: Increase Max HP by **10%** for the entire team. This effect cannot be stacked. Additionally, increase your Max HP by 10%. Each time you successfully use the skill while having hyperbody or more than **50%** HP, grant hyperbody to all allies for **8** seconds."
+        }
+    ],
+    "giftTypes": [
+        "Everyday Items",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "174 cm",
+    "birthplace": "???",
+    "horoscope": "Cancer",
+    "birthday": "23 Jun",
+    "voiceActors": {
+        "jp": "",
+        "en": "Ryan Bartley",
+        "cn": "常佳梦"
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "name": "Vesper",
+    "imgSrc": "item_Weapon_SSR_Arm_Physic01",
+    "element": "physical",
+    "type": "support",
+    "shatter": {
+        "tier": "S",
+        "value": "12.00"
+    },
+    "charge": {
+        "tier": "A",
+        "value": "10.00"
+    },
+    "baseStats": [
+        "attack",
+        "resistance",
+        "health"
+    ],
+    "materials": [
+        "physical",
+        "black",
+        "red"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Physical Resonance",
+            "description": "Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+        }
+    ],
+    "advancements": [
+        "When releasing any weapon skill or discharge, if your Guards are at the maximum, the Guard duration will be refreshed, dealing physical damage equal to **30%** of physical ATK × number of Guards to the enemy. Up to 8 Guards when under the effect of Benediction, and up to 6 without it.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Increases all damage dealt by Guards by **20%**, and increase the guarded target's final damage by **15%** for **10** seconds when releasing any weapon skill or discharge under the effect of Benediction Resonance.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "Forgiveness Guard: After releasing Resonance 5 times, receive **1** chance to negate fatal damage for the wielder and the guarded target. After a temmate negates fatal damage, they will consume Forgiveness Guard and recover **5%** of Max HP. Unavailable in Apex League.\n\nEnlightenment Guard: After releasing Resonance 5 times and when having Enlightenment Guard, the wielder receives **2** chances to negate fatal damage. Stack up to **5** times. After the wielder negates fatal damage, they will consume 1 stack of Enlightenment Guard and recover **5%** of Max HP. Unavailable in Apex League.",
+        "When unleashing any weapon skill or discharge, the increase of final damage and healing depends on the number of Guards. Each Guard increases final damage and healing by **1.6%**, up to **8%** for **25 seconds**."
+    ],
+    "abilities": [
+        {
+            "name": "Normal Vesper Attack Passive",
+            "type": "normal",
+            "imgSrc": "skill_arm_skill1",
+            "description": "*Enlightenment*: Upon hit, Vesper's normal attack without Benediction Resonance deals extra damage to the targets bearing the **Enlightenment mark**, equal to the number of Guards you carry × **2.1%** of ATK (no more than 12.6% × ATK in total). That damage will not trigger extra attack effects and is regarded as discharge skill and weapon skill damage.\n\nUpon hit, Vesper's normal attack with Benediction Resonance deals extra damage to the targets bearing the **Enlightenment mark** equal to the number of Guards you and teammates carry × **1.5%** of ATK (no more than 12% × ATK in total). That damage will not trigger extra attack effects and is regarded as discharge skill and weapon skill damage.\n\n*Glowing*: Upon hit, all of Vesper's normal attacks recover HP equal to **15%** of ATK.\n\n*Sacred Strike*: Vesper's aerial attack and Accumulator can convert 60% of charge to shatter.\n\n*Guard*: For every **15%** loss of Max HP or every **300** weapon charge gained, obtain up to **5** Enlightenment Guards for yourself (can be produced in the off-hand slot). Enlightenment Guards lasts for **25** seconds. If you have the maximum number of Enlightenment Guards, the newly produced Enlightenment Guards will attack enemies, dealing physical damage equal to **48%** of ATK, then disappear. That damage does not trigger extra attack effects.\n\nNote: In Bygone Phantasm, Vesper is not regarded as a support weapon."
+        },
+        {
+            "name": "Normal Vesper Attack",
+            "type": "normal",
+            "imgSrc": "skill_arm_melee",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "While on the ground, use Vesper to launch 5 consecutive attacks.",
+            "breakdown": [
+                "**81.6%** of ATK + **4** and small knockback.",
+                "**59.1%** of ATK + **3** and big knockback.",
+                "**123.9%** of ATK + **7** and small knockback.",
+                "**173%** of ATK + **9** and suspend the target.",
+                "**196.4%** of ATK + **10** and launch the target."
+            ]
+        },
+        {
+            "name": "Frustration",
+            "type": "normal",
+            "imgSrc": "skill_arm_airattack",
+            "input": [
+                "Jump",
+                "Attack"
+            ],
+            "description": "While airborne, tap normal attack to unleash Frustration. Each punch deals damage equal to **33.2%** of ATK + **2** and consumes **10** endurance. The last hit deals damage equal to **124.5%** of ATK + **7** and launches the target.\n\nWhen unleashing Frustration, grab the target if possible and throw it to the ground, dealing damage equal to **556.6%** of ATK + **29** in total."
+        },
+        {
+            "name": "Accumulator",
+            "type": "normal",
+            "imgSrc": "skill_arm_powerattack",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack for up to **3** charges. **Strongly suspend** the target upon hit, and become immune from damage and control effects during an Accumulator attack. Releasing before getting hit can trigger Phantasia.",
+            "breakdown": [
+                "**96%** of ATK + **5**.",
+                "**223%** of ATK + **12**.",
+                "**360.5%** of ATK + **19**."
+            ]
+        },
+        {
+            "name": "Shimmer",
+            "type": "normal",
+            "imgSrc": "skill_arm_branch",
+            "input": [
+                "Attack",
+                "hold:Attack"
+            ],
+            "description": "Tap and hold normal attack during normal attacks or after dodging to unleash Shimmer. Each punch deals damage equal to **20%** of ATK + **1** and consumes **10** endurance. Release to trigger Accumulator."
+        },
+        {
+            "name": "Pummel",
+            "type": "normal",
+            "imgSrc": "skill_arm_jumpattack",
+            "input": [
+                "Jump",
+                "hold: Attack"
+            ],
+            "description": "While airborne, tap and hold normal attack to trigger 3 mid-air charges. Release to pummel the ground and **strongly suspend** targets. Releasing before getting hit can trigger Phantasia.",
+            "breakdown": [
+                "**166.3%** of ATK + **9**.",
+                "**288.2%** of ATK + **15**.",
+                "**454.4%** of ATK + **24**."
+            ]
+        },
+        {
+            "name": "Mind Capture",
+            "type": "dodge",
+            "imgSrc": "skill_arm_evadeattack",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "After dodging, tap normal attack to pull the target to you and draw it in for **2** seconds, dealing damage equal to **261.4%** of ATK + **14**. Tapping and holding normal attack after dodging can trigger **Shimmer** after unleashing **Mind Capture**."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging and recover **250** endurance."
+        },
+        {
+            "name": "Forgiveness Guard",
+            "type": "skill",
+            "imgSrc": "skill_arm_skill1",
+            "description": 
+                    "*Forgiveneess Guard*: When the healing effect overflows, hain an HP Shield equal to **25%** of Max HP. When Vesper has Forgiveness Guard, different guard effects are activated under different Resonances.\n\n*Benediction Guard*: The skill is replaced with **Shinerise**, and the Wanderer earns no more Enlightenment Guard, which is converted to Forgiveness Guard for teammates. Earn 1 Forgiveness Guard for each **15%** of Max HP healed, and grant up to 1 Forgiveness Guard to every teammate. If every teammate has one, Forgiveness Guard deals physical damage equal to **60%** of ATK to an enemy and disappears. That damage does not trigger extra attack effects. Also, increase Max HP by **10%** for self and teammates. This effect cannot be stacked.\n\n*Attack Guard*: When a Vesper skill hits, immediately gain a shield equal to **30%** of Max HP. Cooldown: **30** seconds.\n\n*Fortitude Guard*: When a Vesper skill hits, immediately gain healing, restoring **2%** of Max HP per second for **20** seconds. Cooldown: **30** seconds.\n\n*Balance Guard*: When HP is more than **50%**, increase shatter by **20%**. When HP is less tahn **50%**, increase final damage by **10%** and shatter by **10%**."
+        },
+        {
+            "name": "Starfall",
+            "type": "skill",
+            "imgSrc": "skill_arm_airattack2",
+            "description": 
+                    "Leap towards the target, dealing damage equal to **702.1%** of ATK + **37** and **strongly suspending** it. Inflict an Enlightenment mark on the target for **18** seconds. Cooldown: **20** seconds."
+        },
+        {
+            "name": "Shinerise",
+            "type": "skill",
+            "imgSrc": "skill_arm_skill2",
+            "description": 
+                    "Pummel the ground and **strongly suspend** targets in front, dealing damage equal to **702.1%** of ATK + **37** and summoning up to **3 Blades** for **75** seconds (up to 1 Blade every 2 meters). This skill can be used up to **3** times, with a cooldown of **20** seconds each time. When 2 **Blades** exist on the field, a **Clearshine** is created. When a **Blade** is touched, it heals targets within the movement radius, restoring HP equal to **25%** of the target's ATK. When 3 **Blades** exsit, a **Nebula** is created. When a **Blade** is touched, it damages targets within the movement radius, dealing damage equal to **150%** of the target's ATK × movement distance / **5**m."
+        },
+        {
+            "name": "Chanting Sigh",
+            "type": "discharge",
+            "imgSrc": "skill_arm_changeskill",
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and unleashes Chanting Sigh, dealing damage equal to **748.1%** of ATK + **39** and adding an Enlightenment mark to the target for **18** seconds, during which damage immunity lasts **1.5** seconds (unavailable in Apex League)."
+        }
+    ],
+    "abilitiesVideoSrc": "",
+    "recommendedMatrices": [
+        {
+            "name": "Lyra",
+            "pieces": 4,
+            "description": "Very powerful damage buffing set effect specifically for fast-hitting physical weapons, as well as boosts survivability. Alternatively, Lyra's 2-piece matrix set is also very good."
+        },
+        {
+            "name": "Samir",
+            "pieces": 2,
+            "description": "Vesper will have no problem maintaining the damage buff with its fast attacks."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "High damage matrix set when you have high crit rate. Otherwise, opt for Shiro 2-piece matrices."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
+    ]
+}

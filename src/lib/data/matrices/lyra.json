@@ -1,0 +1,16 @@
+{
+    "name": "Lyra",
+    "id": 19,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR19_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Use this weapon to increase all attack types by **13%/17%/21%/25%**. The lower the HP, the higher the healing received, which can be increased up to **100%**."
+        },
+        {
+            "pieces": 4,
+            "description": "When dealing physical damage, increase physical damage by **2.7%** with a cooldown of **0.1** seconds. Stack up to **5** times. Upon reaching the maximum stacks, increase physical damage by an additional **3.5%/7%/10.5%/14%** for **5** seconds. Only the highest star rating's effect is applied when obtained repeatedly. Obtain **1** block for each dodge, blocking damage up to **60%** of current HP, but not less than **20%** of Max HP. Stack up to **3** blocks for **10** seconds."
+        }
+    ]
+}

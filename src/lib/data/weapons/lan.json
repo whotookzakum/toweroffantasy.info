@@ -1,0 +1,136 @@
+{
+    "name": "Lingguang",
+    "imgSrc": "item_Weapon_SSR_umbrella_Fire01",
+    "element": "flame",
+    "type": "defense",
+    "shatter": {
+        "tier": "SS",
+        "value": "15.80"
+    },
+    "charge": {
+        "tier": "A",
+        "value": "8.00"
+    },
+    "baseStats": [
+        "attack",
+        "resistance",
+        "health"
+    ],
+    "materials": [
+        "flame",
+        "red",
+        "black"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Flame Resonance",
+            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. Flame Resonance and Flame Reaction does not stack; Flame Resonance takes priority."
+        }
+    ],
+    "advancements": [
+        "When releasing any weapon discharge, all plumes on the field will trigger a mini [Bursting Flame] effect that has 30% effectiveness;\n\nAfter attacking for the first time after you enter combat, 3 feathers will be generated near the target immediately.",
+        "Increase the current weapon's base HP growth by **16%**.",
+        "When releasing any weapon discharge, all plumes on the field will trigger a mini [Bursting Flame] effect that has 30% effectiveness; Enemies near plumes have their attack reduced by **15%**;\n\nAfter attacking for the first time after you enter combat, 3 feathers will be generated near the target immediately.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Bursting Flame ignores enemies' flame resistance by 50%.\n\nEnemies affected by [Erosion] will now take 15% more flame damage instead.",
+        "Normal attack chain and Airborne normal attack chain gains 66.7% damage bonus.\n\n[Plume Gathering] value will be increased by 2 for the following movements: Plume spin, discharge, and Bursting Flame."
+
+    ],
+    "abilities": [
+        {
+            "name": "Fire Dance",
+            "type": "normal",
+            "imgSrc": "skill_umbrella_melee",
+            "input": ["Attack x5"],
+            "description": "On the ground, tap the basic attack button to perform 5 consecutive attacks.",
+            "breakdown": [
+                "**94.8%** of ATK + **5** and small knockback.",
+                "**129.8%** of ATK + **7** and big knockback.",
+                "**221.3%** of ATK + **12** and float the target.",
+                "**241.3%** of ATK + **13** and knockdown.",
+                "**304.1%** of ATK + **16** and knockback."
+            ]
+        },
+        {
+            "name": "Soaring Feathers",
+            "type": "normal",
+            "imgSrc": "skill_umbrella_airattack",
+            "input": ["Jump", "Attack x5"],
+            "description": "While airborne, tap the basic attack button to perform up to 5 consecutive attacks in the air, consuming endurance.",
+            "breakdown": [
+                "**106.3%** of ATK + **6**.",
+                "**129.8%** of ATK + **7**.",
+                "**158.1%** of ATK + **8**.",
+                "**165.3%** of ATK + **9**.",
+                "**296.3%** of ATK + **16**."
+            ]
+        },
+        {
+            "name": "Phoenix",
+            "type": "normal",
+            "imgSrc": "skill_umbrella_branch",
+            "input": ["Attack", "hold:Attack"],
+            "description":
+                "While on the ground, between the second and the fifth basic attack, hold attack to summon the blazing bird that will charge toward the enemies and fly to the end of the sky. Deals **125%** of ATK + **7** damage and **strongly suspends** enemies."
+        },
+        {
+            "name": "Heartmelter",
+            "type": "normal",
+            "imgSrc": "icon_skill_umbrella_beidong2",
+            "input": ["Jump", "hold:Attack"],
+            "description":
+                "When the user is airborne, hold attack to control Lingguang and maneuver your movements in the air, gaining hyperbody and continuously consuming endurance.\n\nWhile controlling Lingguang in the air, deal **25%** of ATK + **1** damage to enemies nearby by causing the plumes to spin rapidly.\n\nDuring this state, release the attack button to perform a plunge attack, dealing **50%** of ATK + **3** damage and a **strong knockdown**.\n\n**Passive**: When the plumes are spinning, [Flame Vortex] will consume the number [Plume Count] equal to **[Plume Gathering]** every second, and [Flame Vortex]'s damage, charge, and shatter value will be multiplied by the value of **[Plume Gathering]**.\n\n**[Plume Count]**: automatically get 1 count every second, and get one count every time you deal damage (cooldown **0.5** seconds), up to **30**.\n\n**[Plume Gathering]** = 1 + number of plumes present."
+        },
+        {
+            "name": "Shadow Feather",
+            "type": "normal",
+            "imgSrc": "skill_umbrella_skill_InPeace",
+            "input": ["hold:Attack"],
+            "description": "While on the ground and not in combat, hold attack to enter aim mode and generate a plume at a designated position. The plume will exist for **15** seconds and will disappear when you enter combat. During the existence of the plume, press the skill button to teleport to the plume's position. Cooldown **6** seconds."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
+        },
+        {
+            "name": "Eruption Weave",
+            "type": "skill",
+            "imgSrc": "skill_umbrella_skill",
+            "description":
+                "Fly to the feathers in the order that they appeared and finish in your initial position. The flight trajectory will stay for **5** seconds, and nearby enemies will have their movement speed reduced by **50%**. During this period, become immune to damage (unavaiable in Apex League), cooldown **12** seconds. Every time you fly past a feather, deal **333.3%** of ATK + **18** area damage, and cause the feather to rapidly rotate for **5** seconds."
+        },
+        {
+            "name": "Plume",
+            "type": "skill",
+            "imgSrc": "icon_skill_umbrella_beidong2",
+            "description":
+                "When any weapon's normal attack or dodge attack hits a target, generate **1** plume near the target, lasting **20** seconds and cooldown for **1.5** seconds.\n\n**[Embers]**: Every time you pass through a plume with Eruption Weave, deal an additional **180%** * [Feather Gathering] damage.\n\n**[Erosion]**: Enemies near a plume receive **10%** more flame damage and **12%** more charged attack damage.\n\n**[Bright Flames]**: Plumes apply a burn to nearby enemies, dealing **195%** of ATK damage for **4** seconds.\n\n**[Flame Vortex]**: Plumes on the field consume **1** [Plume Count] every second, dealing **91%** of ATK + **5** damage (multiple plumes will not accumulate damage or [Plume Count] consumption)."
+        },
+        {
+            "name": "Lingguang Realm",
+            "type": "skill",
+            "imgSrc": "icon_skill_umbrella_beidong3",
+            "description":
+                "After using Eruption Weave, return to your original position and enter the Lingguang Realm, gaining **60%** incoming damage reduction and hyperbody for **8** seconds.\n\nWhen the wanderer enters Lingguang Realm, deal **50%** of ATK + **3** damage every second to targets in range, and increase your movement speed by **30%**."
+        },
+        {
+            "name": "Fortitude",
+            "type": "skill",
+            "imgSrc": "icon_skill_umbrella_beidong1",
+            "description":
+                "When using the Fortitude Resonance:\n\nSuccessfully use any weapon skill to taunt nearby enemies for **2.5** seoncds;\n\nWhen turbulent tide is used, Lingguang's defensive area will be expanded, and nearby teammates gain hyperbody and receive **40%** reduced damage.\n\nDuring heartmelter, Lingguang Realm does not consume duration."
+        },
+        {
+            "name": "Magnificent Phoenix Breath",
+            "type": "discharge",
+            "imgSrc": "skill_umbrella_changeskill",
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and deal **1,180%** of ATK + **62** damage. During the animation, gain invincibility for **2.6** seconds (unavailable in Apex League). **Passive**: upon hit, increase your flame damage by **[Plume Gathering] x 3%** for **20** seconds."
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/Qg0bwTEmX_Q?start=102",
+    "recommendedMatrices": [
+
+    ]
+}
