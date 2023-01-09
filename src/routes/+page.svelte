@@ -43,6 +43,16 @@
 <svelte:head>
     <title>Home | Tower of Fantasy Index</title>
     <meta name="description" content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
+    <meta property="og:title" content="Home" />
+    <meta
+        property="og:description"
+        content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!"
+    />
+    <meta
+        property="og:image"
+        content={`/images/mia.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
 </svelte:head>
 
 <h1>Tower of Fantasy Index</h1>
