@@ -9,14 +9,12 @@
     const todaysDate = new Date().getTime();
     
     let global = {
-        // Banners that started at least once
         all: data.glob.filter((banner) => new Date(banner.start).getTime() <= todaysDate),
         current: [],
         newest: [],
         expanded: false
     }
 
-    // Banners that haven't ended yet
     global.current = global.all.filter((banner) => new Date(banner.end).getTime() >= todaysDate);
 
     // Sort by bannerNo, so uniqBy returns the original banner and not a rerun (Claudia #3 instead of Claudia #11)

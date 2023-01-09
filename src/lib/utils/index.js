@@ -31,40 +31,31 @@ export const fetchAllSimulacra = async () => {
 }
 
 export const fetchAllBanners = async (version) => {
-    const allSimulacrumFiles = import.meta.glob('/src/lib/data/simulacra/*.json')
-    const iterableItemFiles = Object.entries(allSimulacrumFiles)
+    const allSimulacra = await fetchAllSimulacra()
 
-    const allSimulacra = await Promise.all(
-        iterableItemFiles.map(async ([path, resolver]) => {
-            const data = await resolver()
-            const itemPath = path.slice(13, -5)
-            const simulacrumName = itemPath.split('/simulacra/').pop()
-            const weapon = await import(`../data/weapons/${simulacrumName}.json`)
-
+    const simulacraInVersion = 
+        allSimulacra
+        .filter(simulacrum => simulacrum.banners?.[version])
+        .map(simulacrum => {
             return {
-                name: data.default.name,
-                element: weapon.element,
-                type: weapon.type,
-                banners: data.default.banners,
-                path: itemPath,
+                name: simulacrum.name,
+                element: simulacrum.weapon.element,
+                type: simulacrum.weapon.type,
+                banners: simulacrum.banners,
+                path: simulacrum.path
             }
         })
-    )
 
-    const sortedBanners = []
+    const allBanners = []
 
-    const allSimulacraInVersion = allSimulacra.filter(simulacrum => simulacrum.banners?.[version])
-
-    allSimulacraInVersion.forEach(simulacrum => {
-        const { banners, ...otherData } = simulacrum
-        banners[version].forEach(banner => {
-            sortedBanners.push({ ...otherData, ...banner })
+    // Get every banner instance for every simulacrum
+    simulacraInVersion.forEach(simulacrum => {
+        simulacrum.banners[version].forEach(banner => {
+            allBanners.push({ ...simulacrum, ...banner })
         })
     })
 
-    sortedBanners.sort((a, b) => b.bannerNo - a.bannerNo)
-
-    return sortedBanners
+    return allBanners.sort((a, b) => b.bannerNo - a.bannerNo)
 }
 
 export const fetchAllRelics = async () => {
