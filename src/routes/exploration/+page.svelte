@@ -11,6 +11,21 @@
     });
 </script>
 
+<svelte:head>
+    <title>Exploration | Tower of Fantasy Index</title>
+    <meta name="description" content="Exploration puzzles are a core feature of Tower of Fantasy. By completing them you can gain a considerable amount of black and gold nuclei, dark crystals, and other resources.">
+    <meta property="og:title" content="Exploration" />
+    <meta
+        property="og:description"
+        content="Exploration puzzles are a core feature of Tower of Fantasy. By completing them you can gain a considerable amount of nuclei, dark crystals, and other resources."
+    />
+    <meta
+        property="og:image"
+        content="/images/Icon/huobi/Gem004.png"
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation links={["abyss", "grayspace", "mirroria", "vera", "aesperia"]} />
 <h1>Exploration</h1>
 

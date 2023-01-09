@@ -1,3 +1,8 @@
+<svelte:head>
+    <title>Privacy Policy | Tower of Fantasy Index</title>
+    <meta name="description" content="Privacy Policy for the Tower of Fantasy Index.">
+</svelte:head>
+
 <div class="privacy-policy">
     <h1>Privacy Policy</h1>
     <h2>Introduction</h2>

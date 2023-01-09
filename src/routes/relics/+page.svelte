@@ -8,6 +8,24 @@
     const relics = data.items;
 </script>
 
+<svelte:head>
+    <title>Relics | Tower of Fantasy Index</title>
+    <meta
+        name="description"
+        content="Relics (aka Gadgets) are tools that aid the player in exploration or combat."
+    />
+    <meta property="og:title" content="Relics" />
+    <meta
+        property="og:description"
+        content="Relics (aka Gadgets) are tools that aid the player in exploration or combat."
+    />
+    <meta
+        property="og:image"
+        content={`/images/UI/Artifact/icon/${relics[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation links={["ssr", "sr"]} />
 
 <h1>Relics</h1>

@@ -4,6 +4,21 @@
     import Ad from "$lib/components/Ad.svelte";
 </script>
 
+<svelte:head>
+    <title>Avatars | Tower of Fantasy Index</title>
+    <meta name="description" content="List of cosmetic avatars and how to get them.">
+    <meta property="og:title" content="Avatars" />
+    <meta
+        property="og:description"
+        content="List of cosmetic avatars and how to get them."
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/Avatar/${avatars[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <h1>Avatars</h1>
 <p>
     Avatars shown on the <a href="/simulacra">Simulacra</a> page can be obtained

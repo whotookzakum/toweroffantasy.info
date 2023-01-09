@@ -4,6 +4,21 @@
     import Ad from "$lib/components/Ad.svelte";
 </script>
 
+<svelte:head>
+    <title>Accessories | Tower of Fantasy Index</title>
+    <meta name="description" content="List of cosmetic accessories and how to get them.">
+    <meta property="og:title" content="Accessories" />
+    <meta
+        property="og:description"
+        content="List of cosmetic accessories and how to get them."
+    />
+    <meta
+        property="og:image"
+        content={`/images/UI/shizhuang/Fashion_icon/${accessories[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <h1>Accessories</h1>
 
 <Ad unit="lb1" />

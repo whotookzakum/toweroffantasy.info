@@ -8,6 +8,24 @@
     export let data;
 </script>
 
+<svelte:head>
+    <title>{data.name} | Tower of Fantasy Index</title>
+    <meta
+        name="description"
+        content={`Information about the ${data.rarity} relic ${data.name}.`}
+    />
+    <meta property="og:title" content={data.name} />
+    <meta
+        property="og:description"
+        content={`Information about the ${data.rarity} relic ${data.name}.`}
+    />
+    <meta
+        property="og:image"
+        content={`/images/UI/Artifact/icon/${data.imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation />
 
 <h1>{data.name}</h1>

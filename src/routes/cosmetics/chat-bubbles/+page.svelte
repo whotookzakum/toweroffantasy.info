@@ -4,6 +4,21 @@
     import Ad from "$lib/components/Ad.svelte";
 </script>
 
+<svelte:head>
+    <title>Chat Bubbles | Tower of Fantasy Index</title>
+    <meta name="description" content="List of cosmetic chat bubbles and how to get them.">
+    <meta property="og:title" content="Chat Bubbles" />
+    <meta
+        property="og:description"
+        content="List of cosmetic chat bubbles and how to get them."
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/chat/qipao/${chatBubbles[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <h1>Chat Bubbles</h1>
 
 <Ad unit="lb1" />
