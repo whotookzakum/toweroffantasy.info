@@ -140,7 +140,7 @@
                 {
                     wepLevelMin: 160,
                     wepLevelMax: 170,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 9600,
                     augmentMatCount: [5, 5, 5],
                     augmentGoldCost: 6400,
                     materialTier: 3,
@@ -148,7 +148,7 @@
                 {
                     wepLevelMin: 170,
                     wepLevelMax: 180,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 10200,
                     augmentMatCount: ["?", "?", "?"],
                     augmentGoldCost: 6800,
                     materialTier: 3,
@@ -156,7 +156,7 @@
                 {
                     wepLevelMin: 180,
                     wepLevelMax: 190,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 11000,
                     augmentMatCount: ["?", "?", "?"],
                     augmentGoldCost: 7200,
                     materialTier: 3,
@@ -164,7 +164,7 @@
                 {
                     wepLevelMin: 190,
                     wepLevelMax: 200,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 11800,
                     augmentMatCount: ["?", "?", "?"],
                     augmentGoldCost: 7600,
                     materialTier: 3,
@@ -182,7 +182,7 @@
                 {
                     wepLevelMin: 10,
                     wepLevelMax: 20,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 600,
                     augmentMatCount: [2, 2],
                     augmentGoldCost: 400,
                     materialTier: 1,
@@ -190,7 +190,7 @@
                 {
                     wepLevelMin: 20,
                     wepLevelMax: 30,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 900,
                     augmentMatCount: [3, 3],
                     augmentGoldCost: 800,
                     materialTier: 1,
@@ -198,7 +198,7 @@
                 {
                     wepLevelMin: 30,
                     wepLevelMax: 40,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 1200,
                     augmentMatCount: [4, 4],
                     augmentGoldCost: 1200,
                     materialTier: 1,
@@ -206,7 +206,7 @@
                 {
                     wepLevelMin: 40,
                     wepLevelMax: 50,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 1700,
                     augmentMatCount: [3, 3, 3, 3],
                     augmentGoldCost: 1600,
                     materialTier: 1,
@@ -214,7 +214,7 @@
                 {
                     wepLevelMin: 50,
                     wepLevelMax: 60,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 2200,
                     augmentMatCount: [4, 4, 4, 4],
                     augmentGoldCost: 2000,
                     materialTier: 1,
@@ -222,7 +222,7 @@
                 {
                     wepLevelMin: 60,
                     wepLevelMax: 70,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 2900,
                     augmentMatCount: [5, 5, 5, 5],
                     augmentGoldCost: 2400,
                     materialTier: 1,
@@ -230,7 +230,7 @@
                 {
                     wepLevelMin: 70,
                     wepLevelMax: 80,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 3900,
                     augmentMatCount: [6, 6, 6, 6],
                     augmentGoldCost: 2800,
                     materialTier: 1,
@@ -238,7 +238,7 @@
                 {
                     wepLevelMin: 80,
                     wepLevelMax: 90,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 5000,
                     augmentMatCount: [8, 8, 8, 8],
                     augmentGoldCost: 3200,
                     materialTier: 1,
@@ -246,7 +246,7 @@
                 {
                     wepLevelMin: 90,
                     wepLevelMax: 100,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 5800,
                     augmentMatCount: [5, 5, 5, 5],
                     augmentGoldCost: 3600,
                     materialTier: 2,
@@ -254,7 +254,7 @@
                 {
                     wepLevelMin: 100,
                     wepLevelMax: 110,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 6400,
                     augmentMatCount: [6, 6, 6, 6],
                     augmentGoldCost: 4000,
                     materialTier: 2,
@@ -262,7 +262,7 @@
                 {
                     wepLevelMin: 110,
                     wepLevelMax: 120,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 7100,
                     augmentMatCount: [8, 8, 8, 8],
                     augmentGoldCost: 4400,
                     materialTier: 2,
@@ -270,7 +270,7 @@
                 {
                     wepLevelMin: 120,
                     wepLevelMax: 130,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 7600,
                     augmentMatCount: [11, 11, 11, 11],
                     augmentGoldCost: 4800,
                     materialTier: 2,
@@ -278,7 +278,7 @@
                 {
                     wepLevelMin: 130,
                     wepLevelMax: 140,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 8000,
                     augmentMatCount: [15, 15, 15, 15],
                     augmentGoldCost: 5200,
                     materialTier: 2,
@@ -286,7 +286,7 @@
                 {
                     wepLevelMin: 140,
                     wepLevelMax: 150,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 8500,
                     augmentMatCount: [20, 20, 20, 20],
                     augmentGoldCost: 5600,
                     materialTier: 2,
@@ -294,7 +294,7 @@
                 {
                     wepLevelMin: 150,
                     wepLevelMax: 160,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 9000,
                     augmentMatCount: [4, 4, 4, 4],
                     augmentGoldCost: 6000,
                     materialTier: 3,
@@ -302,7 +302,7 @@
                 {
                     wepLevelMin: 160,
                     wepLevelMax: 170,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 9600,
                     augmentMatCount: [5, 5, 5, 5],
                     augmentGoldCost: 6400,
                     materialTier: 3,
@@ -310,7 +310,7 @@
                 {
                     wepLevelMin: 170,
                     wepLevelMax: 180,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 10200,
                     augmentMatCount: [5, 5, 5, 5],
                     augmentGoldCost: 6800,
                     materialTier: 3,
@@ -318,7 +318,7 @@
                 {
                     wepLevelMin: 180,
                     wepLevelMax: 190,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 11000,
                     augmentMatCount: [6, 6, 6, 6],
                     augmentGoldCost: 7200,
                     materialTier: 3,
@@ -326,7 +326,7 @@
                 {
                     wepLevelMin: 190,
                     wepLevelMax: 200,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 11800,
                     augmentMatCount: [6, 6, 6, 6],
                     augmentGoldCost: 7600,
                     materialTier: 3,
