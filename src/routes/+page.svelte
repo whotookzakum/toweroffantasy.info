@@ -5,22 +5,27 @@
     import Ad from "../lib/components/Ad.svelte";
 
     export let data;
-
     let showGlobalBanners,
         showChinaBanners = false;
 
-    let currentGlobalBanners = [];
+    const todaysDate = new Date().getTime();
+
+    let chinaBanners = data.cn.filter(
+        (banner) => new Date(banner.start).getTime() <= todaysDate
+    );
+    let globalBanners = data.glob.filter(
+        (banner) => new Date(banner.start).getTime() <= todaysDate
+    );
+
+    let currentGlobalBanners = []
     let currentChinaBanners = [];
 
-    const todaysDate = new Date().getTime();
-    data.cn.forEach((banner) => {
-        const end = new Date(banner.end).getTime();
-        const start = new Date(banner.start).getTime();
-        if (end >= todaysDate && todaysDate > start) {
-            currentChinaBanners.push(banner);
+    chinaBanners.forEach((banner) => {
+        if (new Date(banner.end).getTime() >= todaysDate) {
+            currentGlobalBanners.push(banner);
         }
     });
-    data.glob.forEach((banner) => {
+    globalBanners.forEach((banner) => {
         const end = new Date(banner.end).getTime();
         const start = new Date(banner.start).getTime();
         if (end >= todaysDate && todaysDate > start) {
@@ -28,16 +33,25 @@
         }
     });
 
-    let newestBanners = {
-        cn: ["Lan"],
-        glob: ["Tian Lang", "Lyra"],
-    };
-    newestBanners.cn = newestBanners.cn.map((bannerName) => {
-        return data.cn.find((item) => item.name === bannerName);
-    });
-    newestBanners.glob = newestBanners.glob.map((bannerName) => {
-        return data.glob.find((item) => item.name === bannerName);
-    });
+
+
+    // First sort in bannerNo order, so that uniqBy returns the OLDEST banner of that character and not a rerun (Nemesis ... Lin)
+    // Then sort in place to have the newest first (Lin ... Nemesis)
+    const sortedGlobalBanners = _.sortBy(globalBanners, ["bannerNo"])
+    const sortedUniqueGlobalBanners = _.uniqBy(sortedGlobalBanners, "name").sort((a, b) => b.bannerNo - a.bannerNo)
+    const sortedChinaBanners = _.sortBy(chinaBanners, ["bannerNo"])
+    const sortedUniqueChinaBanners = _.uniqBy(sortedChinaBanners, "name").sort((a, b) => b.bannerNo - a.bannerNo)
+    
+    let newestBanners = { cn: [], glob: [] }
+    // Add all banners that started on the same day, using recursion to avoid looping through unneccessary indices with filter or reduce
+    const setNewestBanners = (list, key, index) => {
+        newestBanners[key].push(list[index])
+        const currentBannerStart = new Date(list[index].start).getTime()
+        const nextBannerStart = new Date(list[index+1]?.start).getTime()
+        if (currentBannerStart === nextBannerStart) setNewestBanners(list, key, index + 1)
+    }
+    setNewestBanners(sortedUniqueGlobalBanners, "glob", 0)
+    setNewestBanners(sortedUniqueChinaBanners, "cn", 0)
 </script>
 
 <svelte:head>
@@ -126,8 +140,8 @@
                         >
                     {/each}
                 </td>
-                <td>{data.glob.length}</td>
-                <td>{_.uniqBy(data.glob, "name").length}</td>
+                <td>{globalBanners.length}</td>
+                <td>{_.uniqBy(globalBanners, "name").length}</td>
                 <td class="newest-banners">
                     {#each newestBanners.glob as banner}
                         <a
@@ -138,13 +152,14 @@
                     {/each}
                 </td>
                 <td
-                    >{data.glob.filter((banner) => banner.standardAfterwards)
-                        .length}</td
+                    >{globalBanners.filter(
+                        (banner) => banner.standardAfterwards
+                    ).length}</td
                 >
             </tr>
         </tbody>
         <BannerTable
-            banners={data.glob}
+            banners={globalBanners}
             version="glob"
             expanded={showGlobalBanners}
         />
@@ -168,8 +183,8 @@
                         >
                     {/each}
                 </td>
-                <td>{data.cn.length}</td>
-                <td>{_.uniqBy(data.cn, "name").length}</td>
+                <td>{chinaBanners.length}</td>
+                <td>{_.uniqBy(chinaBanners, "name").length}</td>
                 <td class="newest-banners">
                     {#each newestBanners.cn as banner}
                         <a
@@ -180,13 +195,13 @@
                     {/each}
                 </td>
                 <td
-                    >{data.cn.filter((banner) => banner.standardAfterwards)
+                    >{chinaBanners.filter((banner) => banner.standardAfterwards)
                         .length}</td
                 >
             </tr>
         </tbody>
         <BannerTable
-            banners={data.cn}
+            banners={chinaBanners}
             version="cn"
             expanded={showChinaBanners}
         />

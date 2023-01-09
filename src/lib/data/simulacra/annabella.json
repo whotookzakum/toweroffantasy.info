@@ -5,6 +5,13 @@
     "cnName": "annabeila",
     "rarity": "SSR",
     "banners": {
+        "glob": [
+            {
+                "bannerNo": 12,
+                "start": "12 Jan 2023",
+                "end": "1 Feb 2023"
+            }
+        ],
         "cn": [
             {
                 "bannerNo": 20,
