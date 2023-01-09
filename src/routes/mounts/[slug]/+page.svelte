@@ -35,7 +35,7 @@
 </span>
 
 <h4>Parts</h4>
-<div class="table-wrapper">
+<div class="table-wrapper mounts">
     <table class="bg-alternate">
         <thead>
             <th>Part</th>

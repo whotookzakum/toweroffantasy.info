@@ -21,15 +21,27 @@ a {
     }
 }
 
-.advancements, .abilities {
+.advancements,
+.abilities,
+.mounts {
     em {
-        color: var(--text-green) !important;
+        color: var(--text-green);
         font-weight: 500;
         font-style: normal;
     }
+}
 
+.advancements,
+.abilities {
     em strong {
         color: var(--text-lightred);
+    }
+}
+
+.mounts {
+    em strong {
+        color: var(--text-orange);
+        font-style: normal;
     }
 }
 
@@ -42,7 +54,7 @@ aside {
     line-height: 1.75;
 }
 
-strong { 
+strong {
     color: var(--text-highlight);
     font-weight: 500;
 }
@@ -87,6 +99,7 @@ abbr[title*="China"] {
 
 abbr[title*="Standard"] {
     background: rgb(42, 129, 179);
+
     &::before {
         content: "Final";
     }
@@ -94,6 +107,7 @@ abbr[title*="Standard"] {
 
 abbr[title*="Limited Banner only"] {
     background: rgb(179, 42, 111);
+
     &::before {
         content: "Limited";
     }
@@ -101,6 +115,7 @@ abbr[title*="Limited Banner only"] {
 
 abbr[title*="Collab"] {
     background: forestgreen;
+
     &::before {
         content: "Collab";
     }
@@ -125,11 +140,13 @@ table {
         font-weight: normal;
     }
 
-    th, td {
+    th,
+    td {
         padding: var(--space-3xs-2xs);
     }
 
-    thead, tbody {
+    thead,
+    tbody {
         background: var(--surface2);
     }
 
@@ -144,7 +161,7 @@ table {
     &.bg-alternate {
         thead {
             border-bottom: 2px solid #39485f;
-    
+
             th {
                 background: rgba(0, 0, 0, 0.2);
                 color: var(--tier-s);
@@ -186,7 +203,7 @@ small {
     color: var(--accent);
 }
 
-figcaption, 
+figcaption,
 caption {
     color: var(--accent);
     max-inline-size: calc(100% - 2rem);
@@ -292,12 +309,13 @@ h6 {
 ol,
 ul,
 dl,
-dl > div {
+dl>div {
     display: grid;
     gap: 1rem;
 }
 
-li, dd {
+li,
+dd {
     font-size: var(--step--1);
 }
 
