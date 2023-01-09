@@ -3,8 +3,13 @@
 @import './colors';
 
 html {
+    color-scheme: dark;
     scroll-behavior: smooth;
     scroll-padding: calc(60px + 1rem);
+}
+
+html[data-state="navigating"] {
+    scroll-behavior: auto;
 }
 
 html, body {
@@ -17,6 +22,7 @@ html, body {
     html {
         scroll-behavior: unset;
     }
+
     * {
         transition: unset;
     }
@@ -26,6 +32,10 @@ body {
     margin: 0;
     min-height: 100vh;
     background: var(--bg);
+}
+
+button {
+    cursor: pointer;
 }
 
 .full-bleed,
@@ -64,7 +74,6 @@ h3 > .anchorjs-link {
         line-height: 1.4;
     }
 }
-
 
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 

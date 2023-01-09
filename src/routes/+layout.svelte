@@ -3,15 +3,30 @@
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
     import Ad from "$lib/components/Ad.svelte";
-    import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
+    import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
+    import { afterNavigate, beforeNavigate } from "$app/navigation";
+    import { onMount } from "svelte";
+
     let navIsOpen;
+    let root;
+
+    onMount(() => (root = document.documentElement));
+
+    beforeNavigate(() => {
+        root.setAttribute("data-state", "navigating");
+    });
+
+    afterNavigate(() => {
+        root.getAttribute("data-state");
+        root.removeAttribute("data-state", "navigating");
+    });
 </script>
 
 <svelte:head>
     <meta property="og:site_name" content="Tower of Fantasy Index" />
 </svelte:head>
 
-<GoogleAnalytics properties={['G-N68SWH7ZJB']} />
+<GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
 <div class="layout" class:open={navIsOpen}>
     <Navigation bind:navIsOpen />
     <main>
