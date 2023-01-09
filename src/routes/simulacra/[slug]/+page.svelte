@@ -88,8 +88,13 @@
 <Ad unit="lb4" />
 <Ad unit="mobile_mpu2" />
 
-<UpgradeMaterials weapon={data.weapon} />
-<RecommendedMatrices weapon={data.weapon} />
+{#if data.rarity === "SSR"}
+    <UpgradeMaterials weapon={data.weapon} />
+{/if}
+
+{#if data.weapon.recommendedMatrices.length > 0}
+    <RecommendedMatrices weapon={data.weapon} />
+{/if}
 
 <Ad unit="lb5" />
 <Ad unit="mobile_lb3" />

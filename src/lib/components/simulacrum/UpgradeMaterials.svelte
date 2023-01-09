@@ -4,7 +4,7 @@
     import WeaponMaterial from "$lib/components/simulacrum/WeaponMaterial.svelte";
     import Item from "../Item.svelte";
 
-    $: values = [0, 160];
+    $: values = [0, 170];
 
     const materials = {
         global: {
@@ -170,167 +170,166 @@
                     materialTier: 3,
                 },
             ],
-            SR: [],
             lin: [
                 {
                     wepLevelMin: 0,
                     wepLevelMax: 10,
-                    goldAndExpCost: "?",
+                    goldAndExpCost: 400,
                     augmentMatCount: [],
-                    augmentGoldCost: "",
+                    augmentGoldCost: 0,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 10,
                     wepLevelMax: 20,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [2, 2],
+                    augmentGoldCost: 400,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 20,
                     wepLevelMax: 30,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [3, 3],
+                    augmentGoldCost: 800,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 30,
                     wepLevelMax: 40,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [4, 4],
+                    augmentGoldCost: 1200,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 40,
                     wepLevelMax: 50,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [3, 3, 3, 3],
+                    augmentGoldCost: 1600,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 50,
                     wepLevelMax: 60,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [4, 4, 4, 4],
+                    augmentGoldCost: 2000,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 60,
                     wepLevelMax: 70,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [5, 5, 5, 5],
+                    augmentGoldCost: 2400,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 70,
                     wepLevelMax: 80,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [6, 6, 6, 6],
+                    augmentGoldCost: 2800,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 80,
                     wepLevelMax: 90,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
+                    augmentMatCount: [8, 8, 8, 8],
+                    augmentGoldCost: 3200,
                     materialTier: 1,
                 },
                 {
                     wepLevelMin: 90,
                     wepLevelMax: 100,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [5, 5, 5, 5],
+                    augmentGoldCost: 3600,
+                    materialTier: 2,
                 },
                 {
                     wepLevelMin: 100,
                     wepLevelMax: 110,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [6, 6, 6, 6],
+                    augmentGoldCost: 4000,
+                    materialTier: 2,
                 },
                 {
                     wepLevelMin: 110,
                     wepLevelMax: 120,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [8, 8, 8, 8],
+                    augmentGoldCost: 4400,
+                    materialTier: 2,
                 },
                 {
                     wepLevelMin: 120,
                     wepLevelMax: 130,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [11, 11, 11, 11],
+                    augmentGoldCost: 4800,
+                    materialTier: 2,
                 },
                 {
                     wepLevelMin: 130,
                     wepLevelMax: 140,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [15, 15, 15, 15],
+                    augmentGoldCost: 5200,
+                    materialTier: 2,
                 },
                 {
                     wepLevelMin: 140,
                     wepLevelMax: 150,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [20, 20, 20, 20],
+                    augmentGoldCost: 5600,
+                    materialTier: 2,
                 },
                 {
                     wepLevelMin: 150,
                     wepLevelMax: 160,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [4, 4, 4, 4],
+                    augmentGoldCost: 6000,
+                    materialTier: 3,
                 },
                 {
                     wepLevelMin: 160,
                     wepLevelMax: 170,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [5, 5, 5, 5],
+                    augmentGoldCost: 6400,
+                    materialTier: 3,
                 },
                 {
                     wepLevelMin: 170,
                     wepLevelMax: 180,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [5, 5, 5, 5],
+                    augmentGoldCost: 6800,
+                    materialTier: 3,
                 },
                 {
                     wepLevelMin: 180,
                     wepLevelMax: 190,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [6, 6, 6, 6],
+                    augmentGoldCost: 7200,
+                    materialTier: 3,
                 },
                 {
                     wepLevelMin: 190,
                     wepLevelMax: 200,
                     goldAndExpCost: "?",
-                    augmentMatCount: ["?", "?", "?", "?"],
-                    augmentGoldCost: "?",
-                    materialTier: 1,
+                    augmentMatCount: [6, 6, 6, 6],
+                    augmentGoldCost: 7600,
+                    materialTier: 3,
                 },
             ],
         },
@@ -497,7 +496,6 @@
                     materialTier: 3,
                 },
             ],
-            SR: [],
             lin: [
                 {
                     wepLevelMin: 0,
@@ -663,7 +661,12 @@
         },
     };
 
-    $: matsInRange = materials.global.SSR.filter(
+    const versionMaterials =
+        weapon.name === "Shadoweave"
+            ? materials.global.lin
+            : materials.global.SSR;
+
+    $: matsInRange = versionMaterials.filter(
         (item) => item.wepLevelMin >= values[0] && item.wepLevelMax <= values[1]
     );
     $: totalGoldAndExpCost = matsInRange.reduce(
@@ -830,7 +833,10 @@
 <style lang="scss">
     .results-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(64px * 3 + 1rem), auto));
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(calc(64px * 3 + 1rem), auto)
+        );
         gap: var(--space-s) var(--space-xl);
         align-items: flex-start;
         justify-items: center;
