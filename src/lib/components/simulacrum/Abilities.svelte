@@ -8,7 +8,7 @@
 {#if weapon.abilitiesVideoSrc}
     <Youtube source={weapon.abilitiesVideoSrc} />
 {/if}
-<ul class="abilities-list full-bleed">
+<ul class="abilities-list full-bleed abilities">
     {#each weapon.abilities as ability}
         <li>
             <details class="ability">

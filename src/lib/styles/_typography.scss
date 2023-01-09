@@ -21,6 +21,18 @@ a {
     }
 }
 
+.advancements, .abilities {
+    em {
+        color: var(--text-green) !important;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    em strong {
+        color: var(--text-lightred);
+    }
+}
+
 p,
 li,
 dd,
