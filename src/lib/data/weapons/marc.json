@@ -47,7 +47,7 @@
         {
             "name": "Hunter Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "../Melee/Melee_MarkPhy_SSR",
             "input": [
                 "Attack x4"
             ],
@@ -62,7 +62,7 @@
         {
             "name": "Wild Hunter Punch",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_mark_jumpattack",
             "input": [
                 "Jump",
                 "Attack"
@@ -72,7 +72,7 @@
         {
             "name": "Heavy Punch",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "../Melee/Melee1_MarkRobPhy_SSR",
             "input": [
                 "Attack x5"
             ],
@@ -88,7 +88,7 @@
         {
             "name": "Double Smash",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_markrob_jumpattack",
             "input": [
                 "Jump",
                 "Attack"
@@ -98,7 +98,7 @@
         {
             "name": "Shoulder-gun Fire",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_markrob_aim",
             "input": [
                 "hold:Attack"
             ],
@@ -107,7 +107,7 @@
         {
             "name": "Impact Slash",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_markrob_branch2",
             "input": [
                 "Attack",
                 "hold:Attack"
@@ -117,7 +117,7 @@
         {
             "name": "Wild Hunter Shot",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_mark_aim",
             "input": [
                 "hold:Attack"
             ],
@@ -126,13 +126,13 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
         },
         {
             "name": "Mecha Collision",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_shieldmelee",
             "input": [
                 "Dodge",
                 "Attack"
@@ -142,19 +142,19 @@
         {
             "name": "Mecha Entry",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../mark_skill",
             "description": "The Mecha will jump down, dealing **395.3%** of ATK + **21** damage to surrounding targets, and **strongly suspends** targets, with a **20**-second cooldown.\n\nPassive: In the Mech form, become immune to the rigidity effect, and other sources other than the uncontrolled source cannot be used."
         },
         {
             "name": "Form Switch",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../MarkRobSkill1",
             "description": "The Mecha leaps down, dealing **395.3%** of ATK + **21** damage and  **strongly suspending** surrounding targets before switching forms. Cooldown **20** seconds."
         },
         {
             "name": "Full Bomb Launch",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_markrob_changeskillsucess",
             "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and releases a large number of missiles, dealing **513.3%** of ATK + **27** damage to the target.\n\nPassive: In the Mech form, become immune to control effects, but cannot use any relic other than those that free you from control effects."
         }
     ],

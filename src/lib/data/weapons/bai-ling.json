@@ -33,7 +33,7 @@
         {
             "name": "Quickdraw",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "../bow_skill",
             "input": [
                 "Attack x5"
             ],
@@ -49,7 +49,7 @@
         {
             "name": "Charged Arrow",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_bow_power",
             "input": [
                 "hold:Attack"
             ],
@@ -58,7 +58,7 @@
         {
             "name": "Arrow Rain",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_bow_changeskill",
             "input": [
                 "Attack",
                 "hold:Attack"
@@ -68,7 +68,7 @@
         {
             "name": "Air Volley",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_bow_power",
             "input": [
                 "Jump",
                 "Attack x4"
@@ -84,13 +84,13 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
         },
         {
             "name": "Loaded Arrow",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_bow_power",
             "input": [
                 "Dodge",
                 "Attack"
@@ -100,13 +100,13 @@
         {
             "name": "Piecing Shot",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../bow_skill",
             "description": "Backflips and fires **1** piercing arrow forward, dealing damage equal to **154.8%** of ATK + **8** and knocking the target back. **12**-second cooldown."
         },
         {
             "name": "Explosive Barrage",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "../skill_artifact11_1",
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, **remove all debuffs from the wielder**, and unleashes Explosive Barrage on the target upon switching to this weapon, dealing damage equal to **486.6%** of ATK + **26**."
         }
     ],

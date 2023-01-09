@@ -43,7 +43,7 @@
         {
             "name": "Normal Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "pugong_snipe",
             "input": [
                 "Attack x3"
             ],
@@ -57,7 +57,7 @@
         {
             "name": "Scoped Shot",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_snipe_power",
             "input": [
                 "hold:Attack"
             ],
@@ -66,7 +66,7 @@
         {
             "name": "Boiling Point",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_snipe_branch",
             "input": [
                 "Attack",
                 "hold:Attack"
@@ -76,7 +76,7 @@
         {
             "name": "Aerial Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "pugong_snipe",
             "input": [
                 "Jump",
                 "Attack x3"
@@ -89,15 +89,9 @@
             ]
         },
         {
-            "name": "Dodge",
-            "type": "dodge",
-            "imgSrc": "",
-            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
-        },
-        {
             "name": "Twilight Arc",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_snipe_evadeattack",
             "input": [
                 "Dodge",
                 "Attack"
@@ -105,15 +99,21 @@
             "description": "Jump backwards and throw an explosive shell, detonating when it hits the ground and dealing damage equal to **37%** of ATK + **2** and suspending targets.\n\n**Passive:** Tap basic attack after using Twilight Arc to instantly fire a fully-charged Scoped Shot."
         },
         {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
+        },
+        {
             "name": "Backup Magazine",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "skill_snipe_skillstart",
             "description": "Activate the skill once to alternate between enhancement magazines. Depending on the magazine you choose, the effects of Scoped Shot and Twilight Arc will be changed. Activate the skill again when the desired magazine is showing as the skill icon to equip that magazine. The skill will remain active until the magazine is empty (after **8** Scoped Shots). The skill has a cooldown of **14** seconds.\n\n\n**Firebomb Magazine:** Scoped Shots will explode and deal flame AoE damage equal to **59.2%** of ATK + **3**, up to **410%** of ATK + **22** after charging. If the hit target is not inflicted with a burn, apply Cross Burn to the target (deals **120%** of ATK every second for **13** seconds). If the target was already inflicted with a burn, apply Cross Burn while gaining Burn Enhancement (increases burn damage by **20%** for **20** seconds). Twilight Arc throws **3** explosive shells while this magazine is active.\n\n\n**Gasbomb Magazine:** Scoped Shots fire a gas bomb, dealing damage equal to **80.9%** of ATK + **4**, up to **560.5%** of ATK + **30** after charging. The gas lasts for **7** seconds and slows enemies within its radius. Twilight Arc can detonate the gas (the longer you charge Scoped Shot, the more damage the gas detonation will deal) for explosion damage up to **620%** of ATK + **33** and reduce flame resistance of targets by **10%**.\n\n\n**Passive:** For the duration of the magazine, gain Optical Enhancement, which reduces the charge time Scoped Shot by **30%** and grants immunity to control effects while charging. For every **2** dodges, the first one will not consume a dodge (up to **4** times).\n\n\n**Passive:** While equipped with the Gasbomb magazine, using Scoped Shot will reduce skill cooldowns of other flame weapons by **0.7** seconds."
         },
         {
             "name": "Missile Command",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_snipe_changeskill",
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user**, throw a firebomb, and snipe it to detonate, dealing damage equal to **890%** of ATK + **47** to targets within range. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
         }
     ],

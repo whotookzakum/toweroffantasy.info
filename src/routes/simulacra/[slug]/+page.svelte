@@ -38,13 +38,13 @@
 <Ad unit="lb3" />
 <Ad unit="mobile_lb1" />
 
-<!-- <Abilities weapon={data.weapon} /> -->
+<Abilities weapon={data.weapon} />
 
 <Ad unit="lb4" />
 <Ad unit="mobile_mpu2" />
 
 <UpgradeMaterials weapon={data.weapon} />
-<!-- <RecommendedMatrices weapon={data.weapon} /> -->
+<RecommendedMatrices weapon={data.weapon} />
 
 <Ad unit="lb5" />
 <Ad unit="mobile_lb3" />

@@ -1,12 +1,5 @@
 <script>
     export let weapon;
-
-    const getImgSrc = async (name) => {
-        const fileName = name.toLowerCase().replace(" ", "-");
-        const data = await import(`../../data/matrices/${fileName}.json`);
-        const resolvedData = await data;
-        return resolvedData.imgSrc;
-    };
 </script>
 
 {#if weapon.recommendedMatrices.length > 0}
@@ -29,14 +22,12 @@
                                     .replace(" ", "-")}`}
                             >
                                 <img
-                                    src={`/images/Icon/yizhi/256/${getImgSrc(
-                                        matrix.name
-                                    )}.png`}
+                                    src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
                                     alt={`${matrix.name} matrix`}
                                     width="128"
                                     height="128"
                                 />
-                                {matrix.name} ({matrix.pieces})
+                                <span>{matrix.name} <i>x{matrix.pieces}</i></span>
                             </a>
                         </th>
                         <td>{matrix.description}</td>
@@ -50,10 +41,30 @@
 <style lang="scss">
     .matrix-link {
         border: none;
-        display: grid;
+        position: relative;
+        font-size: var(--step--1);
+        // 
 
         img {
-            margin-block: -1rem;
+            margin-block: -1.25rem;
+        }
+
+        span {
+            border-bottom: 0.2em solid var(--accent);
+            text-transform: none;
+        }
+
+        i {
+            text-transform: uppercase;
+            position: absolute;
+            right: 0.5rem;
+            bottom: 0.5rem;
+            line-height: 1;
+            font-style: normal;
+            font-weight: 700;
+            text-shadow: 0 1px 3px black;
+            font-size: var(--step-1);
+            color: white;
         }
     }
 

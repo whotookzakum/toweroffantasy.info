@@ -72,6 +72,12 @@
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        position: relative;
+
+        &:hover {
+            background: hsla(220, 15%, 29%, 0.9);
+            
+        }
     }
 
     summary {

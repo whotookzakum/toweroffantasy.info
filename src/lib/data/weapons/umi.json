@@ -39,7 +39,7 @@
         {
             "name": "Normal Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_melee",
             "input": [
                 "Attack x5"
             ],
@@ -55,7 +55,7 @@
         {
             "name": "Volition Combo",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
@@ -72,7 +72,7 @@
         {
             "name": "Surprise Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_branch",
             "input": [
                 "Attack",
                 "hold:Attack"
@@ -82,7 +82,7 @@
         {
             "name": "Stage Change",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_jumpattack",
             "input": [
                 "Jump",
                 "hold:Attack"
@@ -92,56 +92,56 @@
         {
             "name": "Close-Up Magic",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_powerattack",
             "input": [
                 "hold:Attack"
             ],
             "description": "While on the ground, press and hold the basic attack button to build power, and release to engage the locked on target and pull in surrounding targets. On small targets deal **105%** of ATK + **6**, and on large targets deal **85.5%** of ATK + **5**. The shatter of this skill is increased by an additional **50%**."
         },
         {
-            "name": "Steal the Day",
+            "name": "Steal the Show",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_evadeattack",
             "input": [
                 "Dodge",
                 "Attack"
             ],
-            "description": "After dodging tap the basic attack button to trigger Steal the Day.\n\nDeal **187.2%** of ATK + **10** damage to targets. The shatter of this skill is increased by an additional **50%**."
+            "description": "After dodging tap the basic attack button to trigger Steal the Show.\n\nDeal **187.2%** of ATK + **10** damage to targets. The shatter of this skill is increased by an additional **50%**."
         },
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
             "name": "Magic Time",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "whip_skill",
             "description": "Dealing damage with any weapon will build **Preheat Value** (cooldown **0.1** sec). Physical weapons can accumulate **3** points at a time, and other elemental weapons can accumulate **1.5** points at a time.  **Preheat Value** will be displayed on the **Magic Meter** and maxes out at **100* points. When entering battle, instantly gain **100** points of **Preheat Value**.\n\nWhen the **Magic Meter** reaches **100** points, using the skill will group enemies and deal **950%** of ATK + **50** damage to them, temporarily gain invincibility during the skill animation  and reduce the movement speed of affected targets (effects do not apply in Apex League or the Critical Abyss). Afterwards, gain the effect **Magic Show** for **18** seconds, continuously consuming **Preheat Value** and replacing the skill button with a Deck Cut. Cooldown **30** seconds.\n\nDuring the **Magic Show**, randomly gain either a **Spades** or **Hearts** card every **2** seconds. You can press the skill button to cut the deck and change which card you will receive. Based on the card, the corresponding **Card Magic** will automatically activate, cooldown **3.8** seconds.\n\nDuring the **Magic Show**, you are considered to have a shield and will not replenish **Magic Meter**. Mobius' physical damage is increased by **60%** and shatter by **20%**.\n\nDifferent combinations of playing cards can activate different **Card Magic**.\n\nHearts + Spades grants *Mind Puppet*.\n\nHearts + Hearts grants *Contradiction Erosion*.\n\nSpades + Spades grants *Card Swept*.\n\nSwitching to other weapons or dying will remove the **Magic Show** state.\n\nWhen **Magic Show** ends, gain immunity to control effects for **20** seconds. If it ends naturally, deal an additional **1200%** of ATK to nearby targets."
         },
         {
             "name": "Mind Puppet",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "whip_magic_AB",
             "description": "Conjure a group of bats from a top hat and guards and strengthen yourself. During **Magic Show**, Mobius' physical damage increases by **20%** and only **40%** of received damaged will be deducted from your health immediately. The remaining **60%** will be deducted after **Magic Show** ends over a **10** second period (will only apply when not using Fortitude Resonance)."
         },
         {
             "name": "Contradiction Erosion",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "whip_magic_AA",
             "description": "Immediately restores **15%** HP, and drops flowers of erosion on up to **7** targets within range, dealing **360%** of ATK damage every seconsd for **3** seconds."
         },
         {
             "name": "Card Swept",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "whip_magic_BB",
             "description": "Create a hurricane of cards at the target position dealing up to **12** hits, totaling **1450%** of ATK."
         },
         {
             "name": "Fragrant Tea",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_whip_changeskill",
             "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and leave behind a fragrance that grants you temporary invincibility (does not apply in Apex League and Critical Abyss). When the fragrance settles, deal **316.2%** of ATK + **17** damage to targets, and after a brief delay deal **737.8%** of ATK + **39** damage and **suspend** targets."
         }
     ],

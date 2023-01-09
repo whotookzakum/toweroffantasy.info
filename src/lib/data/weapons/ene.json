@@ -33,7 +33,7 @@
         {
             "name": "Normal Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "../Melee/pugong_hammer",
             "input": [
                 "Attack x4"
             ],
@@ -48,7 +48,7 @@
         {
             "name": "Pummel",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_hammer_air",
             "input": [
                 "Jump",
                 "Attack"
@@ -58,7 +58,7 @@
         {
             "name": "Shockwave",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_hammer_jump",
             "input": [
                 "Jump",
                 "Attack",
@@ -69,7 +69,7 @@
         {
             "name": "Sneak Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "common_sneak",
             "input": [
                 "Crouch",
                 "Attack"
@@ -79,7 +79,7 @@
         {
             "name": "Focus Smash",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_hammer_jump-05",
             "input": [
                 "hold:Attack"
             ],
@@ -93,7 +93,7 @@
         {
             "name": "Jumping Smash",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_hammer_frontattack",
             "input": [
                 "Arrow keys",
                 "Dodge",
@@ -104,7 +104,7 @@
         {
             "name": "Worldsplitter",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_hammer_backattck",
             "input": [
                 "Dodge",
                 "Attack"
@@ -114,19 +114,19 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
         },
         {
             "name": "Outburst",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../hammer_skill2",
             "description": "Switch to activate Outburst, increasing damage dealt for **25** seconds. During Outburst, skills trigger Windfury, dealing damage equal to **219%** of ATK + **12**, knock the target **into the air**, and create an air current on the ground. While standing in the current, dodging has no cost. Cooldown: **45** seconds (Windfury's cooldown: **10** seconds)."
         },
         {
             "name": "Overwhelming Maul",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_hammer_changeskill",
             "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** and knock nearby targets **into the air** upon switching to this weapon, dealing damage equal to **153.3%** of ATK + **8**. Also summon a hammer to fall on nearby targets, dealing damage equal to **153.3%** of ATK + **8**."
         }
     ],

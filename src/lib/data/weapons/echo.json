@@ -33,7 +33,7 @@
         {
             "name": "Thrust",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_melee",
             "input": [
                 "Attack x5"
             ],
@@ -49,7 +49,7 @@
         {
             "name": "Jumping Strike",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_air",
             "input": [
                 "Jump",
                 "Attack x4"
@@ -65,7 +65,7 @@
         {
             "name": "Crashing Drive",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_jump",
             "input": [
                 "Jump",
                 "hold:Attack"
@@ -75,7 +75,7 @@
         {
             "name": "Spear Flurry",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_branch",
             "input": [
                 "Attack x3",
                 "hold:Attack"
@@ -85,7 +85,7 @@
         {
             "name": "Sneak Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "common_sneak",
             "input": [
                 "Crouch",
                 "Attack"
@@ -95,7 +95,7 @@
         {
             "name": "Flying Kick",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_frontattack",
             "input": [
                 "Arrow keys",
                 "Dodge",
@@ -106,7 +106,7 @@
         {
             "name": "Lunging Smash",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_backattck",
             "input": [
                 "Dodge",
                 "Attack"
@@ -116,19 +116,19 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
             "name": "Moonchaser",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../spear_skill1",
             "description": "Launch the target into the air and go airborne, dealing damage equal to **127.5%** + **7** ATK. **25**-second cooldown."
         },
         {
             "name": "Thunderclap",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_spear_changeskill",
             "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder**, who jumps in the air and throws a lightning spear that causes area explosion to deal **296.7%** x ATK + **16** damage plus **paralyzing** the target for **1** second."
         }
     ],

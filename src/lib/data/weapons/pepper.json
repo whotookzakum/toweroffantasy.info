@@ -39,7 +39,7 @@
         {
             "name": "Normal Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "../Melee/pugong_staves",
             "input": [
                 "Attack x5"
             ],
@@ -55,7 +55,7 @@
         {
             "name": "Soaring Barrage",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_staves_air",
             "input": [
                 "Jump",
                 "Attack x5"
@@ -72,7 +72,7 @@
         {
             "name": "Moonfall",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_staves_jump",
             "input": [
                 "Jump",
                 "hold:Attack"
@@ -82,7 +82,7 @@
         {
             "name": "Focused Assault",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_staves_branch",
             "input": [
                 "Attack x3",
                 "hold:Attack"
@@ -96,13 +96,13 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
         },
         {
             "name": "Surge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_staves_frontattack",
             "input": [
                 "Arrow keys",
                 "Dodge",
@@ -113,7 +113,7 @@
         {
             "name": "Tesseract",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_staves_frontattack",
             "input": [
                 "Dodge",
                 "Attack"
@@ -123,13 +123,13 @@
         {
             "name": "Sanctuary",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../staves_skill1",
             "description": "Create an energy shield at the Wanderer's location. Heal allies within the shield for **81.7%** of ATK + **4** every second and reduce their damage taken by **3%** for **10** seconds. **60**-second cooldown."
         },
         {
             "name": "Swift Deliverance",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_staves_changeskill",
             "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder**, and the staff continues to remove debuffs from the Wanderer and allies, plus healing nearby Wanderers and allies for **79%** x ATK + **4** HP for **7** seconds."
         }
     ],

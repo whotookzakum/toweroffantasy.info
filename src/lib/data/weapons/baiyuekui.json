@@ -39,7 +39,7 @@
         {
             "name": "Normal Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_Immortal_melee",
             "input": [
                 "Attack x5"
             ],
@@ -55,7 +55,7 @@
         {
             "name": "Aerial Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_Immortal_air",
             "input": [
                 "Jump",
                 "Attack x5"
@@ -72,16 +72,16 @@
         {
             "name": "Whip Kick",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_Immortal_Branch",
             "input": [
-                "hold:Attack"
+                "Attack", "Attack", "hold:Attack"
             ],
             "description": "After the second basic attack, hold the basic attack to trigger the whip leg, performing a high kick that will **suspend targets**, and the second kick will **launch targets back**, dealing a total of **281.9%** of ATK + **15** damage."
         },
         {
             "name": "Earthshaker",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_Immortal_Jump",
             "input": [
                 "Jump",
                 "hold:Attack"
@@ -91,7 +91,7 @@
         {
             "name": "Sneak Attack",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "common_sneak",
             "input": [
                 "Crouch",
                 "Attack"
@@ -101,13 +101,13 @@
         {
             "name": "Dodge",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "common_evade",
             "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
             "name": "Unsheathe",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_Immortal_backattack",
             "input": [
                 "Arrow keys",
                 "Dodge",
@@ -118,13 +118,13 @@
         {
             "name": "Dragonstyle",
             "type": "skill",
-            "imgSrc": "",
+            "imgSrc": "../Immortal_skill",
             "description": "Move forward quickly, grapple the target, cool down for **25** seconds.\n\n**Grabbable targets**: grab the target (**strong control**) and smash the target to the ground, causing a maximum of **544.5%** of ATK + **29** damage, with a floating effect, and adding a **cupping** effect to all targets within the range.\n\n**Ungrabbable targets**: Use acupoints to imprison the target, causing a maximum of **544.5%** of ATK + **29** damage, with a knockback effect, and adding a **cupping** effect to all targets within the range.\n\nDuring the skill animation, gain immunity to crowd control, damage, and any debuffs.\n\n**Cupping Can**: Explode after **5** seconds, causing **361.5%** of ATK + **19** damage, with **a strong control knockdown effect**, and the damage against the target is increased by **10%** for **5** seconds.\n\n**Passive: If the skill misses the target, you can use it again within 5 seconds, and then enter a longer cooldown (30 seconds cooldown).**"
         },
         {
             "name": "Force Field",
             "type": "discharge",
-            "imgSrc": "",
+            "imgSrc": "skill_Immortal_changeskill",
             "description": "When a ***weapon is fully charged*** or triggers ***Phantasia***, switching to this weapon from another weapon **removes all debuffs from the wielder** and forms a large-area force field at the target location, dealing **406.6%** of ATK + **21** damage, imprison the target in the range for **5** seconds (immovable targets only), dealing a maximum of **454.4%** of ATK + **24** damage over time."
         }
     ],
