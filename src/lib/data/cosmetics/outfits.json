@@ -30,7 +30,7 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
     },
     {
-        "name": "Rainbow",
+        "name": "Clear Rainbow",
         "imgSrcs": ["fashion_f34", "fashion_m34"],
         "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 6th Collector's Edition Pass."
     },
@@ -86,9 +86,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
-        "name": "Hard Candy",
+        "name": "Fruity Candy",
         "imgSrcs": ["fashion_f19", "fashion_m19"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
+        "source": "Obtained from the Lucky Tarot purchase event.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
         "name": "Wasteland",

@@ -1,5 +1,20 @@
 [
     {
+        "name": "Bunny Mi-a",
+        "imgSrc": "256mia014",
+        "source": "From events."
+    },
+    {
+        "name": "Reindeer Mi-a",
+        "imgSrc": "256mia013",
+        "source": "Obtained from the login event during New Year 2023."
+    },
+    {
+        "name": "Garuda Mi-a",
+        "imgSrc": "256mia012",
+        "source": "From events."
+    },
+    {
         "name": "Halloween Mi-a",
         "imgSrc": "256mia011",
         "source": "Obtained from gachapon during the Thorned Rose event."
@@ -7,22 +22,22 @@
     {
         "name": "Swimsuit Mi-a",
         "imgSrc": "256mia010",
-        "source": "Purchasable for 980 Tanium."
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable for 980 Tanium."
     },
     {
         "name": "Bag Mi-a",
         "imgSrc": "256mia09",
-        "source": "Purchasable for 1280 Tanium."
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable for 1280 Tanium."
     },
     {
         "name": "Panda Mi-a",
         "imgSrc": "256mia08",
-        "source": "Purchasable for 1280 Tanium."
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable for 1280 Tanium."
     },
     {
         "name": "Koi Mi-a",
         "imgSrc": "256mia07",
-        "source": "Purchasable for 1280 Tanium."
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable for 1280 Tanium."
     },
     {
         "name": "Explorer Mi-a",
@@ -35,7 +50,7 @@
         "source": "Available by default."
     },
     {
-        "name": "Dress Mi-a",
+        "name": "Dressy Mi-a",
         "imgSrc": "256mia05",
         "source": "Available by default."
     },
