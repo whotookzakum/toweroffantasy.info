@@ -62,6 +62,11 @@
             icon: "bxl:twitter",
             label: "Aida Cafe Twitter",
         },
+        {
+            href: "https://ko-fi.com/whotookzakum",
+            icon: "simple-icons:ko-fi",
+            label: "Support me on Ko-Fi!"
+        }
     ];
 
     function toggleNav() {

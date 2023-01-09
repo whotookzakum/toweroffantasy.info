@@ -7,6 +7,9 @@
     //     "imgSrcs": ["fashion_f18", "fashion_m"],
     //     "source": ""
     // }
+
+    // Garuda looking outfit
+    // Floating Light/Floating Whispers Obtained from gachapon during the Glittering event.
 </script>
 
 <svelte:head>
