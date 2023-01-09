@@ -44,6 +44,7 @@
                 alt={mount.name}
                 width="308"
                 height="206"
+                loading="lazy"
             />
             <span>{mount.name}</span>
         </MenuItem>
@@ -59,6 +60,7 @@
                 alt={mount.name}
                 width="308"
                 height="206"
+                loading="lazy"
             />
             <span>{mount.name}</span>
         </MenuItem>

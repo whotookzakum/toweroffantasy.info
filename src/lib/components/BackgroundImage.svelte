@@ -70,6 +70,7 @@
     alt="Background"
     width="1080"
     height="1080"
+    loading="lazy"
 />
 
 <style lang="scss">

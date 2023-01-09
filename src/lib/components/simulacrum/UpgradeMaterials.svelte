@@ -762,6 +762,7 @@
                                 alt="Gold"
                                 width="64"
                                 height="64"
+                                loading="lazy"
                             />
                         </Item>
                     </div>
@@ -799,6 +800,7 @@
                             alt="Gold"
                             width="64"
                             height="64"
+                            loading="lazy"
                         />
                     </Item>
                     <Item
@@ -812,6 +814,7 @@
                             alt="EXP"
                             width="64"
                             height="64"
+                            loading="lazy"
                         />
                     </Item>
                 </div>

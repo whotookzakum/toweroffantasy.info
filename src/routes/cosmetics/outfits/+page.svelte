@@ -45,12 +45,14 @@
                                 alt={`${outfit.name} female`}
                                 width="128"
                                 height="128"
+                                loading="lazy"
                             />
                             <img
                                 src={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfit.imgSrcs[1]}.png`}
                                 alt={`${outfit.name} male`}
                                 width="128"
                                 height="128"
+                                loading="lazy"
                             />
                             <h2>{outfit.name}</h2>
                         </div>

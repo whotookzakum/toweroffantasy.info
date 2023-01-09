@@ -45,6 +45,7 @@
                 alt={relic.name}
                 width="128"
                 height="128"
+                loading="lazy"
             />
             <span>{relic.name}</span>
         </MenuItem>
@@ -63,6 +64,7 @@
                 alt={relic.name}
                 width="128"
                 height="128"
+                loading="lazy"
             />
             <span>{relic.name}</span>
         </MenuItem>

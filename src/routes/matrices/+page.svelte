@@ -49,6 +49,7 @@
                 alt={matrix.name}
                 width="128"
                 height="128"
+                loading="lazy"
             />
             <span>{matrix.name}</span>
         </MenuItem>
@@ -67,6 +68,7 @@
                 alt={matrix.name}
                 width="128"
                 height="128"
+                loading="lazy"
             />
             <span>{matrix.name}</span>
         </MenuItem>
@@ -86,6 +88,7 @@
                 alt={matrix.name}
                 width="128"
                 height="128"
+                loading="lazy"
             />
             <span>{matrix.name}</span>
         </MenuItem>
@@ -105,6 +108,7 @@
                 alt={matrix.name}
                 width="128"
                 height="128"
+                loading="lazy"
             />
             <span>{matrix.name}</span>
         </MenuItem>

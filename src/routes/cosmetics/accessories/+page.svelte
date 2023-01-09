@@ -40,6 +40,7 @@
                                 alt={accessory.name}
                                 width="128"
                                 height="128"
+                                loading="lazy"
                             />
                             <h2>{accessory.name}</h2>
                         </div>

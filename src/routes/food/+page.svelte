@@ -98,6 +98,7 @@
                                     alt={dish.name}
                                     width="96"
                                     height="96"
+                                    loading="lazy"
                                 />
                                 {#if dish.icons}
                                     {#each dish.icons as effect}
@@ -130,6 +131,7 @@
                                             alt={ingredient.item}
                                             width="48"
                                             height="48"
+                                            loading="lazy"
                                         />
                                     </Item>
                                     <a
@@ -168,6 +170,7 @@
                             alt={ingredient.name}
                             width="64"
                             height="64"
+                            loading="lazy"
                         />
                         <h3>{ingredient.name}</h3>
                     </td>

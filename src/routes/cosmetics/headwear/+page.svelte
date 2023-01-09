@@ -40,6 +40,7 @@
                                 alt={hat.name}
                                 width="128"
                                 height="128"
+                                loading="lazy"
                             />
                             <h2>{hat.name}</h2>
                         </div>

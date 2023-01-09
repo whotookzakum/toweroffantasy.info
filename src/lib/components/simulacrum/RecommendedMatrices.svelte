@@ -26,6 +26,7 @@
                                     alt={`${matrix.name} matrix`}
                                     width="128"
                                     height="128"
+                                    loading="lazy"
                                 />
                                 <span>{matrix.name} <i>x{matrix.pieces}</i></span>
                             </a>

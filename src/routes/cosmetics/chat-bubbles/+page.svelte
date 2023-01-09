@@ -40,6 +40,7 @@
                                 alt={bubble.name}
                                 width="198"
                                 height="112"
+                                loading="lazy"
                             />
                             <h2>{bubble.name}</h2>
                         </div>

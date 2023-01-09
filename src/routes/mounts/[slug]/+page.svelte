@@ -50,6 +50,7 @@
                             alt={part.imgSrc}
                             width="128"
                             height="128"
+                            loading="lazy"
                         />
                     </td>
                     <td>

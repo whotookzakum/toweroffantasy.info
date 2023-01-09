@@ -19,6 +19,7 @@
                             alt={ability.name}
                             width="82"
                             height="82"
+                            loading="lazy"
                         />
                         <div class="skill-title">
                             <span>{ability.type}</span>

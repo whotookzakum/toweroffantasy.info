@@ -10,6 +10,7 @@
         alt={weapon.name}
         width="128"
         height="128"
+        loading="lazy"
     />
     <div class="weapon-info">
         <div class="weapon-info-top">
