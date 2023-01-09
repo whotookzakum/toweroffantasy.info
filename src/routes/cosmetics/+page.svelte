@@ -51,7 +51,7 @@
     <meta property="og:title" content="Cosmetics" />
     <meta
         property="og:description"
-        content="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free."
+        content="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free. Cosmetic gachapon items may have reruns."
     />
     <meta
         property="og:image"
@@ -61,6 +61,11 @@
 </svelte:head>
 
 <h1>Cosmetics</h1>
+<p>
+    Cosmetic items allow you customize the appearance of your character and
+    other social features. Many cosmetics require you to spend real money, but
+    some can be acquired for free. Cosmetic gachapon items may have reruns.
+</p>
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />

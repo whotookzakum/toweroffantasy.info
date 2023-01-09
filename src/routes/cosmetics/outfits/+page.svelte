@@ -8,13 +8,22 @@
     //     "source": ""
     // }
 
+    //     {
+    // "name": "Warm 'n Wonderful Winter Night",
+    // "imgSrcs": ["fashion_f", "fashion_m"],
+    // "source": "Obtained from gift packs."
+    // },
+
     // Garuda looking outfit
     // Floating Light/Floating Whispers Obtained from gachapon during the Glittering event.
 </script>
 
 <svelte:head>
     <title>Outfits | Tower of Fantasy Index</title>
-    <meta name="description" content="List of cosmetic outfits and how to get them.">
+    <meta
+        name="description"
+        content="List of cosmetic outfits and how to get them."
+    />
     <meta property="og:title" content="Outfits" />
     <meta
         property="og:description"
