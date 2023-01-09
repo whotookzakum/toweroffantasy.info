@@ -46,6 +46,21 @@
     }
 </script>
 
+<svelte:head>
+    <title>Food | Tower of Fantasy Index</title>
+    <meta name="description" content="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat.">
+    <meta property="og:title" content="Food" />
+    <meta
+        property="og:description"
+        content="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat."
+    />
+    <meta
+        property="og:image"
+        content="/images/Icon/caiyao/Item_Vera_Cooking29.png"
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation links={["dishes", "ingredients"]} />
 <h1>Food</h1>
 

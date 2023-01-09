@@ -40,6 +40,11 @@
     });
 </script>
 
+<svelte:head>
+    <title>Home | Tower of Fantasy Index</title>
+    <meta name="description" content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!">
+</svelte:head>
+
 <h1>Tower of Fantasy Index</h1>
 <p>
     We prioritize data from the Global version of Tower of Fantasy. Content

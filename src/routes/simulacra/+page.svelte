@@ -35,6 +35,21 @@
     // })
 </script>
 
+<svelte:head>
+    <title>Simulacra | Tower of Fantasy Index</title>
+    <meta name="description" content="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.">
+    <meta property="og:title" content="Simulacra" />
+    <meta
+        property="og:description"
+        content="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/Avatar/touxiang_${data.items[0].cnName}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation links={["ssr", "sr"]} />
 
 <h1>Simulacra</h1>

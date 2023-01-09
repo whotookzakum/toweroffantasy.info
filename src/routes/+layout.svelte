@@ -7,6 +7,10 @@
     let navIsOpen;
 </script>
 
+<svelte:head>
+    <meta property="og:site_name" content="Tower of Fantasy Index" />
+</svelte:head>
+
 <GoogleAnalytics properties={['G-N68SWH7ZJB']} />
 <div class="layout" class:open={navIsOpen}>
     <Navigation bind:navIsOpen />

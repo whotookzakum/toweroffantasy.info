@@ -8,6 +8,21 @@
     const mounts = data.items;
 </script>
 
+<svelte:head>
+    <title>Mounts | Tower of Fantasy Index</title>
+    <meta name="description" content="Mounts are vehicles that help you traverse terrain more quickly. All mounts move at the same speed. Owning multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels.">
+    <meta property="og:title" content="Mounts" />
+    <meta
+        property="og:description"
+        content="Mounts are vehicles that help you traverse terrain more quickly. All mounts move at the same speed. Owning multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels."
+    />
+    <meta
+        property="og:image"
+        content={`/images/UI/Mount/${mounts[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation links={["underwater", "land"]} />
 
 <h1>Mounts</h1>

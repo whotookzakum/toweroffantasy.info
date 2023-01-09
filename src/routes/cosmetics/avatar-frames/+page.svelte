@@ -4,6 +4,21 @@
     import Ad from "$lib/components/Ad.svelte";
 </script>
 
+<svelte:head>
+    <title>Avatar Frames | Tower of Fantasy Index</title>
+    <meta name="description" content="List of cosmetic avatar frames and how to get them.">
+    <meta property="og:title" content="Avatar Frames" />
+    <meta
+        property="og:description"
+        content="List of cosmetic avatar frames and how to get them."
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/AvatarFrame/${frames[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <h1>Avatar Frames</h1>
 
 <Ad unit="lb1" />

@@ -13,6 +13,21 @@
     }
 </script>
 
+<svelte:head>
+    <title>{data.name} Matrix | Tower of Fantasy Index</title>
+    <meta name="description" content={`Information about the ${data.rarity} matrix ${data.name}; set effects and recommended weapon pairings.`}>
+    <meta property="og:title" content={`${data.name} Matrix`} />
+    <meta
+        property="og:description"
+        content={`Information about the ${data.rarity} matrix ${data.name}; set effects and recommended weapon pairings.`}
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/yizhi/256/${data.imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation />
 
 <h1>{data.name}</h1>

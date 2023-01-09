@@ -2,6 +2,21 @@
     import changelog from "$lib/data/changelog.json";
 </script>
 
+<svelte:head>
+    <title>Changelog | Tower of Fantasy Index</title>
+    <meta name="description" content="A list of all updates and changes to the Tower of Fantasy index.">
+    <meta property="og:title" content="Changelog" />
+    <meta
+        property="og:description"
+        content="A list of all updates and changes to the Tower of Fantasy index."
+    />
+    <meta
+        property="og:image"
+        content="/images/41.gif"
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <h1>Changelog</h1>
 <ul>
     {#each changelog as update}

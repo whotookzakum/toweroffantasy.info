@@ -12,7 +12,52 @@
     import Ad from "$lib/components/Ad.svelte";
 
     export let data;
+
+    function getAvatarImg(data) {
+        switch(data.name) {
+            case "Nemesis":
+                return `avatar_${data.cnName}`
+            case "Frigg":
+                return `Avatar12`
+            case "Pepper":
+                return `touxiang_susan`
+            case "Hilda":
+                return `touxiang_hilda`
+            default:
+                return `touxiang_${data.cnName}`
+        }
+    }
+
+    function getElementColor(element) {
+        switch(element) {
+            case "volt": 
+                return "#b769be"
+            case "ice":
+                return "#49a3d1"
+            case "flame":
+                return "#bb4033"
+            case "physical":
+                return "#d88c2a"
+            case "altered": 
+                return "#b0ffc3"
+        }
+    }
 </script>
+
+<svelte:head>
+    <title>{data.name} | Tower of Fantasy Index</title>
+    <meta name="description" content={`Information about the ${data.rarity} simulacrum ${data.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}>
+    <meta property="og:title" content={data.name} />
+    <meta
+        property="og:description"
+        content={`Information about the ${data.rarity} simulacrum ${data.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/Avatar/${getAvatarImg(data)}.png`}
+    />
+    <meta name="theme-color" content={getElementColor(data.weapon.element)} />
+</svelte:head>
 
 <SectionNavigation
     links={["weapon", "advancements", "skills", "awakening", "other info"]}

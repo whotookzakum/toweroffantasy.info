@@ -8,6 +8,21 @@
     const matrices = data.items;
 </script>
 
+<svelte:head>
+    <title>Matrices | Tower of Fantasy Index</title>
+    <meta name="description" content="Matrices (aka Chips) are items that can be attached to one of the four weapon slots (Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects.">
+    <meta property="og:title" content="Matrices" />
+    <meta
+        property="og:description"
+        content="Matrices (aka Chips) are items that can be attached to one of the four weapon slots (Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects."
+    />
+    <meta
+        property="og:image"
+        content={`/images/Icon/yizhi/256/${matrices[0].imgSrc}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <SectionNavigation links={["ssr", "sr", "r", "n"]} />
 
 <h1>Matrices</h1>

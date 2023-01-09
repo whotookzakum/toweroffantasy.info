@@ -9,6 +9,21 @@
     // }
 </script>
 
+<svelte:head>
+    <title>Outfits | Tower of Fantasy Index</title>
+    <meta name="description" content="List of cosmetic outfits and how to get them.">
+    <meta property="og:title" content="Outfits" />
+    <meta
+        property="og:description"
+        content="List of cosmetic outfits and how to get them."
+    />
+    <meta
+        property="og:image"
+        content={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfits[0].imgSrcs[0]}.png`}
+    />
+    <meta name="theme-color" content="#377dcb" />
+</svelte:head>
+
 <h1>Outfits</h1>
 
 <Ad unit="lb1" />
