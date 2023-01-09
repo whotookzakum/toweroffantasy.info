@@ -9,8 +9,8 @@ Thank you to everyone that has contributed guides, advice, game data, localizati
 ## Technologies Used
 - SvelteKit (UI)
 - SCSS
-- Netlify (Deployment)
-- CloudFlare (DNS & CDN/reverse proxy)
+- CloudFlare (DNS, Pages)
+- ~~Netlify (Deployment)~~
 - ~~NextJS (UI)~~
 - ~~GitHub Pages (Deployment)~~
 
