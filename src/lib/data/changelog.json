@@ -1,5 +1,9 @@
 [
     {
+        "date": "January 9 2023",
+        "text": "CN Saki rerun added; Fixed Lan's advancements and skill descriptions; Fixed Lin's augment mats and added some more data to upgrade mats; Fixed Annabella's matrices incorrectly saying they work in the background; Fixed Lin's 6 star attack boost percentage to global value; Updated some cosmetics data; Navigation will now collapse when a link is clicked; Fixed some text highlighting for weapons and mounts; Lazy loading images"
+    },
+    {
         "date": "January 8 2023",
         "text": "FULL SITE REVAMP! Added filters for food, simulacra; Updated banners; Added Lan data; Added new matrices; Added new relic; Added thornfruit recipes;"
     },
