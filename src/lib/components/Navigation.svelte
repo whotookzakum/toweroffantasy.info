@@ -125,6 +125,7 @@
         background: var(--surface1);
         width: var(--nav-width);
         height: 100vh;
+        height: 100dvh;
         overflow-y: auto;
         position: fixed;
         top: 0;
@@ -132,23 +133,15 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        overscroll-behavior: contain;
+        padding-bottom: env(safe-area-inset-bottom);
         transform: translateX(calc(-1 * var(--nav-width)));
-        will-change: transform;
         --padding: 0.75rem 1.5rem;
-    }
-
-    .nav-body * {
-        opacity: 0;
     }
 
     [aria-expanded="true"] + .nav-body,
     #main-menu:target {
         transform: none;
-    }
-
-    [aria-expanded="true"] + .nav-body *,
-    #main-menu:target * {
-        opacity: 1;
     }
 
     .nav-toggle {
@@ -175,10 +168,6 @@
         .nav-body {
             position: sticky;
             transform: none;
-        }
-
-        .nav-body * {
-            opacity: 1;
         }
     }
 

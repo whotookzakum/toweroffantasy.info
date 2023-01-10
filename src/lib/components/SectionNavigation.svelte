@@ -16,6 +16,7 @@
 
 <style lang="scss">
     .topnav-wrapper {
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         color: var(--text2);
@@ -51,7 +52,7 @@
 
     @media (max-width: 800px) {
         .topnav-wrapper {
-            height: 44px;
+            height: calc(44px + 2rem);
         }
     }
 </style>
