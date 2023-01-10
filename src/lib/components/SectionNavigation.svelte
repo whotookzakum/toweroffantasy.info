@@ -27,7 +27,7 @@
         display: flex;
         align-items: center;
         position: sticky;
-        top: 0rem;
+        top: 0;
         backdrop-filter: blur(10px);
         z-index: 500;
     }
