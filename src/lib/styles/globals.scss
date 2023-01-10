@@ -98,8 +98,13 @@ h3 > .anchorjs-link {
     position: fixed;
     bottom: 0;
     left: 50%;
-    z-index: 9999;
+    z-index: 998;
     transform: translateX(-50%);
+}
+
+#primisPlayerContainerDiv {
+    position: fixed;
+    z-index: 999;
 }
 
 // ------------------------------------
