@@ -1,5 +1,6 @@
 {
     "name": "Marc",
+    "chinaOnly": true,
     "id": 13,
     "rarity": "SSR",
     "imgSrc": "icon_matrix_SSR12_256",

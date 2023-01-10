@@ -1,5 +1,6 @@
 {
     "name": "Baiyuekui",
+    "chinaOnly": true,
     "id": 12,
     "rarity": "SSR",
     "imgSrc": "icon_matrix_SSR13_256",
