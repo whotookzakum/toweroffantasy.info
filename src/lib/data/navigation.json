@@ -1,0 +1,62 @@
+{
+	"links": [
+		{
+			"text": "Simulacra",
+			"href": "/simulacra"
+		},
+		{
+			"text": "Matrices",
+			"href": "/matrices"
+		},
+		{
+			"text": "Relics",
+			"href": "/relics"
+		},
+		{
+			"text": "Exploration",
+			"href": "/exploration"
+		},
+		{
+			"text": "Food",
+			"href": "/food"
+		},
+		{
+			"text": "Mounts",
+			"href": "/mounts"
+		},
+		{
+			"text": "Cosmetics",
+			"href": "/cosmetics"
+		},
+		{
+			"text": "Interactive Map",
+			"href": "https://www.ghzs666.com/tower-of-fantasy-map#/"
+		},
+		{
+			"text": "Shop",
+			"href": "https://aida-cafe.shop/"
+		}
+	],
+	"socials": [
+		{
+			"href": "https://discord.gg/aidacafe",
+			"icon": "bxl:discord-alt",
+			"label": "Aida Cafe Discord"
+		},
+		{
+			"href": "https://www.reddit.com/r/TowerofFantasy/",
+			"icon": "ph:reddit-logo-fill",
+			"label": "Tower of Fantasy Reddit"
+		},
+		{
+			"href": "https://twitter.com/_Aida_Cafe",
+			"icon": "bxl:twitter",
+			"label": "Aida Cafe Twitter"
+		},
+		{
+			"href": "https://ko-fi.com/whotookzakum",
+			"icon": "simple-icons:ko-fi",
+			"label": "Support me on Ko-Fi!"
+		}
+	]
+}

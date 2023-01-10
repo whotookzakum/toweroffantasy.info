@@ -29,6 +29,7 @@
         position: sticky;
         top: 0;
         backdrop-filter: blur(10px);
+        will-change: transform;
         z-index: 500;
     }
 

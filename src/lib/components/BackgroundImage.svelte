@@ -132,7 +132,6 @@
     alt=""
     width="1080"
     height="1080"
-    loading="lazy"
     data-state={loadingState}
     bind:this={img}
 />

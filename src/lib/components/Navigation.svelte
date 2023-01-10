@@ -1,155 +1,154 @@
 <svelte:options immutable={true} />
 
+<script context="module">
+    import { writable } from "svelte/store";
+
+    export const open = writable(false);
+</script>
+
 <script>
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
-    export let navIsOpen;
+    import { onMount } from "svelte";
+    import { afterNavigate } from "$app/navigation";
+    import NAVIGATION_LINKS from "$lib/data/navigation.json";
 
-    const links = [
-        {
-            text: "Simulacra",
-            href: "/simulacra",
-        },
-        {
-            text: "Matrices",
-            href: "/matrices",
-        },
-        {
-            text: "Relics",
-            href: "/relics",
-        },
-        {
-            text: "Exploration",
-            href: "/exploration",
-        },
-        {
-            text: "Food",
-            href: "/food",
-        },
-        {
-            text: "Mounts",
-            href: "/mounts",
-        },
-        {
-            text: "Cosmetics",
-            href: "/cosmetics",
-        },
-        // {
-        //     text: "Guides",
-        //     href: "/guides",
-        // },
-        {
-            text: "Interactive Map",
-            href: "https://www.ghzs666.com/tower-of-fantasy-map#/",
-        },
-        {
-            text: "Shop",
-            href: "https://aida-cafe.shop/",
-        },
-    ];
+    let mounted;
 
-    const socials = [
-        {
-            href: "https://discord.gg/aidacafe",
-            icon: "bxl:discord-alt",
-            label: "Aida Cafe Discord",
-        },
-        {
-            href: "https://www.reddit.com/r/TowerofFantasy/",
-            icon: "ph:reddit-logo-fill",
-            label: "Tower of Fantasy Reddit",
-        },
-        {
-            href: "https://twitter.com/_Aida_Cafe",
-            icon: "bxl:twitter",
-            label: "Aida Cafe Twitter",
-        },
-        {
-            href: "https://ko-fi.com/whotookzakum",
-            icon: "simple-icons:ko-fi",
-            label: "Support me on Ko-Fi!",
-        },
-    ];
+    const { links, socials } = NAVIGATION_LINKS;
+
+    onMount(() => {
+        mounted = true;
+    });
+
+    afterNavigate(({ to }) => {
+        $open = Boolean(to.url.hash === "#main-menu");
+    });
 
     function toggleNav() {
-        navIsOpen = !navIsOpen;
+        if (window.location.hash === "#main-menu") {
+            window.location.hash = "";
+            $open = false;
+        } else {
+            $open = !$open;
+        }
     }
 </script>
 
-<nav>
-    <div class="toggle-wrapper">
-        <button class="nav-toggle" on:click={toggleNav}>
+<nav aria-label="Main menu">
+    {#if mounted}
+        <button
+            aria-controls="main-menu"
+            aria-expanded={$open}
+            class="nav-toggle"
+            type="button"
+            on:click={toggleNav}
+        >
             <Icon
-                icon={navIsOpen ? "ph:x" : "mdi:menu"}
+                icon={$open ? "ph:x" : "mdi:menu"}
                 width="32"
                 height="32"
                 color="var(--accent)"
             />
         </button>
-    </div>
-    <a class="home-link" href="/">
-        <img
-            src="/images/mia.png"
-            style="padding: 0.5rem"
-            alt="Logo"
-            width="128"
-            height="128"
-        />
-        Tower of Fantasy Index
-    </a>
-    <hr />
-    <div class="links">
-        {#each links as link}
-            {#if link.href.includes("https")}
+    {:else}
+        <a class="nav-toggle" href="#main-menu">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    fill="currentColor"
+                    d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
+                />
+            </svg>
+        </a>
+    {/if}
+    <div id="main-menu" class="nav-body">
+        <a class="home-link" href="/">
+            <img
+                src="/images/mia.png"
+                style="padding: 0.5rem"
+                alt="Logo"
+                width="128"
+                height="128"
+            />
+            Tower of Fantasy Index
+        </a>
+        <hr />
+        <div class="links">
+            {#each links as link}
+                {#if link.href.includes("https")}
+                    <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                    >
+                        {link.text}
+                        <Icon icon="mdi:external-link" width="16" height="16" />
+                    </a>
+                {:else}
+                    <a
+                        href={link.href}
+                        class:active={$page.url.pathname.includes(link.href)}
+                    >
+                        {link.text}
+                    </a>
+                {/if}
+            {/each}
+        </div>
+        <div class="socials">
+            {#each socials as link}
                 <a
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
+                    aria-label={link.label}
+                    ><Icon icon={link.icon} width="28" height="28" /></a
                 >
-                    {link.text}
-                    <Icon icon="mdi:external-link" width="16" height="16" />
-                </a>
-            {:else}
-                <a
-                    href={link.href}
-                    class:active={$page.url.pathname.includes(link.href)}
-                    on:click={toggleNav}
-                >
-                    {link.text}
-                </a>
-            {/if}
-        {/each}
+            {/each}
+        </div>
+        <footer>
+            <a a class="nn-cmp-show" href="#">Cookies</a>
+            <a href="/privacy">Privacy</a>
+        </footer>
     </div>
-    <div class="socials">
-        {#each socials as link}
-            <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                aria-label={link.label}
-                ><Icon icon={link.icon} width="28" height="28" /></a
-            >
-        {/each}
-    </div>
-    <footer>
-        <a a class="nn-cmp-show" href="#">Cookies</a>
-        <a href="/privacy">Privacy</a>
-    </footer>
 </nav>
 
 <style lang="scss">
     nav {
+        display: contents;
+    }
+
+    .nav-body {
         background: var(--surface1);
-        max-width: var(--nav-width);
+        width: var(--nav-width);
         height: 100vh;
         overflow-y: auto;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 9000;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        transform: translateX(calc(-1 * var(--nav-width)));
+        will-change: transform;
         --padding: 0.75rem 1.5rem;
+    }
+
+    .nav-body * {
+        opacity: 0;
+    }
+
+    [aria-expanded="true"] + .nav-body,
+    #main-menu:target {
+        transform: none;
+    }
+
+    [aria-expanded="true"] + .nav-body *,
+    #main-menu:target * {
+        opacity: 1;
     }
 
     .nav-toggle {
@@ -159,7 +158,8 @@
         z-index: 9001;
         background: var(--surface3);
         box-shadow: 0 2px 4px var(--surface-shadow);
-        border: 1px solid var(--accent);
+        border: 1px solid;
+        color: var(--accent);
         padding: 0.3rem;
         box-sizing: border-box;
         width: 44px;
@@ -170,6 +170,15 @@
     @media (min-width: 800px) {
         .nav-toggle {
             display: none;
+        }
+
+        .nav-body {
+            position: sticky;
+            transform: none;
+        }
+
+        .nav-body * {
+            opacity: 1;
         }
     }
 

@@ -1,24 +1,20 @@
 <script>
     import "$lib/styles/globals.scss";
-    import Navigation from "$lib/components/Navigation.svelte";
+    import Navigation, {
+        open as navIsOpen
+    } from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     import { afterNavigate, beforeNavigate } from "$app/navigation";
-    import { onMount } from "svelte";
-
-    let navIsOpen;
-    let root;
-
-    onMount(() => (root = document.documentElement));
 
     beforeNavigate(() => {
-        root.setAttribute("data-state", "navigating");
+        document.documentElement.setAttribute("data-state", "navigating");
     });
 
     afterNavigate(() => {
-        root.getAttribute("data-state");
-        root.removeAttribute("data-state", "navigating");
+        document.documentElement.getAttribute("data-state");
+        document.documentElement.removeAttribute("data-state", "navigating");
     });
 </script>
 
@@ -27,9 +23,9 @@
 </svelte:head>
 
 <GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
-<div class="layout" class:open={navIsOpen}>
-    <Navigation bind:navIsOpen />
-    <main>
+<div class="layout">
+    <Navigation />
+    <main class:open={$navIsOpen}>
         <slot />
         <footer class="page-footer">&copy; 2023 Tower of Fantasy Index.</footer>
     </main>
@@ -43,30 +39,29 @@
     .layout {
         --content-max-width: 800px;
         --nav-width: 250px;
-        display: grid;
-        grid-template-columns: 1fr var(--content-max-width) 1fr;
-        transition: margin 0.3s ease;
+        display: contents;
     }
 
     // 2nav-width + content-width
-    @media (max-width: 1300px) {
-        .layout {
-            grid-template-columns: var(--nav-width) 1fr;
-        }
-    }
+    // @media (max-width: 1300px) {
+    //     .layout {
+    //         grid-template-columns: var(--nav-width) 1fr;
+    //     }
+    // }
 
     // content-width
-    @media (max-width: 800px) {
-        .layout {
-            // desktop: when width is small, 1fr works better because 100vw goes under the scrollbar, but using 1fr causes content to contract
-            grid-template-columns: var(--nav-width) 100vw;
+    // @media (max-width: 800px) {
+    //     .layout {
+    //         display: contents;
+    //         // desktop: when width is small, 1fr works better because 100vw goes under the scrollbar, but using 1fr causes content to contract
+    //         grid-template-columns: var(--nav-width) 100vw;
 
-            &:not(.open) {
-                // margin instead of transform provides better framerate on firefox mobile, and allows the nav toggle button to stay fixed at the top; the stacking context gets messed up with transform with the current structure (nav-toggle inside of nav)
-                margin-left: calc(-1 * var(--nav-width));
-            }
-        }
-    }
+    //         &:not(.open) {
+    //             // margin instead of transform provides better framerate on firefox mobile, and allows the nav toggle button to stay fixed at the top; the stacking context gets messed up with transform with the current structure (nav-toggle inside of nav)
+    //             margin-left: calc(-1 * var(--nav-width));
+    //         }
+    //     }
+    // }
 
     main {
         background: var(--surface1);
@@ -81,6 +76,27 @@
 
         & > * {
             grid-column: 2;
+        }
+
+        &.open {
+            transform: translateX(var(--nav-width));
+        }
+    }
+
+    @media (min-width: 800px) {
+        .layout {
+            display: grid;
+            grid-template-columns: var(--nav-width) 1fr;
+        }
+
+        main {
+            transform: none;
+        }
+    }
+
+    @media (min-width: 1300px) {
+        .layout {
+            grid-template-columns: 1fr var(--content-max-width) 1fr;
         }
     }
 

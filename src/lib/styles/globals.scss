@@ -2,6 +2,10 @@
 @import './variables';
 @import './colors';
 
+*, *::before, *::after {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 html {
     color-scheme: dark;
     scroll-behavior: smooth;

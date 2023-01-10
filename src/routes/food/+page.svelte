@@ -6,6 +6,8 @@
     import AnchorJS from "anchor-js";
     import FoodFilters from "$lib/components/food/FoodFilters.svelte";
     import Ad from "$lib/components/Ad.svelte";
+    import DishesTable from "../../lib/components/food/DishesTable.svelte";
+    import IngredientsTable from "../../lib/components/food/IngredientsTable.svelte";
 
     onMount(() => {
         const anchors = new AnchorJS();
@@ -80,14 +82,14 @@
 <Ad unit="mobile_mpu1" />
 
 <h2 id="dishes">Dishes</h2>
-{#await import("$lib/components/food/DishesTable.svelte") then DishesTable}
-    <svelte:component this={DishesTable.default} {dishes} />
+{#await import("$lib/components/food/DishesTable.svelte") then { default: DishesTable }}
+    <DishesTable {dishes} />
 {/await}
 
 <Ad unit="lb3" />
 <Ad unit="mobile_mpu2" />
 
 <h2 id="ingredients">Ingredients</h2>
-{#await import("$lib/components/food/IngredientsTable.svelte") then IngredientsTable}
-    <svelte:component this={IngredientsTable.default} {ingredients} />
+{#await import("$lib/components/food/IngredientsTable.svelte") then { default: IngredientsTable }}
+    <IngredientsTable {ingredients} />
 {/await}
