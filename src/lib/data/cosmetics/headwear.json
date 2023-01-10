@@ -29,13 +29,13 @@
         "name": "Horned Headphones",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_010",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by participating in the Frontier Team Assemble event."
     },
     {
         "name": "Batwing Hairband",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_26",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
         "name": "Maid Bonnet",
@@ -57,13 +57,13 @@
         "name": "Frigg Hairpin",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_060",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Sands event."
     },
     {
         "name": "Tsubasa Hairpin",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_059",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Sands event."
     },
     {
         "name": "Black Goat Horns",
@@ -109,7 +109,7 @@
         "name": "Android Headpiece",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_072",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event."
     },
     {
         "name": "Night Butterfly Hairpin",
@@ -117,10 +117,10 @@
         "source": "Obtained from gachapon during the Wheel of Fantasy event."
     },
     {
-        "name": "Metal Antlers",
+        "name": "Dragon Boat Branch",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_080",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Fragrance event."
     },
     {
         "name": "Fat Dove Hat",

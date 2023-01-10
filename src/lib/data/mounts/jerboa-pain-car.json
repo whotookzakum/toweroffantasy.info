@@ -2,10 +2,9 @@
     "name": "Jerboa - Pain Car",
     "id": 13,
     "imgSrc": "zuoqi_tubiap_12_1",
-    "chinaOnly": true,
     "parts": [
         {
-            "source": "Obtained from gachapon during the event period.",
+            "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Fragrance event.",
             "imgSrc": "Mount_012_1"
         },
         {
