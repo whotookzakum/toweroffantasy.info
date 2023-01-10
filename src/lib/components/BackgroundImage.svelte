@@ -12,6 +12,7 @@
     let src;
     let loadingState;
     let animating = false;
+    let externalLinkClicked;
 
     onMount(() => {
         img.addEventListener("animationstart", () => {
@@ -24,10 +25,19 @@
 
     beforeNavigate(({ from, to }) => {
         if (getImgSrc(from.url.pathname) === getImgSrc(to.url.pathname)) return;
+
+        externalLinkClicked = Boolean(!to.route.id);
+        if (externalLinkClicked) return;
+
         loadingState = "unload";
     });
 
-    afterNavigate(() => {
+    afterNavigate(({ from, to }) => {
+        const isSameSrc = Boolean(from && getImgSrc(from.url.pathname) === getImgSrc(to.url.pathname));
+
+        if (isSameSrc) return;
+        if (externalLinkClicked) loadingState = "unload";
+
         const newImg = new Image();
 
         newImg.addEventListener(
