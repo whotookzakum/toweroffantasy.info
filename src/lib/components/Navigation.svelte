@@ -1,3 +1,5 @@
+<svelte:options immutable={true} />
+
 <script>
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
@@ -65,8 +67,8 @@
         {
             href: "https://ko-fi.com/whotookzakum",
             icon: "simple-icons:ko-fi",
-            label: "Support me on Ko-Fi!"
-        }
+            label: "Support me on Ko-Fi!",
+        },
     ];
 
     function toggleNav() {

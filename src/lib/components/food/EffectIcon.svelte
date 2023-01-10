@@ -1,5 +1,7 @@
 <script>
-    export let effect, absolute, width;
+    export let effect;
+    export let absolute = false;
+    export let width = 32;
 
     function getImgSrc() {
         switch (effect) {

@@ -1,5 +1,6 @@
 <script>
-    export let amount, rarity;
+    export let amount = 0;
+    export let rarity = 1;
 </script>
 
 <div class={`item-wrapper rarity-${rarity}`}>

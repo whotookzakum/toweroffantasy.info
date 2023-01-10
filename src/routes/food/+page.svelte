@@ -1,23 +1,16 @@
 <script>
-    import SvelteMarkdown from "svelte-markdown";
     import ingredientsData from "$lib/data/food/ingredients.json";
     import dishesData from "$lib/data/food/dishes.json";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
-    import Item from "$lib/components/Item.svelte";
-    import EffectIcon from "$lib/components/food/EffectIcon.svelte";
-    import FoodFilters from "../../lib/components/food/FoodFilters.svelte";
+    import FoodFilters from "$lib/components/food/FoodFilters.svelte";
     import Ad from "$lib/components/Ad.svelte";
 
     onMount(() => {
         const anchors = new AnchorJS();
         anchors.add("h3");
     });
-
-    function getIngredientData(input) {
-        return ingredients.find((i) => i.name === input);
-    };
 
     let dishes = dishesData;
     let ingredients = ingredientsData;
@@ -34,21 +27,28 @@
     }
 
     $: if (filters.buffFilters && filters.buffFilters.length > 0) {
-        dishes = dishes.filter((dish) =>
-            dish.icons && dish.icons.some(t => filters.buffFilters.includes(t))
+        dishes = dishes.filter(
+            (dish) =>
+                dish.icons &&
+                dish.icons.some((t) => filters.buffFilters.includes(t))
         );
-    } 
+    }
 
     $: if (filters.recoveryFilters && filters.recoveryFilters.length > 0) {
-        dishes = dishes.filter((dish) =>
-            dish.icons && dish.icons.some(t => filters.recoveryFilters.includes(t))
+        dishes = dishes.filter(
+            (dish) =>
+                dish.icons &&
+                dish.icons.some((t) => filters.recoveryFilters.includes(t))
         );
     }
 </script>
 
 <svelte:head>
     <title>Food | Tower of Fantasy Index</title>
-    <meta name="description" content="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat.">
+    <meta
+        name="description"
+        content="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat."
+    />
     <meta property="og:title" content="Food" />
     <meta
         property="og:description"
@@ -80,132 +80,14 @@
 <Ad unit="mobile_mpu1" />
 
 <h2 id="dishes">Dishes</h2>
-<div class="table-wrapper">
-    <table class="dishes-table bg-alternate">
-        <thead>
-            <th>Item</th>
-            <th>Effect</th>
-            <th>Recipe</th>
-        </thead>
-        <tbody>
-            {#each dishes as dish}
-                <tr>
-                    <td>
-                        <div class="img-and-name">
-                            <Item rarity={dish.rarity}>
-                                <img
-                                    src={`/images/Icon/caiyao/${dish.imgSrc}.png`}
-                                    alt={dish.name}
-                                    width="96"
-                                    height="96"
-                                    loading="lazy"
-                                />
-                                {#if dish.icons}
-                                    {#each dish.icons as effect}
-                                        <EffectIcon {effect} absolute />
-                                    {/each}
-                                {/if}
-                            </Item>
-                            <h3>{dish.name}</h3>
-                        </div>
-                    </td>
-                    <td class="dish-effects">
-                        <SvelteMarkdown source={dish.effect} />
-                    </td>
-                    <td>
-                        <ul class="recipe">
-                            {#each dish.ingredients as ingredient}
-                                <li>
-                                    <Item
-                                        rarity={getIngredientData(
-                                            ingredient.item
-                                        ).rarity}
-                                        amount={ingredient.amount}
-                                    >
-                                        <img
-                                            src={`/images/Icon/shicai/${
-                                                getIngredientData(
-                                                    ingredient.item
-                                                ).imgSrc
-                                            }.png`}
-                                            alt={ingredient.item}
-                                            width="48"
-                                            height="48"
-                                            loading="lazy"
-                                        />
-                                    </Item>
-                                    <a
-                                        href={`#${ingredient.item
-                                            .toLowerCase()
-                                            .replace(/\s+/g, "-")}`}
-                                    >
-                                        {ingredient.item}
-                                    </a>
-                                </li>
-                            {/each}
-                        </ul>
-                    </td>
-                </tr>
-            {/each}
-        </tbody>
-    </table>
-</div>
+{#await import("$lib/components/food/DishesTable.svelte") then DishesTable}
+    <svelte:component this={DishesTable.default} {dishes} />
+{/await}
 
 <Ad unit="lb3" />
 <Ad unit="mobile_mpu2" />
 
 <h2 id="ingredients">Ingredients</h2>
-<div class="table-wrapper">
-    <table class="bg-alternate">
-        <thead>
-            <th>Item</th>
-            <th>Source</th>
-        </thead>
-        <tbody>
-            {#each ingredients as ingredient}
-                <tr>
-                    <td class="img-and-name">
-                        <img
-                            src={`/images/Icon/shicai/${ingredient.imgSrc}.png`}
-                            alt={ingredient.name}
-                            width="64"
-                            height="64"
-                            loading="lazy"
-                        />
-                        <h3>{ingredient.name}</h3>
-                    </td>
-                    <td>
-                        <SvelteMarkdown source={ingredient.source} />
-                    </td>
-                </tr>
-            {/each}
-        </tbody>
-    </table>
-</div>
-
-<style lang="scss">
-    .img-and-name {
-        row-gap: 0.5rem;
-    }
-
-    .dishes-table {
-        table-layout: fixed;
-    }
-
-    ul.recipe {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            a {
-                font-size: var(--step--1);
-                line-height: 1.2;
-            }
-        }
-    }
-</style>
+{#await import("$lib/components/food/IngredientsTable.svelte") then IngredientsTable}
+    <svelte:component this={IngredientsTable.default} {ingredients} />
+{/await}

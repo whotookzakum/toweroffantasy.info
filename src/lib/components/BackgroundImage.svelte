@@ -1,4 +1,5 @@
 <script>
+    import { page } from "$app/stores";
     import { afterNavigate, beforeNavigate } from "$app/navigation";
     import { onMount } from "svelte";
     import propExists from "$lib/utils/prop-exists.js";
@@ -122,7 +123,7 @@
     <link
         rel="preload"
         as="image"
-        href={`/images/UI/${BG_IMAGES.default}.png`}
+        href={`/images/UI/${getImgSrc($page)}.png`}
     />
 </svelte:head>
 
