@@ -1,13 +1,16 @@
 <script>
     import { afterNavigate, beforeNavigate } from "$app/navigation";
     import { onMount } from "svelte";
+    import propExists from "$lib/utils/prop-exists.js";
     import BG_IMAGES from "$lib/data/backgroundImages.json";
 
     // Stores are laggy and update late
     // Can't put this component on each page because it doesn't work inside the grid, must be at root level
 
+    const BG_DIRECTORY = "/images/UI/";
+    const BG_FILETYPE = "png";
+
     let img;
-    let src;
     let loadingState;
     let animating = false;
     let externalLinkClicked;
@@ -31,40 +34,44 @@
     });
 
     afterNavigate(({ from, to }) => {
-        const isSameSrc = Boolean(from && getImgSrc(from) === getImgSrc(to));
+        const fromImgSrc = getImgSrc(from);
+        const toImgSrc = getImgSrc(to);
+        const isSameSrc = Boolean(from && fromImgSrc === toImgSrc);
 
         if (isSameSrc) return;
         if (externalLinkClicked) loadingState = "unload";
 
         const newImg = new Image();
-        newImg.src = `/images/UI/${getImgSrc(to)}.png`;
+        newImg.src = getFullURL(toImgSrc);
 
         newImg
             .decode()
             .then(loadImg)
-            .catch(() => loadImg(BG_IMAGES.default));
+            .catch(() =>
+                loadImg(getFullURL(BG_IMAGES.default), {
+                    style: BG_IMAGES.default,
+                })
+            );
 
-        function loadImg(src = newImg.src) {
+        function loadImg(src = newImg.src, { style = toImgSrc } = {}) {
+            const appendSrc = () => {
+                img.src = src;
+                img.style = getImgCSSRules(style);
+                loadingState = "load";
+            };
+
             if (animating) {
-                img.addEventListener("animationend", () => appendSrc(src), {
+                img.addEventListener("animationend", () => appendSrc(), {
                     once: true,
                 });
             } else {
-                appendSrc(src);
+                appendSrc();
             }
-        }
-
-        function appendSrc(newSrc = newImg.src) {
-            src = newSrc;
-            loadingState = "load";
         }
     });
 
     function getImgSrc(page) {
         if (!page) return BG_IMAGES.default;
-
-        const propExists = (prop, obj) =>
-            Boolean(typeof obj === "object" && prop in obj);
 
         if (
             propExists("slug", page?.params) &&
@@ -94,6 +101,21 @@
             return typeof src === "string" ? src : BG_IMAGES.default;
         }
     }
+
+    function getFullURL(src) {
+        return BG_DIRECTORY + src + "." + BG_FILETYPE;
+    }
+
+    function getImgCSSRules(src) {
+        return BG_IMAGES.cssRules
+            .filter((entry) => entry.scope.includes(src))
+            .map((rule) =>
+                Object.entries(rule.settings)
+                    .map(([prop, value]) => `${prop}: ${value};`)
+                    .join(" ")
+            )
+            .join(" ");
+    }
 </script>
 
 <svelte:head>
@@ -106,7 +128,6 @@
 
 <img
     class="bg-img"
-    {src}
     alt=""
     width="1080"
     height="1080"
@@ -153,23 +174,6 @@
 
         &[data-state="load"] {
             animation: load 0.3s ease-in forwards;
-        }
-
-        &[src*="lan."] {
-            object-position: 350px;
-        }
-
-        // Food
-        &[src*="huodong_meishi"] {
-            object-position: 0px;
-            top: unset;
-            bottom: 0;
-        }
-
-        // Ruby sitting
-        &[src*="UI_nuanyang_renwu1"] {
-            top: unset;
-            bottom: 0;
         }
     }
 </style>

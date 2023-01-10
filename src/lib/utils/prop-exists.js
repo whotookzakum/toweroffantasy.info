@@ -1,0 +1,1 @@
+export default (prop, obj) => Boolean(typeof obj === "object" && prop in obj);
