@@ -28,9 +28,8 @@
     <img
         class="chart"
         style="width: 100%"
-        src={`/images/ResourcesOverSea/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${simulacrum.id}.png`}
+        src={`/images${simulacrum.chinaOnly ? "" : "/ResourcesOverSea"}/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${simulacrum.id}.png`}
         alt={`${simulacrum.name}'s personality chart'`}
-        on:error={this.src = `/images/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${simulacrum.id}.png`}
         width="678"
         height="367"
         loading="lazy"
