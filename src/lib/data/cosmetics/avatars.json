@@ -1,5 +1,40 @@
 [
     {
+        "name": "Beautiful Dream",
+        "imgSrc": "Avatar_48",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
+    },
+    {
+        "name": "Reindeer Mi-a",
+        "imgSrc": "Avatar_47",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from purchasing the 2980 tanium Christmas pack during the sale."
+    },
+    {
+        "name": "Engraved Memory",
+        "imgSrc": "Avatar_44",
+        "source": "<abbr title='China Exclusive'></abbr> From events."
+    },
+    {
+        "name": "Majestic Big Sister",
+        "imgSrc": "Avatar_42",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass."
+    },
+    {
+        "name": "Cold Lovin' Mi-a",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_",
+        "source": "From events."
+    },
+    {
+        "name": "Tian Lang: T Pose",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_",
+        "source": "Obtained when purchasing the tanium pack during the sale."
+    },
+    {
+        "name": "Lyra: T Pose",
+        "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_",
+        "source": "Obtained when purchasing the tanium pack during the sale."
+    },
+    {
         "name": "Lin: T Pose",
         "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_11",
         "source": "Obtained when purchasing the tanium pack during the sale."
@@ -20,7 +55,7 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass."
     },
     {
-        "name": "I'm Fishing",
+        "name": "I'm a fisherman",
         "imgSrc": "Avatar_38",
         "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
     },

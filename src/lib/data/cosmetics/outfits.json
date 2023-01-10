@@ -1,5 +1,20 @@
 [
     {
+        "name": "Warm 'n Wonderful Winter Night",
+        "imgSrcs": ["fashion_f45", "fashion_m45"],
+        "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale."
+    },
+    {
+        "name": "Floating Whisper",
+        "imgSrcs": ["fashion_f44", "fashion_m44"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Floating Whisper event."
+    },
+    {
+        "name": "Matrix",
+        "imgSrcs": ["fashion_f43", "fashion_m43"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass."
+    },
+    {
         "name": "Uninhibited Drum",
         "imgSrcs": ["fashion_f42", "fashion_m42"],
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
@@ -83,7 +98,7 @@
     {
         "name": "Forget Me Not",
         "imgSrcs": ["fashion_f07", "fashion_m07"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
+        "source": "Obtained during the Order Gift event by doing a certain number of Limited Banner pulls.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
         "name": "Fruity Candy",
@@ -113,7 +128,7 @@
     {
         "name": "Conqueror",
         "imgSrcs": ["fashion_f14", "fashion_m12"],
-        "source": "Obtained by reaching 1490 exploration in Astra"
+        "source": "Obtained by reaching 1490 exploration in Astra."
     },
     {
         "name": "Wastelands Wanderer",
