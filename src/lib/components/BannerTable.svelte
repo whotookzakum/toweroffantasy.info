@@ -1,6 +1,8 @@
 <script>
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    export let banners, version, expanded;
+    export let banners;
+    export let version = "global";
+    export let expanded = false;
 
     const getDurationInDays = (start, end) => {
         return Math.ceil(
@@ -56,7 +58,9 @@
                 {getDurationInDays(banner.start, banner.end)} days
             </td>
             <td>
-                {getWeeksSinceLaunch(banner.start)}~{getWeeksSinceLaunch(banner.end)}
+                {getWeeksSinceLaunch(banner.start)}~{getWeeksSinceLaunch(
+                    banner.end
+                )}
             </td>
         </tr>
     {/each}

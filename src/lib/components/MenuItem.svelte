@@ -1,5 +1,6 @@
 <script>
-    export let href, chinaOnly;
+    export let href;
+    export let chinaOnly = false;
 </script>
 
 <li class="menu-item">
