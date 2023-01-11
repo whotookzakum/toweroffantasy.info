@@ -1,5 +1,9 @@
 [
     {
+        "date": "January 10 2023",
+        "text": "Added Icarus; Updated cosmetics; Fixed personality charts (english if available); Fixed weapon header overflowing off page; Fixed recommended matrices text positioning; Fixed CN Saki rerun date; Fixed Baiyuekui and Marc missing CN tags; Adjusted weapon skills backgrounds to have more contrast;"
+    },
+    {
         "date": "January 9 2023",
         "text": "CN Saki rerun added; Fixed Lan's advancements and skill descriptions; Fixed Lin's augment mats and added some more data to upgrade mats; Fixed Annabella's matrices incorrectly saying they work in the background; Fixed Lin's 6 star attack boost percentage to global value; Updated some cosmetics data; Navigation will now collapse when a link is clicked; Fixed some text highlighting for weapons and mounts; Lazy loading images"
     },

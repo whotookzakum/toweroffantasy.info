@@ -2,6 +2,23 @@
     import SvelteMarkdown from "svelte-markdown";
     import avatars from "$lib/data/cosmetics/avatars.json";
     import Ad from "$lib/components/Ad.svelte";
+
+    // After Lin: T-Pose
+    // {
+    //     "name": "Cold Lovin' Mi-a",
+    //     "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_",
+    //     "source": "From events."
+    // },
+    // {
+    //     "name": "Tian Lang: T Pose",
+    //     "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_",
+    //     "source": "Obtained when purchasing the tanium pack during the sale."
+    // },
+    // {
+    //     "name": "Lyra: T Pose",
+    //     "imgSrc": "../../ResourcesOverSea/Icon/Avatar/Avatar_Overseas_",
+    //     "source": "Obtained when purchasing the tanium pack during the sale."
+    // },
 </script>
 
 <svelte:head>
