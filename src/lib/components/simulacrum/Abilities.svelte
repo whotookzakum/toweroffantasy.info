@@ -13,7 +13,7 @@
         <li>
             <details class="ability">
                 <summary>
-                    <div class="skill-title-wrapper">
+                    <span class="skill-title-wrapper">
                         <img
                             src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
                             alt={ability.name}
@@ -21,11 +21,11 @@
                             height="82"
                             loading="lazy"
                         />
-                        <div class="skill-title">
-                            <span>{ability.type}</span>
-                            <h5>{ability.name}</h5>
-                        </div>
-                    </div>
+                        <span class="skill-title">
+                            <span>{ability.name}</span>
+                            <small>{ability.type}</small>
+                        </span>
+                    </span>
                     <div class="skill-inputs">
                         {#if ability.input}
                             {#each ability.input as input, index}
@@ -91,15 +91,18 @@
     }
 
     .skill-title {
+        display: flex;
+        flex-direction: column-reverse;
         line-height: 1.2;
 
-        h5 {
+        span {
+            font-size: var(--step-2);
+            font-weight: 600;
             margin: 0;
             text-transform: unset;
-            font-size: var(--step-2);
         }
 
-        span {
+        small {
             text-transform: capitalize;
             color: var(--text2);
             font-size: var(--step--1);
