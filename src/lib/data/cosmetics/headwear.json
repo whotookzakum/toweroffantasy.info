@@ -1,8 +1,45 @@
 [
     {
+        "name": "Cluster Wreath",
+        "imgSrc": "fashion_icon_shipin_114",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Robarg world boss chest."
+    },
+    {
+        "name": "Wingspan",
+        "imgSrc": "fashion_icon_shipin_113",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Interdimensional Frostfire Dragon world boss chest."
+    },
+    {
+        "name": "Silk Voice",
+        "imgSrc": "fashion_icon_shipin_109",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Scylla world boss chest."
+    },
+    {
+        "name": "Cloudy Cloud Candy",
+        "imgSrc": "fashion_icon_shipin_108",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Eva world boss chest."
+    },
+    {
+        "name": "Habra's Touch",
+        "imgSrc": "fashion_icon_shipin_107",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Habra world boss chest."
+    },
+    {
+        "name": "Stride",
+        "nameUnconfirmed": true,
+        "imgSrc": "fashion_icon_shipin_106",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable in a pack during the Stride gum collab event."
+    },
+    {
+        "name": "Burger",
+        "nameUnconfirmed": true,
+        "imgSrc": "fashion_icon_shipin_105",
+        "source": "<abbr title='China Exclusive'></abbr> Obtainable with a gift code by dining at Burger King during the collab event."
+    },
+    {
         "name": "Bucket Hat",
         "imgSrc": "fashion_icon_shipin_102",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
+        "source": "Purchasable from the fishing shop."
     },
     {
         "name": "Little Ghost",
@@ -32,10 +69,10 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained by participating in the Frontier Team Assemble event."
     },
     {
-        "name": "Batwing Hairband",
+        "name": "Curtain",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_26",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
+        "source": "Obtained during the Order Gift event by doing a certain number of Limited Banner pulls.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Warm sun gift box event."
     },
     {
         "name": "Maid Bonnet",

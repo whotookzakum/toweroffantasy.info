@@ -1,0 +1,43 @@
+{
+    "name": "Icarus",
+    "id": 35,
+    "chinaOnly": true,
+    "cnName": "",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 43,
+                "start": "11 Jan 2023",
+                "end": "7 Feb 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": ""
+        },
+        {
+            "affinity": 4000,
+            "description": ""
+        }
+    ],
+    "giftTypes": [
+        "Collectibles",
+        "Metalware",
+        "Vera",
+        "Aesperia"
+    ],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": " cm",
+    "birthplace": "",
+    "horoscope": "",
+    "birthday": "",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": ""
+    }
+}

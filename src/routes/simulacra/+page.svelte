@@ -15,7 +15,7 @@
     // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions
 
     // AND filters
-    // If filter is unset, return true, else return whether the simulacrum passes the filter or not
+    // If filter is unset, return every value, else return whether the simulacrum passes the filter or not
     $: simulacra = data.items
         .filter(
             ({ weapon }) =>

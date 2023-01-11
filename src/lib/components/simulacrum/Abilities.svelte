@@ -67,17 +67,12 @@
     }
 
     details.ability {
-        background: var(--surface3);
-        box-shadow: 0 0 2px var(--surface-shadow);
+        background: hsla(220, 15%, 17%, 0.9);
+        box-shadow: 0 2px 4px var(--surface-shadow);
         padding: 0.5rem 1rem;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        position: relative;
 
         &:hover {
-            background: hsla(220, 15%, 29%, 0.9);
-            
+            background: var(--surface3);
         }
     }
 

@@ -1,5 +1,70 @@
 [
     {
+        "name": "Rose Thorns",
+        "imgSrc": "qipao_71",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
+    },
+    {
+        "name": "Warm Winter's Night",
+        "imgSrc": "qipao_70",
+        "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale."
+    },
+    {
+        "name": "Commemorate Colleagues",
+        "imgSrc": "qipao_69",
+        "source": ""
+    },
+    {
+        "name": "Adventure Memo",
+        "imgSrc": "qipao_68",
+        "source": "<abbr title='China Exclusive'></abbr> Community activity."
+    },
+    {
+        "name": "Whimsical",
+        "imgSrc": "qipao_64",
+        "source": ""
+    },
+    {
+        "name": "Surprises and Celebrations",
+        "imgSrc": "qipao_63",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Floating Whisper event."
+    },
+    {
+        "name": "Fantastic Dream",
+        "imgSrc": "qipao_67",
+        "source": "<abbr title='China Exclusive'></abbr> Achievement reward."
+    },
+    {
+        "name": "Longquan",
+        "imgSrc": "qipao_66",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+    },
+    {
+        "name": "Cluster of Stars",
+        "imgSrc": "qipao_65",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+    },
+    {
+        "name": "1st Anniversary Memories",
+        "imgSrc": "qipao_62",
+        "source": ""
+    },
+    {
+        "name": "Party All Night",
+        "imgSrc": "qipao_61",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass."
+    },
+    {
+        "name": "Dazzling Tower",
+        "imgSrc": "qipao_60",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable in a pack during the Stride gum collab event."
+    },
+    {
+        "name": "Enchanting Ice and Snow",
+        "imgSrc": "",
+        "source": "From events."
+    },
+    {
         "name": "Countercurrent",
         "imgSrc": "qipao_59",
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
@@ -10,9 +75,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event (Halloween?)."
     },
     {
-        "name": "Majestic Fishing",
+        "name": "Fisherman's Dignity",
         "imgSrc": "qipao_56",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
+        "source": "Purchasable from the fishing shop."
     },
     {
         "name": "Candy Feast",

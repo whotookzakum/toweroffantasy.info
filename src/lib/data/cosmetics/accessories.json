@@ -1,8 +1,33 @@
 [
     {
+        "name": "Deep Sea Shark",
+        "imgSrc": "fashion_icon_shipin_116",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innis."
+    },
+    {
+        "name": "Mysterious Sound",
+        "imgSrc": "fashion_icon_shipin_115",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innis."
+    },
+    {
+        "name": "Confused Eyepiece",
+        "imgSrc": "fashion_icon_shipin_112",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Sobek world boss chest."
+    },
+    {
+        "name": "Rockhelm Mask",
+        "imgSrc": "fashion_icon_shipin_111",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Magma world boss chest."
+    },
+    {
+        "name": "Fawn Mask",
+        "imgSrc": "fashion_icon_shipin_110",
+        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Rudolph world boss chest."
+    },
+    {
         "name": "Fisherman Glasses",
         "imgSrc": "fashion_icon_shipin_100",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
+        "source": "Purchasable from the fishing shop."
     },
     {
         "name": "Red Heart Eye Mask",

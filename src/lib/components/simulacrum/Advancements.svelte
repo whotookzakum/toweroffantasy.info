@@ -1,6 +1,6 @@
 <script>
-    import SvelteMarkdown from 'svelte-markdown'
-    export let weapon
+    import SvelteMarkdown from "svelte-markdown";
+    export let weapon;
 </script>
 
 <h4 id="advancements">Advancements</h4>

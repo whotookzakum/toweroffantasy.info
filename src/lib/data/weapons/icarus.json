@@ -1,0 +1,29 @@
+{
+    "name": "Fractured Light",
+    "imgSrc": "item_Weapon_SSR_yoyo_Ice01",
+    "element": "ice",
+    "type": "dps",
+    "shatter": {
+        "tier": "A",
+        "value": "9.50"
+    },
+    "charge": {
+        "tier": "A",
+        "value": "8.00"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "ice",
+        "green",
+        "blue"
+    ],
+    "weaponEffects": [],
+    "advancements": [],
+    "abilities": [],
+    "abilitiesVideoSrc": "",
+    "recommendedMatrices": []
+}
