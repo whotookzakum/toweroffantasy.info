@@ -1,0 +1,17 @@
+{
+    "name": "Icarus",
+    "chinaOnly": true,
+    "id": 28,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR35_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": ""
+        },
+        {
+            "pieces": 4,
+            "description": ""
+        }
+    ]
+}

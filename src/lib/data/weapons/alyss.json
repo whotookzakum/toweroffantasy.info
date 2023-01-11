@@ -57,6 +57,7 @@
             "type": "normal",
             "imgSrc": "skill_iceblade_airattack",
             "input": [
+                "Jump",
                 "Attack x5"
             ],
             "description": "While in the air, attack 5 times, consuming stamina.",

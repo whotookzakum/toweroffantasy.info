@@ -1,11 +1,12 @@
 {
 	"default": "Activity/ThemeActivity/gulanhuodong/UI_nuanyang_renwu1",
 	"directories": {
-		"simulacra": "huanxing/lihui/lan",
-		"matrices": "huanxing/lihui/lan",
+		"simulacra": "huanxing/lihui/Icarus",
+		"matrices": "huanxing/lihui/Icarus",
 		"food": "Activity/ThemeActivity/huodong_meishi_guo"
 	},
 	"slugs": {
+		"icarus": "huanxing/lihui/Icarus",
 		"lan": "huanxing/lihui/lan",
 		"fenrir": "huanxing/lihui/fenlier",
 		"umi": "huanxing/lihui/wumi",

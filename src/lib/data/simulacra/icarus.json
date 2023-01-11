@@ -2,7 +2,7 @@
     "name": "Icarus",
     "id": 35,
     "chinaOnly": true,
-    "cnName": "",
+    "cnName": "yikaluosi",
     "rarity": "SSR",
     "banners": {
         "cn": [
@@ -16,11 +16,11 @@
     "traits": [
         {
             "affinity": 1200,
-            "description": ""
+            "description": "Increase final damage by **10%** while Fractured Light is equipped, and increase shatter by **20%** while using Fractured Light."
         },
         {
             "affinity": 4000,
-            "description": ""
+            "description": "Increase final damage by **15%** while Fractured Light is equipped, and increase shatter by **45%** while using Fractured Light."
         }
     ],
     "giftTypes": [
@@ -29,15 +29,64 @@
         "Vera",
         "Aesperia"
     ],
-    "bestGifts": [],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "goldCoin"
+        },
+        {
+            "points": 80,
+            "gift": "seal"
+        },
+        {
+            "points": 80,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 60,
+            "gift": "snowglobe"
+        },
+        {
+            "points": 60,
+            "gift": "catFigure"
+        },
+        {
+            "points": 60,
+            "gift": "psp"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 40,
+            "gift": "toolbox"
+        },
+        {
+            "points": 40,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "catPlush"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 20,
+            "gift": "strangePlant"
+        }
+    ],
     "gender": "Male",
-    "height": " cm",
-    "birthplace": "",
-    "horoscope": "",
-    "birthday": "",
+    "height": "161 cm",
+    "birthplace": "Hykros",
+    "horoscope": "Scorpio",
+    "birthday": "24 Oct",
     "voiceActors": {
         "jp": "",
         "en": "",
-        "cn": ""
+        "cn": "沐霏"
     }
 }

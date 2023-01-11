@@ -36,7 +36,7 @@ September 12, 2022: 500k users
 - Mounts `Icon\Mount`
 
 ### Cosmetics
-- Outfits, accessories, headwear `UI\shizhuang\Fashion_icon`
+- Outfits, accessories, headwear, gliders `UI\shizhuang\Fashion_icon`
 - Avatar frames `Icon\AvatarFrame`
 - Chat bubbles `Icon\chat\qipao`
 
