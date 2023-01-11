@@ -1,4 +1,5 @@
 <script>
+    import { match } from "$lib/utils/";
     import ingredientsData from "$lib/data/food/ingredients.json";
     import dishesData from "$lib/data/food/dishes.json";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
@@ -18,7 +19,7 @@
 
     // Filters are AND, i.e. volt ATK && rarity 4
     // They are not OR, i.e. volt ATK || rarity 4
-    $: if (filters.rarityFilters && filters.rarityFilters.length > 0) {
+    $: if (filters.rarityFilters?.length) {
         dishes = dishesData.filter((dish) =>
             filters.rarityFilters.includes(dish.rarity)
         );
@@ -26,21 +27,47 @@
         dishes = dishesData;
     }
 
-    $: if (filters.buffFilters && filters.buffFilters.length > 0) {
-        dishes = dishes.filter(
-            (dish) =>
-                dish.icons &&
-                dish.icons.some((t) => filters.buffFilters.includes(t))
-        );
+    $: dishes = dishes.filter((dish) =>
+        satisfiesIconFilters({
+            data: dish.icons,
+            filters,
+            filterProps: ["buffFilters", "recoveryFilters"]
+        })
+    );
+
+    function satisfiesIconFilters({ data, filters, filterProps }) {
+        if (!data) return false;
+
+        return match()
+            .all(...filterProps.map(dataMatchesFilters))
+            .toBoolean();
+
+        function dataMatchesFilters(prop) {
+            const isFiltersClear = !filters[prop]?.length;
+            if (isFiltersClear) return true;
+
+            const isMatches = filters[prop].some((filterSelection) =>
+                data.includes(filterSelection)
+            );
+            return isMatches;
+        }
     }
 
-    $: if (filters.recoveryFilters && filters.recoveryFilters.length > 0) {
-        dishes = dishes.filter(
-            (dish) =>
-                dish.icons &&
-                dish.icons.some((t) => filters.recoveryFilters.includes(t))
-        );
-    }
+    // $: if (filters.buffFilters && filters.buffFilters.length > 0) {
+    //     dishes = dishes.filter(
+    //         (dish) =>
+    //             dish.icons &&
+    //             dish.icons.some((t) => filters.buffFilters.includes(t))
+    //     );
+    // }
+
+    // $: if (filters.recoveryFilters && filters.recoveryFilters.length > 0) {
+    //     dishes = dishes.filter(
+    //         (dish) =>
+    //             dish.icons &&
+    //             dish.icons.some((t) => filters.recoveryFilters.includes(t))
+    //     );
+    // }
 </script>
 
 <svelte:head>

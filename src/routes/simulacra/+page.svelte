@@ -1,4 +1,5 @@
 <script>
+    import { match } from "$lib/utils/";
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
     import Avatar from "$lib/components/simulacrum/Avatar.svelte";
@@ -12,21 +13,43 @@
 
     let filters = {};
 
+    $: simulacra = data.items.filter(({ weapon }) =>
+        satisfiesFilters({
+            data: weapon,
+            filters: filters.weapon,
+            filterProps: ["type", "element"]
+        })
+    );
+
+    function satisfiesFilters({ data, filters, filterProps }) {
+        return match()
+            .all(...filterProps.map(dataMatchesFilters))
+            .toBoolean();
+
+        function dataMatchesFilters(prop) {
+            const isFiltersClear = !filters?.[prop].length;
+            if (isFiltersClear) return true;
+
+            const isMatches = filters?.[prop].includes(data[prop]);
+            return isMatches;
+        }
+    }
+
     // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions
 
     // AND filters
     // If filter is unset, return every value, else return whether the simulacrum passes the filter or not
-    $: simulacra = data.items
-        .filter(
-            ({ weapon }) =>
-                !(filters.weapon?.type.length > 0) ||
-                filters.weapon?.type.includes(weapon.type)
-        )
-        .filter(
-            ({ weapon }) =>
-                !(filters.weapon?.element.length > 0) ||
-                filters.weapon?.element.includes(weapon.element)
-        );
+    // $: simulacra = data.items
+    //     .filter(
+    //         ({ weapon }) =>
+    //             !(filters.weapon?.type.length > 0) ||
+    //             filters.weapon?.type.includes(weapon.type)
+    //     )
+    //     .filter(
+    //         ({ weapon }) =>
+    //             !(filters.weapon?.element.length > 0) ||
+    //             filters.weapon?.element.includes(weapon.element)
+    //     );
 
     // OR filters
     // $: simulacra = data.items.filter(({weapon}) => {
@@ -37,7 +60,10 @@
 
 <svelte:head>
     <title>Simulacra | Tower of Fantasy Index</title>
-    <meta name="description" content="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.">
+    <meta
+        name="description"
+        content="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
+    />
     <meta property="og:title" content="Simulacra" />
     <meta
         property="og:description"

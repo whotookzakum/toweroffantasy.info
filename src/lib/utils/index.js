@@ -33,18 +33,18 @@ export const fetchAllSimulacra = async () => {
 export const fetchAllBanners = async (version) => {
     const allSimulacra = await fetchAllSimulacra()
 
-    const simulacraInVersion = 
+    const simulacraInVersion =
         allSimulacra
-        .filter(simulacrum => simulacrum.banners?.[version])
-        .map(simulacrum => {
-            return {
-                name: simulacrum.name,
-                element: simulacrum.weapon.element,
-                type: simulacrum.weapon.type,
-                banners: simulacrum.banners,
-                path: simulacrum.path
-            }
-        })
+            .filter(simulacrum => simulacrum.banners?.[version])
+            .map(simulacrum => {
+                return {
+                    name: simulacrum.name,
+                    element: simulacrum.weapon.element,
+                    type: simulacrum.weapon.type,
+                    banners: simulacrum.banners,
+                    path: simulacrum.path
+                }
+            })
 
     const allBanners = []
 
@@ -122,3 +122,28 @@ export const fetchAllMatrices = async () => {
 
     return allItems
 }
+
+export const propExists = (prop, obj) => Boolean(typeof obj === "object" && prop in obj);
+
+export const match = (initialValue = true) => {
+    const bool = Boolean(initialValue);
+
+    return {
+        all: (...conditions) => {
+            if (!bool) return match(false);
+            return match(bool && conditions.reduce((a, b) => Boolean(a && b)));
+        },
+        some: (...conditions) =>
+            match(bool || conditions.reduce((a, b) => Boolean(a || b))),
+        none: (...conditions) => match(!bool && !conditions.reduce((a, b) => Boolean(a && b))),
+        then: (f) => {
+            if (bool) f();
+            return {
+                catch: (f) => {
+                    if (!bool) f();
+                }
+            };
+        },
+        toBoolean: () => bool
+    };
+};

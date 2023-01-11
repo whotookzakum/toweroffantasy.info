@@ -2,7 +2,7 @@
     import { page } from "$app/stores";
     import { afterNavigate, beforeNavigate } from "$app/navigation";
     import { onMount } from "svelte";
-    import propExists from "$lib/utils/prop-exists.js";
+    import { propExists } from "$lib/utils/";
     import BG_IMAGES from "$lib/data/backgroundImages.json";
 
     // Stores are laggy and update late
