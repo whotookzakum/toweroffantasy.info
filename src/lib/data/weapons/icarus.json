@@ -31,7 +31,14 @@
             "description": "Increase final damage by **2.5%** for every element equipped. This effect works in the background."
         }
     ],
-    "advancements": [],
+    "advancements": [
+        "Using any weapon's skill will cause the speeding yo-yos to **resonate**, dealing **30%** of your missing HP as damage to nearby targets (minimum **70%** of max ATK, maximum **3,000%** of max ATK) using the current weapon's element.\n\nUsing any weapon's discharge will cause the speeding yo-yos to **modulate**, dealing **20%** of your max HP as damage to nearby targets (maximum **2,000%** of max ATK) using the current weapon's element.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "When casting Desolate Day, speeding yo-yos can trigger **12** seconds of **extreme speed**: increase speeding yo-yos' speed by **80%**, damage by **60%**, and its hits deal short-range AoE damage.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "Increase damage of speeding yo-yos and Quiet by **50%**.",
+        "Increase final damage by **10%** while speeding yo-yos are active."
+    ],
     "abilities": [
         {
             "name": "Cold Eclipse",
