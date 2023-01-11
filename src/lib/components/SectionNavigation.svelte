@@ -1,11 +1,11 @@
 <script>
     import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
-    export let links;
+    export let links = [];
 </script>
 
 <div class="topnav-wrapper full-bleed">
     <Breadcrumbs />
-    {#if links}
+    {#if links.length}
         <nav class="section-navigation">
             {#each links as link}
                 <a href={`#${link.replace(/\s+/g, "-")}`}>{link}</a>

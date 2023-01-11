@@ -50,12 +50,13 @@
             .then(loadImg)
             .catch(() =>
                 loadImg(getFullURL(BG_IMAGES.default), {
-                    style: BG_IMAGES.default,
+                    style: BG_IMAGES.default
                 })
             );
 
         function loadImg(src = newImg.src, { style = toImgSrc } = {}) {
             const appendSrc = () => {
+                img.src = "";
                 img.src = src;
                 img.style = getImgCSSRules(style);
                 loadingState = "load";
@@ -63,7 +64,7 @@
 
             if (animating) {
                 img.addEventListener("animationend", () => appendSrc(), {
-                    once: true,
+                    once: true
                 });
             } else {
                 appendSrc();
@@ -72,7 +73,7 @@
     });
 
     function getImgSrc(page) {
-        if (!page) return BG_IMAGES.default;
+        if (!page?.route?.id) return BG_IMAGES.default;
 
         if (
             propExists("slug", page?.params) &&

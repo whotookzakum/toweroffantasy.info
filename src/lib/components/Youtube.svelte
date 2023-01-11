@@ -1,5 +1,6 @@
 <script>
-    export let source, caption;
+    export let source;
+    export let caption = "";
 </script>
 
 <figure>

@@ -1,5 +1,5 @@
 <script>
-    export let inset;
+    export let inset = false;
 </script>
 
 <div class="slider-radio" class:inset>
@@ -21,7 +21,8 @@
         user-select: none;
         box-shadow: 0 2px 4px var(--surface-shadow);
 
-        &:focus-within, &:active {
+        &:focus-within,
+        &:active {
             outline: 2px solid white;
         }
 
