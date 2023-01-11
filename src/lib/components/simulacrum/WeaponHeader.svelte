@@ -4,7 +4,8 @@
     export let weapon;
 </script>
 
-<header
+<section
+    aria-label="Weapon Stats"
     class="full-bleed"
     style={`border-color: var(--element-${weapon.element})`}
 >
@@ -61,10 +62,10 @@
             </div>
         </div>
     </div>
-</header>
+</section>
 
 <style lang="scss">
-    header {
+    section {
         background: var(--surface2);
         box-shadow: 0 0 2px var(--surface-shadow);
         padding: 0.5rem var(--space-2xs-xs);

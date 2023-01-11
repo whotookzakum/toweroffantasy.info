@@ -40,6 +40,7 @@
         <button
             aria-controls="main-menu"
             aria-expanded={$open}
+            aria-label={$open ? "Close Menu" : "Open Menu"}
             class="nav-toggle"
             type="button"
             on:click={toggleNav}
@@ -52,7 +53,7 @@
             />
         </button>
     {:else}
-        <a class="nav-toggle" href="#main-menu">
+        <a class="nav-toggle" href="#main-menu" aria-label="Menu">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid meet"

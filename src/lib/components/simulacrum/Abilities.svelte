@@ -22,11 +22,11 @@
                             loading="lazy"
                         />
                         <span class="skill-title">
-                            <span>{ability.name}</span>
-                            <small>{ability.type}</small>
+                            <h5>{ability.name}</h5>
+                            <span>{ability.type}</span>
                         </span>
                     </span>
-                    <div class="skill-inputs">
+                    <span class="skill-inputs">
                         {#if ability.input}
                             {#each ability.input as input, index}
                                 <kbd class:hold={input.includes("hold:")}>
@@ -39,7 +39,7 @@
                                 {/if} -->
                             {/each}
                         {/if}
-                    </div>
+                    </span>
                 </summary>
                 <SvelteMarkdown source={ability.description} />
                 {#if ability.breakdown}
@@ -95,14 +95,14 @@
         flex-direction: column-reverse;
         line-height: 1.2;
 
-        span {
+        h5 {
             font-size: var(--step-2);
             font-weight: 600;
             margin: 0;
             text-transform: unset;
         }
 
-        small {
+        span {
             text-transform: capitalize;
             color: var(--text2);
             font-size: var(--step--1);

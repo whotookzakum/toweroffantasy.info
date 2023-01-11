@@ -2,8 +2,10 @@
     export let weapon;
 </script>
 
-<small class="section-header">{weapon.name}</small>
-<h4>Recommended Matrices</h4>
+<h4>
+    <span class="section-header">{weapon.name}&#20;</span>
+    <span>Recommended Matrices</span>
+</h4>
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
@@ -76,13 +78,14 @@
     }
 
     .section-header {
+        color: var(--accent);
         font-weight: 500;
         font-size: var(--step--1);
-        margin-top: var(--space-xl);
+        // margin-top: var(--space-xl);
         text-transform: none;
     }
 
-    h4 {
-        margin-top: 0;
-    }
+    // h4 {
+    //     margin-top: 0;
+    // }
 </style>
