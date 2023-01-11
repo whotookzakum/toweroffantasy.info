@@ -6,8 +6,6 @@
     import AnchorJS from "anchor-js";
     import FoodFilters from "$lib/components/food/FoodFilters.svelte";
     import Ad from "$lib/components/Ad.svelte";
-    import DishesTable from "../../lib/components/food/DishesTable.svelte";
-    import IngredientsTable from "../../lib/components/food/IngredientsTable.svelte";
 
     onMount(() => {
         const anchors = new AnchorJS();
