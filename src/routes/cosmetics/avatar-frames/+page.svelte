@@ -2,6 +2,13 @@
     import SvelteMarkdown from "svelte-markdown";
     import frames from "$lib/data/cosmetics/avatarFrames.json";
     import Ad from "$lib/components/Ad.svelte";
+
+    // Before stride gum
+    // {
+    //     "name": "Thoughts of Winter",
+    //     "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/",
+    //     "source": "From events."
+    // },
 </script>
 
 <svelte:head>

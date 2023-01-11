@@ -2,6 +2,13 @@
     import SvelteMarkdown from "svelte-markdown";
     import chatBubbles from "$lib/data/cosmetics/chatBubbles.json";
     import Ad from "$lib/components/Ad.svelte";
+
+    // Before stride gum
+    // {
+    //     "name": "Enchanting Ice and Snow",
+    //     "imgSrc": "",
+    //     "source": "From events."
+    // },
 </script>
 
 <svelte:head>
