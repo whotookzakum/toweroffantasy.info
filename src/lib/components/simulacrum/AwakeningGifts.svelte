@@ -19,7 +19,7 @@
         </li>
     {/each}
 </ol>
-{#if categories.includes("Vera")}
+{#if categories.includes("Vera") && !categories.includes("Aesperia")}
     <small style="margin-block: var(--space-2xs); line-height: 1.7;">Vera characters will receive reduced Awakening Points from Non-Vera gifts.</small>
 {/if}
 
@@ -42,6 +42,7 @@
         --toys: #dd9cea;
         --vera: #cba79a;
         --domain-9: #6bbdd7;
+        --aesperia: #86ab83;
 
         display: flex;
         width: fit-content;
