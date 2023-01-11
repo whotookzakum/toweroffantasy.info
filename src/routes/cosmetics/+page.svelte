@@ -20,6 +20,11 @@
             imgSrc: "UI/shizhuang/Fashion_icon/fashion_icon_shipin_087",
         },
         {
+            name: "Refit",
+            href: "/cosmetics/refit",
+            imgSrc: "UI/shizhuang/Fashion_icon/Overlooker",
+        },
+        {
             name: "Mi-a Outfits",
             href: "/cosmetics/mia",
             imgSrc: "Icon/item/256mia011",

@@ -1,5 +1,56 @@
 [
     {
+        "name": "Commitment",
+        "imgSrc": "AvatarFrame_s_70",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
+    },
+    {
+        "name": "Reindeer & Bell",
+        "imgSrc": "AvatarFrame_s_69",
+        "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale."
+    },
+    {
+        "name": "Colloquial Consensus",
+        "imgSrc": "AvatarFrame_s_68",
+        "source": "<abbr title='China Exclusive'></abbr> From events."
+    },
+    {
+        "name": "Yinghai Cruise",
+        "imgSrc": "AvatarFrame_s_66",
+        "source": "<abbr title='China Exclusive'></abbr> Achievement reward."
+    },
+    {
+        "name": "Dragon's Breath",
+        "imgSrc": "AvatarFrame_s_65",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+    },
+    {
+        "name": "Sea of Stars",
+        "imgSrc": "AvatarFrame_s_64",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+    },
+    {
+        "name": "Cake and Party",
+        "imgSrc": "AvatarFrame_s_62",
+        "source": "<abbr title='China Exclusive'></abbr> From events."
+    },
+    {
+        "name": "Stylish Straw Hat",
+        "imgSrc": "AvatarFrame_60",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass."
+    },
+    {
+        "name": "Stride",
+        "nameUnconfirmed": true,
+        "imgSrc": "AvatarFrame_s_59",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable in a pack during the Stride gum collab event."
+    },
+    {
+        "name": "Thoughts of Winter",
+        "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/",
+        "source": "From events."
+    },
+    {
         "name": "Wind Chaser",
         "imgSrc": "AvatarFrame_58",
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
@@ -10,9 +61,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event (Halloween?)."
     },
     {
-        "name": "Fishing Card",
+        "name": "Fisherman's Honor",
         "imgSrc": "AvatarFrame_55",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
+        "source": "Purchasable from the fishing shop."
     },
     {
         "name": "Cleaning Program",
@@ -22,20 +73,20 @@
     {
         "name": "Countdown",
         "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_gift",
-        "source": ""
+        "source": "Obtained from channels and events."
     },
     {
         "name": "Lovin' a Discount",
         "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_off",
-        "source": ""
+        "source": "Obtained from channels and events."
     },
     {
         "name": "Welcome to Vera",
         "imgSrc": "../../ResourcesOverSea/Icon/AvatarFrame/AvatarFrame_TX_steam",
-        "source": ""
+        "source": "Obtained from channels and events."
     },
     {
-        "name": "Night of Fun",
+        "name": "Trick... or Treat!",
         "imgSrc": "AvatarFrame_54",
         "source": "Obtained from gachapon during the Thorned Rose event."
     },
@@ -117,7 +168,7 @@
     {
         "name": "Dumpling Leaf Fragrance",
         "imgSrc": "AvatarFrame_37",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from an event."
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Fragrance event."
     },
     {
         "name": "Naughty Trails",
@@ -132,7 +183,7 @@
     {
         "name": "Nursery Rhyme",
         "imgSrc": "AvatarFrame_34",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from an event."
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event."
     },
     {
         "name": "Sweet Dreams",

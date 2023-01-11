@@ -15,7 +15,7 @@
     }
 </script>
 
-<tbody class="banner-table collapse" class:expanded>
+<tbody class="banner-table collapse" class:expanded aria-expanded={expanded}>
     <tr />
     <tr class="header">
         <th>#</th>

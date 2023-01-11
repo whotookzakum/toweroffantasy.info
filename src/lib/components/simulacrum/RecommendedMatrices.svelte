@@ -14,21 +14,26 @@
             {#each weapon.recommendedMatrices as matrix}
                 <tr>
                     <th>
-                        <a
-                            class="matrix-link"
-                            href={`/matrices/${matrix.name
-                                .toLowerCase()
-                                .replace(" ", "-")}`}
-                        >
-                            <img
-                                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
-                                alt={`${matrix.name} matrix`}
-                                width="128"
-                                height="128"
-                                loading="lazy"
-                            />
-                            <span>{matrix.name} <i>x{matrix.pieces}</i></span>
-                        </a>
+                        <div class="link-wrapper">
+                            <a
+                                class="matrix-link"
+                                href={`/matrices/${matrix.name
+                                    .toLowerCase()
+                                    .replace(" ", "-")}`}
+                            >
+                                <div class="img-wrapper">
+                                    <img
+                                        src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                                        alt={`${matrix.name} matrix`}
+                                        width="128"
+                                        height="128"
+                                        loading="lazy"
+                                    />
+                                    <i>x{matrix.pieces}</i>
+                                </div>
+                                <span>{matrix.name}</span>
+                            </a>
+                        </div>
                     </th>
                     <td>{matrix.description}</td>
                 </tr>
@@ -40,9 +45,12 @@
 <style lang="scss">
     .matrix-link {
         border: none;
-        position: relative;
         font-size: var(--step--1);
-        //
+        display: block;
+
+        .img-wrapper {
+            position: relative;
+        }
 
         img {
             margin-block: -1.25rem;

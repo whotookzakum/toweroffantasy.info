@@ -5,7 +5,8 @@
     // Can't put this component on each page because it doesn't work inside the grid, must be at root level
 
     const getImgSrc = (path) => {
-        if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/lan'
+        if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/Icarus'
+        if (path.includes("/icarus")) return 'huanxing/lihui/Icarus'
         if (path.includes("/lan")) return 'huanxing/lihui/lan'
         if (path.includes("/fenrir")) return 'huanxing/lihui/fenlier'
         if (path.includes("/umi")) return 'huanxing/lihui/wumi'

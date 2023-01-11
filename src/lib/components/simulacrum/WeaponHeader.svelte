@@ -4,7 +4,10 @@
     export let weapon;
 </script>
 
-<header class="full-bleed" style={`border-color: var(--element-${weapon.element})`}>
+<header
+    class="full-bleed"
+    style={`border-color: var(--element-${weapon.element})`}
+>
     <img
         src={`/images/Icon/weapon/Icon/${weapon.imgSrc}.png`}
         alt={weapon.name}
@@ -13,9 +16,9 @@
         loading="lazy"
     />
     <div class="weapon-info">
-        <div class="weapon-info-top">
+        <div class="weapon-name">
             <h3>{weapon.name}</h3>
-            <div class="base-stats-wrapper">
+            <div class="stats-wrapper">
                 {#each weapon.baseStats as stat}
                     <div class="stat">
                         <BaseStat {stat} />
@@ -64,7 +67,7 @@
     header {
         background: var(--surface2);
         box-shadow: 0 0 2px var(--surface-shadow);
-        padding: 0.5rem 1rem;
+        padding: 0.5rem var(--space-2xs-xs);
         display: grid;
         grid-template-columns: auto 1fr;
         gap: 0.5rem;
@@ -78,32 +81,28 @@
         gap: 0.5rem;
     }
 
-    .weapon-info-top {
+    .weapon-name {
         display: flex;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
         align-items: center;
 
         h3 {
             margin: 0;
             text-transform: unset;
         }
-    }
-
-    .base-stats-wrapper {
-        display: flex;
-        font-size: var(--step--1);
-        gap: 1rem;
-        color: var(--text2);
-        text-transform: uppercase;
 
         .stat {
-            gap: 0.25rem;
+            font-size: var(--step--1);
+            color: var(--text2);
+            text-transform: uppercase;
         }
     }
 
     .stats-wrapper {
         display: flex;
         flex-wrap: wrap;
+        gap: 0.5rem 1rem;
 
         .stat {
             flex: 1;

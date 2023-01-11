@@ -2,20 +2,8 @@
     import SvelteMarkdown from "svelte-markdown";
     import outfits from "$lib/data/cosmetics/outfits.json";
     import Ad from "$lib/components/Ad.svelte";
-    // {
     //     "name": "Absolute Order",
     //     "imgSrcs": ["fashion_f18", "fashion_m"],
-    //     "source": ""
-    // }
-
-    //     {
-    // "name": "Warm 'n Wonderful Winter Night",
-    // "imgSrcs": ["fashion_f", "fashion_m"],
-    // "source": "Obtained from gift packs."
-    // },
-
-    // Garuda looking outfit
-    // Floating Light/Floating Whispers Obtained from gachapon during the Glittering event.
 </script>
 
 <svelte:head>

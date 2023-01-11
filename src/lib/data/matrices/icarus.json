@@ -1,0 +1,17 @@
+{
+    "name": "Icarus",
+    "chinaOnly": true,
+    "id": 28,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR35_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "While equipped with Fractured Light/**2** different elements/**2** different weapon types, increase the damage of all elements by **12%/15%/18%/21%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "When dealing frost damage, increase the damage of all elements by **27%/31%/35%/39%** for **25** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        }
+    ]
+}
