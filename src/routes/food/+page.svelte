@@ -17,6 +17,8 @@
     let ingredients = ingredientsData;
     let filters = {};
 
+    const ICON_FILTER_PROPS = ["buffFilters", "recoveryFilters"];
+
     // Filters are AND, i.e. volt ATK && rarity 4
     // They are not OR, i.e. volt ATK || rarity 4
     $: if (filters.rarityFilters?.length) {
@@ -30,16 +32,15 @@
     $: dishes = dishes.filter((dish) =>
         satisfiesIconFilters({
             data: dish.icons,
-            filters,
-            filterProps: ["buffFilters", "recoveryFilters"]
+            filters
         })
     );
 
-    function satisfiesIconFilters({ data, filters, filterProps }) {
+    function satisfiesIconFilters({ data, filters }) {
         if (!data) return false;
 
         return match(true)
-            .all(...filterProps.map(dataMatchesFilters))
+            .all(...ICON_FILTER_PROPS.map(dataMatchesFilters))
             .toBoolean();
 
         function dataMatchesFilters(prop) {

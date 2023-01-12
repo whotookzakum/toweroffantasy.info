@@ -10,20 +10,20 @@
 
     export let data;
     let simulacra = data.items;
-
     let filters = {};
+
+    const FILTER_PROPS = ["type", "element"];
 
     $: simulacra = data.items.filter(({ weapon }) =>
         satisfiesFilters({
             data: weapon,
-            filters: filters.weapon,
-            filterProps: ["type", "element"]
+            filters: filters.weapon
         })
     );
 
-    function satisfiesFilters({ data, filters, filterProps }) {
+    function satisfiesFilters({ data, filters }) {
         return match(true)
-            .all(...filterProps.map(dataMatchesFilters))
+            .all(...FILTER_PROPS.map(dataMatchesFilters))
             .toBoolean();
 
         function dataMatchesFilters(prop) {
