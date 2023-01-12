@@ -96,7 +96,7 @@
         flex-direction: column-reverse;
         line-height: 1.2;
         margin-right: 1rem;
-        min-width: 16rem;
+        flex-basis: 16rem;
 
         h5 {
             font-size: var(--step-2);
@@ -116,6 +116,7 @@
         display: flex;
         align-items: center;
         color: var(--text2);
+        flex-wrap: wrap;
         gap: 0.5rem;
         user-select: none;
     }
