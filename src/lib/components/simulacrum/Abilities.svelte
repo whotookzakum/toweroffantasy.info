@@ -13,32 +13,32 @@
         <li>
             <details class="ability">
                 <summary>
+                    <img
+                        src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
+                        alt={ability.name}
+                        width="82"
+                        height="82"
+                        loading="lazy"
+                    />
                     <span class="skill-title-wrapper">
-                        <img
-                            src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
-                            alt={ability.name}
-                            width="82"
-                            height="82"
-                            loading="lazy"
-                        />
                         <span class="skill-title">
                             <h5>{ability.name}</h5>
                             <span>{ability.type}</span>
                         </span>
-                    </span>
-                    <span class="skill-inputs">
-                        {#if ability.input}
-                            {#each ability.input as input, index}
-                                <kbd class:hold={input.includes("hold:")}>
-                                    {input.includes("hold:")
-                                        ? input.split("hold:").pop()
-                                        : input}
-                                </kbd>
-                                <!-- {#if index < ability.input.length - 1}
-                                    <span>🡲</span>
-                                {/if} -->
-                            {/each}
-                        {/if}
+                        <span class="skill-inputs">
+                            {#if ability.input}
+                                {#each ability.input as input, index}
+                                    <kbd class:hold={input.includes("hold:")}>
+                                        {input.includes("hold:")
+                                            ? input.split("hold:").pop()
+                                            : input}
+                                    </kbd>
+                                    <!-- {#if index < ability.input.length - 1}
+                                        <span>🡲</span>
+                                    {/if} -->
+                                {/each}
+                            {/if}
+                        </span>
                     </span>
                 </summary>
                 <SvelteMarkdown source={ability.description} />
@@ -80,20 +80,23 @@
         display: flex;
         gap: 0 1rem;
         align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .skill-title-wrapper {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 0.5rem;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .skill-title {
         display: flex;
         flex-direction: column-reverse;
         line-height: 1.2;
+        margin-right: 1rem;
+        min-width: 16rem;
 
         h5 {
             font-size: var(--step-2);
@@ -115,7 +118,6 @@
         color: var(--text2);
         gap: 0.5rem;
         user-select: none;
-        margin-left: auto;
     }
 
     :global(.ability p) {
