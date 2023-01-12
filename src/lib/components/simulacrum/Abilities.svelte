@@ -25,7 +25,7 @@
                             <h5>{ability.name}</h5>
                             <span>{ability.type}</span>
                         </span>
-                        <span class="skill-inputs">
+                        <kbd class="skill-inputs">
                             {#if ability.input}
                                 {#each ability.input as input, index}
                                     <kbd class:hold={input.includes("hold:")}>
@@ -38,7 +38,7 @@
                                     {/if} -->
                                 {/each}
                             {/if}
-                        </span>
+                        </kbd>
                     </span>
                 </summary>
                 <SvelteMarkdown source={ability.description} />
