@@ -17,31 +17,46 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         font-size: var(--step--2);
-        gap: var(--gap);
         z-index: 0;
         user-select: none;
         box-shadow: 0 2px 4px var(--surface-shadow);
-
-        &:focus-within,
-        &:active {
-            outline: 2px solid white;
-        }
 
         label {
             cursor: pointer;
             display: block;
             text-align: center;
             line-height: 2.25rem;
+            padding: 0 calc(var(--gap) / 2);
+            position: relative;
             white-space: nowrap;
             width: 4.75rem;
 
             &:first-of-type {
                 padding-left: calc(var(--inset) + var(--gap) / 2);
+
+                &::before {
+                    right: 0;
+                }
             }
 
             &:last-of-type {
                 padding-right: calc(var(--inset) + var(--gap) / 2);
+
+                &::before {
+                    left: 0;
+                }
             }
+
+            &::before {
+                content: "";
+                inset: var(--inset);
+                outline-offset: var(--inset);
+                position: absolute;
+            }
+        }
+
+        input:focus-visible + label::before {
+            outline: 2px solid white;
         }
 
         input:checked + label {

@@ -35,7 +35,7 @@
         background: var(--surface3);
     }
 
-    label :global(input:focus + *) {
+    label :global(input:focus-visible + *) {
         outline: 2px solid white;
     }
 
