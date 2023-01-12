@@ -4,33 +4,32 @@
     import MenuItem from "$lib/components/MenuItem.svelte";
     import Avatar from "$lib/components/simulacrum/Avatar.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    import SimulacrumFilters from "$lib/components/simulacrum/SimulacrumFilters.svelte";
+    import SimulacrumFilters, {
+        filters
+    } from "$lib/components/simulacrum/SimulacrumFilters.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
 
     export let data;
     let simulacra = data.items;
 
-    let filters = {};
+    $: {
+        $filters.weapon = $filters.weapon; // allows satisfiesFilters to access updated nested object
+        simulacra = data.items.filter(({ weapon }) =>
+            satisfiesFilters(weapon, "type", "element")
+        );
+    }
 
-    $: simulacra = data.items.filter(({ weapon }) =>
-        satisfiesFilters({
-            data: weapon,
-            filters: filters.weapon,
-            filterProps: ["type", "element"]
-        })
-    );
-
-    function satisfiesFilters({ data, filters, filterProps }) {
+    function satisfiesFilters(item, ...filterProps) {
         return match(true)
-            .all(...filterProps.map(dataMatchesFilters))
+            .all(...filterProps.map(itemMatchesFilter))
             .toBoolean();
 
-        function dataMatchesFilters(prop) {
-            const isFiltersClear = !filters?.[prop].length;
-            if (isFiltersClear) return true;
+        function itemMatchesFilter(prop) {
+            const isFilterUnset = !$filters.weapon[prop].length;
+            if (isFilterUnset) return true;
 
-            const isMatches = filters?.[prop].includes(data[prop]);
+            const isMatches = $filters.weapon[prop].includes(item[prop]);
             return isMatches;
         }
     }
@@ -85,7 +84,7 @@
     passive effect. Their associated matrices must be obtained separately.
 </p>
 
-<SimulacrumFilters bind:filters />
+<SimulacrumFilters />
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
@@ -94,7 +93,7 @@
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
-            {#if filters.showWeapon}
+            {#if $filters.display === "Weapon"}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
                     alt={simulacrum.weapon.name}
@@ -122,7 +121,7 @@
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SR") as simulacrum}
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
-            {#if filters.showWeapon}
+            {#if $filters.display === "Weapon"}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
                     alt={simulacrum.weapon.name}

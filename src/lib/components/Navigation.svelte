@@ -70,7 +70,7 @@
         <a class="home-link" href="/">
             <img
                 src="/images/mia.png"
-                style="padding: 0.5rem"
+                style="margin: 0.5rem"
                 alt="Logo"
                 width="128"
                 height="128"

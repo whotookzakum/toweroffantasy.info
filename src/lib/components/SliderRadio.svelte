@@ -9,15 +9,16 @@
 
 <style global lang="scss">
     .slider-radio {
+        --inset: 3px;
+        --gap: 0.5rem;
         width: fit-content;
         background: var(--surface2);
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         font-size: var(--step--2);
+        gap: var(--gap);
         z-index: 0;
-        gap: 0.5rem;
-        padding: 0.5rem 0.4rem;
         user-select: none;
         box-shadow: 0 2px 4px var(--surface-shadow);
 
@@ -26,18 +27,21 @@
             outline: 2px solid white;
         }
 
-        input[type="radio"],
-        input[type="radio"]:checked {
-            appearance: none;
-            position: fixed;
-            opacity: 0;
-            pointer-events: none;
-        }
-
         label {
+            cursor: pointer;
+            display: block;
             text-align: center;
-            width: 8ch;
-            transition: all 0.2s ease;
+            line-height: 2.25rem;
+            white-space: nowrap;
+            width: 4.75rem;
+
+            &:first-of-type {
+                padding-left: calc(var(--inset) + var(--gap) / 2);
+            }
+
+            &:last-of-type {
+                padding-right: calc(var(--inset) + var(--gap) / 2);
+            }
         }
 
         input:checked + label {
@@ -51,17 +55,17 @@
             position: absolute;
             z-index: -1;
             background: var(--surface3);
-            top: 3px;
-            left: 3px;
-            width: calc(50% - 8px);
-            height: calc(100% - 8px);
+            top: var(--inset);
+            left: var(--inset);
+            width: calc(50% - var(--inset));
+            height: calc(100% - var(--inset) * 2);
             box-shadow: 0 1px 2px var(--surface-shadow);
-            transition: all 0.2s ease;
+            transition: transform 0.2s ease;
             border: 1px solid var(--accent);
         }
 
         input:nth-of-type(2):checked ~ .slider {
-            transform: translateX(calc(99% + 6px));
+            transform: translateX(100%);
         }
     }
 

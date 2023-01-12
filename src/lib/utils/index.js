@@ -125,6 +125,8 @@ export const fetchAllMatrices = async () => {
 
 export const propExists = (prop, obj) => Boolean(typeof obj === "object" && prop in obj);
 
+export const pipe = (...x) => (...fns) => fns.reduce((a, b) => b(a), ...x);
+
 export const match = (initialValue) => {
     const bool = Boolean(initialValue);
 

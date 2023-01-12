@@ -3,6 +3,7 @@
 @import './colors';
 
 *, *::before, *::after {
+    box-sizing: border-box;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -42,10 +43,38 @@ button, summary {
     cursor: pointer;
 }
 
+img {
+    display: block;
+}
+
+table p {
+    min-width: 16rem;
+}
+
 .full-bleed,
 .table-wrapper,
 figure {
     grid-column: 1/-1 !important;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .anchorjs-link {

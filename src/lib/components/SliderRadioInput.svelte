@@ -3,6 +3,7 @@
 </script>
 
 <input
+    class="visually-hidden"
     type="radio"
     id={`${name}-${value}`}
     {name}

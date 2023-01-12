@@ -1,11 +1,13 @@
 <script>
-    import { match } from "$lib/utils/";
+    import { pipe, match } from "$lib/utils/";
     import ingredientsData from "$lib/data/food/ingredients.json";
     import dishesData from "$lib/data/food/dishes.json";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
-    import FoodFilters from "$lib/components/food/FoodFilters.svelte";
+    import FoodFilters, {
+        filters
+    } from "$lib/components/food/FoodFilters.svelte";
     import Ad from "$lib/components/Ad.svelte";
 
     onMount(() => {
@@ -15,39 +17,38 @@
 
     let dishes = dishesData;
     let ingredients = ingredientsData;
-    let filters = {};
 
     // Filters are AND, i.e. volt ATK && rarity 4
     // They are not OR, i.e. volt ATK || rarity 4
-    $: if (filters.rarityFilters?.length) {
-        dishes = dishesData.filter((dish) =>
-            filters.rarityFilters.includes(dish.rarity)
-        );
-    } else {
-        dishes = dishesData;
+    $: {
+        dishes = pipe(dishesData)(filterByRarity, filterByIcons);
+
+        function filterByRarity(data) {
+            return $filters.rarity?.length
+                ? data.filter((dish) => $filters.rarity.includes(dish.rarity))
+                : data;
+        }
+
+        function filterByIcons(data) {
+            return data.filter((dish) =>
+                satisfiesIconFilters(dish.icons, "buff", "recovery")
+            );
+        }
     }
 
-    $: dishes = dishes.filter((dish) =>
-        satisfiesIconFilters({
-            data: dish.icons,
-            filters,
-            filterProps: ["buffFilters", "recoveryFilters"]
-        })
-    );
-
-    function satisfiesIconFilters({ data, filters, filterProps }) {
-        if (!data) return false;
+    function satisfiesIconFilters(item, ...filterProps) {
+        if (!item) return false;
 
         return match(true)
-            .all(...filterProps.map(dataMatchesFilters))
+            .all(...filterProps.map(itemMatchesFilter))
             .toBoolean();
 
-        function dataMatchesFilters(prop) {
-            const isFiltersClear = !filters[prop]?.length;
-            if (isFiltersClear) return true;
+        function itemMatchesFilter(prop) {
+            const isFilterUnset = !$filters[prop].length;
+            if (isFilterUnset) return true;
 
-            const isMatches = filters[prop].some((filterSelection) =>
-                data.includes(filterSelection)
+            const isMatches = $filters[prop].some((filterSelection) =>
+                item.includes(filterSelection)
             );
             return isMatches;
         }
@@ -101,7 +102,7 @@
     rate!
 </p>
 
-<FoodFilters bind:filters />
+<FoodFilters />
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
