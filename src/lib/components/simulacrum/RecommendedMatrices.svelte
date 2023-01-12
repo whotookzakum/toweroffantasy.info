@@ -16,25 +16,22 @@
             {#each weapon.recommendedMatrices as matrix}
                 <tr>
                     <th>
-                        <div class="link-wrapper">
+                        <div class="matrix-link">
+                            <div class="img-wrapper">
+                                <img
+                                    src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                                    alt={`${matrix.name} matrix`}
+                                    width="128"
+                                    height="128"
+                                    loading="lazy"
+                                />
+                                <i>×{matrix.pieces}</i>
+                            </div>
                             <a
-                                class="matrix-link"
                                 href={`/matrices/${matrix.name
                                     .toLowerCase()
-                                    .replace(" ", "-")}`}
+                                    .replace(" ", "-")}`}>{matrix.name}</a
                             >
-                                <div class="img-wrapper">
-                                    <img
-                                        src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
-                                        alt={`${matrix.name} matrix`}
-                                        width="128"
-                                        height="128"
-                                        loading="lazy"
-                                    />
-                                    <i>x{matrix.pieces}</i>
-                                </div>
-                                <span>{matrix.name}</span>
-                            </a>
                         </div>
                     </th>
                     <td>{matrix.description}</td>
@@ -45,35 +42,54 @@
 </div>
 
 <style lang="scss">
+    thead th:first-of-type {
+        text-align: center;
+    }
+
     .matrix-link {
         border: none;
         font-size: var(--step--1);
         display: block;
+        text-align: center;
+        position: relative;
 
         .img-wrapper {
+            align-items: center;
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            overflow: hidden;
+            overflow: -moz-hidden-unscrollable;
+            overflow: clip;
             position: relative;
+            width: 100px;
         }
 
-        img {
-            margin-block: -1.25rem;
-        }
-
-        span {
+        a {
             border-bottom: 0.2em solid var(--accent);
             text-transform: none;
+
+            &::before {
+                content: "";
+                inset: 0;
+                position: absolute;
+            }
         }
 
         i {
-            text-transform: uppercase;
             position: absolute;
-            right: 0.5rem;
-            bottom: 0.5rem;
+            right: 4px;
+            bottom: 4px;
             line-height: 1;
             font-style: normal;
             font-weight: 700;
-            text-shadow: 0 1px 3px black;
-            font-size: var(--step-1);
+            text-shadow: -1px -1px 0 #0d0f1c, 0 -1px 0 #0d0f1c,
+                1px -1px 0 #0d0f1c, 1px 0 0 #0d0f1c, 1px 1px 0 #0d0f1c,
+                0 1px 0 #0d0f1c, -1px 1px 0 #0d0f1c, -1px 0 0 #0d0f1c,
+                0 0 0.3rem rgb(0 0 0 / 60%);
+            font-size: var(--step-2);
             color: white;
+            white-space: nowrap;
         }
     }
 

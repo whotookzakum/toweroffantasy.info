@@ -83,6 +83,10 @@
 </div>
 
 <style lang="scss">
+    thead th:first-of-type {
+        text-align: center;
+    }
+
     tr {
         content-visibility: auto;
         contain-intrinsic-size: 0 153px;

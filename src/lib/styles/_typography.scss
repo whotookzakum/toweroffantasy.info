@@ -142,7 +142,8 @@ table {
 
     th,
     td {
-        padding: var(--space-3xs-2xs);
+        text-align: left;
+        padding: var(--space-3xs-2xs) var(--space-2xs-xs);
     }
 
     thead,
@@ -156,6 +157,7 @@ table {
 
     p {
         margin: 0;
+        min-width: 16rem;
     }
 
     &.bg-alternate {
@@ -212,7 +214,7 @@ caption {
     text-align: center;
 }
 
-details>*:not(summary):first-of-type {
+details > *:not(summary):first-of-type {
     margin-block-start: 1rem;
 }
 
@@ -309,7 +311,7 @@ h6 {
 ol,
 ul,
 dl,
-dl>div {
+dl > div {
     display: grid;
     gap: 1rem;
 }
