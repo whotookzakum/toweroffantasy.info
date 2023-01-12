@@ -11,6 +11,7 @@
     .slider-radio {
         --inset: 3px;
         --gap: 0.5rem;
+        --label-width: 5rem;
         width: fit-content;
         background: var(--surface2);
         position: relative;
@@ -29,7 +30,7 @@
             padding: 0 calc(var(--gap) / 2);
             position: relative;
             white-space: nowrap;
-            width: 4.75rem;
+            width: var(--label-width);
 
             &:first-of-type {
                 padding-left: calc(var(--inset) + var(--gap) / 2);
