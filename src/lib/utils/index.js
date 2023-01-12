@@ -125,7 +125,7 @@ export const fetchAllMatrices = async () => {
 
 export const propExists = (prop, obj) => Boolean(typeof obj === "object" && prop in obj);
 
-export const match = (initialValue = true) => {
+export const match = (initialValue) => {
     const bool = Boolean(initialValue);
 
     return {
@@ -134,7 +134,7 @@ export const match = (initialValue = true) => {
             return match(bool && conditions.reduce((a, b) => Boolean(a && b)));
         },
         some: (...conditions) =>
-            match(bool || conditions.reduce((a, b) => Boolean(a || b))),
+            match(conditions.reduce((a, b) => Boolean(a || b))),
         none: (...conditions) => match(!bool && !conditions.reduce((a, b) => Boolean(a && b))),
         then: (f) => {
             if (bool) f();

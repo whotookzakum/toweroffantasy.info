@@ -22,7 +22,7 @@
     );
 
     function satisfiesFilters({ data, filters, filterProps }) {
-        return match()
+        return match(true)
             .all(...filterProps.map(dataMatchesFilters))
             .toBoolean();
 

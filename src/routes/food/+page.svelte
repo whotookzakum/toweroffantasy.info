@@ -38,7 +38,7 @@
     function satisfiesIconFilters({ data, filters, filterProps }) {
         if (!data) return false;
 
-        return match()
+        return match(true)
             .all(...filterProps.map(dataMatchesFilters))
             .toBoolean();
 
