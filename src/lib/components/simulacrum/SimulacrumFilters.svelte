@@ -27,7 +27,7 @@
     }
 </script>
 
-<Filter on:reset={resetFilters}>
+<Filter controls="ssr sr" on:reset={resetFilters}>
     <fieldset>
         <legend class="section-header">Display</legend>
         <SliderRadio inset>

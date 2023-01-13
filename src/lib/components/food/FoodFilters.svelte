@@ -33,7 +33,7 @@
     }
 </script>
 
-<Filter on:reset={resetFilters}>
+<Filter controls="dishes-table" on:reset={resetFilters}>
     <fieldset>
         <legend class="section-header">Rarity</legend>
         <FilterGroup filtered={Boolean($filters.rarity.length)}>

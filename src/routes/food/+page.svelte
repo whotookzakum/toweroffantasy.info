@@ -3,6 +3,7 @@
     import ingredientsData from "$lib/data/food/ingredients.json";
     import dishesData from "$lib/data/food/dishes.json";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
+    import DishesTable from "$lib/components/food/DishesTable.svelte";
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
     import FoodFilters, {
@@ -15,16 +16,14 @@
         anchors.add("h3");
     });
 
-    let dishes = dishesData;
+    let dishes;
     let ingredients = ingredientsData;
-    let loading = false;
+    let loading = true;
 
     // Filters are AND, i.e. volt ATK && rarity 4
     // They are not OR, i.e. volt ATK || rarity 4
     $: {
-        loading = true;
-
-        setTimeout(function updateDishes() {
+        setTimeout(() => {
             dishes = pipe(dishesData)(filterByRarity, filterByIcons);
             loading = false;
         }, 0);
@@ -114,9 +113,9 @@
 <Ad unit="mobile_mpu1" />
 
 <h2 id="dishes">Dishes</h2>
-{#await import("$lib/components/food/DishesTable.svelte") then { default: DishesTable }}
-    <DishesTable {dishes} {loading} />
-{/await}
+<DishesTable {dishes} {loading} />
+<!-- {#await import("$lib/components/food/DishesTable.svelte") then { default: DishesTable }}
+{/await} -->
 
 <Ad unit="lb3" />
 <Ad unit="mobile_mpu2" />

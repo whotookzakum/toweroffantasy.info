@@ -1,8 +1,9 @@
 <script>
+    export let controls = false;
     export let reset = true;
 </script>
 
-<form on:reset|preventDefault>
+<form aria-controls={controls} on:reset|preventDefault>
     <header>
         <h2>Filters</h2>
         {#if reset}
