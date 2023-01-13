@@ -17,11 +17,17 @@
 
     let dishes = dishesData;
     let ingredients = ingredientsData;
+    let loading = false;
 
     // Filters are AND, i.e. volt ATK && rarity 4
     // They are not OR, i.e. volt ATK || rarity 4
     $: {
-        dishes = pipe(dishesData)(filterByRarity, filterByIcons);
+        loading = true;
+
+        setTimeout(function updateDishes() {
+            dishes = pipe(dishesData)(filterByRarity, filterByIcons);
+            loading = false;
+        }, 0);
 
         function filterByRarity(data) {
             return $filters.rarity?.length
@@ -109,7 +115,7 @@
 
 <h2 id="dishes">Dishes</h2>
 {#await import("$lib/components/food/DishesTable.svelte") then { default: DishesTable }}
-    <DishesTable {dishes} />
+    <DishesTable {dishes} {loading} />
 {/await}
 
 <Ad unit="lb3" />

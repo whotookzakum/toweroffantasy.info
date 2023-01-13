@@ -5,6 +5,7 @@
     import INGREDIENTS from "$lib/data/food/ingredients.json";
 
     export let dishes;
+    export let loading = false;
 
     function getIngredientData(input) {
         return INGREDIENTS.find((i) => i.name === input);
@@ -12,7 +13,7 @@
 </script>
 
 <div class="table-wrapper">
-    <table class="dishes-table bg-alternate">
+    <table class="dishes-table bg-alternate" data-loading={loading}>
         <thead>
             <th>Item</th>
             <th>Effect</th>
@@ -83,6 +84,14 @@
 </div>
 
 <style lang="scss">
+    table {
+        transition-delay: 0.1s;
+    }
+
+    [data-loading="true"] {
+        opacity: 0.25;
+    }
+
     thead th:first-of-type {
         text-align: center;
     }
