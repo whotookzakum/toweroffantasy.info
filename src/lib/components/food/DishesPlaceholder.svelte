@@ -11,7 +11,7 @@
         <div class="img-and-name">
             <div class="placeholder icon" />
             <div class="h3">
-                {#each [...Array(nameLength)] as n}
+                {#each [...Array(nameLength)] as _}
                     <span class="placeholder text" />
                 {/each}
             </div>
@@ -19,13 +19,13 @@
     </td>
     <td>
         <div class="copy">
-            {#each [...Array(effects)] as n}
+            {#each [...Array(effects)] as _}
                 <div class="placeholder text" />
             {/each}
         </div>
     </td>
     <td class="stack">
-        {#each [...Array(ingredients)] as n}
+        {#each [...Array(ingredients)] as _}
             <div class="flex">
                 <span class="placeholder icon small" />
                 <span class="text space" />

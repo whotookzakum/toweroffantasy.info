@@ -27,7 +27,7 @@
         </thead>
         <tbody>
             {#if loading}
-                {#each [...Array(10)] as n, i}
+                {#each [...Array(10)] as _, i}
                     <DishesPlaceholder
                         effects={i % 2 ? 3 : 2}
                         ingredients={i % 2 ? 3 : 2}
