@@ -1,5 +1,4 @@
 <script>
-    import { match } from "$lib/utils/";
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
     import Avatar from "$lib/components/simulacrum/Avatar.svelte";
@@ -14,24 +13,20 @@
     let simulacra = data.items;
 
     $: {
-        $filters.weapon = $filters.weapon; // allows satisfiesFilters to access updated nested object
-        simulacra = data.items.filter(({ weapon }) =>
-            satisfiesFilters(weapon, "type", "element")
-        );
+        simulacra = data.items
+            .filter(filterBy("type"))
+            .filter(filterBy("element"));
+
+        function filterBy(prop) {
+            return (item) => {
+                if (isFilterUnset(prop)) return true;
+                return $filters.weapon[prop].includes(item.weapon[prop]);
+            };
+        }
     }
 
-    function satisfiesFilters(item, ...filterProps) {
-        return match(true)
-            .all(...filterProps.map(itemMatchesFilter))
-            .toBoolean();
-
-        function itemMatchesFilter(prop) {
-            const isFilterUnset = !$filters.weapon[prop].length;
-            if (isFilterUnset) return true;
-
-            const isMatches = $filters.weapon[prop].includes(item[prop]);
-            return isMatches;
-        }
+    function isFilterUnset(prop) {
+        return Boolean(!$filters.weapon[prop].length);
     }
 
     // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions

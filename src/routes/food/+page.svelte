@@ -1,5 +1,4 @@
 <script>
-    import { pipe, match } from "$lib/utils/";
     import ingredientsData from "$lib/data/food/ingredients.json";
     import dishesData from "$lib/data/food/dishes.json";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
@@ -24,39 +23,30 @@
     // They are not OR, i.e. volt ATK || rarity 4
     $: {
         setTimeout(() => {
-            dishes = pipe(dishesData)(filterByRarity, filterByIcons);
+            dishes = dishesData
+                .filter(filterByRarity)
+                .filter(filterByIcon("buff"))
+                .filter(filterByIcon("recovery"));
             loading = false;
         }, 0);
 
-        function filterByRarity(data) {
-            return $filters.rarity?.length
-                ? data.filter((dish) => $filters.rarity.includes(dish.rarity))
-                : data;
+        function filterByRarity(item) {
+            if (isFilterUnset("rarity")) return true;
+            return $filters.rarity.includes(item.rarity);
         }
 
-        function filterByIcons(data) {
-            return data.filter((dish) =>
-                satisfiesIconFilters(dish.icons, "buff", "recovery")
-            );
+        function filterByIcon(icon) {
+            return (item) => {
+                if (isFilterUnset(icon)) return true;
+                return $filters[icon].some((icon) =>
+                    item.icons?.includes(icon)
+                );
+            };
         }
     }
 
-    function satisfiesIconFilters(item, ...filterProps) {
-        if (!item) return false;
-
-        return match(true)
-            .all(...filterProps.map(itemMatchesFilter))
-            .toBoolean();
-
-        function itemMatchesFilter(prop) {
-            const isFilterUnset = !$filters[prop].length;
-            if (isFilterUnset) return true;
-
-            const isMatches = $filters[prop].some((filterSelection) =>
-                item.includes(filterSelection)
-            );
-            return isMatches;
-        }
+    function isFilterUnset(prop) {
+        return Boolean(!$filters[prop].length);
     }
 
     // $: if (filters.buffFilters && filters.buffFilters.length > 0) {

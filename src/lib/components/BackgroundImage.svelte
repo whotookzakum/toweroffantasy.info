@@ -2,8 +2,8 @@
     import { page } from "$app/stores";
     import { afterNavigate, beforeNavigate } from "$app/navigation";
     import { onMount } from "svelte";
-    import { propExists } from "$lib/utils/";
     import BG_IMAGES from "$lib/data/backgroundImages.json";
+    import { append } from "svelte/internal";
 
     // Stores are laggy and update late
     // Can't put this component on each page because it doesn't work inside the grid, must be at root level
@@ -55,19 +55,19 @@
             );
 
         function loadImg(src = newImg.src, { style = toImgSrc } = {}) {
-            const appendSrc = () => {
-                img.src = "";
-                img.src = src;
-                img.style = getImgCSSRules(style);
-                loadingState = "load";
-            };
-
             if (animating) {
-                img.addEventListener("animationend", () => appendSrc(), {
+                img.addEventListener("animationend", appendSrc, {
                     once: true
                 });
             } else {
                 appendSrc();
+            }
+
+            function appendSrc() {
+                img.src = "";
+                img.src = src;
+                img.style = getImgCSSRules(style);
+                loadingState = "load";
             }
         }
     });
@@ -117,6 +117,10 @@
                     .join(" ")
             )
             .join(" ");
+    }
+
+    function propExists(prop, obj) {
+        return Boolean(typeof obj === "object" && prop in obj);
     }
 </script>
 
