@@ -19,14 +19,10 @@
 
         function filterBy(prop) {
             return (item) => {
-                if (isFilterUnset(prop)) return true;
+                if (!$filters.weapon[prop].length) return true;
                 return $filters.weapon[prop].includes(item.weapon[prop]);
             };
         }
-    }
-
-    function isFilterUnset(prop) {
-        return Boolean(!$filters.weapon[prop].length);
     }
 
     // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions

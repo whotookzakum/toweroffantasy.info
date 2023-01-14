@@ -31,22 +31,18 @@
         }, 0);
 
         function filterByRarity(item) {
-            if (isFilterUnset("rarity")) return true;
+            if (!$filters.rarity.length) return true;
             return $filters.rarity.includes(item.rarity);
         }
 
         function filterByIcon(icon) {
             return (item) => {
-                if (isFilterUnset(icon)) return true;
+                if (!$filters[icon].length) return true;
                 return $filters[icon].some((icon) =>
                     item.icons?.includes(icon)
                 );
             };
         }
-    }
-
-    function isFilterUnset(prop) {
-        return Boolean(!$filters[prop].length);
     }
 
     // $: if (filters.buffFilters && filters.buffFilters.length > 0) {
