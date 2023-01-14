@@ -3,7 +3,6 @@
     import { afterNavigate, beforeNavigate } from "$app/navigation";
     import { onMount } from "svelte";
     import BG_IMAGES from "$lib/data/backgroundImages.json";
-    import { append } from "svelte/internal";
 
     // Stores are laggy and update late
     // Can't put this component on each page because it doesn't work inside the grid, must be at root level
