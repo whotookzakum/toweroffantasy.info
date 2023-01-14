@@ -4,20 +4,21 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import DishesTable from "$lib/components/food/DishesTable.svelte";
     import { onMount } from "svelte";
+    import { page } from "$app/stores";
     import AnchorJS from "anchor-js";
     import FoodFilters, {
         filters
     } from "$lib/components/food/FoodFilters.svelte";
     import Ad from "$lib/components/Ad.svelte";
 
+    let dishes;
+    let ingredients = ingredientsData;
+    let loading = true;
+
     onMount(() => {
         const anchors = new AnchorJS();
         anchors.add("h3");
     });
-
-    let dishes;
-    let ingredients = ingredientsData;
-    let loading = true;
 
     // Filters are AND, i.e. volt ATK && rarity 4
     // They are not OR, i.e. volt ATK || rarity 4
@@ -60,6 +61,14 @@
     //             dish.icons.some((t) => filters.recoveryFilters.includes(t))
     //     );
     // }
+
+    function scrollToIngredient() {
+        try {
+            document.querySelector($page.url.hash).scrollIntoView();
+        } catch {
+            return;
+        }
+    }
 </script>
 
 <svelte:head>
@@ -100,13 +109,11 @@
 
 <h2 id="dishes">Dishes</h2>
 <DishesTable {dishes} {loading} />
-<!-- {#await import("$lib/components/food/DishesTable.svelte") then { default: DishesTable }}
-{/await} -->
 
 <Ad unit="lb3" />
 <Ad unit="mobile_mpu2" />
 
 <h2 id="ingredients">Ingredients</h2>
 {#await import("$lib/components/food/IngredientsTable.svelte") then { default: IngredientsTable }}
-    <IngredientsTable {ingredients} />
+    <IngredientsTable {ingredients} on:mount={scrollToIngredient} />
 {/await}
