@@ -233,6 +233,7 @@
         "name": "Goggle Hairband",
         "nameUnconfirmed": true,
         "imgSrc": "fashion_icon_shipin_02",
-        "source": "Available by default."
+        "source": "Available by default.",
+        "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start="
     }
 ]

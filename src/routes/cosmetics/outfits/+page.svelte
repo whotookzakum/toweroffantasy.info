@@ -4,6 +4,18 @@
     import Ad from "$lib/components/Ad.svelte";
     //     "name": "Absolute Order",
     //     "imgSrcs": ["fashion_f18", "fashion_m"],
+    // {
+    //     "name": "New Year Outfit",
+    //     "imgSrcs": ["fashion_f", "fashion_m"],
+    //     "source": "Obtained from gachapon during the event (Lunar New Year).",
+    //     "videoSrc": "https://www.youtube.com/embed/iig3osE_r6s?start=10"
+    // },
+    // {
+    //     "name": "Magic Purple",
+    //     "imgSrcs": ["fashion_f", "fashion_m"],
+    //     "source": "Obtained by purchasing the 10th Collector's Edition Pass.",
+    //     "videoSrc": "https://www.youtube.com/embed/iig3osE_r6s"
+    // },
 </script>
 
 <svelte:head>
