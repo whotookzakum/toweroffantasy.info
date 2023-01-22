@@ -2,16 +2,19 @@
     {
         "name": "Overlooker",
         "imgSrc": "Overlooker",
-        "source": "<abbr title='China Exclusive'></abbr> Given as a gift for the 1-Year Anniversary."
+        "source": "<abbr title='China Exclusive'></abbr> Given as a gift for the 1-Year Anniversary.",
+        "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=359"
     },
     {
         "name": "Orion",
         "imgSrc": "glider_2",
-        "source": "Available to everyone for reaching a certain number of preregistrations."
+        "source": "Available to everyone for reaching a certain number of preregistrations.",
+        "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=353"
     },
     {
         "name": "Jetpack",
         "imgSrc": "gilder_1",
-        "source": "Available by default."
+        "source": "Available by default.",
+        "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=350"
     }
 ]

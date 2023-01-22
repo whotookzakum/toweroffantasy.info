@@ -220,6 +220,18 @@ details>*:not(summary):first-of-type {
     outline-color: var(--brand);
 }
 
+blockquote {
+    background: var(--surface2);
+    padding: var(--space-xs);
+    margin: var(--space-m) 0;
+    border-left: 3px solid var(--accent);
+    color: var(--accent);
+
+    p {
+        margin: 0;
+    }
+}
+
 kbd {
     --key-color: #313146;
     --key-size: 2em;
@@ -300,6 +312,11 @@ h6 {
     display: block;
     width: 100%;
     margin-bottom: 0.2rem;
+}
+
+img[src*="guides"] {
+    max-width: 100%;
+    grid-column: 1 / -1;
 }
 
 // ======================================================================

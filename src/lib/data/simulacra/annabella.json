@@ -1,7 +1,6 @@
 {
     "name": "Annabella",
     "id": 26,
-    "chinaOnly": true,
     "cnName": "annabeila",
     "rarity": "SSR",
     "banners": {
@@ -34,11 +33,11 @@
     "traits": [
         {
             "affinity": 1200,
-            "description": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **10%** for **20** seconds, stacks **2** times."
+            "description": "For every **1** enemy hit by Gas Explosion, increase Clover Cross's damage by **8%** for **20** seconds, stacking up to **2** times."
         },
         {
             "affinity": 4000,
-            "description": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
+            "description": "For every **1** enemy hit by Gas Explosion, increase Clover Cross's damage by **15%** for **20** seconds, stacking up to **2** times."
         }
     ],
     "giftTypes": [
@@ -75,8 +74,8 @@
     "horoscope": "Taurus",
     "birthday": "28 April",
     "voiceActors": {
-        "jp": "",
-        "en": "",
+        "jp": "黒沢ともよ (Tomoyo Kurosawa)",
+        "en": "Risa Mei",
         "cn": "洪海天"
     }
 }

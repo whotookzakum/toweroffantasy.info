@@ -1,11 +1,11 @@
 {
-    "name": "Cross Sniper",
+    "name": "Clover Cross",
     "imgSrc": "item_Weapon_SSR_Snipe_fire01",
     "element": "flame",
     "type": "dps",
     "shatter": {
         "tier": "S",
-        "value": "12.00"
+        "value": "12.50"
     },
     "charge": {
         "tier": "A",
@@ -23,21 +23,17 @@
     ],
     "weaponEffects": [
         {
-            "title": "Flame Reaction",
-            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
-        },
-        {
-            "title": "Peace of Mind",
-            "description": "Using Cross Sniper's skill, discharge, charged attack, or dodge increases Cross Sniper's final crit rate by **5%** for **15** seconds. Stacks up to **3** times. If crit rate exceeds **100%**, **50%** of the excess crit rate is converted to crit damage (up to **7.5%**)."
+            "title": "Flame Resonance",
+            "description": "Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
         }
     ],
     "advancements": [
-        "Hitting the target **2** times with Scoped Shot will create an **optical space** at the target location for **12** seconds. Enemies within the space will trigger a detonation and then automatically trigger 2 detonations. When enemies leave the space, their movement speed is reduced by **80%** for **5** seconds, cooldown **12** seconds.\n\nEnemies targeted by the Scoped Shot shot will be scared for **1.5** seconds, reducing their attack speed and movement speed by **80%**, cooldown **4** seconds.",
+        "Hitting a target **2** times with Cross Snipe creates an **Optical Space** for **12** seconds at the target location. After an enemy in the Optical Space triggers burn tally, burn tally will be triggered an additional **2** times. When an enemy leaves the Optical Space, their speed is reduced by **80%** for **2.5** seconds. Cooldown: **12** seconds.\n\nTargets of Cross Snipe will be terrified (speed is slowed by **80%**) for **1.5** seconds. Cooldown: **4** seconds.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "After a critical hit by Scoped Shot, recover **50%** of damage dealt as HP (up to **15%** of Max HP) and gain **50** weapon charge.\n\nPeace of Mind: each stack increases final crit rate by **9%** (up to **27%**), and maximum crit damage conversion is **13.5%**.",
+        "After Cross Snipe lands a critical hit, recover HP equal to **50%** of the damage deal (not exceeding **15%** of own Max HP and not including damage from Gas Explosion), and **50** weapon charge.\n\nEach stack of Tranquil Heart increases final crit rate to **6%**, up to **18%**, and converts up to **9%** of crit damage.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "**Violent Bullet Enhancement** - Enhanced Scorch state increases the target's scorching damage to **30%**.\n\n**Deception Magic Bullet Enhancement** - Gas detonation damage ignores the target's flame resistance by **30%**.",
-        "Increase Scoped Shot's damage by **20%**."
+        "**Ruthless Bomb** Enhancement: While in the Burn Enhancement state, burn damage dealt to targets is increased to **30%**.\n\n**Deceitful Bomb** Enhancement: Gas explosion damage ignores **30%** of the target's flame resistance.",
+        "Increase damage dealt by Cross Snipe by an additional **12%**."
     ],
     "abilities": [
         {
@@ -47,34 +43,34 @@
             "input": [
                 "Attack x3"
             ],
-            "description": "While on the ground, attack 3 times with a sniper rifle.",
+            "description": "While on the ground, attack 3 times in a row with the sniper rifle.",
             "breakdown": [
-                "**44.2%** of ATK + **2** and small knockback.",
-                "**84.4%** of ATK + **4** and small knockback.",
-                "**176.9%** of ATK + **9** and knockdown."
+                "**44.2%** of ATK + **2** and knockback.",
+                "**84.4%** of ATK + **4** and knockback.",
+                "**176.9%** of ATK + **9** and launch the target."
             ]
         },
         {
-            "name": "Scoped Shot",
+            "name": "Cross Snipe",
             "type": "normal",
             "imgSrc": "skill_snipe_power",
             "input": [
                 "hold:Attack"
             ],
-            "description": "Hold the basic attack to enter to scope in and charge the sniper rifle, firing a charged attack that deals damage equal to **58%** of ATK + **3** to the target. Shots charged to stage 3 can deal up to **400.8%** of ATK + **21**. Hitting an enemy's head triggers a headshot (does not apply to Wanderers) dealing double damage and suspending the target.\n\n**Passive:** When Scoped Shot hits a burning target or deals a critical hit, gain **300** weapon charge, cooldown **15** seconds.\n\n**Passive:** Using Scoped Shot increases your movement speed by **30%** for **3** seconds."
+            "description": "Tap and hold normal attack to charge an attack, delaing base damage equal to **26.1%** of ATK + **1**. After charging, deal damage up to **180.4%** of ATK + **9**. Deal double damage for a headshot or when hitting an enemy's weak point, and launch the target (headshots are ineffective against Wanderers).\n\n**Passive:** Recover **300** weapon charge when Cross Snipe hits a burning target or lands a critical. Cooldown: **15** seconds.\n\n**Passive:** Speed is increased by **30%** for **3** seconds after using Cross Snipe."
         },
         {
-            "name": "Boiling Point",
+            "name": "Boiling Noise",
             "type": "normal",
             "imgSrc": "skill_snipe_branch",
             "input": [
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "Hold attack after normal attacking to fire a laser projectile that explodes on contact, dealing damage equal to **150%** of ATK + **8** and suspending targets within range."
+            "description": "After any normal attack, tap and hold normal attack to fire a laser projectile that explodes upon hitting the target, dealing damage up to **150%** of ATK + **8** to the target within range and suspending them."
         },
         {
-            "name": "Aerial Attack",
+            "name": "Aerial Discharge",
             "type": "normal",
             "imgSrc": "pugong_snipe",
             "input": [
@@ -84,7 +80,7 @@
             "description": "While airborne, tap basic attack 3 times to perform consecutive aerial attacks.",
             "breakdown": [
                 "**47.6%** of ATK + **3** and small knockback.",
-                "**90.6%** of ATK + **5** and small knockback.",
+                "**90.9%** of ATK + **5** and small knockback.",
                 "**190.5%** of ATK + **10** and knockdown."
             ]
         },
@@ -96,7 +92,7 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Jump backwards and throw an explosive shell, detonating when it hits the ground and dealing damage equal to **37%** of ATK + **2** and suspending targets.\n\n**Passive:** Tap basic attack after using Twilight Arc to instantly fire a fully-charged Scoped Shot."
+            "description": "Leap backward and throw 1 grenade forward, which detonates upon hitting the ground, dealing damage up to **37%** of ATK + **2** to targets and suspending them in the air.\n\n**Passive:** After using Twilight Arc, use normal attack to instantly fire a fully charged Cross Snipe."
         },
         {
             "name": "Dodge",
@@ -108,13 +104,13 @@
             "name": "Backup Magazine",
             "type": "skill",
             "imgSrc": "skill_snipe_skillstart",
-            "description": "Activate the skill once to alternate between enhancement magazines. Depending on the magazine you choose, the effects of Scoped Shot and Twilight Arc will be changed. Activate the skill again when the desired magazine is showing as the skill icon to equip that magazine. The skill will remain active until the magazine is empty (after **8** Scoped Shots). The skill has a cooldown of **14** seconds.\n\n\n**Firebomb Magazine:** Scoped Shots will explode and deal flame AoE damage equal to **59.2%** of ATK + **3**, up to **410%** of ATK + **22** after charging. If the hit target is not inflicted with a burn, apply Cross Burn to the target (deals **120%** of ATK every second for **13** seconds). If the target was already inflicted with a burn, apply Cross Burn while gaining Burn Enhancement (increases burn damage by **20%** for **20** seconds). Twilight Arc throws **3** explosive shells while this magazine is active.\n\n\n**Gasbomb Magazine:** Scoped Shots fire a gas bomb, dealing damage equal to **80.9%** of ATK + **4**, up to **560.5%** of ATK + **30** after charging. The gas lasts for **7** seconds and slows enemies within its radius. Twilight Arc can detonate the gas (the longer you charge Scoped Shot, the more damage the gas detonation will deal) for explosion damage up to **620%** of ATK + **33** and reduce flame resistance of targets by **10%**.\n\n\n**Passive:** For the duration of the magazine, gain Optical Enhancement, which reduces the charge time Scoped Shot by **30%** and grants immunity to control effects while charging. For every **2** dodges, the first one will not consume a dodge (up to **4** times).\n\n\n**Passive:** While equipped with the Gasbomb magazine, using Scoped Shot will reduce skill cooldowns of other flame weapons by **0.7** seconds."
+            "description": "Switch modules to change the effects of Cross Snipe and Twilight Arc. Cross Snipe can be used up to **8** times. Skill cooldown: **14** seconds.\n\n**Ruthless Bomb**: The effect of Cross Snipe becomes a flame explosion that deals base damage equal to **27.3%** of ATK + **1** within an area. After charging, deal damage up to **188.6%** of ATK + **10**. Upon hitting targets that are not burning, inflict them with Cross Burn, which deals damage equal to **75%** of ATK every second for **13** seconds. Upon hitting burning targets, inflict them with Cross Burn, and enter Burn Enhancement for **20** seconds, which increases burn damage on targets by **20%**. When using Twilight Arc, you now throw **3** grenades instead.\n\n**Deceitful Bomb**: Changes the effects of Cross Snipe into a ranged Gas attack that deals base damage equal to **42.6%** of ATK + **2** upon hit. After charging, deal up to **294.1%** of ATK + **15**. Targets in the Gas will be slowed. The slow effect becomes stronger over time, and the Gas lasts **7** seconds. Twilight Arc can detonate the Gas (the longer the charge, the greater the Gas explosion damage), dealing explosion damage up to **316.2%** of ATK + **17** (this is deemed as triggering Cross Snipe 1 time) and reducing the target's flame resistance by **10%** for **10** seconds.\n\n**Passive**: After confirming the module, you will receive Optical Enhancement corresponding to the number of dodge attempt recoveries and Cross Snipe charge time reductions. Optical Enhancement: Reduces the charging time of Cross Snipe by **30%**, becoming immune to control effects while charging. Recover **1** dodge attempt (up to **4** dodge attempts) every **2** dodges.\n\n**Passive**: While the Deceitful Bomb Module is in effect, Cross Snipe has a chance of reducing the cooldown of other flame weapon skills by **0.7** seconds after hitting a target.\n\n**Passive Tranquil Heart**: When Clover Cross uses discharge/skill/charged attack/dodge, increase final crit rate of Clover Cross by **3.5%** for **15** seconds. This effect can stack up to **3** times. After crit rate exceeds **100%**, **50%** of the excess crit rate is converted to crit damage, up to a maximum of **5.25%** crit damage."
         },
         {
-            "name": "Missile Command",
+            "name": "Bombardment Command",
             "type": "discharge",
             "imgSrc": "skill_snipe_changeskill",
-            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user**, throw a firebomb, and snipe it to detonate, dealing damage equal to **890%** of ATK + **47** to targets within range. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon **removes all debuffs from the wielder** and throws an incendiary bomb that can be detonated by firing at at, dealing damage up to **765.4%** of ATK + **40** to targets within range and **strongly suspending** them. Damage immunity lasts **1.5** seconds when the skill is active (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Y2YTJ11HGTQ?start=60",
