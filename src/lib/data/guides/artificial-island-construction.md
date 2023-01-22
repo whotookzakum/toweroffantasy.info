@@ -31,7 +31,6 @@ Different creatures will drop different materials, but world bosses drop a large
 ### Recommended Route
 <img src="/images/guides/housing-map.webp" alt="Recommended route for farming mobs" />
 
-
 ### Total Resources
 <table className="table-housing-mats">
     <thead>

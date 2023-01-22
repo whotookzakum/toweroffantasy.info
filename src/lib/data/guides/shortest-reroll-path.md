@@ -14,13 +14,13 @@ Although you get many Gold Nuclei while playing the game, **it is never guarante
 
 > Note that if you claim the pre-registration rewards (after getting the free gold nucleus), you can reroll very quickly, in about 15-30 minutes. These rewards are available for 180 days from the release date (August 10, 2022).
 
-![Reroll Route Map](/images/guides/reroll-path.webp)
+<img src="/images/guides/reroll-path.webp" alt="Reroll Route Map" />
 
 This path is optimized for low levels. Astra (starting region) has a few more gold nuclei available on day 1, however the elite monsters guarding them are extremely powerful if you do not level up.
 
 ## Optional Advanced Map
 
-![Advanced Reroll Map](/images/guides/reroll-path-detailed.webp)
+<img src="/images/guides/reroll-path-detailed.webp" alt="Advanced Reroll Map" />
 
 The story takes a (relatively) long amount of time. I will update the guide if I find a faster way to obtain the remaining gold nuclei. In my experience it takes over 1.5 hours to reroll while completing the day 1 story quest, whereas that time could be cut in half if you could skip it.
 

@@ -16,7 +16,7 @@ The match will end when one player is defeated, the time limit expires, or if pl
 ## Apex League
 The competitive mode of PvP where you fight in an Arena setting that gets smaller as the match goes on. Each player has 2 lives, the match ends when one player runs out of lives or when the match timer ends. **Weapons and Relics are boosted to their max level including advancements**. Weapon Resonance, Matrices, and Simulacrum Traits do not take effect in Apex League, and all healing is reduced by 50%.
 
-> For an extensive guide on Apex League meta, check out <a href="" target="_blank" rel="noreferrer noopener nofollow">Apex League</a>.
+> For an extensive guide on Apex League meta, check out <a href="https://docs.google.com/document/d/1eZVlm-Y9Uosyx9Fqy9m8N8IfY31XF6YdQjFxCwiFcfk/edit" target="_blank" rel="noreferrer noopener nofollow">Apex League</a>.
 
 At the end of the season (usually 1 month), you are rewarded dark crystals, a title, and optionally cosmetics and a mount based on your rank.
 
