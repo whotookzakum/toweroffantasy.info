@@ -8,7 +8,7 @@ author: Zakum#3080
 
 Rerolling consists of starting over on new accounts until you obtain the weapon that you want.
 
-Although you get many Gold Nuclei while playing the game, **it is never guaranteed that you will get the weapon that you want.** You can buy copies of weapons with [black market tokens](/guides/systems/gacha), but only if you have one copy of that weapon to begin with.
+Although you get many Gold Nuclei while playing the game, **it is never guaranteed that you will get the weapon that you want.** You can buy copies of weapons with [black market tokens](/guides/gacha), but only if you have one copy of that weapon to begin with.
 
 **All Gold Nuclei on the map below are available day 1**, without doing the story quest beyond getting the fire bow. However, you need to level up to claim the pre-registration rewards, and the story is the fastest way to level up.
 
