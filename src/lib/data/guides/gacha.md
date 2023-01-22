@@ -15,7 +15,7 @@ Gold and Black Nuclei can be obtained from exploration, and various events or sh
 
 Red Nuclei can occasionally be acquired from events and exploration milestones.  
 
-**Weapons come with their associated [Simulacra](/guides/simulacra).**
+**Weapons come with their associated [Simulacrum](/guides/simulacrum).**
 
 ### Matrix Caches
 Matrices can be obtained with Proof of Puchase, and Special Vouchers (Limited Cache).  
