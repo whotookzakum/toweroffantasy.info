@@ -6,7 +6,7 @@ type: technical
 author: Pyrosu#6969, Zakum#3080, 👑킹젖가슴드래곤👑#5969
 ---
 
-> UPDATED VERSION [HERE](https://docs.google.com/document/d/1N7UsgrplqUIL3plYk9gQJzYPECwJ5QP1r2zPNXBbsJU/edit?usp=sharing)
+> UPDATED VERSION <a href="https://docs.google.com/document/d/1N7UsgrplqUIL3plYk9gQJzYPECwJ5QP1r2zPNXBbsJU/edit?usp=sharing" target="_blank" rel="noreferrer noopener nofollow">HERE</a>
 
 Tower of Fantasy in China has a few different versions.
 

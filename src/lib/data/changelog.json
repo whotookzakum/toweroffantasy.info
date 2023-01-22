@@ -1,5 +1,9 @@
 [
     {
+        "date": "January 22 2023",
+        "text": "Updated Annabella to Global data; Readded guides;"
+    },
+    {
         "date": "January 10 2023",
         "text": "Added Icarus; Updated cosmetics; Fixed personality charts (english if available); Fixed weapon header overflowing off page; Fixed recommended matrices text positioning; Fixed CN Saki rerun date; Fixed Baiyuekui and Marc missing CN tags; Adjusted weapon skills backgrounds to have more contrast;"
     },
