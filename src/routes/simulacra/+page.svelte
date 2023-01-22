@@ -9,7 +9,7 @@
 
     export let data;
     let simulacra = data.items;
-
+    
     let filters = {};
 
     // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions

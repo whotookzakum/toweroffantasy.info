@@ -6,7 +6,7 @@
     <iframe
         src={source}
         allow="fullscreen"
-        title="Preview of weapon skills"
+        title=""
         loading="lazy"
     />
     {#if caption}
