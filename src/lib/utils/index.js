@@ -122,3 +122,27 @@ export const fetchAllMatrices = async () => {
 
     return allItems
 }
+
+export const fetchAllGuides = async () => {
+    // Globally fetch all guides
+    const allGuidesFiles = import.meta.glob('/src/lib/data/guides/*.md')
+    // put guides into array
+    const iterableItemFiles = Object.entries(allGuidesFiles)
+
+    const allItems = await Promise.all(
+        iterableItemFiles.map(async ([path, resolver]) => {
+            const { data } = await resolver()
+            // generate path based on file name
+            const itemPath = path.slice(13, -3)
+
+            return {
+                meta: data,
+                path: itemPath
+            }
+        })
+    )
+
+    // allItems.sort((a, b) => b.id - a.id)
+
+    return allItems
+}
