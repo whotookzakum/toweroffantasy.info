@@ -1,6 +1,9 @@
 <script>
+    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     export let data;
 </script>
+
+<SectionNavigation />
 
 <article>
     <h1>{data.title}</h1>

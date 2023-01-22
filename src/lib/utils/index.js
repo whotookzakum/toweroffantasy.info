@@ -131,12 +131,12 @@ export const fetchAllGuides = async () => {
 
     const allItems = await Promise.all(
         iterableItemFiles.map(async ([path, resolver]) => {
-            const { data } = await resolver()
+            const data = await resolver()
             // generate path based on file name
             const itemPath = path.slice(13, -3)
 
             return {
-                meta: data,
+                ...data.metadata,
                 path: itemPath
             }
         })
