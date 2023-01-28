@@ -65,7 +65,7 @@
         title="China Exclusive"
     />. Issues can be reported on
     <a
-        href="https://discord.com/channels/670617630717116426/1021126011158536272"
+        href="https://discord.com/channels/670617630717116426/1063498932749094912"
         target="_blank"
         rel="noopener noreferrer nofollow">Discord</a
     >.
