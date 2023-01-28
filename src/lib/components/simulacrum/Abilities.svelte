@@ -83,6 +83,10 @@
         list-style: none;
     }
 
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
     .skill-title-wrapper {
         display: flex;
         align-items: center;
