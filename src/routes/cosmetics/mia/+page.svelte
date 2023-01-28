@@ -2,6 +2,13 @@
     import SvelteMarkdown from "svelte-markdown";
     import outfits from "$lib/data/cosmetics/mia.json";
     import Ad from "$lib/components/Ad.svelte";
+    import Youtube from "$lib/components/Youtube.svelte";
+
+    let previewVidSrc = "https://www.youtube.com/embed/R4fCNLUbeQk";
+    
+    function updateUrl(src) {
+        previewVidSrc = src;
+    }
 </script>
 
 <svelte:head>
@@ -21,6 +28,8 @@
 
 <h1>Mi-a Outfits</h1>
 
+<Youtube id="preview" source={previewVidSrc} caption="Preview of most Mi-a outfits from version 2.4." />
+
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
 
@@ -29,6 +38,7 @@
         <thead>
             <th>Item</th>
             <th>Source</th>
+            <th>Video</th>
         </thead>
         <tbody>
             {#each outfits as outfit}
@@ -47,6 +57,11 @@
                     </td>
                     <td>
                         <SvelteMarkdown source={outfit.source} />
+                    </td>
+                    <td>
+                        {#if outfit.videoSrc}
+                            <a href="#preview" on:click={() => updateUrl(outfit.videoSrc)}>View</a>
+                        {/if}
                     </td>
                 </tr>
             {/each}

@@ -1,8 +1,11 @@
 <script>
-    export let source, caption;
+    export let source, caption, id;
+    // https://developers.google.com/youtube/iframe_api_reference#Playback_controls
+    // https://stackoverflow.com/questions/26257395/change-time-in-embedded-youtube-video-when-a-button-is-clicked
+    // Have search params store video timestamp? so a specific timestamp can be linked
 </script>
 
-<figure>
+<figure {id}>
     <iframe
         src={source}
         allow="fullscreen"
