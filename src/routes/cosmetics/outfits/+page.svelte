@@ -2,6 +2,7 @@
     import SvelteMarkdown from "svelte-markdown";
     import outfits from "$lib/data/cosmetics/outfits.json";
     import Ad from "$lib/components/Ad.svelte";
+    import Youtube from "$lib/components/Youtube.svelte";
     //     "name": "Absolute Order",
     //     "imgSrcs": ["fashion_f18", "fashion_m"],
     // {
@@ -16,6 +17,11 @@
     //     "source": "Obtained by purchasing the 10th Collector's Edition Pass.",
     //     "videoSrc": "https://www.youtube.com/embed/iig3osE_r6s"
     // },
+    let previewVidSrc = "https://www.youtube.com/embed/rKzgowQ_xUc";
+
+    function updateUrl(src) {
+        previewVidSrc = src;
+    }
 </script>
 
 <svelte:head>
@@ -37,6 +43,7 @@
 </svelte:head>
 
 <h1>Outfits</h1>
+<Youtube id="preview" source={previewVidSrc} caption="Preview of most outfits from version 2.4." />
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
@@ -46,6 +53,7 @@
         <thead>
             <th>Item</th>
             <th>Source</th>
+            <th>Video</th>
         </thead>
         <tbody>
             {#each outfits as outfit}
@@ -71,6 +79,11 @@
                     </td>
                     <td>
                         <SvelteMarkdown source={outfit.source} />
+                    </td>
+                    <td>
+                        {#if outfit.videoSrc}
+                            <a href="#preview" on:click={() => updateUrl(outfit.videoSrc)}>View</a>
+                        {/if}
                     </td>
                 </tr>
             {/each}

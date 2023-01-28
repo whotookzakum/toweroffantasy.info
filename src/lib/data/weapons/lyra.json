@@ -18,8 +18,8 @@
     ],
     "materials": [
         "physical",
-        "black",
-        "red"
+        "red",
+        "black"
     ],
     "weaponEffects": [
         {

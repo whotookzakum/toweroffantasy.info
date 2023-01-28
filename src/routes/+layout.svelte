@@ -4,7 +4,16 @@
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
+    import { page } from "$app/stores";
+    import { browser } from "$app/environment";
     let navIsOpen;
+
+    $: {
+        if (browser) {
+            window.reloadAdSlots()
+        }
+        console.log($page.url.pathname)
+    }
 </script>
 
 <svelte:head>

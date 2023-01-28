@@ -2,86 +2,114 @@
     import SvelteMarkdown from "svelte-markdown";
     import Youtube from "$lib/components/Youtube.svelte";
     export let weapon;
+
+    const abilityCategories = ["Normal", "Dodge", "Skill", "Discharge"];
 </script>
 
 <h4 id="skills">Skills</h4>
 {#if weapon.abilitiesVideoSrc}
     <Youtube source={weapon.abilitiesVideoSrc} />
 {/if}
-<ul class="abilities-list full-bleed abilities">
-    {#each weapon.abilities as ability}
-        <li>
-            <details class="ability">
-                <summary>
-                    <div class="skill-title-wrapper">
-                        <img
-                            src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
-                            alt={ability.name}
-                            width="82"
-                            height="82"
-                            loading="lazy"
-                        />
-                        <div class="skill-title">
-                            <span>{ability.type}</span>
-                            <h5>{ability.name}</h5>
+
+{#each abilityCategories as category}
+    <details class="full-bleed">
+        <summary>{category}</summary>
+        <dl>
+            {#each weapon.abilities.filter((a) => a.type === category.toLowerCase()) as ability}
+                <div class="ability">
+                    <dt>
+                        <div class="skill-title-wrapper">
+                            <img
+                                src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
+                                alt=""
+                                width="82"
+                                height="82"
+                                loading="lazy"
+                            />
+                            <div class="skill-title">
+                                <span>{ability.type}</span>
+                                <h5>{ability.name}</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-inputs">
-                        {#if ability.input}
-                            {#each ability.input as input, index}
-                                <kbd class:hold={input.includes("hold:")}>
-                                    {input.includes("hold:")
-                                        ? input.split("hold:").pop()
-                                        : input}
-                                </kbd>
-                                <!-- {#if index < ability.input.length - 1}
-                                    <span>🡲</span>
-                                {/if} -->
-                            {/each}
+                        <div class="skill-inputs">
+                            {#if ability.input}
+                                {#each ability.input as input, index}
+                                    <kbd class:hold={input.includes("hold:")}>
+                                        {input.includes("hold:")
+                                            ? input.split("hold:").pop()
+                                            : input}
+                                    </kbd>
+                                {/each}
+                            {/if}
+                        </div>
+                    </dt>
+                    <dd>
+                        <SvelteMarkdown source={ability.description} />
+                        {#if ability.breakdown}
+                            <ol class="ability-breakdown">
+                                {#each ability.breakdown as step}
+                                    <li>
+                                        <SvelteMarkdown source={step} />
+                                    </li>
+                                {/each}
+                            </ol>
                         {/if}
-                    </div>
-                </summary>
-                <SvelteMarkdown source={ability.description} />
-                {#if ability.breakdown}
-                    <ol class="ability-breakdown">
-                        {#each ability.breakdown as step}
-                            <li>
-                                <SvelteMarkdown source={step} />
-                            </li>
-                        {/each}
-                    </ol>
-                {/if}
-            </details>
-        </li>
-    {/each}
-</ul>
+                    </dd>
+                </div>
+            {/each}
+        </dl>
+    </details>
+{/each}
 
 <style lang="scss">
-    ul.abilities-list {
-        padding: 0;
-        list-style: none;
-    }
 
-    ol.ability-breakdown {
-        margin-block: 1rem;
-    }
-
-    details.ability {
+    details {
         background: hsla(220, 15%, 17%, 0.9);
         box-shadow: 0 2px 4px var(--surface-shadow);
-        padding: 0.5rem 1rem;
 
-        &:hover {
+        & > * {
+            padding: 0.5rem 1rem;
+        }
+
+        summary:hover {
             background: var(--surface3);
+        }
+
+        &[open] summary {
+            color: var(--accent);
+        }
+
+        &:last-of-type {
+            margin-bottom: 0.5rem;
         }
     }
 
-    summary {
-        display: flex;
-        gap: 0 1rem;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    dl {
+        margin: 0;
+        gap: 0;
+        background: var(--surface2);
+        box-shadow: inset 0 7px 9px -7px var(--surface-shadow),
+            inset 0 -7px 9px -7px var(--surface-shadow);
+
+        .ability {
+            padding: var(--space-xs) var(--space-2xs-xs);
+
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--surface3);
+            }
+        }
+
+        dt {
+            display: flex;
+            gap: 0 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        dd {
+            margin: 0;
+        }
     }
 
     .skill-title-wrapper {
@@ -113,6 +141,10 @@
         gap: 0.5rem;
         user-select: none;
         margin-left: auto;
+    }
+
+    ol.ability-breakdown {
+        margin-block: 1rem;
     }
 
     :global(.ability p) {
