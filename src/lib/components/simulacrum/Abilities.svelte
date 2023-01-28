@@ -80,6 +80,7 @@
         display: flex;
         gap: 0 1rem;
         align-items: center;
+        list-style: none;
     }
 
     .skill-title-wrapper {
