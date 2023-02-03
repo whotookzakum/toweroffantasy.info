@@ -1,7 +1,6 @@
 {
     "name": "Alyss",
     "id": 30,
-    "chinaOnly": true,
     "cnName": "ailisi",
     "rarity": "SSR",
     "banners": {
@@ -22,16 +21,23 @@
                 "start": "11 Jan 2023",
                 "end": "8 Feb 2023"
             }
+        ],
+        "glob": [
+            {
+                "bannerNo": 15,
+                "start": "2 Feb 2023",
+                "end": "22 Feb 2023"
+            }
         ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": "After successfully casting a weapon skill, gain **13%** final damage boost for **12** seconds."
+            "description": "After successfully using a weapon skill, increase final damage by **13%** for **12** seconds."
         },
         {
             "affinity": 4000,
-            "description": "After successfully casting a weapon skill, gain **18%** final damage boost for **18** seconds. If Immortal Wings is advanced to 1 star, receive Alyss' support when using **Physical/Flame/Volt** weapon skill while inside the Cold Field. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge."
+            "description": "After successfully using a weapon skill, increase final damage by **18%** for **18** seconds. After Unyielding Wing is advanced to 1 star, receive Alyss' support when using a **physical/flame/volt** weapon skill in the Chilling Field, summoning Alyss to cast a discharge skill on the field, which is the equivalent of Wanderer casting a discharge skill. The skill that triggers the discharge skill will then be used again afterward."
         }
     ],
     "giftTypes": [
@@ -68,7 +74,7 @@
     "birthday": "28 May",
     "voiceActors": {
         "jp": "",
-        "en": "",
+        "en": "Brittany Cox",
         "cn": "杜晴晴"
     }
 }

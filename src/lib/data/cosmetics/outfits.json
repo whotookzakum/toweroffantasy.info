@@ -14,7 +14,7 @@
     {
         "name": "Matrix",
         "imgSrcs": ["fashion_f43", "fashion_m43"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass.",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=12"
     },
     {
@@ -26,7 +26,7 @@
     {
         "name": "Vibrant Youth",
         "imgSrcs": ["fashion_f41", "fashion_m41"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass.",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=24"
     },
     {
@@ -36,9 +36,9 @@
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=30"
     },
     {
-        "name": "Early Dawn",
+        "name": "Dawn",
         "imgSrcs": ["fashion_f38", "fashion_m38"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 7th Collector's Edition Pass.",
+        "source": "Obtained by purchasing the 5th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 7th Collector's Edition Pass.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=36"
     },
     {

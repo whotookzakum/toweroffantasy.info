@@ -1,5 +1,5 @@
 {
-    "name": "Immortal Wings",
+    "name": "Unyielding Wing",
     "imgSrc": "item_Weapon_SSR_iceblade_Ice01",
     "element": "ice",
     "type": "dps",
@@ -23,27 +23,27 @@
     ],
     "weaponEffects": [
         {
-            "title": "Frost Reaction",
-            "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
+            "title": "Frost Resonance",
+            "description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
         }
     ],
     "advancements": [
-        "Using a frost weapon's skill while inside Cold Field will activate Alyss' support. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge.",
+        "Receive Alyss's support when using any frost weapon skill in the Chilling Field, summoning Alyss to cast a discharge skill on the field, which is the equivalent of Wanderer casting a discharge skill. The skill that triggers the discharge skill will then be used again afterward. Alyss's supporting discharge skill damage is equal to **70%** of her skill's original damage.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "Every time Night of the White Star is triggered, gain Alyss' aid, increasing Night of the White Star's and Frostbite damage by **30%** for **12** seconds, stacking up to **3** times.",
+        "Receive Alyss's Support every time Starry Night is triggered and increase Starry Night and Hoarfrost Damage by **10%** for **12** seconds. Stack up to **3** times.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "Increase Immortal Wing's basic attack and Space Fracture damage by **50%**. When taking fatal damage, receive Alyss' protection one time, resisting the hit and becomming immune to damage for a short time, cooldown **60** seconds.",
-        "When Alyss' aid reaches 3 stacks, increase frost damage by **15%**."
+        "Increase the damage of Unyielding Wing's normal attack and Spatial Slice by **35%**. The Wanderer receives Alyss's Protection upon taking fatal damage, protecting the Wanderer from death 1 time and making the Wanderer immune to damage for a short time. Cooldown: **60** seconds.",
+        "Increase frost damage by **12%** when Alyss's Support reaches 3 stacks."
     ],
     "abilities": [
         {
-            "name": "Swan Arch",
+            "name": "Swan Arc",
             "type": "normal",
             "imgSrc": "skill_iceblade_melee",
             "input": [
                 "Attack x5"
             ],
-            "description": "While on the ground, attack 5 times with Immortal Wings.",
+            "description": "While on the ground, use Unyielding Wing to launch 5 consecutive attacks.",
             "breakdown": [
                 "**101.3%** of ATK + **5** and small knockback.",
                 "**107.3%** of ATK + **6** and big knockback",
@@ -53,14 +53,14 @@
             ]
         },
         {
-            "name": "Flying Wing Combo",
+            "name": "Sweeping Combo",
             "type": "normal",
             "imgSrc": "skill_iceblade_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
             ],
-            "description": "While in the air, attack 5 times, consuming stamina.",
+            "description": "While airborne, use normal attack to attack 5 times in a row in mid-air and consume endurance.",
             "breakdown": [
                 "**72.1%** of ATK + **4**.",
                 "**65.6%** of ATK + **3**.",
@@ -70,14 +70,14 @@
             ]
         },
         {
-            "name": "Flash Dance",
+            "name": "Dancing Flash",
             "type": "normal",
             "imgSrc": "skill_iceblade_branch",
             "input": [
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "While using Swan Arc, press and hold the basic attack button to gather targets and deal **506.5%** of ATK + **27** damage, with the last hit **strongly suspending** targets and deals **95%** of ATK + **5** damage.\n\n**Passive**: After successfully performing any weapon skill or entering Latent Configuration for **4** seconds, become immune to damage during the next Flash Dance"
+            "description": "While using Swan Arc, tap and hold the normal attack to pull the targets together and deal damage equal **303.9%** of ATK + **16**** to all targets withi range. The last hit **strongly suspends** the target and deals damage eqaul to **95%** of ATK + **5**.\n\n**Passive**: Within **4** seconds after succesfully using any weapon skill or entering Latent State, become immune to damage during the next Dancing Flash."
         },
         {
             "name": "Sweeping Dive",
@@ -87,7 +87,7 @@
                 "Jump",
                 "hold:Attack"
             ],
-            "description": "Hold attack while in the air (when there is a valid target), climbing, reverse jump attacking, or gliding to trigger a plunge attack that consumes stamina. During the descent, each hit deals **95%** of ATK + **5** damage to targets."
+            "description": "Tap and hold normal attack while airborne (tap when a target is selected), or use normal attack while climbing, jumping backward, or using Jetpack to trigger Pummel.\n\nWhile falling, deal damage equal to **95%** of ATK + **5** each hit and continuously consume endurance."
         },
         {
             "name": "Waltz",
@@ -96,26 +96,26 @@
             "input": [
                 "hold:Attack"
             ],
-            "description": "Press and hold basic attack to spin, dealing **167.2%** of ATK + **9** damage, gaining **immunity to control effects** while consuming stamina. The last hit will deal **190%** of ATK + **10** damage"
+            "description": "Tap and hold attack to deal damage equal to **104.5%** of ATK + **6** each time the target is hit. The last hit deals damage equal to **190%** of ATK + **10**. Gain **hyperbody** during this time and continuously consume endurance."
         },
         {
-            "name": "Dancer Form",
+            "name": "Dance Form",
             "type": "dodge",
             "imgSrc": "skill_iceblade_evadeattack",
             "input": [
                 "Dodge",
                 "Attack x3"
             ],
-            "description": "After a backwards dodge, attack 3 times to deal up to **958%** of ATK +**50**, with the first hit **strongly suspending** targets."
+            "description": "After dodging backward, tap normal attack 3 times consecutively to deal damage equal to **572.8%** of ATK + **30** to the target, and **strongly suspend** the target with the first hit."
         },
         {
-            "name": "Latent Configuration",
+            "name": "Latent State",
             "type": "dodge",
             "imgSrc": "skill_iceblade_evadeon",
             "input": [
                 "Dodge", "hold:Attack"
             ],
-            "description": "Press and hold dodge to enter the Latent Configuration, continuously consuming stamina and increasing movement speed by **50%**. While inside the Cold Field, increase movement speed by an additional **50%**. When you leave the transformation, deal **492.1%** of ATK + **26** damage and freeze enemies for **2** seconds."
+            "description": "Dodge before holding to enter Latent State, during which endurance is constantly consumed and speed is increased by **50%**. Increase speed by an additional **50%** in the Chilling Field. When exiting Latent State, deal damage equal to **305.1%** of ATK + **16** to all nearby targets and freeze them for **2** seconds."
         },
         {
             "name": "Dodge",
@@ -127,13 +127,13 @@
             "name": "Cold Field",
             "type": "skill",
             "imgSrc": "iceblade_skill",
-            "description": "Pull in nearby enemies and deal **982.5%** of ATK + **52** damage and **strongly suspend** enemies, cooldown **25** seconds. Enter a Cold Field for **30** seconds and gain immunity to control effects while casting the skill.\n\n**Passive**: Using a Frost weapon's discharge skill in the Cold Field deals **262.1%** of ATK + **14** Frostbite damage and slow targets for **2** seconds (does not apply to bosses). In the field, Immortal Wings' basic and charged attacks will create a Space Fracture every **12** hits, dealing **270%** of ATK + **14** damage 1 time to targets in the area every 2 seconds, for **25** seconds (will stop when the Field disappears)."
+            "description": "Pull nearby enemies together, then deal damage equal to **857.7%** of ATK + **45** to them and **strongly suspend** them. The Wanderer enters the Chilling Field for **30** seconds. Cooldown: **25** seconds. Gain hyperbody while the skill is active.\n\n***Passive***: When using any frost weapon discharge skill in the Chilling Field, deal Hoarfrost Damage equal to **125.8%** of ATK + **7** 1 time and slow the target for **2** seconds (the slow effect is ineffective against bosses). While in the field, for every **12** times Unyielding Wing's hit effect is triggered, further triggers Spatial Slice, dealing damage equal to **165%** of ATK + **9** 1 time to targets in the space every 2 seconds for **25** seconds (this also stops when the space disappears)."
         },
         {
-            "name": "Night of the White Star",
+            "name": "Starry Night",
             "type": "discharge",
             "imgSrc": "skill_iceblade_changeskill",
-            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and deal **727.9%** of ATK + **38** damage and **strongly suspend** the target. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon **removes all debuffs from the wielder** and unleashesa discharge skill, dealing damage equal to **553.2%** of ATK + **29** and **strongly launching** the target, during which damage immunity lasts for **1.5** seconds (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/G48ypbnDYIE?start=245",
