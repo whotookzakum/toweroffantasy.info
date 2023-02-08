@@ -196,6 +196,16 @@
     </table>
 </div>
 
+<h2>Event Codes</h2>
+<small>List of the latest known working coupon codes.</small>
+<ul class="horizontal-list">
+    <li>PAC3PHAT</li>
+    <li>PAAU8TW5</li>
+    <li>PA99UUPQ</li>
+    <li>PAD3TY32</li>
+    <li><abbr title="China Exclusive"/> tof666</li>
+</ul>
+
 <h3>Credits</h3>
 <footer>
     <h4>Created by</h4>
