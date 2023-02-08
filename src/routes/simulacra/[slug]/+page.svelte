@@ -13,10 +13,9 @@
     import _ from "lodash";
 
     export let data;
-
+    
     const globalData = data
-    const cloneData = _.cloneDeep(data)
-    const chinaData = _.merge(cloneData, data.cnData);
+    const chinaData = _.merge(_.cloneDeep(data), data.cnData);
     let simulacrum = globalData;
 
     function getAvatarImg(simulacrum) {
