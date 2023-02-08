@@ -5,20 +5,18 @@ export const load = async ({ params }) => {
     const simulacrum = await import(`../../../lib/data/simulacra/${params.slug}.json`)
     const weapon = await import(`../../../lib/data/weapons/${params.slug}.json`)
     const cnData = await fetchSimulacrumCNData(params.slug);
-    console.log(cnData)
     
     const allMatricesData = await fetchAllMatrices()
-
     const recommendedMatrices = weapon.recommendedMatrices.map(matrix => {
         const matrixData = allMatricesData.find(m => m.name === matrix.name)
         return { ...matrix, ...matrixData }
     })
-    console.log({ ...simulacrum.default, weapon: {...weapon.default, recommendedMatrices}, cnData: cnData })
+
     return { ...simulacrum.default, weapon: {...weapon.default, recommendedMatrices}, cnData: cnData }
 }
 
 const fetchSimulacrumCNData = async (fileName) => {
-    let cnData = {}
+    let cnData = {} // bro come on returning an empty object is way easier than checking if cnData exists multiple times everywhere
 
     if (existsSync(`src/lib/data_cn/simulacra/${fileName}.json`)) {
         let simulacrum = await import(`../../../lib/data_cn/simulacra/${fileName}.json`)

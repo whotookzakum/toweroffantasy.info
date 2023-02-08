@@ -17,8 +17,7 @@
     const globalData = data
     const cloneData = _.cloneDeep(data)
     const chinaData = _.merge(cloneData, data.cnData);
-    console.log(chinaData)
-    let simulacrum = chinaData;
+    let simulacrum = globalData;
 
     function getAvatarImg(simulacrum) {
         switch(simulacrum.name) {
