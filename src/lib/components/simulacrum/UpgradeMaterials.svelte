@@ -170,7 +170,7 @@
                     materialTier: 3,
                 },
             ],
-            lin: [
+            altered: [
                 {
                     wepLevelMin: 0,
                     wepLevelMax: 10,
@@ -496,7 +496,7 @@
                     materialTier: 3,
                 },
             ],
-            lin: [
+            altered: [
                 {
                     wepLevelMin: 0,
                     wepLevelMax: 10,
@@ -662,8 +662,8 @@
     };
 
     const versionMaterials =
-        weapon.name === "Shadoweave"
-            ? materials.global.lin
+        weapon.element === "altered"
+            ? materials.global.altered
             : materials.global.SSR;
 
     $: matsInRange = versionMaterials.filter(

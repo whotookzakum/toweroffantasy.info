@@ -1,0 +1,17 @@
+{
+    "name": "Fiona",
+    "chinaOnly": true,
+    "id": 29,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR29_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "After successfully dealing damage, increase ATK by **18%/22%/26%/30%** for **30** seconds, does not stack. Only the highest star set will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "While not using Benediction Resonance, cast Scattering Technique to increase final damage by **28%/32%/36%/40%** for **20** seconds. If you have Benediction Resonance, the final damage buff is reduced to **14%/16%/18%/20%** but applies to your teammates as well. Receive an additional (base ATK/10000)% final damage increase based on your ATK, up to **5%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        }
+    ]
+}
