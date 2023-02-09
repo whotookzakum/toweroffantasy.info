@@ -10,13 +10,18 @@
     import AwakeningGifts from "$lib/components/simulacrum/AwakeningGifts.svelte";
     import AwakeningTraits from "$lib/components/simulacrum/AwakeningTraits.svelte";
     import Ad from "$lib/components/Ad.svelte";
+    import _ from "lodash";
 
     export let data;
+    
+    const globalData = data
+    const chinaData = _.merge(_.cloneDeep(data), data.cnData);
+    let simulacrum = globalData;
 
-    function getAvatarImg(data) {
-        switch(data.name) {
+    function getAvatarImg(simulacrum) {
+        switch(simulacrum.name) {
             case "Nemesis":
-                return `avatar_${data.cnName}`
+                return `avatar_${simulacrum.cnName}`
             case "Frigg":
                 return `Avatar12`
             case "Pepper":
@@ -24,7 +29,7 @@
             case "Hilda":
                 return `touxiang_hilda`
             default:
-                return `touxiang_${data.cnName}`
+                return `touxiang_${simulacrum.cnName}`
         }
     }
 
@@ -45,68 +50,68 @@
 </script>
 
 <svelte:head>
-    <title>{data.name} | Tower of Fantasy Index</title>
-    <meta name="description" content={`Information about the ${data.rarity} simulacrum ${data.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}>
-    <meta property="og:title" content={data.name} />
+    <title>{globalData.name} | Tower of Fantasy Index</title>
+    <meta name="description" content={`Information about the ${simulacrum.rarity} simulacrum ${simulacrum.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}>
+    <meta property="og:title" content={globalData.name} />
     <meta
         property="og:description"
-        content={`Information about the ${data.rarity} simulacrum ${data.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}
+        content={`Information about the ${globalData.rarity} simulacrum ${globalData.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}
     />
     <meta
         property="og:image"
-        content={`/images/Icon/Avatar/${getAvatarImg(data)}.png`}
+        content={`/images/Icon/Avatar/${getAvatarImg(globalData)}.png`}
     />
-    <meta name="theme-color" content={getElementColor(data.weapon.element)} />
+    <meta name="theme-color" content={getElementColor(globalData.weapon.element)} />
 </svelte:head>
 
 <SectionNavigation
     links={["weapon", "advancements", "skills", "awakening", "other info"]}
 />
 
-<h1>{data.name}</h1>
+<h1>{simulacrum.name}</h1>
 <span style="color: var(--text2)">
-    {#if data.chinaOnly}
+    {#if simulacrum.chinaOnly}
         <abbr title="China Exclusive" />
     {/if}
-    {data.rarity} Simulacrum
+    {simulacrum.rarity} Simulacrum
 </span>
 
 <h2 id="weapon">Weapon</h2>
-<WeaponHeader weapon={data.weapon} />
-<WeaponEffects weapon={data.weapon} rarity={data.rarity}/>
+<WeaponHeader weapon={simulacrum.weapon} />
+<WeaponEffects weapon={simulacrum.weapon} rarity={simulacrum.rarity}/>
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
 
-<Advancements weapon={data.weapon} />
+<Advancements weapon={simulacrum.weapon} />
 
 <Ad unit="lb3" />
 <Ad unit="mobile_lb1" />
 
-<Abilities weapon={data.weapon} />
+<Abilities weapon={simulacrum.weapon} />
 
 <Ad unit="lb4" />
 <Ad unit="mobile_mpu2" />
 
-{#if data.rarity === "SSR"}
-    <UpgradeMaterials weapon={data.weapon} />
+{#if simulacrum.rarity === "SSR"}
+    <UpgradeMaterials weapon={simulacrum.weapon} />
 {/if}
 
-{#if data.weapon.recommendedMatrices.length > 0}
-    <RecommendedMatrices weapon={data.weapon} />
+{#if simulacrum.weapon.recommendedMatrices.length > 0}
+    <RecommendedMatrices weapon={simulacrum.weapon} />
 {/if}
 
 <Ad unit="lb5" />
 <Ad unit="mobile_lb3" />
 
 <h2 id="awakening">Awakening</h2>
-<AwakeningTraits traits={data.traits} />
+<AwakeningTraits traits={simulacrum.traits} />
 
 <Ad unit="mobile_lb4" />
 
-<AwakeningGifts gifts={data.bestGifts} categories={data.giftTypes} />
+<AwakeningGifts gifts={simulacrum.bestGifts} categories={simulacrum.giftTypes} />
 
 <h2 id="other-info">Other Info</h2>
-<OtherInfo simulacrum={data} />
+<OtherInfo simulacrum={simulacrum} />
 
 <Ad unit="mobile_lb5" />

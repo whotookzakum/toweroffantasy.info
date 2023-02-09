@@ -31,8 +31,4 @@
     .slider-wrapper {
         display: grid;
     }
-
-    :global(.awakening-traits strong) {
-        color: var(--text-green) !important;
-    }
 </style>

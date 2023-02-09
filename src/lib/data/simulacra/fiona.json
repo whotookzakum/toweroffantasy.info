@@ -1,0 +1,63 @@
+{
+    "name": "Fiona",
+    "id": 36,
+    "chinaOnly": true,
+    "cnName": "feiouna",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 45,
+                "start": "8 Feb 2023",
+                "end": "1 Mar 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increase final damage by **16%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increase final damage by **18%**.\n\n**Scattering Technique Enhancement**:\n\nWater Gathering Enhancement: Increase all elemental damage by **20%**.\n\nSurge Enhancement: When **Lunar Stars** are the active weapon, increase Surge's damage by **150%**, and when Altered Resonance is active, increase Surge's damage by an additional **100%**.\n\nWave Pressure Enhancement: Increase the damage of weapon skills and discharge by **45%**.\n\nVortex Enhancement: When dealing physical damage while the Vortex is active, increase final damage, up to **64%** (10 seconds to reach the max value).\n\nShackle Enhancement: When using Benediction Resonance, extend water prison's duration to **5** seconds and the basic resistance reduction effect is increased by **15%**.\n\nNourishing Spring Enhancement: When using Fortitude Resonance, increase resistance by (**max HP** / **50000**)%, up to **20%**."
+        }
+    ],
+    "giftTypes": [
+        "Collectibles",
+        "Decorations",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 20,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "185 cm",
+    "birthplace": "Innis",
+    "horoscope": "Aries",
+    "birthday": "17 Apr",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "刘雪"
+    }
+}

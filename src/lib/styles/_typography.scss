@@ -45,6 +45,20 @@ a {
     }
 }
 
+.awakening-traits {
+    strong {
+        color: var(--text-mint);
+    }
+}
+
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0;
+    padding: 0;
+    list-style: none;
+}
+
 p,
 li,
 dd,

@@ -6,7 +6,7 @@
     "sets": [
         {
             "pieces": 3,
-            "description": ""
+            "description": "Increase ATK by **15%/19%/22.5%** when there are no enemies within 6 meters."
         }
     ]
 }
