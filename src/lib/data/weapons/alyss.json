@@ -133,7 +133,7 @@
             "name": "Starry Night",
             "type": "discharge",
             "imgSrc": "skill_iceblade_changeskill",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon **removes all debuffs from the wielder** and unleashesa discharge skill, dealing damage equal to **553.2%** of ATK + **29** and **strongly launching** the target, during which damage immunity lasts for **1.5** seconds (unavailable in Apex League)."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon **removes all debuffs from the wielder** and unleashes a discharge skill, dealing damage equal to **553.2%** of ATK + **29** and **strongly launching** the target, during which damage immunity lasts for **1.5** seconds (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/G48ypbnDYIE?start=245",
