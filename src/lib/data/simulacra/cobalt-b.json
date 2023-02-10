@@ -42,9 +42,9 @@
         }
     ],
     "giftTypes": [
-        "Metalware",
-        "Collectibles",
-        "Limited Edition"
+        "Metal Items",
+        "Saved",
+        "Limited Store Items"
     ],
     "bestGifts": [
         {

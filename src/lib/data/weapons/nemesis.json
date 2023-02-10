@@ -92,7 +92,7 @@
             "name": "Dodge",
             "type": "dodge",
             "imgSrc": "common_evade",
-            "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\nDodging will trigger a healing chain that heals nearby allies by **67.7%** of the Wanderer's ATK; for the next **10** seconds, a small healing chain will trigger every **2** seconds, which heals nearby allies by **22.5%** of the Wanderer's ATK. Dodging grants 1 stack of healing chain enhance, which increases the effects of healing chains by **25%** (stacks up to **5** times) and lasts for **30** seconds. Switching weapons will cancel this effect."
+            "description": "Dodge right before getting hit to trigger a Phantasia, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\nDodging will trigger a healing chain that heals nearby allies by **67.7%** of the Wanderer's ATK; for the next **10** seconds, a small healing chain will trigger every **2** seconds, which heals nearby allies by **22.5%** of the Wanderer's ATK. Dodging grants 1 stack of healing chain enhance, which increases the effects of healing chains by **25%** (stacks up to **5** times) and lasts for **30** seconds. Switching weapons doesn't cancel this effect."
         },
         {
             "name": "Twin Spinning Focus",

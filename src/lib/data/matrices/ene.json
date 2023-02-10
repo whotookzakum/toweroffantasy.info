@@ -6,7 +6,7 @@
     "sets": [
         {
             "pieces": 3,
-            "description": ""
+            "description": "When dealing damage greater than **100%** of ATK, deal additional damage equal to **60%/75%/90%** of ATK. Cooldown: **3** seconds."
         }
     ]
 }

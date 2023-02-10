@@ -6,7 +6,7 @@
     "sets": [
         {
             "pieces": 3,
-            "description": ""
+            "description": "Increase speed of obtaining weapon charge by **10%/12.5%/15%**."
         }
     ]
 }
