@@ -1,5 +1,13 @@
 [
     {
+        "date": "February 26 2023",
+        "text": "Added Global Umi; Added Global Type II Couant; Added simulacrum skin previews video; Added missing Global weapon upgrade materials; Fixed global Lin's upgrade materials; Umi skill description updated (cooldown is not affected by effects from sources other than Mobius); Updated CN registration guide and guides page;"
+    },
+    {
+        "date": "February 10 2023",
+        "text": "Fixed Nemesis Healing Chain text (does NOT cancel when switching weapons); Fixed Fiona's Share skill description (fiona gives the target stats, not the other way around); Fixed blank descriptions for SR matrices: bai ling, echo, ene, pepper; Adjusted awakening gift categories to match the scuffed global localizations;"
+    },
+    {
         "date": "February 8 2023",
         "text": "Added Fiona; Added active/ongoing event codes to home page;"
     },

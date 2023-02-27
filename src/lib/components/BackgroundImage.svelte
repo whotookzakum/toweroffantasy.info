@@ -43,7 +43,7 @@
         if (path.includes("chosen-dice")) return 'Artifact/itemicon/artifact_ssr_014'
         if (path.includes("colossus-arm")) return 'Artifact/itemicon/artifact_ssr_001'
         if (path.includes("confinement")) return 'Artifact/itemicon/artifact_ssr_006'
-        if (path.includes("couant2")) return 'Artifact/itemicon/artifact_ssr_012_icon'
+        if (path.includes("type-ii-couant")) return 'Artifact/itemicon/artifact_ssr_012_icon'
         if (path.includes("drone")) return 'Artifact/itemicon/artifact_ssr_008'
         if (path.includes("hologram-projector")) return 'Artifact/itemicon/artifact_ssr_010'
         if (path.includes("hoverboard")) return 'Artifact/itemicon/artifact_sr_016'

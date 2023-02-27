@@ -1,12 +1,12 @@
 ---
 title: CN Registration Guide
-date: 30 May 2022
+date: 21 Feb 2023
 description: How to register for the Chinese version of Tower of Fantasy.
 type: technical
 author: Pyrosu#6969, Zakum#3080, 👑킹젖가슴드래곤👑#5969
 ---
 
-> UPDATED VERSION <a href="https://docs.google.com/document/d/1N7UsgrplqUIL3plYk9gQJzYPECwJ5QP1r2zPNXBbsJU/edit?usp=sharing" target="_blank" rel="noreferrer noopener nofollow">HERE</a>
+> LATEST VERSIONS <a href="https://docs.google.com/document/d/1gzNA6NWGcYMETEnPIKObuEr9FHfHhJZ0TO01IwOYUKI/edit?usp=sharing" target="_blank" rel="noreferrer noopener nofollow">Weibo + Daily Reward Code</a> or <a href="https://docs.google.com/document/d/1N7UsgrplqUIL3plYk9gQJzYPECwJ5QP1r2zPNXBbsJU/edit?usp=sharing" target="_blank" rel="noreferrer noopener nofollow">PWG</a>
 
 Tower of Fantasy in China has a few different versions.
 

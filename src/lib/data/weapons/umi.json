@@ -5,7 +5,7 @@
     "type": "dps",
     "shatter": {
         "tier": "S",
-        "value": "14.00"
+        "value": "12.00"
     },
     "charge": {
         "tier": "A",
@@ -23,44 +23,44 @@
     ],
     "weaponEffects": [
         {
-            "title": "Physical Reaction",
-            "description": "Increase physical ATK by **20%** and physical resistance by **40%**. Activate by equipping **2** or more physical weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Physical Resonance."
+            "title": "Physical Resonance",
+            "description": "Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
         }
     ],
     "advancements": [
-        "When entering Magic Show, gain Mind Puppet, which increases Mobius' physical damage buff to **60%**. During Magic Show, recover **2%** HP and **10** weapon charge every second.",
+        "When switching to Mobius, immediately gain **30** warmup points. Cooldown: **17** seconds. Upon entering Magic Trick, deal area damage equal to **840%** of ATK to nearby targets and reduce their physical resistance by **10%** for **20** seconds.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "End Magic Show early to apply continuous AoE damage that lasts for **13** seconds, reduce Mobius' skill cooldown, and temporarily gain **50%** increased physical damage. If Magic Show's remaining duration is **13** seconds or longer before being cancelled, gain **200** weapon charge.\n\nThe longer the remaining duration of Magic Show before being cancelled, the stronger the buffs.\n\nThe AoE deals up to **400%** damage per hit (cancel when duration > 13 seconds). Skill cooldown can be reduced by a maximum of **13** seconds. The physical damage buff's duration can be extended up to **20** seconds (this effect does not apply to Mobius).",
+        "When ending Magic Trick early, deal wide-area damage over **13** seconds. The current cooldown of Mobius' skill is reduced, and physical damage is increased by **25%** for a period of time (this effect does not apply to Mobius). If Magic Trick has more than **13** seconds remaining, gain an additional **200** weapon charge. The more time remaining when Magic Trick ends, the higher the area damage, the greater the skill cooldown reduction, and the longer the physical damage boost lasts. The area damage dealt is capped at **200%** of ATK (the maximum damage is dealt when the remaining time is more than **13** seconds). The maximum cooldown reduction is **13** seconds, and the physical damage boost can last up to **20** seconds.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "When switching to Mobius, gain **30** points of Preheat Value, cooldown for **17** seconds. When entering Magic State, deal **840%** of ATK as AoE damage to nearby enemies, reducing their physical resistance by **10%** for **20** seconds.",
-        "During Magic Show, Mobius gains an additional whip. Normal attacks and dodge attacks will have a follow up hit, dealing **130%** of ATK. The additional hit is not considered a normal attack."
+        "Gain the Psychic Puppet effect upon entering Magic Trick, increasing Mobius's physical damage boost to **15%**. During Magic Trick, recover **2%** of Max HP and **10** weapon charge every second.",
+        "During Magic Trick, Mobius has an additional whip that is automatically swung whenever Mobius uses normal attacks or dodge attacks, dealing damage equal to **100%** of Mobius's ATK (this damage is not counted as dealing normal attacks)."
     ],
     "abilities": [
         {
-            "name": "Normal Attack",
+            "name": "Basic Technique",
             "type": "normal",
             "imgSrc": "skill_whip_melee",
             "input": [
                 "Attack x5"
             ],
-            "description": "While on the ground, use Mobius to attack 5 times in a row. The shatter of this skill is increased by an additional **50%**.",
+            "description": "While on the ground, use Mobius to launch 5 consecutive attacks. The shatter of this skill is increased by an additional **50%**.",
             "breakdown": [
                 "**76.9%** of ATK + **4** and knockback.",
                 "**84.4%** of ATK + **4** and knockback.",
                 "**112.1%** of ATK + **6** and knockdown.",
-                "**105.5%** of ATK + **6** and **suspend** the target.",
-                "**265.1%** of ATK + **14** and **launch** the target."
+                "**105.5%** of ATK + **6** and drag and drop the target.",
+                "**265.1%** of ATK + **14** and launch the target."
             ]
         },
         {
-            "name": "Volition Combo",
+            "name": "Air Combo",
             "type": "normal",
             "imgSrc": "skill_whip_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
             ],
-            "description": "While in the air, tap normal attack to perform up to 5 attacks in the air, consuming stamina.",
+            "description": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance.",
             "breakdown": [
                 "**46%** of ATK + **2**.",
                 "**66.5%** of ATK + **4**.",
@@ -70,24 +70,24 @@
             ]
         },
         {
-            "name": "Surprise Attack",
+            "name": "Out of the Blue",
             "type": "normal",
             "imgSrc": "skill_whip_branch",
             "input": [
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "When using basic attacks on the ground, press and hold the basic attack to trigger surprises aimed at the locked on target and pull in surrounding targets. On small targets deal **105%** of ATK + **6** damage, and on large targets deal **85.5%** of ATK + **5** damage. The shatter of this skill is increased by an additional **50%**."
+            "description": "While using Basic Technique on the ground, tap and hold normal attack to trigger Out of the Blue directly based on the currently locked target. Smaller locked-on targets are dealt damage equal to **105%** of ATK plus **6** and draw in nearby targets. Larger locked-on targets are dealt damage equal to **85.5%** of ATK plus **5** and draw in nearby targets. This skill's shatter is additionally increased by **50%**."
         },
         {
-            "name": "Stage Change",
+            "name": "Stage Rotation",
             "type": "normal",
             "imgSrc": "skill_whip_jumpattack",
             "input": [
                 "Jump",
                 "hold:Attack"
             ],
-            "description": "While airborne press and hold the basic attack button to quickly drop and deal **121.5%** of ATK + **6** damage when landing.."
+            "description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Pummel.\n\nPlummet from the skies, dealing damage equal to **121.5%** of ATK plus **6** and launching the target."
         },
         {
             "name": "Close-Up Magic",
@@ -96,17 +96,17 @@
             "input": [
                 "hold:Attack"
             ],
-            "description": "While on the ground, press and hold the basic attack button to build power, and release to engage the locked on target and pull in surrounding targets. On small targets deal **105%** of ATK + **6**, and on large targets deal **85.5%** of ATK + **5**. The shatter of this skill is increased by an additional **50%**."
+            "description": "Tap and hold normal attack on the ground to charge Anticipation, and release the button to trigger Close-up Magic based on the currently locked target. Smaller locked-on targets are dealt damage equal to **105%** of ATK plus **6** and draw in nearby targets. Larger locked-on targets are dealt damage equal to **85.5%** of ATK plus **5** and draw in nearby targets. This skill's shatter is additionally increased by **50%**."
         },
         {
-            "name": "Steal the Show",
+            "name": "Grand Illusion",
             "type": "dodge",
             "imgSrc": "skill_whip_evadeattack",
             "input": [
                 "Dodge",
                 "Attack"
             ],
-            "description": "After dodging tap the basic attack button to trigger Steal the Show.\n\nDeal **187.2%** of ATK + **10** damage to targets. The shatter of this skill is increased by an additional **50%**."
+            "description": "Tap normal attack during the short period after dodging to trigger Grand Illusion, dealing damage equal to **187.2%** of ATK plus **10** to nearby targets. This skill's shatter is additionally increased by **50%**."
         },
         {
             "name": "Dodge",
@@ -115,34 +115,34 @@
             "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
-            "name": "Magic Time",
+            "name": "It's Magic Time",
             "type": "skill",
             "imgSrc": "whip_skill",
-            "description": "Dealing damage with any weapon will build **Preheat Value** (cooldown **0.1** sec). Physical weapons can accumulate **3** points at a time, and other elemental weapons can accumulate **1.5** points at a time.  **Preheat Value** will be displayed on the **Magic Meter** and maxes out at **100* points. When entering battle, instantly gain **100** points of **Preheat Value**.\n\nWhen the **Magic Meter** reaches **100** points, using the skill will group enemies and deal **950%** of ATK + **50** damage to them, temporarily gain invincibility during the skill animation  and reduce the movement speed of affected targets (effects do not apply in Apex League or the Critical Abyss). Afterwards, gain the effect **Magic Show** for **18** seconds, continuously consuming **Preheat Value** and replacing the skill button with a Deck Cut. Cooldown **30** seconds.\n\nDuring the **Magic Show**, randomly gain either a **Spades** or **Hearts** card every **2** seconds. You can press the skill button to cut the deck and change which card you will receive. Based on the card, the corresponding **Card Magic** will automatically activate, cooldown **3.8** seconds.\n\nDuring the **Magic Show**, you are considered to have a shield and will not replenish **Magic Meter**. Mobius' physical damage is increased by **60%** and shatter by **20%**.\n\nDifferent combinations of playing cards can activate different **Card Magic**.\n\nHearts + Spades grants *Mind Puppet*.\n\nHearts + Hearts grants *Contradiction Erosion*.\n\nSpades + Spades grants *Card Swept*.\n\nSwitching to other weapons or dying will remove the **Magic Show** state.\n\nWhen **Magic Show** ends, gain immunity to control effects for **20** seconds. If it ends naturally, deal an additional **1200%** of ATK to nearby targets."
+            "description": "Dealing damage with any weapon in the main slot will accrue **warmup points**. Cooldown: **0.06** seconds. Physical weapons accrue **1** point with each hit, and non-physical weapons accrue **0.5** points with each hit. The number of **warmup points** you have are displayed in the **Magic Gauge**, up to **100** points. When entering battle, immediately gain **100 warmup points**.\n\nSkills can be cast once there are **100 warmup points** in the **Magic Gauge**. Pull together enemies in a certain area and deal damage equal to **950%** of ATK plus **50** to the target. Become temporarily invincible (unavailable in Apex League and The Critical Abyss) and reduce the speed of targets within the hit area (unavailable in Apex League and The Critical Abyss). At the same time, activate **Magic Trick** to continuously consume **warmup points** for **18** seconds. Cooldown: **30** seconds. This cooldown is not affected by effects (including the clearance, reset, or change of the cooldown time) that are not from Mobius. During this time, the skill button is replaced with a Cut Card button.\n\nDuring **Magic Trick**, automatically get either a **Spade** or **Heart Poker Card** every 2 seconds. The type of **Poker Card** that is about to be obtained can be switched in advance with the Cut Card button. When there are **2 Poker Cards**, the corresponding **Card Magic** will be automatically used. Cooldown: **3.8** seconds.\n\nDuring **Magic Trick**, you gain hyperbody and are considered as having a shield. Your **Magic Gauge** will also no longer be automatically replenished. Increase the physical damage of Mobius's attacks (normal attack and dodge attack) by **10%** and shatter by **20%**.\n\nDifferent **Poker Card** combinations will activate different **Card Magic** effects.\n\nHeart + Spade → *Psychic Puppet*\n\nHeart + Heart → *Contradiction Corrosion*\n\nSpade + Spade → *Card Sweep*\n\n**Magic Trick** ends when switching to another weapon in any way or upon being defeated.\n\nGain hyperbody for **20** seconds when Magic Trick ends. If it ends naturally, it deals additional damage equal to **1,000%** of ATK to nearby targets."
         },
         {
-            "name": "Mind Puppet",
+            "name": "Psychic Puppet",
             "type": "skill",
             "imgSrc": "whip_magic_AB",
-            "description": "Conjure a group of bats from a top hat and guards and strengthen yourself. During **Magic Show**, Mobius' physical damage increases by **20%** and only **40%** of received damaged will be deducted from your health immediately. The remaining **60%** will be deducted after **Magic Show** ends over a **10** second period (will only apply when not using Fortitude Resonance)."
+            "description": "Pull out a colony of bats from your hat and enhance yourself. During **Magic Trick**, physical damage dealt by Mobius is increased by **7.5%**, and only **60%** of the damage taken will be tallied. The remaining **40%** will slowly be deducted from your HP over **10** seconds after **Magic Trick** ends. The delayed tally effect only applies when Fortitude Resonance is not active."
         },
         {
-            "name": "Contradiction Erosion",
+            "name": "Contradiction Corrosion",
             "type": "skill",
             "imgSrc": "whip_magic_AA",
-            "description": "Immediately restores **15%** HP, and drops flowers of erosion on up to **7** targets within range, dealing **360%** of ATK damage every seconsd for **3** seconds."
+            "description": "Immediately recover **10%** of Max HP and plant a Corrosion Flower on up to **7** targets within a certain range, which deal damage equal to **260%** of ATK every second for **3** seconds."
         },
         {
-            "name": "Card Swept",
+            "name": "Card Sweep",
             "type": "skill",
             "imgSrc": "whip_magic_BB",
-            "description": "Create a hurricane of cards at the target position dealing up to **12** hits, totaling **1450%** of ATK."
+            "description": "Summon a large number of flying cards, forming a hurricane that swarms to the target location, attacking the target up to **12** times and dealing total damage equal to **850%** of ATK."
         },
         {
-            "name": "Fragrant Tea",
+            "name": "Sleight of Hand",
             "type": "discharge",
             "imgSrc": "skill_whip_changeskill",
-            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and leave behind a fragrance that grants you temporary invincibility (does not apply in Apex League and Critical Abyss). When the fragrance settles, deal **316.2%** of ATK + **17** damage to targets, and after a brief delay deal **737.8%** of ATK + **39** damage and **suspend** targets."
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, **remove all debuffs from the wielder** upon switching to this weapon, cast Sleight of Hand and gain temporary invincibility (unavailable in Apex League and The Critical Abyss). Upon landing, deal damage equal to **316.2%** of ATK plus **17** to the target. After swinging the whip, deal damage equal to **737.8%** of ATK plus **39** to the target and **strongly launch** the target."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/zHmMZAYxZrY?start=210",

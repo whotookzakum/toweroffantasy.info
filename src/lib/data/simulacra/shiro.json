@@ -14,8 +14,8 @@
         }
     ],
     "giftTypes": [
-        "Metalware",
-        "Collectibles",
+        "Metal Items",
+        "Saved",
         "Rare Items"
     ],
     "bestGifts": [
@@ -105,5 +105,6 @@
         "jp": "小澤亜李 (Ari Ozawa)",
         "en": "Kristen McGuire",
         "cn": "小耗"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=53"
 }

@@ -115,7 +115,7 @@
             "input": [
                 "hold:Attack"
             ],
-            "description": "When using the **Benediction Resonance**:\n\nWhile on the ground, press and hold basic attack to select a teammate and release to form a link with them. The linked target cannot be linked again until the link is broken by them reaching 0 HP, linking to a new target, or exceeding the max link distance. The linked target receives **50%** more healing from Lunar Stars.\n\nIf the linked teammate is using **Fortitude Resonance**, transfer **50%** of their resistance to yourself.\n\nIf the linked teammate is using **Balanced Resonance** or **Attack Resonance**, transfer **20%** of their ATK (up to **20000**) to yourself.\n\nIf the linked teammate is using **Benediction Resonance**, increase both of your healing by an additional **30%**."
+            "description": "When using the **Benediction Resonance**:\n\nWhile on the ground, press and hold basic attack to select a teammate and release to form a link with them. The linked target cannot be linked again until the link is broken by them reaching 0 HP, linking to a new target, or exceeding the max link distance. The linked target receives **50%** more healing from Lunar Stars.\n\nIf the linked teammate is using **Fortitude Resonance**, they gain resistance equal to **50%** of your resistance.\n\nIf the linked teammate is using **Balanced Resonance** or **Attack Resonance**, they gain ATK equal to **20%** of your ATK (up to **20000**).\n\nIf the linked teammate is using **Benediction Resonance**, increase both of your healing by an additional **30%**."
         },
         {
             "name": "Dodge",

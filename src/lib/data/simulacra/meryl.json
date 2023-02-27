@@ -14,7 +14,7 @@
         }
     ],
     "giftTypes": [
-        "Metalware",
+        "Metal Items",
         "Rare Items"
     ],
     "bestGifts": [
@@ -80,5 +80,6 @@
         "jp": "石川由依 (Yui Ishikawa)",
         "en": "Kira Buckland",
         "cn": "秦紫翼"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=104"
 }

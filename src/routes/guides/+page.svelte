@@ -4,20 +4,24 @@
 
     const externalGuides = [
         {
+            href: "https://docs.google.com/document/d/1gzNA6NWGcYMETEnPIKObuEr9FHfHhJZ0TO01IwOYUKI/edit?usp=sharing",
+            title: "CN Registration & Daily Reward Code",
+        },
+        {
             href: "https://docs.google.com/spreadsheets/d/1lRhBgB7M7xqqBGdMCvmW2Bwnu1OAvasIN6ukLTgOoCo/edit#gid=0",
             title: "Bygone phantasm rewards",
         },
         {
             href: "https://docs.google.com/spreadsheets/d/1lRhBgB7M7xqqBGdMCvmW2Bwnu1OAvasIN6ukLTgOoCo/edit#gid=883187120",
-            title: "Armor RNG stat ranges"
+            title: "Armor RNG stat ranges",
         },
         {
             href: "https://docs.google.com/spreadsheets/d/1lRhBgB7M7xqqBGdMCvmW2Bwnu1OAvasIN6ukLTgOoCo/edit#gid=1719634605",
-            title: "World boss drop rates"
+            title: "World boss drop rates",
         },
         {
             href: "https://docs.google.com/spreadsheets/d/1lRhBgB7M7xqqBGdMCvmW2Bwnu1OAvasIN6ukLTgOoCo/edit#gid=1101144150",
-            title: "Joint operation drop rates"
+            title: "Joint operation drop rates",
         },
         {
             href: "https://twitter.com/Sova_ToF/status/1562031690490560517",
@@ -57,6 +61,14 @@
         rel="noreferrer noopener nofollow">old site</a
     >.
 </p>
+
+<blockquote>
+    These guides are no longer maintained; newer guides can be found on our  <a
+        href="https://discord.com/channels/670617630717116426/1020417184259919953"
+        target="_blank"
+        rel="noreferrer noopener nofollow">Discord</a
+    >.
+</blockquote>
 
 <ul>
     {#each data.items as guide}

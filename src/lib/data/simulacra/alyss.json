@@ -41,8 +41,8 @@
         }
     ],
     "giftTypes": [
-        "Collectibles", 
-        "Limited Edition", 
+        "Saved", 
+        "Limited Store Items", 
         "Vera"
     ],
     "bestGifts": [
@@ -76,5 +76,6 @@
         "jp": "",
         "en": "Brittany Cox",
         "cn": "杜晴晴"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=520"
 }

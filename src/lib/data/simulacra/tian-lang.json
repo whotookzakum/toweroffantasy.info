@@ -41,7 +41,7 @@
         }
     ],
     "giftTypes": [
-        "Collectibles",
+        "Saved",
         "Decorations",
         "Vera"
     ],
@@ -76,5 +76,6 @@
         "jp": "石川界人 (Kaito Ishikawa)",
         "en": "Kaiji Tang",
         "cn": "淦子齐"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=467"
 }

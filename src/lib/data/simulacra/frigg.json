@@ -52,7 +52,7 @@
         }
     ],
     "giftTypes": [
-        "Metalware",
+        "Metal Items",
         "Everyday Items"
     ],
     "bestGifts": [
@@ -122,5 +122,6 @@
         "jp": "伊藤静 (Shizuka Ito)",
         "en": "Antonia Flynn",
         "cn": "杨梦露"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=352"
 }

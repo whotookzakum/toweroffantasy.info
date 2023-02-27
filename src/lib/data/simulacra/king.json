@@ -14,9 +14,9 @@
         }
     ],
     "giftTypes": [
-        "Collectibles",
+        "Saved",
         "Rare Items",
-        "Limited Edition"
+        "Limited Store Items"
     ],
     "bestGifts": [
         {
@@ -101,5 +101,6 @@
         "jp": "松岡禎丞 (Yoshitsugu Matsuoka)",
         "en": "Johnny Young",
         "cn": "子晰"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=130"
 }

@@ -31,12 +31,12 @@
     }
 
     .categories {
-        --collectibles: #8b8bc5;
+        --saved: #8b8bc5; // Collectibles
         --everyday-items: #c08f8d;
         --figurines: #da849f;
         --games: #8faecb;
-        --limited-edition: #ddc392;
-        --metalware: #b09cea;
+        --limited-store-items: #ddc392; // Limited Edition
+        --metal-items: #b09cea; // Metalware
         --decorations: #ababa5;
         --rare-items: #dd64a9;
         --toys: #dd9cea;

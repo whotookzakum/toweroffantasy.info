@@ -120,7 +120,7 @@
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong1",
             "description":
-                "When using the Fortitude Resonance:\n\nSuccessfully use any weapon skill to taunt nearby enemies for **2.5** seoncds;\n\nWhen Eruption Weave is used, Lingguang's defensive area will be expanded, and nearby teammates gain hyperbody and receive **40%** reduced damage.\n\nDuring heartmelter, Lingguang Realm's duration is constantly refreshed."
+                "When using the Fortitude Resonance:\n\nSuccessfully use any weapon skill to taunt nearby enemies for **2.5** seconds;\n\nWhen Eruption Weave is used, Lingguang's defensive area will be expanded, and nearby teammates gain hyperbody and receive **40%** reduced damage.\n\nDuring heartmelter, Lingguang Realm's duration is constantly refreshed."
         },
         {
             "name": "Magnificent Phoenix Breath",

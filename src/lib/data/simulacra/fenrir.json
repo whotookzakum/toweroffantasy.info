@@ -30,7 +30,7 @@
         }
     ],
     "giftTypes": [
-        "Collectibles",
+        "Saved",
         "Toys",
         "Vera"
     ],
@@ -65,5 +65,6 @@
         "jp": "",
         "en": "",
         "cn": "孙艳琦"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=561"
 }

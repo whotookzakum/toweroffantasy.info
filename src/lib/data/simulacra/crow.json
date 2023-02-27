@@ -16,7 +16,7 @@
     "giftTypes": [
         "Everyday Items",
         "Figurines",
-        "Limited Edition"
+        "Limited Store Items"
     ],
     "bestGifts": [
         {
@@ -97,5 +97,6 @@
         "jp": "岡本信彦 (Nobuhiko Okamoto)",
         "en": "Casey Mongillo",
         "cn": "翟巍"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=181"
 }

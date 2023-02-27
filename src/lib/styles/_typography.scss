@@ -23,7 +23,8 @@ a {
 
 .advancements,
 .abilities,
-.mounts {
+.mounts,
+.ability {
     em {
         color: var(--text-green);
         font-weight: 500;
@@ -64,7 +65,8 @@ li,
 dd,
 dt,
 summary,
-aside {
+aside,
+blockquote {
     line-height: 1.75;
 }
 

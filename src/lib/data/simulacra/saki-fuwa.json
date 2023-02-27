@@ -51,7 +51,7 @@
         }
     ],
     "giftTypes": [
-        "Metalware",
+        "Metal Items",
         "Everyday Items",
         "Vera"
     ],
@@ -86,5 +86,6 @@
         "jp": "雨宮天 (Sora Amamiya)",
         "en": "EmiLo",
         "cn": "唐小喜"
-    }
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=397"
 }

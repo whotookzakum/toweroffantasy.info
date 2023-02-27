@@ -14,10 +14,14 @@ author: Zakum#3080
 <Youtube source="https://www.youtube.com/embed/xcYGj-Ucu28" />
 
 **Climb walls while consuming nearly 0 endurance.**
-<kbd>CTRL</kbd> + <kbd>Space</kbd> + <kbd>Space</kbd> + <kbd>W</kbd>
+<div>
+    <kbd>CTRL</kbd> + <kbd>Space</kbd> + <kbd>Space</kbd> + <kbd>W</kbd>
+</div>
 
 **Climb past ledges that block you from climbing vertically.**
-<kbd>Right Click</kbd> + <kbd>Space</kbd> + <kbd>Right Click</kbd>
+<div>
+    <kbd>Right Click</kbd> + <kbd>Space</kbd> + <kbd>Right Click</kbd>
+</div>
 
 Advanced users can use Samir's Aerial hold attack to gain even more height. After the jump, hold Left Click until you kick upwards, then quickly Right Click + Forward at peak height before heading downwards.
 
