@@ -1,7 +1,14 @@
 <script>
+    import Youtube from "../Youtube.svelte";
     export let simulacrum;
 </script>
 
+{#if simulacrum.skinsPreviewUrl}
+    <h3>Skins</h3>
+    <Youtube source={simulacrum.skinsPreviewUrl} caption={`A preview of ${simulacrum.name}'s available reskins up until the 2.5 patch.`} />
+{/if}
+
+<h3>Stats</h3>
 <div class="bio-wrapper full-bleed">
     <dl>
         <div>
