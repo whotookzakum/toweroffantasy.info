@@ -2,7 +2,6 @@
     "name": "Umi",
     "id": 31,
     "cnName": "wumi",
-    "chinaOnly": true,
     "rarity": "SSR",
     "banners": {
         "cn": [
@@ -29,11 +28,11 @@
     "traits": [
         {
             "affinity": 1200,
-            "description": "Every time Umi uses **Magic Time**, increase final damage by **12%** for **30** seconds (can not be stacked)."
+            "description": "Increase final damage by **12%** for **30** seconds whenever Umi uses **It's Magic Time**. This effect does not stack."
         },
         {
             "affinity": 4000,
-            "description": "Every time Umi uses **Magic Time**, increase final damage by **23%** for **30** seconds (can not be stacked)."
+            "description": "Increase final damage by **18%** for **30** seconds whenever Umi uses **It's Magic Time**. This effect does not stack."
         }
     ],
     "giftTypes": [
@@ -68,8 +67,8 @@
     "horoscope": "Libra",
     "birthday": "20 October",
     "voiceActors": {
-        "jp": "",
-        "en": "",
+        "jp": "M・A・O",
+        "en": "Anne Yatco",
         "cn": "刘雯"
     }
 }
