@@ -25,9 +25,9 @@
         }
     ],
     "giftTypes": [
-        "Toys",
-        "Everyday Items",
-        "Decorations"
+        "Rare Items",
+        "Saved",
+        "Vera"
     ],
     "bestGifts": [
         {
@@ -35,64 +35,8 @@
             "gift": "linyeFigure"
         },
         {
-            "points": 80,
-            "gift": "seal"
-        },
-        {
-            "points": 80,
-            "gift": "photo"
-        },
-        {
-            "points": 60,
-            "gift": "ufo"
-        },
-        {
-            "points": 60,
-            "gift": "photo"
-        },
-        {
-            "points": 60,
-            "gift": "snowglobe"
-        },
-        {
-            "points": 60,
-            "gift": "foxFigure"
-        },
-        {
-            "points": 60,
-            "gift": "catFigure"
-        },
-        {
-            "points": 60,
-            "gift": "miaFigure"
-        },
-        {
-            "points": 60,
-            "gift": "kitchenware"
-        },
-        {
-            "points": 60,
-            "gift": "goldCoin"
-        },
-        {
             "points": 60,
             "gift": "princeTataFigure"
-        },
-        {
-            "points": 60,
-            "gift": "photo"
-        },
-        {
-            "points": 60,
-            "gift": "tradingCard"
-        },
-        {
-            "points": 30,
-            "gift": "perfume"
-        },
-        {
-            "points": 30,
-            "gift": "necklace"
         },
         {
             "points": 30,
@@ -103,15 +47,7 @@
             "gift": "bunnyDoll"
         },
         {
-            "points": 15,
-            "gift": "photo"
-        },
-        {
-            "points": 15,
-            "gift": "harmonica"
-        },
-        {
-            "points": 15,
+            "points": 20,
             "gift": "strangePlant"
         }
     ],

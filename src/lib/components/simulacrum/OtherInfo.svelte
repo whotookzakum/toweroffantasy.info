@@ -1,11 +1,17 @@
 <script>
     import Youtube from "../Youtube.svelte";
     export let simulacrum;
+    let caption = simulacrum.skinsPreviewUrl?.includes("elnGyDenRyk")
+        ? `A preview of ${simulacrum.name}'s available reskins up until the 2.5 patch.`
+        : "";
 </script>
 
 {#if simulacrum.skinsPreviewUrl}
     <h3>Skins</h3>
-    <Youtube source={simulacrum.skinsPreviewUrl} caption={`A preview of ${simulacrum.name}'s available reskins up until the 2.5 patch.`} />
+    <Youtube
+        source={simulacrum.skinsPreviewUrl}
+        {caption}
+    />
 {/if}
 
 <h3>Stats</h3>
@@ -35,7 +41,11 @@
     <img
         class="chart"
         style="width: 100%"
-        src={`/images${simulacrum.chinaOnly ? "" : "/ResourcesOverSea"}/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${simulacrum.id}.png`}
+        src={`/images${
+            simulacrum.chinaOnly ? "" : "/ResourcesOverSea"
+        }/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${
+            simulacrum.id
+        }.png`}
         alt={`${simulacrum.name}'s personality chart'`}
         width="678"
         height="367"
