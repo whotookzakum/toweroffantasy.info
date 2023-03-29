@@ -1,0 +1,177 @@
+{
+    "name": "Lost Melody",
+    "imgSrc": "https://index.lunarheart.repl.co/new_media/weapons/LostMelody.png",
+    "element": "volt",
+    "type": "dps",
+    "shatter": {
+        "tier": "A",
+        "value": "10"
+    },
+    "charge": {
+        "tier": "S",
+        "value": "12.00"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "physical",
+        "red",
+        "black"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Volt resonance",
+            "description": "Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Volt Resonance. "
+        }
+    ],
+    "advancements": [
+        "After **Echo** is triggered, each crystal thorn will deal damage equal to **193.3%** of ATK to nearby targets every **2** seconds.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Release any weapon skill to generate **1** crystal thorn.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "The echo has the greatest impact on the crystal thorns healing received increased by **50%**.",
+        "After successfully releasing **Hella's Embrace**, volt ATK is increased by **25%** for **30** seconds."
+    ],
+    "abilities": [
+        {
+            "name": "Wingspan",
+            "type": "normal",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-NA.png",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "When on the ground, press normal attack to perform five consecutive attacks. ",
+            "breakdown": [
+                "**137.3%** of ATK + **7** and small knockback.",
+                "**101.3%** of ATK + **5** and small knockback",
+                "**191.9%** of ATK + **10** and **suspend** the target.",
+                "**439.6%** of ATK + **23**, small knockback and alert nearby enemies.",
+                "**276.5%** of ATK + **15** and knockback."
+            ]
+        },
+        {
+            "name": "Suppress",
+            "type": "normal",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-AA.png",
+            "input": [
+                "Jump",
+                "Attack x5"
+            ],
+            "description": "While airborne, press normal attack to attack 5 times in the air while consuming endurance.",
+            "breakdown": [
+                "**165.5%** of ATK + **9**.",
+                "**130.3%** of ATK + **7**.",
+                "**254.8%** of ATK + **13**.",
+                "**499.5%** of ATK + **26**.",
+                "**248.2%** of ATK + **13**."
+            ]
+        },
+        {
+            "name": "Chase",
+            "type": "normal",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-NAH.png",
+            "input": [
+                "Attack",
+                "hold:Attack"
+            ],
+            "description": "After a normal attack on the ground, press and hold normal attack to trigger chase, dealing damage equal to **294%** of ATK + **15**."
+        },
+        {
+            "name": "Advent",
+            "type": "normal",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-NAH.png",
+            "input": [
+                "jump",
+                "hold:Attack"
+            ],
+            "description": "Press and hold normal attack while in the air (only when an enemy is targeted) to trigger Advent. Fall from the sky and consume stamina, dealing damage equal to **380%** of ATK + **20** upon landing."
+        },
+        {
+            "name": "Raid",
+            "type": "dodge",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-FD.png",
+            "input": [
+                "Arrow keys",
+                "Dodge"
+            ],
+            "description": "Short after moving and dodging, press normal attack to trigger Raid, dealing **159.6%** of ATK + **8** damage to nearby targets, and floating them.\nReleasing this skill can trigger **Echo**."
+        },
+        {
+            "name": "Bee colony",
+            "type": "dodge",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-BD.png",
+            "input": [
+                "Dodge"
+            ],
+            "description": "Short after dodging backwards, press normal attack to trigger a swarm of bees and summon two. Bees deal **252%** of ATK + **13** damage to the target in front.\nReleasing this skill can trigger **Echo**."
+        },
+        {
+            "name": "Shuttle",
+            "type": "dodge",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-BDH.png",
+            "input": [
+                "hold:dodge"
+            ],
+            "description": "Press and hold dodge while on the ground to trigger Shuttle, flying high up. (unavailable when jetpack is disabled)"
+        },
+        {
+            "name": "Suppression",
+            "type": "dodge",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-FDH.png",
+            "input": [
+                "Arrow keys",
+                "hold:dodge"
+            ],
+            "description": "Press and hold dodge while moving on the ground to trigger Suppression, sending forward the hive spirit, and turn the grayspace enemy hit into an ally (not effective for bosses) for **60** seconds.\nRelease the hive spirit again, or when Suppression ends, the control state ends, and the target will take 45% of all damage dealt by itself during the control period.\nHive spirit can be blocked by non-grayspace enemies and does not take effect on them."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
+        },
+        {
+            "name": "Field",
+            "type": "skill",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-S.png",
+            "description": "Perform **10** high-speed traversals, adsorb nearby targets and deal damage to nearby enemies equal to **867.4%** of ATK + **46**, deal an additional **462.6%** of ATK + **24** after landing.\nCooldown: **30** seconds.\nEach movement, 10% of the maximum health of all the crystal thorns on the field is consumed, causing additional damage equal to (**Number of crystal thorns on the field** * **175%** of ATK , or **number of crystal thorns on the field** * **2.8%** of max HP. (take the highest value), until the crystal thorns Health is **0**.\nThe proportion of the maximum health loss of crystal thorns is regarded as the proportion of its own maximum health loss."
+        },
+        {
+            "name": "Harrah's Embrace",
+            "type": "discharge",
+            "imgSrc": "https://index.lunarheart.repl.co/new_media/skills/Rubilia-D.png",
+            "description": "When the ***weapon is fully charged*** or ***Phantasia*** is triggered, switch from another weapon to this weapon to **remove all debuffs from the user**, and Summon Hella's Embrace that deals damage equal to **1,650%** of ATK + **87** to nearby targets. Gain immunity for **2.6** seconds during the period (does not take effect in Apex League).\nAfter successfully releasing Hella's Embrace, volt ATK is increased by **10%** for **30** seconds. After Hella's embrace hits, **3** crystal thorns are generated (up to **5** can exist on the field). Each thorn initially has **100%** of the wielder's max HP. Cannot be attacked, and only receives healing from Echo. Lasts for **150** seconds. Additionally, get **2** Echos (up to **4**). Any dodge attack consumes **1** echo each time, dealing damage equal to (**Amount of crystal thorns on the field** * **240%** of ATK, heal all crystal thorns by **25%** of their max HP. Reset the position of the crystal thorn and its duration. Get a chance to dodge once without consuming a dodge attempt. "
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/Fn7zKWNWcsw?start=187",
+    "recommendedMatrices": [
+        {
+            "name": "Rubilia",
+            "pieces": 4,
+            "description": "Both Rubilia's 2-piece and 4-piece set could be good on Rubilia herself, but because it also works in the off-hand slot, it should be placed on the sub dps/support weapon."
+        },
+        {
+            "name": "Shiro",
+            "pieces": 4,
+            "description": "Great set effects for both shatter and consistent damage increase. Use 4 set for quick fights, otherwise pair with 2-set Samir or 2-set Crow."
+        },
+        {
+            "name": "Crow",
+            "pieces": 2,
+            "description": "At high crit rate, Crow's 2 set is the second best choice for damage."
+        },
+        {
+            "name": "Samir",
+            "pieces": 2,
+            "description": "Because of the quick and frequent attacks, Lost Melody can easily maintain 100% uptime on the buff."
+        },
+        {
+            "name": "Sobek",
+            "pieces": 3,
+            "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
+        }
+    ]
+}
