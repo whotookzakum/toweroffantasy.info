@@ -33,7 +33,8 @@ September 12, 2022: 500k users
 - Weapon materials `Icon\zujian` and `Icon\item`
 
 ### Mounts
-- Mounts `Icon\Mount`
+- Mount Parts `Icon\Mount`
+- Mounts `UI\Mount`
 
 ### Cosmetics
 - Outfits, accessories, headwear, gliders `UI\shizhuang\Fashion_icon`
