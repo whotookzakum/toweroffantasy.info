@@ -1,0 +1,14 @@
+{
+    "name": "Ocean's Heart",
+    "chinaOnly": true,
+    "imgSrc": "artifact_ssr_018",
+    "rarity": "SSR",
+    "description": "Generate an Ocean's Heart at the target position, dealing damage equal to **4%** of your Max HP (**0.4%** in Apex League) every **2** seconds. The element of the damage will match your current weapon, and the Ocean's Heart lasts for **45** seconds, and targets that are hit receive **5%** increased damage for **5** seconds. Cooldown:  **60** seconds.",
+    "advancements": [
+        "Ocean's Heart launches **1** tidal wave every **15** seconds, dealing damage equal to **30%** (**3%** in Apex League) of your Max HP to nearby targets.",
+        "Ocean's Heart's duration is increased to **90** seconds.",
+        "Targets hit by Ocean's Heart receive an additional **7%** increased damage.",
+        "Increase volt damage by **2%**, even if not deployed. Unavailable in Apex League.",
+        "When the wanderer dives into the sea, using Ocean's Heart transforms them into a dolphin, avoiding being targeted by monsters for **15** seconds and increasing movement speed for up to **45** seconds.\n\nWhile transformed, your next attack will hit the sea water to deal damage equal to **50%** (**5%** in Apex League) of your Max HP to nearby targets, and you will transform back to normal."
+    ]
+}
