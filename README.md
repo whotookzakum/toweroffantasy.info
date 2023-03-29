@@ -36,6 +36,10 @@ September 12, 2022: 500k users
 - Mount Parts `Icon\Mount`
 - Mounts `UI\Mount`
 
+### Relics
+- Relic 128x128 `UI\Artifact\icon`
+- Relic 512x512 `UI\Artifact\itemicon`
+
 ### Cosmetics
 - Outfits, accessories, headwear, gliders `UI\shizhuang\Fashion_icon`
 - Avatar frames `Icon\AvatarFrame`
