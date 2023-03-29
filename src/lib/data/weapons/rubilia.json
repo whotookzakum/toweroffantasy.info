@@ -1,6 +1,6 @@
 {
     "name": "Lost Melody",
-    "imgSrc": "https://index.lunarheart.repl.co/new_media/weapons/LostMelody.png",
+    "imgSrc": "item_Weapon_SSR_Rubilia_Thunder01",
     "element": "volt",
     "type": "dps",
     "shatter": {

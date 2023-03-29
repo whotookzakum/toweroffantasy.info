@@ -1,6 +1,7 @@
 {
     "name": "Gunonno",
-    "id": 37,
+    "id": 27,
+    "chinaOnly": true,
     "cnName": "genuonuo",
     "rarity": "SSR",
     "banners": {
@@ -11,9 +12,7 @@
                 "end": "21 Mar 2023"
             }
         ],
-        "glob": [
-		
-        ]
+        "glob": []
     },
     "traits": [
         {
@@ -39,9 +38,9 @@
             "points": 80,
             "gift": "seal"
         },
-	    {
-	    "points": 80,
-	    "gift": "photo"
+        {
+            "points": 80,
+            "gift": "photo"
         },
         {
             "points": 60,

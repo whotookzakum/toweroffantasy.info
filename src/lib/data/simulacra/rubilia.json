@@ -1,6 +1,6 @@
 {
     "name": "Rubilia",
-    "id": 32,
+    "id": 48,
     "chinaOnly": true,
     "cnName": "leibiliya",
     "rarity": "SSR",
@@ -23,14 +23,16 @@
             "description": "For every volt weapon equipped, increase volt ATK by **8%**. The duration of **Suppression** is increased to **120** seconds."
         }
     ],
-        "gender": "Female",
-        "height": "195 cm",
-        "birthplace": "???",
-        "horoscope": "Aquarius",
-        "birthday": "24 Apr",
-        "voiceActors": {
-            "jp": "",
-            "en": "",
-            "cn": "Mu Xue Ting (穆雪婷)"
-        }
+    "giftTypes": [],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "195 cm",
+    "birthplace": "???",
+    "horoscope": "Aquarius",
+    "birthday": "24 Apr",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "Mu Xue Ting (穆雪婷)"
     }
+}

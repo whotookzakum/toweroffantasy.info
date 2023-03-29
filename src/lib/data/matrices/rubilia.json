@@ -1,13 +1,13 @@
 {
     "name": "Rubilia",
     "chinaOnly": true,
-    "id": 30,
+    "id": 31,
     "rarity": "SSR",
-    "imgSrc": "https://index.lunarheart.repl.co/new_media/matrices/Rubilia.png",
+    "imgSrc": "icon_matrix_SSR31_256",
     "sets": [
         {
             "pieces": 2,
-            "description": "increases max HP by **150k/180k/210k/240k** and volt ATK by **13%/15%/18%/20%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect. "
+            "description": "Increases max HP by **150k/180k/210k/240k** and volt ATK by **13%/15%/18%/20%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         },
         {
             "pieces": 4,

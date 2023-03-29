@@ -1,6 +1,6 @@
 {
     "name": "Little Hurricane",
-    "imgSrc": "https://index.lunarheart.repl.co/new_media/weapons/LittleHurricane.png",
+    "imgSrc": "item_Weapon_SSR_Chainsaw_physic01",
     "element": "physical",
     "type": "dps",
     "shatter": {
