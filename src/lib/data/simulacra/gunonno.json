@@ -1,0 +1,65 @@
+{
+    "name": "Gunonno",
+    "id": 27,
+    "chinaOnly": true,
+    "cnName": "genuonuo",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 48,
+                "start": "1 Mar 2023",
+                "end": "22 Mar 2023"
+            }
+        ],
+        "glob": []
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Using Expedition Team Attack triggers Complete Rampage, the final damage dealt to enemies with Serious Injury is increased by 12% for 30 seconds."
+        },
+        {
+            "affinity": 4000,
+            "description": "Using Expedition Team Attack triggers Complete Rampage, the final damage dealt to enemies with Serious Injury is increased by 23% for 30 seconds. Serious Injury will increase movement speed by 50% when the user is underwater."
+        }
+    ],
+    "giftTypes": [
+        "Rare Items",
+        "Saved",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 60,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 20,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "134 cm",
+    "birthplace": "Innars",
+    "horoscope": "Pisces",
+    "birthday": "5 March",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "Chang Danrui (常丹瑞)"
+    },
+    "skinsPreviewUrl": "https://www.youtube.com/embed/sltdX1RmGAc?start=317"
+}

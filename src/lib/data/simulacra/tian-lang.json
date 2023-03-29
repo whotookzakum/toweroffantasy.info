@@ -9,6 +9,11 @@
                 "bannerNo": 10,
                 "start": "22 Dec 2022",
                 "end": "11 Jan 2023"
+            },
+            {
+                "bannerNo": 24,
+                "start": "19 Mar 2023",
+                "end": "29 Mar 2023"
             }
         ],
         "cn": [
@@ -27,6 +32,11 @@
                 "subtext": "Anniversary",
                 "start": "15 Dec 2022",
                 "end": "21 Dec 2022"
+            },
+            {
+                "bannerNo": 53,
+                "start": "22 Mar 2023",
+                "end": "19 Apr 2023"
             }
         ]
     },

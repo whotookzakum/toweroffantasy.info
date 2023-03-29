@@ -1,0 +1,62 @@
+{
+    "name": "Rubilia",
+    "id": 48,
+    "chinaOnly": true,
+    "cnName": "leibiliya",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 51,
+                "start": "22 Mar 2023",
+                "end": "19 Apr 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "For every volt weapon equipped, increase volt ATK by **6%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "For every volt weapon equipped, increase volt ATK by **8%**. The duration of **Suppression** is increased to **120** seconds."
+        }
+    ],
+    "giftTypes": [
+        "Decorations",
+        "Vera"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "princeTataFigure"
+        },
+        {
+            "points": 60,
+            "gift": "linyeFigure"
+        },
+        {
+            "points": 30,
+            "gift": "strangeFragment"
+        },
+        {
+            "points": 30,
+            "gift": "bunnyDoll"
+        },
+        {
+            "points": 15,
+            "gift": "strangePlant"
+        }
+    ],
+    "gender": "Female",
+    "height": "195 cm",
+    "birthplace": "???",
+    "horoscope": "Aquarius",
+    "birthday": "24 Apr",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "Mu Xue Ting (穆雪婷)"
+    }
+}
