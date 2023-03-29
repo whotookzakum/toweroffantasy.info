@@ -43,7 +43,7 @@
         {
             "name": "Chong Chong",
             "type": "normal",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_melee.png",
+            "imgSrc": "skill_chainsaw_melee",
             "input": [
                 "Attack x5"
             ],
@@ -59,7 +59,7 @@
         {
             "name": "Turning Attack",
             "type": "normal",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_airattack.png",
+            "imgSrc": "skill_chainsaw_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
@@ -76,7 +76,7 @@
         {
             "name": "Treasure Digging",
             "type": "normal",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_branch1.png",
+            "imgSrc": "skill_chainsaw_branch1",
             "input": [
                 "Attack",
                 "hold:Attack"
@@ -86,7 +86,7 @@
         {
             "name": "Octopus Ball Boiling Pot",
             "type": "normal",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_branch2.png",
+            "imgSrc": "skill_chainsaw_branch2",
             "input": [
                 "Attack",
                 "hold:Attack",
@@ -97,7 +97,7 @@
         {
             "name": "Xiaopi Opens the Way",
             "type": "normal",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_branch4.png",
+            "imgSrc": "skill_chainsaw_branch4",
             "input": [
                 "hold:Attack"
             ],
@@ -106,31 +106,12 @@
         {
             "name": "Tornado Smash",
             "type": "normal",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_jumpattack.png",
+            "imgSrc": "skill_chainsaw_jumpattack",
             "input": [
                 "jump",
                 "hold:Attack"
             ],
             "description": "Press and hold normal attack while in the air to trigger the Tornado Smash. Falling from the sky, after landing, deal damage equal to **418%** of ATK + **22** to nearby targets and launch them."
-        },
-        {
-            "name": "Whistleback",
-            "type": "dodge",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_evadeattack1.png",
-            "input": [
-                "Dodge"
-            ],
-            "description": "Within a short period of time after dodging, press normal attakc to attack nearby targets dealing damage equal to **94.4%** of ATK + **5**.\nPassive: Slow enemies hit by **60%**, and lower their attack by **30%** for **5** seconds. Can be triggered once every **10** seconds. (does not take effect in Apex League)"
-        },
-        {
-            "name": "Chasing Arm",
-            "type": "dodge",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_evadeattack2.png",
-            "input": [
-                "Arrow keys",
-                "Dodge"
-            ],
-            "description": "Dodge while moving and press normal attack to trigger Chasing Arm, dealing damage equal to **265.6%** of ATK + **14** to nearby targets."
         },
         {
             "name": "Dodge",
@@ -139,15 +120,34 @@
             "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
+            "name": "Whistleback",
+            "type": "dodge",
+            "imgSrc": "skill_chainsaw_evadeattack1",
+            "input": [
+                "Dodge", "Attack"
+            ],
+            "description": "Within a short period of time after dodging, press normal attack to attack nearby targets dealing damage equal to **94.4%** of ATK + **5**.\nPassive: Slow enemies hit by **60%**, and lower their attack by **30%** for **5** seconds. Can be triggered once every **10** seconds. (does not take effect in Apex League)"
+        },
+        {
+            "name": "Chasing Arm",
+            "type": "dodge",
+            "imgSrc": "skill_chainsaw_evadeattack",
+            "input": [
+                "Arrow keys",
+                "Dodge"
+            ],
+            "description": "Dodge while moving and press normal attack to trigger Chasing Arm, dealing damage equal to **265.6%** of ATK + **14** to nearby targets."
+        },
+        {
             "name": "Expedition Team Attack",
             "type": "skill",
-            "imgSrc": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_chainsaw_skill.png",
+            "imgSrc": "skill_chainsaw_skill",
             "description": "Enter the state of charging, gain temporary invincibility (does not take effect in Apex League), absorb nearby targets and deal damage equal to **81.1%** of ATK + **4** each time it hits.\nCooldown: **20** seconds (you can start charging while on cooldown). After releasing it, detonate the treasure marks of all stacks applied on nearby enemies, and make Xiaopi handle the weapon, increasing attack speed by **100%**, lasts for **12** seconds.\n\nBased on the amount of small octopuses on your head while charging, there are different effects.\n**2** octopuses: Complete rampage: Deal damage equal to **1200%** of ATK + **63**.\n**1** or **3** octopuses: Incomplete Rampage: Deal damage equal to **840%** of ATK + **44** to nearby targets.\n\nCrouching things: When entering combat, gain **15** split tentacles. The split tentacles will attack the currently locked target in range, dealing **125%** of ATK, and consumes **1** split tentacle. Can stack up to **30** split tentacles. When split tentacles hit the target, apply **1** stack of Treasure Mark to the target, lasting for **20** seconds and stacking up to **3** times. Dealing physical damage other than the split tentacles will detonate **1** stack of Treasure Mark, dealing damage equal to **70%** of ATK, can be triggered once every **0.1** seconds. Dealing damage with the discharge skill of any weapon, will give **1** stack of split tentacles. Can only be triggerd once every second."
         },
         {
             "name": "Xiaopi's Big Trick",
             "type": "discharge",
-            "imgSrc": "skill_iceblade_changeskill",
+            "imgSrc": "skill_chainsaw_changeskill",
             "description": "When the weapon is fully charged or Phantasia is triggered, switch from another weapon to this weapon to remove all debuffs from the user, and dive underwater for a short time. When you jump out, deal damage equal to **480%** of ATK + **25** to nearby targets. After landing, deal damage equal to **1120%** of ATK + **59**, and increase the amount of split tentacles to the maximum (**30**). Gain immunity for **2.6** seconds. (does not take effect in Apex League)"
         }
     ],
