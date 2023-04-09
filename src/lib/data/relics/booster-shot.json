@@ -1,14 +1,14 @@
 {
-    "name": "Booster Shot",
-    "chinaOnly": true,
+    "name": "Overdrive Shot",
+    "chinaOnly": false,
     "imgSrc": "artifact_ssr_016",
     "rarity": "SSR",
-    "description": "Mark the current weapon for injection with **3** shots, lasting **200** seconds, and boost damage by **5%** for **200** seconds. When using the marked weapon's skill, inject one shot and apply a **20%** damage boost for **20** seconds (removed when switching weapons), with a **240** seconds cooldown on the booster shot.\n\nAll shots and effects are removed when removing this relic or switching weapon sets, and the original marked shot effect is removed when re-marking the weapon.",
+    "description": "When used, mark the current weapon and grant it **3** doses that last for **200** seconds. Also gain the **Micro Attack** effect: Increase damage dealt by **4%** for **200** seconds. Using a marked weapon's skill consumes **1** dose each time and grants **Overdrive**: Increase damage dealt by **15%** for **20** seconds. Overdrive is removed when switching to other weapons. Overdrive Shot has a **240**-second cooldown.\nWhen removing Overdrive Shot or switching Relics, the remaining doses, the Micro Attack, and Overdrive effects will all be removed. When a weapon is marked a second time, the doses from the first mark are removed.",
     "advancements": [
-        "Increase number of injections to **5**",
-        "Deal **20%** more damage when hitting Heavily Wounded targets with a marked weapon",
-        "Cooldown reduced to **150** seconds",
+        "Grant **5** doses each time.",
+        "Restore HP to full when marking a weapon with Overdrive Shot. Restore HP equal to **20%** of Max HP instead in Apex League.",
+        "Reduce cooldown to **150** seconds",
         "Increase physical damage by **2%** even when not deployed. Unavailable in Apex League.",
-        "Fully restores HP when using Booster Shot to mark a weapon (restores **20%** HP in Apex League)."
+        "While **Micro Attack** is active, increase damage dealt against grievous targets by **4%**."
     ]
 }

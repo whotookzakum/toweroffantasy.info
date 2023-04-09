@@ -1,17 +1,17 @@
 {
     "name": "Lan",
-    "chinaOnly": true,
-    "id": 27,
+    "chinaOnly": false,
+    "id": 25,
     "rarity": "SSR",
     "imgSrc": "icon_matrix_SSR34_256",
     "sets": [
         {
             "pieces": 2,
-            "description": "When using at least **1** flame weapon, increase flame attack by **12%/14%/16%/18%**, increase flame damage by **7%/8%/9%/10%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+            "description": "When equipped with at least **1** flame weapon, increase flame ATK by **6%/7%/8%/9%** and flame damage by **3.2%/3.8%/4.4%/5%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect. "
         },
         {
             "pieces": 4,
-            "description": "Different effects are obtained according to the number of different elemental weapons equipped: for each flame/ice/physical/lightning weapon equpped, increase flame/ice/physical/lightning damage by **9%/11%/13%/15%**. For each altered weapon equipped, increase final damage by **12%/14%/17%/20%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+            "description": "Gain different effects based on the number of different elemental weapons equipped: Increase flame/frost/physical/volt damage by **4%/5%/6%/7%** for every flame/frost/physical/volt weapon equipped. Increase final damage by **5%/6%/7%/8%** for every altered weapon equipped. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect. "
         }
     ]
 }

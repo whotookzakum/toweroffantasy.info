@@ -5,7 +5,7 @@
     "type": "defense",
     "shatter": {
         "tier": "SS",
-        "value": "15.80"
+        "value": "14.00"
     },
     "charge": {
         "tier": "A",
@@ -24,25 +24,25 @@
     "weaponEffects": [
         {
             "title": "Flame Resonance",
-            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. Flame Resonance and Flame Reaction does not stack; Flame Resonance takes priority."
+            "description": "Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. Flame Resonance and Flame Reaction does not stack; Flame Resonance takes priority."
         }
     ],
     "advancements": [
-        "**[Plume Gathering]**: When Lingguang is equipped, ***[Ammo Consumption]*** and damage, charge, and shatter of other weapons is multiplied by **[Plume Gathering]**'s amount.\n\n**[Glittering Flame]**: When a target near a plume is detonated or hit by [Bursting Flame], deal **30%** of the damage from detonation/[Bursting Flame] to 3 nearby targets with the highest HP (can include the target itself).",
+        "**Vermilion Strength**:\nWhen equipping Vermilion Bird, the ***ammo costs*** of other weapons are multiplied by **Polyfeather Parasol**, and their damage, charge, and shatter effects are also multiplied by **Polyfeather Parasol**.\n**Glowing Fire**: When burn tally is triggered or when taking damage from Fiery Crash, **30%** of the damage is transferred to the **3** units near the target (including the target itself) with the highest HP percentage. ",
         "Increase the current weapon's base HP growth by **16%**.",
-        "When releasing any weapon discharge, all plumes on the field will trigger a mini [Bursting Flame] effect that has 30% effectiveness; Enemies near plumes have their attack reduced by **15%**;\n\nAfter dealing damage for the first time after you enter combat, 3 plumes will be generated near the target immediately.",
+        "When using any discharge attack or shatter, all the active parasols trigger a Fiery Crash, dealing **30%** of their usual damage **1** time. Reduce the ATK of enemies near the parasols by **15%**. When in combat, spawn **3** parasols near the target immediately after dealing damage for the first time. ",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "[Bursting Flame] ignores enemies' flame resistance by 50%.\n\nEnemies affected by [Erosion] will now take 15% more flame damage instead.",
-        "Normal attack chain and Airborne normal attack chain gains 66.7% damage bonus.\n\n[Plume Gathering] value will be increased by 2 for the following movements: Plume spin, discharge, and [Bursting Flame]."
+        "Fiery Crash and the transferred damage ignore **60%** of the target's flame resistance.\nFlame damage dealt by Corrosion is increased by **10%**.",
+        "Increase the damage dealt by Dancing Flames and Soaring Strike by **50%**. The multiplier for spinning parasols, Phoenix Sweep, and Fiery Crash is now Polyfeather Parasol plus **2**. "
 
     ],
     "abilities": [
         {
-            "name": "Fire Dance",
+            "name": "Dancing Flames",
             "type": "normal",
             "imgSrc": "skill_umbrella_melee",
             "input": ["Attack x5"],
-            "description": "On the ground, tap the basic attack button to perform 5 consecutive attacks.",
+            "description": "While on the ground, use normal attack to launch 5 consecutive attacks.",
             "breakdown": [
                 "**94.8%** of ATK + **5** and small knockback.",
                 "**129.8%** of ATK + **7** and big knockback.",
@@ -52,11 +52,11 @@
             ]
         },
         {
-            "name": "Soaring Feathers",
+            "name": "Soaring Strike",
             "type": "normal",
             "imgSrc": "skill_umbrella_airattack",
             "input": ["Jump", "Attack x5"],
-            "description": "While airborne, tap the basic attack button to perform up to 5 consecutive attacks in the air, consuming endurance.",
+            "description": "While airborne, use normal attack to attack 5 times in a row in mid-air and consume endurance. ",
             "breakdown": [
                 "**106.3%** of ATK + **6**.",
                 "**129.8%** of ATK + **7**.",
@@ -66,27 +66,27 @@
             ]
         },
         {
-            "name": "Phoenix",
+            "name": "Blazing Wings",
             "type": "normal",
             "imgSrc": "skill_umbrella_branch",
-            "input": ["Attack", "hold:Attack"],
+            "input": ["Attack x5", "hold:Attack"],
             "description":
-                "While on the ground, between the second and the fifth basic attack, hold attack to summon the blazing bird that will charge toward the enemies and fly to the end of the sky. Deals **125%** of ATK + **7** damage and **strongly suspends** enemies."
+                "While on the ground, tap and hold normal attack during the second to the fifth normal attack to trigger Blazing Wings. Dash forward quickly and suspend self, dealing damage equal to **125%** of ATK plus **7** to nearby targets and **strongly suspending** them."
         },
         {
-            "name": "Heartmelter",
+            "name": "Molten Heart",
             "type": "normal",
             "imgSrc": "icon_skill_umbrella_beidong2",
             "input": ["Jump", "hold:Attack"],
             "description":
-                "When the user is airborne, hold attack to control Lingguang and maneuver your movements in the air, gaining hyperbody and continuously consuming endurance.\n\nWhile controlling Lingguang in the air, deal **25%** of ATK + **1** damage to enemies nearby by causing the plumes to spin rapidly.\n\nDuring this state, release the attack button to perform a plunge attack, dealing **50%** of ATK + **3** damage and a **strong knockdown**.\n\n**Passive**: When the plumes are spinning, [Flame Vortex] will consume the number [Plume Count] equal to **[Plume Gathering]** every second, and [Flame Vortex]'s damage, charge, and shatter value will be multiplied by the value of **[Plume Gathering]**.\n\n**[Plume Count]**: automatically get 1 count every second, and get one count every time you deal damage (cooldown **0.5** seconds), up to **30**.\n\n**[Plume Gathering]** = 1 + number of plumes present."
+                "While airborne, tap and hold normal attack to trigger Molten Heart. Then, continue to consume endurance and gain hyperbody.\nControl Vermilion Bird and deal damage equal to **25%** of ATK plus **1** to nearby targets, and command the parasols to spin rapidly.\nRelease normal attack to fall. While falling, each attack that lands on the target deals damage equal to **50%** of ATK plus **3**, and **knocks down** the target.\n\n**Passive**: When the parasols are spinning, the feathers consumed every second by Flame Vortex is multiplied by **Polyfeather Parasol**, and the damage, charge, and shatter effects from Flame Vortex are also multiplied by **Polyfeather Parasol**.\n**Feathers**: Gain **1** automatically every second, and **1** for every time damage is dealt. Cooldown: **0.5** seconds. Feathers can be stored up to **30**.\n**Polyfeather Parasol** = **1** plus the number of parasols."
         },
         {
-            "name": "Shadow Feather",
+            "name": "Summon Parasol",
             "type": "normal",
             "imgSrc": "skill_umbrella_skill_InPeace",
             "input": ["hold:Attack"],
-            "description": "While on the ground and not in combat, hold attack to enter aim mode and generate a plume at a designated position. The plume will exist for **15** seconds and will disappear when you enter combat. During the existence of the plume, press the skill button to teleport to the plume's position. Cooldown **6** seconds."
+            "description": "While not in combat, tap and hold normal attack on the ground to spawn a parasol at the designated location for **15** seconds, or until combat starts.\nWhile not in combat, use the skill to move to where the parasol is, and use double-jump to glide. Cooldown: **6** seconds."
         },
         {
             "name": "Dodge",
@@ -95,38 +95,38 @@
             "description": "Dodge right before getting hit to activate a Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. While dodging, you gain hitstun immunity for **0.5** seconds."
         },
         {
-            "name": "Eruption Weave",
+            "name": "Devastating Glide",
             "type": "skill",
             "imgSrc": "skill_umbrella_skill",
             "description":
-                "Fly to the plumes in the order that they appeared and finish in your initial position. The flight trajectory will stay for **5** seconds, and nearby enemies will have their movement speed reduced by **50%**. During the skill, become immune to damage (unavaiable in Apex League), cooldown **12** seconds. Every time you fly past a plume, deal **333.3%** of ATK + **18** area damage, and cause the plume to rapidly spin for **5** seconds."
+                "Fly toward the parasols in the same order that they spawned, and return to the original position. The flying trail lasts **5** seconds, and targets near the trail are slowed by **50%**. While gliding, become immune to damage (unavailable in Apex League).\nCooldown: **12** seconds.\n\nEvery time the Wanderer passes through a parasol, deal area damage equal to **220%** of ATK plus **12** and make the parasol spin rapidly for **5** seconds."
         },
         {
-            "name": "Plume",
+            "name": "Parasol",
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong2",
             "description":
-                "When any weapon's normal attack or dodge attack hits a target, generate **1** plume near the target, lasting **20** seconds and cooldown for **1.5** seconds.\n\n**[Bursting Flame]**: Every time you pass through a plume with Eruption Weave, deal an additional **180%** * [Plume Gathering] damage.\n\n**[Erosion]**: Enemies near a plume receive **10%** more flame damage and **12%** more charged attack damage.\n\n**[Bright Flames]**: Plumes apply a burn to nearby enemies, dealing **195%** of ATK damage for **4** seconds.\n\n**[Flame Vortex]**: Plumes on the field consume **1** [Plume Count] every second, dealing **91%** of ATK + **5** damage (multiple plumes will not accumulate damage or [Plume Count] consumption). ***Up to 3 plumes can be summoned.***"
+                "When a weapon's normal attack or a dodge attack hits, **1** parasol spawns near the target for **20** seconds.\nCooldown: **1.5** seconds.\nUp to **3** parasols can be active at the same time.\n\n**Fiery Crash**: While using Devastating Glide, for each parasol passed through, deal additional damage equal to **64.8%** of ATK multiplied by Polyfeather Parasol.\n**Corrosion**: Targets near the parasols take **6%** more flame damage and **8%** more damage from charged attacks.\n**Radiant Flames**: Parasols deal burn damage equal to **105%** of ATK every second to nearby targets for **4** seconds.\n**Flame Vortex**: Active parasols consume **1** feather every second and deal area damage equal to **54%** of ATK plus **3** (damage and feather cost from multiple parasols don't stack)."
         },
         {
-            "name": "Lingguang Realm",
+            "name": "Vermilion Domain",
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong3",
             "description":
-                "After using Eruption Weave, return to your original position and enter the Lingguang Realm, gaining **60%** incoming damage reduction and hyperbody for **8** seconds.\n\nWhen the wanderer enters Lingguang Realm, deal **50%** of ATK + **3** damage every second to targets in range, and increase your movement speed by **30%**."
+                "While using Devastating Glide, pass through **3** parasols before returning to the original position to gain Vermilion Domain, which grants hyperbody and **35%** damage reduction for **8** seconds.\nWhile diving, Vermilion Domain deals damage equal to **50%** of ATK plus **3** to targets in the area every second and increases the Wanderer's speed by **30%**."
         },
         {
             "name": "Fortitude",
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong1",
             "description":
-                "When using the Fortitude Resonance:\n\nSuccessfully use any weapon skill to taunt nearby enemies for **2.5** seconds;\n\nWhen Eruption Weave is used, Lingguang's defensive area will be expanded, and nearby teammates gain hyperbody and receive **40%** reduced damage.\n\nDuring heartmelter, Lingguang Realm's duration is constantly refreshed."
+                "After activating Fortitude Resonance: Successfully using any weapon skill will taunt nearby targets for **2.5** seconds.\nWhen using Devastating Glide, the Vermilion Domain expands, granting hyperbody and **20%** damage reduction to nearby teammates.\nWhen using Molten Heart, Vermilion Domain's timer is stopped."
         },
         {
-            "name": "Magnificent Phoenix Breath",
+            "name": "Phoenix Sweep",
             "type": "discharge",
             "imgSrc": "skill_umbrella_changeskill",
-            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switching to this weapon from another weapon **removes all debuffs from the wielder** and deal **1,180%** of ATK + **62** damage. During the animation, gain invincibility for **2.6** seconds (unavailable in Apex League). **Passive**: upon hit, increase your flame damage by **[Plume Gathering] x 3%** for **20** seconds."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, **remove all debuffs from the wielder** upon switching to this weapon, dealing damage equal to **849.6%** of ATK plus **45** to the target, during which damage immunity lasts for **1.5** seconds (unavailable in Apex League).\n**Passive**: A successful hit increases flame damage by **1.2% multiplied by Polyfeather Parasol** for **20** seconds."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Qg0bwTEmX_Q?start=102",
