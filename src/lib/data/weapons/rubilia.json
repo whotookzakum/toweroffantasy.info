@@ -17,9 +17,9 @@
         "crit"
     ],
     "materials": [
-        "physical",
-        "red",
-        "black"
+        "volt",
+        "green",
+        "blue"
     ],
     "weaponEffects": [
         {
@@ -30,10 +30,10 @@
     "advancements": [
         "After **Echo** is triggered, each crystal thorn will deal damage equal to **193.3%** of ATK to nearby targets every **2** seconds.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "Release any weapon skill to generate **1** crystal thorn.",
+        "Release any weapon or discharge skill, generate **1** crystal thorn.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "The echo has the greatest impact on the crystal thorns healing received increased by **50%**.",
-        "After successfully releasing **Hella's Embrace**, volt ATK is increased by **25%** for **30** seconds."
+        "The healing crystal thorns receive from **Echo** is increased to 50%.",
+        "After successfully releasing **Hella's Embrace**, volt damage is increased by **20%** for **30** seconds."
     ],
     "abilities": [
         {
@@ -114,7 +114,7 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Short after dodging backwards, press normal attack to trigger a swarm of bees and summon two. Bees deal **252%** of ATK + **13** damage to the target in front.\nReleasing this skill can trigger **Echo**."
+            "description": "Short after dodging backwards, press normal attack to trigger Bee Colony and summon two. Bees deal **252%** of ATK + **13** damage to the target in front.\nReleasing this skill can trigger **Echo**."
         },
         {
             "name": "Shuttle",
@@ -145,7 +145,7 @@
             "name": "Harrah's Embrace",
             "type": "discharge",
             "imgSrc": "skill_rubilia_changeskill",
-            "description": "When the ***weapon is fully charged*** or ***Phantasia*** is triggered, switch from another weapon to this weapon to **remove all debuffs from the user**, and Summon Hella's Embrace that deals damage equal to **1,650%** of ATK + **87** to nearby targets. Gain immunity for **2.6** seconds during the period (does not take effect in Apex League).\nAfter successfully releasing Hella's Embrace, volt ATK is increased by **10%** for **30** seconds. After Hella's embrace hits, **3** crystal thorns are generated (up to **5** can exist on the field). Each thorn initially has **100%** of the wielder's max HP. Cannot be attacked, and only receives healing from Echo. Lasts for **150** seconds. Additionally, get **2** Echos (up to **4**). Any dodge attack consumes **1** echo each time, dealing damage equal to (**Amount of crystal thorns on the field** * **240%** of ATK, heal all crystal thorns by **25%** of their max HP. Reset the position of the crystal thorn and its duration. Get a chance to dodge once without consuming a dodge attempt. "
+            "description": "When the ***weapon is fully charged*** or ***Phantasia*** is triggered, switch from another weapon to this weapon to **remove all debuffs from the user**, and Summon Hella's Embrace that deals damage equal to **1,650%** of ATK + **87** to nearby targets. Gain immunity for **2.6** seconds during the period (does not take effect in Apex League).\nAfter successfully releasing Hella's Embrace, volt damage is increased by **25%** for **30** seconds. After Hella's embrace hits, **3** crystal thorns are generated (up to **5** can exist on the field). Each thorn initially has **100%** of the wielder's max HP. Cannot be attacked, and only receives healing from Echo. Lasts for **150** seconds. Additionally, get **2** Echos (up to **4**). Any dodge attack consumes **1** echo each time, dealing damage equal to (**Amount of crystal thorns on the field** * **240%** of ATK, heal all crystal thorns by **25%** of their max HP. Reset the position of the crystal thorn and its duration. Get a chance to dodge once without consuming a dodge attempt. "
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Fn7zKWNWcsw?start=187",
