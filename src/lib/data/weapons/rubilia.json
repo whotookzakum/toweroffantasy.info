@@ -17,9 +17,9 @@
         "crit"
     ],
     "materials": [
-        "physical",
-        "red",
-        "black"
+        "volt",
+        "green",
+        "blue"
     ],
     "weaponEffects": [
         {
@@ -32,7 +32,7 @@
         "Increase the current weapon's base ATK growth by **16%**.",
         "Release any weapon skill to generate **1** crystal thorn.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "The echo has the greatest impact on the crystal thorns healing received increased by **50%**.",
+        "The healing crystal thorns receive from **Echo** is increased to 50%.",
         "After successfully releasing **Hella's Embrace**, volt ATK is increased by **25%** for **30** seconds."
     ],
     "abilities": [
@@ -114,7 +114,7 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Short after dodging backwards, press normal attack to trigger a swarm of bees and summon two. Bees deal **252%** of ATK + **13** damage to the target in front.\nReleasing this skill can trigger **Echo**."
+            "description": "Short after dodging backwards, press normal attack to trigger Bee Colony and summon two. Bees deal **252%** of ATK + **13** damage to the target in front.\nReleasing this skill can trigger **Echo**."
         },
         {
             "name": "Shuttle",
