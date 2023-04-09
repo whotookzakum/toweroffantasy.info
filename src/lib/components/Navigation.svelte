@@ -41,6 +41,10 @@
             href: "https://www.ghzs666.com/tower-of-fantasy-map#/",
         },
         {
+            text: "Team Builder",
+            href: "https://teammaker.lunarheart.repl.co/",
+        },
+        {
             text: "Shop",
             href: "https://aida-cafe.shop/",
         },
