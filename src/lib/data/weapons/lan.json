@@ -130,5 +130,16 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Qg0bwTEmX_Q?start=102",
-    "recommendedMatrices": []
+    "recommendedMatrices": [
+        {
+            "name": "Lan",
+            "pieces": 4,
+            "description": "Great set for both ATK and final damage buffs for a rainbow or flame team."
+        },
+        {
+            "name": "Shiro",
+            "pieces": 4,
+            "description": "Great set for both damage and shatter. Only use 4pc for quick battles. Else use Shiro's 2-piece and Lan's 2-piece."
+        }
+    ]
 }
