@@ -118,7 +118,7 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Tap normal attack during the short period after dodging to trigger Winter Solstice, dealing damage equal to 162.9% of ATK + 9 damage to nearby targets."
+            "description": "Tap normal attack during the short period after dodging to trigger Winter Solstice, dealing damage equal to **162.9%** of ATK + **9** damage to nearby targets."
         },
         {
             "name": "Desolate Day",
