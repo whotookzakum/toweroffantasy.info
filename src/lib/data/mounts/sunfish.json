@@ -1,12 +1,11 @@
 {
     "name": "Sunfish",
     "id": 3,
-    "chinaOnly": true,
     "type": "Water",
     "imgSrc": "zuoqi_Water_3",
     "parts": [
         {
-            "source": "Obtained from gachapon during the Floating Whisper event.",
+            "source": "Obtained from gachapon during the Reflected Whispers event.",
             "imgSrc": "MountWater3"
         }
     ],
