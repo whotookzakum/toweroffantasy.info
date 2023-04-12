@@ -1,5 +1,6 @@
 {
     "name": "Icarus",
+    "chinaOnly": true,
     "id": 28,
     "rarity": "SSR",
     "imgSrc": "icon_matrix_SSR35_256",
