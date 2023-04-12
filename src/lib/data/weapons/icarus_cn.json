@@ -1,0 +1,150 @@
+{
+    "name": "Fractured Light",
+    "imgSrc": "item_Weapon_SSR_yoyo_Ice01",
+    "element": "ice",
+    "type": "dps",
+    "shatter": {
+        "tier": "A",
+        "value": "9.50"
+    },
+    "charge": {
+        "tier": "A",
+        "value": "8.00"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "ice",
+        "green",
+        "blue"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Frost Resonance",
+            "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Reaction (Frost Resonance will take precendence)."
+        },
+        {
+            "title": "Elemental Mastery",
+            "description": "Increase final damage by **2.5%** for every element equipped. This effect works in the background."
+        }
+    ],
+    "advancements": [
+        "Using any weapon's skill will cause the speeding yo-yos to **resonate**, dealing **30%** of your missing HP as damage to nearby targets (minimum **70%** of max ATK, maximum **3,000%** of max ATK) using the current weapon's element.\n\nUsing any weapon's discharge will cause the speeding yo-yos to **modulate**, dealing **20%** of your max HP as damage to nearby targets (maximum **2,000%** of max ATK) using the current weapon's element.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "When casting Desolate Day, speeding yo-yos can trigger **12** seconds of **extreme speed**: increase speeding yo-yos' speed by **80%**, damage by **60%**, and its hits deal short-range AoE damage.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "Increase damage of speeding yo-yos and Quiet by **50%**.",
+        "Increase final damage by **10%** while speeding yo-yos are active."
+    ],
+    "abilities": [
+        {
+            "name": "Cold Eclipse",
+            "type": "normal",
+            "imgSrc": "skill_iceyoyo_pugong",
+            "input": [
+                "Attack x5"
+            ],
+            "description": "While on the ground, tap the attack button to attack up to 5 times.",
+            "breakdown": [
+                "**185.3%** of ATK + **10** and knockback.",
+                "**215.7%** of ATK + **11** and knockback",
+                "**352.3%** of ATK + **19** and **suspend** the target.",
+                "**543.4%** of ATK + **29** and knockback.",
+                "**367.7%** of ATK + **19** and **launch** the target."
+            ]
+        },
+        {
+            "name": "Vanish",
+            "type": "normal",
+            "imgSrc": "skill_iceyoyo_airattack",
+            "input": [
+                "Jump",
+                "Attack x5"
+            ],
+            "description": "While in the air, attack 5 times, consuming stamina.",
+            "breakdown": [
+                "**218.5%** of ATK + **12**.",
+                "**262.2%** of ATK + **14**.",
+                "**410.8%** of ATK + **22**.",
+                "**568.1%** of ATK + **30**.",
+                "**552.9%** of ATK + **29** and **launch** the target."
+            ]
+        },
+        {
+            "name": "Stab",
+            "type": "normal",
+            "imgSrc": "skill_iceyoyo_branch",
+            "input": [
+                "Attack",
+                "hold:Attack"
+            ],
+            "description": "While on the ground, press and hold the attack button during a basic attack to trigger stab, dealing **570%** of ATK + **30** damage."
+        },
+        {
+            "name": "Steep",
+            "type": "normal",
+            "imgSrc": "skill_iceyoyo_airbranch",
+            "input": [
+                "Jump",
+                "hold:Attack"
+            ],
+            "description": "Press and hold the attack button in the air, climbing, or gliding to trigger steep. Deal **95%** of ATK + **5** damage per hit while falling and upon landing deal **570%** of ATK + **30** and knock down targets."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
+        },
+        {
+            "name": "Snow",
+            "type": "dodge",
+            "imgSrc": "skill_iceyoyo_frontattack",
+            "input": [
+                "Arrow keys",
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Press the attack button while dodging and moving in a direction to trigger snow, dealing **269.2%** of ATK + **14** damage to nearby targets."
+        },
+        {
+            "name": "Number 9",
+            "type": "dodge",
+            "imgSrc": "skill_iceyoyo_backattack",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Press the attack button while dodging to trigger number 9 for a short time, dealing **269.2%** of ATK + **14** damage to nearby targets."
+        },
+        {
+            "name": "Desolate Day",
+            "type": "skill",
+            "imgSrc": "skill_iceyoyo_skill",
+            "description": "Deals up to **1,950%** of ATK + **103** and spawns two superspeed yo-yos that move in fixed patterns within an area. Inside the skill area, enemies' movement speed is reduced by **50%** (does not affect bosses or players). Cooldown **60** seconds.\n\nThe superspeed yo-yos move in cycles; during each cycle (initially 4 seconds), the yo-yos move through the center of the skill area about 4 times. The yo-yos deal **100%** of ATK + **5** damage to enemies in their paths and last **70** seconds. Using Desolate Day again will refresh the positions of the yo-yos and the skill duration (cooldown **4** seconds).\n\nWhile casting Desolate Day, gain **50%** damage reduction and recover **5%** of your max HP (not affected by healing or healing received effects). The damage reduction and healing are disabled in Apex League."
+        },
+        {
+            "name": "Quiet",
+            "type": "skill",
+            "imgSrc": "skill_iceyoyo_skill1",
+            "description": "Using Language of Ice grants up to **2** uses of Quiet, which can only be used while Desolate Day is on cooldown. Deal **1,300%** of ATK + **68** damage. While casting Quiet, gain **50%** damage reduction and recover **5%** of your max HP (not affected by healing or healing received effects); the damage reduction and healing are disabled in Apex League.\n\nWhile under Fortitude Resonance, casting Quiet will taunt nearby enemies and grant **1** stack of a shield, up to **3** stacks, lasting **20** seconds. The shield durability equals the sum of your **5 resistance stats**. When the shield is completely consumed or when shield stacks overflow, deal damage equal to the **shield durability * 200%** damage.\n\nWhile under Benediction Resonance, casting Quiet against enemies with **95%** or higher of its max HP deals **8%** of its max HP as damage(does not affect players). This damage is not affected by damage boosting and reducing effects."
+        },
+        {
+            "name": "Language of Ice",
+            "type": "discharge",
+            "imgSrc": "skill_iceyoyo_changeskill",
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and deal **1,662.5%** of ATK + **88** damage to nearby targets and **launch** them. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/Pef1vq89Nio?start=91",
+    "recommendedMatrices": [
+        {
+            "name": "Icarus",
+            "pieces": 4,
+            "description": "Very high damage buff with over 100% uptime with Fractured Light's skill. Might be better suited on other weapons depending on your team."
+        }
+    ]
+}

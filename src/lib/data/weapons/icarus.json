@@ -1,5 +1,5 @@
 {
-    "name": "Fractured Light",
+    "name": "Precious One",
     "imgSrc": "item_Weapon_SSR_yoyo_Ice01",
     "element": "ice",
     "type": "dps",
@@ -24,74 +24,74 @@
     "weaponEffects": [
         {
             "title": "Frost Resonance",
-            "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Reaction (Frost Resonance will take precendence)."
+            "description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with effects of the same type."
         },
         {
-            "title": "Elemental Mastery",
-            "description": "Increase final damage by **2.5%** for every element equipped. This effect works in the background."
+            "title": "Elementalist",
+            "description": "Increase final damage by **1.5%** for every **1** type of weapon element equipped. This set effect also works with the weapons in the off-hand slot."
         }
     ],
     "advancements": [
-        "Using any weapon's skill will cause the speeding yo-yos to **resonate**, dealing **30%** of your missing HP as damage to nearby targets (minimum **70%** of max ATK, maximum **3,000%** of max ATK) using the current weapon's element.\n\nUsing any weapon's discharge will cause the speeding yo-yos to **modulate**, dealing **20%** of your max HP as damage to nearby targets (maximum **2,000%** of max ATK) using the current weapon's element.",
+        "When any weapon skill is used, Speedy Yo-yo can trigger **harmony**, dealing damage to nearby targets equal to **25%** of the Wanderer's lost HP. The damage dealt shall be no less than **120%** of the Wanderer's Max ATK, and no more than **800%** of the Wanderer's Max ATK. The type of elemental damage dealt will be that of the current weapon.\nWhen any weapon discharge is used, Speedy Yo-yo can trigger **tuning**, dealing damage to nearby targets equal to **4%** of the Wanderer's Max ATK. The type of elemental damage dealt will be that of the current weapon.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "When casting Desolate Day, speeding yo-yos can trigger **12** seconds of **extreme speed**: increase speeding yo-yos' speed by **80%**, damage by **60%**, and its hits deal short-range AoE damage.",
+        "When using Desolate Day, Speedy Yo-yo can trigger **9** seconds of **swiftness**: Speedy Yo-yo's speed is increased by **80**%, damage is increased by **160%**, and damage caused by passing through the target is converted to small-area damage.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "Increase damage of speeding yo-yos and Quiet by **50%**.",
-        "Increase final damage by **10%** while speeding yo-yos are active."
+        "Increase damage of Speedy Yo-yo and Return to Loneliness by **50%**.",
+        "Increase final damage by **6%** while Speedy Yo-yo is active."
     ],
     "abilities": [
         {
-            "name": "Cold Eclipse",
+            "name": "Withering Cold",
             "type": "normal",
             "imgSrc": "skill_iceyoyo_pugong",
             "input": [
                 "Attack x5"
             ],
-            "description": "While on the ground, tap the attack button to attack up to 5 times.",
+            "description": "While on the ground, use normal attack to launch 5 consecutive attacks.",
             "breakdown": [
-                "**185.3%** of ATK + **10** and knockback.",
-                "**215.7%** of ATK + **11** and knockback",
-                "**352.3%** of ATK + **19** and **suspend** the target.",
-                "**543.4%** of ATK + **29** and knockback.",
-                "**367.7%** of ATK + **19** and **launch** the target."
+                "**112.1%** of ATK + **6** and knockback.",
+                "**130.5%** of ATK + **7** and knockback",
+                "**213.2%** of ATK + **11** and **suspend** the target.",
+                "**329%** of ATK + **19** and knockback.",
+                "**222.5%** of ATK + **12** and **launch** the target."
             ]
         },
         {
-            "name": "Vanish",
+            "name": "Thaw",
             "type": "normal",
             "imgSrc": "skill_iceyoyo_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
             ],
-            "description": "While in the air, attack 5 times, consuming stamina.",
+            "description": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance.",
             "breakdown": [
-                "**218.5%** of ATK + **12**.",
-                "**262.2%** of ATK + **14**.",
-                "**410.8%** of ATK + **22**.",
-                "**568.1%** of ATK + **30**.",
-                "**552.9%** of ATK + **29** and **launch** the target."
+                "**132.2%** of ATK + **7**.",
+                "**158.6%** of ATK + **8**.",
+                "**248.6%** of ATK + **13**.",
+                "**343.5%** of ATK + **18**.",
+                "**334.5%** of ATK + **18** and **launch** the target."
             ]
         },
         {
-            "name": "Stab",
+            "name": "Piercing Cold",
             "type": "normal",
             "imgSrc": "skill_iceyoyo_branch",
             "input": [
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "While on the ground, press and hold the attack button during a basic attack to trigger stab, dealing **570%** of ATK + **30** damage."
+            "description": "While using normal attack on the ground, tap and hold normal attack to trigger Piercing Cold, dealing damage equal to **345.1** of ATK + **18**"
         },
         {
-            "name": "Steep",
+            "name": "Sharp Chill",
             "type": "normal",
             "imgSrc": "skill_iceyoyo_airbranch",
             "input": [
                 "Jump",
                 "hold:Attack"
             ],
-            "description": "Press and hold the attack button in the air, climbing, or gliding to trigger steep. Deal **95%** of ATK + **5** damage per hit while falling and upon landing deal **570%** of ATK + **30** and knock down targets."
+            "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using a Jetpack to trigger Sharp Chill.\nWhile falling, deal damage equal to **57.5%** of ATK + **3** each hit. Upon landing, deal damage equal to **344.9%** of ATK + **18** and launch the target."
         },
         {
             "name": "Dodge",
@@ -100,7 +100,7 @@
             "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
-            "name": "Snow",
+            "name": "Snowy Flurry",
             "type": "dodge",
             "imgSrc": "skill_iceyoyo_frontattack",
             "input": [
@@ -108,35 +108,35 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Press the attack button while dodging and moving in a direction to trigger snow, dealing **269.2%** of ATK + **14** damage to nearby targets."
+            "description": "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Snowy Flurry, dealing damage equal to **162.8%** of ATK + **9** to nearby targets."
         },
         {
-            "name": "Number 9",
+            "name": "Winter Solstice",
             "type": "dodge",
             "imgSrc": "skill_iceyoyo_backattack",
             "input": [
                 "Dodge",
                 "Attack"
             ],
-            "description": "Press the attack button while dodging to trigger number 9 for a short time, dealing **269.2%** of ATK + **14** damage to nearby targets."
+            "description": "Tap normal attack during the short period after dodging to trigger Winter Solstice, dealing damage equal to 162.9% of ATK + 9 damage to nearby targets."
         },
         {
             "name": "Desolate Day",
             "type": "skill",
             "imgSrc": "skill_iceyoyo_skill",
-            "description": "Deals up to **1,950%** of ATK + **103** and spawns two superspeed yo-yos that move in fixed patterns within an area. Inside the skill area, enemies' movement speed is reduced by **50%** (does not affect bosses or players). Cooldown **60** seconds.\n\nThe superspeed yo-yos move in cycles; during each cycle (initially 4 seconds), the yo-yos move through the center of the skill area about 4 times. The yo-yos deal **100%** of ATK + **5** damage to enemies in their paths and last **70** seconds. Using Desolate Day again will refresh the positions of the yo-yos and the skill duration (cooldown **4** seconds).\n\nWhile casting Desolate Day, gain **50%** damage reduction and recover **5%** of your max HP (not affected by healing or healing received effects). The damage reduction and healing are disabled in Apex League."
+            "description": "Deal damage to nearby targets up to **660%** of ATK + **35** and create 2 regulation Speedy Yo-yos. Cooldown: **60** seconds. Reduce the speed of targets within range of Desolate Day by **50%** (does not affect Wanderers or bosses).\nEach Speedy Yo-yo passes through the center of the trajectory about 4 times in each motion cycle, dealing damage equal to **30%** of ATK + **2** to targets within the trajectory, for **70** seconds. The motion cycle lasts for 4 seconds when the weapon is O stars. During this period, using Desolate Day will refresh the position and duration of the Speedy Yo-yo. Cooldown: **4** seconds.\nWhile Desolate Day is in use, reduce damage taken by **50%** and recover **5%** of Max HP. This cannot be affected by any healing boost effects. Recovery and damage reduction will not take effect in Apex League."
         },
         {
-            "name": "Quiet",
+            "name": "Return to Loneliness",
             "type": "skill",
             "imgSrc": "skill_iceyoyo_skill1",
-            "description": "Using Language of Ice grants up to **2** uses of Quiet, which can only be used while Desolate Day is on cooldown. Deal **1,300%** of ATK + **68** damage. While casting Quiet, gain **50%** damage reduction and recover **5%** of your max HP (not affected by healing or healing received effects); the damage reduction and healing are disabled in Apex League.\n\nWhile under Fortitude Resonance, casting Quiet will taunt nearby enemies and grant **1** stack of a shield, up to **3** stacks, lasting **20** seconds. The shield durability equals the sum of your **5 resistance stats**. When the shield is completely consumed or when shield stacks overflow, deal damage equal to the **shield durability * 200%** damage.\n\nWhile under Benediction Resonance, casting Quiet against enemies with **95%** or higher of its max HP deals **8%** of its max HP as damage(does not affect players). This damage is not affected by damage boosting and reducing effects."
+            "description": "Use Capped Knowledge to obtain up to **2** uses of the new skill Return to Loneliness. This skill can only be used while Desolate Day is in cooldown. Deal skill damage equal to **440%** of ATK + **23**. While the skill is in use, reduce damage taken by **50%** and recover **5%** of Max HP. This cannot be affected by any incoming or outgoing healing boost effects. Recovery and damage reduction will not take effect in Apex League. While Fortitude Resonance is active: Use Return to Loneliness and taunt nearby targets to gain **1** stack of blocking shield, up to **3** stacks, for **20** seconds. Blocking points are equal to the **sum of the user's 5 resistance types**. When the blocking shield is used up or overflows, deal damage equal to **200%** of **blocking points** to the main target.\nWhile Benediction Resonance is active: Using Return to Loneliness against targets with greater than **95%** HP will deal damage equal to **8%** of their respective Max HP (does not affect Wanderers). This cannot be affected by damage boost or reduction effects."
         },
         {
             "name": "Language of Ice",
             "type": "discharge",
             "imgSrc": "skill_iceyoyo_changeskill",
-            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, switch to this weapon to **clear all debuffs from the user** and deal **1,662.5%** of ATK + **88** damage to nearby targets and **launch** them. During the discharge animation, become immune to damage for **2.6** seconds (does not take effect in Apex League)."
+            "description": "When ***weapon charge is full*** or **Phantasia** is triggered, switching to this weapon from another **removes all debuffs from the wielder**, deals damage equal to **1,113.9%** of ATK + **59** to nearby targets, and launches the target. During this period, gain damage immunity for **1.5** seconds (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Pef1vq89Nio?start=91",
