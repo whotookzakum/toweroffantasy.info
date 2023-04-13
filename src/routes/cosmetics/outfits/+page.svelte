@@ -3,6 +3,7 @@
     import outfits from "$lib/data/cosmetics/outfits.json";
     import Ad from "$lib/components/Ad.svelte";
     import Youtube from "$lib/components/Youtube.svelte";
+    import Icon from "@iconify/svelte";
     //     "name": "Absolute Order",
     //     "imgSrcs": ["fashion_f18", "fashion_m"],
     // {
@@ -10,12 +11,6 @@
     //     "imgSrcs": ["fashion_f", "fashion_m"],
     //     "source": "Obtained from gachapon during the event (Lunar New Year).",
     //     "videoSrc": "https://www.youtube.com/embed/iig3osE_r6s?start=10"
-    // },
-    // {
-    //     "name": "Magic Purple",
-    //     "imgSrcs": ["fashion_f", "fashion_m"],
-    //     "source": "Obtained by purchasing the 10th Collector's Edition Pass.",
-    //     "videoSrc": "https://www.youtube.com/embed/iig3osE_r6s"
     // },
     let previewVidSrc = "https://www.youtube.com/embed/rKzgowQ_xUc";
 
@@ -43,7 +38,11 @@
 </svelte:head>
 
 <h1>Outfits</h1>
-<Youtube id="preview" source={previewVidSrc} caption="Preview of most outfits from version 2.4." />
+<Youtube
+    id="preview"
+    source={previewVidSrc}
+    caption="Preview of most outfits from version 2.4."
+/>
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
@@ -80,9 +79,24 @@
                     <td>
                         <SvelteMarkdown source={outfit.source} />
                     </td>
-                    <td>
-                        {#if outfit.videoSrc}
-                            <a href="#preview" on:click={() => updateUrl(outfit.videoSrc)}>View</a>
+                    <td style="white-space: nowrap">
+                        {#if outfit.videoSrc?.includes("rKzgowQ_xUc")}
+                            <a
+                                href="#preview"
+                                on:click={() => updateUrl(outfit.videoSrc)}
+                                >View</a
+                            >
+                        {:else}
+                            <a
+                                href={outfit.videoSrc}
+                                target="_blank"
+                                rel="noreferrer noopener nofollow">View</a
+                            >
+                            <Icon
+                                icon="mdi:external-link"
+                                width="16"
+                                height="16"
+                            />
                         {/if}
                     </td>
                 </tr>

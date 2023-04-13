@@ -1,7 +1,6 @@
 {
     "name": "Rhomboid",
     "id": 1,
-    "chinaOnly": true,
     "type": "Water",
     "imgSrc": "zuoqi_Water_1",
     "parts": [

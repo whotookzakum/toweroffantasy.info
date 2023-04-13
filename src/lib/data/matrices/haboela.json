@@ -1,0 +1,16 @@
+{
+    "name": "Haboela",
+    "id": 26,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR25_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Equipping this matrix on the current weapon increases final damage by **8.5%/10.5%/12.5%/14.5%**."
+        },
+        {
+            "pieces": 4,
+            "description": "Increase final damage by **9%/11%/13%/15%**. The effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+        }
+    ]
+}

@@ -1,5 +1,35 @@
 [
     {
+        "name": "Yin Hai Tempest",
+        "imgSrcs": ["fashion_f51", "fashion_m51"],
+        "source": "<abbr title='China Exclusive'></abbr>Obtained from gachapon during the Inhay Breeze event.",
+        "videoSrc": "https://www.youtube.com/watch?v=fn0GahBznNE"
+    },
+    {
+        "name": "Black and White Homology",
+        "imgSrcs": ["fashion_f50", "fashion_m50"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 11th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
+        "videoSrc": "https://www.youtube.com/watch?v=PegT5UdMOpU?start=13"
+    },
+    {
+        "name": "Renaissance",
+        "imgSrcs": ["fashion_f49", "fashion_m49"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 11th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
+        "videoSrc": "https://www.youtube.com/watch?v=PegT5UdMOpU"
+    },
+    {
+        "name": "Magic Purple",
+        "imgSrcs": ["fashion_f48", "fashion_m48"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 10th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
+        "videoSrc":"https://www.youtube.com/watch?v=iig3osE_r6s"
+    },
+    {
+        "name": "Spring Splendor Attire",
+        "imgSrcs": ["fashion_f47", "fashion_m47"],
+        "source":"Obtained from gachapon during the Spring Splendor Attire event.",
+        "videoSrc": "https://www.youtube.com/watch?v=iig3osE_r6s?start=10"
+    },
+    {
         "name": "Warm 'n Wonderful Winter Night",
         "imgSrcs": ["fashion_f45", "fashion_m45"],
         "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale.",

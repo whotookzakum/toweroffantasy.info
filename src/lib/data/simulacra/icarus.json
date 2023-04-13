@@ -1,7 +1,6 @@
 {
     "name": "Icarus",
     "id": 35,
-    "chinaOnly": true,
     "cnName": "yikaluosi",
     "rarity": "SSR",
     "banners": {
@@ -11,16 +10,23 @@
                 "start": "11 Jan 2023",
                 "end": "8 Feb 2023"
             }
+        ],
+        "glob": [
+            {
+                "bannerNo": 29,
+                "start": "13 April 2023",
+                "end": "4 May 2023"
+            }
         ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": "Increase final damage by **10%** while Fractured Light is equipped, and increase shatter by **20%** while using Fractured Light."
+            "description": "After equipping Precious One, increase final damage by **10%**. While using Precious One, increase shatter by **20%**."
         },
         {
             "affinity": 4000,
-            "description": "Increase final damage by **15%** while Fractured Light is equipped, and increase shatter by **45%** while using Fractured Light."
+            "description": "After equipping Precious One, increase final damage by **15%**. While using Precious One, increase shatter by **45%**."
         }
     ],
     "giftTypes": [
@@ -86,7 +92,7 @@
     "birthday": "24 Oct",
     "voiceActors": {
         "jp": "",
-        "en": "",
+        "en": "RyMcKeand",
         "cn": "沐霏"
     },
     "skinsPreviewUrl": "https://www.youtube.com/embed/elnGyDenRyk?start=604"

@@ -2,31 +2,31 @@
     {
         "name": "Deep Sea Shark",
         "imgSrc": "fashion_icon_shipin_116",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innis.",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innars.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=258"
     },
     {
         "name": "Mysterious Sound",
         "imgSrc": "fashion_icon_shipin_115",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innis.",
+        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innars.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=262"
     },
     {
         "name": "Confused Eyepiece",
         "imgSrc": "fashion_icon_shipin_112",
-        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Sobek world boss chest.",
+        "source": "Fragments obtainable from Sobek world boss chest.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=270"
     },
     {
         "name": "Rockhelm Mask",
         "imgSrc": "fashion_icon_shipin_111",
-        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Magma world boss chest.",
+        "source": "Fragments obtainable from Magma world boss chest.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=266"
     },
     {
         "name": "Fawn Mask",
         "imgSrc": "fashion_icon_shipin_110",
-        "source": "<abbr title='China Exclusive'></abbr> Fragments obtainable from Rudolph world boss chest.",
+        "source": "Fragments obtainable from Rudolph world boss chest.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=254"
     },
     {
