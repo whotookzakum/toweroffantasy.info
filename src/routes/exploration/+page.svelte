@@ -26,11 +26,79 @@
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
 
-<SectionNavigation links={["abyss", "grayspace", "mirroria", "vera", "aesperia"]} />
+<SectionNavigation links={["innars","miasmic swamp","abyss", "grayspace", "mirroria", "vera", "aesperia"]} />
 <h1>Exploration</h1>
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
+
+<h2 id="innars">Innars</h2>
+<div class="table-wrapper">
+    <table class="bg-alternate">
+        <thead>
+            <th>Puzzle</th>
+            <th>Solution</th>
+        </thead>
+        <tbody>
+            {#each puzzles.filter(p => p.location === "innars") as puzzle}
+                <tr>
+                    <td>
+                        <div class="img-and-name">
+                            <img
+                                src={`/images/exploration/${puzzle.imgSrc}.webp`}
+                                alt={puzzle.name}
+                                width="150"
+                                height="120"
+                                loading="lazy"
+                            />
+                            <h2>{puzzle.name}</h2>
+                        </div>
+                    </td>
+                    <td>
+                        <SvelteMarkdown source={puzzle.solution} />
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</div>
+
+<Ad unit="lb3" />
+<Ad unit="mobile_mpu2" />
+
+<h2 id="miasmic-swamp">Miasmic Swamp</h2>
+<div class="table-wrapper">
+    <table class="bg-alternate">
+        <thead>
+            <th>Puzzle</th>
+            <th>Solution</th>
+        </thead>
+        <tbody>
+            {#each puzzles.filter(p => p.location === "miasmic swamp") as puzzle}
+                <tr>
+                    <td>
+                        <div class="img-and-name">
+                            <img
+                                src={`/images/exploration/${puzzle.imgSrc}.webp`}
+                                alt={puzzle.name}
+                                width="150"
+                                height="120"
+                                loading="lazy"
+                            />
+                            <h2>{puzzle.name}</h2>
+                        </div>
+                    </td>
+                    <td>
+                        <SvelteMarkdown source={puzzle.solution} />
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</div>
+
+<Ad unit="lb4" />
+<Ad unit="mobile_lb1" />
 
 <h2 id="abyss">Confounding Abyss</h2>
 <div class="table-wrapper">
@@ -63,8 +131,8 @@
     </table>
 </div>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="lb4" />
+<Ad unit="mobile_lb1" />
 
 <h2 id="grayspace">Grayspace & Twilight Zone</h2>
 <div class="table-wrapper">

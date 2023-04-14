@@ -2,17 +2,17 @@
     {
         "name": "Beautiful Dream",
         "imgSrc": "Avatar_48",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
+        "source": "Obtained from gachapon during the Ivory Bloom event."
     },
     {
         "name": "Reindeer Mi-a",
         "imgSrc": "Avatar_47",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from purchasing the 2980 tanium Christmas pack during the sale."
+        "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale."
     },
     {
         "name": "Engraved Memory",
         "imgSrc": "Avatar_44",
-        "source": "<abbr title='China Exclusive'></abbr> From events."
+        "source": "Obtained from the Reflected Whispers event."
     },
     {
         "name": "Majestic Big Sister",
@@ -30,19 +30,19 @@
         "source": "Obtained when purchasing the tanium pack during the sale."
     },
     {
-        "name": "Puppeteer's Puppet",
+        "name": "Puppet",
         "imgSrc": "Avatar_40",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event (around Halloween?)."
+        "source": "Obtained from gachapon during the Millet Wonderland event."
     },
     {
         "name": "Little Chef Mi-a",
         "imgSrc": "Avatar_39",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 6th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass."
     },
     {
         "name": "I'm a fisherman",
         "imgSrc": "Avatar_38",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the fishing shop."
+        "source": "Purchasable from the fishing shop."
     },
     {
         "name": "Pumpkin Enchantment",
@@ -102,7 +102,7 @@
     {
         "name": "Rare Holiday",
         "imgSrc": "Avatar32",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
+        "source": "Obtained from gachapon during the event."
     },
     {
         "name": "Fruity Midsummer",
@@ -117,7 +117,7 @@
     {
         "name": "Adventure Embarkation",
         "imgSrc": "Avatar30",
-        "source": "Obtainable from gachapon during the Scarlet Song event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
+        "source": "Obtainable from gachapon during the Crimson Ruby event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
     },
     {
         "name": "Fledgling",
@@ -155,14 +155,14 @@
         "source": "Obtained from gachapon during the Wheel of Fantasy event."
     },
     {
-        "name": "Mi-a Dream",
+        "name": "Mi-a's Dream",
         "imgSrc": "Avatar21",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event."
+        "source": "Obtained from gift packs.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event."
     },
     {
         "name": "Dolly",
         "imgSrc": "Avatar20",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 4th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 4th Collector's Edition Pass."
     },
     {
         "name": "Puppet Song",
@@ -205,16 +205,15 @@
         "source": "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
-        "name": "Mi-a Celebration",
-        "nameUnconfirmed": true,
+        "name": "Happy New Year",
         "imgSrc": "Avatar10",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Lunar New Year event?"
+        "source": "Obtained from gachapon during the Lunar New Year event."
     },
     {
-        "name": "Mi-a Student",
+        "name": "May All Go Well",
         "nameUnconfirmed": true,
         "imgSrc": "Avatar11",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Lunar New Year event?"
+        "source": "Obtained by order gifts.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Lunar New Year event?"
     },
     {
         "name": "Frigg",

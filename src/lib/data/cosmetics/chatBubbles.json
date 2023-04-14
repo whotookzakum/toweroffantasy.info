@@ -1,8 +1,8 @@
 [
     {
-        "name": "Rose Thorns",
+        "name": "Rose Thornvine",
         "imgSrc": "qipao_71",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
+        "source": "Obtained from gachapon during the Ivory Bloom event.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
     },
     {
         "name": "Warm Winter's Night",
@@ -10,9 +10,14 @@
         "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale."
     },
     {
+        "name": "Enchanting Ice and Snow",
+        "imgSrc": "qipao_065",
+        "source": "Obtained from the shop during the Winter Festival event."
+    },
+    {
         "name": "Commemorate Colleagues",
         "imgSrc": "qipao_69",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> From events."
     },
     {
         "name": "Adventure Memo",
@@ -22,37 +27,37 @@
     {
         "name": "Whimsical",
         "imgSrc": "qipao_64",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> From events"
     },
     {
         "name": "Surprises and Celebrations",
         "imgSrc": "qipao_63",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Floating Whisper event."
+        "source": "Obtained from gachapon during the Reflected Whispers event.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Floating Whisper event."
     },
     {
         "name": "Fantastic Dream",
         "imgSrc": "qipao_67",
-        "source": "<abbr title='China Exclusive'></abbr> Achievement reward."
+        "source": "Achievement reward."
     },
     {
-        "name": "Longquan",
+        "name": "Dragon Fountain",
         "imgSrc": "qipao_66",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+        "source": "Obtained through exploration."
     },
     {
         "name": "Cluster of Stars",
         "imgSrc": "qipao_65",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+        "source": "Obtained through exploration."
     },
     {
-        "name": "1st Anniversary Memories",
+        "name": "One Year of Memories",
         "imgSrc": "qipao_62",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> From events."
     },
     {
-        "name": "Party All Night",
+        "name": "All-night Party",
         "imgSrc": "qipao_61",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 7th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass."
     },
     {
         "name": "Dazzling Tower",
@@ -65,9 +70,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
     },
     {
-        "name": "Phantom of the Castle",
+        "name": "Castle Phantom",
         "imgSrc": "qipao_58",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event (Halloween?)."
+        "source": "Obtained from gachapon during the Millet Wonderland event."
     },
     {
         "name": "Fisherman's Dignity",
@@ -80,9 +85,9 @@
         "source": "Obtained from gachapon during the Thorned Rose event."
     },
     {
-        "name": "Fruit Guilt",
+        "name": "Golden Fruits",
         "imgSrc": "qipao_54",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> From events."
     },
     {
         "name": "Time Pin",
@@ -102,7 +107,7 @@
     {
         "name": "Curiosity Comes First",
         "imgSrc": "qipao_50",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 7th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 7th Collector's Edition Pass."
     },
     {
         "name": "Disciplinary Action",
@@ -112,12 +117,12 @@
     {
         "name": "Innocence",
         "imgSrc": "qipao_44",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr> From events."
     },
     {
-        "name": "Cool Swim",
+        "name": "Refreshing Swim",
         "imgSrc": "qipao_48",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Slender Summer Shadow event."
+        "source": "Obtained from gachapon during the Summer Shade event.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Slender Summer Shadow event."
     },
     {
         "name": "Sweet and Colorful",
@@ -125,9 +130,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 6th Collector's Edition Pass."
     },
     {
-        "name": "Crimson Question",
+        "name": "Crimson Puzzle",
         "imgSrc": "qipao_46",
-        "source": "Obtainable from gachapon during the Scarlet Song event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
+        "source": "Obtainable from gachapon during the Crimson Ruby event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
     },
     {
         "name": "Firecracker",
@@ -182,7 +187,7 @@
     {
         "name": "Peek-a-boo Winner",
         "imgSrc": "qipao_34",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 4th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 4th Collector's Edition Pass."
     },
     {
         "name": "Phantom Key",
@@ -232,7 +237,7 @@
     {
         "name": "TYPE-2",
         "imgSrc": "qipao_25",
-        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the 'Ultimate Weapon' event."
+        "source": "Obtainable during the 'Ultimate Weapon' event."
     },
     {
         "name": "TYPE-5",
@@ -242,7 +247,7 @@
     {
         "name": "Love",
         "imgSrc": "qipao_23",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained during the 'Sweet Workshop' event."
+        "source": "Obtained during the 'Passion for Chocolate' event.\n\n<abbr title='China Exclusive'></abbr> Obtained during the 'Sweet Workshop' event."
     },
     {
         "name": "New Year's Eve",

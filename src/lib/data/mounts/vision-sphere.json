@@ -1,7 +1,6 @@
 {
-    "name": "Floating Ball",
+    "name": "Vision Sphere",
     "id": 2,
-    "chinaOnly": true,
     "type": "Water",
     "imgSrc": "zuoqi_Water_2",
     "parts": [
