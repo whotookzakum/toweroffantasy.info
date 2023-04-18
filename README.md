@@ -20,6 +20,7 @@ Please note some banners dates might be slightly off due to inconsistent time zo
 March 25, 2022: Site goes live  
 August 12, 2022: 100k users  
 September 12, 2022: 500k users
+April 14, 2023: 1M users
 
 ## Image Directories
 ### Simulacra
