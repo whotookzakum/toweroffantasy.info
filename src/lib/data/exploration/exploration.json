@@ -1,5 +1,89 @@
 [
     {
+        "name": "Current",
+        "imgSrc": "current",
+        "location": "innars",
+        "solution": "Idle inside the current to move quickly in one direction."
+    },
+    {
+        "name": "Combat Simulation Device: Oceanic Model",
+        "imgSrc": "combatsimulationdeviceoceanicmodel",
+        "location": "innars",
+        "solution": "Interact to begin a simulated battle. Defeat all enemies before the simulation ends."
+    },
+    {
+        "name": "Lost Patrol Guard",
+        "imgSrc": "lostpatrolguard",
+        "location": "innars",
+        "solution": "Find the invisible and moving Patrol Guard to claim rewards."
+    },
+    {
+        "name": "Symbiotic Sea Sponge",
+        "imgSrc": "symbioticseasponge",
+        "location": "innars",
+        "solution": "Interact and catch the escaping fish."
+    },
+    {
+        "name": "Surveillance Guard: Oceanic Model",
+        "imgSrc": "surveillanceguardoceanicmodel",
+        "location": "innars",
+        "solution": "Swim to it quickly and shut it down to open the device. If you do not prefer to swim, you can also use the **Quantum Cloak** relic."
+    },
+    {
+        "name": "Plankton",
+        "imgSrc": "plankton",
+        "location": "innars",
+        "solution": "Attack a dolphin and lure them to you. Make the dolphin attack the plankton to claim rewards."
+    },
+    {
+        "name": "Cavity Coral",
+        "imgSrc": "cavitycoral",
+        "location": "innars",
+        "solution": "Destroy the corals nearby to open the cavity and claim the rewards."
+    },
+    {
+        "name": "Fish Baiter",
+        "imgSrc": "fishbaiter",
+        "location": "innars",
+        "solution": "Activate the 3 mechanisms under the sphere to start the fish baiter."
+    },
+    {
+        "name": "Ruin Stones",
+        "imgSrc": "ruinstones",
+        "location": "innars",
+        "solution": "Idle inside of the **Jellyfish Matriarch** nearby and try to combine the figure of the 2 stones."
+    },
+    {
+        "name": "Pressure Trigger",
+        "imgSrc": "pressuretrigger",
+        "location": "miasmic swamp",
+        "solution": "Pink: Step on the baseplates in the correct order to claim rewards.\n\nBlue: Invite a friend or use the **Omnium Handcannon** relic to stand on all baseplates at the same time."
+    },
+    {
+        "name": "Brood",
+        "imgSrc": "brood",
+        "location": "miasmic swamp",
+        "solution": "Collect relevation seeds and elemental ores to spawn a strong enemy for a period of time. Eliminating these enemies before the timer runs out will give you a **Germinated Revelation Seed**"
+    },
+    {
+        "name": "Mechanical Detector",
+        "imgSrc": "mechanicaldetector",
+        "location": "miasmic swamp",
+        "solution": "Activate the device and follow it to collect rewards such as Mira and Veron."
+    },
+    {
+        "name": "Purification System",
+        "imgSrc": "purificationsystem",
+        "location": "miasmic swamp",
+        "solution": "Attack the device until the 3 yellow bars are locked in the correct position, then obtain a relevation seed and a temporary immunity to poison."
+    },
+    {
+        "name": "Titan Konjac",
+        "imgSrc": "titankonjac",
+        "location": "miasmic swamp",
+        "solution": "A plant that emmits poisonous gas in a wide radius, relevation seeds often grow close to these. Using **Germinated Revelation Seeds** on a Titan Konjac will remove the poison being emitted."
+    },
+    {
         "name": "Supply Pod",
         "imgSrc": "supplypod",
         "location": "aesperia",

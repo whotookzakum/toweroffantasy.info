@@ -32,7 +32,7 @@
         }
     ],
     "advancements": [
-        "When any weapon skill is used, Speedy Yo-yo can trigger **harmony**, dealing damage to nearby targets equal to **25%** of the Wanderer's lost HP. The damage dealt shall be no less than **120%** of the Wanderer's Max ATK, and no more than **800%** of the Wanderer's Max ATK. The type of elemental damage dealt will be that of the current weapon.\nWhen any weapon discharge is used, Speedy Yo-yo can trigger **tuning**, dealing damage to nearby targets equal to **4%** of the Wanderer's Max ATK. The type of elemental damage dealt will be that of the current weapon.",
+        "When any weapon skill is used, Speedy Yo-yo can trigger **harmony**, dealing damage to nearby targets equal to **25%** of the Wanderer's lost HP. The damage dealt shall be no less than **120%** of the Wanderer's Max ATK, and no more than **800%** of the Wanderer's Max ATK. The type of elemental damage dealt will be that of the current weapon.\nWhen any weapon discharge is used, Speedy Yo-yo can trigger **tuning**, dealing damage to nearby targets equal to **4%** of the Wanderer's Max HP. The damage dealt shall be no more than **400%** of the Wanderer's Max ATK. The type of elemental damage dealt will be that of the current weapon.",
         "Increase the current weapon's base ATK growth by **16%**.",
         "When using Desolate Day, Speedy Yo-yo can trigger **9** seconds of **swiftness**: Speedy Yo-yo's speed is increased by **80**%, damage is increased by **160%**, and damage caused by passing through the target is converted to small-area damage.",
         "Increase the current weapon's base ATK growth by **32%**.",
@@ -52,7 +52,7 @@
                 "**112.1%** of ATK + **6** and knockback.",
                 "**130.5%** of ATK + **7** and knockback",
                 "**213.2%** of ATK + **11** and **suspend** the target.",
-                "**329%** of ATK + **19** and knockback.",
+                "**329%** of ATK + **17** and knockback.",
                 "**222.5%** of ATK + **12** and **launch** the target."
             ]
         },

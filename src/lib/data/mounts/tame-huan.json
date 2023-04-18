@@ -1,0 +1,13 @@
+{
+    "name": "Tame Huan",
+    "id": 18,
+    "chinaOnly": true,
+    "imgSrc": "zuoqi_tubiap_21",
+    "parts": [
+        {
+            "source": "Obtained by purchasing the 12th Collector's Edition Pass.",
+            "imgSrc": "Mount_021"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/9r50nlp57D8"
+}

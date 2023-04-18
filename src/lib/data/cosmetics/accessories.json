@@ -2,13 +2,13 @@
     {
         "name": "Deep Sea Shark",
         "imgSrc": "fashion_icon_shipin_116",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innars.",
+        "source": "Innars Resource Dealer Ranni.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=258"
     },
     {
         "name": "Mysterious Sound",
         "imgSrc": "fashion_icon_shipin_115",
-        "source": "<abbr title='China Exclusive'></abbr> Purchasable from the shop in Innars.",
+        "source": "Innars Resource Dealer Ranni.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=262"
     },
     {
@@ -42,7 +42,7 @@
     },
     {
         "name": "Charming Glasses",
-        "imgSrc": "fashion_icon_shipin_03",
+        "imgSrc": "fashion_icon_shipin_022",
         "source": ""
     },
     {
@@ -177,9 +177,9 @@
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=302"
     },
     {
-        "name": "Glittering Star Glasses",
+        "name": "Twinklink Starry Glasses",
         "imgSrc": "fashion_icon_shipin_096",
-        "source": "<abbr title='China Exclusive'></abbr> From events.",
+        "source": "From events.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=293"
     },
     {
@@ -189,15 +189,15 @@
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=283"
     },
     {
-        "name": "Sunlight Pacifier",
+        "name": "Sunshine Pacifier",
         "imgSrc": "fashion_icon_shipin_093",
-        "source": "<abbr title='China Exclusive'></abbr> From events.",
+        "source": "From events.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=279"
     },
     {
-        "name": "Grape Bubble Gum",
+        "name": "Grapes Bubble Gum",
         "imgSrc": "fashion_icon_shipin_094",
-        "source": "<abbr title='China Exclusive'></abbr> From events.",
+        "source": "From events.",
         "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=288"
     },
     {

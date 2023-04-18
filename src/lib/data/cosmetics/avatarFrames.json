@@ -2,12 +2,17 @@
     {
         "name": "Commitment",
         "imgSrc": "AvatarFrame_s_70",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wattle Bloom event."
+        "source": "Obtained from gachapon during the Ivory Bloom event."
     },
     {
         "name": "Reindeer & Bell",
         "imgSrc": "AvatarFrame_s_69",
         "source": "Obtained from purchasing the 2980 tanium Christmas pack during the sale."
+    },
+    {
+        "name": "Thoughts of Winter",
+        "imgSrc": "AvatarFrame_065",
+        "source": "Obtained from the shop during the Winter Festival event."
     },
     {
         "name": "Colloquial Consensus",
@@ -17,22 +22,22 @@
     {
         "name": "Yinghai Cruise",
         "imgSrc": "AvatarFrame_s_66",
-        "source": "<abbr title='China Exclusive'></abbr> Achievement reward."
+        "source": "Achievement reward."
     },
     {
         "name": "Dragon's Breath",
         "imgSrc": "AvatarFrame_s_65",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+        "source": "Obtained through exploration."
     },
     {
-        "name": "Sea of Stars",
+        "name": "Stars in the Sea",
         "imgSrc": "AvatarFrame_s_64",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained through exploration."
+        "source": "Obtained through exploration."
     },
     {
         "name": "Cake and Party",
         "imgSrc": "AvatarFrame_s_62",
-        "source": "<abbr title='China Exclusive'></abbr> From events."
+        "source": "From the Reflected Whispers event."
     },
     {
         "name": "Stylish Straw Hat",
@@ -51,9 +56,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event."
     },
     {
-        "name": "Blood Moon's Favor",
+        "name": "Blood Moon",
         "imgSrc": "AvatarFrame_57",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event (Halloween?)."
+        "source": "Obtained from gachapon during the Millet Wonderland event."
     },
     {
         "name": "Fisherman's Honor",
@@ -61,9 +66,9 @@
         "source": "Purchasable from the fishing shop."
     },
     {
-        "name": "Cleaning Program",
+        "name": "Cleaning Sequence",
         "imgSrc": "AvatarFrame_56",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 8th Collector's Edition Pass."
     },
     {
         "name": "Countdown",
@@ -118,7 +123,7 @@
     {
         "name": "Pool Focus",
         "imgSrc": "AvatarFrame_47",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
+        "source": "Obtained from gachapon during the event."
     },
     {
         "name": "Watermelon Feast",
@@ -133,7 +138,7 @@
     {
         "name": "Lost Friend",
         "imgSrc": "AvatarFrame_45",
-        "source": "Obtainable from gachapon during the Scarlet Song event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
+        "source": "Obtainable from gachapon during the Crimson Ruby event.\n\n<abbr title='China Exclusive'></abbr> Obtainable from gachapon during the Crimson Wheel event."
     },
     {
         "name": "Nurse Trainee",
@@ -183,7 +188,7 @@
     {
         "name": "Sweet Dreams",
         "imgSrc": "AvatarFrame_33",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 4th Collector's Edition Pass."
+        "source": "Obtained by purchasing the 4th Collector's Edition Pass."
     },
     {
         "name": "Unstable Dancer",
@@ -191,9 +196,9 @@
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Sands event."
     },
     {
-        "name": "Hellamander Charge",
+        "name": "Steel Lizard Charge",
         "imgSrc": "AvatarFrame_31",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
+        "source": "From events\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event."
     },
     {
         "name": "Gaze Mirroria",
@@ -238,7 +243,7 @@
     {
         "name": "Companion",
         "imgSrc": "AvatarFrame_023",
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event."
+        "source": "Obtained by Fenrir Order Gift.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event."
     },
     {
         "name": "Dusk",
@@ -256,10 +261,9 @@
         "source": "Obtained by purchasing the 3rd Collector's Edition Pass."
     },
     {
-        "name": "Valentine",
-        "nameUnconfirmed": true,
+        "name": "Tipsy",
         "imgSrc": "AvatarFrame_Valentine",
-        "source": "<abbr title='China Exclusive'></abbr> Obtainable during the Valentine's event."
+        "source": "Unlocked by participaging in the Passion for Chocolate event.\n\n<abbr title='China Exclusive'></abbr> Obtainable during the Valentine's event."
     },
     {
         "name": "Happy New Year",
@@ -300,12 +304,12 @@
     {
         "name": "Leader of Astra",
         "imgSrc": "AvatarFrame_xiazuo",
-        "source": ""
+        "source": "Pre-registration Milestone Reward."
     },
     {
         "name": "Sci-Fi World",
         "imgSrc": "AvatarFrame_kehuanshijie",
-        "source": ""
+        "source": "<abbr title='China Exclusive'></abbr>"
     },
     {
         "name": "Wreath",

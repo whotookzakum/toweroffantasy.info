@@ -113,7 +113,7 @@
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong3",
             "description":
-                "While using Devastating Glide, pass through **3** parasols before returning to the original position to gain Vermilion Domain, which grants hyperbody and **35%** damage reduction for **8** seconds.\nWhile diving, Vermilion Domain deals damage equal to **50%** of ATK plus **3** to targets in the area every second and increases the Wanderer's speed by **30%**."
+                "While using Devastating Glide, pass through **3** parasols before returning to the original position to gain Vermilion Domain, which grants hyperbody and **40%** damage reduction for **8** seconds.\nWhile diving, Vermilion Domain deals damage equal to **50%** of ATK plus **3** to targets in the area every second and increases the Wanderer's speed by **30%**."
         },
         {
             "name": "Fortitude",
