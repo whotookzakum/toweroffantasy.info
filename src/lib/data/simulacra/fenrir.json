@@ -37,7 +37,7 @@
         },
         {
             "affinity": 4000,
-            "description": "When equipping **2** weapons of different elements, increase final damage by **18%**. When equipping **3** weapons of different elements, increase final damage by **25%**."
+            "description": "When equipping **2** weapons of different elements, increase final damage by **18%**. When equipping **3** weapons of different elements, increase final damage by **23%**."
         }
     ],
     "giftTypes": [
