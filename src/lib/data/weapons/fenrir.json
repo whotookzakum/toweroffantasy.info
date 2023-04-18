@@ -59,8 +59,8 @@
                 "Deal damage equal to **54.1%** of ATK + **5** to the target.",
                 "Deal damage equal to **85.4%** of ATK + **7** to the target.",
                 "Deal damage equal to **54.1%** of ATK + **5** to the target.",
-                "Deal damage equal to **10%** of ATK + **11** to the target.",
-                "Deal damage equal to **12%** of ATK + **13** to the target."
+                "Deal damage equal to **152.9%** of ATK + **13** to the target.",
+                "Deal damage equal to **169%** of ATK + **15** to the target."
             ]
         },
         {
@@ -78,8 +78,8 @@
                 "Deal damage equal to **60.8%** of ATK + **5**.",
                 "Deal damage equal to **105.8%** of ATK + **9**.",
                 "Deal damage equal to **79.3%** of ATK + **7**.",
-                "Deal damage equal to **10%** of ATK + **11**.",
-                "Deal damage equal to **12%** of ATK + **13**."
+                "Deal damage equal to **183.4%** of ATK + **16**.",
+                "Deal damage equal to **202.8%** of ATK + **18**."
             ]
         },
         {
@@ -128,7 +128,7 @@
             "name": "Reverb",
             "type": "normal",
             "imgSrc": "skill_fenrir_beidong",
-            "description": "Each attack has a **50%** chance of adding **1** note to the target, lasting **15** seconds and maxing out at **5** notes.\n\n**Wolf Bite, Wild Hunt, and Impact Fall** have a **100%** chance of adding **1** note.\n\nNotes are added in **1** second intervals.\n\n**Passive**: **Soundtrack** and **Echo** detonate all notes on a target, dealing **35%** of ATK damage (doubles damage if **3** or more notes are detonated).\n\n**Passive**: If **2** or more notes are detonated, the target will enter a state of intoxication, dealing **1%** of max HP damage per second for **16** seconds. The damage from detonating notes and intoxication is considered as dodge attack damage."
+            "description": "Each attack has a **50%** chance of adding **1** note to the target, lasting **15** seconds and maxing out at **5** notes.\n\n**Wolf Bite, Wild Hunt, and Impact Fall** have a **100%** chance of adding **1** note.\n\nNotes are added in **1** second intervals.\n\n**Passive**: **Soundtrack** and **Echo** detonate all notes on a target, dealing **20%** of ATK damage (doubles damage if **3** or more notes are detonated).\n\n**Passive**: If **2** or more notes are detonated, the target will enter a state of intoxication, dealing **1%** of max HP damage per second for **16** seconds. The damage from detonating notes and intoxication is considered as dodge attack damage."
         },
         {
             "name": "Melody",
