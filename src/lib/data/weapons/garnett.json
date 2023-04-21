@@ -18,8 +18,8 @@
     ],
     "materials": [
         "flame",
-        "red",
-        "black"
+        "green",
+        "blue"
     ],
     "weaponEffects": [
         {
