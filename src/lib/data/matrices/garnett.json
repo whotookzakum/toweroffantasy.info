@@ -1,0 +1,17 @@
+{
+    "name": "Garnett",
+    "chinaOnly": true,
+    "id": 32,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR32_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increase final damage by **12%/15%/18%/21%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect. The number of sparrowfeathers that can be obtained per dodge is increased to **20**. "
+        },
+        {
+            "pieces": 4,
+            "description": "When equipped with at least **1** flame weapon, increase elemental damage by **28%/32%/36%/40%**. After using **Pine Comet's** 'Four-Way Sparrow', increase elemental damage by an additional **15%**, where this additional increase in damage will gradually decrease to **10%** over the span of **25** seconds. "
+        }
+    ]
+}
