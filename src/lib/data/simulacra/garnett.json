@@ -29,7 +29,18 @@
         "Domain 9"
     ],
     "bestGifts": [
-        
+        {
+            "points": 80,
+            "gift": "ropepuzzle"
+        },
+        {
+            "points": 80,
+            "gift": "fan"
+        },
+        {
+            "points": 60,
+            "gift": "floatingcard"
+        }
     ],
     "gender": "Female",
     "height": "153 cm",

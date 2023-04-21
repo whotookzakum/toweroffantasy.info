@@ -7,6 +7,15 @@
     function getImgSrc() {
         switch (gift.gift) {
             // Purples
+            case "fan":
+                rarity = 4;
+                return "gift56"
+            case "floatingcard":
+                rarity = 4;
+                return "gift54"
+            case "ropepuzzle":
+                rarity = 4;
+                return "gift52"
             case "linyeFigure":
                 rarity = 4;
                 return "UI_jingdu_icon_xiaoyeye_256";
