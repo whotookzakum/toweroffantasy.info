@@ -5,7 +5,8 @@
     // Can't put this component on each page because it doesn't work inside the grid, must be at root level
 
     const getImgSrc = (path) => {
-        if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/rubilia'
+        if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/liuhuo'
+        if (path.includes("/garnett")) return 'huanxing/lihui/liuhuo'
         if (path.includes("/rubilia")) return 'huanxing/lihui/rubilia'
         if (path.includes("/gunonno")) return 'huanxing/lihui/gunonno'
         if (path.includes("/fiona")) return 'huanxing/lihui/Fiona'
@@ -104,6 +105,10 @@
         &[src*="UI_nuanyang_renwu1"] {
             top: unset;
             bottom: 0;
+        }
+
+        &[src*="liuhuo"] {
+            object-position: 325px;
         }
     }
 </style>

@@ -25,6 +25,11 @@
                 "bannerNo": 42,
                 "start": "4 Jan 2023",
                 "end": "22 Jan 2023"
+            },
+            {
+                "bannerNo": 55,
+                "start": "19 Apr 2023",
+                "end": "3 May 2023"
             }
         ],
         "glob": [

@@ -1,8 +1,14 @@
 [
     {
+        "name": "Jade Elegance",
+        "imgSrcs": ["fashion_f52","fashion_m52"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Jade Elegance event.",
+        "videoSrc": "https://www.youtube.com/watch?v=CsVhdb91E-0"
+    },
+    {
         "name": "Yin Hai Tempest",
         "imgSrcs": ["fashion_f51", "fashion_m51"],
-        "source": "<abbr title='China Exclusive'></abbr>Obtained from gachapon during the Inhay Breeze event.",
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Inhay Breeze event.",
         "videoSrc": "https://www.youtube.com/watch?v=fn0GahBznNE"
     },
     {

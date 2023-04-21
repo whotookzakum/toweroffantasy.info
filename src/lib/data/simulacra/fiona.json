@@ -8,8 +8,15 @@
         "cn": [
             {
                 "bannerNo": 45,
+                "subtext": "Limited Banner only",
                 "start": "8 Feb 2023",
                 "end": "1 Mar 2023"
+            },
+            {
+                "bannerNo": 66,
+                "subtext": "Limited Banner only",
+                "start": "19 Apr 2023",
+                "end": "3 May 2023"
             }
         ]
     },
@@ -52,7 +59,7 @@
     ],
     "gender": "Female",
     "height": "185 cm",
-    "birthplace": "Innis",
+    "birthplace": "Innars",
     "horoscope": "Aries",
     "birthday": "17 Apr",
     "voiceActors": {
