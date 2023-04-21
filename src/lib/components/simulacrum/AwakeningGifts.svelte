@@ -22,6 +22,9 @@
 {#if categories.includes("Vera") && !categories.includes("Aesperia")}
     <small style="margin-block: var(--space-2xs); line-height: 1.7;">Vera characters will receive reduced Awakening Points from Non-Vera gifts.</small>
 {/if}
+{#if categories.includes("Domain 9") && !categories.includes("Aesperia")}
+    <small style="margin-block: var(--space-2xs); line-height: 1.7;">Domain 9 characters will receive reduced Awakening Points from Non-Domain 9 gifts.</small>
+{/if}
 
 <style lang="scss">
     .categories,
