@@ -59,7 +59,7 @@
             ]
         },
         {
-            "name": "Flying Wen",
+            "name": "Flying Text",
             "type": "normal",
             "imgSrc": "skill_brush_airattack",
             "input": [
@@ -85,7 +85,7 @@
                 "Attack x2",
                 "hold:Attack"
             ],
-            "description": "Spinning attack, dealing damage equal to **1220.9%** of ATK + **64** to nearby targets and knocking them back.\n\nAfter triggering Man Book, use normal attack to trigger Ranhan.\n\nArc displacement, dealing damage equal to **143.6%** + **8** to nearby targets, and floating them.\n\nAfter triggering Ranhan, press normal attack to trigger Falling Paper.\n\nAfter triggering Falling Paper, press and hold normal attack to trigger Ranhan."
+            "description": "Spinning attack, dealing damage equal to **1220.9%** of ATK + **64** to nearby targets and knocking them back.\n\nAfter triggering Man Book, use normal attack to trigger Ranhan.\n\nArc displacement, dealing damage equal to **143.6%** + **8** to nearby targets, and floating them.\n\nAfter triggering Ranhan, press normal attack to trigger Falling Paper.\n\nAfter triggering Falling Paper, press and hold normal attack to trigger Finishing Touch."
         },
         {
             "name": "Falling Paper",
@@ -95,7 +95,7 @@
                 "Attack x5",
                 "hold:Attack"
             ],
-            "description": "Kick the target, dealing damage equal to **287.3%** of ATK + **15** to nearby targets and float them. Then release the Suzaku attack, dealing damage equal to **359.1%** of ATK + **19** to nearby targets, and finally fall from the sky, dealing damage equal to **790%** of ATK + **42** and float the target. After triggering Falling Paper, press and hold normal attack to trigger Ranhan."
+            "description": "Kick the target, dealing damage equal to **287.3%** of ATK + **15** to nearby targets and float them. Then release the Suzaku attack, dealing damage equal to **359.1%** of ATK + **19** to nearby targets, and finally fall from the sky, dealing damage equal to **790%** of ATK + **42** and float the target. After triggering Falling Paper, press and hold normal attack to trigger Finishing Touch."
         },
         {
             "name": "Finishing Touch",
