@@ -106,5 +106,9 @@
             top: unset;
             bottom: 0;
         }
+
+        &[src*="liuhuo"] {
+            object-position: 325px;
+        }
     }
 </style>
