@@ -1,0 +1,47 @@
+{
+    "name": "Kaka",
+    "imgSrc": "LH_FightPet_1",
+    "number": 18,
+    "chinaOnly": true,
+    "element": "physical",
+    "type": "dps",
+    "attack": 2125,
+    "crit": 1800,
+    "description": "Inherits **12%** of the Wanderer's flame, ice, volt and physical ATK. Kaka has **1** module spot and **5** skill points.",
+    "advancements": [
+        "Increase attack inheritance to **18%**, increase Kaka Collision damage to **1147%** of ATK, Kaka now has **2** module spots and **8** skill points.",
+        "Increase attack inheritance to **24%**, increase Kaka Strike damage to **744%** of ATK, Kaka now has **3** module spots and **11** skill points.",
+        "Increase attack inheritance to **30%**, increase Kaka Laser damage to **2420%** of ATK, health restoration is increased to **140%** of ATK, Kaka now has **4** module spots and **15** skill points."
+    ],
+    "abilities": [
+        {
+            "name": "Kaka Collision",
+            "effect": "Kaka dashes forward, dealing damage to the enemy in front equal to **765%** of ATK, and increase its own attack power by **10%** for 8 seconds.",
+            "imgSrc": 1
+        },
+        {
+            "name": "Kaka Laser",
+            "effect": "Kaka accumulates power for a period of time, then send a concentrated laser forward, dealing damage equal to **613%** of ATK to the enemy in front, and restore the owners HP by **80%** of ATK.",
+            "imgSrc": 2
+        },
+        {
+            "name": "Kaka Strike",
+            "effect": "Kaka swings his fists forward, hitting the enemy twice. Each hit deals damage equal to **496%** of ATK.",
+            "imgSrc": 3
+        }
+    ],
+    "bestGifts": [
+        {
+            "points": 40,
+            "gift": "lava"
+        },
+        {
+            "points": 20,
+            "gift": "lunar"
+        },
+        {
+            "points": 20,
+            "gift": "yellow"
+        }
+    ]
+}

@@ -22,6 +22,7 @@
         position: relative;
         transition: all 0.1s ease;
         overflow: hidden;
+        text-align: center;
 
         &:hover {
             background: var(--surface3);

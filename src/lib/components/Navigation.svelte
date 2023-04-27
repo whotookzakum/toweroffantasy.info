@@ -16,6 +16,12 @@
             text: "Relics",
             href: "/relics",
         },
+        //No Mia yet
+        // {
+        //     text: "Smart Servants",
+        //     href: "/smart-servants",
+        //     chinaOnly: true
+        // },
         {
             text: "Exploration",
             href: "/exploration",
@@ -118,6 +124,9 @@
                     on:click={toggleNav}
                 >
                     {link.text}
+                    {#if link.chinaOnly}
+                        <abbr title="China Exclusive" />
+                    {/if}
                 </a>
             {/if}
         {/each}
