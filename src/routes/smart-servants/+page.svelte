@@ -1,7 +1,7 @@
 <script>
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
-    import ServantFilters from "../../lib/components/smart-servants/servantFilters.svelte";
+    import ServantFilters from "$lib/components/smart-servants/ServantFilters.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
