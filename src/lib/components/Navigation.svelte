@@ -16,6 +16,12 @@
             text: "Relics",
             href: "/relics",
         },
+        //No Mia yet
+        // {
+        //     text: "Smart Servants",
+        //     href: "/smart-servants",
+        //     chinaOnly: true
+        // },
         {
             text: "Exploration",
             href: "/exploration",
@@ -91,7 +97,7 @@
     </div>
     <a class="home-link" href="/">
         <img
-            src="/images/mia.png"
+            src="/images/mia.webp"
             style="padding: 0.5rem"
             alt="Logo"
             width="128"
@@ -118,6 +124,9 @@
                     on:click={toggleNav}
                 >
                     {link.text}
+                    {#if link.chinaOnly}
+                        <abbr title="China Exclusive" />
+                    {/if}
                 </a>
             {/if}
         {/each}

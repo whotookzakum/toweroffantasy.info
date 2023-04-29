@@ -56,7 +56,7 @@
     />
     <meta
         property="og:image"
-        content="/images/Icon/caiyao/Item_Vera_Cooking29.png"
+        content="/images/Icon/caiyao/Item_Vera_Cooking29.webp"
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -94,7 +94,7 @@
                         <div class="img-and-name">
                             <Item rarity={dish.rarity}>
                                 <img
-                                    src={`/images/Icon/caiyao/${dish.imgSrc}.png`}
+                                    src={`/images/Icon/caiyao/${dish.imgSrc}.webp`}
                                     alt={dish.name}
                                     width="96"
                                     height="96"
@@ -127,7 +127,7 @@
                                                 getIngredientData(
                                                     ingredient.item
                                                 ).imgSrc
-                                            }.png`}
+                                            }.webp`}
                                             alt={ingredient.item}
                                             width="48"
                                             height="48"
@@ -166,7 +166,7 @@
                 <tr>
                     <td class="img-and-name">
                         <img
-                            src={`/images/Icon/shicai/${ingredient.imgSrc}.png`}
+                            src={`/images/Icon/shicai/${ingredient.imgSrc}.webp`}
                             alt={ingredient.name}
                             width="64"
                             height="64"

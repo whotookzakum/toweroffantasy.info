@@ -45,7 +45,7 @@
             simulacrum.chinaOnly ? "" : "/ResourcesOverSea"
         }/UI/shizhuang/nitai/xiangqing/wuwei/wuwei_imitation_${
             simulacrum.id
-        }.png`}
+        }.webp`}
         alt={`${simulacrum.name}'s personality chart'`}
         width="678"
         height="367"

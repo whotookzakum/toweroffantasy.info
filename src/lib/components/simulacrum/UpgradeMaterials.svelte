@@ -761,7 +761,7 @@
                     <div style="display: flex; flex-wrap: wrap">
                         <Item rarity={3} amount={totalAugmentGoldCost}>
                             <img
-                                src="/images/Icon/huobi/jinbi.png"
+                                src="/images/Icon/huobi/jinbi.webp"
                                 alt="Gold"
                                 width="64"
                                 height="64"
@@ -799,7 +799,7 @@
                             : totalGoldAndExpCost}
                     >
                         <img
-                            src="/images/Icon/huobi/jinbi.png"
+                            src="/images/Icon/huobi/jinbi.webp"
                             alt="Gold"
                             width="64"
                             height="64"
@@ -813,7 +813,7 @@
                             : totalGoldAndExpCost}
                     >
                         <img
-                            src="/images/Icon/huobi/jingyan.png"
+                            src="/images/Icon/huobi/jingyan.webp"
                             alt="EXP"
                             width="64"
                             height="64"

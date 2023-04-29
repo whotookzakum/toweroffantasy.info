@@ -34,7 +34,7 @@
     class="effect-icon"
     class:absolute
     style={`width: ${width}px`}
-    src={`/images/UI/AttributeIcon/${getImgSrc()}.png`}
+    src={`/images/UI/AttributeIcon/${getImgSrc()}.webp`}
     alt={effect}
     width="32"
     height="32"

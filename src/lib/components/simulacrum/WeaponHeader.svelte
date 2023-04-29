@@ -9,7 +9,7 @@
     style={`border-color: var(--element-${weapon.element})`}
 >
     <img
-        src={`/images/Icon/weapon/Icon/${weapon.imgSrc}.png`}
+        src={`/images/Icon/weapon/Icon/${weapon.imgSrc}.webp`}
         alt={weapon.name}
         width="128"
         height="128"

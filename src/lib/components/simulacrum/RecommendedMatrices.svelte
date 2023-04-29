@@ -23,7 +23,7 @@
                             >
                                 <div class="img-wrapper">
                                     <img
-                                        src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                                        src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
                                         alt={`${matrix.name} matrix`}
                                         width="128"
                                         height="128"

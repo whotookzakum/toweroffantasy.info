@@ -45,7 +45,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/Icon/Avatar/touxiang_${data.items[0].cnName}.png`}
+        content={`/images/Icon/Avatar/touxiang_${data.items[0].cnName}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -70,16 +70,16 @@
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
             {#if filters.showWeapon}
                 <img
-                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
                     loading="lazy"
                 />
-                <span>{simulacrum.weapon.name}</span>
+                <span class="menu-item-name">{simulacrum.weapon.name}</span>
             {:else}
                 <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
-                <span>{simulacrum.name}</span>
+                <span class="menu-item-name">{simulacrum.name}</span>
             {/if}
             <div class="type-and-element">
                 <CategoryIcon type={simulacrum.weapon.type} width={30} />
@@ -98,16 +98,16 @@
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
             {#if filters.showWeapon}
                 <img
-                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
                     loading="lazy"
                 />
-                <span>{simulacrum.weapon.name}</span>
+                <span class="menu-item-name">{simulacrum.weapon.name}</span>
             {:else}
                 <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
-                <span>{simulacrum.name}</span>
+                <span class="menu-item-name">{simulacrum.name}</span>
             {/if}
             <div class="type-and-element">
                 <CategoryIcon type={simulacrum.weapon.type} width={30} />
@@ -121,5 +121,9 @@
     .type-and-element {
         display: flex;
         margin-bottom: 1rem;
+    }
+
+    .menu-item-name {
+        padding-bottom: 0.4rem;
     }
 </style>

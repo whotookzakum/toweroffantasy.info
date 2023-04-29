@@ -21,7 +21,7 @@
     />
     <meta
         property="og:image"
-        content="/images/Icon/huobi/Gem004.png"
+        content="/images/Icon/huobi/Gem004.webp"
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>

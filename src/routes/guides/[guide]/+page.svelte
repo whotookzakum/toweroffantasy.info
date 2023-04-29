@@ -8,7 +8,7 @@
     <meta name="description" content={data.description} />
     <meta property="og:title" content={data.title} />
     <meta property="og:description" content={data.description} />
-    <meta property="og:image" content={`/images/mia.png`} />
+    <meta property="og:image" content={`/images/mia.webp`} />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
 

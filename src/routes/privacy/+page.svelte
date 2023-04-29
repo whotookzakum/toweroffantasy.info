@@ -8,7 +8,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/mia.png`}
+        content={`/images/mia.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>

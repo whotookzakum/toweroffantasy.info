@@ -1,5 +1,5 @@
 {
-    "name": "Lunar Stars",
+    "name": "Moonstar Bracelet",
     "imgSrc": "item_Weapon_SSR_feiouna",
     "element": "altered",
     "type": "support",
@@ -25,20 +25,20 @@
     "weaponEffects": [
         {
             "title": "Altered Resonance",
-            "description": "Increase ATK by **30%** and altered resistance by **60%**. Activate by equipping **2** or more altered weapons. This set effect also works with weapons in the off-hand slot. Does not stack with Altered Reaction as Altered Resonance will take priority."
+            "description": "Altered Resonance: Increase ATK by **20%** and altered resistance by **30%**. Activate by equipping **2** or more altered weapons. This set effect works in the off-hand slot. Cannot stack with other Altered Resonance or Altered Reaction effects, with Altered Resonance taking precedence."
         }
     ],
     "advancements": [
-        "Use any weapon skill or discharge to gain **1** elemental crystal, up to **5** stacks, which decay after **6** seconds. Elemental crystals increase your final damage by **4%** * (**crystal count** + **1**) / **2**, and healing by **6%** * (**crystal count** + **1**) / **2**.",
+        "Using any weapon or discharge skill grants **1** elemental crystal, up to **5** crystals. Elemental crystals are lost at a rate of **1** crystal every **6** seconds. Elemental crystals provide a final damage boost equal to **4%** of [(**crystal count** plus **1**)/**2**] and an increased healing effect equal to **6%** of [(**crystal count** plus **1**)/**2**].",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "While not using Benediction Resonance and the target's health is lower than (**crystal count** + **2**)**%**, **Lunar Stars** can instantly kill the enemy (ineffective against players).\n\nWhen using Benediction Resonance and the target's health is lower than (**crystal count** * **2** + **2**)**%**, **Lunar Stars** can instantly kill the enemy (ineffective against players).",
+        "While Benediction Resonance is not active, when the target's HP is below (**crystal count** plus **2**)%, using **Moonstar Bracelet** can instantly execute the target (doesn't work against Wanderers).\nWhile Benediction Resonance is active, when the target's HP is below (**crystal count** times **2** plus **2**)**%**, using **Moonstar Bracelet** can instantly execute the target (doesn't work against Wanderers).",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "Gain **1** elemental crystal every time you use Scattering Technique. The decay time for an elemental crystal is increased to **20** seconds.\n\nUpon taking lethal damage, consume **3** elemental crystals to neutralize the damage and temporarily become invincible, cooldown **25** seconds.",
-        "Increase final damage by **7%** * (**crystal count** + **3**) / **2**."
+        "Obtain **1** elemental crystal every time Scatter Technique is used. Elemental crystals are lost at a rate of **1** crystal every **20** seconds. When receiving fatal damage, consume **3** elemental crystals to prevent death **1** time and gain damage immunity for a short time. Can be activated **1** time every **25** seconds.",
+        "Increase final damage by **7%**of [(**crystal count** plus **3**)/**2**]."
     ],
     "abilities": [
         {
-            "name": "Frost",
+            "name": "Frost Lash",
             "type": "normal",
             "imgSrc": "skill_feiouna_pugong",
             "input": [
@@ -46,17 +46,17 @@
             ],
             "description": "While on the ground, use Lunar Stars to launch 7 consecutive attacks.",
             "breakdown": [
-                "**74.9%** of ATK + **4**.",
-                "**78.6%** of ATK + **4**.",
-                "**123.6%** of ATK + **7**.",
-                "**186.6%** of ATK + **10**.",
-                "**209.7%** of ATK + **11**.",
-                "**140.4%** of ATK + **7**.",
-                "**542.1%** of ATK + **29**."
+                "**69.9%** of ATK + **4**.",
+                "**73.4%** of ATK + **4**.",
+                "**115.4%** of ATK + **6**.",
+                "**174.2%** of ATK + **9**.",
+                "**195.7%** of ATK + **10**.",
+                "**131.1%** of ATK + **7**.",
+                "**505.9%** of ATK + **27**."
             ]
         },
         {
-            "name": "Dew Dance",
+            "name": "Dancing Drop",
             "type": "normal",
             "imgSrc": "skill_feiouna_kongzhongpugong",
             "input": [
@@ -65,17 +65,17 @@
             ],
             "description": "While airborne, use normal attack to attack 7 times in a row in mid-air and consume endurance.",
             "breakdown": [
-                "**100.5%** of ATK + **5**.",
-                "**105.5%** of ATK + **6**.",
-                "**151.9%** of ATK + **8**.",
-                "**216.6%** of ATK + **11**.",
-                "**210.9%** of ATK + **11**.",
-                "**157%** of ATK + **8**.",
-                "**587.6%** of ATK + **31**."
+                "**93.8%** of ATK + **5**.",
+                "**98.4%** of ATK + **5**.",
+                "**141.8%** of ATK + **7**.",
+                "**202.2%** of ATK + **11**.",
+                "**196.9%** of ATK + **10**.",
+                "**146.5%** of ATK + **8**.",
+                "**548.5%** of ATK + **29**."
             ]
         },
         {
-            "name": "Condensation Ripple",
+            "name": "Converging Ripples",
             "type": "normal",
             "imgSrc": "skill_feiouna_fenzhigongji",
             "input": [
@@ -83,10 +83,10 @@
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "While on the ground, tap and hold the basic attack button between the second and sixth basic attacks to trigger Condensation Ripple.\n\nRise into the air, and continuously launch water bullets at enemies, consuming endurance. Each hit deals **150%** of ATK + **8** (considered damage from a charged attack) and stagger enemies."
+            "description": "While on the ground, tap and hold normal attack between the second and sixth normal attack to trigger Converging Ripples. The Wanderer will become airborne and fire several water bombs ahead while continuously consuming endurance, each hit dealing damage equal to **88.5%** of ATK plus **5** to nearby targets (counts as a charged attack), knocking the targets back."
         },
         {
-            "name": "Moondrop",
+            "name": "Moonrain",
             "type": "normal",
             "imgSrc": "skill_xialuogongji",
             "input": [
@@ -94,10 +94,10 @@
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "Tap and hold normal attack while airborne (tap when a target is selected), or use normal attack while climbing, jumping backward, or using Jetpack to trigger Moondrop. Fall from the sky and deal **175%** of ATK + **9** and suspend targets upon landing."
+            "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Moonrain.\n\nFall from above, dealing damage equal to **175%** of ATK plus **9** to targets upon reaching the ground, and suspend them."
         },
         {
-            "name": "Crashing Springs",
+            "name": "Torrential Convergence",
             "type": "normal",
             "imgSrc": "skill_feiouna_fenzhigongji-05",
             "input": [
@@ -106,25 +106,25 @@
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "While airborne, tap and hold the basic attack button between the second and sixth basic attacks to trigger Condensation Ripple.\n\nRise into the air, and continuously launch water bullets at enemies, consuming endurance. Each hit deals **150%** of ATK + **8** (considered damage from a charged attack) and stagger enemies."
+            "description": "While in mid-air, tap and hold normal attack between the second and sixth normal attack to trigger Torrential Convergence.\n\nFire several water bombs ahead while continuously consuming endurance, each hit dealing damage equal to **88.5%** of ATK plus **5** to nearby targets (counts as a charged attack), knocking the targets back."
         },
         {
-            "name": "Share",
+            "name": "Division",
             "type": "normal",
             "imgSrc": "skill_lianjie",
             "input": [
                 "hold:Attack"
             ],
-            "description": "When using the **Benediction Resonance**:\n\nWhile on the ground, press and hold basic attack to select a teammate and release to form a link with them. The linked target cannot be linked again until the link is broken by them reaching 0 HP, linking to a new target, or exceeding the max link distance. The linked target receives **50%** more healing from Lunar Stars.\n\nIf the linked teammate is using **Fortitude Resonance**, they gain resistance equal to **50%** of your resistance.\n\nIf the linked teammate is using **Balanced Resonance** or **Attack Resonance**, they gain ATK equal to **20%** of your ATK (up to **20000**).\n\nIf the linked teammate is using **Benediction Resonance**, increase both of your healing by an additional **30%**."
+            "description": "While **Benediction Resonance** is active:\n\nTap and hold normal attack while on the ground to select a teammate, then release to link the Wanderer to that teammate. When their link is in effect, the pair cannot make a link or be linked again. The link ends when one of the two is defeated/the selected ally has made another link/it exceeds the range.\n\nThe linked ally's healing received from the link starter's Moonstar Bracelet is increased by **50%**. When the linked ally activates **Fortitude Resonance**, an extra **50%** of resistance is transmitted to the linked ally.\n\nWhen the linked ally activates **Balance Resonance**/**Attack Resonance**, an extra **20%** of ATK is transmitted to the linked ally (no more than **20,000**).\n\nWhen the linked ally activates **Benediction Resonance**, the outgoing healing effect of the pair is additionally increased by **30%**."
         },
         {
             "name": "Dodge",
             "type": "dodge",
             "imgSrc": "common_evade",
-            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\n**Passive:** Restore HP equal to **200%** of ATK to yourself and nearby allies, and clear **8** points of ash value. When using **Benediction Resonance**, gain **50** Weapon charge."
+            "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.\n\n**Passive**: Recover HP equal to **150%** of ATK for self and nearby allies when dodging, and remove **8** points of Graying Bite.\n\nWhile **Benediction Resonance** is active, gain an additional **50** weapon charge."
         },
         {
-            "name": "Swift Step",
+            "name": "Reversal Wave",
             "type": "dodge",
             "imgSrc": "skill_feiouna_qinshanbi",
             "input": [
@@ -132,68 +132,68 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Swiftly dash around forward and back to deal **160%** of ATK + **8** damage to targets in range."
+            "description": "Roam ahead several times, dealing damage up to **144%** of ATK + **8** to targets in the area."
         },
         {
-            "name": "Geyser Swing",
+            "name": "Dashing Wave",
             "type": "dodge",
             "imgSrc": "skill_feiouna_houshanbi",
             "input": [
                 "Dodge", 
                 "hold:Attack"
             ],
-            "description": "Release an erupting geyser, dealing **90%** of ATK + **5** damage and **suspending** enemies."
+            "description": "Unleash a water jet, dealing damage up to **81%** of ATK + **4** to targets in the area and suspending them."
         },
         {
-            "name": "Cascade",
+            "name": "Crashing Falls",
             "type": "skill",
             "imgSrc": "skill_feiouna_jineng",
-            "description": "Release a tidal eruption, dealing up to **680%** of ATK + **36** damage to targets in range and **strongly suspending** them. Cooldown **30** seconds.\n\n**Passive: Dissipate**\n\nWhen equipped with **Lunar Stars**, you can equip up to **2** of the **6** Dissipate skills in the Skill List -> Settings screen.\n\nTo use: When at least one Dissipate skill is equipped, its passive effect will automatically be applied alongside Cascade, and Cascade's cooldown will be replaced with the cooldown of the selected Dissipate skill. If a second Dissipate skill is equipped, it will be given a separate skill button."
+            "description": "Tidal Eruption: Deal damage equal to **416%** of ATK plus **22** and **strongly suspend** targets in the area. Cooldown: **30** seconds.\n\n**Passive: Scatter**\n\nGain Scatter Technique after equipping **Moonstar Bracelet**. Up to **2** out of **6** Scatter Techniques can be activated via Skills - Settings.\n\nControls: Tap the special skill button to use the Scatter Technique.\n\nWhen a Scatter Technique is attached to Crashing Falls, using Crashing Falls will automatically trigger the Scatter Technique, and the skill cooldown will be replaced by the Scatter Technique cooldown."
         },
         {
-            "name": "Welling",
+            "name": "Hydro Focus",
             "type": "skill",
             "imgSrc": "skill_feiouna_kuosan1",
-            "description": "Cause a surging tide, dealing up to **1,500%** of ATK + **79** damage to nearby targets. Increase all elemental damage by **10%** for **20** seconds.\n\nCooldown: **14** seconds."
-        },
-        {
-            "name": "Surge",
-            "type": "skill",
-            "imgSrc": "skill_feiouna_kuosan2",
-            "description": "Summon multiple water spouts, pulling in nearby targets and dealing up to **1,800%** of ATK + **95** damage. Form a large tornado after a short time, dealing **800%** of ATK + **42** damage to nearby targets.\n\nDamage from **Surge** is considered as damage from a discharge skill.\n\nCooldown: **12** seconds."
-        },
-        {
-            "name": "Wave Pressure",
-            "type": "skill",
-            "imgSrc": "skill_GuangZhu",
-            "description": "Bathe in the torrent, gaining **60** weapon charge per second and increasing skill and discharge damage by **20%** for **35** seconds.\n\nUsing **Wave Pressure** is considered as using the current weapon's discharge (no effect). **Aqua Brilliance** refreshes **Wave Pressure's** cooldown.\n\nCooldown: **30** seconds."
+            "description": "Surging Tides: Deal damage up to **320%** of ATK + **17** to nearby targets, increasing all elemental damage by **6%** for **20** seconds.\n\nCooldown: **14** seconds."
         },
         {
             "name": "Vortex",
             "type": "skill",
-            "imgSrc": "skill_feiouna_kuosan4",
-            "description": "Surrounded by waves, your final damage gradually increases to **32%** over **10** seconds. Effect does not stack and is lost after switching weapons.\n\nCooldown: **30** seconds."
+            "imgSrc": "skill_feiouna_kuosan2",
+            "description": "Summon multiple watersprouts, pulling nearby targets together and dealing damage up to **415.4%** of ATK + **2**. A large watersprout is formed shortly after, dealin damage equal to **184.6%** of ATK + **10** to nearby targets.\n\nDamage dealt by **Vortex** counts as skill and discharge damage.\n\nCooldown: **12** seconds."
         },
         {
-            "name": "Shackle",
+            "name": "Torrential Force",
+            "type": "skill",
+            "imgSrc": "skill_GuangZhu",
+            "description": "Bath in Torrents: Gain **60** weapon charge every second. Increase skill damage by **12%** for **35** seconds.\n\nUsing **Torrential Force** counts as using the current weapon's discharge skill (without the effect).\n\n**Shimmering Radiance** hits reset **Torrential Force's**cooldown.\n\nCooldown: **30** seconds."
+        },
+        {
+            "name": "Maelstrom",
+            "type": "skill",
+            "imgSrc": "skill_feiouna_kuosan4",
+            "description": "Encompassing Waves: Gain a final damage boost that increases over time, up to **26%** (maxes out in **10** seconds). This effect does not stack with repeated uses of **Maelstrom** and is lost upon switching weapons.\n\nCooldown: **30** seconds."
+        },
+        {
+            "name": "Aqua Shackles",
             "type": "skill",
             "imgSrc": "skill_ShuiLao",
-            "description": "Trap the target in a water cage for **3** seconds, during which they cannot move or use skills. Reduces the trapped target's resistance by **8%** within **15** seconds (ineffective against players). When the Wanderer dives into the sea, the **Shackle**'s resistance reduction is doubled.\n\nCooldown: **15** seconds."
+            "description": "Execute Aqua Prison on the target for **3** seconds. The target is unable to move or use skills for the duration of Aqua Prison, and their resistance is reduced by **8%** for **15** seconds (doesn't work against Wanderers).\n\nThe resistance-reducing effect of **Aqua Shackles** is doubled while diving.\n\nCooldown: **15** seconds."
         },
         {
-            "name": "Nourishing Spring",
+            "name": "Wellspring",
             "type": "skill",
             "imgSrc": "skill_ShuiBoZD",
-            "description": "Increase all elemental damage by (**Max HP** / **115000**)%, up to **30%**. If your Max HP is greater than **2600000**, increase all elemental damage by **25%** for **20** seconds.\n\nCooldown: **15** seconds."
+            "description": "Arcane Vitality: Gain a (**Max HP/100,000**)% all elemental damage boost, up to **9%**. Gain another **7%** increase to all elemental damage for **20** seconds when your Max HP is over **1,600,000**.\n\nCooldown: **15** seconds."
         },
         {
-            "name": "Aqua Brilliance",
+            "name": "Shimmering Radiance",
             "type": "discharge",
             "imgSrc": "skill_feiouna_lianxie",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon **removes all debuffs from the wielder** and causes Lunar Stars to deal up to **1,500%** of ATK + **79** damage to nearby targets, with invincibility for **2.6** seconds during the animation (unavailable in Apex League). Restore **400%** of ATK as HP, clear **16** points of ash value, remove delay effect and be immune to delay for **5** seconds.\n\n**Passive: Lunar Stars**\n\nWhen using **Balanced Resonance** or **Attack Resonance**, a successful hit with **Aqua Brilliance** will increase your ATK by **20%** for **30** seconds.\n\nWhen using **Fortitude Resonance**, every time you use **Aqua Brilliance**, increase resistance by **8%** for **30** seconds, up to **5** stacks. If your HP falls below **30%**, receive an additional **80%** damage reduction for **5** seconds, which can be triggered up to once within **60** seconds.\n\nWhen using **Benediction Resonance**, **Aqua Brilliance** grants **1** use of Lunar Stars' Protection to all teammates (cannot stack), which lasts **10** seconds and can block damage **1** time. Each use of **Aqua Brilliance** will increase the healing effect of the subsequent uses by **20%**, up to **40%** and subsist for **30** seconds."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another **removes all debuffs from the wielder** and unleashes Moonstar's Breath, dealing damage up to **736%** of ATK plus **39** to nearby targets. During this period, gain damage immunity for **1.5** seconds (unavailable in Apex League). Recover HP equal to **300%** of ATK and remove **16** points of Graying Bite. Remove delay and gain delay immunity for **5** seconds.\n\n**Passive: Moonstar**\n\nWhile **Attack/Balance** Resonance is active, when **Shimmering Radiance** lands a hit, increase ATK by **15%** for **30** seconds. While **Fortitude Resonance** is active, every time **Shimmering Radiance** is used, increase resistance by **4%** for **30** seconds, stacking up to **5** times. When HP is lower than **30%**, gain an extra **40%** damage reduction for **5** seconds, which can be triggered once every **60** seconds.\n\nWhile **Benediction Resonance** is active, **Shimmering Radiance**'s HP recovery heals all teammates instead and when it is used, creates **1** stack of Moonshield that negates damage **1** time for **10** seconds. This effect does not stack, and every use of **Shimmering Radiance** increases the healing effect of the next use by **20%**, up to **40%**. This effect lasts for **30** seconds."
         }
     ],
-    "abilitiesVideoSrc": "",
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/VIWv9WJtFYk?start=142",
     "recommendedMatrices": [
         {
             "name": "Fiona",

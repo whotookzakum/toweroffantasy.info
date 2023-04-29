@@ -10,7 +10,7 @@
         },
         {
             "pieces": 4,
-            "description": "Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage edalt to the marked target by **11%/13%/15%/17%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+            "description": "Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage dealt to the marked target by **11%/13%/15%/17%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
     ]
 }

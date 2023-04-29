@@ -60,7 +60,7 @@
     />
     <meta
         property="og:image"
-        content="/images/UI/shizhuang/Fashion_icon/item_fashion_icon/fashion_f19.png"
+        content="/images/UI/shizhuang/Fashion_icon/item_fashion_icon/fashion_f19.webp"
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -79,12 +79,12 @@
     {#each links as link}
         <MenuItem href={link.href}>
             <img
-                src={`/images/${link.imgSrc}.png`}
+                src={`/images/${link.imgSrc}.webp`}
                 alt={link.name}
                 width="128"
                 height="128"
             />
-            <span>{link.name}</span>
+            <span class="menu-item-name">{link.name}</span>
         </MenuItem>
     {/each}
 </Menu>

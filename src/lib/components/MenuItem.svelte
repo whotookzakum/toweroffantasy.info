@@ -22,9 +22,15 @@
         position: relative;
         transition: all 0.1s ease;
         overflow: hidden;
+        text-align: center;
 
         &:hover {
             background: var(--surface3);
         }
+    }
+
+    :global(.menu-item-name) {
+        line-height: 1.3;
+        padding: 0 0.3rem 0.8rem 0.3rem;
     }
 </style>

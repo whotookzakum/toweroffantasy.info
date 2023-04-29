@@ -21,7 +21,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/Icon/AvatarFrame/${frames[0].imgSrc}.png`}
+        content={`/images/Icon/AvatarFrame/${frames[0].imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -43,7 +43,7 @@
                     <td>
                         <div class="img-and-name">
                             <img
-                                src={`/images/Icon/AvatarFrame/${frame.imgSrc}.png`}
+                                src={`/images/Icon/AvatarFrame/${frame.imgSrc}.webp`}
                                 alt={frame.name}
                                 width="128"
                                 height="128"

@@ -1,0 +1,32 @@
+The following script will batch convert images to webp, in folders from your current directory.
+In other words, if you run this script on Desktop, it will convert images in all of the folders directly on your Desktop. It will only go ONE layer deep, so it wouldn't reach images in Desktop/images/catpics. 
+
+Thus I recommend making a folder on your Desktop called "a". Put the images that you want to convert in a folder called "b" inside of "a". Then open "a", right click on some empty space, and Open in Terminal/PowerShell. Paste the script and it should run.
+
+You will need cwebp installed and added to your PATH. The script is preconfigured for highest quality.
+
+Source is bottom response of this question: https://stackoverflow.com/questions/24484272/how-to-convert-my-photos-to-webp-format-of-google-in-windows-8-1
+
+
+# get current directory
+$initpath = Get-Location
+# get all directories
+foreach($path in Get-Childitem) {
+    if ($path.Attributes -eq "Directory") {
+        set-location $path.FullName
+          # get all files in the directory
+          $images = Get-ChildItem $dir
+
+          # loop through every image
+          foreach ($img in $images) {
+            # output file will be written in the same directory
+            # but with .webp extension instead of old extension
+            $outputName = $img.DirectoryName + "\" + $img.BaseName + ".webp"
+
+            # since you have the cwebp bin folder in PATH just type the command
+            # more options https://developers.google.com/speed/webp/docs/cwebp
+            cwebp -q 100 -m 6 -af -f 100 -mt -v -progress $img.FullName -o $outputName
+          }
+    }
+}
+set-location $initpath
