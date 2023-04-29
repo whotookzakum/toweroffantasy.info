@@ -27,7 +27,7 @@
 </script>
 
 <img
-     src={`/images/UI/wuqi/${getImgSrc(type)}.png`}
+     src={`/images/UI/wuqi/${getImgSrc(type)}.webp`}
      alt={type}
      width="60"
      height="54"

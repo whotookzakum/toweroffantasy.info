@@ -97,7 +97,7 @@
     </div>
     <a class="home-link" href="/">
         <img
-            src="/images/mia.png"
+            src="/images/mia.webp"
             style="padding: 0.5rem"
             alt="Logo"
             width="128"

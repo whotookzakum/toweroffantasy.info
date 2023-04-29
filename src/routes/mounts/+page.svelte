@@ -18,7 +18,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/UI/Mount/${mounts[0].imgSrc}.png`}
+        content={`/images/UI/Mount/${mounts[0].imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -40,7 +40,7 @@
     {#each mounts.filter(m => m.type === "Water") as mount}
         <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>
             <img
-                src={`/images/UI/Mount/${mount.imgSrc}.png`}
+                src={`/images/UI/Mount/${mount.imgSrc}.webp`}
                 alt={mount.name}
                 width="308"
                 height="206"
@@ -56,7 +56,7 @@
     {#each mounts.filter(m => m.type !== "Water") as mount}
         <MenuItem href={mount.path} chinaOnly={mount.chinaOnly}>
             <img
-                src={`/images/UI/Mount/${mount.imgSrc}.png`}
+                src={`/images/UI/Mount/${mount.imgSrc}.webp`}
                 alt={mount.name}
                 width="308"
                 height="206"

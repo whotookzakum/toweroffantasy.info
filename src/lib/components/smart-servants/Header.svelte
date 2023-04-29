@@ -10,7 +10,7 @@
     style={`border-color: var(--element-${data.element})`}
 >
     <img
-        src={`/images/UI/PetFight/icon/${data.imgSrc}.png`}
+        src={`/images/UI/PetFight/icon/${data.imgSrc}.webp`}
         alt={data.name}
         width="128"
         height="128"

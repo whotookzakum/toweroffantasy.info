@@ -17,7 +17,7 @@
 </script>
 
 <img
-    src={`/images/UI/AttributeIcon/${getImgSrc(stat)}.png`}
+    src={`/images/UI/AttributeIcon/${getImgSrc(stat)}.webp`}
     alt={stat}
     width="42"
     height="42"

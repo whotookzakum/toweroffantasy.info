@@ -21,7 +21,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/UI/Artifact/icon/${relics[0].imgSrc}.png`}
+        content={`/images/UI/Artifact/icon/${relics[0].imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -41,7 +41,7 @@
     {#each relics.filter((r) => r.rarity === "SSR") as relic}
         <MenuItem href={relic.path} chinaOnly={relic.chinaOnly}>
             <img
-                src={`/images/UI/Artifact/icon/${relic.imgSrc}.png`}
+                src={`/images/UI/Artifact/icon/${relic.imgSrc}.webp`}
                 alt={relic.name}
                 width="128"
                 height="128"
@@ -60,7 +60,7 @@
     {#each relics.filter((r) => r.rarity === "SR") as relic}
         <MenuItem href={relic.path} chinaOnly={relic.chinaOnly}>
             <img
-                src={`/images/UI/Artifact/icon/${relic.imgSrc}.png`}
+                src={`/images/UI/Artifact/icon/${relic.imgSrc}.webp`}
                 alt={relic.name}
                 width="128"
                 height="128"

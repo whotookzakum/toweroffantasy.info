@@ -71,7 +71,7 @@
 
 <img
     class="bg-img"
-    src={`/images/UI/${getImgSrc($page.url.pathname)}.png`}
+    src={`/images/UI/${getImgSrc($page.url.pathname)}.webp`}
     alt="Background"
     width="1080"
     height="1080"

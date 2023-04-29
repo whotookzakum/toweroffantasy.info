@@ -54,7 +54,7 @@
         property="og:description"
         content="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!"
     />
-    <meta property="og:image" content={`/images/mia.png`} />
+    <meta property="og:image" content={`/images/mia.webp`} />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
 

@@ -21,7 +21,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/UI/Artifact/icon/${data.imgSrc}.png`}
+        content={`/images/UI/Artifact/icon/${data.imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>

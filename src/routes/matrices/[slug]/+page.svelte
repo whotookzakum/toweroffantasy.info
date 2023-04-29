@@ -23,7 +23,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/Icon/yizhi/256/${data.imgSrc}.png`}
+        content={`/images/Icon/yizhi/256/${data.imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -65,7 +65,7 @@
         {#each data.matchingSimulacra as simulacrum}
             <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
                 <img
-                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"

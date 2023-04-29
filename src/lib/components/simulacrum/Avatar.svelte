@@ -18,7 +18,7 @@
 </script>
 
 <img
-    src={`/images/Icon/Avatar/${getImgSrc(name)}.png`}
+    src={`/images/Icon/Avatar/${getImgSrc(name)}.webp`}
     alt={name}
     width="128"
     height="128"

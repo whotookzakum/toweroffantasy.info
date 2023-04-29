@@ -32,7 +32,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfits[0].imgSrcs[0]}.png`}
+        content={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfits[0].imgSrcs[0]}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -60,14 +60,14 @@
                     <td>
                         <div class="img-and-name">
                             <img
-                                src={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfit.imgSrcs[0]}.png`}
+                                src={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfit.imgSrcs[0]}.webp`}
                                 alt={`${outfit.name} female`}
                                 width="128"
                                 height="128"
                                 loading="lazy"
                             />
                             <img
-                                src={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfit.imgSrcs[1]}.png`}
+                                src={`/images/UI/shizhuang/Fashion_icon/item_fashion_icon/${outfit.imgSrcs[1]}.webp`}
                                 alt={`${outfit.name} male`}
                                 width="128"
                                 height="128"

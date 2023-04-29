@@ -59,7 +59,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/Icon/Avatar/${getAvatarImg(globalData)}.png`}
+        content={`/images/Icon/Avatar/${getAvatarImg(globalData)}.webp`}
     />
     <meta name="theme-color" content={getElementColor(globalData.weapon.element)} />
 </svelte:head>

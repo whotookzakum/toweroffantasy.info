@@ -167,7 +167,7 @@
 
 <Item {rarity} amount={gift.points}>
     <img
-        src={`/images/Icon/ImitationGift/${getImgSrc()}.png`}
+        src={`/images/Icon/ImitationGift/${getImgSrc()}.webp`}
         alt={gift}
         width="64"
         height="64"

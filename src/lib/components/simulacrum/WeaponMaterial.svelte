@@ -42,7 +42,7 @@
 
 <Item {amount} {rarity}>
     <img
-        src={`/images/Icon/${getImgSrc(type, tier)}.png`}
+        src={`/images/Icon/${getImgSrc(type, tier)}.webp`}
         alt={`${type} augment material`}
         width="64"
         height="64"

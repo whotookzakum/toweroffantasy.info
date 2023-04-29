@@ -45,7 +45,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/Icon/Avatar/touxiang_${data.items[0].cnName}.png`}
+        content={`/images/Icon/Avatar/touxiang_${data.items[0].cnName}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -70,7 +70,7 @@
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
             {#if filters.showWeapon}
                 <img
-                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
@@ -98,7 +98,7 @@
         <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
             {#if filters.showWeapon}
                 <img
-                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.png`}
+                    src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"

@@ -15,7 +15,7 @@
                 <tr>
                     <td class="img-and-name">
                         <img class="smart-servant-skill"
-                            src={`/images/Icon/skill/BattleRobotSkill/SkillIcon_pet_0${data.number}_act0${ability.imgSrc}.png`}
+                            src={`/images/Icon/skill/BattleRobotSkill/SkillIcon_pet_0${data.number}_act0${ability.imgSrc}.webp`}
                             alt={`SkillIcon_pet_0${data.number}_act0${ability.imgSrc}`}
                             width="128"
                             height="128"

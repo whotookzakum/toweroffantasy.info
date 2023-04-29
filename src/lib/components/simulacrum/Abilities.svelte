@@ -20,7 +20,7 @@
                     <dt>
                         <div class="skill-title-wrapper">
                             <img
-                                src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.png`}
+                                src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.webp`}
                                 alt=""
                                 width="82"
                                 height="82"

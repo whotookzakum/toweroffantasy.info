@@ -18,7 +18,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/Icon/yizhi/256/${matrices[0].imgSrc}.png`}
+        content={`/images/Icon/yizhi/256/${matrices[0].imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -45,7 +45,7 @@
     {#each matrices.filter((m) => m.rarity === "SSR") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
             <img
-                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
                 alt={matrix.name}
                 width="128"
                 height="128"
@@ -64,7 +64,7 @@
     {#each matrices.filter((m) => m.rarity === "SR") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
             <img
-                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
                 alt={matrix.name}
                 width="128"
                 height="128"
@@ -84,7 +84,7 @@
     {#each matrices.filter((m) => m.rarity === "R") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
             <img
-                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
                 alt={matrix.name}
                 width="128"
                 height="128"
@@ -104,7 +104,7 @@
     {#each matrices.filter((m) => m.rarity === "N") as matrix}
         <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
             <img
-                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.png`}
+                src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
                 alt={matrix.name}
                 width="128"
                 height="128"

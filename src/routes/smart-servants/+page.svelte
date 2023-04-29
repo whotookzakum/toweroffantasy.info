@@ -36,7 +36,7 @@
     /> -->
     <!-- <meta
         property="og:image"
-        content={`/images/UI/Artifact/icon/${relics[0].imgSrc}.png`}
+        content={`/images/UI/Artifact/icon/${relics[0].imgSrc}.webp`}
     /> -->
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -57,7 +57,7 @@
     {#each servants as servant}
         <MenuItem href={servant.path} chinaOnly={servant.chinaOnly}>
             <img
-                src={`/images/UI/PetFight/icon/${servant.imgSrc}.png`}
+                src={`/images/UI/PetFight/icon/${servant.imgSrc}.webp`}
                 alt={servant.name}
                 width="128"
                 height="128"

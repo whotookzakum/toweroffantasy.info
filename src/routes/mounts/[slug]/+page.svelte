@@ -20,7 +20,7 @@
     />
     <meta
         property="og:image"
-        content={`/images/UI/Mount/${data.imgSrc}.png`}
+        content={`/images/UI/Mount/${data.imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
@@ -46,7 +46,7 @@
                 <tr>
                     <td>
                         <img
-                            src={`/images/Icon/Mount/${part.imgSrc}.png`}
+                            src={`/images/Icon/Mount/${part.imgSrc}.webp`}
                             alt={part.imgSrc}
                             width="128"
                             height="128"
