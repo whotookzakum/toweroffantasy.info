@@ -46,7 +46,7 @@
                 height="206"
                 loading="lazy"
             />
-            <span>{mount.name}</span>
+            <span class="menu-item-name">{mount.name}</span>
         </MenuItem>
     {/each}
 </Menu>
@@ -62,7 +62,7 @@
                 height="206"
                 loading="lazy"
             />
-            <span>{mount.name}</span>
+            <span class="menu-item-name">{mount.name}</span>
         </MenuItem>
     {/each}
 </Menu>

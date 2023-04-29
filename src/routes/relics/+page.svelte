@@ -47,7 +47,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{relic.name}</span>
+            <span class="menu-item-name">{relic.name}</span>
         </MenuItem>
     {/each}
 </Menu>
@@ -66,7 +66,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{relic.name}</span>
+            <span class="menu-item-name">{relic.name}</span>
         </MenuItem>
     {/each}
 </Menu>

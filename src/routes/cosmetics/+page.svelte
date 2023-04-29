@@ -84,7 +84,7 @@
                 width="128"
                 height="128"
             />
-            <span>{link.name}</span>
+            <span class="menu-item-name">{link.name}</span>
         </MenuItem>
     {/each}
 </Menu>

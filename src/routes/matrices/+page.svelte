@@ -51,7 +51,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{matrix.name}</span>
+            <span class="menu-item-name">{matrix.name}</span>
         </MenuItem>
     {/each}
 </Menu>
@@ -70,7 +70,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{matrix.name}</span>
+            <span class="menu-item-name">{matrix.name}</span>
         </MenuItem>
     {/each}
 </Menu>
@@ -90,7 +90,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{matrix.name}</span>
+            <span class="menu-item-name">{matrix.name}</span>
         </MenuItem>
     {/each}
 </Menu>
@@ -110,7 +110,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{matrix.name}</span>
+            <span class="menu-item-name">{matrix.name}</span>
         </MenuItem>
     {/each}
 </Menu>

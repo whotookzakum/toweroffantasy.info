@@ -76,10 +76,10 @@
                     height="128"
                     loading="lazy"
                 />
-                <span>{simulacrum.weapon.name}</span>
+                <span class="menu-item-name">{simulacrum.weapon.name}</span>
             {:else}
                 <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
-                <span>{simulacrum.name}</span>
+                <span class="menu-item-name">{simulacrum.name}</span>
             {/if}
             <div class="type-and-element">
                 <CategoryIcon type={simulacrum.weapon.type} width={30} />
@@ -104,10 +104,10 @@
                     height="128"
                     loading="lazy"
                 />
-                <span>{simulacrum.weapon.name}</span>
+                <span class="menu-item-name">{simulacrum.weapon.name}</span>
             {:else}
                 <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
-                <span>{simulacrum.name}</span>
+                <span class="menu-item-name">{simulacrum.name}</span>
             {/if}
             <div class="type-and-element">
                 <CategoryIcon type={simulacrum.weapon.type} width={30} />
@@ -121,5 +121,9 @@
     .type-and-element {
         display: flex;
         margin-bottom: 1rem;
+    }
+
+    .menu-item-name {
+        padding-bottom: 0.4rem;
     }
 </style>

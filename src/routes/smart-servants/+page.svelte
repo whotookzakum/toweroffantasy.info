@@ -63,7 +63,7 @@
                 height="128"
                 loading="lazy"
             />
-            <span>{servant.name}</span>
+            <span class="menu-item-name">{servant.name}</span>
             <div class="type-and-element">
                 <CategoryIcon type={servant.type} width={30} />
                 <CategoryIcon type={servant.element} width={30} />
