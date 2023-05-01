@@ -25,19 +25,19 @@
 
 <svelte:head>
     <title>Smart Servants | Tower of Fantasy Index</title>
-    <!-- <meta
+    <meta
         name="description"
-        content=""
-    /> -->
+        content="Smart Servants are small robots that aid the player in combat."
+    />
     <meta property="og:title" content="Smart Servants" />
-    <!-- <meta
+    <meta
         property="og:description"
-        content="Relics (aka Gadgets) are tools that aid the player in exploration or combat."
-    /> -->
-    <!-- <meta
+        content="Smart Servants are small robots that aid the player in combat."
+    />
+    <meta
         property="og:image"
-        content={`/images/UI/Artifact/icon/${relics[0].imgSrc}.webp`}
-    /> -->
+        content={`/images/UI/PetFight/icon/LH_FightPet_2.webp`}
+    />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>
 
