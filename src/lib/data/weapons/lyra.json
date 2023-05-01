@@ -25,6 +25,10 @@
         {
             "title": "Physical Resonance",
             "description": "Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+        },
+        {
+            "title": "Physical Benediction",
+            "description": "Increase the entire team's physical ATK by **5%** when Benediction Resonance is active."
         }
     ],
     "advancements": [

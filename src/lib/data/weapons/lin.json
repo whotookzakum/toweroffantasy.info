@@ -24,7 +24,7 @@
     ],
     "weaponEffects": [
         {
-            "title": "Weapons Master",
+            "title": "Altered Damage",
             "description": "When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created. Epiphyllum will appear around the target randomly and explode within **1-3** seconds, dealing **25%** area damage."
         }
     ],

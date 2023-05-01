@@ -25,6 +25,10 @@
         {
             "title": "Volt Resonance",
             "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others."
+        },
+        {
+            "title": "Volt Benediction",
+            "description": "Increase the entire team's volt ATK by **5%** when Benediction Resonance is active."
         }
     ],
     "advancements": [
