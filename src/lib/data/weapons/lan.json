@@ -120,7 +120,7 @@
             "type": "skill",
             "imgSrc": "icon_skill_umbrella_beidong1",
             "description":
-                "After activating Fortitude Resonance: Successfully using any weapon skill will taunt nearby targets for **2.5** seconds.\nWhen using Devastating Glide, the Vermilion Domain expands, granting hyperbody and **20%** damage reduction to nearby teammates.\nWhen using Molten Heart, Vermilion Domain's timer is stopped."
+                "After activating Fortitude Resonance: Successfully using any weapon skill will taunt nearby targets for **2.5** seconds.\nWhen using Devastating Glide, the Vermilion Domain expands, granting **20%** damage reduction to nearby teammates.\nWhen using Molten Heart, Vermilion Domain's timer is stopped."
         },
         {
             "name": "Phoenix Sweep",
