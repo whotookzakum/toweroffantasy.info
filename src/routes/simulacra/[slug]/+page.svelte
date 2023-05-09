@@ -1,10 +1,10 @@
 <script>
     import Abilities from "$lib/components/simulacrum/Abilities.svelte";
     import Advancements from "$lib/components/simulacrum/Advancements.svelte";
+    import Advice from "../../../lib/components/simulacrum/Advice.svelte";
     import UpgradeMaterials from "$lib/components/simulacrum/UpgradeMaterials.svelte";
     import WeaponEffects from "$lib/components/simulacrum/WeaponEffects.svelte";
     import WeaponHeader from "$lib/components/simulacrum/WeaponHeader.svelte";
-    import RecommendedMatrices from "$lib/components/simulacrum/RecommendedMatrices.svelte";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import OtherInfo from "$lib/components/simulacrum/OtherInfo.svelte";
     import AwakeningGifts from "$lib/components/simulacrum/AwakeningGifts.svelte";
@@ -18,6 +18,7 @@
     const globalData = data;
     const chinaData = _.merge(_.cloneDeep(data), data.cnData);
     let simulacrum = globalData;
+
 
     function getAvatarImg(simulacrum) {
         switch (simulacrum.name) {
@@ -69,14 +70,18 @@
         name="theme-color"
         content={getElementColor(globalData.weapon.element)}
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </svelte:head>
 
 <SectionNavigation
-    links={["weapon", "advancements", "skills", "awakening", "other info"]}
+    links={["weapon", "advancements", "skills", "advice", "awakening", "other info"]}
 />
 
 <h1>{simulacrum.name}</h1>
 <span style="color: var(--text2)">
+    {#if simulacrum.leaked}
+        <abbr title="Leaked" />
+    {/if}
     {#if simulacrum.chinaOnly}
         <abbr title="China Exclusive" />
     {/if}
@@ -108,9 +113,7 @@
     <UpgradeMaterials weapon={simulacrum.weapon} />
 {/if}
 
-{#if simulacrum.weapon.recommendedMatrices.length > 0}
-    <RecommendedMatrices weapon={simulacrum.weapon} />
-{/if}
+<Advice weapon={simulacrum.weapon} />
 
 <Ad unit="lb5" />
 <Ad unit="mobile_lb3" />

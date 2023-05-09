@@ -127,6 +127,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
+    "rating": [],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Ruby",

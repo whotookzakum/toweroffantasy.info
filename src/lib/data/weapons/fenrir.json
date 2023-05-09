@@ -160,6 +160,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/WRqXqUUGslA?start=153",
+    "rating": [],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Fenrir",

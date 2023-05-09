@@ -159,6 +159,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
+    "rating": [],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Marc",

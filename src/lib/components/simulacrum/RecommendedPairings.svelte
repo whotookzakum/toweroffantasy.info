@@ -5,35 +5,32 @@
 <div class="table-wrapper">
     <table class="bg-alternate">
         <thead>
-            <th>Matrix Set</th>
+            <th>Weapon</th>
             <th>Explanation</th>
         </thead>
         <tbody>
-            {#each weapon.recommendedMatrices as matrix}
+            {#each weapon.recommendedPairings as recWep}
                 <tr>
                     <th>
                         <div class="link-wrapper">
                             <a
                                 class="matrix-link"
-                                href={`/matrices/${matrix.name
-                                    .toLowerCase()
-                                    .replace(" ", "-")}`}
+                                href={recWep.pathToSimulacrum}
                             >
                                 <div class="img-wrapper">
                                     <img
-                                        src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
-                                        alt={`${matrix.name} matrix`}
+                                        src={`/images/Icon/weapon/Icon/${recWep.imgSrc}.webp`}
+                                        alt={recWep.wepName}
                                         width="128"
                                         height="128"
                                         loading="lazy"
                                     />
-                                    <i>x{matrix.pieces}</i>
                                 </div>
-                                <span>{matrix.name}</span>
+                                <span>{recWep.wepName}</span>
                             </a>
                         </div>
                     </th>
-                    <td>{matrix.description}</td>
+                    <td>{recWep.description}</td>
                 </tr>
             {/each}
         </tbody>

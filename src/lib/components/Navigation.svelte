@@ -16,12 +16,11 @@
             text: "Relics",
             href: "/relics",
         },
-        //No Mia yet
-        // {
-        //     text: "Smart Servants",
-        //     href: "/smart-servants",
-        //     chinaOnly: true
-        // },
+        {
+            text: "Smart Servants",
+            href: "/smart-servants",
+            chinaOnly: true
+        },
         {
             text: "Exploration",
             href: "/exploration",

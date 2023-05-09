@@ -111,6 +111,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/GralXQC8G-E?start=10",
+    "rating": [],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Frigg",

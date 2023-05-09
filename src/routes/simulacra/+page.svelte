@@ -9,7 +9,7 @@
 
     export let data;
     let simulacra = data.items;
-    
+
     let filters = {};
 
     // Reference https://stackoverflow.com/questions/31831651/javascript-filter-array-multiple-conditions
@@ -37,7 +37,10 @@
 
 <svelte:head>
     <title>Simulacra | Tower of Fantasy Index</title>
-    <meta name="description" content="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately.">
+    <meta
+        name="description"
+        content="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
+    />
     <meta property="og:title" content="Simulacra" />
     <meta
         property="og:description"
@@ -67,7 +70,11 @@
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
-        <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly} unreleased={simulacrum.unreleased}>
+        <MenuItem
+            href={simulacrum.path}
+            chinaOnly={simulacrum.chinaOnly}
+            unreleased={simulacrum.unreleased}
+        >
             {#if filters.showWeapon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
@@ -95,7 +102,11 @@
 <h2 id="sr"><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SR") as simulacrum}
-        <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
+        <MenuItem
+            href={simulacrum.path}
+            chinaOnly={simulacrum.chinaOnly}
+            leaked={simulacrum.leaked}
+        >
             {#if filters.showWeapon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}

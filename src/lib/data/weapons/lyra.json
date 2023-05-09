@@ -156,6 +156,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
+    "rating": [],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Lyra",
