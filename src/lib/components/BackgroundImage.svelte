@@ -27,7 +27,7 @@
         if (path.includes("/baiyuekui")) return 'huanxing/lihui/baiyuekui'
         if (path.includes("/cobalt-b")) return 'huanxing/lihui/gulan'
         if (path.includes("/claudia")) return 'huanxing/lihui/kelaodiya'
-        if (path.includes("/coco-ritter")) return 'huanxing/lihui/kekelite'
+        if (path.includes("/cocoritter")) return 'huanxing/lihui/kekelite'
         if (path.includes("/crow")) return 'huanxing/lihui/wuwan'
         if (path.includes("/huma")) return 'huanxing/lihui/xiuma'
         if (path.includes("/king")) return 'huanxing/lihui/king'

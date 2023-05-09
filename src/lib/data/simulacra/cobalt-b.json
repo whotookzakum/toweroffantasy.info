@@ -32,7 +32,8 @@
             {
                 "bannerNo": 27,
                 "start": "30 Mar 2023",
-                "end": "12 Apr 2023"
+                "end": "12 Apr 2023",
+                "standardAfterwards": false
             }
         ]
     },
