@@ -8,6 +8,7 @@ export const fetchAllSimulacra = async () => {
             const data = await resolver()
             const itemPath = path.slice(13, -5)
             const simulacrumName = itemPath.split('/simulacra/').pop()
+            console.log(itemPath)
             const weapon = await import(`../data/weapons/${simulacrumName}.json`)
 
             return {
@@ -22,8 +23,8 @@ export const fetchAllSimulacra = async () => {
     // Only the characters that were in the limited banner need to be sorted
     // Standard characters were already fetched alphabetically
     allItems.sort((a, b) => {
-        const firstBannerA = a.banners?.cn[0].bannerNo ?? -1
-        const firstBannerB = b.banners?.cn[0].bannerNo ?? 1
+        const firstBannerA = a.banners?.cn[0].bannerNo ?? 1
+        const firstBannerB = b.banners?.cn[0].bannerNo ?? -1
         return firstBannerB - firstBannerA
     })
 

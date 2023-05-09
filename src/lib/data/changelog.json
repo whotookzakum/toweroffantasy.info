@@ -1,5 +1,9 @@
 [
     {
+        "date": "May 8 2023",
+        "text": "Fixed simulacra order; Fixed Cocoritter showing as Coco Ritter (urls updated)"
+    },
+    {
         "date": "April 29 2023",
         "text": "Added global Fiona; fixed Garnett banner end date; Fixed Saki Fuwa 4 piece matrices typo; Optimized images"
     },
