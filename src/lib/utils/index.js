@@ -8,7 +8,6 @@ export const fetchAllSimulacra = async () => {
             const data = await resolver()
             const itemPath = path.slice(13, -5)
             const simulacrumName = itemPath.split('/simulacra/').pop()
-            console.log(itemPath)
             const weapon = await import(`../data/weapons/${simulacrumName}.json`)
 
             return {
