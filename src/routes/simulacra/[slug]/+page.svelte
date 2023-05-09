@@ -9,49 +9,53 @@
     import OtherInfo from "$lib/components/simulacrum/OtherInfo.svelte";
     import AwakeningGifts from "$lib/components/simulacrum/AwakeningGifts.svelte";
     import AwakeningTraits from "$lib/components/simulacrum/AwakeningTraits.svelte";
+    import UnreleasedWarning from "$lib/components/UnreleasedWarning.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import _ from "lodash";
 
     export let data;
-    
-    const globalData = data
+
+    const globalData = data;
     const chinaData = _.merge(_.cloneDeep(data), data.cnData);
     let simulacrum = globalData;
 
     function getAvatarImg(simulacrum) {
-        switch(simulacrum.name) {
+        switch (simulacrum.name) {
             case "Nemesis":
-                return `avatar_${simulacrum.cnName}`
+                return `avatar_${simulacrum.cnName}`;
             case "Frigg":
-                return `Avatar12`
+                return `Avatar12`;
             case "Pepper":
-                return `touxiang_susan`
+                return `touxiang_susan`;
             case "Hilda":
-                return `touxiang_hilda`
+                return `touxiang_hilda`;
             default:
-                return `touxiang_${simulacrum.cnName}`
+                return `touxiang_${simulacrum.cnName}`;
         }
     }
 
     function getElementColor(element) {
-        switch(element) {
-            case "volt": 
-                return "#b769be"
+        switch (element) {
+            case "volt":
+                return "#b769be";
             case "ice":
-                return "#49a3d1"
+                return "#49a3d1";
             case "flame":
-                return "#bb4033"
+                return "#bb4033";
             case "physical":
-                return "#d88c2a"
-            case "altered": 
-                return "#b0ffc3"
+                return "#d88c2a";
+            case "altered":
+                return "#b0ffc3";
         }
     }
 </script>
 
 <svelte:head>
     <title>{globalData.name} | Tower of Fantasy Index</title>
-    <meta name="description" content={`Information about the ${simulacrum.rarity} simulacrum ${simulacrum.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}>
+    <meta
+        name="description"
+        content={`Information about the ${simulacrum.rarity} simulacrum ${simulacrum.name}; weapon advancements and abilities, simulacrum traits, and other miscellaneous information.`}
+    />
     <meta property="og:title" content={globalData.name} />
     <meta
         property="og:description"
@@ -61,7 +65,10 @@
         property="og:image"
         content={`/images/Icon/Avatar/${getAvatarImg(globalData)}.webp`}
     />
-    <meta name="theme-color" content={getElementColor(globalData.weapon.element)} />
+    <meta
+        name="theme-color"
+        content={getElementColor(globalData.weapon.element)}
+    />
 </svelte:head>
 
 <SectionNavigation
@@ -76,9 +83,13 @@
     {simulacrum.rarity} Simulacrum
 </span>
 
+{#if simulacrum.unreleased}
+    <UnreleasedWarning />
+{/if}
+
 <h2 id="weapon">Weapon</h2>
 <WeaponHeader weapon={simulacrum.weapon} />
-<WeaponEffects weapon={simulacrum.weapon} rarity={simulacrum.rarity}/>
+<WeaponEffects weapon={simulacrum.weapon} rarity={simulacrum.rarity} />
 
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
@@ -109,9 +120,12 @@
 
 <Ad unit="mobile_lb4" />
 
-<AwakeningGifts gifts={simulacrum.bestGifts} categories={simulacrum.giftTypes} />
+<AwakeningGifts
+    gifts={simulacrum.bestGifts}
+    categories={simulacrum.giftTypes}
+/>
 
 <h2 id="other-info">Other Info</h2>
-<OtherInfo simulacrum={simulacrum} />
+<OtherInfo {simulacrum} />
 
 <Ad unit="mobile_lb5" />

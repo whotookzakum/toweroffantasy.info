@@ -67,7 +67,7 @@
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
     {#each simulacra.filter((s) => s.rarity === "SSR") as simulacrum}
-        <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly}>
+        <MenuItem href={simulacrum.path} chinaOnly={simulacrum.chinaOnly} unreleased={simulacrum.unreleased}>
             {#if filters.showWeapon}
                 <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}

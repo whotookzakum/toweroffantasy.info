@@ -1,11 +1,14 @@
 <script>
-    export let href, chinaOnly;
+    export let href, chinaOnly, unreleased;
 </script>
 
 <li class="menu-item">
     <a {href}>
         {#if chinaOnly}
             <abbr class="absolute" title="China Exclusive" />
+        {/if}
+        {#if unreleased}
+            <abbr class="absolute" title="Unreleased Content" />
         {/if}
         <slot />
     </a>
