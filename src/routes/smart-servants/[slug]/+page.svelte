@@ -16,16 +16,16 @@
     <title>{data.name} | Tower of Fantasy Index</title>
     <meta
         name="description"
-        content={`Information about the ${data.rarity} relic ${data.name}.`}
+        content={`Information about the smart servant ${data.name}.`}
     />
     <meta property="og:title" content={data.name} />
     <meta
         property="og:description"
-        content={`Information about the ${data.rarity} relic ${data.name}.`}
+        content={`Information about the smart servant ${data.name}.`}
     />
     <meta
         property="og:image"
-        content={`/images/UI/Artifact/icon/${data.imgSrc}.webp`}
+        content={`/images/UI/PetFight/icon/${data.imgSrc}.webp`}
     />
     <meta name="theme-color" content="#377dcb" />
 </svelte:head>

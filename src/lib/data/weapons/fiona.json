@@ -34,7 +34,7 @@
         "While Benediction Resonance is not active, when the target's HP is below (**crystal count** plus **2**)%, using **Moonstar Bracelet** can instantly execute the target (doesn't work against Wanderers).\nWhile Benediction Resonance is active, when the target's HP is below (**crystal count** times **2** plus **2**)**%**, using **Moonstar Bracelet** can instantly execute the target (doesn't work against Wanderers).",
         "Increase the current weapon's base ATK growth by **32%**.",
         "Obtain **1** elemental crystal every time Scatter Technique is used. Elemental crystals are lost at a rate of **1** crystal every **20** seconds. When receiving fatal damage, consume **3** elemental crystals to prevent death **1** time and gain damage immunity for a short time. Can be activated **1** time every **25** seconds.",
-        "Increase final damage by **7%**of [(**crystal count** plus **3**)/**2**]."
+        "Increase final damage by **7%** of [(**crystal count** plus **3**)/**2**]."
     ],
     "abilities": [
         {
@@ -211,7 +211,7 @@
             "description": "Great set for both damage and shatter. "
         },
         {
-            "name": "Coco Ritter",
+            "name": "Cocoritter",
             "pieces": 4,
             "description": "Less recommended because Lunar Stars has less continuous healing output than other healing weapons, but could be useful for the ATK boost. "
         },

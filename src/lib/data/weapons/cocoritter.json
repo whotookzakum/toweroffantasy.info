@@ -21,6 +21,16 @@
         "green",
         "black"
     ],
+    "weaponEffects": [
+        {
+            "title": "Frost Resonance",
+            "description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect also works in the off-hand slot. Cannot stack with effects of the same type."
+        },
+        {
+            "title": "Frost Benediction",
+            "description": "Increase the entire team's frost ATK by **5%** when Benediction resonance is active."
+        }
+    ],
     "advancements": [
         "After dodging, summon a healing bee that follows the user and heals the ally with the lowest percentage of HP within **15** meters. Heal for **25%** of ATK and restore **50** weapon charge points each time and last for **25** seconds. Cooldown: **25** seconds.",
         "Increase the current weapon's base HP growth by **16%**.",
@@ -130,7 +140,7 @@
     "abilitiesVideoSrc": "https://www.youtube.com/embed/tiH-5dFUW1E?start=11",
     "recommendedMatrices": [
         {
-            "name": "Coco Ritter",
+            "name": "Cocoritter",
             "pieces": 4,
             "description": "Great choice for Absolute Zero that will increase healing and provide an attack buff to allies."
         },

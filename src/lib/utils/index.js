@@ -22,8 +22,8 @@ export const fetchAllSimulacra = async () => {
     // Only the characters that were in the limited banner need to be sorted
     // Standard characters were already fetched alphabetically
     allItems.sort((a, b) => {
-        const firstBannerA = a.banners?.cn[0].bannerNo ?? -1
-        const firstBannerB = b.banners?.cn[0].bannerNo ?? 1
+        const firstBannerA = a.banners?.cn[0].bannerNo ?? 1
+        const firstBannerB = b.banners?.cn[0].bannerNo ?? -1
         return firstBannerB - firstBannerA
     })
 

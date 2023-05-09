@@ -21,6 +21,16 @@
         "green",
         "blue"
     ],
+    "weaponEffects": [
+        {
+            "title": "Flame Reaction",
+            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
+        },
+        {
+            "title": "Flame Benediction",
+            "description": "Increase the entire team's flame ATK by **5%** when Benediction Resonance is activated."
+        }
+    ],
     "advancements": [
         "Deal damage and produce a healing orb, which lasts for **20** seconds and restore HP of any teammate who picks it up equal to **60%** of ATK. **2**-second cooldown.",
         "Increase the current weapon's base ATK growth by **16%**.",
@@ -110,7 +120,7 @@
     "abilitiesVideoSrc": "https://www.youtube.com/embed/1tk5CdG8O58?start=11",
     "recommendedMatrices": [
         {
-            "name": "Coco Ritter",
+            "name": "Cocoritter",
             "pieces": 4,
             "description": "A decent choice to apply additional damage buffs to teammates while also increasing healing."
         },

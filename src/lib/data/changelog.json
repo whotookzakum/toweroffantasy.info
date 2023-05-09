@@ -1,5 +1,9 @@
 [
     {
+        "date": "May 8 2023",
+        "text": "Added Elemental Benediction weapon effects, a buff for support weapons; Fixed simulacra order; Fixed Cocoritter showing as Coco Ritter (urls updated); Fixed typo in Fiona 6* adv; Fixed Lan skill incorrectly saying it grants hyperbody;"
+    },
+    {
         "date": "April 29 2023",
         "text": "Added global Fiona; fixed Garnett banner end date; Fixed Saki Fuwa 4 piece matrices typo; Optimized images"
     },

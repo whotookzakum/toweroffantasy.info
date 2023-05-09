@@ -25,6 +25,10 @@
         {
             "title": "Volt Resonance",
             "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others."
+        },
+        {
+            "title": "Volt Benediction",
+            "description": "Increase the entire team's volt ATK by **5%** when Benediction Resonance is active."
         }
     ],
     "advancements": [
@@ -131,7 +135,7 @@
     "abilitiesVideoSrc": "https://www.youtube.com/embed/hQQTTuBKm0c?start=9",
     "recommendedMatrices": [
         {
-            "name": "Coco Ritter",
+            "name": "Cocoritter",
             "pieces": 4,
             "description": "Excellent choice for Venus that will buff teammates with up to 100% uptime."
         },
