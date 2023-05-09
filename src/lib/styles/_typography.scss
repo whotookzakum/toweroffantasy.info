@@ -113,6 +113,19 @@ abbr[title*="China"] {
     }
 }
 
+abbr[title*="Unreleased Content"] {
+    background: rgb(204, 148, 27);
+
+    &::before {
+        content: "Unreleased";
+    }
+
+    &.absolute {
+        inset: unset;
+        top: 96px;
+    }
+}
+
 abbr[title*="Standard"] {
     background: rgb(42, 129, 179);
 
