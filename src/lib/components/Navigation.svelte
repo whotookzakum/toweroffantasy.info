@@ -16,11 +16,11 @@
             text: "Relics",
             href: "/relics",
         },
-        {
-            text: "Smart Servants",
-            href: "/smart-servants",
-            chinaOnly: true
-        },
+        // {
+        //     text: "Smart Servants",
+        //     href: "/smart-servants",
+        //     chinaOnly: true
+        // },
         {
             text: "Exploration",
             href: "/exploration",
