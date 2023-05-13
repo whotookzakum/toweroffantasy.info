@@ -15,9 +15,9 @@
 
     export let data;
 
-    const globalData = data;
-    const chinaData = _.merge(_.cloneDeep(data), data.cnData);
-    let simulacrum = globalData;
+    $: globalData = data;
+    $: chinaData = _.merge(_.cloneDeep(data), data.cnData);
+    $: simulacrum = globalData;
 
     function getAvatarImg(simulacrum) {
         switch (simulacrum.name) {
