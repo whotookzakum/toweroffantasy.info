@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_liuhuo",
     "element": "flame",
     "type": "dps",
+    "meta": true,
     "shatter": {
         "tier": "S",
         "value": "12.50"

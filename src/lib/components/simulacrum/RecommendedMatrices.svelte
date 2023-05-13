@@ -27,6 +27,18 @@
                                         height="128"
                                         loading="lazy"
                                     />
+                                    {#if matrix.unreleased}
+                                        <abbr
+                                            class="absolute"
+                                            title="Unreleased Content"
+                                        />
+                                    {/if}
+                                    {#if matrix.chinaOnly}
+                                        <abbr
+                                            title="China Exclusive"
+                                            class="absolute"
+                                        />
+                                    {/if}
                                     <i>x{matrix.pieces}</i>
                                 </div>
                                 <span>{matrix.name}</span>

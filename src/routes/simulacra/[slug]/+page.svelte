@@ -19,7 +19,6 @@
     const chinaData = _.merge(_.cloneDeep(data), data.cnData);
     let simulacrum = globalData;
 
-
     function getAvatarImg(simulacrum) {
         switch (simulacrum.name) {
             case "Nemesis":
@@ -74,14 +73,18 @@
 </svelte:head>
 
 <SectionNavigation
-    links={["weapon", "advancements", "skills", "advice", "awakening", "other info"]}
+    links={[
+        "weapon",
+        "advancements",
+        "skills",
+        "advice",
+        "awakening",
+        "other info",
+    ]}
 />
 
 <h1>{simulacrum.name}</h1>
 <span style="color: var(--text2)">
-    {#if simulacrum.leaked}
-        <abbr title="Leaked" />
-    {/if}
     {#if simulacrum.chinaOnly}
         <abbr title="China Exclusive" />
     {/if}
@@ -111,12 +114,12 @@
 
 {#if simulacrum.rarity === "SSR"}
     <UpgradeMaterials weapon={simulacrum.weapon} />
+
+    <Ad unit="lb5" />
+    <Ad unit="mobile_lb3" />
+
+    <Advice {simulacrum} />
 {/if}
-
-<Advice weapon={simulacrum.weapon} />
-
-<Ad unit="lb5" />
-<Ad unit="mobile_lb3" />
 
 <h2 id="awakening">Awakening</h2>
 <AwakeningTraits traits={simulacrum.traits} />

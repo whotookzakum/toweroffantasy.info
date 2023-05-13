@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_feiouna",
     "element": "altered",
     "type": "support",
+    "meta": true,
     "shatter": {
         "tier": "S",
         "value": "11.50"
@@ -195,16 +196,7 @@
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/VIWv9WJtFYk?start=142",
     "rating": [],
-    "recommendedPairings": [
-        {
-            "name": "Lyra",
-            "description": "Great option, at Fiona's first advancement, Lyra will also keep up Fiona's elemental crystals."
-        },
-        {
-            "name": "Nemesis",
-            "description": "Can easily keep charge up so you can instantly swap back and use Fiona's discharge."
-        }
-    ],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Fiona",

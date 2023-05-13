@@ -59,6 +59,7 @@
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
 
+{#if !data.unreleased}
 {#if data.matchingSimulacra.length > 0}
     <h2>Recommended Pairings</h2>
     <Menu>
@@ -81,6 +82,7 @@
             </MenuItem>
         {/each}
     </Menu>
+{/if}
 {/if}
 
 <style lang="scss">

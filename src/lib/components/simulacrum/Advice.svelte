@@ -2,38 +2,44 @@
     import Rating from "./Rating.svelte";
     import RecommendedMatrices from "./RecommendedMatrices.svelte";
     import RecommendedPairings from "./RecommendedPairings.svelte";
+    import SvelteMarkdown from "svelte-markdown";
     
-    export let weapon;
+    export let simulacrum;
 </script>
 
-<small class="section-header">{weapon.name}</small>
+<small class="section-header">{simulacrum.weapon.name}</small>
 <h2 id="advice">Advice</h2>
 
-{#if weapon.rating.length > 0}
+{#if simulacrum.unreleased}
+<p><SvelteMarkdown source={`No advice available for **${simulacrum.weapon.name}** :(`} /></p>
+
+{:else}
+{#if simulacrum.weapon.rating.length > 0}
 <details class="full-bleed">
-    <summary>Weapon Rating</summary>
+    <summary>simulacrum.weapon Rating</summary>
     <dl>
-        <Rating {weapon} />
+        <Rating weapon={simulacrum.weapon} />
     </dl>
 </details>
 {/if}
 
-{#if weapon.recommendedPairings.length > 0}
+{#if simulacrum.weapon.recommendedPairings.length > 0}
 <details class="full-bleed">
     <summary>Recommended Pairings</summary>
     <dl>
-        <RecommendedPairings {weapon} />
+        <RecommendedPairings weapon={simulacrum.weapon} />
     </dl>
 </details>
 {/if}
 
-{#if weapon.recommendedMatrices.length > 0}
+{#if simulacrum.weapon.recommendedMatrices.length > 0}
 <details class="full-bleed">
     <summary>Recommended Matrices</summary>
     <dl>
-        <RecommendedMatrices {weapon} />
+        <RecommendedMatrices weapon={simulacrum.weapon} />
     </dl>
 </details>
+{/if}
 {/if}
 
 <style lang="scss">
@@ -41,8 +47,9 @@
         margin-top: 20px;
     }
 
-    h2 {
+    h2, p {
         margin-top: 0;
+        margin-bottom: 1rem;
     }
 
     details {
@@ -73,6 +80,7 @@
         box-shadow: inset 0 7px 9px -7px var(--surface-shadow),
             inset 0 -7px 9px -7px var(--surface-shadow);
     }
+
 
     :global(.ability p) {
         margin: 0;

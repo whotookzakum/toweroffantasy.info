@@ -1,7 +1,6 @@
 {
-    "name": "Gunonno",
+    "name": "Gnonno",
     "id": 27,
-    "chinaOnly": true,
     "cnName": "genuonuo",
     "rarity": "SSR",
     "banners": {
@@ -16,16 +15,23 @@
                 "start": "19 Apr 2023",
                 "end": "3 May 2023"
             }
+        ],
+        "glob": [
+            {
+                "bannerNo": 36,
+                "start": "11 May 2023",
+                "end": "2 June 2023"
+            }
         ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": "Using Expedition Team Attack triggers Complete Rampage, the final damage dealt to enemies with Serious Injury is increased by 12% for 30 seconds."
+            "description": "After **Exploration Team Strike** triggers **Total Berserk**, increase final damage by **12%** for **30** seconds. "
         },
         {
             "affinity": 4000,
-            "description": "Using Expedition Team Attack triggers Complete Rampage, the final damage dealt to enemies with Serious Injury is increased by 23% for 30 seconds. Serious Injury will increase movement speed by 50% when the user is underwater."
+            "description": "Using **Expedition Team Attack** triggers **Complete Rampage**, the final damage dealt to enemies with **Serious Injury** is increased by **23%** for **30** seconds. **Serious Injury** will increase movement speed by **50%** when the user is underwater."
         }
     ],
     "giftTypes": [

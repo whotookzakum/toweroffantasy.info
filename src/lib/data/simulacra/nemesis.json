@@ -43,7 +43,7 @@
                 "bannerNo": 23,
                 "start": "9 Mar 2023",
                 "end": "18 Mar 2023",
-                "standardAfterwards": false
+                "standardAfterwards": true
             }
         ]
     },

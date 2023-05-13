@@ -150,6 +150,14 @@ abbr[title*="Collab"] {
     }
 }
 
+abbr[title*="Meta"] {
+    background: green;
+
+    &::before {
+        content: "Meta";
+    }
+}
+
 .table-wrapper {
     overflow-x: auto;
     width: 100%;

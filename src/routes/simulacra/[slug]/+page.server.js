@@ -1,5 +1,6 @@
 import { fetchAllMatrices, fetchAllWeapons } from '$lib/utils'
 import { existsSync } from "node:fs";
+import path from 'node:path';
 
 export const load = async ({ params }) => {
     const simulacrum = await import(`../../../lib/data/simulacra/${params.slug}.json`)
@@ -9,12 +10,15 @@ export const load = async ({ params }) => {
     // Append some weapon data to recommended weapon pairing objects
     const allWeaponsData = await fetchAllWeapons()
     const recommendedPairings = await weapon.recommendedPairings.map(recWep => {
-        const wepData = allWeaponsData.find(w => w.path.split("/weapons/")[1] === recWep.name.toLowerCase().replace(" ", "-"))
+        const wepData = allWeaponsData.find(w => w.path.split("/weapons/")[1] === recWep.toLowerCase().replace(" ", "-"))
         return {
             ...recWep,
             wepName: wepData.name,
+            wepType: wepData.type,
+            wepElement: wepData.element,
             imgSrc: wepData.imgSrc,
-            pathToSimulacrum: wepData.path.replace("weapons", "simulacra")
+            meta: wepData.meta,
+            pathToSimulacrum: wepData.path.replace("weapons", "simulacra"),
         }
     })
 
