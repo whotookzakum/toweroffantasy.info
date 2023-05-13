@@ -41,6 +41,7 @@
             },
             {
                 "bannerNo": 29,
+                "subtext": "Standard afterwards",
                 "start": "13 April 2023",
                 "end": "4 May 2023",
                 "standardAfterwards": true

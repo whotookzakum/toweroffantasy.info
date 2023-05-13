@@ -45,6 +45,7 @@
             </td>
             <td>
                 {#if banner.subtext}
+                    <!-- Doesn't use "standardAfterwards": true, it simply adds it from subtext -->
                     <abbr title={banner.subtext} />
                 {/if}
             </td>
