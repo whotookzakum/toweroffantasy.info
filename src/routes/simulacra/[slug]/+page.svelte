@@ -139,7 +139,7 @@
 {#if !simulacrum.unreleased}
 <OtherInfo {simulacrum} />
 {:else}
-<p><SvelteMarkdown source={`No other info available for **${simulacrum.weapon.name}** :(`} /></p>
+<p><SvelteMarkdown source={`No other info available for **${simulacrum.name}** :(`} /></p>
 {/if}
 
 <Ad unit="mobile_lb5" />
