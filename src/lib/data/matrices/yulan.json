@@ -7,11 +7,11 @@
     "sets": [
         {
             "pieces": 2,
-            "description": ""
+            "description": "When at least **1** frost weapon is equipped, nearby targets will take **260%** ATK damage every second. When any frost weapon skill or discharge skill is applied, final damage is increased by **6%/9%/12%/15%** for **30** seconds. The effect of this matrix also works for the extra weapon slot, but only the effect of the set with the highest star level is applied."
         },
         {
             "pieces": 4,
-            "description": ""
+            "description": "After Pian Zhen completely uses up his Inner Strength / Combat Spirit stacks, base damage is increased by **12%** for **15** seconds. When dealing cold damage, all elemental damage increases by **28%/32%/36%/40%** for **30** seconds. The effect of this matrix also works for the Extra Weapon Box, but only the effect of the set with the highest star level applies."
         }
     ]
 }
