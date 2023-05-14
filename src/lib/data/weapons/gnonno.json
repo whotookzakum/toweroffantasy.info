@@ -157,9 +157,14 @@
     "recommendedPairings": [],
     "recommendedMatrices": [
         {
-            "name": "Gunonno",
+            "name": "Gnonno",
             "pieces": 4,
             "description": "Great set for both a physical and rainbow comp. 4 set only on Gunonno."
+        },
+        {
+            "name": "Umi",
+            "pieces": 4,
+            "description": "Extremely high damage set effects with permanent uptime."
         },
         {
             "name": "Shiro",
