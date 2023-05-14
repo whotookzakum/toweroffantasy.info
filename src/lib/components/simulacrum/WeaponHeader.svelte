@@ -8,23 +8,35 @@
     class="full-bleed"
     style={`border-color: var(--element-${weapon.element})`}
 >
-    <img
-        src={`/images/Icon/weapon/Icon/${weapon.imgSrc}.webp`}
+{#if weapon.imgSrc.length > 0}
+        <img
+            src={`/images/Icon/weapon/Icon/${weapon.imgSrc}.webp`}
+            alt={weapon.name}
+            width="128"
+            height="128"
+            loading="lazy"
+        />
+        {:else}
+        <img
+        src={`/images/noimage (webp)/noimage_weapon.webp`}
         alt={weapon.name}
         width="128"
         height="128"
         loading="lazy"
     />
+        {/if}
     <div class="weapon-info">
         <div class="weapon-name">
             <h3>{weapon.name}</h3>
-            <div class="stats-wrapper">
-                {#each weapon.baseStats as stat}
-                    <div class="stat">
-                        <BaseStat {stat} />
-                    </div>
-                {/each}
-            </div>
+            {#if weapon.baseStats}
+                <div class="stats-wrapper">
+                    {#each weapon.baseStats as stat}
+                        <div class="stat">
+                            <BaseStat {stat} />
+                        </div>
+                    {/each}
+                </div>
+            {/if}
         </div>
         <div class="stats-wrapper">
             <div class="stat">
@@ -74,6 +86,7 @@
         align-items: center;
         margin-top: var(--space-xs);
         border-top: 3px solid transparent;
+        min-height: 128px;
     }
 
     .weapon-info {
