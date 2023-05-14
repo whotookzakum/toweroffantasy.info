@@ -12,6 +12,7 @@
     import UnreleasedWarning from "$lib/components/UnreleasedWarning.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import _ from "lodash";
+    import SvelteMarkdown from "svelte-markdown";
 
     export let data;
 
@@ -118,20 +119,27 @@
     <Ad unit="lb5" />
     <Ad unit="mobile_lb3" />
 
-    <Advice {simulacrum} />
 {/if}
+
+<Advice {simulacrum} />
 
 <h2 id="awakening">Awakening</h2>
 <AwakeningTraits traits={simulacrum.traits} />
 
 <Ad unit="mobile_lb4" />
 
+{#if !simulacrum.unreleased}
 <AwakeningGifts
     gifts={simulacrum.bestGifts}
     categories={simulacrum.giftTypes}
 />
+{/if}
 
 <h2 id="other-info">Other Info</h2>
+{#if !simulacrum.unreleased}
 <OtherInfo {simulacrum} />
+{:else}
+<p><SvelteMarkdown source={`No other info available for **${simulacrum.weapon.name}** :(`} /></p>
+{/if}
 
 <Ad unit="mobile_lb5" />

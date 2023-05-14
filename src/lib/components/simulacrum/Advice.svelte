@@ -10,13 +10,13 @@
 <small class="section-header">{simulacrum.weapon.name}</small>
 <h2 id="advice">Advice</h2>
 
-{#if simulacrum.unreleased}
+{#if simulacrum.unreleased || simulacrum.rarity === "SR"}
 <p><SvelteMarkdown source={`No advice available for **${simulacrum.weapon.name}** :(`} /></p>
 
 {:else}
 {#if simulacrum.weapon.rating.length > 0}
 <details class="full-bleed">
-    <summary>simulacrum.weapon Rating</summary>
+    <summary>Weapon Rating <small>Based on the community's opinion.</small></summary>
     <dl>
         <Rating weapon={simulacrum.weapon} />
     </dl>
@@ -43,6 +43,12 @@
 {/if}
 
 <style lang="scss">
+    summary small {
+        margin: 0;
+        margin-left: 10px;
+        color: var(--accent);
+        display: inline-block;
+    }
     small {
         margin-top: 20px;
     }

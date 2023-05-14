@@ -3,6 +3,7 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import UnreleasedWarning from "$lib/components/UnreleasedWarning.svelte";
     import Ad from "$lib/components/Ad.svelte";
     export let data;
 
@@ -37,6 +38,10 @@
     {/if}
     {data.rarity} Matrices
 </span>
+
+{#if data.unreleased}
+    <UnreleasedWarning />
+{/if}
 
 <h2 id="sets">Sets</h2>
 <div class="table-wrapper">

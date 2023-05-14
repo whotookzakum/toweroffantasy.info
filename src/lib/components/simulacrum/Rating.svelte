@@ -1,4 +1,5 @@
 <script>
+    import SvelteMarkdown from "svelte-markdown";
     export let weapon;
     import { onMount } from "svelte";
 
@@ -6,7 +7,7 @@
     const marksData = {
         labels: [
             "DMG output",
-            "DMG reduc",
+            "DMG reduction",
             "Healing",
             "Shatter",
             "Charge",
@@ -15,24 +16,31 @@
         datasets: [
             {
                 label: weapon.name,
-                backgroundColor: "rgba(67, 158, 172, 0.7)",
+                backgroundColor: "rgba(67, 158, 172, 0.8)",
                 data: weapon.rating,
             },
         ],
         options: {
             scales: {
                 r: {
+                    angleLines: {
+                        color: 'hsl(0, 0%, 60%)',
+                    },
                     ticks: {
                         display: false,
                         beginAtZero: true,
+                    },
+                    grid: {
+                            color: 'hsl(0, 0%, 60%)',
                     },
                     pointLabels: {
                         font: {
                             size: 14,
                         },
+                        color: '#439eac',
                     },
                     min: 0,
-                    max: 100
+                    max: 100,
                 },
             },
             plugins: {
@@ -74,18 +82,23 @@
     };
 </script>
 
-
 <div class="bio-wrapper full-bleed">
     <canvas id="marksChart" width="300px" height="300px" />
 </div>
 
 <style lang="scss">
+    canvas {
+        max-width: 600px;
+        max-height: 600px;
+    }
     .bio-wrapper {
         background-color: var(--surface2);
         margin-top: var(--space-xs);
         padding: 0;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         align-items: center;
         flex-wrap: wrap-reverse;
     }

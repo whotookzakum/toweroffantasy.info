@@ -43,7 +43,8 @@
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Matrices</h2>
 <Menu>
     {#each matrices.filter((m) => m.rarity === "SSR") as matrix}
-        <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly}>
+        <MenuItem href={matrix.path} chinaOnly={matrix.chinaOnly} unreleased={matrix.unreleased}>
+            {#if !matrix.unreleased}
             <img
                 src={`/images/Icon/yizhi/256/${matrix.imgSrc}.webp`}
                 alt={matrix.name}
@@ -51,6 +52,15 @@
                 height="128"
                 loading="lazy"
             />
+            {:else}
+            <img
+                src={`/images/noimage (webp)/noimage_matrix.webp`}
+                alt={matrix.name}
+                width="128"
+                height="128"
+                loading="lazy"
+            />
+            {/if}
             <span class="menu-item-name">{matrix.name}</span>
         </MenuItem>
     {/each}

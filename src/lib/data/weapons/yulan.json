@@ -1,0 +1,173 @@
+{
+    "name": "Pian Zhen",
+    "imgSrc": "",
+    "element": "ice",
+    "type": "dps",
+    "meta": true,
+    "shatter": {
+        "tier": "A",
+        "value": "10.00"
+    },
+    "charge": {
+        "tier": "SS",
+        "value": "12.50"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "ice",
+        "green",
+        "blue"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Frost Resonance",
+            "description": "Increases ATK by **20%** and resistance to cold by **40%**. To activate, equip at least **2** cold weapons. The effect of this kit works in the extra weapon box. It does not stack with other cold resonance or cold reaction effects, with cold resonance taking priority."
+        },
+        {
+            "title": "Ice Crushing",
+            "description": "**Quick cut**: with Pian Zhen, hitting the target with any Discharge skill deals additional damage equal to **400% * Frost ATK + 6.7% * Max. HP + 240% * Total value of all resistances + 800% * Crit Value** damage to nearby targets."
+        },
+        {
+            "title": "Passives",
+            "description": "Every **0.5**x seconds out of combat increases the damage of your next Ice Shatter by **1**, up to a maximum of **30**.\n\nIf any **1** Physical/Electric/Fire weapon is equipped, Ice Shatter damage is increased by **2.5** times.\n\nIce Crushing damage cannot activate additional attack effects and cannot be increased or decreased by buffs or debuffs of final damage, except for the unique characteristics of Titanium equipment. Ice Crushing damage is considered damage from the discharge skill."
+        },
+        {
+            "title": "Yu Lan: Martial Art",
+            "description": "**Offense and defense**: Pian Zhen has two fighting styles: the **Way of Taoism** and the **Looting Formation**. Enter the menu 'Skills' - 'Settings' to switch between these fighting styles. Only **1** combat style can be active at a time. You cannot switch combat styles in combat.\n\n**Way of Taoism**: In combat, the multiplier of evasion and base attacks is increased by **40%**. After applying dodge attacks or basic attacks of any weapon **3** times, you gain **1** stack of Inner Strength (up to **10** stacks). Also in combat you get **1** Inner Force stat every **2** seconds. Outside of combat, all Inner Force stacks are lost.\n\nWhen the **Path of Taoism** is active, the skill is changed to [Abyss Jump], and the discharge skill is changed to [Ice Walking Tiger].\n\n**Loot Formation**: when you hit a target, you enter the Momentum state and gain **1** stack of Morale (up to **15** stacks) every **0.5** seconds for **50** seconds. Out of combat, all stacks of Morale are lost.\n\nWhen the **Looting Formation** is active, the skill is replaced with [Metal Chime], and the discharge skill is replaced with [Strength and Movement]\n\n**Passive: Frosty Air**: While having Pian Zhen equipped, you ignore **30%** of the target's resistance to frost. This effect also works for the secondary weapon slot."
+        }
+    ],
+    "advancements": [
+        "In the **Way of Daoism** style, each time [Leap into the Abyss] expends **3** or more stacks of Inner Strength: **1** stack of Inner Strength is returned; the character's base damage is increased by **5%**; damage from dodge attacks and Pian Zhen's base attacks is increased by **50%** for **30** seconds.\n\nIn **Looting Formation** style, each time [Metal Ringing] expends **3** or more stacks of Combat Spirit: **1** stack of Combat Spirit is returned; the character's base damage increases by **5%** for **15** seconds.",
+        "Increase the current weapon's base x growth by **16%**.",
+        "In the **Way of Taoism** style, if you don't get a stack of Inner Strength within **4** seconds, you will get **2** stacks more then when you get that stack.\n\nWhen spending **3** or more stacks of Inner Strength / Combat Spirit, the character will regenerate **10%** of maximum OZ (**20%** in single game). This effect is triggered no more than once per **8** seconds in the Marauding Formation style, and there is no limit in the **Ways of Taoism** style.",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "After spending stacks of Inner Strength / Morale, the character can resist lethal damage, then recovering **20%** ​​of their maximum HP (**40%** in single player). This effect can only trigger once every **60** seconds.",
+        "In the **Ways of Taoism** style, after spending stacks of Intrinsic Strength, Pian Zhen's dodge and normal attack damage is increased by **60%**, and the character's final is increased by **10%** for **30** seconds.\n\nIn the **Looting Formation** style, after spending stacks of Morale, the character's final damage is increased by **15%** for **30** seconds."
+    ],
+    "abilities": [
+        {
+            "name": "Trample",
+            "type": "normal",
+            "imgSrc": "",
+            "input": [
+                "Attack x6"
+            ],
+            "description": "While on the ground, use a normal attack to make 6 consecutive attacks.",
+            "breakdown": [
+                "**132.2%** of ATK.",
+                "**102.8%** of ATK.",
+                "**107.7%** of ATK.",
+                "**293.7%** of ATK.",
+                "**569.8%** of ATK.",
+                "**464%** of ATK."
+            ]
+        },
+        {
+            "name": "Air Delay",
+            "type": "normal",
+            "imgSrc": "",
+            "input": [
+                "Jump",
+                "Attack x6"
+            ],
+            "description": "While in the air, use a normal attack to make 6 consecutive attacks, expending stamina.",
+            "breakdown": [
+                "**139.6%** of ATK.",
+                "**122.2%** of ATK.",
+                "**128%** of ATK.",
+                "**278.3%** of ATK.",
+                "**508.2%** of ATK.",
+                "**453.7%** of ATK."
+            ]
+        },
+        {
+            "name": "Forest Breaking Swallow",
+            "type": "normal",
+            "imgSrc": "",
+            "input": [
+                "Attack x1-3",
+                "hold:Attack"
+            ],
+            "description": "While on the ground, press and hold a normal attack after applying the first to third basic attack to summon [Swallow Piercing Forest].\n\nDeals **128.3%** ATK damage and attracts nearby targets, then deals **299.3%** ATK to nearby targets and throws them back.\n\nPress a normal attack after using [Cloud Brush] to also summon [Forest Breaking Swallow]."
+        },
+        {
+            "name": "Snake Dance in the Sky",
+            "type": "normal",
+            "imgSrc": "",
+            "input": [
+                "Attack x4-5",
+                "hold:Attack"
+            ],
+            "description": "While on the ground, press and hold a normal attack after using the fourth - fifth basic attack to trigger [Snake Dance in the Sky]. Deals damage to nearby targets equal to **153.9%** of ATK and sends them into the air.\n\nPress and hold a normal attack after casting [Forest Breaking Swallow] to also trigger [Snake Dance in the Sky]."
+        },
+        {
+            "name": "Ice Land",
+            "type": "normal",
+            "imgSrc": "",
+            "input": [
+                "Jump",
+                "Attack x1-6",
+                "hold:Attack"
+            ],
+            "description": "While in the air, press and hold a Light Attack after using the 1st - 6th Basic Attack to summon [Ice Ground]. Deals damage equal to **671.5%** ATK."
+        },
+        {
+            "name": "Cloud Brush",
+            "type": "normal",
+            "imgSrc": "",
+            "input": [
+                "Jump",
+                "hold:Attack"
+            ],
+            "description": "Press and hold a normal attack while in flight (press when target is available), or use a normal attack while climbing, jumping backwards or using your jetpack to summon [Cloudbrush].\n\nWhen falling to the ground, deal **303.2%** ATK damage to nearby targets and flip them up."
+        },
+        {
+            "name": "Blowing Wind",
+            "type": "dodge",
+            "imgSrc": "",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Press the normal attack button during a short window for a perfect dodge (press the arrow before dodging) to inflict [Blowing Wind] and deal **362.5%** ATK damage to nearby targets."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\nDodging in the **Way of Taoist** style grants **4** seconds of Hyperbody."
+        },
+        {
+            "name": "Abyss Jump",
+            "type": "skill",
+            "imgSrc": "",
+            "description": "Deals damage equal to **2730%** of ATK to the target. Cooldown: **15** seconds. Consumes **1/2/3/4/5** stacks of Inner Strength and increases the damage of [Abyss Jump] by **1.2/1.5/2.1/2/2.8/3.7** times.\n\nAfter casting [Abyss Jump], the cold damage is increased by **20%** for **35** seconds.\n\nWhen using a Discharge Skill or [Abyss Jump], grants **2** dodge attempts.\n\nThe cooldown of [Abyss Jump] is reset when the number of stacks of Intrinsic Strength reaches **5**."
+        },
+        {
+            "name": "Metal Ringing",
+            "type": "skill",
+            "imgSrc": "",
+            "description": "Deals damage equal to **2730%** ATK to the target. Cooldown: **15** seconds.\n\nEach weapon skill consumes **1/2/3/4/5** stacks of Morale, dealing bonus damage equal to **241%/499%/1035%/2310%/3850%** of ATK and an additional **270%** of ATK per second to nearby targets within **5** seconds.\n\nWhen using any cold weapon skill, you gain **2** seconds of Hyperbody."
+        },
+        {
+            "name": "Tiger Walking on Ice",
+            "type": "discharge",
+            "imgSrc": "",
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, **remove all debuffs from the wielder** upon switching to this weapon and deal damage equal to **2394%** of ATK to nearby targets.\n\nWhile the skill is active, it gives immunity to damage for **2.6** seconds (not available in Apex League)."
+        },
+        {
+            "name": "Strength and Movement",
+            "type": "discharge",
+            "imgSrc": "",
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, **remove all debuffs from the wielder** upon switching to this weapon and deal damage equal to **2394%** of ATK to nearby targets.\n\nWhile the skill is active, it gives immunity to damage for **2.6** seconds (not available in Apex League).\n\nOn hit, increases cold damage by **20%** for **30** seconds.\n\nWhen you hit a target, you enter the Impulse state for **60** seconds.\n\nWhen you use any of Pian Zhen's discharge skills, you gain **1000** weapon charge. Cooldown: **10** seconds."
+        }
+    ],
+    "abilitiesVideoSrc": "",
+    "rating": [],
+    "recommendedPairings": [],
+    "recommendedMatrices": []
+}
