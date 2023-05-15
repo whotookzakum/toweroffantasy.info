@@ -114,8 +114,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Y2YTJ11HGTQ?start=60",
-    "rating": [],
-    "recommendedPairings": [],
+    "rating": [70, 0, 20, 50, 90, 60],
+    "recommendedPairings": ["Fiona","Lan","Ruby","Lin"],
     "recommendedMatrices": [
         {
             "name": "Annabella",

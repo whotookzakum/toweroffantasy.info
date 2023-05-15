@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_Rubilia_Thunder01",
     "element": "volt",
     "type": "dps",
+    "meta": true,
     "shatter": {
         "tier": "A",
         "value": "10"
@@ -150,7 +151,7 @@
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Fn7zKWNWcsw?start=187",
     "rating": [80, 0, 0, 80, 80, 90],
-    "recommendedPairings": [],
+    "recommendedPairings": ["Fiona","Fenrir","Tian Lang"],
     "recommendedMatrices": [
         {
             "name": "Rubilia",

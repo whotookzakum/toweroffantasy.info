@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_Fenrir_Thunder01",
     "element": "volt",
     "type": "dps",
+    "meta": true,
     "shatter": {
         "tier": "S",
         "value": "13.50"
@@ -160,8 +161,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/WRqXqUUGslA?start=153",
-    "rating": [],
-    "recommendedPairings": [],
+    "rating": [86.66666666666667, 59.33333333333333, 75.33333333333333, 74.66666666666667, 59.33333333333333, 84],
+    "recommendedPairings": ["Fiona","Rubilia","Tian Lang","Lin"],
     "recommendedMatrices": [
         {
             "name": "Fenrir",

@@ -111,7 +111,7 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/GralXQC8G-E?start=10",
-    "rating": [],
+    "rating": [45, 0, 0, 25, 65, 65],
     "recommendedPairings": [],
     "recommendedMatrices": [
         {

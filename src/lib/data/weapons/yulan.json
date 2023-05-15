@@ -168,6 +168,12 @@
     ],
     "abilitiesVideoSrc": "",
     "rating": [],
-    "recommendedPairings": [],
-    "recommendedMatrices": []
+    "recommendedPairings": ["Fiona","Icarus","Alyss"],
+    "recommendedMatrices": [
+        {
+            "name": "Yulan",
+            "pieces": 4,
+            "description": ""
+        }
+    ]
 }

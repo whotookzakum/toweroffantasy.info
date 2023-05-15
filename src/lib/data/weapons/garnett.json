@@ -176,7 +176,7 @@
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/gXh8yhcbLrY?start=118",
     "rating": [],
-    "recommendedPairings": [],
+    "recommendedPairings": ["Fiona","Lan","Annabella","Ruby","Lin"],
     "recommendedMatrices": [
         {
             "name": "Garnett",

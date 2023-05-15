@@ -116,7 +116,7 @@
     ],
     "abilitiesVideoSrc": "",
     "rating": [70, 0, 60, 60, 40, 70],
-    "recommendedPairings": [],
+    "recommendedPairings": ["Fiona","Rubilia","Fenrir","Nemesis"],
     "recommendedMatrices": [
         {
             "name": "Samir",

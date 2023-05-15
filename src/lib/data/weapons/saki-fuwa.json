@@ -134,8 +134,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
-    "rating": [],
-    "recommendedPairings": [],
+    "rating": [58, 78, 55, 91, 68, 74],
+    "recommendedPairings": ["Fiona","Icarus","Alyss","Meryl","Ene"],
     "recommendedMatrices": [
         {
             "name": "Saki Fuwa",
