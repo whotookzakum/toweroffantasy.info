@@ -149,7 +149,7 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Fn7zKWNWcsw?start=187",
-    "rating": [],
+    "rating": [80, 0, 0, 80, 80, 90],
     "recommendedPairings": [],
     "recommendedMatrices": [
         {
