@@ -3,7 +3,7 @@
     "imgSrc": "item_Weapon_SSR_umbrella_Fire01",
     "element": "flame",
     "type": "defense",
-    "meta": true,
+    "isMeta": true,
     "shatter": {
         "tier": "SS",
         "value": "14.00"

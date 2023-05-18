@@ -3,7 +3,7 @@
     "imgSrc": "item_Weapon_SSR_feiouna",
     "element": "altered",
     "type": "support",
-    "meta": true,
+    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "11.50"

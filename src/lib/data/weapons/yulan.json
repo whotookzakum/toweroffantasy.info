@@ -3,7 +3,7 @@
     "imgSrc": "",
     "element": "ice",
     "type": "dps",
-    "meta": true,
+    "isMeta": true,
     "shatter": {
         "tier": "A",
         "value": "10.00"

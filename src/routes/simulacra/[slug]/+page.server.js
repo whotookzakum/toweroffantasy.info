@@ -17,7 +17,7 @@ export const load = async ({ params }) => {
             wepType: wepData.type,
             wepElement: wepData.element,
             imgSrc: wepData.imgSrc,
-            meta: wepData.meta,
+            isMeta: wepData.isMeta,
             pathToSimulacrum: wepData.path.replace("weapons", "simulacra"),
         }
     })

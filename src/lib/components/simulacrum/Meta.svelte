@@ -12,11 +12,9 @@
     <p>There's nothing here yet!</p>
 {:else}
     <p>The following section includes opinions from site maintainers and the community.</p>
-
     {#if simulacrum.weapon.rating.length > 0}
         <Rating weapon={simulacrum.weapon} />
     {/if}
-
     <RecommendedPairings weapon={simulacrum.weapon} />
     <RecommendedMatrices weapon={simulacrum.weapon} />
 {/if}

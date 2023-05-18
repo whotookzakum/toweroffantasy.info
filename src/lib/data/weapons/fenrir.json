@@ -3,7 +3,7 @@
     "imgSrc": "item_Weapon_SSR_Fenrir_Thunder01",
     "element": "volt",
     "type": "dps",
-    "meta": true,
+    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "13.50"
