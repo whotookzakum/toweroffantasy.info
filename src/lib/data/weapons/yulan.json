@@ -181,7 +181,7 @@
             "name": "Reactive",
             "type": "discharge",
             "imgSrc": "yulan_changeskill",
-            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, **remove all debuffs from the wielder** upon switching to this weapon and deal damage equal to **2,394%** of ATK + **126** to nearby targets and **strongly suspend** them.\n\nDamage immunity lasts for **2.6** seconds while the skill is active (unavailable in Apex League).\n\nA successful hit will increase frost damage by **20%** for **30** seconds and grant **Momentum**.\n\nAfter using **Pian Zhen's** discharge skill, regain **1000** weapon charge, up to once every **10** seconds. Reactive can only be used in **Marauder** style."
+            "description": "When ***weapon charge*** is full or ***Phantasia*** is triggered, **remove all debuffs from the wielder** upon switching to this weapon and deal damage equal to **2,394%** of ATK + **126** to nearby targets and **strongly suspend** them.\n\nDamage immunity lasts for **2.6** seconds while the skill is active (unavailable in Apex League).\n\nA successful hit will increase frost damage by **20%** for **30** seconds and grant **Momentum**.\n\nUsing a discharge skill while **Pian Zhen** is the current weapon will recover **1000** weapon charge, up to once every **10** seconds. Reactive can only be used in **Marauder** style."
         }
     ],
     "abilitiesVideoSrc": "https://youtube.com/embed/-Jc6hAW01sw?start=103",
