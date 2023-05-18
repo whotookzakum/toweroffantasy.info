@@ -12,14 +12,13 @@
 {/if}
 
 {#each abilityCategories as category}
-    <details class="full-bleed">
+    <details class="details-large full-bleed">
         <summary>{category}</summary>
         <dl>
             {#each weapon.abilities.filter((a) => a.type === category.toLowerCase()) as ability}
                 <div class="ability">
                     <dt>
                         <div class="skill-title-wrapper">
-                            {#if ability.imgSrc.length > 0}
                             <img
                                 src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.webp`}
                                 alt=""
@@ -27,15 +26,6 @@
                                 height="82"
                                 loading="lazy"
                             />
-                            {:else}
-                            <!-- <img
-                                src={`/images/noimage (webp)/noimage_skill.webp`}
-                                alt=""
-                                width="82"
-                                height="82"
-                                loading="lazy"
-                            /> -->
-                            {/if}
                             <div class="skill-title">
                                 <span>{ability.type}</span>
                                 <h5>{ability.name}</h5>
@@ -72,28 +62,6 @@
 {/each}
 
 <style lang="scss">
-
-    details {
-        background: hsla(220, 15%, 17%, 0.9);
-        box-shadow: 0 2px 4px var(--surface-shadow);
-
-        & > * {
-            padding: 0.5rem 1rem;
-        }
-
-        summary:hover {
-            background: var(--surface3);
-        }
-
-        &[open] summary {
-            color: var(--accent);
-        }
-
-        &:last-of-type {
-            margin-bottom: 0.5rem;
-        }
-    }
-
     dl {
         margin: 0;
         gap: 0;

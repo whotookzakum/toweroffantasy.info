@@ -1,7 +1,7 @@
 <script>
     import Abilities from "$lib/components/simulacrum/Abilities.svelte";
     import Advancements from "$lib/components/simulacrum/Advancements.svelte";
-    import Advice from "../../../lib/components/simulacrum/Advice.svelte";
+    import Meta from "$lib/components/simulacrum/Meta.svelte";
     import UpgradeMaterials from "$lib/components/simulacrum/UpgradeMaterials.svelte";
     import WeaponEffects from "$lib/components/simulacrum/WeaponEffects.svelte";
     import WeaponHeader from "$lib/components/simulacrum/WeaponHeader.svelte";
@@ -12,7 +12,6 @@
     import UnreleasedWarning from "$lib/components/UnreleasedWarning.svelte";
     import Ad from "$lib/components/Ad.svelte";
     import _ from "lodash";
-    import SvelteMarkdown from "svelte-markdown";
 
     export let data;
 
@@ -78,7 +77,7 @@
         "weapon",
         "advancements",
         "skills",
-        "advice",
+        "meta",
         "awakening",
         "other info",
     ]}
@@ -115,13 +114,10 @@
 
 {#if simulacrum.rarity === "SSR"}
     <UpgradeMaterials weapon={simulacrum.weapon} />
-
+    <Meta {simulacrum} />
     <Ad unit="lb5" />
     <Ad unit="mobile_lb3" />
-
 {/if}
-
-<Advice {simulacrum} />
 
 <h2 id="awakening">Awakening</h2>
 <AwakeningTraits traits={simulacrum.traits} />
@@ -129,17 +125,17 @@
 <Ad unit="mobile_lb4" />
 
 {#if !simulacrum.unreleased}
-<AwakeningGifts
-    gifts={simulacrum.bestGifts}
-    categories={simulacrum.giftTypes}
-/>
+    <AwakeningGifts
+        gifts={simulacrum.bestGifts}
+        categories={simulacrum.giftTypes}
+    />
 {/if}
 
 <h2 id="other-info">Other Info</h2>
 {#if !simulacrum.unreleased}
-<OtherInfo {simulacrum} />
+    <OtherInfo {simulacrum} />
 {:else}
-<p><SvelteMarkdown source={`No other info available for **${simulacrum.name}** :(`} /></p>
+    <p>There's nothing here yet!</p>
 {/if}
 
 <Ad unit="mobile_lb5" />

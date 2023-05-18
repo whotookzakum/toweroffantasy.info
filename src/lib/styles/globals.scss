@@ -7,7 +7,8 @@ html {
     scroll-padding: calc(60px + 1rem);
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     overflow-x: -moz-hidden-unscrollable;
     overflow-x: clip;
@@ -17,6 +18,7 @@ html, body {
     html {
         scroll-behavior: unset;
     }
+
     * {
         transition: unset;
     }
@@ -39,11 +41,11 @@ figure {
     position: absolute;
 }
 
-h2 > .anchorjs-link {
+h2>.anchorjs-link {
     font-size: 1.5em !important;
 }
 
-h3 > .anchorjs-link {
+h3>.anchorjs-link {
     font-size: 1.35em !important;
 }
 
@@ -52,7 +54,8 @@ h3 > .anchorjs-link {
     grid-template-columns: 1fr;
     place-items: center;
 
-    h2, h3 {
+    h2,
+    h3 {
         grid-column: span 2;
         margin: 0;
         font-size: var(--step-0);
@@ -70,6 +73,27 @@ h3 > .anchorjs-link {
     width: 100px;
 }
 
+.details-large {
+    background: hsla(220, 15%, 17%, 0.9);
+    box-shadow: 0 2px 4px var(--surface-shadow);
+
+    &>* {
+        padding: 0.5rem 1rem;
+    }
+
+    summary:hover {
+        background: var(--surface3);
+    }
+
+    &[open] summary {
+        color: var(--accent);
+    }
+
+    &:last-of-type {
+        margin-bottom: 0.5rem;
+    }
+
+}
 
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
@@ -99,7 +123,8 @@ h3 > .anchorjs-link {
     line-height: 1.4;
 }
 
-.lb2, .mobile_lb2 {
+.lb2,
+.mobile_lb2 {
     position: fixed;
     bottom: 0;
     left: 50%;
