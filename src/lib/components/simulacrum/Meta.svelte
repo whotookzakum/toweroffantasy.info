@@ -1,5 +1,6 @@
 <script>
-    import Rating from "./Rating.svelte";
+    import Youtube from "../Youtube.svelte";
+import Rating from "./Rating.svelte";
     import RecommendedMatrices from "./RecommendedMatrices.svelte";
     import RecommendedPairings from "./RecommendedPairings.svelte";
 
@@ -12,6 +13,9 @@
     <p>There's nothing here yet!</p>
 {:else}
     <p>The following section includes opinions from site maintainers and the community.</p>
+    {#if simulacrum.weapon.analysisVideoSrc}
+        <Youtube source={simulacrum.weapon.analysisVideoSrc} caption={`Check out Maygi's detailed breakdown of ${simulacrum.name}.`} />
+    {/if}
     {#if simulacrum.weapon.rating.length > 0}
         <Rating weapon={simulacrum.weapon} />
     {/if}
