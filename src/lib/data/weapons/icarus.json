@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_yoyo_Ice01",
     "element": "ice",
     "type": "dps",
+    "isMeta": true,
     "shatter": {
         "tier": "A",
         "value": "9.50"
@@ -140,11 +141,14 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Pef1vq89Nio?start=91",
+    "rating": [80, 56.66666666666667, 45, 50.83333333333333, 56.66666666666667, 69.16666666666667],
+    "recommendedPairings": ["Fiona","Alyss","Saki Fuwa","Lin"],
     "recommendedMatrices": [
         {
             "name": "Icarus",
             "pieces": 4,
             "description": "Very high damage buff with over 100% uptime with Fractured Light's skill. Might be better suited on other weapons depending on your team."
         }
-    ]
+    ],
+    "analysisVideoSrc": "https://www.youtube.com/embed/MZESxLUQNKU"
 }

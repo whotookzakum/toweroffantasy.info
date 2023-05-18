@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_feiouna",
     "element": "altered",
     "type": "support",
+    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "11.50"
@@ -194,6 +195,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/VIWv9WJtFYk?start=142",
+    "rating": [54.28571428571429, 47.14285714285714, 66.92307692307692, 39.84, 79.41176470588235, 86.05882352941176],
+    "recommendedPairings": [],
     "recommendedMatrices": [
         {
             "name": "Fiona",
@@ -220,5 +223,6 @@
             "pieces": 3,
             "description": "Decent option to build weapon charge while using Lunar Stars. "
         }
-    ]
+    ],
+    "analysisVideoSrc": "https://www.youtube.com/embed/_5rz9ijFXjA"
 }

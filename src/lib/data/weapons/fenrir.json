@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_Fenrir_Thunder01",
     "element": "volt",
     "type": "dps",
+    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "13.50"
@@ -160,6 +161,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/WRqXqUUGslA?start=153",
+    "rating": [86.66666666666667, 59.33333333333333, 75.33333333333333, 74.66666666666667, 59.33333333333333, 84],
+    "recommendedPairings": ["Fiona","Rubilia","Tian Lang","Lin"],
     "recommendedMatrices": [
         {
             "name": "Fenrir",
@@ -181,5 +184,6 @@
             "pieces": 3,
             "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
         }
-    ]
+    ],
+    "analysisVideoSrc": "https://www.youtube.com/embed/BqVpYdCw4eY"
 }

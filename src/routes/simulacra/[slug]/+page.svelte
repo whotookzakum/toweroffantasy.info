@@ -1,10 +1,10 @@
 <script>
     import Abilities from "$lib/components/simulacrum/Abilities.svelte";
     import Advancements from "$lib/components/simulacrum/Advancements.svelte";
+    import Meta from "$lib/components/simulacrum/Meta.svelte";
     import UpgradeMaterials from "$lib/components/simulacrum/UpgradeMaterials.svelte";
     import WeaponEffects from "$lib/components/simulacrum/WeaponEffects.svelte";
     import WeaponHeader from "$lib/components/simulacrum/WeaponHeader.svelte";
-    import RecommendedMatrices from "$lib/components/simulacrum/RecommendedMatrices.svelte";
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import OtherInfo from "$lib/components/simulacrum/OtherInfo.svelte";
     import AwakeningGifts from "$lib/components/simulacrum/AwakeningGifts.svelte";
@@ -15,9 +15,9 @@
 
     export let data;
 
-    const globalData = data;
-    const chinaData = _.merge(_.cloneDeep(data), data.cnData);
-    let simulacrum = globalData;
+    $: globalData = data;
+    $: chinaData = _.merge(_.cloneDeep(data), data.cnData);
+    $: simulacrum = globalData;
 
     function getAvatarImg(simulacrum) {
         switch (simulacrum.name) {
@@ -69,10 +69,18 @@
         name="theme-color"
         content={getElementColor(globalData.weapon.element)}
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </svelte:head>
 
 <SectionNavigation
-    links={["weapon", "advancements", "skills", "awakening", "other info"]}
+    links={[
+        "weapon",
+        "advancements",
+        "skills",
+        "meta",
+        "awakening",
+        "other info",
+    ]}
 />
 
 <h1>{simulacrum.name}</h1>
@@ -106,26 +114,28 @@
 
 {#if simulacrum.rarity === "SSR"}
     <UpgradeMaterials weapon={simulacrum.weapon} />
+    <Meta {simulacrum} />
+    <Ad unit="lb5" />
+    <Ad unit="mobile_lb3" />
 {/if}
-
-{#if simulacrum.weapon.recommendedMatrices.length > 0}
-    <RecommendedMatrices weapon={simulacrum.weapon} />
-{/if}
-
-<Ad unit="lb5" />
-<Ad unit="mobile_lb3" />
 
 <h2 id="awakening">Awakening</h2>
 <AwakeningTraits traits={simulacrum.traits} />
 
 <Ad unit="mobile_lb4" />
 
-<AwakeningGifts
-    gifts={simulacrum.bestGifts}
-    categories={simulacrum.giftTypes}
-/>
+{#if !simulacrum.unreleased}
+    <AwakeningGifts
+        gifts={simulacrum.bestGifts}
+        categories={simulacrum.giftTypes}
+    />
+{/if}
 
 <h2 id="other-info">Other Info</h2>
-<OtherInfo {simulacrum} />
+{#if !simulacrum.unreleased}
+    <OtherInfo {simulacrum} />
+{:else}
+    <p>There's nothing here yet!</p>
+{/if}
 
 <Ad unit="mobile_lb5" />

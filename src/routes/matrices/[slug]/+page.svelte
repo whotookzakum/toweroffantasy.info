@@ -3,6 +3,7 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
+    import UnreleasedWarning from "$lib/components/UnreleasedWarning.svelte";
     import Ad from "$lib/components/Ad.svelte";
     export let data;
 
@@ -38,6 +39,10 @@
     {data.rarity} Matrices
 </span>
 
+{#if data.unreleased}
+    <UnreleasedWarning />
+{/if}
+
 <h2 id="sets">Sets</h2>
 <div class="table-wrapper">
     <table class="bg-alternate">
@@ -59,6 +64,7 @@
 <Ad unit="lb1" />
 <Ad unit="mobile_mpu1" />
 
+{#if !data.unreleased}
 {#if data.matchingSimulacra.length > 0}
     <h2>Recommended Pairings</h2>
     <Menu>
@@ -81,6 +87,7 @@
             </MenuItem>
         {/each}
     </Menu>
+{/if}
 {/if}
 
 <style lang="scss">

@@ -1,0 +1,48 @@
+{
+    "name": "Yulan",
+    "id": 38,
+    "cnName": "yulan",
+    "rarity": "SSR",
+    "chinaOnly": true,
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 73,
+                "start": "17 May 2023",
+                "end": "7 Jun 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Final damage is increased by **13%**. In the **Way of Taoist** style, final damage is increased by an additional **14%**, and hitting with **Abyss Leap** takes **8%** more frost damage to the target for **20** seconds.\n\nEach equipped frost weapon increases the damage from spending stacks of Morale (**Looting Formation**) by **30%**. If **3** frost Weapons are equipped, final damage is increased by an additional **8%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "Final damage is increased by **18%**. In the **Way of Taoist** style, final damage is increased by an additional **14%**, and hitting with **Abyss Leap** takes **8%** more frost damage to the target for **20** seconds.\n\nEach equipped frost weapon increases the damage from spending stacks of Morale (**Looting Formation**) by **30%**. If **3** frost Weapons are equipped, final damage is increased by an additional **8%**."
+        }
+    ],
+    "giftTypes": [
+        "Everyday Items",
+        "Saved",
+        "Domain 9"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "fan"
+        }
+    ],
+    "gender": "Female",
+    "height": "175 cm",
+    "birthplace": "Domain 9",
+    "horoscope": "Aquarius",
+    "birthday": "9 Feb",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "秦文静"
+    }
+}
+

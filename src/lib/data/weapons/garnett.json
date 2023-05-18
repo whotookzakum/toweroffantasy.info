@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_liuhuo",
     "element": "flame",
     "type": "dps",
+    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "12.50"
@@ -174,6 +175,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/gXh8yhcbLrY?start=118",
+    "rating": [],
+    "recommendedPairings": ["Fiona","Lan","Annabella","Ruby","Lin"],
     "recommendedMatrices": [
         {
             "name": "Garnett",

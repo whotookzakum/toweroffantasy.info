@@ -134,6 +134,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
+    "rating": [58, 78, 55, 91, 68, 74],
+    "recommendedPairings": ["Fiona","Icarus","Alyss","Meryl","Ene"],
     "recommendedMatrices": [
         {
             "name": "Saki Fuwa",
@@ -160,5 +162,6 @@
             "pieces": 3,
             "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
         }
-    ]
+    ],
+    "analysisVideoSrc": "https://www.youtube.com/embed/-cYARcdvNac"
 }

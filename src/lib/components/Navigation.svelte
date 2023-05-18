@@ -16,7 +16,6 @@
             text: "Relics",
             href: "/relics",
         },
-        //No Mia yet
         // {
         //     text: "Smart Servants",
         //     href: "/smart-servants",

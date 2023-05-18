@@ -165,3 +165,22 @@ export const fetchAllServants = async () => {
 
     return allItems
 }
+
+export const fetchAllWeapons = async () => {
+    const allServantFiles = import.meta.glob('/src/lib/data/weapons/*.json')
+    const iterableItemFiles = Object.entries(allServantFiles)
+
+    const allItems = await Promise.all(
+        iterableItemFiles.map(async ([path, resolver]) => {
+            const data = await resolver()
+            const itemPath = path.slice(13, -5)
+
+            return {
+                ...data.default,
+                path: itemPath,
+            }
+        })
+    )
+
+    return allItems
+}

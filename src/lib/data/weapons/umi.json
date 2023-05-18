@@ -3,6 +3,7 @@
     "imgSrc": "item_Weapon_SSR_Whip_Phy01",
     "element": "physical",
     "type": "dps",
+    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "12.00"
@@ -146,6 +147,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/zHmMZAYxZrY?start=210",
+    "rating": [],
+    "recommendedPairings": ["Fiona","Gnonno","Lyra"],
     "recommendedMatrices": [
         {
             "name": "Umi",
@@ -172,5 +175,6 @@
             "pieces": 3,
             "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
         }
-    ]
+    ],
+    "analysisVideoSrc": "https://www.youtube.com/embed/Cm3eKL0G4iY"
 }

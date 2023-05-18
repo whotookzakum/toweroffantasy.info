@@ -138,6 +138,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/tiH-5dFUW1E?start=11",
+    "rating": [10, 0, 70, 20, 70, 80],   
+    "recommendedPairings": ["Fiona","Lyra","Nemesis","Zero"],
     "recommendedMatrices": [
         {
             "name": "Cocoritter",

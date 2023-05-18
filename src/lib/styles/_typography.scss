@@ -150,6 +150,14 @@ abbr[title*="Collab"] {
     }
 }
 
+abbr[title*="Meta"] {
+    background: green;
+
+    &::before {
+        content: "Meta";
+    }
+}
+
 .table-wrapper {
     overflow-x: auto;
     width: 100%;
@@ -338,6 +346,10 @@ h5 {
 
 h6 {
     font-size: var(--step-0);
+}
+
+h2 + h3 {
+    margin-top: 1.5rem;
 }
 
 .section-header {

@@ -156,6 +156,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
+    "rating": [46.66666666666667, 73.33333333333333, 73.33333333333333, 60, 46.66666666666667, 76.66666666666667],
+    "recommendedPairings": ["Fiona","Gnonno","Zero"],
     "recommendedMatrices": [
         {
             "name": "Lyra",
@@ -177,5 +179,6 @@
             "pieces": 3,
             "description": "A good substitute for SSR damage chips if you don't have them. Very useful against groups of mobs, i.e. in Bygone Phantasm."
         }
-    ]
+    ],
+    "analysisVideoSrc": "https://www.youtube.com/embed/XRvq1hoD-O4"
 }

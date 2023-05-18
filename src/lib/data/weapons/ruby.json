@@ -127,6 +127,8 @@
         }
     ],
     "abilitiesVideoSrc": "",
+    "rating": [],
+    "recommendedPairings": ["Fiona","Lan","Annabella"],
     "recommendedMatrices": [
         {
             "name": "Ruby",

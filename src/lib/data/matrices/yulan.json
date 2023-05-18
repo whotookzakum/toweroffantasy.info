@@ -1,0 +1,17 @@
+{
+    "name": "Yulan",
+    "chinaOnly": true,
+    "id": 33,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR33_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "When at least **1** frost weapon is equipped, nearby targets will take **260%** ATK damage every second while in combat. Using any frost weapon's skill or discharge skill increases final damage **6%/9%/12%/15%** for **30** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "After **Pian Zhen** consumes stacks of **Inner Strength** or **Battle Spirit**, final damage is increased by **12%** for **15** seconds. Dealing frost damage increases all elemental damage by **28%/32%/36%/40%** for **30** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+        }
+    ]
+}

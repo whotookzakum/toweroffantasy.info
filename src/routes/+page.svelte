@@ -215,7 +215,7 @@
     <h4>Special thanks</h4>
     <span
         >Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
-        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique, FortOfFans, Eminentglory</span
+        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique, FortOfFans, Eminentglory, Maygi</span
     >
 </footer>
 

@@ -133,6 +133,8 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/hQQTTuBKm0c?start=9",
+    "rating": [47, 0, 90, 30, 43, 81],
+    "recommendedPairings": ["Fiona","Fenrir","Tian Lang","Lin"],
     "recommendedMatrices": [
         {
             "name": "Cocoritter",
