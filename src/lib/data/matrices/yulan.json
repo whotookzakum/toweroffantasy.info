@@ -1,17 +1,17 @@
 {
     "name": "Yulan",
-    "unreleased": true,
+    "chinaOnly": true,
     "id": 33,
     "rarity": "SSR",
-    "imgSrc": "",
+    "imgSrc": "icon_matrix_SSR33_256",
     "sets": [
         {
             "pieces": 2,
-            "description": "When at least **1** frost weapon is equipped, nearby targets will take **260%** ATK damage every second. When any frost weapon skill or discharge skill is applied, final damage is increased by **6%/9%/12%/15%** for **30** seconds. The effect of this matrix also works for the extra weapon slot, but only the effect of the set with the highest star level is applied."
+            "description": "When at least **1** frost weapon is equipped, nearby targets will take **260%** ATK damage every second while in combat. Using any frost weapon's skill or discharge skill increases final damage **6%/9%/12%/15%** for **30** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
         },
         {
             "pieces": 4,
-            "description": "After Pian Zhen completely uses up his Inner Strength / Combat Spirit stacks, base damage is increased by **12%** for **15** seconds. When dealing cold damage, all elemental damage increases by **28%/32%/36%/40%** for **30** seconds. The effect of this matrix also works for the Extra Weapon Box, but only the effect of the set with the highest star level applies."
+            "description": "After **Pian Zhen** consumes stacks of **Inner Strength** or **Battle Spirit**, final damage is increased by **12%** for **15** seconds. Dealing frost damage increases all elemental damage by **28%/32%/36%/40%** for **30** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
         }
     ]
 }
