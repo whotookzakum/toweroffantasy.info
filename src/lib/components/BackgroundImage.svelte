@@ -8,7 +8,7 @@
         if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/liuhuo'
         if (path.includes("/garnett")) return 'huanxing/lihui/liuhuo'
         if (path.includes("/rubilia")) return 'huanxing/lihui/rubilia'
-        if (path.includes("/gunonno")) return 'huanxing/lihui/gunonno'
+        if (path.includes("/gnonno")) return 'huanxing/lihui/gunonno'
         if (path.includes("/fiona")) return 'huanxing/lihui/Fiona'
         if (path.includes("/icarus")) return 'huanxing/lihui/Icarus'
         if (path.includes("/lan")) return 'huanxing/lihui/lan'

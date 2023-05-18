@@ -5,6 +5,7 @@
     export let weapon;
 </script>
 
+<h3>Recommended Pairings</h3>
 <Menu>
     {#each weapon.recommendedPairings as recWep}
         <MenuItem href={recWep.pathToSimulacrum}>
@@ -26,3 +27,14 @@
         </MenuItem>
     {/each}
 </Menu>
+
+<style lang="scss">
+    .type-and-element {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .menu-item-name {
+        padding-bottom: 0.4rem;
+    }
+</style>

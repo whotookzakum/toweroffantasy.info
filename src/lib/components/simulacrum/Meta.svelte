@@ -6,8 +6,8 @@
     export let simulacrum;
 </script>
 
-<small class="section-header">{simulacrum.weapon.name}</small>
-<h2 id="meta">Meta</h2>
+<small id="meta" class="section-header" style:color={`var(--element-${simulacrum.weapon.element})`}>{simulacrum.weapon.name}</small>
+<h2>Meta</h2>
 {#if simulacrum.unreleased}
     <p>There's nothing here yet!</p>
 {:else}
@@ -15,8 +15,12 @@
     {#if simulacrum.weapon.rating.length > 0}
         <Rating weapon={simulacrum.weapon} />
     {/if}
-    <RecommendedPairings weapon={simulacrum.weapon} />
-    <RecommendedMatrices weapon={simulacrum.weapon} />
+    {#if simulacrum.weapon.recommendedPairings.length > 0}
+        <RecommendedPairings weapon={simulacrum.weapon} />
+    {/if}
+    {#if simulacrum.weapon.recommendedMatrices.length > 0}
+        <RecommendedMatrices weapon={simulacrum.weapon} />
+    {/if}
 {/if}
 
 <style lang="scss">
