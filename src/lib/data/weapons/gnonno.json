@@ -34,10 +34,10 @@
     ],
     "advancements": [
         "Increase the shatter of Frantic Digging, Boiling Octopus Balls, and Go on, Pip! by **80%**.\n\nGain a **50%** increase to Shield when these skills are used when the Wanderer's Shield is below **50%**. Lasts **8** seconds. This effect can only be triggered **1** time every **5** seconds (unavailable in Apex League).",
-        "Increase the current weapon's base ATK growth by **16%**.",
-        "**Pip Octowhip** limit is increased to **45**.\n\nIncrease physical damage by **25%** for **30** seconds after using Pip Ultimate.",
-        "Increase the current weapon's base ATK growth by **32%**.",
-        "Detonating Treasure Tracers refreshes the **grievous** status of targets.\n\nIncrease physical damage by **25%** when damage is dealt to targets with less than **80%** HP. This set effect works in the off-hand slot.",
+        "Increase the current weapon's base ATK growth by 16%.",
+        "Pip Octowhip limit is increased to **45**.\n\nIncrease physical damage by **25%** for **30** seconds after using Pip Ultimate.",
+        "Increase the current weapon's base ATK growth by 32%.",
+        "Detonating **Treasure Tracers** refreshes the **grievous** status of targets.\n\nIncrease physical damage by **25%** when damage is dealt to targets with less than **80%** HP. This set effect works in the off-hand slot.",
         "Increase damage dealt by detonating **Treasure Tracers** by **140%** of ATK."
     ],
     "abilities": [
@@ -50,11 +50,11 @@
             ],
             "description": "While on the ground, use normal attack to launch 5 consecutive attacks.",
             "breakdown": [
-                "**73.8%** of ATK + **4** and knockback.",
-                "**86.7%** of ATK + **5** and knockback",
-                "**71.9%** of ATK + **4** and knockback.",
-                "**196.1%** of ATK + **10** and knockback.",
-                "**211.4%** of ATK + **11** and **launch** the target."
+                "**60.4%** of ATK + **3** and knockback.",
+                "**70.9%** of ATK + **4** and knockback",
+                "**58.8%** of ATK + **3** and knockback.",
+                "**160.4%** of ATK + **8** and knockback.",
+                "**172.9%** of ATK + **9** and **launch** the target."
             ]
         },
         {
@@ -67,11 +67,11 @@
             ],
             "description": "While airborne, use normal attack to attack 5 consecutive attacks in mid-air, consuming endurance.  ",
             "breakdown": [
-                "**88.2%** of ATK + **5**.",
-                "**73.8%** of ATK + **4**.",
-                "**67.8%** of ATK + **4**.",
-                "**123.1%** of ATK + **6**.",
-                "**164.8%** of ATK + **9**."
+                "**72.1 %** of ATK + **4**.",
+                "**60.4%** of ATK + **3**.",
+                "**55.4%** of ATK + **3**.",
+                "**100.7%** of ATK + **5**.",
+                "**134.7%** of ATK + **9**."
             ]
         },
         {
@@ -82,7 +82,7 @@
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "When on the ground, tap and hold normal attack for the first to third normal attack to trigger Frantic Digging.\n\nContinuously attack forward in place while consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage to nearby targets equal to **36%** of ATK plus **2** and causes the target to become **grievous**, lasting **7** seconds."
+            "description": "When on the ground, tap and hold normal attack for the first to third normal attack to trigger Frantic Digging.\n\nContinuously attack forward in place while consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage to nearby targets equal to **29.4%** of ATK plus **2** and causes the target to become **grievous**, lasting **7** seconds."
         },
         {
             "name": "Boiling Octopus Balls",
@@ -93,7 +93,7 @@
                 "hold:Attack",
                 "hold:Attack"
             ],
-            "description": "During Frantic Digging, tap and hold normal attack to trigger Boiling Octopus Balls.\n\nContinuously attack forward while consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage equal to **36%** of ATK plus **2** to nearby targets. Once normal attack is released, deal damage equal to **54.1%** of ATK plus **3** to nearby targets and cause them to become **grievous** for **7** seconds.\n\nUse the directional controls to move during Boiling Octopus Balls."
+            "description": "During Frantic Digging, tap and hold normal attack to trigger Boiling Octopus Balls.\n\nContinuously attack forward while consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage equal to **29.4%** of ATK plus **2** to nearby targets. Once normal attack is released, deal damage equal to **44.1%** of ATK plus **2** to nearby targets and cause them to become **grievous** for **7** seconds.\n\nUse the directional controls to move during Boiling Octopus Balls."
         },
         {
             "name": "Go on, Pip!",
@@ -102,7 +102,7 @@
             "input": [
                 "hold:Attack"
             ],
-            "description": "When on the ground, tap and hold normal attack or hold during the fourth normal attack to trigger Go on, Pip!\n\nContinuously move forward while attacking and consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage equal to **36%** of ATK plus **2** to nearby targets, knocking the target back and causing them to become **grievous**, lasting for **7** seconds.\n\nUse the directional controls to move during Go on, Pip!"
+            "description": "When on the ground, tap and hold normal attack or hold during the fourth normal attack to trigger Go on, Pip!\n\nContinuously move forward while attacking and consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage equal to **29.4%** of ATK plus **2** to nearby targets, knocking the target back and causing them to become **grievous**, lasting for **7** seconds.\n\nUse the directional controls to move during Go on, Pip!"
         },
         {
             "name": "Waterspout Spike",
@@ -137,19 +137,19 @@
                 "Arrow keys",
                 "Dodge"
             ],
-            "description": "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Pursuing Tentacle, dealing damage equal to **106.3%** of ATK plus **6** to nearby targets."
+            "description": "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Pursuing Tentacle, dealing damage equal to 106.3% of ATK plus 6 to nearby targets."
         },
         {
             "name": "Exploration Team Strike",
             "type": "skill",
             "imgSrc": "skill_chainsaw_skill",
-            "description": "Enter a charging state and become temporarily invincible (unavailable in Apex League). Draw in nearby targets, dealing damage to them equal to **36%** of ATK plus **2** each time an attack lands. Cooldown: **20** seconds (cooldown starts upon entering charging state).\n\nUpon releasing, detonate all **Treasure Tracers** on nearby targets and cause **Octowhip** to enter a Rampage state, increasing the speed of coordinated attacks by **100%**, lasting for **12** seconds.\n\n\nDifferent release timings can be chosen depending on the number of **Minisquids** above the Wanderer.\n\n**Total Berserk**: When the number of **Minisquids** equals **2**, release to deal damage to nearby targets equal to **588%** of ATK plus **31**.\n\n**Partial Berserk**: When the number of **Minisquids** is **1** or **3**, release to deal damage to nearby targets equal to **411.6%** of ATK plus **22**. **Prowling Clones**: Gain **15 Octowhips** when in combat, which attack locked-on targets, dealing damage equal to **66.3%** of ATK and consuming **1** Octowhip each time an attack lands. A maximum of **30 Octowhips** can be stored at a time.\n\n**Pip Octowhip** Place **1 Treasure Tracer** on targets each time they are hit by an **Octowhip** which lasts for **20** seconds, for a maximum of **3** stacks.\n\nDetonate **1 Treasure Tracer** stack whenever physical damage aside from **Octowhip** is dealt to a target, dealing damage equal to **37.5%** of ATK. This effect can only be triggered **1** time every **0.1** seconds.\n\nGain **1** Octowhip whenever a discharge skill from any weapon hits a target. This effect can only be triggered **1** time every **0.1** seconds."
+            "description": "Enter a charging state and become temporarily invincible (unavailable in Apex League). Draw in nearby targets, dealing damage to them equal to **29.4%** of ATK plus **2** each time an attack lands. Cooldown: **20** seconds (cooldown starts upon entering charging state).\n\nUpon releasing, detonate all **Treasure Tracers** on nearby targets and cause **Octowhip** to enter a Rampage state, increasing the speed of coordinated attacks by **100%**, lasting for **12** seconds.\n\nDifferent release timings can be chosen depending on the number of **Minisquids** above the Wanderer.\n\n**Total Berserk**: When the number of **Minisquids** equals **2**, release to deal damage to nearby targets equal to **588%** of ATK plus **31**.\n\n**Partial Berserk**: When the number of **Minisquids is **1** or **3**, release to deal damage to nearby targets equal to **411.6%** of ATK plus **22**.\n\n**Prowling Clones**: Gain **15 Octowhips** when in combat, which attack locked-on targets, dealing damage equal to **115%** of ATK and consuming **1** Octowhip each time an attack lands. A maximum of **30** Octowhips can be stored at a time.\n\n**Pip Octowhip** Place **1 Treasure Tracer** on targets each time they are hit by an Octowhip which lasts for **20** seconds, for a maximum of **3** stacks.\n\nDetonate **1 Treasure Tracer** stack whenever physical damage aside from **Octowhip** is dealt to a target, dealing damage equal to **20%** of ATK. This effect can only be triggered **1** time every **0.1** seconds.\n\nGain **1** Octowhip whenever a discharge skill from any weapon hits a target. This effect can only be triggered **1** time every **0.1** seconds."
         },
         {
             "name": "Pip Ultimate",
             "type": "discharge",
             "imgSrc": "skill_chainsaw_changeskill",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the wielder** and briefly submerge the Wanderer, dealing damage to nearby targets equal to **265.2%** of ATK + **14** upon emerging. Upon landing, deal damage to nearby targets equal to **618.8%** of ATK + **33**, and gain the maximum number of **Pip Octowhip**. Damage immunity lasts for **1.5** seconds when the skill is active (unavailable in Apex League)."
+            "description": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the wielder and briefly submerge the Wanderer, dealing damage to nearby targets equal to 265.2% of ATK +14 upon emerging. Upon landing, deal damage to nearby targets equal to 618.8% of ATK + 33, and gain the maximum number of Pip Octowhip. Damage immunity lasts for 1.5 seconds when the skill is active (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/sltdX1RmGAc?start=196",
