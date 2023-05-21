@@ -169,7 +169,7 @@
             "name": "War Cry",
             "type": "skill",
             "imgSrc": "yulan_skill",
-            "description": "Deals damage equal to **2730%** ATK + **144** to the target, cooldown **15** seconds.\n\n**Pian Zhen** consumes up to **5** stacks of **Battle Spirit** when using any weapon skill during **Momentum**. For every **1/2/3/4/5** stack(s) consumed, deal and additional **242%/503%/1049%/2351%/3930%** of ATK damage, and an additional **270%** of ATK + **14** per second for **5** seconds to nearby targets.\n\nWhen using any frost weapon skill, gain **2** seconds of Hyperbody. War Cry can only be used in **Martial Artist** style.\n\n"
+            "description": "Deals damage equal to **2730%** ATK + **144** to the target, cooldown **15** seconds.\n\n**Pian Zhen** consumes up to **5** stacks of **Battle Spirit** when using any weapon skill during **Momentum**. For every **1/2/3/4/5** stack(s) consumed, deal and additional **242%/503%/1049%/2351%/3930%** of ATK damage, and an additional **270%** of ATK + **14** per second for **5** seconds to nearby targets.\n\nWhen using any frost weapon skill, gain **2** seconds of Hyperbody. War Cry can only be used in **Marauder** style.\n\n"
         },
         {
             "name": "Tiger's Step",
