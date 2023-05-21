@@ -149,7 +149,7 @@
             "name": "Pip Ultimate",
             "type": "discharge",
             "imgSrc": "skill_chainsaw_changeskill",
-            "description": "When weapon charge is full or Phantasia is triggered, upon switching to this weapon, remove all debuffs from the wielder and briefly submerge the Wanderer, dealing damage to nearby targets equal to 265.2% of ATK +14 upon emerging. Upon landing, deal damage to nearby targets equal to 618.8% of ATK + 33, and gain the maximum number of Pip Octowhip. Damage immunity lasts for 1.5 seconds when the skill is active (unavailable in Apex League)."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the wielder** and briefly submerge the Wanderer, dealing damage to nearby targets equal to **265.2%** of ATK + **14** upon emerging. Upon landing, deal damage to nearby targets equal to **618.8%** of ATK + **33**, and gain the maximum number of **Pip Octowhip**. Damage immunity lasts for **1.5** seconds when the skill is active (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/sltdX1RmGAc?start=196",
