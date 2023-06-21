@@ -75,7 +75,7 @@
             "input": [
                 "hold:Attack"
             ],
-            "description": "Tap and hold the normal attack button or do this after Lockdown Zone is triggered to continuously fire searing energy beams at enemies in a target direction, dealing damage equal to 40%** of ATK + **2**. Consumes Wanderer's endurance."
+            "description": "Tap and hold the normal attack button or do this after Lockdown Zone is triggered to continuously fire searing energy beams at enemies in a target direction, dealing damage equal to **40%** of ATK + **2**. Consumes Wanderer's endurance."
         },
         {
             "name": "Blazing Dive",
