@@ -10,7 +10,7 @@
     >
     <p>
         The following content has not been officially released in CN or Global
-        yet. It may contain leaked information, or is only live in a test server. Values will typically
+        yet. It may contain leaked and/or incomplete information, or is only live in a test server. Values will typically
         change upon official release, and translations might not be accurate.
     </p>
 </div>
