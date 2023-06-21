@@ -26,7 +26,7 @@
     "weaponEffects": [
         {
             "title": "Altered Resonance",
-            "description": "Altered Resonance: Increase ATK by **20%** and altered resistance by **30%**. Activate by equipping **2** or more altered weapons. This set effect works in the off-hand slot. Cannot stack with other Altered Resonance or Altered Reaction effects, with Altered Resonance taking precedence."
+            "description": "Increase ATK by **20%** and altered resistance by **30%**. Activate by equipping **2** or more altered weapons. This set effect works in the off-hand slot. Cannot stack with other Altered Resonance or Altered Reaction effects, with Altered Resonance taking precedence."
         }
     ],
     "advancements": [
