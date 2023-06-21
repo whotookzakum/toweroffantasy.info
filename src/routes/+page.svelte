@@ -8,40 +8,53 @@
     export let data;
 
     const todaysDate = new Date().getTime();
-    
+
     let global = {
-        all: data.glob.filter((banner) => new Date(banner.start).getTime() <= todaysDate),
+        all: data.glob.filter(
+            (banner) => new Date(banner.start).getTime() <= todaysDate
+        ),
         current: [],
         newest: [],
-        expanded: false
-    }
+        expanded: false,
+    };
 
-    global.current = global.all.filter((banner) => new Date(banner.end).getTime() >= todaysDate);
+    global.current = global.all.filter(
+        (banner) => new Date(banner.end).getTime() >= todaysDate
+    );
 
     // Sort by bannerNo, so uniqBy returns the original banner and not a rerun (Claudia #3 instead of Claudia #11)
     const sortedGlobalBanners = _.sortBy(global.all, ["bannerNo"]);
     // Get objects with unique names (first instance is kept) then sort in place to have the newest banners first
-    const sortedUniqueGlobalBanners = 
-        _.uniqBy(sortedGlobalBanners, "name")
-        .sort((a, b) => b.bannerNo - a.bannerNo);
+    const sortedUniqueGlobalBanners = _.uniqBy(
+        sortedGlobalBanners,
+        "name"
+    ).sort((a, b) => b.bannerNo - a.bannerNo);
 
     // Start date strings MUST match in .jsons, otherwise use Date().getTime() to ensure conversion
-    global.newest = sortedUniqueGlobalBanners.filter((banner) => banner.start === sortedUniqueGlobalBanners[0].start);
+    global.newest = sortedUniqueGlobalBanners.filter(
+        (banner) => banner.start === sortedUniqueGlobalBanners[0].start
+    );
 
     let china = {
-        all: data.cn.filter((banner) => new Date(banner.start).getTime() <= todaysDate),
+        all: data.cn.filter(
+            (banner) => new Date(banner.start).getTime() <= todaysDate
+        ),
         current: [],
         newest: [],
-        expanded: false
-    }
+        expanded: false,
+    };
 
-    china.current = china.all.filter((banner) => new Date(banner.end).getTime() >= todaysDate)
+    china.current = china.all.filter(
+        (banner) => new Date(banner.end).getTime() >= todaysDate
+    );
 
     const sortedChinaBanners = _.sortBy(china.all, ["bannerNo"]);
-    const sortedUniqueChinaBanners = 
-        _.uniqBy(sortedChinaBanners, "name")
-        .sort((a, b) => b.bannerNo - a.bannerNo);
-    china.newest = sortedUniqueChinaBanners.filter((banner) => banner.start === sortedUniqueChinaBanners[0].start)
+    const sortedUniqueChinaBanners = _.uniqBy(sortedChinaBanners, "name").sort(
+        (a, b) => b.bannerNo - a.bannerNo
+    );
+    china.newest = sortedUniqueChinaBanners.filter(
+        (banner) => banner.start === sortedUniqueChinaBanners[0].start
+    );
 </script>
 
 <svelte:head>
@@ -71,6 +84,7 @@
         rel="noopener noreferrer nofollow">Discord</a
     >.
 </p>
+
 <p>
     If the site has been helpful to you and you'd like to support its
     development, please disable adblock or consider sending a
@@ -206,20 +220,19 @@
 </ul>
 
 <div class="maintainer-note">
-    <strong
-        >
+    <strong>
         <Icon icon="ph:note-bold" width="24" height="24" />
         Note
-        </strong
+    </strong>
+    <p>The website is currently being maintained by eminentglory.</p>
+    <a
+        href="https://discordapp.com/users/851815237120163840"
+        target="_blank"
+        rel="noopener noreferrer"
     >
-    <p>
-        The website is currently being maintained by eminentglory.
-    </p>
-    <a href="https://discordapp.com/users/851815237120163840" target="_blank" rel="noopener noreferrer">
         eminentglory on discord
     </a>
-    </div>
-
+</div>
 
 <h3 id="credits">Credits</h3>
 <footer>
@@ -232,7 +245,8 @@
     <h4>Special thanks</h4>
     <span
         >Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
-        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique, FortOfFans, eminentglory, Maygi</span
+        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique,
+        FortOfFans, eminentglory, Maygi</span
     >
 </footer>
 
@@ -281,6 +295,12 @@
         box-shadow: 0 2px 8px var(--surface-shadow);
         transition: var(--transition-shadow);
         line-height: 1.5;
+
+        p {
+            margin: revert;
+            line-height: 1.4;
+            font-size: var(--step--1);
+        }
     }
 
     strong {
@@ -289,16 +309,10 @@
         font-size: var(--step--1);
         display: flex;
         align-items: center;
-        gap: .25rem;
+        gap: 0.25rem;
         margin-bottom: var(--space-3xs);
         text-transform: uppercase;
         color: var(--text2-dark);
-    }
-
-    p {
-        margin: 0;
-        line-height: 1.4;
-        font-size: var(--step--1);
     }
 
     footer {
