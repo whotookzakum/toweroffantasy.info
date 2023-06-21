@@ -76,13 +76,23 @@
             unreleased={simulacrum.unreleased}
         >
             {#if filters.showWeapon}
-                <img
+                {#if simulacrum.unreleased}
+                    <img
+                    src={"images/noimage (webp)/noimage_avatar.webp"}
+                    alt={simulacrum.weapon.name}
+                    width="128"
+                    height="128"
+                    loading="lazy"
+                />
+                {:else}
+                    <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
                     loading="lazy"
                 />
+            {/if}
                 <span class="menu-item-name">{simulacrum.weapon.name}</span>
             {:else}
                 <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
