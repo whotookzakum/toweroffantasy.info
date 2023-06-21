@@ -3,6 +3,7 @@
     import changelog from "$lib/data/changelog.json";
     import _ from "lodash";
     import Ad from "../lib/components/Ad.svelte";
+    import Icon from "@iconify/svelte";
 
     export let data;
 
@@ -204,7 +205,23 @@
     <li>SONGKRAN2023</li>
 </ul>
 
-<h3>Credits</h3>
+<div class="maintainer-note">
+    <strong
+        >
+        <Icon icon="ph:note-bold" width="24" height="24" />
+        Note
+        </strong
+    >
+    <p>
+        The website is currently being maintained by eminentglory.
+    </p>
+    <a href="https://discordapp.com/users/851815237120163840" target="_blank" rel="noopener noreferrer">
+        eminentglory on discord
+    </a>
+    </div>
+
+
+<h3 id="credits">Credits</h3>
 <footer>
     <h4>Created by</h4>
     <span>Pyrosu, Zakum</span>
@@ -215,7 +232,7 @@
     <h4>Special thanks</h4>
     <span
         >Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
-        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique, FortOfFans, Eminentglory, Maygi</span
+        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique, FortOfFans, eminentglory, Maygi</span
     >
 </footer>
 
@@ -247,6 +264,41 @@
     .outer-tr:hover {
         background: rgba(255, 255, 255, 0.05);
         color: var(--accent);
+    }
+
+    #credits {
+        margin-top: 0;
+    }
+
+    .maintainer-note {
+        --color-bg: rgb(34, 51, 99);
+        --color-border: rgb(24, 127, 187);
+        color: var(--text1-dark);
+        background: var(--color-bg);
+        padding: var(--space-xs);
+        margin: 1rem 0;
+        border-left: 4px solid var(--color-border);
+        box-shadow: 0 2px 8px var(--surface-shadow);
+        transition: var(--transition-shadow);
+        line-height: 1.5;
+    }
+
+    strong {
+        --type-text-color: var(--text2-dark);
+        font-style: normal;
+        font-size: var(--step--1);
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        margin-bottom: var(--space-3xs);
+        text-transform: uppercase;
+        color: var(--text2-dark);
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.4;
+        font-size: var(--step--1);
     }
 
     footer {
