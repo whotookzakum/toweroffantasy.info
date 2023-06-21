@@ -3,7 +3,6 @@
     "imgSrc": "item_Weapon_SSR_Whip_Phy01",
     "element": "physical",
     "type": "dps",
-    "isMeta": true,
     "shatter": {
         "tier": "S",
         "value": "12.00"
