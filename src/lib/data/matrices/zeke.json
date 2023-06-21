@@ -1,0 +1,17 @@
+{
+    "name": "Zeke",
+    "chinaOnly": true,
+    "id": 34,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR34_256",
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "The maximum number of Snake Chain members is increased to **5**. When equipped with at least **1** physical weapon, increase physical ATK by **18%/22%/26%/30%**. This set effect works in the off-hand slot, only the set with the highest star rating will take effect. "
+        },
+        {
+            "pieces": 4,
+            "description": "After a target is inflicted with Snake Bite, increase physical ATK by **20%**, lasting for **30** seconds, while also taking effect in the background. Upon entering combat, increase final damage by **28%/32%/36%/40%**. "
+        }
+    ]
+}

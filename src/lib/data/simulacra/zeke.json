@@ -1,0 +1,40 @@
+{
+    "name": "Zeke",
+    "id": 50,
+    "cnName": "mingjing",
+    "rarity": "SSR",
+    "chinaOnly": true,
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 74,
+                "start": "17 May 2024",
+                "end": "7 Jun 2024"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increase final damage by **12%**. Increase physical ATK to the highest stat value of physical, flame, frost, or volt. While using Zhi Ming, increase normal attack damage by **40%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increase final damage by **18%**. Increase physical ATK to the highest stat value of physical, flame, frost, or volt. While using Zhi Ming, increase normal attack damage by **60%**."
+        }
+    ],
+    "giftTypes": [
+        "Aesperia",
+        "Vera",
+        "Domain 9"
+    ],
+    "bestGifts": [],
+    "gender": "Male",
+    "height": "191 cm",
+    "birthplace": "Domain 9",
+    "horoscope": "Scorpio",
+    "birthday": "Nov 12",
+    "voiceActors": {
+        "cn": "Ma Yang (马洋)"
+    }
+}
