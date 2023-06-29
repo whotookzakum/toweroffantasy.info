@@ -1,17 +1,16 @@
 {
     "name": "Rubilia",
-    "chinaOnly": true,
     "id": 31,
     "rarity": "SSR",
     "imgSrc": "icon_matrix_SSR31_256",
     "sets": [
         {
             "pieces": 2,
-            "description": "Increase volt ATK by **14.5%/16.5%/18.5%/20.5%**. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect. "
+            "description": "Increase volt ATK by **14.5%/16.5%/18.5%/20.5%**. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         },
         {
             "pieces": 4,
-            "description": "Increase Crystamax thorn limit to **6**. Increase all elemental damage by **13%/16%/19%/22%** when a volt weapon lands an attack, lasting for **30** seconds. This set effect works in the off-hand slot, only the set with the highest star rating will take effect. "
+            "description": "Increase Crystamax thorn limit to **6**. Increase all elemental damage by **13%/16%/19%/22%** when a volt weapon lands an attack, lasting for **30** seconds. This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
         }
     ]
 }
