@@ -224,13 +224,13 @@
         <Icon icon="ph:note-bold" width="24" height="24" />
         Note
     </strong>
-    <p>The website is currently being maintained by eminentglory.</p>
+    <p>The site is currently being maintained by eminentglory.</p>
     <a
         href="https://discordapp.com/users/851815237120163840"
         target="_blank"
         rel="noopener noreferrer"
     >
-        eminentglory on discord
+        <Icon icon="bxl:discord-alt" color="#439eac" width="40" />
     </a>
 </div>
 
@@ -300,6 +300,11 @@
             margin: revert;
             line-height: 1.4;
             font-size: var(--step--1);
+        }
+        
+        a {
+            border: none;
+            margin-right: 10px;
         }
     }
 
