@@ -46,10 +46,6 @@
             href: "https://www.ghzs666.com/tower-of-fantasy-map#/",
         },
         {
-            text: "Team Builder",
-            href: "https://teammaker.lunarheart.repl.co/",
-        },
-        {
             text: "Shop",
             href: "https://aida-cafe.shop/",
         },
@@ -142,6 +138,7 @@
         {/each}
     </div>
     <footer>
+        <!-- svelte-ignore a11y-invalid-attribute -->
         <a class="nn-cmp-show" href="#">Cookies</a>
         <a href="/privacy">Privacy</a>
     </footer>
