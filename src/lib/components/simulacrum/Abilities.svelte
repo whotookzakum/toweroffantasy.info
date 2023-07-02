@@ -19,13 +19,15 @@
                 <div class="ability">
                     <dt>
                         <div class="skill-title-wrapper">
-                            <img
-                                src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.webp`}
-                                alt=""
-                                width="82"
-                                height="82"
-                                loading="lazy"
-                            />
+                            {#if ability.imgSrc.length > 0}
+                                <img
+                                    src={`/images/Icon/skill/WeaponSkill/${ability.imgSrc}.webp`}
+                                    alt=""
+                                    width="82"
+                                    height="82"
+                                    loading="lazy"
+                                />
+                            {/if}
                             <div class="skill-title">
                                 <span>{ability.type}</span>
                                 <h5>{ability.name}</h5>
