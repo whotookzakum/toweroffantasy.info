@@ -1,0 +1,40 @@
+{
+    "name": "Mimi",
+    "id": 51,
+    "cnName": "",
+    "rarity": "SSR",
+    "unreleased": true,
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 2000,
+                "start": "7 Jun 2050",
+                "end": "5 Jul 2050"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Final damage increased by **13%**.\n\nWhen 3 volt weapons are equipped, get a **6%** volt damage increase."
+        },
+        {
+            "affinity": 4000,
+            "description": "Final damage increased by **18%**.\n\nWhen 3 volt weapons are equipped, get a **6%** volt damage and crit rate increase.\n\nThe duration of the effect is increased by **25** seconds, triggering an explosion after the buff of the strike rate, you will get an additional **30** seconds of **18%** explosion damage bonus."
+        }
+    ],
+    "giftTypes": [
+        "Domain 9"
+    ],
+    "bestGifts": [],
+    "gender": "Female",
+    "height": "195 cm",
+    "birthplace": "???",
+    "horoscope": "Aquarius",
+    "birthday": "24 Apr",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "Mu Xue Ting (穆雪婷)"
+    }
+}
