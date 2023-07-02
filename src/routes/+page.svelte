@@ -214,9 +214,9 @@
 <h2>Event Codes</h2>
 <small>List of the latest known working coupon codes.</small>
 <ul class="horizontal-list">
-    <li>tofniconico2023</li>
-    <li>UA455ELX</li>
-    <li>SONGKRAN2023</li>
+    <li>LETSGODOMAIN9</li>
+    <li>TOFGALAXY</li>
+    <li>Link2Domain9</li>
 </ul>
 
 <div class="maintainer-note">
