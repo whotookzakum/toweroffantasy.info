@@ -18,8 +18,7 @@
         },
         // {
         //     text: "Smart Servants",
-        //     href: "/smart-servants",
-        //     chinaOnly: true
+        //     href: "/smart-servants"
         // },
         {
             text: "Exploration",
