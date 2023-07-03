@@ -44,6 +44,7 @@
         if (path.includes("/hilda")) return 'huanxing/lihui/xierda'
         if (path.includes("/pepper")) return 'huanxing/lihui/peipei'
         if (path === "/food") return 'Activity/ThemeActivity/huodong_meishi_guo'
+        if (path.includes("bubble-gun")) return 'Artifact/icon/artifact_ssr_020'
         if (path.includes("alternate-destiny")) return 'Artifact/itemicon/artifact_ssr_011_icon'
         if (path.includes("chosen-dice")) return 'Artifact/itemicon/artifact_ssr_014'
         if (path.includes("colossus-arm")) return 'Artifact/itemicon/artifact_ssr_001'

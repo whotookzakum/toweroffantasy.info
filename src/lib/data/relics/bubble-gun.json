@@ -1,0 +1,14 @@
+{
+    "name": "Bubble gun",
+    "chinaOnly": true,
+    "imgSrc": "artifact_ssr_020",
+    "rarity": "SSR",
+    "description": "Use the bubble gun, press once to consume **1** point of bubble water, and blow out a small amount of small bubbles forwards, each dealing damage equal to **200%** of ATK. Press and hold the button for **0.5** seconds and consume **5** points of bubble water to blow out big bubbles forwards, each dealing damage equal to **600%** of ATK to enemies hit, launching small targets and trapping them in the air. Can only be used once every **15** seconds and does not work on targets with hyperbody. Cooldown: **5** seconds.\n\nBubble water restores by **1** point every **3** seconds. When an enemy is eliminated, restore **10** bubble water. The maximum amount of bubble water is **30** points.",
+    "advancements": [
+        "Increase the amount of small bubbles blown out, when blowing out small bubbles, move backwards and gain a **10%** movement speed bonus for **30** seconds.",
+        "Every time you blow out a bubble, the wanderer gains **1/3** layers of happy time, each providing the wanderer with a **2.4%** damage increase, up to **5** layers, for **60** seconds.",
+        "After using bubble gun, summon a bubble elf. The elf will continue to blow bubbles and refresh the duration of the wanderer's happy time for **150** seconds.",
+        "Increase flame damage by **2%**, effective even when not in battle. Not effective in Apex League.",
+        "The damage increase effect of happy time is increased by another **0.8%** per layer."
+    ]
+}
