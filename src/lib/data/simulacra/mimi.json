@@ -1,13 +1,12 @@
 {
     "name": "Mimi",
     "id": 51,
-    "cnName": "",
+    "cnName": "blank",
     "rarity": "SSR",
-    "unreleased": true,
     "banners": {
         "cn": [
             {
-                "bannerNo": 2000,
+                "bannerNo": 79,
                 "start": "7 Jun 2050",
                 "end": "5 Jul 2050"
             }

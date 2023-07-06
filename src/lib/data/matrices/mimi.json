@@ -1,9 +1,8 @@
 {
     "name": "Mimi",
-    "unreleased": true,
     "id": 35,
     "rarity": "SSR",
-    "imgSrc": "",
+    "imgSrc": "../../../noimage (webp)/noimage_matrix",
     "sets": [
         {
             "pieces": 2,
