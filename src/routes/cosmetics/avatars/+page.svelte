@@ -42,8 +42,7 @@
     by raising the respective simulacrum's Awakening points (friendship) to 200.
 </p>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <div class="table-wrapper">
     <table class="bg-alternate">

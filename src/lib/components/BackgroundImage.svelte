@@ -5,9 +5,10 @@
     // Can't put this component on each page because it doesn't work inside the grid, must be at root level
 
     const getImgSrc = (path) => {
-        if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/yulan'
+        if (path === "/simulacra" || path === "/matrices") return 'huanxing/lihui/mingjing'
+        if (path.includes("/zeke")) return 'huanxing/lihui/mingjing'
         if (path.includes("/yulan")) return 'huanxing/lihui/yulan'
-        if (path.includes("/garnett")) return 'huanxing/lihui/liuhuo'
+        if (path.includes("/liu-huo")) return 'huanxing/lihui/liuhuo'
         if (path.includes("/rubilia")) return 'huanxing/lihui/rubilia'
         if (path.includes("/gnonno")) return 'huanxing/lihui/gunonno'
         if (path.includes("/fiona")) return 'huanxing/lihui/Fiona'
@@ -43,6 +44,7 @@
         if (path.includes("/hilda")) return 'huanxing/lihui/xierda'
         if (path.includes("/pepper")) return 'huanxing/lihui/peipei'
         if (path === "/food") return 'Activity/ThemeActivity/huodong_meishi_guo'
+        if (path.includes("bubble-gun")) return 'Artifact/icon/artifact_ssr_020'
         if (path.includes("alternate-destiny")) return 'Artifact/itemicon/artifact_ssr_011_icon'
         if (path.includes("chosen-dice")) return 'Artifact/itemicon/artifact_ssr_014'
         if (path.includes("colossus-arm")) return 'Artifact/itemicon/artifact_ssr_001'

@@ -80,8 +80,7 @@
     </table>
 </div>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 {#if data.videoSrc}
     <h4 id="preview">Preview</h4>

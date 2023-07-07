@@ -64,8 +64,7 @@
 
 <SimulacrumFilters bind:filters />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
@@ -76,13 +75,23 @@
             unreleased={simulacrum.unreleased}
         >
             {#if filters.showWeapon}
-                <img
+                {#if simulacrum.unreleased}
+                    <img
+                    src={"images/noimage (webp)/noimage_avatar.webp"}
+                    alt={simulacrum.weapon.name}
+                    width="128"
+                    height="128"
+                    loading="lazy"
+                />
+                {:else}
+                    <img
                     src={`/images/Icon/weapon/Icon/${simulacrum.weapon.imgSrc}.webp`}
                     alt={simulacrum.weapon.name}
                     width="128"
                     height="128"
                     loading="lazy"
                 />
+            {/if}
                 <span class="menu-item-name">{simulacrum.weapon.name}</span>
             {:else}
                 <Avatar name={simulacrum.name} cnName={simulacrum.cnName} />
@@ -96,8 +105,7 @@
     {/each}
 </Menu>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <h2 id="sr"><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
 <Menu>

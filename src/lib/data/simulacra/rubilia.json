@@ -1,7 +1,6 @@
 {
     "name": "Rubilia",
     "id": 48,
-    "chinaOnly": true,
     "cnName": "leibiliya",
     "rarity": "SSR",
     "banners": {
@@ -15,17 +14,29 @@
                 "bannerNo": 64,
                 "start": "19 Apr 2023",
                 "end": "3 May 2023"
+            },
+            {
+                "bannerNo": 81,
+                "start": "5 Jul 2023",
+                "end": "2 Aug 2023"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 40,
+                "start": "2 Jun 2023",
+                "end": "26 Jun 2023"
             }
         ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": "For every volt weapon equipped, increase volt ATK by **6%**."
+            "description": "Increase volt damage by **6%** for every **1** volt weapon equipped. "
         },
         {
             "affinity": 4000,
-            "description": "For every volt weapon equipped, increase volt ATK by **8%**. The duration of **Suppression** is increased to **120** seconds."
+            "description": "Increase volt damage by **8%** for every **1** volt weapon equipped. The amount of time that Grayspace Entities are controlled by Seal is increased to **120** seconds."
         }
     ],
     "giftTypes": [

@@ -1,0 +1,61 @@
+{
+    "name": "Liu Huo",
+    "id": 37,
+    "cnName": "liuhuo",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 67,
+                "start": "19 Apr 2023",
+                "end": "17 May 2023"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 44,
+                "start": "27 Jun 2023",
+                "end": "17 Jul 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increase final damage by **13%**. When **Pine Comet** is in the off-hand slot, **Sparrow Feather** launch frequency increased to **1** per second."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increase final damage by **18%**. When **Pine Comet** is in the off-hand slot, Sparrow Feather launch frequency increases to **1** per second. When Sparrow Feather hits and triggers the spreading effect, it additionally spreads **Ion Scorch** and **Cross Burn**.\n\nIn team play, your damage taken from the aggroed target is reduced by **5%**. When Fortitude Resonance is activated, the damage reduction increases to **8%**."
+        }
+    ],
+    "giftTypes": [
+        "Everyday Items",
+        "Metal Items",
+        "Domain 9"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "ropepuzzle"
+        },
+        {
+            "points": 80,
+            "gift": "fan"
+        },
+        {
+            "points": 60,
+            "gift": "floatingcard"
+        }
+    ],
+    "gender": "Female",
+    "height": "153 cm",
+    "birthplace": "???",
+    "horoscope": "Leo",
+    "birthday": "19 Aug",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": "葛子瑞"
+    }
+}

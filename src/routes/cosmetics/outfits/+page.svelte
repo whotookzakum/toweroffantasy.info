@@ -44,8 +44,7 @@
     caption="Preview of most outfits from version 2.4."
 />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <div class="table-wrapper">
     <table class="bg-alternate">

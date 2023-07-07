@@ -1,5 +1,6 @@
 <script>
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
+    import Ad from "$lib/components/Ad.svelte";
     export let data;
 </script>
 
@@ -24,4 +25,8 @@
     })}
 </p>
 
-<svelte:component class="hey" this={data.content} />
+<Ad unit="Article" refreshOnNav />
+
+<article id="npArticle" class="main-layout full-bleed">
+    <svelte:component class="hey" this={data.content} />
+</article>

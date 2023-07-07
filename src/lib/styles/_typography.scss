@@ -161,6 +161,7 @@ abbr[title*="Meta"] {
 .table-wrapper {
     overflow-x: auto;
     width: 100%;
+    max-width: 800px;
 }
 
 table {
@@ -168,7 +169,8 @@ table {
     margin: 1rem 0;
     line-height: 1.75;
     font-size: var(--step--1);
-    min-width: 100%;
+    width: 100%;
+    max-width: 800px;
     border-collapse: collapse;
 
     th {

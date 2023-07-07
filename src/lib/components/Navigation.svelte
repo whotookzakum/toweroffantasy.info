@@ -18,8 +18,7 @@
         },
         // {
         //     text: "Smart Servants",
-        //     href: "/smart-servants",
-        //     chinaOnly: true
+        //     href: "/smart-servants"
         // },
         {
             text: "Exploration",
@@ -44,10 +43,6 @@
         {
             text: "Interactive Map",
             href: "https://www.ghzs666.com/tower-of-fantasy-map#/",
-        },
-        {
-            text: "Team Builder",
-            href: "https://teammaker.lunarheart.repl.co/",
         },
         {
             text: "Shop",
@@ -142,7 +137,8 @@
         {/each}
     </div>
     <footer>
-        <a class="nn-cmp-show" href="#">Cookies</a>
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <span data-ccpa-link="1"></span>
         <a href="/privacy">Privacy</a>
     </footer>
 </nav>

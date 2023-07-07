@@ -4,7 +4,7 @@
     import WeaponMaterial from "$lib/components/simulacrum/WeaponMaterial.svelte";
     import Item from "../Item.svelte";
 
-    $: values = [0, 170];
+    $: values = [0, 200];
 
     const materials = {
         global: {

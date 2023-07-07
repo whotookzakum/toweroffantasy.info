@@ -29,8 +29,7 @@
 <SectionNavigation links={["innars","miasmic swamp","abyss", "grayspace", "mirroria", "vera", "aesperia"]} />
 <h1>Exploration</h1>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="innars">Innars</h2>
 <div class="table-wrapper">
@@ -63,8 +62,7 @@
     </table>
 </div>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <h2 id="miasmic-swamp">Miasmic Swamp</h2>
 <div class="table-wrapper">
@@ -97,8 +95,7 @@
     </table>
 </div>
 
-<Ad unit="lb4" />
-<Ad unit="mobile_lb1" />
+<Ad unit="Banner3" />
 
 <h2 id="abyss">Confounding Abyss</h2>
 <div class="table-wrapper">
@@ -131,8 +128,7 @@
     </table>
 </div>
 
-<Ad unit="lb4" />
-<Ad unit="mobile_lb1" />
+<Ad unit="Banner4" />
 
 <h2 id="grayspace">Grayspace & Twilight Zone</h2>
 <div class="table-wrapper">
@@ -165,8 +161,7 @@
     </table>
 </div>
 
-<Ad unit="lb4" />
-<Ad unit="mobile_lb1" />
+<Ad unit="Banner5" />
 
 <h2 id="mirroria">Mirroria</h2>
 <div class="table-wrapper">
@@ -199,7 +194,7 @@
     </table>
 </div>
 
-<Ad unit="mobile_lb3" />
+<Ad unit="Banner6" />
 
 <h2 id="vera">Vera</h2>
 <div class="table-wrapper">
@@ -232,8 +227,7 @@
     </table>
 </div>
 
-<Ad unit="lb5" />
-<Ad unit="mobile_lb4" />
+<Ad unit="Banner7" />
 
 <h2 id="aesperia">Aesperia</h2>
 <div class="table-wrapper">
