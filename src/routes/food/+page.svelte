@@ -76,8 +76,7 @@
 
 <FoodFilters bind:filters />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="dishes">Dishes</h2>
 <div class="table-wrapper">
@@ -151,8 +150,7 @@
     </table>
 </div>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <h2 id="ingredients">Ingredients</h2>
 <div class="table-wrapper">

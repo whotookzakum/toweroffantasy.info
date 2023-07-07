@@ -7,7 +7,7 @@
     import SvelteMarkdown from "svelte-markdown";
     import Youtube from "$lib/components/Youtube.svelte";
     import Ad from "$lib/components/Ad.svelte";
-    import UpgradeMaterials from "../../../lib/components/smart-servants/UpgradeMaterials.svelte";
+    import UpgradeMaterials from "$lib/components/smart-servants/UpgradeMaterials.svelte";
 
     export let data;
 </script>
@@ -48,18 +48,15 @@
 
 <SvelteMarkdown source={data.description} />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <Advancements weapon={data} />
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <Abilities data={data} />
 
-<Ad unit="lb5" />
-<Ad unit="mobile_lb3" />
+<Ad unit="Banner3" />
 
 <UpgradeMaterials gifts={data.bestGifts} />
 

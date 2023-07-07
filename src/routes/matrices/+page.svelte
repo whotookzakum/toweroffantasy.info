@@ -37,8 +37,7 @@
     to weapons, with each star unlocking higher values for the set effect.
 </p>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Matrices</h2>
 <Menu>
@@ -66,8 +65,7 @@
     {/each}
 </Menu>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <h2 id="sr"><span style="color: var(--tier-a)">SR</span> Matrices</h2>
 <Menu>
@@ -85,9 +83,7 @@
     {/each}
 </Menu>
 
-<Ad unit="lb4" />
-<Ad unit="mobile_lb1" />
-<Ad unit="mobile_lb3" />
+<Ad unit="Banner3" />
 
 <h2 id="r"><span style="color: var(--tier-b)">R</span> Matrices</h2>
 <Menu>
@@ -105,9 +101,7 @@
     {/each}
 </Menu>
 
-<Ad unit="lb5" />
-<Ad unit="mobile_lb4" />
-<Ad unit="mobile_lb5" />
+<Ad unit="Banner4" />
 
 <h2 id="n"><span style="color: var(--tier-c)">N</span> Matrices</h2>
 <Menu>

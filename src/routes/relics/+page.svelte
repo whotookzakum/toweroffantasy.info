@@ -33,8 +33,7 @@
     Relics (aka Gadgets) are tools that aid the player in exploration or combat.
 </p>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Relics</h2>
 <Menu>
@@ -52,8 +51,7 @@
     {/each}
 </Menu>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <h2 id="sr"><span style="color: var(--tier-a)">SR</span> Relics</h2>
 <Menu>

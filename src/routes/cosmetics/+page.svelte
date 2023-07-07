@@ -72,8 +72,7 @@
     some can be acquired for free. Cosmetic gachapon items may have reruns.
 </p>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <Menu>
     {#each links as link}

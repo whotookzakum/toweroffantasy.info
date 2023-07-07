@@ -3,35 +3,26 @@
     import Navigation from "$lib/components/Navigation.svelte";
     import BackgroundImage from "$lib/components/BackgroundImage.svelte";
     import Ad from "$lib/components/Ad.svelte";
-    import { GoogleAnalytics } from '@beyonk/svelte-google-analytics'
-    import { page } from "$app/stores";
-    import { browser } from "$app/environment";
+    import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     let navIsOpen;
-
-    $: {
-        if (browser) {
-            window.reloadAdSlots()
-        }
-        console.log($page.url.pathname)
-    }
 </script>
 
 <svelte:head>
     <meta property="og:site_name" content="Tower of Fantasy Index" />
 </svelte:head>
 
-<GoogleAnalytics properties={['G-N68SWH7ZJB']} />
+<GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
 <div class="layout" class:open={navIsOpen}>
     <Navigation bind:navIsOpen />
-    <main>
+    <main class="main-layout">
         <slot />
         <footer class="page-footer">&copy; 2023 Tower of Fantasy Index.</footer>
     </main>
 </div>
 <BackgroundImage />
-<Ad unit="lb2" />
-<Ad unit="mobile_lb2" />
-<Ad unit="player" />
+
+<Ad unit="StickyBottom" refreshOnNav />
+<Ad unit="Video" refreshOnNav />
 
 <style global lang="scss">
     .layout {
@@ -64,6 +55,9 @@
 
     main {
         background: var(--surface1);
+    }
+
+    :global(.main-layout) {
         width: 100%;
         max-width: var(--content-max-width);
         margin: 0 auto;

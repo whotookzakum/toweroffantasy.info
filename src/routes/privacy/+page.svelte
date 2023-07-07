@@ -15,6 +15,7 @@
 
 <div class="privacy-policy">
     <h1>Privacy Policy</h1>
+    <span data-ccpa-link="1"></span>
     <h2>Introduction</h2>
     <ol>
         <li>
@@ -33,14 +34,14 @@
             will ask you to consent to our use of cookies when you first visit
             our website.
         </li>
-        <li>This website is owned and operated by Zakum#3080.</li>
+        <li>This website is owned and operated by .zakum.</li>
         <li>
             The hosting facility for our website is located in the United
             States.
         </li>
         <li>
             You can contact us on Discord by sending a direct message to
-            Zakum#3080.
+            .zakum.
         </li>
     </ol>
     <h2>Credit</h2>

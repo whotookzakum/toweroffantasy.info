@@ -32,8 +32,7 @@
     different colors available at certain levels.
 </p>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="underwater">Underwater mounts</h2>
 <Menu>
