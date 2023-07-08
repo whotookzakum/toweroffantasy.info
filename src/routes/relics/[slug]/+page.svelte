@@ -38,13 +38,11 @@
 
 <SvelteMarkdown source={data.description} />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <Advancements weapon={data} />
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 {#if data.videoSrc}
     <h4 id="preview">Preview</h4>

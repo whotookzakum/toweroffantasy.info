@@ -3,7 +3,6 @@
     import changelog from "$lib/data/changelog.json";
     import _ from "lodash";
     import Ad from "../lib/components/Ad.svelte";
-    import Icon from "@iconify/svelte";
 
     export let data;
 
@@ -103,8 +102,7 @@
     >.
 </p>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="banners">Banners</h2>
 <div class="table-wrapper">
@@ -219,25 +217,19 @@
     <li>Link2Domain9</li>
 </ul>
 
-<div class="maintainer-note">
-    <strong>
-        <Icon icon="ph:note-bold" width="24" height="24" />
-        Note
-    </strong>
-    <p>The site is currently being maintained by eminentglory.</p>
+<h3 id="credits">Credits</h3>
+<footer>
+    <h4>Created by</h4>
+    <span>Pyrosu, Zakum</span>
+
+    <h4>Maintained by</h4>
     <a
         href="https://discordapp.com/users/851815237120163840"
         target="_blank"
         rel="noopener noreferrer"
     >
-        <Icon icon="bxl:discord-alt" color="#439eac" width="40" />
+        Eminentglory
     </a>
-</div>
-
-<h3 id="credits">Credits</h3>
-<footer>
-    <h4>Created by</h4>
-    <span>Pyrosu, Zakum</span>
 
     <h4>Original contents by</h4>
     <span>Pyrosu, BakuBaku, Sera Naoki</span>
@@ -282,30 +274,6 @@
 
     #credits {
         margin-top: 0;
-    }
-
-    .maintainer-note {
-        --color-bg: rgb(34, 51, 99);
-        --color-border: rgb(24, 127, 187);
-        color: var(--text1-dark);
-        background: var(--color-bg);
-        padding: var(--space-xs);
-        margin: 1rem 0;
-        border-left: 4px solid var(--color-border);
-        box-shadow: 0 2px 8px var(--surface-shadow);
-        transition: var(--transition-shadow);
-        line-height: 1.5;
-
-        p {
-            margin: revert;
-            line-height: 1.4;
-            font-size: var(--step--1);
-        }
-        
-        a {
-            border: none;
-            margin-right: 10px;
-        }
     }
 
     strong {

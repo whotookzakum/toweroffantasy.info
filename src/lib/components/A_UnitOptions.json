@@ -1,0 +1,28 @@
+{
+    "StickyBottom": {
+        "refreshLimit": 20,
+        "refreshTime": 30,
+        "format": "anchor",
+        "anchor": "bottom",
+        "mediaQuery": "(min-width: 1025px), (min-width: 768px) and (max-width: 1024px), (min-width: 320px) and (max-width: 767px)"
+    },
+    "Article": {
+        "refreshLimit": 20,
+        "refreshTime": 30,
+        "format": "article",
+        "pageInterval": 1
+    },
+    "Video": {
+        "format": "video-nc",
+        "video": {
+            "float": "always"
+        }
+    },
+    "Banner": {
+        "refreshLimit": 20,
+        "refreshTime": 30,
+        "renderVisibleOnly": true,
+        "refreshVisibleOnly": true,
+        "sizes": []
+    }
+}

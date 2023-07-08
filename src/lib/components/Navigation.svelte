@@ -138,7 +138,7 @@
     </div>
     <footer>
         <!-- svelte-ignore a11y-invalid-attribute -->
-        <a class="nn-cmp-show" href="#">Cookies</a>
+        <span data-ccpa-link="1"></span>
         <a href="/privacy">Privacy</a>
     </footer>
 </nav>

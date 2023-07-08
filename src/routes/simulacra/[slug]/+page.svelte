@@ -99,30 +99,22 @@
 <WeaponHeader weapon={simulacrum.weapon} />
 <WeaponEffects weapon={simulacrum.weapon} rarity={simulacrum.rarity} />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <Advancements weapon={simulacrum.weapon} />
 
-<Ad unit="lb3" />
-<Ad unit="mobile_lb1" />
-
 <Abilities weapon={simulacrum.weapon} />
 
-<Ad unit="lb4" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 {#if simulacrum.rarity === "SSR"}
     <UpgradeMaterials weapon={simulacrum.weapon} />
     <Meta {simulacrum} />
-    <Ad unit="lb5" />
-    <Ad unit="mobile_lb3" />
+    <Ad unit="Banner3" />
 {/if}
 
 <h2 id="awakening">Awakening</h2>
 <AwakeningTraits traits={simulacrum.traits} />
-
-<Ad unit="mobile_lb4" />
 
 {#if !simulacrum.unreleased}
     <AwakeningGifts
@@ -137,5 +129,3 @@
 {:else}
     <p>There's nothing here yet!</p>
 {/if}
-
-<Ad unit="mobile_lb5" />

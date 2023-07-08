@@ -50,8 +50,7 @@
 
 <!-- <ServantFilters bind:filters /> -->
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <Menu>
     {#each servants as servant}

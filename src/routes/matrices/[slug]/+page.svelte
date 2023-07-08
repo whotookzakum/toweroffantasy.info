@@ -61,8 +61,7 @@
     </table>
 </div>
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 {#if !data.unreleased}
 {#if data.matchingSimulacra.length > 0}

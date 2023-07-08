@@ -64,8 +64,7 @@
 
 <SimulacrumFilters bind:filters />
 
-<Ad unit="lb1" />
-<Ad unit="mobile_mpu1" />
+<Ad unit="Banner1" />
 
 <h2 id="ssr"><span style="color: var(--tier-s)">SSR</span> Simulacra</h2>
 <Menu>
@@ -106,8 +105,7 @@
     {/each}
 </Menu>
 
-<Ad unit="lb3" />
-<Ad unit="mobile_mpu2" />
+<Ad unit="Banner2" />
 
 <h2 id="sr"><span style="color: var(--tier-a)">SR</span> Simulacra</h2>
 <Menu>
