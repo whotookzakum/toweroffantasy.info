@@ -1,6 +1,6 @@
 {
     "name": "Meng Zhang",
-    "imgSrc": "",
+    "imgSrc": "item_Weapon_SSR_mimi",
     "element": "volt",
     "type": "defense",
     "isMeta": true,
@@ -28,116 +28,116 @@
             "description": "Increase Volt ATK by **15%** and Volt Resistance by **25%**. Activate by equipping **2** or more Volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
         },
         {
-            "title": "Thunder - Field",
+            "title": "Thunder: Stopping Current",
             "description": "When Meng Zhang hits any attack, it will deal damage equal to **1,875%** of volt ATK + **31%** * own maximum HP + **1,125%** * the sum of all elemental resistances + **3, 750%** * crit rate to nearby targets , can be triggered at most once every **1.5** seconds, and volt damage is regarded as normal attack damage. If a non-volt weapon is equipped, volt damage will be increased to **2.5** times. Additionally, volt damage is not affected by damage-increasing effects other than the rare attributes of Titan equipment, nor will it trigger additional attack effects."
         }
     ],
     "advancements": [
-        "After Meng Zhang charges his power, **2** little green dragons will appear at a time, and each little green dragon will restore **20%** of the maximum HP for the summoned object; the damage of Meng Zhang's charged attack and the little green dragon's damage will be increased by **50%**.\n\nGain **3** layers of Azure Dragon Power immediately after releasing Qingyun Frightening Moon, and gain **1** layer of Azure Dragon Power after releasing other Thunder weapon skills.",
+        "[Thunderblast] summons **2** azure dragons at once, each of which restores **20%** of the summoner's HP.\n\nDamage from [Thunderblast] and azure dragons is increased by **50%**.\n\nThe character receives **3** stacks of Azure Dragon Power when using [Terrifying Moon] and **1** stack of Azure Dragon Power when using any other skill of a volt weapon.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "Qinglong: The cooldown of the main skill of the thunder weapon is reduced by **33%**, not affected by skill cooldown clear, reset, and change (excluding Gleipnir's 'Sonic Carnival'), and a **30%** increase in lightning damage.",
+        "Azure Dragon: The cooldown of every volt weapon skill is reduced by **33%**, and it is no longer affected by other cleaning, reset, and changing the cooldown time (with the exception of Fenrir's skill).\n\nIncreases the damage from the skills of every volt weapon by **30%**.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "When receiving fatal damage, it will resist the fatal damage and be immune to damage for a period of time, **60** seconds cooldown.\n\nWhen the Resonance of Resolute is activated, the Meng Zhang Linking Skill can be released to pull non-boss monsters (ignoring Super Body).\n\nWhen Resonance of Perseverance is activated and you are in the team dungeon.",
-        "After releasing Qingyun Frightening Moon, gain **15%** volt damage and **25%** final damage increase for **30** seconds, non-superimposed"
+        "When taking lethal damage, the character resists it and will be immune to further damage for a short period of time. Cooldown: **60** seconds.\n\nWhen the Spirit Power Resonance is active, Mimi's discharge skill will attract all non-boss enemies (ignoring the Hyperbody effect).\n\nWhen the Spirit Power Resonance is active and the character is in a team, every **6** seconds of using [Thunderblast] creates a Lightning Time Chapter that weaves into a grid that can block movement and damage from enemy bullets. Each Chapter of Lightning Time exists for **20** seconds.",
+        "Increases electrical damage by **15%** and base damage by **25%** after applying [Terrifying Moon]. The effect lasts **30** seconds and cannot be folded."
     ],
     "abilities": [
         {
-            "name": "Jumping bead sense jade",
+            "name": "Jump pearls and shake jade",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_mimi_melee",
             "input": [
                 "Attack x5"
             ],
-            "description": "When on the ground, click general attack to perform five consecutive attacks.",
+            "description": "While on the ground, use a normal attack to carry out 5 consecutive attacks.",
             "breakdown": [
-                "**184%** of ATK + **x**.",
-                "**278%** of ATK + **x**.",
-                "**808%** of ATK + **x**.",
-                "**670%** of ATK + **x**.",
-                "**334%** of ATK + **x**."
+                "**184%** of ATK + **184**.",
+                "**278%** of ATK + **278**.",
+                "**808%** of ATK + **808**.",
+                "**670%** of ATK + **670**.",
+                "**334%** of ATK + **334**."
             ]
         },
         {
-            "name": "Landing",
+            "name": "Climb and walk",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_mimi_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
             ],
-            "description": "While airborne, press normal attack to attack 5 times in the air while consuming endurance.",
+            "description": "While in the air, use a normal attack to carry out 5 consecutive attacks, expending stamina.",
             "breakdown": [
-                "**187%** of ATK + **x**.",
-                "**304%** of ATK + **x**.",
-                "**835%** of ATK + **x**.",
-                "**575%** of ATK + **x**.",
-                "**373%** of ATK + **x**."
+                "**187%** of ATK.",
+                "**304%** of ATK.",
+                "**835%** of ATK.",
+                "**575%** of ATK.",
+                "**373%** of ATK."
             ]
         },
         {
-            "name": "Meng Zhang Guanri",
+            "name": "Thunderblast",
             "type": "normal",
-            "imgSrc": "",
-            "input": [
-                "Attack",
-                "hold:Attack"
-            ],
-            "description": "When on the ground, when using the first to fourth general attack, press and hold the general attack to trigger Meng Zhang Guanri, and consume endurance.\n\nLaunch an attack to the front, dealing damage equal to **666%** of ATK + **1,257** to targets in range, and float the target."
-        },
-        {
-            "name": "Choice Explosion",
-            "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_mimi_powerattack",
             "input": [
                 "hold:Attack"
             ],
-            "description": "Press and hold to enter the power storage, and continue to fire thunder and lightning at the target, each hit deals damage equal to **128%** of ATK + **x**.\n\nDuring the power storage period, a small green dragon will be summoned every **1.5** seconds, releasing a shock wave to the target, dealing damage equal to **200%** of ATK + **x**.\n\nAccumulative attacks and Xiaoqinglong shock waves will reduce the target’s lightning resistance within **10** seconds with each hit **3%**, up to **15%** reduction.\n\nDuring the power-up period, the player will dominate the body and every **1.5** seconds the player will get **10%** of the maximum health protection.\n\n, The shield has a maximum life of **30%**, and the shield lasts for up to **15** seconds. Activate when perseverance resonates, additional shields will be provided to allied units (=**10%** of the player’s health)."
+            "description": "Tap and hold a normal attack to unleash lightning continuously, dealing damage equal to **108%** of ATK with each strike.\n\nDuring the use of [Thunderblast], every **1.5** seconds, an azure dragon is summoned, which will release shockwaves at the target, dealing damage equal to **200%** of ATK.\n\nEach hit of the [Thunderblast] and the azure dragon reduces the target's volt resistance by **3%** for **10** seconds, up to a maximum reduction of **15%**. When the Spirit Power Resonance is activated, each hit of  [Thunderblast] reduces all resistances of the target.During the use of [Thunderblast], the character receives the Hyperbody effect, and every **1.5** seconds the character receives a shield equal to **10%** of max HP for **15** seconds. The strength of the shield cannot be more than **30%** of max HP. With active Spirit Power Resonance, all allies also receive a shield of **10%** of the character's max HP.Hitting [Thunderblast] during the existence of an azure dragon is capable of provoking a target."
         },
         {
-            "name": "Youlong",
+            "name": "Screen",
             "type": "normal",
-            "imgSrc": "",
+            "imgSrc": "skill_mimi_meleebranch",
+            "input": [
+                "Attack x1 - 4",
+                "hold:Attack"
+            ],
+            "description": "While on the ground, press and hold a normal attack after the first to fourth completed base attack to deal damage equal to **666%** of ATK, using stamina."
+        },
+        {
+            "name": "Flying Dragon",
+            "type": "normal",
+            "imgSrc": "skill_mimi_airbranch",
             "input": [
                 "Jump",
-                "Attack",
+                "Attack x1 - 4",
                 "hold:Attack"
             ],
-            "description": "When the pioneer is stagnant, when using the first to fourth general attack, press and hold the general attack to touch travel the dragon and consume stamina.\n\nLaunch an attack to the front, dealing **666%** of ATK + **1,257** to targets in range, and float the target."
+            "description": "While in the air, press and hold a normal attack after the first to fourth completed base attack to deal damage equal to **666%** of ATK, using stamina."
         },
         {
-            "name": "Qinglong Power",
+            "name": "The Power of the Azure Dragon",
             "type": "normal",
-            "imgSrc": "",
-            "description": "When using Meng Zhang, every **3** general attack hits will add **1** layer of 'Qinglong Power' to yourself.\n\n, Lasts for 30 seconds, up to **8** layers can be obtained, and when the perseverance resonance is activated, it will be obtained (green Dragon Power Layers * **1.5**)% damage reduction."
+            "imgSrc": "skill_mimi_beidong",
+            "description": "**Passive**: \n\nWhen using Mimi's weapon, every **3** completed basic attacks gives the character **1** stack of \"Azure Dragon Powers\" for **30** seconds. Up to **8** stacks are added. When the Spirit Power Resonance is activated, the decrease in the character's incoming damage increases by **(Number of Spirit Power Resonance stacks * 1.5)%**."
         },
         {
             "name": "Dodge",
             "type": "dodge",
             "imgSrc": "common_evade",
-            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\nPassive: Send thunder and lightning hydrangea to the front."
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\n**Passive**: Releases Thunder Hydrangea."
         },
         {
-            "name": "Electric type",
+            "name": "Like lightning",
             "type": "dodge",
-            "imgSrc": "",
+            "imgSrc": "skill_mimi_evadeattack",
             "input": [
                 "Arrow keys",
                 "Dodge",
                 "Attack"
             ],
-            "description": "Within a short period of time after any dodge, click general attack to trigger a power-up.\n\nInstantly appears in the position of Thunder Hydrangea, dealing **215%** of ATK + **4** to nearby targets, and generate a thunder pool, dealing a total of **302%** of ATK + **570**.\n\nContinue to damage and absorb enemy units, and then return to the starting position.\n\n**Passive**: During the electric shock, you dominate the body, and after the electric system hits the target, you get a layer of 'Green Dragon Power'."
+            "description": "The character instantly moves to the place of the Thunder Hydrangea, dealing damage equal to **215%** of ATK to the nearest targets, and creating a thunder puddle that deals up to **302%** of ATK damage and attracts nearby enemies. The character then returns to its original position before moving.\n\n**Passive**: during the movement, the character receives the Hyperbody effect, and at the end of the movement, the character receives **1** stack of Power of the azure dragon."
         },
         {
-            "name": "Qingyun Youyue",
+            "name": "Terrifying Moon",
             "type": "skill",
-            "imgSrc": "",
-            "description": "Qinglong flies to the sky, dealing damage equal to **3,591%** of ATK + **6,778** to targets in range and summon the Qinglong. During the existence of the Qinglong, it will continue to consume the power of the Qinglong and release the thunder.\n\nRelease up to **8** thunderbolts, the damage range of thunderbolts is **1,313%** of ATK + **2,478**.\n\nWhen Qinglong exits, he deals another **3,000%** of ATK + **5,662** damage.\n\nThe skill initially has **2** points, and **1** skill point is restored every **30** seconds.\n\n**Passive**: When equipped with **3** volt weapons, trigger the Qinglong Level **2** effect."
+            "imgSrc": "skill_mimi_skill",
+            "description": "The Azure Dragon flies into the sky, dealing damage equal to **3591%** of ATK to nearby targets, and summoning the Azure Dragon on the battlefield.\n\nThe Azure Dragon existing on the battlefield will spend its energy to release up to **8** lightnings, each of them dealing damage equal to **1313%** of ATK. When the Azure Dragon leaves the battlefield, it additionally deals damage to nearby targets equal to **3000%** of ATK.\n\nThe skill has **2** charges. One charge of the skill is restored for **30** seconds.\n\n**Passive**: Equip **3** volt weapons to summon a level **2** Azure Dragon: hitting [Terrifying Moon] imposes a **30-second** effect on targets, dealing damage equal to **2%** of ATK every **600** seconds.\n\nAfter the use of [Terrifying Moon], the duration azure dragons is updated.\n\nDuring the use of [Terrifying Moon], the Wanderer receives the Hyperbody effect."
         },
         {
-            "name": "Flying dragon in the sky",
+            "name": "Dragon flying in the sky",
             "type": "discharge",
-            "imgSrc": "",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon will **clear all debuffs from the user** and gather strength and detonates after hitting the ground, dealing damage equal to **3,060%** of ATK + **5,775**, and floating the target, during which the Wanderer has damage immunity for **2.6** seconds (unavailable in Apex League).\n\n**Passive**: After holding Meng Zhang during the illusion period or switching from other weapons to returning the bend, it will create a powerful range damage (not subject to damage enhancement effects other than the rare attributes of Titan equipment)\n\nIf the effect is affected, it can be triggered up to **1** time during the illusion period)"
+            "imgSrc": "skill_mimi_changeskill",
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, remove all debuffs from the wielder upon switching to this weapon and deal damage equal to **3060%** of ATK to nearby targets.While the skill is active, it gives immunity to damage for **2.6** seconds. (not available in Apex League).\n\n**Passive**: Using Mimi’s discharge deals heavy damage to an area that cannot be increased or reduced by buffs or debuffs of final damage, except for the unique characteristics of Titanium equipment. It works no more than **1** time after triggering Phantasia."
         }
     ],
     "rating": [],

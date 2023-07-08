@@ -1,8 +1,9 @@
 {
     "name": "Mimi",
-    "id": 51,
-    "cnName": "blank",
+    "id": 41,
+    "cnName": "mimi",
     "rarity": "SSR",
+    "chinaOnly": true,
     "banners": {
         "cn": [
             {
@@ -15,22 +16,24 @@
     "traits": [
         {
             "affinity": 1200,
-            "description": "Final damage increased by **13%**.\n\nWhen **3** volt weapons are equipped, get a **6%** volt damage increase."
+            "description": "Final damage is increased by **13%**.\n\nEquip **3** pieces of electricity weapons to increase electricity damage by **6%**."
         },
         {
             "affinity": 4000,
-            "description": "Final damage increased by **18%**.\n\nWhen **3** volt weapons are equipped, get a **6%** volt damage and crit rate increase.\n\nThe duration of the effect is increased by **25** seconds, triggering an explosion after the buff of the strike rate, you will get an additional **30** seconds of **18%** explosion damage bonus."
+            "description": "Final damage is increases by **18%**.\n\nEquip **3** pieces of electricity weapons to increase electricity damage by **6%** and extend the received crit increase chance by **25** seconds.\n\nAfter the character receives such a crit effect. Final damage increases by **18%** for **30** seconds."
         }
     ],
     "giftTypes": [
+        "Toys",
+        "Figurines",
         "Domain 9"
     ],
     "bestGifts": [],
     "gender": "Female",
-    "height": "195 cm",
-    "birthplace": "???",
+    "height": "135 cm",
+    "birthplace": "Tenzhang Pavilion",
     "horoscope": "Aquarius",
-    "birthday": "24 Apr",
+    "birthday": "7 Jul",
     "voiceActors": {
         "jp": "",
         "en": "",

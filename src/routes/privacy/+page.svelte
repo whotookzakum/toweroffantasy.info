@@ -413,10 +413,5 @@
             If you block cookies, you may not be able to use all the features on
             our website.
         </li>
-        <li>
-            You can manage your cookies here: <a class="nn-cmp-show" href="#"
-                >Manage Cookie Settings</a
-            >.
-        </li>
     </ol>
 </div>

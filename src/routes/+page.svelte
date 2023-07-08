@@ -276,18 +276,6 @@
         margin-top: 0;
     }
 
-    strong {
-        --type-text-color: var(--text2-dark);
-        font-style: normal;
-        font-size: var(--step--1);
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
-        margin-bottom: var(--space-3xs);
-        text-transform: uppercase;
-        color: var(--text2-dark);
-    }
-
     footer {
         font-size: var(--step--2);
         line-height: 1.6;
