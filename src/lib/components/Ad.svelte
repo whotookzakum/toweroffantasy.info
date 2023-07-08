@@ -21,7 +21,7 @@
     function generateAd() {
         window["nitroAds"].createAd("np" + unit, {
             ...unitOptions[optionName],
-            demo: unit === "Video" ? false : true,
+            // demo: unit === "Video" ? false : true,
         });
     }
 </script>
