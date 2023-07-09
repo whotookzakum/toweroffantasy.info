@@ -10,7 +10,7 @@
         },
         {
             "pieces": 4,
-            "description": "While **Benediction Resonance** is not active, after using **Scatter Technique**, increase final damage by **17%/19%/21%/23%** for **20** seconds. While **Benediction Resonance** is active, after using **Scatter Technique**, increase final damage for self and teammates by **8.5%/9.5%/10.5%/11.5%** for **20** seconds. Final damage is additionally increased based on attack by **(Base ATK/10000)%, up to **5%**. This matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+            "description": "While **Benediction Resonance** is not active, after using **Scatter Technique**, increase final damage by **17%/19%/21%/23%** for **20** seconds. While **Benediction Resonance** is active, after using **Scatter Technique**, increase final damage for self and teammates by **8.5%/9.5%/10.5%/11.5%** for **20** seconds. Final damage is additionally increased based on attack by **(Base ATK/10000)%**, up to **5%**. This matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
         }
     ]
 }
