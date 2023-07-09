@@ -38,5 +38,5 @@
         </small>
         <div id={`np${unit}`} />
     </div> -->
-    <div id={`np${unit}`} />
+    <div id={`np${unit}`} class="full-bleed" />
 {/if}

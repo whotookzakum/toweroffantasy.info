@@ -4,6 +4,7 @@
         "refreshTime": 30,
         "format": "anchor",
         "anchor": "bottom",
+        "anchorBgColor": "transparent",
         "mediaQuery": "(min-width: 1025px), (min-width: 768px) and (max-width: 1024px), (min-width: 320px) and (max-width: 767px)"
     },
     "Article": {
@@ -16,13 +17,35 @@
         "format": "video-nc",
         "video": {
             "float": "always"
-        }
+        },
+        "mediaQuery": "(min-width: 1025px)"
     },
     "Banner": {
         "refreshLimit": 20,
         "refreshTime": 30,
         "renderVisibleOnly": true,
         "refreshVisibleOnly": true,
-        "sizes": []
+        "sizes": [
+            [
+                "728",
+                "90"
+            ],
+            [
+                "300",
+                "250"
+            ],
+            [
+                "336",
+                "280"
+            ],
+            [
+                "320",
+                "50"
+            ],
+            [
+                "320",
+                "100"
+            ]
+        ]
     }
 }
