@@ -4,7 +4,7 @@
     export let gifts;
 </script>
 
-<h3 id="upgrade-materials">Upgrade Materials</h3>
+<h3 id="upgrade-materials">Preferred Favors</h3>
 <ol class="gifts">
     {#each gifts as gift}
         <li>

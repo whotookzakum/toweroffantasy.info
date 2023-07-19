@@ -1,0 +1,54 @@
+{
+    "name": "Yu lan",
+    "id": 38,
+    "cnName": "yulan",
+    "rarity": "SSR",
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 73,
+                "start": "17 May 2023",
+                "end": "7 Jun 2023"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 48,
+                "start": "18 Jul 2023",
+                "end": "7 Aug 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increase final damage by **13%**. While in the **Martial Artist** form, additionally increase final damage by **7%**.\n\nWhile in the **Sweeping Force** form, for every **1** frost weapon equipped, increase damage dealt via consuming Fighting Spirit by **9%**. When **3** frost weapons are equipped, increase frost damage by **8%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increase final damage by **18%**. While in the **Martial Artist** form, additionally increase final damage by **7%**.\n\nWhile in the **Sweeping Force** form, for every **1** frost weapon equipped, increase damage dealt via consuming Fighting Spirit by **9%**. When **3** frost weapons are equipped, increase frost damage by **8%**."
+        }
+    ],
+    "giftTypes": [
+        "Everyday Items",
+        "Saved",
+        "Domain 9"
+    ],
+    "bestGifts": [
+        {
+            "points": 80,
+            "gift": "fan"
+        }
+    ],
+    "gender": "Female",
+    "height": "175 cm",
+    "birthplace": "Domain 9",
+    "horoscope": "Aquarius",
+    "birthday": "9 Feb",
+    "voiceActors": {
+        "jp": "",
+        "en": "Brianna Knickerbocker",
+        "cn": "秦文静"
+    }
+}
+
