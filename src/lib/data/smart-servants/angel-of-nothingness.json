@@ -2,7 +2,6 @@
     "name": "Angel of Nothingness",
     "imgSrc": "LH_FightPet_2",
     "number": 25,
-    "chinaOnly": true,
     "type": "dps",
     "element": "flame",
     "attack": 2125,

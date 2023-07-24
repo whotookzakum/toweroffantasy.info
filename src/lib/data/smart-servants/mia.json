@@ -1,8 +1,7 @@
 {
     "name": "Mia",
-    "imgSrc": "",
+    "imgSrc": "LH_FightPet_6",
     "number": 18,
-    "chinaOnly": true,
     "element": "altered",
     "type": "dps",
     "attack": 2125,

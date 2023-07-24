@@ -228,7 +228,7 @@
         target="_blank"
         rel="noopener noreferrer"
     >
-        Eminentglory
+        eminentglory
     </a>
 
     <h4>Original contents by</h4>

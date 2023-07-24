@@ -43,10 +43,6 @@
 </span>
 
 <Header data={data} />
-<Effects weapon={data}/>
-
-
-<SvelteMarkdown source={data.description} />
 
 <Ad unit="Banner1" />
 

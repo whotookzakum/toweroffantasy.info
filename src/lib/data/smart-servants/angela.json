@@ -2,31 +2,31 @@
     "name": "Angela",
     "imgSrc": "LH_FightPet_3",
     "number": 27,
-    "chinaOnly": true,
     "element": "ice",
     "type": "dps",
     "attack": 2125,
     "crit": 1800,
     "description": "Inherits **12%** of the Wanderer's flame, ice, volt and physical ATK. Angela has **1** module spot and **5** skill points.",
     "advancements": [
-        "Increase attack inheritance to **18%**, increase Angela's Flying Kick damage to **1602%** of ATK, Angela now has **2** module spots and **8** skill points.",
-        "Increase attack inheritance to **24%**, increase Frost Explosion damage to **1481%** of ATK, Angela now has **3** module spots and **11** skill points.",
-        "Increase attack inheritance to **30%**, increase Angela Loves You damage to **1668%** of ATK, Angela now has **4** module spots and **15** skill points."
+        "Inherits **4%** of the average value of the master's flame, frost, volt, and physical base attack values.\n\nUnlocks **1** module slot and **5** load. ",
+        "ATK inheritance increases to **6%**.\n\nAngela's Flying Kick's damage increases to **1,602%**.\n\nUnlocks **2** module slots and **8** load.",
+        "ATK inheritance increases to **8%**.\n\nFrozen Burst's damage increases to **1,481%**.\n\nUnlocks **3** module slots and **11** load.",
+        "ATK inheritance increases to **10%**.\n\nAngela Loves You!'s damage increases to **1,668%**.\n\nUnlocks **4** module slots and **15** load. "
     ],
     "abilities": [
         {
-            "name": "Frost Explosion",
-            "effect": "Angela aims at an enemy. An ice burst deals damage equal to **987%** of ATK  damage to hit enemies, and cause the target to freeze for **6** seconds.",
+            "name": "Frozen Burst",
+            "effect": "Angela raises both arms, creating a burst of ice at the enemies' location, dealing damage equal to **987%** of ATK to hit enemies and causing them to become Frostbitten for 6 seconds. ",
             "imgSrc": 1
         },
         {
-            "name": "Angela Loves You",
-            "effect": "Angela raised her hands high, accumulating strength on top of her head. Then she shoots the power at the enemy in front, dealing damage equal to **1112%** of ATK, and applying the **frostbyte** state on the target.",
+            "name": "Angela Loves You!",
+            "effect": "Angela lifts both arms, creating an ice ball above its head, then smashes it toward enemies ahead, dealing damage equal to **1,112%** of ATK to hit enemies and causing them to become Frostbitten for 6 seconds. ",
             "imgSrc": 2
         },
         {
             "name": "Angela's Flying Kick",
-            "effect": "Angela flies up for a distance, then dives down and kicks the enemy, dealing damage equal to **1068%** of ATK to the target.",
+            "effect": "Angela flies up a distance, then swoops down with a flying kick, dealing damage equal to **1,068%** of ATK to enemies in its path.",
             "imgSrc": 3
         }
     ],
