@@ -2,7 +2,6 @@
     "name": "Kaka",
     "imgSrc": "LH_FightPet_1",
     "number": 18,
-    "chinaOnly": true,
     "element": "physical",
     "type": "dps",
     "attack": 2125,
