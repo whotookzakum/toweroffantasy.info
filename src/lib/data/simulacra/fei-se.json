@@ -1,33 +1,26 @@
 {
-    "name": "Liu Huo",
-    "id": 37,
+    "name": "Fei Se",
+    "id": 42,
     "cnName": "liuhuo",
     "rarity": "SSR",
     "banners": {
         "cn": [
             {
-                "bannerNo": 67,
-                "start": "19 Apr 2023",
-                "end": "17 May 2023"
-            }
-        ],
-        "glob": [
-            {
-                "bannerNo": 44,
-                "start": "27 Jun 2023",
-                "end": "17 Jul 2023"
+                "bannerNo": 86,
+                "start": "2 Aug 2023",
+                "end": "29 Aug 2023"
             }
         ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": "Increase final damage by **13%**. When **Pine Comet** is in the off-hand slot, **Sparrow Feather** launch frequency increased to **1** per second."
+            "description": "Increase final damage by **13%**. After releasing Soaring, for every flame weapon equipped, increase final damage by **4%** for **30** seconds. "
         },
         {
             "affinity": 4000,
-            "description": "Increase final damage by **18%**. When **Pine Comet** is in the off-hand slot, Sparrow Feather launch frequency increases to **1** per second. When Sparrow Feather hits and triggers the spreading effect, it additionally spreads **Ion Scorch** and **Cross Burn**.\n\nIn team play, your damage taken from the aggroed target is reduced by **5%**. When Fortitude Resonance is activated, the damage reduction increases to **8%**."
-        }
+            "description": "Increase final damage by **18%**. After releasing Soaring, for every flame weapon equipped, increase final damage by **6%** for **30** seconds."
+        }   
     ],
     "giftTypes": [
         "Everyday Items",
