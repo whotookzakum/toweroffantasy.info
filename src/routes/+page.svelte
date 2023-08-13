@@ -209,14 +209,6 @@
     </table>
 </div>
 
-<h2>Event Codes</h2>
-<small>List of the latest known working coupon codes.</small>
-<ul class="horizontal-list">
-    <li>LETSGODOMAIN9</li>
-    <li>TOFGALAXY</li>
-    <li>Link2Domain9</li>
-</ul>
-
 <h3 id="credits">Credits</h3>
 <footer>
     <h4>Created by</h4>
