@@ -1,6 +1,6 @@
 {
     "name": "Zeke",
-    "chinaOnly": true,
+    "chinaOnly": false,
     "id": 34,
     "rarity": "SSR",
     "imgSrc": "icon_matrix_SSR34_256",
