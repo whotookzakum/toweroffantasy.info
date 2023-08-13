@@ -20,25 +20,25 @@
     {
         "name": "Jade Elegance",
         "imgSrcs": ["fashion_f52","fashion_m52"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Jade Elegance event.",
+        "source": "Obtained from gachapon during the Jade Elegance event.",
         "videoSrc": "https://www.youtube.com/watch?v=CsVhdb91E-0"
     },
     {
-        "name": "Yin Hai Tempest",
+        "name": "Innarsian Fashion",
         "imgSrcs": ["fashion_f51", "fashion_m51"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Inhay Breeze event.",
+        "source": "Obtained from gachapon during the Innarsian Fashion event.",
         "videoSrc": "https://www.youtube.com/watch?v=fn0GahBznNE"
     },
     {
-        "name": "Black and White Homology",
+        "name": "Black & White",
         "imgSrcs": ["fashion_f50", "fashion_m50"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 11th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
+        "source": "Obtained from gachapon during the Black & White event.",
         "videoSrc": "https://www.youtube.com/watch?v=PegT5UdMOpU?start=13"
     },
     {
         "name": "Retro Revival",
         "imgSrcs": ["fashion_f49", "fashion_m49"],
-        "source": "<abbr title='China Exclusive'></abbr> From events",
+        "source": "Obtained by purchasing the 8th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 11th Collector's Edition Pass.",
         "videoSrc": "https://www.youtube.com/watch?v=PegT5UdMOpU"
     },
     {
@@ -60,27 +60,27 @@
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc"
     },
     {
-        "name": "Floating Whisper",
+        "name": "Reflected Whispers",
         "imgSrcs": ["fashion_f44", "fashion_m44"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Floating Whisper event.",
+        "source": "Obtained from gachapon during the Floating Whisper event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=6"
     },
     {
-        "name": "Matrix",
+        "name": "Noir",
         "imgSrcs": ["fashion_f43", "fashion_m43"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
+        "source": "Obtained by purchasing the 7rd Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 9th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=12"
     },
     {
-        "name": "Uninhibited Drum",
+        "name": "Wild Beat",
         "imgSrcs": ["fashion_f42", "fashion_m42"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event.",
+        "source": "Obtained by purchasing the Anniversary Collector's Giftbox for 6480 tanium.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wild Beat event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=18"
     },
     {
-        "name": "Vibrant Youth",
+        "name": "Dynamic Youth",
         "imgSrcs": ["fashion_f41", "fashion_m41"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
+        "source": "Obtained by purchasing the 6rd Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 8th Collector's Edition Pass. Later became purchasable for 1280 tanium.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=24"
     },
     {
@@ -90,27 +90,33 @@
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=30"
     },
     {
+        "name": "Fantastic Phantom",
+        "imgSrcs": ["fashion_f39", "fashion_m39"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Fantastic Phantom event.",
+        "videoSrc": "https://www.youtube.com/watch?v=NhGCfrae9fg"
+    },
+    {
         "name": "Dawn",
         "imgSrcs": ["fashion_f38", "fashion_m38"],
         "source": "Obtained by purchasing the 5th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 7th Collector's Edition Pass.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=36"
     },
     {
-        "name": "High Speed Wind",
+        "name": "Race The Wind",
         "imgSrcs": ["fashion_f36", "fashion_m36"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from an event.",
+        "source": "Obtained from gachapon during the Race The Wind event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=42"
     },
     {
         "name": "Academy Era",
         "imgSrcs": ["fashion_f35", "fashion_m35"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event.",
+        "source": "Obtained by Web Gachapon event called Lucky Card.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=48"
     },
     {
         "name": "Clear Rainbow",
         "imgSrcs": ["fashion_f34", "fashion_m34"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 6th Collector's Edition Pass.",
+        "source": "Obtained by purchasing the 4th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 6th Collector's Edition Pass.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=54"
     },
     {
