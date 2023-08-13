@@ -1,5 +1,23 @@
 [
     {
+        "name": "Sea Breeze Whisper",
+        "imgSrcs": ["fashion_f66","fashion_m66"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Sea Breeze Whisper event.",
+        "videoSrc": "https://www.youtube.com/watch?v=cI9M21zbXgg"
+    },
+    {
+        "name": "Morning Star Cruise",
+        "imgSrcs": ["fashion_f54","fashion_m54"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Morning Star Cruise event.",
+        "videoSrc": "https://www.youtube.com/watch?v=Qcx5pwn9rBc"
+    },
+    {
+        "name": "Casual Costume",
+        "imgSrcs": ["fashion_f53","fashion_m53"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 13th Collector's Edition Pass.",
+        "videoSrc": "https://www.youtube.com/watch?v=Bhgz3r0zwIs"
+    },
+    {
         "name": "Jade Elegance",
         "imgSrcs": ["fashion_f52","fashion_m52"],
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Jade Elegance event.",
