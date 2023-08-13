@@ -146,7 +146,7 @@
     {
         "name": "Starlight",
         "imgSrcs": ["fashion_f26", "fashion_m26"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event.",
+        "source": "Obtained from gift pack for 2980 tanium\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=78"
     },
     {
@@ -156,15 +156,15 @@
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=84"
     },
     {
-        "name": "Cherry Blossom",
+        "name": "Early Sakura",
         "imgSrcs": ["fashion_f22", "fashion_m22"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event.",
+        "source": "Obtained from Fenrir Order Gift\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=90"
     },
     {
         "name": "Midnight",
         "imgSrcs": ["fashion_f20", "fashion_m20"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event.",
+        "source": "Obtained from Fiona Order Gift\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Banges exhibition event, Streamer wheel event.",
         "videoSrc": "https://www.youtube.com/embed/rKzgowQ_xUc?start=96"
     },
     {
