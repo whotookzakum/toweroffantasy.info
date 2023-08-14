@@ -1,7 +1,7 @@
 {
     "name": "Onyx Tortoise",
     "imgSrc": "item_Weapon_SSR_Zeke_Phy01",
-    "element": "physical",
+    "element": "physical-flame",
     "type": "dps",
     "isMeta": true,
     "shatter": {
@@ -26,6 +26,10 @@
         {
             "title": "Physical Resonance",
             "description": "Equip **2** physical element weapons to increase Physical Attack by **20%** and Physical Resistance by **40%**."
+        },
+        {
+            "title": "Flame Resonance",
+            "description": "Increase Flame ATK by **15%** and Physical Resistance by **25%**. Activate by equipping **2** or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance effects, with Flame Resonance taking precedence."
         },
         {
             "title": "Armor Break - Disarm",

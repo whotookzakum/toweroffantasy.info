@@ -50,7 +50,7 @@
                 <CategoryIcon type={weapon.element} />
                 <div class="stat-text">
                     <span class="stat-name">Element</span>
-                    <b class="stat-value">{weapon.element}</b>
+                    <b class="stat-value">{weapon.element.replaceAll("-", "\n")}</b>
                 </div>
             </div>
             <div class="stat">
