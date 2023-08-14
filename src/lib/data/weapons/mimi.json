@@ -140,7 +140,13 @@
             "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, remove all debuffs from the wielder upon switching to this weapon and deal damage equal to **3060%** of ATK to nearby targets.While the skill is active, it gives immunity to damage for **2.6** seconds. (not available in Apex League).\n\n**Passive**: Using Mimi’s discharge deals heavy damage to an area that cannot be increased or reduced by buffs or debuffs of final damage, except for the unique characteristics of Titanium equipment. It works no more than **1** time after triggering Phantasia."
         }
     ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/Pb6TYhCOk6Q?start=99",
     "rating": [],
     "recommendedPairings": ["Fiona", "Rubilia","Fenrir","Tian Lang"],
-    "recommendedMatrices": []
+    "recommendedMatrices": [
+        {
+            "name": "Mimi",
+            "pieces": 4
+        }
+    ]
 }
