@@ -6,7 +6,7 @@
     const getElementalEffect = () => {
         const effect = allWeaponEffects[weapon.element]
         const value = rarity === "SSR" ? effect.values[1] : effect.values[0];
-        const updatedDescription = effect.description.replace("{{VALUE}}", value)
+        const updatedDescription = effect.description.replace("{{VALUE}}", value).replace("{{WEAPONNAME}}", weapon.name)
         return { ...effect, description: updatedDescription }
     }
 </script>

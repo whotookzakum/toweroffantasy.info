@@ -14,12 +14,20 @@
                // Weapon Element
                case "flame":
                     return "icon_element_huo";
+               case "flame-physical":
+                    return "icon_element_huowu";
                case "ice":
                     return "icon_element_bing";
+               case "ice-volt":
+                    return "icon_element_binglei";
                case "volt":
                     return "icon_element_lei";
+               case "volt-ice":
+                    return "icon_element_leibing";
                case "physical":
                     return "icon_element_wu";
+               case "physical-flame":
+                    return "icon_element_wuhuo"
                case "altered":
                     return "icon_element_powers";
           }

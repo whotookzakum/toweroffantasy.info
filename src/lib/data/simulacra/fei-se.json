@@ -1,8 +1,9 @@
 {
     "name": "Fei Se",
     "id": 42,
-    "cnName": "liuhuo",
+    "cnName": "feise",
     "rarity": "SSR",
+    "chinaOnly": true,
     "banners": {
         "cn": [
             {
@@ -15,23 +16,19 @@
     "traits": [
         {
             "affinity": 1200,
-            "description": "Increase final damage by **13%**. After releasing Soaring, for every flame weapon equipped, increase final damage by **4%** for **30** seconds. "
+            "description": "Increase final damage by **13%**. After releasing **Soaring**, for every flame weapon equipped, increase final damage by **4%** for **30** seconds. "
         },
         {
             "affinity": 4000,
-            "description": "Increase final damage by **18%**. After releasing Soaring, for every flame weapon equipped, increase final damage by **6%** for **30** seconds."
+            "description": "Increase final damage by **18%**. After releasing **Soaring**, for every flame weapon equipped, increase final damage by **6%** for **30** seconds."
         }   
     ],
     "giftTypes": [
         "Everyday Items",
-        "Metal Items",
+        "Saved",
         "Domain 9"
     ],
     "bestGifts": [
-        {
-            "points": 80,
-            "gift": "ropepuzzle"
-        },
         {
             "points": 80,
             "gift": "fan"
@@ -42,13 +39,13 @@
         }
     ],
     "gender": "Female",
-    "height": "153 cm",
-    "birthplace": "???",
-    "horoscope": "Leo",
-    "birthday": "19 Aug",
+    "height": "175 cm",
+    "birthplace": " ",
+    "horoscope": "Virgo",
+    "birthday": "23 Aug",
     "voiceActors": {
         "jp": "",
         "en": "",
-        "cn": "葛子瑞"
+        "cn": "Chen Yanyi (陈彦亦)"
     }
 }
