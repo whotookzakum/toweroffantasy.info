@@ -1,0 +1,13 @@
+{
+    "name": "Fox",
+    "id": 20,
+    "imgSrc": "zuoqi_tubiap_23",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained by purchasing the 14th Collector's Edition Pass.",
+            "imgSrc": "Mount_023"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/76cdGN420tg"
+}

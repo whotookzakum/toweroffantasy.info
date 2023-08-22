@@ -1,0 +1,13 @@
+{
+    "name": "Floating Bubble Water",
+    "id": 19,
+    "imgSrc": "zuoqi_tubiap_22",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained by 筠风消夏 Summer Event Shop",
+            "imgSrc": "Mount_022"
+        }
+    ],
+    "videoSrc": "https://www.youtube.com/embed/lb-7-4SlfB8"
+}

@@ -1,7 +1,6 @@
 {
     "name": "Dragon Turtle",
     "id": 5,
-    "chinaOnly": true,
     "type": "Water",
     "imgSrc": "zuoqi_Water_6",
     "parts": [
