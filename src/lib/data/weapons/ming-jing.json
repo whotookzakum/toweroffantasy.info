@@ -5,7 +5,7 @@
     "type": "dps",
     "isMeta": true,
     "shatter": {
-        "tier": "SS",
+        "tier": "S",
         "value": "14.00"
     },
     "charge": {
@@ -25,40 +25,40 @@
     "weaponEffects": [
         {
             "title": "Physical Resonance",
-            "description": "Equip **2** physical element weapons to increase Physical Attack by **20%** and Physical Resistance by **40%**."
+            "description": "Increase Physical ATK by **15%** and Physical Resistance by **25%**. Activate by equipping **2** or more Physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance effects, with Physical Resonance taking precedence."
         },
         {
             "title": "Flame Resonance",
             "description": "Increase Flame ATK by **15%** and Physical Resistance by **25%**. Activate by equipping **2** or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance effects, with Flame Resonance taking precedence."
         },
         {
-            "title": "Armor Break - Disarm",
-            "description": "After casting 'Absolute Dominion', deals damage to the target every second, equal to **1,000%** of physical attack + **16%** of own maximum HP + **600%** of the sum of all elemental resistances + **2,000%** critical hit damage. Lasts for **30** seconds. Multiple instances of Disarm damage do not stack. Armor Break damage is considered as skill damage. If equipped with any Lightning/Fire/Ice weapon, Armor Break damage is increased by **2.5** times. not affected by damage increases from equipment attributes other than Titan equipment's rare attributes and does not trigger additional attack effects."
+            "title": "Shield Break: Detachment",
+            "description": "After using Absolute Ravine, every second, deal damage equal to **70%** of physical ATK plus **1%** of the Wanderer's Max HP plus **36%** of the sum of all the Wanderer's resistance types plus **135%** of crit for **30** seconds to targets hit. Multiple Detachment damage will not stack and shield break damage will be counted as skill damage. If there is **1** volt/flame/frost weapon equipped, shield break damage is multiplied by **1.3**. In addition, shield break damage is not affected by any damage boost effects except from titan equipment's rare stats, and won’t trigger additional attack effects."
         }
     ],
     "advancements": [
-        "Every time grievous is inflicted on a target, deal devouring damage equal to **100%** of ATK. This effect can be triggered once every **0.5** seconds. ",
+        "Every time **grievous** is applied, deal **devouring** damage equal to **50%** of ATK to the target. This effect can only be triggered 1 time every **0.5** seconds.\n\nEvery time the weapon's **ignite** trait is applied to a **non-grievous target**, the target becomes **grievous** for **7** seconds.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "After **Mighty East Wind** activates and hits a target, the target becomes a member of the Snake Chain.",
+        "After triggering **Mighty Wind**, turn targets hit into members of the **Serpent Chain**.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "After unleashing Extreme Ravine, the damage taken by the Wanderer is reduced by **10%** (increases to **20%** in solo play), lasting for **30** seconds. ",
-        "When there is **1** Snake Chain member, the transfer rate of damage from Snake chain is increased to **80%**   . "
+        "After using **Absolute Ravine**, reduce the Wanderer's damage taken by **10** (**20%** in solo play) for **30** seconds.",
+        "When there is **1 Serpent Chain** member, increase **conduction** damage's conduction rate to **50%**."
     ],
     "abilities": [
         {
-            "name": "Insult Resistant",
+            "name": "Resistor",
             "type": "normal",
             "imgSrc": "skill_zeke_fevadeattack",
             "input": [
                 "Attack x5"
             ],
-            "description": "While on the ground, use normal attack to launch 5 consecutive attacks. **While Xuanwu Totem** is active, after the last segment of the fifth attack lands, inflict a Snakebite effect to the target. ",
+            "description": "While on the ground, use normal attack to launch 5 consecutive attacks.\n\nWhile the **Xuanwu Totem** is active, after Resistor's fifth attack lands its final hit, add 1 snake bite to the locked-on target.",
             "breakdown": [
-                "**376%** of ATK + **20**.",
-                "**533%** of ATK + **28**.",
-                "**576%** of ATK + **30**.",
-                "**680%** of ATK + **36**.",
-                "**1080%** of ATK + **57**."
+                "**131.6%** of ATK + **7**.",
+                "**186.8%** of ATK + **10**.",
+                "**201.6%** of ATK + **11**.",
+                "**238%** of ATK + **13**.",
+                "**378%** of ATK + **20**."
             ]
         },
         {
@@ -71,22 +71,22 @@
             ],
             "description": "While airborne, use normal attack to launch 5 consecutive attacks in mid-air, consuming endurance.",
             "breakdown": [
-                "**376%** of ATK + **20**.",
-                "**560%** of ATK + **29**.",
-                "**547.2%** of ATK + **29**.",
-                "**467.2%%** of ATK + **25**.",
-                "**1080%** of ATK + **57**."
+                "**112.8%** of ATK + **6**.",
+                "**168%** of ATK + **9**.",
+                "**164.2%** of ATK + **9**.",
+                "**140.2%** of ATK + **7**.",
+                "**228%** of ATK + **12**."
             ]
         },
         {
-            "name": "One Heart on the Other Shore",
+            "name": "Othershore Soul",
             "type": "normal",
             "imgSrc": "skill_zeke_branch",
             "input": [
                 "Attack x1 - x4",
                 "hold:Attack"
             ],
-            "description": "While on the ground, tap and hold normal attack when executing the first to fourth normal attacks to trigger One Heart on the Other Shore.\n\nThrow the weapon forward, dealing damage equal to **708%** of ATK + **37** to nearby targets."
+            "description": "While using normal attack on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger Othershore Soul.\n\nToss your weapon ahead, dealing damage equal to **212.4%** of ATK plus **11** to nearby targets."
         },
         {
             "name": "Collapsing Mountain",
@@ -95,17 +95,17 @@
             "input": [
                 "hold:Attack"
             ],
-            "description": "While on the ground, tap and hold normal attack to trigger Collapsing Mountain.\n\nLeap forward and continuously strike at the front while consuming endurance, dealing damage equal to **800%** of ATK + **42** to nearby targets."
+            "description": "While on the ground, tap and hold normal attack to trigger Collapsing Mountain.\n\nContinuously move forward while attacking and consuming endurance, dealing damage equal to **240%** of ATK plus **13** to nearby targets."
         },
         {
-            "name": "Mountain Range",
+            "name": "In Continuity",
             "type": "normal",
             "imgSrc": "skill_zeke_jumpattack",
             "input": [
                 "Jump",
                 "hold:Attack"
             ],
-            "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Mountain Range.\n\nFall from above and land on the ground, dealing damage equal to **680%** of ATK + **36** to nearby targets."
+            "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, Jumping backward, or using the Jetpack to trigger In Continuity. Dive down from above, dealing damage equal to **204%** of ATK plus **11** to nearby targets upon reaching the ground."
         },
         {
             "name": "Dodge",
@@ -122,39 +122,39 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Tap normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Open Clouds, dealing damage to nearby targets equal to **120%** of ATK + **6**.\n\nWhile Xuanwu Totem is active, after the attack lands, inflict a Snakebite effect to the target."
+            "description": "Use normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Open Clouds, dealing damage equal to **60%** of ATK plus **3** to nearby targets.\n\nWhile the **Xuanwu Totem** is active, after Open Clouds lands a hit, add 1 snake bite to the locked-on target."
         },
         {
-            "name": "Cut Sand",
+            "name": "Cutting Sand",
             "type": "dodge",
             "imgSrc":"skill_zeke_bevadeattack",
             "input": [
                 "Dodge",
                 "Attack"
             ],
-            "description": "Tap normal attack during the short period after dodging to trigger Cut Sand, dealing damage to the target in front equal to **249.9%** of ATK + **13**.\n\nWhile Xuanwu Totem is active, after the attack lands, inflict a Snakebite effect to the target."
+            "description": "Use normal attack during the short period after dodging to trigger Cutting Sand, unleashing a sword aura, dealing damage equal to **125%** of ATK plus **7** to targets ahead.\n\nWhile the **Xuanwu Totem** is active, after Cutting Sand lands a hit, add 1 snake bite to the locked-on target."
         },
         {
-            "name": "Wind Watching",
+            "name": "Lookout",
             "type": "dodge",
             "imgSrc": "skill_zeke_evadespec",
             "input": [
                 "Dodge",
                 "hold:Attack"
             ],
-            "description": "After a Xuanwu Totem has been successfully summoned by unleashing Extreme Ravine, unleashing Wind Watching will allow you to enter the state of 'Non-Self', lasting for **25** seconds, while also gaining **3** stacks of Mediation Slash.\n\nWhen any of Zhi Ming's normal attacks or dodge attacks hits a target, Mediation Slash can be consumed. When the attacked target type is a normal or elite monster, and its current HP value does not exceed **350,000** times that of the Wanderer's basic attack value, the target will be instantly executed, otherwise deal damage equal to **3,000%** of ATK to the target.\n\nWhen the amount of Mediation Slashes is depleted, or when this weapon is switched to another weapon, the state of 'Non-Self' ends. The state of 'Non-Self' can only be activated once every **200** seconds."
+            "description": "Tap and hold normal attack right after dodging to trigger Lookout (unavailable in Apex League).\n\nAfter the **Xuanwu Totem** summoned by **Absolute Ravine** is completed, use Lookout to enter **Selfless Realm** for **25** seconds and gain **3 Dark Slashes**.\n\nAfter the first successful normal or dodge attack from **Onyx Tortoise** lands a hit, trigger **Dark Slash**. If the target is an ordinary or elite enemy and their current HP doesn't exceed the Wanderer's Max ATK by more than **20,000 times**, the target will be immediately executed. Otherwise, deal damage equal to **1,500%** of ATK.\n\n**Selfless Realm** ends when its duration is over, the **Dark Slash** count is exhausted, or upon switching weapons. **Selfless Realm** can only be triggered 1 time every **200** seconds."
         },
         {
-            "name": "Extreme Ravine",
+            "name": "Absolute Ravine",
             "type": "skill",
             "imgSrc": "skill_zeke_skill",
-            "description": "Slice a rift in the ground in front of you while temporarily becoming immune to damage (unavailable in Apex League), drawing in nearby targets and dealing damage equal to **2,480%** of ATK + **131**. Cooldown: **20** seconds. Increase physical damage by **30%** for **30** seconds, after which a **Xuanwu Totem** is summoned onto the field. The **Xuanwu Totem** will be removed while you are not in combat.\n\nEvery **0.6** seconds, **Xuanwu Totem** will summon Mysterious Souls from the four eyes of the formation, dealing damage equal to **100%** of ATK to targets hit in the path of Mysterious Souls. When Extreme Ravine is on cooldown, a new skill, ‘Mirror Reflection’ is unlocked: you may return nearby Mysterious Souls back to the **Xuanwu Totem**, which will activate and light up an eye of the **Xuanwu Totem**. Activating the eyes of **Xuanwu Totem** will allow you to enter the state of ‘Non-Self’. \n\nWhile there is a **Xuanwu Totem** active, gain hyperbody while Zhi Ming is your current weapon, and gain the ability to inflict the Snake Bite effect to targets under the following conditions:\n\nAfter Extreme Ravine hits a target, inflict Snake Bite to the target with the highest HP;\n\nAfter the fifth attack of Insult Resistant hits a target at the last segment, inflict Snake Bite to the target;\n\nAfter Open Clouds hits a target, inflict Snake Bite to the target;\n\nAfter Cut Sand hits a target, inflict Snake Bite to the target.\n\nSnake Bite inflicts **300%** of ATK to the target and restore **12%** of your max HP. Targets inflicted with Snake Bite become members of the Snake Chain.\n\nSnake Chain transfers **30%** of the damage received from the Wanderer's current weapon and inflicted grievous status effects to all members of the Snake Chain (including the target itself), up to a maximum of 4 Snake Chain members.\n\nThe type of element damage inflicted by Snake Chain is dependent on the element of the Wanderer's current weapon. The transferred damage dealt within a **30** second period cannot exceed **14,000** times the highest attack value of the Wanderer (there is no limit in team play), and executions from Mediation Slash cannot be transmitted.\n\nAfter unleashing Extreme Ravine, Mighty East Wind may also be triggered:\n\nSnake Chain memberwill deal devour damage to nearby targets (including the target itself) equal to **35%** of ATK, while resetting the devouring damage count."
+            "description": "Split a crack in the ground ahead, and gain temporary invincibility (unavailable in Apex League), and draw in nearby targets, dealing damage equal to **806%** of ATK plus **42**. Cooldown: **20** seconds. Increase the Wanderer's physical and flame damage by **26%** for **30** seconds, and then summon the Xuanwu Totem.\n\nThe Xuanwu Totem is removed while in the non-combat state.\n\nThe Xuanwu Totem summons dark souls from the four formation cores **0.6** seconds, each time dealing damage equal to **30%** of ATK to targets along the way. When Absolute Ravine is in cooldown, gain the new skill **Mirror Reflection**: Strike back the nearby dark souls and activate their corresponding formation cores. After any formation core is activated, the Xuanwu Totem will be complete, and the **Selfless Realm** can be entered.\n\nWhile the Xuanwu Totem is active, use **Onyx Tortoise** to gain hyperbody, and snake bites can be applied in the following ways:\n\nAfter **Absolute Ravine** lands a hit, apply 1 snake bite to the target with the highest HP.\n\nAfter **Resistor's** fifth attack lands its final hit, apply 1 snake bite to the locked-on target.\n\nAfter **Open Clouds** lands a hit, apply 1 snake bite to the locked-on target.\n\nAfter **Cutting Sand** lands a hit, add 1 snake bite to the locked-on target.\n\nSnake bite deals devouring damage equal to **150%** of ATK to the target, restores **12%** of the Wanderer's Max HP, and makes the target a Serpent Chain member.\n\nSerpent Chain can transfer **30%** of the actual damage dealt by the Wanderer's main slot weapon to the locked-on Serpent Chain member and cause **grievous** to be conducted to all Serpent Chain members (including the locked-on target themselves). There can be up to **4** Serpent Chain members.\n\nConduction damage's element type follows the original damage and cannot be conducted again. The total conduction damage within **30** seconds should not exceed **2,400** times of the Wanderer's maximum ATK (unlimited in team play). **Dark Slash** damage cannot be conducted.\n\nAfter using **Absolute Ravine**, the Wanderer can also trigger **Mighty Wind**: Serpent Chain members deal devouring damage equal to the number of times devouring damage has been dealt multiplied by **25%** of ATK to nearby targets (including the locked-on target themselves), then reset the devouring damage count."
         },
         {
-            "name": "Way Back Home",
+            "name": "Way Home",
             "type": "discharge",
             "imgSrc": "skill_zeke_changeskill",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another **removes all debuffs from the wielder** and summons Xuanwu, dealing ranged damage equal to **2,096%** of ATK + **110** to nearby targets. During this period, gain damage immunity for **2.6** seconds (unavailable in Apex League)."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and summon Xuanwu, dealing area damage equal to **681.2%** of ATK plus **36** to all nearby targets. During this period, gain damage immunity for **1.5** seconds (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://youtube.com/embed/Df1KZ8zmsTk?start=135",

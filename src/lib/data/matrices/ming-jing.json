@@ -6,11 +6,11 @@
     "sets": [
         {
             "pieces": 2,
-            "description": "The maximum number of Snake Chain members is increased to **5**. When equipped with at least **1** physical weapon, increase physical ATK by **18%/22%/26%/30%**. This set effect works in the off-hand slot, only the set with the highest star rating will take effect. "
+            "description": "Increase Serpent Chain member limit to **5**. When at least **1** physical or flame weapon is equipped, increase physical ATK and flame ATK by **14%/16%/18%/20%**. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         },
         {
             "pieces": 4,
-            "description": "After a target is inflicted with Snake Bite, increase physical ATK by **20%**, lasting for **30** seconds, while also taking effect in the background. Upon entering combat, increase final damage by **28%/32%/36%/40%**. "
+            "description": "After applying the snake bite effect, increase physical ATK and flame ATK by **9%** for **30** seconds. While in the combat state, increase final damage by **14%/17%/20%/23%**. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
     ]
 }
