@@ -10,6 +10,13 @@
                 "start": "7 Jun 2023",
                 "end": "5 Jul 2023"
             }
+        ],
+        "glob": [
+            {
+                "bannerNo": 60,
+                "start": "8 Aug 2023",
+                "end": "4 Sep 2023"
+            }
         ]
     },
     "traits": [
