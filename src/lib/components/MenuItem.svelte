@@ -17,8 +17,9 @@
 <style lang="scss">
     .menu-item a {
         display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
+        justify-items: center;
+        align-content: start;
+        height: 100%;
         border: none;
         background: var(--surface2);
         box-shadow: 0 2px 4px var(--surface-shadow);
