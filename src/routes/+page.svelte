@@ -220,7 +220,14 @@
         target="_blank"
         rel="noopener noreferrer"
     >
-        eminentglory
+        EminentGlory</a
+    >,
+    <a
+        href="https://discordapp.com/users/245981511931658242"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        TheKingOppaiDragon
     </a>
 
     <h4>Original contents by</h4>
@@ -229,8 +236,8 @@
     <h4>Special thanks</h4>
     <span
         >Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
-        Gateoo, Sky, ChickenJoy, Riala, 👑킹젖가슴드래곤👑, Fanatique,
-        FortOfFans, eminentglory, Maygi</span
+        Gateoo, Sky, ChickenJoy, Riala, TheKingOppaiDragon, Fanatique,
+        FortOfFans, EminentGlory, Maygi</span
     >
 </footer>
 
