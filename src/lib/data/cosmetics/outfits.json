@@ -1,9 +1,9 @@
 [
     {
-        "name": "Travel around space-time",
-        "imgSrcs": ["",""],
+        "name": "Exploring the spacetime",
+        "imgSrcs": ["fashion_f56","fashion_m56"],
         "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 15th Collector's Edition Pass.",
-        "videoSrc": ""
+        "videoSrc": "https://www.youtube.com/watch?v=xKywW6p1LiI"
     },
     {
         "name": "Sea Breeze Whisper",
