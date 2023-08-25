@@ -1,7 +1,6 @@
 {
     "name": "Drifter",
     "id": 4,
-    "chinaOnly": true,
     "type": "Water",
     "imgSrc": "zuoqi_Water_5",
     "parts": [

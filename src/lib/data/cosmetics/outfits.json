@@ -1,20 +1,26 @@
 [
     {
+        "name": "Exploring the spacetime",
+        "imgSrcs": ["fashion_f56","fashion_m56"],
+        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 15th Collector's Edition Pass.",
+        "videoSrc": "https://www.youtube.com/watch?v=xKywW6p1LiI"
+    },
+    {
         "name": "Sea Breeze Whisper",
         "imgSrcs": ["fashion_f66","fashion_m66"],
         "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Sea Breeze Whisper event.",
         "videoSrc": "https://www.youtube.com/watch?v=cI9M21zbXgg"
     },
     {
-        "name": "Morning Star Cruise",
+        "name": "Starry Cruise",
         "imgSrcs": ["fashion_f54","fashion_m54"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Morning Star Cruise event.",
+        "source": "Obtained from gachapon during the Starry Cruise event.",
         "videoSrc": "https://www.youtube.com/watch?v=Qcx5pwn9rBc"
     },
     {
-        "name": "Casual Costume",
+        "name": "Searching in the Crowd",
         "imgSrcs": ["fashion_f53","fashion_m53"],
-        "source": "<abbr title='China Exclusive'></abbr> Obtained by purchasing the 13th Collector's Edition Pass.",
+        "source": "Obtained by purchasing the 10th Collector's Edition Pass.\n\n<abbr title='China Exclusive'></abbr> Obtained by purchasing the 13th Collector's Edition Pass.",
         "videoSrc": "https://www.youtube.com/watch?v=Bhgz3r0zwIs"
     },
     {
