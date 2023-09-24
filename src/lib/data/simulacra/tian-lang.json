@@ -4,28 +4,6 @@
     "cnName": "tianlang",
     "rarity": "SSR",
     "banners": {
-        "glob": [
-            {
-                "bannerNo": 10,
-                "start": "22 Dec 2022",
-                "end": "11 Jan 2023"
-            },
-            {
-                "bannerNo": 24,
-                "start": "19 Mar 2023",
-                "end": "29 Mar 2023"
-            },
-            {
-                "bannerNo": 39,
-                "start": "2 Jun 2023",
-                "end": "26 Jun 2023"
-            },
-            {
-                "bannerNo": 51,
-                "start": "8 Aug 2023",
-                "end": "4 Sep 2023"
-            }
-        ],
         "cn": [
             {
                 "bannerNo": 18,
@@ -57,6 +35,33 @@
                 "bannerNo": 79,
                 "start": "5 Jul 2023",
                 "end": "2 Aug 2023"
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 10,
+                "start": "22 Dec 2022",
+                "end": "11 Jan 2023"
+            },
+            {
+                "bannerNo": 24,
+                "start": "19 Mar 2023",
+                "end": "29 Mar 2023"
+            },
+            {
+                "bannerNo": 39,
+                "start": "2 Jun 2023",
+                "end": "26 Jun 2023"
+            },
+            {
+                "bannerNo": 51,
+                "start": "8 Aug 2023",
+                "end": "4 Sep 2023"
+            },
+            {
+                "bannerNo": 61,
+                "start": "5 Sep 2023",
+                "end": "2 Oct 2023"
             }
         ]
     },
