@@ -220,7 +220,7 @@
         target="_blank"
         rel="noopener noreferrer"
     >
-        EminentGlory</a
+        eminentglory</a
     >,
     <a
         href="https://discordapp.com/users/245981511931658242"
