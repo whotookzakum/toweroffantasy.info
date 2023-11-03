@@ -56,7 +56,8 @@
             {
                 "bannerNo": 45,
                 "start": "18 Jul 2023",
-                "end": "7 Aug 2023"
+                "end": "7 Aug 2023",
+                "standardAfterwards": true
             }
         ]
     },

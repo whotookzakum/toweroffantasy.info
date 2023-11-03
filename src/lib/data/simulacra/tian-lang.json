@@ -24,6 +24,12 @@
                 "bannerNo": 51,
                 "start": "8 Aug 2023",
                 "end": "4 Sep 2023"
+            },
+            {
+                "bannerNo": 63,
+                "start": "5 Sep 2023",
+                "end": "2 Oct 2023",
+                "standardAfterwards": true
             }
         ],
         "cn": [

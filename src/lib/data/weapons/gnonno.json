@@ -35,10 +35,10 @@
     "advancements": [
         "Increase the shatter of Frantic Digging, Boiling Octopus Balls, and Go on, Pip! by **80%**.\n\nGain a **50%** increase to Shield when these skills are used when the Wanderer's Shield is below **50%**. Lasts **8** seconds. This effect can only be triggered **1** time every **5** seconds (unavailable in Apex League).",
         "Increase the current weapon's base ATK growth by 16%.",
-        "Pip Octowhip limit is increased to **45**.\n\nIncrease physical damage by **25%** for **30** seconds after using Pip Ultimate.",
+        "Pip Octowhip limit is increased to **45**.\n\nIncrease physical damage by **12%** for **30** seconds after using Pip Ultimate.",
         "Increase the current weapon's base ATK growth by 32%.",
-        "Detonating **Treasure Tracers** refreshes the **grievous** status of targets.\n\nIncrease physical damage by **25%** when damage is dealt to targets with less than **80%** HP. This set effect works in the off-hand slot.",
-        "Increase damage dealt by detonating **Treasure Tracers** by **140%** of ATK."
+        "Detonating **Treasure Tracers** refreshes the **grievous** status of targets.\n\nIncrease physical damage by **10%** when damage is dealt to targets with less than **80%** HP. This set effect works in the off-hand slot.",
+        "Increase damage dealt by detonating **Treasure Tracers** by **90%** of ATK."
     ],
     "abilities": [
         {
@@ -154,7 +154,7 @@
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/sltdX1RmGAc?start=196",
     "rating": [],
-    "recommendedPairings": ["Fiona","Ming Jing","Umi","Lyra","Lin"],
+    "recommendedPairings": ["Fiona","Ming Jing","Umi","Lin"],
     "recommendedMatrices": [
         {
             "name": "Gnonno",
@@ -162,19 +162,18 @@
             "description": "Great set for both a physical and rainbow comp. 4 set only on Gunonno."
         },
         {
-            "name": "Umi",
-            "pieces": 4,
+            "name": "Lyra",
+            "pieces": 4
+        },
+        {
+            "name": "Cobalt-B",
+            "pieces": 2,
             "description": "Extremely high damage set effects with permanent uptime."
         },
         {
             "name": "Shiro",
-            "pieces": 4,
-            "description": "Great set effects for both shatter and consistent damage increase. Use 4 set for quick fights, otherwise pair with 2-set Samir or 2-set Crow."
-        },
-        {
-            "name": "Crow",
             "pieces": 2,
-            "description": "High damage matrix set when you have high crit rate."
+            "description": "Great set effects for both shatter and consistent damage increase. Use 4 set for quick fights, otherwise pair with 2-set Samir or 2-set Crow."
         },
         {
             "name": "Samir",

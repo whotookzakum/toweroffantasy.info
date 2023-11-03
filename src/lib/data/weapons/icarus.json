@@ -3,7 +3,7 @@
     "imgSrc": "item_Weapon_SSR_yoyo_Ice01",
     "element": "ice",
     "type": "dps",
-    "isMeta": true,
+    "isMeta": false,
     "shatter": {
         "tier": "A",
         "value": "9.50"

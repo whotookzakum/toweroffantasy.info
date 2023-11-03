@@ -55,13 +55,19 @@
         ],
         "description": "Fully charged weapons will inflict damage equal to **{{VALUE}}** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage."
     },
-    "physical-flame": {
+    "physical-flame_global": {
         "title": "Grievous",
         "values": [
             "100.00%",
             "137.00%"
         ],
         "description": "Fully charged weapons will inflict damage equal to **{{VALUE}}** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage.\n\n{{WEAPONNAME}} is a physical weapon and will always deal physical damage, but it can also take the place of a flame weapon to activate Flame Resonance."
+    },
+    "physical-flame": {
+        "title": "Armor Melt",
+        "values": [
+        ],
+        "description": "When the weapon is fully charged, the next attack will apply an armor melt effect to enemies for **45** seconds, increasing the physical and flame damage they take by **10%**, and in team play this value is additionally increased by **15%** [armor melt ***replaces the grievous*** effect on the target and does not allow grievous to get applied again for the duration of armor melt). Every **15** seconds, a target affected by armor melt will be stunned for **2** seconds when taking physical damage and slowed by **50%** for **5** seconds when taking flame damage."
     },
     "altered": {
         "title": "Altered",
