@@ -1,0 +1,187 @@
+{
+    "name": "Yan Miao",
+    "imgSrc": "item_Weapon_SSR_Killknife",
+    "element": "physical-flame",
+    "type": "dps",
+    "isMeta": true,
+    "shatter": {
+        "tier": "SS",
+        "value": "16.00"
+    },
+    "charge": {
+        "tier": "S",
+        "value": "12.00"
+    },
+    "baseStats": [
+        "attack",
+        "health",
+        "crit"
+    ],
+    "materials": [
+        "physical",
+        "red",
+        "black"
+    ],
+    "weaponEffects": [
+        {
+            "title": "Physical Resonance",
+            "description": "Increase Physical ATK by **15%** and Physical Resistance by **25%**. Activate by equipping **2** or more Physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance effects, with Physical Resonance taking precedence."
+        },
+        {
+            "title": "Flame Resonance",
+            "description": "Increase Flame ATK by **15%** and Physical Resistance by **25%**. Activate by equipping **2** or more Flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance effects, with Flame Resonance taking precedence."
+        },
+        {
+            "title": "Flying Blade: On-Field",
+            "description": "When landing any hit with **Equilibrium**, it deals damage to nearby targets equal to **2,250%** of physical ATK plus **38%** of the Wanderer's Max HP plus **1.350%** of the sum of all the Wanderer's resistance types plus **4,500%** of crit. This effect can be triggered up to 1 time every **1.5** seconds. The Flying Blade damage is counted as normal attack damage. If there is **1** frost/volt weapon of any kind equipped, Flying Blade damage is multiplied by **2.5** times. In addition, Flying Blade damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+        }
+    ],
+    "advancements": [
+        "The number of **Flaming Daggers** received from **Empyrean Rotation** is increased to **4**, and the maximum Frequency of **Flaming Dagger** use is reduced to once every **1.8** seconds.",
+        "Increase the current weapon's base ATK growth by **16%**.",
+        "Wanderer ignores **30%** of the target's physical and flame resistances [the total value of ignoring resistance to a particular element cannot exceed **50%**).",
+        "Increase the current weapon's base ATK growth by **32%**.",
+        "When **Flaming Dagger** is triggered, wanderer gains a shield equal to **30%** of Max HP for **20** seconds. The shields gained cannot exceed **30%** of Max HP [shields that exceed this value will be converted into healing at the rate of **50%** of the shield].",
+        "Flaming Daggers damage is increased to **8,800%** and the Final damage buff after a Flaming Dagger is triggered is further increased by **16%**."
+    ],
+    "abilities": [
+        {
+            "name": "Ink Stain Glitter",
+            "type": "normal",
+            "imgSrc": "skill_killknife_melee",
+            "input": [
+                "Attack x6"
+            ],
+            "description": "While on the ground, use normal attack to launch 6 consecutive attacks. ",
+            "breakdown": [
+                "**340%** of ATK.",
+                "**733%** of ATK.",
+                "**514%** of ATK.",
+                "**1701%** of ATK.",
+                "**928%** of ATK.",
+                "**1550%** of ATK."
+            ]
+        },
+        {
+            "name": "Clouds Coloring The Sky",
+            "type": "normal",
+            "imgSrc": "skill_killknife_airmelee",
+            "input": [
+                "Jump",
+                "Attack x6"
+            ],
+            "description": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance.",
+            "breakdown": [
+                "**340%** of ATK.",
+                "**733%** of ATK.",
+                "**514%** of ATK.",
+                "**1701%** of ATK.",
+                "**884%** of ATK.",
+                "**1590%** of ATK."
+            ]
+        },
+        {
+            "name": "Peace Withing The Universe",
+            "type": "normal",
+            "imgSrc": "skill_killknife_meleebranch",
+            "input": [
+                "Attack x1 - 2",
+                "hold:Attack"
+            ],
+            "description": "While on the ground, press and hold normal attack after using a second normal attack to trigger Peace Within The Universe. Throws Equilibrium into the ground, creating a double-sided spinning blade that spirals outward and deals damage equal to **1,976%** of ATK to the target."
+        },
+        {
+            "name": "Falling Leaves In The Moonlight",
+            "type": "normal",
+            "imgSrc": "skill_killknife_jumpattack",
+            "input": [
+                "Jump",
+                "hold:Attack"
+            ],
+            "description": "While in the air, press and hold normal attack to trigger Falling Leaves In The Moonlight. Upon landing, deals damage equal to **943%** of ATK to targets near the released Equilibrium. When the released Equilibrium reassembles, it slightly pull nearby enemies and deals damage equal to **940%** of ATK."
+        },
+        {
+            "name": "Dodge",
+            "type": "dodge",
+            "imgSrc": "common_evade",
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
+        },
+        {
+            "name": "Wind Plays With Shadows",
+            "type": "dodge",
+            "imgSrc": "skill_killknife_fevadeattack",
+            "input": [
+                "Arrow keys",
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Use normal attack during the short perfect dodge window (use a directional button before dodging] to trigger Wind Plays With Shadows. Throws Equilibrium forward and deals damage equal to **690%** of ATK."
+        },
+        {
+            "name": "Dance With Daggers",
+            "type": "dodge",
+            "imgSrc": "skill_killknife_bevadeattack",
+            "input": [
+                "Dodge",
+                "Attack"
+            ],
+            "description": "Use normal attack during the short perfect dodge window to trigger Dance With Daggers. Creates 8 flying daggers that randomly chase the target in front and strike them, dealing area damage equal to **1,032%** of ATK."
+        },
+        {
+            "name": "Bright Radiance",
+            "type": "dodge",
+            "imgSrc": "skill_killknife_evadeattack_hold",
+            "input": [
+                "Dodge",
+                "hold:Attack"
+            ],
+            "description": "Press and hold normal attack during the short perfect dodge window to trigger Bright Radiance. Continuously throw sAying daggers that chase the target in front and strike them, dealing a total damage equal to **666%** of ATK. Wanderer then jumps up and throws Equilibrium forward, dealing damage equal to **889%** of ATK to nearby targets. Bright Radiance can be held for up to **3** seconds, after which it automatically ends."
+        },
+        {
+            "name": "Through The Clouds",
+            "type": "dodge",
+            "imgSrc": "skill_killknife_evade_hold",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "While on the ground or in the air, press and hold dodge button to trigger Through The Clouds. After a short period of skill charge, the wanderer turns into a beam of light and flies in the chosen direction, at the end of its path dealing damage equal to **1,080%** of ATK to nearby targets. The distance of flight increases depending on the time of skill charge. The maximum charge is reached by holding the dodge button for **1.5** seconds."
+        },
+        {
+            "name": "Empyrean Rotation",
+            "type": "skill",
+            "imgSrc": "skill_killknife_skill",
+            "description": "Wanderer deals damage equal to **4,099%** of ATK and gains a hyper body for **20** seconds. At the end of **Empyrean Rotation** creates **3 Flaming Daggers** for **20** seconds [the maximum number of **Flaming Daggers** can only be given once every **20** seconds). Cooldown: **20** seconds. \n\nFlaming Daggers: When hitting the target with a dodge attack of any flame or physical weapon, **1 Flaming Dagger** will be used to inflict ***armor melt*** on the target and deal additional damage equal to **6,500%** of ATK of the corresponding active weapon element type. Hitting the target with a **Flaming Dagger** restores **1** dodge attempt and increases final damage by **20%** for **20** seconds. **Flaming Dagger** can be triggered once every **2.8** seconds, and its damage counts as normal attack damage."
+        },
+        {
+            "name": "Unparalleled Beauty",
+            "type": "discharge",
+            "imgSrc": "skill_killknife_changeskill",
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and causes Equilibrium to spin at high speed, sending the wanderer forward and dealing damage equal to **3,990%** of ATK to enemies in its path. During this period, gain damage immunity for **2.6** seconds [unavailable in Apex League)."
+        }
+    ],
+    "abilitiesVideoSrc": "https://www.youtube.com/embed/C1aQCp5dwrE?start=112",
+    "rating": [80,0,0,70,80,100],
+    "recommendedPairings": [],
+    "recommendedMatrices": [
+        {
+            "name": "Yan Miao",
+            "pieces": 4
+        },
+        {
+            "name": "Lyra",
+            "pieces": 4
+        },
+        {
+            "name": "Cobalt-B",
+            "pieces": 2
+        },
+        {
+            "name": "Samir",
+            "pieces": 2
+        },
+        {
+            "name": "Shiro",
+            "pieces": 2
+        }
+    ]
+}
