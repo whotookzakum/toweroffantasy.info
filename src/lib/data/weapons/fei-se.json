@@ -1,5 +1,5 @@
 {
-    "name": "Heavy Pistil",
+    "name": "Endless Bloom",
     "imgSrc": "item_Weapon_SSR_feise",
     "element": "flame",
     "type": "dps",
@@ -25,24 +25,24 @@
     "weaponEffects": [
         {
             "title": "Flame Resonance",
-            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance. "
+            "description": "Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance. "
         },
         {
-            "title": "Explosive Flame - Quick Cut",
-            "description": "While equipped with **Heavy Pistil**, after hitting a target with any weapon discharge, deal damage equal to **500%** of Flame ATK + **8.4%** of Max HP + **300%** of all elemental resistance + **1,000%** of crit. While in combat, for every **0.5** seconds elapsed, the next damage inflicted by Quick Cut will be doubled, up to a maximum of **30** times. If there are multiple instances of Explosive Flame - Quick Cut damage, the highest initial value will be used for calculation. Explosive Flame - Quick Cut is regarded as discharge damage, and if **1** frost/volt/physical weapon is equipped, increase Explosive Flame - Quick Cut damage by **2.5** times. Additionally, the damage inflicted by Explosive Flame - Quick Cut is not affected by buff or debuff effects except from the effects from Titan equipment, and cannot trigger additional attack effects."
+            "title": "Fiery Explosion: Swift Cut",
+            "description": "When Endless Bloom is equipped, upon landing a hit with any weapon's discharge skill, deal initial damage equal to **37.5%** of flame ATK plus **0.5%** of the Wanderer's Max HP plus **18.75%** of the sum of all the Wanderer's resistance types plus **68.75%** of crit to nearby targets. While in combat, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of 30 times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. FieryExplosion: Swift Cut damage is counted as discharge skill damage. If there is **1** frost/volt/ physical weapon of any kind equipped, Fiery Explosion damage is increased to **1.3** times. In addition, Fiery Explosion damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
         }
     ],
     "advancements": [
-        "Increase the base multiplier of **Heartburn** damage to **120%**, and if you have inflicted more than one Heartburn status while in combat, increase the base multiplier of all **Heartburn** damage to the current highest base multiplier.",
+        "**Blazing Heart's** damage's base multiplier is increased to **60%** of ATK. While in the combat state, if the Wanderer inflicts multiple burn effects, **Blazing Heart's** damage's base multiplier is additionally increased to that of the highest multiplier effect.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "Increase the number of **Colorful Illusions** on the field to 2. When **Soaring** hits a target, generate an additional **Colorful Illusion**.",
+        "The maximum number of **Feist's Phantasia** is increased to **2**. After **Whirling** lands a hit, additionally create **1 FeiSe's Phantasia**.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "For every **Colorful Illusion** or **Lotus Petal** in the **Mirage**, increase **Heartburn** damage by an additional **15%**. Reduce endurance consumption by **75%** for each **Lotus Petal** in the **Mirage**.",
-        "Increase the base multiplier of **Heart Erosion** damage to **900%** of ATK, double the shatter effectiveness, and adds a **15%** chance of inflicting a **65%** slow effect (ineffective against BOSS enemies and unavailable in the Apex League) to the target, lasting for **2** seconds."
+        "For every **1 FeiSe's Phantasia** or **Lotus Petal** in the **Mirage**, **Blazing Heart's** damage is additionally increased by **12%**. **Lotus Asparagus** endurance consumption is reduced by **75%**.",
+        "**Soulwear** damage's base multiplier is increased to **270%** of ATK, shatter is doubled, and after landing a hit, there is a **15%** chance to inflict a **65%** delay for **2** seconds (ineffective against bosses in team play and unavailable in Apex League)."
     ],
     "abilities": [
         {
-            "name": "Open and Close",
+            "name": "Maneuver",
             "type": "normal",
             "imgSrc": "feise_melee",
             "input": [
@@ -50,16 +50,16 @@
             ],
             "description": "While on the ground, use normal attack to launch 6 consecutive attacks. ",
             "breakdown": [
-                "**136%** of ATK + **7**.",
-                "**204%** of ATK + **11**.",
-                "**220%** of ATK + **12**.",
-                "**240%** of ATK + **13**.",
-                "**244%** of ATK + **13**.",
-                "**192%** of ATK + **13**."
+                "**82%** of ATK + **4**.",
+                "**122%** of ATK + **6**.",
+                "**132%** of ATK + **7**.",
+                "**144%** of ATK + **8**.",
+                "**146%** of ATK + **8**.",
+                "**115%** of ATK + **6**."
             ]
         },
         {
-            "name": "Slender Clouds",
+            "name": "Shifting Clouds",
             "type": "normal",
             "imgSrc": "feise_airattack",
             "input": [
@@ -68,36 +68,36 @@
             ],
             "description": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance.",
             "breakdown": [
-                "**120%** of ATK + **6**.",
-                "**164%** of ATK + **9**.",
-                "**236%** of ATK + **12**.",
-                "**236%** of ATK + **12**.",
-                "**288%** of ATK + **15**.",
-                "**240%** of ATK + **13**."
+                "**72%** of ATK + **4**.",
+                "**98%** of ATK + **5**.",
+                "**142%** of ATK + **7**.",
+                "**142%** of ATK + **7**.",
+                "**173%** of ATK + **9**.",
+                "**144%** of ATK + **8**."
             ]
         },
         {
-            "name": "Autumn Wind and Dew",
+            "name": "Golden Autumn",
             "type": "normal",
             "imgSrc": "feise_branch1",
             "input": [
                 "Attack x1 - 3",
                 "hold:Attack"
             ],
-            "description": "While on the ground, tap and hold normal attack when executing the first to third normal attacks to trigger Autumn Wind and Dew. Draw in nearby targets, then deal damage equal to **432%** of ATK + **23** to nearby targets, suspending them."
+            "description": "While on the ground, tap and hold normal attack when using the first to third normal attacks to trigger Golden Autumn. Draw in nearby targets, dealing damage equal to **259%** of ATK plus **14** and suspending them."
         },
         {
-            "name": "Jingling Ring",
+            "name": "Resounding Pendants",
             "type": "normal",
             "imgSrc": "feise_branch3",
             "input": [
                 "Attack x5",
                 "hold:Attack"
             ],
-            "description": "While on the ground, tap and hold normal attack when executing the fourth to sixth normal attacks to trigger Jingling Ring. Deal damage equal to **264%** of ATK + **14** to the target and knock them back."
+            "description": "While using on the ground, tap and hold normal attack when using the fourth to sixth normal attacks to trigger Resounding Pendants. \n\nDeal damage equal to **158%** of ATK plus **8** and knock the targets back."
         },
         {
-            "name": "Flying Lotus Steps",
+            "name": "Lotus Aspara",
             "type": "normal",
             "imgSrc": "feise_branch2",
             "input": [
@@ -105,7 +105,7 @@
                 "Attack",
                 "hold:Attack"
             ],
-            "description": "While on the ground or airborne, tap and hold normal attack to trigger Flying Lotus Steps.\n\nContinuously fly forwards in the air, consuming endurance. Use the arrow keys to adjust the forward direction during Flying Lotus Steps."
+            "description": "When on the ground or while airborne, tap and hold normal attack to trigger Lotus Asparagus. \n\nSoar ahead continuously in the air while consuming endurance. Use the directional controls to adjust the direction during Lotus Asparagus."
         },
         {
             "name": "Falling Flowers",
@@ -115,7 +115,7 @@
                 "Jump",
                 "hold:Attack"
             ],
-            "description": "While using **Slender Clouds**, tap and hold normal attack to trigger Falling Flowers. Fall from the sky, and after landing, deal damage equal to **124%** of ATK + **7** to nearby targets and knock them back."
+            "description": "During Shifting Clouds, tap and hold normal attack to trigger Falling Flowers. \n\nDescend from above. After landing, deal damage equal to **74%** of ATK plus **4** to nearby targets and launch them."
         },
         {
             "name": "Dodge",
@@ -124,7 +124,7 @@
             "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging."
         },
         {
-            "name": "Scattering Flowers",
+            "name": "Scatter",
             "type": "dodge",
             "imgSrc": "feise_evadefront",
             "input": [
@@ -132,61 +132,44 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Move in a direction while tapping normal attack during the short period after dodging forward to trigger Scattering Flowers, dealing damage equal to **348%** of ATK + **18** to nearby targets. While the **Mirage** generated by **Soaring** is still active, after the dodge attack of any weapon hits a target for the first time, the effect of Scattering Flowers will activate, generating Lotus Petals and Colored Illusions.\n\n**Colorful Illusions**: When generated, a Colorful Illusion will convert **25%** of the target's Max ATK into Flame ATK, which gets added to the Wanderer's **basic Flame ATK** (no less than **6,500** and no more than **10,000**, this increase in ATK will not be displayed in the Wanderer Stats screen, and does not take affect in the Apex League). The calculations of Colorful Illusions are calculated independently, and only **1** Colorful Illusion can exist on the field.\n\n**Lotus Petals**: When generated, the number of Lotus Petals that will appear is equal to the number of summoned objects that are currently on the field that were generated by other weapons except Heavy Pistil. Once generated, the number of Lotus Petals will not change if the number of summoned objects on the field change. Lotus Petals are considered summoned objects."
+            "description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Flower Scatter, dealing damage equal to **209%** of ATK plus **11** to nearby targets.\n\nDuring **Mirage Fantasy** created by **Whirling**, after any weapon's dodge attack lands a hit for the first time, trigger Flower Craft, creating a **FeiSe's Phantasia** and Lotus Petals. FeiSe's Phantasia: Upon creation, FeiSe's Phantasia copies **25%** of the target's Max ATK and converts it to the Wanderer's **base flame ATK** (not lower than **3,300** and not exceeding **3,450**; this flame ATK will not be reflected on the Wanderer's stats and is unavailable in Apex League) until Fei Se's Phantasia disappears. This is calculated independently for each FeiSe's Phantasia. There can be only **1** FeiSe's Phantasia at a time. \n\n**Lotus Petal**: Upon creation, the Lotus Petal count is equal to the number of summons created by the Wanderer's weapons other than Endless Bloom. After creation, the Lotus Petal count does not change with the number of summons. Lotus Petals are considered as summons."
         },
         {
-            "name": "Swirling",
+            "name": "SwirliFlutterng",
             "type": "dodge",
             "imgSrc": "feise_evadeback",
             "input": [
-                "Arrow keys",
                 "Dodge",
                 "hold:Attack"
             ],
-            "description": "Tap normal attack during the short period after dodging to trigger Swirling. Deal damage equal to **200%** of ATK + **11** to nearby targets."
+            "description": "Use normal attack during the short period after dodging to trigger Flutter, dealing damage equal to **120%** of ATK plus **6** to nearby targets."
         },
         {
-            "name": "Soaring",
+            "name": "Whirling",
             "type": "skill",
             "imgSrc": "feise_skill1",
-            "description": "Deal damage equal to **3,360%** of ATK + **177** to nearby targets and creates a Mirage, lasting up to **25** seconds. While Soaring is on cooldown, the new skill Frightened Swan can be released once the Mirage has lasted on the field for **20** seconds. When the Mirage disappears, the cooldown of Soaring is instantly refreshed. This cannot be affected by any other cooldown removal, cooldown reset, or cooldown change effects.\n\nWhile the Mirage is on the field:\n\nDeal Heart Erosion damage every second equal to **450%** of ATK to the target. Heart Erosion damage is regarded as normal attack damage;\n\nInflict a Heartburn status to one of the targets every **5** seconds, dealing **50%** of ATK of Heartburn damage per second for **5** seconds. Heartburn damage is increased by an additional **15%** for every self-generated **Colorful Illusion** and **Lotus Petal** in the Mirage's range."
+            "description": "Deal damage equal to **1,008%** of ATK plus **53** to nearby targets and create a Mirage Fantasy, which lasts up to **25** seconds. \n\nWhen Whirling is in cooldown, gain the new skill, Lissom. Lissom can be used after the Mirage has been active for **20** seconds. \n\nAfter the Mirage disappears, immediately refresh Swirling cooldown. This is not affected by other cooldown clearing, resetting, or changing effects.\n\nDuring the Mirage: \n\nEvery second, deal Soulwear damage equal to **135%** of ATK to targets in the Mirage. Soul wear damage counts as normal attack damage. Every **5** seconds, inflict Blazing Heart on targets in the Mirage, dealing burn damage equal to **20%** of ATK, lasting for **5** seconds. For every **1 FeiSe's Phantasia** or **Lotus Petal** created by the Wanderer in the Mirage, Blazing Heart's damage is additionally increased by **6%**."
         },
         {
-            "name": "Frightened Swan",
+            "name": "Lissom",
             "type": "skill",
             "imgSrc": "feise_skill2",
-            "description": "While Soaring is on cooldown, the new skill Frightened Swan can be released once the Mirage has lasted on the field for **20** seconds. Remove all **Colorful Illusions** and **Lotus Petals** in the **Mirage**, where for each removed **Colorful Illusion** and **Lotus Petal**, deal damage equal to **1,200%** of ATK + **63** to nearby targets, then shatter and remove the Mirage, dealing damage equal to **1,500%** of ATK + **79** to nearby targets."
+            "description": "When Whirling is in cooldown, gain the new skill, Lissom. Lissom can be used after the Mirage has been active for 20 seconds. \n\nClear all **FeiSe's Phantasies** and **Lotus Petals** in the Mirage created by the Wanderer. For every **1 FeiSe's Phantasia** or **Lotus Petal** cleared, deal damage equal to **180%** of ATK plus **9** to nearby targets. Then, shatter the Mirage Fantasy, dealing damage equal to **450%** of ATK plus **24** to nearby targets."
         },
         {
             "name": "Unparalleled Beauty",
             "type": "discharge",
             "imgSrc": "feise_changeskill",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another **removes all debuffs from the wielder** and deals damage equal to **3,632%** of ATK + **191** to target. During this period, gain damage immunity for **2.6** seconds (unavailable in Apex League)."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer**, dealing damage equal to **1,090%** of ATK plus **57**. During this period, gain damage immunity for **1.5** seconds (unavailable in Apex League)."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/JjUNvMwBdis?start=124",
-    "rating": [100,0,0,80,90,90],
+    "rating": [100,0,0,80,90,60],
     "recommendedPairings": ["Fiona", "Liu Huo","Lan"],
     "recommendedMatrices": [
         {
             "name": "Fei Se",
             "pieces": 4
-        },
-        {
-            "name": "Shiro",
-            "pieces": 4
-        },
-        {
-            "name": "Crow",
-            "pieces": 2
-        },
-        {
-            "name": "Samir",
-            "pieces": 2
-        },
-        {
-            "name": "Sobek",
-            "pieces": 3
         }
     ]
 }

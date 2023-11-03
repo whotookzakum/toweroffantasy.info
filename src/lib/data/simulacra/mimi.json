@@ -3,7 +3,7 @@
     "id": 41,
     "cnName": "mimi",
     "rarity": "SSR",
-    "chinaOnly": true,
+    "chinaOnly": false,
     "banners": {
         "cn": [
             {
@@ -11,16 +11,23 @@
                 "start": "5 Jul 2023",
                 "end": "2 Aug 2023"
             }
+        ],
+        "glob": [
+            {
+                "bannerNo": 60,
+                "start": "5 Sep 2023",
+                "end": "2 Oct 2023"
+            }
         ]
     },
     "traits": [
         {
             "affinity": 1200,
-            "description": "Final damage is increased by **13%**.\n\nEquip **3** pieces of electricity weapons to increase electricity damage by **6%**."
+            "description": "Increase final damage by **13%**. \n\nWhen equipped with **3** volt weapons, increase volt damage by **6%**."
         },
         {
             "affinity": 4000,
-            "description": "Final damage is increases by **18%**.\n\nEquip **3** pieces of electricity weapons to increase electricity damage by **6%** and extend the received crit increase chance by **25** seconds.\n\nAfter the character receives such a crit effect. Final damage increases by **18%** for **30** seconds."
+            "description": "Increase final damage by **18%**. \n\nWhen equipped with **3** volt weapons, increase volt damage by **6%**, and crit rate boost duration is additionally extended by **25** seconds."
         }
     ],
     "giftTypes": [
@@ -31,7 +38,7 @@
     "bestGifts": [],
     "gender": "Female",
     "height": "135 cm",
-    "birthplace": "Tenzhang Pavilion",
+    "birthplace": "Tianzhang Pavilion",
     "horoscope": "Aquarius",
     "birthday": "7 Jul",
     "voiceActors": {
