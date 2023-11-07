@@ -7,11 +7,11 @@
     "sets": [
         {
             "pieces": 2,
-            "description": "After using any flame weapon skill or discharge skill, increase all ATK by **18%/22%/26%/30%** for **30** seconds. This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+            "description": "Increase all elemental damage by **7%**/**8%**/**9%**/**10%**. When firing Frost Blades deal additional damage equal to **416%** of ATK to nearby targets. This set effectworks in the off-hand slot, and only theset with the highest star rating will takeeffect."
         },
         {
             "pieces": 4,
-            "description": "When equipped with at least 1 flame weapon, increase all elemental damage by **28%/32%/36%/40%**. When generating a Colorful Illusion, increase final damage by an additional **20%** for **25** seconds. This set effect works in the off-hand slot, only the set with the highest star rating will take effect."
+            "description": "After using any frost weapon's discharge skill, increase final damage by **12%**/**15%**/**19%**/**23%** for **30** seconds. When **Alabaster Tiger** is equipped, increase all attack by **12%**. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
         }
     ]
 }
