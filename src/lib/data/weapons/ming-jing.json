@@ -1,7 +1,7 @@
 {
     "name": "Onyx Tortoise",
     "imgSrc": "item_Weapon_SSR_Zeke_Phy01",
-    "element": "physical-flame_global",
+    "element": "physical-flame-global",
     "type": "dps",
     "isMeta": true,
     "shatter": {
@@ -158,7 +158,7 @@
         }
     ],
     "abilitiesVideoSrc": "https://youtube.com/embed/Df1KZ8zmsTk?start=135",
-    "rating": [],
+    "rating": [90,0,50,50,40,100],
     "recommendedPairings": ["Fiona","Gnonno","Umi"],
     "recommendedMatrices": [
         {

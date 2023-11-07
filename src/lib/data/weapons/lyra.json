@@ -139,14 +139,14 @@
             "type": "skill",
             "imgSrc": "skill_arm_airattack2",
             "description": 
-                    "Leap towards the target, dealing damage equal to **702.1%** of ATK + **37** and **strongly suspending** it. Inflict an Enlightenment mark on the target for **18** seconds. Cooldown: **20** seconds."
+                    "Leap towards the target, dealing damage equal to **771%** of ATK + **37** and **strongly suspending** it. Inflict an Enlightenment mark on the target for **18** seconds. Cooldown: **20** seconds."
         },
         {
             "name": "Shinerise",
             "type": "skill",
             "imgSrc": "skill_arm_skill2",
             "description": 
-                    "Pummel the ground and **strongly suspend** targets in front, dealing damage equal to **702.1%** of ATK + **37** and summoning up to **3 Blades** for **75** seconds (up to 1 Blade every 2 meters). This skill can be used up to **3** times, with a cooldown of **20** seconds each time. When 2 **Blades** exist on the field, a **Clearshine** is created. When a **Blade** is touched, it heals targets within the movement radius, restoring HP equal to **25%** of the target's ATK. When 3 **Blades** exsit, a **Nebula** is created. When a **Blade** is touched, it damages targets within the movement radius, dealing damage equal to **150%** of the target's ATK × movement distance / **5**m."
+                    "Pummel the ground and **strongly suspend** targets in front, dealing damage equal to **771%** of ATK + **37** and summoning up to **3 Blades** for **75** seconds (up to 1 Blade every 2 meters). This skill can be used up to **3** times, with a cooldown of **20** seconds each time. When 2 **Blades** exist on the field, a **Clearshine** is created. When a **Blade** is touched, it heals targets within the movement radius, restoring HP equal to **25%** of the target's ATK. When 3 **Blades** exsit, a **Nebula** is created. When a **Blade** is touched, it damages targets within the movement radius, dealing damage equal to **150%** of the target's ATK × movement distance / **5**m."
         },
         {
             "name": "Chanting Sigh",

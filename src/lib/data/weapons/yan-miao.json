@@ -39,9 +39,9 @@
     "advancements": [
         "The number of **Flaming Daggers** received from **Empyrean Rotation** is increased to **4**, and the maximum Frequency of **Flaming Dagger** use is reduced to once every **1.8** seconds.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "Wanderer ignores **30%** of the target's physical and flame resistances [the total value of ignoring resistance to a particular element cannot exceed **50%**).",
+        "Wanderer ignores **30%** of the target's physical and flame resistances (the total value of ignoring resistance to a particular element cannot exceed **50%**).",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "When **Flaming Dagger** is triggered, wanderer gains a shield equal to **30%** of Max HP for **20** seconds. The shields gained cannot exceed **30%** of Max HP [shields that exceed this value will be converted into healing at the rate of **50%** of the shield].",
+        "When **Flaming Dagger** is triggered, wanderer gains a shield equal to **30%** of Max HP for **20** seconds. The shields gained cannot exceed **30%** of Max HP (shields that exceed this value will be converted into healing at the rate of **50%** of the shield).",
         "Flaming Daggers damage is increased to **8,800%** and the Final damage buff after a Flaming Dagger is triggered is further increased by **16%**."
     ],
     "abilities": [
@@ -161,7 +161,7 @@
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/C1aQCp5dwrE?start=112",
     "rating": [80,0,0,70,80,100],
-    "recommendedPairings": [],
+    "recommendedPairings": ["Nan Yin","Ming Jing","Fei Se","Fiona", "Gnonno"],
     "recommendedMatrices": [
         {
             "name": "Yan Miao",

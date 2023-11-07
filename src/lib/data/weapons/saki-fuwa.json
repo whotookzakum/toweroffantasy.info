@@ -130,7 +130,7 @@
             "name": "Heartlotus",
             "type": "discharge",
             "imgSrc": "skill_dkatana_changeskill",
-            "description": "When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **536%** of ATK + **28**."
+            "description": "When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and dash toward the target with a combo attack upon switching to this weapon, dealing damage equal to **590%** of ATK + **28**."
         }
     ],
     "abilitiesVideoSrc": "",

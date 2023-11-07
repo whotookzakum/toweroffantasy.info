@@ -29,7 +29,7 @@
         },
         {
             "title": "Universal Resonance",
-            "description": "Increase final damage by **12%**. Activate by equipping **2** weapons of the same element, not including physical. This set effect works in the off-hand slot."
+            "description": "Increase final damage by **15%**. Activate by equipping **2** weapons of the same element, not including physical. This set effect works in the off-hand slot."
         }
     ],
     "advancements": [
@@ -153,7 +153,7 @@
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/sltdX1RmGAc?start=196",
-    "rating": [],
+    "rating": [70,80,0,100,60,100],
     "recommendedPairings": ["Fiona","Ming Jing","Umi","Lin"],
     "recommendedMatrices": [
         {
