@@ -185,12 +185,24 @@
         }
     ],
     "abilitiesVideoSrc": "https://youtube.com/embed/-Jc6hAW01sw?start=103",
-    "rating": [],
-    "recommendedPairings": ["Fiona","Icarus","Alyss"],
+    "rating": [80,0,40,50,50,60],
+    "recommendedPairings": ["Fiona","Alyss","Ming Jing", "Icarus"],
     "recommendedMatrices": [
         {
             "name": "Yu Lan",
             "pieces": 4
+        },
+        {
+            "name": "Samir",
+            "pieces": 2
+        },
+        {
+            "name": "Lyra",
+            "pieces": 2
+        },
+        {
+            "name": "Shiro",
+            "pieces": 2
         }
     ]
 }

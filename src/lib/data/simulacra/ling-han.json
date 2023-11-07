@@ -1,0 +1,50 @@
+{
+    "name": "Ling Han",
+    "id": 43,
+    "cnName": "linghan",
+    "rarity": "SSR",
+    "chinaOnly": false,
+    "banners": {
+        "cn": [
+            {
+                "bannerNo": 89,
+                "start": "",
+                "end": ""
+            }
+        ],
+        "glob": [
+            {
+                "bannerNo": 68,
+                "start": "24 Oct 2023",
+                "end": "20 Nov 2023"
+            }
+        ]
+    },
+    "traits": [
+        {
+            "affinity": 1200,
+            "description": "Increase final damage by **13%**. When **Alabaster Tiger** is equipped, for every **1** frost weapon equipped, increase frost damage by **1%**."
+        },
+        {
+            "affinity": 4000,
+            "description": "Increase final damage by **18%**. When **Alabaster Tiger** is equipped, gain damage immunity for **4** seconds when using **Sword Art: Icy Beckon** (unavailable in Apex League). For every **1** frost weapon equipped, increase frost damage by **2.5%**. When **3** frost weapons are equipped, gain an additional **350** weapon charge after the Wanderer uses any frost weapon skill. After using any frost weapon's skill or discharge other than **Alabaster Tiger's**, deal additional damage equal to **1,456%** of ATK to nearby targets."
+        }   
+    ],
+    "giftTypes": [
+        "Collectible",
+        "Decorations",
+        "Domain 9"
+    ],
+    "bestGifts": [
+    ],
+    "gender": "Female",
+    "height": "181 cm",
+    "birthplace": "Longjian Pavilion",
+    "horoscope": "Virgo",
+    "birthday": "7 June",
+    "voiceActors": {
+        "jp": "",
+        "en": "",
+        "cn": ""
+    }
+}

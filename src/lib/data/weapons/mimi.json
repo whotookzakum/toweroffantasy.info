@@ -28,21 +28,21 @@
             "description": "Increase Volt ATK by **15%** and Volt Resistance by **25%**. Activate by equipping **2** or more Volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
         },
         {
-            "title": "Thunderboom: On-Field",
-            "description": "When landing any hit with Azure Dragon, it deals damage to nearby targets equal to **13.3%** of volt ATK plus **1.9%** of the Wanderer's Max HP plus **68.8%** of the sum of all the Wanderer's resistance types plus **250%** of crit. This effect can be triggered up to 1 time every **1.5** seconds. The Thunderboom damage is counted as normal attack damage. If there is **1** flame/frost/physical weapon of any kind equipped, Thunderboom damage is multiplied by **1.3** times. Additionally, Thunderboom damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+            "title": "Thunderbloom: On-Field",
+            "description": "When landing any hit with **Azure Dragon**, it deals damage to nearby targets equal to **131.3%** of volt ATK plus **1.9%** of the Wanderer's Max HP plus **68.8%** of the sum of all the Wanderer's resistance types plus **250%** of crit. This effect can be triggered up to **1** time every **1.5** seconds. The Thunder boom damage is counted as normal attack damage. If there is **1** flame/frost/physical weapon of any kind equipped, Thunder boom damage is multiplied by **1.3** times. Additionally, Thunder boom damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
         }
     ],
     "advancements": [
-        "Each time after Thunder Burst charges, **2** Azuras will appear. Each Azura will restore **20%** Max HP to other summons.\n\nIncrease Thunder Burst's charged attack and shockwave damage by **30%**.\n\nAfter using Azure Moon, immediately gain **3** stacks of Qinglong's Might. Using other volt weapons' skills will grant **1** stack of Qinglong's Might instead.",
+        "Each time after **Thunder Burst** charges, **2** Azura's will appear. Each Azura will restore **20%** Max HP to other summons. \n\nIncrease **Thunder Burst's** charged attack and shockwave damage by **30%**. \n\nAfter using Azure Moon, immediately gain **3** stacks of Qinglong Might. Using other volt weapons' skills will grant **1** stack of Qinglong Might instead.",
         "Increase the current weapon's base ATK growth by **16%**.",
-        "When Azure Dragon is equipped, reduce all volt weapon base skill cooldowns by **20%**. This is not affected by other cooldown clearing, resetting, or changing effects.\n\nAdditionally, increase the Wanderer's volt damage by **15%**. This effect works in the off-hand slot.",
+        "When **Azure Dragon** is equipped, reduce all volt weapon base skill cooldowns by **20%**. This is not affected by other cooldown clearing, resetting, or changing effects. \nAdditionally, increase the Wanderer's volt damage by **15%**. This effect works in the off-hand slot.",
         "Increase the current weapon's base ATK growth by **32%**.",
-        "When the Wanderer receives lethal damage, prevent lethal damage 1 time and gain damage immunity for a short duration. This effect can only trigger 1 time every **60** seconds and works in the off-hand slot.\n\nAfter activating Fortitude Resonance:\n\nUsing Soaring Dragon draws in nearby targets, ignoring hyperbody (ineffective against bosses).\n\nIn team play, Thunder Burst will produce **1** volt timestamp every **6** seconds while charging, which will link up in the order they are produced to form a power grid. The power grid can block enemies' movements and their projectile damage. Each volt timestamp lasts for up to **20** seconds.",
-        "After using Azure Moon, increase the Wanderer's volt damage by **10%** and final damage by **10%** for **30** seconds."
+        "When the Wanderer receives lethal damage, prevent lethal damage 1 time and gain damage immunity for a short duration. This effect can only trigger 1 time every **60** seconds and works in the off-hand slot. \n\nAfter activating Fortitude Resonance: \n\nUsing **Soaring Dragon** draws in nearby targets, ignoring hyper body (ineffective against bosses).\n\nIn team play, **Thunder Burst** will produce **1** volt timestamp every **6** seconds while charging, which will link up in the order they are produced to form a power grid. The power grid can block enemies' movements and their projectile damage. Each volt timestamp lasts for up to **20** seconds.",
+        "After using **Azure Moon**, increase the Wanderer's volt damage by **10%** and final damage by **10%** for **30** seconds."
     ],
     "abilities": [
         {
-            "name": "Pearls & Jades",
+            "name": "Pearls and Jades",
             "type": "normal",
             "imgSrc": "skill_mimi_melee",
             "input": [
@@ -58,14 +58,14 @@
             ]
         },
         {
-            "name": "Seeing Sights",
+            "name": "Seeing Sight",
             "type": "normal",
             "imgSrc": "skill_mimi_airattack",
             "input": [
                 "Jump",
                 "Attack x5"
             ],
-            "description": "While airborne, use normal attack to launch 5 consecutive attacks in mid-air, consuming endurance.",
+            "description": "While in the air, use a normal attack to carry out 5 consecutive attacks, consuming endurance.",
             "breakdown": [
                 "**92.6%** of ATK + **5**.",
                 "**150.5%** of ATK + **8**.",
@@ -75,23 +75,23 @@
             ]
         },
         {
+            "name": "Pierces the Sun",
+            "type": "normal",
+            "imgSrc": "skill_mimi_meleebranch",
+            "input": [
+                "hold:Attack"
+            ],
+            "description": "While on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger Azure Dragon Pierces the Sun and consume endurance. \n\nLaunch an attack ahead, dealing damage equal to **329.7%** of ATK plus **17** to nearby targets and suspending them. After triggering Azure Dragon Pierces the Sun, tap and hold normal attack to trigger Thunder Burst."
+        },
+        {
             "name": "Thunder Burst",
             "type": "normal",
             "imgSrc": "skill_mimi_powerattack",
             "input": [
-                "hold:Attack"
-            ],
-            "description": "While on the ground, tap and hold normal attack to trigger Thunder Burst.\n\nContinuously fire lightnin at the targets ahead, consuming endurance, during which tie Wanderer gains hyperbody. Every attack that lands deals damage equal to **53.5%** of ATK plus **3** to nearby targets. At the same time, summon **1** Azura every **1.5** seconds that fire shockwaves, dealing damage equal to **99%** of ATK plus **5** to nearby targets.\n\nThe Wanderer gains a shield equal to **10%** of Max HP every **1.5** seconds, stacking up to **15%**, lasting for **15** seconds from the creation of the first shield.\n\nAfter activating Fortitude Resonance:\n\nWhenever Thunder Burst's shockwave lands a hit, nearby targets are taunted for **2** seconds.\n\nEvery time Thunder Burst produces a shield, nearby teammates will additionally receive a shield up to **10%** of the Wanderer's Max HP."
-        },
-        {
-            "name": "Azure Dragon Pierces the Sun",
-            "type": "normal",
-            "imgSrc": "skill_mimi_meleebranch",
-            "input": [
                 "Attack x1 - 4",
                 "hold:Attack"
             ],
-            "description": "While on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger Azure Dragon Pierces the Sun and consume endurance.\n\nLaunch an attack ahead, dealing damage equal to **329.7%** of ATK plus **17** to nearby targets and suspending them.\n\nAfter triggering Azure Dragon Pierces the Sun, tap and hold normal attack to trigger Thunder Burst."
+            "description": "While on the ground, tap and hold normal attack to trigger Thunder Burst. \n\nContinuously fire lightning at targets, consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage equal to **53.5%** of ATK plus **3** to nearby targets. At the same time, summon **1** Azura every **1.5** seconds that fire shockwaves, dealing damage equal to **99%** of ATK plus **5** to nearby targets. \n\nThe Wanderer gains a shield equal to **10%** of Max HP every **1.5** seconds, stacking up to **15%**, lasting for **15** seconds from the creation of the first shield. \n\nAfter activating Fortitude Resonance: \n\nWhenever Thunder Burst's shockwave lands a hit, nearby targets are taunted for **2** seconds. \n\nEvery time Thunder Burst produces a shield, nearby teammates will additionally receive a shield up to **10%** of the Wanderer's Max HP."
         },
         {
             "name": "Roving Dragon",
@@ -102,19 +102,19 @@
                 "Attack x1 - 4",
                 "hold:Attack"
             ],
-            "description": "While airborne, tap and hold normal attack when using the first to fourth normal attacks to trigger Roving Dragon and consume endurance.\n\nLaunch an attack ahead, dealing damage equal to **329.7%** of ATK plus **17** to nearby targets and suspending them."
+            "description": "While airborne, tap and hold normal attack when using the first to fourth normal attacks to trigger Roving Dragon and consume endurance. \n\nLaunch an attack ahead, dealing damage equal to **329.7%** of ATK plus **17** to nearby targets and suspending them."
         },
         {
-            "name": "Qinglong's Might",
+            "name": "Qinglong Might",
             "type": "normal",
             "imgSrc": "skill_mimi_beidong",
-            "description": "Every **3** normal attacks landed while using Azure Dragon grants **1** stack of Qinglong's Might, stacking up to **8** times, for **30** seconds.\n\nAfter activating Fortitude Resonance:\n\nEach stack of Qinglong's Might reduces the Wanderer's damage taken by **1.5%**."
+            "description": "Every **3** normal attacks landed while using Azure Dragon grants **1** stack of Qinglong's Might, stacking up to **8** times, for **30** seconds. \n\nAfter activating Fortitude Resonance: \n\nEach stack of Qinglong's Might reduces the Wanderer's damage taken by **1.5%**."
         },
         {
             "name": "Dodge",
             "type": "dodge",
             "imgSrc": "common_evade",
-            "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.\n\n**Passive**: Launch a lightning ball ahead."
+            "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\n**Passive**: Launch a lightning ball ahead."
         },
         {
             "name": "Lightning Flash",
@@ -125,28 +125,40 @@
                 "Dodge",
                 "Attack"
             ],
-            "description": "Use normal attack during the short period after dodging to trigger Lightning Flash.\n\nInstantly appear at lightning ball's location, dealing damage equal to **106.4%** of ATK plus **6** to nearby targets and produce a lightning pool, then return to the Wanderer's original location. The lightning pool will deal a total DOT equal to **149.5%** of ATK plus **8** and continuously draw in nearby targets.\n\n**Passive**: During Lightning Flash, the Wanderer receives hyperbody. After Lightning Flash lands a hit, receive **1** stack of Qinglong's Might.\n\nAfter triggering Lightning Flash, tap and hold normal attack to trigger Thunder Burst."
+            "description": "Use normal attack during the short period after dodging to trigger Lightning Flash. \n\nInstantly appear at lightning ball's location, dealing damage equal to **106.4%** of ATK plus **6** to nearby targets and produce a lightning pool, then return to the Wanderer's original location. The lightning pool will deal a total DoT equal to **149.5%** of ATK plus **8** and continuously draw in nearby targets. \n\n**Passive**: During Lightning Flash, the Wanderer receives hyperbody. After Lightning Flash lands a hit, receive **1** stack of Qinglong Might. After triggering Lightning Flash, tap and hold normal attack to trigger Thunder Burst."
         },
         {
             "name": "Azure Moon",
             "type": "skill",
             "imgSrc": "skill_mimi_skill",
-            "description": "An azure dragon soars through the sky. During this time, grant hyperbody to the Wanderer and deal damage equal to **1,777.5%** of ATK plus **94** to nearby targets. The azure dragon will circle for **8** seconds. During this time, continuously consume Qinglong's Might and summon up to **8** lightning strikes. Every lightning strike deals damage equal to **649.9%** of ATK plus **34** to nearby targets, and when the azure dragon disappears, deal damage again equal to **1,485%** of ATK plus **78** to nearby targets.\n\nCooldown: **30** seconds and this cooldown cannot be lowered below **20** seconds. Azure Moon can accumulate up to **2** stacks of skill uses.\n\n**Passive**: When **3** volt weapons are equipped, after Azure Moon lands a hit, deal skill damage equal to **250%** of ATK to the target every **2** seconds for **30** seconds."
+            "description": "An azure dragon soars through the sky. During this time, grant hyperbody to the Wanderer and deal damage equal to **1,777.5%** of ATK plus **94** to nearby targets. The azure dragon will circle for **8** seconds. During this time, continuously consume Qinglong's Might and summon up to **8** lightning strikes. Every lightning strike deals damage equal to **649.9%** of ATK plus **34** to nearby targets, and when the azure dragon disappears, deal damage again equal to **1,485%** of ATK plus **78** to nearby targets. \n\nCooldown: **30** seconds and this cooldown cannot be lowered below **20** seconds. Azure Moon can accumulate up to **2** stacks of skill uses. \n\n**Passive**: When **3** volt weapons are equipped, after Azure Moon lands a hit, deal skill damage equal to **250%** of ATK to the target every **2** seconds for **30** seconds."
         },
         {
             "name": "Soaring Dragon",
             "type": "discharge",
             "imgSrc": "skill_mimi_changeskill",
-            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, switching to this weapon from another removes all debuffs from the Wanderer and gather chi. Then smash the ground, causing an explosion, dealing damage equal to **1,514.7%** of ATK plus **80** to nearby targets and suspending them. During the period, gain damage immunity for **1.5** seconds (unavailable in Apex League).\n\n**Passive**: When Phantasia is triggered, if Azure Dragon is currently equipped or if switching to Azure Dragon from another weapon, deal damage equal to **5,000%** of ATK to nearby targets. This damage is not affected by any damage boost effects except from titan equipment's rare stats. This can only be triggered up to 1 time per Phantasia trigger."
+            "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and gather chi. Then smash the ground, causing an explosion, dealing damage equal to **1,514.7%** of ATK plus **80** to nearby targets and suspending them. During the period, gain damage immunity for **1.5** seconds (unavailable in Apex League). \n\n**Passive**: When Phantasia is triggered, if Azure Dragon is currently equipped or if switching to Azure Dragon from another weapon, deal damage equal to **5,000%** of ATK to nearby targets. This damage is not affected by any damage boost effects except from titan equipment's rare stats. This can only be triggered up to 1 time per Phantasia trigger."
         }
     ],
     "abilitiesVideoSrc": "https://www.youtube.com/embed/Pb6TYhCOk6Q?start=99",
-    "rating": [],
-    "recommendedPairings": ["Fiona", "Rubilia","Fenrir","Tian Lang"],
+    "rating": [100,80,0,50,50,100],
+    "recommendedPairings": ["Fiona", "Rubilia","Fenrir","Tian Lang", "Crow"],
     "recommendedMatrices": [
         {
             "name": "Mimi",
             "pieces": 4
+        },
+        {
+            "name": "Samir",
+            "pieces": 2
+        },
+        {
+            "name": "Lyra",
+            "pieces": 2
+        },
+        {
+            "name": "Shiro",
+            "pieces": 2
         }
     ]
 }

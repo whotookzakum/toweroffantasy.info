@@ -57,6 +57,9 @@
                             </ol>
                         {/if}
                     </dd>
+                    <dd>
+                        <SvelteMarkdown source={ability.additional_description} />
+                    </dd>
                 </div>
             {/each}
         </dl>

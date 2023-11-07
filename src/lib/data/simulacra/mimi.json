@@ -13,7 +13,7 @@
         ],
         "glob": [
             {
-                "bannerNo": 64,
+                "bannerNo": 60,
                 "start": "5 Sep 2023",
                 "end": "2 Oct 2023"
             }
@@ -22,7 +22,7 @@
     "traits": [
         {
             "affinity": 1200,
-            "description": "Increase final damage by **13%**.\n\nWhen equipped with **3** volt weapons, increase volt damage by **6%**."
+            "description": "Increase final damage by **13%**. \n\nWhen equipped with **3** volt weapons, increase volt damage by **6%**."
         },
         {
             "affinity": 4000,
@@ -37,7 +37,7 @@
     "bestGifts": [],
     "gender": "Female",
     "height": "135 cm",
-    "birthplace": "Tenzhang Pavilion",
+    "birthplace": "Tianzhang Pavilion",
     "horoscope": "Aquarius",
     "birthday": "7 Jul",
     "voiceActors": {

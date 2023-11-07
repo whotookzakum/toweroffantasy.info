@@ -1,0 +1,17 @@
+{
+    "name": "Yan Miao",
+    "id": 39,
+    "rarity": "SSR",
+    "imgSrc": "icon_matrix_SSR39_256",
+    "chinaOnly": true,
+    "sets": [
+        {
+            "pieces": 2,
+            "description": "Increases physical attack and flame attack by **20%**/**25%**/**30%**/**35%**. This set effect works in the off-hand slot. Only the set with the highest star rating will take effect."
+        },
+        {
+            "pieces": 4,
+            "description": "When equipped with at least 1 physical weapon, all elemental damage is increased by **28%**/**32%**/**36%**/**42%**. When equipped with **Equilibrium**, all elemental damage is additionally increased by **21%**. This set effect works in the off-hand slot. Only the set with the highest star rating will take effect."
+        }
+    ]
+}

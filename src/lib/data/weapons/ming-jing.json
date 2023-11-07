@@ -1,7 +1,7 @@
 {
     "name": "Onyx Tortoise",
     "imgSrc": "item_Weapon_SSR_Zeke_Phy01",
-    "element": "physical-flame",
+    "element": "physical-flame_global",
     "type": "dps",
     "isMeta": true,
     "shatter": {
@@ -164,5 +164,18 @@
         {
             "name": "Ming Jing",
             "pieces": 4
-        }]
+        },
+        {
+            "name": "Lyra",
+            "pieces": 4
+        },
+        {
+            "name": "Samir",
+            "pieces": 2
+        },
+        {
+            "name": "Shiro",
+            "pieces": 2
+        }
+    ]
 }
