@@ -1,0 +1,17 @@
+{
+    "name": "Cyox",
+    "id": 20,
+    "imgSrc": "zuoqi_tubiap_20",
+    "chinaOnly": false,
+    "parts": [
+        {
+            "source": "Obtained by Statue lvlup.",
+            "imgSrc": "Mount_020_a"
+        },
+        {
+            "source": "Obtained by Tower Slayer achivement.",
+            "imgSrc": "Mount_020_b"
+        }
+    ],
+    "videoSrc": ""
+}

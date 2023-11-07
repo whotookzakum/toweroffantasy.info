@@ -1,11 +1,11 @@
 {
-    "name": "Fox",
+    "name": "Ink Fox",
     "id": 20,
     "imgSrc": "zuoqi_tubiap_23",
-    "chinaOnly": true,
+    "chinaOnly": false,
     "parts": [
         {
-            "source": "Obtained by purchasing the 14th Collector's Edition Pass.",
+            "source": "Obtained by purchasing the 11th Collector's Edition Pass.",
             "imgSrc": "Mount_023"
         }
     ],
