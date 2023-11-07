@@ -3,7 +3,6 @@
     "id": 41,
     "cnName": "mimi",
     "rarity": "SSR",
-    "chinaOnly": false,
     "banners": {
         "cn": [
             {
@@ -27,7 +26,7 @@
         },
         {
             "affinity": 4000,
-            "description": "Increase final damage by **18%**. \n\nWhen equipped with **3** volt weapons, increase volt damage by **6%**, and crit rate boost duration is additionally extended by **25** seconds."
+            "description": "Increase final damage by **13%**.\n\nWhen equipped with **3** volt weapons, increase volt damage by **6%**, and crit rate boost duration is additionally extended by **25** seconds."
         }
     ],
     "giftTypes": [

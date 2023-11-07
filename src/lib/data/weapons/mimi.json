@@ -48,7 +48,7 @@
             "input": [
                 "Attack x5"
             ],
-            "description": "While on the ground, use a normal attack to carry out 5 consecutive attacks.",
+            "description": "While on the ground, use normal attack to attack 5 times in a row.",
             "breakdown": [
                 "**91.1%** of ATK + **5**.",
                 "**137.6%** of ATK + **7**.",
@@ -94,7 +94,7 @@
             "description": "While on the ground, tap and hold normal attack to trigger Thunder Burst. \n\nContinuously fire lightning at targets, consuming endurance, during which the Wanderer gains hyperbody. Every attack that lands deals damage equal to **53.5%** of ATK plus **3** to nearby targets. At the same time, summon **1** Azura every **1.5** seconds that fire shockwaves, dealing damage equal to **99%** of ATK plus **5** to nearby targets. \n\nThe Wanderer gains a shield equal to **10%** of Max HP every **1.5** seconds, stacking up to **15%**, lasting for **15** seconds from the creation of the first shield. \n\nAfter activating Fortitude Resonance: \n\nWhenever Thunder Burst's shockwave lands a hit, nearby targets are taunted for **2** seconds. \n\nEvery time Thunder Burst produces a shield, nearby teammates will additionally receive a shield up to **10%** of the Wanderer's Max HP."
         },
         {
-            "name": "Flying Dragon",
+            "name": "Roving Dragon",
             "type": "normal",
             "imgSrc": "skill_mimi_airbranch",
             "input": [
@@ -117,7 +117,7 @@
             "description": "Dodge right before getting hit to trigger a Phantasia, cooldown 15 seconds, reducing the speed of enemies within an area. Become immune to hitstun for **0.5** seconds while dodging.\n\n**Passive**: Launch a lightning ball ahead."
         },
         {
-            "name": "Lithning Flash",
+            "name": "Lightning Flash",
             "type": "dodge",
             "imgSrc": "skill_mimi_evadeattack",
             "input": [
@@ -134,7 +134,7 @@
             "description": "An azure dragon soars through the sky. During this time, grant hyperbody to the Wanderer and deal damage equal to **1,777.5%** of ATK plus **94** to nearby targets. The azure dragon will circle for **8** seconds. During this time, continuously consume Qinglong's Might and summon up to **8** lightning strikes. Every lightning strike deals damage equal to **649.9%** of ATK plus **34** to nearby targets, and when the azure dragon disappears, deal damage again equal to **1,485%** of ATK plus **78** to nearby targets. \n\nCooldown: **30** seconds and this cooldown cannot be lowered below **20** seconds. Azure Moon can accumulate up to **2** stacks of skill uses. \n\n**Passive**: When **3** volt weapons are equipped, after Azure Moon lands a hit, deal skill damage equal to **250%** of ATK to the target every **2** seconds for **30** seconds."
         },
         {
-            "name": "DSoaring Dragon",
+            "name": "Soaring Dragon",
             "type": "discharge",
             "imgSrc": "skill_mimi_changeskill",
             "description": "When ***weapon charge is full*** or ***Phantasia*** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and gather chi. Then smash the ground, causing an explosion, dealing damage equal to **1,514.7%** of ATK plus **80** to nearby targets and suspending them. During the period, gain damage immunity for **1.5** seconds (unavailable in Apex League). \n\n**Passive**: When Phantasia is triggered, if Azure Dragon is currently equipped or if switching to Azure Dragon from another weapon, deal damage equal to **5,000%** of ATK to nearby targets. This damage is not affected by any damage boost effects except from titan equipment's rare stats. This can only be triggered up to 1 time per Phantasia trigger."
