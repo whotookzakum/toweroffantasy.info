@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
+import path from 'path'
 import { mdsvex } from 'mdsvex'
+import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,9 +14,12 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	kit: {
 		adapter: adapter(),
-		prerender: {
-			handleMissingId: 'ignore'
-		}
+		alias: {
+            $houdini: path.resolve('.', '$houdini')
+        }
+		// prerender: {
+		// 	handleMissingId: 'ignore'
+		// }
 	}
 };
 

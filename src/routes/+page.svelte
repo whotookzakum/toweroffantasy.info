@@ -5,6 +5,8 @@
     import Ad from "../lib/components/Ad.svelte";
 
     export let data;
+    $: ({ MyQuery } = data)
+    $: console.log($MyQuery)
 
     const todaysDate = new Date().getTime();
 

@@ -1,0 +1,140 @@
+type Advancements {
+  description: String
+  need: String!
+  stats: Stats!
+}
+
+type Assets {
+  artwork: String
+  avatar: String
+  lotteryCard: String
+  lotteryDrawing: String
+}
+
+type Awakening {
+  description: String!
+  name: String!
+}
+
+type MatriceSet {
+  set2: String
+  set4: String
+}
+
+type MatriceType {
+  description: String!
+  gachaIcon: String!
+  icon: String!
+  id: String!
+  name: String!
+  rarity: String!
+  set: MatriceSet!
+  type: String!
+}
+
+type Query {
+  matrice(id: String!, lang: String! = "en"): MatriceType!
+  matrices(lang: String! = "en"): [MatriceType!]!
+  simulacra(lang: String! = "en"): [SimulacraType!]!
+  simulacrav2(lang: String! = "en"): [SimulacraTypeV2!]!
+  simulacrum(id: String!, lang: String! = "en"): SimulacraType!
+  simulacrumv2(id: String!, lang: String! = "en"): SimulacraTypeV2!
+  weapon(id: String!, lang: String! = "en"): WeaponType!
+  weapons(lang: String! = "en"): [WeaponType!]!
+}
+
+type ShatterOrCharge {
+  tier: String!
+  value: Float!
+}
+
+type SimulacraType {
+  advanceId: String
+  age: String!
+  assets: Assets!
+  avatarID: String!
+  awakenings: [Awakening!]!
+  city: String!
+  gender: String!
+  giftTypes: [String!]!
+  height: String!
+  id: String!
+  name: String!
+  rating: String!
+  state: String!
+  voiceActors: VoiceActors!
+  weaponId: String!
+}
+
+type SimulacraTypeV2 {
+  advanceId: String
+  age: String!
+  assets: Assets!
+  avatarID: String!
+  awakenings: [Awakening!]!
+  city: String!
+  gender: String!
+  giftTypes: [String!]!
+  height: String!
+  id: String!
+  matrice: MatriceType
+  name: String!
+  rating: String!
+  state: String!
+  voiceActors: VoiceActors!
+  weapon: WeaponType
+  weaponId: String!
+}
+
+type Skill {
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+}
+
+type Skills {
+  discharge: [Skill!]!
+  dodge: [Skill!]!
+  normals: [Skill!]!
+  skill: [Skill!]!
+}
+
+type Stats {
+  charge: Float!
+  shatter: Float!
+}
+
+type VoiceActors {
+  chinese: String
+  english: String
+  japanese: String
+  korean: String
+  portuguese: String
+}
+
+type WeaponAssets {
+  icon: String
+  weaponMatrixIcon: String
+}
+
+type WeaponEffect {
+  description: String!
+  title: String!
+}
+
+type WeaponType {
+  advanceID: String
+  advancements: [Advancements!]!
+  assets: WeaponAssets!
+  charge: ShatterOrCharge!
+  description: String!
+  element: String!
+  id: String!
+  name: String!
+  rarity: String!
+  shatter: ShatterOrCharge!
+  skills: Skills!
+  type: String!
+  weaponEffects: [WeaponEffect!]!
+}

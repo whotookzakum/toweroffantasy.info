@@ -1,33 +1,31 @@
 {
 	"name": "toweroffantasy.info",
-	"version": "2.3.0",
+	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
-		"lint": "eslint ."
+		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"@beyonk/svelte-google-analytics": "^2.6.4",
-		"@iconify/svelte": "^3.0.1",
-		"@sveltejs/adapter-auto": "^1.0.0",
-		"@sveltejs/adapter-cloudflare": "^1.0.0",
-		"@sveltejs/adapter-static": "^1.0.0-next.50",
-		"@sveltejs/kit": "^1.0.0",
-		"eslint": "^8.28.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"mdsvex": "^0.10.6",
-		"sass": "^1.57.1",
-		"svelte": "^3.54.0",
-		"svelte-preprocess": "^5.0.0",
-		"svelte-range-slider-pips": "^2.1.1",
-		"vite": "^4.0.0"
+		"@iconify/svelte": "^3.1.4",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.3",
+		"@sveltejs/kit": "^1.27.4",
+		"houdini": "^1.2.33",
+		"houdini-svelte": "^1.2.33",
+		"mdsvex": "^0.11.0",
+		"sass": "^1.69.5",
+		"svelte": "^4.0.5",
+		"svelte-preprocess": "^5.1.0",
+		"svelte-range-slider-pips": "^2.2.3",
+		"vite": "^4.4.2"
 	},
 	"type": "module",
 	"dependencies": {
-		"anchor-js": "^4.3.1",
+		"anchor-js": "^5.0.0",
 		"lodash": "^4.17.21",
-		"svelte-markdown": "^0.2.3"
+		"svelte-markdown": "^0.4.0"
 	}
 }
