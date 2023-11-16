@@ -11,7 +11,7 @@
 
     export let data;
     $: ({ MyQuery } = data);
-    // $: console.log($MyQuery)
+    // $: console.log($MyQuery);
 
     let locales = [
         {
@@ -97,82 +97,51 @@
     {/each}
 </select>
 
-<ul>
-    {#each $MyQuery.data.simulacrav2 as item}
-        <li class="item ssr">
-            <img
-                class="avatar"
-                src="https://api.toweroffantasy.info{item?.assets?.avatar}?format=webp"
-                alt={item?.name}
-                width="128"
-                height="128"
-            />
-            <span>{item.name}</span>
-            <CategoryIcon
-                type={item?.weapon?.element}
-                width="26px"
-                style="position: absolute; top: 0.5rem; right: 0.5rem"
-            />
-            <CategoryIcon
-                type={item?.weapon?.type}
-                width="26px"
-                style="position: absolute; top: 0.5rem; left: 0.5rem"
-            />
-        </li>
-    {/each}
-    {#each $MyQuery.data.matrices as item}
-        <li class="item">
-            <img
-                class="avatar"
-                src="https://api.toweroffantasy.info{item?.icon}?format=webp"
-                alt=""
-                width="128"
-                height="128"
-            />
-            <span>{item.name}</span>
-        </li>
-    {/each}
-</ul>
+{#if !$MyQuery.fetching}
+    <ul>
+        {#each $MyQuery.data.simulacrav2 as item}
+            <li class="item">
+                <!-- <div class="avatar-wrapper {item?.weapon?.rarity}">
+                    <img
+                        class="avatar"
+                        src="https://api.toweroffantasy.info{item?.assets
+                            ?.avatar}?format=webp"
+                        alt={item?.name}
+                        width="128"
+                        height="128"
+                    />
+                </div> -->
+                <a href="/">{item.name}</a>
+                <img
+                    class="avatar"
+                    src="https://api.toweroffantasy.info{item?.assets?.painting}?format=webp"
+                    alt=""
+                />
+                <div class="bottom">
+                    <div class="categories-wrapper">
+                        <CategoryIcon type={item?.weapon?.element} width="30px" />
+                        <CategoryIcon type={item?.weapon?.type} width="30px" />
+                    </div>
+                    <img class="rarity" src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{item?.weapon?.rarity?.toLowerCase()}?format=webp" alt="" width="63" height="36">
+                </div>
+            </li>
+        {/each}
+        {#each $MyQuery.data.matrices as item}
+            <li class="item">
+                <img
+                    class="avatar"
+                    src="https://api.toweroffantasy.info{item?.icon}?format=webp"
+                    alt=""
+                    width="128"
+                    height="128"
+                />
+                <span>{item.name}</span>
+            </li>
+        {/each}
+    </ul>
+{/if}
 
 <style lang="scss">
-    .sliders-wrapper {
-        --total-options: 3;
-
-        // background: var(--surface1);
-        border-radius: 0.5rem;
-        display: grid;
-        grid-template-columns: repeat(var(--total-options), 1fr);
-        position: relative;
-
-        label {
-            display: flex;
-            flex-grow: 1;
-            flex-shrink: 1;
-            justify-content: center;
-        }
-
-        .slider {
-            background: blue;
-            z-index: -1;
-            width: calc(100% / var(--total-options));
-            height: 100%;
-            position: absolute;
-            transition: all 0.2s ease;
-        }
-
-        $total-options: var(--total-options);
-
-        @for $i from 2 through 3 {
-            input:nth-of-type(#{$i}):checked ~ .slider {
-                transform: translateX(100% * $i - 100%) !important;
-            }
-        }
-    }
-
-    input:checked + label {
-        color: var(--accent);
-    }
-
     h1 {
         text-align: center;
     }
@@ -189,7 +158,7 @@
     }
 
     ul {
-        --img-width: 100px;
+        --img-width: 130px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
         padding: 0;
@@ -198,25 +167,112 @@
 
     .avatar {
         width: var(--img-width);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0%;
+        position: absolute;
+        transition: transform 0.2s ease;
+    }
+
+    .rarity {
+        width: 28px;
         height: auto;
     }
 
     .item {
         display: grid;
-        justify-items: center;
         background: var(--surface1);
         border-radius: 0.5rem;
         padding-bottom: 0.5rem;
-        text-align: center;
         line-height: 1.2;
         overflow: hidden;
+        padding: 0.5rem;
         position: relative;
         font-size: var(--step--2);
+        font-weight: 600;
+        background-size: cover;
+        background-position: 50% 20%;
+        min-height: 200px;
     }
 
-    .ssr {
-        // background: var(--tier-s);
+    a {
+        // position: relative;
+        z-index: 2;
+        border: none;
+        color: white;
     }
+
+    a::before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        inset: 0;
+    }
+
+    a:hover + .avatar {
+        transform: scale(1.1);
+    }
+
+    .bottom {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        z-index: 1;
+        color: white;
+    }
+
+    .categories-wrapper {
+        display: flex;
+    }
+
+    // .Flame {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(13, 60%, 50%, 0.2) 30%, var(--surface1));
+    // }
+
+    // .Ice {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(200, 60%, 40%, 0.2) 30%, var(--surface1));
+    // }
+
+    // .Flame {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(6, 57%, 47%, 0.2) 30%, var(--surface1));
+    //     background: hsla(6, 57%, 47%, 0.2);
+    //     border: 1px solid hsla(6, 57%, 47%, 0.5);
+
+    // }
+
+    // .Ice {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(200, 60%, 55%, 0.2) 30%, var(--surface1));
+    //     background: hsla(200, 60%, 55%, 0.2);
+    //     border: 1px solid hsla(200, 60%, 55%, 0.5);
+
+    // }
+
+    // .Thunder {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(295, 40%, 58%, 0.2) 30%, var(--surface1));
+    //     background: hsla(295, 40%, 58%, 0.2);
+    //     border: 1px solid hsla(295, 40%, 58%, 0.5);
+
+    // }
+
+    // .Physics {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(34, 69%, 51%, 0.2) 30%, var(--surface1));
+    //     background: hsla(34, 69%, 51%, 0.2);
+    //     border: 1px solid hsla(34, 69%, 51%, 0.5);
+    // }
+
+    // .Superpower {
+    //     background: linear-gradient(-45deg,hsla(134, 100%, 85%, 0.2) 30%, var(--surface1));
+    //     border: 1px solid hsla(134, 100%, 85%, 0.5);
+    // }
+    // .SSR {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(43, 100%, 50%, 0.4) 30%, var(--surface1));
+    // }
+
+    // .SR {
+    //     background: linear-gradient(-45deg, var(--surface1), hsla(261, 70%, 50%, 0.4) 30%, var(--surface1));
+    // }
 
     .avatar[src*="matrix"] {
         transform: scale(1.2);

@@ -7,8 +7,15 @@ type Advancements {
 type Assets {
   artwork: String
   avatar: String
+  awakenEntrance: String
+  grayAwakenEntrance: String
+  grayPainting: String
   lotteryCard: String
   lotteryDrawing: String
+  namePicture: String
+  painting: String
+  thumbPainting: String
+  weaponPicture: String
 }
 
 type Awakening {
@@ -28,18 +35,24 @@ type Banner {
 }
 
 type MatriceSet {
-  set2: String
-  set4: String
+  description: String
+  need: Int
 }
 
 type MatriceType {
+  assets: MatrixAssets!
   description: String!
-  icon: String!
   id: String!
   name: String!
   rarity: String!
-  set: MatriceSet!
+  sets: [MatriceSet!]!
   type: String!
+}
+
+type MatrixAssets {
+  icon: String!
+  lotteryCard: String!
+  lotteryDrawing: String!
 }
 
 type Query {
@@ -70,6 +83,7 @@ type SimulacraType {
   giftTypes: [String!]!
   height: String!
   id: String!
+  matrixID: String
   name: String!
   rating: String!
   state: String!
@@ -90,6 +104,7 @@ type SimulacraTypeV2 {
   height: String!
   id: String!
   matrice: MatriceType
+  matrixID: String
   name: String!
   rating: String!
   state: String!

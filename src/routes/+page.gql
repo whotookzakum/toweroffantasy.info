@@ -1,6 +1,7 @@
 query MyQuery {
   simulacrav2 {
     name
+    id
     weapon {
       element
       rarity
@@ -8,10 +9,12 @@ query MyQuery {
     }
     assets {
       avatar
+      artwork
+      painting
     }
   }
   matrices {
-    icon
+    
     rarity
     name
   }

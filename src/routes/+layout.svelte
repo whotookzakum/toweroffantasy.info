@@ -22,6 +22,6 @@
 <style global lang="scss">
     main {
         margin: auto;
-        max-width: 80ch;
+        max-width: 1160px;
     }
 </style>

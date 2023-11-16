@@ -1,14 +1,7 @@
 <script>
     export let group, groupName, data, name;
     // Note for Firefox: without "name" attribute, user must tab through all radio options. with "name", tabbing will skip the entire group and arrow keys must be used to select an option
-
-    let sliderElement;
-
-    function translateSlider(index) {
-        if (sliderElement)
-            sliderElement.style.transform = 
-                `translateX(calc(${index + 1}00% - 100%))`;
-    }
+    // The CSS transition supports up to 5 options
 </script>
 
 <div class="sliders-wrapper" style:--total-options={data.length}>
@@ -19,14 +12,12 @@
             {value}
             id="{groupName}-{label}"
             {name}
-            on:input={() => translateSlider(index)}
             bind:group
         />
         <label for="{groupName}-{label}">{label}</label>
     {/each}
-    <div class="slider" bind:this={sliderElement} />
+    <div class="slider" />
 </div>
-<p>{group}</p>
 
 <style lang="scss">
     .sliders-wrapper {
@@ -37,14 +28,14 @@
         border-radius: 0.5rem;
         display: grid;
         grid-template-columns: repeat(var(--total-options), 1fr);
+        align-items: center;
         position: relative;
 
-        // Doesn't work so using javascript solution for now
-        // @for $i from 2 through $total-options {
-        //     input:nth-of-type(#{$i}):checked ~ .slider {
-        //         transform: translateX(100% * $i - 100%) !important;
-        //     }
-        // }
+        @for $i from 2 through 5 {
+            input:nth-of-type(#{$i}):checked ~ .slider {
+                transform: translateX(calc($i * (100% + 0.5rem) - 100% - 0.25rem)) !important;
+            }
+        }
     }
 
     label {
@@ -56,15 +47,18 @@
         z-index: 10;
         padding: 0.5rem;
         font-size: var(--step--1);
+        cursor: pointer;
     }
 
     .slider {
-        background: var(--surface3);
+        background: var(--surface2);
         z-index: 2;
-        width: calc(100% / var(--total-options));
-        height: 100%;
+        width: calc(100% / var(--total-options) - 0.5rem);
+        height: calc(100% - 0.5rem);
+        transform: translateX(0.25rem);
         position: absolute;
         transition: all 0.2s ease;
+        border-radius: 0.25rem;
     }
 
     input:checked + label {
@@ -72,6 +66,6 @@
     }
 
     input:focus-visible + label {
-        color: red;
+        outline: 2px solid var(--accent);
     }
 </style>
