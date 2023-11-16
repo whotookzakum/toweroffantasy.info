@@ -3,59 +3,58 @@
     import changelog from "$lib/data/changelog.json";
     import _ from "lodash";
     import Ad from "../lib/components/Ad.svelte";
+    import CategoryIcon from "../lib/components/simulacrum/CategoryIcon.svelte";
+    import { userLocale, gameVersion } from "$lib/stores";
+    import SliderRadio from "../lib/components/SliderRadio.svelte";
+    import SliderRadioInput from "../lib/components/SliderRadioInput.svelte";
+    import RadioSliderGroup from "./RadioSliderGroup.svelte";
 
     export let data;
-    $: ({ MyQuery } = data)
-    $: console.log($MyQuery)
+    $: ({ MyQuery } = data);
+    // $: console.log($MyQuery)
 
-    const todaysDate = new Date().getTime();
-
-    let global = {
-        all: data.glob.filter(
-            (banner) => new Date(banner.start).getTime() <= todaysDate
-        ),
-        current: [],
-        newest: [],
-        expanded: false,
-    };
-
-    global.current = global.all.filter(
-        (banner) => new Date(banner.end).getTime() >= todaysDate
-    );
-
-    // Sort by bannerNo, so uniqBy returns the original banner and not a rerun (Claudia #3 instead of Claudia #11)
-    const sortedGlobalBanners = _.sortBy(global.all, ["bannerNo"]);
-    // Get objects with unique names (first instance is kept) then sort in place to have the newest banners first
-    const sortedUniqueGlobalBanners = _.uniqBy(
-        sortedGlobalBanners,
-        "name"
-    ).sort((a, b) => b.bannerNo - a.bannerNo);
-
-    // Start date strings MUST match in .jsons, otherwise use Date().getTime() to ensure conversion
-    global.newest = sortedUniqueGlobalBanners.filter(
-        (banner) => banner.start === sortedUniqueGlobalBanners[0].start
-    );
-
-    let china = {
-        all: data.cn.filter(
-            (banner) => new Date(banner.start).getTime() <= todaysDate
-        ),
-        current: [],
-        newest: [],
-        expanded: false,
-    };
-
-    china.current = china.all.filter(
-        (banner) => new Date(banner.end).getTime() >= todaysDate
-    );
-
-    const sortedChinaBanners = _.sortBy(china.all, ["bannerNo"]);
-    const sortedUniqueChinaBanners = _.uniqBy(sortedChinaBanners, "name").sort(
-        (a, b) => b.bannerNo - a.bannerNo
-    );
-    china.newest = sortedUniqueChinaBanners.filter(
-        (banner) => banner.start === sortedUniqueChinaBanners[0].start
-    );
+    let locales = [
+        {
+            name: "English",
+            code: "en",
+        },
+        {
+            name: "Español",
+            code: "es",
+        },
+        {
+            name: "Português",
+            code: "pt",
+        },
+        {
+            name: "Français",
+            code: "fr",
+        },
+        {
+            name: "Deutsch",
+            code: "de",
+        },
+        {
+            name: "Indonesian",
+            code: "id",
+        },
+        {
+            name: "русский",
+            code: "ru",
+        },
+        {
+            name: "ไทย",
+            code: "th",
+        },
+        {
+            name: "中文",
+            code: "zh-cn",
+        },
+        {
+            name: "日本語",
+            code: "ja",
+        },
+    ];
 </script>
 
 <svelte:head>
@@ -74,218 +73,152 @@
 </svelte:head>
 
 <h1>Tower of Fantasy Index</h1>
-<p>
-    We prioritize data from the Global version of Tower of Fantasy. Content
-    exclusive to the Chinese version is marked with <abbr
-        title="China Exclusive"
-    />. Issues can be reported on
-    <a
-        href="https://discord.com/channels/670617630717116426/1063498932749094912"
-        target="_blank"
-        rel="noopener noreferrer nofollow">Discord</a
-    >.
-</p>
+<input type="text" placeholder="Search" />
 
-<p>
-    If the site has been helpful to you and you'd like to support its
-    development, please disable adblock or consider sending a
-    <a
-        href="https://ko-fi.com/whotookzakum"
-        target="_blank"
-        rel="noopener noreferrer nofollow">Ko-Fi</a
-    >!
-</p>
-<p>
-    Last updated <a href="/changelog"
-        >{new Date(changelog[0].date).toLocaleDateString("en-US", {
-            month: "long",
-            day: "numeric",
-        })}</a
-    >.
-</p>
+<RadioSliderGroup
+    group={$gameVersion}
+    groupName="game-version"
+    name="gameVersion"
+    data={[
+        {
+            label: "Global",
+            value: "glob",
+        },
+        {
+            label: "China",
+            value: "cn",
+        },
+    ]}
+/>
 
-<Ad unit="Banner1" />
+<select bind:value={$userLocale}>
+    {#each locales as locale}
+        <option value={locale.code}>{locale.name}</option>
+    {/each}
+</select>
 
-<h2 id="banners">Banners</h2>
-<!-- <div class="table-wrapper">
-    <table class="outer-table bg-alternate">
-        <caption>
-            Click on a table row to show all banners for that version.
-        </caption>
-        <thead>
-            <th>Version</th>
-            <th colspan="2">Current</th>
-            <th>Total</th>
-            <th>Unique</th>
-            <th>Newest</th>
-            <th
-                >{global.expanded || china.expanded
-                    ? "To standard"
-                    : "Added to standard"}
-            </th>
-        </thead>
-        <tbody>
-            <tr
-                class="outer-tr"
-                on:click={() => (global.expanded = !global.expanded)}
-                on:keydown={(e) =>
-                    e.key === "Enter"
-                        ? (global.expanded = !global.expanded)
-                        : null}
-                tabindex={0}
-            >
-                <th>Global</th>
-                <td colspan="2" class="current-banners">
-                    {#each global.current as banner}
-                        <a
-                            href={banner.path}
-                            style={`color: var(--element-${banner.element})`}
-                            >{banner.name}</a
-                        >
-                    {/each}
-                </td>
-                <td>{global.all.length}</td>
-                <td>{sortedUniqueGlobalBanners.length}</td>
-                <td class="newest-banners">
-                    {#each global.newest as banner}
-                        <a
-                            href={banner.path}
-                            style={`color: var(--element-${banner.element})`}
-                            >{banner.name}</a
-                        >
-                    {/each}
-                </td>
-                <td
-                    >{global.all.filter((banner) => banner.standardAfterwards)
-                        .length}</td
-                >
-            </tr>
-        </tbody>
-        <BannerTable
-            banners={global.all}
-            version="glob"
-            expanded={global.expanded}
-        />
-        <tbody>
-            <tr
-                class="outer-tr"
-                on:click={() => (china.expanded = !china.expanded)}
-                on:keydown={(e) =>
-                    e.key === "Enter"
-                        ? (china.expanded = !china.expanded)
-                        : null}
-                tabindex={0}
-            >
-                <th>China</th>
-                <td colspan="2" class="current-banners">
-                    {#each china.current as banner}
-                        <a
-                            href={banner.path}
-                            style={`color: var(--element-${banner.element})`}
-                            >{banner.name}</a
-                        >
-                    {/each}
-                </td>
-                <td>{china.all.length}</td>
-                <td>{sortedUniqueChinaBanners.length}</td>
-                <td class="newest-banners">
-                    {#each china.newest as banner}
-                        <a
-                            href={banner.path}
-                            style={`color: var(--element-${banner.element})`}
-                            >{banner.name}</a
-                        >
-                    {/each}
-                </td>
-                <td
-                    >{china.all.filter((banner) => banner.standardAfterwards)
-                        .length}</td
-                >
-            </tr>
-        </tbody>
-        <BannerTable
-            banners={china.all}
-            version="cn"
-            expanded={china.expanded}
-        />
-    </table>
-</div> -->
-
-<h3 id="credits">Credits</h3>
-<footer>
-    <h4>Created by</h4>
-    <span>Pyrosu, Zakum</span>
-
-    <h4>Maintained by</h4>
-    <a
-        href="https://discordapp.com/users/851815237120163840"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        eminentglory</a
-    >,
-    <a
-        href="https://discordapp.com/users/245981511931658242"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        TheKingOppaiDragon
-    </a>
-
-    <h4>Original contents by</h4>
-    <span>Pyrosu, BakuBaku, Sera Naoki</span>
-
-    <h4>Special thanks</h4>
-    <span
-        >Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
-        Gateoo, Sky, ChickenJoy, Riala, TheKingOppaiDragon, Fanatique,
-        FortOfFans, EminentGlory, Maygi</span
-    >
-</footer>
+<ul>
+    {#each $MyQuery.data.simulacrav2 as item}
+        <li class="item ssr">
+            <img
+                class="avatar"
+                src="https://api.toweroffantasy.info{item?.assets?.avatar}?format=webp"
+                alt={item?.name}
+                width="128"
+                height="128"
+            />
+            <span>{item.name}</span>
+            <CategoryIcon
+                type={item?.weapon?.element}
+                width="26px"
+                style="position: absolute; top: 0.5rem; right: 0.5rem"
+            />
+            <CategoryIcon
+                type={item?.weapon?.type}
+                width="26px"
+                style="position: absolute; top: 0.5rem; left: 0.5rem"
+            />
+        </li>
+    {/each}
+    {#each $MyQuery.data.matrices as item}
+        <li class="item">
+            <img
+                class="avatar"
+                src="https://api.toweroffantasy.info{item?.icon}?format=webp"
+                alt=""
+                width="128"
+                height="128"
+            />
+            <span>{item.name}</span>
+        </li>
+    {/each}
+</ul>
 
 <style lang="scss">
-    .outer-table {
-        text-align: left;
+    .sliders-wrapper {
+        --total-options: 3;
 
-        thead th {
-            color: var(--text2);
+        // background: var(--surface1);
+        border-radius: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(var(--total-options), 1fr);
+        position: relative;
+
+        label {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            justify-content: center;
         }
 
-        thead,
-        tbody {
-            background-color: var(--surface3);
+        .slider {
+            background: blue;
+            z-index: -1;
+            width: calc(100% / var(--total-options));
+            height: 100%;
+            position: absolute;
+            transition: all 0.2s ease;
+        }
+
+        $total-options: var(--total-options);
+
+        @for $i from 2 through 3 {
+            input:nth-of-type(#{$i}):checked ~ .slider {
+                transform: translateX(100% * $i - 100%) !important;
+            }
         }
     }
 
-    .newest-banners a,
-    .current-banners a {
-        font-size: var(--step--2);
-        border: none;
-
-        &:not(:last-of-type)::after {
-            content: ", ";
-            color: var(--text1);
-        }
-    }
-
-    .outer-tr:hover {
-        background: rgba(255, 255, 255, 0.05);
+    input:checked + label {
         color: var(--accent);
     }
 
-    #credits {
-        margin-top: 0;
+    h1 {
+        text-align: center;
     }
 
-    footer {
-        font-size: var(--step--2);
-        line-height: 1.6;
-        color: var(--text2);
+    input {
+        background: var(--surface1);
+        border: none;
+        font-size: var(--step-1);
+        color: var(--text1);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+    }
 
-        h4 {
-            margin-top: 1.5rem;
-            font-size: inherit;
-            color: var(--accent);
-        }
+    ul {
+        --img-width: 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+    .avatar {
+        width: var(--img-width);
+        height: auto;
+    }
+
+    .item {
+        display: grid;
+        justify-items: center;
+        background: var(--surface1);
+        border-radius: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
+        line-height: 1.2;
+        overflow: hidden;
+        position: relative;
+        font-size: var(--step--2);
+    }
+
+    .ssr {
+        // background: var(--tier-s);
+    }
+
+    .avatar[src*="matrix"] {
+        transform: scale(1.2);
     }
 </style>

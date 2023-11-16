@@ -73,6 +73,7 @@
         if (path.includes("omnium-handcannon")) return 'Artifact/itemicon/artifact_sr_008'
         if (path.includes("quantum-cloak")) return 'Artifact/itemicon/artifact_sr_009'
         if (path.includes("strange-cube")) return 'Artifact/itemicon/artifact_sr_012'
+        return 'huanxing/lihui/nanyin'
         return 'Activity/ThemeActivity/gulanhuodong/UI_nuanyang_renwu1'
     }
 </script>

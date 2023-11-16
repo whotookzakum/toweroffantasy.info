@@ -34,7 +34,6 @@ type MatriceSet {
 
 type MatriceType {
   description: String!
-  gachaIcon: String!
   icon: String!
   id: String!
   name: String!

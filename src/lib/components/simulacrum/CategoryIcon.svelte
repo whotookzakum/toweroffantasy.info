@@ -1,47 +1,37 @@
 <script>
-     export let type, width;
+     export let type, width, style;
 
-     function getImgSrc(type) {
-          switch (type) {
-               // Weapon Type
-               case "dps":
-                    return "icon_qianggong";
-               case "defense":
-                    return "icon_fangyu";
-               case "support":
-                    return "icon_zengyi";
+     const URI_map = {
+          DPS: "icon_qianggong",
+          Tank: "icon_fangyu",
+          SUP: "icon_zengyi",
 
-               // Weapon Element
-               case "flame":
-                    return "icon_element_huo";
-               case "flame-physical":
-                    return "icon_element_huowu";
-               case "ice":
-                    return "icon_element_bing";
-               case "ice-volt":
-                    return "icon_element_binglei";
-               case "volt":
-                    return "icon_element_lei";
-               case "volt-ice":
-                    return "icon_element_leibing";
-               case "physical":
-                    return "icon_element_wu";
-               case "physical-flame":
-                    return "icon_element_wuhuo"
-               case "physical-flame_global":
-                    return "icon_element_wuhuo"
-               case "altered":
-                    return "icon_element_powers";
-          }
-     }
+          Flame: "icon_element_huo",
+          FlamePhysics: "icon_element_wuhuo",
+
+          Ice: "icon_element_bing",
+          IceThunder: "icon_element_leibing",
+
+          Thunder: "icon_element_lei",
+          ThunderIce: "icon_element_binglei",
+
+          Physics: "icon_element_wu",
+          PhysicsFlame: "icon_element_huowu",
+
+          Superpower: "icon_element_powers",
+     };
+
+     let imgSrc = URI_map[type];
+     imgSrc ??= "icon_element_null";
 </script>
 
 <img
-     src={`/images/UI/wuqi/${getImgSrc(type)}.webp`}
+     src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/wuqi/{imgSrc}.png"
      alt={type}
      width="60"
      height="54"
-     style={`width: ${width}px`}
+     {style}
+     style:width
      loading="lazy"
 />
 

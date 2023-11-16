@@ -2,6 +2,10 @@
 @import './variables';
 @import './colors';
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding: calc(60px + 1rem);
@@ -22,6 +26,16 @@ body {
     * {
         transition: unset;
     }
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 body {
