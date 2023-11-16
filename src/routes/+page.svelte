@@ -107,7 +107,7 @@
 <Ad unit="Banner1" />
 
 <h2 id="banners">Banners</h2>
-<div class="table-wrapper">
+<!-- <div class="table-wrapper">
     <table class="outer-table bg-alternate">
         <caption>
             Click on a table row to show all banners for that version.
@@ -209,7 +209,7 @@
             expanded={china.expanded}
         />
     </table>
-</div>
+</div> -->
 
 <h3 id="credits">Credits</h3>
 <footer>

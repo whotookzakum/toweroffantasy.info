@@ -16,6 +16,17 @@ type Awakening {
   name: String!
 }
 
+type Banner {
+  bannerNo: Int!
+  detailsLink: String!
+  end: String!
+  finalRerun: Boolean!
+  isCollab: Boolean!
+  isRerun: Boolean!
+  limitedBannerOnly: Boolean!
+  start: String!
+}
+
 type MatriceSet {
   set2: String
   set4: String
@@ -49,11 +60,12 @@ type ShatterOrCharge {
 }
 
 type SimulacraType {
-  advanceId: String
+  advanceID: String
   age: String!
   assets: Assets!
   avatarID: String!
   awakenings: [Awakening!]!
+  banners: [Banner!]!
   city: String!
   gender: String!
   giftTypes: [String!]!
@@ -63,15 +75,16 @@ type SimulacraType {
   rating: String!
   state: String!
   voiceActors: VoiceActors!
-  weaponId: String!
+  weaponID: String
 }
 
 type SimulacraTypeV2 {
-  advanceId: String
+  advanceID: String
   age: String!
   assets: Assets!
   avatarID: String!
   awakenings: [Awakening!]!
+  banners: [Banner!]!
   city: String!
   gender: String!
   giftTypes: [String!]!
@@ -83,7 +96,7 @@ type SimulacraTypeV2 {
   state: String!
   voiceActors: VoiceActors!
   weapon: WeaponType
-  weaponId: String!
+  weaponID: String
 }
 
 type Skill {

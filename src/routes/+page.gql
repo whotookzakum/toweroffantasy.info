@@ -1,5 +1,13 @@
 query MyQuery {
-    simulacra {
-        name
+  simulacrav2 {
+    name
+    weapon {
+      element
+      rarity
+      type
     }
+    assets {
+      avatar
+    }
+  }
 }
