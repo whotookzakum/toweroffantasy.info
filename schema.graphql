@@ -59,6 +59,12 @@ type MatrixAssets {
   lotteryDrawing: String!
 }
 
+type Meta {
+  rating: [Int!]!
+  recommendedMatrices: [RecoMatrix!]!
+  recommendedPairings: [String!]!
+}
+
 type Query {
   matrice(id: String!, lang: String! = "en"): MatriceType!
   matrices(lang: String! = "en"): [MatriceType!]!
@@ -68,6 +74,11 @@ type Query {
   simulacrumv2(id: String!, lang: String! = "en"): SimulacraTypeV2!
   weapon(id: String!, lang: String! = "en"): WeaponType!
   weapons(lang: String! = "en"): [WeaponType!]!
+}
+
+type RecoMatrix {
+  id: String!
+  pieces: Int!
 }
 
 type ShatterOrCharge {
@@ -89,6 +100,7 @@ type SimulacraType {
   id: String!
   matrixID: String
   name: String!
+  rarity: String
   rating: String!
   state: String!
   voiceActors: VoiceActors!
@@ -110,6 +122,7 @@ type SimulacraTypeV2 {
   matrice: MatriceType
   matrixID: String
   name: String!
+  rarity: String
   rating: String!
   state: String!
   voiceActors: VoiceActors!
@@ -162,6 +175,7 @@ type WeaponType {
   description: String!
   element: String!
   id: String!
+  meta: Meta!
   name: String!
   rarity: String!
   shatter: ShatterOrCharge!

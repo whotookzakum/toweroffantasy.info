@@ -1,21 +1,25 @@
 query MyQuery {
-  simulacrav2 {
-    name
-    id
-    weapon {
-      element
-      rarity
-      type
+    simulacrav2 {
+        name
+        id
+        weapon {
+            element
+            rarity
+            type
+        }
+        assets {
+            avatar
+            artwork
+            painting
+        }
+        __typename
     }
-    assets {
-      avatar
-      artwork
-      painting
+    matrices {
+        rarity
+        name
+        assets {
+            icon
+        }
+        __typename
     }
-  }
-  matrices {
-    
-    rarity
-    name
-  }
 }

@@ -45,7 +45,7 @@
         justify-content: center;
         position: relative;
         z-index: 10;
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         font-size: var(--step--1);
         cursor: pointer;
     }

@@ -110,6 +110,26 @@ h3>.anchorjs-link {
 
 }
 
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.g-50 {
+    gap: 0.5rem;
+}
+
+.g-25 {
+    gap: 0.25rem;
+}
+
+.g-100 {
+    gap: 1rem;
+}
+
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
 // .unit-container {
