@@ -6,6 +6,17 @@ query MyQuery {
             element
             rarity
             type
+            charge {
+                tier
+                value
+            }
+            shatter {
+                tier
+                value
+            }
+        }
+        banners {
+            bannerNo
         }
         assets {
             avatar
@@ -18,7 +29,7 @@ query MyQuery {
         rarity
         name
         assets {
-            icon
+            iconLarge
         }
         __typename
     }

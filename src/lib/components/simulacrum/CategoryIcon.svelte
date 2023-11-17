@@ -7,7 +7,7 @@
           SUP: "icon_zengyi",
 
           Flame: "icon_element_huo",
-          FlamePhysics: "icon_element_wuhuo",
+          FlamePhysics: "icon_element_huowu",
 
           Ice: "icon_element_bing",
           IceThunder: "icon_element_leibing",
@@ -16,13 +16,12 @@
           ThunderIce: "icon_element_binglei",
 
           Physics: "icon_element_wu",
-          PhysicsFlame: "icon_element_huowu",
+          PhysicsFlame: "icon_element_wuhuo",
 
           Superpower: "icon_element_powers",
      };
 
-     let imgSrc = URI_map[type];
-     imgSrc ??= "icon_element_null";
+     let imgSrc = URI_map[type] ?? "icon_element_null";
 </script>
 
 <img

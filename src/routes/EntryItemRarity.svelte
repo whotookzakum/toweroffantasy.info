@@ -3,7 +3,7 @@
 </script>
 
 <img
-    class="rarity"
+    class="rarity {rarity}"
     src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{rarity.toLowerCase()}?format=webp"
     alt=""
     width="63"
@@ -18,6 +18,15 @@
         margin: 0.1rem;
         margin-left: auto;
         z-index: 5;
+    }
+
+    .SR {
+        margin-right: -3px;
+    }
+
+    .R,
+    .N {
+        margin-right: -8px;
     }
 
     :global(.MatriceType .rarity) {

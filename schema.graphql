@@ -55,11 +55,13 @@ type MatriceType {
 
 type MatrixAssets {
   icon: String!
+  iconLarge: String!
   lotteryCard: String!
   lotteryDrawing: String!
 }
 
 type Meta {
+  analyticVideoId: String
   rating: [Int!]!
   recommendedMatrices: [RecoMatrix!]!
   recommendedPairings: [String!]!

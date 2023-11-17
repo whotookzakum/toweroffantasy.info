@@ -8,10 +8,15 @@
         SimulacraTypeV2,
         MatriceType,
     };
+
+    let mainRoute = {
+        SimulacraTypeV2: "simulacra",
+        MatriceType: "matrices",
+    };
 </script>
 
 <li class="item {entry.__typename}">
-    <a href="/">{entry.name}</a>
+    <a href="/{mainRoute[entry.__typename]}/{entry.name.replace(" ", "-").toLowerCase()}">{entry.name}</a>
     <svelte:component this={components[entry.__typename]} {entry} />
 </li>
 
@@ -34,6 +39,7 @@
         transition: all 0.2s ease;
         align-content: end;
         gap: 0.25rem;
+        color: white;
 
         &::before,
         &::after {
@@ -47,6 +53,8 @@
         }
 
         &:hover {
+            // Optional growing effect on the selected card
+            // outline: 3px solid var(--accent);
             // transform: scale(1.05);
 
             &::before {
@@ -59,6 +67,7 @@
 
         &:has(:focus-visible) {
             outline: 3px solid var(--accent);
+            transform: scale(1.05);
 
             &::before {
                 opacity: 0;
@@ -85,9 +94,9 @@
     }
 
     a {
-        z-index: 7;
+        z-index: 20;
         border: none;
-        color: white;
+        color: inherit;
         text-shadow: 0 2px 6px var(--bg);
 
         &::after {
@@ -102,14 +111,19 @@
             outline: none;
         }
 
-        &:hover + :global(.avatar) {
+        &:hover ~ :global(.avatar) {
             transform: scale(1.1);
+        }
+
+        &:where(:hover, :focus-visible) ~ :global(.hover-details) {
+            opacity: 1 !important;
         }
     }
 
     @supports not selector(:has(*)) {
         .item:focus-within {
             outline: 3px solid var(--accent);
+            transform: scale(1.05);
 
             &::before {
                 opacity: 0;
