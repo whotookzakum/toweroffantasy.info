@@ -114,15 +114,25 @@
                 <a href="/">{item.name}</a>
                 <img
                     class="avatar"
-                    src="https://api.toweroffantasy.info{item?.assets?.painting}?format=webp"
+                    src="https://api.toweroffantasy.info{item?.assets
+                        ?.painting}?format=webp"
                     alt=""
                 />
                 <div class="bottom">
                     <div class="categories-wrapper">
-                        <CategoryIcon type={item?.weapon?.element} width="30px" />
+                        <CategoryIcon
+                            type={item?.weapon?.element}
+                            width="30px"
+                        />
                         <CategoryIcon type={item?.weapon?.type} width="30px" />
                     </div>
-                    <img class="rarity" src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{item?.weapon?.rarity?.toLowerCase()}?format=webp" alt="" width="63" height="36">
+                    <img
+                        class="rarity"
+                        src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{item?.weapon?.rarity?.toLowerCase()}?format=webp"
+                        alt=""
+                        width="63"
+                        height="36"
+                    />
                 </div>
             </li>
         {/each}
@@ -158,11 +168,11 @@
     }
 
     ul {
-        --img-width: 130px;
+        --img-width: 140px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
         padding: 0;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     .avatar {
@@ -178,6 +188,8 @@
     .rarity {
         width: 28px;
         height: auto;
+        filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.8));
+        margin: 0.1rem;
     }
 
     .item {
@@ -189,24 +201,42 @@
         overflow: hidden;
         padding: 0.5rem;
         position: relative;
-        font-size: var(--step--2);
+        font-size: var(--step--1);
         font-weight: 600;
         background-size: cover;
         background-position: 50% 20%;
         min-height: 200px;
+        outline: 3px solid transparent;
+        transition: outline 0.2s ease;
     }
 
     a {
-        // position: relative;
-        z-index: 2;
+        z-index: 3;
         border: none;
         color: white;
+        text-shadow: 0 2px 6px var(--bg);
     }
 
-    a::before {
-        content: '';
+    a::after,
+    .item::before {
+        content: "";
         position: absolute;
+    }
+
+    a::after {
+        inset: 0;
         z-index: 10;
+    }
+
+    .item::before {
+        z-index: 1;
+        background: linear-gradient(
+            var(--surface1) -10%,
+            transparent 20%,
+            transparent 80%,
+            var(--bg) 110%
+        );
+        // background: linear-gradient(var(--surface1), transparent, var(--surface1));
         inset: 0;
     }
 
@@ -214,12 +244,24 @@
         transform: scale(1.1);
     }
 
+    a:focus-visible {
+        outline: none;
+    }
+
+    .item:has(:focus-visible) {
+        outline: 3px solid var(--accent);
+
+        .avatar {
+            transform: scale(1.1);
+        }
+    }
+
     .bottom {
         margin-top: auto;
         display: flex;
         justify-content: space-between;
         align-items: end;
-        z-index: 1;
+        z-index: 2;
         color: white;
     }
 

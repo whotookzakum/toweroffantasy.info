@@ -5,15 +5,19 @@ type Advancements {
 }
 
 type Assets {
+  advancePainting: String
   artwork: String
   avatar: String
   awakenEntrance: String
+  backPhoto: String
+  grayAdvancePainting: String
   grayAwakenEntrance: String
   grayPainting: String
   lotteryCard: String
   lotteryDrawing: String
   namePicture: String
   painting: String
+  rarityIcon: String
   thumbPainting: String
   weaponPicture: String
 }

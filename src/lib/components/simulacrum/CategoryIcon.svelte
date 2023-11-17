@@ -39,6 +39,6 @@
      img {
           width: 40px;
           height: auto;
-          filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
      }
 </style>
