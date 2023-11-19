@@ -1,0 +1,10 @@
+query AllMatrices {
+    matrices {
+        rarity
+        name
+        assets {
+            iconLarge
+        }
+        __typename
+    }
+}

@@ -11,6 +11,10 @@
             href: "/simulacra",
         },
         {
+            name: "Weapons",
+            href: "/weapons",
+        },
+        {
             name: "Matrices",
             href: "/matrices",
         },

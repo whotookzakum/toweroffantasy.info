@@ -10,6 +10,7 @@ type Assets {
   avatar: String
   awakenEntrance: String
   backPhoto: String
+  bannerIcon: String
   grayAdvancePainting: String
   grayAwakenEntrance: String
   grayPainting: String
@@ -38,6 +39,12 @@ type Banner {
   start: String!
 }
 
+type BaseStats {
+  icon: String!
+  id: String!
+  name: String!
+}
+
 type MatriceSet {
   description: String
   need: Int
@@ -56,8 +63,6 @@ type MatriceType {
 type MatrixAssets {
   icon: String!
   iconLarge: String!
-  lotteryCard: String!
-  lotteryDrawing: String!
 }
 
 type Meta {
@@ -68,14 +73,14 @@ type Meta {
 }
 
 type Query {
-  matrice(id: String!, lang: String! = "en"): MatriceType!
   matrices(lang: String! = "en"): [MatriceType!]!
-  simulacra(lang: String! = "en"): [SimulacraType!]!
-  simulacrav2(lang: String! = "en"): [SimulacraTypeV2!]!
-  simulacrum(id: String!, lang: String! = "en"): SimulacraType!
-  simulacrumv2(id: String!, lang: String! = "en"): SimulacraTypeV2!
-  weapon(id: String!, lang: String! = "en"): WeaponType!
-  weapons(lang: String! = "en"): [WeaponType!]!
+  matrix(id: String!, lang: String! = "en"): MatriceType!
+  simulacra(lang: String! = "en", version: String! = "global"): [SimulacraType!]!
+  simulacra_v2(lang: String! = "en"): [SimulacraTypeV2!]!
+  simulacrum(id: String!, lang: String! = "en", version: String! = "global"): SimulacraType!
+  simulacrum_v2(id: String!, lang: String! = "en"): SimulacraTypeV2!
+  weapon(id: String!, lang: String! = "en", version: String! = "global"): WeaponType!
+  weapons(lang: String! = "en", version: String! = "global"): [WeaponType!]!
 }
 
 type RecoMatrix {
@@ -151,6 +156,11 @@ type Stats {
   shatter: Float!
 }
 
+type UpgradeMaterial {
+  id: String!
+  need: Int!
+}
+
 type VoiceActors {
   chinese: String
   english: String
@@ -173,15 +183,17 @@ type WeaponType {
   advanceID: String
   advancements: [Advancements!]!
   assets: WeaponAssets!
+  baseStats: [BaseStats!]!
   charge: ShatterOrCharge!
   description: String!
   element: String!
   id: String!
-  meta: Meta!
+  meta: Meta
   name: String!
   rarity: String!
   shatter: ShatterOrCharge!
   skills: Skills!
   type: String!
+  upgradeMaterials: [UpgradeMaterial!]!
   weaponEffects: [WeaponEffect!]!
 }

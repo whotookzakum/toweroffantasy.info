@@ -1,0 +1,42 @@
+query AllEntries {
+    simulacra_v2(lang: "en") {
+        name
+        id
+        weapon {
+            element
+            rarity
+            type
+            charge {
+                tier
+                value
+            }
+            shatter {
+                tier
+                value
+            }
+        }
+        banners {
+            bannerNo
+        }
+        assets {
+            avatar
+            artwork
+            painting
+        }
+        __typename
+    }
+    weapons {
+        name
+        assets {
+            icon
+        }
+    }
+    matrices {
+        rarity
+        name
+        assets {
+            iconLarge
+        }
+        __typename
+    }
+}

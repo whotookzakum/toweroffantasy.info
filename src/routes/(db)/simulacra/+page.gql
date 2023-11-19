@@ -1,5 +1,5 @@
-query MyQuery {
-    simulacrav2 {
+query AllSimulacra {
+    simulacra_v2(lang: "en") {
         name
         id
         weapon {
@@ -22,14 +22,6 @@ query MyQuery {
             avatar
             artwork
             painting
-        }
-        __typename
-    }
-    matrices {
-        rarity
-        name
-        assets {
-            iconLarge
         }
         __typename
     }
