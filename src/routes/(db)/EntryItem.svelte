@@ -1,17 +1,20 @@
 <script>
-    import MatriceType from "./MatriceType.svelte";
-    import SimulacraTypeV2 from "./SimulacraTypeV2.svelte";
+    import Matrice from "./Matrice.svelte";
+    import SimulacraV2 from "./SimulacraV2.svelte";
+    import Weapon from "./Weapon.svelte";
 
     export let entry;
 
     const components = {
-        SimulacraTypeV2,
-        MatriceType,
+        SimulacraV2,
+        Matrice,
+        Weapon
     };
 
     let mainRoute = {
-        SimulacraTypeV2: "simulacra",
-        MatriceType: "matrices",
+        SimulacraV2: "simulacra",
+        Matrice: "matrices",
+        Weapon: "weapons"
     };
 </script>
 

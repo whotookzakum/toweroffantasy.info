@@ -1,7 +1,6 @@
 query AllEntries {
     simulacra_v2(lang: "en") {
         name
-        id
         weapon {
             element
             rarity
@@ -25,13 +24,25 @@ query AllEntries {
         }
         __typename
     }
-    weapons {
+    weapons(lang: "en") {
+        rarity
         name
         assets {
             icon
         }
+        element
+        type
+        charge {
+            tier
+            value
+        }
+        shatter {
+            tier
+            value
+        }
+        __typename
     }
-    matrices {
+    matrices(lang: "en") {
         rarity
         name
         assets {

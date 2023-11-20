@@ -1,3 +1,12 @@
+type Achievement {
+  awards: [Award!]!
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+  tags: [String!]!
+}
+
 type Advancements {
   description: String
   need: String!
@@ -28,15 +37,24 @@ type Awakening {
   name: String!
 }
 
-type Banner {
+type Award {
+  amount: Int!
+  type: String!
+}
+
+type BannerSchema {
   bannerNo: Int!
   detailsLink: String!
   end: String!
   finalRerun: Boolean!
+  imitationId: String
   isCollab: Boolean!
   isRerun: Boolean!
   limitedBannerOnly: Boolean!
+  matrixId: String
+  simulacrum: String
   start: String!
+  weaponId: String
 }
 
 type BaseStats {
@@ -45,19 +63,48 @@ type BaseStats {
   name: String!
 }
 
-type MatriceSet {
-  description: String
-  need: Int
+type Food {
+  buff: String!
+  categories: [String!]!
+  description: String!
+  effect: String
+  icon: String!
+  id: String!
+  ingredients: [Ingredient!]!
+  name: String!
+  quality: String!
+  stars: Int!
 }
 
-type MatriceType {
+type Ingredient {
+  matID: String!
+  max: String!
+  min: String!
+}
+
+type Item {
+  description: String
+  icon: String
+  id: String!
+  name: String
+  rarity: String!
+  type: String!
+}
+
+type Matrice {
   assets: MatrixAssets!
+  banners: [BannerSchema!]!
   description: String!
   id: String!
   name: String!
   rarity: String!
   sets: [MatriceSet!]!
   type: String!
+}
+
+type MatriceSet {
+  description: String
+  need: Int
 }
 
 type MatrixAssets {
@@ -72,15 +119,50 @@ type Meta {
   recommendedPairings: [String!]!
 }
 
+type Mount {
+  assets: MountAsset!
+  description: String!
+  id: String!
+  name: String
+}
+
+type MountAsset {
+  icon: String!
+  showImage: String!
+}
+
+type Outfit {
+  description: String
+  icon: String!
+  id: String!
+  name: String
+  source: String
+  type: String!
+}
+
 type Query {
-  matrices(lang: String! = "en"): [MatriceType!]!
-  matrix(id: String!, lang: String! = "en"): MatriceType!
-  simulacra(lang: String! = "en", version: String! = "global"): [SimulacraType!]!
-  simulacra_v2(lang: String! = "en"): [SimulacraTypeV2!]!
-  simulacrum(id: String!, lang: String! = "en", version: String! = "global"): SimulacraType!
-  simulacrum_v2(id: String!, lang: String! = "en"): SimulacraTypeV2!
-  weapon(id: String!, lang: String! = "en", version: String! = "global"): WeaponType!
-  weapons(lang: String! = "en", version: String! = "global"): [WeaponType!]!
+  achivement(id: String!, lang: String! = "en"): Achievement!
+  achivements(lang: String! = "en"): [Achievement!]!
+  food(id: String!, lang: String! = "en"): Food!
+  foods(lang: String! = "en"): [Food!]!
+  item(id: String!, lang: String! = "en"): Item!
+  items(lang: String! = "en"): [Item!]!
+  matrices(lang: String! = "en"): [Matrice!]!
+  matrix(id: String!, lang: String! = "en"): Matrice!
+  mount(id: String!, lang: String! = "en"): Mount!
+  mounts(lang: String! = "en"): [Mount!]!
+  outfit(id: String!, lang: String! = "en"): Outfit!
+  outfits(lang: String! = "en"): [Outfit!]!
+  relic(id: String!, lang: String! = "en"): Relic!
+  relics(lang: String! = "en"): [Relic!]!
+  servant(id: String!, lang: String! = "en"): SmartServant!
+  servants(lang: String! = "en"): [SmartServant!]!
+  simulacra(lang: String! = "en", version: String! = "global"): [Simulacra!]!
+  simulacra_v2(lang: String! = "en"): [SimulacraV2!]!
+  simulacrum(id: String!, lang: String! = "en", version: String! = "global"): Simulacra!
+  simulacrum_v2(id: String!, lang: String! = "en"): SimulacraV2!
+  weapon(id: String!, lang: String! = "en", version: String! = "global"): Weapon!
+  weapons(lang: String! = "en", version: String! = "global"): [Weapon!]!
 }
 
 type RecoMatrix {
@@ -88,18 +170,47 @@ type RecoMatrix {
   pieces: Int!
 }
 
+type Relic {
+  advancements: [String!]!
+  attributeID: String!
+  description: String
+  icon: String!
+  id: String!
+  name: String!
+  rarity: String!
+  source: String
+  type: String!
+}
+
+type ServantAsset {
+  activatedIcon: String!
+  itemIcon: String!
+  petIcon: String!
+}
+
+type ServantSkill {
+  description: String!
+  icon: String!
+  name: String!
+}
+
+type ServantUpgrade {
+  id: String!
+  xpGain: Int!
+}
+
 type ShatterOrCharge {
   tier: String!
   value: Float!
 }
 
-type SimulacraType {
+type Simulacra {
   advanceID: String
   age: String!
   assets: Assets!
   avatarID: String!
   awakenings: [Awakening!]!
-  banners: [Banner!]!
+  banners: [BannerSchema!]!
   city: String!
   gender: String!
   giftTypes: [String!]!
@@ -114,26 +225,26 @@ type SimulacraType {
   weaponID: String
 }
 
-type SimulacraTypeV2 {
+type SimulacraV2 {
   advanceID: String
   age: String!
   assets: Assets!
   avatarID: String!
   awakenings: [Awakening!]!
-  banners: [Banner!]!
+  banners: [BannerSchema!]!
   city: String!
   gender: String!
   giftTypes: [String!]!
   height: String!
   id: String!
-  matrice: MatriceType
+  matrice: Matrice
   matrixID: String
   name: String!
   rarity: String
   rating: String!
   state: String!
   voiceActors: VoiceActors!
-  weapon: WeaponType
+  weapon: Weapon
   weaponID: String
 }
 
@@ -149,6 +260,18 @@ type Skills {
   dodge: [Skill!]!
   normals: [Skill!]!
   skill: [Skill!]!
+}
+
+type SmartServant {
+  assets: ServantAsset!
+  description: String!
+  element: String!
+  id: String!
+  name: String!
+  rarity: String!
+  skills: [ServantSkill!]!
+  type: String!
+  upgradeItems: [ServantUpgrade!]!
 }
 
 type Stats {
@@ -169,20 +292,11 @@ type VoiceActors {
   portuguese: String
 }
 
-type WeaponAssets {
-  icon: String
-  weaponMatrixIcon: String
-}
-
-type WeaponEffect {
-  description: String!
-  title: String!
-}
-
-type WeaponType {
+type Weapon {
   advanceID: String
   advancements: [Advancements!]!
   assets: WeaponAssets!
+  banners: BannerSchema!
   baseStats: [BaseStats!]!
   charge: ShatterOrCharge!
   description: String!
@@ -196,4 +310,14 @@ type WeaponType {
   type: String!
   upgradeMaterials: [UpgradeMaterial!]!
   weaponEffects: [WeaponEffect!]!
+}
+
+type WeaponAssets {
+  icon: String
+  weaponMatrixIcon: String
+}
+
+type WeaponEffect {
+  description: String!
+  title: String!
 }

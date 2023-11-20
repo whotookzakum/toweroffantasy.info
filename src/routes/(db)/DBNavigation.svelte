@@ -1,5 +1,7 @@
 <script>
-    import { page } from "$app/stores";
+    import { userLocale, gameVersion } from "$lib/stores";
+    import LinkSliderGroup from "./LinkSliderGroup.svelte";
+    import RadioSliderGroup from "./RadioSliderGroup.svelte";
 
     const links = [
         {
@@ -39,41 +41,108 @@
             href: "/cosmetics",
         },
     ];
+
+    let locales = [
+        {
+            name: "English",
+            code: "en",
+        },
+        {
+            name: "Español",
+            code: "es",
+        },
+        {
+            name: "Português",
+            code: "pt",
+        },
+        {
+            name: "Français",
+            code: "fr",
+        },
+        {
+            name: "Deutsch",
+            code: "de",
+        },
+        {
+            name: "Indonesian",
+            code: "id",
+        },
+        {
+            name: "русский",
+            code: "ru",
+        },
+        {
+            name: "ไทย",
+            code: "th",
+        },
+        {
+            name: "中文",
+            code: "zh-cn",
+        },
+        {
+            name: "日本語",
+            code: "ja",
+        },
+    ];
+
+    let gameVersions = [
+        {
+            label: "Global",
+            value: "glob",
+        },
+        {
+            label: "China",
+            value: "cn",
+        },
+    ];
 </script>
 
-<nav>
-    {#each links as link}
-        <a
-            class:active={$page.url.pathname.includes(link.href)}
-            href={link.href}>{link.name}</a
-        >
-    {/each}
-</nav>
+<div class="db-nav grid g-50">
+    <nav>
+        <LinkSliderGroup data={links} />
+    </nav>
+
+    <div class="flex g-50">
+        <input type="text" placeholder="Search" />
+
+        <RadioSliderGroup
+            group={$gameVersion}
+            groupName="game-version"
+            name="gameVersion"
+            data={gameVersions}
+        />
+        <select bind:value={$userLocale}>
+            {#each locales as locale}
+                <option value={locale.code}>{locale.name}</option>
+            {/each}
+        </select>
+    </div>
+</div>
 
 <style lang="scss">
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
+    .db-nav {
         font-size: var(--step--1);
-        
     }
 
-    a {
-        border: none;
+    input,
+    select {
         background: var(--surface1);
-        padding: 0.5rem;
+        border: none;
+        font: inherit;
+        color: inherit;
+        padding: 0.5rem 1rem;
         border-radius: 0.5rem;
-        color: var(--text2);
 
-        &.active {
+        &:hover {
             color: var(--accent);
-            background: var(--surface2);
         }
+    }
 
-        &:hover,
-        &:focus {
-            color: var(--text1);
-        }
+    select:focus {
+        outline: 2px solid var(--accent);
+    }
+
+    option {
+        color: var(--text1);
     }
 </style>

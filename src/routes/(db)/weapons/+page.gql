@@ -1,0 +1,20 @@
+query AllWeapons {
+    weapons {
+        rarity
+        name
+        assets {
+            icon
+        }
+        element
+        type
+        charge {
+            tier
+            value
+        }
+        shatter {
+            tier
+            value
+        }
+        __typename
+    }
+}

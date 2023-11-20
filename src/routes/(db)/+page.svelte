@@ -4,7 +4,7 @@
 
     export let data;
     $: ({ AllEntries } = data);
-    $: ({ simulacra_v2, matrices } = $AllEntries.data);
+    $: ({ simulacra_v2, weapons, matrices } = $AllEntries.data);
 </script>
 
 <Meta
@@ -12,6 +12,6 @@
     description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!"
 />
 
-{#each [...simulacra_v2, ...matrices] as entry}
+{#each [...simulacra_v2, ...weapons, ...matrices] as entry}
     <EntryItem {entry} />
 {/each}
