@@ -45,12 +45,12 @@
             ],
             "description": "While on the ground, initiate 6 attacks in a row with Thunderbreaker.",
             "breakdown": [
-                "**90.5%** of ATK + **5** and knockback.",
-                "**67.9%** of ATK + **4** and knockback.",
-                "**123%** of ATK + **6** and knockback.",
-                "**217.9%** of ATK + **11** and knockback.",
-                "**222%** of ATK + **12** and knockback.",
-                "**291.8%** of ATK + **15** and **suspend** the target."
+                "**99.3** of ATK + **5** and knockback.",
+                "**73.2%** of ATK + **4** and knockback.",
+                "**135.8%** of ATK + **6** and knockback.",
+                "**240.5%** of ATK + **11** and knockback.",
+                "**240.1%** of ATK + **12** and knockback.",
+                "**314.1%** of ATK + **15** and **suspend** the target."
             ]
         },
         {

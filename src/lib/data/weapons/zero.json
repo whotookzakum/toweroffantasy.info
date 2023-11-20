@@ -24,7 +24,7 @@
     "weaponEffects": [
         {
             "title": "Flame Reaction",
-            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
+            "description": "Increase flame ATK by **15%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
         },
         {
             "title": "Flame Benediction",

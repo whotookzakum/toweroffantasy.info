@@ -1,0 +1,13 @@
+{
+    "name": "Elaphuria",
+    "id": 21,
+    "imgSrc": "zuoqi_tubiap_18",
+    "chinaOnly": true,
+    "parts": [
+        {
+            "source": "Obtained from event.",
+            "imgSrc": "Mount_018"
+        }
+    ],
+    "videoSrc": ""
+}

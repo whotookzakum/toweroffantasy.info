@@ -28,7 +28,7 @@
                     return "icon_element_wu";
                case "physical-flame":
                     return "icon_element_wuhuo"
-               case "physical-flame_global":
+               case "physical-flame-global":
                     return "icon_element_wuhuo"
                case "altered":
                     return "icon_element_powers";

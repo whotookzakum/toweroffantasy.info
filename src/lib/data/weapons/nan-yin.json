@@ -43,7 +43,7 @@
         "Shadow inherits an additional **50%** of the wanderer's AТK. If the wanderer is not in Trance state, when the wanderer takes lethal damage, the Shadow disappears and the wanderer becomes invulnerable for a short period of time. This effect triggers once every **60** seconds, with other similar effects triggering first and works in the off-hand slot.",
         "Increase the current weapon's base ATK growth by **32%**.",
         "In **Hyperspace**, you ignore **20%** of target's elemental resistance. The limit of created Abyss Flows is increased to **3**.",
-        "**Hyperspace** damage's base multiplier is increased to **0.12%** of total wanderer damage in Hyperspace [not including Shadow damage] plus **4,000%** of ATK."
+        "**Hyperspace** damage's base multiplier is increased to **0.18%** of total wanderer damage in Hyperspace (not including Shadow damage) plus **4,000%** of ATK."
     ],
     "abilities": [
         {
