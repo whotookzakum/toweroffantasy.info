@@ -1,14 +1,17 @@
 <script>
     export let rarity;
+    export let id = "";
 </script>
 
-<img
-    class="rarity {rarity}"
-    src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{rarity.toLowerCase()}?format=webp"
-    alt=""
-    width="63"
-    height="36"
-/>
+{#if id !== "imitation_33"}
+    <img
+        class="rarity {rarity}"
+        src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{rarity.toLowerCase()}?format=webp"
+        alt=""
+        width="63"
+        height="36"
+    />
+{/if}
 
 <style>
     .rarity {

@@ -1,6 +1,8 @@
 query AllEntries {
     simulacra_v2(lang: "en") {
         name
+        rarity
+        id
         weapon {
             element
             rarity

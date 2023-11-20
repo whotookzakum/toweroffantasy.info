@@ -1,18 +1,10 @@
 <script>
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    import Rarity from "./Rarity.svelte";
+    import RarityIcon from "./RarityIcon.svelte";
     import Tier from "./Tier.svelte";
-    import Matrice from "./Matrice.svelte";
-    import SimulacraV2 from "./SimulacraV2.svelte";
-    import Weapon from "./Weapon.svelte";
+    import NucleusIcon from "./NucleusIcon.svelte";
 
     export let entry;
-
-    const components = {
-        SimulacraV2,
-        Matrice,
-        Weapon,
-    };
 
     let mainRoute = {
         SimulacraV2: "simulacra",
@@ -21,63 +13,66 @@
     };
 
     let weapon;
-    if (entry.__typename === "SimulacraV2") weapon = entry.weapon;
-    if (entry.__typename === "Weapon") weapon = entry;
+    let avatarUri;
+    let nucleusIcons = [];
+    switch (entry.__typename) {
+        case "SimulacraV2":
+            weapon = entry.weapon;
+            avatarUri = entry.assets.painting;
+            if (entry.banners?.length > 0)
+                nucleusIcons = ["/assets/Icon/huobi/Gem005"];
+            else
+                nucleusIcons = [
+                    "/assets/Icon/huobi/Gem004",
+                    "/assets/Icon/huobi/Gem003",
+                ];
+            break;
+        case "Weapon":
+            weapon = entry;
+            avatarUri = entry.assets.icon;
+            if (entry.banners?.length > 0)
+                nucleusIcons = ["/assets/Icon/huobi/Gem005"];
+            else
+                nucleusIcons = [
+                    "/assets/Icon/huobi/Gem004",
+                    "/assets/Icon/huobi/Gem003",
+                ];
+            break;
+        case "Matrice":
+            avatarUri = entry.assets.iconLarge;
+            if (entry.rarity !== "N") {
+                if (entry.banners?.length > 0)
+                    nucleusIcons = ["/assets/Icon/huobi/item_ticket_02"];
+                else nucleusIcons = ["/assets/Icon/huobi/item_ticket_01"];
+            }
+            break;
+    }
 </script>
 
-<li class="item {entry.__typename}">
-    <div
-        class="flex"
-        style="align-items: end; justify-content: space-between; order: 2;"
+<li class="item grid g-25 {entry.__typename}">
+    <a
+        class:bottom={!weapon}
+        href="/{mainRoute[entry.__typename]}/{entry.name
+            .replace(' ', '-')
+            .toLowerCase()}">{entry.name}</a
     >
-        <a
-            href="/{mainRoute[entry.__typename]}/{entry.name
-                .replace(' ', '-')
-                .toLowerCase()}">{entry.name}</a
-        >
-        <div class="flex coin-wrapper show-on-hover">
-            {#if entry.banners.length > 0}
-                <img
-                    src="https://api.toweroffantasy.info/assets/Icon/huobi/Gem005?format=webp"
-                    alt="Limited-Banner Simulacrum"
-                    width="30"
-                    height="30"
-                />
-            {:else}
-                <img
-                    src="https://api.toweroffantasy.info/assets/Icon/huobi/Gem004?format=webp"
-                    alt="Standard Banner Simulacrum"
-                    width="30"
-                    height="30"
-                />
-                <img
-                    src="https://api.toweroffantasy.info/assets/Icon/huobi/Gem003?format=webp"
-                    alt=""
-                    width="30"
-                    height="30"
-                />
-            {/if}
-        </div>
-    </div>
 
     {#if weapon}
-        <div
-            class="flex"
-            style="justify-content: space-between; align-items: end; order: 3;"
-        >
-            <div class="flex">
-                <CategoryIcon type={weapon.element} width="30px" />
-                <CategoryIcon type={weapon.type} width="30px" />
-            </div>
-            <Rarity rarity={weapon.rarity} />
-        </div>
-    {:else if entry.rarity}
-        <div class="flex" style="height: 27px; align-items: end; justify-content: end; order: 3">
-            <Rarity rarity={entry.rarity} />
+        <div class="flex element">
+            <CategoryIcon type={weapon.element} width="30px" />
+            <CategoryIcon type={weapon.type} width="30px" />
         </div>
     {/if}
 
-    <svelte:component this={components[entry.__typename]} {entry} />
+    {#if entry.rarity}
+        <div class="flex rarity">
+            <RarityIcon id={entry.id} rarity={entry.rarity} />
+        </div>
+    {/if}
+
+    <div class="flex coin-wrapper show-on-hover">
+        <NucleusIcon {nucleusIcons} {entry} />
+    </div>
 
     {#if weapon}
         <dl class="shatter-charge show-on-hover grid">
@@ -101,18 +96,30 @@
     {/if}
 
     <img
+        class="avatar"
+        src="https://api.toweroffantasy.info{avatarUri}?format=webp"
+        alt=""
+        width="260"
+        height="349"
+    />
+
+    <img
         class="bg"
         src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.png"
         alt=""
     />
-    <!-- <img class="bg" src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshiyou.png" alt="">
-    <img class="bg" src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/Activity/JDWC/Card/jingdwc_kapaixq_zhuangshi03.png" alt=""> -->
+    <!-- jingdwc_huodong_zhuangshiyou -->
 </li>
 
 <style lang="scss">
     .item {
-        display: flex;
-        flex-direction: column;
+        align-content: end;
+        align-items: end;
+        grid-template-rows: auto auto 27px;
+        grid-template-areas:
+            "shatter shatter"
+            "name coin"
+            "element rarity";
         background: var(--surface1);
         border-radius: 0.5rem;
         padding-bottom: 0.5rem;
@@ -121,17 +128,13 @@
         padding: 0.5rem;
         position: relative;
         font-size: var(--step--1);
-        font-weight: 600;
         background-size: cover;
         background-position: 50% 20%;
         min-height: 200px;
         outline: 3px solid transparent;
         transition: all 0.2s ease;
-        align-content: end;
-        gap: 0.25rem;
         color: white;
         z-index: 1;
-        justify-content: end;
         text-shadow: 0 2px 6px var(--bg);
 
         &::before,
@@ -144,64 +147,55 @@
             opacity: 0.7;
             inset: 0;
         }
+    }
 
-        &:hover {
-            // Optional growing effect on the selected card
-            // outline: 3px solid var(--accent);
-            // transform: scale(1.05);
-
-            &::before {
-                opacity: 0;
-            }
-            &::after {
-                bottom: -2rem;
-            }
-
-            .show-on-hover {
-                opacity: 1;
-            }
-
-            :global(.avatar) {
-                transform: scale(1.1);
-            }
+    .item:where(:hover, :has(:focus-visible)) {
+        &::before,
+        &::after {
+            opacity: 0.9; // 0.3 for "brighten" effect
+            top: -6rem;
         }
 
-        &:has(:focus-visible) {
+        .avatar {
+            transform: scale(1.1);
+        }
+
+        .show-on-hover {
+            opacity: 1;
+        }
+    }
+
+    .item:has(:focus-visible) {
+        outline: 3px solid var(--accent);
+        transform: scale(1.05);
+    }
+
+    @supports not selector(:has(*)) {
+        .item:focus-within {
             outline: 3px solid var(--accent);
             transform: scale(1.05);
 
-            &::before {
-                opacity: 0;
-            }
+            &::before,
             &::after {
-                bottom: -2rem;
+                opacity: 0.9;
+                top: -6rem;
             }
 
-            :global(.avatar) {
+            .avatar {
                 transform: scale(1.1);
             }
 
             .show-on-hover {
                 opacity: 1;
             }
-        }
-
-        :global(.avatar) {
-            width: var(--img-width);
-            width: 100%;
-            height: 100%;
-            inset: 0;
-            object-fit: cover;
-            object-position: 0%;
-            position: absolute;
-            transition: transform 0.2s ease;
-            z-index: -5;
         }
     }
 
     a {
+        grid-area: name;
         border: none;
         color: inherit;
+        font-weight: 600;
 
         &::after {
             content: "";
@@ -214,36 +208,25 @@
         &:focus-visible {
             outline: none;
         }
-    }
 
-    @supports not selector(:has(*)) {
-        .item:focus-within {
-            outline: 3px solid var(--accent);
-            transform: scale(1.05);
-
-            &::before {
-                opacity: 0;
-            }
-            &::after {
-                bottom: -2rem;
-            }
-
-            :global(.avatar) {
-                transform: scale(1.1);
-            }
-
-            .show-on-hover {
-                opacity: 1;
-            }
+        &.bottom {
+            grid-area: element;
         }
     }
 
-    .coin-wrapper img {
-        margin: -0.4rem -0.4rem -0.4rem 0;
+    .element {
+        grid-area: element;
+    }
 
-        &:not(:first-child) {
-            margin-left: -0.8rem;
-        }
+    .rarity {
+        grid-area: rarity;
+        justify-content: end;
+    }
+
+    .coin-wrapper {
+        grid-area: coin;
+        align-self: end;
+        justify-content: end;
     }
 
     .show-on-hover {
@@ -252,10 +235,10 @@
     }
 
     .shatter-charge {
+        grid-area: shatter;
         grid-template-columns: 1fr 1fr;
         font-size: 0.7rem;
         font-weight: normal;
-        // background: linear-gradient(transparent -10%, var(--surface1) 110%);
         gap: 0.125rem;
         order: 1;
     }
@@ -271,6 +254,21 @@
         flex-direction: row-reverse;
     }
 
+    .avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0%;
+        position: absolute;
+        transition: transform 0.2s ease;
+        z-index: -5;
+    }
+
+    :not(.SimulacraV2) .avatar {
+        object-position: -30px -40px !important;
+        width: 256px !important;
+    }
+
     .bg {
         position: absolute;
         width: 120%;
@@ -278,10 +276,5 @@
         object-position: 50%;
         opacity: 0.3;
         z-index: -10;
-    }
-
-    :not(.SimulacraV2) :global(.avatar) {
-        object-position: -30px -40px !important;
-        width: 256px !important;
     }
 </style>
