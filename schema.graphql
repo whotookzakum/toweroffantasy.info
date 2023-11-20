@@ -42,7 +42,7 @@ type Award {
   type: String!
 }
 
-type BannerSchema {
+type Banner {
   bannerNo: Int!
   detailsLink: String!
   end: String!
@@ -93,7 +93,7 @@ type Item {
 
 type Matrice {
   assets: MatrixAssets!
-  banners: [BannerSchema!]!
+  banners: [Banner!]!
   description: String!
   id: String!
   name: String!
@@ -141,27 +141,27 @@ type Outfit {
 }
 
 type Query {
-  achivement(id: String!, lang: String! = "en"): Achievement!
-  achivements(lang: String! = "en"): [Achievement!]!
-  food(id: String!, lang: String! = "en"): Food!
+  achievement(id: String = null, lang: String! = "en", name: String = null): Achievement!
+  achievements(lang: String! = "en"): [Achievement!]!
+  food(id: String = null, lang: String! = "en", name: String = null): Food!
   foods(lang: String! = "en"): [Food!]!
-  item(id: String!, lang: String! = "en"): Item!
+  item(id: String = null, lang: String! = "en", name: String = null): Item!
   items(lang: String! = "en"): [Item!]!
   matrices(lang: String! = "en"): [Matrice!]!
-  matrix(id: String!, lang: String! = "en"): Matrice!
-  mount(id: String!, lang: String! = "en"): Mount!
+  matrix(id: String = null, lang: String! = "en", name: String = null): Matrice!
+  mount(id: String = null, lang: String! = "en", name: String = null): Mount!
   mounts(lang: String! = "en"): [Mount!]!
-  outfit(id: String!, lang: String! = "en"): Outfit!
+  outfit(id: String = null, lang: String! = "en", name: String = null): Outfit!
   outfits(lang: String! = "en"): [Outfit!]!
-  relic(id: String!, lang: String! = "en"): Relic!
+  relic(id: String = null, lang: String! = "en", name: String = null): Relic!
   relics(lang: String! = "en"): [Relic!]!
-  servant(id: String!, lang: String! = "en"): SmartServant!
+  servant(id: String = null, lang: String! = "en", name: String = null): SmartServant!
   servants(lang: String! = "en"): [SmartServant!]!
   simulacra(lang: String! = "en", version: String! = "global"): [Simulacra!]!
   simulacra_v2(lang: String! = "en"): [SimulacraV2!]!
-  simulacrum(id: String!, lang: String! = "en", version: String! = "global"): Simulacra!
-  simulacrum_v2(id: String!, lang: String! = "en"): SimulacraV2!
-  weapon(id: String!, lang: String! = "en", version: String! = "global"): Weapon!
+  simulacrum(id: String = null, lang: String! = "en", name: String = null, version: String! = "global"): Simulacra!
+  simulacrum_v2(id: String = null, lang: String! = "en", name: String = null): SimulacraV2!
+  weapon(id: String = null, lang: String! = "en", name: String = null, version: String! = "global"): Weapon!
   weapons(lang: String! = "en", version: String! = "global"): [Weapon!]!
 }
 
@@ -210,7 +210,7 @@ type Simulacra {
   assets: Assets!
   avatarID: String!
   awakenings: [Awakening!]!
-  banners: [BannerSchema!]!
+  banners: [Banner!]!
   city: String!
   gender: String!
   giftTypes: [String!]!
@@ -231,7 +231,7 @@ type SimulacraV2 {
   assets: Assets!
   avatarID: String!
   awakenings: [Awakening!]!
-  banners: [BannerSchema!]!
+  banners: [Banner!]!
   city: String!
   gender: String!
   giftTypes: [String!]!
@@ -296,7 +296,7 @@ type Weapon {
   advanceID: String
   advancements: [Advancements!]!
   assets: WeaponAssets!
-  banners: BannerSchema!
+  banners: [Banner!]!
   baseStats: [BaseStats!]!
   charge: ShatterOrCharge!
   description: String!

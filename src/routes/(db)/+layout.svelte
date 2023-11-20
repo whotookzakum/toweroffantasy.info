@@ -1,8 +1,5 @@
 <script>
-    import RadioSliderGroup from "./RadioSliderGroup.svelte";
     import DBNavigation from "./DBNavigation.svelte";
-
-    
 </script>
 
 <main class="main-layout">

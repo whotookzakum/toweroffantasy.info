@@ -40,6 +40,9 @@ query AllEntries {
             tier
             value
         }
+        banners {
+            bannerNo
+        }
         __typename
     }
     matrices(lang: "en") {
@@ -47,6 +50,9 @@ query AllEntries {
         name
         assets {
             iconLarge
+        }
+        banners {
+            bannerNo
         }
         __typename
     }

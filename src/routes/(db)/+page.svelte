@@ -4,7 +4,9 @@
 
     export let data;
     $: ({ AllEntries } = data);
-    $: ({ simulacra_v2, weapons, matrices } = $AllEntries.data);
+    $: ({ simulacra_v2, weapons, matrices } = $AllEntries.fetching
+        ? { simulacra_v2: [], weapons: [], matrices: [] }
+        : $AllEntries.data);
 </script>
 
 <Meta

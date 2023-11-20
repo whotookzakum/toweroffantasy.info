@@ -4,15 +4,16 @@
 
     export let data;
     $: ({ AllWeapons } = data);
-    $: ({ weapons } = $AllWeapons.data);
 </script>
 
-<Meta
-    title="Weapons | Tower of Fantasy Index"
-    description=""
-    image="https://api.toweroffantasy.info{weapons[0].assets.avatar}"
-/>
-
-{#each weapons as entry}
-    <EntryItem {entry} />
-{/each}
+{#if !$AllWeapons.fetching}
+    <Meta
+        title="Weapons | Tower of Fantasy Index"
+        description=""
+        image="https://api.toweroffantasy.info{$AllWeapons.data.weapons[0]
+            .assets.avatar}"
+    />
+    {#each $AllWeapons.data.weapons as entry}
+        <EntryItem {entry} />
+    {/each}
+{/if}
