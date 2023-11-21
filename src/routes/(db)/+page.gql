@@ -1,5 +1,5 @@
-query AllEntries {
-    simulacra_v2(lang: "en") {
+query AllEntries($lang: String) {
+    simulacra_v2(lang: $lang) {
         name
         rarity
         id
@@ -26,7 +26,7 @@ query AllEntries {
         }
         __typename
     }
-    weapons(lang: "en") {
+    weapons(lang: $lang) {
         rarity
         name
         assets {
@@ -47,7 +47,7 @@ query AllEntries {
         }
         __typename
     }
-    matrices(lang: "en") {
+    matrices(lang: $lang) {
         rarity
         name
         assets {

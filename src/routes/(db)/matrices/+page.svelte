@@ -1,9 +1,11 @@
 <script>
+    import { searchTerm } from "$lib/stores";
     import Meta from "../Meta.svelte";
     import EntryItem from "../EntryItem.svelte";
 
     export let data;
     $: ({ AllMatrices } = data);
+    $: matrices = $AllMatrices?.data?.matrices.filter(mat => mat.name.toLowerCase().includes($searchTerm.toLowerCase()))
 </script>
 
 {#if !$AllMatrices.fetching}
@@ -13,7 +15,7 @@
         image="https://api.toweroffantasy.info{$AllMatrices.data.matrices[0]
             .assets.iconLarge}"
     />
-    {#each $AllMatrices.data.matrices as entry}
+    {#each matrices as entry (entry.name)}
         <EntryItem {entry} />
     {/each}
 {/if}

@@ -15,6 +15,9 @@ query AllWeapons {
             tier
             value
         }
+        banners {
+            bannerNo
+        }
         __typename
     }
 }

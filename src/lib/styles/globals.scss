@@ -138,6 +138,28 @@ h3>.anchorjs-link {
     align-items: center;
 }
 
+input,
+select {
+    background: var(--surface1);
+    border: none;
+    font: inherit;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+select:focus {
+    outline: 2px solid var(--accent);
+}
+
+select:hover {
+    color: var(--accent);
+}
+
+option {
+    color: var(--text1);
+}
+
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
 // .unit-container {

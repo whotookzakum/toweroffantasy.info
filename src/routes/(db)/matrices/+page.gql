@@ -5,6 +5,9 @@ query AllMatrices {
         assets {
             iconLarge
         }
+        banners {
+            bannerNo
+        }
         __typename
     }
 }
