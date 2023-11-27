@@ -1,0 +1,24 @@
+query Weapons($lang: String) {
+    weapons(lang: $lang) {
+        Rarity
+        id
+        Name
+        Assets {
+            ItemIcon
+        }
+        WeaponElement
+        WeaponCategory
+        Charge {
+            tier
+            value
+        }
+        Shatter {
+            tier
+            value
+        }
+        Banners {
+            bannerNo
+        }
+        __typename
+    }
+}

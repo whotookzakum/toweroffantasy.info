@@ -8,7 +8,7 @@
 
 <div class="sliders-wrapper" style:--total-options={data.length}>
     {#each data as { name, href }}
-        <a {href} class:active={$page.url.pathname === href}>{name}</a>
+        <a {href} class:active={href === "/" ? $page.url.pathname === href : $page.url.pathname.includes(href)}>{name}</a>
     {/each}
     <div class="slider" />
 </div>
@@ -40,7 +40,6 @@
         position: relative;
         z-index: 10;
         padding: 0.5rem 1rem;
-        font-size: var(--step--1);
         cursor: pointer;
         border: none;
         border-radius: 0.25rem;

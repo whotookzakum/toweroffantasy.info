@@ -31,10 +31,10 @@ export const fetchAllSimulacra = async () => {
 }
 
 export const fetchAllBanners = async (version) => {
-    const allSimulacra = await fetchAllSimulacra()
+    const Simulacra = await fetchAllSimulacra()
 
     const simulacraInVersion = 
-        allSimulacra
+        Simulacra
         .filter(simulacrum => simulacrum.banners?.[version])
         .map(simulacrum => {
             return {

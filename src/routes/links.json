@@ -1,0 +1,38 @@
+[
+    {
+        "name": "All",
+        "href": "/"
+    },
+    {
+        "name": "Simulacra",
+        "href": "/simulacra"
+    },
+    {
+        "name": "Weapons",
+        "href": "/weapons"
+    },
+    {
+        "name": "Matrices",
+        "href": "/matrices"
+    },
+    {
+        "name": "Relics",
+        "href": "/relics"
+    },
+    {
+        "name": "Exploration",
+        "href": "/exploration"
+    },
+    {
+        "name": "Food",
+        "href": "/food"
+    },
+    {
+        "name": "Mounts",
+        "href": "/mounts"
+    },
+    {
+        "name": "Cosmetics",
+        "href": "/cosmetics"
+    }
+]

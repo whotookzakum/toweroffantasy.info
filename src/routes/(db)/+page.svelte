@@ -3,17 +3,18 @@
     import EntryItem from "./EntryItem.svelte";
 
     export let data;
-    $: ({ AllEntries } = data);
-    $: ({ simulacra_v2, weapons, matrices } = $AllEntries.fetching
-        ? { simulacra_v2: [], weapons: [], matrices: [] }
-        : $AllEntries.data);
-    $: not = [...simulacra_v2, ...weapons, ...matrices]
-    $: entries = not.sort((a, b) => {
-        const firstBannerA = a.banners[a.banners.length - 1]?.bannerNo ?? 1
-        const firstBannerB = b.banners[b.banners.length - 1]?.bannerNo ?? -1
-        return firstBannerB - firstBannerA
-    })
-    $: console.log(entries)
+    $: ({ Entries } = data);
+
+    let entries = [];
+    $: if (!$Entries.fetching) {
+        const { simulacra_v2, weapons, matrices } = $Entries.data
+        entries = [...simulacra_v2, ...weapons, ...matrices]
+    }
+    // $: entries = combined.sort((a, b) => {
+    //     const firstBannerA = a.Banners[a.Banners.length - 1]?.bannerNo ?? 1
+    //     const firstBannerB = b.Banners[b.Banners.length - 1]?.bannerNo ?? -1
+    //     return firstBannerB - firstBannerA
+    // })
 </script>
 
 <Meta

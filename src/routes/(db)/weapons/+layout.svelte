@@ -1,0 +1,29 @@
+<script>
+    import { searchTerm } from "$lib/stores";
+    import Meta from "../Meta.svelte";
+    import EntryItem from "../EntryItem.svelte";
+    import DBLayout from "../DBLayout.svelte";
+
+    export let data;
+    $: ({ Weapons } = data);
+    $: weapons = $Weapons?.data?.weapons.filter((wep) =>
+        wep.Name.toLowerCase().includes($searchTerm.toLowerCase()),
+    );
+</script>
+
+<DBLayout>
+    <slot />
+    <svelte:fragment slot="search-results">
+        {#if !$Weapons.fetching}
+            <Meta
+                title="Weapons | Tower of Fantasy Index"
+                description=""
+                image="https://api.toweroffantasy.info{$Weapons.data.weapons[0]
+                    .Assets.ItemIcon}"
+            />
+            {#each weapons as entry (entry.id)}
+                <EntryItem {entry} slot="search-results" />
+            {/each}
+        {/if}
+    </svelte:fragment>
+</DBLayout>

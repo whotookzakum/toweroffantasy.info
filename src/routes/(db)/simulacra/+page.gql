@@ -1,27 +1,28 @@
-query AllSimulacra {
-    simulacra_v2(lang: "en") {
-        name
+query Simulacra($lang: String) {
+    simulacra_v2(lang: $lang) {
+        Name
+        Rarity
         id
-        weapon {
-            element
-            rarity
-            type
-            charge {
+        Weapon {
+            Rarity
+            WeaponElement
+            WeaponCategory
+            Charge {
                 tier
                 value
             }
-            shatter {
+            Shatter {
                 tier
                 value
             }
         }
-        banners {
+        Banners {
             bannerNo
         }
-        assets {
-            avatar
-            artwork
-            painting
+        AssetsA0 {
+            Avatar
+            AwakenPhoto
+            Painting
         }
         __typename
     }

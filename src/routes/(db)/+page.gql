@@ -1,48 +1,47 @@
-query AllEntries($lang: String) {
+query Entries($lang: String) {
     simulacra_v2(lang: $lang) {
-        name
-        rarity
+        Name
+        Rarity
         id
-        weapon {
-            element
-            rarity
-            type
-            charge {
+        Weapon {
+            Rarity
+            WeaponElement
+            WeaponCategory
+            Charge {
                 tier
                 value
             }
-            shatter {
+            Shatter {
                 tier
                 value
             }
         }
-        banners {
+        Banners {
             bannerNo
         }
-        assets {
-            avatar
-            artwork
-            painting
+        AssetsA0 {
+            AwakenPhoto
+            Painting
         }
         __typename
     }
     weapons(lang: $lang) {
-        rarity
-        name
-        assets {
-            icon
+        Rarity
+        Name
+        Assets {
+            ItemIcon
         }
-        element
-        type
-        charge {
+        WeaponElement
+        WeaponCategory
+        Charge {
             tier
             value
         }
-        shatter {
+        Shatter {
             tier
             value
         }
-        banners {
+        Banners {
             bannerNo
         }
         __typename
@@ -53,7 +52,7 @@ query AllEntries($lang: String) {
         assets {
             iconLarge
         }
-        banners {
+        Banners {
             bannerNo
         }
         __typename

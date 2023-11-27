@@ -18,7 +18,6 @@
 		rel="canonical"
 		href="https://toweroffantasy.info{$page.url.pathname}"
 	/>
-
 	{#if bigImage}
 		<meta
 			name="twitter:card"

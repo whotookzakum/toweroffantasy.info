@@ -17,9 +17,9 @@
     let nucleusIcons = [];
     switch (entry.__typename) {
         case "SimulacraV2":
-            weapon = entry.weapon;
-            avatarUri = entry.assets.painting;
-            if (entry.banners?.length > 0)
+            weapon = entry.Weapon;
+            avatarUri = entry.AssetsA0.Painting;
+            if (entry.Banners?.length > 0)
                 nucleusIcons = ["/assets/Icon/huobi/Gem005"];
             else
                 nucleusIcons = [
@@ -29,8 +29,8 @@
             break;
         case "Weapon":
             weapon = entry;
-            avatarUri = entry.assets.icon;
-            if (entry.banners?.length > 0)
+            avatarUri = entry.Assets.ItemIcon;
+            if (entry.Banners?.length > 0)
                 nucleusIcons = ["/assets/Icon/huobi/Gem005"];
             else
                 nucleusIcons = [
@@ -41,7 +41,7 @@
         case "Matrice":
             avatarUri = entry.assets.iconLarge;
             if (entry.rarity !== "N") {
-                if (entry.banners?.length > 0)
+                if (entry.Banners?.length > 0)
                     nucleusIcons = ["/assets/Icon/huobi/item_ticket_02"];
                 else nucleusIcons = ["/assets/Icon/huobi/item_ticket_01"];
             }
@@ -52,21 +52,19 @@
 <li class="item grid g-25 {entry.__typename}">
     <a
         class:bottom={!weapon}
-        href="/{mainRoute[entry.__typename]}/{entry.name
-            .replace(' ', '-')
-            .toLowerCase()}">{entry.name}</a
+        href="/{mainRoute[entry.__typename]}/{entry.id}">{entry.Name}</a
     >
 
     {#if weapon}
         <div class="flex element">
-            <CategoryIcon type={weapon.element} width="30px" />
-            <CategoryIcon type={weapon.type} width="30px" />
+            <CategoryIcon type={weapon.WeaponElement} width="30px" />
+            <CategoryIcon type={weapon.WeaponCategory} width="30px" />
         </div>
     {/if}
 
-    {#if entry.rarity}
+    {#if entry.Rarity}
         <div class="flex rarity">
-            <RarityIcon id={entry.id} rarity={entry.rarity} />
+            <RarityIcon id={entry.id} rarity={entry.Rarity} />
         </div>
     {/if}
 
@@ -80,17 +78,17 @@
             <dd class="flex g-25">
                 <Tier
                     style="padding-block: 0; text-shadow: none"
-                    tier={weapon.shatter.tier}
+                    tier={weapon.Shatter.tier}
                 />
-                <span>{weapon.shatter.value.toFixed(2)}</span>
+                <span>{weapon.Shatter.value.toFixed(2)}</span>
             </dd>
             <dt>Charge</dt>
             <dd class="flex g-25">
                 <Tier
                     style="padding-block: 0; text-shadow: none"
-                    tier={weapon.charge.tier}
+                    tier={weapon.Charge.tier}
                 />
-                <span>{weapon.charge.value.toFixed(2)}</span>
+                <span>{weapon.Charge.value.toFixed(2)}</span>
             </dd>
         </dl>
     {/if}

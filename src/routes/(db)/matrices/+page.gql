@@ -1,11 +1,12 @@
-query AllMatrices {
-    matrices {
+query Matrices($lang: String) {
+    matrices(lang: $lang) {
         rarity
         name
+        id
         assets {
             iconLarge
         }
-        banners {
+        Banners {
             bannerNo
         }
         __typename
