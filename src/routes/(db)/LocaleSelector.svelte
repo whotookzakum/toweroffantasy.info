@@ -1,8 +1,7 @@
 <script>
     import { userLocale } from "$lib/stores";
-    import { page } from "$app/stores"
-    import { browser } from "$app/environment" 
-    import { goto } from "$app/navigation"
+
+    export let inputFunction;
     
     let locales = [
         {
@@ -46,25 +45,9 @@
             code: "ja",
         },
     ];
-
-    $: if (browser) {
-        $userLocale
-        updateUrl();
-    }
-    
-    function updateUrl() {
-        $page.url.searchParams.set("lang", $userLocale)
-
-        goto(`?${$page.url.searchParams.toString()}`, {
-            noScroll: true,
-            replaceState: false,
-            keepFocus: true,
-            invalidateAll: true,
-        });
-    }
 </script>
 
-<select bind:value={$userLocale} on:input={updateUrl}>
+<select bind:value={$userLocale} on:input={inputFunction}>
     {#each locales as locale}
         <option value={locale.code}>{locale.name}</option>
     {/each}

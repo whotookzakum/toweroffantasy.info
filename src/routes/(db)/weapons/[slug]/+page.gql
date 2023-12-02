@@ -1,0 +1,93 @@
+query Weapon($lang: String, $id: String) {
+    weapon(lang: $lang, id: $id) {
+        Rarity
+        id
+        Name
+        Assets {
+            ItemIcon
+        }
+        WeaponElement
+        WeaponCategory
+        Charge {
+            tier
+            value
+        }
+        Shatter {
+            tier
+            value
+        }
+        Banners {
+            bannerNo
+        }
+        WeaponEffects {
+            description
+            title
+        }
+        WeaponAdvancements {
+            Charge
+            Description
+            GoldNeeded
+            NeedItem
+            Shatter
+        }
+        WeaponAttacks {
+            Melee {
+                Attacks {
+                    Values {
+                        Time
+                        Value
+                    }
+                    Description
+                    Icon
+                    Name
+                    Operations
+                    Tags
+                }
+                Name
+            }
+            Evade {
+                Attacks {
+                    Values {
+                        Time
+                        Value
+                    }
+                    Description
+                    Icon
+                    Name
+                    Operations
+                    Tags
+                }
+                Name
+            }
+            Skill {
+                Attacks {
+                    Values {
+                        Time
+                        Value
+                    }
+                    Description
+                    Icon
+                    Name
+                    Operations
+                    Tags
+                }
+                Name
+            }
+            Discharge {
+                Attacks {
+                    Values {
+                        Time
+                        Value
+                    }
+                    Description
+                    Icon
+                    Name
+                    Operations
+                    Tags
+                }
+                Name
+            }
+        }
+        __typename
+    }
+}

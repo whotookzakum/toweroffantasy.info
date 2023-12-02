@@ -1,5 +1,5 @@
 <script>
-    export let group, groupName, data, name;
+    export let group, groupName, data, name, inputFunction;
     // Note for Firefox: without "name" attribute, user must tab through all radio options. with "name", tabbing will skip the entire group and arrow keys must be used to select an option
     // The CSS transition supports up to 5 options
 </script>
@@ -13,6 +13,7 @@
             id="{groupName}-{label}"
             {name}
             bind:group
+            on:input={inputFunction}
         />
         <label for="{groupName}-{label}">{label}</label>
     {/each}

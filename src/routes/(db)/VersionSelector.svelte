@@ -1,6 +1,7 @@
 <script>
     import { gameVersion } from "$lib/stores";
     import RadioSliderGroup from "./RadioSliderGroup.svelte";
+    export let updateSearchParams;
 
     let gameVersions = [
         {
@@ -10,13 +11,14 @@
         {
             label: "China",
             value: "cn",
-        },
+        }
     ];
 </script>
 
 <RadioSliderGroup
-    group={$gameVersion}
+    bind:group={$gameVersion}
     groupName="game-version"
     name="gameVersion"
     data={gameVersions}
+    inputFunction={updateSearchParams('version', $gameVersion)}
 />
