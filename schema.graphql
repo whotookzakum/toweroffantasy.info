@@ -8,28 +8,29 @@ type Achievement {
 }
 
 type Assets {
-  AdvanceGrayPainting: String!
-  AdvancePainting: String!
-  Avatar: String!
-  AwakenPhoto: String!
-  DescPainting: String!
-  GrayPainting: String!
-  HasGotAwakenEntrance: String!
-  Name2Picture: String!
-  Name3Picture: String!
-  NamePicture: String!
-  NotGotAwakenEntrance: String!
-  Painting: String!
-  ThumbPainting: String!
-  TitlePicture: String!
-  WeaponShowPicture: String!
+  activeImitation: String!
+  advanceGrayPainting: String!
+  advancePainting: String!
+  avatar: String!
+  backPhoto: String!
+  descPainting: String!
+  grayPainting: String!
+  inactiveImitation: String!
+  lotteryCardImage: String!
+  matrixPainting: String!
+  namePicture: String!
+  painting: String!
+  rarityIcon: String!
+  thumbPainting: String!
+  titlePicture: String!
+  weaponShowPicture: String!
 }
 
 type Awakening {
-  Description: String!
-  Icon: String!
-  Name: String!
-  Need: Int!
+  description: String!
+  icon: String!
+  name: String!
+  need: Int!
 }
 
 type Award {
@@ -38,23 +39,24 @@ type Award {
 }
 
 type Banner {
-  bannerNo: Int!
+  bannerNumber: Int!
   detailsLink: String!
-  end: String!
-  finalRerun: Boolean!
-  imitationId: String
+  endDate: String!
   isCollab: Boolean!
+  isFinalBanner: Boolean!
+  isLimitedBannerOnly: Boolean!
   isRerun: Boolean!
-  limitedBannerOnly: Boolean!
   matrixId: String
-  simulacrum: String
-  start: String!
+  simulacrumId: String!
+  simulacrumName: String!
+  startDate: String!
   weaponId: String
 }
 
-type FashionWeaponInfo {
-  FashionImitationId: String!
-  FashionName: String!
+type BaseStats {
+  icon: String!
+  id: String!
+  name: String!
 }
 
 type Food {
@@ -85,20 +87,15 @@ type Item {
   type: String!
 }
 
-type ListKeys {
-  Time: Float!
-  Value: Float!
-}
-
 type Matrice {
-  Banners: [Banner!]!
-  SimulacrumID: String
   assets: MatrixAssets!
+  banners: [Banner!]!
   description: String!
   id: String!
   name: String!
   rarity: String!
   sets: [MatriceSet!]!
+  simulacrumId: String
   type: String!
 }
 
@@ -110,11 +107,6 @@ type MatriceSet {
 type MatrixAssets {
   icon: String!
   iconLarge: String!
-}
-
-type MatrixSuit {
-  MatrixSuitDes: String!
-  MatrixSuitName: String!
 }
 
 type MetaData {
@@ -210,69 +202,55 @@ type ShatterOrCharge {
 }
 
 type Simulacra {
-  AdvanceImitations: String
-  Age: String
-  AssetsA0: Assets!
-  AssetsA3: Assets
-  AvatarId: String!
-  Awakenings: [Awakening!]!
-  Banners: [Banner!]!
-  BelongTo: String
-  Birthday: String
-  CVMap: VoiceActors!
-  CharacterSex: String!
-  Dislike: [String!]!
-  Gender: String
-  Height: String
-  Hometown: String
-  Job: String
-  Like: [String!]!
-  MatrixId: String
-  Name: String!
-  Rarity: String!
-  Title: String
-  UnlockInfo: String!
-  WeaponId: String
+  advanceId: String
+  affiliation: String
+  assetsA0: Assets!
+  assetsA3: Assets
+  avatarId: String!
+  awakening: [Awakening!]!
+  banners: [Banner!]!
+  birthday: String
+  gender: String
+  height: String
+  homeTown: String
   id: String!
+  likedGiftTypes: [String!]!
+  matrixId: String
+  name: String!
+  rarity: String!
+  voicing: VoiceActors!
+  weaponId: String
 }
 
 type SimulacraV2 {
-  AdvanceImitations: String
-  Age: String
-  AssetsA0: Assets!
-  AssetsA3: Assets
-  AvatarId: String!
-  Awakenings: [Awakening!]!
-  Banners: [Banner!]!
-  BelongTo: String
-  Birthday: String
-  CVMap: VoiceActors!
-  CharacterSex: String!
-  Dislike: [String!]!
-  Gender: String
-  Height: String
-  Hometown: String
-  Job: String
-  Like: [String!]!
-  Matrix: Matrice
-  MatrixId: String
-  Name: String!
-  Rarity: String!
-  Title: String
-  UnlockInfo: String!
-  Weapon: Weapon
-  WeaponId: String
+  advanceId: String
+  affiliation: String
+  assetsA0: Assets!
+  assetsA3: Assets
+  avatarId: String!
+  awakening: [Awakening!]!
+  banners: [Banner!]!
+  birthday: String
+  gender: String
+  height: String
+  homeTown: String
   id: String!
+  likedGiftTypes: [String!]!
+  matrix: Matrice
+  matrixId: String
+  name: String!
+  rarity: String!
+  voicing: VoiceActors!
+  weapon: Weapon
+  weaponId: String
 }
 
 type Skill {
-  Description: String
-  Icon: String
-  Name: String
-  Operations: [String!]!
-  ShortDesc: String
-  Tags: [String!]!
-  Values: [[ListKeys!]!]!
+  description: String
+  icon: String
+  name: String
+  operations: [String!]!
+  tags: [String!]!
 }
 
 type SmartServant {
@@ -288,68 +266,53 @@ type SmartServant {
 }
 
 type VoiceActors {
-  Chinese: String
-  English: String
-  Japanese: String
-  Korean: String
-  Portuguese: String
+  cn: String
+  en: String
+  jp: String
+  kr: String
+  pt: String
 }
 
 type Weapon {
-  Assets: WeaponAssets!
-  Banners: [Banner!]!
-  Brief: String!
-  Charge: ShatterOrCharge!
-  Description: String!
-  FashionWeaponInfos: [FashionWeaponInfo!]!
-  IsUpPoolWeapon: Boolean!
-  Meta: MetaData
-  Name: String!
-  Rarity: String!
-  RecommendedMatrices: [MatrixSuit!]!
-  Shatter: ShatterOrCharge!
-  SimulacrumID: String
-  WeaponAdvancements: [WeaponAdvancement!]!
-  WeaponAttacks: WeaponAttacks!
-  WeaponCategory: String!
-  WeaponEffects: [WeaponEffect!]!
-  WeaponElement: String!
+  advanceId: String
+  assets: WeaponAssets!
+  banners: [Banner!]!
+  category: String!
+  charge: ShatterOrCharge!
+  description: String!
+  element: String!
   id: String!
+  meta: MetaData
+  name: String!
+  rarity: String!
+  shatter: ShatterOrCharge!
+  simulacrumId: String
+  weaponAdvancements: [WeaponAdvancement!]!
+  weaponAttacks: WeaponAttacks!
+  weaponEffects: [WeaponEffect!]!
+  weaponStats: [BaseStats!]!
 }
 
 type WeaponAdvancement {
-  Charge: Float!
-  Description: String
-  GoldNeeded: Int!
-  NeedItem: String
-  Shatter: Float!
-  WeaponFashionID: String
+  charge: ShatterOrCharge!
+  description: String
+  need: String
+  shatter: ShatterOrCharge!
 }
 
 type WeaponAssets {
-  ItemIcon: String
-  ItemLargeIcon: String
-  LotteryCardImage: String
-  SoloLeagueBanPickBanner: String
-  WeaponIconForMatrix: String
-  WeaponUPIcon: String
+  icon: String
+  weaponIconForMatrix: String
 }
 
 type WeaponAttacks {
-  Discharge: WeaponSkills!
-  Evade: WeaponSkills!
-  Melee: WeaponSkills!
-  Skill: WeaponSkills!
+  discharge: [Skill!]!
+  dodge: [Skill!]!
+  normals: [Skill!]!
+  skill: [Skill!]!
 }
 
 type WeaponEffect {
   description: String!
   title: String!
-}
-
-type WeaponSkills {
-  Attacks: [Skill!]!
-  Description: String
-  Icon: String
-  Name: String
 }

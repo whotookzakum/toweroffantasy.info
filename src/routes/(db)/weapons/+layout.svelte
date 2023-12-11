@@ -7,7 +7,7 @@
     export let data;
     $: ({ Weapons } = data);
     $: weapons = $Weapons?.data?.weapons.filter((wep) =>
-        wep.Name.toLowerCase().includes($searchTerm.toLowerCase()),
+        wep.name.toLowerCase().includes($searchTerm.toLowerCase()),
     );
 </script>
 
@@ -19,7 +19,7 @@
                 title="Weapons | Tower of Fantasy Index"
                 description=""
                 image="https://api.toweroffantasy.info{$Weapons.data.weapons[0]
-                    .Assets.ItemIcon}"
+                    .assets.icon}"
             />
             {#each weapons as entry (entry.id)}
                 <EntryItem {entry} slot="search-results" />

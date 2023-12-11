@@ -1,0 +1,22 @@
+fragment weaponInfo on Weapon {
+    rarity
+    name
+    id
+    assets {
+        icon
+    }
+    element
+    category
+    charge {
+        tier
+        value
+    }
+    shatter {
+        tier
+        value
+    }
+    banners {
+        bannerNumber
+    }
+    __typename
+}

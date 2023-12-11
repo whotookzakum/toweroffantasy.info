@@ -6,8 +6,8 @@ query Matrices($lang: String) {
         assets {
             iconLarge
         }
-        Banners {
-            bannerNo
+        banners {
+            bannerNumber
         }
         __typename
     }

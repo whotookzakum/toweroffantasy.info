@@ -1,93 +1,41 @@
 query Weapon($lang: String, $id: String) {
     weapon(lang: $lang, id: $id) {
-        Rarity
+        rarity
         id
-        Name
-        Assets {
-            ItemIcon
+        name
+        assets {
+            icon
         }
-        WeaponElement
-        WeaponCategory
-        Charge {
+        element
+        category
+        charge {
             tier
             value
         }
-        Shatter {
+        shatter {
             tier
             value
         }
-        Banners {
-            bannerNo
+        banners {
+            bannerNumber
         }
-        WeaponEffects {
+        weaponEffects {
             description
             title
         }
-        WeaponAdvancements {
-            Charge
-            Description
-            GoldNeeded
-            NeedItem
-            Shatter
+        weaponAdvancements {
+            charge {
+                tier
+                value
+            }
+            shatter {
+                tier
+                value
+            }
+            description
+            need
         }
-        WeaponAttacks {
-            Melee {
-                Attacks {
-                    Values {
-                        Time
-                        Value
-                    }
-                    Description
-                    Icon
-                    Name
-                    Operations
-                    Tags
-                }
-                Name
-            }
-            Evade {
-                Attacks {
-                    Values {
-                        Time
-                        Value
-                    }
-                    Description
-                    Icon
-                    Name
-                    Operations
-                    Tags
-                }
-                Name
-            }
-            Skill {
-                Attacks {
-                    Values {
-                        Time
-                        Value
-                    }
-                    Description
-                    Icon
-                    Name
-                    Operations
-                    Tags
-                }
-                Name
-            }
-            Discharge {
-                Attacks {
-                    Values {
-                        Time
-                        Value
-                    }
-                    Description
-                    Icon
-                    Name
-                    Operations
-                    Tags
-                }
-                Name
-            }
-        }
+        
         __typename
     }
 }

@@ -18,8 +18,8 @@
     switch (entry.__typename) {
         case "SimulacraV2":
             weapon = entry.Weapon;
-            avatarUri = entry.AssetsA0.Painting;
-            if (entry.Banners?.length > 0)
+            avatarUri = entry.assetsA0.painting;
+            if (entry.banners?.length > 0)
                 nucleusIcons = ["/assets/Icon/huobi/Gem005"];
             else
                 nucleusIcons = [
@@ -29,8 +29,8 @@
             break;
         case "Weapon":
             weapon = entry;
-            avatarUri = entry.Assets.ItemIcon;
-            if (entry.Banners?.length > 0)
+            avatarUri = entry.assets.icon;
+            if (entry.banners?.length > 0)
                 nucleusIcons = ["/assets/Icon/huobi/Gem005"];
             else
                 nucleusIcons = [
@@ -41,7 +41,7 @@
         case "Matrice":
             avatarUri = entry.assets.iconLarge;
             if (entry.rarity !== "N") {
-                if (entry.Banners?.length > 0)
+                if (entry.banners?.length > 0)
                     nucleusIcons = ["/assets/Icon/huobi/item_ticket_02"];
                 else nucleusIcons = ["/assets/Icon/huobi/item_ticket_01"];
             }
@@ -52,19 +52,19 @@
 <li class="item grid g-25 {entry.__typename}">
     <a
         class:bottom={!weapon}
-        href="/{mainRoute[entry.__typename]}/{entry.id}">{entry.Name}</a
+        href="/{mainRoute[entry.__typename]}/{entry.id}">{entry.name}</a
     >
 
     {#if weapon}
         <div class="flex element">
-            <CategoryIcon type={weapon.WeaponElement} width="30px" />
-            <CategoryIcon type={weapon.WeaponCategory} width="30px" />
+            <CategoryIcon type={weapon.element} width="30px" />
+            <CategoryIcon type={weapon.category} width="30px" />
         </div>
     {/if}
 
-    {#if entry.Rarity}
+    {#if entry.rarity}
         <div class="flex rarity">
-            <RarityIcon id={entry.id} rarity={entry.Rarity} />
+            <RarityIcon id={entry.id} rarity={entry.rarity} />
         </div>
     {/if}
 
@@ -78,17 +78,17 @@
             <dd class="flex g-25">
                 <Tier
                     style="padding-block: 0; text-shadow: none"
-                    tier={weapon.Shatter.tier}
+                    tier={weapon.shatter.tier}
                 />
-                <span>{weapon.Shatter.value.toFixed(2)}</span>
+                <span>{weapon.shatter.value.toFixed(2)}</span>
             </dd>
             <dt>Charge</dt>
             <dd class="flex g-25">
                 <Tier
                     style="padding-block: 0; text-shadow: none"
-                    tier={weapon.Charge.tier}
+                    tier={weapon.charge.tier}
                 />
-                <span>{weapon.Charge.value.toFixed(2)}</span>
+                <span>{weapon.charge.value.toFixed(2)}</span>
             </dd>
         </dl>
     {/if}
@@ -113,6 +113,7 @@
     .item {
         align-content: end;
         align-items: end;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto 27px;
         grid-template-areas:
             "shatter shatter"
