@@ -24,7 +24,7 @@
     }
 </script>
 
-{#if entry.id !== "imitation_33"}
+
     <div class="flex coins">
         <div>
             {#if entry.banners.length}
@@ -47,7 +47,7 @@
             {/each}
         </div>
     </div>
-{/if}
+
 
 <style lang="scss">
     .coins {

@@ -1,0 +1,6 @@
+query Simulacra($lang: String) {
+    simulacra_v2(lang: $lang) {
+        ...simulacrum_v2Entry
+        __typename
+    }
+}

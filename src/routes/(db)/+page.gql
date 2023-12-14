@@ -1,7 +1,5 @@
 query Entries($lang: String) {
     simulacra_v2(lang: $lang) {
-        name
-        id
         ...simulacrum_v2Entry
         __typename
     }

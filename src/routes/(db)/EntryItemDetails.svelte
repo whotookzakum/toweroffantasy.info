@@ -32,24 +32,23 @@
     }
 </script>
 
-<li class="item flex g-25 {entry.__typename}">
+<li
+    class="item flex g-25 {entry.__typename}"
+    class:molinia={entry.id === "imitation_33"}
+>
     <a class:bottom={!weapon} href="/{mainRoute[entry.__typename]}/{entry.id}"
         >{entry.name}</a
     >
 
-    <div class="row-categories flex">
-        {#if weapon}
-            <CategoryIcon type={weapon.element} width="30px" />
-            <CategoryIcon type={weapon.category} width="30px" />
-        {/if}
-        {#if entry.rarity}
-            <RarityIcon
-                id={entry.id}
-                rarity={entry.rarity}
-                style="margin-left: auto"
-            />
-        {/if}
-    </div>
+    {#if entry.rarity}
+        <div class="row-categories flex">
+            {#if weapon}
+                <CategoryIcon type={weapon.element} width="30px" />
+                <CategoryIcon type={weapon.category} width="30px" />
+            {/if}
+            <RarityIcon rarity={entry.rarity} style="margin-left: auto" />
+        </div>
+    {/if}
 
     {#if weapon}
         <dl class="row-stats show-on-hover grid">
@@ -95,6 +94,7 @@
 <style lang="scss">
     .item {
         flex-direction: column;
+        justify-content: end;
         background: var(--surface1);
         border-radius: 0.5rem;
         padding-bottom: 0.5rem;
@@ -169,6 +169,7 @@
     .row-banners {
         order: 1;
         margin-left: auto;
+        margin-bottom: auto;
     }
 
     .row-stats {
@@ -177,7 +178,6 @@
         font-size: 0.7rem;
         font-weight: normal;
         gap: 0.125rem;
-        margin-top: auto;
         // margin-bottom: 0.25rem;
     }
 
@@ -204,7 +204,14 @@
     .row-categories {
         order: 4;
         align-items: end;
-        height: 27px;
+        // height: 27px;
+    }
+
+    .molinia {
+        .row-categories,
+        .row-banners {
+            display: none;
+        }
     }
 
     .show-on-hover {
@@ -231,6 +238,8 @@
         position: absolute;
         transition: transform 0.2s ease;
         z-index: -5;
+        left: 0;
+        top: 0;
     }
 
     :not(.SimulacraV2) .avatar {
