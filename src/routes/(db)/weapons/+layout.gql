@@ -1,5 +1,6 @@
 query Weapons($lang: String) {
     weapons(lang: $lang) {
-        ...weaponInfo
+        ...weaponEntry
+        __typename
     }
 }

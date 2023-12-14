@@ -1,54 +1,66 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
+    import EntryItem from "../../EntryItem.svelte"
+    import { graphql } from '$houdini'
+    import QueryEntryItem from "./QueryEntryItem.svelte";
     export let data;
     $: ({ Weapon } = data);
     $: weapon = $Weapon?.data?.weapon;
-    $: console.log(weapon);
+
+    // console.log(data)
 </script>
+
+
 
 {#if !$Weapon.fetching}
     <div class="grid g-50">
-        <h1>{weapon.Name}</h1>
-        <span>{weapon.Rarity} Weapon</span>
+        <h1>{weapon.name}</h1>
+        <span>{weapon.rarity} Weapon</span>
 
         <img
-            src="https://api.toweroffantasy.info{weapon.Assets
-                .ItemIcon}?format=webp"
+            src="https://api.toweroffantasy.info{weapon.assets
+                .icon}?format=webp"
             alt=""
             width="128"
             height="128"
         />
 
-        {#if weapon.WeaponEffects}
+        <span>Part of a set</span>
+
+        <ul class="entry-list">
+            <QueryEntryItem type="simulacrum_v2" id="imitation_37" />
+        </ul>
+
+        {#if weapon.weaponEffects}
             <h2>Weapon Effects</h2>
-            {#each weapon.WeaponEffects as effect}
+            {#each weapon.weaponEffects as effect}
                 <span>{effect.title}</span>
                 <SvelteMarkdown source={effect.description} />
             {/each}
         {/if}
 
-        {#if weapon.WeaponAdvancements}
+        {#if weapon.weaponAdvancements}
             <h2>Advancements</h2>
-            {#each weapon.WeaponAdvancements as advancement}
+            {#each weapon.weaponAdvancements as advancement}
                 <SvelteMarkdown source={advancement.Description} />
             {/each}
         {/if}
 
-        {#if weapon.WeaponAttacks}
+        {#if weapon.weaponAttacks}
             <h2>Skills</h2>
-            {#each Object.entries(weapon.WeaponAttacks) as [categoryKey, attackCategory]}
-                <h3>{attackCategory.Name}</h3>
-                {#each attackCategory.Attacks as attack}
-                    <h4>{attack.Name}</h4>
+            {#each Object.entries(weapon.weaponAttacks) as [categoryKey, attackCategory]}
+                <h3>{attackCategory.name}</h3>
+                {#each attackCategory.attacks as attack}
+                    <h4>{attack.name}</h4>
                     <img
-                        src="https://api.toweroffantasy.info{attack.Icon}?format=webp"
+                        src="https://api.toweroffantasy.info{attack.icon}?format=webp"
                         alt=""
                         width="64"
                         height="64"
                     />
-                    <SvelteMarkdown source={attack.Description} />
-                    <span>{attack.Operations}</span>
-                    <span>{attack.Tags}</span>
+                    <SvelteMarkdown source={attack.description} />
+                    <span>{attack.operations}</span>
+                    <span>{attack.tags}</span>
                 {/each}
             {/each}
         {/if}

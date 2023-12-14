@@ -1,4 +1,4 @@
-fragment weaponInfo on Weapon {
+fragment weaponEntryOld on Weapon {
     rarity
     name
     id
@@ -20,3 +20,4 @@ fragment weaponInfo on Weapon {
     }
     __typename
 }
+

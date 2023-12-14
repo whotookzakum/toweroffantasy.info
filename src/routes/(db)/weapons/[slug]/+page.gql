@@ -1,24 +1,6 @@
 query Weapon($lang: String, $id: String) {
     weapon(lang: $lang, id: $id) {
-        rarity
-        id
-        name
-        assets {
-            icon
-        }
-        element
-        category
-        charge {
-            tier
-            value
-        }
-        shatter {
-            tier
-            value
-        }
-        banners {
-            bannerNumber
-        }
+        ...weaponEntry
         weaponEffects {
             description
             title
@@ -35,7 +17,12 @@ query Weapon($lang: String, $id: String) {
             description
             need
         }
-        
-        __typename
+        simulacrumId
     }
 }
+
+# query WeaponsSimulacrum($lang: String, $id: String) {
+#     simulacrum(id: "imitation_37") {
+#         name
+#     }
+# }

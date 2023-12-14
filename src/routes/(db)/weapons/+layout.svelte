@@ -6,9 +6,10 @@
 
     export let data;
     $: ({ Weapons } = data);
-    $: weapons = $Weapons?.data?.weapons.filter((wep) =>
-        wep.name.toLowerCase().includes($searchTerm.toLowerCase()),
-    );
+    $: weapons = $Weapons?.data?.weapons
+    // .filter((wep) =>
+    //     wep.name.toLowerCase().includes($searchTerm.toLowerCase()),
+    // );
 </script>
 
 <DBLayout>
@@ -18,8 +19,7 @@
             <Meta
                 title="Weapons | Tower of Fantasy Index"
                 description=""
-                image="https://api.toweroffantasy.info{$Weapons.data.weapons[0]
-                    .assets.icon}"
+                image="https://api.toweroffantasy.info{$Weapons?.data?.weapons[0]?.assets?.icon}"
             />
             {#each weapons as entry (entry.id)}
                 <EntryItem {entry} slot="search-results" />

@@ -1,0 +1,70 @@
+<script>
+    export let entry;
+    let nucleusIcons = [];
+
+    switch (entry.__typename) {
+        case "Simulacra":
+        case "SimulacraV2":
+        case "Weapon":
+            if (entry.banners?.length > 0)
+                nucleusIcons = ["/assets/Icon/huobi/Gem005"];
+            else
+                nucleusIcons = [
+                    "/assets/Icon/huobi/Gem004",
+                    "/assets/Icon/huobi/Gem003",
+                ];
+            break;
+        case "Matrice":
+            if (entry.rarity !== "N") {
+                if (entry.banners?.length > 0)
+                    nucleusIcons = ["/assets/Icon/huobi/item_ticket_02"];
+                else nucleusIcons = ["/assets/Icon/huobi/item_ticket_01"];
+            }
+            break;
+    }
+</script>
+
+{#if entry.id !== "imitation_33"}
+    <div class="flex coins">
+        <span>
+            {#if entry.banners.length}
+                {entry.banners.length}
+                {entry.banners.length > 1 ? "banners" : "banner"}
+            {:else}
+                Standard
+            {/if}
+        </span>
+        <div class="flex">
+            {#each nucleusIcons as uri}
+                <img
+                    src="https://api.toweroffantasy.info{uri}?format=webp"
+                    alt=""
+                    width="30"
+                    height="30"
+                />
+            {/each}
+        </div>
+    </div>
+{/if}
+
+<style lang="scss">
+    .coins {
+        gap: 0.3rem;
+        align-items: center;
+        font-size: 0.7rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background: var(--surface3);
+        border-radius: 1rem;
+        padding: 0.35rem 0.45rem 0.35rem 0.45rem;
+    }
+
+    img {
+        margin: -0.4rem;
+        width: 28px;
+        height: auto;
+
+        &:not(:first-child) {
+            margin-left: -0.8rem;
+        }
+    }
+</style>

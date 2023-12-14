@@ -1,0 +1,25 @@
+fragment simulacrum_v2Entry on SimulacraV2 {
+    name
+    rarity
+    id
+    banners {
+        bannerNumber
+    }
+    assetsA0 {
+        painting
+    }
+    weapon {
+        rarity
+        element
+        category
+        charge {
+            tier
+            value
+        }
+        shatter {
+            tier
+            value
+        } 
+    }
+    __typename
+}

@@ -1,5 +1,7 @@
 <script>
-     export let type, width, style;
+     export let type;
+     export let width = "60";
+     export let style = "";
 
      const URI_map = {
           DPS: "icon_qianggong",

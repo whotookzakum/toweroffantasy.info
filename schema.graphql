@@ -251,6 +251,7 @@ type Skill {
   name: String
   operations: [String!]!
   tags: [String!]!
+  values: [[Float!]!]!
 }
 
 type SmartServant {

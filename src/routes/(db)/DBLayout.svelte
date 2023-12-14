@@ -33,15 +33,15 @@
         bind:value={$searchTerm}
         on:input={() => updateSearchParams("q", $searchTerm)}
     />
-    <VersionSelector {updateSearchParams} />
-    <LocaleSelector inputFunction={updateSearchParams('lang', $userLocale)} />
+    <!-- <VersionSelector {updateSearchParams} /> -->
+    <!-- <LocaleSelector inputFunction={updateSearchParams('lang', $userLocale)} /> -->
 </div>
-<ul>
+<ul class="entry-list">
     <slot name="search-results" />
 </ul>
 
 <style lang="scss">
-    ul {
+    :global(ul.entry-list) {
         --img-width: 140px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
