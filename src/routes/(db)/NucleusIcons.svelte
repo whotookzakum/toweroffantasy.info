@@ -24,30 +24,28 @@
     }
 </script>
 
-
-    <div class="flex coins">
-        <div>
-            {#if entry.banners.length}
-                {entry.banners.length}
-                <span class="visually-hidden">limited</span>
-                {entry.banners.length > 1 ? "banners" : "banner"}
-            {:else}
-                Standard
-                <span class="visually-hidden">banner</span>
-            {/if}
-        </div>
-        <div class="flex">
-            {#each nucleusIcons as uri}
-                <img
-                    src="https://api.toweroffantasy.info{uri}?format=webp"
-                    alt=""
-                    width="30"
-                    height="30"
-                />
-            {/each}
-        </div>
+<div class="flex coins">
+    <div>
+        {#if entry.banners?.length}
+            {entry.banners.length}
+            <span class="visually-hidden">limited</span>
+            {entry.banners.length > 1 ? "banners" : "banner"}
+        {:else}
+            Standard
+            <span class="visually-hidden">banner</span>
+        {/if}
     </div>
-
+    <div class="flex">
+        {#each nucleusIcons as uri}
+            <img
+                src="https://api.toweroffantasy.info{uri}?format=webp"
+                alt=""
+                width="30"
+                height="30"
+            />
+        {/each}
+    </div>
+</div>
 
 <style lang="scss">
     .coins {

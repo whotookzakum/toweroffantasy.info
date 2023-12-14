@@ -1,5 +1,5 @@
 <script>
-    import EntryItemDetails from "./EntryItemDetails.svelte";
+    import EntryItem from "./EntryItem.svelte";
     import { graphql, fragment } from "$houdini";
 
     export let entry;
@@ -16,6 +16,7 @@
                 }
                 assetsA0 {
                     painting
+                    avatar
                 }
                 weapon {
                     rarity
@@ -37,4 +38,4 @@
     entry = { ...entry, ...$data };
 </script>
 
-<EntryItemDetails {entry} />
+<EntryItem {entry} />

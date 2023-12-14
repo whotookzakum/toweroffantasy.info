@@ -1,6 +1,6 @@
 <script>
     import Meta from "./Meta.svelte";
-    import EntryItem from "./EntryItem.svelte";
+    // import EntryItem from "./EntryItem.svelte";
 
     export let data;
     $: ({ Entries } = data);
@@ -23,5 +23,5 @@
 />
 
 {#each entries as entry}
-    <EntryItem {entry} />
+    <!-- <EntryItem {entry} /> -->
 {/each}

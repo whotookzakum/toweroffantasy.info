@@ -1,12 +1,12 @@
 <script>
     import { searchTerm } from "$lib/stores";
     import Meta from "../Meta.svelte";
-    import EntryItem from "../EntryItem.svelte";
+    import WeaponEntryItem from "../WeaponEntryItem.svelte";
     import DBLayout from "../DBLayout.svelte";
 
     export let data;
     $: ({ Weapons } = data);
-    $: weapons = $Weapons?.data?.weapons
+    $: weapons = $Weapons?.data?.weapons || []
     // .filter((wep) =>
     //     wep.name.toLowerCase().includes($searchTerm.toLowerCase()),
     // );
@@ -22,7 +22,7 @@
                 image="https://api.toweroffantasy.info{$Weapons?.data?.weapons[0]?.assets?.icon}"
             />
             {#each weapons as entry (entry.id)}
-                <EntryItem {entry} slot="search-results" />
+                <WeaponEntryItem {entry} slot="search-results" />
             {/each}
         {/if}
     </svelte:fragment>
