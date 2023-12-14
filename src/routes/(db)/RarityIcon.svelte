@@ -1,6 +1,7 @@
 <script>
     export let rarity;
     export let id = "";
+    export let style = "";
 </script>
 
 {#if id !== "imitation_33"}
@@ -10,6 +11,7 @@
         alt=""
         width="63"
         height="36"
+        {style}
     />
 {/if}
 

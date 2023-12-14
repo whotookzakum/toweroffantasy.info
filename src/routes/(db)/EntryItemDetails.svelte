@@ -32,30 +32,27 @@
     }
 </script>
 
-<li class="item grid g-25 {entry.__typename}">
+<li class="item flex g-25 {entry.__typename}">
     <a class:bottom={!weapon} href="/{mainRoute[entry.__typename]}/{entry.id}"
         >{entry.name}</a
     >
 
-    {#if weapon}
-        <div class="flex element">
+    <div class="row-categories flex">
+        {#if weapon}
             <CategoryIcon type={weapon.element} width="30px" />
             <CategoryIcon type={weapon.category} width="30px" />
-        </div>
-    {/if}
-
-    {#if entry.rarity}
-        <div class="flex rarity">
-            <RarityIcon id={entry.id} rarity={entry.rarity} />
-        </div>
-    {/if}
-
-    <div class="flex coin-wrapper show-on-hover">
-        <NucleusIcons {entry} />
+        {/if}
+        {#if entry.rarity}
+            <RarityIcon
+                id={entry.id}
+                rarity={entry.rarity}
+                style="margin-left: auto"
+            />
+        {/if}
     </div>
 
     {#if weapon}
-        <dl class="shatter-charge show-on-hover grid">
+        <dl class="row-stats show-on-hover grid">
             <dt>Shatter</dt>
             <dd class="flex g-25">
                 <Tier
@@ -75,6 +72,10 @@
         </dl>
     {/if}
 
+    <div class="flex row-banners show-on-hover">
+        <NucleusIcons {entry} />
+    </div>
+
     <img
         class="avatar"
         src="https://api.toweroffantasy.info{avatarUri}?format=webp"
@@ -93,13 +94,7 @@
 
 <style lang="scss">
     .item {
-        align-content: end;
-        align-items: end;
-        grid-template-rows: auto auto 27px;
-        grid-template-areas:
-            "shatter shatter"
-            "name name"
-            "element rarity";
+        flex-direction: column;
         background: var(--surface1);
         border-radius: 0.5rem;
         padding-bottom: 0.5rem;
@@ -171,8 +166,23 @@
         }
     }
 
+    .row-banners {
+        order: 1;
+        margin-left: auto;
+    }
+
+    .row-stats {
+        order: 2;
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.7rem;
+        font-weight: normal;
+        gap: 0.125rem;
+        margin-top: auto;
+        // margin-bottom: 0.25rem;
+    }
+
     a {
-        grid-area: name;
+        order: 3;
         border: none;
         color: inherit;
         font-weight: 600;
@@ -189,40 +199,17 @@
         &:focus-visible {
             outline: none;
         }
-
-        &.bottom {
-            grid-area: element;
-        }
     }
 
-    .element {
-        grid-area: element;
-    }
-
-    .rarity {
-        grid-area: rarity;
-        justify-content: end;
-    }
-
-    .coin-wrapper {
-        position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
+    .row-categories {
+        order: 4;
+        align-items: end;
+        height: 27px;
     }
 
     .show-on-hover {
         transition: all 0.2s ease;
         opacity: 0;
-    }
-
-    .shatter-charge {
-        grid-area: shatter;
-        grid-template-columns: 1fr 1fr;
-        font-size: 0.7rem;
-        font-weight: normal;
-        gap: 0.125rem;
-        order: 1;
-        // margin-bottom: 0.25rem;
     }
 
     dl,

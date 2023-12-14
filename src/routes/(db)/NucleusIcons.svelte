@@ -26,14 +26,16 @@
 
 {#if entry.id !== "imitation_33"}
     <div class="flex coins">
-        <span>
+        <div>
             {#if entry.banners.length}
                 {entry.banners.length}
+                <span class="visually-hidden">limited</span>
                 {entry.banners.length > 1 ? "banners" : "banner"}
             {:else}
                 Standard
+                <span class="visually-hidden">banner</span>
             {/if}
-        </span>
+        </div>
         <div class="flex">
             {#each nucleusIcons as uri}
                 <img
