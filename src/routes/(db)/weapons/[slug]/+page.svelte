@@ -9,6 +9,8 @@
     import Tier from "../../Tier.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
     import BannerTable from "../../BannerTable.svelte";
+    import Youtube from "$lib/components/Youtube.svelte"
+    import Rating from "$lib/components/simulacrum/Rating.svelte";
 
     export let data;
     $: ({ Weapon } = data);
@@ -68,8 +70,11 @@
             <MatrixQuery id="matrix_ssr35" />
         </ul>
 
+        <h2>Weapon Effects</h2>
+        <span>{weapon.elementEffect.title}</span>
+        <SvelteMarkdown source={weapon.elementEffect.description} />
+
         {#if weapon.weaponEffects}
-            <h2>Weapon Effects</h2>
             {#each weapon.weaponEffects as effect}
                 <span>{effect.title}</span>
                 <SvelteMarkdown source={effect.description} />
@@ -87,6 +92,7 @@
             <h2>Skills</h2>
             <span>Level: {$weaponLevel}</span>
             <input type="range" min="0" max="200" bind:value={$weaponLevel} />
+            <!-- Hide this as a hint icon popover -->
             <p>
                 Skills can be strengthened by leveling up your weapon; every 10
                 weapon levels increases skill level by 1. For example, a level
@@ -124,6 +130,18 @@
             {#each weapon.weaponAttacks[attackCategory] as data}
                 <WeaponAttack {data} />
             {/each}
+        {/if}
+
+        <h2>{weapon.name} Meta</h2>
+        
+        {#if weapon.meta?.analyticVideoId}
+            <h3>Analysis</h3>
+            <Youtube source={weapon.meta.analyticVideoId} />
+        {/if}
+
+        {#if weapon.meta?.rating}
+            <h3>Combat Analysis</h3>
+            <Rating {weapon} />
         {/if}
 
         {#if weapon.meta?.recommendedPairings}

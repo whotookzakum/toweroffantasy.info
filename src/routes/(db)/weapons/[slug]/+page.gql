@@ -35,6 +35,10 @@ query Weapon($lang: String, $id: String) {
             description
             title
         }
+        elementEffect {
+            description
+            title
+        }
         weaponAdvancements {
             charge {
                 tier

@@ -7,7 +7,7 @@
 
 <figure {id}>
     <iframe
-        src={source}
+        src="https://www.youtube.com/embed/{source}"
         allow="fullscreen"
         title=""
         loading="lazy"

@@ -37,7 +37,7 @@
                 label: weapon.name,
                 backgroundColor: getColorByElement(0.7),
                 borderColor: getColorByElement(0.9),
-                data: weapon.rating,
+                data: weapon.meta.rating,
             },
         ],
         options: {
@@ -102,20 +102,15 @@
     };
 </script>
 
-<h3>Combat Analysis</h3>
 <div class="chart-wrapper full-bleed">
     <canvas id="marksChart" />
 </div>
 
 <style lang="scss">
-    h3 {
-        margin-top: 1rem;
-    }
-
     .chart-wrapper {
         padding: 1rem;
         margin-block: 1rem;
-        background-color: var(--surface2);
+        background-color: var(--surface1);
     }
 
     canvas {
