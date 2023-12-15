@@ -23,9 +23,9 @@
                 description=""
                 image="https://api.toweroffantasy.info{$Weapons?.data?.weapons[0]?.assets?.icon}"
             />
-            <!-- {#each weapons as entry (entry.id)}
+            {#each weapons as entry (entry.id)}
                 <WeaponEntryItem {entry} slot="search-results" isNew={$Weapons?.data?.weapons[0]?.id === entry.id} />
-            {/each} -->
+            {/each}
         {/if}
     </svelte:fragment>
 </DBLayout>

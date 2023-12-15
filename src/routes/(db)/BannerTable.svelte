@@ -7,6 +7,10 @@
     import Icon from "@iconify/svelte";
 
     export let bannerSearchTerm = "";
+    export let showDetails = false;
+
+    let showReruns = true;
+    let highlight = true;
 
     const dateOptions = {
         year: "numeric",
@@ -71,13 +75,18 @@
     }));
 
     // could implement advanced filters like "element:fire", "#37", "type:dps" but easier with visual filters
-    $: filteredBanners = banners?.filter(
-        (banner) =>
-            banner.simulacrumName
-                .toLowerCase()
-                .includes(bannerSearchTerm.toLowerCase()) ||
-            banner.bannerNumber == bannerSearchTerm,
-    );
+    $: filteredBanners = banners
+        ?.filter(
+            (banner) =>
+                banner.simulacrumName
+                    .toLowerCase()
+                    .includes(bannerSearchTerm.toLowerCase()) ||
+                banner.bannerNumber == bannerSearchTerm,
+        )
+        .filter((banner) => {
+            if (!showReruns && banner.isRerun) return false;
+            return true;
+        });
 
     let timeNow = new Date().getTime();
 
@@ -96,222 +105,179 @@
             new Date(banner.startDate).getTime() < timeNow &&
             new Date(banner.endDate).getTime() > timeNow,
     );
-
-    // all limited characters
-    // all standard characters
 </script>
 
 {#if !$query.fetching}
-    <!-- <p>
-        Mi-a has knowledge of {banners.length} banners ({uniqueBanners.length}
-        unique and {reruns.length} reruns). <br />
-        {movedToStandard.length} characters were moved from limited banner to standard
-        banner. <br /> The newest character is {uniqueBanners[0]
-            .simulacrumName}.
-    </p> -->
-
-    <div class="flex g-50" style="align-items: baseline;">
-        <h3 style="font-size: var(--step-2)">Current Banners</h3>
-        <button on:click={() => (timeNow = new Date().getTime())}>
-            <span class="visually-hidden">Update time</span>
-            <Icon icon="mdi:refresh" />
-        </button>
-    </div>
-
-    <small style="color: var(--text2); display: block; margin-bottom: 0.5rem;">
-        Last updated: <time>
-            {new Date(timeNow).toLocaleDateString($userLocale, {
-                ...dateOptions,
-                second: "numeric",
-                timeZoneName: "short",
-            })}
-        </time>
-    </small>
-
-    <ul class="entry-list">
-        {#each currentBanners as banner}
-            <SimulacrumV2Query
-                id={banner.simulacrumId}
-                isNew={uniqueBanners[0].simulacrumId === banner.simulacrumId}
-            />
-        {/each}
-    </ul>
-
-    <h3 style="font-size: var(--step-2)">All Banners</h3>
-
-    <div class="flex g-50">
-        <input
-            type="text"
-            placeholder="Search banners"
-            bind:value={bannerSearchTerm}
-        />
-
-        <RadioSliderGroup
-            bind:group={$userTimeZone}
-            groupName="banner-timezone"
-            name="bannerTimeZone"
-            data={timeZoneOptions}
-        />
-    </div>
-
-    <dl class="flex g-50">
-        <div>
-            <dt class="mini-header">Total banners</dt>
-            <dd>
-                <span>{banners.length}</span>
-                <small>
-                    ({uniqueBanners.length} unique, {reruns.length} reruns)
-                </small>
-            </dd>
-        </div>
-        <div>
-            <dt>Moved to standard</dt>
-            <dd>{movedToStandard.length}</dd>
-        </div>
-        <div>
-            <dt>Newest</dt>
-            <dd>
-                <a
-                    href="/simulacra/{uniqueBanners[0].simulacrumId}"
-                    style:color="var(--element-{uniqueBanners[0].element})"
-                    >{uniqueBanners[0].simulacrumName}</a
+    <div class="grid g-100" style="margin: 1rem 0;">
+        {#if showDetails}
+            <div>
+                <div class="flex g-50" style="align-items: baseline;">
+                    <h3 style="font-size: var(--step-2); margin-block: 0 0.5rem">Current Banners</h3>
+                    <button on:click={() => (timeNow = new Date().getTime())}>
+                        <span class="visually-hidden">Update time</span>
+                        <Icon icon="mdi:refresh" />
+                    </button>
+                </div>
+    
+                <small
+                    style="color: var(--text2); display: block; margin-bottom: 0.5rem;"
                 >
-            </dd>
-        </div>
-        <div style="width: 100%">
-            <dt>Current banners</dt>
-            <dd></dd>
-        </div>
-    </dl>
+                    Last updated: <time>
+                        {new Date(timeNow).toLocaleDateString($userLocale, {
+                            ...dateOptions,
+                            second: "numeric",
+                            timeZoneName: "short",
+                        })}
+                    </time>
+                </small>
+    
+                <ul class="entry-list">
+                    {#each currentBanners as banner}
+                        <SimulacrumV2Query
+                            id={banner.simulacrumId}
+                            isNew={uniqueBanners[0].simulacrumId ===
+                                banner.simulacrumId}
+                        />
+                    {/each}
+                </ul>
+            </div>
 
-    <table>
-        <thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Start</th>
-            <th>End</th>
-            <th>Duration</th>
-            <th>Week #</th>
-            <th>Notes</th>
-            <th>Link</th>
-        </thead>
-        <tbody>
-            {#each filteredBanners as banner (banner.bannerNumber)}
-                <tr>
-                    <td>{banner.bannerNumber}</td>
+            <h3 style="font-size: var(--step-2); margin-top: 1rem;">All Banners</h3>
+        {/if}
 
-                    <td>
+        <div class="flex g-50" style="align-items: center">
+            <input
+                type="text"
+                placeholder="Search banners"
+                bind:value={bannerSearchTerm}
+            />
+
+            <RadioSliderGroup
+                bind:group={$userTimeZone}
+                groupName="banner-timezone"
+                name="bannerTimeZone"
+                data={timeZoneOptions}
+            />
+
+            <label>
+                <input type="checkbox" bind:checked={showReruns} /> Show reruns
+            </label>
+
+            <label>
+                <input type="checkbox" bind:checked={highlight} /> Highlight rows
+                by element
+            </label>
+        </div>
+
+        {#if showDetails}
+            <dl class="flex g-50">
+                <div>
+                    <dt class="mini-header">Total banners</dt>
+                    <dd>
+                        <span>{banners.length}</span>
+                        <small>
+                            ({uniqueBanners.length} unique, {reruns.length} reruns)
+                        </small>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Moved to standard</dt>
+                    <dd>{movedToStandard.length}</dd>
+                </div>
+                <div>
+                    <dt>Newest</dt>
+                    <dd>
                         <a
-                        href="/simulacra/{banner.simulacrumId}"
-                        style:color="var(--element-{banner.element})"
-                        >{banner.simulacrumName}</a
-                    >
-                    </td>
+                            href="/simulacra/{uniqueBanners[0].simulacrumId}"
+                            style:color="var(--element-{uniqueBanners[0]
+                                .element})">{uniqueBanners[0].simulacrumName}</a
+                        >
+                    </dd>
+                </div>
+                <div>
+                    <dt>Current banners</dt>
+                    <dd></dd>
+                </div>
+            </dl>
+        {/if}
 
-                    <td>
-                        <CategoryIcon
-                            type={banner.element}
-                            style="width: 30px"
-                        />
-                        <CategoryIcon
-                            type={banner.category}
-                            style="width: 30px"
-                        />
-                    </td>
+        <table class:highlight>
+            <thead>
+                <th>#</th>
+                <th>Name</th>
+                <th>Types</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Duration</th>
+                <th>Week #</th>
+                <th>Notes</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                {#each filteredBanners as banner (banner.bannerNumber)}
+                    <tr class={banner.element}>
+                        <td>{banner.bannerNumber}</td>
 
-                    <td>
-                        {new Date(banner.startDate).toLocaleString(
-                            $userLocale,
-                            dateOptions,
-                        )}
-                    </td>
+                        <td>
+                            <a
+                                href="/simulacra/{banner.simulacrumId}"
+                                style:color="var(--element-{banner.element})"
+                                >{banner.simulacrumName}</a
+                            >
+                        </td>
 
-                    <td>
-                        {new Date(banner.endDate).toLocaleString(
-                            $userLocale,
-                            dateOptions,
-                        )}
-                    </td>
-                    <td>
-                        {getDurationInDays(banner.startDate, banner.endDate)} days
-                    </td>
-                    <td>
-                        {getWeeksSinceLaunch(
-                            banner.startDate,
-                        )}~{getWeeksSinceLaunch(banner.endDate)}
-                    </td>
-                    <td>
-                        <i class="tag collab">Collab</i>
-                        <i class="tag final">Final</i>
-                        <i class="tag limited">Limited</i>
-                    </td>
-                </tr>
-            {/each}
-        </tbody>
-    </table>
+                        <td>
+                            <CategoryIcon
+                                type={banner.element}
+                                style="width: 30px"
+                            />
+                            <CategoryIcon
+                                type={banner.category}
+                                style="width: 30px"
+                            />
+                        </td>
 
-    <div class="table">
-        <div class="headers grid g-50" aria-hidden="true">
-            <p>#</p>
-            <p>Name</p>
-            <p>Types</p>
-            <p>Start</p>
-            <p>End</p>
-            <p>Duration</p>
-            <p>Week #</p>
-            <p>Notes</p>
-        </div>
-        <ol reversed>
-            {#each filteredBanners as banner (banner.bannerNumber)}
-                <li class="grid g-50" data-bannerNumber={banner.bannerNumber}>
-                    <div>{banner.bannerNumber}</div>
+                        <td>
+                            {new Date(banner.startDate).toLocaleString(
+                                $userLocale,
+                                dateOptions,
+                            )}
+                        </td>
 
-                    <a
-                        href="/simulacra/{banner.simulacrumId}"
-                        style:color="var(--element-{banner.element})"
-                        >{banner.simulacrumName}</a
-                    >
+                        <td>
+                            {new Date(banner.endDate).toLocaleString(
+                                $userLocale,
+                                dateOptions,
+                            )}
+                        </td>
+                        <td>
+                            {getDurationInDays(
+                                banner.startDate,
+                                banner.endDate,
+                            )} days
+                        </td>
+                        <td>
+                            {getWeeksSinceLaunch(
+                                banner.startDate,
+                            )}~{getWeeksSinceLaunch(banner.endDate)}
+                        </td>
+                        <td>
+                            {#if banner.isFinalBanner}
+                                <i class="tag final">Final rerun</i>
+                            {/if}
+                            {#if banner.isCollab}
+                                <i class="tag collab">Collab</i>
+                            {/if}
+                            {#if banner.isLimitedBannerOnly}
+                                <i class="tag limited">Limited-only</i>
+                            {/if}
+                        </td>
 
-                    <div>
-                        <CategoryIcon
-                            type={banner.element}
-                            style="width: 30px"
-                        />
-                        <CategoryIcon
-                            type={banner.category}
-                            style="width: 30px"
-                        />
-                    </div>
-
-                    <div>
-                        {new Date(banner.startDate).toLocaleString(
-                            $userLocale,
-                            dateOptions,
-                        )}
-                    </div>
-
-                    <div>
-                        {new Date(banner.endDate).toLocaleString(
-                            $userLocale,
-                            dateOptions,
-                        )}
-                    </div>
-                    <div>
-                        {getDurationInDays(banner.startDate, banner.endDate)} days
-                    </div>
-                    <div>
-                        {getWeeksSinceLaunch(
-                            banner.startDate,
-                        )}~{getWeeksSinceLaunch(banner.endDate)}
-                    </div>
-                    <div class="flex g-25">
-                        <i class="tag collab">Collab</i>
-                        <i class="tag final">Final</i>
-                        <i class="tag limited">Limited</i>
-                    </div>
-                </li>
-            {/each}
-        </ol>
+                        <td></td>
+                    </tr>
+                {/each}
+            </tbody>
+        </table>
     </div>
 {/if}
 
@@ -322,6 +288,7 @@
         border-radius: 0.5rem;
         line-height: 1;
         gap: 0;
+        margin: 0;
 
         dd {
             padding: 0;
@@ -348,35 +315,55 @@
         }
     }
 
-    h3 {
-        margin-bottom: 0.5rem;
-    }
-
-    .table {
-        border-radius: 0.5rem;
-        background: var(--surface1);
+    table.highlight {
         overflow: hidden;
 
-        ol {
-            gap: 0;
-            padding: 0;
-            margin: 0;
+        .Superpower {
+            background: linear-gradient(
+                45deg,
+                rgba(176, 255, 195, 0.1),
+                rgba(176, 255, 195, 0.02)
+            );
         }
 
-        .headers {
-            background: var(--surface2);
+        .Ice {
+            background: linear-gradient(
+                45deg,
+                rgba(73, 163, 209, 0.1),
+                rgba(73, 163, 209, 0.02)
+            );
         }
 
-        p {
-            margin: 0;
+        .Flame {
+            background: linear-gradient(
+                45deg,
+                rgba(187, 64, 51, 0.1),
+                rgba(187, 64, 51, 0.02)
+            );
         }
 
-        .headers,
-        li {
-            font-size: var(--step--2);
-            padding: 0.5rem 1rem;
-            align-items: center;
-            grid-template-columns: 4ch 10ch 10ch 20ch 20ch 8ch 8ch 22ch;
+        .Thunder {
+            background: linear-gradient(
+                45deg,
+                rgba(183, 105, 190, 0.1),
+                rgba(183, 105, 190, 0.02)
+            );
+        }
+
+        .Physics {
+            background: linear-gradient(
+                45deg,
+                rgba(216, 140, 42, 0.1),
+                rgba(216, 140, 42, 0.02)
+            );
+        }
+
+        .PhysicsFlame {
+            background: linear-gradient(
+                45deg,
+                rgba(216, 91, 42, 0.1),
+                rgba(216, 91, 42, 0.02)
+            );
         }
     }
 

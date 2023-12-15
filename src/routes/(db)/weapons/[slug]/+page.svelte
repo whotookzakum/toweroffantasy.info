@@ -146,8 +146,7 @@
 
         {#if weapon.banners?.length > 0}
             <h2>Banners</h2>
-            <BannerTable  /> 
-            <!-- bannerSearchTerm={weapon.banners[0].simulacrumName} -->
+            <BannerTable bannerSearchTerm={weapon.banners[0].simulacrumName} /> 
         {/if}
     </div>
 {/if}
