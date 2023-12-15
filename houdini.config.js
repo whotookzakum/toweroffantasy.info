@@ -4,7 +4,7 @@ const config = {
         "houdini-svelte": {}
     },
     watchSchema: {
-        url: 'https://api.toweroffantasy.info',
+        url: 'https://api.toweroffantasy.info/graphql',
     },
 }
 

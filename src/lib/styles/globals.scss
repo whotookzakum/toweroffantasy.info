@@ -160,6 +160,13 @@ option {
     color: var(--text1);
 }
 
+button {
+    background: var(--surface1);
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
 // .unit-container {

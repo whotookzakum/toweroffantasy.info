@@ -1,24 +1,31 @@
 <script>
     export let entry;
     let nucleusIcons = [];
+    let pastNucleusIcons = [];
+
+    const hasBanners = entry.banners?.length > 0;
+    const movedToStandardBanner = entry.banners?.some(
+        (banner) => banner.isFinalBanner,
+    );
 
     switch (entry.__typename) {
         case "Simulacra":
         case "SimulacraV2":
         case "Weapon":
-            if (entry.banners?.length > 0)
-                nucleusIcons = ["/assets/Icon/huobi/Gem005"];
-            else
-                nucleusIcons = [
-                    "/assets/Icon/huobi/Gem004",
-                    "/assets/Icon/huobi/Gem003",
-                ];
+            if (hasBanners && !movedToStandardBanner) {
+                nucleusIcons.push("/assets/Icon/huobi/Gem005");
+            } else {
+                nucleusIcons.push("/assets/Icon/huobi/Gem004");
+                nucleusIcons.push("/assets/Icon/huobi/Gem003");
+            }
             break;
         case "Matrice":
             if (entry.rarity !== "N") {
-                if (entry.banners?.length > 0)
-                    nucleusIcons = ["/assets/Icon/huobi/item_ticket_02"];
-                else nucleusIcons = ["/assets/Icon/huobi/item_ticket_01"];
+                if (hasBanners && !movedToStandardBanner) {
+                    nucleusIcons.push("/assets/Icon/huobi/item_ticket_02");
+                } else {
+                    nucleusIcons.push("/assets/Icon/huobi/item_ticket_01");
+                }
             }
             break;
     }
@@ -26,7 +33,7 @@
 
 <div class="flex coins">
     <div>
-        {#if entry.banners?.length}
+        {#if hasBanners && !movedToStandardBanner}
             {entry.banners.length}
             <span class="visually-hidden">limited</span>
             {entry.banners.length > 1 ? "banners" : "banner"}
@@ -56,6 +63,7 @@
         background: var(--surface3);
         border-radius: 1rem;
         padding: 0.35rem 0.45rem 0.35rem 0.45rem;
+        margin-left: auto;
     }
 
     img {

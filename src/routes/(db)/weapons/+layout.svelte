@@ -10,6 +10,8 @@
     // .filter((wep) =>
     //     wep.name.toLowerCase().includes($searchTerm.toLowerCase()),
     // );
+
+    // Alternative logic for isNew: !isRerun && todaysDate < endDate && todaysDate > startDate
 </script>
 
 <DBLayout>
@@ -21,9 +23,9 @@
                 description=""
                 image="https://api.toweroffantasy.info{$Weapons?.data?.weapons[0]?.assets?.icon}"
             />
-            {#each weapons as entry (entry.id)}
-                <WeaponEntryItem {entry} slot="search-results" />
-            {/each}
+            <!-- {#each weapons as entry (entry.id)}
+                <WeaponEntryItem {entry} slot="search-results" isNew={$Weapons?.data?.weapons[0]?.id === entry.id} />
+            {/each} -->
         {/if}
     </svelte:fragment>
 </DBLayout>

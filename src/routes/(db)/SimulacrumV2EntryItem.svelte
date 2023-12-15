@@ -3,6 +3,7 @@
     import { graphql, fragment } from "$houdini";
 
     export let entry;
+    export let isNew;
 
     const data = fragment(
         entry,
@@ -13,6 +14,7 @@
                 id
                 banners {
                     bannerNumber
+                    isFinalBanner
                 }
                 assetsA0 {
                     painting
@@ -38,4 +40,4 @@
     entry = { ...entry, ...$data };
 </script>
 
-<EntryItem {entry} />
+<EntryItem {entry} {isNew} />

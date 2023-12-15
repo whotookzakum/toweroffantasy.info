@@ -1,5 +1,6 @@
 <script>
-    export let tier, style;
+    export let tier;
+    export let style = "";
 </script>
 
 <i class="stat-tier" {style} style:color="var(--tier-{tier.toLowerCase()})"

@@ -3,6 +3,7 @@
     import MatrixEntryItem from "./MatrixEntryItem.svelte";
 
     export let id;
+    export let isNew;
 
     export const _MatrixQueryVariables = () => {
         return { id };
@@ -19,5 +20,5 @@
 </script>
 
 {#if !$store.fetching}
-    <MatrixEntryItem entry={$store.data.matrix} />
+    <MatrixEntryItem entry={$store.data.matrix} {isNew} />
 {/if}

@@ -3,6 +3,7 @@
     import SimulacrumV2EntryItem from "./SimulacrumV2EntryItem.svelte";
 
     export let id;
+    export let isNew;
 
     export const _SimulacrumV2QueryVariables = () => {
         return { id };
@@ -19,5 +20,5 @@
 </script>
 
 {#if !$store.fetching}
-    <SimulacrumV2EntryItem entry={$store.data.simulacrum_v2} />
+    <SimulacrumV2EntryItem entry={$store.data.simulacrum_v2} {isNew} />
 {/if}

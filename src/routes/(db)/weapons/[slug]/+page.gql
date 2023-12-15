@@ -19,6 +19,17 @@ query Weapon($lang: String, $id: String) {
         }
         banners {
             bannerNumber
+            isFinalBanner
+            detailsLink
+            endDate
+            isCollab
+            isLimitedBannerOnly
+            isRerun
+            matrixId
+            simulacrumId
+            simulacrumName
+            startDate
+            weaponId
         }
         weaponEffects {
             description
@@ -69,6 +80,19 @@ query Weapon($lang: String, $id: String) {
                 tags
                 values
             }
+        }
+        weaponStats {
+            icon
+            name
+        }
+        meta {
+            analyticVideoId
+            rating
+            recommendedMatrices {
+                id
+                pieces
+            }
+            recommendedPairings
         }
         __typename
     }

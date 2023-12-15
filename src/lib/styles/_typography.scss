@@ -114,48 +114,38 @@ abbr[title*="China"] {
     }
 }
 
-abbr[title*="Unreleased Content"] {
-    background: rgb(204, 148, 27);
+.tag {
+    background: var(--surface1);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+    color: whitesmoke;
+    line-height: 1;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
+    font-size: var(--step--3);
+    font-weight: 500;
+    padding: 0.3em 0.5em;
+    letter-spacing: 0.03em;
 
-    &::before {
-        content: "Unreleased";
+    &:not(.new) {
+        font-style: normal;
     }
 
-    &.absolute {
-        inset: unset;
-        top: 96px;
+    &.new {
+        color: white;
+        background: rgb(204, 148, 27);
     }
-}
 
-abbr[title*="Standard"] {
-    background: rgb(42, 129, 179);
-
-    &::before {
-        content: "Final";
+    &.final {
+        background: rgb(42, 129, 179);
     }
-}
 
-abbr[title*="Limited Banner only"] {
-    background: rgb(179, 42, 111);
-
-    &::before {
-        content: "Limited";
+    &.collab {
+        background: forestgreen;
     }
-}
 
-abbr[title*="Collab"] {
-    background: forestgreen;
-
-    &::before {
-        content: "Collab";
-    }
-}
-
-abbr[title*="Meta"] {
-    background: green;
-
-    &::before {
-        content: "Meta";
+    &.limited {
+        background: rgb(179, 42, 111);
     }
 }
 
@@ -238,7 +228,7 @@ caption {
     font-size: var(--step--2);
 }
 
-em > strong {
+em>strong {
     color: var(--text-lightred);
     font-style: normal;
 }
@@ -351,7 +341,7 @@ h6 {
     font-size: var(--step-0);
 }
 
-h2 + h3 {
+h2+h3 {
     margin-top: 1.5rem;
 }
 

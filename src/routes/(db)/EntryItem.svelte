@@ -5,6 +5,7 @@
     import NucleusIcons from "./NucleusIcons.svelte";
 
     export let entry;
+    export let isNew = false;
 
     let mainRoute = {
         Simulacra: "simulacra",
@@ -36,6 +37,10 @@
     class="item flex g-25 {entry.__typename}"
     class:molinia={entry.id === "imitation_33"}
 >
+    {#if isNew}
+        <i class="tag new">New</i>
+    {/if}
+
     <a class:bottom={!weapon} href="/{mainRoute[entry.__typename]}/{entry.id}"
         >{entry.name}</a
     >
@@ -168,7 +173,6 @@
 
     .row-banners {
         order: 1;
-        margin-left: auto;
         margin-bottom: auto;
     }
 
@@ -205,6 +209,12 @@
         order: 4;
         align-items: end;
         // height: 27px;
+    }
+
+    .tag {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
     }
 
     .molinia {

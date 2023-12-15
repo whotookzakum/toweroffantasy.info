@@ -21,7 +21,7 @@
                     ?.matrices[0]?.assets?.iconLarge}"
             />
             {#each matrices as entry (entry.id)}
-                <MatrixEntryItem {entry} />
+                <MatrixEntryItem {entry} isNew={$Matrices?.data?.matrices[0]?.id === entry.id} />
             {/each}
         {/if}
     </svelte:fragment>

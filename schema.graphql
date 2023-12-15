@@ -40,15 +40,18 @@ type Award {
 
 type Banner {
   bannerNumber: Int!
+  category: String
   detailsLink: String!
+  element: String
   endDate: String!
   isCollab: Boolean!
   isFinalBanner: Boolean!
   isLimitedBannerOnly: Boolean!
   isRerun: Boolean!
   matrixId: String
-  simulacrumId: String!
-  simulacrumName: String!
+  noWeapon: Boolean!
+  simulacrumId: String
+  simulacrumName: String
   startDate: String!
   weaponId: String
 }
@@ -56,7 +59,10 @@ type Banner {
 type BaseStats {
   icon: String!
   id: String!
+  isTag: Boolean!
+  modifier: String!
   name: String!
+  value: Float!
 }
 
 type Food {
@@ -140,6 +146,7 @@ type Outfit {
 type Query {
   achievement(id: String = null, lang: String! = "en", name: String = null): Achievement!
   achievements(lang: String! = "en"): [Achievement!]!
+  banners: [Banner!]!
   food(id: String = null, lang: String! = "en", name: String = null): Food!
   foods(lang: String! = "en"): [Food!]!
   item(id: String = null, lang: String! = "en", name: String = null): Item!
@@ -283,7 +290,7 @@ type Weapon {
   description: String!
   element: String!
   id: String!
-  meta: MetaData
+  meta: MetaData!
   name: String!
   rarity: String!
   shatter: ShatterOrCharge!

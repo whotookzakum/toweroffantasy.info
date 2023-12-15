@@ -21,7 +21,7 @@
                     ?.simulacra_v2[0]?.assetsA0?.avatar}"
             />
             {#each simulacra as entry (entry.id)}
-                <SimulacrumV2EntryItem {entry} slot="search-results" />
+                <SimulacrumV2EntryItem {entry} slot="search-results" isNew={$Simulacra?.data?.simulacra_v2[0]?.id === entry.id} />
             {/each}
         {/if}
     </svelte:fragment>
