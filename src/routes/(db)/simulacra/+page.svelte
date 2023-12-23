@@ -15,7 +15,7 @@
         <Meta
             title="Simulacra | Tower of Fantasy Index"
             description="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
-            image="https://api.toweroffantasy.info{entries[0].assetsA0.avatar}"
+            image={entries[0].assetsA0.avatar}
         />
         {#each entries as entry (entry.id)}
             <EntryItem

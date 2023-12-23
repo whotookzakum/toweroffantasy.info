@@ -13,18 +13,18 @@
         case "SimulacraV2":
         case "Weapon":
             if (hasBanners && !movedToStandardBanner) {
-                nucleusIcons.push("/assets/Icon/huobi/Gem005");
+                nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/Gem005");
             } else {
-                nucleusIcons.push("/assets/Icon/huobi/Gem004");
-                nucleusIcons.push("/assets/Icon/huobi/Gem003");
+                nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/Gem004");
+                nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/Gem003");
             }
             break;
         case "Matrice":
             if (entry.rarity !== "N") {
                 if (hasBanners && !movedToStandardBanner) {
-                    nucleusIcons.push("/assets/Icon/huobi/item_ticket_02");
+                    nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02");
                 } else {
-                    nucleusIcons.push("/assets/Icon/huobi/item_ticket_01");
+                    nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01");
                 }
             }
             break;
@@ -45,7 +45,7 @@
     <div class="flex">
         {#each nucleusIcons as uri}
             <img
-                src="https://api.toweroffantasy.info{uri}?format=webp"
+                src={uri}
                 alt=""
                 width="30"
                 height="30"

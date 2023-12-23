@@ -82,7 +82,7 @@
 
     <img
         class="avatar"
-        src="https://api.toweroffantasy.info{avatarUri}?format=webp"
+        src={avatarUri}
         alt=""
         width="260"
         height="349"
@@ -90,7 +90,7 @@
 
     <img
         class="bg"
-        src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.png"
+        src="https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.webp"
         alt=""
     />
     <!-- jingdwc_huodong_zhuangshiyou -->

@@ -1,16 +1,26 @@
 <script>
     export let rarity;
     export let style = "";
+    let src =
+        "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_ssr.webp";
+
+    switch (rarity) {
+        case "SR":
+            src =
+                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_sr.webp";
+            break;
+        case "R":
+            src =
+                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_r.webp";
+            break;
+        case "N":
+            src =
+                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_n.webp";
+            break;
+    }
 </script>
 
-<img
-    class="rarity {rarity}"
-    src="https://api.toweroffantasy.info/assets/UI/yizhi/yizhi_tips_zi_{rarity.toLowerCase()}?format=webp"
-    alt=""
-    width="63"
-    height="36"
-    {style}
-/>
+<img class="rarity {rarity}" {src} alt="" width="63" height="36" {style} />
 
 <style>
     .rarity {

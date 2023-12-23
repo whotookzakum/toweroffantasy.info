@@ -60,8 +60,7 @@
             <div class="flex g-100" style="justify-content: space-between;">
                 <div class="flex box g-100" style="align-items: start">
                     <img
-                        src="https://api.toweroffantasy.info{weapon.assets
-                            .icon}?format=webp"
+                        src={weapon.assets.icon}
                         alt=""
                         width="200"
                         height="200"
@@ -118,7 +117,7 @@
                         {#each weapon.weaponStats as stat}
                             <li class="stat col-2">
                                 <img
-                                    src="https://api.toweroffantasy.info{stat.icon}?format=webp"
+                                    src={stat.icon}
                                     alt=""
                                     width="40"
                                     height="40"

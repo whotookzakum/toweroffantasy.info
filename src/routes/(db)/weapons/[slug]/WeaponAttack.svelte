@@ -21,7 +21,7 @@
     <div>{tag}</div>
 {/each}
 <img
-    src="https://api.toweroffantasy.info{data.icon}?format=webp"
+    src={data.icon}
     alt=""
     width="64"
     height="64"

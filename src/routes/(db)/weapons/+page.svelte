@@ -17,7 +17,7 @@
         <Meta
             title="Weapons | Tower of Fantasy Index"
             description=""
-            image="https://api.toweroffantasy.info{entries[0].assets.icon}"
+            image={entries[0].assets.icon}
         />
         {#each entries as entry (entry.id)}
             <EntryItem
