@@ -2,7 +2,7 @@
     import { gameVersion, userLocale, userTimeZone } from "$lib/stores";
     import { graphql } from "$houdini";
     import RadioSliderGroup from "./RadioSliderGroup.svelte";
-    import SimulacrumV2Query from "./SimulacrumV2Query.svelte";
+    // import SimulacrumV2Query from "./SimulacrumV2Query.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
     import Icon from "@iconify/svelte";
 
@@ -133,11 +133,11 @@
     
                 <ul class="entry-list">
                     {#each currentBanners as banner}
-                        <SimulacrumV2Query
+                        <!-- <SimulacrumV2Query
                             id={banner.simulacrumId}
                             isNew={uniqueBanners[0].simulacrumId ===
                                 banner.simulacrumId}
-                        />
+                        /> -->
                     {/each}
                 </ul>
             </div>

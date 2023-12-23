@@ -167,6 +167,12 @@ button {
     cursor: pointer;
 }
 
+.box {
+    background: var(--surface1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
 // .unit-container {

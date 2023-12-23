@@ -296,6 +296,7 @@ type Weapon {
   rarity: String!
   shatter: ShatterOrCharge!
   simulacrumId: String
+  upgradeMats: WeaponMats
   weaponAdvancements: [WeaponAdvancement!]!
   weaponAttacks: WeaponAttacks!
   weaponEffects: [WeaponEffect!]!
@@ -324,4 +325,19 @@ type WeaponAttacks {
 type WeaponEffect {
   description: String!
   title: String!
+}
+
+type WeaponMat {
+  amount: Int
+  description: String
+  icon: String
+  id: String
+  name: String
+  rarity: String
+  type: String
+}
+
+type WeaponMats {
+  id: String!
+  items: [[WeaponMat!]!]!
 }

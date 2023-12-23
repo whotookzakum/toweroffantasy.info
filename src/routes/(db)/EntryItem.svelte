@@ -129,7 +129,8 @@
         }
     }
 
-    .item:where(:hover, :has(:focus-visible)) {
+    .item:has(:focus-visible),
+    .item:hover {
         &::before,
         &::after {
             opacity: 0.9; // 0.3 for "brighten" effect

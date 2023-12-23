@@ -16,5 +16,6 @@
         padding: 0.25em 0.5em;
         transform: skewX(-9deg);
         filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+        justify-content: center;
     }
 </style>

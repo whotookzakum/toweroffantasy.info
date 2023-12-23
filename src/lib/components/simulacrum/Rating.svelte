@@ -102,20 +102,17 @@
     };
 </script>
 
-<div class="chart-wrapper full-bleed">
+<div class="chart-wrapper box full-bleed">
     <canvas id="marksChart" />
 </div>
 
 <style lang="scss">
     .chart-wrapper {
-        padding: 1rem;
         margin-block: 1rem;
-        background-color: var(--surface1);
     }
 
     canvas {
         width: auto;
         max-height: 300px;
-        
     }
 </style>

@@ -47,5 +47,6 @@
         grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
         padding: 0;
         gap: 1rem;
+        width: 100%;
     }
 </style>
