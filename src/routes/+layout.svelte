@@ -1,10 +1,15 @@
 <script>
+    import BackgroundImage from "$lib/components/BackgroundImage.svelte";
     import "$lib/styles/globals.scss";
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     import TopNav from "./TopNav.svelte";
+
+    export let data;
 </script>
 
 <GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
+
+<!-- <slot /> -->
 
 <div class="layout grid g-50">
     <div class="gutter-left"></div>
@@ -17,6 +22,8 @@
     </div>
     <div class="gutter-right"></div>
 </div>
+
+<BackgroundImage src={data.bgImg} />
 
 <style lang="scss">
     .layout {
@@ -37,6 +44,15 @@
         .layout {
             grid-template-columns: 0 1fr 0;
         }
+    }
+
+    :global(ul.entry-list) {
+        --img-width: 140px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
+        padding: 0;
+        gap: 1rem;
+        width: 100%;
     }
 
     h1 {

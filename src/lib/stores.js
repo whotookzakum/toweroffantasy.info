@@ -8,3 +8,5 @@ export const searchTerm = derived(page, ($page) => $page.url.searchParams.get('q
 export const userTimeZone = writable(undefined)
 
 export const weaponLevel = writable(200);
+
+export const bgImgUrl = writable("");

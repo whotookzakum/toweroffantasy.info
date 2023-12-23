@@ -39,14 +39,3 @@
 <ul class="entry-list">
     <slot name="search-results" />
 </ul>
-
-<style lang="scss">
-    :global(ul.entry-list) {
-        --img-width: 140px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(var(--img-width), 1fr));
-        padding: 0;
-        gap: 1rem;
-        width: 100%;
-    }
-</style>

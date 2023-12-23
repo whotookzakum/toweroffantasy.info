@@ -12,6 +12,8 @@
     import Youtube from "$lib/components/Youtube.svelte";
     import Rating from "$lib/components/simulacrum/Rating.svelte";
     import RarityIcon from "../../RarityIcon.svelte";
+    import BackgroundImage from "../../../../lib/components/BackgroundImage.svelte";
+    import { fly, fade } from "svelte/transition";
 
     export let data;
     $: ({ Weapon } = data);
@@ -31,224 +33,212 @@
 <span>Level: {$weaponLevel}</span>
 <input type="range" min="0" max="200" bind:value={$weaponLevel} />
 
-{#if !$Weapon.fetching}
-    <div class="page-layout grid g-100">
-        <header>
-            <h1>{weapon.name}</h1>
-            <p><RarityIcon rarity={weapon.rarity} /> Weapon</p>
-        </header>
+<BackgroundImage
+    src="https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/xiangqing/imitation_43.webp"
+    top
+/>
 
-        <aside class="grid g-100">
-            <div class="sticky-wrapper">
-                <ul class="entry-list">
-                    <!-- <SimulacrumV2Query id={weapon.simulacrumId} /> -->
-                    <EntryItem entry={weapon} />
-                    <!-- <MatrixQuery id="matrix_ssr35" /> -->
+<div class="page-layout grid g-100" transition:fly={{ y: -30 }}>
+    <header>
+        <h1>{weapon.name}</h1>
+        <p><RarityIcon rarity={weapon.rarity} /> Weapon</p>
+    </header>
+
+    <aside class="grid g-100">
+        <div class="sticky-wrapper">
+            <ul class="entry-list">
+                <!-- <SimulacrumV2Query id={weapon.simulacrumId} /> -->
+                <EntryItem entry={weapon} />
+                <!-- <MatrixQuery id="matrix_ssr35" /> -->
+            </ul>
+
+            <div class="box grid g-25">
+                <a href="#effects">Weapon Effects</a>
+                <a href="#effects">Advancements</a>
+                <a href="#skills">Skills</a>
+                <a href="#meta">Meta</a>
+                <a href="#banners">Banners</a>
+            </div>
+        </div>
+    </aside>
+
+    <article>
+        <div class="flex g-100" style="justify-content: space-between;">
+            <div class="flex box g-100" style="align-items: start">
+                <img
+                    src={weapon.assets.icon}
+                    alt=""
+                    width="200"
+                    height="200"
+                    style="align-self: center"
+                />
+                <ul class="stats">
+                    <li class="stat">
+                        <CategoryIcon type={weapon.element} />
+                        <div class="stat-text">
+                            <span class="stat-name">Element</span>
+                            <b class="stat-value">{weapon.element}</b>
+                        </div>
+                    </li>
+                    <li class="stat">
+                        <CategoryIcon type={weapon.category} />
+                        <div class="stat-text">
+                            <span class="stat-name">Type</span>
+                            <b class="stat-value">{weapon.category}</b>
+                        </div>
+                    </li>
+                    <li class="stat">
+                        <Tier
+                            tier={weapon.weaponAdvancements[stars - 1].shatter
+                                .tier}
+                            style="font-size: var(--step-2); width: 40px;"
+                        />
+                        <div class="stat-text">
+                            <span class="stat-name">Shatter</span>
+                            <b class="stat-value"
+                                >{weapon.weaponAdvancements[
+                                    stars - 1
+                                ].shatter.value.toFixed(2)}</b
+                            >
+                        </div>
+                    </li>
+                    <li class="stat">
+                        <Tier
+                            tier={weapon.weaponAdvancements[stars - 1].charge
+                                .tier}
+                            style="font-size: var(--step-2); width: 40px;"
+                        />
+                        <div class="stat-text">
+                            <span class="stat-name">Charge</span>
+                            <b class="stat-value"
+                                >{weapon.weaponAdvancements[
+                                    stars - 1
+                                ].charge.value.toFixed(2)}</b
+                            >
+                        </div>
+                    </li>
                 </ul>
 
-                <div class="box grid g-25">
-                    <a href="#effects">Weapon Effects</a>
-                    <a href="#effects">Advancements</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#meta">Meta</a>
-                    <a href="#banners">Banners</a>
-                </div>
-            </div>
-        </aside>
-
-        <article>
-            <div class="flex g-100" style="justify-content: space-between;">
-                <div class="flex box g-100" style="align-items: start">
-                    <img
-                        src={weapon.assets.icon}
-                        alt=""
-                        width="200"
-                        height="200"
-                        style="align-self: center"
-                    />
-                    <ul class="stats">
-                        <li class="stat">
-                            <CategoryIcon type={weapon.element} />
-                            <div class="stat-text">
-                                <span class="stat-name">Element</span>
-                                <b class="stat-value">{weapon.element}</b>
-                            </div>
-                        </li>
-                        <li class="stat">
-                            <CategoryIcon type={weapon.category} />
-                            <div class="stat-text">
-                                <span class="stat-name">Type</span>
-                                <b class="stat-value">{weapon.category}</b>
-                            </div>
-                        </li>
-                        <li class="stat">
-                            <Tier
-                                tier={weapon.weaponAdvancements[stars - 1]
-                                    .shatter.tier}
-                                style="font-size: var(--step-2); width: 40px;"
+                <ul class="stats">
+                    {#each weapon.weaponStats as stat}
+                        <li class="stat col-2">
+                            <img
+                                src={stat.icon}
+                                alt=""
+                                width="40"
+                                height="40"
+                                class="invert"
                             />
                             <div class="stat-text">
-                                <span class="stat-name">Shatter</span>
-                                <b class="stat-value"
-                                    >{weapon.weaponAdvancements[
-                                        stars - 1
-                                    ].shatter.value.toFixed(2)}</b
-                                >
+                                <span class="stat-name">{stat.name}</span>
+                                <b class="stat-value">{$weaponLevel}</b>
                             </div>
                         </li>
-                        <li class="stat">
-                            <Tier
-                                tier={weapon.weaponAdvancements[stars - 1]
-                                    .charge.tier}
-                                style="font-size: var(--step-2); width: 40px;"
-                            />
-                            <div class="stat-text">
-                                <span class="stat-name">Charge</span>
-                                <b class="stat-value"
-                                    >{weapon.weaponAdvancements[
-                                        stars - 1
-                                    ].charge.value.toFixed(2)}</b
-                                >
-                            </div>
-                        </li>
-                    </ul>
-
-                    <ul class="stats">
-                        {#each weapon.weaponStats as stat}
-                            <li class="stat col-2">
-                                <img
-                                    src={stat.icon}
-                                    alt=""
-                                    width="40"
-                                    height="40"
-                                    class="invert"
-                                />
-                                <div class="stat-text">
-                                    <span class="stat-name">{stat.name}</span>
-                                    <b class="stat-value">{$weaponLevel}</b>
-                                </div>
-                            </li>
-                        {/each}
-                    </ul>
-                </div>
+                    {/each}
+                </ul>
             </div>
+        </div>
 
-            <h2 id="effects">Weapon Effects</h2>
-            <span>{weapon.elementEffect.title}</span>
-            <SvelteMarkdown source={weapon.elementEffect.description} />
+        <h2 id="effects">Weapon Effects</h2>
+        <span>{weapon.elementEffect.title}</span>
+        <SvelteMarkdown source={weapon.elementEffect.description} />
 
-            {#if weapon.weaponEffects}
-                {#each weapon.weaponEffects as effect}
-                    <span>{effect.title}</span>
-                    <SvelteMarkdown source={effect.description} />
-                {/each}
-            {/if}
+        {#if weapon.weaponEffects}
+            {#each weapon.weaponEffects as effect}
+                <span>{effect.title}</span>
+                <SvelteMarkdown source={effect.description} />
+            {/each}
+        {/if}
 
-            {#if weapon.weaponAdvancements}
-                <h2 id="advancements">Advancements</h2>
-                {#each weapon.weaponAdvancements as advancement}
-                    <SvelteMarkdown source={advancement.description} />
-                {/each}
-            {/if}
+        {#if weapon.weaponAdvancements}
+            <h2 id="advancements">Advancements</h2>
+            {#each weapon.weaponAdvancements as advancement}
+                <SvelteMarkdown source={advancement.description} />
+            {/each}
+        {/if}
 
-            {#if weapon.weaponAttacks}
-                <h2 id="skills">Skills</h2>
-                <span>Level: {$weaponLevel}</span>
+        {#if weapon.weaponAttacks}
+            <h2 id="skills">Skills</h2>
+            <span>Level: {$weaponLevel}</span>
+            <input type="range" min="0" max="200" bind:value={$weaponLevel} />
+            <!-- Hide this as a hint icon popover -->
+            <p>
+                Skills can be strengthened by leveling up your weapon; every 10
+                weapon levels increases skill level by 1. For example, a level
+                143 weapon will have skill level 14, a level 90 weapon will have
+                skill level 90, etc. Percent values do not change, only flat
+                values will increase alongside skill level.
+            </p>
+
+            <label>
                 <input
-                    type="range"
-                    min="0"
-                    max="200"
-                    bind:value={$weaponLevel}
-                />
-                <!-- Hide this as a hint icon popover -->
-                <p>
-                    Skills can be strengthened by leveling up your weapon; every
-                    10 weapon levels increases skill level by 1. For example, a
-                    level 143 weapon will have skill level 14, a level 90 weapon
-                    will have skill level 90, etc. Percent values do not change,
-                    only flat values will increase alongside skill level.
-                </p>
+                    type="radio"
+                    value="normals"
+                    bind:group={attackCategory}
+                /> Normal
+            </label>
 
-                <label>
-                    <input
-                        type="radio"
-                        value="normals"
-                        bind:group={attackCategory}
-                    /> Normal
-                </label>
+            <label>
+                <input type="radio" value="dodge" bind:group={attackCategory} />
+                Dodge
+            </label>
 
-                <label>
-                    <input
-                        type="radio"
-                        value="dodge"
-                        bind:group={attackCategory}
-                    />
-                    Dodge
-                </label>
+            <label>
+                <input type="radio" value="skill" bind:group={attackCategory} />
+                Skill
+            </label>
 
-                <label>
-                    <input
-                        type="radio"
-                        value="skill"
-                        bind:group={attackCategory}
-                    />
-                    Skill
-                </label>
+            <label>
+                <input
+                    type="radio"
+                    value="discharge"
+                    bind:group={attackCategory}
+                /> Discharge
+            </label>
 
-                <label>
-                    <input
-                        type="radio"
-                        value="discharge"
-                        bind:group={attackCategory}
-                    /> Discharge
-                </label>
+            {#each weapon.weaponAttacks[attackCategory] as data}
+                <WeaponAttack {data} />
+            {/each}
+        {/if}
 
-                {#each weapon.weaponAttacks[attackCategory] as data}
-                    <WeaponAttack {data} />
+        <h2 id="meta">{weapon.name} Meta</h2>
+
+        {#if weapon.meta?.analyticVideoId}
+            <h3>Analysis</h3>
+            <Youtube source={weapon.meta.analyticVideoId} />
+        {/if}
+
+        {#if weapon.meta?.rating}
+            <h3>Combat Analysis</h3>
+            <Rating {weapon} />
+        {/if}
+
+        {#if weapon.meta?.recommendedPairings}
+            <h3>Recommended Pairings</h3>
+            <ul class="entry-list">
+                {#each weapon.meta.recommendedPairings as pairingId}
+                    <!-- <WeaponQuery id={pairingId} /> -->
                 {/each}
-            {/if}
+            </ul>
+        {/if}
 
-            <h2 id="meta">{weapon.name} Meta</h2>
+        {#if weapon.meta?.recommendedMatrices}
+            <h3>Recommended Matrices</h3>
+            <ul class="entry-list">
+                {#each weapon.meta.recommendedMatrices as matrix}
+                    <!-- <MatrixQuery id={matrix.id} /> -->
+                {/each}
+            </ul>
+        {/if}
+    </article>
 
-            {#if weapon.meta?.analyticVideoId}
-                <h3>Analysis</h3>
-                <Youtube source={weapon.meta.analyticVideoId} />
-            {/if}
-
-            {#if weapon.meta?.rating}
-                <h3>Combat Analysis</h3>
-                <Rating {weapon} />
-            {/if}
-
-            {#if weapon.meta?.recommendedPairings}
-                <h3>Recommended Pairings</h3>
-                <ul class="entry-list">
-                    {#each weapon.meta.recommendedPairings as pairingId}
-                        <!-- <WeaponQuery id={pairingId} /> -->
-                    {/each}
-                </ul>
-            {/if}
-
-            {#if weapon.meta?.recommendedMatrices}
-                <h3>Recommended Matrices</h3>
-                <ul class="entry-list">
-                    {#each weapon.meta.recommendedMatrices as matrix}
-                        <!-- <MatrixQuery id={matrix.id} /> -->
-                    {/each}
-                </ul>
-            {/if}
-        </article>
-
-        <footer>
-            {#if weapon.banners?.length > 0}
-                <h2 id="banners">Banners</h2>
-                <BannerTable
-                    bannerSearchTerm={weapon.banners[0].simulacrumName}
-                />
-            {/if}
-        </footer>
-    </div>
-{/if}
+    <footer>
+        {#if weapon.banners?.length > 0}
+            <h2 id="banners">Banners</h2>
+            <BannerTable bannerSearchTerm={weapon.banners[0].simulacrumName} />
+        {/if}
+    </footer>
+</div>
 
 <style lang="scss">
     :global(.page-layout) {
@@ -262,7 +252,7 @@
         position: absolute;
         z-index: 10;
         width: 100%;
-        background: var(--bg);
+        // background: var(--bg);
     }
 
     header {
