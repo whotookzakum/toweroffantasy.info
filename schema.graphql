@@ -11,7 +11,9 @@ type Assets {
   activeImitation: String!
   advanceGrayPainting: String!
   advancePainting: String!
+  artwork: String!
   avatar: String!
+  awakenPhoto: String!
   backPhoto: String!
   descPainting: String!
   grayPainting: String!
@@ -102,7 +104,7 @@ type Matrice {
   rarity: String!
   sets: [MatriceSet!]!
   simulacrumId: String
-  type: String!
+  version: String!
 }
 
 type MatriceSet {
@@ -225,6 +227,7 @@ type Simulacra {
   matrixId: String
   name: String!
   rarity: String!
+  version: String!
   voicing: VoiceActors!
   weaponId: String
 }
@@ -247,6 +250,7 @@ type SimulacraV2 {
   matrixId: String
   name: String!
   rarity: String!
+  version: String!
   voicing: VoiceActors!
   weapon: Weapon
   weaponId: String
@@ -297,6 +301,7 @@ type Weapon {
   shatter: ShatterOrCharge!
   simulacrumId: String
   upgradeMats: WeaponMats
+  version: String!
   weaponAdvancements: [WeaponAdvancement!]!
   weaponAttacks: WeaponAttacks!
   weaponEffects: [WeaponEffect!]!
@@ -311,6 +316,7 @@ type WeaponAdvancement {
 }
 
 type WeaponAssets {
+  characterIcon: String
   icon: String
   weaponIconForMatrix: String
 }

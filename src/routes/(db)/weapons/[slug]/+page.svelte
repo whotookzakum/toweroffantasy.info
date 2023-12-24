@@ -1,9 +1,6 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
-    // import SimulacrumV2Query from "../../SimulacrumV2Query.svelte";
     import EntryItem from "../../EntryItem.svelte";
-    // import MatrixQuery from "../../MatrixQuery.svelte";
-    // import WeaponQuery from "../../WeaponQuery.svelte.old";
     import WeaponAttack from "./WeaponAttack.svelte";
     import { weaponLevel } from "$lib/stores";
     import Tier from "../../Tier.svelte";
@@ -12,19 +9,14 @@
     import Youtube from "$lib/components/Youtube.svelte";
     import Rating from "$lib/components/simulacrum/Rating.svelte";
     import RarityIcon from "../../RarityIcon.svelte";
-    import BackgroundImage from "../../../../lib/components/BackgroundImage.svelte";
-    import { fly, fade } from "svelte/transition";
+    import { bgImg } from "$lib/stores"
 
     export let data;
-    $: ({ Weapon } = data);
-    $: weapon = $Weapon?.data?.weapon;
-
-    // $: console.log(data)
-    // $: console.log($Weapon)
-    // $: console.log(weapon);
+    const { weapon, simulacrum_v2, matrix } = data
 
     let stars = 1;
     let attackCategory = "skill";
+    $bgImg = simulacrum_v2.assetsA0.titlePicture
 </script>
 
 <span>Stars: {stars}</span>
@@ -33,12 +25,7 @@
 <span>Level: {$weaponLevel}</span>
 <input type="range" min="0" max="200" bind:value={$weaponLevel} />
 
-<BackgroundImage
-    src="https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/xiangqing/imitation_43.webp"
-    top
-/>
-
-<div class="page-layout grid g-100" transition:fly={{ y: -30 }}>
+<div class="page-layout grid g-100">
     <header>
         <h1>{weapon.name}</h1>
         <p><RarityIcon rarity={weapon.rarity} /> Weapon</p>
@@ -47,9 +34,9 @@
     <aside class="grid g-100">
         <div class="sticky-wrapper">
             <ul class="entry-list">
-                <!-- <SimulacrumV2Query id={weapon.simulacrumId} /> -->
+                <EntryItem entry={simulacrum_v2} />
                 <EntryItem entry={weapon} />
-                <!-- <MatrixQuery id="matrix_ssr35" /> -->
+                <EntryItem entry={matrix} />
             </ul>
 
             <div class="box grid g-25">

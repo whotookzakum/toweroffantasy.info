@@ -9,4 +9,4 @@ export const userTimeZone = writable(undefined)
 
 export const weaponLevel = writable(200);
 
-export const bgImgUrl = writable("");
+export const bgImg = writable("");

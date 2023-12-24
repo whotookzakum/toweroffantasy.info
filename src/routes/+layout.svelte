@@ -9,8 +9,6 @@
 
 <GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
 
-<!-- <slot /> -->
-
 <div class="layout grid g-50">
     <div class="gutter-left"></div>
     <div class="main-content">

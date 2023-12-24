@@ -2,6 +2,8 @@ fragment simulacrum_v2Entry on SimulacraV2 {
     name
     rarity
     id
+    weaponId
+    matrixId
     banners {
         bannerNumber
         isFinalBanner
@@ -9,6 +11,7 @@ fragment simulacrum_v2Entry on SimulacraV2 {
     assetsA0 {
         painting
         avatar
+        titlePicture
     }
     weapon {
         rarity

@@ -1,18 +1,33 @@
 <script>
+    import { page } from "$app/stores";
+    import { bgImg } from "$lib/stores";
+    import { fade } from "svelte/transition";
+    import { sineInOut } from "svelte/easing"
     export let src;
-    export let top;
+    $: showNewestChar = ["/", "/simulacra", "/weapons", "/matrices"].includes($page.url.pathname) || !$bgImg
 </script>
 
-<div class="bg-img-wrapper" class:top>
-    <img
-        class="bg-img"
-        {src}
-        alt="Background"
-        width="1080"
-        height="1080"
-        loading="lazy"
-    />
-</div>
+{#if showNewestChar}
+    <div class="bg-img-wrapper" transition:fade={{ duration: 300, easing: sineInOut }}>
+        <img
+            class="bg-img"
+            {src}
+            alt="Background"
+            width="1080"
+            height="1080"
+        />
+    </div>
+{:else}
+    <div class="bg-img-wrapper" transition:fade={{ duration: 300, easing: sineInOut }}>
+        <img
+            class="bg-img"
+            src={$bgImg}
+            alt="Background"
+            width="1080"
+            height="1080"
+        />
+    </div>
+{/if}
 
 <style lang="scss">
     .bg-img-wrapper {
@@ -21,12 +36,6 @@
         z-index: -5;
         right: 0;
         top: 0;
-    }
-
-    .top {
-        z-index: -4;
-        // animation: 1s ease-in 1s infinite forwards both running fade-in;
-        animation: 1s ease-in both running fade-in;
     }
 
     @keyframes fade-in {

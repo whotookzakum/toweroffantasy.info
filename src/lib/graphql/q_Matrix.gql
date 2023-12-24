@@ -1,0 +1,6 @@
+query Matrix($id: String) {
+    matrix(id: $id) {
+        ...matrixEntry
+        __typename
+    }
+}

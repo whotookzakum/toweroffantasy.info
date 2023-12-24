@@ -1,0 +1,6 @@
+query SimulacrumV2($id: String) {
+    simulacrum_v2(id: $id) {
+        ...simulacrum_v2Entry
+        __typename
+    }
+}

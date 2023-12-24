@@ -1,11 +1,12 @@
-query Weapon($lang: String, $id: String) {
-    weapon(lang: $lang, id: $id) {
+query Weapon($id: String) {
+    weapon(id: $id) {
         rarity
         name
         id
         simulacrumId
         assets {
             icon
+            characterIcon
         }
         element
         category
