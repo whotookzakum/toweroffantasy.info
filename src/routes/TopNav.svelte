@@ -11,11 +11,23 @@
                 <img src="/images/mia.webp" alt="" width="48" height="48" />
                 <span>Tower of Fantasy Index</span>
             </a>
+            <div class="sns-links flex g-25">
+                <a href="https://discord.gg/aidacafe" class="flex box">
+                    <Icon icon="logos:discord-icon" width="18" />
+                    <span class="visually-hidden">Discord</span>
+                </a>
+                <a href="https://www.reddit.com/r/TowerofFantasy/" class="flex box">
+                    <Icon icon="logos:reddit-icon" width="18" />
+                    <span class="visually-hidden">Reddit</span>
+                </a>
+                <a href="https://twitter.com/_Aida_Cafe" class="flex box">
+                    <Icon icon="logos:twitter" width="18" />
+                    <span class="visually-hidden">Twitter</span>
+                </a>
+            </div>
         </div>
-        <!-- <img src="/images/Icon/Avatar/Avatar43_s.webp" alt="" width="64" height="64"> -->
 
         <div class="links-strip flex g-25">
-            
             {#each links as { href, name, icon }}
                 <a {href} class:active={$page.url.pathname.includes(href)}>
                     <!-- <Icon {icon} /> -->
@@ -41,7 +53,7 @@
         padding: 0.5rem;
         position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 20;
     }
 
     .nav-content {
@@ -60,6 +72,25 @@
 
         span {
             margin-bottom: 0.5rem;
+        }
+    }
+
+    .sns-links {
+        margin-left: auto; 
+        align-items: start;
+
+        a {
+            padding: 0.5rem;
+            aspect-ratio: 1/1;
+            align-items: center;
+            background: hsla(226, 40%, 15%, 0.5);
+            border-radius: 5px;
+            border: 1px solid var(--surface1);
+        }
+
+        a:where(:hover, :focus-visible) {
+            background: var(--surface1);
+            border-color: var(--surface2);
         }
     }
 

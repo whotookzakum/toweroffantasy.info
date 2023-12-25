@@ -209,7 +209,7 @@
     .row-categories {
         order: 4;
         align-items: end;
-        // height: 27px;
+        // min-height: 27px;
     }
 
     .tag {

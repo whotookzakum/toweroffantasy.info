@@ -48,6 +48,7 @@ type Banner {
   isCollab: Boolean!
   isFinalBanner: Boolean!
   isLimitedBannerOnly: Boolean!
+  isReleased: Boolean!
   isRerun: Boolean!
   matrixId: String
   noWeapon: Boolean!
@@ -153,7 +154,7 @@ type Query {
   foods(lang: String! = "en"): [Food!]!
   item(id: String = null, lang: String! = "en", name: String = null): Item!
   items(lang: String! = "en"): [Item!]!
-  matrices(lang: String! = "en"): [Matrice!]!
+  matrices(lang: String! = "en", released: Boolean! = true): [Matrice!]!
   matrix(id: String = null, lang: String! = "en", name: String = null): Matrice!
   mount(id: String = null, lang: String! = "en", name: String = null): Mount!
   mounts(lang: String! = "en"): [Mount!]!
@@ -163,12 +164,12 @@ type Query {
   relics(lang: String! = "en"): [Relic!]!
   servant(id: String = null, lang: String! = "en", name: String = null): SmartServant!
   servants(lang: String! = "en"): [SmartServant!]!
-  simulacra(lang: String! = "en"): [Simulacra!]!
-  simulacra_v2(lang: String! = "en"): [SimulacraV2!]!
+  simulacra(lang: String! = "en", released: Boolean! = true): [Simulacra!]!
+  simulacra_v2(lang: String! = "en", released: Boolean! = true): [SimulacraV2!]!
   simulacrum(id: String = null, lang: String! = "en", name: String = null): Simulacra!
   simulacrum_v2(id: String = null, lang: String! = "en", name: String = null): SimulacraV2!
   weapon(id: String = null, lang: String! = "en", name: String = null): Weapon!
-  weapons(lang: String! = "en"): [Weapon!]!
+  weapons(lang: String! = "en", released: Boolean! = true): [Weapon!]!
 }
 
 type RecoMatrix {
