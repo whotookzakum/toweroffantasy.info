@@ -19,6 +19,7 @@
 
           Physics: "icon_element_wu",
           PhysicsFlame: "icon_element_wuhuo",
+          OverseasZeke: "icon_element_wuhuo",
 
           Superpower: "icon_element_powers",
      };
