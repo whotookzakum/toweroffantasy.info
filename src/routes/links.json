@@ -1,38 +1,42 @@
 [
     {
-        "name": "Home",
-        "href": "/"
+        "name": "💃 Simulacra",
+        "href": "/simulacra",
+        "icon": "👤🦸‍♀️💃🥷material-symbols:person"
     },
     {
-        "name": "Simulacra",
-        "href": "/simulacra"
+        "name": "🗡️ Weapons",
+        "href": "/weapons",
+        "icon": "mingcute:sword-fill"
     },
     {
-        "name": "Weapons",
-        "href": "/weapons"
+        "name": "💾 Matrices",
+        "href": "/matrices",
+        "icon": "💽heroicons:cpu-chip-solid"
     },
     {
-        "name": "Matrices",
-        "href": "/matrices"
+        "name": "🔮 Relics",
+        "href": "/relics",
+        "icon": "pajamas:object"
     },
     {
-        "name": "Relics",
-        "href": "/relics"
+        "name": "🔍 Exploration",
+        "href": "/exploration",
+        "icon": "🧩"
     },
     {
-        "name": "Exploration",
-        "href": "/exploration"
+        "name": "🥖 Food",
+        "href": "/food",
+        "icon": "🍲"
     },
     {
-        "name": "Food",
-        "href": "/food"
+        "name": "🦄 Mounts",
+        "href": "/mounts",
+        "icon": "🐎"
     },
     {
-        "name": "Mounts",
-        "href": "/mounts"
-    },
-    {
-        "name": "Cosmetics",
-        "href": "/cosmetics"
+        "name": "👙 Cosmetics",
+        "href": "/cosmetics",
+        "icon": "👕👑🎩🪙"
     }
 ]

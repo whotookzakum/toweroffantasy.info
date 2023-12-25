@@ -6,7 +6,6 @@ query Weapon($id: String) {
         simulacrumId
         assets {
             icon
-            characterIcon
         }
         element
         category

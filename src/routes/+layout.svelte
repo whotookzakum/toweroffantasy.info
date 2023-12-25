@@ -10,10 +10,9 @@
 <GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
 
 <div class="layout grid g-50">
+    <TopNav />
     <div class="gutter-left"></div>
     <div class="main-content">
-        <h1>Tower of Fantasy Index</h1>
-        <TopNav />
         <main>
             <slot />
         </main>
@@ -26,10 +25,9 @@
 <style lang="scss">
     .layout {
         margin: auto;
-        // max-width: 1160px;
         font-size: var(--step--1);
         grid-template-columns: 300px 1fr 300px;
-        column-gap: 1rem;
+        gap: 1rem;
     }
 
     @media (max-width: 1600px) {
@@ -59,8 +57,7 @@
 
     .main-content {
         grid-column: 2;
-        max-width: 1150px;
-        // min-width: 1150px;
+        max-width: 1160px;
         width: 100%;
         justify-self: center;
     }

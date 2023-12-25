@@ -36,6 +36,7 @@
         z-index: -5;
         right: 0;
         top: 0;
+        mask-image: linear-gradient(to left, black 30%, transparent 80%);
     }
 
     @keyframes fade-in {
@@ -55,24 +56,32 @@
         height: auto;
     }
 
-    [src*="/lan."] {
-        object-position: 350px;
+    // /UI/shizhuang/nitai/xiangqing (new, full pic no fade, higher res)
+    [src*="xiangqing"] {
+        object-position: 250px;
     }
 
-    // Food
-    [src*="huodong_meishi"] {
-        object-position: 0px;
-        top: unset;
-        bottom: 0;
-    }
 
-    // Ruby sitting
-    [src*="UI_nuanyang_renwu1"] {
-        top: unset;
-        bottom: 0;
-    }
+    // /UI/huanxing/lihui (old, with triangles and fading out, low res)
 
-    [src*="liuhuo"] {
-        object-position: 325px;
-    }
+    // [src*="/lan."] {
+    //     object-position: 350px;
+    // }
+
+    // // Food
+    // [src*="huodong_meishi"] {
+    //     object-position: 0px;
+    //     top: unset;
+    //     bottom: 0;
+    // }
+
+    // // Ruby sitting
+    // [src*="UI_nuanyang_renwu1"] {
+    //     top: unset;
+    //     bottom: 0;
+    // }
+
+    // [src*="liuhuo"] {
+    //     object-position: 325px;
+    // }
 </style>

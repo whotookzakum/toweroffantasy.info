@@ -5,7 +5,7 @@
     import { weaponLevel } from "$lib/stores";
     import Tier from "../../Tier.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    import BannerTable from "../../BannerTable.svelte";
+    import BannerTable from "../../../banners/BannerTable.svelte";
     import Youtube from "$lib/components/Youtube.svelte";
     import Rating from "$lib/components/simulacrum/Rating.svelte";
     import RarityIcon from "../../RarityIcon.svelte";

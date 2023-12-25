@@ -21,7 +21,7 @@
             <EntryItem
                 {entry}
                 slot="search-results"
-                isNew={entry.id === entries[0].id}
+                isNew={entry.id === data.matrices[0].id}
             />
         {/each}
     </svelte:fragment>

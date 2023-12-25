@@ -11,10 +11,9 @@ type Assets {
   activeImitation: String!
   advanceGrayPainting: String!
   advancePainting: String!
-  artwork: String!
   avatar: String!
-  awakenPhoto: String!
   backPhoto: String!
+  characterArtwork: String!
   descPainting: String!
   grayPainting: String!
   inactiveImitation: String!
@@ -113,6 +112,7 @@ type MatriceSet {
 }
 
 type MatrixAssets {
+  characterArtwork: String
   icon: String!
   iconLarge: String!
 }
@@ -316,7 +316,7 @@ type WeaponAdvancement {
 }
 
 type WeaponAssets {
-  characterIcon: String
+  characterArtwork: String
   icon: String
   weaponIconForMatrix: String
 }

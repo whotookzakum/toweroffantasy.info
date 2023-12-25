@@ -1,7 +1,7 @@
 <script>
     import { gameVersion, userLocale, userTimeZone } from "$lib/stores";
     import { graphql } from "$houdini";
-    import RadioSliderGroup from "./RadioSliderGroup.svelte";
+    import RadioSliderGroup from "../(db)/RadioSliderGroup.svelte";
     // import SimulacrumV2Query from "./SimulacrumV2Query.svelte";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
     import Icon from "@iconify/svelte";
@@ -211,7 +211,7 @@
                 <th>Duration</th>
                 <th>Week #</th>
                 <th>Notes</th>
-                <th>Link</th>
+                <th class="visually-hidden">Link</th>
             </thead>
             <tbody>
                 {#each filteredBanners as banner (banner.bannerNumber)}
@@ -273,7 +273,9 @@
                             {/if}
                         </td>
 
-                        <td></td>
+                        <td>
+                            <a href={banner.detailsLink} style="text-decoration: underline; color: var(--accent); font-weight: normal">Link</a>
+                        </td>
                     </tr>
                 {/each}
             </tbody>
