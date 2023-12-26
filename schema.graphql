@@ -149,12 +149,12 @@ type Outfit {
 type Query {
   achievement(id: String = null, lang: String! = "en", name: String = null): Achievement!
   achievements(lang: String! = "en"): [Achievement!]!
-  banners: [Banner!]!
+  banners(includeUnreleased: Boolean! = false): [Banner!]!
   food(id: String = null, lang: String! = "en", name: String = null): Food!
   foods(lang: String! = "en"): [Food!]!
   item(id: String = null, lang: String! = "en", name: String = null): Item!
   items(lang: String! = "en"): [Item!]!
-  matrices(lang: String! = "en", released: Boolean! = true): [Matrice!]!
+  matrices(includeUnreleased: Boolean! = false, lang: String! = "en"): [Matrice!]!
   matrix(id: String = null, lang: String! = "en", name: String = null): Matrice!
   mount(id: String = null, lang: String! = "en", name: String = null): Mount!
   mounts(lang: String! = "en"): [Mount!]!
@@ -164,12 +164,12 @@ type Query {
   relics(lang: String! = "en"): [Relic!]!
   servant(id: String = null, lang: String! = "en", name: String = null): SmartServant!
   servants(lang: String! = "en"): [SmartServant!]!
-  simulacra(lang: String! = "en", released: Boolean! = true): [Simulacra!]!
-  simulacra_v2(lang: String! = "en", released: Boolean! = true): [SimulacraV2!]!
+  simulacra(includeUnreleased: Boolean! = false, lang: String! = "en"): [Simulacra!]!
+  simulacra_v2(includeUnreleased: Boolean! = false, lang: String! = "en"): [SimulacraV2!]!
   simulacrum(id: String = null, lang: String! = "en", name: String = null): Simulacra!
   simulacrum_v2(id: String = null, lang: String! = "en", name: String = null): SimulacraV2!
   weapon(id: String = null, lang: String! = "en", name: String = null): Weapon!
-  weapons(lang: String! = "en", released: Boolean! = true): [Weapon!]!
+  weapons(includeUnreleased: Boolean! = false, lang: String! = "en"): [Weapon!]!
 }
 
 type RecoMatrix {

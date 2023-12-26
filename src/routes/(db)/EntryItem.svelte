@@ -30,6 +30,9 @@
         case "Matrice":
             avatarUri = entry.assets.iconLarge;
             break;
+        case "Mount":
+            avatarUri = entry.assets.icon;
+            break;
     }
 </script>
 
@@ -256,6 +259,15 @@
     :not(.SimulacraV2) .avatar {
         object-position: -30px -40px !important;
         width: 256px !important;
+    }
+
+    .Mount .avatar {
+        object-position: -50px 0 !important;
+        // width: 26px;
+        // top: 0;
+        object-fit: unset;
+        width: 100%;
+        height: auto;
     }
 
     .bg {

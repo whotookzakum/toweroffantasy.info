@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import Menu from "$lib/components/Menu.svelte";
     import MenuItem from "$lib/components/MenuItem.svelte";
     import Ad from "$lib/components/Ad.svelte";
@@ -72,4 +72,38 @@
         width: 140%;
         height: auto;
     }
-</style>
+</style> -->
+
+<script>
+    import { searchTerm } from "$lib/stores";
+    import Meta from "../Meta.svelte";
+    import DBLayout from "../DBLayout.svelte";
+    import EntryItem from "../EntryItem.svelte";
+
+    export let data;
+    console.log(data.mounts)
+    
+    $: entries = data.mounts.filter((entry) =>
+        entry.name?.toLowerCase().includes($searchTerm.toLowerCase()),
+    );
+
+    // Alternative logic for isNew: !isRerun && todaysDate < endDate && todaysDate > startDate
+</script>
+
+<DBLayout>
+    <svelte:fragment slot="search-results">
+        <Meta
+            title="Mounts | Tower of Fantasy Index"
+            description="Mounts are vehicles that help you traverse terrain more quickly. All mounts move at the same speed. Owning multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels."
+            image={entries[0].assets.icon}
+        />
+        {#each entries as entry (entry.id)}
+            <EntryItem
+                {entry}
+                slot="search-results"
+                isNew={entry.id === data.mounts[0].id}
+            />
+        {/each}
+    </svelte:fragment>
+</DBLayout>
+

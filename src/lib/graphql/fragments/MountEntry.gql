@@ -1,0 +1,7 @@
+fragment mountEntry on Mount {
+    id
+    name
+    assets {
+        icon
+    }
+}

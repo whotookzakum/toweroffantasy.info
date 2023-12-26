@@ -1,4 +1,5 @@
 fragment matrixEntry on Matrice {
+    id
     rarity
     name
     assets {

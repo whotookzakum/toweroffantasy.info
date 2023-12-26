@@ -2,4 +2,4 @@
     import BannerTable from "./BannerTable.svelte"
 </script>
 
-<BannerTable showDetails />
+<BannerTable showCurrentBanners showStats />

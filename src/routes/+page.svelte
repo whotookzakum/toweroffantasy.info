@@ -1,7 +1,6 @@
 <script>
     import Meta from "./(db)/Meta.svelte";
     import EntryItem from "./(db)/EntryItem.svelte";
-    import BackgroundImage from "$lib/components/BackgroundImage.svelte";
 
     export let data;
 </script>
