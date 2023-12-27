@@ -1,14 +1,14 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
-    import EntryItem from "../../EntryItem.svelte";
-    import WeaponAttack from "./WeaponAttack.svelte";
+    import EntryItem from "$components/EntryItem.svelte";
+    import WeaponAttack from "$components/WeaponAttack.svelte";
     import { weaponLevel } from "$lib/stores";
-    import Tier from "../../Tier.svelte";
-    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
-    import BannerTable from "../../../banners/BannerTable.svelte";
-    import Youtube from "$lib/components/Youtube.svelte";
-    import Rating from "$lib/components/simulacrum/Rating.svelte";
-    import RarityIcon from "../../RarityIcon.svelte";
+    import Tier from "$components/Tier.svelte";
+    import CategoryIcon from "$components/simulacrum/CategoryIcon.svelte";
+    import BannerTable from "$components/BannerTable/BannerTable.svelte";
+    import Youtube from "$components/Youtube.svelte";
+    import Rating from "$components/simulacrum/Rating.svelte";
+    import RarityIcon from "$components/RarityIcon.svelte";
     import { bgImg } from "$lib/stores"
 
     export let data;

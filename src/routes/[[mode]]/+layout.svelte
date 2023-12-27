@@ -3,6 +3,34 @@
     import "$lib/styles/globals.scss";
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     import TopNav from "$components/TopNav.svelte";
+    import { onMount } from "svelte";
+    import { page } from "$app/stores"
+    import { browser } from "$app/environment"
+
+    // Alternative would be to have a store derived from page called linkPrefix, and just append that to all hrefs. It will either be /cn or blank.
+    // This does not work for client fetched data, i.e. the banner table
+    $: if (browser) {
+        const hi = document.querySelectorAll("a")
+        console.log(hi)
+        if ($page.url.pathname.includes("/cn")) {
+            hi.forEach(link => {
+                console.log("href: ",link.getAttribute("href"))
+                if (!link.href.includes("/cn")) {
+                    link.href = "/cn" + link.getAttribute("href")
+                }
+            })
+        }
+        else {
+            hi.forEach(link => {
+                link.href = link.getAttribute("href").replace("/cn", "")
+            })
+        }
+    }
+
+    onMount(() => {
+        
+        
+    })
 
     export let data;
 </script>
