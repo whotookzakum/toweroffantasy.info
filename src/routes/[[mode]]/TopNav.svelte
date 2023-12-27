@@ -2,15 +2,19 @@
     import links from "./links.json";
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
+    import RegionSelector from "./(db)/RegionSelector.svelte";
 </script>
 
 <nav>
     <div class="nav-content grid g-50">
         <div class="top-strip flex g-25">
-            <a href="/" class="link-home flex g-50">
-                <img src="/images/mia.webp" alt="" width="48" height="48" />
-                <span>Tower of Fantasy Index</span>
-            </a>
+            <div class="flex g-50" style="align-items: end">
+                <a href="/" class="link-home flex g-50">
+                    <img src="/images/mia.webp" alt="" width="48" height="48" />
+                    <span style="margin-bottom: 0.5rem">Tower of Fantasy Index</span>
+                </a>
+                <RegionSelector style="margin-bottom: 0.4rem;" />
+            </div>
             <div class="sns-links flex g-25">
                 <a href="https://discord.gg/aidacafe" class="flex box">
                     <Icon icon="logos:discord-icon" width="18" />
@@ -92,10 +96,7 @@
         font-size: var(--step-1);
         font-weight: bold;
         align-items: end;
-
-        span {
-            margin-bottom: 0.5rem;
-        }
+        color: inherit;
     }
 
     .sns-links {

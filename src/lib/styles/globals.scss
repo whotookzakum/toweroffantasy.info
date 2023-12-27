@@ -173,6 +173,17 @@ button {
     border-radius: 0.5rem;
 }
 
+.mode-selector-link {
+    .spinner {
+        transition: all 0.2s ease;
+    }
+
+    &:where(:hover, :focus-visible) .spinner,
+    .spinner:hover {
+        transform: rotate(120deg); // 120 or 180deg
+    }
+}
+
 // Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
 // .unit-container {
