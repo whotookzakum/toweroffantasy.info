@@ -16,7 +16,10 @@
                     <Icon icon="logos:discord-icon" width="18" />
                     <span class="visually-hidden">Discord</span>
                 </a>
-                <a href="https://www.reddit.com/r/TowerofFantasy/" class="flex box">
+                <a
+                    href="https://www.reddit.com/r/TowerofFantasy/"
+                    class="flex box"
+                >
                     <Icon icon="logos:reddit-icon" width="18" />
                     <span class="visually-hidden">Reddit</span>
                 </a>
@@ -28,7 +31,7 @@
         </div>
 
         <div class="links-strip flex g-25">
-            {#each links as { href, name, icon }}
+            {#each links.filter((link) => !link.collapsed) as { href, name, icon }}
                 <a {href} class:active={$page.url.pathname.includes(href)}>
                     <!-- <Icon {icon} /> -->
                     {name}
@@ -37,10 +40,30 @@
             <a
                 href="/banners"
                 class:active={$page.url.pathname.includes("/banners")}
-                style="margin-left: auto"
+                style=""
             >
                 📆 Banners
             </a>
+            <div class="grid g-25" style="position: relative;">
+                <input
+                    type="checkbox"
+                    class="visually-hidden"
+                    id="collapse-toggle"
+                />
+                <label for="collapse-toggle">➕ More...</label>
+
+                <div class="links-collapsed box grid g-25">
+                    {#each links.filter((link) => link.collapsed) as { href, name, icon }}
+                        <a
+                            {href}
+                            class:active={$page.url.pathname.includes(href)}
+                        >
+                            <!-- <Icon {icon} /> -->
+                            {name}
+                        </a>
+                    {/each}
+                </div>
+            </div>
         </div>
     </div>
 </nav>
@@ -76,7 +99,7 @@
     }
 
     .sns-links {
-        margin-left: auto; 
+        margin-left: auto;
         align-items: start;
 
         a {
@@ -94,15 +117,34 @@
         }
     }
 
+    .links-collapsed {
+        position: absolute;
+        width: 18ch;
+        top: 100%;
+        background: var(--bg);
+        border: 1px solid var(--surface1);
+        // padding: 0.
+        // padding: inherit;
+    }
+
+    #collapse-toggle:not(:checked) ~ .links-collapsed {
+        display: none;
+    }
+
     .links-strip {
+        label,
         a {
             padding: 0.5rem;
             gap: 0.25rem;
         }
 
+        label:hover,
+        input:focus-visible + label,
         a:where(:hover, :focus-visible) {
             background: var(--surface1);
             border-radius: 0.5rem;
+            outline: 2px solid var(--accent);
+            cursor: pointer;
         }
 
         .active {

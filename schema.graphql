@@ -91,7 +91,7 @@ type Item {
   icon: String
   id: String!
   name: String
-  rarity: String!
+  rarity: Int!
   type: String!
 }
 
@@ -101,7 +101,7 @@ type Matrice {
   description: String!
   id: String!
   name: String!
-  rarity: String!
+  rarity: Int!
   sets: [MatriceSet!]!
   simulacrumId: String
   version: String!
@@ -130,11 +130,22 @@ type Mount {
   description: String!
   id: String!
   name: String
+  unlockItems: [UnlockItem!]!
+  version: String!
 }
 
 type MountAsset {
   icon: String!
   showImage: String!
+}
+
+type MountPart {
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+  rarity: String!
+  type: String!
 }
 
 type Outfit {
@@ -184,7 +195,7 @@ type Relic {
   icon: String!
   id: String!
   name: String!
-  rarity: String!
+  rarity: Int!
   source: String
   type: String!
 }
@@ -224,10 +235,11 @@ type Simulacra {
   height: String
   homeTown: String
   id: String!
+  isReleased: Boolean!
   likedGiftTypes: [String!]!
   matrixId: String
   name: String!
-  rarity: String!
+  rarity: Int!
   version: String!
   voicing: VoiceActors!
   weaponId: String
@@ -246,11 +258,12 @@ type SimulacraV2 {
   height: String
   homeTown: String
   id: String!
+  isReleased: Boolean!
   likedGiftTypes: [String!]!
   matrix: Matrice
   matrixId: String
   name: String!
-  rarity: String!
+  rarity: Int!
   version: String!
   voicing: VoiceActors!
   weapon: Weapon
@@ -272,10 +285,15 @@ type SmartServant {
   element: String!
   id: String!
   name: String!
-  rarity: String!
+  rarity: Int!
   skills: [ServantSkill!]!
   type: String!
   upgradeItems: [ServantUpgrade!]!
+}
+
+type UnlockItem {
+  amount: Int!
+  item: MountPart!
 }
 
 type VoiceActors {
@@ -298,7 +316,7 @@ type Weapon {
   id: String!
   meta: MetaData!
   name: String!
-  rarity: String!
+  rarity: Int!
   shatter: ShatterOrCharge!
   simulacrumId: String
   upgradeMats: WeaponMats
@@ -340,7 +358,7 @@ type WeaponMat {
   icon: String
   id: String
   name: String
-  rarity: String
+  rarity: Int
   type: String
 }
 

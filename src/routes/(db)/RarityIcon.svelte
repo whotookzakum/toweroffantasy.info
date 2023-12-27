@@ -5,16 +5,15 @@
         "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_ssr.webp";
 
     switch (rarity) {
-        case "EPIC":
-        case "SR":
+        case 4:
             src =
                 "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_sr.webp";
             break;
-        case "R":
+        case 3:
             src =
                 "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_r.webp";
             break;
-        case "N":
+        case 2:
             src =
                 "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_n.webp";
             break;
@@ -31,13 +30,12 @@
         margin: 0.1rem;
     }
 
-    .EPIC,
-    .SR {
+    [src*="zi_sr"] {
         margin-inline: -3px;
     }
 
-    .R,
-    .N {
+    [src*="zi_r"],
+    [src*="zi_n"] {
         margin-inline: -8px;
     }
 </style>

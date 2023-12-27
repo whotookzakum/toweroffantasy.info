@@ -1,17 +1,20 @@
 <script>
     import { searchTerm, userLocale } from "$lib/stores";
     import LocaleSelector from "./LocaleSelector.svelte";
-    import VersionSelector from "./VersionSelector.svelte";
+    import RegionSelector from "./RegionSelector.svelte";
     import { page } from "$app/stores";
     import { goto } from "$app/navigation";
-    import { browser } from "$app/environment"
+    import { browser } from "$app/environment";
 
     function updateSearchParams(param, newValue) {
-        if (!newValue || (param === "version" && newValue === "glob") || (param === "lang" && newValue === "en")) {
-            $page.url.searchParams.delete(param)
-        }
-        else {
-            $page.url.searchParams.set(param, newValue)
+        if (
+            !newValue ||
+            (param === "version" && newValue === "glob") ||
+            (param === "lang" && newValue === "en")
+        ) {
+            $page.url.searchParams.delete(param);
+        } else {
+            $page.url.searchParams.set(param, newValue);
         }
 
         if (browser) {
@@ -23,6 +26,9 @@
             });
         }
     }
+
+    let selectedVersion;
+    let selectedElements;
 </script>
 
 <slot />
@@ -33,9 +39,10 @@
         bind:value={$searchTerm}
         on:input={() => updateSearchParams("q", $searchTerm)}
     />
-    <!-- <VersionSelector {updateSearchParams} /> -->
+    
+    <!-- <RegionSelector {updateSearchParams} /> -->
     <!-- <LocaleSelector inputFunction={updateSearchParams('lang', $userLocale)} /> -->
 </div>
 <ul class="entry-list">
-    <slot name="search-results" />
+    <slot name="search-results" {selectedElements} />
 </ul>

@@ -14,7 +14,7 @@ export const load = async (event) => {
         weapon: weaponsRes.data.weapons[0],
         matrix: matricesRes.data.matrices[0]
     }
-
+    
     return { newest }
 }
 

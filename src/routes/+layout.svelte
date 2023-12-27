@@ -20,7 +20,7 @@
     <div class="gutter-right"></div>
 </div>
 
-<BackgroundImage src={data.bgImg} />
+<!-- <BackgroundImage src={data.bgImg} /> -->
 
 <style lang="scss">
     .layout {
@@ -49,6 +49,13 @@
         padding: 0;
         gap: 1rem;
         width: 100%;
+    }
+
+    :global(.filters-row) {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        gap: 0.5rem;
     }
 
     h1 {

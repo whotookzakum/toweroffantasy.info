@@ -1,0 +1,14 @@
+fragment simulacrumEntry on Simulacra {
+    name
+    id
+    version
+    banners {
+        bannerNumber
+        isFinalBanner
+    }
+    assetsA0 {
+        painting
+        avatar
+        titlePicture
+    }
+}

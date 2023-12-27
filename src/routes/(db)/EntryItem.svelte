@@ -3,6 +3,7 @@
     import RarityIcon from "./RarityIcon.svelte";
     import Tier from "./Tier.svelte";
     import NucleusIcons from "./NucleusIcons.svelte";
+    import { showWepOnSimEntry } from "$lib/stores"
 
     export let entry;
     export let isNew = false;
@@ -22,11 +23,11 @@
     switch (entry.__typename) {
         case "Simulacra":
         case "SimulacraV2":
-            weapon = entry.weapon;
+            weapon = entry.weapon
             avatarUri = entry.assetsA0.painting;
             break;
         case "Weapon":
-            weapon = entry;
+            weapon = entry
             avatarUri = weapon.assets.icon;
             break;
         case "Matrice":
@@ -44,6 +45,7 @@
 <li
     class="item flex g-25 {entry.__typename}"
     class:molinia={entry.id === "imitation_33"}
+    class:hide-weapon={!$showWepOnSimEntry}
 >
     {#if isNew}
         <i class="tag new">New</i>
@@ -261,9 +263,16 @@
         top: 0;
     }
 
-    :not(.SimulacraV2) .avatar {
+
+    :not(:where(.SimulacraV2, .Simulacra)) .avatar {
         object-position: -30px -40px !important;
         width: 256px !important;
+    }
+
+    .SimulacraV2.hide-weapon {
+        .row-categories, .row-stats {
+            display: none;
+        }
     }
 
     .Mount .avatar {

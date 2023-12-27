@@ -4,6 +4,7 @@ fragment simulacrum_v2Entry on SimulacraV2 {
     id
     weaponId
     matrixId
+    version
     banners {
         bannerNumber
         isFinalBanner

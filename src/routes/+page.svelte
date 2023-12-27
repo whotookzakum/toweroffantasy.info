@@ -28,7 +28,7 @@
 <h2>Newest Arrivals</h2>
 <ul class="entry-list">
     <EntryItem entry={data.newest.simulacrum} isNew />
-    <EntryItem entry={data.newest.weapon} isNew />
+    <EntryItem entry={data.newest.weapon} weapon={data.newest.weapon} isNew />
     <EntryItem entry={data.newest.matrix} isNew />
 </ul>
 

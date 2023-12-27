@@ -22,21 +22,25 @@
     {
         "name": "🔍 Exploration",
         "href": "/exploration",
-        "icon": "🧩"
+        "icon": "🧩",
+        "collapsed": true
     },
     {
         "name": "🥖 Food",
         "href": "/food",
-        "icon": "🍲"
+        "icon": "🍲",
+        "collapsed": true
     },
     {
         "name": "🦄 Mounts",
         "href": "/mounts",
-        "icon": "🐎"
+        "icon": "🐎",
+        "collapsed": true
     },
     {
         "name": "👙 Cosmetics",
         "href": "/cosmetics",
-        "icon": "👕👑🎩🪙"
+        "icon": "👕👑🎩🪙",
+        "collapsed": true
     }
 ]

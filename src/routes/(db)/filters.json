@@ -1,0 +1,50 @@
+[
+    {
+        "type": "category",
+        "name": "DPS"
+    },
+    {
+        "type": "category",
+        "name": "Tank"
+    },
+    {
+        "type": "category",
+        "name": "SUP"
+    },
+    {
+        "type": "element",
+        "name": "Flame"
+    },
+    {
+        "type": "element",
+        "name": "FlamePhysics"
+    },
+    {
+        "type": "element",
+        "name": "Ice"
+    },
+    {
+        "type": "element",
+        "name": "ThunderIce"
+    },
+    {
+        "type": "element",
+        "name": "Thunder"
+    },
+    {
+        "type": "element",
+        "name": "IceThunder"
+    },
+    {
+        "type": "element",
+        "name": "Physics"
+    },
+    {
+        "type": "element",
+        "name": "PhysicsFlame"
+    },
+    {
+        "type": "element",
+        "name": "Superpower"
+    }
+]

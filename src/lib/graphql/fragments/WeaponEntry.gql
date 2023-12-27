@@ -2,6 +2,7 @@ fragment weaponEntry on Weapon {
     rarity
     name
     id
+    version
     assets {
         icon
     }
