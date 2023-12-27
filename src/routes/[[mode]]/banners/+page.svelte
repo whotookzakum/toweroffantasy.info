@@ -1,5 +1,5 @@
 <script>
-    import BannerTable from "./BannerTable.svelte"
+    import BannerTable from "$components/BannerTable/BannerTable.svelte"
 </script>
 
 <BannerTable showCurrentBanners showStats />

@@ -1,8 +1,8 @@
 <script>
-    import BackgroundImage from "$lib/components/BackgroundImage.svelte";
+    import BackgroundImage from "$components/BackgroundImage.svelte";
     import "$lib/styles/globals.scss";
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
-    import TopNav from "./TopNav.svelte";
+    import TopNav from "$components/TopNav.svelte";
 
     export let data;
 </script>
@@ -20,7 +20,7 @@
     <div class="gutter-right"></div>
 </div>
 
-<!-- <BackgroundImage src={data.bgImg} /> -->
+<BackgroundImage src={data.bgImg} />
 
 <style lang="scss">
     .layout {
@@ -56,10 +56,6 @@
         flex-wrap: wrap;
         gap: 0.5rem;
         margin-top: 1.5rem;
-    }
-
-    h1 {
-        text-align: center;
     }
 
     .main-content {

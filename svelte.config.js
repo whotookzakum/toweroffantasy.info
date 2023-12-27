@@ -15,7 +15,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-            $houdini: path.resolve('.', '$houdini')
+            $houdini: path.resolve('.', '$houdini'),
+			$components: path.resolve('.', 'src/lib/components'),
         }
 		// prerender: {
 		// 	handleMissingId: 'ignore'
