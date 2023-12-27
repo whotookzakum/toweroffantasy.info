@@ -7,7 +7,7 @@
     import RarityFilters from "../RarityFilters.svelte";
     import BannerFilters from "../BannerFilters.svelte";
     import VersionSelector from "../VersionSelector.svelte";
-    import { showWepOnSimEntry } from "$lib/stores"
+    import { showWepOnSimEntry } from "$lib/stores";
 
     export let data;
     const searchParams = queryParameters();
@@ -30,10 +30,23 @@
     });
 </script>
 
+<Meta
+    title="Simulacra | Tower of Fantasy Index"
+    description="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
+    image={data.simulacra_v2[0].assetsA0.avatar}
+/>
+
+<h1>Simulacra</h1>
+<p>
+    Simulacra (aka Mimics) are the player's representation of the characters
+    found in Tower of Fantasy. They have an associated weapon and an optional
+    passive effect. Their associated matrices must be obtained separately.
+</p>
+
 <div class="filters-row">
-    <label>
+    <!-- <label>
         <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show weapon details
-    </label>
+    </label> -->
     <SearchBar />
     <TypeFilters type="category" />
     <TypeFilters type="element" />
@@ -42,11 +55,6 @@
     <VersionSelector originalData={data.simulacra_v2} />
 </div>
 
-<Meta
-    title="Simulacra | Tower of Fantasy Index"
-    description="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
-    image={data.simulacra_v2[0].assetsA0.avatar}
-/>
 <ul class="entry-list">
     {#each entries as entry (entry.id)}
         <EntryItem

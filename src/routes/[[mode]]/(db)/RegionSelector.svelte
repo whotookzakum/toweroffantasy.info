@@ -1,22 +1,10 @@
 <script>
-    import { gameVersion } from "$lib/stores";
-    import RadioSliderGroup from "./RadioSliderGroup.svelte";
     import { page } from "$app/stores";
     import Icon from "@iconify/svelte";
     import { goto } from "$app/navigation";
     import { browser } from "$app/environment";
 
     export let style;
-    let gameVersions = [
-        {
-            label: "Global",
-            value: "glob",
-        },
-        {
-            label: "China",
-            value: "cn",
-        },
-    ];
 
     $: pagePath =
         $page.url.searchParams.toString().length > 0
@@ -54,6 +42,7 @@
         border: none;
         align-items: center;
         font-size: var(--step--3);
+        font-weight: 600;
         letter-spacing: 0.02em;
         text-transform: uppercase;
         gap: 0.2rem;
@@ -62,9 +51,7 @@
         line-height: 1.7;
         border-radius: 3px;
         text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
-        font-size: var(--step--3);
         padding: 0 0.4em;
-        font-weight: 600;
         background: rgb(42, 129, 179);
         transition: transform 0.1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
     }

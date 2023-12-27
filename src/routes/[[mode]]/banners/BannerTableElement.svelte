@@ -1,5 +1,6 @@
 <script>
-    import { gameVersion, userLocale } from "$lib/stores";
+    import { page } from "$app/stores"
+    import { userLocale } from "$lib/stores";
     import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
 
     export let banners, highlight, dateOptions, bannerSearchTerm, showReruns;
@@ -26,7 +27,7 @@
     };
 
     function getWeeksSinceLaunch(end) {
-        let start = $gameVersion === "cn" ? "16 Dec 2021" : "10 Aug 2022";
+        const start = $page.url.pathname.includes("/cn") ? "16 Dec 2021" : "10 Aug 2022";
         return Math.round(getDurationInDays(start, end) / 7);
     }
 </script>

@@ -1,46 +1,38 @@
 [
     {
-        "name": "💃 Simulacra",
-        "href": "/simulacra",
-        "icon": "👤🦸‍♀️💃🥷material-symbols:person"
+        "name": "Banners",
+        "href": "/banners"
     },
     {
-        "name": "🗡️ Weapons",
-        "href": "/weapons",
-        "icon": "mingcute:sword-fill"
+        "name": "Simulacra",
+        "href": "/simulacra"
     },
     {
-        "name": "💾 Matrices",
-        "href": "/matrices",
-        "icon": "💽heroicons:cpu-chip-solid"
+        "name": "Weapons",
+        "href": "/weapons"
     },
     {
-        "name": "🔮 Relics",
-        "href": "/relics",
-        "icon": "pajamas:object"
+        "name": "Matrices",
+        "href": "/matrices"
     },
     {
-        "name": "🔍 Exploration",
-        "href": "/exploration",
-        "icon": "🧩",
-        "collapsed": true
+        "name": "Relics",
+        "href": "/relics"
     },
     {
-        "name": "🥖 Food",
-        "href": "/food",
-        "icon": "🍲",
-        "collapsed": true
+        "name": "Mounts",
+        "href": "/mounts"
     },
     {
-        "name": "🦄 Mounts",
-        "href": "/mounts",
-        "icon": "🐎",
-        "collapsed": true
+        "name": "Cosmetics",
+        "href": "/cosmetics"
     },
     {
-        "name": "👙 Cosmetics",
-        "href": "/cosmetics",
-        "icon": "👕👑🎩🪙",
-        "collapsed": true
+        "name": "Food",
+        "href": "/food"
+    },
+    {
+        "name": "Exploration",
+        "href": "/exploration"
     }
 ]

@@ -10,19 +10,25 @@
     );
 </script>
 
-<DBLayout>
-    <svelte:fragment slot="search-results">
-        <Meta
-            title="Matrices | Tower of Fantasy Index"
-            description="Matrices (aka Chips) are items that can be attached to one of the four weapon slots (Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects."
-            image={entries[0].assets.iconLarge}
+<Meta
+    title="Matrices | Tower of Fantasy Index"
+    description="Matrices (aka Chips) are items that can be attached to one of four slots on a weapon (Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects."
+    image={entries[0].assets.iconLarge}
+/>
+
+<h1>Matrices</h1>
+<p>
+    Matrices (aka Chips) are items that can be attached to one of four slots on
+    a weapon (Emotion, Mind, Belief, and Memory) to provide stat boosts and
+    special effects.
+</p>
+
+<ul class="entry-list">
+    {#each entries as entry (entry.id)}
+        <EntryItem
+            {entry}
+            slot="search-results"
+            isNew={entry.id === data.matrices[0].id}
         />
-        {#each entries as entry (entry.id)}
-            <EntryItem
-                {entry}
-                slot="search-results"
-                isNew={entry.id === data.matrices[0].id}
-            />
-        {/each}
-    </svelte:fragment>
-</DBLayout>
+    {/each}
+</ul>
