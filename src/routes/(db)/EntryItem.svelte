@@ -12,6 +12,8 @@
         SimulacraV2: "simulacra",
         Matrice: "matrices",
         Weapon: "weapons",
+        Mount: "mounts",
+        Relic: "relics"
     };
 
     let weapon;
@@ -32,6 +34,9 @@
             break;
         case "Mount":
             avatarUri = entry.assets.icon;
+            break;
+        case "Relic":
+            avatarUri = entry.icon;
             break;
     }
 </script>
@@ -268,6 +273,11 @@
         object-fit: unset;
         width: 100%;
         height: auto;
+    }
+
+    .Relic .avatar {
+        width: 196px !important;
+        object-position: -10px -20px !important;
     }
 
     .bg {

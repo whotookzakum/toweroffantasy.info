@@ -5,6 +5,7 @@
         "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_ssr.webp";
 
     switch (rarity) {
+        case "EPIC":
         case "SR":
             src =
                 "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_sr.webp";
@@ -30,6 +31,7 @@
         margin: 0.1rem;
     }
 
+    .EPIC,
     .SR {
         margin-inline: -3px;
     }

@@ -1,0 +1,6 @@
+query Relics($lang: String) {
+    relics(lang: $lang) {
+        ...relicEntry
+        __typename
+    }
+}

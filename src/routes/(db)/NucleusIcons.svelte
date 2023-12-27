@@ -1,7 +1,6 @@
 <script>
     export let entry;
     let nucleusIcons = [];
-    let pastNucleusIcons = [];
 
     const hasBanners = entry.banners?.length > 0;
     const movedToStandardBanner = entry.banners?.some(
@@ -13,46 +12,53 @@
         case "SimulacraV2":
         case "Weapon":
             if (hasBanners && !movedToStandardBanner) {
-                nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/Gem005");
+                nucleusIcons.push(
+                    "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005",
+                );
             } else {
-                nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/Gem004");
-                nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/Gem003");
+                nucleusIcons.push(
+                    "https://api.toweroffantasy.info/assets/Icon/huobi/Gem004",
+                );
+                nucleusIcons.push(
+                    "https://api.toweroffantasy.info/assets/Icon/huobi/Gem003",
+                );
             }
             break;
         case "Matrice":
             if (entry.rarity !== "N") {
                 if (hasBanners && !movedToStandardBanner) {
-                    nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02");
+                    nucleusIcons.push(
+                        "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02",
+                    );
                 } else {
-                    nucleusIcons.push("https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01");
+                    nucleusIcons.push(
+                        "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01",
+                    );
                 }
             }
             break;
     }
 </script>
 
-<div class="flex coins">
-    <div>
-        {#if hasBanners && !movedToStandardBanner}
-            {entry.banners.length}
-            <span class="visually-hidden">limited</span>
-            {entry.banners.length > 1 ? "banners" : "banner"}
-        {:else}
-            Standard
-            <span class="visually-hidden">banner</span>
-        {/if}
+{#if ["Simulacra", "SimulacraV2", "Weapon", "Matrice"].includes(entry.__typename)}
+    <div class="flex coins">
+        <div>
+            {#if hasBanners && !movedToStandardBanner}
+                {entry.banners.length}
+                <span class="visually-hidden">limited</span>
+                {entry.banners.length > 1 ? "banners" : "banner"}
+            {:else}
+                Standard
+                <span class="visually-hidden">banner</span>
+            {/if}
+        </div>
+        <div class="flex">
+            {#each nucleusIcons as uri}
+                <img src={uri} alt="" width="30" height="30" />
+            {/each}
+        </div>
     </div>
-    <div class="flex">
-        {#each nucleusIcons as uri}
-            <img
-                src={uri}
-                alt=""
-                width="30"
-                height="30"
-            />
-        {/each}
-    </div>
-</div>
+{/if}
 
 <style lang="scss">
     .coins {
