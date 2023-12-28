@@ -8,6 +8,7 @@ fragment simulacrum_v2Entry on SimulacraV2 {
     banners {
         bannerNumber
         isFinalBanner
+        endDate
     }
     assetsA0 {
         painting

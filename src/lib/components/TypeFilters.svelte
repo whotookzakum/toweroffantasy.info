@@ -25,6 +25,7 @@
             class="visually-hidden"
         />
         <label class="grid" for="filter-{filter.name}">
+            <span class="visually-hidden">{filter.name}</span>
             <CategoryIcon type={filter.name} style="width: 28px;" />
         </label>
     {/each}

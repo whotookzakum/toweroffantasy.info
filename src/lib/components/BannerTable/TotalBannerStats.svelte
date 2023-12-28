@@ -4,7 +4,7 @@
     const movedToStandard = banners.filter(
         (banner) =>
             banner.isFinalBanner &&
-            timeNow > new Date(banner.endDate).getTime(),
+            timeNow > new Date(banner.endDate + " UTC").getTime(),
     );
 
     const reruns = banners.filter((banner) => banner.isRerun);

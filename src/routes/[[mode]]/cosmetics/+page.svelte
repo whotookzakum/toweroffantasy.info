@@ -1,7 +1,6 @@
 <script>
-    import Menu from "$lib/components/Menu.svelte";
-    import MenuItem from "$lib/components/MenuItem.svelte";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$components/Ad.svelte";
+    import Meta from "$components/Meta.svelte"
 
     const links = [
         {
@@ -47,23 +46,11 @@
     ];
 </script>
 
-<svelte:head>
-    <title>Cosmetics | Tower of Fantasy Index</title>
-    <meta
-        name="description"
-        content="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free."
-    />
-    <meta property="og:title" content="Cosmetics" />
-    <meta
-        property="og:description"
-        content="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free. Cosmetic gachapon items may have reruns."
-    />
-    <meta
-        property="og:image"
-        content="/images/UI/shizhuang/Fashion_icon/item_fashion_icon/fashion_f19.webp"
-    />
-    <meta name="theme-color" content="#377dcb" />
-</svelte:head>
+<Meta
+    title="Cosmetics | Tower of Fantasy Index"
+    description="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free. Cosmetic gachapon items may have reruns."
+    image={""}
+/>
 
 <h1>Cosmetics</h1>
 <p>
@@ -72,9 +59,13 @@
     some can be acquired for free. Cosmetic gachapon items may have reruns.
 </p>
 
-<Ad unit="Banner1" />
+<ul class="entry-list">
 
-<Menu>
+</ul>
+
+<!-- <Ad unit="Banner1" /> -->
+
+<!-- <Menu>
     {#each links as link}
         <MenuItem href={link.href}>
             <img
@@ -86,4 +77,4 @@
             <span class="menu-item-name">{link.name}</span>
         </MenuItem>
     {/each}
-</Menu>
+</Menu> -->

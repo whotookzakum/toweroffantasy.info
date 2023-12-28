@@ -19,5 +19,6 @@ fragment weaponEntry on Weapon {
     banners {
         bannerNumber
         isFinalBanner
+        endDate
     }
 }

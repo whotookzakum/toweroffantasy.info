@@ -13,20 +13,25 @@
     const searchParams = queryParameters();
 
     $: entries = data.simulacra_v2.filter((entry) => {
-        const { q, element, category, version } = $searchParams;
+        const { q, element, category, version, rarity } = $searchParams;
         const searchMatch = q
             ? entry.name.toLowerCase().includes(q.toLowerCase())
             : true;
-        const elementMatch = element
-            ? element.split(" ").includes(entry.weapon.element)
-            : true;
-        const categoryMatch = category
-            ? category.split(" ").includes(entry.weapon.category)
-            : true;
+        const elementMatch =
+            element && $showWepOnSimEntry
+                ? element.split(" ").includes(entry.weapon.element)
+                : true;
+        const categoryMatch =
+            category && $showWepOnSimEntry
+                ? category.split(" ").includes(entry.weapon.category)
+                : true;
         const versionMatch =
             version && version !== "all" ? entry.version === version : true;
+        const rarityMatch = rarity
+            ? rarity.split(" ").includes(`${entry.rarity}`)
+            : true;
 
-        return searchMatch && elementMatch && categoryMatch && versionMatch;
+        return searchMatch && elementMatch && categoryMatch && versionMatch && rarityMatch
     });
 </script>
 
@@ -44,13 +49,12 @@
 </p>
 
 <div class="filters-row">
-    <!-- <label>
-        <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show weapon details
-    </label> -->
     <SearchBar />
-    <TypeFilters type="category" />
-    <TypeFilters type="element" />
-    <RarityFilters />
+    {#if $showWepOnSimEntry}
+        <TypeFilters type="category" />
+        <TypeFilters type="element" />
+        <RarityFilters originalData={data.simulacra_v2} />
+    {/if}
     <BannerFilters />
     <VersionSelector originalData={data.simulacra_v2} />
 </div>

@@ -5,6 +5,7 @@ fragment simulacrumEntry on Simulacra {
     banners {
         bannerNumber
         isFinalBanner
+        endDate
     }
     assetsA0 {
         painting

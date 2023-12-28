@@ -9,5 +9,6 @@ fragment matrixEntry on Matrice {
     banners {
         bannerNumber
         isFinalBanner
+        endDate
     }
 }

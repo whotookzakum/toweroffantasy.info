@@ -4,23 +4,20 @@
     import { page } from "$app/stores";
     import RegionSelector from "$components/RegionSelector.svelte";
     import Link from "./Link.svelte";
-
-    const homeHref = $page.url.pathname.includes("/cn") ? "/cn" : "/"
+    import { showWepOnSimEntry } from "$lib/stores";
 </script>
 
 <nav>
     <div class="nav-content grid">
-        <div class="top-strip flex g-25">
-            <div class="flex" style="align-items: end">
-                <Link href="/" classes="nav-link nav-home">
-                    Tower of Fantasy Index
-                </Link>
-                <!-- <a href={homeHref} class="link-home flex g-50">
-                    
-                </a> -->
-                <RegionSelector style="margin: 0.5rem 0.25rem" />
-            </div>
-            
+        <div class="top-strip flex g-25" style="align-items: end">
+            <Link href="/" classes="nav-link nav-home">
+                Tower of Fantasy Index
+            </Link>
+            <RegionSelector style="margin: 0.5rem 0.25rem" />
+            <label style="margin-left: auto;">
+                <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show
+                weapon details on Simulacrum cards
+            </label>
         </div>
 
         <div class="links-strip flex g-25">

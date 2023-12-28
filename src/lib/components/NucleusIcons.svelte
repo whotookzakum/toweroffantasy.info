@@ -3,9 +3,13 @@
     let nucleusIcons = [];
 
     const hasBanners = entry.banners?.length > 0;
-    const movedToStandardBanner = entry.banners?.some(
-        (banner) => banner.isFinalBanner,
-    );
+    const movedToStandardBanner =
+        entry.banners?.some((banner) => banner.isFinalBanner) &&
+        entry.banners?.every(
+            (banner) =>
+                new Date(banner.endDate + " UTC").getTime() <
+                new Date().getTime(),
+        );
 
     switch (entry.__typename) {
         case "Simulacra":
