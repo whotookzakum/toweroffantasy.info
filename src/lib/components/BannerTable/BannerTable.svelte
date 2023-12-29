@@ -22,12 +22,21 @@
         timeZone: $userTimeZone,
     };
 
-    const currentBanners = banners
+    $: currentBanners = banners
         .filter((banner) =>
             new Date(banner.startDate).getTime() < timeNow &&
             new Date(banner.endDate).getTime() > timeNow,
         )
-        .sort((a, b) => a.totalBanners - b.totalBanners);
+        .sort((a, b) => getEarliestBannerNo(b) - getEarliestBannerNo(a));
+
+    function getEarliestBannerNo(banner) {
+        return banners
+            .filter(b => b.simulacrumId === banner.simulacrumId)
+            .reduce((acc, curr) => {
+                console.log(curr.bannerNumber, acc, curr.bannerNumber < acc)
+                return curr.bannerNumber < acc ? curr.bannerNumber : acc
+            }, 99999)
+    }
 </script>
 
 <div class="grid g-100 banner-table-wrapper" style="margin: 1rem 0;">
