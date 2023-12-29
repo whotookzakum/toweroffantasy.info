@@ -1,6 +1,6 @@
 <script>
     import Meta from "$components/Meta.svelte";
-    import EntryItem from "$components/EntryItem.svelte";
+    import EntryItem from "$components/EntryItem/EntryItem.svelte";
 
     export let data;
 </script>

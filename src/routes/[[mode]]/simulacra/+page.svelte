@@ -1,12 +1,12 @@
 <script>
     import Meta from "$components/Meta.svelte";
-    import EntryItem from "$components/EntryItem.svelte";
-    import SearchBar from "$components/SearchBar.svelte";
-    import TypeFilters from "$components/TypeFilters.svelte";
+    import EntryItem from "$components/EntryItem/EntryItem.svelte";
+    import SearchBar from "$components/Filters/SearchBar.svelte";
+    import TypeFilters from "$components/Filters/TypeFilters.svelte";
     import { queryParameters } from "sveltekit-search-params";
-    import RarityFilters from "$components/RarityFilters.svelte";
-    import BannerFilters from "$components/BannerFilters.svelte";
-    import VersionSelector from "$components/VersionSelector.svelte";
+    import RarityFilters from "$components/Filters/RarityFilters.svelte";
+    import BannerFilters from "$components/Filters/BannerFilters.svelte";
+    import VersionSelector from "$components/Filters/VersionSelector.svelte";
     import { showWepOnSimEntry } from "$lib/stores";
 
     export let data;

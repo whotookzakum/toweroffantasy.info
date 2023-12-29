@@ -67,6 +67,22 @@ type BaseStats {
   value: Float!
 }
 
+type Fashion {
+  assets: FashionAssets!
+  description: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  simulacrumId: String!
+  source: String!
+  weaponId: String!
+}
+
+type FashionAssets {
+  grayPainting: String!
+  painting: String!
+}
+
 type Food {
   buff: String!
   categories: [String!]!
@@ -231,6 +247,7 @@ type Simulacra {
   awakening: [Awakening!]!
   banners: [Banner!]!
   birthday: String
+  fashion: [Fashion!]!
   gender: String
   height: String
   homeTown: String
@@ -254,6 +271,7 @@ type SimulacraV2 {
   awakening: [Awakening!]!
   banners: [Banner!]!
   birthday: String
+  fashion: [Fashion!]!
   gender: String
   height: String
   homeTown: String

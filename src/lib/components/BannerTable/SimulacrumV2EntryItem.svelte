@@ -1,5 +1,5 @@
 <script>
-    import EntryItem from "$components/EntryItem.svelte";
+    import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import { graphql, fragment } from "$houdini";
 
     export let entry;

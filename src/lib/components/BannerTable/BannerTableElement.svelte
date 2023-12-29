@@ -1,7 +1,7 @@
 <script>
     import { page } from "$app/stores"
     import { userLocale } from "$lib/stores";
-    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
+    import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
 
     export let banners, highlight, dateOptions, bannerSearchTerm, showReruns;
     

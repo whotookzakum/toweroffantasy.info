@@ -1,6 +1,6 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
-    import EntryItem from "$components/EntryItem.svelte";
+    import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import WeaponAttack from "$components/WeaponAttack.svelte";
     import { weaponLevel } from "$lib/stores";
     import Tier from "$components/Tier.svelte";

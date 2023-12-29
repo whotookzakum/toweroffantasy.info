@@ -1,5 +1,5 @@
 <script>
-    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
+    import CategoryIcon from "./CategoryIcon.svelte";
     import RarityIcon from "./RarityIcon.svelte";
     import Tier from "./Tier.svelte";
     import NucleusIcons from "./NucleusIcons.svelte";

@@ -1,6 +1,6 @@
 <script>
     import filters from "./filters.json";
-    import CategoryIcon from "$lib/components/simulacrum/CategoryIcon.svelte";
+    import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import { queryParameters } from "sveltekit-search-params";
 
     export let type;
