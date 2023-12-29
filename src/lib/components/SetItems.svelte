@@ -4,7 +4,13 @@
 </script>
 
 <ul class="entry-list">
-    <EntryItem entry={simulacrum_v2} />
-    <EntryItem entry={weapon} />
-    <EntryItem entry={matrix} />
+    {#if simulacrum_v2}
+        <EntryItem entry={simulacrum_v2} />
+    {/if}
+    {#if weapon}
+        <EntryItem entry={weapon} />
+    {/if}
+    {#if matrix}
+        <EntryItem entry={matrix} />
+    {/if}
 </ul>

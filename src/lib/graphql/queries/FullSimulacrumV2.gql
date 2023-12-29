@@ -10,17 +10,14 @@ query FullSimulacrumV2($id: String) {
             name
             need
         }
+        assetsA0 {
+            descPainting
+        }
         birthday
         gender
         height
         homeTown
-        id
-        isReleased
         likedGiftTypes
-        matrixId
-        name
-        rarity
-        version
         voicing {
             cn
             en
@@ -28,6 +25,6 @@ query FullSimulacrumV2($id: String) {
             kr
             pt
         }
-        weaponId
+        __typename
     }
 }

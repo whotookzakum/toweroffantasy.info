@@ -146,6 +146,7 @@ type Mount {
   description: String!
   id: String!
   name: String
+  rarity: Int!
   unlockItems: [UnlockItem!]!
   version: String!
 }
@@ -160,7 +161,7 @@ type MountPart {
   icon: String!
   id: String!
   name: String!
-  rarity: String!
+  rarity: Int!
   type: String!
 }
 

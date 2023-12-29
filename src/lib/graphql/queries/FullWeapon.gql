@@ -1,36 +1,7 @@
 query FullWeapon($id: String) {
     weapon(id: $id) {
-        rarity
-        name
-        id
+        ...weaponEntry
         simulacrumId
-        assets {
-            icon
-        }
-        element
-        category
-        charge {
-            tier
-            value
-        }
-        shatter {
-            tier
-            value
-        }
-        banners {
-            bannerNumber
-            isFinalBanner
-            detailsLink
-            endDate
-            isCollab
-            isLimitedBannerOnly
-            isRerun
-            matrixId
-            simulacrumId
-            simulacrumName
-            startDate
-            weaponId
-        }
         weaponEffects {
             description
             title
