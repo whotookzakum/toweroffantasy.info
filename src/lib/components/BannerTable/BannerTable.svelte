@@ -33,7 +33,6 @@
         return banners
             .filter(b => b.simulacrumId === banner.simulacrumId)
             .reduce((acc, curr) => {
-                console.log(curr.bannerNumber, acc, curr.bannerNumber < acc)
                 return curr.bannerNumber < acc ? curr.bannerNumber : acc
             }, 99999)
     }

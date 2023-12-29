@@ -8,7 +8,7 @@
 
 <div>
     <div class="flex g-50" style="align-items: baseline;">
-        <h3 style="font-size: var(--step-2); margin-block: 0 0.5rem">
+        <h3 style="font-size: var(--step-2); margin-block: 1rem 0.5rem">
             Current Banners
         </h3>
         <button on:click={() => (timeNow = new Date().getTime())}>

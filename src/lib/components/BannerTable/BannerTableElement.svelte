@@ -1,10 +1,14 @@
 <script>
-    import { page } from "$app/stores"
+    import { page } from "$app/stores";
     import { userLocale } from "$lib/stores";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
 
-    export let banners, highlightRows, dateOptions, bannerSearchTerm, showReruns;
-    
+    export let banners,
+        highlightRows,
+        dateOptions,
+        bannerSearchTerm,
+        showReruns;
+
     // could implement advanced filters like "element:fire", "#37", "type:dps" but easier with visual filters
     $: filteredBanners = banners
         ?.filter(
@@ -27,7 +31,9 @@
     };
 
     function getWeeksSinceLaunch(end) {
-        const start = $page.url.pathname.includes("/cn") ? "16 Dec 2021" : "10 Aug 2022";
+        const start = $page.url.pathname.includes("/cn")
+            ? "16 Dec 2021"
+            : "10 Aug 2022";
         return Math.round(getDurationInDays(start, end) / 7);
     }
 </script>
@@ -52,8 +58,18 @@
                     <a
                         href="/simulacra/{banner.simulacrumId}"
                         style:color="var(--element-{banner.element})"
-                        >{banner.simulacrumName}</a
+                        class="flex g-25"
+                        style="align-items: center"
                     >
+                        <img
+                            src={banner.simulacrum.assetsA0.avatar}
+                            alt=""
+                            width="52"
+                            height="52"
+                            style="margin: -0.3rem 0 -0.3rem -0.3rem"
+                        />
+                        {banner.simulacrumName}
+                    </a>
                 </td>
                 <td>
                     <CategoryIcon type={banner.element} style="width: 30px" />
