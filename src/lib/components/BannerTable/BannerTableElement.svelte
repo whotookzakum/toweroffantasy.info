@@ -3,7 +3,7 @@
     import { userLocale } from "$lib/stores";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
 
-    export let banners, highlight, dateOptions, bannerSearchTerm, showReruns;
+    export let banners, highlightRows, dateOptions, bannerSearchTerm, showReruns;
     
     // could implement advanced filters like "element:fire", "#37", "type:dps" but easier with visual filters
     $: filteredBanners = banners
@@ -32,7 +32,7 @@
     }
 </script>
 
-<table class:highlight>
+<table class:highlightRows>
     <thead>
         <th>#</th>
         <th>Name</th>
@@ -103,7 +103,7 @@
 </table>
 
 <style lang="scss">
-    table.highlight {
+    table.highlightRows {
         overflow: hidden;
 
         .Superpower {

@@ -1,6 +1,6 @@
 <script>
     import { userLocale } from "$lib/stores";
-    import SimulacrumV2Query from "./SimulacrumV2Query.svelte";
+    import EntryItem from "../EntryItem/EntryItem.svelte"
     import Icon from "@iconify/svelte";
 
     export let currentBanners, timeNow, dateOptions;
@@ -29,10 +29,7 @@
 
     <ul class="entry-list">
         {#each currentBanners as banner}
-            <SimulacrumV2Query
-                id={banner.simulacrumId}
-                isNew={banner.totalBanners === 1}
-            />
+            <EntryItem entry={banner.simulacrum} isNew={banner.isNew} />
         {/each}
     </ul>
 </div>
