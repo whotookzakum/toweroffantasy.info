@@ -1,6 +1,6 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
-    import EntryItem from "$components/EntryItem/EntryItem.svelte";
+    import SetItems from "$components/SetItems.svelte";
     import WeaponAttack from "$components/WeaponAttack.svelte";
     import { weaponLevel } from "$lib/stores";
     import Tier from "$components/Tier.svelte";
@@ -33,11 +33,7 @@
 
     <aside class="grid g-100">
         <div class="sticky-wrapper">
-            <ul class="entry-list">
-                <EntryItem entry={simulacrum_v2} />
-                <EntryItem entry={weapon} />
-                <EntryItem entry={matrix} />
-            </ul>
+            <SetItems {simulacrum_v2} {weapon} {matrix} />
 
             <div class="box grid g-25">
                 <a href="#effects">Weapon Effects</a>

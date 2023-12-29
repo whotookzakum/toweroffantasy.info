@@ -1,10 +1,10 @@
-import { BannersStore, SimulacraV2Store } from '$houdini'
+import { AllBannersStore, AllSimulacraV2Store } from '$houdini'
 
 export const load = async (event) => {
-    const bannersStore = new BannersStore()
+    const bannersStore = new AllBannersStore()
     const bannersRes = await bannersStore.fetch({ event })
 
-    const simulacraStore = new SimulacraV2Store()
+    const simulacraStore = new AllSimulacraV2Store()
     const simulacraRes = await simulacraStore.fetch({ event })
 
     const banners = bannersRes.data.banners.map(banner => ({

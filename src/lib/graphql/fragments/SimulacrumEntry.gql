@@ -1,6 +1,9 @@
 fragment simulacrumEntry on Simulacra {
     name
+    rarity
     id
+    weaponId
+    matrixId
     version
     banners {
         bannerNumber

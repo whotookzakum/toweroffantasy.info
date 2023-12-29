@@ -1,4 +1,4 @@
-query Weapon($id: String) {
+query FullWeapon($id: String) {
     weapon(id: $id) {
         rarity
         name

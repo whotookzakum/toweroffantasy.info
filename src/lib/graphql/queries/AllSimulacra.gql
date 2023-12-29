@@ -1,4 +1,4 @@
-query Simulacra($lang: String) {
+query AllSimulacra($lang: String) {
     simulacra(lang: $lang) {
         ...simulacrumEntry
         __typename

@@ -1,6 +1,0 @@
-query Simulacrum($id: String) {
-    simulacrum(id: $id) {
-        ...simulacrumEntry
-        __typename
-    }
-}

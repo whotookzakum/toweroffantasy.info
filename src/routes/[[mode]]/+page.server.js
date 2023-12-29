@@ -1,7 +1,7 @@
-import { WeaponsStore, SimulacraV2Store, MatricesStore } from '$houdini'
+import { WeaponEntriesStore, SimulacraV2Store, MatricesStore } from '$houdini'
 
 export const load = async (event) => {
-    const weaponsStore = new WeaponsStore()
+    const weaponsStore = new WeaponEntriesStore()
     const simulacraStore = new SimulacraV2Store()
     const matricesStore = new MatricesStore()
 

@@ -1,4 +1,4 @@
-query Banners {
+query AllBanners {
     banners {
         bannerNumber
         category

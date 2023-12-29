@@ -1,4 +1,4 @@
-query Weapons($lang: String) {
+query AllWeapons($lang: String) {
     weapons(lang: $lang) {
         ...weaponEntry
         __typename

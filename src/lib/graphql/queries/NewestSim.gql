@@ -1,8 +1,0 @@
-query NewestSim {
-    simulacra {
-        assetsA0 {
-            # awakenPhoto
-            titlePicture
-        }
-    }
-}

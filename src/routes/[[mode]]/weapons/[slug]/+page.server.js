@@ -2,8 +2,8 @@ import { WeaponStore, SimulacrumV2Store, MatrixStore } from '$houdini'
 
 export const load = async (event) => {
     // Weapon full data
-    const query = new WeaponStore()
-    const { data } = await query.fetch({ event, variables: { id: event.params.slug } })
+    const wepQuery = new WeaponStore()
+    const { data } = await wepQuery.fetch({ event, variables: { id: event.params.slug } })
     const { weapon } = data
 
     // Simulacrum entry data

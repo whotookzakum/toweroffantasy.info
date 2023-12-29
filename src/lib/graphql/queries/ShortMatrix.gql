@@ -1,4 +1,4 @@
-query Matrix($id: String) {
+query ShortMatrix($id: String) {
     matrix(id: $id) {
         ...matrixEntry
         __typename
