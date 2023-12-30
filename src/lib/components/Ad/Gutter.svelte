@@ -1,8 +1,8 @@
 <script>
     import { page } from "$app/stores";
     import { browser } from "$app/environment";
-    import unitOptions from "./A_UnitOptions.json";
-    import { onMount } from "svelte";
+
+    // Auto-refresh if window size passes through breakpoints. Ad script automatically places a properly sized ad, however sizes can also be manually specified.
 
     const options = {
         refreshTime: 30,
@@ -26,7 +26,6 @@
 
     // Check page refresh and large/small breakpoints
     $: if ($page.url.pathname) {
-        console.log("refreshing")
         if (innerWidth > 1600 && previousWidth !== 1600) {
             previousWidth = 1600;
             generateAd();
