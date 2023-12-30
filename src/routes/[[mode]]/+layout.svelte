@@ -6,7 +6,7 @@
     import { onMount } from "svelte";
     import { page } from "$app/stores"
     import { browser } from "$app/environment"
-    import Ad from "$components/Ad.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     // Alternative would be to have a store derived from page called linkPrefix, and just append that to all hrefs. It will either be /cn or blank.
     // This does not work for client fetched data, i.e. the banner table

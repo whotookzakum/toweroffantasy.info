@@ -53,20 +53,7 @@
         "stickyStackLimit": 15,
         "stickyStackSpace": 2.5,
         "stickyStackOffset": 25,
-        "sizes": [
-            [
-                "300",
-                "250"
-            ],
-            [
-                "160",
-                "600"
-            ],
-            [
-                "300",
-                "600"
-            ]
-        ],
+        "sizes": [],
         "report": {
             "enabled": true,
             "icon": true,

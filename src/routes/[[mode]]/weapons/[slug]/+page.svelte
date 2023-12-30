@@ -9,7 +9,7 @@
     import Youtube from "$components/Youtube.svelte";
     import Rating from "$components/simulacrum/Rating.svelte";
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
-    import Ad from "$components/Ad.svelte"
+    import Ad from "$components/Ad/Ad.svelte"
 
     export let data;
     const { weapon, simulacrum_v2, matrix, banners } = data
