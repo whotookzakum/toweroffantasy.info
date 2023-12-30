@@ -4,13 +4,15 @@
     import unitOptions from "./A_UnitOptions.json";
     import { onMount } from "svelte";
     export let unit = "";
+    export let style;
     export let refreshOnNav = false;
 
-    let optionName = unit;
-
-    if (optionName.includes("Banner")) optionName = "Banner";
+    let optionName = unit.replace(/\d+/g, "");
+    let innerWidth, previousWidth;
+    let hidden = false;
 
     onMount(() => {
+        previousWidth = window.innerWidth
         generateAd();
     });
 
@@ -18,25 +20,52 @@
         generateAd();
     }
 
-    function generateAd() {
+    function generateAd(type = optionName) {
         window["nitroAds"].createAd("np" + unit, {
-            ...unitOptions[optionName],
-            // demo: unit === "Video" ? false : true,
+            ...unitOptions[type],
+            demo: true
         });
     }
+
+    // Refresh ads when resizing past breakpoints
+    $: if (optionName === "Gutter") {
+        if (innerWidth > 1600 && previousWidth !== 1600) {
+            previousWidth = 1600;
+            hidden = false
+            generateAd("Gutter")
+            console.log("hello")
+        }
+        else if (innerWidth < 1600 && innerWidth > 1280 && previousWidth !== 1280) {
+            previousWidth = 1280;
+            hidden = false
+            generateAd("Gutter")
+            console.log("medium")
+        }
+        else if (innerWidth < 1280 && previousWidth !== 0) {
+            previousWidth = 0;
+            hidden = true
+            console.log("zero")
+        }
+    }
+
+    // if
+    // (innerWidth > 1600) 300px gutters
+    // (innerWidth > 1280) 160px gutters
+    // 0 gutters
 </script>
 
-{#if unit === "Video"}
-    <div id="npVideo" />
+<svelte:window bind:innerWidth />
+{#if !hidden}
+    <div id="np{unit}" class="grid {optionName}" {style} />
 {/if}
 
-{#if unit.includes("Banner")}
-    <!-- <div class="full-bleed unit-container">
-        <small class="background-message">
-            🥺 Please consider whitelisting us. Ads support free resources like
-            this!
-        </small>
-        <div id={np${unit}} />
-    </div> -->
-    <div id="np{unit}" class="full-bleed" />
-{/if}
+<style lang="scss">
+    div {
+        background: green;
+    }
+
+    .Banner {
+        min-height: 100px !important;
+        place-content: center;
+    }
+</style>

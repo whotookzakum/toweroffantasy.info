@@ -2,17 +2,17 @@
     import SvelteMarkdown from "svelte-markdown";
     import SetItems from "$components/SetItems.svelte";
     import WeaponAttack from "$components/WeaponAttack.svelte";
-    import { weaponLevel } from "$lib/stores";
-    import Tier from "$components/Tier.svelte";
-    import CategoryIcon from "$components/simulacrum/CategoryIcon.svelte";
+    import { weaponLevel, bgImg } from "$lib/stores";
+    import Tier from "$components/EntryItem/Tier.svelte";
+    import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
     import Youtube from "$components/Youtube.svelte";
     import Rating from "$components/simulacrum/Rating.svelte";
-    import RarityIcon from "$components/RarityIcon.svelte";
-    import { bgImg } from "$lib/stores"
+    import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
+    import Ad from "$components/Ad.svelte"
 
     export let data;
-    const { weapon, simulacrum_v2, matrix } = data
+    const { weapon, simulacrum_v2, matrix, banners } = data
 
     let stars = 1;
     let attackCategory = "skill";
@@ -46,6 +46,7 @@
     </aside>
 
     <article>
+        <Ad unit="Banner1" />
         <div class="flex g-100" style="justify-content: space-between;">
             <div class="flex box g-100" style="align-items: start">
                 <img
@@ -218,23 +219,23 @@
     <footer>
         {#if weapon.banners?.length > 0}
             <h2 id="banners">Banners</h2>
-            <BannerTable bannerSearchTerm={weapon.banners[0].simulacrumName} />
+            <BannerTable {banners} bannerSearchTerm={simulacrum_v2.name} />
         {/if}
     </footer>
 </div>
 
 <style lang="scss">
     :global(.page-layout) {
-        grid-template-columns: 70ch 1fr;
+        grid-template-columns: 728px 1fr;
         grid-template-areas:
             "header header"
             "article aside"
             "footer footer";
         align-items: start;
         align-content: start;
-        position: absolute;
+        // position: absolute;
         z-index: 10;
-        width: 100%;
+        // width: 100%;
         // background: var(--bg);
     }
 

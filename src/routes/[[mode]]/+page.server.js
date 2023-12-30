@@ -1,9 +1,9 @@
-import { WeaponEntriesStore, SimulacraV2Store, MatricesStore } from '$houdini'
+import { AllWeaponsStore, AllSimulacraV2Store, AllMatricesStore } from '$houdini'
 
 export const load = async (event) => {
-    const weaponsStore = new WeaponEntriesStore()
-    const simulacraStore = new SimulacraV2Store()
-    const matricesStore = new MatricesStore()
+    const weaponsStore = new AllWeaponsStore()
+    const simulacraStore = new AllSimulacraV2Store()
+    const matricesStore = new AllMatricesStore()
 
     const weaponsRes = await weaponsStore.fetch({ event })
     const simulacraRes = await simulacraStore.fetch({ event })

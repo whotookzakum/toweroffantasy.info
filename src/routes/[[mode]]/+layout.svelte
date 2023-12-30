@@ -6,6 +6,7 @@
     import { onMount } from "svelte";
     import { page } from "$app/stores"
     import { browser } from "$app/environment"
+    import Ad from "$components/Ad.svelte";
 
     // Alternative would be to have a store derived from page called linkPrefix, and just append that to all hrefs. It will either be /cn or blank.
     // This does not work for client fetched data, i.e. the banner table
@@ -34,13 +35,18 @@
 
 <div class="layout grid g-50">
     <TopNav />
-    <div class="gutter-left"></div>
+    <div class="gutter-left">
+        <Ad unit="Gutter1" />
+    </div>
     <div class="main-content">
         <main>
+            <Ad unit="Banner1" />
             <slot />
         </main>
     </div>
-    <div class="gutter-right"></div>
+    <div class="gutter-right">
+        <Ad unit="Gutter2" />
+    </div>
 </div>
 
 <BackgroundImage src={data.bgImg} />
@@ -89,12 +95,10 @@
     }
 
     .gutter-right {
-        // background: red;
         grid-column: -2/-1;
     }
 
     .gutter-left {
-        // background: red;
         grid-column: 1/2;
     }
 </style>

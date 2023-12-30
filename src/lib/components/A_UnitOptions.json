@@ -4,8 +4,7 @@
         "refreshTime": 30,
         "format": "anchor",
         "anchor": "bottom",
-        "anchorBgColor": "transparent",
-        "mediaQuery": "(min-width: 1025px), (min-width: 768px) and (max-width: 1024px), (min-width: 320px) and (max-width: 767px)"
+        "anchorBgColor": "transparent"
     },
     "Article": {
         "refreshLimit": 20,
@@ -21,22 +20,16 @@
         "mediaQuery": "(min-width: 1025px)"
     },
     "Banner": {
-        "refreshLimit": 20,
         "refreshTime": 30,
         "renderVisibleOnly": true,
-        "refreshVisibleOnly": true,
         "sizes": [
             [
                 "728",
                 "90"
             ],
             [
-                "300",
-                "250"
-            ],
-            [
-                "336",
-                "280"
+                "970",
+                "90"
             ],
             [
                 "320",
@@ -46,6 +39,39 @@
                 "320",
                 "100"
             ]
-        ]
+        ],
+        "report": {
+            "enabled": true,
+            "icon": true,
+            "wording": "Report Ad",
+            "position": "top-right"
+        }
+    },
+    "Gutter": {
+        "refreshTime": 30,
+        "format": "sticky-stack",
+        "stickyStackLimit": 15,
+        "stickyStackSpace": 2.5,
+        "stickyStackOffset": 25,
+        "sizes": [
+            [
+                "300",
+                "250"
+            ],
+            [
+                "160",
+                "600"
+            ],
+            [
+                "300",
+                "600"
+            ]
+        ],
+        "report": {
+            "enabled": true,
+            "icon": true,
+            "wording": "Report Ad",
+            "position": "top-right"
+        }
     }
 }
