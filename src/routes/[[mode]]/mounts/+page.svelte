@@ -1,21 +1,26 @@
 <script>
-    import { searchTerm } from "$lib/stores";
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
+    import SearchBar from "$components/Filters/SearchBar.svelte";
+    import { queryParameters } from "sveltekit-search-params";
 
     export let data;
+    const searchParams = queryParameters();
 
-    $: entries = data.mounts.filter((entry) =>
-        entry.name?.toLowerCase().includes($searchTerm.toLowerCase()),
-    );
+    $: entries = data.mounts.filter((entry) => {
+        const { q } = $searchParams;
+        const searchMatch = q
+            ? entry.name.toLowerCase().includes(q.toLowerCase())
+            : true;
 
-    // Alternative logic for isNew: !isRerun && todaysDate < endDate && todaysDate > startDate
+        return searchMatch
+    });
 </script>
 
 <Meta
     title="Mounts | Tower of Fantasy Index"
     description="Mounts are vehicles that help you traverse terrain more quickly. All mounts move at the same speed. Owning multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels."
-    image={entries[0].assets.icon}
+    image={data.mounts[0].assets.icon}
 />
 
 <h1>Mounts</h1>
@@ -25,6 +30,10 @@
     maintaining mounts will reward you with dark crystals. Some mounts have
     different colors available at certain levels.
 </p>
+
+<div class="filters-row">
+    <SearchBar />
+</div>
 
 <ul class="entry-list">
     {#each entries as entry (entry.id)}

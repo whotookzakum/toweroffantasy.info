@@ -9,6 +9,7 @@
     export let entry;
     export let isNew = false;
     export let matrixPieces = 0;
+    // Alternative logic for isNew: !isRerun && todaysDate < endDate && todaysDate > startDate
 
     let mainRoute = {
         Simulacra: "simulacra",

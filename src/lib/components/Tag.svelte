@@ -1,6 +1,6 @@
 <script>
     export let type = "";
-    export let style;
+    export let style = "";
 
     const text = {
         new: "New",
@@ -27,6 +27,7 @@
         text-transform: capitalize;
         padding: 0.3em 0.5em;
         letter-spacing: 0.03em;
+        white-space: nowrap;
         
         --new: rgb(204, 148, 27);
         --final: rgb(42, 129, 179);
