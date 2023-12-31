@@ -6,6 +6,7 @@
     import TableFilters from "./TableFilters.svelte";
 
     export let banners;
+    export let style;
     export let showStats = false;
     export let showCurrentBanners = false;
     export let bannerSearchTerm = "";
@@ -38,7 +39,7 @@
     }
 </script>
 
-<div class="grid g-100 banner-table-wrapper" style="margin: 1rem 0;">
+<div class="grid g-100 banner-table-wrapper" {style}>
     {#if showCurrentBanners}
         <CurrentBanners {currentBanners} {timeNow} {dateOptions} />
         <h3 style="font-size: var(--step-2); margin-top: 1rem;">All Banners</h3>
@@ -60,6 +61,10 @@
 </div>
 
 <style lang="scss">
+    .banner-table-wrapper {
+        margin: 1rem 0;
+    }
+
     :global(.banner-table-wrapper a) {
         font-weight: 600;
         border: none;

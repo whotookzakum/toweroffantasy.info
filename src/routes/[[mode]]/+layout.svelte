@@ -3,7 +3,6 @@
     import "$lib/styles/globals.scss";
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     import TopNav from "$components/TopNav.svelte";
-    import { onMount } from "svelte";
     import { page } from "$app/stores"
     import { browser } from "$app/environment"
     import Ad from "$components/Ad/Ad.svelte";
@@ -56,7 +55,7 @@
         margin: auto;
         font-size: var(--step--1);
         grid-template-columns: 300px 1fr 300px;
-        gap: 1rem;
+        gap: 0;
     }
 
     @media (max-width: 1600px) {
@@ -71,6 +70,24 @@
         }
     }
 
+    .main-content {
+        grid-column: 2;
+        max-width: 1192px;
+        width: 100%;
+        justify-self: center;
+        padding: 1rem;
+        background: hsla(236, 45%, 10%, 0.93);
+    }
+
+    .gutter-right {
+        grid-column: -2/-1;
+    }
+
+    .gutter-left {
+        grid-column: 1/2;
+    }
+
+    // Misc
     :global(ul.entry-list) {
         --img-width: 140px;
         display: grid;
@@ -80,25 +97,16 @@
         width: 100%;
     }
 
+    @media (max-width: 360px) {
+        :global(ul.entry-list) {
+            --img-width: 130px;
+        }
+    }
+
     :global(.filters-row) {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
         margin-top: 1.5rem;
-    }
-
-    .main-content {
-        grid-column: 2;
-        max-width: 1160px;
-        width: 100%;
-        justify-self: center;
-    }
-
-    .gutter-right {
-        grid-column: -2/-1;
-    }
-
-    .gutter-left {
-        grid-column: 1/2;
     }
 </style>

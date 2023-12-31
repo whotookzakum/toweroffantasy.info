@@ -54,7 +54,7 @@
         transition: opacity 0.5s ease;
         width: auto;
         height: auto;
-        opacity: 0.1;
+        opacity: 0.7;
     }
 
     // /UI/shizhuang/nitai/xiangqing (new, full pic no fade, higher res)

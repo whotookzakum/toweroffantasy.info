@@ -1,127 +1,43 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import SetItems from "$components/SetItems.svelte";
-    import WeaponAttack from "$components/WeaponAttack.svelte";
-    import { weaponLevel, bgImg } from "$lib/stores";
+    import WeaponAttack from "./Skill.svelte";
+    import { weaponLevel, weaponStars, bgImg } from "$lib/stores";
     import Tier from "$components/EntryItem/Tier.svelte";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
     import Youtube from "$components/Youtube.svelte";
     import Rating from "$components/simulacrum/Rating.svelte";
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
-    import Ad from "$components/Ad/Ad.svelte"
+    import AnchorLinks from "$components/AnchorLinks.svelte";
+    import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
+    import WeaponStarSlider from "./WeaponStarSlider.svelte";
+    import WeaponAttacks from "./WeaponAttacks.svelte";
+    import EntryItem from "../../../../lib/components/EntryItem/EntryItem.svelte";
 
     export let data;
-    const { weapon, simulacrum_v2, matrix, banners } = data
+    const { weapon, simulacrum_v2, matrix, banners } = data;
 
-    let stars = 1;
-    let attackCategory = "skill";
-    $bgImg = simulacrum_v2.assetsA0.titlePicture
+    console.log(weapon.meta)
+    $bgImg = simulacrum_v2.assetsA0.titlePicture;
 </script>
 
-<span>Stars: {stars}</span>
-<input type="range" min="1" max="6" bind:value={stars} />
-
-<span>Level: {$weaponLevel}</span>
-<input type="range" min="0" max="200" bind:value={$weaponLevel} />
-
-<div class="page-layout grid g-100">
-    <header>
-        <h1>{weapon.name}</h1>
-        <p><RarityIcon rarity={weapon.rarity} /> Weapon</p>
-    </header>
-
-    <aside class="grid g-100">
-        <div class="sticky-wrapper">
-            <SetItems {simulacrum_v2} {weapon} {matrix} />
-
-            <div class="box grid g-25">
-                <a href="#effects">Weapon Effects</a>
-                <a href="#effects">Advancements</a>
-                <a href="#skills">Skills</a>
-                <a href="#meta">Meta</a>
-                <a href="#banners">Banners</a>
+<article>
+    <aside>
+        <div class="sticky grid g-100">
+            <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
+            <div class="grid g-100">
+                <WeaponLevelSlider />
+                <WeaponStarSlider />
             </div>
         </div>
     </aside>
 
-    <article>
-        <Ad unit="Banner1" />
-        <div class="flex g-100" style="justify-content: space-between;">
-            <div class="flex box g-100" style="align-items: start">
-                <img
-                    src={weapon.assets.icon}
-                    alt=""
-                    width="200"
-                    height="200"
-                    style="align-self: center"
-                />
-                <ul class="stats">
-                    <li class="stat">
-                        <CategoryIcon type={weapon.element} />
-                        <div class="stat-text">
-                            <span class="stat-name">Element</span>
-                            <b class="stat-value">{weapon.element}</b>
-                        </div>
-                    </li>
-                    <li class="stat">
-                        <CategoryIcon type={weapon.category} />
-                        <div class="stat-text">
-                            <span class="stat-name">Type</span>
-                            <b class="stat-value">{weapon.category}</b>
-                        </div>
-                    </li>
-                    <li class="stat">
-                        <Tier
-                            tier={weapon.weaponAdvancements[stars - 1].shatter
-                                .tier}
-                            style="font-size: var(--step-2); width: 40px;"
-                        />
-                        <div class="stat-text">
-                            <span class="stat-name">Shatter</span>
-                            <b class="stat-value"
-                                >{weapon.weaponAdvancements[
-                                    stars - 1
-                                ].shatter.value.toFixed(2)}</b
-                            >
-                        </div>
-                    </li>
-                    <li class="stat">
-                        <Tier
-                            tier={weapon.weaponAdvancements[stars - 1].charge
-                                .tier}
-                            style="font-size: var(--step-2); width: 40px;"
-                        />
-                        <div class="stat-text">
-                            <span class="stat-name">Charge</span>
-                            <b class="stat-value"
-                                >{weapon.weaponAdvancements[
-                                    stars - 1
-                                ].charge.value.toFixed(2)}</b
-                            >
-                        </div>
-                    </li>
-                </ul>
+    <div class="article-content">
+        <h1>{weapon.name}</h1>
+        <p><RarityIcon rarity={weapon.rarity} /> Weapon</p>
 
-                <ul class="stats">
-                    {#each weapon.weaponStats as stat}
-                        <li class="stat col-2">
-                            <img
-                                src={stat.icon}
-                                alt=""
-                                width="40"
-                                height="40"
-                                class="invert"
-                            />
-                            <div class="stat-text">
-                                <span class="stat-name">{stat.name}</span>
-                                <b class="stat-value">{$weaponLevel}</b>
-                            </div>
-                        </li>
-                    {/each}
-                </ul>
-            </div>
-        </div>
+        
 
         <h2 id="effects">Weapon Effects</h2>
         <span>{weapon.elementEffect.title}</span>
@@ -141,51 +57,10 @@
             {/each}
         {/if}
 
-        {#if weapon.weaponAttacks}
-            <h2 id="skills">Skills</h2>
-            <span>Level: {$weaponLevel}</span>
-            <input type="range" min="0" max="200" bind:value={$weaponLevel} />
-            <!-- Hide this as a hint icon popover -->
-            <p>
-                Skills can be strengthened by leveling up your weapon; every 10
-                weapon levels increases skill level by 1. For example, a level
-                143 weapon will have skill level 14, a level 90 weapon will have
-                skill level 90, etc. Percent values do not change, only flat
-                values will increase alongside skill level.
-            </p>
+        <WeaponAttacks {weapon} />
+        
 
-            <label>
-                <input
-                    type="radio"
-                    value="normals"
-                    bind:group={attackCategory}
-                /> Normal
-            </label>
-
-            <label>
-                <input type="radio" value="dodge" bind:group={attackCategory} />
-                Dodge
-            </label>
-
-            <label>
-                <input type="radio" value="skill" bind:group={attackCategory} />
-                Skill
-            </label>
-
-            <label>
-                <input
-                    type="radio"
-                    value="discharge"
-                    bind:group={attackCategory}
-                /> Discharge
-            </label>
-
-            {#each weapon.weaponAttacks[attackCategory] as data}
-                <WeaponAttack {data} />
-            {/each}
-        {/if}
-
-        <h2 id="meta">{weapon.name} Meta</h2>
+        <h2 id="meta">Meta</h2>
 
         {#if weapon.meta?.analyticVideoId}
             <h3>Analysis</h3>
@@ -193,15 +68,15 @@
         {/if}
 
         {#if weapon.meta?.rating}
-            <h3>Combat Analysis</h3>
+            <h3>Rating</h3>
             <Rating {weapon} />
         {/if}
 
         {#if weapon.meta?.recommendedPairings}
             <h3>Recommended Pairings</h3>
             <ul class="entry-list">
-                {#each weapon.meta.recommendedPairings as pairingId}
-                    <!-- <WeaponQuery id={pairingId} /> -->
+                {#each weapon.meta.recommendedPairings as recWep}
+                    <EntryItem entry={recWep} />
                 {/each}
             </ul>
         {/if}
@@ -209,64 +84,22 @@
         {#if weapon.meta?.recommendedMatrices}
             <h3>Recommended Matrices</h3>
             <ul class="entry-list">
-                {#each weapon.meta.recommendedMatrices as matrix}
-                    <!-- <MatrixQuery id={matrix.id} /> -->
+                {#each weapon.meta.recommendedMatrices as recMatrix}
+                    <EntryItem entry={recMatrix} matrixPieces={recMatrix.pieces} />
                 {/each}
             </ul>
         {/if}
-    </article>
 
-    <footer>
-        {#if weapon.banners?.length > 0}
-            <h2 id="banners">Banners</h2>
-            <BannerTable {banners} bannerSearchTerm={simulacrum_v2.name} />
-        {/if}
-    </footer>
-</div>
+        <h2 id="banners">Banners</h2>
+    </div>
+    <BannerTable
+        {banners}
+        bannerSearchTerm={simulacrum_v2.name}
+        style="grid-column: 1/-1"
+    />
+</article>
 
 <style lang="scss">
-    :global(.page-layout) {
-        grid-template-columns: 728px 1fr;
-        grid-template-areas:
-            "header header"
-            "article aside"
-            "footer footer";
-        align-items: start;
-        align-content: start;
-        // position: absolute;
-        z-index: 10;
-        // width: 100%;
-        // background: var(--bg);
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    article {
-        grid-area: article;
-    }
-
-    aside {
-        grid-area: aside;
-        align-self: stretch;
-
-        .sticky-wrapper {
-            position: sticky;
-            top: 0;
-            margin-bottom: auto;
-        }
-
-        a {
-            border: none;
-            width: fit-content;
-        }
-    }
-
     .stats {
         display: grid;
         // grid-template-columns: 12ch 12ch;

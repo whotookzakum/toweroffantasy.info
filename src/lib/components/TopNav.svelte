@@ -52,15 +52,15 @@
         background: var(--bg);
         border-bottom: 1px solid var(--surface1);
         grid-column: 1/-1;
-        padding: 0.5rem;
         position: sticky;
         top: 0;
         z-index: 20;
     }
 
     .nav-content {
-        max-width: 1160px;
+        max-width: 1192px;
         margin: auto;
+        padding: 0.5rem;
     }
 
     .sns-links {

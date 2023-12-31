@@ -5,7 +5,8 @@ export const userLocale = derived(page, ($page) => $page.url.searchParams.get('l
 
 export const userTimeZone = writable(undefined)
 
-export const weaponLevel = writable(200);
+export const weaponLevel = writable([200]);
+export const weaponStars = writable([0]);
 
 export const bgImg = writable("");
 

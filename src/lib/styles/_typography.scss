@@ -113,41 +113,6 @@ abbr[title*="China"] {
     }
 }
 
-.tag {
-    background: var(--surface1);
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
-    color: whitesmoke;
-    line-height: 1;
-    border-radius: 1rem;
-    text-decoration: none;
-    text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
-    font-size: var(--step--3);
-    font-weight: 500;
-    padding: 0.3em 0.5em;
-    letter-spacing: 0.03em;
-
-    &:not(.new) {
-        font-style: normal;
-    }
-
-    &.new {
-        color: white;
-        background: rgb(204, 148, 27);
-    }
-
-    &.final {
-        background: rgb(42, 129, 179);
-    }
-
-    &.collab {
-        background: forestgreen;
-    }
-
-    &.limited {
-        background: rgb(179, 42, 111);
-    }
-}
-
 .table-wrapper {
     overflow-x: auto;
     width: 100%;

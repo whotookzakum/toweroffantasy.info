@@ -10,4 +10,4 @@
 </script>
 
 <svelte:window bind:innerWidth />
-<svelte:component this={components[unitType]} {unit} {innerWidth} />
+<!-- <svelte:component this={components[unitType]} {unit} {innerWidth} /> -->

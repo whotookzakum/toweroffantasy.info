@@ -2,6 +2,7 @@
     import { page } from "$app/stores";
     import { userLocale } from "$lib/stores";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
+    import Tag from "../Tag.svelte";
 
     export let banners,
         highlightRows,
@@ -97,13 +98,13 @@
                 </td>
                 <td>
                     {#if banner.isFinalBanner}
-                        <i class="tag final">Final rerun</i>
+                        <Tag type="final" />
                     {/if}
                     {#if banner.isCollab}
-                        <i class="tag collab">Collab</i>
+                        <Tag type="collab" />
                     {/if}
                     {#if banner.isLimitedBannerOnly}
-                        <i class="tag limited">Limited-only</i>
+                        <Tag type="limited" />
                     {/if}
                 </td>
                 <td>

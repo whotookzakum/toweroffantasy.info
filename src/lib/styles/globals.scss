@@ -7,8 +7,8 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding: calc(60px + 1rem);
+    // scroll-behavior: smooth;
+    scroll-padding: 6.5rem;
 }
 
 html,
@@ -184,36 +184,78 @@ button {
     }
 }
 
-// Ads because ublock origin blocks the Ad.css asset that gets generated from putting this stuff in the component.
 
-// .unit-container {
-//     margin: var(--space-2xs) auto;
-//     position: relative;
-//     z-index: 90;
-//     box-sizing: border-box;
-//     width: 100%;
-//     max-width: 300px;
-//     min-height: 250px;
-// }
+// Used with <AnchorLinks />
+article {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 30ch;
 
-// @media (min-width: 728px) {
-//     .unit-container {
-//         max-width: 728px;
-//         min-height: 90px;
-//     }
-// }
+    .article-content {
+        grid-column: 1/2;
+    }
 
-// .background-message {
-//     position: absolute;
-//     display: grid;
-//     place-items: center;
-//     z-index: -1;
-//     text-align: center;
-//     font-size: var(--step--2);
-//     color: var(--tier-s);
-//     padding: 0 2rem;
-//     line-height: 1.4;
-//     border: 1px solid var(--tier-s);
-//     background: var(--surface3);
-//     inset: 0;
-// }
+    // Full-sized gutter track
+    aside {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    // Sticky box inside the track
+    aside .sticky {
+        position: sticky;
+        top: 120px;
+    }
+
+    .section-title {
+        font-size: var(--step--2);
+        margin: 0;
+        color: var(--text2);
+        line-height: 1;
+        font-weight: 400;
+    }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--surface1);
+}
+
+.rangeSlider {
+    margin-block: 1.25rem 4rem !important;
+
+    --range-slider: var(--surface2);
+
+    // --range-handle-inactive: var(--text2);
+    --range-handle: var(--accent);
+    --range-handle-focus: var(--accent);
+    --range-handle-border: var(--accent);
+
+    // --range-range-inactive: var(--text2);
+    // --range-range: var(--accent);
+
+    --range-float-inactive: var(--accent);
+    --range-float: var(--accent);
+    --range-float-text: hsl(220, 0%, 89%);
+}
+
+:root {
+    --range-pip: hsl(240, 10%, 25%, 0.7);
+    --range-pip-text: var(--text2);
+    --range-pip-active: var(--text2);
+    --range-pip-active-text: var(--text2);
+    --range-pip-hover: var(--accent);
+    --range-pip-hover-text: var(--accent);
+    --range-pip-in-range: var(--text2);
+    --range-pip-in-range-text: var(--text2);
+}
+
+.adjusted {
+    --range-handle-inactive: var(--accent);
+
+    --range-pip-active: var(--accent);
+    // --range-pip-active-text: var(--accent);
+    --range-pip-in-range: var(--accent);
+    // --range-pip-in-range-text: var(--accent);
+}

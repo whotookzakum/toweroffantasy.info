@@ -1,4 +1,4 @@
-import { FullWeaponStore, ShortSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store } from '$houdini'
+import { FullWeaponStore, ShortSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store, AllWeaponsStore, AllMatricesStore } from '$houdini'
 
 export const load = async (event) => {
     // Weapon full data
@@ -29,5 +29,34 @@ export const load = async (event) => {
         simulacrum: simulacraRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId),
     }))
 
-    return { weapon, simulacrum_v2, matrix, banners }
+    // Weapon meta (recommended matrices, recommended weapon pairings)
+    const allWepsQuery = new AllWeaponsStore()
+    const allWepsRes = await allWepsQuery.fetch({ event })
+
+    const recommendedPairings = weapon.meta.recommendedPairings.map(pairingId => allWepsRes.data.weapons.find(w => w.id === pairingId))
+
+    const allMatricesQuery = new AllMatricesStore()
+    const allMatricesRes = await allMatricesQuery.fetch({ event })
+
+    const recommendedMatrices = weapon.meta.recommendedMatrices.map(recMatrix => {
+        const matrixData = allMatricesRes.data.matrices.find(w => w.id === recMatrix.id)
+        return {
+            ...recMatrix,
+            ...matrixData
+        }
+    })
+
+    return { 
+        weapon: { 
+            ...weapon, 
+            meta: { 
+                ...weapon.meta, 
+                recommendedPairings,
+                recommendedMatrices
+            } 
+        }, 
+        simulacrum_v2, 
+        matrix, 
+        banners
+    }
 }

@@ -3,10 +3,12 @@
     import RarityIcon from "./RarityIcon.svelte";
     import Tier from "./Tier.svelte";
     import NucleusIcons from "./NucleusIcons.svelte";
-    import { showWepOnSimEntry } from "$lib/stores"
+    import { showWepOnSimEntry } from "$lib/stores";
+    import Tag from "../Tag.svelte";
 
     export let entry;
     export let isNew = false;
+    export let matrixPieces = 0;
 
     let mainRoute = {
         Simulacra: "simulacra",
@@ -14,7 +16,7 @@
         Matrice: "matrices",
         Weapon: "weapons",
         Mount: "mounts",
-        Relic: "relics"
+        Relic: "relics",
     };
 
     let weapon;
@@ -23,11 +25,11 @@
     switch (entry.__typename) {
         case "Simulacra":
         case "SimulacraV2":
-            weapon = entry.weapon
+            weapon = entry.weapon;
             avatarUri = entry.assetsA0.painting;
             break;
         case "Weapon":
-            weapon = entry
+            weapon = entry;
             avatarUri = weapon.assets.icon;
             break;
         case "Matrice":
@@ -48,14 +50,20 @@
     class:hide-weapon={!$showWepOnSimEntry}
 >
     {#if isNew}
-        <i class="tag new">New</i>
+        <Tag
+            type="new"
+            style="position: absolute; top: 0.5rem; left: 0.5rem;"
+        />
     {/if}
 
-    <a class:bottom={!weapon} href="/{mainRoute[entry.__typename]}/{entry.id}"
-        >{entry.name}</a
-    >
+    <a class:bottom={!weapon} href="/{mainRoute[entry.__typename]}/{entry.id}">
+        {entry.name}
+    </a>
 
     <div class="row-categories flex">
+        {#if matrixPieces}
+            <span class="matrix-pieces">{matrixPieces} pieces</span>
+        {/if}
         {#if weapon}
             <CategoryIcon type={weapon.element} width="30px" />
             <CategoryIcon type={weapon.category} width="30px" />
@@ -90,13 +98,7 @@
         <NucleusIcons {entry} />
     </div>
 
-    <img
-        class="avatar"
-        src={avatarUri}
-        alt=""
-        width="260"
-        height="349"
-    />
+    <img class="avatar" src={avatarUri} alt="" width="260" height="349" />
 
     <img
         class="bg"
@@ -126,6 +128,7 @@
         color: white;
         z-index: 1;
         text-shadow: 0 2px 6px var(--bg);
+        container-type: inline-size;
 
         &::before,
         &::after {
@@ -136,6 +139,12 @@
             background: linear-gradient(transparent 30%, var(--surface1));
             opacity: 0.7;
             inset: 0;
+        }
+    }
+
+    @container (max-width: 120px) {
+        .item a {
+            font-size: var(--step--2);
         }
     }
 
@@ -222,10 +231,11 @@
         // min-height: 27px;
     }
 
-    .tag {
-        position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
+    .matrix-pieces {
+        font-size: var(--step--2);
+        align-self: center;
+        font-weight: 600;
+        color: var(--accent);
     }
 
     .molinia {
@@ -263,14 +273,14 @@
         top: 0;
     }
 
-
     :not(:where(.SimulacraV2, .Simulacra)) .avatar {
         object-position: -30px -40px !important;
         width: 256px !important;
     }
 
     .SimulacraV2.hide-weapon {
-        .row-categories, .row-stats {
+        .row-categories,
+        .row-stats {
             display: none;
         }
     }
