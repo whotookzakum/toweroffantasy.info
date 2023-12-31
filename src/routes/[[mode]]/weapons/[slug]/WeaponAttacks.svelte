@@ -1,11 +1,11 @@
 <script>
     import Skill from "./Skill.svelte";
 
-    export let weapon;
-    let attackCategory = "skill";
+    export let weaponAttacks;
+    let attackCategory = "normals";
 </script>
 
-{#if weapon.weaponAttacks}
+{#if weaponAttacks}
     <h2 id="skills">Skills</h2>
     <!-- Hide this as a hint icon popover -->
     <!-- <p>
@@ -35,7 +35,7 @@
     </label>
 
     <ul class="weapon-attacks grid g-100" style="padding: 0;">
-        {#each weapon.weaponAttacks[attackCategory] as data}
+        {#each weaponAttacks[attackCategory] as data}
         <Skill {data} />
     {/each}
     </ul>

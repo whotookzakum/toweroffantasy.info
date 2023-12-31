@@ -1,10 +1,7 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import SetItems from "$components/SetItems.svelte";
-    import WeaponAttack from "./Skill.svelte";
-    import { weaponLevel, weaponStars, bgImg } from "$lib/stores";
-    import Tier from "$components/EntryItem/Tier.svelte";
-    import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
+    import { bgImg } from "$lib/stores";
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
     import Youtube from "$components/Youtube.svelte";
     import Rating from "$components/simulacrum/Rating.svelte";
@@ -13,12 +10,11 @@
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
     import WeaponStarSlider from "./WeaponStarSlider.svelte";
     import WeaponAttacks from "./WeaponAttacks.svelte";
-    import EntryItem from "../../../../lib/components/EntryItem/EntryItem.svelte";
+    import RecommendedMatrices from "./RecommendedMatrices.svelte";
+    import RecommendedPairings from "./RecommendedPairings.svelte";
 
     export let data;
     const { weapon, simulacrum_v2, matrix, banners } = data;
-
-    console.log(weapon.meta)
     $bgImg = simulacrum_v2.assetsA0.titlePicture;
 </script>
 
@@ -57,38 +53,21 @@
             {/each}
         {/if}
 
-        <WeaponAttacks {weapon} />
+
+        <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
         
 
         <h2 id="meta">Meta</h2>
-
         {#if weapon.meta?.analyticVideoId}
             <h3>Analysis</h3>
             <Youtube source={weapon.meta.analyticVideoId} />
         {/if}
-
         {#if weapon.meta?.rating}
             <h3>Rating</h3>
             <Rating {weapon} />
         {/if}
-
-        {#if weapon.meta?.recommendedPairings}
-            <h3>Recommended Pairings</h3>
-            <ul class="entry-list">
-                {#each weapon.meta.recommendedPairings as recWep}
-                    <EntryItem entry={recWep} />
-                {/each}
-            </ul>
-        {/if}
-
-        {#if weapon.meta?.recommendedMatrices}
-            <h3>Recommended Matrices</h3>
-            <ul class="entry-list">
-                {#each weapon.meta.recommendedMatrices as recMatrix}
-                    <EntryItem entry={recMatrix} matrixPieces={recMatrix.pieces} />
-                {/each}
-            </ul>
-        {/if}
+        <RecommendedMatrices matrices={weapon.meta.recommendedMatrices} />
+        <RecommendedPairings weapons={weapon.meta.recommendedPairings} />
 
         <h2 id="banners">Banners</h2>
     </div>
