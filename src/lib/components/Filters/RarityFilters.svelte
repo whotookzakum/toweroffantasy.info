@@ -4,19 +4,27 @@
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
 
     export let originalData;
-    const rarity = queryParam("rarity", ssp.string(""), {
+    const rarity = queryParam("rarity", ssp.string(), {
         showDefaults: false,
         pushHistory: false,
     });
 
-    const uniqueRarities = uniqBy(originalData, (entry) => entry.rarity)
+    const uniqueRarities = uniqBy(originalData, (entry) => entry.rarity);
 
-    const rarities = uniqueRarities.map((entry) => ({ rarity: entry.rarity, checked: $rarity.split(" ").includes(`${entry.rarity}`) }))
+    const rarities = uniqueRarities.map((entry) => ({
+        rarity: entry.rarity,
+        checked: $rarity?.split(" ")?.includes(`${entry.rarity}`),
+    }));
 
-    $: $rarity = rarities
-        .filter((i) => i.checked)
-        .map((i) => i.rarity)
-        .join(" ");
+    $: selectedItems = rarities.filter((i) => i.checked)
+
+    $: if (selectedItems.length > 0) {
+        $rarity = selectedItems
+            .map((i) => i.rarity)
+            .join(" ");
+    } else {
+        $rarity = null;
+    }
 </script>
 
 <div class="box flex">

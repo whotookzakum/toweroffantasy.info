@@ -4,16 +4,25 @@
     import { queryParameters } from "sveltekit-search-params";
 
     export let type;
-    const searchParams = queryParameters({ element: "", category: "" }, { showDefaults: false, pushHistory: false });
+    const searchParams = queryParameters(
+        { element: "", category: "" },
+        { showDefaults: false, pushHistory: false },
+    );
 
     const items = filters
         .filter((f) => f.type === type)
-        .map((f) => ({ ...f, checked: $searchParams[type]?.split(" ").includes(f.name) }));
+        .map((f) => ({
+            ...f,
+            checked: $searchParams[type]?.split(" ").includes(f.name),
+        }));
 
-    $: $searchParams[type] = items
-        .filter((i) => i.checked)
-        .map(i => i.name)
-        .join(" ")
+    $: selectedItems = items.filter((i) => i.checked);
+
+    $: if (selectedItems.length > 0) {
+        $searchParams[type] = selectedItems.map((i) => i.name).join(" ");
+    } else {
+        $searchParams[type] = null;
+    }
 </script>
 
 <div class="box flex">
