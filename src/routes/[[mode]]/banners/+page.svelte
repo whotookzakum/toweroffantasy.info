@@ -1,6 +1,7 @@
 <script>
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
     import Meta from "$components/Meta.svelte";
+    import Tag from "$components/Tag.svelte";
     export let data;
 </script>
 
@@ -17,9 +18,9 @@
     weapons, and matrices. Below is a list of all the current and past banners.
 </p>
 <p>
-    Some banner items will be added to the Standard Cache a while after their
-    "Final rerun" ends. Items that will not be added to Standard Cache are
-    marked with "Limited-only".
+    Items marked with <Tag type="final" /> will be added to the Standard Cache a
+    while after their final banner ends. Items marked with <Tag type="limited" /> 
+    will not be added to the Standard Cache.
 </p>
 
 <BannerTable showCurrentBanners showStats banners={data.banners} />

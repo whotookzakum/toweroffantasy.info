@@ -2,6 +2,7 @@
     import { queryParam, ssp } from "sveltekit-search-params";
     import { uniqBy } from "lodash";
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
+    import Popper from "$components/Popper/Popper.svelte";
 
     export let originalData;
     const rarity = queryParam("rarity", ssp.string(), {
@@ -16,47 +17,45 @@
         checked: $rarity?.split(" ")?.includes(`${entry.rarity}`),
     }));
 
-    $: selectedItems = rarities.filter((i) => i.checked)
+    $: selectedItems = rarities.filter((i) => i.checked);
 
     $: if (selectedItems.length > 0) {
-        $rarity = selectedItems
-            .map((i) => i.rarity)
-            .join(" ");
+        $rarity = selectedItems.map((i) => i.rarity).join(" ");
     } else {
         $rarity = null;
     }
+
+    const text = {
+        "5": "SSR",
+        "4": "SR",
+        "3": "R",
+        "2": "N",
+        "1": "C",
+    };
 </script>
 
-<div class="box flex">
+<div class="box icons-box flex">
     {#each rarities as obj}
-        <input
-            type="checkbox"
-            bind:checked={obj.checked}
-            id="rarity-{obj.rarity}"
-            class="visually-hidden"
-        />
-        <label class="grid" for="rarity-{obj.rarity}">
-            <RarityIcon rarity={obj.rarity} />
-        </label>
+        <Popper let:setFocused>
+            <input
+                type="checkbox"
+                bind:checked={obj.checked}
+                id="rarity-{obj.rarity}"
+                class="visually-hidden style-next-label"
+                on:focus={() => setFocused(true)}
+                on:blur={() => setFocused(false)}
+            />
+            <label class="grid" for="rarity-{obj.rarity}">
+                <RarityIcon rarity={obj.rarity} />
+            </label>
+            <p slot="tooltip">{text[obj.rarity]} Rarity</p>
+        </Popper>
     {/each}
 </div>
 
 <style lang="scss">
-    .box {
-        padding: 0.125rem;
-        align-items: center;
-    }
-
     label {
-        padding: 0.2rem;
-        place-content: center;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    input:checked + label {
-        background: var(--surface2);
-        border-color: var(--accent);
+        min-width: 3ch;
+        justify-content: center;
     }
 </style>

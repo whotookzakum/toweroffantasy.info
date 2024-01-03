@@ -9,7 +9,6 @@
     import VersionSelector from "$components/Filters/VersionSelector.svelte";
     import { showWepOnSimEntry } from "$lib/stores";
     import { getBannersMatch } from "$lib/utils"
-    import createPopperAction from "./usePopper"
 
     export let data;
     const searchParams = queryParameters();
@@ -36,11 +35,6 @@
 
         return searchMatch && elementMatch && categoryMatch && versionMatch && rarityMatch && bannersMatch
     });
-
-    const [usePopperElement, usePopperTooltip] = createPopperAction()
-
-    let placement = "bottom-start"
-    let showTooltip = true
 </script>
 
 <Meta
@@ -48,15 +42,8 @@
     description="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
     image={data.simulacra_v2[0].assetsA0.avatar}
 />
-<button on:click={() => placement = "right"}>click me</button>
+
 <h1>Simulacra</h1>
-
-<div use:usePopperElement>hello worlddddddd <input type="checkbox" bind:checked={showTooltip}></div>
-{#if showTooltip}
-    <div use:usePopperTooltip={{ placement }}>Tooltip itself</div>
-{/if}
-
-
 <p>
     Simulacra (aka Mimics) are the player's representation of the characters
     found in Tower of Fantasy. They have an associated weapon and an optional

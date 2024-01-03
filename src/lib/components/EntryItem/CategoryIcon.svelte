@@ -1,7 +1,10 @@
 <script>
+     import Popper from "$components/Popper/Popper.svelte";
+
      export let type;
      export let width = "60";
      export let style = "";
+     export let tooltip = false;
 
      const URI_map = {
           DPS: "icon_qianggong",
@@ -24,17 +27,44 @@
      };
 
      let imgSrc = URI_map[type] ?? "icon_element_null";
+
+     const text = {
+          DPS: "Damage Type",
+          Tank: "Tank Type",
+          SUP: "Support Type",
+          FlamePhysics: "Flame-Physical",
+          ThunderIce: "Ice-Thunder",
+          IceThunder: "Thunder-Ice",
+          PhysicsFlame: "Physical-Flame",
+          Superpower: "Altered",
+     };
 </script>
 
-<img
-     src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/wuqi/{imgSrc}.png"
-     alt={type}
-     width="60"
-     height="54"
-     {style}
-     style:width
-     loading="lazy"
-/>
+{#if tooltip}
+     <Popper>
+          <img
+               class="flex"
+               src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/wuqi/{imgSrc}.png"
+               alt={type}
+               width="60"
+               height="54"
+               {style}
+               style:width
+               loading="lazy"
+          />
+          <span slot="tooltip">{text[type] || type}</span>
+     </Popper>
+{:else}
+     <img
+          src="https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/wuqi/{imgSrc}.png"
+          alt={type}
+          width="60"
+          height="54"
+          {style}
+          style:width
+          loading="lazy"
+     />
+{/if}
 
 <style lang="scss">
      img {

@@ -3,6 +3,7 @@
     import { userLocale } from "$lib/stores";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import Tag from "../Tag.svelte";
+    import Popper from "$components/Popper/Popper.svelte";
 
     export let banners,
         highlightRows,
@@ -60,7 +61,7 @@
                         href="/simulacra/{banner.simulacrumId}"
                         style:color="var(--element-{banner.element})"
                         class="flex g-25"
-                        style="align-items: center"
+                        style="align-items: center; width: fit-content;"
                     >
                         <img
                             src={banner.simulacrum.assetsA0.avatar}
@@ -73,8 +74,10 @@
                     </a>
                 </td>
                 <td>
-                    <CategoryIcon type={banner.element} style="width: 30px" />
-                    <CategoryIcon type={banner.category} style="width: 30px" />
+                    <div class="flex g-25" style="align-items: center">
+                        <CategoryIcon type={banner.element} style="width: 30px" tooltip />
+                        <CategoryIcon type={banner.category} style="width: 30px" tooltip />
+                    </div>
                 </td>
                 <td>
                     {new Date(banner.startDate).toLocaleString(
@@ -96,15 +99,30 @@
                         banner.startDate,
                     )}~{getWeeksSinceLaunch(banner.endDate)}
                 </td>
-                <td>
+                <td style="line-height: 2;">
                     {#if banner.isFinalBanner}
-                        <Tag type="final" />
+                        <Popper>
+                            <Tag type="final" />
+                            <p slot="tooltip">
+                                Will be moved to Standard Cache
+                            </p>
+                        </Popper>
                     {/if}
                     {#if banner.isCollab}
-                        <Tag type="collab" />
+                        <Popper>
+                            <Tag type="collab" />
+                            <p slot="tooltip">
+                                Only available during the collab period
+                            </p>
+                        </Popper>
                     {/if}
                     {#if banner.isLimitedBannerOnly}
-                        <Tag type="limited" />
+                        <Popper>
+                            <Tag type="limited" />
+                            <p slot="tooltip">
+                                Will NOT be moved to Standard Cache
+                            </p>
+                        </Popper>
                     {/if}
                 </td>
                 <td>

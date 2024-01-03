@@ -3,27 +3,26 @@
     import "$lib/styles/globals.scss";
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     import TopNav from "$components/TopNav.svelte";
-    import { page } from "$app/stores"
-    import { browser } from "$app/environment"
+    import { page } from "$app/stores";
+    import { browser } from "$app/environment";
     import Ad from "$components/Ad/Ad.svelte";
 
     // Alternative would be to have a store derived from page called linkPrefix, and just append that to all hrefs. It will either be /cn or blank.
     // This does not work for client fetched data, i.e. the banner table
     $: if (browser) {
-        const hi = document.querySelectorAll("a")
+        const hi = document.querySelectorAll("a");
         // console.log(hi)
         if ($page.url.pathname.includes("/cn")) {
-            hi.forEach(link => {
+            hi.forEach((link) => {
                 // console.log("href: ",link.getAttribute("href"))
                 if (!link.href.includes("/cn")) {
-                    link.href = "/cn" + link.getAttribute("href")
+                    link.href = "/cn" + link.getAttribute("href");
                 }
-            })
-        }
-        else {
-            hi.forEach(link => {
-                link.href = link.getAttribute("href").replace("/cn", "")
-            })
+            });
+        } else {
+            hi.forEach((link) => {
+                link.href = link.getAttribute("href").replace("/cn", "");
+            });
         }
     }
 
@@ -108,5 +107,16 @@
         flex-wrap: wrap;
         gap: 0.5rem;
         margin-top: 1.5rem;
+    }
+
+    :global(.icons-box) {
+        padding: 0.125rem 0.25rem;
+        align-items: center;
+    }
+
+    :global(.icons-box label) {
+        padding: 0.2rem;
+        border: 1px solid transparent;
+        border-radius: 4px;
     }
 </style>

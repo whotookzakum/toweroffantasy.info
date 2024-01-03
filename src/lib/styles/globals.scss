@@ -259,3 +259,24 @@ hr {
     --range-pip-in-range: var(--accent);
     // --range-pip-in-range-text: var(--accent);
 }
+
+
+input.style-next-label {
+    &:checked + label {
+        background: var(--surface2);
+        border-color: var(--accent);
+    }
+
+    &:focus-visible + label {
+        outline: 2px solid var(--accent);
+        background: var(--surface2);
+    }
+
+    & + label {
+        cursor: pointer;
+    }
+
+    & + label:hover {
+        background: var(--surface2);
+    }
+}
