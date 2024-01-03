@@ -38,14 +38,14 @@
 <div class="box flex">
     <input type="checkbox" id="toggle-banners-limited" class="visually-hidden" bind:checked={isLimited} />
     <label class="flex" for="toggle-banners-limited">
-        <span class="visually-hidden">Limited banners</span>
+        <span class="visually-hidden">Currently in Limited banner</span>
         {#each limitedIcons as uri}
             <img src={uri} alt="" width="30" height="30" />
         {/each}
     </label>
     <input type="checkbox" id="toggle-banners-standard" class="visually-hidden" bind:checked={isStandard} />
     <label class="flex" for="toggle-banners-standard">
-        <span class="visually-hidden">Standard banners</span>
+        <span class="visually-hidden">Currently in Standard banner</span>
         {#each standardIcons as uri}
             <img src={uri} alt="" width="30" height="30" />
         {/each}

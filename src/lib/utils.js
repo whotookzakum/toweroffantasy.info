@@ -1,23 +1,25 @@
-import { goto } from "$app/navigation";
-import { page } from "$app/stores";
-import { browser } from "$app/environment";
-import { get } from "svelte/store";
+// Filters by whether the entry is CURRENTLY in standard banner. For example, Alyss was moved to standard banner, despite having limited banners in the past, so she will appear when "standard" is selected. For a list of all characters that appeared in a limited banner, users should check the Banners page.
+export function getBannersMatch(paramStore, entry) {
+    const bannersParam = paramStore.split(" ")
+    const hasBanners = entry.banners?.length > 0;
+    const movedToStandardBanner =
+        entry.banners?.some((banner) => banner.isFinalBanner) &&
+        entry.banners?.every(
+            (banner) =>
+                new Date(banner.endDate + " UTC").getTime() <
+                new Date().getTime(),
+        );
 
-export function updateSearchParams(param, newValue) {
-    const pageStore = get(page)
-    
-    if (!newValue) {
-        pageStore.url.searchParams.delete(param);
-    } else {
-        pageStore.url.searchParams.set(param, newValue);
+    let passesLimitedCheck = true
+    let passesStandardCheck = true
+
+    if (bannersParam.includes("limited")) {
+        passesLimitedCheck = hasBanners && !movedToStandardBanner
     }
 
-    if (browser) {
-        goto(`?${pageStore.url.searchParams.toString()}`, {
-            noScroll: true,
-            replaceState: false,
-            keepFocus: true,
-            invalidateAll: true,
-        });
+    if (bannersParam.includes("standard")) {
+        passesStandardCheck = !hasBanners || movedToStandardBanner
     }
+
+    return passesLimitedCheck && passesStandardCheck
 }

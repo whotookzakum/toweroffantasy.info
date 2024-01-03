@@ -6,12 +6,13 @@
     import RarityFilters from "$components/Filters/RarityFilters.svelte";
     import BannerFilters from "$components/Filters/BannerFilters.svelte";
     import VersionSelector from "$components/Filters/VersionSelector.svelte";
+    import { getBannersMatch } from "$lib/utils"
 
     export let data;
     const searchParams = queryParameters();
 
     $: entries = data.matrices.filter((entry) => {
-        const { q, version, rarity } = $searchParams;
+        const { q, version, rarity, banners } = $searchParams;
         const searchMatch = q
             ? entry.name.toLowerCase().includes(q.toLowerCase())
             : true;
@@ -20,8 +21,9 @@
         const rarityMatch = rarity
             ? rarity.split(" ").includes(`${entry.rarity}`)
             : true;
+        const bannersMatch = banners ? getBannersMatch(banners, entry) : true
 
-        return searchMatch && versionMatch && rarityMatch
+        return searchMatch && versionMatch && rarityMatch && bannersMatch
     });
 </script>
 
