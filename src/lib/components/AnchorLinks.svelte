@@ -68,10 +68,16 @@
             {
                 name: "Meta",
                 href: "#meta",
+                disabled:
+                    !weapon.meta.analyticVideoId &&
+                    weapon.meta.recommendedMatrices.length === 0 &&
+                    weapon.meta.recommendedPairings.length === 0 &&
+                    weapon.meta.rating.length === 0,
             },
             {
                 name: "Banners",
                 href: "#banners",
+                disabled: weapon.banners.length < 1,
             },
         );
     }
@@ -91,12 +97,12 @@
             {/each}
         </nav>
     {/if}
-    <p class="section-title">
-        Jump to section
-    </p>
+    <p class="section-title">Jump to section</p>
     <nav class="grid">
         {#each anchorLinks as link}
-            <a href={link.href}>{link.name}</a>
+            {#if !link.disabled}
+                <a href={link.href}>{link.name}</a>
+            {/if}
         {/each}
     </nav>
     <!-- <Ad unit="Gutter" /> -->

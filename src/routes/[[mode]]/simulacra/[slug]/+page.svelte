@@ -21,10 +21,10 @@
         <h1>{simulacrum_v2.name}</h1>
         <h2 style="font-size: var(--step-2); margin: 0">Part of a set</h2>
         <SetItems {simulacrum_v2} {weapon} {matrix} />
-        <span>Released in version {simulacrum_v2.version}</span>
+        <small style="color: var(--text2);">Released in version {simulacrum_v2.version}</small>
 
         <h2 id="awakening">Awakening</h2>
-        <table class="awakening" style="margin-block: 1rem">
+        <table class="awakening borders bg-alternate" style="margin-block: 1rem">
             <thead>
                 <tr>
                     <th>Affinity</th>

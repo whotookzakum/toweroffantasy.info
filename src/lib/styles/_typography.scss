@@ -134,12 +134,11 @@ table {
         font-size: var(--step--3);
         text-transform: uppercase;
         font-weight: normal; // 400 or 600
-        padding: var(--space-3xs-2xs);
+        padding: 1rem;
     }
 
     td {
-        font-size: var(--step--2);
-        padding: 0.5rem 1rem;
+        padding: 1rem;
     }
 
     p {

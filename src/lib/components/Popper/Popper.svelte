@@ -53,6 +53,7 @@
         color: var(--text1);
         font-weight: 600;
         filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+        backdrop-filter: blur(5px);
 
         :global(*) {
             margin: 0;

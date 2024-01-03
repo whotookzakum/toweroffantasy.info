@@ -3,15 +3,15 @@
     import SetItems from "$components/SetItems.svelte";
     import { bgImg } from "$lib/stores";
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
-    import Youtube from "$components/Youtube.svelte";
-    import Rating from "$components/simulacrum/Rating.svelte";
+
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
     import WeaponStarSlider from "./WeaponStarSlider.svelte";
     import WeaponAttacks from "./WeaponAttacks.svelte";
-    import RecommendedMatrices from "./RecommendedMatrices.svelte";
-    import RecommendedPairings from "./RecommendedPairings.svelte";
+
+    import Advancements from "./Advancements.svelte";
+    import WeaponMeta from "./WeaponMeta.svelte";
 
     export let data;
     const { weapon, simulacrum_v2, matrix, banners } = data;
@@ -30,52 +30,43 @@
     </aside>
 
     <div class="article-content">
-        <h1>{weapon.name}</h1>
-        <p><RarityIcon rarity={weapon.rarity} /> Weapon</p>
-
-        
+        <h1>{weapon.name} </h1>
+        <h2 style="font-size: var(--step-2); margin: 0">Part of a set</h2>
+        <SetItems {simulacrum_v2} {weapon} {matrix} />
+        <small style="color: var(--text2);">Released in version {simulacrum_v2.version}</small>
 
         <h2 id="effects">Weapon Effects</h2>
-        <span>{weapon.elementEffect.title}</span>
+        <h3 style:color="var(--element-{weapon.element})">
+            {weapon.elementEffect.title}
+        </h3>
         <SvelteMarkdown source={weapon.elementEffect.description} />
 
         {#if weapon.weaponEffects}
             {#each weapon.weaponEffects as effect}
-                <span>{effect.title}</span>
+                <h3 style:color="var(--element-{weapon.element})">
+                    {effect.title}
+                </h3>
                 <SvelteMarkdown source={effect.description} />
             {/each}
         {/if}
 
-        {#if weapon.weaponAdvancements}
-            <h2 id="advancements">Advancements</h2>
-            {#each weapon.weaponAdvancements as advancement}
-                <SvelteMarkdown source={advancement.description} />
-            {/each}
-        {/if}
-
+        <Advancements advancements={weapon.weaponAdvancements} {weapon} />
 
         <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
-        
 
-        <h2 id="meta">Meta</h2>
-        {#if weapon.meta?.analyticVideoId}
-            <h3>Analysis</h3>
-            <Youtube source={weapon.meta.analyticVideoId} />
-        {/if}
-        {#if weapon.meta?.rating}
-            <h3>Rating</h3>
-            <Rating {weapon} />
-        {/if}
-        <RecommendedMatrices matrices={weapon.meta.recommendedMatrices} />
-        <RecommendedPairings weapons={weapon.meta.recommendedPairings} />
+        <WeaponMeta {weapon} />
 
-        <h2 id="banners">Banners</h2>
+        {#if weapon.banners.length > 0}
+            <h2 id="banners">Banners</h2>
+        {/if}
     </div>
-    <BannerTable
-        {banners}
-        bannerSearchTerm={simulacrum_v2.name}
-        style="grid-column: 1/-1"
-    />
+    {#if weapon.banners.length > 0}
+        <BannerTable
+            {banners}
+            bannerSearchTerm={simulacrum_v2.name}
+            style="grid-column: 1/-1"
+        />
+    {/if}
 </article>
 
 <style lang="scss">
@@ -105,6 +96,10 @@
         .stat-value {
             text-transform: uppercase;
         }
+    }
+
+    h3 {
+        margin-top: 1.5rem;
     }
 
     .invert {

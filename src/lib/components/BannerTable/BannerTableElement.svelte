@@ -138,6 +138,10 @@
 </table>
 
 <style lang="scss">
+    td {
+        padding-block: 0.5rem;
+    }
+
     table.highlightRows {
         overflow: hidden;
 
