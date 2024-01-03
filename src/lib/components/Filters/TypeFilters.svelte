@@ -34,6 +34,7 @@
         IceThunder: "Thunder-Ice",
         PhysicsFlame: "Physical-Flame",
         Superpower: "Altered",
+        Physics: "Physical"
     };
 </script>
 
@@ -61,5 +62,6 @@
     .box {
         padding: 0.125rem;
         align-items: center;
+        flex-wrap: wrap;
     }
 </style>
