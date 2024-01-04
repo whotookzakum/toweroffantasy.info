@@ -68,7 +68,10 @@ query FullWeapon($id: String) {
                 pieces
             }
             recommendedPairings
+            lastUpdated {
+                username
+                # timestamp
+            }
         }
-        __typename
     }
 }

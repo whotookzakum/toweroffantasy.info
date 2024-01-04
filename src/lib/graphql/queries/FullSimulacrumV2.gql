@@ -25,6 +25,5 @@ query FullSimulacrumV2($id: String) {
             kr
             pt
         }
-        __typename
     }
 }

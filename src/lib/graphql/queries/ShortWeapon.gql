@@ -1,6 +1,5 @@
 query ShortWeapon($id: String) {
     weapon(id: $id) {
         ...weaponEntry
-        __typename
     }
 }

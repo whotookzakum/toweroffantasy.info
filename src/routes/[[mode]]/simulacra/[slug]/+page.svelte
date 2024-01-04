@@ -56,25 +56,25 @@
 
         <h2 id="profile">Profile</h2>
 
-        <ul class="flex">
+        <ul class="flex" >
+            <li class="box grid" style="flex: 1">
+                <span>Title</span>
+                <span>{weapon.name}</span>
+            </li>
             <li class="box grid" style="flex: 1">
                 <span>Gender</span>
                 <span>{simulacrum_v2.gender}</span>
+            </li>
+            <li class="box grid" style="flex: 1">
+                <span>Allegiance</span>
+                <span>{simulacrum_v2.homeTown}</span>
             </li>
             <li class="box grid" style="flex: 1">
                 <span>Height</span>
                 <span>{simulacrum_v2.height}</span>
             </li>
             <li class="box grid" style="flex: 1">
-                <span>Birthplace</span>
-                <span>{simulacrum_v2.homeTown}</span>
-            </li>
-            <li class="box grid" style="flex: 1">
-                <span>Horoscope</span>
-                <span>???</span>
-            </li>
-            <li class="box grid" style="flex: 1">
-                <span>Birthday</span>
+                <span>Birthdate</span>
                 <span>{simulacrum_v2.birthday}</span>
             </li>
             <li class="box grid" style="flex-grow: 1;">

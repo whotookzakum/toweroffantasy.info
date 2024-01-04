@@ -21,13 +21,20 @@ export const load = async (event) => {
     const bannersRes = await bannersQuery.fetch({ event })
 
     // All simulacra for avatar image in banner table
-    const simulacraStore = new AllSimulacraV2Store()
-    const simulacraRes = await simulacraStore.fetch({ event })
+    const allSimsStore = new AllSimulacraV2Store()
+    const allSimsRes = await allSimsStore.fetch({ event })
 
-    const banners = bannersRes.data.banners.map(banner => ({
-        ...banner,
-        simulacrum: simulacraRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId),
-    }))
+    const banners = bannersRes.data.banners.map(banner => {
+        const simulacrum = allSimsRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId)
+        return {
+            ...banner,
+            simulacrum: {
+                assetsA0: {
+                    avatar: simulacrum.assetsA0.avatar
+                }
+            }
+        }
+    })
 
     // Weapon meta (recommended matrices, recommended weapon pairings)
     const allWepsQuery = new AllWeaponsStore()

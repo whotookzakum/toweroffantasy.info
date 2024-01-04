@@ -7,14 +7,10 @@
 
     export let weapon;
     const { meta } = weapon
-    meta.lastUpdated = {
-        timestamp: 1704284562505,
-        username: "Emi"
-    }
 
     // TODO: reactively declare based on if user is using UTC or local time in Site Settings
     const dateOptions = { year: "numeric", day: "numeric", month: "long" }
-    let updateDate = new Date(meta.lastUpdated.timestamp).toLocaleString($userLocale, dateOptions)
+    let updateDate = meta.lastUpdated?.timestamp && new Date(meta.lastUpdated.timestamp).toLocaleString($userLocale, dateOptions)
 </script>
 
 {#if meta && (meta.analyticVideoId || meta.recommendedMatrices.length > 0 || meta.recommendedPairings.length > 0 || meta.rating.length > 0)}
@@ -29,5 +25,7 @@
     {/if}
     <RecommendedMatrices matrices={meta.recommendedMatrices} />
     <RecommendedPairings weapons={meta.recommendedPairings} />
-    <small style="color: var(--text2);">Meta last updated by {meta.lastUpdated.username} on {updateDate}</small>
+    {#if meta.lastUpdated}
+        <small style="color: var(--text2);">Meta last updated by {meta.lastUpdated.username} on {updateDate}</small>
+    {/if}
 {/if}

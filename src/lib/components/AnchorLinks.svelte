@@ -81,6 +81,24 @@
             },
         );
     }
+    else if ($page.url.pathname.includes("/matrices")) {
+        anchorLinks.push(
+            {
+                name: "Set Effects",
+                href: "#effects",
+            },
+            {
+                name: "Meta",
+                href: "#meta",
+                disabled: matrix.meta.recommendedWeapons.length === 0 
+            },
+            {
+                name: "Banners",
+                href: "#banners",
+                disabled: matrix.banners.length < 1,
+            },
+        );
+    }
 </script>
 
 <div class="grid g-100">

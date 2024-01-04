@@ -7,6 +7,11 @@ type Achievement {
   tags: [String!]!
 }
 
+type AdvancMultipliers {
+  coefficient: Float!
+  id: String!
+}
+
 type Assets {
   activeImitation: String!
   advanceGrayPainting: String!
@@ -61,8 +66,6 @@ type Banner {
 type BaseStats {
   icon: String!
   id: String!
-  isTag: Boolean!
-  modifier: String!
   name: String!
   value: Float!
 }
@@ -92,7 +95,7 @@ type Food {
   id: String!
   ingredients: [Ingredient!]!
   name: String!
-  quality: String!
+  rarity: Int!
   stars: Int!
 }
 
@@ -116,6 +119,7 @@ type Matrice {
   banners: [Banner!]!
   description: String!
   id: String!
+  meta: MatrixMeta!
   name: String!
   rarity: Int!
   sets: [MatriceSet!]!
@@ -134,11 +138,21 @@ type MatrixAssets {
   iconLarge: String!
 }
 
+type MatrixMeta {
+  recommendedWeapons: [String!]!
+}
+
 type MetaData {
   analyticVideoId: String
-  rating: [Int!]!
+  lastUpdated: MetaLastUpdated!
+  rating: [Float!]!
   recommendedMatrices: [RecoMatrix!]!
   recommendedPairings: [String!]!
+}
+
+type MetaLastUpdated {
+  timestamp: Int!
+  username: String!
 }
 
 type Mount {
@@ -248,6 +262,7 @@ type Simulacra {
   awakening: [Awakening!]!
   banners: [Banner!]!
   birthday: String
+  dislikedGiftTypes: [String!]!
   fashion: [Fashion!]!
   gender: String
   height: String
@@ -258,6 +273,7 @@ type Simulacra {
   matrixId: String
   name: String!
   rarity: Int!
+  unlockInfo: String!
   version: String!
   voicing: VoiceActors!
   weaponId: String
@@ -272,6 +288,7 @@ type SimulacraV2 {
   awakening: [Awakening!]!
   banners: [Banner!]!
   birthday: String
+  dislikedGiftTypes: [String!]!
   fashion: [Fashion!]!
   gender: String
   height: String
@@ -283,6 +300,7 @@ type SimulacraV2 {
   matrixId: String
   name: String!
   rarity: Int!
+  unlockInfo: String!
   version: String!
   voicing: VoiceActors!
   weapon: Weapon
@@ -349,6 +367,7 @@ type Weapon {
 type WeaponAdvancement {
   charge: ShatterOrCharge!
   description: String
+  multiplier: [AdvancMultipliers!]!
   need: String
   shatter: ShatterOrCharge!
 }
