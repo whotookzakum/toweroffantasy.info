@@ -1,0 +1,14 @@
+{
+    "DPS": "Damage Type",
+    "Tank": "Tank Type",
+    "SUP": "Support Type",
+    "Flame": "Flame",
+    "FlamePhysics": "Flame/Physical",
+    "Ice": "Frost",
+    "ThunderIce": "Frost/Volt",
+    "Thunder": "Volt",
+    "IceThunder": "Volt/Frost",
+    "Physics": "Physical",
+    "PhysicsFlame": "Physical/Flame",
+    "Superpower": "Altered"
+}

@@ -9,7 +9,7 @@ type Achievement {
 
 type AdvancMultipliers {
   coefficient: Float!
-  id: String!
+  statId: String!
 }
 
 type Assets {
@@ -67,6 +67,7 @@ type BaseStats {
   icon: String!
   id: String!
   name: String!
+  upgradeProp: Float!
   value: Float!
 }
 

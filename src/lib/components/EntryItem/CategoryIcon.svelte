@@ -1,4 +1,5 @@
 <script>
+    import categoriesText from "./CategoriesText.json"
     import Popper from "$components/Popper.svelte";
 
     export let type;
@@ -27,18 +28,6 @@
     };
 
     let imgSrc = URI_map[type] ?? "icon_element_null";
-
-    const text = {
-        DPS: "Damage Type",
-        Tank: "Tank Type",
-        SUP: "Support Type",
-        FlamePhysics: "Flame-Physical",
-        ThunderIce: "Ice-Thunder",
-        IceThunder: "Thunder-Ice",
-        PhysicsFlame: "Physical-Flame",
-        Superpower: "Altered",
-        Physics: "Physical",
-    };
 </script>
 
 {#if tooltip}
@@ -53,7 +42,7 @@
             style:width
             loading="lazy"
         />
-        <span slot="tooltip">{text[type] || type}</span>
+        <span slot="tooltip">{categoriesText[type]}</span>
     </Popper>
 {:else}
     <img

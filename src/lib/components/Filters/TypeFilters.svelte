@@ -3,6 +3,7 @@
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import { queryParameters } from "sveltekit-search-params";
     import Popper from "$components/Popper.svelte";
+    import categoriesText from "$components/EntryItem/CategoriesText.json"
 
     export let type;
     const searchParams = queryParameters(
@@ -24,18 +25,6 @@
     } else {
         $searchParams[type] = null;
     }
-
-    const text = {
-        DPS: "Damage Type",
-        Tank: "Tank Type",
-        SUP: "Support Type",
-        FlamePhysics: "Flame-Physical",
-        ThunderIce: "Ice-Thunder",
-        IceThunder: "Thunder-Ice",
-        PhysicsFlame: "Physical-Flame",
-        Superpower: "Altered",
-        Physics: "Physical"
-    };
 </script>
 
 <div class="box icons-box flex">
@@ -53,7 +42,7 @@
                 <span class="visually-hidden">{filter.name}</span>
                 <CategoryIcon type={filter.name} style="width: 28px;" />
             </label>
-            <p slot="tooltip">{text[filter.name] || filter.name}</p>
+            <p slot="tooltip">{categoriesText[filter.name]}</p>
         </Popper>
     {/each}
 </div>

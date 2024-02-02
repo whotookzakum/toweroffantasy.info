@@ -30,6 +30,10 @@ query FullWeapon($id: String) {
             }
             description
             need
+            multiplier {
+                coefficient
+                statId
+            }
         }
         weaponAttacks {
             normals {
@@ -66,8 +70,11 @@ query FullWeapon($id: String) {
             }
         }
         weaponStats {
-            icon
+            id
             name
+            icon
+            value
+            upgradeProp
         }
         meta {
             analyticVideoId

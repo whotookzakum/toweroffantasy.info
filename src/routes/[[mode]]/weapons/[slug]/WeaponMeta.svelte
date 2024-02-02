@@ -8,7 +8,6 @@
     export let weapon;
     const { meta } = weapon;
 
-    console.log(meta);
     // TODO: reactively declare based on if user is using UTC or local time in Site Settings
     const dateOptions = { year: "numeric", day: "numeric", month: "long" };
     let updateDate =
