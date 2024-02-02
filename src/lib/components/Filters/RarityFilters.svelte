@@ -2,7 +2,7 @@
     import { queryParam, ssp } from "sveltekit-search-params";
     import { uniqBy } from "lodash";
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
-    import Popper from "$components/Popper/Popper.svelte";
+    import Popper from "$components/Popper.svelte";
 
     export let originalData;
     const rarity = queryParam("rarity", ssp.string(), {

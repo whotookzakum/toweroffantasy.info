@@ -66,6 +66,10 @@
                 href: "#skills",
             },
             {
+                name: "Upgrade Materials",
+                href: "#upgrade-materials",
+            },
+            {
                 name: "Meta",
                 href: "#meta",
                 disabled:

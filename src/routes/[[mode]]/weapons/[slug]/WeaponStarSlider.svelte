@@ -5,6 +5,7 @@
 
 <div>
     <p class="section-title">Weapon Advancements</p>
+    <small>Affects weapon stats</small>
     <RangeSlider
         bind:values={$weaponStars}
         min={0}

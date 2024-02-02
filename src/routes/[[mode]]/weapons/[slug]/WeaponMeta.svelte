@@ -3,14 +3,20 @@
     import Rating from "$components/simulacrum/Rating.svelte";
     import RecommendedMatrices from "./RecommendedMatrices.svelte";
     import RecommendedPairings from "./RecommendedPairings.svelte";
-    import { userLocale } from "$lib/stores"
+    import { userLocale } from "$lib/stores";
 
     export let weapon;
-    const { meta } = weapon
+    const { meta } = weapon;
 
+    console.log(meta);
     // TODO: reactively declare based on if user is using UTC or local time in Site Settings
-    const dateOptions = { year: "numeric", day: "numeric", month: "long" }
-    let updateDate = meta.lastUpdated?.timestamp && new Date(meta.lastUpdated.timestamp).toLocaleString($userLocale, dateOptions)
+    const dateOptions = { year: "numeric", day: "numeric", month: "long" };
+    let updateDate =
+        meta.lastUpdated?.timestamp &&
+        new Date(meta.lastUpdated.timestamp).toLocaleString(
+            $userLocale,
+            dateOptions,
+        );
 </script>
 
 {#if meta && (meta.analyticVideoId || meta.recommendedMatrices.length > 0 || meta.recommendedPairings.length > 0 || meta.rating.length > 0)}
@@ -26,6 +32,11 @@
     <RecommendedMatrices matrices={meta.recommendedMatrices} />
     <RecommendedPairings weapons={meta.recommendedPairings} />
     {#if meta.lastUpdated}
-        <small style="color: var(--text2);">Meta last updated by {meta.lastUpdated.username} on {updateDate}</small>
+        <small style="color: var(--text2);">
+            Meta last updated by {meta.lastUpdated.username}
+            {#if meta.lastUpdated.timestamp}
+                on {updateDate}
+            {/if}
+        </small>
     {/if}
 {/if}

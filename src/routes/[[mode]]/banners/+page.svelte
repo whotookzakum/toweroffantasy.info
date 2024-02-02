@@ -18,9 +18,7 @@
     weapons, and matrices. Below is a list of all the current and past banners.
 </p>
 <p>
-    Items marked with <Tag type="final" /> will be added to the Standard Cache a
-    while after their final banner ends. Items marked with <Tag type="limited" /> 
-    will not be added to the Standard Cache.
+    Items marked with <Tag type="final" /> will be added to the Standard Cache a while after their final banner ends. Items marked with <Tag type="limited" /> will not be added to the Standard Cache.
 </p>
 
 <BannerTable showCurrentBanners showStats banners={data.banners} />

@@ -60,7 +60,7 @@
                         color: labelColor,
                     },
                     min: 0,
-                    max: 100,
+                    max: 10,
                 },
             },
             plugins: {

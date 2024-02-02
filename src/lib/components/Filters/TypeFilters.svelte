@@ -2,7 +2,7 @@
     import filters from "./filters.json";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import { queryParameters } from "sveltekit-search-params";
-    import Popper from "$components/Popper/Popper.svelte";
+    import Popper from "$components/Popper.svelte";
 
     export let type;
     const searchParams = queryParameters(

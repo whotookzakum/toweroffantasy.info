@@ -1,5 +1,5 @@
 <script>
-    import Popper from "$components/Popper/Popper.svelte";
+    import Popper from "$components/Popper.svelte";
 
     export let type;
     export let width = "60";

@@ -5,6 +5,7 @@
 
 <div>
     <p class="section-title">Weapon Level</p>
+    <small>Affects skill damage and weapon stats</small>
     <RangeSlider
         bind:values={$weaponLevel}
         min={0}

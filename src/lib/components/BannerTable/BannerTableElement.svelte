@@ -3,7 +3,7 @@
     import { userLocale } from "$lib/stores";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import Tag from "../Tag.svelte";
-    import Popper from "$components/Popper/Popper.svelte";
+    import Popper from "$components/Popper.svelte";
 
     export let banners,
         highlightRows,

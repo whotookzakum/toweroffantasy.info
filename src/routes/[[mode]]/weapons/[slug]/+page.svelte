@@ -3,15 +3,14 @@
     import SetItems from "$components/SetItems.svelte";
     import { bgImg } from "$lib/stores";
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
-
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
     import WeaponStarSlider from "./WeaponStarSlider.svelte";
     import WeaponAttacks from "./WeaponAttacks.svelte";
-
     import Advancements from "./Advancements.svelte";
     import WeaponMeta from "./WeaponMeta.svelte";
+    import UpgradeMats from "./UpgradeMats.svelte";
 
     export let data;
     const { weapon, simulacrum_v2, matrix, banners } = data;
@@ -30,10 +29,12 @@
     </aside>
 
     <div class="article-content">
-        <h1>{weapon.name} </h1>
+        <h1>{weapon.name}</h1>
         <h2 style="font-size: var(--step-2); margin: 0">Part of a set</h2>
         <SetItems {simulacrum_v2} {weapon} {matrix} />
-        <small style="color: var(--text2);">Released in version {simulacrum_v2.version}</small>
+        <small style="color: var(--text2);"
+            >Released in version {simulacrum_v2.version}</small
+        >
 
         <h2 id="effects">Weapon Effects</h2>
         <h3 style:color="var(--element-{weapon.element})">
@@ -53,6 +54,8 @@
         <Advancements advancements={weapon.weaponAdvancements} {weapon} />
 
         <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
+
+        <UpgradeMats items={weapon.upgradeMats.items} />
 
         <WeaponMeta {weapon} />
 

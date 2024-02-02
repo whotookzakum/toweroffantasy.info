@@ -1,7 +1,7 @@
 <script>
     import { page } from "$app/stores";
     import { queryParam, ssp } from "sveltekit-search-params";
-    import Popper from "$components/Popper/Popper.svelte";
+    import Popper from "$components/Popper.svelte";
 
     // Default to nucleus icons for simulacra and weapons
     let limitedIcons = [
