@@ -48,8 +48,8 @@
             />
         </div>
     </div>
-    <div style="flex: 1; min-width: 35ch">
-        <div class="flex g-50" style="align-items: baseline">
+    <div style="flex: 1; flex-basis: 30ch">
+        <div class="flex g-50" style="align-items: last baseline">
             <h1 id={h1id}>{h1}</h1>
             {#if rarity}
                 <RarityIcon {rarity} />

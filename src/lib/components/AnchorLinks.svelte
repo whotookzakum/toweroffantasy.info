@@ -4,6 +4,8 @@
     import Tag from "./Tag.svelte";
     export let simulacrum_v2, weapon, matrix;
 
+    // TODO: add .active class toggling for section links
+
     const relatedLinks = [];
 
     if (simulacrum_v2) {
@@ -36,7 +38,7 @@
         anchorLinks.push(
             {
                 name: "Top",
-                href: "#top"
+                href: "#top",
             },
             {
                 name: "Awakening",
@@ -59,7 +61,7 @@
         anchorLinks.push(
             {
                 name: "Stats",
-                href: "#stats"
+                href: "#stats",
             },
             {
                 name: "Weapon Effects",
@@ -92,12 +94,11 @@
                 disabled: weapon.banners.length < 1,
             },
         );
-    }
-    else if ($page.url.pathname.includes("/matrices")) {
+    } else if ($page.url.pathname.includes("/matrices")) {
         anchorLinks.push(
             {
                 name: "Top",
-                href: "#top"
+                href: "#top",
             },
             {
                 name: "Set Effects",
@@ -106,7 +107,7 @@
             {
                 name: "Meta",
                 href: "#meta",
-                disabled: matrix.meta.recommendedWeapons.length === 0 
+                disabled: matrix.meta.recommendedWeapons.length === 0,
             },
             {
                 name: "Banners",
@@ -117,7 +118,7 @@
     }
 </script>
 
-<div class="grid g-100">
+<div class="anchor-links-wrapper grid g-100">
     {#if relatedLinks.length > 0}
         <h2 class="section-title">Related Items</h2>
         <nav class="grid">
@@ -132,9 +133,11 @@
         </nav>
     {/if}
     <p class="section-title">Jump to section</p>
-    <nav class="grid">
+    <nav class="section-links grid">
         {#each anchorLinks as link}
             {#if !link.disabled}
+                <!-- Can be used to debug, but does not update when scrolling through the page -->
+                <!-- class:active={$page.url.hash === link.href} -->
                 <a href={link.href}>{link.name}</a>
             {/if}
         {/each}
@@ -164,6 +167,44 @@
 
         &.active {
             border-color: var(--accent);
+            color: var(--accent);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .anchor-links-wrapper > *:not(.section-links) {
+            display: none;
+        }
+
+        .section-links {
+            display: flex;
+            width: 100%;
+            overflow-x: scroll;
+            margin: 0;
+            gap: 0.25rem;
+            // -ms-overflow-style: none;
+            // scrollbar-width: none;
+
+            // &::-webkit-scrollbar {
+            //     display: none;
+            // }
+        }
+
+        a {
+            border: none;
+            padding: 0.35rem 0.5rem;
+            border-radius: 0.5rem;
+            line-height: normal;
+            white-space: nowrap;
+        }
+
+        a:hover,
+        a:focus-visible {
+            background: var(--surface2);
+        }
+
+        a.active {
+            background: var(--surface2);
             color: var(--accent);
         }
     }

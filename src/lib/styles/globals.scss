@@ -9,6 +9,7 @@
 html {
     // scroll-behavior: smooth;
     scroll-padding: 6.5rem;
+    color-scheme: dark;
 }
 
 html,
@@ -197,6 +198,8 @@ article {
 
     .article-content {
         grid-column: 1/2;
+        container-type: inline-size;
+        container-name: article-content;
     }
 
     // Full-sized gutter track
@@ -217,6 +220,27 @@ article {
         color: var(--text2);
         line-height: 1;
         font-weight: 400;
+    }
+}
+
+@media (max-width: 800px) {
+    article {
+        grid-template-columns: 1fr;
+
+        aside {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            position: sticky;
+            top: 0;
+            z-index: 4;
+            background: var(--surface1);
+            padding: 0.5rem;
+            margin: 0 -1rem;
+        }
+
+        .aside-extras {
+            display: none;
+        }
     }
 }
 

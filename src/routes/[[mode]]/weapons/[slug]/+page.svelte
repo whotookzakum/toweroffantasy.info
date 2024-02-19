@@ -22,7 +22,7 @@
     <aside>
         <div class="sticky grid g-100">
             <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
-            <div class="grid g-100">
+            <div class="aside-extras grid g-100">
                 <WeaponLevelSlider />
                 <WeaponStarSlider />
             </div>

@@ -32,7 +32,7 @@
 <GoogleAnalytics properties={["G-N68SWH7ZJB"]} />
 
 <div class="layout grid g-50">
-    <TopNav />
+    <!-- <TopNav /> -->
     <div class="gutter-left">
         <Ad unit="Gutter1" />
     </div>

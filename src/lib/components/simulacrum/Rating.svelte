@@ -41,6 +41,8 @@
             },
         ],
         options: {
+            responsive: true,
+            maintainAspectRatio: true,
             scales: {
                 r: {
                     angleLines: {
@@ -109,10 +111,14 @@
 <style lang="scss">
     .chart-wrapper {
         margin-block: 1rem;
+        width: 100%;
+        max-width: 600px;
+        position: relative;
     }
 
     canvas {
-        width: auto;
+        width: 100%;
+        max-width: 100%;
         max-height: 300px;
     }
 </style>

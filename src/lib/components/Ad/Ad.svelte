@@ -11,4 +11,4 @@
 
 <!-- Rewrite as a store so each component doesnt have to bind to innerWidth? -->
 <svelte:window bind:innerWidth />
-<!-- <svelte:component this={components[unitType]} {unit} {innerWidth} /> -->
+<svelte:component this={components[unitType]} {unit} {innerWidth} />

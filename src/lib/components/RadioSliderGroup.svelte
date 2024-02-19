@@ -31,6 +31,7 @@
         grid-template-columns: repeat(var(--total-options), 1fr);
         align-items: center;
         position: relative;
+        
 
         @for $i from 2 through 5 {
             input:nth-of-type(#{$i}):checked ~ .slider {
@@ -53,7 +54,6 @@
         position: relative;
         z-index: 10;
         padding: 0.5rem 1rem;
-
         cursor: pointer;
         border-radius: 0.25rem;
     }
@@ -79,6 +79,32 @@
         .sliders-wrapper:focus-within,
         .sliders-wrapper:active {
             outline: 2px solid var(--accent);
+        }
+    }
+
+    @container article-content (max-width:  400px) {
+        .sliders-wrapper {
+            grid-template-columns: 1fr;
+            padding: 0.5rem;
+            max-width: unset !important;
+        }
+
+        .slider {
+            display: none;
+        }
+
+        label {
+            justify-content: start;
+            padding: 0.5rem;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.04);
+            }
+        }
+
+        input:checked + label {
+            background: var(--surface2);
+            
         }
     }
 </style>
