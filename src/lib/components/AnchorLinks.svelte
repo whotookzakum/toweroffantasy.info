@@ -35,6 +35,10 @@
     if ($page.url.pathname.includes("/simulacra")) {
         anchorLinks.push(
             {
+                name: "Top",
+                href: "#top"
+            },
+            {
                 name: "Awakening",
                 href: "#awakening",
             },
@@ -53,6 +57,10 @@
         );
     } else if ($page.url.pathname.includes("/weapons")) {
         anchorLinks.push(
+            {
+                name: "Stats",
+                href: "#stats"
+            },
             {
                 name: "Weapon Effects",
                 href: "#effects",
@@ -87,6 +95,10 @@
     }
     else if ($page.url.pathname.includes("/matrices")) {
         anchorLinks.push(
+            {
+                name: "Top",
+                href: "#top"
+            },
             {
                 name: "Set Effects",
                 href: "#effects",

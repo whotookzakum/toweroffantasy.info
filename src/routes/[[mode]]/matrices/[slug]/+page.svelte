@@ -5,6 +5,7 @@
     import SvelteMarkdown from "svelte-markdown";
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import MatrixMeta from "./MatrixMeta.svelte";
+    import GenericHeader from "../../../../lib/components/GenericHeader.svelte";
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
@@ -19,12 +20,20 @@
     </aside>
 
     <div class="article-content">
-        <h1>{matrix.name}</h1>
-        <h2 style="font-size: var(--step-2); margin: 0">Part of a set</h2>
-        <SetItems {simulacrum_v2} {weapon} {matrix} />
-        <small style="color: var(--text2);">Released in version {matrix.version}</small>
+        <GenericHeader
+            h1="{matrix.name} (Matrix)"
+            h1id="top"
+            icon={matrix.assets.iconLarge}
+            desc={matrix.description}
+            rarity={matrix.rarity}
+            imgStyle="transform: scale(1.3)"
+        />
 
-        <blockquote>{matrix.description}</blockquote>
+        <h2 style="font-size: var(--step-2)">Part of a set</h2>
+        <SetItems {simulacrum_v2} {weapon} {matrix} />
+        <small style="color: var(--text2);"
+            >Released in version {matrix.version}</small
+        >
 
         <h2 id="effects">Set Effects</h2>
         <table class="borders bg-alternate" style="margin-block: 1rem">
@@ -37,7 +46,10 @@
             <tbody>
                 {#each matrix.sets as set}
                     <tr>
-                        <td style="color: var(--tier-s); font-weight: bold; font-size: var(--step-1);">{set.need}</td>
+                        <td
+                            style="color: var(--tier-s); font-weight: bold; font-size: var(--step-1);"
+                            >{set.need}</td
+                        >
                         <td><SvelteMarkdown source={set.description} /></td>
                     </tr>
                 {/each}

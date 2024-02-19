@@ -4,6 +4,7 @@
     import { bgImg } from "$lib/stores";
     import SvelteMarkdown from "svelte-markdown";
     import AnchorLinks from "$components/AnchorLinks.svelte";
+    import GenericHeader from "../../../../lib/components/GenericHeader.svelte";
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
@@ -18,13 +19,25 @@
     </aside>
 
     <div class="article-content">
-        <h1>{simulacrum_v2.name}</h1>
-        <h2 style="font-size: var(--step-2); margin: 0">Part of a set</h2>
+        <GenericHeader
+            h1="{simulacrum_v2.name} (Simulacrum)"
+            h1id="top"
+            icon={simulacrum_v2.assetsA0.avatar}
+            eleColor={simulacrum_v2.weapon.element}
+            rarity={simulacrum_v2.rarity}
+            imgStyle="transform: scale(1.25)"
+        />
+        <h2 style="font-size: var(--step-2)">Part of a set</h2>
         <SetItems {simulacrum_v2} {weapon} {matrix} />
-        <small style="color: var(--text2);">Released in version {simulacrum_v2.version}</small>
+        <small style="color: var(--text2);"
+            >Released in version {simulacrum_v2.version}</small
+        >
 
         <h2 id="awakening">Awakening</h2>
-        <table class="awakening borders bg-alternate" style="margin-block: 1rem">
+        <table
+            class="awakening borders bg-alternate"
+            style="margin-block: 1rem"
+        >
             <thead>
                 <tr>
                     <th>Affinity</th>
@@ -56,7 +69,7 @@
 
         <h2 id="profile">Profile</h2>
 
-        <ul class="flex" >
+        <ul class="flex">
             <li class="box grid" style="flex: 1">
                 <span>Title</span>
                 <span>{weapon.name}</span>

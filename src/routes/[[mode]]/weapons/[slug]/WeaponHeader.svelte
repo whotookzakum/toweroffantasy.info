@@ -4,6 +4,7 @@
     import Tier from "$components/EntryItem/Tier.svelte";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import categoriesText from "$components/EntryItem/CategoriesText.json";
+    import GenericHeader from "../../../../lib/components/GenericHeader.svelte";
 
     export let weapon;
 
@@ -41,30 +42,16 @@
     }
 </script>
 
-<h1>{weapon.name}</h1>
-
 <div class="grid g-100">
-    <div
-        class="flex flex-wrap g-100 box"
-        style="align-items: center; justify-content: center"
-    >
-        <div
-            class="wep-img-wrapper flex"
-            style="--ele-color: var(--element-{weapon.element});"
-        >
-            <img
-                src={weapon.assets.icon}
-                alt=""
-                width="128"
-                height="128"
-                class="wep-img"
-            />
-        </div>
-        <div style="flex: 1; min-width: 35ch">
-            <p style="margin: 0">{weapon.description}</p>
-        </div>
-        <!-- <SvelteMarkdown source={weapon.elementEffect?.description} /> -->
-    </div>
+    <GenericHeader
+        h1={weapon.name}
+        h1id="stats"
+        icon={weapon.assets.icon}
+        desc={weapon.description}
+        eleColor={weapon.element}
+        rarity={weapon.rarity}
+        imgStyle="transform: scale(1.3)"
+    />
     <ul class="stats g-100">
         <li class="stat box">
             <CategoryIcon type={weapon.element} />
@@ -159,38 +146,5 @@
     .invert {
         filter: brightness(0) invert(1);
         filter: brightness(4);
-    }
-
-    .wep-img-wrapper {
-        position: relative;
-
-        &::before {
-            content: "";
-            border-radius: 50%;
-            position: absolute;
-            inset: 0;
-            border: 4px solid transparent;
-            z-index: 1;
-            transform: rotate(-55deg);
-            transform-origin: center;
-            transition: all 0.4s ease;
-        }
-
-        &:hover::before {
-            border-top: 4px solid var(--ele-color);
-            transform: rotate(90deg); // 270deg
-        }
-    }
-
-    
-
-    .wep-img {
-        background: hsl(226, 45%, 12%);
-        border: 4px solid var(--surface3);
-        box-shadow: 0 2px 4px var(--bg);
-        border-radius: 50%;
-        padding: 0.5rem;
-        place-content: center;
-        box-sizing: content-box;
     }
 </style>
