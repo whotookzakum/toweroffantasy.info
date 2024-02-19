@@ -40,106 +40,112 @@
     }
 </script>
 
-<table class:highlightRows>
-    <thead>
-        <th>#</th>
-        <th>Name</th>
-        <th>Types</th>
-        <th>Start</th>
-        <th>End</th>
-        <th>Duration</th>
-        <th>Week #</th>
-        <th>Notes</th>
-        <th class="visually-hidden">Link</th>
-    </thead>
-    <tbody>
-        {#each filteredBanners as banner (banner.bannerNumber)}
-            <tr class={banner.element}>
-                <td>{banner.bannerNumber}</td>
-                <td>
-                    <a
-                        href="/simulacra/{banner.simulacrumId}"
-                        style:color="var(--element-{banner.element})"
-                        class="flex g-25"
-                        style="align-items: center; width: fit-content;"
-                    >
-                        <img
-                            src={banner.simulacrum.assetsA0.avatar}
-                            alt=""
-                            width="52"
-                            height="52"
-                            style="margin: -0.3rem 0 -0.3rem -0.3rem"
-                        />
-                        {banner.simulacrumName}
-                    </a>
-                </td>
-                <td>
-                    <div class="flex g-25" style="align-items: center">
-                        <CategoryIcon type={banner.element} style="width: 30px" tooltip />
-                        <CategoryIcon type={banner.category} style="width: 30px" tooltip />
-                    </div>
-                </td>
-                <td>
-                    {new Date(banner.startDate).toLocaleString(
-                        $userLocale,
-                        dateOptions,
-                    )}
-                </td>
-                <td>
-                    {new Date(banner.endDate).toLocaleString(
-                        $userLocale,
-                        dateOptions,
-                    )}
-                </td>
-                <td>
-                    {getDurationInDays(banner.startDate, banner.endDate)} days
-                </td>
-                <td>
-                    {getWeeksSinceLaunch(
-                        banner.startDate,
-                    )}~{getWeeksSinceLaunch(banner.endDate)}
-                </td>
-                <td style="line-height: 2;">
-                    {#if banner.isFinalBanner}
-                        <Popper>
-                            <Tag type="final" />
-                            <p slot="tooltip">
-                                Will be moved to Standard Cache
-                            </p>
-                        </Popper>
-                    {/if}
-                    {#if banner.isCollab}
-                        <Popper>
-                            <Tag type="collab" />
-                            <p slot="tooltip">
-                                Only available during the collab period
-                            </p>
-                        </Popper>
-                    {/if}
-                    {#if banner.isLimitedBannerOnly}
-                        <Popper>
-                            <Tag type="limited" />
-                            <p slot="tooltip">
-                                Will NOT be moved to Standard Cache
-                            </p>
-                        </Popper>
-                    {/if}
-                </td>
-                <td>
-                    <a
-                        href={banner.detailsLink}
-                        style="text-decoration: underline; color: var(--accent); font-weight: normal"
-                        >Link</a
-                    >
-                </td>
-            </tr>
-        {/each}
-    </tbody>
-</table>
+<div class="table-wrapper" style="max-width: unset;">
+    <table class:highlightRows>
+        <thead>
+            <th>#</th>
+            <th>Name</th>
+            <th>Types</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Duration</th>
+            <th>Week #</th>
+            <th>Notes</th>
+            <th class="visually-hidden">Link</th>
+        </thead>
+        <tbody>
+            {#each filteredBanners as banner (banner.bannerNumber)}
+                <tr class={banner.element}>
+                    <td>{banner.bannerNumber}</td>
+                    <td>
+                        <a
+                            href="/simulacra/{banner.simulacrumId}"
+                            style:color="var(--element-{banner.element})"
+                            class="flex g-25"
+                            style="align-items: center; width: fit-content;"
+                        >
+                            <img
+                                src={banner.simulacrum.assetsA0.avatar}
+                                alt=""
+                                width="52"
+                                height="52"
+                                style="margin: -0.3rem 0 -0.3rem -0.3rem"
+                            />
+                            {banner.simulacrumName}
+                        </a>
+                    </td>
+                    <td>
+                        <div class="flex g-25" style="align-items: center">
+                            <CategoryIcon type={banner.element} style="width: 30px" tooltip />
+                            <CategoryIcon type={banner.category} style="width: 30px" tooltip />
+                        </div>
+                    </td>
+                    <td>
+                        {new Date(banner.startDate).toLocaleString(
+                            $userLocale,
+                            dateOptions,
+                        )}
+                    </td>
+                    <td>
+                        {new Date(banner.endDate).toLocaleString(
+                            $userLocale,
+                            dateOptions,
+                        )}
+                    </td>
+                    <td>
+                        {getDurationInDays(banner.startDate, banner.endDate)} days
+                    </td>
+                    <td>
+                        {getWeeksSinceLaunch(
+                            banner.startDate,
+                        )}~{getWeeksSinceLaunch(banner.endDate)}
+                    </td>
+                    <td style="line-height: 2;">
+                        {#if banner.isFinalBanner}
+                            <Popper>
+                                <Tag type="final" />
+                                <p slot="tooltip">
+                                    Will be moved to Standard Cache
+                                </p>
+                            </Popper>
+                        {/if}
+                        {#if banner.isCollab}
+                            <Popper>
+                                <Tag type="collab" />
+                                <p slot="tooltip">
+                                    Only available during the collab period
+                                </p>
+                            </Popper>
+                        {/if}
+                        {#if banner.isLimitedBannerOnly}
+                            <Popper>
+                                <Tag type="limited" />
+                                <p slot="tooltip">
+                                    Will NOT be moved to Standard Cache
+                                </p>
+                            </Popper>
+                        {/if}
+                    </td>
+                    <td>
+                        <a
+                            href={banner.detailsLink}
+                            style="text-decoration: underline; color: var(--accent); font-weight: normal"
+                            >Link</a
+                        >
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</div>
 
 <style lang="scss">
     td {
         padding-block: 0.5rem;
+    }
+
+    table {
+        white-space: nowrap;
     }
 
     table.highlightRows {

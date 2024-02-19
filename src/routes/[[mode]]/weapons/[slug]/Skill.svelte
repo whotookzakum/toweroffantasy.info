@@ -19,6 +19,38 @@
             (match, index) => values[index][valueIndex] || match,
         );
     }
+
+    $: operations = getOperations(data.operations)
+
+    function getOperations(_) {
+        const operations = [];
+
+        if (data.operations.length > 0) {
+            let currentAction = data.operations[0];
+            let count = 1;
+
+            for (let i = 1; i < data.operations.length; i++) {
+                if (data.operations[i] === currentAction) {
+                    count++;
+                } else {
+                    operations.push(
+                        count > 1
+                            ? `${currentAction} x${count}`
+                            : currentAction,
+                    );
+
+                    currentAction = data.operations[i];
+                    count = 1;
+                }
+            }
+
+            operations.push(
+                count > 1 ? `${currentAction} x${count}` : currentAction,
+            );
+        }
+
+        return operations;
+    }
 </script>
 
 <li class="box grid g-100">
@@ -34,6 +66,11 @@
         </div>
     </div>
     <SvelteMarkdown source={description} />
+    <div class="flex flex-wrap g-50">
+        {#each operations as operation}
+            <kbd class:hold={operation.includes("Hold")}>{operation}</kbd>
+        {/each}
+    </div>
 </li>
 
 <style lang="scss">
@@ -42,12 +79,6 @@
         text-transform: uppercase;
         font-size: var(--step-2);
     }
-
-    .tag {
-        background: var(--surface2);
-    }
-
-    
 
     .flex {
         align-items: center;

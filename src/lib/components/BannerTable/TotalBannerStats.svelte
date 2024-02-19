@@ -12,7 +12,7 @@
     const uniqueBanners = banners.filter((banner) => !banner.isRerun);
 </script>
 
-<dl class="flex g-50">
+<dl class="flex flex-wrap g-100">
     <div>
         <dt class="mini-header">Total banners</dt>
         <dd>
@@ -38,7 +38,7 @@
             {/each}
         </dd>
     </div>
-    <div></div>
+    <!-- <div></div> -->
 </dl>
 
 <style lang="scss">
@@ -47,8 +47,8 @@
         padding: 1rem;
         border-radius: 0.5rem;
         line-height: 1;
-        gap: 0;
         margin: 0;
+        white-space: nowrap;
 
         dd {
             padding: 0;
@@ -71,7 +71,8 @@
 
         & > div {
             gap: 0;
-            flex: 1;
+            // flex: 1;
+            flex-basis: clamp(20ch, 25%, 23ch);
         }
     }
 

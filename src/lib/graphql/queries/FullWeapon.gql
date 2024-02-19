@@ -2,6 +2,7 @@ query FullWeapon($id: String) {
     weapon(id: $id) {
         ...weaponEntry
         simulacrumId
+        description,
         weaponEffects {
             description
             title

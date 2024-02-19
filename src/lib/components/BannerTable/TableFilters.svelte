@@ -16,7 +16,7 @@
     ];
 </script>
 
-<div class="flex g-50" style="align-items: center">
+<div class="flex flex-wrap g-50" style="align-items: center">
     <input
         type="text"
         placeholder="Search banners"
