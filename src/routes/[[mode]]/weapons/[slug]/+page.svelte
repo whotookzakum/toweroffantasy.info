@@ -57,7 +57,7 @@
 
         <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
 
-        <UpgradeMats items={weapon.upgradeMats.items} />
+        <UpgradeMats levels={weapon.upgradeMats.levels} />
 
         <WeaponMeta {weapon} />
 

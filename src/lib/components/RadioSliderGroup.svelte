@@ -1,10 +1,10 @@
 <script>
-    export let group, groupName, data, name, inputFunction;
+    export let group, groupName, data, name, inputFunction, style;
     // Note for Firefox: without "name" attribute, user must tab through all radio options. with "name", tabbing will skip the entire group and arrow keys must be used to select an option
     // The CSS transition supports up to 5 options
 </script>
 
-<div class="sliders-wrapper" style:--total-options={data.length}>
+<div class="sliders-wrapper" style:--total-options={data.length} {style}>
     {#each data as { label, value }, index}
         <input
             class="visually-hidden"

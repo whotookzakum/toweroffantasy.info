@@ -11,12 +11,15 @@ query FullWeapon($id: String) {
             title
         }
         upgradeMats {
-            items {
-                matId
-                amount
-                icon
-                name
-                rarity
+            levels {
+                requiredExp
+                mats {
+                    matId
+                    amount
+                    icon
+                    name
+                    rarity
+                }
             }
         }
         weaponAdvancements {

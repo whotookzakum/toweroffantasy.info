@@ -115,6 +115,11 @@ type Item {
   type: String!
 }
 
+type LevelUpgrade {
+  mats: [UpgradeMaterial!]!
+  requiredExp: Int!
+}
+
 type Matrice {
   assets: MatrixAssets!
   banners: [Banner!]!
@@ -334,6 +339,16 @@ type UnlockItem {
   item: MountPart!
 }
 
+type UpgradeMaterial {
+  amount: Int
+  description: String
+  icon: String
+  matId: String
+  name: String
+  rarity: Int
+  type: String
+}
+
 type VoiceActors {
   cn: String
   en: String
@@ -391,17 +406,7 @@ type WeaponEffect {
   title: String!
 }
 
-type WeaponMat {
-  amount: Int
-  description: String
-  icon: String
-  matId: String
-  name: String
-  rarity: Int
-  type: String
-}
-
 type WeaponMats {
   id: String!
-  items: [[WeaponMat!]!]!
+  levels: [LevelUpgrade!]!
 }

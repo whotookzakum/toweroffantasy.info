@@ -1,11 +1,15 @@
 <script>
+    import RadioSliderGroup from "$components/RadioSliderGroup.svelte";
     import RangeSlider from "svelte-range-slider-pips";
     import ItemIcon from "$components/ItemIcon.svelte";
     import uniqBy from "lodash/uniqBy";
 
-    export let items;
+    export let levels;
+    let viewMode = "compact";
 
     // For some reason JS doesn't reset the acc array when using reduce so the values kept piling up instead of resetting on slider adjustment 🤷
+
+    const items = levels.map((level) => level.mats);
 
     let includeFinalAugment = true;
     const uniqueItems = uniqBy(items?.flat(), (item) => item.matId);
@@ -19,9 +23,9 @@
         }, {});
     }
 
-    let levels = [0, 200];
-    $: minLevel = Math.floor(levels[0] / 10);
-    $: maxLevel = Math.floor(levels[1] / 10);
+    let sliderLevels = [0, 200];
+    $: minLevel = Math.floor(sliderLevels[0] / 10);
+    $: maxLevel = Math.floor(sliderLevels[1] / 10);
     $: itemsInLevelRange = items.filter(
         (_, index) => index >= minLevel && index < maxLevel,
     );
@@ -47,7 +51,7 @@
                 amount: value,
             };
         });
-        if (includeFinalAugment && levels[1] === 200) {
+        if (includeFinalAugment && sliderLevels[1] === 200) {
             totalMats = totalMats.map((mat) => {
                 const finalAugmentMat = items[items.length - 1].find(
                     (item) => item.matId === mat.matId,
@@ -61,12 +65,17 @@
             });
         }
     }
+
+    $: totalExp = levels.reduce((acc, curr, index) => {
+        if (index > minLevel && index <= maxLevel) acc += curr.requiredExp;
+        return acc;
+    }, 0);
 </script>
 
 {#if items}
     <h2 id="upgrade-materials">Upgrade Materials</h2>
     <RangeSlider
-        bind:values={levels}
+        bind:values={sliderLevels}
         min={0}
         max={200}
         step={10}
@@ -77,26 +86,39 @@
         last="label"
         rest
     />
-    <h3>Augmentation</h3>
+    <RadioSliderGroup
+        bind:group={viewMode}
+        groupName="upgrade-mats-viewmode"
+        name="upgradeMatsViewMode"
+        data={[
+            { label: "Compact View", value: "compact" }, 
+            { label: "Breakdown View", value: "per-level" }
+        ]}
+        style="margin: 1rem 0; max-width: 320px"
+    />
+{/if}
+
+{#if items && viewMode === "compact"}
+    <h3 style="margin: 0">Augmentation</h3>
     <p>
         Increases max weapon level to <strong class="mint"
-            >Lv. {levels[1]}</strong
+            >Lv. {sliderLevels[1]}</strong
         >
         and raises weapon skills to
         <strong class="mint">Lv. {maxLevel}</strong>.
-        {#if levels[1] === 200}
+        {#if sliderLevels[1] === 200}
             <br />
             A final augmentation exists at weapon level 200, raising weapon skills
             to <strong class="mint">Lv. {items.length}</strong>.
         {/if}
     </p>
-    {#if levels[1] === 200}
+    {#if sliderLevels[1] === 200}
         <label style="user-select: none">
             <input type="checkbox" bind:checked={includeFinalAugment} /> Include
             final augmentation
         </label>
     {/if}
-    <ul class="big-list flex g-50">
+    <ul class="flex-wrap flex g-50">
         {#each totalMats as item}
             {#if item.amount > 0}
                 <li class="flex">
@@ -106,70 +128,139 @@
         {/each}
     </ul>
     <p>
-        {#if levels[1] >= 20}
+        {#if sliderLevels[1] >= 20}
             Req. Wanderer Level
-            <strong class="clay">{levels[1] / 2}</strong>.
+            <strong class="clay">{sliderLevels[1] / 2}</strong>.
         {/if}
     </p>
 
-    <h3>Enhancement</h3>
+    <h3 style="margin-top: 2rem">Enhancement</h3>
     <p>
-        Increases weapon level from <strong class="mint">Lv. {levels[0]}</strong
+        Increases weapon level from <strong class="mint"
+            >Lv. {sliderLevels[0]}</strong
         >
         to
-        <strong class="mint">Lv. {levels[1]}</strong>
+        <strong class="mint">Lv. {sliderLevels[1]}</strong>
     </p>
-    <!-- TODO: Enhancement mats here -->
-    <hr>
-    <details>
-        <summary>Upgrade materials (all levels)</summary>
-        <div class="two-col grid g-50">
+
+    <ul class="flex-wrap flex g-50">
+        <li class="flex">
+            <ItemIcon
+                item={{
+                    amount: totalExp,
+                    icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jinbi.webp",
+                    name: "Gold",
+                    rarity: 3,
+                }}
+            />
+        </li>
+        <li class="flex">
+            <ItemIcon
+                item={{
+                    amount: totalExp,
+                    icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jingyan.webp",
+                    name: "EXP",
+                    rarity: 1,
+                }}
+                imgSize={78}
+            />
+        </li>
+    </ul>
+{/if}
+
+{#if items && viewMode === "per-level"}
+    <table class="bg-alternate">
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>Augmentation</th>
+                <th>Enhancement</th>
+            </tr>
+        </thead>
+        <tbody>
             {#each items as matsInLevel, level}
-                {#if level < 20}
-                    <h4>Level {level * 10} to {(level + 1) * 10}</h4>
-                {:else}
-                    <h4>Final</h4>
-                {/if}
-                {#if level > 0}
-                    <div class="grid g-50">
-                        <h5 class="mint">Augmentation</h5>
-                        <ul class="flex g-50" style="margin: 0">
-                            {#each matsInLevel as mat}
-                                <li class="flex">
-                                    <ItemIcon
-                                        item={mat}
-                                        imgSize="64"
-                                        wrapperSize="64px"
-                                    />
-                                </li>
-                            {/each}
-                        </ul>
-                        {#if level >= 1}
-                            <p style="margin: 0;">
-                                Req. Wanderer Level
-                                <strong class="clay"
-                                    >{((level + 1) * 10) / 2}</strong
-                                >.
-                            </p>
+                {#if level >= minLevel && (level < maxLevel || maxLevel === 20 && level <= maxLevel)}
+                    <tr>
+                        {#if level < 20}
+                            <td>
+                                {level * 10} → {(level + 1) * 10}
+                            </td>
+                        {:else}
+                            <td> Final </td>
                         {/if}
-                    </div>
-                {/if}
-                {#if level < 20}
-                    <div class="{level > 0 ? 'margin-top' : ''} grid g-50">
-                        <h5 class="mint">Enhancement</h5>
-                        <!-- TODO: Enhancement mats here -->
-                    </div>
+                        <td>
+                            {#if level > 0}
+                                <ul class="flex g-50" style="margin: 0">
+                                    {#each matsInLevel as mat}
+                                        <li class="flex">
+                                            <ItemIcon
+                                                item={mat}
+                                                imgSize="64"
+                                                wrapperSize="64px"
+                                            />
+                                        </li>
+                                    {/each}
+                                </ul>
+                                {#if level < 20}
+                                    <p>
+                                        Req. Wanderer Level
+                                        <strong class="clay"
+                                            >{((level + 1) * 10) / 2}</strong
+                                        >.
+                                    </p>
+                                {:else}
+                                    <p>
+                                        Req. Wanderer Level
+                                        <strong class="clay">100</strong>.
+                                    </p>
+                                {/if}
+                            {/if}
+                        </td>
+                        <td>
+                            {#if level < 20}
+                                <ul
+                                    class="flex flex-wrap g-50"
+                                    style="margin: 0"
+                                >
+                                    <li class="flex">
+                                        <ItemIcon
+                                            item={{
+                                                amount: levels[level + 1]
+                                                    .requiredExp,
+                                                icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jinbi.webp",
+                                                name: "Gold",
+                                                rarity: 3,
+                                            }}
+                                            imgSize="64"
+                                            wrapperSize="64px"
+                                        />
+                                    </li>
+                                    <li class="flex">
+                                        <ItemIcon
+                                            item={{
+                                                amount: levels[level + 1]
+                                                    .requiredExp,
+                                                icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jingyan.webp",
+                                                name: "EXP",
+                                                rarity: 1,
+                                            }}
+                                            imgSize="58"
+                                            wrapperSize="64px"
+                                        />
+                                    </li>
+                                </ul>
+                            {/if}
+                        </td>
+                    </tr>
                 {/if}
             {/each}
-        </div>
-    </details>
+        </tbody>
+    </table>
+
+    <div class="two-col grid g-50"></div>
 {/if}
 
 <style lang="scss">
-    .big-list {
-        flex-wrap: wrap;
-    }
-
     ul {
         padding: 0;
     }
@@ -181,28 +272,26 @@
         column-gap: 2rem;
     }
 
-    h4 {
-        grid-column: 1/-1;
-        font-size: var(--step-0);
-        margin-top: 1.5rem;
-    }
+    tbody td {
+        // padding-bottom: 0;
+        vertical-align: baseline;
 
-    h5 {
-        font-size: var(--step--1);
-        margin: 0;
+        &:first-of-type {
+            font-size: var(--step-1);
+            font-weight: bold;
+            vertical-align: middle;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            font-size: var(--step--2);
+            line-height: 1;
+        }
     }
 
     @media (max-width: 700px) {
         .two-col {
             grid-template-columns: auto;
-        }
-
-        h4 {
-            margin-top: 2rem;
-        }
-
-        .margin-top {
-            margin-top: 0.5rem;
         }
     }
 </style>
