@@ -47,4 +47,9 @@
     .hidden {
         display: none;
     }
+
+    div {
+        position: sticky;
+        top: 93px; // height of navbar
+    }
 </style>
