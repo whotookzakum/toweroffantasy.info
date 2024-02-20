@@ -32,18 +32,24 @@
     .layout {
         margin: auto;
         font-size: var(--step--1);
-        grid-template-columns: 300px 1fr 300px;
         gap: 0;
     }
 
+    .layout,
+    :global(.topnav) {
+        grid-template-columns: 300px 1fr 300px;
+    }
+
     @media (max-width: 1600px) {
-        .layout {
+        .layout,
+        :global(.topnav) {
             grid-template-columns: 160px 1fr 160px;
         }
     }
 
     @media (max-width: 1280px) {
-        .layout {
+        .layout,
+        :global(.topnav) {
             grid-template-columns: 0 1fr 0;
         }
     }

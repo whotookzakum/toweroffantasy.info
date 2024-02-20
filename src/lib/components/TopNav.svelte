@@ -18,7 +18,7 @@
     }
 </script>
 
-<nav>
+<nav class="topnav grid">
     <div class="nav-content grid" class:open>
         <div class="top-strip flex">
             <a href="/" class="nav-link nav-home"> Tower of Fantasy Index </a>
@@ -113,6 +113,8 @@
         max-width: 1192px;
         margin: auto;
         padding: 0.5rem;
+        grid-column: 2/3;
+        width: 100%;
     }
 
     .bottom-strip {
