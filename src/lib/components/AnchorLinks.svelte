@@ -171,7 +171,7 @@
         }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 860px) {
         .anchor-links-wrapper > *:not(.section-links) {
             display: none;
         }
