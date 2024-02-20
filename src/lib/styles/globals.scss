@@ -187,6 +187,10 @@ button {
     .spinner:hover {
         transform: rotate(120deg); // 120 or 180deg
     }
+
+    &:active .spinner {
+        transform: rotate(25deg); // optional
+    }
 }
 
 
