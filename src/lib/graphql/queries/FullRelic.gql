@@ -1,4 +1,4 @@
-query FullRelic($id: String) {
+query FullRelic($id: String!) {
     relic(id: $id) {
         ...relicEntry
         advancements

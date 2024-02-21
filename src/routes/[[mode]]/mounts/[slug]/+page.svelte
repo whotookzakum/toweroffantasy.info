@@ -1,94 +1,52 @@
 <script>
-    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
-    import SvelteMarkdown from "svelte-markdown";
     import Youtube from "$lib/components/Youtube.svelte";
-    import Ad from "$lib/components/Ad.svelte";
+    import GenericHeader from "$lib/components/GenericHeader.svelte";
+    import ItemIcon from "$lib/components/ItemIcon.svelte";
+    import mountVideoLinks from "./mountVideoLinks.json";
 
     export let data;
+    const { mount } = data;
 </script>
 
-<svelte:head>
-    <title>{data.name} | Tower of Fantasy Index</title>
-    <meta
-        name="description"
-        content={`Information about the ${data.name} mount and how to unlock it.`}
-    />
-    <meta property="og:title" content={data.name} />
-    <meta
-        property="og:description"
-        content={`Information about the ${data.name} mount and how to unlock it.`}
-    />
-    <meta
-        property="og:image"
-        content={`/images/UI/Mount/${data.imgSrc}.webp`}
-    />
-    <meta name="theme-color" content="#377dcb" />
-</svelte:head>
+<GenericHeader
+    h1={mount.name}
+    icon={mount.assets.icon}
+    desc={mount.description}
+    imgStyle="transform: scale(0.65) translateY(20px); overflow: hidden; width: 308px; height: 206px;"
+/>
 
-<SectionNavigation />
-
-<h1>{data.name}</h1>
-<span style="color: var(--text2)">
-    {#if data.chinaOnly}
-        <abbr title="China Exclusive" />
-    {/if} Mount
-</span>
-
-<h4>Parts</h4>
-<div class="table-wrapper mounts">
-    <table class="bg-alternate">
-        <thead>
-            <th>Part</th>
-            <th>Source</th>
-        </thead>
-        <tbody>
-            {#each data.parts as part}
-                <tr>
-                    <td>
-                        <img
-                            src={`/images/Icon/Mount/${part.imgSrc}.webp`}
-                            alt={part.imgSrc}
-                            width="128"
-                            height="128"
-                            loading="lazy"
+<h2 id="parts">Parts</h2>
+<table style="margin-block: 1rem;">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {#each mount.unlockItems as part}
+            <tr>
+                <td style="vertical-align: top">
+                    <div style="width: fit-content">
+                        <ItemIcon
+                            item={{
+                                icon: part.item.icon,
+                                name: part.item.name,
+                                rarity: part.item.rarity,
+                                amount: part.amount,
+                            }}
                         />
-                    </td>
-                    <td>
-                        <SvelteMarkdown source={part.source} />
-                        {#if part.dropRate}
-                            <a
-                                href="https://twitter.com/Sova_ToF/status/1562031690490560517"
-                                rel="noreferrer noopener nofollow"
-                                target="_blank">Drop rate:</a
-                            >
-                            <strong>{part.dropRate}%</strong> (0.50% at 100+ kills)
-                        {/if}
-                        {#if part.guide}
-                            <a
-                                href={part.guide}
-                                rel="noreferrer noopener nofollow"
-                                target="_blank">View guide</a
-                            >
-                        {/if}
-                        {#if part.video}
-                            <Youtube source={part.video} />
-                        {/if}
-                    </td>
-                </tr>
-            {/each}
-        </tbody>
-    </table>
-</div>
+                    </div>
+                </td>
+                <td>
+                    <p>{part.item.description}</p>
+                </td>
+            </tr>
+        {/each}
+    </tbody>
+</table>
 
-<Ad unit="Banner1" />
-
-{#if data.videoSrc}
-    <h4 id="preview">Preview</h4>
-    <Youtube source={data.videoSrc} />
+{#if mountVideoLinks[mount.id]}
+    <h2 id="preview">Preview</h2>
+    <Youtube source={mountVideoLinks[mount.id]} />
 {/if}
-
-<style>
-    td:first-of-type {
-        text-align: center;
-    }
-</style>

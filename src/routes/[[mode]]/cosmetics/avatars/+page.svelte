@@ -1,7 +1,7 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import avatars from "$lib/data/cosmetics/avatars.json";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$lib/components/Ad/Ad.svelte";
 
     // After Lin: T-Pose
     // {

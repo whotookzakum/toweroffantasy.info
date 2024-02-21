@@ -2,18 +2,21 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
+    import VersionSelector from "$components/Filters/VersionSelector.svelte";
     import { queryParameters } from "sveltekit-search-params";
 
     export let data;
     const searchParams = queryParameters();
 
     $: entries = data.mounts.filter((entry) => {
-        const { q } = $searchParams;
+        const { q, version } = $searchParams;
         const searchMatch = q
-            ? entry.name.toLowerCase().includes(q.toLowerCase())
+            ? entry.name?.toLowerCase().includes(q.toLowerCase())
             : true;
+        const versionMatch =
+            version && version !== "all" ? entry.version === version : true;
 
-        return searchMatch
+        return searchMatch && versionMatch
     });
 </script>
 
@@ -33,6 +36,7 @@
 
 <div class="filters-row">
     <SearchBar />
+    <VersionSelector originalData={data.mounts} />
 </div>
 
 <ul class="entry-list">
@@ -40,7 +44,6 @@
         <EntryItem
             {entry}
             slot="search-results"
-            isNew={entry.id === data.mounts[0].id}
         />
     {/each}
 </ul>

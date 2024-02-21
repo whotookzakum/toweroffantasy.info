@@ -1,4 +1,4 @@
-query ShortWeapon($id: String) {
+query ShortWeapon($id: String!) {
     weapon(id: $id) {
         ...weaponEntry
     }

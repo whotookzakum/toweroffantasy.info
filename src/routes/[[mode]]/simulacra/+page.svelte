@@ -66,7 +66,6 @@
         <EntryItem
             {entry}
             slot="search-results"
-            isNew={entry.id === data.simulacra_v2[0].id}
         />
     {/each}
 </ul>

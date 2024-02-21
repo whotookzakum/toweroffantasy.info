@@ -4,4 +4,5 @@ fragment mountEntry on Mount {
     assets {
         icon
     }
+    version
 }

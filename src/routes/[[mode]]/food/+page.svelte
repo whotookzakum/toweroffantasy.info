@@ -8,7 +8,7 @@
     import Item from "$lib/components/Item.svelte";
     import EffectIcon from "$lib/components/food/EffectIcon.svelte";
     import FoodFilters from "../../lib/components/food/FoodFilters.svelte";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$lib/components/Ad/Ad.svelte";
 
     onMount(() => {
         const anchors = new AnchorJS();

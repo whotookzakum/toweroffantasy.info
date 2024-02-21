@@ -4,7 +4,7 @@
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
     import { onMount } from "svelte";
     import AnchorJS from "anchor-js";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$lib/components/Ad/Ad.svelte";
     onMount(() => {
         const anchors = new AnchorJS();
         anchors.add("h3");

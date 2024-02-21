@@ -1,4 +1,4 @@
-query FullMatrix($id: String) {
+query FullMatrix($id: String!) {
     matrix(id: $id) {
         ...matrixEntry
         description

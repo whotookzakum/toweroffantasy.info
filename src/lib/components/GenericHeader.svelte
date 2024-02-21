@@ -9,9 +9,10 @@
     export let h1 = "";
     export let rarity = "";
     export let h1id = "";
+    export let hideOverflow = false;
 </script>
 
-<div class="generic-header-wrapper flex flex-wrap g-100 box">
+<div class="generic-header-wrapper flex flex-wrap g-100 box" class:hideOverflow>
     <div
         class="img-border grid"
         class:animate-border={eleColor}
@@ -81,6 +82,16 @@
             position: relative;
             z-index: 3;
             display: flex;
+        }
+    }
+
+    .hideOverflow .img-border {
+        overflow: hidden;
+        border: 4px solid var(--surface3);
+        
+
+        .circle {
+            display: none;
         }
     }
 

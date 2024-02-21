@@ -195,28 +195,28 @@ type Outfit {
 }
 
 type Query {
-  achievement(id: String = null, lang: String! = "en", name: String = null): Achievement!
+  achievement(id: String!, lang: String! = "en"): Achievement!
   achievements(lang: String! = "en"): [Achievement!]!
   banners(includeUnreleased: Boolean! = false): [Banner!]!
-  food(id: String = null, lang: String! = "en", name: String = null): Food!
+  food(id: String!, lang: String! = "en"): Food!
   foods(lang: String! = "en"): [Food!]!
-  item(id: String = null, lang: String! = "en", name: String = null): Item!
+  item(id: String!, lang: String! = "en"): Item!
   items(lang: String! = "en"): [Item!]!
   matrices(includeUnreleased: Boolean! = false, lang: String! = "en"): [Matrice!]!
-  matrix(id: String = null, lang: String! = "en", name: String = null): Matrice!
-  mount(id: String = null, lang: String! = "en", name: String = null): Mount!
+  matrix(id: String!, lang: String! = "en"): Matrice!
+  mount(id: String!, lang: String! = "en"): Mount!
   mounts(lang: String! = "en"): [Mount!]!
-  outfit(id: String = null, lang: String! = "en", name: String = null): Outfit!
+  outfit(id: String!, lang: String! = "en"): Outfit!
   outfits(lang: String! = "en"): [Outfit!]!
-  relic(id: String = null, lang: String! = "en", name: String = null): Relic!
+  relic(id: String!, lang: String! = "en"): Relic!
   relics(lang: String! = "en"): [Relic!]!
-  servant(id: String = null, lang: String! = "en", name: String = null): SmartServant!
+  servant(id: String!, lang: String! = "en"): SmartServant!
   servants(lang: String! = "en"): [SmartServant!]!
   simulacra(includeUnreleased: Boolean! = false, lang: String! = "en"): [Simulacra!]!
   simulacra_v2(includeUnreleased: Boolean! = false, lang: String! = "en"): [SimulacraV2!]!
-  simulacrum(id: String = null, lang: String! = "en", name: String = null): Simulacra!
-  simulacrum_v2(id: String = null, lang: String! = "en", name: String = null): SimulacraV2!
-  weapon(id: String = null, lang: String! = "en", name: String = null): Weapon!
+  simulacrum(id: String!, lang: String! = "en"): Simulacra!
+  simulacrum_v2(id: String!, lang: String! = "en"): SimulacraV2!
+  weapon(id: String!, lang: String! = "en"): Weapon!
   weapons(includeUnreleased: Boolean! = false, lang: String! = "en"): [Weapon!]!
 }
 

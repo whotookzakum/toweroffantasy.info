@@ -48,7 +48,6 @@
         <EntryItem
             {entry}
             slot="search-results"
-            isNew={entry.id === data.relics[0].id}
         />
     {/each}
 </ul>

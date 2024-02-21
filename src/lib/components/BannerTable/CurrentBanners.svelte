@@ -29,7 +29,7 @@
 
     <ul class="entry-list">
         {#each currentBanners as banner}
-            <EntryItem entry={banner.simulacrum} isNew={banner.isNew} />
+            <EntryItem entry={banner.simulacrum} />
         {/each}
     </ul>
 </div>

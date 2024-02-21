@@ -1,4 +1,4 @@
-query FullWeapon($id: String) {
+query FullWeapon($id: String!) {
     weapon(id: $id) {
         ...weaponEntry
         simulacrumId

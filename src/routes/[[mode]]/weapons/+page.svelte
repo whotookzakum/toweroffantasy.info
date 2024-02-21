@@ -62,7 +62,6 @@
         <EntryItem
             {entry}
             slot="search-results"
-            isNew={entry.id === data.weapons[0].id}
         />
     {/each}
 </ul>

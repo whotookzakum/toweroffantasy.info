@@ -52,7 +52,6 @@
         <EntryItem
             {entry}
             slot="search-results"
-            isNew={entry.id === data.matrices[0].id}
         />
     {/each}
 </ul>

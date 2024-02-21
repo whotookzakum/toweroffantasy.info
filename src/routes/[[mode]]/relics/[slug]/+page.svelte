@@ -2,6 +2,7 @@
     import Youtube from "$lib/components/Youtube.svelte";
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import relicVideoLinks from "./relicVideoLinks.json";
+    import SvelteMarkdown from "svelte-markdown"
 
     export let data;
     const { relic } = data;

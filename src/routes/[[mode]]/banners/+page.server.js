@@ -14,8 +14,7 @@ export const load = async (event) => {
         totalBanners: bannersRes.data.banners.filter(
             (b) => b.simulacrumId === banner.simulacrumId,
         ).length,
-        simulacrum: simulacraRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId),
-        isNew: banner.simulacrumId === simulacraRes.data.simulacra_v2[0].id
+        simulacrum: simulacraRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId)
     }))
 
     return { banners }

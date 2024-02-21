@@ -1,6 +1,6 @@
 <script>
     import SectionNavigation from "$lib/components/SectionNavigation.svelte";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$lib/components/Ad/Ad.svelte";
     export let data;
 </script>
 

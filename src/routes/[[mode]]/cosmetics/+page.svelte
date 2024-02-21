@@ -1,5 +1,5 @@
 <script>
-    import Ad from "$components/Ad.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
     import Meta from "$components/Meta.svelte"
 
     const links = [

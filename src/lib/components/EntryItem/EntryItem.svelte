@@ -5,11 +5,10 @@
     import NucleusIcons from "./NucleusIcons.svelte";
     import { showWepOnSimEntry } from "$lib/stores";
     import Tag from "../Tag.svelte";
+    import { page } from "$app/stores"
 
     export let entry;
-    export let isNew = false;
     export let matrixPieces = 0;
-    // Alternative logic for isNew: !isRerun && todaysDate < endDate && todaysDate > startDate
 
     let mainRoute = {
         Simulacra: "simulacra",
@@ -50,7 +49,7 @@
     class:molinia={entry.id === "imitation_33"}
     class:hide-weapon={!$showWepOnSimEntry}
 >
-    {#if isNew}
+    {#if entry.version == $page.data.latestVersion}
         <Tag
             type="new"
             style="position: absolute; top: 0.5rem; left: 0.5rem;"

@@ -1,7 +1,7 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import outfits from "$lib/data/cosmetics/outfits.json";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$lib/components/Ad/Ad.svelte";
     import Youtube from "$lib/components/Youtube.svelte";
     import Icon from "@iconify/svelte";
     //     "name": "Absolute Order",

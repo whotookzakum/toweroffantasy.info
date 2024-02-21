@@ -27,9 +27,9 @@
 
 <h2>Newest Arrivals</h2>
 <ul class="entry-list">
-    <EntryItem entry={data.newest.simulacrum} isNew />
-    <EntryItem entry={data.newest.weapon} isNew />
-    <EntryItem entry={data.newest.matrix} isNew />
+    <EntryItem entry={data.newest.simulacrum} />
+    <EntryItem entry={data.newest.weapon} />
+    <EntryItem entry={data.newest.matrix} />
 </ul>
 
 <div>

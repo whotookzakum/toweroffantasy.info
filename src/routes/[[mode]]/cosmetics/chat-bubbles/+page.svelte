@@ -1,7 +1,7 @@
 <script>
     import SvelteMarkdown from "svelte-markdown";
     import chatBubbles from "$lib/data/cosmetics/chatBubbles.json";
-    import Ad from "$lib/components/Ad.svelte";
+    import Ad from "$lib/components/Ad/Ad.svelte";
 
     // Before stride gum
     // {
