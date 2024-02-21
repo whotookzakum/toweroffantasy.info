@@ -4,7 +4,6 @@
     import SearchBar from "$components/Filters/SearchBar.svelte";
     import { queryParameters } from "sveltekit-search-params";
     import RarityFilters from "$components/Filters/RarityFilters.svelte";
-    import BannerFilters from "$components/Filters/BannerFilters.svelte";
     import VersionSelector from "$components/Filters/VersionSelector.svelte";
 
     export let data;
@@ -39,7 +38,6 @@
 <div class="filters-row">
     <SearchBar />
     <RarityFilters originalData={data.relics} />
-    <BannerFilters />
     <VersionSelector originalData={data.relics} />
 </div>
 
