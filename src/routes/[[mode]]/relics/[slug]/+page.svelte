@@ -1,53 +1,48 @@
 <script>
-    import Advancements from "$lib/components/simulacrum/Advancements.svelte";
-    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
-    import SvelteMarkdown from "svelte-markdown";
     import Youtube from "$lib/components/Youtube.svelte";
-    import Ad from "$lib/components/Ad.svelte";
+    import GenericHeader from "$lib/components/GenericHeader.svelte";
+    import relicVideoLinks from "./relicVideoLinks.json";
 
     export let data;
+    const { relic } = data;
 </script>
 
-<svelte:head>
-    <title>{data.name} | Tower of Fantasy Index</title>
-    <meta
-        name="description"
-        content={`Information about the ${data.rarity} relic ${data.name}.`}
-    />
-    <meta property="og:title" content={data.name} />
-    <meta
-        property="og:description"
-        content={`Information about the ${data.rarity} relic ${data.name}.`}
-    />
-    <meta
-        property="og:image"
-        content={`/images/UI/Artifact/icon/${data.imgSrc}.webp`}
-    />
-    <meta name="theme-color" content="#377dcb" />
-</svelte:head>
+<GenericHeader
+    h1={relic.name}
+    icon={relic.icon}
+    rarity={relic.rarity}
+    desc={relic.source}
+/>
 
-<SectionNavigation />
+<h2 id="advancements">Advancements</h2>
+<table class="borders bg-alternate" style="margin-top: 1rem">
+    <thead>
+        <tr>
+            <th>Stars</th>
+            <th>Effect</th>
+        </tr>
+    </thead>
+    <tbody>
+        {#each relic.advancements as advancement, index}
+            <tr>
+                <td
+                    style="color: var(--tier-s); font-weight: bold; font-size: var(--step-1);"
+                    >{index + 1} ★</td
+                >
+                <td>
+                    <SvelteMarkdown source={advancement} />
+                </td>
+            </tr>
+        {/each}
+    </tbody>
+</table>
 
-<h1>{data.name}</h1>
-<span style="color: var(--text2)">
-    {#if data.chinaOnly}
-        <abbr title="China Exclusive" />
-    {/if}
-    {data.rarity} Relic
-</span>
-
-<SvelteMarkdown source={data.description} />
-
-<Ad unit="Banner1" />
-
-<Advancements weapon={data} />
-
-<Ad unit="Banner2" />
-
-{#if data.videoSrc}
-    <h4 id="preview">Preview</h4>
+{#if relicVideoLinks[relic.id]}
+    <h2 id="preview">Preview</h2>
     <Youtube
-        source={data.videoSrc}
-        caption={`The ${data.name} used in this video is ${data.starsInVideo}★`}
+        source={relicVideoLinks[relic.id].videoId}
+        caption="The {relic.name} shown in this video is {relicVideoLinks[
+            relic.id
+        ].starsInVideo}★"
     />
 {/if}

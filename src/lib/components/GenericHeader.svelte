@@ -1,19 +1,17 @@
 <script>
+    import SvelteMarkdown from "svelte-markdown";
     import RarityIcon from "./EntryItem/RarityIcon.svelte";
 
     export let icon = "";
     export let desc = "";
     export let eleColor = "";
     export let imgStyle = "";
-    export let h1 = ""
-    export let rarity = ""
+    export let h1 = "";
+    export let rarity = "";
     export let h1id = "";
 </script>
 
-<div
-    class="flex flex-wrap g-100 box"
-    style="align-items: center; justify-content: center"
->
+<div class="generic-header-wrapper flex flex-wrap g-100 box">
     <div
         class="img-border grid"
         class:animate-border={eleColor}
@@ -55,11 +53,20 @@
                 <RarityIcon {rarity} />
             {/if}
         </div>
-        <p>{desc}</p>
+        <SvelteMarkdown source={desc} />
     </div>
 </div>
 
 <style lang="scss">
+    .generic-header-wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    :global(.generic-header-wrapper p) {
+        margin: 0;
+    }
+
     .img-border {
         background-color: hsl(226, 45%, 12%);
         box-shadow: 0 2px 4px var(--bg);
@@ -75,10 +82,6 @@
             z-index: 3;
             display: flex;
         }
-    }
-
-    p {
-        margin: 0;
     }
 
     .circle {
