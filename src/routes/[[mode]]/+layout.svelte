@@ -4,6 +4,7 @@
     import { GoogleAnalytics } from "@beyonk/svelte-google-analytics";
     import TopNav from "$components/TopNav.svelte";
     import Ad from "$components/Ad/Ad.svelte";
+    import PageFooter from "$lib/components/PageFooter.svelte";
 
     export let data;
 </script>
@@ -24,6 +25,7 @@
     <div class="gutter-right">
         <Ad unit="Gutter2" />
     </div>
+    <PageFooter />
 </div>
 
 <BackgroundImage src={data.bgImg} />
@@ -36,20 +38,23 @@
     }
 
     .layout,
-    :global(.topnav) {
+    :global(.topnav),
+    :global(.page-footer) {
         grid-template-columns: 300px 1fr 300px;
     }
 
     @media (max-width: 1600px) {
         .layout,
-        :global(.topnav) {
+        :global(.topnav),
+        :global(.page-footer) {
             grid-template-columns: 160px 1fr 160px;
         }
     }
 
     @media (max-width: 1280px) {
         .layout,
-        :global(.topnav) {
+        :global(.topnav),
+        :global(.page-footer) {
             grid-template-columns: 0 1fr 0;
         }
     }

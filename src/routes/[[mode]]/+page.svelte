@@ -12,6 +12,9 @@
 
 <svelte:head>
     <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
+    <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
+    <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
+    <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
     <script type="application/ld+json">
         {
           "@context" : "https://schema.org",
@@ -19,22 +22,24 @@
           "name" : "Tower of Fantasy Index",
           "url" : "https://toweroffantasy.info/"
         }
-      </script>    
+    </script>
 </svelte:head>
 
 <h1>Tower of Fantasy Index</h1>
 
 <p>
-    We prioritize data from the Global version of Tower of Fantasy. Content
-    exclusive to the Chinese version is marked with <abbr
-        title="China Exclusive"
-    />. Issues can be reported on Discord.
+    Online resource for Tower of Fantasy Global and Chinese versions.<br />
+    Feedback can be sent via
+    <a
+        href="https://discord.com/channels/670617630717116426/1063498932749094912"
+        target="_blank"
+        rel="noreferrer nofollow noopener">Discord</a
+    >.
 </p>
 
 <p>
-    If the site has been helpful to you and you'd like to support its
-    development, please disable adblock or consider sending a Ko-Fi! Last
-    updated November 3.
+    If the site has been helpful to you and you'd like to show gratitude, please
+    disable adblock or consider sending a Ko-Fi!
 </p>
 
 <h2>Newest Arrivals</h2>
@@ -46,7 +51,7 @@
 <small style="color: var(--text2)">Added in version {data.latestVersion}</small>
 
 <div>
-    <h2>Credits</h2>
+    <h2 style="font-size: var(--step-3);">Credits</h2>
 
     <h3>Created by</h3>
     <p>Pyrosu, Zakum</p>
@@ -54,13 +59,28 @@
     <h3>Original contents by</h3>
     <p>Pyrosu, BakuBaku, Sera Naoki</p>
 
-    <h3>Data courtesy of</h3>
-    <p>Eminentglory, TheKingOppaiDragon, FortOfFans, biellSilva</p>
-
-    <h3>Special thanks</h3>
+    <h3>With major contributions by</h3>
     <p>
-        Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
-        Gateoo, Sky, ChickenJoy, Riala, TheKingOppaiDragon, Fanatique,
-        FortOfFans, EminentGlory, Maygi
+        Sova, Afrodiy, Eminentglory, TheKingOppaiDragon, FortOfFans, biellSilva
+    </p>
+
+    <h3>And special thanks to</h3>
+    <p>
+        HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny, Gateoo, Sky,
+        ChickenJoy, Riala, TheKingOppaiDragon, Fanatique, FortOfFans,
+        EminentGlory, Maygi
     </p>
 </div>
+
+<style lang="scss">
+    h3 {
+        color: var(--accent);
+        font-size: var(--step--2);
+        text-transform: uppercase;
+    }
+
+    h3:not(:first-of-type),
+    p {
+        margin-top: 0;
+    }
+</style>
