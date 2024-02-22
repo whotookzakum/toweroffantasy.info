@@ -1,4 +1,4 @@
-import { AllFoodsStore, AllItemsStore } from '$houdini'
+import { AllFoodsStore } from '$houdini'
 import uniq from "lodash/uniq"
 
 export const load = async (event) => {
@@ -6,14 +6,9 @@ export const load = async (event) => {
     const { data } = await query.fetch({ event })
     const { foods } = data
 
-    // Contains ingredients
-    const itemsQuery = new AllItemsStore()
-    const itemsRes = await itemsQuery.fetch({ event })
-    const { items } = itemsRes.data
-
     const allEffects = 
         uniq(foods.flatMap(food => food.categories))
         .map(cat => ({ name: cat, type: "effects" }))
 
-    return { foods, items, allEffects }
+    return { foods, allEffects }
 }

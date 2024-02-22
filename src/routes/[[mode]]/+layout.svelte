@@ -65,8 +65,11 @@
         padding: 1rem;
         background: hsla(236, 45%, 10%, 0.93);
         display: grid;
-        min-height: calc(100vh - 93px);
-        min-height: calc(100dvh - 93px);
+    }
+
+    main {
+        min-height: calc(100vh - 93px - 49px - 2rem);
+        min-height: calc(100dvh - 93px - 49px - 2rem);
     }
 
     .gutter-right {

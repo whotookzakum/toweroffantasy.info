@@ -4,4 +4,5 @@ fragment relicEntry on Relic {
     icon
     rarity
     type
+    version
 }

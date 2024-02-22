@@ -8,7 +8,7 @@
     import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
 
     export let data;
-    const { foods, items, allEffects } = data;
+    const { foods, allEffects } = data;
     const searchParams = queryParameters();
 
     $: entries = foods
@@ -45,10 +45,6 @@
         .toSorted((a, b) => a.rarity - b.rarity);
     // For testing multiple buff icons
     // .filter((entry) => entry.categories.length > 1);
-
-    function getIngredientInfo(id) {
-        return items.find((item) => item.id.toLowerCase() === id.toLowerCase());
-    }
 </script>
 
 <Meta
@@ -120,9 +116,7 @@
                                             <div class="item-wrapper">
                                                 <ItemIcon
                                                     item={{
-                                                        ...getIngredientInfo(
-                                                            ingredient.matID,
-                                                        ),
+                                                        ...ingredient.matID,
                                                         amount: ingredient.min,
                                                     }}
                                                     imgSize="48"
@@ -130,11 +124,7 @@
                                                     isIngredient
                                                 />
                                             </div>
-                                            <span
-                                                >{getIngredientInfo(
-                                                    ingredient.matID,
-                                                ).name}</span
-                                            >
+                                            <span>{ingredient.matID.name}</span>
                                         </li>
                                     {/each}
                                 </ul>

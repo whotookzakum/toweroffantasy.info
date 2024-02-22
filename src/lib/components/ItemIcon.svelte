@@ -52,8 +52,8 @@
                     <div
                         class="foodbuff-wrapper"
                         class:top-left={category === "AddEnergyRecover"}
-                        class:visually-hidden={category.includes("Def") &&
-                            item.categories.some((cat) => cat.includes("Atk"))}
+                        class:visually-hidden={(category.includes("Def") &&
+                            item.categories.some((cat) => cat.includes("Atk"))) || category === "AddSatiety"}
                     >
                         <CategoryIcon type={category} style="width: 28px" />
                     </div>

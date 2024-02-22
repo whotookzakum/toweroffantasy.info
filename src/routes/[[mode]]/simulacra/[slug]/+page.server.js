@@ -30,7 +30,7 @@ export const load = async (event) => {
             ...banner,
             simulacrum: {
                 assetsA0: {
-                    avatar: simulacrum.assetsA0.avatar
+                    avatar: simulacrum?.assetsA0.avatar ?? "/images/mia.webp"
                 }
             }
         }

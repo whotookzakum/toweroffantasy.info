@@ -100,8 +100,23 @@ type Food {
   stars: Int!
 }
 
+type GuideBookItem {
+  description: String!
+  icon: String!
+  title: String!
+}
+
+type Guidebook {
+  icon: String!
+  id: String!
+  items: [GuideBookItem!]!
+  menuId: String!
+  menuType: String!
+  name: String!
+}
+
 type Ingredient {
-  matID: String!
+  matID: Item!
   max: String!
   min: String!
 }
@@ -200,6 +215,8 @@ type Query {
   banners(includeUnreleased: Boolean! = false): [Banner!]!
   food(id: String!, lang: String! = "en"): Food!
   foods(lang: String! = "en"): [Food!]!
+  guidebook(id: String!, lang: String! = "en"): Guidebook!
+  guidebooks(lang: String! = "en"): [Guidebook!]!
   item(id: String!, lang: String! = "en"): Item!
   items(lang: String! = "en"): [Item!]!
   matrices(includeUnreleased: Boolean! = false, lang: String! = "en"): [Matrice!]!
@@ -227,7 +244,6 @@ type RecoMatrix {
 
 type Relic {
   advancements: [String!]!
-  attributeID: String!
   description: String
   icon: String!
   id: String!
@@ -235,6 +251,7 @@ type Relic {
   rarity: Int!
   source: String
   type: String!
+  version: String!
 }
 
 type ServantAsset {
@@ -271,6 +288,7 @@ type Simulacra {
   dislikedGiftTypes: [String!]!
   fashion: [Fashion!]!
   gender: String
+  guidebook: [GuideBookItem!]!
   height: String
   homeTown: String
   id: String!
@@ -297,6 +315,7 @@ type SimulacraV2 {
   dislikedGiftTypes: [String!]!
   fashion: [Fashion!]!
   gender: String
+  guidebook: [GuideBookItem!]!
   height: String
   homeTown: String
   id: String!

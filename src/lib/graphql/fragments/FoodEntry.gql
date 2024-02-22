@@ -10,7 +10,14 @@ fragment foodEntry on Food {
     rarity
     stars
     ingredients {
-        matID
+        matID {
+            description
+            icon
+            id
+            name
+            type
+            rarity
+        }
         max
         min
     }

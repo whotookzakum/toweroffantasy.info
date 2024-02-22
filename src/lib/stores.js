@@ -16,3 +16,5 @@ export const selectedElements = derived(page, ($page) => $page.url.searchParams.
 export const showWepOnSimEntry = writable(true);
 
 export const outfitsGender = writable("f");
+
+export const guidebookCategory = writable("exploration");

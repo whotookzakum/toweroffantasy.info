@@ -2,6 +2,11 @@
     <div class="footer-content">
         <span>&copy; 2024 Tower of Fantasy Index</span>
         <div class="flex g-50 flex-wrap">
+            <a
+                href="https://github.com/whotookzakum/toweroffantasy.info"
+                target="_blank"
+                rel="nofollow noopener noreferrer">GitHub</a
+            >
             <a href="/privacy">Privacy Policy</a>
         </div>
     </div>
@@ -9,7 +14,6 @@
 
 <style lang="scss">
     footer {
-        // border-top: 1px solid var(--surface1);
         padding-bottom: 90px;
         color: var(--text2);
         font-size: var(--step--2);

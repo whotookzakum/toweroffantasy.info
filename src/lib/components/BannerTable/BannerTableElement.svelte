@@ -76,8 +76,16 @@
                     </td>
                     <td>
                         <div class="flex g-25" style="align-items: center">
-                            <CategoryIcon type={banner.element} style="width: 30px" tooltip />
-                            <CategoryIcon type={banner.category} style="width: 30px" tooltip />
+                            <CategoryIcon
+                                type={banner.element}
+                                style="width: 30px"
+                                tooltip
+                            />
+                            <CategoryIcon
+                                type={banner.category}
+                                style="width: 30px"
+                                tooltip
+                            />
                         </div>
                     </td>
                     <td>
@@ -175,6 +183,14 @@
             );
         }
 
+        .FlamePhysics {
+            background: linear-gradient(
+                45deg,
+                rgba(216, 91, 42, 0.1),
+                rgba(216, 91, 42, 0.02)
+            );
+        }
+
         .Thunder {
             background: linear-gradient(
                 45deg,
@@ -197,6 +213,15 @@
                 45deg,
                 rgba(216, 91, 42, 0.1),
                 rgba(216, 91, 42, 0.02)
+            );
+        }
+
+        .VoltIce,
+        .IceThunder {
+            background: linear-gradient(
+                45deg,
+                rgba(106, 105, 190, 0.15),
+                rgba(106, 105, 190, 0.02)
             );
         }
     }
