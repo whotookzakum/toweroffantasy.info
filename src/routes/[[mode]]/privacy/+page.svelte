@@ -1,18 +1,3 @@
-<svelte:head>
-    <title>Privacy Policy | Tower of Fantasy Index</title>
-    <meta name="description" content="Privacy Policy for the Tower of Fantasy Index.">
-    <meta property="og:title" content="Privacy Policy" />
-    <meta
-        property="og:description"
-        content="Privacy Policy for the Tower of Fantasy Index."
-    />
-    <meta
-        property="og:image"
-        content={`/images/mia.webp`}
-    />
-    <meta name="theme-color" content="#377dcb" />
-</svelte:head>
-
 <div class="privacy-policy">
     <h1>Privacy Policy</h1>
     <span data-ccpa-link="1"></span>
