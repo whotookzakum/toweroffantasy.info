@@ -14,6 +14,11 @@
     <h2 id="meta">Meta</h2>
     <RecommendedWeapons weapons={meta.recommendedWeapons} />
     {#if meta.lastUpdated}
-        <small style="color: var(--text2);">Meta last updated by {meta.lastUpdated.username} on {updateDate}</small>
+        <small style="color: var(--text2);">
+            Meta last updated by {meta.lastUpdated.username}
+            {#if updateDate}
+                on {updateDate}
+            {/if}
+        </small>
     {/if}
 {/if}

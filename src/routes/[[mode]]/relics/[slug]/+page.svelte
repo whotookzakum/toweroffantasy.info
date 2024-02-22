@@ -3,10 +3,17 @@
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import relicVideoLinks from "./relicVideoLinks.json";
     import SvelteMarkdown from "svelte-markdown"
+    import Meta from "$components/Meta.svelte";
 
     export let data;
     const { relic } = data;
 </script>
+
+<Meta
+    title="{relic.name} | Tower of Fantasy Index"
+    description="All about the relic {relic.name}, such as advancements and a video preview (if available)."
+    image={relic.icon}
+/>
 
 <GenericHeader
     h1={relic.name}

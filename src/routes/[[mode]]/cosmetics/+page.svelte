@@ -41,7 +41,6 @@
 <Meta
     title="Cosmetics | Tower of Fantasy Index"
     description="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free. Cosmetic gachapon items may have reruns."
-    image={""}
 />
 
 <h1>Cosmetics</h1>

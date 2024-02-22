@@ -23,7 +23,6 @@
 <Meta
     title="Mounts | Tower of Fantasy Index"
     description="Mounts are vehicles that help you traverse terrain more quickly. All mounts move at the same speed. Owning multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels."
-    image={data.mounts[0].assets.icon}
 />
 
 <h1>Mounts</h1>

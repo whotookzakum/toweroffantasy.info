@@ -7,8 +7,20 @@
 
 <Meta
     title="Home | Tower of Fantasy Index"
-    description="Online resource for Tower of Fantasy Global and Chinese versions. Guides, Characters, Weapons, and more!"
+    description="Online resource for Tower of Fantasy Global and Chinese versions. Simulacra, Weapons, Matrices, and more!"
 />
+
+<svelte:head>
+    <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
+    <script type="application/ld+json">
+        {
+          "@context" : "https://schema.org",
+          "@type" : "WebSite",
+          "name" : "Tower of Fantasy Index",
+          "url" : "https://toweroffantasy.info/"
+        }
+      </script>    
+</svelte:head>
 
 <h1>Tower of Fantasy Index</h1>
 

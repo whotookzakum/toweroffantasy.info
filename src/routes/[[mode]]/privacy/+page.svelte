@@ -1,3 +1,12 @@
+<script>
+    import Meta from "$components/Meta.svelte";
+</script>
+
+<Meta
+    title="Privacy Policy | Tower of Fantasy Index"
+    description="Privacy Policy for the Tower of Fantasy Index, breaking down what data is collected and how it is used."
+/>
+
 <div class="privacy-policy">
     <h1>Privacy Policy</h1>
     <span data-ccpa-link="1"></span>

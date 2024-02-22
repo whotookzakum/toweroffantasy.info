@@ -4,12 +4,20 @@
     import { bgImg } from "$lib/stores";
     import SvelteMarkdown from "svelte-markdown";
     import AnchorLinks from "$components/AnchorLinks.svelte";
-    import GenericHeader from "../../../../lib/components/GenericHeader.svelte";
+    import GenericHeader from "$lib/components/GenericHeader.svelte";
+    import Meta from "$components/Meta.svelte";
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
     $bgImg = simulacrum_v2.assetsA0.titlePicture;
 </script>
+
+<Meta
+    title="{simulacrum_v2.name} | Tower of Fantasy Index"
+    description="All about the simulacrum {simulacrum_v2.name}, such as awakening unlocks, character profile, voice actors, and banners."
+    image={simulacrum_v2.assetsA0.avatar}
+/>
+<!-- TODO: Need to test if color works color="var(--element-{weapon.element})" -->
 
 <article>
     <aside>

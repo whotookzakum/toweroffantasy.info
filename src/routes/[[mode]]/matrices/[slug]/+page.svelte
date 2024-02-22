@@ -5,12 +5,19 @@
     import SvelteMarkdown from "svelte-markdown";
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import MatrixMeta from "./MatrixMeta.svelte";
-    import GenericHeader from "../../../../lib/components/GenericHeader.svelte";
+    import GenericHeader from "$lib/components/GenericHeader.svelte";
+    import Meta from "$components/Meta.svelte";
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
     $bgImg = simulacrum_v2.assetsA0.titlePicture;
 </script>
+
+<Meta
+    title="{matrix.name} Matrix | Tower of Fantasy Index"
+    description="All about the matrix {matrix.name}, such as set effects and recommended weapon pairings."
+    image={matrix.assets.iconLarge}
+/>
 
 <article>
     <aside>

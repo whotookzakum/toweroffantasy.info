@@ -12,11 +12,18 @@
     import WeaponMeta from "./WeaponMeta.svelte";
     import UpgradeMats from "./UpgradeMats.svelte";
     import WeaponHeader from "./WeaponHeader.svelte";
+    import Meta from "$components/Meta.svelte";
 
     export let data;
     const { weapon, simulacrum_v2, matrix, banners } = data;
     $bgImg = simulacrum_v2.assetsA0.titlePicture;
 </script>
+
+<Meta
+    title="{weapon.name} | Tower of Fantasy Index"
+    description="All about the weapon {weapon.name}, such as advancements, stats, skills, upgrade materials, and banners."
+    image={weapon.assets.icon}
+/>
 
 <article>
     <aside>

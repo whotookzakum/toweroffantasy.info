@@ -3,10 +3,17 @@
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import ItemIcon from "$lib/components/ItemIcon.svelte";
     import mountVideoLinks from "./mountVideoLinks.json";
+    import Meta from "$components/Meta.svelte";
 
     export let data;
     const { mount } = data;
 </script>
+
+<Meta
+    title="{mount.name} | Tower of Fantasy Index"
+    description="All about the mount {mount.name}, such as required parts and a video preview (if available)."
+    image={mount.assets.icon}
+/>
 
 <GenericHeader
     h1={mount.name}
