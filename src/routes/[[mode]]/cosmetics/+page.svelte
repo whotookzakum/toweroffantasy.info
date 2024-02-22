@@ -1,49 +1,41 @@
 <script>
-    import Ad from "$components/Ad/Ad.svelte";
-    import Meta from "$components/Meta.svelte"
+    import Meta from "$components/Meta.svelte";
+    import EntryItem from "$components/EntryItem/EntryItem.svelte";
+    import SearchBar from "$components/Filters/SearchBar.svelte";
+    import { queryParameters } from "sveltekit-search-params";
+    import OutfitTypeSelector from "$lib/components/Filters/OutfitTypeSelector.svelte";
+    import RadioSliderGroup from "$lib/components/RadioSliderGroup.svelte";
+    import { outfitsGender } from "$lib/stores";
 
-    const links = [
-        {
-            name: "Outfits",
-            href: "/cosmetics/outfits",
-            imgSrc: "UI/shizhuang/Fashion_icon/item_fashion_icon/fashion_f19",
-        },
-        {
-            name: "Accessories",
-            href: "/cosmetics/accessories",
-            imgSrc: "UI/shizhuang/Fashion_icon/fashion_icon_shipin_045",
-        },
-        {
-            name: "Headwear",
-            href: "/cosmetics/headwear",
-            imgSrc: "UI/shizhuang/Fashion_icon/fashion_icon_shipin_087",
-        },
-        {
-            name: "Refit",
-            href: "/cosmetics/refit",
-            imgSrc: "UI/shizhuang/Fashion_icon/Overlooker",
-        },
-        {
-            name: "Mi-a Outfits",
-            href: "/cosmetics/mia",
-            imgSrc: "Icon/item/256mia011",
-        },
-        {
-            name: "Avatars",
-            href: "/cosmetics/avatars",
-            imgSrc: "Icon/Avatar/Avatar33",
-        },
-        {
-            name: "Avatar Frames",
-            href: "/cosmetics/avatar-frames",
-            imgSrc: "Icon/AvatarFrame/AvatarFrame_47",
-        },
-        {
-            name: "Chat Bubbles",
-            href: "/cosmetics/chat-bubbles",
-            imgSrc: "Icon/chat/qipao/icon_qipao_48",
-        },
-    ];
+    export let data;
+    const searchParams = queryParameters();
+
+    $: entries = data.outfits
+        .filter((entry) => {
+            const { q, type } = $searchParams;
+            const searchMatch = q
+                ? entry.name?.toLowerCase().includes(q.toLowerCase())
+                : true;
+            const typeMatch =
+                type && type !== "all" ? entry.type === type : true;
+
+            return searchMatch && typeMatch;
+        })
+        // Replace missing icons with N/A icon
+        .map((item) => {
+            const blankIcon =
+                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp";
+            return {
+                ...item,
+                icon:
+                    item.icon === "None.webp"
+                        ? blankIcon
+                        : item.icon.replace(
+                              /fashion_f(.+?)\.webp/,
+                              `fashion_${$outfitsGender}$1.webp`,
+                          ),
+            };
+        });
 </script>
 
 <Meta
@@ -55,26 +47,26 @@
 <h1>Cosmetics</h1>
 <p>
     Cosmetic items allow you customize the appearance of your character and
-    other social features. Many cosmetics require you to spend real money, but
-    some can be acquired for free. Cosmetic gachapon items may have reruns.
+    other social features. They are typically acquired by spending Dark Crystals
+    or Tanium. Cosmetic gachapon items may have reruns.
 </p>
 
+<div class="filters-row">
+    <SearchBar />
+    <RadioSliderGroup
+        bind:group={$outfitsGender}
+        groupName="outfits-gender"
+        name="outfitsGender"
+        data={[
+            { label: "Female", value: "f" },
+            { label: "Male", value: "m" },
+        ]}
+    />
+    <OutfitTypeSelector originalData={data.outfits} />
+</div>
+
 <ul class="entry-list">
-
-</ul>
-
-<!-- <Ad unit="Banner1" /> -->
-
-<!-- <Menu>
-    {#each links as link}
-        <MenuItem href={link.href}>
-            <img
-                src={`/images/${link.imgSrc}.webp`}
-                alt={link.name}
-                width="128"
-                height="128"
-            />
-            <span class="menu-item-name">{link.name}</span>
-        </MenuItem>
+    {#each entries as entry (entry.id + entry.icon)}
+        <EntryItem {entry} />
     {/each}
-</Menu> -->
+</ul>

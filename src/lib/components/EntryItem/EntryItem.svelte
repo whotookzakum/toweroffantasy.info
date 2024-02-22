@@ -17,6 +17,7 @@
         Weapon: "weapons",
         Mount: "mounts",
         Relic: "relics",
+        Outfit: "cosmetics"
     };
 
     let weapon;
@@ -38,6 +39,7 @@
         case "Mount":
             avatarUri = entry.assets.icon;
             break;
+        case "Outfit":
         case "Relic":
             avatarUri = entry.icon;
             break;
@@ -45,7 +47,7 @@
 </script>
 
 <li
-    class="item flex g-25 {entry.__typename}"
+    class="item flex g-25 {entry.__typename} {entry.type ?? ""}"
     class:molinia={entry.id === "imitation_33"}
     class:hide-weapon={!$showWepOnSimEntry}
 >
@@ -297,6 +299,33 @@
     .Relic .avatar {
         width: 196px !important;
         object-position: -10px -20px !important;
+    }
+
+    // Outfits
+    .Dress .avatar {
+        // more centered, but too far left when entryItem is wide
+        object-position: -31px -18px !important; // -31px -18px or -31px -24px
+        // offset to the right, but looks okay when entryItem is wide
+        object-position: -6px -18px !important;
+    }
+
+    // 128px avatars
+    :where(.Headwear, .Glider, .Skateboard, .SuspensionSkateboard) .avatar,
+    .avatar[src*="kong.webp"] {
+        object-fit: unset;
+        width: 100% !important;
+        height: auto;
+        object-position: unset !important;
+    }
+
+    @supports (translate: 0) {
+        :where(.Headwear, .Glider, .Skateboard, .SuspensionSkateboard) .avatar,
+        .avatar[src*="kong.webp"] {
+            margin-top: 1rem;
+            width: 128px !important;
+            left: 50%;
+            translate: -50%;
+        }
     }
 
     .bg {

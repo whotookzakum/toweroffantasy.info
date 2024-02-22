@@ -20,7 +20,7 @@
             ? rarity.split(" ").includes(`${entry.rarity}`)
             : true;
 
-        return searchMatch && versionMatch && rarityMatch
+        return searchMatch && versionMatch && rarityMatch;
     });
 </script>
 
@@ -43,9 +43,6 @@
 
 <ul class="entry-list">
     {#each entries as entry (entry.id)}
-        <EntryItem
-            {entry}
-            slot="search-results"
-        />
+        <EntryItem {entry} />
     {/each}
 </ul>

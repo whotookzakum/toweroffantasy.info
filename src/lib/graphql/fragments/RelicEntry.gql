@@ -1,9 +1,6 @@
 fragment relicEntry on Relic {
     id
     name
-    # assets {
-    #     icon
-    # }
     icon
     rarity
     type

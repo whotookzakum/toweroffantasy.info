@@ -16,7 +16,7 @@
         const versionMatch =
             version && version !== "all" ? entry.version === version : true;
 
-        return searchMatch && versionMatch
+        return searchMatch && versionMatch;
     });
 </script>
 
@@ -41,9 +41,6 @@
 
 <ul class="entry-list">
     {#each entries as entry (entry.id)}
-        <EntryItem
-            {entry}
-            slot="search-results"
-        />
+        <EntryItem {entry} />
     {/each}
 </ul>

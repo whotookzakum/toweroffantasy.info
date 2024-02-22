@@ -27,10 +27,11 @@
 
 <h2>Newest Arrivals</h2>
 <ul class="entry-list">
-    <EntryItem entry={data.newest.simulacrum} />
-    <EntryItem entry={data.newest.weapon} />
-    <EntryItem entry={data.newest.matrix} />
+    {#each data.newestAdditions as entry}
+        <EntryItem {entry} />
+    {/each}
 </ul>
+<small style="color: var(--text2)">Added in version {data.latestVersion}</small>
 
 <div>
     <h2>Credits</h2>

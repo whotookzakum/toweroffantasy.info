@@ -1,0 +1,5 @@
+query AllOutfits($lang: String) {
+    outfits(lang: $lang) {
+        ...outfitEntry
+    }
+}

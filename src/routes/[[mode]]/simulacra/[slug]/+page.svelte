@@ -30,7 +30,7 @@
         <h2 style="font-size: var(--step-2)">Part of a set</h2>
         <SetItems {simulacrum_v2} {weapon} {matrix} />
         <small style="color: var(--text2);"
-            >Released in version {simulacrum_v2.version}</small
+            >Added in version {simulacrum_v2.version}</small
         >
 
         <h2 id="awakening">Awakening</h2>

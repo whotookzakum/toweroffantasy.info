@@ -6,7 +6,7 @@
     import RarityFilters from "$components/Filters/RarityFilters.svelte";
     import BannerFilters from "$components/Filters/BannerFilters.svelte";
     import VersionSelector from "$components/Filters/VersionSelector.svelte";
-    import { getBannersMatch } from "$lib/utils"
+    import { getBannersMatch } from "$lib/utils";
 
     export let data;
     const searchParams = queryParameters();
@@ -21,9 +21,9 @@
         const rarityMatch = rarity
             ? rarity.split(" ").includes(`${entry.rarity}`)
             : true;
-        const bannersMatch = banners ? getBannersMatch(banners, entry) : true
+        const bannersMatch = banners ? getBannersMatch(banners, entry) : true;
 
-        return searchMatch && versionMatch && rarityMatch && bannersMatch
+        return searchMatch && versionMatch && rarityMatch && bannersMatch;
     });
 </script>
 
@@ -49,9 +49,6 @@
 
 <ul class="entry-list">
     {#each entries as entry (entry.id)}
-        <EntryItem
-            {entry}
-            slot="search-results"
-        />
+        <EntryItem {entry} />
     {/each}
 </ul>
