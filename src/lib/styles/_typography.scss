@@ -27,15 +27,11 @@ a {
     }
 }
 
-.advancements,
-.abilities,
-.mounts,
-.ability {
-    em {
-        color: var(--text-green);
-        font-weight: 500;
-        font-style: normal;
-    }
+:where(.advancements, .abilities, .mounts, .ability) em,
+.food-table strong {
+    color: var(--text-green);
+    font-weight: 500;
+    font-style: normal;
 }
 
 .advancements,

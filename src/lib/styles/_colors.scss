@@ -37,6 +37,12 @@
     --tier-s: #ffdb84;
     --tier-ss: #fdebb7;
 
+    --rarity-1: radial-gradient(#97a9c8, 30%, #93a2c6);
+    --rarity-2: radial-gradient(#6bbaad, 30%, #6bb9a7);
+    --rarity-3: radial-gradient(#65a7d6, 30%, #65a2d3);
+    --rarity-4: radial-gradient(#b894ce, 30%, #b894ce);
+    --rarity-5: radial-gradient(#e7be7d, 30%, #efc379);
+
     // --bg: hsl(236, 23%, 10%);
     // --surface1: hsl(226, 25%, 15%);
     // --surface2: hsl(216, 25%, 20%);
@@ -56,11 +62,8 @@
 }
 
 $colors: (
-    bg: (
-        base: rgb(21, 20, 26)
-    ),
-    container: (
-        base: rgba(26, 25, 33, 0.9),
+    bg: (base: rgb(21, 20, 26)),
+    container: (base: rgba(26, 25, 33, 0.9),
         base-opaque: rgba(26, 25, 33, 1),
         light: rgba(40, 38, 51, 0.9),
         lighter: rgba(45, 42, 59, 0.9),
@@ -68,8 +71,7 @@ $colors: (
         darker: rgba(20, 20, 30, 0.85),
         blue: rgba(57, 72, 95, 0.4),
     ),
-    text: (
-        base: #dedede,
+    text: (base: #dedede,
         gray: #a9a9a9,
         darkgray: #686868,
         disabled: #6b737d,

@@ -1,69 +1,53 @@
 <script>
+    import Meta from "$components/Meta.svelte";
     import SvelteMarkdown from "svelte-markdown";
-    import ingredientsData from "$lib/data/food/ingredients.json";
-    import dishesData from "$lib/data/food/dishes.json";
-    import SectionNavigation from "$lib/components/SectionNavigation.svelte";
-    import { onMount } from "svelte";
-    import AnchorJS from "anchor-js";
-    import Item from "$lib/components/Item.svelte";
-    import EffectIcon from "$lib/components/food/EffectIcon.svelte";
-    import FoodFilters from "../../lib/components/food/FoodFilters.svelte";
-    import Ad from "$lib/components/Ad/Ad.svelte";
+    import ItemIcon from "$lib/components/ItemIcon.svelte";
+    import SearchBar from "$components/Filters/SearchBar.svelte";
+    import TypeFilters from "$components/Filters/TypeFilters.svelte";
+    import { queryParameters } from "sveltekit-search-params";
+    import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
 
-    onMount(() => {
-        const anchors = new AnchorJS();
-        anchors.add("h3");
-    });
+    export let data;
+    const { foods, items, allEffects } = data;
+    const searchParams = queryParameters();
 
-    function getIngredientData(input) {
-        return ingredients.find((i) => i.name === input);
-    };
+    $: entries =
+        foods
+            .filter((entry) => {
+                const { q, rarity, effects, type } = $searchParams;
+                const searchMatch = q
+                    ? entry.name?.toLowerCase().includes(q.toLowerCase())
+                    : true;
 
-    let dishes = dishesData;
-    let ingredients = ingredientsData;
-    let filters = {};
+                const rarityMatch = rarity
+                    ? rarity.split(" ").includes(entry.rarity.toString())
+                    : true;
 
-    // Filters are AND, i.e. volt ATK && rarity 4
-    // They are not OR, i.e. volt ATK || rarity 4
-    $: if (filters.rarityFilters && filters.rarityFilters.length > 0) {
-        dishes = dishesData.filter((dish) =>
-            filters.rarityFilters.includes(dish.rarity)
-        );
-    } else {
-        dishes = dishesData;
-    }
+                const effectsMatch = effects
+                    ? effects
+                          .split(" ")
+                          .some((effect) => entry.categories.includes(effect))
+                    : true;
 
-    $: if (filters.buffFilters && filters.buffFilters.length > 0) {
-        dishes = dishes.filter((dish) =>
-            dish.icons && dish.icons.some(t => filters.buffFilters.includes(t))
-        );
-    } 
+                const typeMatch =
+                    type && type !== "all" ? entry.buff === type : true;
 
-    $: if (filters.recoveryFilters && filters.recoveryFilters.length > 0) {
-        dishes = dishes.filter((dish) =>
-            dish.icons && dish.icons.some(t => filters.recoveryFilters.includes(t))
-        );
+                return searchMatch && rarityMatch && effectsMatch && typeMatch;
+            })
+            .toSorted((a, b) => a.rarity - b.rarity)
+            .filter((entry) => entry.categories.length > 1);
+
+    function getIngredientInfo(id) {
+        return items.find((item) => item.id.toLowerCase() === id.toLowerCase());
     }
 </script>
 
-<svelte:head>
-    <title>Food | Tower of Fantasy Index</title>
-    <meta name="description" content="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat.">
-    <meta property="og:title" content="Food" />
-    <meta
-        property="og:description"
-        content="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat."
-    />
-    <meta
-        property="og:image"
-        content="/images/Icon/caiyao/Item_Vera_Cooking29.webp"
-    />
-    <meta name="theme-color" content="#377dcb" />
-</svelte:head>
+<Meta
+    title="Food | Tower of Fantasy Index"
+    description="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat."
+/>
 
-<SectionNavigation links={["dishes", "ingredients"]} />
 <h1>Food</h1>
-
 <p>
     Food can provide buffs and recover HP, satiety, and stamina. Satiety level
     determines how much HP you will passively recover while out of combat.
@@ -74,136 +58,97 @@
     rate!
 </p>
 
-<FoodFilters bind:filters />
+<div class="filters-row">
+    <SearchBar />
+    <TypeFilters type="rarity" />
+    <TypeFilters type="effects" filters={allEffects} />
+    <TypeSelector originalData={foods} key="buff" />
+</div>
 
-<Ad unit="Banner1" />
-
-<h2 id="dishes">Dishes</h2>
-<div class="table-wrapper">
-    <table class="dishes-table bg-alternate">
-        <thead>
-            <th>Item</th>
-            <th>Effect</th>
+<table class="food-table bg-alternate">
+    <thead>
+        <tr>
+            <th>Dish</th>
             <th>Recipe</th>
-        </thead>
-        <tbody>
-            {#each dishes as dish}
-                <tr>
-                    <td>
-                        <div class="img-and-name">
-                            <Item rarity={dish.rarity}>
-                                <img
-                                    src={`/images/Icon/caiyao/${dish.imgSrc}.webp`}
-                                    alt={dish.name}
-                                    width="96"
-                                    height="96"
-                                    loading="lazy"
-                                />
-                                {#if dish.icons}
-                                    {#each dish.icons as effect}
-                                        <EffectIcon {effect} absolute />
-                                    {/each}
-                                {/if}
-                            </Item>
-                            <h3>{dish.name}</h3>
+        </tr>
+    </thead>
+    <tbody>
+        {#each entries as food}
+            <tr>
+                <td>
+                    <div class="flex g-100" style="align-items: center">
+                        <div class="item-wrapper">
+                            <ItemIcon item={food} />
+                            <!-- {food.categories} -->
                         </div>
-                    </td>
-                    <td class="dish-effects">
-                        <SvelteMarkdown source={dish.effect} />
-                    </td>
-                    <td>
-                        <ul class="recipe">
-                            {#each dish.ingredients as ingredient}
-                                <li>
-                                    <Item
-                                        rarity={getIngredientData(
-                                            ingredient.item
-                                        ).rarity}
-                                        amount={ingredient.amount}
-                                    >
-                                        <img
-                                            src={`/images/Icon/shicai/${
-                                                getIngredientData(
-                                                    ingredient.item
-                                                ).imgSrc
-                                            }.webp`}
-                                            alt={ingredient.item}
-                                            width="48"
-                                            height="48"
-                                            loading="lazy"
+                        <div>
+                            <small>{food.buff}</small>
+                            <h2>{food.name}</h2>
+                            <SvelteMarkdown source={food.effect ?? ""} />
+                            <p class="desc">{food.description}</p>
+                            {food.categories}
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    {#if food.ingredients}
+                        <ul role="list">
+                            {#each food.ingredients as ingredient}
+                                <li
+                                    class="flex g-100"
+                                    style="align-items: center"
+                                >
+                                    <div class="item-wrapper">
+                                        <ItemIcon
+                                            item={{
+                                                ...getIngredientInfo(
+                                                    ingredient.matID,
+                                                ),
+                                                amount: ingredient.min,
+                                            }}
+                                            imgSize="48"
+                                            wrapperSize="48px"
                                         />
-                                    </Item>
-                                    <a
-                                        href={`#${ingredient.item
-                                            .toLowerCase()
-                                            .replace(/\s+/g, "-")}`}
-                                    >
-                                        {ingredient.item}
-                                    </a>
+                                    </div>
+                                    {getIngredientInfo(ingredient.matID).name}
                                 </li>
                             {/each}
                         </ul>
-                    </td>
-                </tr>
-            {/each}
-        </tbody>
-    </table>
-</div>
-
-<Ad unit="Banner2" />
-
-<h2 id="ingredients">Ingredients</h2>
-<div class="table-wrapper">
-    <table class="bg-alternate">
-        <thead>
-            <th>Item</th>
-            <th>Source</th>
-        </thead>
-        <tbody>
-            {#each ingredients as ingredient}
-                <tr>
-                    <td class="img-and-name">
-                        <img
-                            src={`/images/Icon/shicai/${ingredient.imgSrc}.webp`}
-                            alt={ingredient.name}
-                            width="64"
-                            height="64"
-                            loading="lazy"
-                        />
-                        <h3>{ingredient.name}</h3>
-                    </td>
-                    <td>
-                        <SvelteMarkdown source={ingredient.source} />
-                    </td>
-                </tr>
-            {/each}
-        </tbody>
-    </table>
-</div>
+                    {/if}
+                </td>
+            </tr>
+        {/each}
+    </tbody>
+</table>
 
 <style lang="scss">
-    .img-and-name {
-        row-gap: 0.5rem;
+    table {
+        margin: 1rem 0;
     }
 
-    .dishes-table {
-        table-layout: fixed;
+    h2 {
+        font-size: var(--step-1);
+        font-weight: 500;
+        margin: 0;
+        line-height: normal;
     }
 
-    ul.recipe {
+    ul {
         margin: 0;
         padding: 0;
-        list-style: none;
+        list-style-type: none;
+        gap: unset;
+    }
 
-        li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+    .item-wrapper {
+        width: fit-content;
+        margin-bottom: 0.5rem;
+    }
 
-            a {
-                font-size: var(--step--1);
-                line-height: 1.2;
-            }
-        }
+    .desc {
+        font-size: var(--step--2);
+        color: var(--text2);
+        line-height: 1.4;
+        display: none;
     }
 </style>

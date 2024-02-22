@@ -10,5 +10,10 @@
     "IceThunder": "Volt/Frost",
     "Physics": "Physical",
     "PhysicsFlame": "Physical/Flame",
-    "Superpower": "Altered"
+    "Superpower": "Altered",
+    "1": "Rarity 1",
+    "2": "Rarity 2",
+    "3": "Rarity 3",
+    "4": "Rarity 4",
+    "5": "Rarity 5"
 }

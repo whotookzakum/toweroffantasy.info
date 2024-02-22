@@ -1,7 +1,8 @@
 <script>
     import Popper from "$components/Popper.svelte";
+    import CategoryIcon from "./EntryItem/CategoryIcon.svelte";
 
-    export let item;
+    export let item; // name, icon, amount, rarity
     export let imgSize = 96;
     export let wrapperSize = "78px";
 </script>
@@ -23,6 +24,13 @@
             {#if item.amount?.toString()}
                 <span>{item.amount}</span>
             {/if}
+            {#if item.__typename === "Food"}
+                {#each item.categories as category}
+                    <div class="foodbuff-wrapper" class:top-left={category === "AddEnergyRecover"}>
+                        <CategoryIcon type={category} style="width: 28px" />
+                    </div>
+                {/each}
+            {/if}
         </div>
         <p slot="tooltip">{item.name}</p>
     </Popper>
@@ -39,11 +47,6 @@
 
 <style lang="scss">
     .item-icon-wrapper {
-        --rarity-1: radial-gradient(#97a9c8, 30%, #93a2c6);
-        --rarity-2: radial-gradient(#6bbaad, 30%, #6bb9a7);
-        --rarity-3: radial-gradient(#65a7d6, 30%, #65a2d3);
-        --rarity-4: radial-gradient(#b894ce, 30%, #b894ce);
-        --rarity-5: radial-gradient(#e7be7d, 30%, #efc379);
         border-radius: 0.5rem;
         place-content: center;
         width: fit-content;
@@ -59,6 +62,18 @@
             text-shadow: 0 1px 3px #000;
             font-size: var(--step-1);
             color: #fff;
+        }
+    }
+
+    .foodbuff-wrapper {
+        position: absolute;
+        top: 0.3ch;
+        right: 0.3ch;
+        filter: drop-shadow(0 2px 4px 4px rgba(0, 0, 0, 1));
+
+        &.top-left {
+            right: unset;
+            left: 0.3ch;
         }
     }
 </style>

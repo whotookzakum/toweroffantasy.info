@@ -3,7 +3,7 @@
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
     import { queryParameters } from "sveltekit-search-params";
-    import OutfitTypeSelector from "$lib/components/Filters/OutfitTypeSelector.svelte";
+    import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
     import RadioSliderGroup from "$lib/components/RadioSliderGroup.svelte";
     import { outfitsGender } from "$lib/stores";
 
@@ -61,7 +61,7 @@
             { label: "Male", value: "m" },
         ]}
     />
-    <OutfitTypeSelector originalData={data.outfits} />
+    <TypeSelector originalData={data.outfits} />
 </div>
 
 <ul class="entry-list">

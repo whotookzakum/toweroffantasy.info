@@ -1,0 +1,5 @@
+query AllFoods($lang: String) {
+    foods(lang: $lang) {
+        ...foodEntry
+    }
+}

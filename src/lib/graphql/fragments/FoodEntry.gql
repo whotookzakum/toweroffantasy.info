@@ -1,0 +1,17 @@
+fragment foodEntry on Food {
+    # Include everything
+    id
+    buff
+    categories
+    description
+    effect
+    icon
+    name
+    rarity
+    stars
+    ingredients {
+        matID
+        max
+        min
+    }
+}

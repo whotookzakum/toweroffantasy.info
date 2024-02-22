@@ -46,5 +46,25 @@
     {
         "type": "element",
         "name": "Superpower"
+    },
+    {
+        "type": "rarity",
+        "name": "1"
+    },
+    {
+        "type": "rarity",
+        "name": "2"
+    },
+    {
+        "type": "rarity",
+        "name": "3"
+    },
+    {
+        "type": "rarity",
+        "name": "4"
+    },
+    {
+        "type": "rarity",
+        "name": "5"
     }
 ]

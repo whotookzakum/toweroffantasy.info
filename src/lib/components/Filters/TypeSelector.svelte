@@ -2,8 +2,10 @@
     import { queryParam, ssp } from "sveltekit-search-params";
     import { uniq } from "lodash"
 
-    export let originalData
-    const types = uniq(originalData.map(entry => entry.type), false).sort((a, b) => b - a)
+    export let originalData;
+    export let key = "type"
+
+    const types = uniq(originalData.map(entry => entry[key]), false).sort((a, b) => b - a)
     const type = queryParam("type", ssp.string(), { showDefaults: false, pushHistory: false })
 
     let inputValue = $type ? $type : "all"

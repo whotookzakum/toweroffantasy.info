@@ -1,15 +1,13 @@
 <script>
-    import filters from "./filters.json";
+    import manualFilters from "./filters.json";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import { queryParameters } from "sveltekit-search-params";
     import Popper from "$components/Popper.svelte";
-    import categoriesText from "$components/EntryItem/CategoriesText.json"
+    import categoriesText from "$components/EntryItem/CategoriesText.json";
 
     export let type;
-    const searchParams = queryParameters(
-        { element: "", category: "" },
-        { showDefaults: false, pushHistory: false },
-    );
+    export let filters = manualFilters;
+    const searchParams = queryParameters({}, { showDefaults: false, pushHistory: false });
 
     const items = filters
         .filter((f) => f.type === type)
@@ -40,7 +38,11 @@
             />
             <label class="grid" for="filter-{filter.name}">
                 <span class="visually-hidden">{filter.name}</span>
-                <CategoryIcon type={filter.name} style="width: 28px;" />
+                <CategoryIcon
+                    type={filter.name}
+                    rarity={filter.name}
+                    style="width: 28px;"
+                />
             </label>
             <p slot="tooltip">{categoriesText[filter.name]}</p>
         </Popper>
