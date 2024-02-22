@@ -4,9 +4,12 @@
 
     export let originalData;
     export let key = "type"
+    export let selectorName = "Type"
+    export let paramName = "type"
+    export let defaultType = ssp.string()
 
     const types = uniq(originalData.map(entry => entry[key]), false).sort((a, b) => b - a)
-    const type = queryParam("type", ssp.string(), { showDefaults: false, pushHistory: false })
+    const type = queryParam(paramName, defaultType, { showDefaults: false, pushHistory: false })
 
     let inputValue = $type ? $type : "all"
 
@@ -18,7 +21,7 @@
 </script>
 
 <select bind:value={inputValue}>
-    <option class="default" disabled selected value="all">Type</option>
+    <option class="default" disabled selected value="all">{selectorName}</option>
     <option value="all">All</option>
     {#each types as type}
         <option value={type}>{type}</option>

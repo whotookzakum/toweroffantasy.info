@@ -23,6 +23,10 @@
     function setFocused(value) {
         focused = value
     }
+
+    function toggleFocused() {
+        focused = !focused;
+    }
 </script>
 
 <div
@@ -31,10 +35,10 @@
     on:mouseleave={() => hovering = false}
     role="tooltip"
 >
-    <slot {setFocused} />
+    <slot {setFocused} {toggleFocused} />
     {#if hovering || focused}
-        <div use:popperContent={extraOpts}>
-            <div class="tooltip" > <!-- in:fly={{ y: 12, duration: 200 }} -->
+        <div use:popperContent={extraOpts} style="z-index: 3">
+            <div class="tooltip"> <!-- in:fly={{ y: 12, duration: 200 }} -->
                 <slot name="tooltip" />
                 {#if !hideArrow}
                     <div class="arrow" data-popper-arrow />
@@ -54,6 +58,7 @@
         font-weight: 600;
         filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
         backdrop-filter: blur(5px);
+        max-inline-size: 40ch;
 
         :global(*) {
             margin: 0;
