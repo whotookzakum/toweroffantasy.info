@@ -21,11 +21,12 @@
             <Ad unit="Banner1" />
             <slot />
         </main>
+        <PageFooter />
     </div>
     <div class="gutter-right">
         <Ad unit="Gutter2" />
     </div>
-    <PageFooter />
+    
 </div>
 
 <BackgroundImage src={data.bgImg} />
@@ -38,23 +39,20 @@
     }
 
     .layout,
-    :global(.topnav),
-    :global(.page-footer) {
+    :global(.topnav) {
         grid-template-columns: 300px 1fr 300px;
     }
 
     @media (max-width: 1600px) {
         .layout,
-        :global(.topnav),
-        :global(.page-footer) {
+        :global(.topnav) {
             grid-template-columns: 160px 1fr 160px;
         }
     }
 
     @media (max-width: 1280px) {
         .layout,
-        :global(.topnav),
-        :global(.page-footer) {
+        :global(.topnav) {
             grid-template-columns: 0 1fr 0;
         }
     }
@@ -66,6 +64,9 @@
         justify-self: center;
         padding: 1rem;
         background: hsla(236, 45%, 10%, 0.93);
+        display: grid;
+        min-height: calc(100vh - 93px);
+        min-height: calc(100dvh - 93px);
     }
 
     .gutter-right {

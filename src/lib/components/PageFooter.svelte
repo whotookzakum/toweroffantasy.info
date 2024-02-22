@@ -1,44 +1,33 @@
 <footer class="page-footer">
-    <div class="footer-content grid g-100">
-        <div class="logo flex g-100">
-            <a href="/">
-                <img src="/images/mia.webp" alt="" width="64" height="64">
-                <span class="visually-hidden">Home</span>
-            </a>
-            <span>&copy; 2024 Tower of Fantasy Index</span>
+    <div class="footer-content">
+        <span>&copy; 2024 Tower of Fantasy Index</span>
+        <div class="flex g-50 flex-wrap">
+            <a href="/privacy">Privacy Policy</a>
         </div>
-        <!-- <span>&copy; 2024 Tower of Fantasy Index</span> -->
-        <!-- <a href="/privacy">Privacy Policy</a> -->
     </div>
 </footer>
 
 <style lang="scss">
     footer {
-        grid-column: 1/-1;
-        border-top: 1px solid var(--surface1);
+        // border-top: 1px solid var(--surface1);
         padding-bottom: 90px;
+        color: var(--text2);
+        font-size: var(--step--2);
+        margin-top: auto;
     }
 
     .footer-content {
-        max-width: 1192px;
-        margin: auto;
-        padding-inline: 1rem;
-        padding-block: 2rem;
-        grid-column: 2/3;
-        width: 100%;
-        // place-content: center;
+        padding-block: 1rem;
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem 1rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     a {
         border: none;
         display: flex;
-    }
-
-    .logo {
-        align-items: center;
-        font-size: var(--step-1);
-        flex-wrap: wrap;
-        // justify-content: center;
-        text-align: center;
+        text-decoration: underline;
     }
 </style>
