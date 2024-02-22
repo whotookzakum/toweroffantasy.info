@@ -1,6 +1,6 @@
 <script>
     import Youtube from "$components/Youtube.svelte";
-    import Rating from "$components/Rating.svelte";
+    import Rating from "./Rating.svelte";
     import RecommendedMatrices from "./RecommendedMatrices.svelte";
     import RecommendedPairings from "./RecommendedPairings.svelte";
     import { userLocale } from "$lib/stores";
