@@ -15,5 +15,20 @@
     "2": "Rarity 2",
     "3": "Rarity 3",
     "4": "Rarity 4",
-    "5": "Rarity 5"
+    "5": "Rarity 5",
+    "AddSatiety": "Recover Satiety",
+    "AddHealth": "Recover HP",
+    "IceAtk": "Increase Frost Attack",
+    "PhyAtk": "Increase Physical Attack",
+    "FireDef": "Increase Flame Resistance",
+    "ThunderDef": "Increase Volt Resistance",
+    "PhyDef": "Increase Physical Resistance",
+    "ThunderAtk": "Increase Volt Attack",
+    "FireAtk": "Increase Fire Attack",
+    "AddEnergyRecover": "Recover Endurance",
+    "IceDef": "Increase Frost Resistance",
+    "DiveSpeed": "Increase Dive Speed",
+    "RecoverHp": "Increase HP Regen",
+    "CleanBuff": "Clean Buff",
+    "EnergyConsumeDown": "Reduce Endurance Consumption"
 }

@@ -38,6 +38,11 @@
 
     <div class="article-content">
         <WeaponHeader {weapon} />
+        <div class="mobile-only flex flex-wrap">
+            <WeaponLevelSlider />
+            <WeaponStarSlider />
+        </div>
+
         <h2 style="font-size: var(--step-2);">Part of a set</h2>
         <SetItems {simulacrum_v2} {weapon} {matrix} />
         <small style="color: var(--text2);"
@@ -45,10 +50,12 @@
         >
 
         <h2 id="effects">Weapon Effects</h2>
-        <h3 style:color="var(--element-{weapon.element})">
-            {weapon.elementEffect?.title}
-        </h3>
-        <SvelteMarkdown source={weapon.elementEffect?.description} />
+        {#if weapon.elementEffect}
+            <h3 style:color="var(--element-{weapon.element})">
+                {weapon.elementEffect.title}
+            </h3>
+            <SvelteMarkdown source={weapon.elementEffect.description} />
+        {/if}
 
         {#if weapon.weaponEffects}
             {#each weapon.weaponEffects as effect}
@@ -62,7 +69,7 @@
         <Advancements advancements={weapon.weaponAdvancements} {weapon} />
 
         <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
-
+        
         <UpgradeMats levels={weapon.upgradeMats.levels} />
 
         <WeaponMeta {weapon} />
@@ -79,3 +86,23 @@
         />
     {/if}
 </article>
+
+<style lang="scss">
+    :global(.mobile-only) {
+        display: none;
+        margin-block: 1rem;
+        column-gap: 1rem;
+        margin-bottom: -1.5rem;
+    }
+
+    :global(.mobile-only > *) {
+        flex: 1;
+        flex-basis: 300px;
+    }
+
+    @media (max-width: 860px) {
+        :global(.mobile-only) {
+            display: flex;
+        }
+    }
+</style>

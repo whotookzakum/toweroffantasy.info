@@ -1,4 +1,4 @@
-import { ShortWeaponStore, FullSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store } from '$houdini'
+import { ShortWeaponStore, FullSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store, AllItemsStore } from '$houdini'
 
 export const load = async (event) => {
     // Simulacrum full data
@@ -35,6 +35,11 @@ export const load = async (event) => {
             }
         }
     })
+
+    const itemsQuery = new AllItemsStore()
+    const itemsRes = await itemsQuery.fetch({ event })
+    const { items } = itemsRes.data
+    console.log(items.length)
 
     return { weapon, simulacrum_v2, matrix, banners }
 }

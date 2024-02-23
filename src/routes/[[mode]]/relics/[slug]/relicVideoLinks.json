@@ -48,7 +48,7 @@
         "starsInVideo": "3"
     },
     "artifact_sr_005": {
-        "videoId": "SSnbPKH8",
+        "videoId": "SSnbPKH8-UA",
         "starsInVideo": "2"
     },
     "artifact_r_002": {
@@ -106,5 +106,9 @@
     "artifact_sr_014": {
         "videoId": "_NGqh9AxPF4",
         "starsInVideo": "1"
+    },
+    "artifact_ssr_013": {
+        "videoId": "zvP1jUFCB9A",
+        "starsInVideo": "2"
     }
 }

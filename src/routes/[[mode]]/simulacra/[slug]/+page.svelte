@@ -74,6 +74,8 @@
                 {/each}
             </tbody>
         </table>
+        <h3 id="gifts">Preferred Gifts</h3>
+        <span>{simulacrum_v2.likedGiftTypes}</span>
 
         <h2 id="profile">Profile</h2>
 

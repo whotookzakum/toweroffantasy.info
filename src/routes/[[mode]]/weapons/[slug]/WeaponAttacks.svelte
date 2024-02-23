@@ -1,6 +1,7 @@
 <script>
     import RadioSliderGroup from "$components/RadioSliderGroup.svelte";
     import Skill from "./Skill.svelte";
+    import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
 
     export let weaponAttacks;
     let attackCategory = "normals";
@@ -29,6 +30,10 @@
         ]}
         style="margin-top: 0.5rem; max-width: 500px"
     />
+
+    <div class="mobile-only flex flex-wrap">
+        <WeaponLevelSlider />
+    </div>
 
     <ul class="weapon-attacks grid g-100" style="padding: 0;">
         {#each weaponAttacks[attackCategory] as data}
