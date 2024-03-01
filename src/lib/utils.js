@@ -31,7 +31,7 @@ export function applyFilters(entries, { q = "", queryKey = "name", version = "al
     return entries.filter((entry) => {
 
         const searchMatch = q
-            ? entry[queryKey].toLowerCase().includes(q.toLowerCase())
+            ? entry[queryKey]?.toLowerCase().includes(q.toLowerCase())
             : true;
 
         const versionMatch =

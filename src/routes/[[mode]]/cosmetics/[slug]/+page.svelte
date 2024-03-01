@@ -5,21 +5,20 @@
 
     export let data;
     const { outfit } = data
-    // console.log(data)
     const desc = `${outfit.description} ${outfit.source ? `\n\n***${outfit.source}***` : ""}`
-    let icon;
-    if (icon && icon !== "None.webp") {
-        icon = outfit.icon.replace(/fashion_f(.+?)\.webp/, `fashion_${$outfitsGender}$1.webp`)
+    let icon = outfit.icon;
+    if (!icon || icon === "None.webp") {
+        icon = "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp"
     }
     else {
-        icon = "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp"
+        icon = outfit.icon.replace(/fashion_f(.+?)\.webp/, `fashion_${$outfitsGender}$1.webp`)
     }
 </script>
 
 <Meta
     title="{outfit.name} | Tower of Fantasy Index"
     description="All about the cosmetic {outfit.name} in Tower of Fantasy, such as how to obtain it and a video preview (if available)."
-    image={outfit.icon}
+    image={icon}
 />
 
 <GenericHeader
