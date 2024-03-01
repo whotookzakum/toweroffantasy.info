@@ -1,0 +1,32 @@
+fragment simulacrum_v2Entry on SimulacraV2 {
+    name
+    rarity
+    id
+    weaponId
+    matrixId
+    version
+    banners {
+        bannerNumber
+        isFinalBanner
+        endDate
+        startDate
+    }
+    assetsA0 {
+        painting
+        avatar
+        titlePicture
+    }
+    weapon {
+        rarity
+        element
+        category
+        charge {
+            tier
+            value
+        }
+        shatter {
+            tier
+            value
+        }
+    }
+}

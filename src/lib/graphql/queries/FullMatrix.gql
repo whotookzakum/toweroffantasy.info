@@ -1,0 +1,18 @@
+query FullMatrix($id: String!) {
+    matrix(id: $id) {
+        ...matrixEntry
+        description
+        meta {
+            recommendedWeapons
+            # lastUpdated {
+            #     username
+            #     timestamp
+            # }
+        }
+        sets {
+            description
+            need
+        }
+        simulacrumId
+    }
+}

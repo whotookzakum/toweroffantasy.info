@@ -1,0 +1,95 @@
+[
+    {
+        "type": "category",
+        "value": "DPS"
+    },
+    {
+        "type": "category",
+        "value": "Tank"
+    },
+    {
+        "type": "category",
+        "value": "SUP"
+    },
+    {
+        "type": "element",
+        "value": "Flame"
+    },
+    {
+        "type": "element",
+        "value": "FlamePhysics"
+    },
+    {
+        "type": "element",
+        "value": "Ice"
+    },
+    {
+        "type": "element",
+        "value": "ThunderIce"
+    },
+    {
+        "type": "element",
+        "value": "Thunder"
+    },
+    {
+        "type": "element",
+        "value": "IceThunder"
+    },
+    {
+        "type": "element",
+        "value": "Physics"
+    },
+    {
+        "type": "element",
+        "value": "PhysicsFlame"
+    },
+    {
+        "type": "element",
+        "value": "Superpower"
+    },
+    {
+        "type": "rarity",
+        "value": 5
+    },
+    {
+        "type": "rarity",
+        "value": 4
+    },
+    {
+        "type": "rarity",
+        "value": 3
+    },
+    {
+        "type": "rarity",
+        "value": 2
+    },
+    {
+        "type": "banners-matrices",
+        "value": "limited",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02"
+        ]
+    },
+    {
+        "type": "banners-matrices",
+        "value": "standard",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01"
+        ]
+    },
+    {
+        "type": "banners-simulacra",
+        "value": "limited",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005"
+        ]
+    },
+    {
+        "type": "banners-simulacra",
+        "value": "standard",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem004",
+            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem003"
+        ]
+    }
+]

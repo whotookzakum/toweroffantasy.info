@@ -1,0 +1,360 @@
+// https://codepen.io/argyleink/pen/ExNxQbe
+
+// ======================================================================
+// BASE ELEMENTS
+// ======================================================================
+
+@font-face {
+    font-family: "Inter var";
+    src: url("/inter-roman-latin.bvIUbFQP.woff2");
+}
+
+body {
+    font-family: "Inter var", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--text1);
+    font-size: var(--step-0);
+    // font-weight: 400;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0.2em solid var(--accent);
+
+    &:hover,
+    &:focus-visible {
+        color: var(--accent);
+    }
+}
+
+:where(.advancements, .abilities, .mounts, .ability) em,
+.food-table strong {
+    color: var(--text-green);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.advancements,
+.abilities {
+    em strong {
+        color: var(--text-lightred);
+    }
+}
+
+.mounts {
+    em strong {
+        color: var(--text-orange);
+        font-style: normal;
+    }
+}
+
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p,
+li,
+dd,
+dt,
+summary,
+aside,
+blockquote {
+    line-height: 1.75;
+}
+
+strong {
+    color: var(--text-highlight);
+    font-weight: 500;
+}
+
+.dishes-table strong {
+    color: var(--text-green);
+}
+
+abbr {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+    color: rgb(228, 228, 228);
+    line-height: 1;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-shadow: 0 0 0.5em rgb(0 0 0 / 60%);
+    //
+    font-size: var(--step--3);
+    font-weight: 500;
+    padding: 0.2em 0.36em;
+
+    &.absolute {
+        position: absolute;
+        margin: 0.5rem;
+        top: 0;
+        left: 0;
+    }
+}
+
+abbr[title*="China"] {
+    --bg: #e72e37;
+    padding: 0.2em 0.42em 0.2em 0.36em;
+    display: inline-block;
+    font-size: var(--step--1);
+    font-weight: 600;
+    background-image: linear-gradient(-45deg, transparent 15%, var(--bg) 0);
+
+    &::before {
+        content: "CN";
+    }
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    background: var(--surface1);
+    text-align: left;
+
+    thead {
+        color: var(--text2);
+    }
+
+    th {
+        font-size: var(--step--3);
+        text-transform: uppercase;
+        font-weight: normal; // 400 or 600
+        padding: 1rem;
+    }
+
+    td {
+        padding: 1rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &.borders {
+        thead {
+            border-bottom: 2px solid var(--surface2);
+        }
+
+        tr:not(:last-of-type) {
+            border-bottom: 1px solid var(--surface2);
+        }
+    }
+
+    &.bg-alternate {
+        thead {
+            border-bottom: 2px solid #39485f;
+
+            th {
+                background: rgba(0, 0, 0, 0.2);
+                color: var(--tier-s);
+            }
+        }
+
+        tr:nth-child(2n) {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+caption {
+    caption-side: bottom;
+    padding: 1rem 0;
+}
+
+figure {
+    margin: 1rem 0;
+
+    img {
+        margin: 0 !important;
+    }
+}
+
+figcaption {
+    padding: 1rem 0;
+}
+
+sup,
+small,
+figcaption,
+caption {
+    font-size: var(--step--2);
+}
+
+em>strong {
+    color: var(--text-lightred);
+    font-style: normal;
+}
+
+sup,
+small {
+    color: var(--accent);
+}
+
+figcaption,
+caption {
+    color: var(--accent);
+    max-inline-size: calc(100% - 2rem);
+    margin: auto;
+    line-height: 1.5;
+    text-align: center;
+}
+
+details>*:not(summary):first-of-type {
+    margin-block-start: 1rem;
+}
+
+:focus {
+    outline-color: var(--brand);
+}
+
+blockquote {
+    background: var(--surface2);
+    padding: var(--space-xs);
+    margin: var(--space-m) 0;
+    border-left: 3px solid var(--accent);
+    color: var(--accent);
+
+    p {
+        margin: 0;
+    }
+}
+
+p {
+    max-inline-size: 65ch;
+}
+
+kbd {
+    --key-color: #1f1f1f;
+    --key-size: 2em;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--key-size);
+    height: var(--key-size);
+    padding: 0 0.6em 0.12em;
+    background-color: var(--key-color);
+    background-image: radial-gradient(var(--key-color), transparent),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent);
+    border: 0.1em solid #13141e;
+    border-radius: 0.26em;
+    box-shadow: var(--tw-shadow), inset 0 0.1em 0 var(--key-color),
+        inset 0 -0.12em 0.08em 0.1em rgba(0, 0, 0, 0.3);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--step--1);
+    line-height: 1;
+    color: var(--text1);
+    // text-shadow: 0 0 1px #121212;
+}
+
+kbd.hold {
+    --tw-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.1),
+        0 0px 4px -2px rgba(0, 0, 0, 0.1);
+    --key-color: #141414;
+    color: var(--text2, var(--accent));
+    box-shadow: var(--tw-shadow), inset 0 0.18em 0 var(--key-color),
+        inset 0 -0.12em 0.08em 0.02em rgba(0, 0, 0, 0.3);
+}
+
+// ======================================================================
+// HEADERS 
+// ======================================================================
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-block: var(--space-xl) 0;
+}
+
+h1 {
+    margin-block: 0 0.5rem;
+    font-weight: 600;
+    font-size: var(--step-3);
+    // text-transform: lowercase;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    font-size: var(--step-4);
+}
+
+h3 {
+    font-size: var(--step-3);
+}
+
+h4 {
+    font-size: var(--step-2);
+}
+
+h5 {
+    font-size: var(--step-1);
+}
+
+h6 {
+    font-size: var(--step-0);
+}
+
+h2+h3 {
+    margin-top: 1.5rem;
+}
+
+.section-header {
+    text-transform: uppercase;
+    font-size: var(--step--3);
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+img[src*="guides"] {
+    max-width: 100%;
+    grid-column: 1 / -1;
+}
+
+// ======================================================================
+// LISTS
+// ======================================================================
+
+ol,
+ul,
+dl,
+dl>div {
+    display: grid;
+    gap: 1rem;
+}
+
+li,
+dd {
+    font-size: var(--step--1);
+}
+
+::marker {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+
+// ======================================================================
+// FONTS
+// ======================================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');

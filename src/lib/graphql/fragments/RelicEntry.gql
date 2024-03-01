@@ -1,0 +1,8 @@
+fragment relicEntry on Relic {
+    id
+    name
+    icon
+    rarity
+    type
+    version
+}

@@ -1,0 +1,29 @@
+query FullSimulacrumV2($id: String!) {
+    simulacrum_v2(id: $id) {
+        ...simulacrum_v2Entry
+        advanceId
+        affiliation
+        avatarId
+        awakening {
+            description
+            icon
+            name
+            need
+        }
+        assetsA0 {
+            descPainting
+        }
+        birthday
+        gender
+        height
+        homeTown
+        likedGiftTypes
+        voicing {
+            cn
+            en
+            jp
+            kr
+            pt
+        }
+    }
+}
