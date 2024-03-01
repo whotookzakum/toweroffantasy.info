@@ -28,7 +28,7 @@
     </div>
 </div>
 <Ad unit="StickyBar" />
-<Ad unit="Video" />
+<Ad unit="Floating" />
 
 <BackgroundImage src={data.bgImg} />
 

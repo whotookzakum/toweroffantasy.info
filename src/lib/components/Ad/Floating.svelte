@@ -1,28 +1,24 @@
 <script>
     import { onMount } from "svelte";
-    import { dev } from "$app/environment";
 
     export let unit = "";
 
     const options = {
-        refreshLimit: 20,
         refreshTime: 30,
-        format: "anchor",
-        anchor: "bottom",
-        anchorBgColor: "transparent",
+        format: "floating",
+        floating: {
+            position: "left",
+            reduceMobileSize: true
+        },
         report: {
             enabled: true,
             icon: true,
             wording: "Report Ad",
-            position: "top-right",
+            position: "top-left",
         },
-        anchorPersistClose: false,
-        demo: dev,
     };
 
     onMount(() => {
         window["nitroAds"].createAd(`np${unit}`, options);
     });
 </script>
-
-<div id="np{unit}" />
