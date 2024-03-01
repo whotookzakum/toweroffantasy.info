@@ -2,17 +2,16 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import { queryParameters } from "sveltekit-search-params";
     import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
     import RadioSliderGroup from "$lib/components/RadioSliderGroup.svelte";
     import { outfitsGender } from "$lib/stores";
 
     export let data;
-    const searchParams = queryParameters();
+    let q = ""
+    let type = "all"
 
     $: entries = data.outfits
         .filter((entry) => {
-            const { q, type } = $searchParams;
             const searchMatch = q
                 ? entry.name?.toLowerCase().includes(q.toLowerCase())
                 : true;
@@ -51,7 +50,7 @@
 </p>
 
 <div class="filters-row">
-    <SearchBar />
+    <SearchBar bind:q />
     <RadioSliderGroup
         bind:group={$outfitsGender}
         groupName="outfits-gender"
@@ -61,7 +60,7 @@
             { label: "Male", value: "m" },
         ]}
     />
-    <TypeSelector originalData={data.outfits} />
+    <TypeSelector originalData={data.outfits} bind:type />
 </div>
 
 <ul class="entry-list">

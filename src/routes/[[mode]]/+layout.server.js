@@ -1,7 +1,6 @@
 import { AllSimulacraV2Store } from '$houdini'
-import { getLatestVersion } from '$lib/utils.js'
 
-// export const prerender = true
+export const prerender = true
 
 export const load = async (event) => {
     const query = new AllSimulacraV2Store()

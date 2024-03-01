@@ -1,15 +1,26 @@
 <script>
+    import { queryParam, ssp } from "sveltekit-search-params";
     import uniq from "lodash/uniq"
 
-    export let type = "";
     export let originalData;
     export let key = "type"
     export let selectorName = "Type"
+    export let paramName = "type"
+    export let defaultType = ssp.string()
 
     const types = uniq(originalData.map(entry => entry[key]), false).sort((a, b) => b - a)
+    const type = queryParam(paramName, defaultType, { showDefaults: false, pushHistory: false })
+
+    let inputValue = $type ? $type : "all"
+
+    $: if (inputValue === "all") {
+        $type = null;
+    } else {
+        $type = inputValue;
+    }
 </script>
 
-<select bind:value={type}>
+<select bind:value={inputValue}>
     <option class="default" disabled selected value="all">{selectorName}</option>
     <option value="all">All</option>
     {#each types as type}
