@@ -4,19 +4,13 @@
     import RadioSliderGroup from "$lib/components/RadioSliderGroup.svelte";
     import { guidebookCategory } from "$lib/stores";
     import SearchBar from "$lib/components/Filters/SearchBar.svelte";
-    import { queryParameters } from "sveltekit-search-params";
+    import { applyFilters } from "$lib/utils"
 
     export let data;
-    const searchParams = queryParameters();
+    let q = ""
+    let queryKey = "title"
 
-    $: entries = data[$guidebookCategory].filter((entry) => {
-        const { q } = $searchParams;
-        const searchMatch = q
-            ? entry.title.toLowerCase().includes(q.toLowerCase())
-            : true;
-
-        return searchMatch;
-    });
+    $: entries = applyFilters(data[$guidebookCategory], { q, queryKey })
 </script>
 
 <Meta
@@ -33,7 +27,7 @@
 
 <div class="grid g-100">
     <div class="filters-row">
-        <SearchBar />
+        <SearchBar bind:q />
         <RadioSliderGroup
             bind:group={$guidebookCategory}
             groupName="guidebook-category"

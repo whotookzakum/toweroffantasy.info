@@ -2,26 +2,23 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import { queryParameters } from "sveltekit-search-params";
-    import RarityFilters from "$components/Filters/RarityFilters.svelte";
-    import VersionSelector from "$components/Filters/VersionSelector.svelte";
+    import uniqBy from "lodash/uniqBy";
+    import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
+    import { applyFilters } from "$lib/utils";
+    import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
 
     export let data;
-    const searchParams = queryParameters();
+    let q = "";
+    let rarity;
+    let uniqRarities = uniqBy(data.relics, (entry) => entry.rarity).map(
+        (obj) => ({ type: "rarity", value: obj.rarity }),
+    );
+    let version;
+    let uniqVersions = uniqBy(data.relics, (entry) => entry.version)
+        .sort((a, b) => b.version - a.version)
+        .map((obj) => ({ name: obj.version, value: obj.version }));
 
-    $: entries = data.relics.filter((entry) => {
-        const { q, version, rarity } = $searchParams;
-        const searchMatch = q
-            ? entry.name.toLowerCase().includes(q.toLowerCase())
-            : true;
-        const versionMatch =
-            version && version !== "all" ? entry.version === version : true;
-        const rarityMatch = rarity
-            ? rarity.split(" ").includes(`${entry.rarity}`)
-            : true;
-
-        return searchMatch && versionMatch && rarityMatch;
-    });
+    $: entries = applyFilters(data.relics, { q, version, rarity });
 </script>
 
 <Meta
@@ -36,9 +33,13 @@
 </p>
 
 <div class="filters-row">
-    <SearchBar />
-    <RarityFilters originalData={data.relics} />
-    <VersionSelector originalData={data.relics} />
+    <SearchBar bind:q />
+    <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
+    <SelectorFilter
+        dataset={uniqVersions}
+        bind:value={version}
+        selectorName="Version"
+    />
 </div>
 
 <ul class="entry-list">

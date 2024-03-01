@@ -2,44 +2,23 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import TypeFilters from "$components/Filters/TypeFilters.svelte";
-    import { queryParameters } from "sveltekit-search-params";
-    import RarityFilters from "$components/Filters/RarityFilters.svelte";
-    import BannerFilters from "$components/Filters/BannerFilters.svelte";
-    import VersionSelector from "$components/Filters/VersionSelector.svelte";
-    import { getBannersMatch } from "$lib/utils";
+    import uniqBy from "lodash/uniqBy";
+    import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
+    import { applyFilters } from "$lib/utils";
+    import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
 
     export let data;
-    const searchParams = queryParameters();
 
-    $: entries = data.weapons.filter((entry) => {
-        const { q, element, category, version, rarity, banners } =
-            $searchParams;
-        const searchMatch = q
-            ? entry.name.toLowerCase().includes(q.toLowerCase())
-            : true;
-        const elementMatch = element
-            ? element.split(" ").includes(entry.element)
-            : true;
-        const categoryMatch = category
-            ? category.split(" ").includes(entry.category)
-            : true;
-        const versionMatch =
-            version && version !== "all" ? entry.version === version : true;
-        const rarityMatch = rarity
-            ? rarity.split(" ").includes(`${entry.rarity}`)
-            : true;
-        const bannersMatch = banners ? getBannersMatch(banners, entry) : true;
+    let q = "";
+    let rarity, version, banners, element, category;
+    let uniqRarities = uniqBy(data.weapons, (entry) => entry.rarity).map(
+        (obj) => ({ type: "rarity", value: obj.rarity }),
+    );
+    let uniqVersions = uniqBy(data.weapons, (entry) => entry.version)
+        .sort((a, b) => b.version - a.version)
+        .map((obj) => ({ name: obj.version, value: obj.version }));
 
-        return (
-            searchMatch &&
-            elementMatch &&
-            categoryMatch &&
-            versionMatch &&
-            rarityMatch &&
-            bannersMatch
-        );
-    });
+    $: entries = applyFilters(data.weapons, { q, version, rarity, element, category, banners });
 </script>
 
 <Meta
@@ -57,12 +36,12 @@
 </p>
 
 <div class="filters-row">
-    <SearchBar />
-    <TypeFilters type="category" />
-    <TypeFilters type="element" />
-    <RarityFilters originalData={data.weapons} />
-    <BannerFilters />
-    <VersionSelector originalData={data.weapons} />
+    <SearchBar bind:q />
+    <CheckboxFilters type="category" bind:value={category} />
+    <CheckboxFilters type="element" bind:value={element} />
+    <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
+    <CheckboxFilters type="banners-simulacra" bind:value={banners} />
+    <SelectorFilter dataset={uniqVersions} bind:value={version} selectorName="Version" />
 </div>
 
 <ul class="entry-list">

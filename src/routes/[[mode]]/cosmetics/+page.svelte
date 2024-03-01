@@ -2,7 +2,6 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
     import RadioSliderGroup from "$lib/components/RadioSliderGroup.svelte";
     import { outfitsGender } from "$lib/stores";
     import { applyFilters } from "$lib/utils";

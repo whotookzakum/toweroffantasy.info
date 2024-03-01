@@ -2,22 +2,18 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import VersionSelector from "$components/Filters/VersionSelector.svelte";
-    import { queryParameters } from "sveltekit-search-params";
+    import uniqBy from "lodash/uniqBy";
+    import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
+    import { applyFilters } from "$lib/utils";
 
     export let data;
-    const searchParams = queryParameters();
+    let q = "";
+    let version;
+    let uniqVersions = uniqBy(data.mounts, (mount) => mount.version)
+        .sort((a, b) => b.version - a.version)
+        .map((obj) => ({ name: obj.version, value: obj.version }));
 
-    $: entries = data.mounts.filter((entry) => {
-        const { q, version } = $searchParams;
-        const searchMatch = q
-            ? entry.name?.toLowerCase().includes(q.toLowerCase())
-            : true;
-        const versionMatch =
-            version && version !== "all" ? entry.version === version : true;
-
-        return searchMatch && versionMatch;
-    });
+    $: entries = applyFilters(data.mounts, { q, version })
 </script>
 
 <Meta
@@ -34,8 +30,8 @@
 </p>
 
 <div class="filters-row">
-    <SearchBar />
-    <VersionSelector originalData={data.mounts} />
+    <SearchBar bind:q />
+    <SelectorFilter dataset={uniqVersions} bind:value={version} selectorName="Version" />
 </div>
 
 <ul class="entry-list">

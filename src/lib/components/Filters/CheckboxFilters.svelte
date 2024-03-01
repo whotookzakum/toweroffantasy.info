@@ -5,6 +5,8 @@
     import categoriesText from "$components/EntryItem/CategoriesText.json";
     import RarityIcon from "../EntryItem/RarityIcon.svelte";
 
+    // If a dataset is not specified, it will show all options in that type of filter
+
     export let type;
     export let dataset = manualFilters;
     export let value;
@@ -47,7 +49,7 @@
 </div>
 
 <style lang="scss">
-    .box:not(.rarity) {
+    .box:not(:where(.rarity, .banners-simulacra, .banners-matrices)) {
         padding: 0.125rem;
         flex-wrap: wrap;
     }
@@ -65,6 +67,7 @@
         }
 
         label {
+            display: flex;
             padding: 0.4rem;
         }
     }

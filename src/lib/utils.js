@@ -27,11 +27,11 @@ export function getBannersMatch(selectedBanners, entry) {
     return passesLimitedCheck && passesStandardCheck
 }
 
-export function applyFilters(entries, { q = "", version = "all", rarity = [], type = "all", typeKey = "type", stars = "all", effects = [], banners = [] }) {
+export function applyFilters(entries, { q = "", queryKey = "name", version = "all", rarity = [], type = "all", typeKey = "type", stars = "all", effects = [], banners = [], element = [], category = [] }) {
     return entries.filter((entry) => {
 
         const searchMatch = q
-            ? entry.name.toLowerCase().includes(q.toLowerCase())
+            ? entry[queryKey].toLowerCase().includes(q.toLowerCase())
             : true;
 
         const versionMatch =
@@ -54,6 +54,16 @@ export function applyFilters(entries, { q = "", version = "all", rarity = [], ty
 
         const bannersMatch = banners ? getBannersMatch(banners, entry) : true;
 
-        return searchMatch && versionMatch && rarityMatch && typeMatch && starsMatch && effectsMatch && bannersMatch
+        const elementMatch =
+            element?.length > 0
+                ? element.some((obj) => entry.element === obj.value || entry.weapon?.element === obj.value)
+                : true;
+
+        const categoryMatch =
+            category?.length > 0
+                ? category.some((obj) => entry.category === obj.value || entry.weapon?.category === obj.value)
+                : true;
+
+        return searchMatch && versionMatch && rarityMatch && typeMatch && starsMatch && effectsMatch && bannersMatch && elementMatch && categoryMatch
     });
 }

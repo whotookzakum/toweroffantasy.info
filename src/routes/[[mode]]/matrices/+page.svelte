@@ -2,19 +2,21 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import VersionSelector from "$components/Filters/VersionSelector.svelte";
     import { applyFilters } from "$lib/utils";
     import uniqBy from "lodash/uniqBy";
     import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
+    import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
 
     export let data;
     let q = "";
     let version = "all";
-    let rarity;
+    let rarity, banners;
     let uniqRarities = uniqBy(data.matrices, (entry) => entry.rarity).map(
         (obj) => ({ type: "rarity", value: obj.rarity }),
     );
-    let banners;
+    let uniqVersions = uniqBy(data.matrices, (entry) => entry.version)
+        .sort((a, b) => b.version - a.version)
+        .map((obj) => ({ name: obj.version, value: obj.version }));
 
     $: entries = applyFilters(data.matrices, { q, version, rarity, banners });
 </script>
@@ -36,7 +38,7 @@
     <SearchBar bind:q />
     <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
     <CheckboxFilters type="banners-matrices" bind:value={banners} />
-    <VersionSelector originalData={data.matrices} bind:version />
+    <SelectorFilter dataset={uniqVersions} bind:value={version} selectorName="Version" />
 </div>
 
 <ul class="entry-list">
