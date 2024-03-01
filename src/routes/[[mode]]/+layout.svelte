@@ -26,8 +26,9 @@
     <div class="gutter-right">
         <Ad unit="Gutter2" />
     </div>
-    
 </div>
+<Ad unit="StickyBar" />
+<Ad unit="Video" />
 
 <BackgroundImage src={data.bgImg} />
 

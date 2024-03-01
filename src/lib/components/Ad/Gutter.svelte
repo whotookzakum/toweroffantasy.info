@@ -1,8 +1,12 @@
 <script>
     import { page } from "$app/stores";
     import { browser } from "$app/environment";
+    import { dev } from "$app/environment"
 
     // Auto-refresh if window size passes through breakpoints. Ad script automatically places a properly sized ad, however sizes can also be manually specified.
+    export let unit = "";
+    export let innerWidth;
+    let previousWidth = browser && window.innerWidth;
 
     const options = {
         refreshTime: 30,
@@ -17,12 +21,8 @@
             wording: "Report Ad",
             position: "top-right",
         },
-        demo: true,
+        demo: dev,
     };
-
-    export let unit = "";
-    export let innerWidth;
-    let previousWidth = browser && window.innerWidth;
 
     // Check page refresh and large/small breakpoints
     $: if ($page.url.pathname) {
