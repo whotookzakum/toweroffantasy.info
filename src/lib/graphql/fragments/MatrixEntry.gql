@@ -1,0 +1,15 @@
+fragment matrixEntry on Matrice {
+    id
+    rarity
+    name
+    version
+    assets {
+        iconLarge
+    }
+    banners {
+        bannerNumber
+        isFinalBanner
+        endDate
+        startDate
+    }
+}

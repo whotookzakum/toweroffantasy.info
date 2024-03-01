@@ -1,0 +1,5 @@
+query ShortMatrix($id: String!) {
+    matrix(id: $id) {
+        ...matrixEntry
+    }
+}

@@ -1,0 +1,9 @@
+fragment itemEntry on Item {
+    # Include everything
+    id
+    name
+    icon
+    description
+    type
+    rarity
+}

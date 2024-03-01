@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Banners",
+        "href": "/banners"
+    },
+    {
+        "name": "Simulacra",
+        "href": "/simulacra"
+    },
+    {
+        "name": "Weapons",
+        "href": "/weapons"
+    },
+    {
+        "name": "Matrices",
+        "href": "/matrices"
+    },
+    {
+        "name": "Relics",
+        "href": "/relics"
+    },
+    {
+        "name": "Mounts",
+        "href": "/mounts"
+    },
+    {
+        "name": "Cosmetics",
+        "href": "/cosmetics"
+    },
+    {
+        "name": "Food",
+        "href": "/food"
+    },
+    {
+        "name": "Survival Guide",
+        "href": "/survival-guide"
+    }
+]

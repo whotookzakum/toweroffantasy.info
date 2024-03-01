@@ -1,0 +1,5 @@
+query AllItems($lang: String) {
+    items(lang: $lang) {
+        ...itemEntry
+    }
+}

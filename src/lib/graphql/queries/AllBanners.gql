@@ -1,0 +1,19 @@
+query AllBanners {
+    banners {
+        bannerNumber
+        category
+        detailsLink
+        element
+        endDate
+        isFinalBanner
+        isCollab
+        isLimitedBannerOnly
+        isRerun
+        matrixId
+        noWeapon
+        simulacrumId
+        simulacrumName
+        startDate
+        weaponId
+    }
+}
