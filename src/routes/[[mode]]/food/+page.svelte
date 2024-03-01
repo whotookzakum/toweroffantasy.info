@@ -74,7 +74,7 @@
 </div>
 
 <div class="grid g-100">
-    <div class="table-wrapper" style="max-width: unset;">
+    <div class="table-wrapper">
         <table class="food-table bg-alternate">
             <thead>
                 <tr>

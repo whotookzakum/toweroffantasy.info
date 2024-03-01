@@ -24,18 +24,19 @@
     };
 
     $: currentBanners = banners
-        .filter((banner) =>
-            new Date(banner.startDate).getTime() < timeNow &&
-            new Date(banner.endDate).getTime() > timeNow,
+        .filter(
+            (banner) =>
+                new Date(banner.startDate).getTime() < timeNow &&
+                new Date(banner.endDate).getTime() > timeNow,
         )
         .sort((a, b) => getEarliestBannerNo(b) - getEarliestBannerNo(a));
 
     function getEarliestBannerNo(banner) {
         return banners
-            .filter(b => b.simulacrumId === banner.simulacrumId)
+            .filter((b) => b.simulacrumId === banner.simulacrumId)
             .reduce((acc, curr) => {
-                return curr.bannerNumber < acc ? curr.bannerNumber : acc
-            }, 99999)
+                return curr.bannerNumber < acc ? curr.bannerNumber : acc;
+            }, 99999);
     }
 </script>
 

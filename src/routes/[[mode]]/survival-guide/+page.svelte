@@ -39,7 +39,7 @@
         />
     </div>
 
-    <div class="table-wrapper" style="max-width: unset;">
+    <div class="table-wrapper">
         <table class="bg-alternate">
             <thead>
                 <tr>

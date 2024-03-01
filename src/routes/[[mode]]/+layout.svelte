@@ -27,8 +27,8 @@
         <Ad unit="Gutter2" />
     </div>
 </div>
-<Ad unit="StickyBar" />
-<Ad unit="Floating" />
+<!-- <Ad unit="StickyBar" /> -->
+<!-- <Ad unit="Floating" /> -->
 
 <BackgroundImage src={data.bgImg} />
 

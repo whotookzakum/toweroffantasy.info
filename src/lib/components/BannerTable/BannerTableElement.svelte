@@ -40,18 +40,20 @@
     }
 </script>
 
-<div class="table-wrapper" style="max-width: unset;">
-    <table class:highlightRows>
+<div class="table-wrapper">
+    <table class="bg-alternate" class:highlightRows>
         <thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Types</th>
-            <th>Start</th>
-            <th>End</th>
-            <th>Duration</th>
-            <th>Week #</th>
-            <th>Notes</th>
-            <th class="visually-hidden">Link</th>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Types</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Duration</th>
+                <th>Week #</th>
+                <th>Notes</th>
+                <th>News</th>
+            </tr>
         </thead>
         <tbody>
             {#each filteredBanners as banner (banner.bannerNumber)}
@@ -156,9 +158,19 @@
         white-space: nowrap;
     }
 
-    table.highlightRows {
-        overflow: hidden;
+    // .table-wrapper {
+    //     max-height: 600px;
+    //     border-radius: 0.5rem;
+    // }
 
+    // thead {
+    //     position: sticky;
+    //     top: 0;
+    //     z-index: 500;
+    //     background: var(--surface1);
+    // }
+
+    table.highlightRows {
         .Superpower {
             background: linear-gradient(
                 45deg,
