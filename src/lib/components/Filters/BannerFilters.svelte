@@ -3,6 +3,7 @@
     import { queryParam, ssp } from "sveltekit-search-params";
     import Popper from "$components/Popper.svelte";
 
+    export let banners;
     // Default to nucleus icons for simulacra and weapons
     let limitedIcons = [
         "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005",
@@ -20,24 +21,6 @@
             "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01",
         ];
     }
-
-    const banners = queryParam("banners", ssp.string(), {
-        showDefaults: false,
-        pushHistory: false,
-    });
-
-    let isLimited = $banners?.includes("limited") || false;
-    let isStandard = $banners?.includes("standard") || false;
-
-    $: if (isLimited || isStandard) {
-        const limitedString = isLimited ? "limited" : "";
-        const standardString = isStandard
-            ? (isLimited ? " " : "") + "standard"
-            : "";
-        $banners = limitedString + standardString;
-    } else {
-        $banners = null;
-    }
 </script>
 
 <div class="box icons-box flex">
@@ -46,7 +29,7 @@
             type="checkbox"
             id="toggle-banners-limited"
             class="visually-hidden style-next-label"
-            bind:checked={isLimited}
+            
             on:focus={() => setFocused(true)}
             on:blur={() => setFocused(false)}
         />
@@ -63,7 +46,7 @@
             type="checkbox"
             id="toggle-banners-standard"
             class="visually-hidden style-next-label"
-            bind:checked={isStandard}
+            
             on:focus={() => setFocused(true)}
             on:blur={() => setFocused(false)}
         />

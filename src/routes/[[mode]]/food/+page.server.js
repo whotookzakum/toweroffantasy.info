@@ -8,7 +8,7 @@ export const load = async (event) => {
 
     const allEffects = 
         uniq(foods.flatMap(food => food.categories))
-        .map(cat => ({ name: cat, type: "effects", checked: false }))
+        .map(cat => ({ value: cat, type: "effects", checked: false }))
 
     return { foods, allEffects }
 }

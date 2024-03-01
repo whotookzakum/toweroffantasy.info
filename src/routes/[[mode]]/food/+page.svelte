@@ -3,8 +3,10 @@
     import SvelteMarkdown from "svelte-markdown";
     import ItemIcon from "$lib/components/ItemIcon.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import TypeFilters from "$components/Filters/TypeFilters.svelte";
-    import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
+    import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
+    import { applyFilters } from "$lib/utils";
+    import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
+    import uniqBy from "lodash/uniqBy";
 
     export let data;
     const { foods, allEffects } = data;
@@ -13,37 +15,25 @@
     let rarity, effects;
     let type = "all";
     let stars = "all";
+    let uniqStars = uniqBy(foods, (food) => food.stars)
+        .sort((a, b) => b.stars - a.stars)
+        .map((obj) => ({ name: obj.stars, value: obj.stars }));
+    let uniqTypes = uniqBy(foods, (food) => food.buff).map((obj) => ({
+        name: obj.buff,
+        value: obj.buff,
+    }));
+    let typeKey = "buff";
 
-    $: entries = foods
-        .filter((entry) => {
-            const searchMatch = q
-                ? entry.name?.toLowerCase().includes(q.toLowerCase())
-                : true;
+    $: entries = applyFilters(foods, {
+        q,
+        type,
+        typeKey,
+        rarity,
+        effects,
+        stars,
+        effects,
+    }).toSorted((a, b) => a.rarity - b.rarity);
 
-            const rarityMatch =
-                rarity?.length > 0
-                    ? rarity.some((obj) => obj.name == entry.rarity)
-                    : true;
-
-            const effectsMatch =
-                effects?.length > 0
-                    ? effects.some((obj) => entry.categories.includes(obj.name))
-                    : true;
-
-            const typeMatch =
-                type && type !== "all" ? entry.buff === type : true;
-
-            const starsMatch = stars !== "all" ? entry.stars == stars : true;
-
-            return (
-                searchMatch &&
-                rarityMatch &&
-                effectsMatch &&
-                typeMatch &&
-                starsMatch
-            );
-        })
-        .toSorted((a, b) => a.rarity - b.rarity);
     // For testing multiple buff icons
     // .filter((entry) => entry.categories.length > 1);
 </script>
@@ -67,16 +57,19 @@
 
 <div class="filters-row">
     <SearchBar bind:q />
-    <TypeFilters type="rarity" bind:value={rarity} />
-    <TypeSelector originalData={foods} key="buff" bind:type />
-    <TypeSelector
-        originalData={foods}
-        bind:type={stars}
-        key="stars"
+    <CheckboxFilters type="rarity" bind:value={rarity} />
+    <SelectorFilter dataset={uniqTypes} selectorName="Type" bind:value={type} />
+    <SelectorFilter
+        dataset={uniqStars}
         selectorName="Stars"
+        bind:value={stars}
     />
     <div style="width: 100%">
-        <TypeFilters type="effects" bind:value={effects} filters={allEffects} />
+        <CheckboxFilters
+            type="effects"
+            bind:value={effects}
+            dataset={allEffects}
+        />
     </div>
 </div>
 

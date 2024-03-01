@@ -1,70 +1,95 @@
 [
     {
         "type": "category",
-        "name": "DPS"
+        "value": "DPS"
     },
     {
         "type": "category",
-        "name": "Tank"
+        "value": "Tank"
     },
     {
         "type": "category",
-        "name": "SUP"
+        "value": "SUP"
     },
     {
         "type": "element",
-        "name": "Flame"
+        "value": "Flame"
     },
     {
         "type": "element",
-        "name": "FlamePhysics"
+        "value": "FlamePhysics"
     },
     {
         "type": "element",
-        "name": "Ice"
+        "value": "Ice"
     },
     {
         "type": "element",
-        "name": "ThunderIce"
+        "value": "ThunderIce"
     },
     {
         "type": "element",
-        "name": "Thunder"
+        "value": "Thunder"
     },
     {
         "type": "element",
-        "name": "IceThunder"
+        "value": "IceThunder"
     },
     {
         "type": "element",
-        "name": "Physics"
+        "value": "Physics"
     },
     {
         "type": "element",
-        "name": "PhysicsFlame"
+        "value": "PhysicsFlame"
     },
     {
         "type": "element",
-        "name": "Superpower"
+        "value": "Superpower"
     },
     {
         "type": "rarity",
-        "name": "1"
+        "value": 5
     },
     {
         "type": "rarity",
-        "name": "2"
+        "value": 4
     },
     {
         "type": "rarity",
-        "name": "3"
+        "value": 3
     },
     {
         "type": "rarity",
-        "name": "4"
+        "value": 2
     },
     {
-        "type": "rarity",
-        "name": "5"
+        "type": "banners-matrices",
+        "value": "limited",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02"
+        ]
+    },
+    {
+        "type": "banners-matrices",
+        "value": "standard",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01"
+        ]
+    },
+    {
+        "type": "banners-simulacra",
+        "value": "limited",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005"
+        ]
+    },
+    {
+        "type": "banners-simulacra",
+        "value": "standard",
+        "icons": [
+            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem004",
+            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem003"
+        ]
     }
 ]

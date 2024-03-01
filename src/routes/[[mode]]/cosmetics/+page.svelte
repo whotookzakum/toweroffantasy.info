@@ -5,36 +5,31 @@
     import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
     import RadioSliderGroup from "$lib/components/RadioSliderGroup.svelte";
     import { outfitsGender } from "$lib/stores";
+    import { applyFilters } from "$lib/utils";
+    import uniqBy from "lodash/uniqBy";
+    import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
 
     export let data;
-    let q = ""
-    let type = "all"
+    let q = "";
+    let type = "all";
+    let uniqTypes = uniqBy(data.outfits, (outfit) => outfit.type).map(
+        (obj) => ({ name: obj.type, value: obj.type }),
+    );
 
-    $: entries = data.outfits
-        .filter((entry) => {
-            const searchMatch = q
-                ? entry.name?.toLowerCase().includes(q.toLowerCase())
-                : true;
-            const typeMatch =
-                type && type !== "all" ? entry.type === type : true;
-
-            return searchMatch && typeMatch;
-        })
-        // Replace missing icons with N/A icon
-        .map((item) => {
-            const blankIcon =
-                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp";
-            return {
-                ...item,
-                icon:
-                    item.icon === "None.webp"
-                        ? blankIcon
-                        : item.icon.replace(
-                              /fashion_f(.+?)\.webp/,
-                              `fashion_${$outfitsGender}$1.webp`,
-                          ),
-            };
-        });
+    $: entries = applyFilters(data.outfits, { q, type }).map((item) => {
+        const blankIcon =
+            "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp";
+        return {
+            ...item,
+            icon:
+                item.icon === "None.webp"
+                    ? blankIcon
+                    : item.icon.replace(
+                          /fashion_f(.+?)\.webp/,
+                          `fashion_${$outfitsGender}$1.webp`,
+                      ),
+        };
+    });
 </script>
 
 <Meta
@@ -42,7 +37,7 @@
     description="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free. Cosmetic gachapon items may have reruns."
 />
 
-<h1>Cosmetics</h1>
+<h1>Cosmetics {type}</h1>
 <p>
     Cosmetic items allow you customize the appearance of your character and
     other social features. They are typically acquired by spending Dark Crystals
@@ -60,7 +55,11 @@
             { label: "Male", value: "m" },
         ]}
     />
-    <TypeSelector originalData={data.outfits} bind:type />
+    <SelectorFilter
+        dataset={uniqTypes}
+        selectorName="Type"
+        bind:value={type}
+    />
 </div>
 
 <ul class="entry-list">

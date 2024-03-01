@@ -1,21 +1,12 @@
 <script>
-    import { queryParam, ssp } from "sveltekit-search-params";
     import uniq from "lodash/uniq"
 
     export let originalData
+    export let version;
     const versions = uniq(originalData.map(entry => entry.version), false).sort((a, b) => b - a)
-    const version = queryParam("version", ssp.string(), { showDefaults: false, pushHistory: false })
-
-    let inputValue = $version ? $version : "all"
-
-    $: if (inputValue === "all") {
-        $version = null;
-    } else {
-        $version = inputValue;
-    }
 </script>
 
-<select bind:value={inputValue}>
+<select bind:value={version}>
     <option class="default" disabled selected value="all">Version</option>
     <option value="all">All</option>
     {#each versions as version}

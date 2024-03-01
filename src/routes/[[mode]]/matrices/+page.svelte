@@ -2,29 +2,21 @@
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
-    import { queryParameters } from "sveltekit-search-params";
-    import RarityFilters from "$components/Filters/RarityFilters.svelte";
-    import BannerFilters from "$components/Filters/BannerFilters.svelte";
     import VersionSelector from "$components/Filters/VersionSelector.svelte";
-    import { getBannersMatch } from "$lib/utils";
+    import { applyFilters } from "$lib/utils";
+    import uniqBy from "lodash/uniqBy";
+    import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
 
     export let data;
-    const searchParams = queryParameters();
+    let q = "";
+    let version = "all";
+    let rarity;
+    let uniqRarities = uniqBy(data.matrices, (entry) => entry.rarity).map(
+        (obj) => ({ type: "rarity", value: obj.rarity }),
+    );
+    let banners;
 
-    $: entries = data.matrices.filter((entry) => {
-        const { q, version, rarity, banners } = $searchParams;
-        const searchMatch = q
-            ? entry.name.toLowerCase().includes(q.toLowerCase())
-            : true;
-        const versionMatch =
-            version && version !== "all" ? entry.version === version : true;
-        const rarityMatch = rarity
-            ? rarity.split(" ").includes(`${entry.rarity}`)
-            : true;
-        const bannersMatch = banners ? getBannersMatch(banners, entry) : true;
-
-        return searchMatch && versionMatch && rarityMatch && bannersMatch;
-    });
+    $: entries = applyFilters(data.matrices, { q, version, rarity, banners });
 </script>
 
 <Meta
@@ -33,7 +25,7 @@
     image={data.matrices[0].assets.iconLarge}
 />
 
-<h1>Matrices</h1>
+<h1>Matrices {rarity}</h1>
 <p>
     Matrices (aka Chips) are items that can be attached to one of four slots on
     a weapon (Emotion, Mind, Belief, and Memory) to provide stat boosts and
@@ -41,10 +33,10 @@
 </p>
 
 <div class="filters-row">
-    <SearchBar />
-    <RarityFilters originalData={data.matrices} />
-    <BannerFilters />
-    <VersionSelector originalData={data.matrices} />
+    <SearchBar bind:q />
+    <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
+    <CheckboxFilters type="banners-matrices" bind:value={banners} />
+    <VersionSelector originalData={data.matrices} bind:version />
 </div>
 
 <ul class="entry-list">

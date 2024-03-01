@@ -11,11 +11,11 @@
     "Physics": "Physical",
     "PhysicsFlame": "Physical/Flame",
     "Superpower": "Altered",
-    "1": "Rarity 1",
-    "2": "Rarity 2",
-    "3": "Rarity 3",
-    "4": "Rarity 4",
-    "5": "Rarity 5",
+    "1": "C Rarity",
+    "2": "N Rarity",
+    "3": "R Rarity",
+    "4": "SR Rarity",
+    "5": "SSR Rarity",
     "AddSatiety": "Recover Satiety",
     "AddHealth": "Recover HP",
     "IceAtk": "Increase Frost Attack",
@@ -30,5 +30,7 @@
     "DiveSpeed": "Increase Dive Speed",
     "RecoverHp": "Increase HP Regen",
     "CleanBuff": "Clean Buff",
-    "EnergyConsumeDown": "Reduce Endurance Consumption"
+    "EnergyConsumeDown": "Reduce Endurance Consumption",
+    "limited": "Limited Banner",
+    "standard": "Standard Banner"
 }
