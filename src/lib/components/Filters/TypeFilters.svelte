@@ -1,28 +1,16 @@
 <script>
     import manualFilters from "./filters.json";
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
-    import { queryParameters } from "sveltekit-search-params";
     import Popper from "$components/Popper.svelte";
     import categoriesText from "$components/EntryItem/CategoriesText.json";
 
     export let type;
     export let filters = manualFilters;
-    const searchParams = queryParameters({}, { showDefaults: false, pushHistory: false });
+    export let value;
 
-    const items = filters
-        .filter((f) => f.type === type)
-        .map((f) => ({
-            ...f,
-            checked: $searchParams[type]?.split(" ").includes(f.name),
-        }));
+    const items = filters.filter((f) => f.type === type)
 
-    $: selectedItems = items.filter((i) => i.checked);
-
-    $: if (selectedItems.length > 0) {
-        $searchParams[type] = selectedItems.map((i) => i.name).join(" ");
-    } else {
-        $searchParams[type] = null;
-    }
+    $: value = items.filter((i) => i.checked);
 </script>
 
 <div class="box icons-box flex">

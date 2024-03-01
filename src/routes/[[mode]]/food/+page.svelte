@@ -4,35 +4,36 @@
     import ItemIcon from "$lib/components/ItemIcon.svelte";
     import SearchBar from "$components/Filters/SearchBar.svelte";
     import TypeFilters from "$components/Filters/TypeFilters.svelte";
-    import { queryParameters, ssp } from "sveltekit-search-params";
     import TypeSelector from "$lib/components/Filters/TypeSelector.svelte";
 
     export let data;
     const { foods, allEffects } = data;
-    const searchParams = queryParameters();
+
+    let q = "";
+    let rarity, effects;
+    let type = "all";
+    let stars = "all";
 
     $: entries = foods
         .filter((entry) => {
-            const { q, rarity, effects, type, stars } = $searchParams;
             const searchMatch = q
                 ? entry.name?.toLowerCase().includes(q.toLowerCase())
                 : true;
 
-            const rarityMatch = rarity
-                ? rarity.split(" ").includes(entry.rarity.toString())
-                : true;
+            const rarityMatch =
+                rarity?.length > 0
+                    ? rarity.some((obj) => obj.name == entry.rarity)
+                    : true;
 
-            const effectsMatch = effects
-                ? effects
-                      .split(" ")
-                      .some((effect) => entry.categories.includes(effect))
-                : true;
+            const effectsMatch =
+                effects?.length > 0
+                    ? effects.some((obj) => entry.categories.includes(obj.name))
+                    : true;
 
             const typeMatch =
                 type && type !== "all" ? entry.buff === type : true;
 
-            const starsMatch =
-                stars && stars !== "all" ? entry.stars == stars : true;
+            const starsMatch = stars !== "all" ? entry.stars == stars : true;
 
             return (
                 searchMatch &&
@@ -65,18 +66,17 @@
 <small>Hover or tap an ingredient icon to see how to acquire it.</small>
 
 <div class="filters-row">
-    <SearchBar />
-    <TypeFilters type="rarity" />
-    <TypeSelector originalData={foods} key="buff" />
+    <SearchBar bind:q />
+    <TypeFilters type="rarity" bind:value={rarity} />
+    <TypeSelector originalData={foods} key="buff" bind:type />
     <TypeSelector
         originalData={foods}
+        bind:type={stars}
         key="stars"
         selectorName="Stars"
-        paramName="stars"
-        defaultType={ssp.number()}
     />
     <div style="width: 100%">
-        <TypeFilters type="effects" filters={allEffects} />
+        <TypeFilters type="effects" bind:value={effects} filters={allEffects} />
     </div>
 </div>
 
