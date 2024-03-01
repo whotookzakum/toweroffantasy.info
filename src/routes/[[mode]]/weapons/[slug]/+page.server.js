@@ -6,15 +6,20 @@ export const load = async (event) => {
     const { data } = await wepQuery.fetch({ event, variables: { id: event.params.slug } })
     const { weapon } = data
 
+    let simulacrum_v2, matrix;
     // Simulacrum entry data
-    const simQuery = new ShortSimulacrumV2Store()
-    const simRes = await simQuery.fetch({ event, variables: { id: weapon.simulacrumId } })
-    const { simulacrum_v2 } = simRes.data
+    if (weapon.simulacrumId) {
+        const simQuery = new ShortSimulacrumV2Store()
+        const simRes = await simQuery.fetch({ event, variables: { id: weapon.simulacrumId } })
+        simulacrum_v2 = simRes.data.simulacrum_v2
+    }
 
     // Matrix entry data
-    const matrixQuery = new ShortMatrixStore()
-    const matrixRes = await matrixQuery.fetch({ event, variables: { id: simulacrum_v2.matrixId } })
-    const { matrix } = matrixRes.data
+    if (simulacrum_v2?.matrixId) {
+        const matrixQuery = new ShortMatrixStore()
+        const matrixRes = await matrixQuery.fetch({ event, variables: { id: simulacrum_v2.matrixId } })
+        matrix = matrixRes.data.matrix
+    }
 
     // Banners for banner table
     const bannersQuery = new AllBannersStore()
@@ -53,17 +58,17 @@ export const load = async (event) => {
         }
     })
 
-    return { 
-        weapon: { 
-            ...weapon, 
-            meta: { 
-                ...weapon.meta, 
+    return {
+        weapon: {
+            ...weapon,
+            meta: {
+                ...weapon.meta,
                 recommendedPairings,
                 recommendedMatrices
-            } 
-        }, 
-        simulacrum_v2, 
-        matrix, 
+            }
+        },
+        simulacrum_v2,
+        matrix,
         banners
     }
 }

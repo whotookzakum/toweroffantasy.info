@@ -6,15 +6,21 @@ export const load = async (event) => {
     const matrixRes = await matrixQuery.fetch({ event, variables: { id: event.params.slug } })
     const { matrix } = matrixRes.data
 
+    let simulacrum_v2, weapon;
+
     // Simulacrum entry data
-    const simQuery = new ShortSimulacrumV2Store()
-    const simRes = await simQuery.fetch({ event, variables: { id: matrix.simulacrumId } })
-    const { simulacrum_v2 } = simRes.data
+    if (matrix.simulacrumId) {
+        const simQuery = new ShortSimulacrumV2Store()
+        const simRes = await simQuery.fetch({ event, variables: { id: matrix.simulacrumId } })
+        simulacrum_v2 = simRes.data.simulacrum_v2
+    }
 
     // Weapon entry data
-    const wepQuery = new ShortWeaponStore()
-    const { data } = await wepQuery.fetch({ event, variables: { id: simulacrum_v2.weaponId } })
-    const { weapon } = data
+    if (simulacrum_v2?.weaponId) {
+        const wepQuery = new ShortWeaponStore()
+        const { data } = await wepQuery.fetch({ event, variables: { id: simulacrum_v2.weaponId } })
+        weapon = data.weapon
+    }
 
     // Banners for banner table
     const bannersQuery = new AllBannersStore()
@@ -41,16 +47,16 @@ export const load = async (event) => {
     const allWepsRes = await allWepsStore.fetch({ event })
     const recommendedWeapons = matrix.meta.recommendedWeapons.map(pairingId => allWepsRes.data.weapons.find(w => w.id === pairingId))
 
-    return { 
+    return {
         weapon,
-        simulacrum_v2, 
+        simulacrum_v2,
         matrix: {
             ...matrix,
-            meta: { 
-                ...matrix.meta, 
+            meta: {
+                ...matrix.meta,
                 recommendedWeapons,
-            } 
-        }, 
+            }
+        },
         banners
     }
 }

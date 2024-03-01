@@ -36,10 +36,10 @@ export const load = async (event) => {
         }
     })
 
-    const itemsQuery = new AllItemsStore()
-    const itemsRes = await itemsQuery.fetch({ event })
-    const { items } = itemsRes.data
-    console.log(items.length)
+    // const itemsQuery = new AllItemsStore()
+    // const itemsRes = await itemsQuery.fetch({ event })
+    // const { items } = itemsRes.data
+    // console.log(items.length)
 
     return { weapon, simulacrum_v2, matrix, banners }
 }

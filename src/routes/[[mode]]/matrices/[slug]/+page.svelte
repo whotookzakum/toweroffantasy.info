@@ -10,7 +10,7 @@
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
-    $bgImg = simulacrum_v2.assetsA0.titlePicture;
+    $bgImg = simulacrum_v2?.assetsA0.titlePicture;
 </script>
 
 <Meta
@@ -22,7 +22,9 @@
 <article>
     <aside>
         <div class="sticky">
-            <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
+            {#if simulacrum_v2 || weapon}
+                <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
+            {/if}
         </div>
     </aside>
 
@@ -36,11 +38,13 @@
             imgStyle="transform: scale(1.3)"
         />
 
-        <h2 style="font-size: var(--step-2)">Part of a set</h2>
-        <SetItems {simulacrum_v2} {weapon} {matrix} />
-        <small style="color: var(--text2);"
-            >Added in version {matrix.version}</small
-        >
+        {#if simulacrum_v2 || weapon}
+            <h2 style="font-size: var(--step-2)">Part of a set</h2>
+            <SetItems {simulacrum_v2} {weapon} {matrix} />
+            <small style="color: var(--text2);"
+                >Added in version {matrix.version}</small
+            >
+        {/if}
 
         <h2 id="effects">Set Effects</h2>
         <table class="borders bg-alternate" style="margin-block: 1rem">
@@ -65,11 +69,15 @@
 
         <MatrixMeta {matrix} />
 
-        <h2 id="banners">Banners</h2>
+        {#if simulacrum_v2}
+            <h2 id="banners">Banners</h2>
+        {/if}
     </div>
-    <BannerTable
-        {banners}
-        bannerSearchTerm={simulacrum_v2.name}
-        style="grid-column: 1/-1"
-    />
+    {#if simulacrum_v2}
+        <BannerTable
+            {banners}
+            bannerSearchTerm={simulacrum_v2.name}
+            style="grid-column: 1/-1"
+        />
+    {/if}
 </article>

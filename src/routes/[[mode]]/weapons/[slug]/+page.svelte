@@ -15,8 +15,10 @@
     import Meta from "$components/Meta.svelte";
 
     export let data;
-    const { weapon, simulacrum_v2, matrix, banners } = data;
-    $bgImg = simulacrum_v2.assetsA0.titlePicture;
+    const simulacrum_v2 = data.simulacrum_v2;
+    const matrix = data.matrix;
+    const { weapon, banners } = data;
+    $bgImg = simulacrum_v2?.assetsA0.titlePicture;
 </script>
 
 <Meta
@@ -28,7 +30,9 @@
 <article>
     <aside>
         <div class="sticky grid g-100">
-            <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
+            {#if simulacrum_v2 || matrix}
+                <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
+            {/if}
             <div class="aside-extras grid g-100">
                 <WeaponLevelSlider />
                 <WeaponStarSlider />
@@ -43,11 +47,13 @@
             <WeaponStarSlider />
         </div>
 
-        <h2 style="font-size: var(--step-2);">Part of a set</h2>
-        <SetItems {simulacrum_v2} {weapon} {matrix} />
-        <small style="color: var(--text2);"
-            >Added in version {simulacrum_v2.version}</small
-        >
+        {#if simulacrum_v2 || matrix}
+            <h2 style="font-size: var(--step-2);">Part of a set</h2>
+            <SetItems {simulacrum_v2} {weapon} {matrix} />
+            <small style="color: var(--text2);"
+                >Added in version {simulacrum_v2.version}</small
+            >
+        {/if}
 
         <h2 id="effects">Weapon Effects</h2>
         {#if weapon.elementEffect}
@@ -69,7 +75,7 @@
         <Advancements advancements={weapon.weaponAdvancements} {weapon} />
 
         <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
-        
+
         <UpgradeMats levels={weapon.upgradeMats.levels} />
 
         <WeaponMeta {weapon} />
@@ -78,7 +84,7 @@
             <h2 id="banners">Banners</h2>
         {/if}
     </div>
-    {#if weapon.banners.length > 0}
+    {#if simulacrum_v2 && weapon.banners.length > 0}
         <BannerTable
             {banners}
             bannerSearchTerm={simulacrum_v2.name}
