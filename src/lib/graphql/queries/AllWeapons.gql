@@ -1,5 +1,0 @@
-query AllWeapons($lang: String) {
-    weapons(lang: $lang) {
-        ...weaponEntry
-    }
-}

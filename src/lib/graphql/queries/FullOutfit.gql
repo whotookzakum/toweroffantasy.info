@@ -1,7 +1,0 @@
-query FullOutfit($id: String!) {
-    outfit(id: $id) {
-        ...outfitEntry
-        description
-        source
-    }
-}

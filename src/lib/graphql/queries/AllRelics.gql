@@ -1,5 +1,0 @@
-query AllRelics($lang: String) {
-    relics(lang: $lang) {
-        ...relicEntry
-    }
-}

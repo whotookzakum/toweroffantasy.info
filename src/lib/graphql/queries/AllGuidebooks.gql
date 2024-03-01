@@ -1,5 +1,0 @@
-query AllGuidebooks($lang: String) {
-    guidebooks(lang: $lang) {
-        ...guidebookEntry
-    }
-}

@@ -1,5 +1,0 @@
-query AllMounts($lang: String) {
-    mounts(lang: $lang) {
-        ...mountEntry
-    }
-}

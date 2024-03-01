@@ -1,6 +1,0 @@
-fragment outfitEntry on Outfit {
-    id
-    name
-    icon
-    type
-}
