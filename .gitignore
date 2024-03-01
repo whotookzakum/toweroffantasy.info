@@ -1,1 +1,5 @@
 template.jpg
+node_modules
+build
+$houdini
+.svelte-kit
