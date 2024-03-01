@@ -1,6 +1,6 @@
 <script>
     import { queryParam, ssp } from "sveltekit-search-params";
-    import { uniq } from "lodash"
+    import uniq from "lodash/uniq"
 
     export let originalData;
     export let key = "type"

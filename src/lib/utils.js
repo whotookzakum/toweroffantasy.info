@@ -23,13 +23,3 @@ export function getBannersMatch(paramStore, entry) {
 
     return passesLimitedCheck && passesStandardCheck
 }
-
-export async function getLatestVersion() {
-    const req = await fetch("https://api.toweroffantasy.info/extras/version")
-    const allVersions = await req.json()
-    const latestVersion = allVersions.reduce((acc, curr) => {
-        if (Number(curr.version) > acc) acc = Number(curr.version)
-        return acc
-    }, 0)
-    return latestVersion
-}

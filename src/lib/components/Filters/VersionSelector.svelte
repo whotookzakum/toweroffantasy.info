@@ -1,6 +1,6 @@
 <script>
     import { queryParam, ssp } from "sveltekit-search-params";
-    import { uniq } from "lodash"
+    import uniq from "lodash/uniq"
 
     export let originalData
     const versions = uniq(originalData.map(entry => entry.version), false).sort((a, b) => b - a)

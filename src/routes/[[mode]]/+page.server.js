@@ -1,10 +1,7 @@
 import { AllWeaponsStore, AllSimulacraV2Store, AllMatricesStore, AllRelicsStore, AllMountsStore, ShortSimulacrumV2Store } from '$houdini'
-import { getLatestVersion } from '$lib/utils.js'
 import { DateTime } from "luxon"
 
 export const load = async (event) => {
-    const latestVersion = await getLatestVersion()
-
     const weaponsStore = new AllWeaponsStore()
     const weaponsRes = await weaponsStore.fetch({ event })
 
@@ -27,7 +24,7 @@ export const load = async (event) => {
         ...relicsRes.data.relics,
         ...mountsRes.data.mounts
     ]
-    .filter(i => i.version == latestVersion)
+    .filter(i => i.version == simulacraRes.data.simulacra_v2[0].version)
     // Filter out banners that have ended or not yet started
     // .filter(i => {
     //     if (!i.banners) return true

@@ -1,5 +1,5 @@
 import { AllGuidebooksStore } from '$houdini'
-import { uniqBy } from "lodash"
+import uniqBy from "lodash/uniqBy.js"
 
 export const load = async (event) => {
     const query = new AllGuidebooksStore()

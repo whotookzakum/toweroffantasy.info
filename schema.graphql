@@ -33,15 +33,20 @@ type Assets {
 }
 
 type Awakening {
-  description: String!
-  icon: String!
-  name: String!
-  need: Int!
+  description: String
+  icon: String
+  name: String
+  need: Int
 }
 
 type Award {
   amount: Int!
-  type: String!
+  description: String!
+  icon: String!
+  matId: String!
+  name: String!
+  rarity: Int
+  type: String
 }
 
 type Banner {
@@ -57,10 +62,20 @@ type Banner {
   isRerun: Boolean!
   matrixId: String
   noWeapon: Boolean!
+  rarity: Int!
+  simulacrumIcon: String
   simulacrumId: String
   simulacrumName: String
   startDate: String!
+  weaponIcon: String
   weaponId: String
+}
+
+type BaseStat {
+  isTag: Boolean!
+  modifierOP: String!
+  propName: String!
+  propValue: Float!
 }
 
 type BaseStats {
@@ -98,6 +113,18 @@ type Food {
   name: String!
   rarity: Int!
   stars: Int!
+}
+
+type Gear {
+  baseStat: [BaseStat!]!
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  source: String!
+  statPool: [StatPool!]!
+  type: String!
 }
 
 type GuideBookItem {
@@ -215,6 +242,8 @@ type Query {
   banners(includeUnreleased: Boolean! = false): [Banner!]!
   food(id: String!, lang: String! = "en"): Food!
   foods(lang: String! = "en"): [Food!]!
+  gear(id: String!, lang: String! = "en"): Gear!
+  gears(lang: String! = "en"): [Gear!]!
   guidebook(id: String!, lang: String! = "en"): Guidebook!
   guidebooks(lang: String! = "en"): [Guidebook!]!
   item(id: String!, lang: String! = "en"): Item!
@@ -267,8 +296,17 @@ type ServantSkill {
 }
 
 type ServantUpgrade {
+  exp: Int!
+  material: ServantUpgradeMaterial!
+}
+
+type ServantUpgradeMaterial {
+  description: String!
+  icon: String!
   id: String!
-  xpGain: Int!
+  name: String!
+  rarity: Int!
+  type: String!
 }
 
 type ShatterOrCharge {
@@ -294,6 +332,7 @@ type Simulacra {
   id: String!
   isReleased: Boolean!
   likedGiftTypes: [String!]!
+  limited: Boolean!
   matrixId: String
   name: String!
   rarity: Int!
@@ -321,6 +360,7 @@ type SimulacraV2 {
   id: String!
   isReleased: Boolean!
   likedGiftTypes: [String!]!
+  limited: Boolean!
   matrix: Matrice
   matrixId: String
   name: String!
@@ -342,15 +382,22 @@ type Skill {
 }
 
 type SmartServant {
+  advancements: [String!]!
   assets: ServantAsset!
   description: String!
   element: String!
   id: String!
   name: String!
+  propreties: String!
   rarity: Int!
   skills: [ServantSkill!]!
   type: String!
   upgradeItems: [ServantUpgrade!]!
+}
+
+type StatPool {
+  propName: String!
+  weitghtValue: Float!
 }
 
 type UnlockItem {
@@ -386,6 +433,7 @@ type Weapon {
   element: String!
   elementEffect: WeaponEffect
   id: String!
+  limited: Boolean!
   meta: MetaData!
   name: String!
   rarity: Int!

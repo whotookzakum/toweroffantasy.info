@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare';
 import path from 'path'
 import { mdsvex } from 'mdsvex'
 import preprocess from 'svelte-preprocess';
@@ -17,10 +17,14 @@ const config = {
 		alias: {
             $houdini: path.resolve('.', '$houdini'),
 			$components: path.resolve('.', 'src/lib/components'),
-        }
-		// prerender: {
-		// 	handleMissingId: 'ignore'
-		// }
+        },
+		prerender: {
+			// handleMissingId: 'ignore',
+			entries: [
+				'/',
+				// '/cn'
+			]
+		}
 	}
 };
 

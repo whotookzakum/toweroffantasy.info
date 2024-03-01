@@ -1,6 +1,6 @@
 <script>
     import { queryParam, ssp } from "sveltekit-search-params";
-    import { uniqBy } from "lodash";
+    import uniqBy from "lodash/uniqBy.js"
     import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
     import Popper from "$components/Popper.svelte";
 
