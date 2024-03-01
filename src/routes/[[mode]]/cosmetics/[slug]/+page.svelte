@@ -5,8 +5,15 @@
 
     export let data;
     const { outfit } = data
+    // console.log(data)
     const desc = `${outfit.description} ${outfit.source ? `\n\n***${outfit.source}***` : ""}`
-    const icon = outfit.icon.replace(/fashion_f(.+?)\.webp/, `fashion_${$outfitsGender}$1.webp`)
+    let icon;
+    if (icon && icon !== "None.webp") {
+        icon = outfit.icon.replace(/fashion_f(.+?)\.webp/, `fashion_${$outfitsGender}$1.webp`)
+    }
+    else {
+        icon = "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp"
+    }
 </script>
 
 <Meta
