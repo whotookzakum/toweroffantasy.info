@@ -1,6 +1,5 @@
 <script>
-    import { browser } from "$app/environment";
-    import { dev } from "$app/environment";
+    import { dev, browser } from "$app/environment";
     import { onMount } from "svelte";
 
     // Auto-refresh if window size passes through breakpoints. Ad script automatically places a properly sized ad, however sizes can also be manually specified.
@@ -46,14 +45,14 @@
     }
 </script>
 
-<div id="np{unit}" class:hidden={innerWidth <= 1280} />
+{#if innerWidth > 1280}
+    <div id="np{unit}" />
+{/if}
 
 <style lang="scss">
-    .hidden {
-        display: none;
-    }
-
     div {
+        min-height: 250px;
+        background: red;
         position: sticky;
         top: 93px; // height of navbar
     }

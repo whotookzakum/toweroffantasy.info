@@ -10,10 +10,8 @@
     // This does not work for client fetched data, i.e. the banner table
     $: if (browser) {
         const hi = document.querySelectorAll("a");
-        // console.log(hi)
         if ($page.url.pathname.includes("/cn")) {
             hi.forEach((link) => {
-                // console.log("href: ",link.getAttribute("href"))
                 if (!link.href.includes("/cn")) {
                     link.href = "/cn" + link.getAttribute("href");
                 }
