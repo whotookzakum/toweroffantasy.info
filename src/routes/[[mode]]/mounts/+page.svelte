@@ -5,6 +5,7 @@
     import uniqBy from "lodash/uniqBy";
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
     import { applyFilters } from "$lib/utils";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     let q = "";
@@ -20,6 +21,8 @@
     title="Mounts | Tower of Fantasy Index"
     description="Mounts are vehicles that help you traverse terrain more quickly. All mounts move at the same speed. Owning multiple mounts can unlock achievements, and maintaining mounts will reward you with dark crystals. Some mounts have different colors available at certain levels."
 />
+
+<Ad unit="LB-mounts" />
 
 <h1>Mounts</h1>
 <p>

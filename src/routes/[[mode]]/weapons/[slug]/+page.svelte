@@ -13,6 +13,7 @@
     import UpgradeMats from "./UpgradeMats.svelte";
     import WeaponHeader from "./WeaponHeader.svelte";
     import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const simulacrum_v2 = data.simulacrum_v2;
@@ -41,6 +42,8 @@
     </aside>
 
     <div class="article-content">
+        <Ad unit="ArticleLB-wep1" />
+
         <WeaponHeader {weapon} />
         <div class="mobile-only flex flex-wrap">
             <WeaponLevelSlider />
@@ -76,9 +79,13 @@
 
         <Advancements advancements={weapon.weaponAdvancements} {weapon} />
 
+        <Ad unit="ArticleLB-wep2" />
+
         <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
 
         <UpgradeMats levels={weapon.upgradeMats.levels} />
+
+        <Ad unit="ArticleLB-wep3" />
 
         <WeaponMeta {weapon} />
 

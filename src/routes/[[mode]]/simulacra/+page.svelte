@@ -7,6 +7,7 @@
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
     import { applyFilters } from "$lib/utils";
     import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
 
@@ -27,6 +28,8 @@
     description="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
     image={data.simulacra_v2[0].assetsA0.avatar}
 />
+
+<Ad unit="LB-simulacra" />
 
 <h1>Simulacra</h1>
 <p>

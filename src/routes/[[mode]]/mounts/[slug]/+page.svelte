@@ -4,6 +4,7 @@
     import ItemIcon from "$lib/components/ItemIcon.svelte";
     import mountVideoLinks from "./mountVideoLinks.json";
     import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const { mount } = data;
@@ -14,6 +15,8 @@
     description="All about the mount {mount.name}, such as required parts and a video preview (if available)."
     image={mount.assets.icon}
 />
+
+<Ad unit="LB-mount1" />
 
 <GenericHeader
     h1={mount.name}

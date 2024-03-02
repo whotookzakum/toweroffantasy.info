@@ -7,6 +7,7 @@
     import { applyFilters } from "$lib/utils";
     import uniqBy from "lodash/uniqBy";
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     let q = "";
@@ -36,7 +37,9 @@
     description="Cosmetic items allow you customize the appearance of your character and other social features. Many cosmetics require you to spend real money, but some can be acquired for free. Cosmetic gachapon items may have reruns."
 />
 
-<h1>Cosmetics {type}</h1>
+<Ad unit="LB-cosmetics" />
+
+<h1>Cosmetics</h1>
 <p>
     Cosmetic items allow you customize the appearance of your character and
     other social features. They are typically acquired by spending Dark Crystals

@@ -1,6 +1,7 @@
 <script>
     import Meta from "$components/Meta.svelte";
     import EntryItem from "$components/EntryItem/EntryItem.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
 </script>
@@ -24,6 +25,8 @@
         }
     </script>
 </svelte:head>
+
+<Ad unit="LB-home" />
 
 <h1>Tower of Fantasy Index</h1>
 

@@ -7,6 +7,7 @@
     import { applyFilters } from "$lib/utils";
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
     import uniqBy from "lodash/uniqBy";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const { foods, allEffects } = data;
@@ -42,6 +43,8 @@
     title="Food | Tower of Fantasy Index"
     description="Food can provide buffs and recover HP, satiety, and stamina. Satiety level determines how much HP you will passively recover while out of combat."
 />
+
+<Ad unit="LB-food" />
 
 <h1>Food</h1>
 <p>

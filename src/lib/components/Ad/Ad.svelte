@@ -1,16 +1,20 @@
 <script>
     import Gutter from "./Gutter.svelte";
-    import StickyBar from "./StickyBar.svelte";
+    import Anchor from "./Anchor.svelte";
     import Floating from "./Floating.svelte";
     import { page } from "$app/stores"
+    import ArticleLB from "./ArticleLB.svelte";
+    import Lb from "./LB.svelte";
     
     export let unit = "";
-    const unitType = unit.replace(/\d+/g, "");
+    const unitType = unit.split("-")[0];
     let innerWidth;
     const components = {
         Gutter: Gutter,
-        StickyBar: StickyBar,
-        Floating: Floating
+        Anchor: Anchor,
+        Floating: Floating,
+        ArticleLB: ArticleLB,
+        LB: Lb
     }
 </script>
 

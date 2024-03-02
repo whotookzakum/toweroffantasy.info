@@ -6,6 +6,7 @@
     import uniqBy from "lodash/uniqBy";
     import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     let q = "";
@@ -26,6 +27,8 @@
     description="Matrices (aka Chips) are items that can be attached to one of four slots on a weapon (Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects."
     image={data.matrices[0].assets.iconLarge}
 />
+
+<Ad unit="LB-matrices" />
 
 <h1>Matrices {rarity}</h1>
 <p>

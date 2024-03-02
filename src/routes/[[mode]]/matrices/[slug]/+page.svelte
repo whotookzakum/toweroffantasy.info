@@ -7,6 +7,7 @@
     import MatrixMeta from "./MatrixMeta.svelte";
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
@@ -29,6 +30,8 @@
     </aside>
 
     <div class="article-content">
+        <Ad unit="ArticleLB-mat1" />
+
         <GenericHeader
             h1="{matrix.name} (Matrix)"
             h1id="top"

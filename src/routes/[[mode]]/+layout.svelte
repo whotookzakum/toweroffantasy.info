@@ -14,7 +14,7 @@
 <div class="layout grid g-50">
     <TopNav />
     <div class="gutter-left">
-        <Ad unit="Gutter1" />
+        <Ad unit="Gutter-left" />
     </div>
     <div class="main-content">
         <main>
@@ -24,10 +24,10 @@
         <PageFooter />
     </div>
     <div class="gutter-right">
-        <Ad unit="Gutter2" />
+        <Ad unit="Gutter-right" />
     </div>
 </div>
-<Ad unit="StickyBar" />
+<Ad unit="Anchor" />
 <Ad unit="Floating" />
 
 <BackgroundImage src={data.bgImg} />

@@ -45,14 +45,15 @@
     }
 </script>
 
-{#if innerWidth > 1280}
-    <div id="np{unit}" />
-{/if}
+<div id="np{unit}" class:hidden={innerWidth <= 1280} />
 
 <style lang="scss">
+    .hidden {
+        display: none;
+    }
+
     div {
         min-height: 250px;
-        background: red;
         position: sticky;
         top: 93px; // height of navbar
     }

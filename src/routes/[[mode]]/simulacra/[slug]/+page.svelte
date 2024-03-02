@@ -6,6 +6,7 @@
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const { simulacrum_v2, weapon, matrix, banners } = data;
@@ -27,6 +28,8 @@
     </aside>
 
     <div class="article-content">
+        <Ad unit="ArticleLB-sim1" />
+
         <GenericHeader
             h1="{simulacrum_v2.name} (Simulacrum)"
             h1id="top"
@@ -76,6 +79,8 @@
         </table>
         <h3 id="gifts">Preferred Gifts</h3>
         <span>{simulacrum_v2.likedGiftTypes}</span>
+
+        <Ad unit="ArticleLB-sim2" />
 
         <h2 id="profile">Profile</h2>
 

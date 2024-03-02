@@ -160,6 +160,7 @@
             background: hsla(226, 40%, 15%, 0.5);
             border-radius: 5px;
             border: 1px solid var(--surface1);
+            min-height: 36px;
         }
 
         & > *:where(:hover, :focus-visible) {

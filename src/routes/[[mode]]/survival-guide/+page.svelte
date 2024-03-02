@@ -5,6 +5,7 @@
     import { guidebookCategory } from "$lib/stores";
     import SearchBar from "$lib/components/Filters/SearchBar.svelte";
     import { applyFilters } from "$lib/utils"
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     let q = ""
@@ -17,6 +18,8 @@
     title="Survival Guide | Tower of Fantasy Index"
     description="The Survival Guide is the in-game guide featuring useful hints and mini-guides for various aspects of the game, such as exploration puzzles and monster logs."
 />
+
+<Ad unit="LB-survivalguide" />
 
 <h1>Survival Guide</h1>
 <p>

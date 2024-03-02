@@ -2,6 +2,7 @@
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import { outfitsGender } from "$lib/stores";
     import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const { outfit } = data
@@ -20,6 +21,8 @@
     description="All about the cosmetic {outfit.name} in Tower of Fantasy, such as how to obtain it and a video preview (if available)."
     image={icon}
 />
+
+<Ad unit="LB-cos1" />
 
 <GenericHeader
     h1={outfit.name}

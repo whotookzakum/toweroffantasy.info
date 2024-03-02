@@ -4,6 +4,7 @@
     import relicVideoLinks from "./relicVideoLinks.json";
     import SvelteMarkdown from "svelte-markdown"
     import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     const { relic } = data;
@@ -14,6 +15,8 @@
     description="All about the relic {relic.name}, such as advancements and a video preview (if available)."
     image={relic.icon}
 />
+
+<Ad unit="LB-relic1" />
 
 <GenericHeader
     h1={relic.name}

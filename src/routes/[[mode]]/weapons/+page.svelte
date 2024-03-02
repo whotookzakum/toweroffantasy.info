@@ -6,6 +6,7 @@
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
     import { applyFilters } from "$lib/utils";
     import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
 
@@ -26,6 +27,8 @@
     description="Up to 3 weapons can be equipped at a time in Tower of Fantasy. The player can make use of various weapon elements and skills to increase their effectiveness in combat. Most weapons have an associated Simulacrum and Matrices."
     image={data.weapons[0].assets.icon}
 />
+
+<Ad unit="LB-weapons" />
 
 <h1>Weapons</h1>
 <p>

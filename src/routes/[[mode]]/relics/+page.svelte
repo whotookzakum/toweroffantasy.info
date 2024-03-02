@@ -6,6 +6,7 @@
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
     import { applyFilters } from "$lib/utils";
     import CheckboxFilters from "$lib/components/Filters/CheckboxFilters.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
     let q = "";
@@ -26,6 +27,8 @@
     description="Relics (aka Gadgets) are tools that aid the player in exploration or combat."
     image={data.relics[0].icon}
 />
+
+<Ad unit="LB-relics" />
 
 <h1>Relics</h1>
 <p>
