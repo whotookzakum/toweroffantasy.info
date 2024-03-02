@@ -65,10 +65,12 @@
 
         {#if weapon.weaponEffects}
             {#each weapon.weaponEffects as effect}
-                <h3 style:color="var(--element-{weapon.element})">
-                    {effect.title}
-                </h3>
-                <SvelteMarkdown source={effect.description} />
+                {#if effect.description !== "N/A" && effect.title !== "Unknown"}
+                    <h3 style:color="var(--element-{weapon.element})">
+                        {effect.title}
+                    </h3>
+                    <SvelteMarkdown source={effect.description} />
+                {/if}
             {/each}
         {/if}
 
