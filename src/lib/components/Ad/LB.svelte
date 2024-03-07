@@ -56,13 +56,13 @@
 
     div {
         margin-block: 1rem 2rem;
-        min-height: 90px;
+        min-height: 90px !important;
         display: grid;
         place-content: center;
     }
 
     .mini {
         margin-inline: -1rem;
-        min-height: 100px;
+        min-height: 100px !important;
     }
 </style>
