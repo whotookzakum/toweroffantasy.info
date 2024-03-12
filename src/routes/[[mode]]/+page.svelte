@@ -57,21 +57,15 @@
     <h2 style="font-size: var(--step-3);">Credits</h2>
 
     <h3>Created by</h3>
-    <p>Pyrosu, Zakum</p>
+    <p>Zakum, FortOfFans, biellSilva, Eminentglory</p>
 
     <h3>Original contents by</h3>
     <p>Pyrosu, BakuBaku, Sera Naoki</p>
 
-    <h3>With major contributions by</h3>
+    <h3>Special thanks to</h3>
     <p>
-        Sova, Afrodiy, Eminentglory, TheKingOppaiDragon, FortOfFans, biellSilva
-    </p>
-
-    <h3>And special thanks to</h3>
-    <p>
-        HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny, Gateoo, Sky,
-        ChickenJoy, Riala, TheKingOppaiDragon, Fanatique, FortOfFans,
-        EminentGlory, Maygi
+        Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny, Gateoo, Sky,
+        ChickenJoy, Riala, TheKingOppaiDragon, Fanatique, Maygi
     </p>
 </div>
 
