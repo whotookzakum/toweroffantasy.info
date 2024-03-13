@@ -1,0 +1,3 @@
+[submodule "UnrealExporter"]
+	path = UnrealExporter
+	url = https://github.com/whotookzakum/UnrealExporter

@@ -11,3 +11,4 @@ vite.config.ts.timestamp-*
 $houdini
 AES key.txt
 desktop.ini
+.venv
