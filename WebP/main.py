@@ -18,7 +18,7 @@ def loader(path: str = '../static/Hotta/Content'):
             
             if file.is_file() and file.name.endswith('.png'):
                 thread.submit(convert, file)
-                print(str(file))
+                print(str(file).replace('.png', '.webp'))
 
 
 if __name__ == '__main__':
