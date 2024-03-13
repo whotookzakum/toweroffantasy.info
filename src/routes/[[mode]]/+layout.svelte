@@ -18,7 +18,6 @@
     </div>
     <div class="main-content">
         <main>
-            <Ad unit="Banner1" />
             <slot />
         </main>
         <PageFooter />
