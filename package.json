@@ -5,7 +5,10 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"exportpngs": "cd UnrealExporter && dotnet run tof-images && cd ..",
+		"convertwebp": "cd WebP && python main.py && cd ..",
+		"imgs": "npm run exportpngs && npm run convertwebp"
 	},
 	"devDependencies": {
 		"@beyonk/svelte-google-analytics": "^2.6.4",

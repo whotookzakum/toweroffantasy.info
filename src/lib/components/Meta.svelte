@@ -2,9 +2,9 @@
 	import { page } from "$app/stores";
 	export let title = "";
 	export let description = "";
-	export let color = "#377dcb";
+	export let color = "#d29607";
 	export let image = "/images/mia.webp";
-	export let bigImage = false;
+	export let bigImage = true;
 </script>
 
 <svelte:head>
@@ -12,7 +12,7 @@
 	<meta property="og:title" content={title} />
 	<meta name="description" content={description} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content={image} />
+	<meta property="og:image" content={"/images/banner.png" || image} />
 	<meta property="og:site_name" content="{title} | Tower of Fantasy Index" />
 	<meta name="theme-color" content={color} />
 	<link
