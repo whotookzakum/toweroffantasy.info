@@ -1,20 +1,24 @@
 # Tower of Fantasy Index
-[Live Site](https://toweroffantasy.info)  
+![Tower of Fantasy Index banner](/static/images/banner.png)
 
-The Tower of Fantasy Index is an online resource for the game Tower of Fantasy, an online multiplayer game available in China with a Global version in development. The index provides guides and data for various facets of the game.
+The [Tower of Fantasy Index](https://toweroffantasy.info) is an online resource for [Tower of Fantasy](https://www.toweroffantasy-global.com/), an online, multiplayer, cross-platform gacha game. The index provides data for various facets of the game.
 
-The index was originally created by Pyrosu and a few others. It was later implemented as a website by Zakum.  
+The index was originally created by Pyrosu and a few others. It was later implemented as a website by Zakum. An [API](https://github.com/biellSilva/toweroffantasy.api) was created by [biellSilva](https://github.com/biellSilva), with game data processed by [FortOfFans](https://github.com/FortOfFans).  
 Thank you to everyone that has contributed guides, advice, game data, localizations, and their own content.
-
-Please note some banners dates might be slightly off due to inconsistent time zone usage.
 
 ## Technologies Used
 - SvelteKit (UI)
 - SCSS
 - CloudFlare (DNS, Pages)
+- [UnrealExporter](https://github.com/whotookzakum/UnrealExporter) and a [WebP conversion script](/WebP) for automation
 - ~~Netlify (Deployment)~~
 - ~~NextJS (UI)~~
 - ~~GitHub Pages (Deployment)~~
+
+### [API](https://github.com/biellSilva/toweroffantasy.api)
+- Python
+- GraphQL
+- REST
 
 ## Milestones
 March 25, 2022: Site goes live  
@@ -24,31 +28,31 @@ April 14, 2023: 1M users
 
 ## Image Directories
 ### Simulacra
-- Artwork `UI\huanxing\lihui`
-- Avatar `Icon\Avatar`
-- Weapon `Icon\weapon\Icon`
-- Matrix `Icon\yizhi\256`
-- Chart `UI\shizhuang\nitai\xiangqing\wuwei`
-- Skills `Icon\skill`
-- Gifts `Icon\ImitationGift`
-- Weapon materials `Icon\zujian` and `Icon\item`
+- [Artwork](/static/Hotta/Content/Resources/UI/huanxing/lihui)
+- [Avatar](Icon/Avatar)
+- [Weapon](/static/Hotta/Content/Resources/Icon/weapon/Icon)
+- [Matrix](/static/Hotta/Content/Resources/Icon/yizhi/256)
+- [Chart](/static/Hotta/Content/Resources/UI/shizhuang/nitai/xiangqing/wuwei)
+- [Skills](/static/Hotta/Content/Resources/Icon/skill)
+- [Gifts](/static/Hotta/Content/Resources/Icon/ImitationGift)
+- [Weapon materials](/static/Hotta/Content/Resources/Icon/zujian) and [here](/static/Hotta/Content/Resources/Icon/item)
 
 ### Mounts
-- Mount Parts `Icon\Mount`
-- Mounts `UI\Mount`
+- [Mount Parts](/static/Hotta/Content/Resources/Icon/Mount)
+- [Mounts](/static/Hotta/Content/Resources/UI/Mount)
 
 ### Relics
-- Relic 128x128 `UI\Artifact\icon`
-- Relic 512x512 `UI\Artifact\itemicon`
+- [Relic 128x128](/static/Hotta/Content/Resources/UI/Artifact/icon)
+- [Relic 512x512](/static/Hotta/Content/Resources/UI/Artifact/itemicon)
 
 ### Cosmetics
-- Outfits, accessories, headwear, gliders `UI\shizhuang\Fashion_icon`
-- Avatar frames `Icon\AvatarFrame`
-- Chat bubbles `Icon\chat\qipao`
+- [Outfits, accessories, headwear, gliders](/static/Hotta/Content/Resources/UI/shizhuang/Fashion_icon)
+- [Avatar frames](/static/Hotta/Content/Resources/Icon/AvatarFrame)
+- [Chat bubbles](/static/Hotta/Content/Resources/Icon/chat/qipao)
 
 ### Food
-- Dishes `Icon\caiyao`
-- Ingredients `Icon\shicai`
+- [Dishes](Icon/caiyao)
+- [Ingredients](Icon/shicai)
 
 ### Directory name translations (by Cytus)
 | `dir`  | English |
