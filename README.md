@@ -1,6 +1,5 @@
-# Tower of Fantasy Index
 ![Tower of Fantasy Index banner](/static/images/banner.png)
-
+# Tower of Fantasy Index
 The [Tower of Fantasy Index](https://toweroffantasy.info) is an online resource for [Tower of Fantasy](https://www.toweroffantasy-global.com/), an online, multiplayer, cross-platform gacha game. The index provides data for various facets of the game.
 
 The index was originally created by Pyrosu and a few others. It was later implemented as a website by Zakum. An [API](https://github.com/biellSilva/toweroffantasy.api) was created by [biellSilva](https://github.com/biellSilva), with game data processed by [FortOfFans](https://github.com/FortOfFans).  
