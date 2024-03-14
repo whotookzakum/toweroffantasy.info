@@ -4,7 +4,7 @@
     import { page } from "$app/stores";
     import RegionSelector from "$components/RegionSelector.svelte";
     import { showWepOnSimEntry } from "$lib/stores";
-    import { browser } from "$app/environment"
+    import { browser } from "$app/environment";
 
     // TODO: Site Settings Modal
     // TODO: Region Selector
@@ -13,16 +13,19 @@
 
     if (browser) {
         document.addEventListener("keyup", (e) => {
-            if (e.code === "Escape" && open) open = false
-        })
+            if (e.code === "Escape" && open) open = false;
+        });
     }
 
     if (browser) {
         const imgNodes = document.querySelectorAll("img");
         imgNodes.forEach((img) => {
-            let localFilePath = "/Hotta/Content/Resources"
-            if (img.src.includes("L10N") || img.src.includes("ResourcesOverSea")) {
-                "/Hotta/Content"
+            let localFilePath = "/Hotta/Content/Resources";
+            if (
+                img.src.includes("L10N") ||
+                img.src.includes("ResourcesOverSea")
+            ) {
+                ("/Hotta/Content");
             }
             img.src = img.src.replace(
                 "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp",
@@ -35,41 +38,11 @@
 <nav class="topnav grid">
     <div class="nav-content grid" class:open>
         <div class="top-strip flex">
-            <a href="/" class="nav-link nav-home"> Tower of Fantasy Index </a>
+            <a href="/" class="nav-link nav-home">
+                <span class="long">Tower of Fantasy</span>
+                <span class="mini">ToF</span> Index
+            </a>
             <RegionSelector style="margin: 0.5rem 0.25rem" />
-            <div class="sns-links flex">
-                <a
-                    href="https://discord.gg/aidacafe"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                    class="flex box"
-                >
-                    <Icon icon="logos:discord-icon" width="18" />
-                    <span class="visually-hidden">Discord</span>
-                </a>
-                <a
-                    href="https://www.reddit.com/r/TowerofFantasy/"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                    class="flex box"
-                >
-                    <Icon icon="logos:reddit-icon" width="18" />
-                    <span class="visually-hidden">Reddit</span>
-                </a>
-                <a
-                    href="https://twitter.com/_Aida_Cafe"
-                    target="_blank"
-                    rel="noreferrer noopener nofollow"
-                    class="flex box"
-                >
-                    <Icon icon="logos:twitter" width="18" />
-                    <span class="visually-hidden">Twitter</span>
-                </a>
-                <!-- <button class="flex box">
-                    <Icon icon="mdi:gear" width="18" />
-                    <span class="visually-hidden">Site Settings</span>
-                </button> -->
-            </div>
         </div>
 
         <input
@@ -94,31 +67,63 @@
                 <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show weapon
                 details on Simulacrum cards
             </label> -->
+        </div>
 
-            <div class="links-strip flex g-25">
-                {#each links as { href, name, icon, external }}
-                    <a
-                        {href}
-                        class:active={$page.url.pathname.includes(href)}
-                        class="nav-link"
-                        on:click={() => open = false}
-                        target={external && "_blank"}
-                        rel={external && "noreferrer noopener nofollow"}
-                        class:external
-                    >
-                        {name}
-                        {#if external}
-                            <Icon icon="ei:external-link" width="18" />
-                        {/if}
-                    </a>
-                {/each}
-            </div>
+        <div class="links-strip flex g-25">
+            {#each links as { href, name, icon, external }}
+                <a
+                    {href}
+                    class:active={$page.url.pathname.includes(href)}
+                    class="nav-link"
+                    on:click={() => (open = false)}
+                    target={external && "_blank"}
+                    rel={external && "noreferrer noopener nofollow"}
+                    class:external
+                >
+                    {name}
+                    {#if external}
+                        <Icon icon="ei:external-link" width="18" />
+                    {/if}
+                </a>
+            {/each}
+        </div>
 
-            
+        <div class="sns-links flex">
+            <a
+                href="https://discord.gg/aidacafe"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="flex box"
+            >
+                <Icon icon="logos:discord-icon" width="18" />
+                <span class="visually-hidden">Discord</span>
+            </a>
+            <a
+                href="https://www.reddit.com/r/TowerofFantasy/"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="flex box"
+            >
+                <Icon icon="logos:reddit-icon" width="18" />
+                <span class="visually-hidden">Reddit</span>
+            </a>
+            <a
+                href="https://twitter.com/_Aida_Cafe"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                class="flex box"
+            >
+                <Icon icon="logos:twitter" width="18" />
+                <span class="visually-hidden">Twitter</span>
+            </a>
+            <!-- <button class="flex box">
+                <Icon icon="mdi:gear" width="18" />
+                <span class="visually-hidden">Site Settings</span>
+            </button> -->
         </div>
     </div>
 </nav>
-<div class="backdrop" aria-hidden="true" on:click={() => open = false} />
+<div class="backdrop" aria-hidden="true" on:click={() => (open = false)} />
 
 <style lang="scss">
     nav {
@@ -136,6 +141,17 @@
         padding: 0.5rem;
         grid-column: 2/3;
         width: 100%;
+        grid-template-columns: auto auto;
+    }
+
+    .nav-home {
+        .mini {
+            display: none;
+        }
+
+        .long {
+            display: inline;
+        }
     }
 
     .bottom-strip {
@@ -174,7 +190,9 @@
     .sns-links {
         align-items: start;
         align-self: center;
-        margin-left: auto;
+        justify-self: end;
+        grid-row: 1;
+        grid-column: 2;
 
         & > * {
             place-content: center;
@@ -221,6 +239,13 @@
 
     .links-strip {
         align-items: end;
+        grid-column: 1/-1;
+    }
+
+    @media (min-width: 860px) {
+        #navToggler {
+            display: none;
+        }
     }
 
     @media (max-width: 860px) {
@@ -228,20 +253,24 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 1000000;
         }
 
         .nav-home {
             font-size: var(--step--1);
+            align-self: center;
+
+            .mini {
+                display: inline;
+            }
+
+            .long {
+                display: none;
+            }
         }
 
         .toggler-label {
             display: grid;
-        }
-
-        .links-strip {
-            display: grid;
-            justify-content: start;
-            margin-top: 0.5rem;
         }
 
         .nav-content {
@@ -253,25 +282,55 @@
             z-index: 10;
         }
 
+        .nav-content:not(.open) {
+            .links-strip > *,
+            .sns-links > * {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
         .nav-content.open {
             grid-template-rows: 36px 1fr;
+
+            .sns-links {
+                grid-row: -1;
+                & > * {
+                    transition-duration: 1s;
+                }
+            }
         }
 
-        .nav-content:not(.open) .bottom-strip > * {
-            visibility: hidden;
-            opacity: 0;
+        .links-strip *:first-child {
+            margin-top: 0.5rem;
         }
 
-        .bottom-strip {
+        .links-strip,
+        .sns-links {
             overflow: hidden;
             grid-column: 1/-1;
-            align-self: start;
-            display: grid;
 
             & > * {
                 transition: all 0.3s ease;
                 opacity: 1;
                 visibility: visible;
+            }
+        }
+
+        .links-strip {
+            grid-row: -2;
+            align-self: start;
+            display: grid;
+        }
+
+        .sns-links {
+            grid-row: -2;
+            grid-column: 1;
+            justify-self: unset;
+            z-index: -1;
+
+            & > * {
+                transition-duration: 0s;
             }
         }
 

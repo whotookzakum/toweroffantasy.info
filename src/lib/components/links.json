@@ -39,7 +39,10 @@
         "name": "Smart Servants",
         "href": "/smart-servants"
     },
-    
+    {
+        "name": "Equipment",
+        "href": "/equipment"
+    },
     {
         "name": "Loadouts",
         "href": "https://tof-tools.vercel.app/",

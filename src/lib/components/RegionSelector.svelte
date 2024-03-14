@@ -51,7 +51,7 @@
     on:click={(e) => go(e)}
 >
     {cnRoute ? "China" : "Global"}
-    <Icon icon="mdi:circle-arrows" rotate={1} width="16px" class="spinner" />
+    <Icon icon="mdi:circle-arrows" rotate={1} width="1.25em" class="spinner" />
 </a>
 
 <style lang="scss">
@@ -79,5 +79,11 @@
 
     .cnRoute {
         background: #e72e37;
+    }
+
+    @media (max-width: 860px) {
+        a {
+            font-size: var(--step--4, 12px);
+        }
     }
 </style>
