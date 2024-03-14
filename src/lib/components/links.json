@@ -34,5 +34,25 @@
     {
         "name": "Survival Guide",
         "href": "/survival-guide"
+    },
+    {
+        "name": "Smart Servants",
+        "href": "/smart-servants"
+    },
+    
+    {
+        "name": "Loadouts",
+        "href": "https://tof-tools.vercel.app/",
+        "external": true
+    },
+    {
+        "name": "Map",
+        "href": "https://www.ghzs666.com/tower-of-fantasy-map",
+        "external": true
+    },
+    {
+        "name": "Shop",
+        "href": "https://aida-cafe.shop/",
+        "external": true
     }
 ]

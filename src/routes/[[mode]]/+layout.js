@@ -1,3 +1,3 @@
 export function load({ data }) {
-    return { latestVersion: data.latestVersion }
+    return { bgImg: data.bgImg, latestVersion: data.latestVersion }
 }

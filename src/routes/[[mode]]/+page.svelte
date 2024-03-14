@@ -18,32 +18,34 @@
     <!-- https://developers.google.com/search/docs/appearance/site-names#website -->
     <script type="application/ld+json">
         {
-          "@context" : "https://schema.org",
-          "@type" : "WebSite",
-          "name" : "Tower of Fantasy Index",
-          "url" : "https://toweroffantasy.info/"
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Tower of Fantasy Index",
+            "url": "https://toweroffantasy.info/"
         }
     </script>
 </svelte:head>
 
 <Ad unit="LB-home" />
 
-<h1>Tower of Fantasy Index</h1>
+<div class="box" style="margin-top: 1rem; width: fit-content">
+    <h1>Tower of Fantasy Index</h1>
 
-<p>
-    Online resource for Tower of Fantasy Global and Chinese versions.<br />
-    Feedback can be sent via
-    <a
-        href="https://discord.com/channels/670617630717116426/1063498932749094912"
-        target="_blank"
-        rel="noreferrer nofollow noopener">Discord</a
-    >.
-</p>
+    <p>
+        Online resource for Tower of Fantasy Global and Chinese versions.<br />
+        Feedback can be sent via
+        <a
+            href="https://discord.com/channels/670617630717116426/1063498932749094912"
+            target="_blank"
+            rel="noreferrer nofollow noopener">Discord</a
+        >.
+    </p>
 
-<p>
-    If the site has been helpful to you and you'd like to show gratitude, please
-    disable adblock or consider sending a Ko-Fi!
-</p>
+    <p style="margin-bottom: 0">
+        If the site has been helpful to you and you'd like to show gratitude,
+        please disable adblock or consider sending a Ko-Fi!
+    </p>
+</div>
 
 <h2>Newest Arrivals</h2>
 <ul class="entry-list">
@@ -53,19 +55,19 @@
 </ul>
 <small style="color: var(--text2)">Added in version {data.latestVersion}</small>
 
-<div>
-    <h2 style="font-size: var(--step-3);">Credits</h2>
+<h2 style="font-size: var(--step-3);">Credits</h2>
 
-    <h3>Created by</h3>
+<div class="box" style="margin-top: 1rem; width: fit-content">
+    <h3 style="margin-top: 0">Created by</h3>
     <p>Zakum, FortOfFans, biellSilva, Eminentglory</p>
 
     <h3>Original contents by</h3>
     <p>Pyrosu, BakuBaku, Sera Naoki</p>
 
     <h3>Special thanks to</h3>
-    <p>
-        Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny, Gateoo, Sky,
-        ChickenJoy, Riala, TheKingOppaiDragon, Fanatique, Maygi
+    <p style="margin-bottom: 0">
+        Sova, Afrodiy, HungryBunny, Cytus, realEmperor, Stitch, Abyss, tiny,
+        Gateoo, Sky, ChickenJoy, Riala, TheKingOppaiDragon, Fanatique, Maygi
     </p>
 </div>
 

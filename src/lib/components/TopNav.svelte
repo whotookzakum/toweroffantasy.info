@@ -36,46 +36,8 @@
     <div class="nav-content grid" class:open>
         <div class="top-strip flex">
             <a href="/" class="nav-link nav-home"> Tower of Fantasy Index </a>
-            <!-- <RegionSelector style="margin: 0.5rem 0.25rem" /> -->
-        </div>
-
-        <input
-            type="checkbox"
-            id="navToggler"
-            class="visually-hidden style-next-label"
-            bind:checked={open}
-        />
-        <label for="navToggler" class="toggler-label grid">
-            <span class="open-icon flex">
-                <Icon icon="ic:baseline-menu" width="24" />
-            </span>
-            <span class="open-icon visually-hidden">Open Navigation</span>
-            <span class="close-icon flex">
-                <Icon icon="ic:baseline-close" width="24" />
-            </span>
-            <span class="close-icon visually-hidden">Close Navigation</span>
-        </label>
-
-        <div class="bottom-strip flex g-50">
-            <!-- <label class="top-right">
-                <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show weapon
-                details on Simulacrum cards
-            </label> -->
-
-            <div class="links-strip flex g-25">
-                {#each links as { href, name, icon }}
-                    <a
-                        {href}
-                        class:active={$page.url.pathname.includes(href)}
-                        class="nav-link"
-                        on:click={() => open = false}
-                    >
-                        {name}
-                    </a>
-                {/each}
-            </div>
-
-            <div class="sns-links flex g-25">
+            <RegionSelector style="margin: 0.5rem 0.25rem" />
+            <div class="sns-links flex">
                 <a
                     href="https://discord.gg/aidacafe"
                     target="_blank"
@@ -108,6 +70,51 @@
                     <span class="visually-hidden">Site Settings</span>
                 </button> -->
             </div>
+        </div>
+
+        <input
+            type="checkbox"
+            id="navToggler"
+            class="visually-hidden style-next-label"
+            bind:checked={open}
+        />
+        <label for="navToggler" class="toggler-label grid">
+            <span class="open-icon flex">
+                <Icon icon="ic:baseline-menu" width="24" />
+            </span>
+            <span class="open-icon visually-hidden">Open Navigation</span>
+            <span class="close-icon flex">
+                <Icon icon="ic:baseline-close" width="24" />
+            </span>
+            <span class="close-icon visually-hidden">Close Navigation</span>
+        </label>
+
+        <div class="bottom-strip flex g-50">
+            <!-- <label class="top-right">
+                <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show weapon
+                details on Simulacrum cards
+            </label> -->
+
+            <div class="links-strip flex g-25">
+                {#each links as { href, name, icon, external }}
+                    <a
+                        {href}
+                        class:active={$page.url.pathname.includes(href)}
+                        class="nav-link"
+                        on:click={() => open = false}
+                        target={external && "_blank"}
+                        rel={external && "noreferrer noopener nofollow"}
+                        class:external
+                    >
+                        {name}
+                        {#if external}
+                            <Icon icon="ei:external-link" width="18" />
+                        {/if}
+                    </a>
+                {/each}
+            </div>
+
+            
         </div>
     </div>
 </nav>
@@ -166,14 +173,20 @@
 
     .sns-links {
         align-items: start;
+        align-self: center;
+        margin-left: auto;
 
         & > * {
+            place-content: center;
             padding: 0.5rem;
             aspect-ratio: 1/1;
             align-items: center;
             background: hsla(226, 40%, 15%, 0.5);
+            background: none;
+            border: none;
             border-radius: 5px;
-            border: 1px solid var(--surface1);
+            border-radius: 50%;
+            // border: 1px solid var(--surface1);
             min-height: 36px;
         }
 
@@ -192,6 +205,11 @@
 
         &:not(.nav-home).active {
             color: var(--accent);
+        }
+
+        &.external {
+            color: var(--tier-a);
+            display: flex;
         }
     }
 
