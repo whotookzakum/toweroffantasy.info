@@ -2,23 +2,23 @@
     export let rarity;
     export let style = "";
     let src =
-        "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_ssr.webp";
+        "/Hotta/Resources/Content/UI/yizhi/yizhi_tips_zi_ssr.webp";
     let alt = "SSR"
 
     switch (rarity) {
         case 4:
             src =
-                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_sr.webp";
+                "/Hotta/Resources/Content/UI/yizhi/yizhi_tips_zi_sr.webp";
             alt = "SR"
             break;
         case 3:
             src =
-                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_r.webp";
+                "/Hotta/Resources/Content/UI/yizhi/yizhi_tips_zi_r.webp";
             alt ="R"
             break;
         case 2:
             src =
-                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/yizhi/yizhi_tips_zi_n.webp";
+                "/Hotta/Resources/Content/UI/yizhi/yizhi_tips_zi_n.webp";
             alt = "N"
             break;
     }

@@ -8,7 +8,7 @@
     <h2 id="advancements">Advancements</h2>
     <p>
         Each advancement requires 1x <img
-            src="https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/item_weapon_upstar_.webp"
+            src="/Hotta/Content/Resources/Icon/item/item_weapon_upstar_.webp"
             alt=""
             style="vertical-align: middle; margin: -0.75rem -0.25rem -0.5rem -0.25rem"
             width="38"

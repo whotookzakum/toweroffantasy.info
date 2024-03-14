@@ -148,7 +148,7 @@
             <ItemIcon
                 item={{
                     amount: totalExp,
-                    icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jinbi.webp",
+                    icon: "/Hotta/Content/Resources/Icon/huobi/jinbi.webp",
                     name: "Gold",
                     rarity: 3,
                 }}
@@ -158,7 +158,7 @@
             <ItemIcon
                 item={{
                     amount: totalExp,
-                    icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jingyan.webp",
+                    icon: "/Hotta/Content/Resources/Icon/huobi/jingyan.webp",
                     name: "EXP",
                     rarity: 1,
                 }}
@@ -227,7 +227,7 @@
                                             item={{
                                                 amount: levels[level + 1]
                                                     .requiredExp,
-                                                icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jinbi.webp",
+                                                icon: "/Hotta/Content/Resources/Icon/huobi/jinbi.webp",
                                                 name: "Gold",
                                                 rarity: 3,
                                             }}
@@ -240,7 +240,7 @@
                                             item={{
                                                 amount: levels[level + 1]
                                                     .requiredExp,
-                                                icon: "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jingyan.webp",
+                                                icon: "/Hotta/Content/Resources/Icon/huobi/jingyan.webp",
                                                 name: "EXP",
                                                 rarity: 1,
                                             }}

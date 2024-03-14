@@ -7,8 +7,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"exportpngs": "cd UnrealExporter && dotnet run tof-images && cd ..",
-		"convertwebp": "cd WebP && python main.py && cd ..",
-		"imgs": "npm run exportpngs && npm run convertwebp"
+		"convertwebp": "cd WebP && pip install -r requirements.txt && python main.py && cd ..",
+		"imgs": "rm -rf ./static/Hotta && node generateConfigs && npm run exportpngs && npm run convertwebp"
 	},
 	"devDependencies": {
 		"@beyonk/svelte-google-analytics": "^2.6.4",
@@ -29,6 +29,8 @@
 	"type": "module",
 	"dependencies": {
 		"anchor-js": "^5.0.0",
+		"graphql": "^16.8.1",
+		"graphql-request": "^6.1.0",
 		"lodash": "^4.17.21",
 		"luxon": "^3.4.4",
 		"query-store": "^1.1.2",

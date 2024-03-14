@@ -61,7 +61,7 @@
                 <div class="stars-wrapper">
                     {#each Array(item.stars) as _}
                         <img
-                            src="https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/common/star/STAR_NoLine.webp"
+                            src="/Hotta/Content/Resources/UI/common/star/STAR_NoLine.webp"
                             alt=""
                             width="22"
                             height="22"

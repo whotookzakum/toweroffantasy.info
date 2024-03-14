@@ -104,7 +104,7 @@
 
     <img
         class="bg"
-        src="https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.webp"
+        src="/Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.webp"
         alt=""
     />
     <!-- jingdwc_huodong_zhuangshiyou -->

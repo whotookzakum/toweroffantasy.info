@@ -18,7 +18,7 @@
 
     $: entries = applyFilters(data.outfits, { q, type }).map((item) => {
         const blankIcon =
-            "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/makeup/kong.webp";
+            "/Hotta/Content/Resources/UI/makeup/kong.webp";
         return {
             ...item,
             icon:
