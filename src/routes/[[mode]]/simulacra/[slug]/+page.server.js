@@ -36,10 +36,33 @@ export const load = async (event) => {
         }
     })
 
-    // const itemsQuery = new AllItemsStore()
-    // const itemsRes = await itemsQuery.fetch({ event })
-    // const { items } = itemsRes.data
-    // console.log(items.length)
+    const itemsQuery = new AllItemsStore()
+    const itemsRes = await itemsQuery.fetch({ event, variables: { filter: "{\"type\": \"GIFT\" }" } })
+    const { items } = itemsRes.data
 
-    return { weapon, simulacrumV2, matrix, banners }
+    const gifts =
+        items
+            .filter(item => {
+                const isLikedGift = item.giftTags.some(tagObj => simulacrumV2.likedGiftTypes.includes(tagObj.tagId))
+                const isDislikedGift = item.giftTags.some(tagObj => simulacrumV2.dislikedGiftTypes.includes(tagObj.tagId))
+                return isLikedGift && !isDislikedGift
+            })
+            .map(item => {
+                const totalMatches = item.giftTags.reduce((acc, curr) => {
+                    if (simulacrumV2.likedGiftTypes.includes(curr.tagId)) acc++;
+                    return acc;
+                }, 0)
+
+                // Rarity 2~4: Points for 0~3 matches 
+                const points = {
+                    "2": [10, 15, 20, 25],
+                    "3": [20, 30, 40, 50],
+                    "4": [40, 60, 80, 100]
+                }
+
+                return { ...item, amount: `+${points[item.rarity][totalMatches]}` }
+            })
+            .sort((a, b) => b.amount - a.amount)
+
+    return { weapon, simulacrumV2, matrix, gifts, banners }
 }

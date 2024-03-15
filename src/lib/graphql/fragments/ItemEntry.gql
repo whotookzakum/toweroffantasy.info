@@ -6,4 +6,8 @@ fragment itemEntry on ItemType {
     description
     type
     rarity
+    giftTags {
+        tagId
+        name
+    }
 }

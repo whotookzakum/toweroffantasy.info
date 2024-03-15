@@ -70,15 +70,15 @@
         </ul>
 
         <h2 id="favors">Favors</h2>
-        <div>
-            <ul class="flex flex-wrap g-100">
-                {#each servant.upgradeItems as item}
-                    <li class="flex">
-                        <ItemIcon item={{ ...item.material, amount: `+${item.exp}` }} />
-                    </li>
-                {/each}
-            </ul>
-        </div>
+        <ul class="flex flex-wrap g-50">
+            {#each servant.upgradeItems as item}
+                <li class="flex">
+                    <ItemIcon
+                        item={{ ...item.material, amount: `+${item.exp}` }}
+                    />
+                </li>
+            {/each}
+        </ul>
     </div>
 </article>
 

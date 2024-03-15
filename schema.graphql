@@ -97,6 +97,11 @@ type GearType {
   type: String!
 }
 
+type GiftTagType {
+  name: String!
+  tagId: String!
+}
+
 type GuideBookItemType {
   description: String!
   icon: String!
@@ -120,6 +125,7 @@ type IngredientType {
 
 type ItemType {
   description: String
+  giftTags: [GiftTagType!]!
   icon: String
   id: String!
   name: String
@@ -255,7 +261,7 @@ type RelicType {
   rarity: Int!
   source: String
   type: String!
-  version: String!
+  version: String
 }
 
 type RewardType {

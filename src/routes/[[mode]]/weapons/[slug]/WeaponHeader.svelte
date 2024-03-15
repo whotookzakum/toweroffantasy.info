@@ -14,10 +14,7 @@
         weapon.weaponAdvancements[$weaponStars - 1]?.shatter || weapon.shatter;
 
     // (baseValue + weaponLevel * upgradePropValue) * advancementCoefficient
-    let advancementCoefficients;
-
-    $: {
-        advancementCoefficients = weapon.weaponAdvancements.reduce(
+    $: advancementCoefficients = weapon.weaponAdvancements.reduce(
             (acc, advancement, index) => {
                 // Coefficients in the current advancement (1-6)
                 const currentCoefficients = {};
@@ -39,7 +36,6 @@
             },
             {},
         );
-    }
 </script>
 
 <div class="grid g-100">

@@ -1,16 +1,18 @@
 <script>
     export let type = "";
     export let style = "";
+    export let text = ""
 
-    const text = {
+    const template = {
         new: "New",
         final: "Final rerun",
         collab: "Collab",
         limited: "Limited-only",
+        Genet: "Network"
     };
 </script>
 
-<i class="tag {type}" style:background="var(--{type})" {style}>{text[type] || type}</i>
+<i class="tag {type}" style:background="var(--{type})" {style}>{text || template[type] || type}</i>
 
 <style lang="scss">
     .tag {
@@ -29,10 +31,15 @@
         letter-spacing: 0.03em;
         white-space: nowrap;
         
+        // EntryItem tags
         --new: rgb(204, 148, 27);
+
+        // Banner tags
         --final: rgb(42, 129, 179);
         --collab: forestgreen;
         --limited: rgb(179, 42, 111);
+
+        // Skill tags
         --Damage: #ab3f35;
         --Hyperbody: #4835ab;
         --Support: #3593ab;
@@ -40,6 +47,20 @@
         --Control: #cc8826;
         --Debuff: #ab35a7;
 
+        // Gift tags
+        --Jiuyu: #6bbdd8;
+        --Vera: #cba79a;
+        --Asshai: #86ab83;
+        --restrictedGoods: #ddc392;
+        --game: #8faecb;
+        --rarity: #dd64a9;
+        --decorate: #ababa5;
+        --metal: #b09cea;
+        --collection: #8b8bc5;
+        --everydayObjects: #c08f8d;
+        --toy: #dd9cea;
+        --garageKit: #da849f;
+        --Genet: #6BB4EA;
     }
 
     .new {

@@ -25,7 +25,7 @@
                 img.src.includes("L10N") ||
                 img.src.includes("ResourcesOverSea")
             ) {
-                ("/Hotta/Content");
+                localFilePath = "/Hotta/Content";
             }
             img.src = img.src.replace(
                 "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp",

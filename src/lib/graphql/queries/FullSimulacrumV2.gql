@@ -18,6 +18,7 @@ query FullSimulacrumV2($id: String!) {
         height
         homeTown
         likedGiftTypes
+        dislikedGiftTypes
         voicing {
             cn
             en

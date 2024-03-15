@@ -7,10 +7,23 @@
     import GenericHeader from "$lib/components/GenericHeader.svelte";
     import Meta from "$components/Meta.svelte";
     import Ad from "$components/Ad/Ad.svelte";
+    import ItemIcon from "$components/ItemIcon.svelte";
+    import Tag from "$components/Tag.svelte";
+    import uniqBy from "lodash/uniqBy.js";
 
     export let data;
-    const { simulacrumV2, weapon, matrix, banners } = data;
+    const { simulacrumV2, weapon, matrix, gifts, banners } = data;
     $bgImg = simulacrumV2.assetsA0.titlePicture;
+    const uniqGiftTags = uniqBy(
+        gifts.flatMap((item) => item.giftTags),
+        (tagObj) => tagObj.tagId,
+    );
+    const preferredGiftTags = simulacrumV2.likedGiftTypes.map(
+        (tagId) =>
+            uniqGiftTags.find(
+                (obj) => obj.tagId.toLowerCase() === tagId.toLowerCase(),
+            ) ?? { tagId },
+    );
 </script>
 
 <Meta
@@ -18,7 +31,6 @@
     description="All about the simulacrum {simulacrumV2.name}, such as awakening unlocks, character profile, voice actors, and banners."
     image={simulacrumV2.assetsA0.avatar}
 />
-<!-- TODO: Need to test if color works color="var(--element-{weapon.element})" -->
 
 <article>
     <aside>
@@ -47,7 +59,7 @@
         <h2 id="awakening">Awakening</h2>
         <table
             class="awakening borders bg-alternate"
-            style="margin-block: 1rem"
+            style="margin-block: 1rem; text-align: left"
         >
             <thead>
                 <tr>
@@ -57,51 +69,75 @@
             </thead>
             <tbody>
                 {#each simulacrumV2.awakening as awakening}
-                    <tr>
-                        <td
-                            class="grid"
-                            style="place-content: center; text-align: center"
-                        >
-                            <img
-                                src={awakening.icon}
-                                alt=""
-                                width="82"
-                                height="82"
-                            />
-                            {awakening.need}
-                        </td>
-                        <td>
-                            <SvelteMarkdown source={awakening.description} />
-                        </td>
-                    </tr>
+                    {#if awakening.description}
+                        <tr>
+                            <td>
+                                <div
+                                    class="grid"
+                                    style="place-content: center; text-align: center; width: fit-content"
+                                >
+                                    <img
+                                        src={awakening.icon}
+                                        alt=""
+                                        width="82"
+                                        height="82"
+                                    />
+                                    {awakening.need}
+                                </div>
+                            </td>
+                            <td>
+                                <SvelteMarkdown
+                                    source={awakening.description}
+                                />
+                            </td>
+                        </tr>
+                    {/if}
                 {/each}
             </tbody>
         </table>
+
         <h3 id="gifts">Preferred Gifts</h3>
-        <span>{simulacrumV2.likedGiftTypes}</span>
+        <ul class="flex flex-wrap g-50" style="padding:0">
+            {#each preferredGiftTags as tag}
+                <li>
+                    <Tag
+                        type={tag.tagId}
+                        text={tag.name}
+                        style="font-size: var(--step--2)"
+                    />
+                </li>
+            {/each}
+        </ul>
+        <ul class="flex flex-wrap g-50">
+            {#each gifts as item}
+                <li class="flex">
+                    <ItemIcon {item} />
+                </li>
+            {/each}
+        </ul>
 
         <Ad unit="ArticleLB-sim2" />
 
         <h2 id="profile">Profile</h2>
 
         <ul class="flex">
-            <li class="box grid" style="flex: 1">
+            <li class="box grid" style="flex: 1; align-content: start">
                 <span>Title</span>
                 <span>{weapon.name}</span>
             </li>
-            <li class="box grid" style="flex: 1">
+            <li class="box grid" style="flex: 1; align-content: start">
                 <span>Gender</span>
                 <span>{simulacrumV2.gender}</span>
             </li>
-            <li class="box grid" style="flex: 1">
+            <li class="box grid" style="flex: 1; align-content: start">
                 <span>Allegiance</span>
                 <span>{simulacrumV2.homeTown}</span>
             </li>
-            <li class="box grid" style="flex: 1">
+            <li class="box grid" style="flex: 1; align-content: start">
                 <span>Height</span>
                 <span>{simulacrumV2.height}</span>
             </li>
-            <li class="box grid" style="flex: 1">
+            <li class="box grid" style="flex: 1; align-content: start">
                 <span>Birthdate</span>
                 <span>{simulacrumV2.birthday}</span>
             </li>

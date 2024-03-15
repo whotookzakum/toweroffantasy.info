@@ -3,7 +3,6 @@
     import SetItems from "$components/SetItems.svelte";
     import { bgImg } from "$lib/stores";
     import BannerTable from "$components/BannerTable/BannerTable.svelte";
-    import RarityIcon from "$components/EntryItem/RarityIcon.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
     import WeaponStarSlider from "./WeaponStarSlider.svelte";
@@ -44,7 +43,7 @@
     <div class="article-content">
         <Ad unit="ArticleLB-wep1" />
 
-        <!-- <WeaponHeader {weapon} /> -->
+        <WeaponHeader {weapon} />
         <div class="mobile-only flex flex-wrap">
             <WeaponLevelSlider />
             <WeaponStarSlider />
