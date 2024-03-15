@@ -12,31 +12,31 @@
         );
 
     switch (entry.__typename) {
-        case "Simulacra":
-        case "SimulacraV2":
-        case "Weapon":
+        case "SimulacraType":
+        case "SimulacraV2Type":
+        case "WeaponType":
             if (hasBanners && !movedToStandardBanner) {
                 nucleusIcons.push(
-                    "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005",
+                    "/Hotta/Content/Resources/Icon/huobi/Gem005.webp",
                 );
             } else {
                 nucleusIcons.push(
-                    "https://api.toweroffantasy.info/assets/Icon/huobi/Gem004",
+                    "/Hotta/Content/Resources/Icon/huobi/Gem004.webp",
                 );
                 nucleusIcons.push(
-                    "https://api.toweroffantasy.info/assets/Icon/huobi/Gem003",
+                    "/Hotta/Content/Resources/Icon/huobi/Gem003.webp",
                 );
             }
             break;
-        case "Matrice":
+        case "MatriceType":
             if (entry.rarity !== "N") {
                 if (hasBanners && !movedToStandardBanner) {
                     nucleusIcons.push(
-                        "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02",
+                        "/Hotta/Content/Resources/Icon/huobi/item_ticket_02.webp",
                     );
                 } else {
                     nucleusIcons.push(
-                        "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01",
+                        "/Hotta/Content/Resources/Icon/huobi/item_ticket_01.webp",
                     );
                 }
             }
@@ -44,7 +44,7 @@
     }
 </script>
 
-{#if ["Simulacra", "SimulacraV2", "Weapon", "Matrice"].includes(entry.__typename)}
+{#if ["SimulacraType", "SimulacraV2Type", "WeaponType", "MatriceType"].includes(entry.__typename)}
     <div class="flex coins">
         <div>
             {#if hasBanners && !movedToStandardBanner}

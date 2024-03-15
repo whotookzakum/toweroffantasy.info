@@ -16,10 +16,10 @@
     import Ad from "$components/Ad/Ad.svelte";
 
     export let data;
-    const simulacrum_v2 = data.simulacrum_v2;
+    const simulacrumV2 = data.simulacrumV2;
     const matrix = data.matrix;
     const { weapon, banners } = data;
-    $bgImg = simulacrum_v2?.assetsA0.titlePicture;
+    $bgImg = simulacrumV2?.assetsA0.titlePicture;
 </script>
 
 <Meta
@@ -31,8 +31,8 @@
 <article>
     <aside>
         <div class="sticky grid g-100">
-            {#if simulacrum_v2 || matrix}
-                <AnchorLinks {simulacrum_v2} {weapon} {matrix} />
+            {#if simulacrumV2 || matrix}
+                <AnchorLinks {simulacrumV2} {weapon} {matrix} />
             {/if}
             <div class="aside-extras grid g-100">
                 <WeaponLevelSlider />
@@ -50,11 +50,11 @@
             <WeaponStarSlider />
         </div>
 
-        {#if simulacrum_v2 || matrix}
+        {#if simulacrumV2 || matrix}
             <h2 style="font-size: var(--step-2);">Part of a set</h2>
-            <SetItems {simulacrum_v2} {weapon} {matrix} />
+            <SetItems {simulacrumV2} {weapon} {matrix} />
             <small style="color: var(--text2);"
-                >Added in version {simulacrum_v2.version}</small
+                >Added in version {simulacrumV2.version}</small
             >
         {/if}
 
@@ -93,10 +93,10 @@
             <h2 id="banners">Banners</h2>
         {/if}
     </div>
-    {#if simulacrum_v2 && weapon.banners.length > 0}
+    {#if simulacrumV2 && weapon.banners.length > 0}
         <BannerTable
             {banners}
-            bannerSearchTerm={simulacrum_v2.name}
+            bannerSearchTerm={simulacrumV2.name}
             style="grid-column: 1/-1"
         />
     {/if}

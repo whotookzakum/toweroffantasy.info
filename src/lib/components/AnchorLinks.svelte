@@ -2,16 +2,16 @@
     import { page } from "$app/stores";
     import Ad from "$components/Ad/Ad.svelte";
     import Tag from "./Tag.svelte";
-    export let simulacrum_v2, weapon, matrix;
+    export let simulacrumV2, weapon, matrix;
 
     // TODO: add .active class toggling for section links
 
     const relatedLinks = [];
 
-    if (simulacrum_v2) {
+    if (simulacrumV2) {
         relatedLinks.push({
-            name: simulacrum_v2.name,
-            href: `/simulacra/${simulacrum_v2.id}`,
+            name: simulacrumV2.name,
+            href: `/simulacra/${simulacrumV2.id}`,
             type: "simulacrum",
         });
     }
@@ -115,7 +115,27 @@
                 disabled: matrix.banners.length < 1,
             },
         );
+    } else if ($page.url.pathname.includes("/smart-servants")) {
+        anchorLinks.push(
+            {
+                name: "Top",
+                href: "#top",
+            },
+            {
+                name: "Advancements",
+                href: "#advancements",
+            },
+            {
+                name: "Skills",
+                href: "#skills"
+            },
+            {
+                name: "Gifts",
+                href: "#gifts"
+            },
+        );
     }
+
 </script>
 
 <div class="anchor-links-wrapper grid g-100">

@@ -11,40 +11,40 @@
     export let matrixPieces = 0;
 
     let mainRoute = {
-        Simulacra: "simulacra",
-        SimulacraV2: "simulacra",
-        Matrice: "matrices",
-        Weapon: "weapons",
-        Mount: "mounts",
-        Relic: "relics",
-        Outfit: "cosmetics",
-        SmartServant: "smart-servants"
+        SimulacraType: "simulacra",
+        SimulacraV2Type: "simulacra",
+        MatrixType: "matrices",
+        WeaponType: "weapons",
+        MountType: "mounts",
+        RelicType: "relics",
+        OutfitType: "cosmetics",
+        SmartServantType: "smart-servants"
     };
 
     let weapon;
     let avatarUri;
 
     switch (entry.__typename) {
-        case "Simulacra":
-        case "SimulacraV2":
+        case "SimulacraType":
+        case "SimulacraV2Type":
             weapon = entry.weapon;
             avatarUri = entry.assetsA0.painting;
             break;
-        case "Weapon":
+        case "WeaponType":
             weapon = entry;
             avatarUri = weapon.assets.icon;
             break;
-        case "Matrice":
+        case "MatrixType":
             avatarUri = entry.assets.iconLarge;
             break;
-        case "Mount":
+        case "MountType":
             avatarUri = entry.assets.icon;
             break;
-        case "Outfit":
-        case "Relic":
+        case "OutfitType":
+        case "RelicType":
             avatarUri = entry.icon;
             break;
-        case "SmartServant":
+        case "SmartServantType":
             avatarUri = entry.assets.activatedIcon;
             break;
     }
@@ -279,19 +279,19 @@
         top: 0;
     }
 
-    :not(:where(.SimulacraV2, .Simulacra)) .avatar {
+    :not(:where(.SimulacraV2Type, .SimulacraType)) .avatar {
         object-position: -30px -40px !important;
         width: 256px !important;
     }
 
-    .SimulacraV2.hide-weapon {
+    .SimulacraV2Type.hide-weapon {
         .row-categories,
         .row-stats {
             display: none;
         }
     }
 
-    .Mount .avatar {
+    .MountType .avatar {
         object-position: -50px 0 !important;
         // width: 26px;
         // top: 0;
@@ -300,7 +300,7 @@
         height: auto;
     }
 
-    .Relic .avatar {
+    .RelicType .avatar {
         width: 196px !important;
         object-position: -10px -20px !important;
     }

@@ -5,19 +5,19 @@
 
     // Default to nucleus icons for simulacra and weapons
     let limitedIcons = [
-        "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005",
+        "/Hotta/Content/Resources/Icon/huobi/Gem005",
     ];
     let standardIcons = [
-        "https://api.toweroffantasy.info/assets/Icon/huobi/Gem004",
-        "https://api.toweroffantasy.info/assets/Icon/huobi/Gem003",
+        "/Hotta/Content/Resources/Icon/huobi/Gem004",
+        "/Hotta/Content/Resources/Icon/huobi/Gem003",
     ];
 
     if ($page.url.pathname.includes("/matrices")) {
         limitedIcons = [
-            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02",
+            "/Hotta/Content/Resources/Icon/huobi/item_ticket_02",
         ];
         standardIcons = [
-            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01",
+            "/Hotta/Content/Resources/Icon/huobi/item_ticket_01",
         ];
     }
 

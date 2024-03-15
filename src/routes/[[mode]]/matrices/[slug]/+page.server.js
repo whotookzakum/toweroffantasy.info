@@ -6,19 +6,19 @@ export const load = async (event) => {
     const matrixRes = await matrixQuery.fetch({ event, variables: { id: event.params.slug } })
     const { matrix } = matrixRes.data
 
-    let simulacrum_v2, weapon;
+    let simulacrumV2, weapon;
 
     // Simulacrum entry data
     if (matrix.simulacrumId) {
         const simQuery = new ShortSimulacrumV2Store()
         const simRes = await simQuery.fetch({ event, variables: { id: matrix.simulacrumId } })
-        simulacrum_v2 = simRes.data.simulacrum_v2
+        simulacrumV2 = simRes.data.simulacrumV2
     }
 
     // Weapon entry data
-    if (simulacrum_v2?.weaponId) {
+    if (simulacrumV2?.weaponId) {
         const wepQuery = new ShortWeaponStore()
-        const { data } = await wepQuery.fetch({ event, variables: { id: simulacrum_v2.weaponId } })
+        const { data } = await wepQuery.fetch({ event, variables: { id: simulacrumV2.weaponId } })
         weapon = data.weapon
     }
 
@@ -31,7 +31,7 @@ export const load = async (event) => {
     const allSimsRes = await allSimsStore.fetch({ event })
 
     const banners = bannersRes.data.banners.map(banner => {
-        const simulacrum = allSimsRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId)
+        const simulacrum = allSimsRes.data.simulacraV2.find(sim => sim.id === banner.simulacrumId)
         return {
             ...banner,
             simulacrum: {
@@ -49,7 +49,7 @@ export const load = async (event) => {
 
     return {
         weapon,
-        simulacrum_v2,
+        simulacrumV2,
         matrix: {
             ...matrix,
             meta: {

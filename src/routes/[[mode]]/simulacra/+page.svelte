@@ -13,20 +13,20 @@
 
     let q = "";
     let rarity, version, banners, element, category;
-    let uniqRarities = uniqBy(data.simulacra_v2, (entry) => entry.rarity).map(
+    let uniqRarities = uniqBy(data.simulacraV2, (entry) => entry.rarity).map(
         (obj) => ({ type: "rarity", value: obj.rarity }),
     );
-    let uniqVersions = uniqBy(data.simulacra_v2, (entry) => entry.version)
+    let uniqVersions = uniqBy(data.simulacraV2, (entry) => entry.version)
         .sort((a, b) => b.version - a.version)
         .map((obj) => ({ name: obj.version, value: obj.version }));
 
-    $: entries = applyFilters(data.simulacra_v2, { q, version, rarity, element, category, banners });
+    $: entries = applyFilters(data.simulacraV2, { q, version, rarity, element, category, banners });
 </script>
 
 <Meta
     title="Simulacra | Tower of Fantasy Index"
     description="Simulacra (aka Mimics) are the player's representation of the characters found in Tower of Fantasy. They have an associated weapon and an optional passive effect. Their associated matrices must be obtained separately."
-    image={data.simulacra_v2[0].assetsA0.avatar}
+    image={data.simulacraV2[0].assetsA0.avatar}
 />
 
 <Ad unit="LB-simulacra" />

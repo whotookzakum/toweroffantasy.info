@@ -67,7 +67,7 @@ query AllImgSrcs {
             icon
         }
     }
-    simulacra_v2 {
+    simulacraV2 {
     assetsA0 {
             activeImitation
             advanceGrayPainting

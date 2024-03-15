@@ -4,16 +4,16 @@ export const load = async (event) => {
     // Simulacrum full data
     const simQuery = new FullSimulacrumV2Store()
     const simRes = await simQuery.fetch({ event, variables: { id: event.params.slug } })
-    const { simulacrum_v2 } = simRes.data
+    const { simulacrumV2 } = simRes.data
 
     // Weapon for related links
     const wepQuery = new ShortWeaponStore()
-    const { data } = await wepQuery.fetch({ event, variables: { id: simulacrum_v2.weaponId } })
+    const { data } = await wepQuery.fetch({ event, variables: { id: simulacrumV2.weaponId } })
     const { weapon } = data
 
     // Matrix for related links
     const matrixQuery = new ShortMatrixStore()
-    const matrixRes = await matrixQuery.fetch({ event, variables: { id: simulacrum_v2.matrixId } })
+    const matrixRes = await matrixQuery.fetch({ event, variables: { id: simulacrumV2.matrixId } })
     const { matrix } = matrixRes.data
 
     // Banners for banner table
@@ -25,7 +25,7 @@ export const load = async (event) => {
     const allSimsRes = await allSimsStore.fetch({ event })
 
     const banners = bannersRes.data.banners.map(banner => {
-        const simulacrum = allSimsRes.data.simulacra_v2.find(sim => sim.id === banner.simulacrumId)
+        const simulacrum = allSimsRes.data.simulacraV2.find(sim => sim.id === banner.simulacrumId)
         return {
             ...banner,
             simulacrum: {
@@ -41,5 +41,5 @@ export const load = async (event) => {
     // const { items } = itemsRes.data
     // console.log(items.length)
 
-    return { weapon, simulacrum_v2, matrix, banners }
+    return { weapon, simulacrumV2, matrix, banners }
 }

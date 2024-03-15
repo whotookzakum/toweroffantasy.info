@@ -25,7 +25,7 @@ type BannerType {
   category: String
   detailsLink: String!
   element: String
-  endDate: DateTime!
+  endDate: String!
   isCollab: Boolean!
   isFinalBanner: Boolean!
   isLimitedBannerOnly: Boolean!
@@ -36,7 +36,7 @@ type BannerType {
   simulacrumIcon: String
   simulacrumId: String
   simulacrumName: String
-  startDate: DateTime!
+  startDate: String!
   weaponIcon: String
   weaponId: String
 }
@@ -55,9 +55,6 @@ type BaseStatsType {
   upgradeProp: Float!
   value: Float!
 }
-
-"""Date with time (isoformat)"""
-scalar DateTime
 
 type FashionAssetsType {
   grayPainting: String!
@@ -216,32 +213,32 @@ type OutfitType {
 
 type Query {
   achievement(id: String!, lang: String! = "en", version: String! = "global"): AchievementType!
-  achievements(filter: String! = "", lang: String! = "en", version: String! = "global"): [AchievementType!]!
-  banners(filter: String! = "", id: String = null, version: String! = "global"): [BannerType!]!
+  achievements(filter: String = null, lang: String! = "en", version: String! = "global"): [AchievementType!]!
+  banners(filter: String = null, id: String = null, version: String! = "global"): [BannerType!]!
   food(id: String!, lang: String! = "en", version: String! = "global"): FoodType!
-  foods(filter: String! = "", lang: String! = "en", version: String! = "global"): [FoodType!]!
+  foods(filter: String = null, lang: String! = "en", version: String! = "global"): [FoodType!]!
   gear(id: String!, lang: String! = "en", version: String! = "global"): GearType!
-  gears(filter: String! = "", lang: String! = "en", version: String! = "global"): [GearType!]!
+  gears(filter: String = null, lang: String! = "en", version: String! = "global"): [GearType!]!
   guidebook(id: String!, lang: String! = "en", version: String! = "global"): GuideBookType!
-  guidebooks(filter: String! = "", lang: String! = "en", version: String! = "global"): [GuideBookType!]!
+  guidebooks(filter: String = null, lang: String! = "en", version: String! = "global"): [GuideBookType!]!
   item(id: String!, lang: String! = "en", version: String! = "global"): ItemType!
-  items(filter: String! = "", lang: String! = "en", version: String! = "global"): [ItemType!]!
-  matrices(filter: String! = "", lang: String! = "en", version: String! = "global"): [MatrixType!]!
+  items(filter: String = null, lang: String! = "en", version: String! = "global"): [ItemType!]!
+  matrices(filter: String = null, lang: String! = "en", version: String! = "global"): [MatrixType!]!
   matrix(id: String!, lang: String! = "en", version: String! = "global"): MatrixType!
   mount(id: String!, lang: String! = "en", version: String! = "global"): MountType!
-  mounts(filter: String! = "", lang: String! = "en", version: String! = "global"): [MountType!]!
+  mounts(filter: String = null, lang: String! = "en", version: String! = "global"): [MountType!]!
   outfit(id: String!, lang: String! = "en", version: String! = "global"): OutfitType!
-  outfits(filter: String! = "", lang: String! = "en", version: String! = "global"): [OutfitType!]!
+  outfits(filter: String = null, lang: String! = "en", version: String! = "global"): [OutfitType!]!
   relic(id: String!, lang: String! = "en", version: String! = "global"): RelicType!
-  relics(filter: String! = "", lang: String! = "en", version: String! = "global"): [RelicType!]!
+  relics(filter: String = null, lang: String! = "en", version: String! = "global"): [RelicType!]!
   servant(id: String!, lang: String! = "en", version: String! = "global"): SmartServantType!
-  servants(filter: String! = "", lang: String! = "en", version: String! = "global"): [SmartServantType!]!
-  simulacra(filter: String! = "", lang: String! = "en", version: String! = "global"): [SimulacraType!]!
-  simulacraV2(filter: String! = "", lang: String! = "en", version: String! = "global"): [SimulacraV2Type!]!
+  servants(filter: String = null, lang: String! = "en", version: String! = "global"): [SmartServantType!]!
+  simulacra(filter: String = null, lang: String! = "en", version: String! = "global"): [SimulacraType!]!
+  simulacraV2(filter: String = null, lang: String! = "en", version: String! = "global"): [SimulacraV2Type!]!
   simulacrum(id: String!, lang: String! = "en", version: String! = "global"): SimulacraType!
   simulacrumV2(id: String!, lang: String! = "en", version: String! = "global"): SimulacraV2Type!
   weapon(id: String!, lang: String! = "en", version: String! = "global"): WeaponType!
-  weapons(filter: String! = "", lang: String! = "en", version: String! = "global"): [WeaponType!]!
+  weapons(filter: String = null, lang: String! = "en", version: String! = "global"): [WeaponType!]!
 }
 
 type RecoMatrixType {
@@ -406,7 +403,7 @@ type SmartServantType {
 
 type StatPoolType {
   propName: String!
-  weitghtValue: Float!
+  weightValue: Float!
 }
 
 type UnlockItemType {

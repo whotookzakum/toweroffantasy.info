@@ -1,5 +1,5 @@
 query AllSimulacraV2($lang: String) {
-    simulacra_v2(lang: $lang) {
+    simulacraV2(lang: $lang) {
         ...simulacrum_v2Entry
     }
 }

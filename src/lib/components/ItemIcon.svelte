@@ -47,7 +47,7 @@
             {#if item.amount?.toString()}
                 <span>{item.amount}</span>
             {/if}
-            {#if item.__typename === "Food"}
+            {#if item.__typename === "FoodType"}
                 {#each item.categories as category}
                     <div
                         class="foodbuff-wrapper"

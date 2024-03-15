@@ -67,29 +67,29 @@
         "type": "banners-matrices",
         "value": "limited",
         "icons": [
-            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_02"
+            "/Hotta/Content/Resources/Icon/huobi/item_ticket_02.webp"
         ]
     },
     {
         "type": "banners-matrices",
         "value": "standard",
         "icons": [
-            "https://api.toweroffantasy.info/assets/Icon/huobi/item_ticket_01"
+            "/Hotta/Content/Resources/Icon/huobi/item_ticket_01.webp"
         ]
     },
     {
         "type": "banners-simulacra",
         "value": "limited",
         "icons": [
-            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem005"
+            "/Hotta/Content/Resources/Icon/huobi/Gem005.webp"
         ]
     },
     {
         "type": "banners-simulacra",
         "value": "standard",
         "icons": [
-            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem004",
-            "https://api.toweroffantasy.info/assets/Icon/huobi/Gem003"
+            "/Hotta/Content/Resources/Icon/huobi/Gem004.webp",
+            "/Hotta/Content/Resources/Icon/huobi/Gem003.webp"
         ]
     }
 ]

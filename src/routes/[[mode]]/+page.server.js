@@ -18,13 +18,13 @@ export const load = async (event) => {
     const mountsRes = await mountsStore.fetch({ event })
 
     const newestAdditions = [
-        ...simulacraRes.data.simulacra_v2, 
+        ...simulacraRes.data.simulacraV2, 
         ...weaponsRes.data.weapons,
         ...matricesRes.data.matrices,
         ...relicsRes.data.relics,
         ...mountsRes.data.mounts
     ]
-    .filter(i => i.version == simulacraRes.data.simulacra_v2[0].version)
+    .filter(i => i.version == simulacraRes.data.simulacraV2[0].version)
     // Filter out banners that have ended or not yet started
     // .filter(i => {
     //     if (!i.banners) return true
