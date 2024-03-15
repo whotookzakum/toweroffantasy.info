@@ -1,0 +1,5 @@
+query AllEquipments($lang: String) {
+    gears(lang: $lang) {
+        ...equipmentEntry
+    }
+}

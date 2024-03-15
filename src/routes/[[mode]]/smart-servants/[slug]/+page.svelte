@@ -15,7 +15,7 @@
 
 <Meta
     title="{servant.name} | Tower of Fantasy Index"
-    description="All about the smart servant {servant.name}, such as advancements ."
+    description="All about the smart servant {servant.name}, such as advancements."
     image={servant.icon}
 />
 

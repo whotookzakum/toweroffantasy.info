@@ -56,20 +56,9 @@ type BaseStatsType {
   value: Float!
 }
 
-type FashionAssetsType {
-  grayPainting: String!
-  painting: String!
-}
-
 type FashionType {
-  assets: FashionAssetsType!
-  description: String!
-  id: String!
-  name: String!
-  rarity: Int!
-  simulacrumId: String!
-  source: String!
-  weaponId: String!
+  outfit: OutfitFashionType!
+  weapon: WeaponFashionType!
 }
 
 type FoodType {
@@ -206,6 +195,22 @@ type MountType {
   rarity: Int!
   unlockItems: [UnlockItemType!]!
   version: String!
+}
+
+type OutfitFashionAssetsType {
+  grayPainting: String!
+  painting: String!
+}
+
+type OutfitFashionType {
+  assets: OutfitFashionAssetsType!
+  description: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  simulacrumId: String!
+  source: String!
+  weaponId: String!
 }
 
 type OutfitType {
@@ -348,7 +353,7 @@ type SimulacraType implements ModelBaseType {
   name: String!
   rarity: Int!
   unlockInfo: String!
-  version: String!
+  version: String
   voicing: VoiceActorsType!
   weaponId: String
 }
@@ -377,7 +382,7 @@ type SimulacraV2Type implements ModelBaseType {
   name: String!
   rarity: Int!
   unlockInfo: String!
-  version: String!
+  version: String
   voicing: VoiceActorsType!
   weapon: WeaponType
   weaponId: String
@@ -461,6 +466,15 @@ type WeaponEffectType {
   title: String!
 }
 
+type WeaponFashionType {
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  type: String!
+}
+
 type WeaponMatsType {
   id: String!
   levels: [LevelUpgradeType!]!
@@ -475,6 +489,7 @@ type WeaponType {
   description: String!
   element: String!
   elementEffect: WeaponEffectType
+  fashion: [FashionType!]!
   id: String!
   limited: Boolean!
   meta: MetaDataType!

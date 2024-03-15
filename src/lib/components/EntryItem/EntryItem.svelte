@@ -18,7 +18,8 @@
         MountType: "mounts",
         RelicType: "relics",
         OutfitType: "cosmetics",
-        SmartServantType: "smart-servants"
+        SmartServantType: "smart-servants",
+        GearType: "equipment"
     };
 
     let weapon;
@@ -46,6 +47,9 @@
             break;
         case "SmartServantType":
             avatarUri = entry.assets.activatedIcon;
+            break;
+        case "GearType":
+            avatarUri = entry.icon;
             break;
     }
 </script>

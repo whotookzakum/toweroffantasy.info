@@ -93,5 +93,11 @@ query FullWeapon($id: String!) {
                 # timestamp
             }
         }
+        # fashion {
+        #     id
+        #     name
+        #     icon
+        #     description
+        # }
     }
 }
