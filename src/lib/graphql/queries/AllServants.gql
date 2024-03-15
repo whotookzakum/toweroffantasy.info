@@ -1,0 +1,5 @@
+query AllServants($lang: String) {
+    servants(lang: $lang) {
+        ...servantEntry
+    }
+}

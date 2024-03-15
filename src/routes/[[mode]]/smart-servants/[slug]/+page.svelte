@@ -1,0 +1,55 @@
+<script>
+    import GenericHeader from "$lib/components/GenericHeader.svelte";
+    import SvelteMarkdown from "svelte-markdown";
+    import Meta from "$components/Meta.svelte";
+    import Ad from "$components/Ad/Ad.svelte";
+    import Skill from "./Skill.svelte";
+
+    export let data;
+    const { servant } = data;
+</script>
+
+<Meta
+    title="{servant.name} | Tower of Fantasy Index"
+    description="All about the smart servant {servant.name}, such as advancements ."
+    image={servant.icon}
+/>
+
+<Ad unit="LB-relic1" />
+
+<GenericHeader
+    h1={servant.name}
+    icon={servant.assets.activatedIcon}
+    rarity={servant.rarity}
+    desc={servant.description}
+    eleColor={servant.element}
+/>
+
+<h2 id="advancements">Advancements</h2>
+<table class="borders bg-alternate" style="margin-top: 1rem">
+    <thead>
+        <tr>
+            <th>Stars</th>
+            <th>Effect</th>
+        </tr>
+    </thead>
+    <tbody>
+        {#each [servant.properties, ...servant.advancements] as advancement, index}
+            <tr>
+                <td
+                    style="color: var(--tier-s); font-weight: bold; font-size: var(--step-1);"
+                    >{index} ★</td
+                >
+                <td>
+                    <SvelteMarkdown source={advancement} />
+                </td>
+            </tr>
+        {/each}
+    </tbody>
+</table>
+
+<ul class="weapon-attacks grid g-100" style="padding: 0;">
+    {#each servant.skills as data}
+        <Skill {data} />
+    {/each}
+</ul>

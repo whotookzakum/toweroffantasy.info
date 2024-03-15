@@ -1,4 +1,4 @@
-fragment outfitEntry on Outfit {
+fragment outfitEntry on OutfitType {
     id
     name
     icon

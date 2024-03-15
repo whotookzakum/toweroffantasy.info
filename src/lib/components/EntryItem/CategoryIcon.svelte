@@ -10,6 +10,7 @@
 
     const URI_map = {
         // Weapon types
+        Attack: "/Hotta/Content/Resources/UI/wuqi/icon_qianggong",
         DPS: "/Hotta/Content/Resources/UI/wuqi/icon_qianggong",
         Tank: "/Hotta/Content/Resources/UI/wuqi/icon_fangyu",
         SUP: "/Hotta/Content/Resources/UI/wuqi/icon_zengyi",

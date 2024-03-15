@@ -1,64 +1,34 @@
-type Achievement {
-  awards: [Award!]!
+type AchievementType {
+  amount: Int!
   description: String!
   icon: String!
   id: String!
   name: String!
+  rewards: [RewardType!]!
   tags: [String!]!
 }
 
-type AdvancMultipliers {
+type AdvancMultipliersType {
   coefficient: Float!
   statId: String!
 }
 
-type Assets {
-  activeImitation: String!
-  advanceGrayPainting: String!
-  advancePainting: String!
-  avatar: String!
-  backPhoto: String!
-  characterArtwork: String!
-  descPainting: String!
-  grayPainting: String!
-  inactiveImitation: String!
-  lotteryCardImage: String!
-  matrixPainting: String!
-  namePicture: String!
-  painting: String!
-  rarityIcon: String!
-  thumbPainting: String!
-  titlePicture: String!
-  weaponShowPicture: String!
-}
-
-type Awakening {
+type AwakeningType {
   description: String
   icon: String
   name: String
   need: Int
 }
 
-type Award {
-  amount: Int!
-  description: String!
-  icon: String!
-  matId: String!
-  name: String!
-  rarity: Int
-  type: String
-}
-
-type Banner {
+type BannerType {
   bannerNumber: Int!
   category: String
   detailsLink: String!
   element: String
-  endDate: String!
+  endDate: DateTime!
   isCollab: Boolean!
   isFinalBanner: Boolean!
   isLimitedBannerOnly: Boolean!
-  isReleased: Boolean!
   isRerun: Boolean!
   matrixId: String
   noWeapon: Boolean!
@@ -66,28 +36,36 @@ type Banner {
   simulacrumIcon: String
   simulacrumId: String
   simulacrumName: String
-  startDate: String!
+  startDate: DateTime!
   weaponIcon: String
   weaponId: String
 }
 
-type BaseStat {
+type BaseStatType {
   isTag: Boolean!
-  modifierOP: String!
+  modifierOp: String!
   propName: String!
   propValue: Float!
 }
 
-type BaseStats {
-  icon: String!
+type BaseStatsType {
+  icon: String
   id: String!
   name: String!
   upgradeProp: Float!
   value: Float!
 }
 
-type Fashion {
-  assets: FashionAssets!
+"""Date with time (isoformat)"""
+scalar DateTime
+
+type FashionAssetsType {
+  grayPainting: String!
+  painting: String!
+}
+
+type FashionType {
+  assets: FashionAssetsType!
   description: String!
   id: String!
   name: String!
@@ -97,58 +75,53 @@ type Fashion {
   weaponId: String!
 }
 
-type FashionAssets {
-  grayPainting: String!
-  painting: String!
-}
-
-type Food {
+type FoodType {
   buff: String!
   categories: [String!]!
   description: String!
   effect: String
-  icon: String!
+  icon: String
   id: String!
-  ingredients: [Ingredient!]!
+  ingredients: [IngredientType!]!
   name: String!
   rarity: Int!
   stars: Int!
 }
 
-type Gear {
-  baseStat: [BaseStat!]!
+type GearType {
+  baseStat: [BaseStatType!]!
   description: String!
   icon: String!
   id: String!
   name: String!
   rarity: Int!
   source: String!
-  statPool: [StatPool!]!
+  statPool: [StatPoolType!]!
   type: String!
 }
 
-type GuideBookItem {
+type GuideBookItemType {
   description: String!
   icon: String!
   title: String!
 }
 
-type Guidebook {
+type GuideBookType {
   icon: String!
   id: String!
-  items: [GuideBookItem!]!
+  items: [GuideBookItemType!]!
   menuId: String!
   menuType: String!
   name: String!
 }
 
-type Ingredient {
-  matID: Item!
-  max: String!
-  min: String!
+type IngredientType {
+  matID: ItemType!
+  max: Int!
+  min: Int!
 }
 
-type Item {
+type ItemType {
   description: String
   icon: String
   id: String!
@@ -157,68 +130,63 @@ type Item {
   type: String!
 }
 
-type LevelUpgrade {
-  mats: [UpgradeMaterial!]!
+type LevelUpgradeType {
+  mats: [UpgradeMaterialType!]!
   requiredExp: Int!
 }
 
-type Matrice {
-  assets: MatrixAssets!
-  banners: [Banner!]!
-  description: String!
-  id: String!
-  meta: MatrixMeta!
-  name: String!
-  rarity: Int!
-  sets: [MatriceSet!]!
-  simulacrumId: String
-  version: String!
-}
-
-type MatriceSet {
-  description: String
-  need: Int
-}
-
-type MatrixAssets {
+type MatrixAssetType {
   characterArtwork: String
-  icon: String!
-  iconLarge: String!
+  icon: String
+  iconLarge: String
 }
 
-type MatrixMeta {
+type MatrixMetaType {
   recommendedWeapons: [String!]!
 }
 
-type MetaData {
+type MatrixSetType {
+  description: String!
+  need: Int!
+}
+
+type MatrixType {
+  assets: MatrixAssetType!
+  banners: [BannerType!]!
+  description: String!
+  id: String!
+  meta: MatrixMetaType!
+  name: String!
+  rarity: Int!
+  sets: [MatrixSetType!]!
+  simulacrumId: String
+  version: String!
+  weaponId: String
+}
+
+type MetaDataType {
   analyticVideoId: String
-  lastUpdated: MetaLastUpdated!
+  lastUpdated: MetaLastUpdatedType!
   rating: [Float!]!
-  recommendedMatrices: [RecoMatrix!]!
+  recommendedMatrices: [RecoMatrixType!]!
   recommendedPairings: [String!]!
 }
 
-type MetaLastUpdated {
+type MetaLastUpdatedType {
   timestamp: Int!
   username: String!
 }
 
-type Mount {
-  assets: MountAsset!
-  description: String!
+interface ModelBaseType {
   id: String!
-  name: String
-  rarity: Int!
-  unlockItems: [UnlockItem!]!
-  version: String!
 }
 
-type MountAsset {
-  icon: String!
-  showImage: String!
+type MountAssetType {
+  icon: String
+  showImage: String
 }
 
-type MountPart {
+type MountPartType {
   description: String!
   icon: String!
   id: String!
@@ -227,9 +195,19 @@ type MountPart {
   type: String!
 }
 
-type Outfit {
+type MountType {
+  assets: MountAssetType!
+  description: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  unlockItems: [UnlockItemType!]!
+  version: String!
+}
+
+type OutfitType {
   description: String
-  icon: String!
+  icon: String
   id: String!
   name: String
   source: String
@@ -237,44 +215,44 @@ type Outfit {
 }
 
 type Query {
-  achievement(id: String!, lang: String! = "en"): Achievement!
-  achievements(lang: String! = "en"): [Achievement!]!
-  banners(includeUnreleased: Boolean! = false): [Banner!]!
-  food(id: String!, lang: String! = "en"): Food!
-  foods(lang: String! = "en"): [Food!]!
-  gear(id: String!, lang: String! = "en"): Gear!
-  gears(lang: String! = "en"): [Gear!]!
-  guidebook(id: String!, lang: String! = "en"): Guidebook!
-  guidebooks(lang: String! = "en"): [Guidebook!]!
-  item(id: String!, lang: String! = "en"): Item!
-  items(lang: String! = "en"): [Item!]!
-  matrices(includeUnreleased: Boolean! = false, lang: String! = "en"): [Matrice!]!
-  matrix(id: String!, lang: String! = "en"): Matrice!
-  mount(id: String!, lang: String! = "en"): Mount!
-  mounts(lang: String! = "en"): [Mount!]!
-  outfit(id: String!, lang: String! = "en"): Outfit!
-  outfits(lang: String! = "en"): [Outfit!]!
-  relic(id: String!, lang: String! = "en"): Relic!
-  relics(lang: String! = "en"): [Relic!]!
-  servant(id: String!, lang: String! = "en"): SmartServant!
-  servants(lang: String! = "en"): [SmartServant!]!
-  simulacra(includeUnreleased: Boolean! = false, lang: String! = "en"): [Simulacra!]!
-  simulacra_v2(includeUnreleased: Boolean! = false, lang: String! = "en"): [SimulacraV2!]!
-  simulacrum(id: String!, lang: String! = "en"): Simulacra!
-  simulacrum_v2(id: String!, lang: String! = "en"): SimulacraV2!
-  weapon(id: String!, lang: String! = "en"): Weapon!
-  weapons(includeUnreleased: Boolean! = false, lang: String! = "en"): [Weapon!]!
+  achievement(id: String!, lang: String! = "en", version: String! = "global"): AchievementType!
+  achievements(filter: String! = "", lang: String! = "en", version: String! = "global"): [AchievementType!]!
+  banners(filter: String! = "", id: String = null, version: String! = "global"): [BannerType!]!
+  food(id: String!, lang: String! = "en", version: String! = "global"): FoodType!
+  foods(filter: String! = "", lang: String! = "en", version: String! = "global"): [FoodType!]!
+  gear(id: String!, lang: String! = "en", version: String! = "global"): GearType!
+  gears(filter: String! = "", lang: String! = "en", version: String! = "global"): [GearType!]!
+  guidebook(id: String!, lang: String! = "en", version: String! = "global"): GuideBookType!
+  guidebooks(filter: String! = "", lang: String! = "en", version: String! = "global"): [GuideBookType!]!
+  item(id: String!, lang: String! = "en", version: String! = "global"): ItemType!
+  items(filter: String! = "", lang: String! = "en", version: String! = "global"): [ItemType!]!
+  matrices(filter: String! = "", lang: String! = "en", version: String! = "global"): [MatrixType!]!
+  matrix(id: String!, lang: String! = "en", version: String! = "global"): MatrixType!
+  mount(id: String!, lang: String! = "en", version: String! = "global"): MountType!
+  mounts(filter: String! = "", lang: String! = "en", version: String! = "global"): [MountType!]!
+  outfit(id: String!, lang: String! = "en", version: String! = "global"): OutfitType!
+  outfits(filter: String! = "", lang: String! = "en", version: String! = "global"): [OutfitType!]!
+  relic(id: String!, lang: String! = "en", version: String! = "global"): RelicType!
+  relics(filter: String! = "", lang: String! = "en", version: String! = "global"): [RelicType!]!
+  servant(id: String!, lang: String! = "en", version: String! = "global"): SmartServantType!
+  servants(filter: String! = "", lang: String! = "en", version: String! = "global"): [SmartServantType!]!
+  simulacra(filter: String! = "", lang: String! = "en", version: String! = "global"): [SimulacraType!]!
+  simulacraV2(filter: String! = "", lang: String! = "en", version: String! = "global"): [SimulacraV2Type!]!
+  simulacrum(id: String!, lang: String! = "en", version: String! = "global"): SimulacraType!
+  simulacrumV2(id: String!, lang: String! = "en", version: String! = "global"): SimulacraV2Type!
+  weapon(id: String!, lang: String! = "en", version: String! = "global"): WeaponType!
+  weapons(filter: String! = "", lang: String! = "en", version: String! = "global"): [WeaponType!]!
 }
 
-type RecoMatrix {
+type RecoMatrixType {
   id: String!
   pieces: Int!
 }
 
-type Relic {
+type RelicType {
   advancements: [String!]!
   description: String
-  icon: String!
+  icon: String
   id: String!
   name: String!
   rarity: Int!
@@ -283,24 +261,29 @@ type Relic {
   version: String!
 }
 
-type ServantAsset {
-  activatedIcon: String!
-  itemIcon: String!
-  petIcon: String!
-}
-
-type ServantSkill {
+type RewardType {
+  amount: Int!
   description: String!
   icon: String!
+  matId: String!
+  name: String!
+  rarity: Int
+  type: String
+}
+
+type ServantAssetType {
+  activatedIcon: String
+  itemIcon: String
+  petIcon: String
+}
+
+type ServantSkillType {
+  description: String!
+  icon: String
   name: String!
 }
 
-type ServantUpgrade {
-  exp: Int!
-  material: ServantUpgradeMaterial!
-}
-
-type ServantUpgradeMaterial {
+type ServantUpgradeMaterialType {
   description: String!
   icon: String!
   id: String!
@@ -309,24 +292,49 @@ type ServantUpgradeMaterial {
   type: String!
 }
 
-type ShatterOrCharge {
+type ServantUpgradeType {
+  exp: Int!
+  material: ServantUpgradeMaterialType!
+}
+
+type ShatterOrChargeType {
   tier: String!
   value: Float!
 }
 
-type Simulacra {
+type SimulacraAssetsType {
+  activeImitation: String
+  advanceGrayPainting: String
+  advancePainting: String
+  avatar: String
+  backPhoto: String
+  characterArtwork: String
+  descPainting: String
+  grayPainting: String
+  inactiveImitation: String
+  lotteryCardImage: String
+  matrixPainting: String
+  namePicture: String
+  painting: String
+  rarityIcon: String
+  thumbPainting: String
+  titlePicture: String
+  weaponShowPicture: String
+}
+
+type SimulacraType implements ModelBaseType {
   advanceId: String
   affiliation: String
-  assetsA0: Assets!
-  assetsA3: Assets
+  assetsA0: SimulacraAssetsType!
+  assetsA3: SimulacraAssetsType
   avatarId: String!
-  awakening: [Awakening!]!
-  banners: [Banner!]!
+  awakening: [AwakeningType!]!
+  banners: [BannerType!]!
   birthday: String
   dislikedGiftTypes: [String!]!
-  fashion: [Fashion!]!
+  fashion: [FashionType!]!
   gender: String
-  guidebook: [GuideBookItem!]!
+  guidebook: [GuideBookItemType!]!
   height: String
   homeTown: String
   id: String!
@@ -338,74 +346,75 @@ type Simulacra {
   rarity: Int!
   unlockInfo: String!
   version: String!
-  voicing: VoiceActors!
+  voicing: VoiceActorsType!
   weaponId: String
 }
 
-type SimulacraV2 {
+type SimulacraV2Type implements ModelBaseType {
   advanceId: String
   affiliation: String
-  assetsA0: Assets!
-  assetsA3: Assets
+  assetsA0: SimulacraAssetsType!
+  assetsA3: SimulacraAssetsType
   avatarId: String!
-  awakening: [Awakening!]!
-  banners: [Banner!]!
+  awakening: [AwakeningType!]!
+  banners: [BannerType!]!
   birthday: String
   dislikedGiftTypes: [String!]!
-  fashion: [Fashion!]!
+  fashion: [FashionType!]!
   gender: String
-  guidebook: [GuideBookItem!]!
+  guidebook: [GuideBookItemType!]!
   height: String
   homeTown: String
   id: String!
   isReleased: Boolean!
   likedGiftTypes: [String!]!
   limited: Boolean!
-  matrix: Matrice
+  matrix: MatrixType
   matrixId: String
   name: String!
   rarity: Int!
   unlockInfo: String!
   version: String!
-  voicing: VoiceActors!
-  weapon: Weapon
+  voicing: VoiceActorsType!
+  weapon: WeaponType
   weaponId: String
 }
 
-type Skill {
+type SkillType {
   description: String
   icon: String
+  id: String
   name: String
   operations: [String!]!
   tags: [String!]!
   values: [[Float!]!]!
 }
 
-type SmartServant {
+type SmartServantType {
   advancements: [String!]!
-  assets: ServantAsset!
+  assets: ServantAssetType!
   description: String!
   element: String!
   id: String!
   name: String!
-  propreties: String!
+  properties: String!
   rarity: Int!
-  skills: [ServantSkill!]!
+  skills: [ServantSkillType!]!
   type: String!
-  upgradeItems: [ServantUpgrade!]!
+  upgradeItems: [ServantUpgradeType!]!
 }
 
-type StatPool {
+type StatPoolType {
   propName: String!
   weitghtValue: Float!
 }
 
-type UnlockItem {
+type UnlockItemType {
   amount: Int!
-  item: MountPart!
+  item: MountPartType!
 }
 
-type UpgradeMaterial {
+type UpgradeMaterialType {
   amount: Int
   description: String
   icon: String
@@ -415,7 +424,7 @@ type UpgradeMaterial {
   type: String
 }
 
-type VoiceActors {
+type VoiceActorsType {
   cn: String
   en: String
   jp: String
@@ -423,57 +432,57 @@ type VoiceActors {
   pt: String
 }
 
-type Weapon {
-  advanceId: String
-  assets: WeaponAssets!
-  banners: [Banner!]!
-  category: String!
-  charge: ShatterOrCharge!
-  description: String!
-  element: String!
-  elementEffect: WeaponEffect
-  id: String!
-  limited: Boolean!
-  meta: MetaData!
-  name: String!
-  rarity: Int!
-  shatter: ShatterOrCharge!
-  simulacrumId: String
-  upgradeMats: WeaponMats
-  version: String!
-  weaponAdvancements: [WeaponAdvancement!]!
-  weaponAttacks: WeaponAttacks!
-  weaponEffects: [WeaponEffect!]!
-  weaponStats: [BaseStats!]!
-}
-
-type WeaponAdvancement {
-  charge: ShatterOrCharge!
+type WeaponAdvancementType {
+  charge: ShatterOrChargeType!
   description: String
-  multiplier: [AdvancMultipliers!]!
+  multiplier: [AdvancMultipliersType!]!
   need: String
-  shatter: ShatterOrCharge!
+  shatter: ShatterOrChargeType!
 }
 
-type WeaponAssets {
+type WeaponAssetsType {
   characterArtwork: String
   icon: String
   weaponIconForMatrix: String
 }
 
-type WeaponAttacks {
-  discharge: [Skill!]!
-  dodge: [Skill!]!
-  normals: [Skill!]!
-  skill: [Skill!]!
+type WeaponAttacksType {
+  discharge: [SkillType!]!
+  dodge: [SkillType!]!
+  normals: [SkillType!]!
+  skill: [SkillType!]!
 }
 
-type WeaponEffect {
+type WeaponEffectType {
   description: String!
   title: String!
 }
 
-type WeaponMats {
+type WeaponMatsType {
   id: String!
-  levels: [LevelUpgrade!]!
+  levels: [LevelUpgradeType!]!
+}
+
+type WeaponType {
+  advanceId: String
+  assets: WeaponAssetsType!
+  banners: [BannerType!]!
+  category: String!
+  charge: ShatterOrChargeType!
+  description: String!
+  element: String!
+  elementEffect: WeaponEffectType
+  id: String!
+  limited: Boolean!
+  meta: MetaDataType!
+  name: String!
+  rarity: Int!
+  shatter: ShatterOrChargeType!
+  simulacrumId: String
+  upgradeMats: WeaponMatsType
+  version: String!
+  weaponAdvancements: [WeaponAdvancementType!]!
+  weaponAttacks: WeaponAttacksType!
+  weaponEffects: [WeaponEffectType!]!
+  weaponStats: [BaseStatsType!]!
 }

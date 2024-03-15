@@ -1,4 +1,4 @@
-fragment mountEntry on Mount {
+fragment mountEntry on MountType {
     id
     name
     assets {

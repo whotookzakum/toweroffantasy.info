@@ -1,4 +1,4 @@
-fragment weaponEntry on Weapon {
+fragment weaponEntry on WeaponType {
     rarity
     name
     id

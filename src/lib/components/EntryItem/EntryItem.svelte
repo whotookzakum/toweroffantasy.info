@@ -17,7 +17,8 @@
         Weapon: "weapons",
         Mount: "mounts",
         Relic: "relics",
-        Outfit: "cosmetics"
+        Outfit: "cosmetics",
+        SmartServant: "smart-servants"
     };
 
     let weapon;
@@ -43,6 +44,9 @@
         case "Relic":
             avatarUri = entry.icon;
             break;
+        case "SmartServant":
+            avatarUri = entry.assets.activatedIcon;
+            break;
     }
 </script>
 
@@ -66,9 +70,9 @@
         {#if matrixPieces}
             <span class="matrix-pieces">{matrixPieces} pieces</span>
         {/if}
-        {#if weapon}
-            <CategoryIcon type={weapon.element} width="30px" />
-            <CategoryIcon type={weapon.category} width="30px" />
+        {#if weapon || entry?.__typename === "SmartServant"}
+            <CategoryIcon type={weapon?.element || entry.element} width="30px" />
+            <CategoryIcon type={weapon?.category || entry.type} width="30px" />
         {/if}
         {#if entry.rarity}
             <RarityIcon rarity={entry.rarity} style="margin-left: auto" />

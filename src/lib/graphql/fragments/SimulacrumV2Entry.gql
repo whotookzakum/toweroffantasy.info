@@ -1,4 +1,4 @@
-fragment simulacrum_v2Entry on SimulacraV2 {
+fragment simulacrum_v2Entry on SimulacraV2Type {
     name
     rarity
     id

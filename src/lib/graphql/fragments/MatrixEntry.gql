@@ -1,4 +1,4 @@
-fragment matrixEntry on Matrice {
+fragment matrixEntry on MatrixType {
     id
     rarity
     name

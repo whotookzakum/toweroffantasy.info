@@ -1,4 +1,4 @@
-fragment foodEntry on Food {
+fragment foodEntry on FoodType {
     # Include everything
     id
     buff

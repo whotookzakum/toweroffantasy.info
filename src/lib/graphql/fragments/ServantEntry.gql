@@ -1,0 +1,11 @@
+fragment servantEntry on SmartServantType {
+    id
+    name
+    assets {
+        activatedIcon
+    }
+    rarity
+    type
+    element
+    # version
+}

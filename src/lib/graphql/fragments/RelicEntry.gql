@@ -1,4 +1,4 @@
-fragment relicEntry on Relic {
+fragment relicEntry on RelicType {
     id
     name
     icon

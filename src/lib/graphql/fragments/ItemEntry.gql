@@ -1,4 +1,4 @@
-fragment itemEntry on Item {
+fragment itemEntry on ItemType {
     # Include everything
     id
     name

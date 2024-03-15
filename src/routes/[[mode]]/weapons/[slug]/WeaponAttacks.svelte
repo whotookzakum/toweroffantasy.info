@@ -23,7 +23,7 @@
         groupName="skills-category"
         name="skillsCategory"
         data={[
-            { label: "Normal", value: "normals" }, 
+            { label: "Normal", value: "normals" },
             { label: "Dodge", value: "dodge" },
             { label: "Skill", value: "skill" },
             { label: "Discharge", value: "discharge" },
@@ -37,7 +37,7 @@
 
     <ul class="weapon-attacks grid g-100" style="padding: 0;">
         {#each weaponAttacks[attackCategory] as data}
-        <Skill {data} />
-    {/each}
+            <Skill {data} />
+        {/each}
     </ul>
 {/if}

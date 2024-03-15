@@ -1,4 +1,4 @@
-fragment guidebookEntry on Guidebook {
+fragment guidebookEntry on GuidebookType {
     name
     menuType
     menuId
