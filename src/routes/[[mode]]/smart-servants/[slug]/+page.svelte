@@ -5,6 +5,7 @@
     import Ad from "$components/Ad/Ad.svelte";
     import Skill from "./Skill.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
+    import ItemIcon from "$components/ItemIcon.svelte";
 
     export let data;
     const { servant } = data;
@@ -67,6 +68,20 @@
         </ul>
 
         <h2 id="gifts">Gifts</h2>
-        
+        <div>
+            <ul class="flex flex-wrap g-100">
+                {#each servant.upgradeItems as item}
+                    <li class="flex">
+                        <ItemIcon item={{ ...item.material, amount: `+${item.exp}` }} />
+                    </li>
+                {/each}
+            </ul>
+        </div>
     </div>
 </article>
+
+<style lang="scss">
+    ul {
+        padding: 0;
+    }
+</style>

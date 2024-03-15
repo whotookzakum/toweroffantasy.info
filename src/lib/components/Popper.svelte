@@ -7,10 +7,11 @@
     export let hideArrow = false;
     export let placement = "top";
     export let offset = { name: "offset", options: { offset: [0, 8] } };
-
+    export let strategy = "fixed";
+    
     const [popperRef, popperContent] = createPopperActions({
         placement,
-        strategy: "fixed",
+        strategy,
     });
 
     const extraOpts = {
@@ -21,7 +22,7 @@
     let focused = false;
 
     function setFocused(value) {
-        focused = value
+        focused = value;
     }
 
     function toggleFocused() {
@@ -31,14 +32,18 @@
 
 <div
     use:popperRef
-    on:mouseenter={() => hovering = true}
-    on:mouseleave={() => hovering = false}
+    on:mouseenter={() => (hovering = true)}
+    on:mouseleave={() => (hovering = false)}
     role="tooltip"
 >
     <slot {setFocused} {toggleFocused} />
     {#if hovering || focused}
-        <div use:popperContent={extraOpts} style="z-index: 3">
-            <div class="tooltip"> <!-- in:fly={{ y: 12, duration: 200 }} -->
+        <div
+            use:popperContent={extraOpts}
+            style="z-index: 3; position: relative !important;"
+        >
+            <div class="tooltip">
+                <!-- in:fly={{ y: 12, duration: 200 }} -->
                 <slot name="tooltip" />
                 {#if !hideArrow}
                     <div class="arrow" data-popper-arrow />

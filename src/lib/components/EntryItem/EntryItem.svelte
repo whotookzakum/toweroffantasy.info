@@ -70,7 +70,7 @@
         {#if matrixPieces}
             <span class="matrix-pieces">{matrixPieces} pieces</span>
         {/if}
-        {#if weapon || entry?.__typename === "SmartServant"}
+        {#if weapon || entry?.__typename === "SmartServantType"}
             <CategoryIcon type={weapon?.element || entry.element} width="30px" />
             <CategoryIcon type={weapon?.category || entry.type} width="30px" />
         {/if}

@@ -157,7 +157,7 @@ type MatrixType {
   rarity: Int!
   sets: [MatrixSetType!]!
   simulacrumId: String
-  version: String!
+  version: String
   weaponId: String
 }
 
@@ -170,7 +170,7 @@ type MetaDataType {
 }
 
 type MetaLastUpdatedType {
-  timestamp: Int!
+  timestamp: String!
   username: String!
 }
 

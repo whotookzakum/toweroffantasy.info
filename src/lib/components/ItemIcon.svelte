@@ -6,10 +6,11 @@
     export let imgSize = 96;
     export let wrapperSize = "78px";
     export let isIngredient = false;
+    export let strategy = "absolute";
 </script>
 
 {#if isIngredient}
-    <Popper let:toggleFocused>
+    <Popper let:toggleFocused {strategy}>
         <button
             class="item-icon-wrapper grid"
             style:background="var(--rarity-{item.rarity})"
@@ -31,7 +32,7 @@
         <p slot="tooltip">{item.description}</p>
     </Popper>
 {:else if item.name}
-    <Popper>
+    <Popper {strategy}>
         <div
             class="item-icon-wrapper grid"
             style:background="var(--rarity-{item.rarity})"
