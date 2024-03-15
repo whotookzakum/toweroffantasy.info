@@ -130,8 +130,8 @@
                 href: "#skills"
             },
             {
-                name: "Gifts",
-                href: "#gifts"
+                name: "Favors",
+                href: "#favors"
             },
         );
     }

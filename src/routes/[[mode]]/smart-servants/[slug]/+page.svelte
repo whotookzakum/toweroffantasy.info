@@ -7,6 +7,8 @@
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import ItemIcon from "$components/ItemIcon.svelte";
 
+    // TODO: skill modules: https://toweroffantasy.fandom.com/wiki/Smart_Servant#Skill_Modules
+
     export let data;
     const { servant } = data;
 </script>
@@ -67,7 +69,7 @@
             {/each}
         </ul>
 
-        <h2 id="gifts">Gifts</h2>
+        <h2 id="favors">Favors</h2>
         <div>
             <ul class="flex flex-wrap g-100">
                 {#each servant.upgradeItems as item}
