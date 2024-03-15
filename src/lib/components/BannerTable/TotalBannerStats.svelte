@@ -1,10 +1,12 @@
 <script>
+    import { DateTime } from "luxon";
+
     export let banners, timeNow, currentBanners;
 
     const movedToStandard = banners.filter(
         (banner) =>
             banner.isFinalBanner &&
-            timeNow > new Date(banner.endDate + " UTC").getTime(),
+            timeNow > DateTime.fromISO(banner.endDate),
     );
 
     const reruns = banners.filter((banner) => banner.isRerun);
@@ -23,6 +25,10 @@
         </dd>
     </div>
     <div>
+        <dt>Current Banners</dt>
+        <dd>{currentBanners.length}</dd>
+    </div>
+    <div>
         <dt>Moved to standard</dt>
         <dd>{movedToStandard.length}</dd>
     </div>
@@ -38,7 +44,7 @@
             {/each}
         </dd>
     </div>
-    <!-- <div></div> -->
+    
 </dl>
 
 <style lang="scss">
@@ -71,8 +77,8 @@
 
         & > div {
             gap: 0;
-            // flex: 1;
-            flex-basis: clamp(20ch, 25%, 23ch);
+            flex: 1;
+            flex-basis: 20ch;
         }
     }
 

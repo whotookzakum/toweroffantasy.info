@@ -4,6 +4,7 @@
     import TotalBannerStats from "./TotalBannerStats.svelte";
     import BannerTableElement from "./BannerTableElement.svelte";
     import TableFilters from "./TableFilters.svelte";
+    import { DateTime } from "luxon";
 
     export let banners;
     export let style;
@@ -12,7 +13,7 @@
     export let bannerSearchTerm = "";
     let showReruns = true;
     let highlightRows = true;
-    let timeNow = new Date().getTime();
+    let timeNow = DateTime.now();
 
     $: dateOptions = {
         year: "numeric",
@@ -24,11 +25,11 @@
     };
 
     $: currentBanners = banners
-        .filter(
-            (banner) =>
-                new Date(banner.startDate).getTime() < timeNow &&
-                new Date(banner.endDate).getTime() > timeNow,
-        )
+        .filter((banner) => {
+            const start = DateTime.fromISO(banner.startDate);
+            const end = DateTime.fromISO(banner.endDate);
+            return start <= timeNow && end > timeNow;
+        })
         .sort((a, b) => getEarliestBannerNo(b) - getEarliestBannerNo(a));
 
     function getEarliestBannerNo(banner) {

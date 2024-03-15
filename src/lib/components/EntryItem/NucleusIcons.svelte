@@ -1,4 +1,6 @@
 <script>
+    import { DateTime } from "luxon";
+
     export let entry;
     let nucleusIcons = [];
 
@@ -7,8 +9,8 @@
         entry.banners?.some((banner) => banner.isFinalBanner) &&
         entry.banners?.every(
             (banner) =>
-                new Date(banner.endDate + " UTC").getTime() <
-                new Date().getTime(),
+                DateTime.fromISO(banner.endDate) <
+                DateTime.now().setZone("UTC"),
         );
 
     switch (entry.__typename) {

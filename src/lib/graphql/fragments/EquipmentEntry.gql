@@ -1,0 +1,9 @@
+fragment equipmentEntry on GearType {
+    # Include everything
+    id
+    name
+    icon
+    description
+    type
+    rarity
+}

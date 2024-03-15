@@ -4,6 +4,7 @@
     import CategoryIcon from "$components/EntryItem/CategoryIcon.svelte";
     import Tag from "../Tag.svelte";
     import Popper from "$components/Popper.svelte";
+    import { DateTime } from "luxon";
 
     export let banners,
         highlightRows,
@@ -25,19 +26,16 @@
             return true;
         });
 
-    const getDurationInDays = (start, end) => {
-        return Math.ceil(
-            Math.abs(new Date(start).getTime() - new Date(end).getTime()) /
-                (1000 * 3600 * 24),
-        );
+    const getDuration = (startDate, endDate, outputType, round) => {
+        const start = DateTime.fromISO(startDate).set({ hour: 0, minute: 0 });
+        const end = DateTime.fromISO(endDate).set({ hour: 0, minute: 0 });
+        const diff = end.diff(start, outputType).toObject();
+        return round ? Math.round(diff[outputType]) : diff[outputType];
     };
 
-    function getWeeksSinceLaunch(end) {
-        const start = $page.url.pathname.includes("/cn")
-            ? "16 Dec 2021"
-            : "10 Aug 2022";
-        return Math.round(getDurationInDays(start, end) / 7);
-    }
+    $: launchDate = $page.url.pathname.includes("/cn")
+            ? DateTime.fromISO("2021-12-16T08:00:00+08:00")
+            : DateTime.fromISO("2022-08-11T00:00:00-00:00")
 </script>
 
 <div class="table-wrapper">
@@ -91,24 +89,20 @@
                         </div>
                     </td>
                     <td>
-                        {new Date(banner.startDate).toLocaleString(
-                            $userLocale,
-                            dateOptions,
-                        )}
+                        {DateTime.fromISO(banner.startDate)
+                            .setLocale($userLocale)
+                            .toLocaleString(dateOptions)}
                     </td>
                     <td>
-                        {new Date(banner.endDate).toLocaleString(
-                            $userLocale,
-                            dateOptions,
-                        )}
+                        {DateTime.fromISO(banner.endDate)
+                            .setLocale($userLocale)
+                            .toLocaleString(dateOptions)}
                     </td>
                     <td>
-                        {getDurationInDays(banner.startDate, banner.endDate)} days
+                        {getDuration(banner.startDate, banner.endDate, "days")} days
                     </td>
                     <td>
-                        {getWeeksSinceLaunch(
-                            banner.startDate,
-                        )}~{getWeeksSinceLaunch(banner.endDate)}
+                        {getDuration(launchDate, banner.startDate, "weeks", true)}~{getDuration(launchDate, banner.endDate, "weeks", true)}
                     </td>
                     <td style="line-height: 2;">
                         {#if banner.isFinalBanner}

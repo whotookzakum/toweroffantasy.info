@@ -44,7 +44,7 @@
     <div class="article-content">
         <Ad unit="ArticleLB-wep1" />
 
-        <WeaponHeader {weapon} />
+        <!-- <WeaponHeader {weapon} /> -->
         <div class="mobile-only flex flex-wrap">
             <WeaponLevelSlider />
             <WeaponStarSlider />

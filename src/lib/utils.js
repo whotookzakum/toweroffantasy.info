@@ -1,3 +1,5 @@
+import { DateTime } from "luxon";
+
 // Filters by whether the entry is CURRENTLY in standard banner. For example, Alyss was moved to standard banner, despite having limited banners in the past, so she will appear when "standard" is selected. For a list of all characters that appeared in a limited banner, users should check the Banners page.
 
 const nonStandardMatrices = ["matrix_ssr25", "matrix_ssr26", "matrix_n2", "matrix_n1"]
@@ -7,11 +9,11 @@ export function getBannersMatch(selectedBanners, entry) {
     const hasBanners = entry.banners?.length > 0;
     const movedToStandardBanner =
         entry.banners?.some((banner) => banner.isFinalBanner) &&
-        entry.banners?.every(
-            (banner) =>
-                new Date(banner.endDate + " UTC").getTime() <
-                new Date().getTime(),
-        );
+        entry.banners?.every((banner) => {
+            const end = DateTime.fromISO(banner.endDate)
+            const now = DateTime.now()
+            return end < now
+        });
 
     let passesLimitedCheck = true
     let passesStandardCheck = true

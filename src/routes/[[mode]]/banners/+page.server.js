@@ -9,8 +9,8 @@ export const load = async (event) => {
 
     const banners = bannersRes.data.banners.map(banner => ({
         ...banner,
-        endDate: banner.endDate + " UTC",
-        startDate: banner.startDate + " UTC",
+        endDate: banner.endDate,
+        startDate: banner.startDate,
         totalBanners: bannersRes.data.banners.filter(
             (b) => b.simulacrumId === banner.simulacrumId,
         ).length,

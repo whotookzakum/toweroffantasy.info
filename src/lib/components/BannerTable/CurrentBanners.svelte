@@ -1,7 +1,8 @@
 <script>
     import { userLocale } from "$lib/stores";
-    import EntryItem from "../EntryItem/EntryItem.svelte"
+    import EntryItem from "../EntryItem/EntryItem.svelte";
     import Icon from "@iconify/svelte";
+    import { DateTime } from "luxon";
 
     export let currentBanners, timeNow, dateOptions;
 </script>
@@ -11,7 +12,7 @@
         <h3 style="font-size: var(--step-2); margin-block: 1rem 0.5rem">
             Current Banners
         </h3>
-        <button on:click={() => (timeNow = new Date().getTime())}>
+        <button on:click={() => (timeNow = DateTime.now())}>
             <span class="visually-hidden">Update time</span>
             <Icon icon="mdi:refresh" />
         </button>
@@ -19,7 +20,7 @@
 
     <small style="color: var(--text2); display: block; margin-bottom: 0.5rem;">
         Last updated: <time>
-            {new Date(timeNow).toLocaleDateString($userLocale, {
+            {timeNow.setLocale($userLocale).toLocaleString({
                 ...dateOptions,
                 second: "numeric",
                 timeZoneName: "short",
