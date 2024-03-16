@@ -5,6 +5,7 @@
 
     export let data;
     const { gear } = data;
+    gear.statPool.sort((a, b) => b.weightValue - a.weightValue)
 
     const numberOfRandomStats = {
         "6": 4, // red
@@ -17,7 +18,10 @@
 
     const totalWeight = gear.statPool.reduce((acc, curr) => acc += curr.weightValue, 0)
 
-    gear.statPool.sort((a, b) => b.weightValue - a.weightValue)
+    function getStat(id, key) {
+        const statRanges = gear.props.find(prop => prop.PropId === id)
+        return statRanges[key]
+    }
 </script>
 
 <Meta
@@ -37,7 +41,7 @@
 />
 
 <h2 id="stats">Stats</h2>
-<small>Note: Decimal values are truncated, not rounded.</small>
+<small>Note: Decimal values are truncated, not rounded, so 100.9 will show as 100.</small>
 <div class="grid g-50">
     <h3 style="margin-top: 1rem;">Base Stats</h3>
     <ul class="stats g-100">
@@ -75,9 +79,15 @@
                     class="invert"
                 />
                 <div class="stat-text">
-                    <span class="stat-name">{stat.name} <small>({(stat.weightValue / totalWeight * 100).toFixed(2)}%)</small></span>
+                    <span class="stat-name">
+                        {stat.name}
+                        <small>({(stat.weightValue / totalWeight * 100).toFixed(2)}%)</small>
+                    </span>
                     <b class="stat-value">
-                        ?~?
+                        {getStat(stat.propName, "PropInitValue")}
+                        <small style="color: var(--text-mint)">
+                            +{getStat(stat.propName, "PropMinValue")}~{getStat(stat.propName, "PropMaxValue")}
+                        </small>
                     </b>
                 </div>
             </li>
