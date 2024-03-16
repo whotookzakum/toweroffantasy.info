@@ -56,11 +56,6 @@ type BaseStatsType {
   value: Float!
 }
 
-type FashionType {
-  outfit: OutfitFashionType!
-  weapon: WeaponFashionType!
-}
-
 type FoodType {
   buff: String!
   categories: [String!]!
@@ -81,7 +76,6 @@ type GearType {
   id: String!
   name: String!
   rarity: Int!
-  source: String!
   statPool: [StatPoolType!]!
   type: String!
 }
@@ -197,22 +191,6 @@ type MountType {
   version: String!
 }
 
-type OutfitFashionAssetsType {
-  grayPainting: String!
-  painting: String!
-}
-
-type OutfitFashionType {
-  assets: OutfitFashionAssetsType!
-  description: String!
-  id: String!
-  name: String!
-  rarity: Int!
-  simulacrumId: String!
-  source: String!
-  weaponId: String!
-}
-
 type OutfitType {
   description: String
   icon: String
@@ -242,6 +220,8 @@ type Query {
   outfits(filter: String = null, lang: String! = "en", version: String! = "global"): [OutfitType!]!
   relic(id: String!, lang: String! = "en", version: String! = "global"): RelicType!
   relics(filter: String = null, lang: String! = "en", version: String! = "global"): [RelicType!]!
+  research(id: String!, lang: String! = "en", version: String! = "global"): ResearchType!
+  researchs(filter: String = null, lang: String! = "en", version: String! = "global"): [ResearchType!]!
   servant(id: String!, lang: String! = "en", version: String! = "global"): SmartServantType!
   servants(filter: String = null, lang: String! = "en", version: String! = "global"): [SmartServantType!]!
   simulacra(filter: String = null, lang: String! = "en", version: String! = "global"): [SimulacraType!]!
@@ -269,6 +249,38 @@ type RelicType {
   version: String
 }
 
+type ResearchMatType {
+  amount: Int!
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  type: String!
+}
+
+type ResearchRedoType {
+  canRedo: Boolean!
+  redoAmount: Int!
+}
+
+type ResearchReqType {
+  id: String!
+  stage: Int!
+}
+
+type ResearchType {
+  group: String!
+  id: String!
+  redo: ResearchRedoType!
+  requirements: [ResearchReqType!]!
+  researchMats: [ResearchMatType!]!
+  rewards: [ResearchMatType!]!
+  stage: Int!
+  stageIcon: String!
+  stageInfoIcon: String!
+}
+
 type RewardType {
   amount: Int!
   description: String!
@@ -277,6 +289,21 @@ type RewardType {
   name: String!
   rarity: Int
   type: String
+}
+
+type ServantAdvanceMatType {
+  amount: Int!
+  description: String!
+  icon: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  type: String!
+}
+
+type ServantAdvancementType {
+  description: String!
+  mats: [ServantAdvanceMatType!]!
 }
 
 type ServantAssetType {
@@ -330,6 +357,22 @@ type SimulacraAssetsType {
   weaponShowPicture: String
 }
 
+type SimulacraFashionAssetsType {
+  grayPainting: String!
+  painting: String!
+}
+
+type SimulacraFashionType {
+  assets: SimulacraFashionAssetsType!
+  description: String!
+  id: String!
+  name: String!
+  rarity: Int!
+  simulacrumId: String!
+  source: String!
+  weaponId: String!
+}
+
 type SimulacraType implements ModelBaseType {
   advanceId: String
   affiliation: String
@@ -340,7 +383,7 @@ type SimulacraType implements ModelBaseType {
   banners: [BannerType!]!
   birthday: String
   dislikedGiftTypes: [String!]!
-  fashion: [FashionType!]!
+  fashion: [SimulacraFashionType!]!
   gender: String
   guidebook: [GuideBookItemType!]!
   height: String
@@ -368,7 +411,7 @@ type SimulacraV2Type implements ModelBaseType {
   banners: [BannerType!]!
   birthday: String
   dislikedGiftTypes: [String!]!
-  fashion: [FashionType!]!
+  fashion: [SimulacraFashionType!]!
   gender: String
   guidebook: [GuideBookItemType!]!
   height: String
@@ -399,7 +442,7 @@ type SkillType {
 }
 
 type SmartServantType {
-  advancements: [String!]!
+  advancements: [ServantAdvancementType!]!
   assets: ServantAssetType!
   description: String!
   element: String!
@@ -467,8 +510,8 @@ type WeaponEffectType {
 }
 
 type WeaponFashionType {
-  description: String!
-  icon: String!
+  description: String
+  icon: String
   id: String!
   name: String!
   rarity: Int!
@@ -489,7 +532,7 @@ type WeaponType {
   description: String!
   element: String!
   elementEffect: WeaponEffectType
-  fashion: [FashionType!]!
+  fashion: [WeaponFashionType!]!
   id: String!
   limited: Boolean!
   meta: MetaDataType!

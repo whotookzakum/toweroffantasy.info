@@ -43,20 +43,38 @@
                 <tr>
                     <th>Stars</th>
                     <th>Effect</th>
-                    <th>Shards Required</th>
+                    <th>Requirements</th>
                 </tr>
             </thead>
             <tbody>
-                {#each [servant.properties, ...servant.advancements] as advancement, index}
+                <tr>
+                    <td
+                        style="color: var(--tier-s); font-weight: bold; font-size: var(--step-1);"
+                        >0 ★</td
+                    >
+                    <td>
+                        <SvelteMarkdown source={servant.properties} />
+                    </td>
+                    <td> </td>
+                </tr>
+                {#each servant.advancements as advancement, index}
                     <tr>
                         <td
                             style="color: var(--tier-s); font-weight: bold; font-size: var(--step-1);"
-                            >{index} ★</td
+                            >{index + 1} ★</td
                         >
                         <td>
-                            <SvelteMarkdown source={advancement} />
+                            <SvelteMarkdown source={advancement.description} />
                         </td>
-                        <td></td>
+                        <td>
+                            <ul class="flex flex-wrap g-50">
+                                {#each advancement.mats as item}
+                                    <li class="flex">
+                                        <ItemIcon {item} />
+                                    </li>
+                                {/each}
+                            </ul>
+                        </td>
                     </tr>
                 {/each}
             </tbody>

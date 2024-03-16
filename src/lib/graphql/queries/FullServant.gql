@@ -1,7 +1,18 @@
 query FullServant($id: String!) {
     servant(id: $id) {
         ...servantEntry
-        advancements
+        advancements {
+            description
+            mats {
+                amount
+                description
+                icon
+                id
+                name
+                rarity
+                type
+            }
+        }
         description
         skills {
             description

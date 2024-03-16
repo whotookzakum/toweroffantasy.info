@@ -80,7 +80,7 @@
 
         <Ad unit="ArticleLB-wep2" />
 
-        <WeaponAttacks weaponAttacks={weapon.weaponAttacks} />
+        <WeaponAttacks weaponAttacks={weapon.weaponAttacks} id={weapon.id} />
 
         <UpgradeMats levels={weapon.upgradeMats.levels} />
 

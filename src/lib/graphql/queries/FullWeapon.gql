@@ -90,7 +90,7 @@ query FullWeapon($id: String!) {
             recommendedPairings
             lastUpdated {
                 username
-                # timestamp
+                timestamp
             }
         }
         # fashion {

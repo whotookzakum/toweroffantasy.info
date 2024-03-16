@@ -19,6 +19,7 @@
 
     if (browser) {
         const imgNodes = document.querySelectorAll("img");
+        console.log(imgNodes)
         imgNodes.forEach((img) => {
             let localFilePath = "/Hotta/Content/Resources";
             if (

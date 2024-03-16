@@ -1,9 +1,12 @@
 <script>
     import RadioSliderGroup from "$components/RadioSliderGroup.svelte";
+    import Youtube from "$components/Youtube.svelte";
     import Skill from "./Skill.svelte";
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
+    import gameplayPreviews from "./gameplayPreviews.json";
 
     export let weaponAttacks;
+    export let id;
     let attackCategory = "normals";
 </script>
 
@@ -17,6 +20,9 @@
         Percent values do not change, only flat values will increase alongside
         skill level.
     </p> -->
+    {#if gameplayPreviews[id]}
+        <Youtube source={gameplayPreviews[id]} />
+    {/if}
 
     <RadioSliderGroup
         bind:group={attackCategory}
