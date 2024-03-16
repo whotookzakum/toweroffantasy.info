@@ -10,6 +10,15 @@
     export let rarity = "";
     export let h1id = "";
     export let hideOverflow = false;
+    export let alternateIcons = [];
+
+    let allIcons = [icon, ...alternateIcons];
+    let iconIndex = 0;
+
+    function cycleIcons() {
+        if (iconIndex + 1 < allIcons.length) iconIndex++;
+        else iconIndex = 0;
+    }
 </script>
 
 <div class="generic-header-wrapper flex flex-wrap g-100 box" class:hideOverflow>
@@ -18,7 +27,16 @@
         class:animate-border={eleColor}
         style="--ele-color: var(--element-{eleColor});"
     >
-        <img src={icon} alt="" width="128" height="128" style={imgStyle} />
+        <img
+            src={allIcons[iconIndex]}
+            alt=""
+            width="128"
+            height="128"
+            style={imgStyle}
+        />
+        {#if allIcons.length > 1}
+            <button class="box" on:click={cycleIcons}>Toggle Skin</button>
+        {/if}
         <svg class="circle" xmlns="http://www.w3.org/2000/svg">
             <g>
                 <ellipse
@@ -68,6 +86,36 @@
         margin: 0;
     }
 
+    button {
+        position: absolute;
+        bottom: -0.25rem;
+        justify-self: center;
+        background: var(--bg);
+        z-index: 4;
+        padding: 0.25rem 0.5rem;
+        font-size: var(--step--2);
+        border: 1px solid rgb(255, 255, 255, 0.06);
+        --bs: 0 2px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        transition:
+            all 0.1s,
+            outline 0s;
+
+        &:hover,
+        &:focus-visible {
+            background: var(--surface1);
+            color: var(--accent);
+        }
+
+        &:active {
+            transform: translateY(1px);
+            box-shadow:
+                var(--bs),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1);
+            filter: brightness(0.97);
+        }
+    }
+
     .img-border {
         background-color: hsl(226, 45%, 12%);
         box-shadow: 0 2px 4px var(--bg);
@@ -88,7 +136,6 @@
     .hideOverflow .img-border {
         overflow: hidden;
         border: 4px solid var(--surface3);
-        
 
         .circle {
             display: none;
@@ -127,11 +174,21 @@
         }
     }
 
-    .animate-border:hover .circle {
+    .animate-border:has(:focus-visible, :hover) .circle {
         .foreground {
             stroke-dashoffset: 0;
             opacity: 1;
             transform: rotate(-135deg);
+        }
+    }
+
+    @supports not selector(:has(*)) {
+        .animate-border:where(:focus-within, :hover) .circle {
+            .foreground {
+                stroke-dashoffset: 0;
+                opacity: 1;
+                transform: rotate(-135deg);
+            }
         }
     }
 

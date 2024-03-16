@@ -15,27 +15,27 @@
 
     // (baseValue + weaponLevel * upgradePropValue) * advancementCoefficient
     $: advancementCoefficients = weapon.weaponAdvancements.reduce(
-            (acc, advancement, index) => {
-                // Coefficients in the current advancement (1-6)
-                const currentCoefficients = {};
-                advancement.multiplier.forEach(({ statId, coefficient }) => {
-                    currentCoefficients[statId] = coefficient;
+        (acc, advancement, index) => {
+            // Coefficients in the current advancement (1-6)
+            const currentCoefficients = {};
+            advancement.multiplier.forEach(({ statId, coefficient }) => {
+                currentCoefficients[statId] = coefficient;
+            });
+
+            // Add the 0-star advancement which is not in the api
+            if (index === 0) {
+                const zeroStarCoefficients = {};
+                advancement.multiplier.forEach(({ statId }) => {
+                    zeroStarCoefficients[statId] = 1;
                 });
+                acc["0"] = zeroStarCoefficients;
+            }
 
-                // Add the 0-star advancement which is not in the api
-                if (index === 0) {
-                    const zeroStarCoefficients = {};
-                    advancement.multiplier.forEach(({ statId }) => {
-                        zeroStarCoefficients[statId] = 1;
-                    });
-                    acc["0"] = zeroStarCoefficients;
-                }
-
-                acc[index + 1] = currentCoefficients;
-                return acc;
-            },
-            {},
-        );
+            acc[index + 1] = currentCoefficients;
+            return acc;
+        },
+        {},
+    );
 </script>
 
 <div class="grid g-100">
@@ -46,6 +46,7 @@
         desc={weapon.description}
         eleColor={weapon.element}
         rarity={weapon.rarity}
+        alternateIcons={weapon.fashion.map((obj) => obj.icon)}
         imgStyle="transform: scale(1.3)"
     />
     <ul class="stats g-100">
@@ -97,50 +98,14 @@
                 <div class="stat-text">
                     <span class="stat-name">{stat.name}</span>
                     <b class="stat-value">
-                        {Math.floor(
-                            ($weaponLevel * stat.upgradeProp + stat.value) *
-                                advancementCoefficients[$weaponStars][stat.id],
-                        )}
+                        {#if advancementCoefficients[$weaponStars]}
+                            {Math.floor(($weaponLevel * stat.upgradeProp + stat.value) * advancementCoefficients[$weaponStars][stat.id])}
+                        {:else}
+                            {Math.floor(($weaponLevel * stat.upgradeProp + stat.value))}
+                        {/if}
                     </b>
                 </div>
             </li>
         {/each}
     </ul>
 </div>
-
-<style lang="scss">
-    .stats {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-    }
-
-    .stat {
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        line-height: 1.2;
-        flex: 1;
-        flex-basis: 22%;
-        white-space: nowrap;
-
-        .stat-text {
-            display: grid;
-        }
-
-        .stat-name {
-            color: var(--text2);
-            font-size: var(--step--2);
-        }
-
-        .stat-value {
-            text-transform: uppercase;
-        }
-    }
-
-    .invert {
-        filter: brightness(0) invert(1);
-        filter: brightness(4);
-    }
-</style>

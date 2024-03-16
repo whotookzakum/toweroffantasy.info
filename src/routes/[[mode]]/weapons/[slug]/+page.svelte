@@ -30,9 +30,7 @@
 <article>
     <aside>
         <div class="sticky grid g-100">
-            {#if simulacrumV2 || matrix}
-                <AnchorLinks {simulacrumV2} {weapon} {matrix} />
-            {/if}
+            <AnchorLinks {simulacrumV2} {weapon} {matrix} />
             <div class="aside-extras grid g-100">
                 <WeaponLevelSlider />
                 <WeaponStarSlider />
@@ -76,7 +74,9 @@
             {/each}
         {/if}
 
-        <Advancements advancements={weapon.weaponAdvancements} {weapon} />
+        {#if weapon.weaponAdvancements.length > 0}
+            <Advancements advancements={weapon.weaponAdvancements} {weapon} />
+        {/if}
 
         <Ad unit="ArticleLB-wep2" />
 

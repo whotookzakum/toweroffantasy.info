@@ -42,8 +42,12 @@ type BannerType {
 }
 
 type BaseStatType {
+  flat: Boolean!
+  icon: String!
   isTag: Boolean!
   modifierOp: String!
+  multiplier: Float!
+  name: String!
   propName: String!
   propValue: Float!
 }
@@ -456,6 +460,10 @@ type SmartServantType {
 }
 
 type StatPoolType {
+  flat: Boolean!
+  icon: String!
+  multiplier: Float!
+  name: String!
   propName: String!
   weightValue: Float!
 }

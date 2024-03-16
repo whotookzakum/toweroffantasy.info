@@ -4,10 +4,14 @@ query FullEquipment($id: String!) {
         baseStat {
             propName
             propValue
+            icon
+            name
         }
         statPool {
             propName
             weightValue
+            icon
+            name
         }
     }
 }

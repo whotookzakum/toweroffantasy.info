@@ -302,21 +302,58 @@ hr {
 
 
 input.style-next-label {
-    &:checked + label {
+    &:checked+label {
         background: var(--surface2);
         border-color: var(--accent);
     }
 
-    &:focus-visible + label {
+    &:focus-visible+label {
         outline: 2px solid var(--accent);
         background: var(--surface2);
     }
 
-    & + label {
+    &+label {
         cursor: pointer;
     }
 
-    & + label:hover {
+    &+label:hover {
         background: var(--surface2);
     }
+}
+
+
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.stat {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    line-height: 1.2;
+    flex: 1;
+    flex-basis: 22%;
+    white-space: nowrap;
+
+    .stat-text {
+        display: grid;
+    }
+
+    .stat-name {
+        color: var(--text2);
+        font-size: var(--step--2);
+    }
+
+    .stat-value {
+        text-transform: uppercase;
+    }
+}
+
+.invert {
+    filter: brightness(0) invert(1);
+    filter: brightness(4);
 }
