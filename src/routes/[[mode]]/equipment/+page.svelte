@@ -24,14 +24,14 @@
 
 <Meta
     title="Equipment | Tower of Fantasy Index"
-    description=""
+    description="Various pieces of equipment can be worn and upgraded to strengthen your character."
 />
 
 <Ad unit="LB-gears" />
 
 <h1>Equipment</h1>
 <p>
-    
+    Various pieces of equipment can be worn and upgraded to strengthen your character.
 </p>
 
 <div class="filters-row">

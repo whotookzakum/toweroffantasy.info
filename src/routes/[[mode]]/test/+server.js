@@ -1,0 +1,247 @@
+import { json } from "@sveltejs/kit"
+
+export const GET = () => {
+    const data = [
+        {
+            "name": "Deep Sea Shark",
+            "imgSrc": "fashion_icon_shipin_116",
+            "source": "Innars Resource Dealer Ranni.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=258"
+        },
+        {
+            "name": "Mysterious Sound",
+            "imgSrc": "fashion_icon_shipin_115",
+            "source": "Innars Resource Dealer Ranni.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=262"
+        },
+        {
+            "name": "Confused Eyepiece",
+            "imgSrc": "fashion_icon_shipin_112",
+            "source": "Fragments obtainable from Sobek world boss chest.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=270"
+        },
+        {
+            "name": "Rockhelm Mask",
+            "imgSrc": "fashion_icon_shipin_111",
+            "source": "Fragments obtainable from Magma world boss chest.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=266"
+        },
+        {
+            "name": "Fawn Mask",
+            "imgSrc": "fashion_icon_shipin_110",
+            "source": "Fragments obtainable from Rudolph world boss chest.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=254"
+        },
+        {
+            "name": "Fisherman Glasses",
+            "imgSrc": "fashion_icon_shipin_100",
+            "source": "Purchasable from the fishing shop.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=297"
+        },
+        {
+            "name": "Red Heart Eye Mask",
+            "imgSrc": "fashion_icon_shipin_04",
+            "source": ""
+        },
+        {
+            "name": "Charming Glasses",
+            "imgSrc": "fashion_icon_shipin_022",
+            "source": ""
+        },
+        {
+            "name": "Pink Glasses",
+            "imgSrc": "fashion_icon_shipin_014",
+            "source": ""
+        },
+        {
+            "name": "Disguise Sunglasses",
+            "imgSrc": "fashion_icon_shipin_045",
+            "source": "Obtained by reaching 85% exploration on  Artificial Island - Outer Islands.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=249"
+        },
+        {
+            "name": "Particle Lens",
+            "imgSrc": "fashion_icon_shipin_030",
+            "source": "Rewarded at the end of the Apex League season for reaching the Battle Lord rank.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=241"
+        },
+        {
+            "name": "Black Eye Band",
+            "imgSrc": "fashion_icon_shipin_031",
+            "source": "Rewarded at the end of the Apex League season for reaching the Star General rank.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=237"
+        },
+        {
+            "name": "Hellamander Mask",
+            "imgSrc": "fashion_icon_shipin_046",
+            "source": "<abbr title='China Exclusive'></abbr>  From events.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=343"
+        },
+        {
+            "name": "Orange Eyepiece",
+            "imgSrc": "fashion_icon_shipin_058",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=225"
+        },
+        {
+            "name": "Rolled Whistle",
+            "imgSrc": "fashion_icon_shipin_053",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=215"
+        },
+        {
+            "name": "Whistle",
+            "imgSrc": "fashion_icon_shipin_054",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=211"
+        },
+        {
+            "name": "Feast",
+            "imgSrc": "fashion_icon_shipin_042",
+            "source": "Obtained by reaching 85% exploration on  Artificial Island.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=233"
+        },
+        {
+            "name": "Bubblegum",
+            "imgSrc": "fashion_icon_shipin_057",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=218"
+        },
+        {
+            "name": "Toot-Toot",
+            "imgSrc": "fashion_icon_shipin_061",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=339"
+        },
+        {
+            "name": "Nothing Happened",
+            "imgSrc": "fashion_icon_shipin_062",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=335"
+        },
+        {
+            "name": "Pacifier",
+            "imgSrc": "fashion_icon_shipin_051",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=222"
+        },
+        {
+            "name": "Pile",
+            "imgSrc": "fashion_icon_shipin_063",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=331"
+        },
+        {
+            "name": "Seal",
+            "imgSrc": "fashion_icon_shipin_064",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=319"
+        },
+        {
+            "name": "Construct",
+            "imgSrc": "fashion_icon_shipin_065",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=327"
+        },
+        {
+            "name": "Cloak",
+            "imgSrc": "fashion_icon_shipin_067",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=315"
+        },
+        {
+            "name": "Hush",
+            "imgSrc": "fashion_icon_shipin_066",
+            "source": "Obtained from Mirroria gachapon machines.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=323"
+        },
+        {
+            "name": "Monocle of Truth",
+            "imgSrc": "fashion_icon_shipin_076",
+            "source": "Obtained from gachapon during the Wheel of Fantasy event.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=208"
+        },
+        {
+            "name": "Electric Wave Mask",
+            "imgSrc": "fashion_icon_shipin_073",
+            "source": "Obtained from gift pack.\n\n<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Stars event.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=310"
+        },
+        {
+            "name": "Starry Glasses",
+            "imgSrc": "fashion_icon_shipin_078",
+            "source": "Obtained from the Childlike Innocence event shop.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=306"
+        },
+        {
+            "name": "Dazzling Glasses",
+            "imgSrc": "fashion_icon_shipin_077",
+            "source": "<abbr title='China Exclusive'></abbr> Obtained from gachapon during the Wheel of Fragrance event.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=302"
+        },
+        {
+            "name": "Twinklink Starry Glasses",
+            "imgSrc": "fashion_icon_shipin_096",
+            "source": "Obtained from Entertainment Center with Arcade Coupon.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=293"
+        },
+        {
+            "name": "Hanging Silk",
+            "imgSrc": "fashion_icon_shipin_085",
+            "source": "Purchasable for $0.99 in a bundle in the shop.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=283"
+        },
+        {
+            "name": "Sunshine Pacifier",
+            "imgSrc": "fashion_icon_shipin_093",
+            "source": "Obtained from Entertainment Center with Arcade Coupon.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=279"
+        },
+        {
+            "name": "Grapes Bubble Gum",
+            "imgSrc": "fashion_icon_shipin_094",
+            "source": "Obtained from Entertainment Center with Arcade Coupon.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=288"
+        },
+        {
+            "name": "Amplification Goggles",
+            "imgSrc": "fashion_icon_shipin_086",
+            "source": 
+                "Obtained from the Pioneer's Gift event during the global launch.\n\n<abbr title='China Exclusive'></abbr> From events.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=275"
+        },
+        {
+            "name": "Black Goat Horns",
+            "imgSrc": "fashion_icon_shipin_020",
+            "source": "<abbr title='China Exclusive'></abbr>  Obtained from gachapon during the Warm sun gift box event."
+        },
+        {
+            "name": "White Gauze Mask",
+            "imgSrc": "fashion_icon_shipin_032",
+            "source": "Obtainable by redeeming the code in your Discord Gift Inventory by November 9, 2022."
+        },
+        {
+            "name": "Windchaser Headband",
+            "imgSrc": "fashion_icon_shipin_029",
+            "source": "Available by default.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=245"
+        },
+        {
+            "name": "Pirate Eye Mask",
+            "imgSrc": "fashion_icon_shipin_05",
+            "source": "Available by default.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=229"
+        },
+        {
+            "name": "Goggles",
+            "imgSrc": "fashion_icon_shipin_019",
+            "source": "Available by default.",
+            "videoSrc": "https://www.youtube.com/embed/rqr0VPT_p04?start=205"
+        }
+    ].reduce((acc, curr) => { 
+        acc[curr.name] = curr.videoSrc?.replace("?start", "?amp;start").replace("https://www.youtube.com/embed/", "").replace("https://www.youtube.com/watch?v=", "")
+        return acc
+    }, {})
+    
+    return json(data)
+}

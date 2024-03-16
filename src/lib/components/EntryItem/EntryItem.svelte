@@ -5,9 +5,10 @@
     import NucleusIcons from "./NucleusIcons.svelte";
     import { showWepOnSimEntry } from "$lib/stores";
     import Tag from "../Tag.svelte";
-    import { page } from "$app/stores"
+    import { page } from "$app/stores";
 
     export let entry;
+    export let hasVideo = false;
     export let matrixPieces = 0;
 
     let mainRoute = {
@@ -19,7 +20,7 @@
         RelicType: "relics",
         OutfitType: "cosmetics",
         SmartServantType: "smart-servants",
-        GearType: "equipment"
+        GearType: "equipment",
     };
 
     let weapon;
@@ -55,7 +56,7 @@
 </script>
 
 <li
-    class="item flex g-25 {entry.__typename} {entry.type ?? ""}"
+    class="item flex g-25 {entry.__typename} {entry.type ?? ''}"
     class:molinia={entry.id === "imitation_33"}
     class:hide-weapon={!$showWepOnSimEntry}
 >
@@ -63,6 +64,14 @@
         <Tag
             type="new"
             style="position: absolute; top: 0.5rem; left: 0.5rem;"
+        />
+    {/if}
+
+    {#if hasVideo}
+        <Tag
+            type="video"
+            text="📺"
+            style="position: absolute; top: 0.5rem; left: 0.5rem; font-size: var(--step-0); padding: 0; text-shadow: none;"
         />
     {/if}
 
@@ -75,7 +84,10 @@
             <span class="matrix-pieces">{matrixPieces} pieces</span>
         {/if}
         {#if weapon || entry?.__typename === "SmartServantType"}
-            <CategoryIcon type={weapon?.element || entry.element} width="30px" />
+            <CategoryIcon
+                type={weapon?.element || entry.element}
+                width="30px"
+            />
             <CategoryIcon type={weapon?.category || entry.type} width="30px" />
         {/if}
         {#if entry.rarity}

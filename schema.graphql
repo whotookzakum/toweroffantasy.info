@@ -79,6 +79,7 @@ type GearType {
   icon: String!
   id: String!
   name: String!
+  props: [PropType!]!
   rarity: Int!
   statPool: [StatPoolType!]!
   type: String!
@@ -202,6 +203,14 @@ type OutfitType {
   name: String
   source: String
   type: String!
+}
+
+type PropType {
+  PropId: String!
+  PropInitValue: Float!
+  PropMaxValue: Float!
+  PropMinValue: Float!
+  Quality: String!
 }
 
 type Query {

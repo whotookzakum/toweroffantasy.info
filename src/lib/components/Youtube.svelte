@@ -8,8 +8,10 @@
 <figure {id}>
     <iframe
         src="https://www.youtube.com/embed/{source}"
-        allow="fullscreen"
-        title=""
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        frameborder="0"
         loading="lazy"
     />
     {#if caption}

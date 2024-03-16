@@ -8,6 +8,7 @@
     import uniqBy from "lodash/uniqBy";
     import SelectorFilter from "$lib/components/Filters/SelectorFilter.svelte";
     import Ad from "$components/Ad/Ad.svelte";
+    import cosmeticVideos from "./[slug]/cosmeticVideos.json";
 
     export let data;
     let q = "";
@@ -17,8 +18,7 @@
     );
 
     $: entries = applyFilters(data.outfits, { q, type }).map((item) => {
-        const blankIcon =
-            "/Hotta/Content/Resources/UI/makeup/kong.webp";
+        const blankIcon = "/Hotta/Content/Resources/UI/makeup/kong.webp";
         return {
             ...item,
             icon:
@@ -43,7 +43,8 @@
 <p>
     Cosmetic items allow you customize the appearance of your character and
     other social features. They are typically acquired by spending Dark Crystals
-    or Tanium. Cosmetic gachapon items may have reruns.
+    or Tanium. Cosmetic gachapon items may have reruns. A television emoji (📺)
+    indicates that a video preview is available.
 </p>
 
 <div class="filters-row">
@@ -57,15 +58,11 @@
             { label: "Male", value: "m" },
         ]}
     />
-    <SelectorFilter
-        dataset={uniqTypes}
-        selectorName="Type"
-        bind:value={type}
-    />
+    <SelectorFilter dataset={uniqTypes} selectorName="Type" bind:value={type} />
 </div>
 
 <ul class="entry-list">
     {#each entries as entry (entry.id + entry.icon)}
-        <EntryItem {entry} />
+        <EntryItem {entry} hasVideo={cosmeticVideos[entry.id]} />
     {/each}
 </ul>

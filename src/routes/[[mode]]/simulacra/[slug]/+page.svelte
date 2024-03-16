@@ -10,6 +10,8 @@
     import ItemIcon from "$components/ItemIcon.svelte";
     import Tag from "$components/Tag.svelte";
     import uniqBy from "lodash/uniqBy.js";
+    import skinVideos from "./skinVideos.json";
+    import Youtube from "$lib/components/Youtube.svelte";
 
     export let data;
     const { simulacrumV2, weapon, matrix, gifts, banners } = data;
@@ -151,6 +153,10 @@
                 />
             </li>
         </ul>
+        {#if skinVideos[simulacrumV2.id]}
+            <h3 id="video-preview">Video Preview</h3>
+            <Youtube source={skinVideos[simulacrumV2.id]} />
+        {/if}
 
         <h2 id="voice-actors">Voice Actors</h2>
         <ul class="flex">

@@ -20,7 +20,7 @@
 
 <Meta
     title="Smart Servants | Tower of Fantasy Index"
-    description=""
+    description="Smart Servants are small robots that aid the player in combat."
     image={data.servants[0].assets.activatedIcon}
 />
 
@@ -28,12 +28,12 @@
 
 <h1>Smart Servants</h1>
 <p>
-    
+    Smart Servants are small robots that aid the player in combat.
 </p>
 
 <div class="filters-row">
     <SearchBar bind:q />
-    <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
+    <!-- <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} /> -->
 </div>
 
 <ul class="entry-list">

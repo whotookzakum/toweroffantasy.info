@@ -5,11 +5,24 @@
 
     export let data;
     const { gear } = data;
+
+    const numberOfRandomStats = {
+        "6": 4, // red
+        "5": 4, // gold
+        "4": 4, // purple
+        "3": 3, // blue
+        "2": 2, // green
+        "1": 1 // gray
+    }
+
+    const totalWeight = gear.statPool.reduce((acc, curr) => acc += curr.weightValue, 0)
+
+    gear.statPool.sort((a, b) => b.weightValue - a.weightValue)
 </script>
 
 <Meta
     title="{gear.name} | Tower of Fantasy Index"
-    description=""
+    description="All about the equipment piece {gear.name}, such as its possible stats, and stat gains per upgrade."
     image={gear.icon}
 />
 
@@ -24,7 +37,7 @@
 />
 
 <h2 id="stats">Stats</h2>
-
+<small>Note: Decimal values are truncated, not rounded.</small>
 <div class="grid g-50">
     <h3 style="margin-top: 1rem;">Base Stats</h3>
     <ul class="stats g-100">
@@ -40,7 +53,7 @@
                 <div class="stat-text">
                     <span class="stat-name">{stat.name}</span>
                     <b class="stat-value">
-                        {stat.propValue}
+                        {Math.floor(stat.propValue)}
                     </b>
                 </div>
             </li>
@@ -50,7 +63,7 @@
 
 <div class="grid g-50">
     <h3 style="margin-top: 2rem">Random Stats</h3>
-    <p style="margin-block: 0 0.5rem">{gear.name} comes with 4 of the following stats, selected randomly. Each upgrade will increase the stat values by their respective ranges, shown below.</p>
+    <p style="margin-block: 0 0.5rem">{gear.name} comes with {numberOfRandomStats[gear.rarity]} of the following stats, selected randomly. Each upgrade will increase the stat values by their respective ranges, shown below.</p>
     <ul class="stats g-100">
         {#each gear.statPool as stat}
             <li class="stat box col-2">
@@ -62,7 +75,7 @@
                     class="invert"
                 />
                 <div class="stat-text">
-                    <span class="stat-name">{stat.name} <small>({stat.weightValue}%)</small></span>
+                    <span class="stat-name">{stat.name} <small>({(stat.weightValue / totalWeight * 100).toFixed(2)}%)</small></span>
                     <b class="stat-value">
                         ?~?
                     </b>
