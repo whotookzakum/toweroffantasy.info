@@ -78,6 +78,7 @@ type GearType {
   description: String!
   icon: String!
   id: String!
+  maxLevel: Int!
   name: String!
   props: [PropType!]!
   rarity: Int!

@@ -3,13 +3,12 @@
     import Icon from "@iconify/svelte";
     import { page } from "$app/stores";
     import RegionSelector from "$components/RegionSelector.svelte";
-    import { showWepOnSimEntry } from "$lib/stores";
     import { browser } from "$app/environment";
 
     // TODO: Site Settings Modal
-    // TODO: Region Selector
 
     let open = false;
+    let collapserOpen = false;
 
     if (browser) {
         document.addEventListener("keyup", (e) => {
@@ -19,7 +18,7 @@
 
     if (browser) {
         const imgNodes = document.querySelectorAll("img");
-        console.log(imgNodes)
+        // console.log(imgNodes);
         imgNodes.forEach((img) => {
             let localFilePath = "/Hotta/Content/Resources";
             if (
@@ -43,7 +42,7 @@
                 <span class="long">Tower of Fantasy</span>
                 <span class="mini">ToF</span> Index
             </a>
-            <RegionSelector style="margin: 0.5rem 0.25rem" />
+            <!-- <RegionSelector style="margin: 0.5rem 0.25rem" /> -->
         </div>
 
         <input
@@ -63,28 +62,84 @@
             <span class="close-icon visually-hidden">Close Navigation</span>
         </label>
 
-        <div class="bottom-strip flex g-50">
-            <!-- <label class="top-right">
-                <input type="checkbox" bind:checked={$showWepOnSimEntry} /> Show weapon
-                details on Simulacrum cards
-            </label> -->
-        </div>
-
         <div class="links-strip flex g-25">
-            {#each links as { href, name, icon, external }}
+            {#each links.filter((link) => !(link.external || link.collapse)) as { href, name }}
                 <a
                     {href}
                     class:active={$page.url.pathname.includes(href)}
                     class="nav-link"
                     on:click={() => (open = false)}
-                    target={external && "_blank"}
-                    rel={external && "noreferrer noopener nofollow"}
-                    class:external
                 >
                     {name}
-                    {#if external}
-                        <Icon icon="ei:external-link" width="18" />
-                    {/if}
+                </a>
+            {/each}
+
+            <div class="collapse-section-wrapper">
+                <input
+                    type="checkbox"
+                    id="collapse-toggler"
+                    class="visually-hidden"
+                    bind:checked={collapserOpen}
+                    
+                    on:blur={(e) => {
+                        console.log(e.relatedTarget)
+                        console.log(e)
+                        console.log(document.querySelector(":focus"))
+
+                        const blur = e.relatedTarget
+                            ? true
+                            : !e.explicitOriginalTarget?.id?.includes(
+                                  "collapse-toggler",
+                              );
+
+                        if (collapserOpen && blur) collapserOpen = false;
+                        else e.preventDefault();
+                    }}
+                />
+                <label
+                    id="collapse-toggler-label"
+                    for="collapse-toggler"
+                    class:active={links.some(
+                        (link) =>
+                            $page.url.pathname.includes(link.href) &&
+                            link.collapse,
+                    )}
+                >
+                    <span class="visually-hidden">Show more links</span>
+                    <Icon
+                        icon="tabler:dots"
+                        width="1.5rem"
+                        style="pointer-events: none"
+                    />
+                </label>
+                <div class="collapsed-links grid g-100 box">
+                    {#each links.filter((link) => link.collapse) as { href, name }}
+                        <a
+                            {href}
+                            class:active={$page.url.pathname.includes(href)}
+                            class="nav-link"
+                            on:click={() => {
+                                open = false;
+                                collapserOpen = false;
+                            }}
+                        >
+                            {name}
+                        </a>
+                    {/each}
+                </div>
+            </div>
+
+            {#each links.filter((link) => link.external) as { href, name }}
+                <a
+                    {href}
+                    class:active={$page.url.pathname.includes(href)}
+                    class="nav-link external"
+                    on:click={() => (open = false)}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                >
+                    {name}
+                    <Icon icon="ei:external-link" width="18" />
                 </a>
             {/each}
         </div>
@@ -215,7 +270,7 @@
         }
     }
 
-    .nav-link {
+    @mixin nav-link {
         border: none;
         padding: 0.5rem;
         gap: 0.25rem;
@@ -232,6 +287,10 @@
         }
     }
 
+    .nav-link {
+        @include nav-link;
+    }
+
     .nav-home {
         font-size: var(--step-1);
         font-weight: 600;
@@ -241,6 +300,72 @@
     .links-strip {
         align-items: end;
         grid-column: 1/-1;
+    }
+
+    .collapse-section-wrapper {
+        position: relative;
+        margin-right: auto;
+
+        &:where(:hover) {
+            .collapsed-links {
+                opacity: 1;
+                visibility: visible;
+                transform: unset;
+            }
+
+            #collapse-toggler-label {
+                background: var(--surface1);
+                color: var(--accent);
+            }
+        }
+
+        #collapse-toggler:focus-visible ~ .collapsed-links,
+        #collapse-toggler:checked ~ .collapsed-links,
+        .collapsed-links:focus-within {
+            opacity: 1;
+            visibility: visible;
+            transform: unset;
+        }
+    }
+
+    #collapse-toggler:focus-visible + label {
+        outline: 2px solid var(--accent);
+        background: var(--surface1);
+    }
+
+    #collapse-toggler:checked + label {
+        background: var(--surface2) !important;
+    }
+
+    #collapse-toggler-label {
+        align-self: center;
+        min-height: 33px;
+        aspect-ratio: 1/1;
+        display: grid;
+        place-content: center;
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+        &.active {
+            color: var(--accent);
+        }
+    }
+
+    .collapsed-links {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease;
+        transform: translateY(4px);
+        border: 1px solid var(--surface2);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+
+        a {
+            white-space: nowrap;
+            padding: 0;
+        }
     }
 
     @media (min-width: 860px) {
@@ -312,7 +437,7 @@
             grid-column: 1/-1;
 
             & > * {
-                transition: all 0.3s ease;
+                transition: opacity 0.3s ease;
                 opacity: 1;
                 visibility: visible;
             }
@@ -332,6 +457,30 @@
 
             & > * {
                 transition-duration: 0s;
+            }
+        }
+
+        #collapse-toggler,
+        #collapse-toggler-label {
+            display: none;
+        }
+
+        .collapsed-links {
+            transform: unset;
+            transition: unset;
+            visibility: unset;
+            opacity: unset;
+            position: unset;
+            box-shadow: unset;
+            padding: unset;
+            background: unset;
+            border: unset;
+            grid-column: 1;
+            gap: 0.25rem;
+
+            a {
+                @include nav-link;
+                margin-top: 0 !important;
             }
         }
 

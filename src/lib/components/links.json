@@ -29,19 +29,23 @@
     },
     {
         "name": "Food",
-        "href": "/food"
+        "href": "/food",
+        "collapse": true
     },
     {
         "name": "Survival Guide",
-        "href": "/survival-guide"
+        "href": "/survival-guide",
+        "collapse": true
     },
     {
         "name": "Smart Servants",
-        "href": "/smart-servants"
+        "href": "/smart-servants",
+        "collapse": true
     },
     {
         "name": "Equipment",
-        "href": "/equipment"
+        "href": "/equipment",
+        "collapse": true
     },
     {
         "name": "Loadouts",
