@@ -73,7 +73,18 @@ type FoodType {
   stars: Int!
 }
 
+type GearAdvancementType {
+  amount: Int!
+  description: String!
+  icon: String!
+  matId: String!
+  name: String!
+  rarity: Int!
+  type: String!
+}
+
 type GearType {
+  advancement: [[GearAdvancementType!]!]!
   baseStat: [BaseStatType!]!
   description: String!
   icon: String!

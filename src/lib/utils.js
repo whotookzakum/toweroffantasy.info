@@ -69,3 +69,26 @@ export function applyFilters(entries, { q = "", queryKey = "name", version = "al
         return searchMatch && versionMatch && rarityMatch && typeMatch && starsMatch && effectsMatch && bannersMatch && elementMatch && categoryMatch
     });
 }
+
+// Removes "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp" from image links in favor of using assets from this repo
+export function cleanAssetLinks() {
+        
+
+
+        const imgNodes = document.querySelectorAll("img");
+        // console.log(imgNodes);
+        imgNodes.forEach((img) => {
+            let localFilePath = "/Hotta/Content/Resources";
+            if (
+                img.src.includes("L10N") ||
+                img.src.includes("ResourcesOverSea")
+            ) {
+                localFilePath = "/Hotta/Content";
+            }
+            img.src = img.src.replace(
+                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp",
+                localFilePath,
+            );
+        });
+    
+}

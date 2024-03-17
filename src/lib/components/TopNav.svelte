@@ -15,24 +15,6 @@
             if (e.code === "Escape" && open) open = false;
         });
     }
-
-    if (browser) {
-        const imgNodes = document.querySelectorAll("img");
-        // console.log(imgNodes);
-        imgNodes.forEach((img) => {
-            let localFilePath = "/Hotta/Content/Resources";
-            if (
-                img.src.includes("L10N") ||
-                img.src.includes("ResourcesOverSea")
-            ) {
-                localFilePath = "/Hotta/Content";
-            }
-            img.src = img.src.replace(
-                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp",
-                localFilePath,
-            );
-        });
-    }
 </script>
 
 <nav class="topnav grid">

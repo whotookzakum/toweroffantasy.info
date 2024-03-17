@@ -1,4 +1,7 @@
 import { ShortWeaponStore, FullSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store, AllItemsStore } from '$houdini'
+import lodash from 'lodash';
+import deepdash from 'deepdash-es';
+const _ = deepdash(lodash);
 
 export const load = async (event) => {
     // Simulacrum full data
@@ -63,6 +66,15 @@ export const load = async (event) => {
                 return { ...item, amount: `+${points[item.rarity][totalMatches]}` }
             })
             .sort((a, b) => b.amount - a.amount)
+
+    const hi = _.mapValuesDeep(simulacrumV2,
+        (v) => {
+            if (typeof v === "string") return v.replace("https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp", "ALALALALALAL")
+            return v
+        },
+        { leavesOnly: true }
+    );
+    console.log(hi)
 
     return { weapon, simulacrumV2, matrix, gifts, banners }
 }
