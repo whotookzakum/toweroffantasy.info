@@ -75,43 +75,26 @@
             {/each}
 
             <div class="collapse-section-wrapper">
-                <input
-                    type="checkbox"
+                <button
                     id="collapse-toggler"
-                    class="visually-hidden"
-                    bind:checked={collapserOpen}
-                    
-                    on:blur={(e) => {
-                        console.log(e.relatedTarget)
-                        console.log(e)
-                        console.log(document.querySelector(":focus"))
-
-                        const blur = e.relatedTarget
-                            ? true
-                            : !e.explicitOriginalTarget?.id?.includes(
-                                  "collapse-toggler",
-                              );
-
-                        if (collapserOpen && blur) collapserOpen = false;
-                        else e.preventDefault();
-                    }}
-                />
-                <label
-                    id="collapse-toggler-label"
-                    for="collapse-toggler"
+                    aria-hidden="true"
+                    on:click={() => (collapserOpen = !collapserOpen)}
+                    on:blur={() => (collapserOpen = false)}
+                    class:enabled={collapserOpen}
                     class:active={links.some(
                         (link) =>
                             $page.url.pathname.includes(link.href) &&
                             link.collapse,
                     )}
                 >
-                    <span class="visually-hidden">Show more links</span>
                     <Icon
-                        icon="tabler:dots"
-                        width="1.5rem"
+                        icon={collapserOpen
+                            ? "mingcute:lock-fill"
+                            : "tabler:dots"}
+                        width={collapserOpen ? "1rem" : "1.5rem"}
                         style="pointer-events: none"
                     />
-                </label>
+                </button>
                 <div class="collapsed-links grid g-100 box">
                     {#each links.filter((link) => link.collapse) as { href, name }}
                         <a
@@ -210,10 +193,6 @@
         }
     }
 
-    .bottom-strip {
-        justify-content: space-between;
-    }
-
     .toggler-label {
         width: 36px;
         height: 36px;
@@ -305,46 +284,21 @@
     .collapse-section-wrapper {
         position: relative;
         margin-right: auto;
-
-        &:where(:hover) {
-            .collapsed-links {
-                opacity: 1;
-                visibility: visible;
-                transform: unset;
-            }
-
-            #collapse-toggler-label {
-                background: var(--surface1);
-                color: var(--accent);
-            }
-        }
-
-        #collapse-toggler:focus-visible ~ .collapsed-links,
-        #collapse-toggler:checked ~ .collapsed-links,
-        .collapsed-links:focus-within {
-            opacity: 1;
-            visibility: visible;
-            transform: unset;
-        }
     }
 
-    #collapse-toggler:focus-visible + label {
-        outline: 2px solid var(--accent);
+    .collapse-section-wrapper:hover #collapse-toggler,
+    #collapse-toggler:focus-visible,
+    #collapse-toggler.enabled {
         background: var(--surface1);
     }
 
-    #collapse-toggler:checked + label {
-        background: var(--surface2) !important;
-    }
-
-    #collapse-toggler-label {
-        align-self: center;
-        min-height: 33px;
-        aspect-ratio: 1/1;
+    #collapse-toggler {
+        height: 33px;
+        width: 33px;
         display: grid;
         place-content: center;
         border-radius: 0.5rem;
-        cursor: pointer;
+        background: none;
 
         &.active {
             color: var(--accent);
@@ -355,17 +309,38 @@
         position: absolute;
         z-index: 1;
         right: 0;
-        visibility: hidden;
         opacity: 0;
         transition: all 0.2s ease;
         transform: translateY(4px);
         border: 1px solid var(--surface2);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 1px;
+
         a {
             white-space: nowrap;
             padding: 0;
         }
+    }
+
+    .collapse-section-wrapper:hover .collapsed-links,
+    #collapse-toggler:focus-visible + .collapsed-links,
+    #collapse-toggler.enabled + .collapsed-links,
+    .collapsed-links:focus-within {
+        transform: translateY(0);
+        opacity: 1;
+
+        clip: unset !important;
+        clip-path: unset !important;
+        height: unset !important;
+        overflow: unset !important;
+        white-space: unset !important;
+        width: unset !important;
     }
 
     @media (min-width: 860px) {
@@ -460,8 +435,7 @@
             }
         }
 
-        #collapse-toggler,
-        #collapse-toggler-label {
+        #collapse-toggler {
             display: none;
         }
 
@@ -475,6 +449,12 @@
             padding: unset;
             background: unset;
             border: unset;
+            clip: unset !important;
+            clip-path: unset !important;
+            height: unset !important;
+            overflow: unset !important;
+            white-space: unset !important;
+            width: unset !important;
             grid-column: 1;
             gap: 0.25rem;
 
