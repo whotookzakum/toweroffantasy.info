@@ -4,8 +4,9 @@
     import Ad from "$components/Ad/Ad.svelte";
     import UpgradeMats from "./UpgradeMats.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
-    import RangeSlider from "svelte-range-slider-pips";
     import { equipLevel, equipStars } from "$lib/stores";
+    import EquipLevelSlider from "./EquipLevelSlider.svelte";
+    import EquipStarSlider from "./EquipStarSlider.svelte";
 
     export let data;
     const { gear } = data;
@@ -41,35 +42,9 @@
     <aside>
         <div class="sticky">
             <AnchorLinks />
-            <div>
-                <p class="section-title" style="margin: 0">
-                    Equipment Enhancements (levels)
-                </p>
-                <small>Affects base stats</small>
-                <RangeSlider
-                    bind:values={$equipLevel}
-                    min={0}
-                    max={gear.maxLevel}
-                    float
-                    pips
-                    pipstep={5}
-                    first="label"
-                    last="label"
-                />
-            </div>
-            <div>
-                <p class="section-title" style="margin: 0">
-                    Equipment Advancements (stars)
-                </p>
-                <small>Affects random stats</small>
-                <RangeSlider
-                    bind:values={$equipStars}
-                    min={0}
-                    max={5}
-                    float
-                    pips
-                    all="label"
-                />
+            <div class="aside-extras grid g-100">
+                <EquipLevelSlider {gear} />
+                <EquipStarSlider />
             </div>
         </div>
     </aside>
@@ -98,6 +73,10 @@
                 Enhancements are <strong class="mint">100%</strong> transferrable
                 when changing equipment.
             </p>
+
+            <div class="mobile-only">
+                <EquipLevelSlider {gear} />
+            </div>
 
             <ul class="stats g-100">
                 {#each gear.baseStat as stat}
@@ -138,6 +117,11 @@
                 following stats, selected randomly. Each upgrade will increase the
                 stat values by their respective ranges, shown below.
             </p>
+
+            <div class="mobile-only">
+                <EquipStarSlider />
+            </div>
+            
             <ul class="stats g-100">
                 {#each gear.statPool as stat}
                     <li class="stat box col-2">

@@ -100,23 +100,3 @@
         />
     {/if}
 </article>
-
-<style lang="scss">
-    :global(.mobile-only) {
-        display: none;
-        margin-block: 1rem;
-        column-gap: 1rem;
-        margin-bottom: -1.5rem;
-    }
-
-    :global(.mobile-only > *) {
-        flex: 1;
-        flex-basis: 300px;
-    }
-
-    @media (max-width: 860px) {
-        :global(.mobile-only) {
-            display: flex;
-        }
-    }
-</style>
