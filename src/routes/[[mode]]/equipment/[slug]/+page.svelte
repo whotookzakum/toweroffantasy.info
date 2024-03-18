@@ -5,7 +5,7 @@
     import UpgradeMats from "./UpgradeMats.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
     import RangeSlider from "svelte-range-slider-pips";
-    import { equipLevel, equipStars } from "$lib/stores"
+    import { equipLevel, equipStars } from "$lib/stores";
 
     export let data;
     const { gear } = data;
@@ -91,7 +91,7 @@
             as 100.</small
         >
         <div class="grid g-50">
-            <h3 id="base-stats" style="margin-top: 1.5rem;">Base Stats</h3>
+            <h3 id="base-stats">Base Stats</h3>
             <p>
                 Base stats can be upgraded by <strong>Enhancement</strong>,
                 consuming Booster and Advancement Modules to level up the item.
@@ -119,12 +119,13 @@
                 {/each}
             </ul>
             {#if gear.advancement}
+                <h4>Upgrade Materials</h4>
                 <UpgradeMats advancement={gear.advancement} {gear} />
             {/if}
         </div>
 
         <div class="grid g-50">
-            <h3 id="random-stats" style="margin-top: 2rem">Random Stats</h3>
+            <h3 id="random-stats">Random Stats</h3>
             <p>
                 Random stats can be upgraded by <strong>Advancement</strong>,
                 consuming other equipment as EXP to raise the stars on the item.
@@ -178,13 +179,18 @@
                                         )}~{$equipStars[0] *
                                         getStat(stat.propName, "PropMaxValue") +
                                         getStat(stat.propName, "PropInitValue")}
-                                        <small style="color: var(--tier-s); font-weight: 600">({$equipStars[0]}★)</small>
+                                    <small
+                                        style="color: var(--tier-s); font-weight: 600"
+                                        >({$equipStars[0]}★)</small
+                                    >
                                 {/if}
                             </b>
                         </div>
                     </li>
                 {/each}
             </ul>
+            <h4>Required EXP</h4>
+            <p>Coming soon</p>
         </div>
     </div>
 </article>
@@ -197,5 +203,13 @@
 
     p {
         margin-block: 0 0.5rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    h4 {
+        margin-top: 1.5rem;
     }
 </style>

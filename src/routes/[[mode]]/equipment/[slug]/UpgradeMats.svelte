@@ -51,8 +51,6 @@
     }
 </script>
 
-<h4 style="margin-top: 1.5rem">Upgrade Materials</h4>
-
 <div>
     <RangeSlider
         bind:values={levels}
