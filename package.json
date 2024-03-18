@@ -8,7 +8,8 @@
 		"preview": "vite preview",
 		"exportpngs": "cd UnrealExporter && dotnet run tof-images && cd ..",
 		"convertwebp": "cd WebP && pip install -r requirements.txt && python main.py && cd ..",
-		"imgs": "rm -rf ./static/Hotta && node generateConfigs && npm run exportpngs && npm run convertwebp"
+		"imgs": "node generateConfigs && npm run exportpngs && npm run convertwebp",
+		"imgsReset": "rm -rf ./static/Hotta && npm run imgs"
 	},
 	"devDependencies": {
 		"@beyonk/svelte-google-analytics": "^2.6.4",

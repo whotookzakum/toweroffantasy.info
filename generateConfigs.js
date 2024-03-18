@@ -3,6 +3,7 @@ import { gql, request } from 'graphql-request'
 import * as fs from "fs";
 
 // TODO: change /en to wildcard to support other localizations, possibly in getRegionalUris() if (isOverseas)
+// TODO: add code to remove redundant regexes?
 
 // Requests all img asset paths from the API, transforms the paths into regex, and outputs a JSON config file for UnrealExporter
 
@@ -16,8 +17,6 @@ const frontendUris = [
     "Hotta/Content/Resources/UI/common/star/STAR_NoLine.uasset",
     "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.uasset",
     "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshiyou.uasset",
-    // "Hotta/Content/Resources/UI/Scenery/.*\\.uasset",
-    // "Hotta/Content/L10N/en/Resources/UI/Scenery/.*\\.uasset",
 ]
 
 const query = gql`

@@ -79,7 +79,7 @@ export function clean(obj) {
         (v) => {
             if (typeof v === "string") {
                 let localFilePath = "/Hotta/Content/Resources";
-                if (v.includes("L10N") || v.includes("ResourcesOverSea")) localFilePath = "/Hotta/Content";
+                if (v.includes("/L10N") || v.includes("/ResourcesOverSea")) localFilePath = "/Hotta/Content";
                 return v.replace("https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp", localFilePath)
             }
             return v

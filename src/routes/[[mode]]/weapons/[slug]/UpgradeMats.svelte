@@ -91,8 +91,8 @@
         groupName="upgrade-mats-viewmode"
         name="upgradeMatsViewMode"
         data={[
-            { label: "Compact View", value: "compact" }, 
-            { label: "Breakdown View", value: "per-level" }
+            { label: "Compact View", value: "compact" },
+            { label: "Breakdown View", value: "per-level" },
         ]}
         style="margin: 1rem 0; max-width: 320px"
     />
@@ -169,107 +169,101 @@
 {/if}
 
 {#if items && viewMode === "per-level"}
-    <table class="bg-alternate">
-        <thead>
-            <tr>
-                <th>Level</th>
-                <th>Augmentation</th>
-                <th>Enhancement</th>
-            </tr>
-        </thead>
-        <tbody>
-            {#each items as matsInLevel, level}
-                {#if level >= minLevel && (level < maxLevel || maxLevel === 20 && level <= maxLevel)}
-                    <tr>
-                        {#if level < 20}
+    <div class="table-wrapper">
+        <table class="bg-alternate">
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Augmentation</th>
+                    <th>Enhancement</th>
+                </tr>
+            </thead>
+            <tbody>
+                {#each items as matsInLevel, level}
+                    {#if level >= minLevel && (level < maxLevel || (maxLevel === 20 && level <= maxLevel))}
+                        <tr>
+                            {#if level < 20}
+                                <td style="white-space: nowrap;">
+                                    {level * 10} → {(level + 1) * 10}
+                                </td>
+                            {:else}
+                                <td style="white-space: nowrap;"> Final </td>
+                            {/if}
                             <td>
-                                {level * 10} → {(level + 1) * 10}
+                                {#if level > 0}
+                                    <ul class="flex g-50" style="margin: 0">
+                                        {#each matsInLevel as mat}
+                                            <li class="flex">
+                                                <ItemIcon
+                                                    item={mat}
+                                                    imgSize="64"
+                                                    wrapperSize="64px"
+                                                />
+                                            </li>
+                                        {/each}
+                                    </ul>
+                                    {#if level < 20}
+                                        <p>
+                                            Req. Wanderer Level
+                                            <strong class="clay"
+                                                >{((level + 1) * 10) /
+                                                    2}</strong
+                                            >.
+                                        </p>
+                                    {:else}
+                                        <p>
+                                            Req. Wanderer Level
+                                            <strong class="clay">100</strong>.
+                                        </p>
+                                    {/if}
+                                {/if}
                             </td>
-                        {:else}
-                            <td> Final </td>
-                        {/if}
-                        <td>
-                            {#if level > 0}
-                                <ul class="flex g-50" style="margin: 0">
-                                    {#each matsInLevel as mat}
+                            <td>
+                                {#if level < 20}
+                                    <ul
+                                        class="flex g-50"
+                                        style="margin: 0"
+                                    >
                                         <li class="flex">
                                             <ItemIcon
-                                                item={mat}
+                                                item={{
+                                                    amount: levels[level + 1]
+                                                        .requiredExp,
+                                                    icon: "/Hotta/Content/Resources/Icon/huobi/jinbi.webp",
+                                                    name: "Gold",
+                                                    rarity: 3,
+                                                }}
                                                 imgSize="64"
                                                 wrapperSize="64px"
                                             />
                                         </li>
-                                    {/each}
-                                </ul>
-                                {#if level < 20}
-                                    <p>
-                                        Req. Wanderer Level
-                                        <strong class="clay"
-                                            >{((level + 1) * 10) / 2}</strong
-                                        >.
-                                    </p>
-                                {:else}
-                                    <p>
-                                        Req. Wanderer Level
-                                        <strong class="clay">100</strong>.
-                                    </p>
+                                        <li class="flex">
+                                            <ItemIcon
+                                                item={{
+                                                    amount: levels[level + 1]
+                                                        .requiredExp,
+                                                    icon: "/Hotta/Content/Resources/Icon/huobi/jingyan.webp",
+                                                    name: "EXP",
+                                                    rarity: 1,
+                                                }}
+                                                imgSize="58"
+                                                wrapperSize="64px"
+                                            />
+                                        </li>
+                                    </ul>
                                 {/if}
-                            {/if}
-                        </td>
-                        <td>
-                            {#if level < 20}
-                                <ul
-                                    class="flex flex-wrap g-50"
-                                    style="margin: 0"
-                                >
-                                    <li class="flex">
-                                        <ItemIcon
-                                            item={{
-                                                amount: levels[level + 1]
-                                                    .requiredExp,
-                                                icon: "/Hotta/Content/Resources/Icon/huobi/jinbi.webp",
-                                                name: "Gold",
-                                                rarity: 3,
-                                            }}
-                                            imgSize="64"
-                                            wrapperSize="64px"
-                                        />
-                                    </li>
-                                    <li class="flex">
-                                        <ItemIcon
-                                            item={{
-                                                amount: levels[level + 1]
-                                                    .requiredExp,
-                                                icon: "/Hotta/Content/Resources/Icon/huobi/jingyan.webp",
-                                                name: "EXP",
-                                                rarity: 1,
-                                            }}
-                                            imgSize="58"
-                                            wrapperSize="64px"
-                                        />
-                                    </li>
-                                </ul>
-                            {/if}
-                        </td>
-                    </tr>
-                {/if}
-            {/each}
-        </tbody>
-    </table>
-
-    <div class="two-col grid g-50"></div>
+                            </td>
+                        </tr>
+                    {/if}
+                {/each}
+            </tbody>
+        </table>
+    </div>
 {/if}
 
 <style lang="scss">
     ul {
         padding: 0;
-    }
-
-    .two-col {
-        grid-template-columns: auto auto;
-        align-items: start;
-        justify-content: start;
-        column-gap: 2rem;
     }
 
     tbody td {
@@ -286,12 +280,6 @@
             margin-top: 0.5rem;
             font-size: var(--step--2);
             line-height: 1;
-        }
-    }
-
-    @media (max-width: 700px) {
-        .two-col {
-            grid-template-columns: auto;
         }
     }
 </style>
