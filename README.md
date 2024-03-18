@@ -26,6 +26,82 @@ September 12, 2022: 500k users
 April 14, 2023: 1M users
 
 ## Image Directories
+This repo mostly only contains the images used on the site, in webp format. For a complete repository of images (CN and Global), check out FortOfFans' [repo](https://github.com/FortOfFans/ToF.github.io/tree/main), which has png images as well as a branch for webp images. 
+
+<details>
+  <summary>Directory name translations (by Cytus)</summary>
+
+  | `dir`  | English |
+  |--------|---------|
+  | biaoti | title |
+  | cangku | storage |
+  | chengjiu |  achievement |
+  | chouka | card draw (gacha) |
+  | chuangjue | character creation |
+  | daojishi | countdown |
+  | digong | bottom work (?) |
+  | dinggouhuodong | order event |
+  | duanzao | forge (?) |
+  | duiwu | party |
+  | duobei | multiple |
+  | fanli | rebate |
+  | fuben | sub-stage |
+  | gongce | public washroom |
+  | grmp | ? |
+  | haoyu | not sure maybe haoyou = friend? |
+  | heimu | shady plot |
+  | huanxing | awaken |
+  | huiyi | meeting |
+  | huobi | currency |
+  | jiaoyihang | transaction line |
+  | jiayuan | home place |
+  | jiesuo | unlock |
+  | jindutiao | loading bar |
+  | jineng | skill |
+  | jingtou | camera |
+  | kechengbiao | class schedule |
+  | laiyuan | source |
+  | liaotian | chat |
+  | lingjiang | collect reward |
+  | mengjing | dream |
+  | nitaijuqing | simulacrum story |
+  | niudan | gachapon |
+  | paimai | auction |
+  | pingfen | score |
+  | pingji | rating |
+  | qianghua | strengthen |
+  | qipao | qipao |
+  | renwu | mission |
+  | renwuxinxi | mission details |
+  | shenge | divinity |
+  | shengji | level up |
+  | shenling | god and spirits |
+  | shizhuang | outfits |
+  | shoubing | control stick |
+  | shouchong | first charge |
+  | shuxingpiaozi | elemental damage display? |
+  | tansuoyindao | exploration guide |
+  | tishi | tip |
+  | touxiang | surrender |
+  | wanfa | game mode |
+  | wanfashangdian | game mode shop |
+  | wuqi | weapon |
+  | xiaowanfa | minigame mode |
+  | xiaoxi | chat message |
+  | xingge | gender |
+  | xingjietansuo | interstellar exploration |
+  | xinxi | mail message |
+  | xinzhuangbei | new gear  |
+  | yindao | guide |
+  | yizhi | matrices |
+  | zhiye | job |
+  | zhongduan | terminal |
+  | zhuanfu | server change |
+  | zuizhongbingqi | final weapon |
+  | zuzhi | organization |
+  
+</details>
+
 ### Simulacra
 - [Artwork](/static/Hotta/Content/Resources/UI/huanxing/lihui)
 - [Avatar](Icon/Avatar)
@@ -50,75 +126,5 @@ April 14, 2023: 1M users
 - [Chat bubbles](/static/Hotta/Content/Resources/Icon/chat/qipao)
 
 ### Food
-- [Dishes](Icon/caiyao)
-- [Ingredients](Icon/shicai)
-
-### Directory name translations (by Cytus)
-| `dir`  | English |
-|--------|---------|
-| biaoti | title |
-| cangku | storage |
-| chengjiu |  achievement |
-| chouka | card draw (gacha) |
-| chuangjue | character creation |
-| daojishi | countdown |
-| digong | bottom work (?) |
-| dinggouhuodong | order event |
-| duanzao | forge (?) |
-| duiwu | party |
-| duobei | multiple |
-| fanli | rebate |
-| fuben | sub-stage |
-| gongce | public washroom |
-| grmp | ? |
-| haoyu | not sure maybe haoyou = friend? |
-| heimu | shady plot |
-| huanxing | awaken |
-| huiyi | meeting |
-| huobi | currency |
-| jiaoyihang | transaction line |
-| jiayuan | home place |
-| jiesuo | unlock |
-| jindutiao | loading bar |
-| jineng | skill |
-| jingtou | camera |
-| kechengbiao | class schedule |
-| laiyuan | source |
-| liaotian | chat |
-| lingjiang | collect reward |
-| mengjing | dream |
-| nitaijuqing | simulacrum story |
-| niudan | gachapon |
-| paimai | auction |
-| pingfen | score |
-| pingji | rating |
-| qianghua | strengthen |
-| qipao | qipao |
-| renwu | mission |
-| renwuxinxi | mission details |
-| shenge | divinity |
-| shengji | level up |
-| shenling | god and spirits |
-| shizhuang | outfits |
-| shoubing | control stick |
-| shouchong | first charge |
-| shuxingpiaozi | elemental damage display? |
-| tansuoyindao | exploration guide |
-| tishi | tip |
-| touxiang | surrender |
-| wanfa | game mode |
-| wanfashangdian | game mode shop |
-| wuqi | weapon |
-| xiaowanfa | minigame mode |
-| xiaoxi | chat message |
-| xingge | gender |
-| xingjietansuo | interstellar exploration |
-| xinxi | mail message |
-| xinzhuangbei | new gear  |
-| yindao | guide |
-| yizhi | matrices |
-| zhiye | job |
-| zhongduan | terminal |
-| zhuanfu | server change |
-| zuizhongbingqi | final weapon |
-| zuzhi | organization |
+- [Dishes](/static/Hotta/Content/Resources/Icon/caiyao)
+- [Ingredients](/static/Hotta/Content/Resources/Icon/shicai)
