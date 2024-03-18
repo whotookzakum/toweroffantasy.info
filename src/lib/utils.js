@@ -1,4 +1,7 @@
 import { DateTime } from "luxon";
+import lodash from 'lodash';
+import deepdash from 'deepdash-es';
+const _ = deepdash(lodash);
 
 // Filters by whether the entry is CURRENTLY in standard banner. For example, Alyss was moved to standard banner, despite having limited banners in the past, so she will appear when "standard" is selected. For a list of all characters that appeared in a limited banner, users should check the Banners page.
 
@@ -71,24 +74,16 @@ export function applyFilters(entries, { q = "", queryKey = "name", version = "al
 }
 
 // Removes "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp" from image links in favor of using assets from this repo
-export function cleanAssetLinks() {
-        
-
-
-        const imgNodes = document.querySelectorAll("img");
-        // console.log(imgNodes);
-        imgNodes.forEach((img) => {
-            let localFilePath = "/Hotta/Content/Resources";
-            if (
-                img.src.includes("L10N") ||
-                img.src.includes("ResourcesOverSea")
-            ) {
-                localFilePath = "/Hotta/Content";
+export function clean(obj) {
+    return _.mapValuesDeep(obj,
+        (v) => {
+            if (typeof v === "string") {
+                let localFilePath = "/Hotta/Content/Resources";
+                if (v.includes("L10N") || v.includes("ResourcesOverSea")) localFilePath = "/Hotta/Content";
+                return v.replace("https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp", localFilePath)
             }
-            img.src = img.src.replace(
-                "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp",
-                localFilePath,
-            );
-        });
-    
+            return v
+        },
+        { leavesOnly: true }
+    )
 }

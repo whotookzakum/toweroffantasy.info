@@ -1,4 +1,5 @@
 import { FullRelicStore } from '$houdini'
+import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
     // Relic full data
@@ -6,5 +7,5 @@ export const load = async (event) => {
     const relicRes = await relicQuery.fetch({ event, variables: { id: event.params.slug } })
     const { relic } = relicRes.data
 
-    return { relic }
+    return { relic: clean(relic) }
 }

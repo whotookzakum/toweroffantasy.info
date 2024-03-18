@@ -1,5 +1,6 @@
 import { AllWeaponsStore, AllSimulacraV2Store, AllMatricesStore, AllRelicsStore, AllMountsStore, ShortSimulacrumV2Store } from '$houdini'
 import { DateTime } from "luxon"
+import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
     const weaponsStore = new AllWeaponsStore()
@@ -39,7 +40,9 @@ export const load = async (event) => {
     //     return now < endDateTime && now >= startDateTime
     // })
     
-    return { newestAdditions }
+    return { 
+        newestAdditions: clean(newestAdditions)
+    }
 }
 
 

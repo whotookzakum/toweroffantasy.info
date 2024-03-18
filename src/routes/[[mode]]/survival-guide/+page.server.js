@@ -1,5 +1,6 @@
 import { AllGuidebooksStore } from '$houdini'
 import uniqBy from "lodash/uniqBy.js"
+import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
     const query = new AllGuidebooksStore()
@@ -21,5 +22,5 @@ export const load = async (event) => {
         item => item.title + item.description
     )
 
-    return { exploration, monsters }
+    return { exploration: clean(exploration), monsters: clean(monsters) }
 }

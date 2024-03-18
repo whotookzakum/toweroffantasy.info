@@ -1,4 +1,5 @@
 import { AllBannersStore, AllSimulacraV2Store } from '$houdini'
+import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
     const bannersStore = new AllBannersStore()
@@ -17,5 +18,5 @@ export const load = async (event) => {
         simulacrum: simulacraRes.data.simulacraV2.find(sim => sim.id === banner.simulacrumId)
     }))
 
-    return { banners }
+    return { banners: clean(banners) }
 }

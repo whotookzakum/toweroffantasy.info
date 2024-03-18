@@ -230,5 +230,13 @@
                 rgba(106, 105, 190, 0.02)
             );
         }
+
+        .ThunderIce {
+            background: linear-gradient(
+                45deg,
+                rgba(68, 145, 247, 0.15),
+                rgba(68, 145, 247, 0.02)
+            );
+        }
     }
 </style>

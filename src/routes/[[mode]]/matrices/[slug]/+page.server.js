@@ -1,4 +1,5 @@
 import { ShortWeaponStore, ShortSimulacrumV2Store, FullMatrixStore, AllBannersStore, AllSimulacraV2Store, AllWeaponsStore, AllMatricesStore } from '$houdini'
+import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
     // Matrix full data
@@ -48,15 +49,15 @@ export const load = async (event) => {
     const recommendedWeapons = matrix.meta.recommendedWeapons.map(pairingId => allWepsRes.data.weapons.find(w => w.id === pairingId))
 
     return {
-        weapon,
-        simulacrumV2,
+        weapon: clean(weapon),
+        simulacrumV2: clean(simulacrumV2),
         matrix: {
-            ...matrix,
+            ...clean(matrix),
             meta: {
-                ...matrix.meta,
-                recommendedWeapons,
+                ...clean(matrix.meta),
+                recommendedWeapons: clean(recommendedWeapons),
             }
         },
-        banners
+        banners: clean(banners)
     }
 }
