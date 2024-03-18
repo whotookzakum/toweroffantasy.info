@@ -4,6 +4,8 @@
     import Ad from "$components/Ad/Ad.svelte";
     import UpgradeMats from "./UpgradeMats.svelte";
     import AnchorLinks from "$components/AnchorLinks.svelte";
+    import RangeSlider from "svelte-range-slider-pips";
+    import { equipLevel, equipStars } from "$lib/stores"
 
     export let data;
     const { gear } = data;
@@ -39,6 +41,36 @@
     <aside>
         <div class="sticky">
             <AnchorLinks />
+            <div>
+                <p class="section-title" style="margin: 0">
+                    Equipment Enhancements (levels)
+                </p>
+                <small>Affects base stats</small>
+                <RangeSlider
+                    bind:values={$equipLevel}
+                    min={0}
+                    max={gear.maxLevel}
+                    float
+                    pips
+                    pipstep={5}
+                    first="label"
+                    last="label"
+                />
+            </div>
+            <div>
+                <p class="section-title" style="margin: 0">
+                    Equipment Advancements (stars)
+                </p>
+                <small>Affects random stats</small>
+                <RangeSlider
+                    bind:values={$equipStars}
+                    min={0}
+                    max={5}
+                    float
+                    pips
+                    all="label"
+                />
+            </div>
         </div>
     </aside>
 
@@ -59,10 +91,12 @@
             as 100.</small
         >
         <div class="grid g-50">
-            <h3 style="margin-top: 1.5rem;">Base Stats</h3>
+            <h3 id="base-stats" style="margin-top: 1.5rem;">Base Stats</h3>
             <p>
-                Base stats can be upgraded by consuming Booster and Advancement
-                Modules to level up the item.
+                Base stats can be upgraded by <strong>Enhancement</strong>,
+                consuming Booster and Advancement Modules to level up the item.
+                Enhancements are <strong class="mint">100%</strong> transferrable
+                when changing equipment.
             </p>
 
             <ul class="stats g-100">
@@ -90,13 +124,18 @@
         </div>
 
         <div class="grid g-50">
-            <h3 style="margin-top: 2rem">Random Stats</h3>
+            <h3 id="random-stats" style="margin-top: 2rem">Random Stats</h3>
             <p>
-                Random stats can be upgraded by feeding other equipment as EXP
-                to raise the stars on the item. {gear.name} comes with {numberOfRandomStats[
-                    gear.rarity
-                ]} of the following stats, selected randomly. Each upgrade will increase
-                the stat values by their respective ranges, shown below.
+                Random stats can be upgraded by <strong>Advancement</strong>,
+                consuming other equipment as EXP to raise the stars on the item.
+                Equipment of the same slot will provide increased EXP. EXP is
+                transferred at a reduced rate when feeding an Advanced item into
+                another item.
+            </p>
+            <p>
+                {gear.name} comes with {numberOfRandomStats[gear.rarity]} of the
+                following stats, selected randomly. Each upgrade will increase the
+                stat values by their respective ranges, shown below.
             </p>
             <ul class="stats g-100">
                 {#each gear.statPool as stat}
@@ -119,13 +158,28 @@
                                 >
                             </span>
                             <b class="stat-value">
-                                {getStat(stat.propName, "PropInitValue")}
-                                <small style="color: var(--text-mint)">
-                                    +{getStat(
-                                        stat.propName,
-                                        "PropMinValue",
-                                    )}~{getStat(stat.propName, "PropMaxValue")}
-                                </small>
+                                {#if $equipStars[0] == 0}
+                                    {getStat(stat.propName, "PropInitValue")}
+                                    <small class="mint">
+                                        +{getStat(
+                                            stat.propName,
+                                            "PropMinValue",
+                                        )}~{getStat(
+                                            stat.propName,
+                                            "PropMaxValue",
+                                        )}
+                                    </small>
+                                {:else}
+                                    {$equipStars[0] *
+                                        getStat(stat.propName, "PropMinValue") +
+                                        getStat(
+                                            stat.propName,
+                                            "PropInitValue",
+                                        )}~{$equipStars[0] *
+                                        getStat(stat.propName, "PropMaxValue") +
+                                        getStat(stat.propName, "PropInitValue")}
+                                        <small style="color: var(--tier-s); font-weight: 600">({$equipStars[0]}★)</small>
+                                {/if}
                             </b>
                         </div>
                     </li>

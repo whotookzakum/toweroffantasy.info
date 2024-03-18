@@ -103,6 +103,7 @@
                         {:else}
                             {Math.floor(($weaponLevel * stat.upgradeProp + stat.value))}
                         {/if}
+                        <small style="color: var(--tier-s); font-weight: 600; text-transform: none !important">(Lv. {$weaponLevel}, {$weaponStars[0]}★)</small>
                     </b>
                 </div>
             </li>

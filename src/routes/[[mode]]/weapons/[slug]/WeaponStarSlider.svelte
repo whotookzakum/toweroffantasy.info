@@ -4,7 +4,7 @@
 </script>
 
 <div>
-    <p class="section-title">Weapon Advancements</p>
+    <p class="section-title">Weapon Advancements (stars)</p>
     <small>Affects weapon stats</small>
     <RangeSlider
         bind:values={$weaponStars}

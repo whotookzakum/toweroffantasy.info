@@ -4,7 +4,7 @@
 </script>
 
 <div>
-    <p class="section-title">Weapon Level</p>
+    <p class="section-title">Weapon Enhancements (levels)</p>
     <small>Affects skill damage and weapon stats</small>
     <RangeSlider
         bind:values={$weaponLevel}

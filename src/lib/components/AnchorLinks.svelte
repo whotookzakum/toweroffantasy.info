@@ -134,6 +134,21 @@
                 href: "#favors"
             },
         );
+    } else if ($page.url.pathname.includes("/equipment")) {
+        anchorLinks.push(
+            {
+                name: "Top",
+                href: "#top",
+            },
+            {
+                name: "Base Stats",
+                href: "#base-stats",
+            },
+            {
+                name: "Random Stats",
+                href: "#random-stats"
+            }
+        );
     }
 
 </script>

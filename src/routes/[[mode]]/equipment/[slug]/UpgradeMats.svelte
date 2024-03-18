@@ -48,7 +48,6 @@
                 amount,
             };
         });
-        console.log(totalMats);
     }
 </script>
 

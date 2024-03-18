@@ -13,3 +13,6 @@ export const showWepOnSimEntry = writable(true);
 export const outfitsGender = writable("f");
 
 export const guidebookCategory = writable("exploration");
+
+export const equipLevel = writable([0]);
+export const equipStars = writable([0]);
