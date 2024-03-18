@@ -99,7 +99,7 @@
 {/if}
 
 {#if items && viewMode === "compact"}
-    <h3 style="margin: 0">Augmentation</h3>
+    <h3 id="augmentation" style="margin: 0">Augmentation</h3>
     <p>
         Increases max weapon level to <strong class="mint"
             >Lv. {sliderLevels[1]}</strong
@@ -134,7 +134,7 @@
         {/if}
     </p>
 
-    <h3 style="margin-top: 2rem">Enhancement</h3>
+    <h3 id="enhancement" style="margin-top: 2rem">Enhancement</h3>
     <p>
         Increases weapon level from <strong class="mint"
             >Lv. {sliderLevels[0]}</strong

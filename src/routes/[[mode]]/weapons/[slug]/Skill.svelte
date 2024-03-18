@@ -4,16 +4,21 @@
     import Tag from "$components/Tag.svelte";
 
     export let data;
+    export let isMaxSkillLevel = false;
+
+    $: sliderSkillLevel = Math.floor($weaponLevel / 10)
+    $: skillLevel = isMaxSkillLevel && sliderSkillLevel === 20 ? sliderSkillLevel + 1 : sliderSkillLevel
 
     $: description = interpolateString(
         data.description,
         data.values,
-        $weaponLevel,
+        skillLevel,
     );
 
-    function interpolateString(string, values, level) {
-        const skillLevel = Math.floor(level / 10);
-        const valueIndex = level >= 10 ? skillLevel - 1 : 0;
+    console.log(data.values)
+
+    function interpolateString(string, values, skillLevel) {
+        const valueIndex = skillLevel > 0 ? skillLevel - 1 : 0;
         return string.replace(
             /\{(\d+)\}/g,
             (match, index) => values[index][valueIndex] || match,
@@ -56,8 +61,8 @@
 <li class="box grid g-100">
     <div class="flex g-100">
         <img src={data.icon} alt="" width="64" height="64" />
-        <div>
-            <h3>{data.name}</h3>
+        <div class="grid g-25">
+            <h3>{data.name} <small class="mint" style="font-weight: bold; white-space: nowrap;">Lv. {skillLevel || 1}</small></h3>
             <div class="flex" style="gap: 0.35rem">
                 {#each data.tags as tag}
                     <Tag type={tag} style="padding-inline: 0.5rem" />
@@ -78,6 +83,7 @@
         margin: 0;
         text-transform: uppercase;
         font-size: var(--step-2);
+        line-height: normal;
     }
 
     .flex {

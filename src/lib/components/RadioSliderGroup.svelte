@@ -52,7 +52,7 @@
         flex-shrink: 1;
         justify-content: center;
         position: relative;
-        z-index: 10;
+        z-index: 3;
         padding: 0.5rem 1rem;
         cursor: pointer;
         border-radius: 0.25rem;

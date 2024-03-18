@@ -4,12 +4,15 @@
     import Skill from "./Skill.svelte";
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
     import gameplayPreviews from "./gameplayPreviews.json";
+    import Popper from "$components/Popper.svelte";
+    import { weaponLevel } from "$lib/stores";
 
     export let weapon;
     export let simulacrumV2;
     const { id, weaponAttacks } = weapon;
     let attackCategory = "normals";
     let previewType = gameplayPreviews[id] ? "video" : "guidebook";
+    let isMaxSkillLevel = true;
 </script>
 
 {#if weaponAttacks}
@@ -30,7 +33,7 @@
             name="previewType"
             data={[
                 { label: "Video", value: "video" },
-                { label: "Guidebook", value: "guidebook" }
+                { label: "Guidebook", value: "guidebook" },
             ]}
             style="margin-top: 0.5rem; max-width: 250px"
         />
@@ -53,18 +56,39 @@
         </figure>
     {/if}
 
-    <RadioSliderGroup
-        bind:group={attackCategory}
-        groupName="skills-category"
-        name="skillsCategory"
-        data={[
-            { label: "Normal", value: "normals" },
-            { label: "Dodge", value: "dodge" },
-            { label: "Skill", value: "skill" },
-            { label: "Discharge", value: "discharge" },
-        ]}
-        style="margin-top: 0.5rem; max-width: 500px"
-    />
+    <div
+        class="flex flex-wrap g-50 align-items-center"
+        style="margin-top: 0.5rem; position: relative; justify-content: space-between"
+    >
+        <RadioSliderGroup
+            bind:group={attackCategory}
+            groupName="skills-category"
+            name="skillsCategory"
+            data={[
+                { label: "Normal", value: "normals" },
+                { label: "Dodge", value: "dodge" },
+                { label: "Skill", value: "skill" },
+                { label: "Discharge", value: "discharge" },
+            ]}
+            style=" max-width: 500px; width: 100%;"
+        />
+        <Popper let:setFocused strategy="absolute">
+            <label style="user-select: none">
+                <input
+                    type="checkbox"
+                    bind:checked={isMaxSkillLevel}
+                    on:focus={() => setFocused(true)}
+                    on:blur={() => setFocused(false)}
+                    disabled={$weaponLevel < 200}
+                />
+                Max Skill Level <span style="color: var(--accent)">ⓘ</span>
+            </label>
+            <p slot="tooltip" style="max-inline-size: 20ch">
+                At skill level 20, you can augment one more time to reach skill
+                level 21.
+            </p>
+        </Popper>
+    </div>
 
     <div class="mobile-only flex flex-wrap">
         <WeaponLevelSlider />
@@ -72,7 +96,10 @@
 
     <ul class="weapon-attacks grid g-100" style="padding: 0;">
         {#each weaponAttacks[attackCategory] as data}
-            <Skill {data} />
+            <Skill {data} {isMaxSkillLevel} />
         {/each}
     </ul>
 {/if}
+
+<style lang="scss">
+</style>
