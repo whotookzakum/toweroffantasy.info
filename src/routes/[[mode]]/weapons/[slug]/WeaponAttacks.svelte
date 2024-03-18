@@ -25,6 +25,7 @@
         Percent values do not change, only flat values will increase alongside
         skill level.
     </p> -->
+    <!-- <p>Skills are leveled up through augmentation, not from enhancement (weapon level). On this site, level values will be used for simplicity (the assumption is that you have augmented your weapon, so a level 193 weapon would be skill level 19).</p> -->
 
     {#if gameplayPreviews[id] && simulacrumV2?.guidebook[1]}
         <RadioSliderGroup
@@ -56,6 +57,7 @@
         </figure>
     {/if}
 
+    <!-- TODO: Replace max level checkbox with a separate slider for Skill Level. Skill levels are determined by augmentation, NOT by weapon level. -->
     <div
         class="flex flex-wrap g-50 align-items-center"
         style="margin-top: 0.5rem; position: relative; justify-content: space-between"

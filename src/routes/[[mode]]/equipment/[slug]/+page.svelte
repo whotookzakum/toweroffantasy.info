@@ -73,6 +73,9 @@
                 Enhancements are <strong class="mint">100%</strong> transferrable
                 when changing equipment.
             </p>
+            <p>
+                Every 5th level is a breakthrough, resulting in additional stats (notated as Enhancement Unlock when inspecting armor in game). Basic 8-piece Activation bonuses are received when your helmet, gloves, shoulderpiece, armbad, top, bottom, belt, and shoes all reach a breakthrough level (+5, +10, +15, etc).
+            </p>
 
             <div class="mobile-only">
                 <EquipLevelSlider {gear} />

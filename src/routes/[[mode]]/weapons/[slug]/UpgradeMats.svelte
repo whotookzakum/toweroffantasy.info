@@ -168,6 +168,8 @@
     </ul>
 {/if}
 
+<!-- In Breakdown View, enhancement requirements are condensed on a 10-level basis for simplicity. -->
+
 {#if items && viewMode === "per-level"}
     <div class="table-wrapper">
         <table class="bg-alternate">
