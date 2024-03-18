@@ -1,4 +1,4 @@
-import { FullWeaponStore, ShortSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store, AllWeaponsStore, AllMatricesStore } from '$houdini'
+import { FullWeaponStore, FullSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store, AllWeaponsStore, AllMatricesStore } from '$houdini'
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
@@ -10,7 +10,7 @@ export const load = async (event) => {
     let simulacrumV2, matrix;
     // Simulacrum entry data
     if (weapon.simulacrumId) {
-        const simQuery = new ShortSimulacrumV2Store()
+        const simQuery = new FullSimulacrumV2Store()
         const simRes = await simQuery.fetch({ event, variables: { id: weapon.simulacrumId } })
         simulacrumV2 = simRes.data.simulacrumV2
     }

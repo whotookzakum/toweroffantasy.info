@@ -49,6 +49,10 @@
     },
     {
         "type": "rarity",
+        "value": 6
+    },
+    {
+        "type": "rarity",
         "value": 5
     },
     {
@@ -62,6 +66,10 @@
     {
         "type": "rarity",
         "value": 2
+    },
+    {
+        "type": "rarity",
+        "value": 1
     },
     {
         "type": "banners-matrices",

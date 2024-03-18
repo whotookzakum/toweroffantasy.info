@@ -5,7 +5,18 @@
         "/Hotta/Content/Resources/UI/yizhi/yizhi_tips_zi_ssr.webp";
     let alt = "SSR"
 
+    // 6: RED
+    // 5: SSR, LEGENDRY
+    // 4: SR, EPIC
+    // 3: R, RARE
+    // 2: N, UNCOMMON, COMMON
+    // 1: POOR
+
     switch (rarity) {
+        case 6: 
+            src = "/images/ssr_mini2.png"
+            alt = "SSR+"
+            break;
         case 4:
             src =
                 "/Hotta/Content/Resources/UI/yizhi/yizhi_tips_zi_sr.webp";
@@ -21,6 +32,10 @@
                 "/Hotta/Content/Resources/UI/yizhi/yizhi_tips_zi_n.webp";
             alt = "N"
             break;
+        case 1:
+            src = "/images/N-.png"
+            alt = "C"
+            break
     }
 </script>
 

@@ -1,6 +1,14 @@
 query FullEquipment($id: String!) {
     gear(id: $id) {
         ...equipmentEntry
+        maxLevel
+        advancement {
+            amount
+            icon
+            matId
+            name
+            rarity
+        }
         baseStat {
             propName
             propValue

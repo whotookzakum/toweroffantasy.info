@@ -2,9 +2,11 @@ import uniq from "lodash/uniq.js";
 import { gql, request } from 'graphql-request'
 import * as fs from "fs";
 
+// TODO: change /en to wildcard to support other localizations, possibly in getRegionalUris() if (isOverseas)
+
 // Requests all img asset paths from the API, transforms the paths into regex, and outputs a JSON config file for UnrealExporter
 
-// Images used directly on the front-end, not included in the API
+// Extra image routes, i.e. for images used directly on the front-end, not included in the API, or for routes that can't be properly extracted
 const frontendUris = [
     "Hotta/Content/Resources/Icon/item/item_weapon_upstar_.uasset",
     "Hotta/Content/Resources/UI/makeup/kong.uasset",
@@ -14,140 +16,148 @@ const frontendUris = [
     "Hotta/Content/Resources/UI/common/star/STAR_NoLine.uasset",
     "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.uasset",
     "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshiyou.uasset",
+    // "Hotta/Content/Resources/UI/Scenery/.*\\.uasset",
+    // "Hotta/Content/L10N/en/Resources/UI/Scenery/.*\\.uasset",
 ]
 
 const query = gql`
-query AllImgSrcs {
-    achievements {
-        icon
-    }
-    foods {
-        icon
-    }
-    gears {
-        icon
-    }
-    guidebooks {
-        icon
-    }
-    items {
-        icon
-    }
-    matrices {
-    assets {
+    query AllImgSrcs {
+        achievements {
             icon
-            iconLarge
-            characterArtwork
         }
-    }
-    mounts {
-    assets {
+        foods {
             icon
-            showImage
         }
-    unlockItems {
-        item {
+        gears {
+            icon
+        }
+        guidebooks {
+            icon
+            items {
                 icon
             }
         }
-    }
-    outfits {
-        icon
-    }
-    relics {
-        icon
-    }
-    servants {
-    assets {
-            activatedIcon
-            itemIcon
-            petIcon
-        }
-    skills {
+        items {
             icon
         }
-    }
-    simulacraV2 {
-    assetsA0 {
-            activeImitation
-            advanceGrayPainting
-            advancePainting
-            avatar
-            backPhoto
-            characterArtwork
-            descPainting
-            grayPainting
-            inactiveImitation
-            lotteryCardImage
-            matrixPainting
-            namePicture
-            painting
-            rarityIcon
-            thumbPainting
-            titlePicture
-            weaponShowPicture
-        }
-    assetsA3 {
-            activeImitation
-            advanceGrayPainting
-            advancePainting
-            avatar
-            backPhoto
-            characterArtwork
-            descPainting
-            grayPainting
-            lotteryCardImage
-            matrixPainting
-            inactiveImitation
-            painting
-            namePicture
-            rarityIcon
-            thumbPainting
-            titlePicture
-            weaponShowPicture
-        }
-    awakening {
-            icon
-        }
-    fashion {
-        assets {
-                grayPainting
-                painting
+        matrices {
+            assets {
+                icon
+                iconLarge
+                characterArtwork
             }
         }
-    }
-    weapons {
-    assets {
-            characterArtwork
-            icon
-            weaponIconForMatrix
-        }
-    upgradeMats {
-        levels {
-        mats {
+        mounts {
+            assets {
+                icon
+                showImage
+            }
+            unlockItems {
+                item {
                     icon
                 }
             }
         }
-    weaponStats {
+        outfits {
             icon
         }
-    weaponAttacks {
-        skill {
+        relics {
+            icon
+        }
+        servants {
+            assets {
+                activatedIcon
+                itemIcon
+                petIcon
+            }
+            skills {
                 icon
             }
-        normals {
+        }
+        simulacraV2 {
+            assetsA0 {
+                activeImitation
+                advanceGrayPainting
+                advancePainting
+                avatar
+                backPhoto
+                characterArtwork
+                descPainting
+                grayPainting
+                inactiveImitation
+                lotteryCardImage
+                matrixPainting
+                namePicture
+                painting
+                rarityIcon
+                thumbPainting
+                titlePicture
+                weaponShowPicture
+            }
+            assetsA3 {
+                activeImitation
+                advanceGrayPainting
+                advancePainting
+                avatar
+                backPhoto
+                characterArtwork
+                descPainting
+                grayPainting
+                lotteryCardImage
+                matrixPainting
+                inactiveImitation
+                painting
+                namePicture
+                rarityIcon
+                thumbPainting
+                titlePicture
+                weaponShowPicture
+            }
+            awakening {
                 icon
             }
-        dodge {
+            fashion {
+                assets {
+                    grayPainting
+                    painting
+                }
+            }
+            guidebook {
                 icon
             }
-        discharge {
+        }
+        weapons {
+            assets {
+                characterArtwork
                 icon
+                weaponIconForMatrix
+            }
+            upgradeMats {
+                levels {
+                    mats {
+                        icon
+                    }
+                }
+            }
+            weaponStats {
+                icon
+            }
+            weaponAttacks {
+                skill {
+                    icon
+                }
+                normals {
+                    icon
+                }
+                dodge {
+                    icon
+                }
+                discharge {
+                    icon
+                }
             }
         }
     }
-}
 `
 
 const res = await request('https://api.toweroffantasy.info/graphql', query)

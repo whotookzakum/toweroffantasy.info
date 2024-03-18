@@ -121,6 +121,16 @@
         <Ad unit="ArticleLB-sim2" />
 
         <h2 id="profile">Profile</h2>
+        {#if simulacrumV2.guidebook[0]}
+            <figure>
+                <img
+                    src={simulacrumV2.guidebook[0].icon}
+                    alt="In-game guidebook entry for {simulacrumV2.name}"
+                    style="width: 100%; border-radius: 1rem"
+                />
+                <figcaption style="padding: 0.5rem 0">{simulacrumV2.guidebook[0].description}</figcaption>
+            </figure>
+        {/if}
 
         <ul class="flex">
             <li class="box grid" style="flex: 1; align-content: start">

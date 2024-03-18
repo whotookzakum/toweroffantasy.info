@@ -5,9 +5,11 @@
     import WeaponLevelSlider from "./WeaponLevelSlider.svelte";
     import gameplayPreviews from "./gameplayPreviews.json";
 
-    export let weaponAttacks;
-    export let id;
+    export let weapon;
+    export let simulacrumV2;
+    const { id, weaponAttacks } = weapon;
     let attackCategory = "normals";
+    let previewType = gameplayPreviews[id] ? "video" : "guidebook";
 </script>
 
 {#if weaponAttacks}
@@ -20,8 +22,35 @@
         Percent values do not change, only flat values will increase alongside
         skill level.
     </p> -->
-    {#if gameplayPreviews[id]}
+
+    {#if gameplayPreviews[id] && simulacrumV2?.guidebook[1]}
+        <RadioSliderGroup
+            bind:group={previewType}
+            groupName="preview-type"
+            name="previewType"
+            data={[
+                { label: "Video", value: "video" },
+                { label: "Guidebook", value: "guidebook" }
+            ]}
+            style="margin-top: 0.5rem; max-width: 250px"
+        />
+    {/if}
+
+    {#if gameplayPreviews[id] && previewType === "video"}
         <Youtube source={gameplayPreviews[id]} />
+    {/if}
+
+    {#if simulacrumV2?.guidebook[1] && previewType === "guidebook"}
+        <figure>
+            <img
+                src={simulacrumV2.guidebook[1].icon}
+                alt="In-game guidebook entry for {weapon.name}"
+                style="width: 100%; border-radius: 1rem"
+            />
+            <figcaption style="padding: 0.5rem 0">
+                {simulacrumV2.guidebook[1].description}
+            </figcaption>
+        </figure>
     {/if}
 
     <RadioSliderGroup
