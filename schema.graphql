@@ -85,10 +85,15 @@ type GearAdvancementType {
 
 type GearType {
   advancement: [[GearAdvancementType!]!]!
+  advancementExp: [Int!]!
   baseStat: [BaseStatType!]!
+  baseUpgradeProps: [[UpgradePropType!]!]!
   description: String!
+  element: String
+  expValue: Int!
   icon: String!
   id: String!
+  matList: [String!]!
   maxLevel: Int!
   name: String!
   props: [PropType!]!
@@ -156,6 +161,7 @@ type MatrixSetType {
 type MatrixType {
   assets: MatrixAssetType!
   banners: [BannerType!]!
+  baseEXP: Int!
   description: String!
   id: String!
   meta: MatrixMetaType!
@@ -502,6 +508,14 @@ type UpgradeMaterialType {
   name: String
   rarity: Int
   type: String
+}
+
+type UpgradePropType {
+  flat: Boolean!
+  icon: String!
+  multiplier: Float!
+  name: String!
+  propId: String!
 }
 
 type VoiceActorsType {

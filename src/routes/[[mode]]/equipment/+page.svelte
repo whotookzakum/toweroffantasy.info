@@ -10,16 +10,15 @@
 
     export let data;
     let q = "";
-    let rarity;
+    let element, rarity, type;
     let uniqRarities = uniqBy(data.gears, (entry) => entry.rarity).map(
         (obj) => ({ type: "rarity", value: obj.rarity }),
     );
-    let type;
     let uniqTypes = uniqBy(data.gears, (entry) => entry.type)
         .sort((a, b) => b.type - a.type)
         .map((obj) => ({ name: obj.type, value: obj.type }));
 
-    $: entries = applyFilters(data.gears, { q, rarity, type });
+    $: entries = applyFilters(data.gears, { q, rarity, type, element });
 </script>
 
 <Meta
@@ -36,6 +35,7 @@
 
 <div class="filters-row">
     <SearchBar bind:q />
+    <CheckboxFilters type="element" bind:value={element} />
     <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
     <SelectorFilter
         dataset={uniqTypes}

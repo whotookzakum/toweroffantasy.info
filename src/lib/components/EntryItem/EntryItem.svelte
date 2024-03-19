@@ -83,6 +83,9 @@
         {#if matrixPieces}
             <span class="matrix-pieces">{matrixPieces} pieces</span>
         {/if}
+        {#if entry?.__typename === "GearType"}
+            <CategoryIcon type={entry.element} width="30px" />
+        {/if}
         {#if weapon || entry?.__typename === "SmartServantType"}
             <CategoryIcon
                 type={weapon?.element || entry.element}

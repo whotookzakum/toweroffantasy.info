@@ -5,4 +5,5 @@ fragment equipmentEntry on GearType {
     description
     type
     rarity
+    element
 }
