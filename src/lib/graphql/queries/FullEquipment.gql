@@ -9,12 +9,18 @@ query FullEquipment($id: String!) {
             name
             rarity
         }
+        advancementExp
         baseStat {
             propName
             propValue
             icon
             name
         }
+        baseUpgradeProps {
+            multiplier
+            propId
+        }
+        expValue
         statPool {
             propName
             weightValue

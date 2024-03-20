@@ -56,7 +56,7 @@
             h1={gear.name}
             icon={gear.icon}
             rarity={gear.rarity}
-            desc={gear.description}
+            desc={`${gear.description}\n\nGives **${gear.expValue}** EXP towards Equipment Advancement.`}
             eleColor={gear.element}
         />
 
@@ -74,7 +74,11 @@
                 when changing equipment.
             </p>
             <p>
-                Every 5th level is a breakthrough, resulting in additional stats (notated as Enhancement Unlock when inspecting armor in game). Basic 8-piece Activation bonuses are received when your helmet, gloves, shoulderpiece, armbad, top, bottom, belt, and shoes all reach a breakthrough level (+5, +10, +15, etc).
+                Every 5th level is a breakthrough, resulting in additional stats
+                (notated as Enhancement Unlock when inspecting armor in game).
+                Basic 8-piece Activation bonuses are received when your helmet,
+                gloves, shoulderpiece, armbad, top, bottom, belt, and shoes all
+                reach the same breakthrough level (+5, +10, +15, etc).
             </p>
 
             <div class="mobile-only">
@@ -116,7 +120,7 @@
                 another item.
             </p>
             <p>
-                {gear.name} comes with {numberOfRandomStats[gear.rarity]} of the
+                {gear.name} comes with <strong>{numberOfRandomStats[gear.rarity]}</strong> of the
                 following stats, selected randomly. Each upgrade will increase the
                 stat values by their respective ranges, shown below.
             </p>
@@ -124,7 +128,7 @@
             <div class="mobile-only">
                 <EquipStarSlider />
             </div>
-            
+
             <ul class="stats g-100">
                 {#each gear.statPool as stat}
                     <li class="stat box col-2">

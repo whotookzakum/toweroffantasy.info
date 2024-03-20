@@ -3,7 +3,7 @@ fragment equipmentEntry on GearType {
     name
     icon
     description
-    type
+    slotType
     rarity
     element
 }

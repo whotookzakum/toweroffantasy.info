@@ -63,6 +63,6 @@
 
 <ul class="entry-list">
     {#each entries as entry (entry.id + entry.icon)}
-        <EntryItem {entry} hasVideo={cosmeticVideos[entry.id]} />
+        <EntryItem entry={{...entry, rarity: null}} hasVideo={cosmeticVideos[entry.id]} />
     {/each}
 </ul>

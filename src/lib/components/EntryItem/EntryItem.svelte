@@ -24,39 +24,48 @@
     };
 
     let weapon;
-    let avatarUri;
+    let iconUri;
+    let href = `/${mainRoute[entry.__typename]}/${entry.id}`;
 
     switch (entry.__typename) {
         case "SimulacraType":
         case "SimulacraV2Type":
             weapon = entry.weapon;
-            avatarUri = entry.assetsA0.painting;
+            iconUri = entry.assetsA0.painting;
             break;
         case "WeaponType":
             weapon = entry;
-            avatarUri = weapon.assets.icon;
+            iconUri = weapon.assets.icon;
             break;
         case "MatrixType":
-            avatarUri = entry.assets.iconLarge;
+            iconUri = entry.assets.iconLarge;
             break;
         case "MountType":
-            avatarUri = entry.assets.icon;
+            iconUri = entry.assets.icon;
             break;
+        case "ItemType":
         case "OutfitType":
         case "RelicType":
-            avatarUri = entry.icon;
+            iconUri = entry.icon;
             break;
         case "SmartServantType":
-            avatarUri = entry.assets.activatedIcon;
+            iconUri = entry.assets.activatedIcon;
             break;
         case "GearType":
-            avatarUri = entry.icon;
+            iconUri = entry.icon;
             break;
+    }
+
+    if (entry.__typename === "ItemType") {
+        if (["AVATAR", "FRAME", "Chat Bubble", "Emoji", "Headwear"].includes(entry.type))
+            href = `/${mainRoute["OutfitType"]}/${entry.id}`;
     }
 </script>
 
 <li
-    class="item flex g-25 {entry.__typename} {entry.type ?? ''}"
+    class="item flex g-25 {entry.__typename} {entry.type
+        ?.toLowerCase()
+        .replace(' ', '-') ?? ''}"
     class:molinia={entry.id === "imitation_33"}
     class:hide-weapon={!$showWepOnSimEntry}
 >
@@ -75,7 +84,7 @@
         />
     {/if}
 
-    <a class:bottom={!weapon} href="/{mainRoute[entry.__typename]}/{entry.id}">
+    <a class:bottom={!weapon} {href}>
         {entry.name}
     </a>
 
@@ -123,7 +132,7 @@
         <NucleusIcons {entry} />
     </div>
 
-    <img class="avatar" src={avatarUri} alt="" width="260" height="349" />
+    <img class="icon" src={iconUri} alt="" width="260" height="349" />
 
     <img
         class="bg"
@@ -181,7 +190,7 @@
             top: -6rem;
         }
 
-        .avatar {
+        .icon {
             transform: scale(1.1);
         }
 
@@ -206,7 +215,7 @@
                 top: -6rem;
             }
 
-            .avatar {
+            .icon {
                 transform: scale(1.1);
             }
 
@@ -286,23 +295,6 @@
         flex-direction: row-reverse;
     }
 
-    .avatar {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 0%;
-        position: absolute;
-        transition: transform 0.2s ease;
-        z-index: -5;
-        left: 0;
-        top: 0;
-    }
-
-    :not(:where(.SimulacraV2Type, .SimulacraType)) .avatar {
-        object-position: -30px -40px !important;
-        width: 256px !important;
-    }
-
     .SimulacraV2Type.hide-weapon {
         .row-categories,
         .row-stats {
@@ -310,45 +302,56 @@
         }
     }
 
-    .MountType .avatar {
-        object-position: -50px 0 !important;
-        // width: 26px;
-        // top: 0;
-        object-fit: unset;
+    // 128px, centered
+    .icon {
         width: 100%;
+        max-width: 128px;
         height: auto;
+        position: absolute;
+        z-index: -5;
+        top: 0;
+        left: 50%;
+        translate: -50%;
+        margin-top: 1rem;
+        transition: transform 0.2s ease;
     }
 
-    .RelicType .avatar {
-        width: 196px !important;
-        object-position: -10px -20px !important;
+    // 256px 
+    :where(.SimulacraV2Type, .WeaponType, .MatrixType, .MountType, .RelicType, .OutfitType.dress, .OutfitType.guidenpc) .icon {
+        width: 256px;
+        height: auto;
+        left: 0;
+        object-fit: cover;
+        max-width: unset;
+        margin-top: unset;
+        translate: unset;
+    }
+
+    // Offset to the side
+    :where(.WeaponType, .MatrixType, .MountType, .OutfitType.guidenpc) .icon {
+        object-position: -30px -40px;
+    }
+
+    .SimulacraV2Type .icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .MountType .icon {
+        object-position: -50px 0;
+    }
+
+    .RelicType .icon {
+        width: 196px;
+        object-position: -10px -20px;
     }
 
     // Outfits
-    .Dress .avatar {
+    .dress .icon {
         // more centered, but too far left when entryItem is wide
         object-position: -31px -18px !important; // -31px -18px or -31px -24px
         // offset to the right, but looks okay when entryItem is wide
         object-position: -6px -18px !important;
-    }
-
-    // 128px avatars
-    :where(.Headwear, .Glider, .Skateboard, .SuspensionSkateboard) .avatar,
-    .avatar[src*="kong.webp"] {
-        object-fit: unset;
-        width: 100% !important;
-        height: auto;
-        object-position: unset !important;
-    }
-
-    @supports (translate: 0) {
-        :where(.Headwear, .Glider, .Skateboard, .SuspensionSkateboard) .avatar,
-        .avatar[src*="kong.webp"] {
-            margin-top: 1rem;
-            width: 128px !important;
-            left: 50%;
-            translate: -50%;
-        }
     }
 
     .bg {

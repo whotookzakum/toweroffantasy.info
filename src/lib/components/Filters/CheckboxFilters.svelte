@@ -39,7 +39,7 @@
                     <CategoryIcon
                         type={filter.value}
                         rarity={filter.value}
-                        style="width: 28px;"
+                        style="width: 30px;"
                     />
                 {/if}
             </label>

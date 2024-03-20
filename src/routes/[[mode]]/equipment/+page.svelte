@@ -14,9 +14,9 @@
     let uniqRarities = uniqBy(data.gears, (entry) => entry.rarity).map(
         (obj) => ({ type: "rarity", value: obj.rarity }),
     );
-    let uniqTypes = uniqBy(data.gears, (entry) => entry.type)
-        .sort((a, b) => b.type - a.type)
-        .map((obj) => ({ name: obj.type, value: obj.type }));
+    let uniqTypes = uniqBy(data.gears, (entry) => entry.slotType)
+        .sort((a, b) => b.slotType - a.slotType)
+        .map((obj) => ({ name: obj.slotType, value: obj.slotType }));
 
     $: entries = applyFilters(data.gears, { q, rarity, type, element });
 </script>
@@ -30,18 +30,16 @@
 
 <h1>Equipment</h1>
 <p>
-    Various pieces of equipment can be worn and upgraded to strengthen your character.
+    Various pieces of equipment can be worn and upgraded to strengthen your
+    character. Equipment can come in elemental variations, which are more likely
+    to have stats pertaining to that element.
 </p>
 
 <div class="filters-row">
     <SearchBar bind:q />
     <CheckboxFilters type="element" bind:value={element} />
     <CheckboxFilters type="rarity" bind:value={rarity} dataset={uniqRarities} />
-    <SelectorFilter
-        dataset={uniqTypes}
-        bind:value={type}
-        selectorName="Type"
-    />
+    <SelectorFilter dataset={uniqTypes} bind:value={type} selectorName="Type" />
 </div>
 
 <ul class="entry-list">

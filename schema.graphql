@@ -98,6 +98,7 @@ type GearType {
   name: String!
   props: [PropType!]!
   rarity: Int!
+  slotType: String!
   statPool: [StatPoolType!]!
   type: String!
 }
