@@ -15,8 +15,6 @@
         skillLevel,
     );
 
-    console.log(data.values)
-
     function interpolateString(string, values, skillLevel) {
         const valueIndex = skillLevel > 0 ? skillLevel - 1 : 0;
         return string.replace(
