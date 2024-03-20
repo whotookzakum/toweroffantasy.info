@@ -20,6 +20,7 @@ const config = {
         },
 		prerender: {
 			// handleMissingId: 'ignore',
+			handleHttpError: 'warn',
 			entries: [
 				'/',
 				// '/cn'
