@@ -19,7 +19,7 @@ const config = {
 			$components: path.resolve('.', 'src/lib/components'),
         },
 		prerender: {
-			// handleMissingId: 'ignore',
+			handleMissingId: 'warn',
 			handleHttpError: 'warn',
 			entries: [
 				'/',
