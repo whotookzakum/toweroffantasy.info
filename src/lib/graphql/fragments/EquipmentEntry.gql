@@ -6,4 +6,5 @@ fragment equipmentEntry on GearType {
     slotType
     rarity
     element
+    expValue
 }

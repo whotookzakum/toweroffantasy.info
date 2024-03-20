@@ -21,6 +21,7 @@ query FullEquipment($id: String!) {
             propId
         }
         expValue
+        matList
         statPool {
             propName
             weightValue

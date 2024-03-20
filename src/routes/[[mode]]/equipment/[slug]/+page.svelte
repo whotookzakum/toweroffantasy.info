@@ -7,6 +7,7 @@
     import { equipLevel, equipStars } from "$lib/stores";
     import EquipLevelSlider from "./EquipLevelSlider.svelte";
     import EquipStarSlider from "./EquipStarSlider.svelte";
+    import ItemIcon from "$components/ItemIcon.svelte";
 
     export let data;
     const { gear } = data;
@@ -30,6 +31,8 @@
         const statRanges = gear.props.find((prop) => prop.PropId === id);
         return statRanges[key];
     }
+
+    console.log(gear)
 </script>
 
 <Meta
@@ -44,7 +47,7 @@
             <AnchorLinks />
             <div class="aside-extras grid g-100">
                 <EquipLevelSlider {gear} />
-                <EquipStarSlider />
+                <EquipStarSlider {gear} />
             </div>
         </div>
     </aside>
@@ -114,15 +117,16 @@
             <h3 id="random-stats">Random Stats</h3>
             <p>
                 Random stats can be upgraded by <strong>Advancement</strong>,
-                consuming other equipment as EXP to raise the stars on the item.
-                Equipment of the same slot will provide increased EXP. EXP is
-                transferred at a reduced rate when feeding an Advanced item into
-                another item.
+                consuming other equipment of the same type or EXP items to raise
+                the stars on the item. Equipment of the same slot will provide
+                increased EXP. EXP is transferred at a reduced rate when feeding
+                an Advanced item into another item.
             </p>
             <p>
-                {gear.name} comes with <strong>{numberOfRandomStats[gear.rarity]}</strong> of the
-                following stats, selected randomly. Each upgrade will increase the
-                stat values by their respective ranges, shown below.
+                {gear.name} comes with
+                <strong>{numberOfRandomStats[gear.rarity]}</strong> of the following
+                stats, selected randomly. Each upgrade will increase the stat values
+                by their respective ranges, shown below.
             </p>
 
             <div class="mobile-only">
@@ -152,15 +156,17 @@
                             <b class="stat-value">
                                 {#if $equipStars[0] == 0}
                                     {getStat(stat.propName, "PropInitValue")}
-                                    <small class="mint">
-                                        +{getStat(
-                                            stat.propName,
-                                            "PropMinValue",
-                                        )}~{getStat(
-                                            stat.propName,
-                                            "PropMaxValue",
-                                        )}
-                                    </small>
+                                    {#if gear?.advancementExp?.length > 0}
+                                        <small class="mint">
+                                            +{getStat(
+                                                stat.propName,
+                                                "PropMinValue",
+                                            )}~{getStat(
+                                                stat.propName,
+                                                "PropMaxValue",
+                                            )}
+                                        </small>
+                                    {/if}
                                 {:else}
                                     {$equipStars[0] *
                                         getStat(stat.propName, "PropMinValue") +
@@ -170,18 +176,60 @@
                                         )}~{$equipStars[0] *
                                         getStat(stat.propName, "PropMaxValue") +
                                         getStat(stat.propName, "PropInitValue")}
-                                    <small
-                                        style="color: var(--tier-s); font-weight: 600"
-                                        >({$equipStars[0]}★)</small
-                                    >
+                                    {#if gear?.advancementExp?.length > 0}
+                                        <small
+                                            style="color: var(--tier-s); font-weight: 600"
+                                            >({$equipStars[0]}★)</small
+                                        >
+                                    {/if}
                                 {/if}
                             </b>
                         </div>
                     </li>
                 {/each}
             </ul>
-            <h4>Required EXP</h4>
-            <p>Coming soon</p>
+
+            {#if gear?.advancementExp?.length > 0}
+                <h4>Required EXP</h4>
+                <table class="bg-alternate">
+                    <thead>
+                        <tr>
+                            <th>Stars</th>
+                            <th>EXP</th>
+                            <th>Total EXP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {#each gear.advancementExp as expValue, index}
+                            <tr>
+                                <td class="star">{index + 1} ★</td>
+                                <td>{expValue}</td>
+                                <td
+                                    >{gear.advancementExp.reduce(
+                                        (acc, curr, idx) => {
+                                            if (idx <= index) acc += curr;
+                                            return acc;
+                                        },
+                                        0,
+                                    )}</td
+                                >
+                            </tr>
+                        {/each}
+                    </tbody>
+                </table>
+            {/if}
+
+            {#if gear.matList.length > 0}
+                <h5>Upgrade Materials</h5>
+                <p>Below is a list of items that give EXP towards {gear.name}. Equipment of type <strong>{gear.slotType}</strong> can also be used.</p>
+                <ul class="flex-wrap flex g-50" style="padding: 0; margin: 0">
+                    {#each gear.matList as item}
+                        <li class="flex">
+                            <ItemIcon item={{...item, amount: item.expValue}} amount imgSize="64" wrapperSize="64px" />
+                        </li>
+                    {/each}
+                </ul>
+            {/if}
         </div>
     </div>
 </article>
@@ -200,7 +248,13 @@
         margin-top: 2rem;
     }
 
-    h4 {
+    h4, h5 {
         margin-top: 1.5rem;
+    }
+
+    .star {
+        color: var(--tier-s);
+        font-weight: bold;
+        font-size: var(--step-1);
     }
 </style>
