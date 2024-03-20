@@ -85,7 +85,7 @@
     {/if}
 
     <a class:bottom={!weapon} {href}>
-        {entry.name}
+        {entry.name?.replace(" ", " ")}
     </a>
 
     <div class="row-categories flex">

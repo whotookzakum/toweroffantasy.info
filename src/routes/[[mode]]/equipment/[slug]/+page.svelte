@@ -31,8 +31,6 @@
         const statRanges = gear.props.find((prop) => prop.PropId === id);
         return statRanges[key];
     }
-
-    console.log(gear)
 </script>
 
 <Meta

@@ -7,18 +7,6 @@ import * as fs from "fs";
 
 // Requests all img asset paths from the API, transforms the paths into regex, and outputs a JSON config file for UnrealExporter
 
-// Extra image routes, i.e. for images used directly on the front-end, not included in the API, or for routes that can't be properly extracted
-const frontendUris = [
-    "Hotta/Content/Resources/Icon/item/item_weapon_upstar_.uasset",
-    "Hotta/Content/Resources/UI/makeup/kong.uasset",
-    "Hotta/Content/Resources/UI/wuqi/icon.*\\.uasset",
-    "Hotta/Content/Resources/UI/AttributeIcon/icon.*\\.uasset",
-    "Hotta/Content/Resources/UI/yizhi/yizhi_tips.*\\.uasset",
-    "Hotta/Content/Resources/UI/common/star/STAR_NoLine.uasset",
-    "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.uasset",
-    "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshiyou.uasset",
-]
-
 const query = gql`
     query AllImgSrcs {
         achievements {
@@ -162,7 +150,7 @@ const query = gql`
 const res = await request('https://api.toweroffantasy.info/graphql', query)
 
 // Clean up the backend data
-const backendUris =
+const apiUris =
     Object.values(res)
         .flat()
         .flatMap(item => getDeepestValues(item))
@@ -171,7 +159,7 @@ const backendUris =
             return formatStr(str)
         })
 
-const uniqUris = sort(uniq([...backendUris, ...frontendUris]))
+const uniqUris = sort(uniq(apiUris))
 const overseas = getRegionalUris(uniqUris, true)
 const original = getRegionalUris(uniqUris, false)
 
@@ -189,7 +177,18 @@ const imgsConfig = [
         "createNewCheckpoint": false,
         "useCheckpointFile": "",
         "exportJsonPaths": [],
-        "exportPngPaths": original,
+        "exportPngPaths": [
+            ...original,
+            // Front-end UI related
+            "Hotta/Content/Resources/Icon/item/item_weapon_upstar_.uasset",
+            "Hotta/Content/Resources/UI/makeup/kong.uasset",
+            "Hotta/Content/Resources/UI/wuqi/icon.*\\.uasset",
+            "Hotta/Content/Resources/UI/AttributeIcon/icon.*\\.uasset",
+            "Hotta/Content/Resources/UI/yizhi/yizhi_tips.*\\.uasset",
+            "Hotta/Content/Resources/UI/common/star/STAR_NoLine.uasset",
+            "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshizuo.uasset",
+            "Hotta/Content/Resources/UI/Activity/JDWC/AD/jingdwc_huodong_zhuangshiyou.uasset"
+        ],
         "excludedPaths": []
     },
     {
@@ -205,9 +204,13 @@ const imgsConfig = [
         "createNewCheckpoint": false,
         "useCheckpointFile": "",
         "exportJsonPaths": [],
-        "exportPngPaths": overseas,
+        "exportPngPaths": [
+            ...overseas,
+            "Hotta/Content/Resources/Icon/item/.*\\.uasset",
+            "Hotta/Content/Resources/Icon/chat/qipao/.*\\.uasset",
+        ],
         "excludedPaths": []
-    }
+    },
 ]
 
 fs.writeFileSync("./UnrealExporter/configs/tof-images.json", JSON.stringify(imgsConfig, null, 4), () => { })

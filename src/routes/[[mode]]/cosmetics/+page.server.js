@@ -28,7 +28,13 @@ export const load = async (event) => {
             // chat_emoji emojis
             // chat_dubbing voice packs
             // chat_mia_phrase mia voice pack?
-            if (item.id.includes("chat_qipao")) items.push({ ...item, type: "Chat Bubble" })
+            if (item.id.includes("chat_qipao")) {
+                // These don't have icon versions, but they have the full chat bubble image
+                if (["chat_qipao_iw_2", "chat_qipao_iw_3", "chat_qipao_iw_4"].includes(item.id)) {
+                    item.icon = item.icon.replace("icon_", "")
+                }
+                items.push({ ...item, type: "Chat Bubble" })
+            }
             else if (item.id.includes("chat_emoji")) items.push({ ...item, type: "Emoji" })
         }
 
