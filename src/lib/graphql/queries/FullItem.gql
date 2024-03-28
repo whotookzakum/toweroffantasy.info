@@ -1,5 +1,5 @@
-query FullItem($id: String!) {
-    item(id: $id) {
+query FullItem($id: String!, $lang: String, $version: String) {
+    item(id: $id, lang: $lang, version: $version) {
         ...itemEntry
     }
 }

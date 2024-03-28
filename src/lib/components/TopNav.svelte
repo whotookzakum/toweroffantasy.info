@@ -24,7 +24,7 @@
                 <span class="long">Tower of Fantasy</span>
                 <span class="mini">ToF</span> Index
             </a>
-            <!-- <RegionSelector style="margin: 0.5rem 0.25rem" /> -->
+            <RegionSelector style="margin: 0.5rem 0.25rem" />
         </div>
 
         <input

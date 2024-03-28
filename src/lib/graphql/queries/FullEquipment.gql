@@ -1,5 +1,5 @@
-query FullEquipment($id: String!) {
-    gear(id: $id) {
+query FullEquipment($id: String!, $lang: String, $version: String) {
+    gear(id: $id, lang: $lang, version: $version) {
         ...equipmentEntry
         maxLevel
         advancement {

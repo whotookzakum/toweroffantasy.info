@@ -1,5 +1,5 @@
-query AllMatrices($lang: String) {
-    matrices(lang: $lang) {
+query AllMatrices($lang: String, $version: String) {
+    matrices(lang: $lang, version: $version) {
         ...matrixEntry
     }
 }

@@ -2,28 +2,31 @@ import { ShortWeaponStore, FullSimulacrumV2Store, ShortMatrixStore, AllBannersSt
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
+    const version = event.params.mode === "cn" ? "china" : "global"
+    const lang = event.params.mode === "cn" ? "cn" : "en"
+
     // Simulacrum full data
     const simQuery = new FullSimulacrumV2Store()
-    const simRes = await simQuery.fetch({ event, variables: { id: event.params.slug } })
+    const simRes = await simQuery.fetch({ event, variables: { id: event.params.slug, version, lang } })
     const { simulacrumV2 } = simRes.data
 
     // Weapon for related links
     const wepQuery = new ShortWeaponStore()
-    const { data } = await wepQuery.fetch({ event, variables: { id: simulacrumV2.weaponId } })
+    const { data } = await wepQuery.fetch({ event, variables: { id: simulacrumV2.weaponId, version, lang } })
     const { weapon } = data
 
     // Matrix for related links
     const matrixQuery = new ShortMatrixStore()
-    const matrixRes = await matrixQuery.fetch({ event, variables: { id: simulacrumV2.matrixId } })
+    const matrixRes = await matrixQuery.fetch({ event, variables: { id: simulacrumV2.matrixId, version, lang } })
     const { matrix } = matrixRes.data
 
     // Banners for banner table
     const bannersQuery = new AllBannersStore()
-    const bannersRes = await bannersQuery.fetch({ event })
+    const bannersRes = await bannersQuery.fetch({ event, variables: { version, lang } })
 
     // All simulacra for avatar image in banner table
     const allSimsStore = new AllSimulacraV2Store()
-    const allSimsRes = await allSimsStore.fetch({ event })
+    const allSimsRes = await allSimsStore.fetch({ event, variables: { version, lang } })
 
     const banners = bannersRes.data.banners.map(banner => {
         const simulacrum = allSimsRes.data.simulacraV2.find(sim => sim.id === banner.simulacrumId)
@@ -38,7 +41,7 @@ export const load = async (event) => {
     })
 
     const itemsQuery = new AllItemsStore()
-    const itemsRes = await itemsQuery.fetch({ event, variables: { filter: "{\"type\": \"GIFT\" }" } })
+    const itemsRes = await itemsQuery.fetch({ event, variables: { filter: "{\"type\": \"GIFT\" }", version, lang } })
     const { items } = itemsRes.data
 
     const gifts =

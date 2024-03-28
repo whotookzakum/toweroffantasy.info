@@ -3,20 +3,23 @@ import { DateTime } from "luxon"
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
+    const version = event.params.mode === "cn" ? "china" : "global"
+    const lang = event.params.mode === "cn" ? "cn" : "en"
+
     const weaponsStore = new AllWeaponsStore()
-    const weaponsRes = await weaponsStore.fetch({ event })
+    const weaponsRes = await weaponsStore.fetch({ event, variables: { version, lang } })
 
     const simulacraStore = new AllSimulacraV2Store()
-    const simulacraRes = await simulacraStore.fetch({ event })
+    const simulacraRes = await simulacraStore.fetch({ event, variables: { version, lang } })
 
     const matricesStore = new AllMatricesStore()
-    const matricesRes = await matricesStore.fetch({ event })
+    const matricesRes = await matricesStore.fetch({ event, variables: { version, lang } })
 
     const relicsStore = new AllRelicsStore()
-    const relicsRes = await relicsStore.fetch({ event })
+    const relicsRes = await relicsStore.fetch({ event, variables: { version, lang } })
 
     const mountsStore = new AllMountsStore()
-    const mountsRes = await mountsStore.fetch({ event })
+    const mountsRes = await mountsStore.fetch({ event, variables: { version, lang } })
 
     const newestAdditions = [
         ...simulacraRes.data.simulacraV2, 

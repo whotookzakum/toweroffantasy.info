@@ -1,5 +1,5 @@
-query ShortSimulacrumV2($id: String!) {
-    simulacrumV2(id: $id) {
+query ShortSimulacrumV2($id: String!, $lang: String, $version: String) {
+    simulacrumV2(id: $id, lang: $lang, version: $version) {
         ...simulacrum_v2Entry
     }
 }

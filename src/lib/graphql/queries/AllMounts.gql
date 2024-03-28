@@ -1,5 +1,5 @@
-query AllMounts($lang: String) {
-    mounts(lang: $lang) {
+query AllMounts($lang: String, $version: String) {
+    mounts(lang: $lang, version: $version) {
         ...mountEntry
     }
 }

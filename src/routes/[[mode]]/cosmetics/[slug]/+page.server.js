@@ -2,15 +2,18 @@ import { FullOutfitStore, FullItemStore } from '$houdini'
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
+    const version = event.params.mode === "cn" ? "china" : "global"
+    const lang = event.params.mode === "cn" ? "cn" : "en"
+
     let result
     const outfitQuery = new FullOutfitStore()
-    const outfitRes = await outfitQuery.fetch({ event, variables: { id: event.params.slug } })
+    const outfitRes = await outfitQuery.fetch({ event, variables: { id: event.params.slug, version, lang } })
     if (outfitRes.data) {
         result = outfitRes.data.outfit
     }
     else {
         const itemQuery = new FullItemStore()
-        const itemRes = await itemQuery.fetch({ event, variables: { id: event.params.slug } })
+        const itemRes = await itemQuery.fetch({ event, variables: { id: event.params.slug, version, lang } })
         result = itemRes.data.item
 
         // These don't have icon versions, but they have the full chat bubble image

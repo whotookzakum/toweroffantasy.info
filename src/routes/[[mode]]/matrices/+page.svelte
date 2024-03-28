@@ -30,7 +30,7 @@
 
 <Ad unit="LB-matrices" />
 
-<h1>Matrices {rarity}</h1>
+<h1>Matrices</h1>
 <p>
     Matrices (aka Chips) are items that can be attached to one of four slots on
     a weapon (Emotion, Mind, Belief, and Memory) to provide stat boosts and

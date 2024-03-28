@@ -1,5 +1,5 @@
-query AllEquipments($lang: String) {
-    gears(lang: $lang) {
+query AllEquipments($lang: String, $version: String) {
+    gears(lang: $lang, version: $version) {
         ...equipmentEntry
     }
 }

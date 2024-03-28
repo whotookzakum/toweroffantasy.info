@@ -1,5 +1,5 @@
-query ShortMatrix($id: String!) {
-    matrix(id: $id) {
+query ShortMatrix($id: String!, $lang: String, $version: String) {
+    matrix(id: $id, lang: $lang, version: $version) {
         ...matrixEntry
     }
 }

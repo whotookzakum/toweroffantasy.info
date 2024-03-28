@@ -1,5 +1,5 @@
-query AllFoods($lang: String) {
-    foods(lang: $lang) {
+query AllFoods($lang: String, $version: String) {
+    foods(lang: $lang, version: $version) {
         ...foodEntry
     }
 }

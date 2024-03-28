@@ -1,5 +1,5 @@
-query FullServant($id: String!) {
-    servant(id: $id) {
+query FullServant($id: String!, $lang: String, $version: String) {
+    servant(id: $id, lang: $lang, version: $version) {
         ...servantEntry
         advancements {
             description

@@ -1,5 +1,5 @@
-query FullRelic($id: String!) {
-    relic(id: $id) {
+query FullRelic($id: String!, $lang: String, $version: String) {
+    relic(id: $id, lang: $lang, version: $version) {
         ...relicEntry
         advancements
         description

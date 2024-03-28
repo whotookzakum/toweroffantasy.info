@@ -1,5 +1,5 @@
-query FullOutfit($id: String!) {
-    outfit(id: $id) {
+query FullOutfit($id: String!, $lang: String, $version: String) {
+    outfit(id: $id, lang: $lang, version: $version) {
         ...outfitEntry
         description
         source

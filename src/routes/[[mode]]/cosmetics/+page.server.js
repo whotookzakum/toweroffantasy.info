@@ -2,20 +2,23 @@ import { AllOutfitsStore, AllItemsStore } from '$houdini'
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
+    const version = event.params.mode === "cn" ? "china" : "global"
+    const lang = event.params.mode === "cn" ? "cn" : "en"
+
     const query = new AllOutfitsStore()
-    const { data } = await query.fetch({ event })
-    const outfits = data.outfits.map(item => ({...item, type: item.type === "Headwear" ? "Accessory" : item.type}))
+    const { data } = await query.fetch({ event, variables: { version, lang } })
+    const outfits = data.outfits.map(item => ({...item, type: item.type === "Headwear" ? "Accessory" : item.type, version, lang}))
 
     const avatarsQuery = new AllItemsStore()
-    const avatarsRes = await avatarsQuery.fetch({ event, variables: { filter: "{\"type\": \"AVATAR\" }" } })
+    const avatarsRes = await avatarsQuery.fetch({ event, variables: { filter: "{\"type\": \"AVATAR\" }", version, lang } })
     const avatars = avatarsRes.data.items
 
     const framesQuery = new AllItemsStore()
-    const framesRes = await framesQuery.fetch({ event, variables: { filter: "{\"type\": \"FRAME\" }" } })
+    const framesRes = await framesQuery.fetch({ event, variables: { filter: "{\"type\": \"FRAME\" }", version, lang } })
     const frames = framesRes.data.items
 
     const consumablesQuery = new AllItemsStore()
-    const consumablesRes = await consumablesQuery.fetch({ event, variables: { filter: "{\"type\": \"CONSUMABLE\" }" } })
+    const consumablesRes = await consumablesQuery.fetch({ event, variables: { filter: "{\"type\": \"CONSUMABLE\" }", version, lang } })
     const consumables = consumablesRes.data.items.reduce((items, item) => {
         if (item.id.startsWith("hat_")) {
             items.push({ ...item, type: "Headwear" })

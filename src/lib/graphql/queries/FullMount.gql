@@ -1,5 +1,5 @@
-query FullMount($id: String!) {
-    mount(id: $id) {
+query FullMount($id: String!, $lang: String, $version: String) {
+    mount(id: $id, lang: $lang, version: $version) {
         ...mountEntry
         description
         rarity

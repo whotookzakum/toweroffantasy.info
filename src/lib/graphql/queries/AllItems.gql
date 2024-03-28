@@ -1,5 +1,5 @@
-query AllItems($lang: String, $filter: String) {
-    items(lang: $lang, filter: $filter) {
+query AllItems($lang: String, $version: String, $filter: String) {
+    items(lang: $lang, version: $version, filter: $filter) {
         ...itemEntry
     }
 }

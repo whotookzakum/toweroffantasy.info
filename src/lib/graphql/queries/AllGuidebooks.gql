@@ -1,5 +1,5 @@
-query AllGuidebooks($lang: String) {
-    guidebooks(lang: $lang) {
+query AllGuidebooks($lang: String, $version: String) {
+    guidebooks(lang: $lang, version: $version) {
         ...guidebookEntry
     }
 }

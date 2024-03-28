@@ -91,6 +91,7 @@ type GearType {
   description: String!
   element: String
   expValue: Int!
+  gearUpgradeProps: [[Float!]!]!
   icon: String!
   id: String!
   matList: [String!]!
@@ -127,6 +128,7 @@ type IngredientType {
   matID: ItemType!
   max: Int!
   min: Int!
+  source: [String!]!
 }
 
 type ItemType {
@@ -136,6 +138,7 @@ type ItemType {
   id: String!
   name: String
   rarity: Int!
+  source: [String!]!
   type: String!
 }
 
@@ -304,11 +307,12 @@ type ResearchReqType {
 type ResearchType {
   group: String!
   id: String!
+  name: String!
   redo: ResearchRedoType!
   requirements: [ResearchReqType!]!
   researchMats: [ResearchMatType!]!
   rewards: [ResearchMatType!]!
-  stage: Int!
+  stage: String!
   stageIcon: String!
   stageInfoIcon: String!
 }
@@ -585,7 +589,7 @@ type WeaponType {
   shatter: ShatterOrChargeType!
   simulacrumId: String
   upgradeMats: WeaponMatsType
-  version: String!
+  version: String
   weaponAdvancements: [WeaponAdvancementType!]!
   weaponAttacks: WeaponAttacksType!
   weaponEffects: [WeaponEffectType!]!

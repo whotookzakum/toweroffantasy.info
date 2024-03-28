@@ -1,5 +1,5 @@
-query AllOutfits($lang: String) {
-    outfits(lang: $lang) {
+query AllOutfits($lang: String, $version: String) {
+    outfits(lang: $lang, version: $version) {
         ...outfitEntry
     }
 }

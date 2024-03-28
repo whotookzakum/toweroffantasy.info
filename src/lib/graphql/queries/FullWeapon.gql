@@ -1,5 +1,5 @@
-query FullWeapon($id: String!) {
-    weapon(id: $id) {
+query FullWeapon($id: String!, $lang: String, $version: String) {
+    weapon(id: $id, lang: $lang, version: $version) {
         ...weaponEntry
         simulacrumId
         description,
