@@ -29,7 +29,11 @@
             {/if}
         </button>
         <!-- TODO: replace description with source once available in the API -->
-        <p slot="tooltip">{item.description}</p>
+        <p slot="tooltip">
+            {#each item.source as source}
+                {source}<br/>
+            {/each}
+        </p>
     </Popper>
 {:else if item.name}
     <Popper {strategy}>

@@ -11,7 +11,7 @@
 
     export let data;
     const { foods, allEffects } = data;
-
+console.log(foods)
     let q = "";
     let rarity, effects;
     let type = "all";
@@ -113,6 +113,7 @@
                                                 <ItemIcon
                                                     item={{
                                                         ...ingredient.matID,
+                                                        source: ingredient.source,
                                                         amount: ingredient.min,
                                                     }}
                                                     imgSize="48"

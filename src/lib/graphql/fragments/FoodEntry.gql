@@ -20,5 +20,6 @@ fragment foodEntry on FoodType {
         }
         max
         min
+        source
     }
 }
