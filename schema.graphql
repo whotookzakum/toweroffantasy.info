@@ -100,6 +100,7 @@ type GearType {
   props: [PropType!]!
   rarity: Int!
   slotType: String!
+  source: [String!]!
   statPool: [StatPoolType!]!
   type: String!
 }
@@ -214,6 +215,7 @@ type MountType {
   id: String!
   name: String!
   rarity: Int!
+  source: [String!]!
   unlockItems: [UnlockItemType!]!
   version: String!
 }

@@ -31,6 +31,22 @@
         const statRanges = gear.props.find((prop) => prop.PropId === id);
         return statRanges[key];
     }
+
+    $: baseStats = gear.baseStat.map((stat, statIndex) => {
+        let statGainFromLevel = 0;
+
+        for (let i = $equipLevel[0] - 1; i > -1; i--) {
+            statGainFromLevel +=
+                gear.gearUpgradeProps[Math.floor(i / 5)][statIndex];
+        }
+
+        return {
+            ...stat,
+            value: Math.floor(stat.propValue + statGainFromLevel),
+        };
+    });
+
+    // $: console.log(baseStats)
 </script>
 
 <Meta
@@ -74,20 +90,13 @@
                 Enhancements are <strong class="mint">100%</strong> transferrable
                 when changing equipment.
             </p>
-            <p>
-                Every 5th level is a breakthrough, resulting in additional stats
-                (notated as Enhancement Unlock when inspecting armor in game).
-                Basic 8-piece Activation bonuses are received when your helmet,
-                gloves, shoulderpiece, armbad, top, bottom, belt, and shoes all
-                reach the same breakthrough level (+5, +10, +15, etc).
-            </p>
 
             <div class="mobile-only">
                 <EquipLevelSlider {gear} />
             </div>
 
             <ul class="stats g-100">
-                {#each gear.baseStat as stat}
+                {#each baseStats as stat}
                     <li class="stat box col-2">
                         <img
                             src={stat.icon}
@@ -99,7 +108,7 @@
                         <div class="stat-text">
                             <span class="stat-name">{stat.name}</span>
                             <b class="stat-value">
-                                {Math.floor(stat.propValue)}
+                                {stat.value}
                             </b>
                         </div>
                     </li>
@@ -109,6 +118,15 @@
                 <h4>Upgrade Materials</h4>
                 <UpgradeMats advancement={gear.advancement} {gear} />
             {/if}
+
+            <h4>Breakthrough</h4>
+            <p>
+                Every 5th level is a <strong>breakthrough</strong>, resulting in additional stats
+                (called <em>Enhancement Unlock</em> when inspecting armor in-game).
+                Basic 8-piece Activation bonuses are received when your helmet,
+                gloves, shoulderpiece, armband, top, bottom, belt, and shoes all
+                reach the same breakthrough level (+5, +10, +15, etc).
+            </p>
         </div>
 
         <div class="grid g-50">
@@ -219,11 +237,20 @@
 
             {#if gear.matList.length > 0}
                 <h5>Upgrade Materials</h5>
-                <p>Below is a list of items that give EXP towards {gear.name}. Equipment of type <strong>{gear.slotType}</strong> can also be used.</p>
+                <p>
+                    Below is a list of items that give EXP towards {gear.name}.
+                    Equipment of type <strong>{gear.slotType}</strong> can also be
+                    used.
+                </p>
                 <ul class="flex-wrap flex g-50" style="padding: 0; margin: 0">
                     {#each gear.matList as item}
                         <li class="flex">
-                            <ItemIcon item={{...item, amount: item.expValue}} amount imgSize="64" wrapperSize="64px" />
+                            <ItemIcon
+                                item={{ ...item, amount: item.expValue }}
+                                amount
+                                imgSize="64"
+                                wrapperSize="64px"
+                            />
                         </li>
                     {/each}
                 </ul>
@@ -246,7 +273,8 @@
         margin-top: 2rem;
     }
 
-    h4, h5 {
+    h4,
+    h5 {
         margin-top: 1.5rem;
     }
 

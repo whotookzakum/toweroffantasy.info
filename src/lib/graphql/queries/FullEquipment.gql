@@ -35,5 +35,6 @@ query FullEquipment($id: String!, $lang: String, $version: String) {
             PropMinValue
             Quality
         }
+        gearUpgradeProps
     }
 }
