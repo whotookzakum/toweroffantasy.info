@@ -121,12 +121,91 @@
 
             <h4>Breakthrough</h4>
             <p>
-                Every 5th level is a <strong>breakthrough</strong>, resulting in additional stats
-                (called <em>Enhancement Unlock</em> when inspecting armor in-game).
-                Basic 8-piece Activation bonuses are received when your helmet,
-                gloves, shoulderpiece, armband, top, bottom, belt, and shoes all
-                reach the same breakthrough level (+5, +10, +15, etc).
+                Every 5th level is a <strong>breakthrough</strong>, resulting in
+                additional stats (called <em>Enhancement Unlock</em> when inspecting
+                armor in-game). Basic 8-piece Activation bonuses are received when
+                your helmet, gloves, shoulderpiece, armband, top, bottom, belt, and
+                shoes all reach the same breakthrough level (+5, +10, +15, etc).
             </p>
+
+            <div class="table-wrapper">
+                <table class="bg-alternate">
+                    <thead>
+                        <tr>
+                            <th>Enhancement</th>
+                            <th>Attack</th>
+                            <th>Resistance</th>
+                            <th>HP</th>
+                            <th>Crit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>8-pieces +5</th>
+                            <td>+40</td>
+                            <td>+20</td>
+                            <td>+3231</td>
+                            <td>+20</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +10</th>
+                            <td>+87</td>
+                            <td>+43</td>
+                            <td>+6988</td>
+                            <td>+43</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +15</th>
+                            <td>+140</td>
+                            <td>+70</td>
+                            <td>+11277</td>
+                            <td>+70</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +20</th>
+                            <td>+202</td>
+                            <td>+101</td>
+                            <td>+16164</td>
+                            <td>+101</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +25</th>
+                            <td>+270</td>
+                            <td>+135</td>
+                            <td>+21669</td>
+                            <td>+135</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +30</th>
+                            <td>+349</td>
+                            <td>+174</td>
+                            <td>+27989</td>
+                            <td>+174</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +35</th>
+                            <td>+439</td>
+                            <td>+219</td>
+                            <td>+35153</td>
+                            <td>+219</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +40</th>
+                            <td>+541</td>
+                            <td>+270</td>
+                            <td>+43321</td>
+                            <td>+270</td>
+                        </tr>
+                        <tr>
+                            <th>8-pieces +45</th>
+                            <td>+660</td>
+                            <td>+330</td>
+                            <td>+52874</td>
+                            <td>+330</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="grid g-50">
@@ -136,13 +215,15 @@
                 consuming other equipment of the same type or EXP items to raise
                 the stars on the item. Equipment of the same slot will provide
                 increased EXP. EXP is transferred at a reduced rate when feeding
-                an Advanced item into another item.
+                an item that has been advanced into another item.
             </p>
             <p>
                 {gear.name} comes with
-                <strong>{numberOfRandomStats[gear.rarity]}</strong> of the following
-                stats, selected randomly. Each upgrade will increase the stat values
-                by their respective ranges, shown below.
+                <strong>{numberOfRandomStats[gear.rarity]}</strong> of the
+                following stats, selected randomly (probabilities shown below).
+                Each advancement randomly selects <strong>1</strong> of the stats
+                on the piece and increases it by a random value within the range
+                shown below.
             </p>
 
             <div class="mobile-only">

@@ -102,7 +102,7 @@
                 {#each advancement as adv, level}
                     {#if level >= levels[0] - 1 && level < levels[1]}
                         <tr>
-                            <td>{level + 1}</td>
+                            <td>{level} → {level + 1}</td>
                             <td>
                                 <ul class="flex g-50" style="margin: 0">
                                     {#each adv as item}
