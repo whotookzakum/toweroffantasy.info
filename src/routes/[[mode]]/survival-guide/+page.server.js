@@ -3,8 +3,8 @@ import uniqBy from "lodash/uniqBy.js"
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
-    const version = event.params.mode === "cn" ? "china" : "global"
-    const lang = event.params.mode === "cn" ? "cn" : "en"
+    const version = "global" // event.params.mode === "cn" ? "china" : "global"
+    const lang = "en" // event.params.mode === "cn" ? "cn" : "en"
 
     const query = new AllGuidebooksStore()
     const { data } = await query.fetch({ event, variables: { version, lang } })

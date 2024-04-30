@@ -41,9 +41,22 @@
         >.
     </p>
 
-    <p style="margin-bottom: 0">
-        If the site has been helpful to you and you'd like to show gratitude,
-        please disable adblock or consider sending a Ko-Fi!
+    <p>
+        <b>CN support is limited to the following pages</b>, and only available in
+        Chinese: <a href="/cn/simulacra">Simulacra</a>,
+        <a href="/cn/weapons">Weapons</a>,
+        <a href="/cn/matrices">Matrices</a>, and
+        <a href="/cn/relics">Relics</a>. Banners and versions are not supported
+        so items may be out of order or have bugs.
+    </p>
+
+    <p style="margin-bottom: 0; font-weight: bold">
+        If you wish to support the site, please disable adblock or consider
+        sending a <a
+            href="https://ko-fi.com/whotookzakum"
+            target="_blank"
+            rel="noreferrer noopener nofollow">Ko-Fi!</a
+        >
     </p>
 </div>
 
@@ -53,10 +66,9 @@
         <EntryItem {entry} />
     {/each}
 </ul>
-<small style="color: var(--text2)">Added in version {data.latestVersion}</small>
+<small style="color: var(--text2);">Added in version {data.latestVersion}</small>
 
 <h2 style="font-size: var(--step-3);">Credits</h2>
-
 <div class="box" style="margin-top: 1rem; width: fit-content">
     <h3 style="margin-top: 0">Created by</h3>
     <p>Zakum, FortOfFans, biellSilva, Eminentglory</p>

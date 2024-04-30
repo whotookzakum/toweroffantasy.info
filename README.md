@@ -5,6 +5,9 @@ The [Tower of Fantasy Index](https://toweroffantasy.info) is an online resource 
 The index was originally created by Pyrosu and a few others. It was later implemented as a website by Zakum. An [API](https://github.com/biellSilva/toweroffantasy.api) was created by [biellSilva](https://github.com/biellSilva), with game data processed by [FortOfFans](https://github.com/FortOfFans).  
 Thank you to everyone that has contributed guides, advice, game data, localizations, and their own content.
 
+> ![NOTE]
+> CN support is limited to the following pages, and only available in Chinese: [Simulacra](https://toweroffantasy.info/cn/simulacra), [Weapons](https://toweroffantasy.info/cn/weapons), [Matrices](https://toweroffantasy.info/cn/matrices), and [Relics](https://toweroffantasy.info/cn/relics). Banners and versions are not supported so items may be out of order or have bugs.
+
 ## Technologies Used
 - SvelteKit (UI)
 - SCSS
