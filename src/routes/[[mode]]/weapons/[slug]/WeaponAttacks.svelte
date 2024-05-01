@@ -13,7 +13,6 @@
     let attackCategory = "normals";
     let previewType = gameplayPreviews[id] ? "video" : "guidebook";
     let isMaxSkillLevel = true;
-    console.log(weapon)
 </script>
 
 {#if weaponAttacks}

@@ -23,7 +23,7 @@ const config = {
 			handleHttpError: 'warn',
 			entries: [
 				'/',
-				// '/cn'
+				'/cn'
 			]
 		}
 	}

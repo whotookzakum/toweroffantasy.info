@@ -23,10 +23,10 @@
         }
     }
 
-    $: pagePath =
-        $page.url.searchParams.toString().length > 0
-            ? `${$page.url.pathname}?${$page.url.searchParams.toString()}`
-            : $page.url.pathname;
+    $: pagePath = $page.url.pathname
+        // $page.url.searchParams.toString().length > 0
+        //     ? `${$page.url.pathname}?${$page.url.searchParams.toString()}`
+        //     : $page.url.pathname;
     $: cnRoute = $page.url.pathname.includes("/cn");
     $: href = cnRoute ? pagePath.replace("/cn", "") || "/" : "/cn" + pagePath;
 

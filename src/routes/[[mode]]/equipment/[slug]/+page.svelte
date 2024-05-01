@@ -45,8 +45,6 @@
             value: Math.floor(stat.propValue + statGainFromLevel),
         };
     });
-
-    // $: console.log(baseStats)
 </script>
 
 <Meta

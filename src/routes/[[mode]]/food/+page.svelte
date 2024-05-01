@@ -11,7 +11,6 @@
 
     export let data;
     const { foods, allEffects } = data;
-console.log(foods)
     let q = "";
     let rarity, effects;
     let type = "all";
