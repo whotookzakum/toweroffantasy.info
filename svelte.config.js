@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 import path from 'path'
 import { mdsvex } from 'mdsvex'
 import preprocess from 'svelte-preprocess';

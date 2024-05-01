@@ -6,40 +6,36 @@
 
     export let style;
 
+    $: cnRoute = $page.url.pathname.includes("/cn");
+    $: href = cnRoute
+        ? $page.url.pathname.replace("/cn", "")
+        : "/cn" + $page.url.pathname;
+
     // Alternative would be to have a store derived from page called linkPrefix, and just append that to all hrefs. It will either be /cn or blank.
-    // This does not work for client fetched data, i.e. the banner table
     $: if (browser) {
-        const hi = document.querySelectorAll("a");
-        if ($page.url.pathname.includes("/cn")) {
-            hi.forEach((link) => {
+        const allLinks = document.querySelectorAll("a");
+        if (cnRoute) {
+            allLinks.forEach((link) => {
                 if (!link.href.includes("/cn")) {
                     link.href = "/cn" + link.getAttribute("href");
                 }
             });
         } else {
-            hi.forEach((link) => {
+            allLinks.forEach((link) => {
                 link.href = link.getAttribute("href").replace("/cn", "");
             });
         }
+        $page.url.pathname // run every time the path changes
     }
-
-    $: pagePath = $page.url.pathname
-        // $page.url.searchParams.toString().length > 0
-        //     ? `${$page.url.pathname}?${$page.url.searchParams.toString()}`
-        //     : $page.url.pathname;
-    $: cnRoute = $page.url.pathname.includes("/cn");
-    $: href = cnRoute ? pagePath.replace("/cn", "") || "/" : "/cn" + pagePath;
 
     function go(e) {
         e.preventDefault();
-        if (browser) {
-            goto(href, {
-                noScroll: true,
-                replaceState: true,
-                keepFocus: true,
-                invalidateAll: true,
-            });
-        }
+        goto(href, {
+            noScroll: true,
+            replaceState: true,
+            keepFocus: true,
+            invalidateAll: true,
+        });
     }
 </script>
 
