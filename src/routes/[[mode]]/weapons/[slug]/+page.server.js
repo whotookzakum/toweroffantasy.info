@@ -1,6 +1,7 @@
 import { FullWeaponStore, FullSimulacrumV2Store, ShortMatrixStore, AllBannersStore, AllSimulacraV2Store, AllWeaponsStore, AllMatricesStore } from '$houdini'
 import { clean } from '$lib/utils.js'
 
+// NOTE: Banners fetch from the global version, as CN is not implemented for banners.
 export const load = async (event) => {
     const version = event.params.mode === "cn" ? "china" : "global"
     const lang = event.params.mode === "cn" ? "cn" : "en"
@@ -27,7 +28,7 @@ export const load = async (event) => {
 
     // Banners for banner table
     const bannersQuery = new AllBannersStore()
-    const bannersRes = await bannersQuery.fetch({ event, variables: { version, lang } })
+    const bannersRes = await bannersQuery.fetch({ event, variables: { version: "global", lang: "en" } })
 
     // All simulacra for avatar image in banner table
     const allSimsStore = new AllSimulacraV2Store()

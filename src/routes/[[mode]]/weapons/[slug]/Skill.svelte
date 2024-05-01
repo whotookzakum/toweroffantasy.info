@@ -17,6 +17,7 @@
 
     function interpolateString(string, values, skillLevel) {
         const valueIndex = skillLevel > 0 ? skillLevel - 1 : 0;
+        if (values.length === 0) return string.replace(/\{(\d+)\}/g, 0);
         return string.replace(
             /\{(\d+)\}/g,
             (match, index) => values[index][valueIndex] || match,
