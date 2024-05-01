@@ -2,6 +2,11 @@
     <div class="footer-content">
         <span>&copy; 2024 Tower of Fantasy Index</span>
         <div class="flex g-50 flex-wrap">
+            <a href="https://v01.toweroffantasy.info" target="_blank" rel="noreferrer noopener nofollow">v0.1</a>
+            <a href="https://v02.toweroffantasy.info" target="_blank" rel="noreferrer noopener nofollow">v0.2</a>
+            <a href="https://v1.toweroffantasy.info" target="_blank" rel="noreferrer noopener nofollow">v1</a>
+            <a href="https://v2.toweroffantasy.info" target="_blank" rel="noreferrer noopener nofollow">v2</a>
+            <a href="https://v3.toweroffantasy.info" target="_blank" rel="noreferrer noopener nofollow">v3</a>
             <a
                 href="https://github.com/whotookzakum/toweroffantasy.info"
                 target="_blank"
