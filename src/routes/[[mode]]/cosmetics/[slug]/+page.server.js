@@ -1,6 +1,9 @@
 import { FullOutfitStore, FullItemStore } from '$houdini'
 import { clean } from '$lib/utils.js'
 
+export const prerender = false
+export const ssr = true
+
 export const load = async (event) => {
     const version = "global" // event.params.mode === "cn" ? "china" : "global"
     const lang = "en" // event.params.mode === "cn" ? "cn" : "en"
