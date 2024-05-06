@@ -6,13 +6,15 @@
 <div>
     <p class="section-title">Weapon Enhancements (levels)</p>
     <small>Affects skill damage and weapon stats</small>
-    <RangeSlider
-        bind:values={$weaponLevel}
-        min={0}
-        max={200}
-        float
-        pips
-        first="label"
-        last="label"
-    />
+    <div class="notranslate">
+        <RangeSlider
+            bind:values={$weaponLevel}
+            min={0}
+            max={200}
+            float
+            pips
+            first="label"
+            last="label"
+        />
+    </div>
 </div>

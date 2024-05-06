@@ -11,13 +11,15 @@
             Equipment Advancements (stars)
         </p>
         <small>Affects random stats</small>
-        <RangeSlider
-            bind:values={$equipStars}
-            min={0}
-            max={gear?.advancementExp?.length}
-            float
-            pips
-            all="label"
-        />
+        <div class="notranslate">
+            <RangeSlider
+                bind:values={$equipStars}
+                min={0}
+                max={gear?.advancementExp?.length}
+                float
+                pips
+                all="label"
+            />
+        </div>
     </div>
 {/if}

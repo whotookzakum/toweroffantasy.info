@@ -5,19 +5,21 @@
     export let gear;
 </script>
 
-<div>
+<div class="notranslate">
     <p class="section-title" style="margin: 0">
         Equipment Enhancements (levels)
     </p>
     <small>Affects base stats</small>
-    <RangeSlider
-        bind:values={$equipLevel}
-        min={0}
-        max={gear.maxLevel}
-        float
-        pips
-        pipstep={5}
-        first="label"
-        last="label"
-    />
+    <div class="notranslate">
+        <RangeSlider
+            bind:values={$equipLevel}
+            min={0}
+            max={gear.maxLevel}
+            float
+            pips
+            pipstep={5}
+            first="label"
+            last="label"
+        />
+    </div>
 </div>

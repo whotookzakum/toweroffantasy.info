@@ -67,9 +67,7 @@
         in Chinese: <a href="/cn/simulacra">Simulacra</a>,
         <a href="/cn/weapons">Weapons</a>,
         <a href="/cn/matrices">Matrices</a>, and
-        <a href="/cn/relics">Relics</a>. <br />
-        <a href="/cn/banners">CN Banners</a> are currently only semi-supported so
-        they may be incomplete!
+        <a href="/cn/relics">Relics</a>. <a href="/cn/banners">CN Banners</a> are currently incomplete!
     </p>
 
     <p style="margin-bottom: 0; font-weight: bold">

@@ -6,13 +6,15 @@
 <div>
     <p class="section-title">Weapon Advancements (stars)</p>
     <small>Affects weapon stats</small>
-    <RangeSlider
-        bind:values={$weaponStars}
-        min={0}
-        max={6}
-        float
-        pips
-        pipstep={1}
-        all="label"
-    />
+    <div class="notranslate">
+        <RangeSlider
+            bind:values={$weaponStars}
+            min={0}
+            max={6}
+            float
+            pips
+            pipstep={1}
+            all="label"
+        />
+    </div>
 </div>
