@@ -3,8 +3,8 @@ import { DateTime } from "luxon"
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
-    const version = "global" // event.params.mode === "cn" ? "china" : "global"
-    const lang = "en" // event.params.mode === "cn" ? "cn" : "en"
+    const version = event.params.mode === "cn" ? "china" : "global"
+    const lang = event.params.mode === "cn" ? "cn" : "en"
 
     const weaponsStore = new AllWeaponsStore()
     const weaponsRes = await weaponsStore.fetch({ event, variables: { version, lang } })
@@ -19,7 +19,8 @@ export const load = async (event) => {
     const relicsRes = await relicsStore.fetch({ event, variables: { version, lang } })
 
     const mountsStore = new AllMountsStore()
-    const mountsRes = await mountsStore.fetch({ event, variables: { version, lang } })
+    // CN Mounts not supported yet
+    const mountsRes = version === "global" ? await mountsStore.fetch({ event, variables: { version, lang } }) : { data: { mounts: [] } }
 
     const newestAdditions = [
         ...simulacraRes.data.simulacraV2, 
