@@ -2,14 +2,14 @@ import { AllBannersStore, AllSimulacraV2Store } from '$houdini'
 import { clean } from '$lib/utils.js'
 
 export const load = async (event) => {
-    const version = "global" // event.params.mode === "cn" ? "china" : "global"
-    const lang = "en" // event.params.mode === "cn" ? "cn" : "en"
+    const version = event.params.mode === "cn" ? "china" : "global" // event.params.mode === "cn" ? "china" : "global"
+    const lang = event.params.mode === "cn" ? "cn" : "en" // event.params.mode === "cn" ? "cn" : "en"
 
     const bannersStore = new AllBannersStore()
-    const bannersRes = await bannersStore.fetch({ event, version, lang })
+    const bannersRes = await bannersStore.fetch({ event, variables: { version } })
 
     const simulacraStore = new AllSimulacraV2Store()
-    const simulacraRes = await simulacraStore.fetch({ event, version, lang })
+    const simulacraRes = await simulacraStore.fetch({ event, variables: { version, lang } })
 
     const banners = bannersRes.data.banners.map(banner => ({
         ...banner,

@@ -1,5 +1,5 @@
-query AllBanners {
-    banners {
+query AllBanners($version: String) {
+    banners(version: $version) {
         bannerNumber
         category
         detailsLink
