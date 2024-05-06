@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-cloudflare';
 import path from 'path'
 import { mdsvex } from 'mdsvex'
 import preprocess from 'svelte-preprocess';

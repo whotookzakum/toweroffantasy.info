@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^4.4.0",
 		"anchor-js": "^5.0.0",
 		"deepdash-es": "^5.3.9",
 		"graphql": "^16.8.1",
