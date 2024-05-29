@@ -111,7 +111,7 @@
 
         <div class="sns-links flex">
             <a
-                href="https://discord.gg/aidacafe"
+                href="https://discord.gg/waifugrace"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
                 class="flex box"
@@ -127,15 +127,6 @@
             >
                 <Icon icon="logos:reddit-icon" width="18" />
                 <span class="visually-hidden">Reddit</span>
-            </a>
-            <a
-                href="https://twitter.com/_Aida_Cafe"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                class="flex box"
-            >
-                <Icon icon="logos:twitter" width="18" />
-                <span class="visually-hidden">Twitter</span>
             </a>
             <!-- <button class="flex box">
                 <Icon icon="mdi:gear" width="18" />
