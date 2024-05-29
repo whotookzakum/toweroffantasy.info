@@ -10,7 +10,7 @@ export const bgImg = writable("");
 
 export const showWepOnSimEntry = writable(true);
 
-export const outfitsGender = writable("f");
+export const outfitsGender = writable("m");
 
 export const guidebookCategory = writable("exploration");
 

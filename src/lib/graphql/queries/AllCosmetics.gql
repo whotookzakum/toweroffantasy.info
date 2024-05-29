@@ -1,0 +1,16 @@
+query AllCosmetics($lang: String, $version: String, $avatarFilter: String, $frameFilter: String, $consumableFilter: String) {
+    outfits(lang: $lang, version: $version) {
+        ...outfitEntry
+        description
+        source
+    }
+    avatars: items(lang: $lang, version: $version, filter: $avatarFilter) {
+        ...itemEntry
+    }
+    frames: items(lang: $lang, version: $version, filter: $frameFilter) {
+        ...itemEntry
+    }
+    consumables: items(lang: $lang, version: $version, filter: $consumableFilter) {
+        ...itemEntry
+    }
+}

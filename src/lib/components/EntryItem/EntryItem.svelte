@@ -56,8 +56,10 @@
             break;
     }
 
+    if (iconUri === "None.webp") iconUri = "/Hotta/Content/Resources/UI/makeup/kong.webp"
+
     if (entry.__typename === "ItemType") {
-        if (["AVATAR", "FRAME", "Chat Bubble", "Emoji", "Headwear"].includes(entry.type))
+        if (["AVATAR", "FRAME", "ChatBubble", "Emoji", "Headwear"].includes(entry.type))
             href = `/${mainRoute["OutfitType"]}/${entry.id}`;
     }
 </script>

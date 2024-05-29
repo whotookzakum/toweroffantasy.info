@@ -87,3 +87,30 @@ export function clean(obj) {
         { leavesOnly: true }
     )
 }
+
+export function processCosmetics (data) {
+    const { avatars, frames } = data
+
+    // Outfits "Headwear" are actually accessories
+    const outfits = data.outfits.map(item => ({ ...item, type: item.type.replace("Headwear", "Accessory") }))
+
+    // Consumables contains many types which must be discerned by their id
+    const consumables = data.consumables.reduce((items, item) => {
+        if (item.id.startsWith("hat_")) {
+            items.push({ ...item, type: "Headwear" })
+        }
+        else if (item.id.includes("chat_")) {
+            if (item.id.includes("chat_qipao")) {
+                // These don't have icon versions, but they have the full chat bubble image
+                if (["chat_qipao_iw_2", "chat_qipao_iw_3", "chat_qipao_iw_4"].includes(item.id)) {
+                    item.icon = item.icon.replace("icon_", "")
+                }
+                items.push({ ...item, type: "ChatBubble" })
+            }
+            else if (item.id.includes("chat_emoji")) items.push({ ...item, type: "Emoji" })
+        }
+        return items
+    }, [])
+
+    return { outfits, avatars, frames, consumables }
+}
